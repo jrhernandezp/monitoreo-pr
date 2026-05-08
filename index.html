@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Monitoreo Municipal - Noreste PR</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -132,12 +135,12 @@ tr:hover { background: #fafafa; }
 
 <div class="header">
     <h1>🗺️ Monitoreo Municipal</h1>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-08 06:01:50</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-08 13:37:05</div>
     <div class="stats">
-        <div class="stat-box"><div class="num">92</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">15</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">92</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-08 06:01:50</div></div>
+        <div class="stat-box"><div class="num">5</div><div class="label">Total Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">5</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-08 13:37:05</div></div>
     </div>
 </div>
 
@@ -147,63 +150,63 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
             <div class="muni-count">1</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
+        <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">10</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">1</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Luquillo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
-            <div class="muni-count">8</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">4</div>
-        </div>
-        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
-            <div class="muni-name">Fajardo</div>
-            <div class="muni-count">10</div>
-        </div>
-        <div class="muni-card active" onclick="filtrarPor('Loíza')">
-            <div class="muni-name">Loíza</div>
-            <div class="muni-count">7</div>
-        </div>
-        <div class="muni-card active" onclick="filtrarPor('Río Grande')">
-            <div class="muni-name">Río Grande</div>
-            <div class="muni-count">3</div>
-        </div>
-        <div class="muni-card active" onclick="filtrarPor('Ceiba')">
-            <div class="muni-name">Ceiba</div>
             <div class="muni-count">1</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
+            <div class="muni-name">Fajardo</div>
+            <div class="muni-count">0</div>
+        </div>
+        <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
+            <div class="muni-name">Loíza</div>
+            <div class="muni-count">0</div>
+        </div>
+        <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
+            <div class="muni-name">Río Grande</div>
+            <div class="muni-count">0</div>
+        </div>
+        <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
+            <div class="muni-name">Ceiba</div>
+            <div class="muni-count">0</div>
+        </div>
+        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">12</div>
+            <div class="muni-count">0</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Humacao')">
+        <div class="muni-card inactive" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">0</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Cataño')">
+        <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">13</div>
+            <div class="muni-count">0</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Vieques')">
+        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">7</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">1</div>
         </div>
     </div>
 </div>
@@ -219,557 +222,35 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
-        <tr class="article-row" data-municipios="Caguas">
-            <td><span class="muni-tag">Caguas</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxQVE40anZ6REIwOWN5SUVOV1hzVWpqeWdSWlRBeGZPVUdsRFNRSVpiTjYxNGsxX3J2dXAtc0JlWUpWTGdwUVIzNmo4NHhYdXdjeHVCNXJfakMzcHQ5ZV96QlZLc1RkWmRtUVN5TmtJYlQxQTltYmhqWXNJdnJ5TjhzSS1hRUlYeUlHUVZGNHl0Tkt1QUNlMmRFOUw2VkFURHJRREhnMDUwVUF2ck9LNURLYm82OFp5X3JyZHRsOXlCd1NZaGZhU2RlZGJMUEhRTkoxU0dVUFlKeXpRd25JX2hEbQ?oc=5" target="_blank">Comienza mañana el Puerto Rico Beep Baseball Tournament en Caguas, el primer torneo de béisbol para personas no videntes en Puerto Rico. La actividad reunirá equipos de Puerto Rico y Estados Unidos en el Complejo Recreo Deportivo del Este durant - Facebook</a></td>
-            <td>FB - Caguas</td>
-            <td>2026-05-07 20:00</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPbmhCS1BabUlWblg3WEFnRUJ1UFpKS2xXX2s2U3ZMNnRDaF9rSE5MQXlXZ08yZ1MtNnRBWDB5Wkp1c1JFM2JRc0RQcUtwNmpZZk5kb0JTNFRqSlBnUklMcFUwUjcxejd5dThqOGtSUmEtdFI0UXBONGZzNm1FcmdiTVZkMWpvSTFqaDROc2F0aUxVek9WNXpFWlRLTmtQQUpQczJDdnB4ZmFyNi1kQlBQS0hTSFY0YkdyZGp2QTdB?oc=5" target="_blank">Cataño ofrecerá este sábado una feria a bajo costo de vacunación de perros y gatos - NotiCel</a></td>
-            <td>Cataño</td>
-            <td>2026-05-07 18:21</td>
-        </tr>
-        <tr class="article-row" data-municipios="Loíza">
-            <td><span class="muni-tag">Loíza</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTFBNTmhoVEg0WmktTU9NMXQtNS1TNEVMaVctanVBR2xsV1JKOGpkSm1PYlU0SmZtLVUweFMxYW9sRjhKNjQ2THJ0S2lYVjRRd1laUUZwYlh3NURrUnhGeDRTa29LdURsRGU2UkRJSW40YjVNME9lWkxCUg?oc=5" target="_blank">Municipio de Loíza added a new photo. - Municipio de Loíza - Facebook</a></td>
-            <td>FB - Loíza</td>
-            <td>2026-05-07 17:14</td>
-        </tr>
-        <tr class="article-row" data-municipios="Trujillo Alto">
-            <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNalRWVHE0UW9xaHF5Qjg2dUtSd1REUThPWVRhY0JYUURnRUJUd3VXc0hmenduY212cS0tOURjM3ZFcmptMWpzX0VkY0hZRnBwd2NJOW0tNVFkby1XZU02azIwX2ozUFdjak9LYlFITVZZZ2VaWldMV3ltUlRILWhoUVBTdmxZZlNwbTEw?oc=5" target="_blank">Municipio De Trujillo Alto - Facebook</a></td>
-            <td>FB - Trujillo Alto</td>
-            <td>2026-05-07 15:33</td>
-        </tr>
-        <tr class="article-row" data-municipios="Vieques, Culebra">
-            <td><span class="muni-tag">Vieques, Culebra</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxPdDFjSGdGRUN3eXNWbFFRYWNqclpmT0xMcUUzMjk1ZGNjalpiLTU3ZGw3R0lucFoxMnB5aFJfbWI1MlRma05wdnNrSDZBdHdJT19LNlhIMTkzakx5YUoxaVFfblNENlN6TmU3Ul90TUNEdHQwbzdrUXUtejdzRkVSMEJocGxZckFjZ2JXc1VTSDVMaTIwN1dOODhTVXRMUjFXRkZXZEs0dDI2RHF5TlNFdkc0VnhubEFBV3FXejJ5c0hOM1NqTUdlNV9VNE1STzlsODN3bXRGQ2RnRVJlcnYtQ2VCR2hZYlgzdHZsaW53WllRNGvSAfgBQVVfeXFMUEdpRFhsa08yS1k2YWpkdXdOMFFjODFteGdrV002VGw2eHNkQmh0N19pR2hfUzVOT0RwUXdFYUhKSklOM2haSU8tUW5RVVlHbkEzcjQ5MS1jTmQ1bTd3Ujc0LTlLelB0MkpYN1UtR3hPb2RFNUU1aE9jZFlOUmFRdFpvWmdqZFd2eDdFSlh0eVdaUWpFR216MHpnUzlmd2E1VUkxUllWM2xaaU0weDlsTGdtSUVjMEoyQzNUcnpmV1RiSDl3WDl3SnRXVU9vZnNNNjVKNE9yWXFGSWdDWUpYMXotSFg0Wk5BbkNCTW9oMHlwdVJDMG5qcUw?oc=5" target="_blank">ATI aplaza aumento tarifario para servicio de lanchas hacia Vieques y Culebra - El Vocero de Puerto Rico</a></td>
-            <td>Vieques</td>
-            <td>2026-05-07 11:13</td>
-        </tr>
-        <tr class="article-row" data-municipios="Caguas">
-            <td><span class="muni-tag">Caguas</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE9QSVJUblZjVEp6QV94cUdqVjZTdlJtdGNOZU85a29CQzdEN0U0VUlrR1M2eTBYSXNjaUEyUDM3MGFndWNQNTZySU11eHozaG9YU05kRjIzT0huNVE5Ykx5TElXOTJMdEpLNWJQREdidWNMY29udVBTdWZ3?oc=5" target="_blank">Municipio Autónomo de Caguas - Facebook</a></td>
-            <td>FB - Caguas</td>
-            <td>2026-05-07 10:49</td>
-        </tr>
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOUFlnM2pxZmtHaklfRENkdTN0dDF6bTh4U3BubFpJVHFjOTUwYVFLZ2ZwYXpUZmRoZHc2QWJDNW54ZF9sZTN2aF93TXpsWG1URmZVT1JfWGt3TGtpY2pDOWEzbk9BdUlwMkVSd0FZa0EwNGVXdFRINXlRdE1NU0I1cVdiX3dzUFNzSzhNdjRjSTdERXpSZlVR?oc=5" target="_blank">Opinión | La turista en Fajardo y lo que no dijimos - Noticias de Puerto Rico hoy</a></td>
-            <td>Fajardo</td>
-            <td>2026-05-07 03:21</td>
-        </tr>
-        <tr class="article-row" data-municipios="Trujillo Alto">
-            <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxNaHhhNzZEbkt0dGdIMWRZSWZ6Tm9maWk3aXA3MHdtS040Y3YyLU9HTDAxUTJyLUMxa2N0VHpCT1BTdDRpUWlsaXpGUDdRSnFfVGlTVWtreUpRR2ZjR3FEeC1ZSmVnZEgwSGRJWmRZWkJUY1FXQ1M3WmJzd00td0FQbFBRYkJUNFlPYjFyM2xBNWQ1VXl0WVA2WS0taDNpa3FDVVljU0V0ajlmSXNJbUk4a0F4enVZS0lpQVNPVG9uaWJLN0tZU1VZa2QzYUJ3a3VNeVkwcC1jXzJGbHpsdVFTTzZpN1hPS3R6amFNNlBRbTdFZUZn?oc=5" target="_blank">Intervienen con menor en escuela de Trujillo Alto, llevaba dos días desaparecido - wapa.tv</a></td>
-            <td>Trujillo Alto</td>
-            <td>2026-05-07 03:02</td>
-        </tr>
-        <tr class="article-row" data-municipios="Vieques">
-            <td><span class="muni-tag">Vieques</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxNR3RxRFdxRUo3S01wYzNGRlZoOFlEa2diUVhfQTFyTkVrMldsY1kzRm1QNHllVG9xb09JWV9ZS1ItTDlLVTdCYVdEVi1hWFBmekZuSml5SEJqYkpBVFRBOHFmdzR5TVlBQ05vUUdqQlNWQWFla3V1TmE1Z2JYV3dhZE9TYUlHQi1iOExfSmc0UHlIdnRnc1Y5U3NacDlkMUtXLVJWSVBNQTBEMnprc29UM3hxNGIzNU9icXE1akZlX0N6akc3NEFTUEZaRFJ1dkdLQU9hOGpaQy1UTkZnczBRdEh2TV9VcjM4TVJMQg?oc=5" target="_blank">En el día de hoy, el Municipio de Vieques, a través de los fondos CDBG-COVID, realizó la entrega de vales de alimentos a 32 familias viequenses como parte de las iniciativas dirigidas a apoyar a las familias con mayores necesidades. Las ayudas otorgadas - Facebook</a></td>
-            <td>FB - Vieques</td>
-            <td>2026-05-06 23:29</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPeGtIWWh2dnR1bmNUV2RjMkNPamxRUGpJMjcyNnpvRkpEVkRXUnl0Vk5pQlZFVEN5SUQzZk1KZENkUGlxMzVrVUZBUF9rQ0laOFA1TmVqUENnX2RuM2dTOEUyU2tWSklDU3RCWGV6eTRDWDJoVzRocmJkRm1jYUZPUmdDVkNCdUxiVGhSNjhid3MwN1ZaWjI2MkNuTEdhZw?oc=5" target="_blank">Municipio Autónomo de Cataño - Facebook</a></td>
-            <td>FB - Cataño</td>
-            <td>2026-05-06 19:36</td>
-        </tr>
-        <tr class="article-row" data-municipios="Luquillo">
-            <td><span class="muni-tag">Luquillo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBiSEZaMW00QUUyY0praUhRTkZKZlJNLXVFNlhCaWNSd3ZtRVUzOGlXREs0RFhUZnlwbEZIdE1ZYzJOaGV2VVk3TzFaWGs1WnB1clJfTGRRS0t6cWNiZXNkLU9EUlAxeG9uMjVv?oc=5" target="_blank">Municipio de Luquillo - Facebook</a></td>
-            <td>FB - Luquillo</td>
-            <td>2026-05-06 18:51</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5hVVhTcWdvMzM0MDljYUF2M2d0X1hCVVhodlZjVXNRVlRNaUN2U2dHRkE3MEdQU2xLVms4NHBVLWE3WURKM080c1cyOE1WQWxYUm1KcHZWSmFTTmpoU05DOTVLamNmQnNheXZTSmhURE96VEU?oc=5" target="_blank">Municipio Autónomo de Cataño - Facebook</a></td>
-            <td>FB - Cataño</td>
-            <td>2026-05-06 17:18</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxONUd3ZUdjaW5IaEZSM3B6VVNiV0s1OFBSRzZzY2FXY2EwNHBCYUpVZXFPbG9fcF9WcXU1Ml9yZGRpNmlCRG1HSmtva0Y2ZXpqLURaRFdLZjJ1Q3pqdFVJWW9fMHMyYlJUb0lWUnJWQk5mOFJFRHhuU1hlcHVtMWN1aTFSRUNrd2FoLWFxcDBR?oc=5" target="_blank">Municipio Autónomo de Naguabo - Facebook</a></td>
-            <td>FB - Naguabo</td>
-            <td>2026-05-06 14:10</td>
-        </tr>
-        <tr class="article-row" data-municipios="Trujillo Alto">
-            <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVUMwekJZZFJBci1uUXRZSGZvTkR6OXp5azg2bmU0M2dFMXRkTmwxb3hwem16cjBFYTdReUhpRVVKMjJ3MnBlaUQ5cE5BQXo1ak81NmZhaUV0Q0NsdlVCMUxxd1dfMEZmRnZJLVJ4UE5McFRSaWJSQzVWaHpVVk0wN1lXcmNybkYwYUE0QkkzX01rU0pvRDFyYmcwR183TGxwVVpOV25YRVJHNHpPZmwyRUhCNWtzR1BwOVM4eWNTZkd1Q29Ubnk1Y1Nlbi1ubmFadjI3amkzZ9IB3wFBVV95cUxQZkpoRjhLcjFHZ2ZCZTBoMUdQaTRWaUxTY3JBdVVaUk5qbHZ0SWlabTVFdXd5ZVQwNVIwdUNmSGo3S1NZQXEtcXJnOHZmcFNScTZ3cUdrcm1CNldRQVBERjUtMGZkRmN2ZUZYMjVCWjNURU1YYlRDa09aVV9fRTBuRkhHU2FVN2FoV2llQ0dNZzdoaUR3ejVYS2NER0k4ejgzUHRBSWtWd05NbHppYmVrUlRIbFJSZWtsTWMxZ1ZDTUMxUmpYNEhfRUIzQ1hIb0pKWm1UNHhoemFUbU92alhv?oc=5" target="_blank">Intervienen con menor en escuela de Trujillo Alto; llevaba dos días fuera del hogar - Telemundo Puerto Rico</a></td>
-            <td>Trujillo Alto</td>
-            <td>2026-05-06 13:26</td>
-        </tr>
-        <tr class="article-row" data-municipios="Loíza">
-            <td><span class="muni-tag">Loíza</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQaHhWZTVoeDdTWlJOZDc5dDl2YnhBbGNKczhITW1oT0hKZ1FOeHRRajR6Z1VGUFVRazhIM1k5YVc4UUZHd2FwVmM1Q1hUVWw0YVBEcFVHU1BvMW1RUmR3QmpJUXd3R0hwWFVKYTRPelZjRlpYMnFqUmFDbW5GWjF3RGpKeGo?oc=5" target="_blank">Municipio de Loíza - Facebook</a></td>
-            <td>FB - Loíza</td>
-            <td>2026-05-05 21:08</td>
-        </tr>
-        <tr class="article-row" data-municipios="Luquillo">
-            <td><span class="muni-tag">Luquillo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNUUtOVlNDMjJWdFpaN1lzZEhIMVF2MFhTZnlZaTNjbUlrYVJ5azBvclJZUkl3QkRaMWRHNzNLcnNsV0tVY1I4WUFGSlhaaE5oLUY2SzdIeTBOcElTVHZ5NEJIaWZfU3ZpNGxTYlROYzVZTjlGQXc4aEpVVmlQSnk2THhZakQ?oc=5" target="_blank">Municipio de Luquillo added a new... - Municipio de Luquillo - Facebook</a></td>
-            <td>FB - Luquillo</td>
-            <td>2026-05-05 19:02</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQcjBVdXZCYUlHNjVqMHhsdVM1dEhveXZqV2VYeThUUWJmWEVhTmR1M2xlc2J0RGQtQ0lfRF9XakpONDVnWHRSQ1dPLVZ0Vnp6S2Y1bk41TVc5YU0xcU5sbkd4UEd5dzlFOXlzanBvOEl2eUFTMHF6dUdFSEFRbWcwZk9JWEJlRU81RlhjdFpB?oc=5" target="_blank">Municipio Autónomo de Naguabo - Facebook</a></td>
-            <td>FB - Naguabo</td>
-            <td>2026-05-05 18:04</td>
-        </tr>
-        <tr class="article-row" data-municipios="Luquillo">
-            <td><span class="muni-tag">Luquillo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE5fX1lBUDdGVXVrSUlucDVpMFo2bjJXU1JNcllBMWNkOFZScWkxUElBYXF3VE01UlMwaVB1eGd5dmJiZzdRX2xxU0RkTDdOYkVVQWlnVW5HMkd1Nk9lMnZkSGw5NXEyM0xfZzRnZXZ3a1BrdnRaRlZ3Qg?oc=5" target="_blank">Municipio de Luquillo - Facebook</a></td>
-            <td>FB - Luquillo</td>
-            <td>2026-05-05 13:51</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOYmtrVWZVUUZ0cTU4SHVNWjJkR2tjZ3E1dzh0RjhFeTB4eXNqVlF6akZXc0RHbXV0VUxGNlZFSmlJbW5TRFFxSkxFSTJYR05jNDdnUFFBYzdWUGJYeDF1eXJSeWU3NkpDTGladE82cUhodHBDU3pmdk9PbnhodzFjN3BmNW5tOWE4RzVRSjR2MmVBVi1xLXlSYkhVYXdCQQ?oc=5" target="_blank">[Oportunidad de empleo] | La Administración Municipal de Cataño anuncia la siguiente plaza: Plomero. Personas interesadas deben enviar su resumé a: resume@catano.pr.gov ✳️Patrono de igualdad de oportunidad - Facebook</a></td>
-            <td>FB - Cataño</td>
-            <td>2026-05-05 11:51</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxOSDBNM3VjdFVKT01vQTdJRmhOT1pwcmZRRVVFVGQ5TG80TXRtVUlVYm16UFFyS182STQ3S2hWTUhvd2ZSS253dE9OWkFjSzUzZ0tOMmNEaEpwT0Eyc051M1hTYm12cjRhSlk2b0xiRTNZWjNiT1FFNFJBMl82NEQ0VnJ4cmlVQ2N2YlY3QXpwZTY2U2FJSEJPLXBBeHBhNnd6OWdpS3JjV3pfMGpDNHpuM0d4U1phVi1VUXFEMFU1dUpDNHZEN0pNdlR2eEM?oc=5" target="_blank">Joven de 19 años queda grave tras salir expulsado de motora en Cataño - Primera Hora</a></td>
-            <td>Cataño</td>
-            <td>2026-05-05 11:16</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxORzcwN2hPVVd2dVhHckdETzVJalhqV2JIek1fUzlfOGRDTE5FamttcEFZeFhaQzZhWFRRYWY1dHhReEctN25XZTVEd28za2d4VVhsMTJnU2dxUXlablRYTUJua2FnVnZSWWVyaVpUQTI4RzRaRW5KeFJ0TUM5LVdGNXpHM0xTTHNpelN6eVRtcVN0azNwSGVPMW1lcDBRdHp2XzFmRHBsdEhJLS1uU2xUN1FVcDF6M185Tlc1N2V5SDFOX2FqWXFvd3FKc25FT1nSAdcBQVVfeXFMTzBxRGdYSkJLa2VFYzQtSmxkQWZaY0Y4bWhjUDJnOGkxNUFsZ2xyUzEyNUxCQ2h6LXFoZ1JkdDJ0LXpuSVNFbGxwUWhoa2UxY2dnaks4S3p6MUFIdHNNVTFwbnhyRnQ3QTQ4T25tODJzdGdqWnVpMGZQcTZGdUZrRFZuRWZPX2tPVWxfRG40QlhZdThNZ04teTVGNkNEWjlOZDhiQllJT0xoSVgzTTBvMzVqY3NYMkVqRXRtMFpFSWZ1NFRBUEZtZ0hLSXI0ZFk0VmpjdjMzclE?oc=5" target="_blank">Motociclista sufre heridas graves tras ser impactado por conductor en Cataño - Telemundo Puerto Rico</a></td>
-            <td>Cataño</td>
-            <td>2026-05-05 10:40</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxPWTBYa3hOdHViVWI3NERjOHpoM0pQb2JSQ3ZCemdaTG9CYVdzNTE0ZnlsR2tWZmNRNEoybXNjUFQ4UmhWWGc3bkg1UUI3VWVRTE95WDNURzRqblVVWW8yTDducGhVb1VNREZ2U2UzdTRNV2RaTjh6aV9uSFlWOEVfX2JWYjEyTnh0SDQwaGlSQWFVX1BPcFI0UEtET1pnLWFQeFY4WG5hZ1Z6N2tuWEw3d25FSW5FZElqZWR1ZGRvamlnWEF0X3JjelE0RW5PYkw5cGRhRmExRmlUUU9HYzQydUlVVXRETTA?oc=5" target="_blank">Motorista con heridas graves tras accidente contra vehículo en Cataño - wapa.tv</a></td>
-            <td>Cataño</td>
-            <td>2026-05-05 10:24</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQRzNVUkN6UXZnMEVtelBzVjlFay0zOWdfUEozOTNrQ0U0UE01R1JtTUVLdVVZS1QxN1F2cjNzT0ZqSkFRSWhzbFMzZERIYkZJOVVhM1pZX2s3NHFVYXZiWVRVeFpmWkc0R2M1RVNFTGxOcTdwSURtTklZdW5GWC13bGltYXN6QXZoVHRQVWNNNVN1ZVdQSEtvNkdBTnJ1NWx0MTZKLVlFYU9rNFps?oc=5" target="_blank">Humacao será sede de la coronación del primer Campeón Máximo de AWA - Metro Puerto Rico</a></td>
-            <td>Humacao</td>
-            <td>2026-05-05 07:07</td>
-        </tr>
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQSUduTU0xS2FXWWtxNnlEWmFfNFhSNlRzb0tyN1JwUkR5T3VVdS1qMU8tclpQd2ZvbElUVXg2SjAwOHhNbGFHTEVSdWVBQWZnVkthVUhmT09YNXNLWE9wRWI1MFhJYTZyVENiTlpxZTV2Z3dySlhYRTVacDA3R3pLeFAtY3pQQ3JjTUdodldtbkVRUGhMTGstMm1IRlhSQQ?oc=5" target="_blank">⚠️LUMA Energy Informa | Mejoras planificadas en Fajardo LUMA informa trabajos de mejoras planificadas para #mañana martes, 5 de mayo, en el Municipio de Fajardo. 📍 Zona afectada: Parcelas Luis M. Cintrón, calles 1, 2, 4, 5, 7 y 8 ⏰ Horario estimado: 6: - Facebook</a></td>
-            <td>FB - Fajardo</td>
-            <td>2026-05-05 01:36</td>
-        </tr>
-        <tr class="article-row" data-municipios="Vieques, Culebra">
-            <td><span class="muni-tag">Vieques, Culebra</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxNTHMwaVFWRUxRNjh0M2k1M3JwQ1FTVXRQaVFIYmVtTHZFRUtmandocFh2ZjY0VFkycl9vVlpJdFFwem92MzJPSnlib1NFVDN0M1RaUDFFRnV1QXdxcnl4STBUdmNsTF9BV2tXeXNXMEx6NjkyaTVpcnR6QUpDaGR0RmNXLU5xN1FLVnRYLWI4cjA1S2ZuakFxWmRrU3ZVMVZjNFNV?oc=5" target="_blank">ATI aplaza aumento en tarifas de lanchas a Vieques y Culebra - Metro Puerto Rico</a></td>
-            <td>Vieques</td>
-            <td>2026-05-05 00:12</td>
-        </tr>
-        <tr class="article-row" data-municipios="Luquillo">
-            <td><span class="muni-tag">Luquillo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxNU1NFX1NvZGV5SEJBcmh4RnRnYVc2Qnh1M2ZGeWhmVGNxNVZ3ZTUtbFZvUk1TNF9oRHhKZU1FaHVIdTlWVUJzeEJ5ZmhTTlg2dFFEVGxKRFUteG4wRTFKTkh6TTgzd05zZVNSelptNXJpUzl2ZVJfWXFnZ1hza2dJZnNZQ1hlc1RpZTVEbXk2NXhIODY0dEhWSmViaV9PZjYxSmdBWVM1MVpzOW5xWmptN1phZUJsLXhKeHhfdVl2Z05nUTZCOGRiVzBfLWM5Mnd3SFpxaU5uZHk2bkFBYWxjaWZfdzdmX1h6aGpz?oc=5" target="_blank">INVITACIÓN OFICIAL – FOOD DRIVE 2026 La Administración Municipal Autónoma de Luquillo y su alcalde, Jesús “Jerry” Márquez Rodríguez, invitan a todos los empleados municipales, la ciudadanía en general y a las iglesias de nuestra comunidad a unirs - Facebook</a></td>
-            <td>FB - Luquillo</td>
-            <td>2026-05-04 19:13</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPTlg4aXF3aW5lQ2ZmZVIyUHJKLUZ0eUxIMEpGUUhTTkQtTEUxNkM5NGVaTmlwNm5ZYzd4d2o2WEJGdm1QYThfSjBhSkFYczdJM05MT05FVVJIRWJhZVhtNjFzUFhGZFVoSERzUi1MVFBlR3Zpa05HT081M0tnLVdGM21IQzRCZHhXQm5fZG4zS2JCYVFUa3hGUWVGWkRTLVZ6N0R0NDY2bTRFM05SUktDRVJmTTFrYlZUa1g3YnZab0dGeHR2cmlWSU5WQ2NMdU4zNG1BNXRPejkya1k?oc=5" target="_blank">El Municipio de San Juan @sjciudadcapital y la Federación de Baloncesto en Silla de Ruedas de Puerto Rico (FEBASIRU) @febasiru tienen el honor de invitarles a nuestra Conferencia de Prensa, donde estaremos ofreciendo todos los detalles oficiales de la - Facebook</a></td>
-            <td>FB - San Juan</td>
-            <td>2026-05-04 17:50</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxQTTVaU0p2UVFNa3d6eGJpZG44alNjSWl4WVlBZTd5STFGNkVub08zVm5EOUZmc1FZR3JBOVZLek44dEpjZmZwRXJIZnFRQ1dpeVhMa2dxd3U1bFMzMFh5ZlNkaEJzSFMxWEtxVGkydkEzMzhtRFYxelV4aldKTlYtY0FSLVFrYm5qX0VlT1pVVWZ0TTlFUU1HbHVla0JORXA2ejFrOEY3VUx2bHRWSW5lOEs2TmJ5Qm1yRlk0MndSRWpzVmo5bm5DUXBOb25WS19GNzRSMlp6ZGxYUHdY?oc=5" target="_blank">El Municipio de San Juan @sjciudadcapital y la Federación de Baloncesto en Silla de Ruedas de Puerto Rico (FEBASIRU) @febasiru tienen el honor de invitarles a nuestra Conferencia de Prensa, donde estaremos ofreciendo todos los detalles oficiales de la - Facebook</a></td>
-            <td>FB - San Juan</td>
-            <td>2026-05-04 17:50</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPOVNsYmQyeXJ6bkRIRDRrek9KczdBeEZPQjhka0V5cmVfQ3pTSEpETTBkdHF6VFQ2WFF5bHU0MVVpbG5rUUhEYlBtVTR6NFA4TGlaR1FwZTQ0RFR5N2N4VFczdDB5NnA1Y0VULS1zR1hGTUlEc1lIaFVWY3prNHl6LTJnREZvSURIU1ZLQjBR?oc=5" target="_blank">Municipio Autónomo de Naguabo - Facebook</a></td>
-            <td>FB - Naguabo</td>
-            <td>2026-05-04 16:46</td>
-        </tr>
-        <tr class="article-row" data-municipios="Trujillo Alto">
-            <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRWVzOHNic1I3dy1CTjl3a3Y2SmFYQkxIVE9qeVRuaGdLUzQ1d0x6WHdGS0hLSXB3UjMwNnV1Ymx3U0RTb3AtUWZaOVdhNW9aRjR3dlpUZkltMGdqV3NaZ0xscTJlOUtMSnVmYTVBZ0RDZ19DZ2lXX0hTLVE0aEg5OXRYc2FWNUxPeGdJ?oc=5" target="_blank">Municipio De Trujillo Alto - Facebook</a></td>
-            <td>FB - Trujillo Alto</td>
-            <td>2026-05-04 16:21</td>
-        </tr>
-        <tr class="article-row" data-municipios="Loíza">
-            <td><span class="muni-tag">Loíza</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQUVQ4ZHpqRUxjM2txRlhjaGtnd3ZiYlRjYUJzcFF2VVplNEhqZ2w5am5nb1pTS1NCa3V6dmJjc19saVBWVkZkWmRXQzlMWmVaRHRsR0UyWmZ5WmZLNnlob3ZXcXQ5RDNnNFZjWk9UenBRcFRSRzFMRHVWS0ZJRFJqeTFGb1U?oc=5" target="_blank">Municipio de Loíza - Facebook</a></td>
-            <td>FB - Loíza</td>
-            <td>2026-05-04 16:00</td>
-        </tr>
-        <tr class="article-row" data-municipios="Luquillo">
-            <td><span class="muni-tag">Luquillo</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNZjN5MXgzaUJOTmpzT09lTUQ0WnpVdVhoU1M3UkN0bHpCLWV5eGxXajFJcGprZlNfX2l6Skg1WE5uS1VDS1hPaXdac2ZNeFU3V2lXb1pXSmxCMW9RajdBUzh6NVBhWDF4OEk0d2VCS2tjRkotX3U0R1JCWGVJRjZrRkw3cnVKVE1CQXUzSk53?oc=5" target="_blank">Municipio de Luquillo - Facebook</a></td>
-            <td>FB - Luquillo</td>
-            <td>2026-05-04 15:01</td>
-        </tr>
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxPZWpURXJaRWtVLU5IR0xkOVpTdHNzUHBDQ25Ub19qSUVoRlVqOE9EZF8xNE1ySEEtV3hlZVZyblUzZjFNUW1uTTcycXV5c3ExTXp3c1BaQ2ZDWkprZV9ua3pmRmYtVHl4Mmx3UmVvLWJDeW14ZzFZbjR5SEphSkU1UXc3d1JKRWhiZXdXbTh2WjZLbmlaVENZ?oc=5" target="_blank">Municipio Autónomo de Fajardo. . Municipio de Fajardo Informa Lunes 4 de Mayo 2026 - Facebook</a></td>
-            <td>FB - Fajardo</td>
-            <td>2026-05-04 13:01</td>
-        </tr>
-        <tr class="article-row" data-municipios="Vieques">
-            <td><span class="muni-tag">Vieques</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxQeGFkS1djUW5wTjBHNFI0RFlWc3VKUmpjU3RlNnkwSDFJOU5OVW5QN2lPUXBiNU9leURuaW8taFJQRXM3RzFNY3lma1R1TzJmYWV3S0ZoWUdMVGpQVXpXSllfMzdZbVJRWEVnMXBfd0prRkdKTWpkSkIwdlJZR0JOVm1qNXhSVUZEbEVueHdsVEVsUjhweGJYNzJyZHlXUDFpWUFjQ1VncV9TazFERVNLMENjMjhZM2RWOHRmbVViTG50UnBObTFvT19XeHc4R3EwOFlCc0ZUYW01TWxTZlNB?oc=5" target="_blank">👨‍🎓 👩‍🎓 El Municipio de Vieques felicita con orgullo a todos los estudiantes universitarios en su día, reconociendo su esfuerzo, dedicación y compromiso con la educación y el futuro de nuestra isla. Hoy celebramos su perseverancia, sus sueños y el camino q - Facebook</a></td>
-            <td>FB - Vieques</td>
-            <td>2026-05-04 10:56</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxNT1g3T1M2cmotTjZ3UnNueHphU1FJY2xlUWtHUk1HakhydlBWdkprbWFjWVNjN2RaQ25DZmtPV1dPQW9QUkljVU9ILVN0SFkxVVFZYjhLVVFLdklMSmc1U1FtTmdKTU5ud2pRdklnZUNNbEZTQ3NlUGJlSXduSGxpOWh4dkFyNUtCOUdJZ1pKempDd2FYbjF2NC1pbERNb3FqODN6TzBSb1lxZzY4aE40ZlBtRjZJUVJ2QmlUek1ZOUFmdUx0TXlYbNIB0AFBVV95cUxORnBBS19xOUQ1OThsemtFc3h0T1E3eWtVMzVZVkVSaFFCOERNMU5lc1JURDhxTHZSNk9jQVNxOXpIWVViNXd5T3BCTzd5b0Ffd3YweUdHb2tkQ2VpZXRXRWMzYkxIR1dUeWFfN1Y2VmpWQXJtd2dGamRHUlY5b201VU85QmxkWXY5bVBaakJRX3FWek52emJsSlZUaFhuUXFWdFctZ2dyYk1lT0NyeWhHLWxNVjRjUFduejhEV2M0LXNadmZkOEt5SFk4eDdrTmxp?oc=5" target="_blank">Arrestan a conductor que habría huido tras arrollar a jinete en Humacao - Telemundo Puerto Rico</a></td>
-            <td>Humacao</td>
-            <td>2026-05-04 01:26</td>
-        </tr>
-        <tr class="article-row" data-municipios="Vieques">
-            <td><span class="muni-tag">Vieques</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE16VGJEYlZtZE9Ha295OWtwNVI4SFVnUUxnREluWVpzMTVqc2pGcHp6UDVVN0V0MTlhRTNoZlNVODJvRlBNaFRrVjZUeFg3NC1sQjFiV0d4RUMwb3MxcU9NUUJ4Y2sxelotbS1BcXRHS0IwMGs?oc=5" target="_blank">Municipio de Vieques - Facebook</a></td>
-            <td>FB - Vieques</td>
-            <td>2026-05-03 22:06</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxPTlB4SHBfSmNIdnhQSWNWV2dyVHIweW1sbHVsMVV0TEd6ajhBanN0b0xQcFItX0hpNERpQ19HNzQyX0pORE54ejJvaWI5VnVfczRmanF6WlJyR05BZ3NfSWVKRUk0MTY4Y1pJbHJ2a0VKSDJIblNZNmpWWWJPWjJoUFRtOXJTZzhQLVJtSngxejI1RUdadmtyc2N5dHVTNWt4SVJLRC1MQmhmZ3l5UE1zOUFTR09fZ05fdC1OVmptaXZHR0VXckVmeDVaMzBKWGdlVTNHRDJqOFLSAeABQVVfeXFMUFB5bTRuaEZsQzJsMGEtS3pjZ2VycUJsbUFwNEZ2dG5uSzBUbFlVTzhkTTNneTA0SzlHSXNGdDVoUHF5YXF6YW5Xdm1qektWUUVudnRoYVVXX1R4cEwyXzd0X3lyN1JpZXZ3dEtzZGliS2VXeUV0Z2ZWNVdudmZ4MFZvclVyRnpSUEJGUElFVGloYmU1ODRBMExlNHlwWm1IbTU5S2J0RHU1a1Zyd09BTDJFa0dILWpubkNmNkRXd3IwbDQ1N3hJWjk0R3JXRGxmcXdROEg5R3lOak1tMzYwN1E?oc=5" target="_blank">Menor está grave tras impacto de proyectil que expulsó un tractor en Naguabo - Telemundo Puerto Rico</a></td>
-            <td>Naguabo</td>
-            <td>2026-05-03 21:25</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQd3hQS1F1NzZZbFVybDU5THphcEJNY2lUREE5RWNtdThXVUpPUGhQQjZLM3JoOHVBNEF2al9SSlhvV0NfM2pMbzhXNGtYWWZfWUNtb3pUdlgxQUpjMGZsQXZJUzUyR0YybEY0WDBmQzExQ2J5Q3ZBS3BCOGlZM0pOM1JLTV9hTGxiR0ZWaU1hRjZBUEp1X0RuS3R4cHgxZWw1YU4tLU5qZWpUbVUzZy1sWFNR?oc=5" target="_blank">Menor en condición crítica tras ser impactado por una piedra en Naguabo - Metro Puerto Rico</a></td>
-            <td>Naguabo</td>
-            <td>2026-05-03 18:51</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQT0M0Wl9ydnRhRUFMZnRpRnB6Qm9OSC1MQkZpRzBkM1NvOEQtMlFTU1lHc1lFNmt2eWNQUXZWd195Uk9mODlCTjRwbk1PcVhfd3BsYWtndzRSTTQ5UHhtTG1YZFUxZDhBX2IzZ3VDYUw4ZUppRFNGS0dpa3dBM014ZzNoVzFvY20zenVyRE5YN3VBZVVieURfTVNlVGQ1YzQ1ckcyaDNfTTFpMVV0dEdSRGUyODltRWJFMkRpV2lXNElNZ1Y4S2p5T0Q5Yktpb0JkczJQd3RtQWU?oc=5" target="_blank">Adolescente resulta gravemente herido tras ser impactado por piedra en Naguabo - Primera Hora</a></td>
-            <td>Naguabo</td>
-            <td>2026-05-03 18:38</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxPOFNDbHF0aXh5SjJZYkw2eGh4SElhYUk0NkNIV09YQTZjQ1ZaR2xsTDQ1dzJoWnZBMTVXaGdqZEQ5ZEdreWZZY0dRN1NUWTVmekhxcnliQmJjTkJiallNaEJMV0ZJX2pEeU9KMlpZSTZWY2JkSXk1UmZmN0J5VmFxdHprRXctQlNRcEVOZ2MzT2syeGJGSElLR3dBNElnR25FMDNDZUNmNXJ5RTlWRVJuNFdSbGVtR2xudVZ0VG14aFNSRkdybHl1bEJUSVBiaWvSAdcBQVVfeXFMTzhRblE4T0RObDgwVUtJcG90c2l0dkRtZ1lUaGtPbEpqNWI2Q1c5ZF8tc1ZSSDNOYXF4ak9rc2kxM1EwUmNnamRoUE85Y1daMDhuMDBpZXJKdUpTOUJGY3FEQmc0dFMySDVFcDM3SzNScFRtVnFiXzNwajhJRlZ6a25ZWnliV1NINEVUb1pHMDl5LTFEQkpGUzJ6MXdRaHpRUXpwSlhxU1czXzhiMXJBTGw1YndYVVZ1Ukd6dWVfVDN1c3ZMc21MUk1MV1dES1FsY2czaEVOOEU?oc=5" target="_blank">Menor sufre trauma en la cabeza tras ser impactado por una piedra en Naguabo - Telemundo Puerto Rico</a></td>
-            <td>Naguabo</td>
-            <td>2026-05-03 18:16</td>
-        </tr>
-        <tr class="article-row" data-municipios="Vieques">
-            <td><span class="muni-tag">Vieques</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxNdEtVdmFOTGJSMkVEOHI0NVVVTmpiX1ZJOGRXM0k4NUFvVWR1bTlqb0lUbGtnSWs1YlB3OW93RUVKaHhaVjBfdk1WV1ZoSVBBTFY0WnZmUVd6YWdxR2ltS1hwdVVTVmQtR0FYUmhEaVJXRDBVTkd5cW9rUDk5bG1iWXg0ZmZIdDd5bVJ1anJHVUxuQXRrOTZmbDdkMXlkcENvUzNKSENMa0ZJaThjeHZSNjRCWjZsZ1NLUkFZSXpzNWJpRTBIWkJ6OHRGRExvQkkzaE1IMktXaExTQ0tFbm5wYUlKQjZhVVMteWRaV0RB?oc=5" target="_blank">🚒La Administración Municipal de Vieques, junto a su alcalde, Hon. José A. Junito Corcino Acevedo, se une a la conmemoración de la Semana del Bombero Puertorriqueño, celebrada del 3 al 9 de mayo de 2026. Durante esta semana, rendimos un merecido - Facebook</a></td>
-            <td>FB - Vieques</td>
-            <td>2026-05-03 17:18</td>
-        </tr>
-        <tr class="article-row" data-municipios="Canóvanas">
-            <td><span class="muni-tag">Canóvanas</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxOTGFtSl90czQzT2Q0Z3lrWUoxaXJHT2xlT3VtZzdBUEJTYW80QVNMTFlaRThDaG1KTWxDZS1PdkI1VlBMOVh3ZVFHSXBYdjhoVWxCd245M2NZTTl3ZVkwUngyRUdaYWk4QUtZODBIeXVRSVRRdnR5VVh0Ykx5MG9OX0pYRkQ2ekp1ZncwbWZTMUMtdjRLWTd0cVlvMmw5ay1wSkNHbWRfZmZQeVlnQVVoRDJETUJjSVJNbXB6U3BLZERYZzlwdTFRUTJrTm9rU0RrSVdrbjk4UnpNZmdMcnlUYXFkdDZVV2xiRkNlN1ZvRWxpUQ?oc=5" target="_blank">🚌 ¡Todo Canóvanas está conectado! Nuestro municipio cuenta con un sistema de transporte público 100% gratuito — porque moverse no debe costar nada. 🔵 El Poncito — Tu ruta urbana con 24 paradas estratégicas y más de 700 espacios de estacionamie - Facebook</a></td>
-            <td>FB - Canóvanas</td>
-            <td>2026-05-03 14:42</td>
-        </tr>
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxNQlpIaTNVY2RwNXFCM3Y2YnpEcVlfQ3g3ekczSUwxdHR5NS0tMmVkSUxYbjFoY1ZoNHFjU3NlY0s2RHJURFdGeHZxaUZDMm9pRmNqT0d1WjR0YXBWM21YUHVIb2pQNGRxcmNuWEJGUUIwREt2N3NvcnlJNzNKLU5yWW5pa3pUY3dYM013czBlQ1hoSEd4TEY4VjZWbVBMLUxvSFhEeWJENNIBrwFBVV95cUxPOVpHYTVzZ2NsUjQwNkZkS3dKc1lmWTU2b2d6akZOSDNFaU1JZFFwRzhEMktPS0xTX3NsLU9UOFNuS21EenhZSTB2aFpURW12NklySURhaXJENlRrOEx5RlBNNTlWVzl2SVNVQ2hnZlBMVW1YSDVNRlEyUkMyek1PZ3lRRmJhOWc0Q0k2SHh1Nm53ZFFXQjl5b0pUZWkzSTU5NzRGZ043Z19uYmdHYzBR?oc=5" target="_blank">Asesinan a hombre en una residencia en Fajardo - Telemundo Puerto Rico</a></td>
-            <td>Fajardo</td>
-            <td>2026-05-03 12:50</td>
-        </tr>
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNVFdVWFRCZGxKQ1V6My1ManV4dzlCR3FIUlZNc214VlZVX3NEUmRZdGFDaVdQLWVlMjk5a0w2NWF0REo5SXdQdkdEU2ZpMnpuSjZsQUw2UHNmemEzSldkOC03TGJvVE5NY28wbDNMUlVxVFJKX1p2empkU05jZ0FKY3BIcU9VN2pkRk1iNUVZWDVxcDllanNyVHBxandaeHNLTFlRaWVsMERHa3Nna2EwRmJTRmPSAbwBQVVfeXFMTkhXaXhOZXZvc09INDdEYno4VUZoMXl3Wno2TzE2N2RfM3JVc3JvTTNxWWJNNjUwNFFPZ0tHWGwxWEJfaGk2NTRMb2tWUERzTlFSeENhb2lvd2lDSnNsWUNVa09LMHRSZ2dlMHdJcVFwNGdMdXhJbmhuNVZfdmYySnpsNU81SE90RF9lY2FYZHlFUjNHSVg0SWI2N0p0LWpPQ2V2Tk1LYm52Y0ZUa2tYZjlHZkRqeWhiM0ZUa0w?oc=5" target="_blank">Adolescente de 16 años resulta herido de bala en Fajardo - Telemundo Puerto Rico</a></td>
-            <td>Fajardo</td>
-            <td>2026-05-03 12:11</td>
-        </tr>
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxPb1RyY29GN3RPV19IRHBXN0hoSkl1UmpxUlpNMGk4ZDE1UlVXTlVENllLNWd3Ymprei1rNUgxY0lqTXBwdDBNbks5RGM1MVlKZDJ2OW9XTDhCOFh6elF1bkpPNS1iRm9aLTBPWHZHcVE2cGYxZHFtb3VjaUFuX0pjNTliaGxsVEZFRldzZGxKbVNrM0xK?oc=5" target="_blank">Identifican a hombre asesinado a tiros en Fajardo - Metro Puerto Rico</a></td>
-            <td>Fajardo</td>
-            <td>2026-05-03 11:56</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNSzc0VThFUDhmZXI4ZkR6RmNnWnB2amtHRzZEZE5UZmV0cGl1Z0Q3TDBEZHB1ZHFwSFp4STA5WjB5a1ZIQ2ZoZVV0emJ1a2xrRkNrTkZ4U2YyaUNfdlZ6d1pjUmhIQ1JQN24zOWU3WTdBbU41TjlNZlZaUXRPRWlUVXNTbHItSldVSzRhVUF6cUJYOVd4OUJWZjFDYmNlUQ?oc=5" target="_blank">Municipio Autónomo de Cataño - Facebook</a></td>
-            <td>FB - Cataño</td>
-            <td>2026-05-02 22:30</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPZzMwdlg0bmpFdGlKS2RTM0tzQTVQS0d2WDUwVEljRmdIMXNaNXRZQ0FlNF9rN1duZmlqSFdid2ZQMGtzMWYyQm1HbVliMDI4Q0ZGWExFUU5lZkxwWTRNTmNJOFNtdkxMeHdEUmNuak16bnJJS0pXLWJBOEZ6aFZjQXhlYkhiRU1KYXdUbm11dXVjLTB6OUlPcDRyTGtxUQ?oc=5" target="_blank">Municipio Autónomo de Cataño - Facebook</a></td>
-            <td>FB - Cataño</td>
-            <td>2026-05-02 14:19</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQSTJFSkVURFZNY0VYUHBXZnJJanRLNmJfbEhiVmtyMzZSa203QUlzRFdIVFZJVHJhZThscHVQQWp4MFVCeVU0NXhBQzExNHotbDBvUGFKM2NMVWFQQUtBYl9aZ082SlBHYlJqdVdVNmUwc253OWJhb1NKbW1jczdqUi1oQnFaWmtSa3NxRVNFb3Q2aDFnZ19pTGFjX3pIdw?oc=5" target="_blank">Municipio Autónomo de Cataño - Facebook</a></td>
-            <td>FB - Cataño</td>
-            <td>2026-05-02 14:19</td>
-        </tr>
-        <tr class="article-row" data-municipios="Caguas">
-            <td><span class="muni-tag">Caguas</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxQZTBwMnQ1aEF2UkNxUUtQUkVGaG82cjdjekgwYXM2TUV1R2hmWmpoc3JNdnNtcmo1SmNUME5PYjJRT3RVclVYcWxNLXZjd3ZMT2R2a2FkTGFzX1AwRlRqcXJES3c3Rjh1LThDeG5adDh1Mm5vWGVJdUR4V2JWaDlVRFVBcUdXdlZZM1VWcENuTWhVX2FpeldQbUp6bzhpQ2dsb1JyVGJHdlViZ0ZHZ3l6UDZ2SHpnMjV0SmJDeHBaMWVnaUxfUTBsQVpIU2llYWowREhvWHlDMG02bmEzd1J1ZmtaR243T2hhd0JxOA?oc=5" target="_blank">Buenos días, Caguas 🌞 Hoy sábado, 2 de mayo, nuestra ciudad apoya a los jóvenes que forman parte de Lemonade Day Puerto Rico 🍋, una experiencia que promueve el emprendimiento y el desarrollo de ideas de negocio desde temprana edad. 📍 En la im - Facebook</a></td>
-            <td>FB - Caguas</td>
-            <td>2026-05-02 12:00</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPYjlTUlQyU1BFUGdZU2J5WW9kQXdfaVdQaHlVODZVTFFwaFQ4NE1ZNXRyR1N3S0NBcDE3a1paTmpKUUVIMHI4RVZWQlJWaFBHNDlPcFhINHp4ei1PZG5uSEZUZnpUTGRjam44QnVIU05LQmVoelNHaEt4VVhrQ1kzNF9RaW5ET01mRERkb1JR?oc=5" target="_blank">Municipio Autónomo de Naguabo - Facebook</a></td>
-            <td>FB - Naguabo</td>
-            <td>2026-05-02 11:43</td>
-        </tr>
-        <tr class="article-row" data-municipios="Trujillo Alto">
-            <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPRVlTY1NBQ21iaExVdHB4VGY0SDBwdHUyX1NxcmFLVEx6cmtmcU1sb1BwdXNSeEp0eWo1WUpGM1VXTU9FX28tZU1KSzdiNEc3aVcySHludDMzeWtSaU40Yy0tbFJ6Y2poaHBtbTR4X2luallwdnNVY3VLRk51N01GZHhFNHE1d1VVYWgxY1c3QzdhR3RpOTB1VVFqOEdBZw?oc=5" target="_blank">Municipio De Trujillo Alto - Facebook</a></td>
-            <td>FB - Trujillo Alto</td>
-            <td>2026-05-02 02:49</td>
-        </tr>
-        <tr class="article-row" data-municipios="Río Grande">
-            <td><span class="muni-tag">Río Grande</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMigwJBVV95cUxPUGxKUUhhWlBMbmplUEpEV0R6aGtLWTRvX3RSekt2T3hDZEJ5V3VjOTlnSm1tclN3X0JNVlpNdHE1UG9fQ0JHSVBZTzg0X3VOTzM5QWhhcnBYc3RPY0R2ODllLVVuYmZWa0Q1YVV1VWVOYU1zMEVOVXJsUWRYdlpIWDh4cHE5cDRDc1dPbU5ENkVid0tCaGg0Y3BvRm5jcC1COUpXYmE3dG1OT3dmd0RGZ3pNU1FyempKSzNNRkg4RXpjc0JxLTBhV1F0WXMwdm0xbjg5TlFpT3ltSmd1VzNibmhjUmhUb0k2bVhSYk45NHBGRjNRR25sajhwRnFSMms5blpV?oc=5" target="_blank">‼️ ¡PROPIEDAD EXCLUSIVA – WALK-UP! ‼️ Cond. Costa Dorada – Río Grande, Puerto Rico 🇵🇷 ¡Disponible ahora! Exclusiva unidad tipo walk-up ubicada en una de las zonas más privilegiadas de Río Grande. Disfruta de una localización estratégica cerca - Facebook</a></td>
-            <td>FB - Río Grande</td>
-            <td>2026-05-02 01:37</td>
-        </tr>
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxOLWJNMEN2WnJCSkhGaVRkTWVOQlhpR0dMTmwtOWdIN2lKMFYxZEhXZHE0UmVKOWpXN18yOGNKTmxyY29CUnUyZ3dab25OeEtMSDR0ckxobnlwNnZHUGVwa25TVS1PcTFJZEttdmhxZ2xFS3JQRnlWWko4Q0Z6ZmxwSmRrYThVaUVfMFNGV0xDcFJHS1ZNM1p2NnROYThDUGtyNjJyT1JEektoY094MWpOZVI5dkYteWZVWEFOQ1Z2dFEtcC1tenFSeW9sZW5TbWZaYUViVmFMcHl2dUZJcmFXXzRGWlZycUVXVzM0cXljaw?oc=5" target="_blank">El Gobierno Municipal Autónomo de Fajardo y nuestro alcalde, Hon. José Aníbal “Joey” Meléndez, te invitan a ser parte de un momento histórico para nuestra ciudad: 📌 Colocación de la Primera Piedra del Centro Multidisciplinario de Veve Calzada 📅 Lunes, - Facebook</a></td>
-            <td>FB - Fajardo</td>
-            <td>2026-05-02 00:42</td>
-        </tr>
-        <tr class="article-row" data-municipios="Caguas">
-            <td><span class="muni-tag">Caguas</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZzZubXkxaXFUbmNvSHBEbU1BVXBRS1NTYkxsWVRiU1pnNTNnX01aNGpXWVo0dVZRNmZuOUZLSi0tVEgtbXhvZ2E2NlgyNHJRakpJVHozenYyMVJxMGVkOFFBeUpIQ1ZXTWJINkV1ZXlOT3dGV1ZmeWVlS28xSmF2Rm9neVhyM0lWYVpZT3lJdzRnYkxVeV9qNHNtXzFPSkEzQmVWZWtOTmV2VExhTEFwdEM5Q3NlMUJlN3VMamxjckdKd1hYWEdNcFcxQVdPTzRkcXdV?oc=5" target="_blank">Municipio de Caguas recurre al tribunal contra empresa por alegado impacto al suministro de agua - Metro Puerto Rico</a></td>
-            <td>Caguas</td>
-            <td>2026-05-02 00:25</td>
-        </tr>
-        <tr class="article-row" data-municipios="Loíza">
-            <td><span class="muni-tag">Loíza</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNWVhpZ3M1ZXFRTWE3amZnaEZUZU5PRHBpcXBxdm1QSFdrNTlVN05yVHhueVNmT21YUGJDV2FPU2s0ck1MVE1SR1M1MUwzU3BEcENTQ3dadE1xT0tSMmJ1Qmk2YUU5eHBqdklhV3RrQ2x2czBNTHF6YWVRd050ZzdLZ1VqS0M?oc=5" target="_blank">Municipio de Loíza - Facebook</a></td>
-            <td>FB - Loíza</td>
-            <td>2026-05-01 23:17</td>
-        </tr>
-        <tr class="article-row" data-municipios="Loíza">
-            <td><span class="muni-tag">Loíza</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxPck1YdWJNZmo2UE5wRjFiV1gwNWdURUNQN1I3ZnlHdVhxTVdLRjBrUHo1M2VqdF9QWjBzcXhITXZnTWZGWkJZMUxjR0ZQYWJobWluYVlaYThNUXlNRDRSbHJsNjU0STA2aEQzT0NtZjZfdjBLa0RVQWt6WmFuTEZva2xYbFFGWUhlOE9xQ0FKRlFMUzlnVW9nZHctSHgwSlFIV1hpcnI5bTdvaFpNWGswRm83TU5iYkJRbFUydVBmdnRvcWMzOXB4dzU4WXBzeFZWVDZUYnZBVHBUM2tuZUxTendXYzA?oc=5" target="_blank">📍 Llegamos a #Loíza con la iniciativa CRIM en tu Municipio Hoy acercamos nuestros servicios directamente a la gente desde la Biblioteca Municipal, brindando orientación y apoyo a nuestros contribuyentes. ✔️ Registro de propiedades ✔️ Solicitudes de ex - Facebook</a></td>
-            <td>FB - Loíza</td>
-            <td>2026-05-01 21:53</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxOeU00T242OVRLd3JHWW8tYV9kUzJaTV9CbUE4Yjg3bDZ3a0pRcHJZMGluRmNleExGRFlzVGcxTnpkaDFrYWY5UEZjMmhPTE9rWFJYbkQ5cjNZVnI1UFBPSVF2Q3Noc1RqYzh3RDI2SEwxV0FzbkI5cXR1ekJiUGl1RE1QbUdWVXo3SDhoRUlveTZNVkVsVndmVWl5SGh3WEdaM1p6c3Z1eC1QbTRoRThEaG45Y2N3bDlkS2xmNmhPRlkzSG1WVWJmQkM3TzhCSUh0cGxoT1hSaTZLODE2cklOTnh0MA?oc=5" target="_blank">Conductor arrolla a cinco personas en la PR-30, en Humacao: uno murió - wapa.tv</a></td>
-            <td>Humacao</td>
-            <td>2026-05-01 20:21</td>
-        </tr>
-        <tr class="article-row" data-municipios="Luquillo">
-            <td><span class="muni-tag">Luquillo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE5LbjhnSmFYNi1aSU5uWEtad29wRW4yc1g0WkFBSmhJenZZMXdGaFRUZXlZRE9xY2duZnduTXp1QllBQmdSOFN2Wm55OWI2aEdPbHF2YVdvMVF4TkpHLTZndjdJUEdwRXZJbEFJZkFmWEpnN2ZKWmx0OA?oc=5" target="_blank">Municipio de Luquillo - Facebook</a></td>
-            <td>FB - Luquillo</td>
-            <td>2026-05-01 18:30</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxQT1IxcGd1VDI2Y1VaNWRuem85X0dicEo3YWdZWGtmSEVDb2U0QURaTTRmakotVktzcUN1VDZHX2ttVXRUYW9uRDhtOEo5Z0VJTHdxbGswQ1RSWEVjakE3N0xuT3dWLVhFa2tQRVcyTlNZaHNKelV6dTVGTEo3QUpodjl2cUpyX3ZYcGRhMEloT09fckVUQ1QzTmlPX1J1dDA5ZUlHNkExSFB4RFlxUG9IaUVXZndVQzJ4aWx4UW9NNlBRSGRIVFBXVmo1VUVLel8y0gHYAUFVX3lxTE1HQVE3TmtLTk5HSWpHZmlZbFZjQUJraWhqVl9ZUHZJTXVWWTRUUzRqb0pCeU5HaU1tT1lES19OdE9ZQlBBa19GeUNNN1p3ZzhaSFR0TGJOYTJzUUJKWU45TS1WT1NkM0VZSXU5TkJfdTBvRmpQUWhuZEdDWlpNWmZRaGZaWm9WUmZ1ZUE0c3BtZmxLaGZsYTI3TzBRV3R5aV8zYXlnaGZtamtkSTVmdDZ0U1BkR3l6ci1iUll3RDAyNzNxTXU3RHlYQjJZRFlmbXZtWE4wN0poNQ?oc=5" target="_blank">Empleado de ornato arrollado mortalmente en Humacao era árbitro de baloncesto - Telemundo Puerto Rico</a></td>
-            <td>Humacao</td>
-            <td>2026-05-01 17:51</td>
-        </tr>
-        <tr class="article-row" data-municipios="Ceiba">
-            <td><span class="muni-tag">Ceiba</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxOOHRKSEJSTXVDSkdNblRlV0dqVVp4S2o4NWlMVVFuanBtNzNiUU9HNHdHZUM5eVAwUkx0TEoyallNbklkQ0tOdFcxc3Y0aF9YbFdrdEp2aW9HbEMzOGRvd0xCMWw5LWt3UFFOUUx6eTZqZnNicEZtMnVtR255SlZjVnFicERIQXJQME40MFJyX2ZkWkhLdnJvd3p1Q1JxUU1KTEhUcFFSNGllek5VMGtFdVhxMnlTS1E5eWE2cHJIanlhdHZSNXQxSHBEM1NubGdlMnZiTTBfbU1QMVQ3WUFUVDU5VEs?oc=5" target="_blank">En el Mes Nacional de la Radio Puertorriqueña, en el Municipio de Ceiba reconocemos y felicitamos a todos los locutores y profesionales de la radio que, con compromiso y pasión, nos mantienen informados cada día. La radio sigue siendo la voz que une a - Facebook</a></td>
-            <td>FB - Ceiba</td>
-            <td>2026-05-01 16:25</td>
-        </tr>
-        <tr class="article-row" data-municipios="Luquillo">
-            <td><span class="muni-tag">Luquillo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNdXhCZ3VIeDBlQUxZUkpSaDIxbk9oRmUyS3UxZG9Fel8zYTdtenVEeDFkMDF5THJSYlFhNkp4MmRTM2F2S0ZIZVdITFlwWDMzSHJkSEJFTGV3SGhXaXRIZTJxTkNmcl9xZHV6T29wNGluV1FidThieGllWUpKY0twUHdNUlFuaTltVTZJVHZjcjFJUlpUZnBxczU5a3ZfdDQzOUUzM2h5aXg1UWxqcktpQQ?oc=5" target="_blank">Arranca hoy el DRD International Beach Water Polo Classic en Luquillo - NotiCel</a></td>
-            <td>Luquillo</td>
-            <td>2026-05-01 15:58</td>
-        </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxNX2hBVngwZVdYRzFNbGIyMHFWSkdBLXFXZlZkQTFYVXEzcWdnaU9BMG90aWpaSXdtWGI4VWhSZUNHeU1KM0VLV1NGU2U3aklQYmtMMGFRaVp3TTgxUkhNakhWUE9TN1NZeXM2bE1YQmJvejJFSGU0ZmpuQTdRSGJacnYtclhobElyMFFsZENkdXVEN1RtVG93VkJyODNtZlA4Q3pYa28xNmI0TkdyNjdOYzFITVR1XzR1dU4wMWJRV0ZsMGdLcVVzWnk1cG55TWJTbmxfOQ?oc=5" target="_blank">Carolina llega con sus Gigantes listas pa’ dar batalla 💪🏽🔥 Con mentalidad competitiva están listas para los grandes retos. 🏀#SomosGigantes #SomosCarolina #LaLigaDelPueblo | Gigantes de Carolina LBPF - Facebook</a></td>
-            <td>FB - Carolina</td>
-            <td>2026-05-01 14:00</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPdE1xVk9DNVJHTjY3eVhfeVc4MTJpX2RsLVAzYVhHd3o1WFJrZ3lBbktSU2w4a3NzYlNVWTNUSUQ1WXdsQWlKUWhPTmRQVENvT3VmWDlrV3RpVTNFN180Qm9OMmtDMUxYeGRjelRUUHFCVHFwd2ZWREZQSFJNTl9NdDdzWTVVbUx1ODJXV0dR?oc=5" target="_blank">Municipio Autónomo de Naguabo - Facebook</a></td>
-            <td>FB - Naguabo</td>
-            <td>2026-04-30 22:16</td>
-        </tr>
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE1BRUlVbWJtZnV1RE9QTVNxZ0h3Q0d4WElhUnVBRWtwMkJHdDZFdlRLLU8yclJyUUNFbEJ5WVI0V3ByVi10b0QzQ2M3djNLRDBTSjAzV0RYdVczYXpLby11LVk4Y0tqaHJxWUt1bkYtOFZKMGhnZWtnYXZKd1Q?oc=5" target="_blank">Municipio Autónomo de Fajardo - Facebook</a></td>
-            <td>FB - Fajardo</td>
-            <td>2026-04-30 20:51</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxOaXd1c2xCZl9qWG85RTJGdFBIM253TzM1VmNyRlVNRmhNSEZRdURUY3MwN09fSF9TZVZQTDBrcDg4MmNTMjk4V3ZuRkVySGlOdzBTX01zRnZ1UDdtczJQWXUydzltS0NFMDJSaTNkRVBoT1ZIYWlWUlhzT2dfNjRObnlOMFN2VGdRTUZqN1h1OUdQSlR4Q3V1RkxGaEtvVDBhWkVGQy1teWJETXR0ejlNbmpLczhFdFBXR1RYemtucVZIXzFONU9PeG9ZTUFULTFfZ0NDMG81a0ZVUUJKckVXUG91MGRuRlpSMDA0bFJR?oc=5" target="_blank">De atleta becado a reconstruir su vida: programa municipal transforma vida de joven que vivió en la calle en San Juan - Metro Puerto Rico</a></td>
-            <td>San Juan</td>
-            <td>2026-04-30 20:09</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFByYU91UUROemd6VGM4OUlHcnU1TVlFdEc0QTdGcEk3MUJKQVN2emJDaG1vMThDcVQxVDE1cjQ0cXMyNHM3MzZKbGp3akhRUjBWMEQzUkFELVVRWlhMTjNGc2pGaTIxS2ZpS21BRVdwOHJmbmM?oc=5" target="_blank">Municipio Autónomo de Cataño - Facebook</a></td>
-            <td>FB - Cataño</td>
-            <td>2026-04-30 17:26</td>
-        </tr>
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxQcTVMRHpUNUtIRjZZa29icUZmT0tKY04tUEZRdkpXaFl3OF9NT1RjQXZVVU8xSnctcWVJT0d6X2NFUFZQbWc5QmlRVEJ5dWxKUDFqUHZ4UDVieGVIWEJua3R6aS1WdU9DUFBCUnlNcWhReXFWNVdzUktsRTFESmcxbGh2U1JvQ2JFQnJrcFlCTE81NDVGZVMwWlJOQ2hrQUV4RDBqZU9hUWNwTmxDcDNaZE5EekRWcnB3ck5STmlSd1A5dzFDRjNMNjF2QXJyZ0tOcmdkNEVEdk5ocElZUnppMHlNOFk2Y1NY?oc=5" target="_blank">👖👕✨El Municipio Autónomo de Fajardo, junto a la Oficina de la Primera Dama, llevó a cabo la iniciativa “Denim Day” este miércoles, 29 de abril de 2026, como muestra de solidaridad con las sobrevivientes de violencia sexual. Durante la jornada, empleados - Facebook</a></td>
-            <td>FB - Fajardo</td>
-            <td>2026-04-30 00:04</td>
-        </tr>
-        <tr class="article-row" data-municipios="Río Grande">
-            <td><span class="muni-tag">Río Grande</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQbjBvU1djNmpNTlZ1czZVaXFUX241OG12OUhyZkZ4VzR3c3g3QXhtdlNhc0tTcjJJTmpHZHE1RENTYVdKYnpvREdBNlpzekJTb28wUDU3T2M5YTN4MGZ4Wm1TQ1RsRkZzM1pQQW1Sbmpjd19SNmMwaUl6S0M1eW1CTEF6c3A?oc=5" target="_blank">Rio Grande, PR 🇵🇷🤙 - Facebook</a></td>
-            <td>FB - Río Grande</td>
-            <td>2026-04-29 23:11</td>
-        </tr>
-        <tr class="article-row" data-municipios="Vieques">
-            <td><span class="muni-tag">Vieques</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxORnlIZThfTlBvZ1BoTjc3b0RvTE1QUkE0NDhoaERKTWNET1MtOUVnTGVFLXMwelloR0tlNXY1b1FvSnhrUldsalNvTWx2VV9JdTUtZkpEV3JXd1NYMHpoMzR5d0twVVlmUG1DT1MySHlBQUxubnkxc1FROTN3M2MzUFJLYU9xc2F2OW96MHZNLWZtY0NHa2tQbUMzcHlVMWxuWk9WWjJQRzNUMW1WYUs5UmQ2UGIyWl9FLUZlU2x2N0d4bFU5WktZVTJWbnVibzdFWU96QnZMUkhiQWk0Q1RhT0pBc3hQX2l3TG9DUWtTTUoyTVRG?oc=5" target="_blank">🏆¡VIERNES DE DOMINÓ! La Administración Municipal de Vieques y su alcalde, José A. Junito Corcino Acevedo, junto a la Oficina de Asuntos Culturales y Turismo Vieques y su directora, Lourdes Roldán, te invitan a continuar nuestras noches de tradición de - Facebook</a></td>
-            <td>FB - Vieques</td>
-            <td>2026-04-29 15:42</td>
-        </tr>
-        <tr class="article-row" data-municipios="Trujillo Alto">
-            <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdHhwNEtzQWtsVld0VkdVOWxIYTdQNGNfbEZWbVJCbEtjSHVZMGxUNERWLTBXSy1iZV9lM3JrNXRmeDkyVzdaZHFwWkNMN2E4Vm5ZZFpveUtBZ0kxNWM5MjBVYzlfYzZrNmEwVnBDaTZmU0ZMSXRCd25ROVFaX29LdHdBUE50Wmt6YTNz?oc=5" target="_blank">Municipio De Trujillo Alto - Facebook</a></td>
-            <td>FB - Trujillo Alto</td>
-            <td>2026-04-29 10:39</td>
-        </tr>
-        <tr class="article-row" data-municipios="Loíza">
-            <td><span class="muni-tag">Loíza</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxNS0dKcVQ2dzVscXVuTWhnRzBDRjFPXzhaWHVFUU1Jbko1ZVRJRFFGS0g5Vms4ZHY4YnFxWVVUR0dqT1FKcHlwRllsRENyY1lFTGJodWFzVkJyWUt6S1FBTzJlbnNFSWVseHJudTRnOFNmWTEzQkFXSXZJbzNRc1BNTW5uZ2VXQzVfbFNTTndMdWpXN3hkT2NlRk9yVEZ0YkVGTlJKMVVfSTU0LTVJbXM0ZUExbS1lZlh1NlJlTVVHbm1CNHJ6Yk1ZRVBDYVpVZXfSAdcBQVVfeXFMTlZLakFtTGFSalFXMmx1Wm55VnptQ0NYbXJPTW41MkJvOEczTldVaFUzSDRtVjFxZXMxWE5fQmxoSFg0YlFzQTZZV1UzYXp5QkU1SGdrMnpsTVNtMjF6NHBsWnEwVFlRQUl6YWY5X3dsS0Z5VkxFSEVoTDBocC1MSDBrZkxjLVA3VnY1UVVRc212M0F3bW5PMlRTTENyc2ctcnVqd3p0bDZvOUxMZWY2NEtmTm8yLTluTmpUa0lqRWdwcHFaS3ZGX3ZrWkx1d1FjQTZHUlJFVWM?oc=5" target="_blank">"Esto tiene que parar": padre de menor ultimada en Loíza tras asesinato de niño - Telemundo Puerto Rico</a></td>
-            <td>Loíza</td>
-            <td>2026-04-29 07:00</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQclMxZHdMbHk0TVR6dkp1cF9fVTRvY1M1el9EN1JZeE9PMUxXVi1wb3ZPUHVtOWdvYUZNYjBZOU1keUhPOWo1aEt4bWdrWXZ4OF8yaFVwZ2RkM1NUQ0ZxQXBWbTRla3dZZjJsSzN1NDctUmNuY2lVSE9SQkEwQWg3QUVrb1ZQejZCZG9RRll3?oc=5" target="_blank">[Oportunidad de empleo] | La Administración Municipal de Cataño anuncia la siguiente plaza: Electricista. Personas interesadas deben enviar su resumé a: resume@catano.pr.gov ✳️Patrono de igualdad de oportunidad - Facebook</a></td>
-            <td>FB - Cataño</td>
-            <td>2026-04-28 21:50</td>
-        </tr>
-        <tr class="article-row" data-municipios="Luquillo">
-            <td><span class="muni-tag">Luquillo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBHWVZpT3Z6RnZFay05eV9nU0ppckthSXJjeTRKVXNyb2ctWWw3OGFGUU1ORnBMUU9oTWdtWk1LSUpLTXIxd2NOWEZ5czhtb05aM3ZGMHc3RFhKWktnTEFVVmM5VVVVSkJ6N1d3?oc=5" target="_blank">Municipio de Luquillo - Facebook</a></td>
-            <td>FB - Luquillo</td>
-            <td>2026-04-28 19:47</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPQUNvTnYtRnAyd3VMNHh6Si1Va1JZZkc2azJULWtUS2dTNzI5YWhEVUwwdGl1dE1icncyRjRSNkgxejg4UzdVSUZyekw3SVZKR2I0c3puWlk3M2xjYzZBandhSUFWRlFENFVOeWpWVTk1cEpQVUN2elY0cHdWbHkzUS16N0ZjUGhlbUw5SW53?oc=5" target="_blank">Municipio Autónomo de Naguabo - Facebook</a></td>
-            <td>FB - Naguabo</td>
-            <td>2026-04-28 17:15</td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/tribunales/notas/presentan-cargos-en-ausencia-contra-hombre-que-habria-ocultado-un-gps-en-un-peluche-de-pikachu/" target="_blank">Formulan cargos en ausencia contra hombre que presuntamente ocultó un GPS en un peluche de Pikachu</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-08 17:26</td>
         </tr>
         <tr class="article-row" data-municipios="Caguas">
             <td><span class="muni-tag">Caguas</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxPdjR3OXJxZE5qbGVkRldNZ2lHenFOcFczaEtNWEVKZ1pscnBkZFVmZV9KckpmQTNKVnZfUk9NSGJ3ZkJPSXhzMTlsdWZaX25Ca0VPZkhnaGh3QXJCU05hN3pkZ3BiNnY2YlVBRHNYSGtfU1pfVlNoVjdvbU00NEtRaW5mZE43M0lqTjRwdkswdExRRWdEVEdDV3dFZnJOVHpnT3JrSzE4OFRfc1JCM2ZFOGJxV1UwVVRLanZvMkRUcnZRNTFMMGdqaXdqNzVSUS1pejhzVHJUczFtNUNZbTZyTURfQU4wdw?oc=5" target="_blank">El Municipio Autónomo de Caguas se une nuevamente a Kilómetros de Cambio, el movimiento social que reúne a corredoras de todo Puerto Rico dispuestas a alzar su voz en contra de la violencia doméstica. La carrera se llevará a cabo los 15, 16 y 17 de m - Facebook</a></td>
-            <td>FB - Caguas</td>
-            <td>2026-04-28 17:02</td>
+            <td class="titular-cell"> <a href="https://noticel.com/deportes/20260508/criollos-y-mets-logran-victorias-en-el-bsn/?utm_source=rss&utm_medium=rss&utm_campaign=criollos-y-mets-logran-victorias-en-el-bsn" target="_blank">Criollos y Mets logran victorias en el BSN</a></td>
+            <td>NotiCel</td>
+            <td>2026-05-08 17:11</td>
         </tr>
-        <tr class="article-row" data-municipios="Río Grande">
-            <td><span class="muni-tag">Río Grande</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxOVXI2eDVCWS1zdU9HcEZvNzRuajUxZXFCU3JabFJ2bVdWaWFjN0xSZGdyc25WclVTd1ZqYm9CdUZvaGk4TmM0WHA5SEdxN0M1RUk3cS0xa3lEcHQyNjVuZ1VKRXYzbmtEaldqeWNabmtDZkN6alV2bUpRNERhS3gwWnRsVWVCMGM3eC1JZS1maF9qRXowVWJUOEF4d0pscG0wZ1AwVXVPVWVFX0h1a1VPeTZkRDVYa1djVVpWOW1Ncm9TaUptR0VSdGdMVTNWUEd2NXBTN3BTdTRUWEdMY1hEYXZGVXJONFE?oc=5" target="_blank">About yesterday, on our way to my #hometown in Rio Grande, Puerto Rico. 🇵🇷🇵🇷🇵🇷🇵🇷🇵🇷🇵🇷🇵🇷🇵🇷🇵🇷🇵🇷🇵🇷🇵🇷🇵🇷🇵🇷 Sobre ayer, de camino a mi ciudad donde crecí en Río Grande, Puerto Rico. - Facebook</a></td>
-            <td>FB - Río Grande</td>
-            <td>2026-04-28 16:24</td>
+        <tr class="article-row" data-municipios="Canóvanas">
+            <td><span class="muni-tag">Canóvanas</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxPSU9JTzNoeVBETzdEalJEU0N1SFFGX1R0bWlwajZYUW1sNVdDekRIaWtRV2lMa0psOXhOZUk2bFg0Qk1pRnA4UXhPRGVYYS1SLTFNcnQ0T0RDSlhwLXJ0T0pVT2lDaERzWmlKMGk3TXNjU2MwRV9FOVlkSlJ0aGY3NE43dWJaUWQzNkowUmd4UWlNMHc2aUR4NXQ1THZwY1lpNmZUNGs2VVBiNy02Vkg3WWZDdnd3NnVIdWtpZXk5WnhGRlBvSlJOMFhGaUpPQ2NQczhyMnhTZ0I5Q2g0N19rcGhEWkwtNXdxV0w4SUlwVUdTVjl5RzVfY3ZJOA?oc=5" target="_blank">☀️🎉 ¡Este verano en Canóvanas la diversión viene con desayuno, almuerzo, juegos, deportes y nuevas amistades! 📣 Ya abrió la matrícula para el Verano Recreativo 2026 del Municipio de Canóvanas para niños y niñas de 6 a 12 años. Un verano lleno de a - facebook.com</a></td>
+            <td>FB - Canóvanas</td>
+            <td>2026-05-08 13:58</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxOR3FaWUJwYXNmVW0tRTBWWTI3RURwblp3ODJrOWprb1d3RnA0M2ZfbkNnam9zMVZzeTVGT0RzTnVfUTl0Mk1FdENOdF83c3BRcUR1dzRwTVd1OUNzVUNmYTdQaG52Z3JURy1yRGJjTG9GZEFHYkFnZjVCYXl0MGktZlV2X19JOFUtdEJTS1BsRGhjVVBsQlR5SXRNSVBaeFU3RWFRLTRRZlV3bUEyX2NMTC1JQ2tTMmVNX2pVYS1rVjRjaVV2bENFV2pOa0lVTnFBeUlSRWh4NWFkUGlYQ3VB?oc=5" target="_blank">A plena vista: venta de carteras falsas en el Viejo San Juan pone en entredicho la fiscalización - Noticias de Puerto Rico hoy</a></td>
-            <td>San Juan</td>
-            <td>2026-04-28 07:00</td>
-        </tr>
-        <tr class="article-row" data-municipios="Caguas">
-            <td><span class="muni-tag">Caguas</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxQdkx3S09COVM1WUpOUWN1LXdHUEhrVjkxbDg5dm40bk43Umlqc3NqTWlUU2puLTRnZmdfUWU1UVFTU25KSUhhY21feWYyaGVwV0I0X1V4NF8zMG5qQi03RmEwYVhyNmpBZEF0dE9uMDVnaXlqRVBIbHdvTmZWSmxuaWF4bEFFRTNTd01PZDdhV3kyNnM2elhKZlJnWlc3UUJxSHFDeEtiX1Z3THd6d2xRNi1RajVQQ19vekItdU9KQ2doTHJJclFTblJfMGM2WGhxblR6S3BicmxBTHN2ZHRV?oc=5" target="_blank">Fecha confirmada: 23 de mayo de 2026. Lugar: Caguas, Puerto Rico. Un evento presencial diseñado para quienes vivir en relaciones saludables. Acá están los detalles - Facebook</a></td>
-            <td>FB - Caguas</td>
-            <td>2026-04-28 07:00</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNZHNKTGYyOE1xM0hZYllEdlFoOWNWWXNfdEFlakhXOXFJRnJHZXBxSjQ3NFBRaXRXRFBPdGpiQkwyU05jeElJd295UThtZFF2U1o2aXF1YnM2YjVLWXlNQURyMUR6UXJ5RTFJdV82M0d0NXpyRjI4OFZmQlg5eEtBTGJ1eThSaFdxekVmZVZn?oc=5" target="_blank">Municipio Autónomo de Naguabo - Facebook</a></td>
-            <td>FB - Naguabo</td>
-            <td>2026-04-27 19:13</td>
-        </tr>
-        <tr class="article-row" data-municipios="Trujillo Alto">
-            <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQLVhaM0twWnh5WWhyOUxRQTJieXFHMWg1WUtfaXYxS2Q4bTl5bUxUUWY2UkdnUnFlWkFCOWhUNlBiOU5pWnN0empDX2d6dzgtbDFTZFZRdVdYWHBoMURGbVB4SmlublRhSHpvRVBWVW0yamwxendkS3hHb3hyRmgzc2tDLVMwaDREWWhJ?oc=5" target="_blank">Municipio De Trujillo Alto - Facebook</a></td>
-            <td>FB - Trujillo Alto</td>
-            <td>2026-04-27 11:10</td>
+            <td class="titular-cell"> <a href="https://radioisla.tv/un-desastre-miguel-romero-critica-gestion-de-la-aaa-por-fallas-en-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=un-desastre-miguel-romero-critica-gestion-de-la-aaa-por-fallas-en-san-juan&utm_source=rss&utm_medium=rss&utm_campaign=un-desastre-miguel-romero-critica-gestion-de-la-aaa-por-fallas-en-san-juan" target="_blank">“Un desastre”: Miguel Romero critica gestión de la AAA en San Juan</a></td>
+            <td>Radio Isla</td>
+            <td>2026-05-08 12:06</td>
         </tr>
         <tr class="article-row" data-municipios="Culebra">
             <td><span class="muni-tag">Culebra</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOTkRFTXhEVFNjTGZBMWR6YVBQc3Z0Rm9nSWJNN0daaUYwUmhGX2RoY1dnbGNHaHpUdmZ2NEhZaXlBOElWZU5TVndqYWhCQ2RKYWxHYkNrX2o2MmVjYmVNaUVBYVN6YWFZU0swcFlsZ3ZqUHd1MERMeUN0aW16OEdzcFMwZFJRel9kVU1mMUZpV3dTQlByNzFnT0p1dVRaN0NNSUJ0cHUtMWxzOFdQcGxWdnJUX2dhM0p1eDZRXw?oc=5" target="_blank">Flamenco Beach Culebra: la playa más bonita del Caribe en 2026 - AD HOC NEWS</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxNMXBzbEZUSlg2Rkk2TzdldG5KQ2VOcEMtSUJfVmo1cU5sWk9ELU8zQXR5UXhMWGRFaTVLSFpScnY5WFdXT0EyZzFoUjUtS0FwYlhsM2ZWLWxmaUtBSjdUcVRFbVNheEVtR3JUQ1NPdVhHeVJ5UlQ3Qkd4NVlfU0RNeG9UYVZtVGFOT0gtNFZxMUhrZVBkbTcwT2t2bzlKY1M5eXAyZkw2aVZfekRqNURPSGRJLW5veGw3MXZwbA?oc=5" target="_blank">Playa Flamenco: primavera perfecta en Culebra, Puerto Rico, 2026 - AD HOC NEWS</a></td>
             <td>Culebra</td>
-            <td>2026-04-27 07:44</td>
-        </tr>
-        <tr class="article-row" data-municipios="Trujillo Alto">
-            <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPWU9ueVZKZnh2V2dxZEpxand5VHpZNEs1M29GQ21IV0hzb1FjN1Y4UzNtMVJTbG1hdzdIWmVTa1VKT0ZGd1NieHpTdHh5TTNKZVZSNUVEZkN0SzJ1RE01MlBVQjdFSk5NY0VfOF8yam4wOVIzaTR6c19IMDZ5a0hQQzhIdWdsZ1MxUThrMHBZRVVmZmpfMGRhU3hWTE5wMVBTUk9qUmhwN2JCNWFuT3c?oc=5" target="_blank">Hallan cuerpo de un hombre en una acera en Trujillo Alto - Noticias de Puerto Rico hoy</a></td>
-            <td>Trujillo Alto</td>
-            <td>2026-04-27 07:00</td>
-        </tr>
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE41RU1RektmUk5BR1V3UUZieVlmNndLOG9nZlYwcW5vdllpZ1Q0UFJ0U21CZVpRMHZyc196UUFxVzZEeS16NWpWLTdCa2EwQmpVcXpwT0hSM01jQ3NkZ3oxSGh6OUFSRXlNZ3hLRVpRMGxmeGJ3OTFHQVR3SmM?oc=5" target="_blank">Municipio Autónomo de Fajardo - Facebook</a></td>
-            <td>FB - Fajardo</td>
-            <td>2026-04-26 12:42</td>
-        </tr>
-        <tr class="article-row" data-municipios="Canóvanas">
-            <td><span class="muni-tag">Canóvanas</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxNbHBfZ3pUcXluazdtdmdtY0F2QUZzR1JWUll4WW14S3diSGQtS3B1N2tObmtfMUpLU04tQlZVOVoyQldOekFJaHpDVnBtYlRrdDdVQm4teUwwRHk1ZHJLbm1xMi1La21mdnVsMDhkSS1TbVV5S1JxQllIV1FjMTdWcVRoa0tDTzRMd2ZUOUl3M1RqNEVVMkR2WVVwbVo2S0luOGVQYlVpREF3eGp0bFdsN0liNUZXc2plY0NKbjBQdzllWkZEcGhJTXNoaThKeWNmS0h6ZVNSTnV6eERsY0ZfcW9zMi02dWpEZ0E?oc=5" target="_blank">📢 Aviso Importante | Solicitud de Propuestas (RFP) El Municipio de Canóvanas abre convocatoria para la Solicitud de Propuestas (RFP 0022-2025-2026) dirigida a la contratación de servicios profesionales para el desarrollo de un Plan Regional de Desarroll - Facebook</a></td>
-            <td>FB - Canóvanas</td>
-            <td>2026-04-26 12:06</td>
-        </tr>
-        <tr class="article-row" data-municipios="Canóvanas">
-            <td><span class="muni-tag">Canóvanas</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxQekszekJWSGh2NjJ5OFJ6OE81Qy0wVFJnLWUyQjJUUHFJYUpKOEFVOFppeEQzTURrVUxhX3M3bnF2OHlWTjVvSWJfaWIxSDBlTEV4UnpTUnNBYTBZOVlYRVF5ZTdWMFZraHlqcVl1QWtQNFZlWDdlSkp1ZWh2ZC15aXdzb2x0YlNmUXRLSzA1NFlFak9VeDJyQW5pU1lQWTc0dlMyMzNySmg5RHVjZzhHZmdka1VjWUFYNkgwWVJUTlY2dnQ3RXV2aUtmd3FPWHNUYVJaUHphdTQzc3p0a2c1Q1JWSGVKYW0zeWc?oc=5" target="_blank">📢 Aviso Importante | Segunda Subasta General 2026-2027 El Municipio de Canóvanas anuncia la Segunda Subasta General (Subasta Núm. 027-2025-2026) para el año fiscal 2026-2027, dirigida a la adquisición de materiales, equipos y servicios esenciale - Facebook</a></td>
-            <td>FB - Canóvanas</td>
-            <td>2026-04-26 07:00</td>
-        </tr>
-        <tr class="article-row" data-municipios="Culebra">
-            <td><span class="muni-tag">Culebra</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxQVTBqYkxVUjJkMHhYZXg2V1B4YXp1eDZjMl9SNzBmaFJjY2JwaHBpTzdSZ3RTNTE3dVJSaHpQTUdySEo4VGRWMW5XM1BDOGo2NEUxbEp2NHlYYUU0Ym41bkpLZlBHeUZjNVA4SzFKQU03QkpwNjlWTTByMDd0UGZ1cFFiRnVVNjlPRk0tdUtXejhXc3hfRklzclhzalMzYzQwUUlQcklJTnQtdEF4UWxyTVoydTVzNXloS0JXVDMxZEpFWXU0QUFpWU9CcG5TM3hoejdkb2ZuU0x0eDZoak4yakVQcjZJaVYwZS1Z?oc=5" target="_blank">Dicen que la felicidad no tiene dirección… pero en Puerto Rico SÍ 🌴 📍 Playa Flamenco, Culebra 🇵🇷 #TuristeandoenPuertoRico #PuertoRico #flamenco #culebra #lifestyle - Facebook</a></td>
-            <td>FB - Culebra</td>
-            <td>2026-04-26 07:00</td>
-        </tr>
-        <tr class="article-row" data-municipios="Trujillo Alto">
-            <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOcHVjY00way1jblV5RmstUkM4QUR0ZS1OR1B6dXBFQWRYTXdrT1drbU1COHlSdkFieWNrcjJDMXBwb3N0eUN3MVByV3ZrcjJWZWs4QUFib0dNaTVmbk9ld2ZGOHMyMWVCajVWcmVpdkctNjF2R0FKNHk2WEI4eVhJTlpZcmZnbU9oZkhz?oc=5" target="_blank">Municipio De Trujillo Alto - Facebook</a></td>
-            <td>FB - Trujillo Alto</td>
-            <td>2026-04-25 17:00</td>
-        </tr>
-        <tr class="article-row" data-municipios="Canóvanas">
-            <td><span class="muni-tag">Canóvanas</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPYnp4RVZqenpwR1dJc2lmNUg4bmxkSGdLem5iY0VNV05RT2QzQlRVclVJZDBheFJkQ2JxVndmMTlncjh3dDA4WUhXeE1wUVlPQ0EzNFNkVnM5RWdGZ3FwT1VOREVzTlJuTUlSZEVTdkZFYmFtZ2E2VVhlSnRnNjdialFDVlU3VVVkSWRjc2lkTEt0R2ZNMHFjQkdTSVRNSm9kOWVweXJFejhCamt6N1JLNkgtc9IBuwFBVV95cUxOejliT0VBeHBFOXdGUjlrMDVhcFYxUUtrTnVna09JZlpic2hQOVJ3UlFUNkNPYndxUkNfNl9JcEhiYTF2U0FFVzRfX3NBOGFhMnFXUFZ6WnJ0WUNHWGk4YnRvdkdUUG4zVElNZTBwWm1MQUM5RW0zOWZUalp6MFFYR2ZmbFNNaDF0MEZqbkUzbEFFWjQwSGtjZFlBSUVXQWh0d3N2ck02cEw1eEtUZ09jMVR1N1lTc3VmRlpV?oc=5" target="_blank">Canóvanas: pueblo motor de la industria azucarera - Telemundo Puerto Rico</a></td>
-            <td>Canóvanas</td>
-            <td>2026-04-25 07:00</td>
-        </tr>
-        <tr class="article-row" data-municipios="Loíza">
-            <td><span class="muni-tag">Loíza</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQVF91OFNjdVhCWFlBak40aDZKMDRfVFl1eHlaQTFoWV9pTnVvV21OQVd4VmxXZHZwajZvd252VmQzTi13MWNvM1JqTUo1blJMQzdnNjV3NkpXQ215WVNjYm1rX1ZHQ0RLaTlMRmJRYkpJTzZHZXY5YVl3ajNwemVuRENNMlg?oc=5" target="_blank">Municipio de Loíza - Facebook</a></td>
-            <td>FB - Loíza</td>
-            <td>2026-04-24 19:45</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxNNHE3aVpuWGVEQ2N0bllyNGhOLWZNRkNPRUF6bmZOMzBhcVNqaHZ1QXpvSmJOWldkRDJ0Q2Y2TFdvbi1nb08tTENaajN3eVlUcXNUQW1SYWstS2M5Uk4yQXg4aFZFMkh6S2g2SGlKSjhGNnV1bWtFODRKWjRFUzMxb2JJUlMtakJxeFhVZGxQLXBkWkVTWElHSW45ZmRiMHpGUHR1YkdqTU5XeFJOV0JzLWxBT3VhaHkzN1dKeUtlNk14bmhqaVJWeENOenI2c0RiSUlNcnJPY0tkeXpqWEJWdGY0akJHR20yUDE4?oc=5" target="_blank">Salían de un cumpleaños los dos hombres asesinados en negocio de Naguabo - wapa.tv</a></td>
-            <td>Naguabo</td>
-            <td>2026-04-24 15:09</td>
-        </tr>
-        <tr class="article-row" data-municipios="Trujillo Alto">
-            <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOck9hUko4MnpuUUp0bzJwbS0xUkNheGhKZUtWZWpMdFNhMzBZNURkNll4anJVRURqQmJRaXlRaHRzXzliVk1nMFFrcUVUTXg5X1pzaWxPbDVhb000RlRNaUw4RXpjSi1qbjRjM0xQVzhnbTh3SUJURXVlb0ZfampXVlIzLWJQa003TmE4SklJSnc4OWtPVF9jSkd3a3ZzS0ctU0lLLQ?oc=5" target="_blank">Exhortan a los ciudadanos a donar sangre en Trujillo Alto - Metro Puerto Rico</a></td>
-            <td>Trujillo Alto</td>
-            <td>2026-04-24 07:00</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNSUF4TFl6WWRicEQwRWJLdWtsajZWdkxRekNRTF9WaVktYlVnRFcycjZEalVpLUJacW5EdF94cTh1emVSc3RhNF91SGpSMkh6YmFPQUtIbHRFV1IxUi15S0FFQ3hVVHZPbjVGU3Nmd0VNU1pIVTVxNE4xRXhCeDdzYVUzSThxU0hOeURIVElqbkJtdFEwaWJ6OEd2Q25JY2p6a3NGLVdn0gGuAUFVX3lxTE5SRmxmZGtIb1hnVDlzTzZadEl3X2tmb2NzdTRoc0ZHMmhpMmNXUTdTSUttYS05WTBKVFJPZ2E5bnNyb2tQeFZZQ0dmVjNxVnNHMDI5RnVyZ1BFVHBTV20wUm9NYWhCZk5XM1dydjUyWkNXN19RU0xHMzRzWVFZX0FoUDlNekJSNE9OdlctaWZUS2VnUS04cm1ZVEdMNXMyNTgyWVlUd0VGOWJrUHB6Zw?oc=5" target="_blank">Identifican a joven ultimado en urbanización de Cataño - Telemundo Puerto Rico</a></td>
-            <td>Cataño</td>
-            <td>2026-04-24 07:00</td>
+            <td>2026-05-08 10:01</td>
         </tr>
             </tbody>
         </table>
@@ -803,7 +284,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-08 06:01:50
+    Generado por Hermes Agent — 2026-05-08 13:37:05
 </div>
 
 <script>
