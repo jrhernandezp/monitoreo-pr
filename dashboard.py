@@ -18,7 +18,7 @@ from sources.scraper import scrape_all
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
 STATE_FILE = DATA_DIR / "state.json"
-OUTPUT_FILE = BASE_DIR / "dashboard.html"
+OUTPUT_FILE = BASE_DIR / "index.html"
 
 
 def load_state() -> Dict:
