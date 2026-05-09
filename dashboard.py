@@ -6,6 +6,7 @@ Recolecta noticias de múltiples fuentes y genera un HTML autónomo.
 import os
 import sys
 import json
+import subprocess
 import webbrowser
 from datetime import datetime
 from pathlib import Path
@@ -19,6 +20,10 @@ BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
 STATE_FILE = DATA_DIR / "state.json"
 OUTPUT_FILE = BASE_DIR / "index.html"
+
+# Facebook scraper paths
+FACEBOOK_SCRAPER = Path.home() / ".hermes" / "scripts" / "facebook_scraper.py"
+FACEBOOK_PYTHON = Path.home() / ".hermes" / "tools-venv" / "bin" / "python3"
 
 
 def load_state() -> Dict:
@@ -84,6 +89,62 @@ def collect_articles() -> tuple:
     return unique_articles, source_status
 
 
+def collect_facebook_posts() -> tuple:
+    """Run Facebook scraper via subprocess and return (facebook_data, source_status)."""
+    print("  📘 Scraping Facebook...")
+    source_status = {}
+
+    if not FACEBOOK_SCRAPER.exists():
+        msg = f"Facebook scraper no encontrado en {FACEBOOK_SCRAPER}"
+        print(f"    ❌ {msg}")
+        source_status["Facebook (28 páginas)"] = f"❌ Error: {msg}"
+        return [], source_status
+
+    if not FACEBOOK_PYTHON.exists():
+        msg = f"tools-venv python no encontrado en {FACEBOOK_PYTHON}"
+        print(f"    ❌ {msg}")
+        source_status["Facebook (28 páginas)"] = f"❌ Error: {msg}"
+        return [], source_status
+
+    try:
+        result = subprocess.run(
+            [str(FACEBOOK_PYTHON), str(FACEBOOK_SCRAPER), "--json"],
+            capture_output=True,
+            text=True,
+            timeout=180,
+        )
+        if result.returncode != 0:
+            error_msg = result.stderr.strip()[:200] or "Unknown error"
+            print(f"    ❌ Facebook scraper exited with code {result.returncode}: {error_msg}")
+            source_status["Facebook (28 páginas)"] = f"❌ Error: código {result.returncode}"
+            return [], source_status
+
+        facebook_data = json.loads(result.stdout)
+        if not isinstance(facebook_data, list):
+            print(f"    ❌ Facebook scraper returned unexpected format")
+            source_status["Facebook (28 páginas)"] = "❌ Error: formato inesperado"
+            return [], source_status
+
+        paginas_con_posts = sum(1 for r in facebook_data if r.get("posts"))
+        total_posts = sum(len(r.get("posts", [])) for r in facebook_data)
+        print(f"    ✅ {paginas_con_posts} páginas con posts ({total_posts} posts totales)")
+        source_status["Facebook (28 páginas)"] = f"✅ OK ({paginas_con_posts} páginas, {total_posts} posts)"
+        return facebook_data, source_status
+
+    except subprocess.TimeoutExpired:
+        print("    ❌ Facebook scraper timed out after 180s")
+        source_status["Facebook (28 páginas)"] = "❌ Error: timeout (180s)"
+        return [], source_status
+    except json.JSONDecodeError as e:
+        print(f"    ❌ Facebook scraper: JSON inválido - {e}")
+        source_status["Facebook (28 páginas)"] = f"❌ Error: JSON inválido"
+        return [], source_status
+    except Exception as e:
+        print(f"    ❌ Facebook scraper exception: {e}")
+        source_status["Facebook (28 páginas)"] = f"❌ Error: {e}"
+        return [], source_status
+
+
 def filter_today_only(articles: List[Dict]) -> List[Dict]:
     """Keep only articles from today's date."""
     hoy = datetime.now().strftime("%Y-%m-%d")
@@ -110,7 +171,52 @@ def articles_by_municipio(articles: List[Dict]) -> Dict[str, List[Dict]]:
     return by_muni
 
 
-def generate_html(articles: List[Dict], source_status: Dict, state: Dict) -> str:
+def generate_facebook_html(facebook_data: list) -> str:
+    """Generate HTML for the Facebook posts section."""
+    if not facebook_data:
+        return '<div class="facebook-empty">No se encontraron posts de Facebook.</div>'
+
+    cards = []
+    for r in facebook_data:
+        fuente = r.get("fuente", "Desconocido")
+        posts = r.get("posts", [])
+        if not posts:
+            continue
+
+        posts_html = ""
+        for p in posts:
+            fecha = p.get("fecha", "")
+            texto = p.get("texto", "").strip()
+            if not texto:
+                continue
+            # Truncate long text
+            if len(texto) > 250:
+                texto = texto[:247] + "..."
+            posts_html += f"""
+            <div class="fb-post">
+                <div class="fb-post-fecha">🕐 {fecha}</div>
+                <div class="fb-post-texto">{texto}</div>
+            </div>"""
+
+        if posts_html:
+            cards.append(f"""
+        <div class="fb-card">
+            <div class="fb-card-header">📘 {fuente}</div>
+            <div class="fb-card-body">
+                {posts_html}
+            </div>
+        </div>""")
+
+    if not cards:
+        return '<div class="facebook-empty">No se encontraron posts de Facebook.</div>'
+
+    return f"""
+    <div class="fb-grid">
+        {''.join(cards)}
+    </div>"""
+
+
+def generate_html(articles: List[Dict], source_status: Dict, state: Dict, facebook_data: list = None) -> str:
     """Generate the complete HTML dashboard."""
     by_muni = articles_by_municipio(articles)
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -144,6 +250,7 @@ def generate_html(articles: List[Dict], source_status: Dict, state: Dict) -> str
         </tr>"""
 
     # Build source status HTML
+    facebook_html = generate_facebook_html(facebook_data or [])
     source_rows = ""
     for name, status in source_status.items():
         status_class = "status-ok" if status == "✅ OK" else "status-error"
@@ -278,6 +385,61 @@ tr:hover {{ background: #fafafa; }}
 .status-ok {{ color: #2e7d32; font-weight: 500; }}
 .status-error {{ color: #c62828; font-weight: 500; }}
 .footer {{ text-align: center; color: #999; font-size: 12px; margin-top: 30px; }}
+
+/* --- Facebook Section --- */
+.fb-grid {{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 15px;
+}}
+.fb-card {{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-left: 4px solid #1877f2;
+}}
+.fb-card-header {{
+    background: linear-gradient(135deg, #1877f2, #166fe5);
+    color: white;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 600;
+}}
+.fb-card-body {{
+    padding: 10px 14px;
+}}
+.fb-post {{
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}}
+.fb-post:last-child {{
+    border-bottom: none;
+}}
+.fb-post-fecha {{
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 4px;
+}}
+.fb-post-texto {{
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+}}
+.facebook-empty {{
+    color: #999;
+    font-style: italic;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}}
 @media (max-width: 600px) {{
     .muni-grid {{ grid-template-columns: repeat(3, 1fr); }}
     .header h1 {{ font-size: 22px; }}
@@ -320,6 +482,11 @@ tr:hover {{ background: #fafafa; }}
             </tbody>
         </table>
     </div>
+</div>
+
+<div class="section" id="facebookSection">
+    <h2>📘 Facebook — Posts Recientes</h2>
+    {facebook_html}
 </div>
 
 <div class="section">
@@ -383,8 +550,12 @@ def main():
     else:
         print(f"\n📅 Mismo día ({hoy}). Manteniendo estado para detectar novedades.")
 
-    print("\n📡 Recolectando noticias...")
+    print("📡 Recolectando noticias...")
     articles, source_status = collect_articles()
+
+    # 4. Facebook (via subprocess to tools-venv)
+    facebook_data, fb_status = collect_facebook_posts()
+    source_status.update(fb_status)
 
     # Filtrar solo noticias de HOY
     articles = filter_today_only(articles)
@@ -403,7 +574,7 @@ def main():
     save_state(state)
 
     # Generate HTML
-    html = generate_html(articles, source_status, state)
+    html = generate_html(articles, source_status, state, facebook_data)
     OUTPUT_FILE.write_text(html, encoding="utf-8")
     print(f"\n✅ Dashboard generado: {OUTPUT_FILE}")
 
