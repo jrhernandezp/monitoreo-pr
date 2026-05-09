@@ -135,12 +135,12 @@ tr:hover { background: #fafafa; }
 
 <div class="header">
     <h1>🗺️ Monitoreo Municipal</h1>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-08 13:58:13</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-09 06:02:01</div>
     <div class="stats">
-        <div class="stat-box"><div class="num">5</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">5</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-08 13:58:13</div></div>
+        <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">3</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-09 06:02:01</div></div>
     </div>
 </div>
 
@@ -148,29 +148,29 @@ tr:hover { background: #fafafa; }
     <h2>Municipios del Noreste</h2>
     <div class="muni-grid" id="muniGrid">
         
-        <div class="muni-card active" onclick="filtrarPor('San Juan')">
+        <div class="muni-card inactive" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">1</div>
-        </div>
-        <div class="muni-card active" onclick="filtrarPor('Carolina')">
-            <div class="muni-name">Carolina</div>
-            <div class="muni-count">1</div>
-        </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
-            <div class="muni-name">Trujillo Alto</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Caguas')">
-            <div class="muni-name">Caguas</div>
+        <div class="muni-card inactive" onclick="filtrarPor('Carolina')">
+            <div class="muni-name">Carolina</div>
+            <div class="muni-count">0</div>
+        </div>
+        <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
+            <div class="muni-name">Trujillo Alto</div>
             <div class="muni-count">1</div>
+        </div>
+        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
+            <div class="muni-name">Caguas</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
+        <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
@@ -180,9 +180,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Loíza</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
+        <div class="muni-card active" onclick="filtrarPor('Río Grande')">
             <div class="muni-name">Río Grande</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">2</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
             <div class="muni-name">Ceiba</div>
@@ -204,9 +204,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Vieques</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Culebra')">
+        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
     </div>
 </div>
@@ -222,35 +222,23 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
-        <tr class="article-row" data-municipios="Carolina">
-            <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/tribunales/notas/presentan-cargos-en-ausencia-contra-hombre-que-habria-ocultado-un-gps-en-un-peluche-de-pikachu/" target="_blank">Formulan cargos en ausencia contra hombre que presuntamente ocultó un GPS en un peluche de Pikachu</a></td>
+        <tr class="article-row" data-municipios="Río Grande">
+            <td><span class="muni-tag">Río Grande</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPcXBXWEJzU05kY1JEcDFhWUxxT2kyX2JQTWpEXzFmMG9GY05IOXh0d1NKaFo2QVpwaEVLdVF2Mk5lRU15Mi1QOU9oT0o5NklWZlZ4LUd0MXJiOVpRSlY3M1hxOTZ5SENfQVhCWVZmaEU3Y1F5ODhhbGg0Sm1zd3NjSUw4UGdEei1XdlRCZ2s4cEdyOURSM0ZPYWFPTEMtNTNTR2t4MzlQRDNYemJza0lZZEtLbGVSRzhNaGJ6N0pIMVg2WXJo?oc=5" target="_blank">En modo de expansión condohoteles de ultralujo en Río Grande y Dorado - Noticias de Puerto Rico hoy</a></td>
+            <td>Río Grande</td>
+            <td>2026-05-09 09:12</td>
+        </tr>
+        <tr class="article-row" data-municipios="Trujillo Alto">
+            <td><span class="muni-tag">Trujillo Alto</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNU2ZHcWI1dDgwNl9DeWFaemhONlZ2X05rTThaWl9CLTl0Q2daVmJsSmlxUnlTY0kwODBIcVJBTzBYVmJnb2FYLVd4WGxmdmx1SWtCZkVRZDdHRWpid2hXT09oUDZCUVNGdGw5dkZoWjltbFJzbDkzaEpiRE0zUnlJZzE4VnYzajE2NGF3?oc=5" target="_blank">Municipio De Trujillo Alto - Facebook</a></td>
+            <td>FB - Trujillo Alto</td>
+            <td>2026-05-09 03:21</td>
+        </tr>
+        <tr class="article-row" data-municipios="Río Grande">
+            <td><span class="muni-tag">Río Grande</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/negocios/bienes-raices/notas/en-modo-de-expansion-condohoteles-de-ultralujo-en-rio-grande-y-dorado/" target="_blank">En modo de expansión condohoteles de ultralujo en Río Grande y Dorado</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-08 17:26</td>
-        </tr>
-        <tr class="article-row" data-municipios="Caguas">
-            <td><span class="muni-tag">Caguas</span></td>
-            <td class="titular-cell"> <a href="https://noticel.com/deportes/20260508/criollos-y-mets-logran-victorias-en-el-bsn/?utm_source=rss&utm_medium=rss&utm_campaign=criollos-y-mets-logran-victorias-en-el-bsn" target="_blank">Criollos y Mets logran victorias en el BSN</a></td>
-            <td>NotiCel</td>
-            <td>2026-05-08 17:11</td>
-        </tr>
-        <tr class="article-row" data-municipios="Canóvanas">
-            <td><span class="muni-tag">Canóvanas</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxPSU9JTzNoeVBETzdEalJEU0N1SFFGX1R0bWlwajZYUW1sNVdDekRIaWtRV2lMa0psOXhOZUk2bFg0Qk1pRnA4UXhPRGVYYS1SLTFNcnQ0T0RDSlhwLXJ0T0pVT2lDaERzWmlKMGk3TXNjU2MwRV9FOVlkSlJ0aGY3NE43dWJaUWQzNkowUmd4UWlNMHc2aUR4NXQ1THZwY1lpNmZUNGs2VVBiNy02Vkg3WWZDdnd3NnVIdWtpZXk5WnhGRlBvSlJOMFhGaUpPQ2NQczhyMnhTZ0I5Q2g0N19rcGhEWkwtNXdxV0w4SUlwVUdTVjl5RzVfY3ZJOA?oc=5" target="_blank">☀️🎉 ¡Este verano en Canóvanas la diversión viene con desayuno, almuerzo, juegos, deportes y nuevas amistades! 📣 Ya abrió la matrícula para el Verano Recreativo 2026 del Municipio de Canóvanas para niños y niñas de 6 a 12 años. Un verano lleno de a - facebook.com</a></td>
-            <td>FB - Canóvanas</td>
-            <td>2026-05-08 13:58</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://radioisla.tv/un-desastre-miguel-romero-critica-gestion-de-la-aaa-por-fallas-en-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=un-desastre-miguel-romero-critica-gestion-de-la-aaa-por-fallas-en-san-juan&utm_source=rss&utm_medium=rss&utm_campaign=un-desastre-miguel-romero-critica-gestion-de-la-aaa-por-fallas-en-san-juan" target="_blank">“Un desastre”: Miguel Romero critica gestión de la AAA en San Juan</a></td>
-            <td>Radio Isla</td>
-            <td>2026-05-08 12:06</td>
-        </tr>
-        <tr class="article-row" data-municipios="Culebra">
-            <td><span class="muni-tag">Culebra</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxNMXBzbEZUSlg2Rkk2TzdldG5KQ2VOcEMtSUJfVmo1cU5sWk9ELU8zQXR5UXhMWGRFaTVLSFpScnY5WFdXT0EyZzFoUjUtS0FwYlhsM2ZWLWxmaUtBSjdUcVRFbVNheEVtR3JUQ1NPdVhHeVJ5UlQ3Qkd4NVlfU0RNeG9UYVZtVGFOT0gtNFZxMUhrZVBkbTcwT2t2bzlKY1M5eXAyZkw2aVZfekRqNURPSGRJLW5veGw3MXZwbA?oc=5" target="_blank">Playa Flamenco: primavera perfecta en Culebra, Puerto Rico, 2026 - AD HOC NEWS</a></td>
-            <td>Culebra</td>
-            <td>2026-05-08 10:01</td>
+            <td>2026-05-09 03:10</td>
         </tr>
             </tbody>
         </table>
@@ -284,7 +272,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-08 13:58:13
+    Generado por Hermes Agent — 2026-05-09 06:02:01
 </div>
 
 <script>
