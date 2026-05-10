@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Dashboard de Monitoreo Municipal — Noreste de Puerto Rico
+Dashboard de Observador del Noreste — Noreste de Puerto Rico
 Recolecta noticias de múltiples fuentes y genera un HTML autónomo.
 """
 import os
@@ -275,7 +275,7 @@ def generate_html(articles: List[Dict], source_status: Dict, state: Dict, facebo
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>Monitoreo Municipal - Noreste PR</title>
+<title>Observador del Noreste - Noreste PR</title>
 <style>
 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
 body {{
@@ -458,7 +458,7 @@ tr:hover {{ background: #fafafa; }}
 <body>
 
 <div class="header">
-    <h1>🗺️ Monitoreo Municipal</h1>
+    <h1>🗺️ Observador del Noreste</h1>
     <div class="sub">Noreste de Puerto Rico — {now}</div>
     <div class="stats">
         <div class="stat-box"><div class="num">{total}</div><div class="label">Total Noticias</div></div>
@@ -539,7 +539,7 @@ document.querySelectorAll('.muni-card').forEach(card => {{
 
 def main():
     print("=" * 50)
-    print("🗺️  Dashboard de Monitoreo Municipal")
+    print("🗺️  Dashboard de Observador del Noreste")
     print(f"   Noreste de Puerto Rico — {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     print("=" * 50)
 
