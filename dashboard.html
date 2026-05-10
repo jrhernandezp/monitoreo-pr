@@ -123,6 +123,61 @@ tr:hover { background: #fafafa; }
 .status-ok { color: #2e7d32; font-weight: 500; }
 .status-error { color: #c62828; font-weight: 500; }
 .footer { text-align: center; color: #999; font-size: 12px; margin-top: 30px; }
+
+/* --- Facebook Section --- */
+.fb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 15px;
+}
+.fb-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-left: 4px solid #1877f2;
+}
+.fb-card-header {
+    background: linear-gradient(135deg, #1877f2, #166fe5);
+    color: white;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.fb-card-body {
+    padding: 10px 14px;
+}
+.fb-post {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.fb-post:last-child {
+    border-bottom: none;
+}
+.fb-post-fecha {
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 4px;
+}
+.fb-post-texto {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+}
+.facebook-empty {
+    color: #999;
+    font-style: italic;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
 @media (max-width: 600px) {
     .muni-grid { grid-template-columns: repeat(3, 1fr); }
     .header h1 { font-size: 22px; }
@@ -135,12 +190,12 @@ tr:hover { background: #fafafa; }
 
 <div class="header">
     <h1>🗺️ Monitoreo Municipal</h1>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-09 06:02:01</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-09 22:03:31</div>
     <div class="stats">
-        <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">3</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">3</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-09 06:02:01</div></div>
+        <div class="stat-box"><div class="num">7</div><div class="label">Total Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">7</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-09 22:03:31</div></div>
     </div>
 </div>
 
@@ -148,9 +203,9 @@ tr:hover { background: #fafafa; }
     <h2>Municipios del Noreste</h2>
     <div class="muni-grid" id="muniGrid">
         
-        <div class="muni-card inactive" onclick="filtrarPor('San Juan')">
+        <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">2</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
@@ -168,13 +223,13 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Luquillo</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
+        <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
+        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">2</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
@@ -224,25 +279,54 @@ tr:hover { background: #fafafa; }
                 
         <tr class="article-row" data-municipios="Río Grande">
             <td><span class="muni-tag">Río Grande</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPcXBXWEJzU05kY1JEcDFhWUxxT2kyX2JQTWpEXzFmMG9GY05IOXh0d1NKaFo2QVpwaEVLdVF2Mk5lRU15Mi1QOU9oT0o5NklWZlZ4LUd0MXJiOVpRSlY3M1hxOTZ5SENfQVhCWVZmaEU3Y1F5ODhhbGg0Sm1zd3NjSUw4UGdEei1XdlRCZ2s4cEdyOURSM0ZPYWFPTEMtNTNTR2t4MzlQRDNYemJza0lZZEtLbGVSRzhNaGJ6N0pIMVg2WXJo?oc=5" target="_blank">En modo de expansión condohoteles de ultralujo en Río Grande y Dorado - Noticias de Puerto Rico hoy</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPcXBXWEJzU05kY1JEcDFhWUxxT2kyX2JQTWpEXzFmMG9GY05IOXh0d1NKaFo2QVpwaEVLdVF2Mk5lRU15Mi1QOU9oT0o5NklWZlZ4LUd0MXJiOVpRSlY3M1hxOTZ5SENfQVhCWVZmaEU3Y1F5ODhhbGg0Sm1zd3NjSUw4UGdEei1XdlRCZ2s4cEdyOURSM0ZPYWFPTEMtNTNTR2t4MzlQRDNYemJza0lZZEtLbGVSRzhNaGJ6N0pIMVg2WXJo?oc=5" target="_blank">En modo de expansión condohoteles de ultralujo en Río Grande y Dorado - Noticias de Puerto Rico hoy</a></td>
             <td>Río Grande</td>
-            <td>2026-05-09 09:12</td>
+            <td>2026-05-09 20:54</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://noticel.com/noticias/20260509/comision-de-juegos-ocupa-37-maquinas-ilegales-en-dos-negocios-de-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=comision-de-juegos-ocupa-37-maquinas-ilegales-en-dos-negocios-de-san-juan" target="_blank">Comisión de Juegos ocupa 37 máquinas ilegales en dos negocios de San Juan</a></td>
+            <td>NotiCel</td>
+            <td>2026-05-09 16:55</td>
+        </tr>
+        <tr class="article-row" data-municipios="Fajardo">
+            <td><span class="muni-tag">Fajardo</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFBYSlRpMmhCUHJ0TUhGNFZfNHJjZlV2SVdtTDR0U1lVTkpZclFGX25qeFZxRi02WGhpSmFBVW9fM2steGhDWGhFckh3bWVOWUJXNjBRN1ZwZmpFeHlybXFVSWZWd1JoRnB4YlotNHItV0tQMnlfQzdqYXZ6bUo?oc=5" target="_blank">Municipio Autónomo de Fajardo - facebook.com</a></td>
+            <td>FB - Fajardo</td>
+            <td>2026-05-09 15:42</td>
+        </tr>
+        <tr class="article-row" data-municipios="Fajardo">
+            <td><span class="muni-tag">Fajardo</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNRHRDcnZubjZaMTBLSGphUnRfZXdPS2NjSVRmZ1BIYXp1djk0TEx0V1FsVy1ad0EwbnZUUkFoUWlqdmUySm45aTJ1dGpmMGI0OTZBeG1aZnY5S2JLQ0Voam5udUlIdnF6ZkxjNEVXT2VZaEd1dzJhbndlZ0o2Q2FkY3BGbHQ5QVpyV28zeVlLYmdSWWZ1ZF9hckNoWnBOZw?oc=5" target="_blank">Municipio Autónomo de Fajardo - facebook.com</a></td>
+            <td>FB - Fajardo</td>
+            <td>2026-05-09 15:42</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://esnoticiapr.com/guardia-costera-prohibe-atraco-a-dos-embarcaciones-por-obstruir-paso-de-cruceros/" target="_blank">Guardia Costera prohíbe atraco a dos embarcaciones por obstruir paso de cruceros</a></td>
+            <td>Es Noticia</td>
+            <td>2026-05-09 12:35</td>
+        </tr>
+        <tr class="article-row" data-municipios="Canóvanas, Río Grande">
+            <td><span class="muni-tag">Canóvanas, Río Grande</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxOTHNTRS0yUVRPeUJ2V2Q3dnlpUmY2UjRxbHRBVFpMb2FTR0hsWXdaQW1PT0w5NTdVQnhQY1ZFS25FcllnZkZJNEZ4alZ2cTU2Znc4V1ZIa092VWplWW5WQ0FlLUY1Nmo4MGh0WGFMeURmVFNwdjJYLTljaElpX0hSZDhFMjM4QVBXUm14ODZWaXlTSllqLVotNDFXUDNoVnJYakJYZmxHME16SFZzMFV0U0FEM2JacXlhX0J2V1loTm12UTBjNU9xYWstM2VEdUVkcFlGcVpGaVlxWjRZU0dKUUxQNU9uc3NJNFNXckluMXFjb2xORjZ5eHFyaw?oc=5" target="_blank">🕊️ Canóvanas se une al dolor que atraviesa el alcalde de Municipio de Río Grande, Ángel “Bori” González, ante el fallecimiento de su querida madre, doña Mynerva. En este momento de profunda tristeza, extendemos nuestras más sinceras condolencias a - facebook.com</a></td>
+            <td>FB - Canóvanas</td>
+            <td>2026-05-09 11:21</td>
         </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNU2ZHcWI1dDgwNl9DeWFaemhONlZ2X05rTThaWl9CLTl0Q2daVmJsSmlxUnlTY0kwODBIcVJBTzBYVmJnb2FYLVd4WGxmdmx1SWtCZkVRZDdHRWpid2hXT09oUDZCUVNGdGw5dkZoWjltbFJzbDkzaEpiRE0zUnlJZzE4VnYzajE2NGF3?oc=5" target="_blank">Municipio De Trujillo Alto - Facebook</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNU2ZHcWI1dDgwNl9DeWFaemhONlZ2X05rTThaWl9CLTl0Q2daVmJsSmlxUnlTY0kwODBIcVJBTzBYVmJnb2FYLVd4WGxmdmx1SWtCZkVRZDdHRWpid2hXT09oUDZCUVNGdGw5dkZoWjltbFJzbDkzaEpiRE0zUnlJZzE4VnYzajE2NGF3?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a></td>
             <td>FB - Trujillo Alto</td>
             <td>2026-05-09 03:21</td>
-        </tr>
-        <tr class="article-row" data-municipios="Río Grande">
-            <td><span class="muni-tag">Río Grande</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/negocios/bienes-raices/notas/en-modo-de-expansion-condohoteles-de-ultralujo-en-rio-grande-y-dorado/" target="_blank">En modo de expansión condohoteles de ultralujo en Río Grande y Dorado</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-09 03:10</td>
         </tr>
             </tbody>
         </table>
     </div>
+</div>
+
+<div class="section" id="facebookSection">
+    <h2>📘 Facebook — Posts Recientes</h2>
+    <div class="facebook-empty">No se encontraron posts de Facebook.</div>
 </div>
 
 <div class="section">
@@ -267,12 +351,16 @@ tr:hover { background: #fafafa; }
             <td>El Nuevo Día (Scraping)</td>
             <td class="status-ok">✅ OK</td>
         </tr>
+        <tr>
+            <td>Facebook (28 páginas)</td>
+            <td class="status-error">❌ Error: timeout (180s)</td>
+        </tr>
         </tbody>
     </table>
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-09 06:02:01
+    Generado por Hermes Agent — 2026-05-09 22:03:31
 </div>
 
 <script>

@@ -190,12 +190,12 @@ tr:hover { background: #fafafa; }
 
 <div class="header">
     <h1>🗺️ Monitoreo Municipal</h1>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-09 18:52:03</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-09 22:03:31</div>
     <div class="stats">
-        <div class="stat-box"><div class="num">8</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">8</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-09 18:52:03</div></div>
+        <div class="stat-box"><div class="num">7</div><div class="label">Total Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">7</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-09 22:03:31</div></div>
     </div>
 </div>
 
@@ -205,7 +205,7 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">2</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
@@ -215,9 +215,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Trujillo Alto</div>
             <div class="muni-count">1</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Caguas')">
+        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
@@ -227,9 +227,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Canóvanas</div>
             <div class="muni-count">1</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
+        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">2</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
@@ -277,35 +277,29 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://noticel.com/noticias/20260509/romero-no-le-quita-el-guante-de-la-cara-a-la-aaa/?utm_source=rss&utm_medium=rss&utm_campaign=romero-no-le-quita-el-guante-de-la-cara-a-la-aaa" target="_blank">Romero no le quita el guante de la cara a la AAA</a></td>
-            <td>NotiCel</td>
-            <td>2026-05-09 21:38</td>
-        </tr>
         <tr class="article-row" data-municipios="Río Grande">
             <td><span class="muni-tag">Río Grande</span></td>
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPcXBXWEJzU05kY1JEcDFhWUxxT2kyX2JQTWpEXzFmMG9GY05IOXh0d1NKaFo2QVpwaEVLdVF2Mk5lRU15Mi1QOU9oT0o5NklWZlZ4LUd0MXJiOVpRSlY3M1hxOTZ5SENfQVhCWVZmaEU3Y1F5ODhhbGg0Sm1zd3NjSUw4UGdEei1XdlRCZ2s4cEdyOURSM0ZPYWFPTEMtNTNTR2t4MzlQRDNYemJza0lZZEtLbGVSRzhNaGJ6N0pIMVg2WXJo?oc=5" target="_blank">En modo de expansión condohoteles de ultralujo en Río Grande y Dorado - Noticias de Puerto Rico hoy</a></td>
             <td>Río Grande</td>
             <td>2026-05-09 20:54</td>
         </tr>
-        <tr class="article-row" data-municipios="Caguas">
-            <td><span class="muni-tag">Caguas</span></td>
-            <td class="titular-cell"> <a href="https://noticel.com/deportes/20260509/los-criollos-firman-a-edison-mora/?utm_source=rss&utm_medium=rss&utm_campaign=los-criollos-firman-a-edison-mora" target="_blank">Los Criollos firman a Edison Mora</a></td>
-            <td>NotiCel</td>
-            <td>2026-05-09 20:32</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/comision-de-juegos-ocupa-37-maquinas-tragamonedas-ilegales-en-san-juan/" target="_blank">Comisión de Juegos ocupa 37 máquinas tragamonedas ilegales en San Juan</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-09 18:50</td>
-        </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://noticel.com/noticias/20260509/comision-de-juegos-ocupa-37-maquinas-ilegales-en-dos-negocios-de-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=comision-de-juegos-ocupa-37-maquinas-ilegales-en-dos-negocios-de-san-juan" target="_blank">Comisión de Juegos ocupa 37 máquinas ilegales en dos negocios de San Juan</a></td>
             <td>NotiCel</td>
             <td>2026-05-09 16:55</td>
+        </tr>
+        <tr class="article-row" data-municipios="Fajardo">
+            <td><span class="muni-tag">Fajardo</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFBYSlRpMmhCUHJ0TUhGNFZfNHJjZlV2SVdtTDR0U1lVTkpZclFGX25qeFZxRi02WGhpSmFBVW9fM2steGhDWGhFckh3bWVOWUJXNjBRN1ZwZmpFeHlybXFVSWZWd1JoRnB4YlotNHItV0tQMnlfQzdqYXZ6bUo?oc=5" target="_blank">Municipio Autónomo de Fajardo - facebook.com</a></td>
+            <td>FB - Fajardo</td>
+            <td>2026-05-09 15:42</td>
+        </tr>
+        <tr class="article-row" data-municipios="Fajardo">
+            <td><span class="muni-tag">Fajardo</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNRHRDcnZubjZaMTBLSGphUnRfZXdPS2NjSVRmZ1BIYXp1djk0TEx0V1FsVy1ad0EwbnZUUkFoUWlqdmUySm45aTJ1dGpmMGI0OTZBeG1aZnY5S2JLQ0Voam5udUlIdnF6ZkxjNEVXT2VZaEd1dzJhbndlZ0o2Q2FkY3BGbHQ5QVpyV28zeVlLYmdSWWZ1ZF9hckNoWnBOZw?oc=5" target="_blank">Municipio Autónomo de Fajardo - facebook.com</a></td>
+            <td>FB - Fajardo</td>
+            <td>2026-05-09 15:42</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
@@ -315,13 +309,13 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Canóvanas, Río Grande">
             <td><span class="muni-tag">Canóvanas, Río Grande</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxOTHNTRS0yUVRPeUJ2V2Q3dnlpUmY2UjRxbHRBVFpMb2FTR0hsWXdaQW1PT0w5NTdVQnhQY1ZFS25FcllnZkZJNEZ4alZ2cTU2Znc4V1ZIa092VWplWW5WQ0FlLUY1Nmo4MGh0WGFMeURmVFNwdjJYLTljaElpX0hSZDhFMjM4QVBXUm14ODZWaXlTSllqLVotNDFXUDNoVnJYakJYZmxHME16SFZzMFV0U0FEM2JacXlhX0J2V1loTm12UTBjNU9xYWstM2VEdUVkcFlGcVpGaVlxWjRZU0dKUUxQNU9uc3NJNFNXckluMXFjb2xORjZ5eHFyaw?oc=5" target="_blank">🕊️ Canóvanas se une al dolor que atraviesa el alcalde de Municipio de Río Grande, Ángel “Bori” González, ante el fallecimiento de su querida madre, doña Mynerva. En este momento de profunda tristeza, extendemos nuestras más sinceras condolencias a - Facebook</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxOTHNTRS0yUVRPeUJ2V2Q3dnlpUmY2UjRxbHRBVFpMb2FTR0hsWXdaQW1PT0w5NTdVQnhQY1ZFS25FcllnZkZJNEZ4alZ2cTU2Znc4V1ZIa092VWplWW5WQ0FlLUY1Nmo4MGh0WGFMeURmVFNwdjJYLTljaElpX0hSZDhFMjM4QVBXUm14ODZWaXlTSllqLVotNDFXUDNoVnJYakJYZmxHME16SFZzMFV0U0FEM2JacXlhX0J2V1loTm12UTBjNU9xYWstM2VEdUVkcFlGcVpGaVlxWjRZU0dKUUxQNU9uc3NJNFNXckluMXFjb2xORjZ5eHFyaw?oc=5" target="_blank">🕊️ Canóvanas se une al dolor que atraviesa el alcalde de Municipio de Río Grande, Ángel “Bori” González, ante el fallecimiento de su querida madre, doña Mynerva. En este momento de profunda tristeza, extendemos nuestras más sinceras condolencias a - facebook.com</a></td>
             <td>FB - Canóvanas</td>
             <td>2026-05-09 11:21</td>
         </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNU2ZHcWI1dDgwNl9DeWFaemhONlZ2X05rTThaWl9CLTl0Q2daVmJsSmlxUnlTY0kwODBIcVJBTzBYVmJnb2FYLVd4WGxmdmx1SWtCZkVRZDdHRWpid2hXT09oUDZCUVNGdGw5dkZoWjltbFJzbDkzaEpiRE0zUnlJZzE4VnYzajE2NGF3?oc=5" target="_blank">Municipio De Trujillo Alto - Facebook</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNU2ZHcWI1dDgwNl9DeWFaemhONlZ2X05rTThaWl9CLTl0Q2daVmJsSmlxUnlTY0kwODBIcVJBTzBYVmJnb2FYLVd4WGxmdmx1SWtCZkVRZDdHRWpid2hXT09oUDZCUVNGdGw5dkZoWjltbFJzbDkzaEpiRE0zUnlJZzE4VnYzajE2NGF3?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a></td>
             <td>FB - Trujillo Alto</td>
             <td>2026-05-09 03:21</td>
         </tr>
@@ -332,290 +326,7 @@ tr:hover { background: #fafafa; }
 
 <div class="section" id="facebookSection">
     <h2>📘 Facebook — Posts Recientes</h2>
-    
-    <div class="fb-grid">
-        
-        <div class="fb-card">
-            <div class="fb-card-header">📘 San Juan</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 3 h</div>
-                <div class="fb-post-texto">Caparra Heights se llenó de intensidad, disciplina y mucho talento en una gran noche de boxeo como parte del Festival Recreo Deportivo.</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Carolina</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 10 h</div>
-                <div class="fb-post-texto">CAROLINA CELEBRÓ LA NOCHE DE LOGROS DE LOS CENTROS DE FORMACIÓN DE BARRAZAS Aixa Bauza Enhorabuena Sr. Alcalde, felicidades a maestros y estudiantes poniendo en alto nuestra cultura.</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Trujillo Alto</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 5 h</div>
-                <div class="fb-post-texto">Se informa a la ciudadanía que el martes, 12 de mayo de 2026, se estará llevando a cabo una actividad coordinada por un comité organizador local, la cual podrá afectar … Ver más Raul Mojica El sentido común no pensó en Domingo o Sábado de 3PM en a...</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Canovanas</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 11 min</div>
-                <div class="fb-post-texto">Este Día de las Madres, nuestros cementerios municipales estarán abiertos para que las familias puedan visitar y honrar a esas madres que viven por siempre en nuest… Ver más Carmen Calderon Gracias</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Loiza</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 1 día</div>
-                <div class="fb-post-texto">Editorial Semana [EVENTOS] El Dr. William Cepeda celebrará en Loíza los 35 años del grupo Afro Rican Jazz con la Tribu Taína de la USC… Ver más Ingrid Quiñones Saludos. Quiero reportar una situación muy frustrante con el servicio de recogido de ba...</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Rio Grande</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 2 h</div>
-                <div class="fb-post-texto">Te invitamos a nuestro Taller: Arte en Globos, donde aprenderás técnicas básicas paso a paso para crear decoraciones únicas y llenas de color.… Ver más</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Luquillo</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 1 día</div>
-                <div class="fb-post-texto">Los Soles de Luquillo Béisbol Clase A JUEGO DE ESTRELLAS COPA REAL SPORT!!!… Ver más</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Fajardo</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 2 h</div>
-                <div class="fb-post-texto">#MARTES 12 DE MAYO … Ver más</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Ceiba</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 9 h</div>
-                <div class="fb-post-texto">Nanette Madrigal Si bajaran los precios para limpiarlos será ideal</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Naguabo</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 2 h</div>
-                <div class="fb-post-texto">Aviso Importante por parte de Acueductospr|| La estación de bombas Peña Pobre está fuera de operación por falta de servicio eléctrico, reportado a LUMA Energy con event… Ver más</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Caguas</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 51 min</div>
-                <div class="fb-post-texto">El Bosque Urbano del Barrio Borinquen será escenario del Primer Festival del Bosque Urbano de Borinquen, una actividad educativa y comunitaria dirigida a promover el cu… Ver más</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Catano</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 47 min</div>
-                <div class="fb-post-texto">Lancheras de Cataño LBPF está con Municipio Autónomo de Cataño. Auspicidor Oficial G… Ver más</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Vieques</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 1 día</div>
-                <div class="fb-post-texto">La Administración Municipal, liderada por nuestro Alcalde, Hon. José A. Junito Corcino Acevedo, continúa firme en su misión de fortalecer la educación ambiental en n… Ver más</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Culebra</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 5 h</div>
-                <div class="fb-post-texto">0:00 / 1:38:12 Ethel Rivera Feliz día de las madres</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Gobierno PR</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 54 min</div>
-                <div class="fb-post-texto">¡Campeonas!🔥💪🏆🥎 Felicitamos al equipo de softball femenino del Negociado del Cuerpo de Bomberos de Puerto Rico campeonas de las… Ver más Negociado del Cuerpo de Bomberos de Puerto Rico · Audio original Negociado del Cuerpo de Bomberos de Puerto Ri...</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Senado PR</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 1 h</div>
-                <div class="fb-post-texto">𝐒𝐞𝐧𝐚𝐝𝐨𝐫 𝐖𝐢𝐥𝐦𝐞𝐫 𝐑𝐞𝐲𝐞𝐬 𝐫𝐞𝐜𝐨𝐧𝐨𝐜𝐞 𝐚 𝐦𝐚𝐝𝐫𝐞𝐬 𝐝𝐞𝐥 𝐃𝐢𝐬𝐭𝐫𝐢𝐭𝐨 𝐝𝐞 𝐆𝐮𝐚𝐲𝐚𝐦𝐚 𝐩𝐨𝐫 𝐬𝐮 𝐢𝐦𝐩𝐚𝐜𝐭𝐨 𝐞𝐧 𝐬𝐮𝐬 𝐜𝐨𝐦𝐮𝐧𝐢𝐝𝐚𝐝𝐞𝐬 𝐲 𝐟𝐨𝐫𝐦𝐚𝐜𝐢𝐨́𝐧 𝐝𝐞 𝐠𝐞𝐧𝐞𝐫𝐚𝐜𝐢𝐨𝐧𝐞𝐬 A días de celebrarse el Día de las Madre… Ver más</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Camara PR</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 3 h</div>
-                <div class="fb-post-texto">[Agenda] Como parte de la Semana del Bibliotecario, el presidente cameral Carlos ‘Johnny’ Méndez realizó la apertura de la Colección Antonio Quiñones Calderón y, a su v… Ver más</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Junta Gobierno</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 6 h</div>
-                <div class="fb-post-texto">El Vocero de Puerto Rico https://ow.ly/VVn850YWXNK [En Portada] La primera ejecutiva habla sobre los retos de balancear la maternidad con sus responsabilidades al frente del gobierno. 1,1 mil Carmen Maduro Dios le bendiga por siempre. Y al igual a...</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 William Miranda</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 19 min</div>
-                <div class="fb-post-texto">Hoy tuve la oportunidad de visitar a Yummy Fru y de verdad que quedé encantado con el espectacular sabor y la excelente atención que allí se recibe. Q… Ver más</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Limarys Roman</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 13 min</div>
-                <div class="fb-post-texto">🇲🇽 Kevin González, el joven estadounidense de 18 años que padece cáncer de colon metastásico en estadío 4, se reunió al fin este sábado con sus padres… Ver más Noticias Telemundo · Audio original Noticias Telemundo · Audio original Noticias Telemu...</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 En Contacto 787</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 1 min</div>
-                <div class="fb-post-texto">ESTO ES UN ABUSO Empleados de Taco Bell Puerto Rico en Carolina, llevan varios meses trabajando sin aire acondicionado.… Ver más L Marie Poet El de Juncos porque lo cerraron si eso es literalmente nuevo ahí?</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Telenoticias</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 2 min</div>
-                <div class="fb-post-texto">La sospechosa de 36 años está detenida. TELEMUNDOPR.COM De horror: mujer ataca con arma blanca a su vecina de 83 años Ana M. Marin ¡Una pura psicópata en la calle!</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Noticias T11</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 5 h</div>
-                <div class="fb-post-texto">El joven fue visto por última vez el pasado 6 de mayo en el complejo residencial Brisas del Parque Escorial. TELEONCE.COM Buscan a joven de 27 años desaparecido en Carolina - TeleOnce TV | Vívelo</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 NotiCentro WAPA</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 45 min</div>
-                <div class="fb-post-texto">Presuntamente, el conductor perdió el control del volante e impactó a dos peatones que se encontraban en el área, los cuales quedaron pillados entre una pared de una residencia. WAPA.TV Septuagenario impacta a dos peatones en Arecibo; a uno se le ...</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Moluscotv</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 46 min</div>
-                <div class="fb-post-texto">Cuál corillo ??? … Ver más Jose Muniz Chelo Matias tiene los dos. Se los puso a los perros.</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Jay Fonseca</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 50 min</div>
-                <div class="fb-post-texto">Peter Thiel, dueño de Palantir y la empresa con más contratos tecnológicos del ejército de Estados Unidos —además de inversionista en Puerto Rico a través de New Fort… Ver más 0:00 / 0:00</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Ultima Hora PR</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 2 h</div>
-                <div class="fb-post-texto">Ultima Hora E… Ver más La Minnie Yang De mi parte no inventen vacuna porque no me la pondré. Ver las 4 respuestas</div>
-            </div>
-            </div>
-        </div>
-        <div class="fb-card">
-            <div class="fb-card-header">📘 Noticias En Linea</div>
-            <div class="fb-card-body">
-                
-            <div class="fb-post">
-                <div class="fb-post-fecha">🕐 14 min</div>
-                <div class="fb-post-texto">Hermoso atardecer esta tarde en Isabela.</div>
-            </div>
-            </div>
-        </div>
-    </div>
+    <div class="facebook-empty">No se encontraron posts de Facebook.</div>
 </div>
 
 <div class="section">
@@ -642,14 +353,14 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr>
             <td>Facebook (28 páginas)</td>
-            <td class="status-error">✅ OK (28 páginas, 28 posts)</td>
+            <td class="status-error">❌ Error: timeout (180s)</td>
         </tr>
         </tbody>
     </table>
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-09 18:52:03
+    Generado por Hermes Agent — 2026-05-09 22:03:31
 </div>
 
 <script>
