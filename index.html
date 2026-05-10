@@ -190,12 +190,12 @@ tr:hover { background: #fafafa; }
 
 <div class="header">
     <h1>🗺️ Monitoreo Municipal</h1>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-10 06:11:47</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-10 10:16:35</div>
     <div class="stats">
-        <div class="stat-box"><div class="num">1</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">1</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-10 06:11:47</div></div>
+        <div class="stat-box"><div class="num">9</div><div class="label">Total Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">8</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-10 10:16:35</div></div>
     </div>
 </div>
 
@@ -207,9 +207,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">San Juan</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Carolina')">
+        <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
@@ -231,9 +231,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Fajardo</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
+        <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
             <div class="muni-name">Río Grande</div>
@@ -247,17 +247,17 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Naguabo</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Humacao')">
+        <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
+        <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">5</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
@@ -277,6 +277,54 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://esnoticiapr.com/investigan-asesinato-de-un-hombre-bajo-puente-de-la-ruta-66-en-carolina/" target="_blank">Investigan asesinato de un hombre bajo puente de la Ruta 66 en Carolina</a></td>
+            <td>Es Noticia</td>
+            <td>2026-05-10 14:08</td>
+        </tr>
+        <tr class="article-row" data-municipios="Vieques">
+            <td><span class="muni-tag">Vieques</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://esnoticiapr.com/hombre-de-71-anos-se-priva-de-la-vida-en-vieques/" target="_blank">Hombre de 71 años se priva de la vida en Vieques</a></td>
+            <td>Es Noticia</td>
+            <td>2026-05-10 13:25</td>
+        </tr>
+        <tr class="article-row" data-municipios="Vieques">
+            <td><span class="muni-tag">Vieques</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOcGJDY1FUVGdHeVRWSVd2VEVLR3RGMGVZQ0NZZkQ4Yy1uRnNiZHp2cllNa3ZSdk5UTlFUaDNieWhGV0h5SUMzYTV4VVk3Qnk0WlEySWNOZTUtS0s3Y1FfUTRBREFLdFZ5RGxzZlNWa3FMRWRQNFpSWFhPQUZJa2lhLU5temtmUjVESnBwWmtnRUhmWHRFeGpXYWc2MXUwTHlEYjBqZEh0c1RUQk5fUHZGcDRaTkw5UQ?oc=5" target="_blank">Muere baleada una mujer de 30 años en su residencia en Vieques - Noticias de Puerto Rico hoy</a></td>
+            <td>Vieques</td>
+            <td>2026-05-10 12:54</td>
+        </tr>
+        <tr class="article-row" data-municipios="Vieques">
+            <td><span class="muni-tag">Vieques</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://esnoticiapr.com/asesinan-a-una-mujer-a-tiros-cerca-de-un-cementerio-en-vieques/" target="_blank">Asesinan a una mujer a tiros cerca de un cementerio en Vieques</a></td>
+            <td>Es Noticia</td>
+            <td>2026-05-10 12:24</td>
+        </tr>
+        <tr class="article-row" data-municipios="Vieques">
+            <td><span class="muni-tag">Vieques</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPTU1wakk2WkR2UWR0YTEzTjl6RjNEbGQ0LUJVeDRCV1BCMkl4MU9fSU1PS2Y4bUhpTkI5VzNZSXo2ekhodkdISllGRWtuWDhLWm9wdGliUlpvR2Fkd2sxVFctaUl3YjVGaUJlOWllcDJqNXJRYk5FOEg1elBSM1JQTzV3VDc4LVFtcGI3VW5iM3dkOEVpaFctZXNNSm9VSVNtdVNhM0VB0gGmAUFVX3lxTE9NTXBqSTZaRHZRZHRhMTNOOXpGM0RsZDQtQlV4NEJXUEIySXgxT19JTU9LZjhtSGlOQjlXM1lJejZ6SGh2R0hKWUZFa25YOEtab3B0aWJSWm9HYWR3azFUVy1pSXdiNUZpQmU5aWVwMmo1clFiTkU4SDV6UFIzUlBPNXdUNzgtUW1wYjdVbmIzd2Q4RWloVy1lc01Kb1VJU211U2EzRUE?oc=5" target="_blank">Asesinan a tiros a una mujer en Vieques - Telemundo Puerto Rico</a></td>
+            <td>Vieques</td>
+            <td>2026-05-10 11:57</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://esnoticiapr.com/arrestan-a-hombre-por-violaciones-a-la-ley-54-y-le-imponen-1-5-millones-de-fianza/" target="_blank">Arrestan a hombre por violaciones a la Ley 54 y le imponen $1.5 millones de fianza</a></td>
+            <td>Es Noticia</td>
+            <td>2026-05-10 11:39</td>
+        </tr>
+        <tr class="article-row" data-municipios="Loíza">
+            <td><span class="muni-tag">Loíza</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOVWhvVlY4R2F6cndhOW5yN0tzOVBNeTFuTjhNelJlTUhkaFlZUGdaU2VBNTFkZFlza1JFaVJ1amlLMEdGdUo2S3FDRTJFazRtU2YtQ3lGZUJEd1ZwOVhnY1FjWDROQlFEN1Q5TkFKN0V5em1CUTNjT2tfRER0OUNUMXpOLVU?oc=5" target="_blank">Municipio de Loíza - facebook.com</a></td>
+            <td>FB - Loíza</td>
+            <td>2026-05-10 11:04</td>
+        </tr>
+        <tr class="article-row" data-municipios="Vieques">
+            <td><span class="muni-tag">Vieques</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/muere-baleada-una-mujer-de-30-anos-en-su-residencia-en-vieques/" target="_blank">Muere baleada una mujer de 30 años en su residencia en Vieques</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-10 10:13</td>
+        </tr>
         <tr class="article-row" data-municipios="Río Grande">
             <td><span class="muni-tag">Río Grande</span></td>
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxNaXc0OHZEbThJbVlPbzBKNm0wVDN6RWdLT05PODktTHhJWlhvSmFybjVGUjA4N2k5bnpwZXotNENlZFFZMHdFRnljbHFnckw3SW4zRGh1S1NEMGNNMjVlcE93VEZmclY4WUtQV0hFeWNmQmFyblpBaVNHYmdSWFItSklNYkM1NGprUFdDRF9DWXc1YlJmOXBzYmpmN0tRNllKM0t0ZHU5NjdRNzJGRWdYcGM5SXQxVEtXa0xkX3Q0Z3lnM3FH?oc=5" target="_blank">Ultra-luxury condo-hotels in Rio Grande and Dorado begin expansion projects - Noticias de Puerto Rico hoy</a></td>
@@ -324,7 +372,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-10 06:11:47
+    Generado por Hermes Agent — 2026-05-10 10:16:35
 </div>
 
 <script>
