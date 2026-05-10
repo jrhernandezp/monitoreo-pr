@@ -251,6 +251,13 @@ def generate_html(articles: List[Dict], source_status: Dict, state: Dict, facebo
 
     # Build source status HTML
     facebook_html = generate_facebook_html(facebook_data or [])
+    facebook_section = ""
+    if facebook_data and any(r.get("posts") for r in facebook_data):
+        facebook_section = f"""
+<div class="section" id="facebookSection">
+    <h2>📘 Facebook — Posts Recientes</h2>
+    {facebook_html}
+</div>"""
     source_rows = ""
     for name, status in source_status.items():
         status_class = "status-ok" if status == "✅ OK" else "status-error"
@@ -484,10 +491,7 @@ tr:hover {{ background: #fafafa; }}
     </div>
 </div>
 
-<div class="section" id="facebookSection">
-    <h2>📘 Facebook — Posts Recientes</h2>
-    {facebook_html}
-</div>
+    {facebook_section}
 
 <div class="section">
     <h2>📡 Estado de Fuentes</h2>
@@ -556,6 +560,9 @@ def main():
     # 4. Facebook (via subprocess to tools-venv)
     facebook_data, fb_status = collect_facebook_posts()
     source_status.update(fb_status)
+
+    # Filtrar Facebook del estado de fuentes visible (monitoreo en segundo plano)
+    source_status = {k: v for k, v in source_status.items() if "Facebook" not in k}
 
     # Filtrar solo noticias de HOY
     articles = filter_today_only(articles)
