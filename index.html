@@ -192,12 +192,12 @@ tr:hover { background: #fafafa; }
 
 <div class="header">
     <h1>🗺️ Observador del Noreste</h1>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-11 07:33:55</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-11 08:14:58</div>
     <div class="stats">
         <div class="stat-box"><div class="num">2</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">4</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">17</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 07:33:55</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 08:14:58</div></div>
     </div>
 </div>
 
@@ -209,9 +209,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">San Juan</div>
             <div class="muni-count">3</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Carolina')">
+        <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
@@ -279,29 +279,35 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="San Juan, Carolina">
+            <td><span class="muni-tag">San Juan, Carolina</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://radioisla.tv/investigan-cadaver-en-alcantarilla-de-la-aaa-en-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=investigan-cadaver-en-alcantarilla-de-la-aaa-en-san-juan&utm_source=rss&utm_medium=rss&utm_campaign=investigan-cadaver-en-alcantarilla-de-la-aaa-en-san-juan" target="_blank">Investigan cadaver en alcantarilla de la AAA</a></td>
+            <td>Radio Isla</td>
+            <td>2026-05-11 11:39</td>
+        </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://esnoticiapr.com/hombre-muere-tras-accidente-de-motora-y-conductor-abandona-la-escena-en-humacao/" target="_blank">Hombre muere tras accidente de motora y conductor abandona la escena en Humacao</a></td>
+            <td class="titular-cell"> <a href="https://esnoticiapr.com/hombre-muere-tras-accidente-de-motora-y-conductor-abandona-la-escena-en-humacao/" target="_blank">Hombre muere tras accidente de motora y conductor abandona la escena en Humacao</a></td>
             <td>Es Noticia</td>
             <td>2026-05-11 10:52</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/investigan-hit-and-run-que-dejo-un-motorista-muerto-en-humacao/" target="_blank">Investigan “hit and run” que dejó un motorista muerto en Humacao</a></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/investigan-hit-and-run-que-dejo-un-motorista-muerto-en-humacao/" target="_blank">Investigan “hit and run” que dejó un motorista muerto en Humacao</a></td>
             <td>El Nuevo Día</td>
             <td>2026-05-11 10:21</td>
         </tr>
-        <tr class="article-row" data-municipios="Vieques, Culebra">
-            <td><span class="muni-tag">Vieques, Culebra</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxQbm9LSUVVbm5TZXJORGRlWkVYMnphdVFidnVYSmdtQnhvcldWWmE2dThrcVhiZkZvTjZSNEctdkZTTGJ5b1hHSGx2aGZ1NDRvXzJtRnBaaWhRcnpfUXlFdHRmbHdEWkVqbkJuM05POENaRWdhQnV0d0JYTnRUV3NuY1FzQ1o0YW5aMm5KWExLU3hFZW1FSUkyaGdVVFhoQVNwNXUtSC1jalpWRDNyNUd0S3E2TVV5UkJ4dm54NmtPMWNqUkhpT0Z5TlJGR29mOTdfdlBUMjgxSWtBblRhYlpjVXNGMlRhNW5pbF9Ub3pOd9IB9AFBVV95cUxPQVFJXzBJS0YwZGxic01RWG96QjJYZ2h0dnloTlg1WDNFdTNXRWtiQ1lmSFVLemNHNFZmQWE0NGFRWEl5QmFfbXl4bEVBTVp2b3g2ME5hSjZXOGdCaktmUTJYT0tGcjczX2trbmJ6OW9SS0gtS1NPTk1aQ29mMG5QY211eUdDMnppZkhmX3JPTWo4b2diVE9UdExvS1NkeXBhdmlyc0luZVhBT2c1RWdBRjJqWkJfWlJpRUVmcVRHNWVCck1va3FjalB4b1dsTHRjZVdUZHlHMVU1cWtlX1ZGUXFNdVVfRS1MUm9kcDVJM0Z3MVBQ?oc=5" target="_blank">Alza en precio de la gasolina impacta con mayor fuerza a Vieques y Culebra - El Vocero de Puerto Rico</a></td>
-            <td>Vieques</td>
-            <td>2026-05-11 10:20</td>
-        </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://radioisla.tv/hit-and-run-motociclista-pierde-la-vida-tras-ser-impactado-por-un-vehiculo/?utm_source=rss&utm_medium=rss&utm_campaign=hit-and-run-motociclista-pierde-la-vida-tras-ser-impactado-por-un-vehiculo&utm_source=rss&utm_medium=rss&utm_campaign=hit-and-run-motociclista-pierde-la-vida-tras-ser-impactado-por-un-vehiculo" target="_blank">Hit and run: Individuo pierde la vida tras ser impactado por un vehículo</a></td>
+            <td class="titular-cell"> <a href="https://radioisla.tv/hit-and-run-motociclista-pierde-la-vida-tras-ser-impactado-por-un-vehiculo/?utm_source=rss&utm_medium=rss&utm_campaign=hit-and-run-motociclista-pierde-la-vida-tras-ser-impactado-por-un-vehiculo&utm_source=rss&utm_medium=rss&utm_campaign=hit-and-run-motociclista-pierde-la-vida-tras-ser-impactado-por-un-vehiculo" target="_blank">Hit and run: Individuo pierde la vida tras ser impactado por un vehículo</a></td>
             <td>Radio Isla</td>
             <td>2026-05-11 10:18</td>
+        </tr>
+        <tr class="article-row" data-municipios="Vieques, Culebra">
+            <td><span class="muni-tag">Vieques, Culebra</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxQbm9LSUVVbm5TZXJORGRlWkVYMnphdVFidnVYSmdtQnhvcldWWmE2dThrcVhiZkZvTjZSNEctdkZTTGJ5b1hHSGx2aGZ1NDRvXzJtRnBaaWhRcnpfUXlFdHRmbHdEWkVqbkJuM05POENaRWdhQnV0d0JYTnRUV3NuY1FzQ1o0YW5aMm5KWExLU3hFZW1FSUkyaGdVVFhoQVNwNXUtSC1jalpWRDNyNUd0S3E2TVV5UkJ4dm54NmtPMWNqUkhpT0Z5TlJGR29mOTdfdlBUMjgxSWtBblRhYlpjVXNGMlRhNW5pbF9Ub3pOd9IB9AFBVV95cUxPQVFJXzBJS0YwZGxic01RWG96QjJYZ2h0dnloTlg1WDNFdTNXRWtiQ1lmSFVLemNHNFZmQWE0NGFRWEl5QmFfbXl4bEVBTVp2b3g2ME5hSjZXOGdCaktmUTJYT0tGcjczX2trbmJ6OW9SS0gtS1NPTk1aQ29mMG5QY211eUdDMnppZkhmX3JPTWo4b2diVE9UdExvS1NkeXBhdmlyc0luZVhBT2c1RWdBRjJqWkJfWlJpRUVmcVRHNWVCck1va3FjalB4b1dsTHRjZVdUZHlHMVU1cWtlX1ZGUXFNdVVfRS1MUm9kcDVJM0Z3MVBQ?oc=5" target="_blank">Alza en precio de la gasolina impacta con mayor fuerza a Vieques y Culebra - El Vocero de Puerto Rico</a></td>
+            <td>Vieques</td>
+            <td>2026-05-11 07:53</td>
         </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
@@ -344,12 +350,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOMVRyU21tMnNGaHI4UWw0aFFuaWpVSkNJRDAtVnRIQm9HcHFmU1VTcmNFbGdIRkhxVXU0aE03MVM4azk2YnRybHJWM1JETzYzbnZ3UkptbUsyN1dpWGFaRkVpdG13ODRMcmltSkxsdUNyZzhYblI2WUxBaDM5aUxKY2JjTGlUVVZ0d3Nfb0g3WE9iSmhHTk5zYm9PWEJleTg0OE9OTldtTmlqeXBVWHJHejZkV0dxZ9IBvgFBVV95cUxNNnBMa2hRMTVkVkJFQ3BXREJac2dQTDBub2NMbDVRd1F2MjM0NTVYT3RrSXl3NDU4RmlwVHRUMDJRd2w4Y2RUVHBvQmRidWEtQU94UnlFVmt5MUYwMXh4dzVNb1VkdkNkeF9TU2VFaEJwSnp3N3l3b2FjZC1CbkJiTkJVMVdWb0JURlkxcVFVWUZMQVpRTnNWMXVaTW1OMEdFYjVUR3I4WFlXbURhMVQxb3VHdW5fYzBoYzNiSUt3?oc=5" target="_blank">Tres jóvenes resultan heridos en accidente en Luquillo - Telemundo Puerto Rico</a></td>
             <td>Luquillo</td>
             <td>2026-05-10 15:16</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://esnoticiapr.com/mujer-arrestada-tras-presuntamente-apunalar-a-una-octogenaria-en-puerto-nuevo-san-juan/" target="_blank">Mujer arrestada tras presuntamente apuñalar a una octogenaria en San Juan</a></td>
-            <td>Es Noticia</td>
-            <td>2026-05-10 14:52</td>
         </tr>
         <tr class="article-row" data-municipios="Vieques">
             <td><span class="muni-tag">Vieques</span></td>
@@ -673,7 +673,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-11 07:33:55
+    Generado por Hermes Agent — 2026-05-11 08:14:58
 </div>
 
 <script>
