@@ -7,6 +7,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <title>Observador del Noreste - Noreste PR</title>
+<link rel="icon" type="image/jpeg" href="logo-observador.jpg">
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
@@ -21,6 +22,25 @@ body {
     padding: 25px 30px;
     border-radius: 12px;
     margin-bottom: 25px;
+}
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.header-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+@media (max-width: 600px) {
+    .header-logo {
+        width: 40px;
+        height: 40px;
+    }
 }
 .header h1 { font-size: 28px; margin-bottom: 5px; }
 .header .sub { color: #aab6fe; font-size: 14px; }
@@ -191,13 +211,16 @@ tr:hover { background: #fafafa; }
 <body>
 
 <div class="header">
-    <h1>🗺️ Observador del Noreste</h1>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-11 11:04:55</div>
+    <div class="header-top">
+        <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
+        <h1>🗺️ Observador del Noreste</h1>
+    </div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-11 11:11:03</div>
     <div class="stats">
         <div class="stat-box"><div class="num">2</div><div class="label">Total Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff5252">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">19</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 11:04:55</div></div>
+        <div class="stat-box"><div class="num">18</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 11:11:03</div></div>
     </div>
 </div>
 
@@ -215,7 +238,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
@@ -290,12 +313,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://esnoticiapr.com/accidente-grave-deja-varios-heridos-en-luquillo/" target="_blank">Accidente grave deja varios heridos en Luquillo</a></td>
             <td>Es Noticia</td>
             <td>2026-05-11 13:00</td>
-        </tr>
-        <tr class="article-row" data-municipios="Trujillo Alto">
-            <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/english/sports/story/ortiz-brothers-to-be-honored-in-trujillo-alto-after-historic-kentucky-derby-finish/" target="_blank">Ortiz brothers to be honored in Trujillo Alto after historic Kentucky Derby finish</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-11 12:45</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
@@ -685,7 +702,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-11 11:04:55
+    Generado por Hermes Agent — 2026-05-11 11:11:03
 </div>
 
 <script>

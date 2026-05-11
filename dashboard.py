@@ -298,6 +298,7 @@ def generate_html(articles: List[Dict], source_status: Dict, state: Dict, facebo
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <title>Observador del Noreste - Noreste PR</title>
+<link rel="icon" type="image/jpeg" href="logo-observador.jpg">
 <style>
 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
 body {{
@@ -312,6 +313,25 @@ body {{
     padding: 25px 30px;
     border-radius: 12px;
     margin-bottom: 25px;
+}}
+.header-top {{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}}
+.header-logo {{
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+}}
+@media (max-width: 600px) {{
+    .header-logo {{
+        width: 40px;
+        height: 40px;
+    }}
 }}
 .header h1 {{ font-size: 28px; margin-bottom: 5px; }}
 .header .sub {{ color: #aab6fe; font-size: 14px; }}
@@ -482,7 +502,10 @@ tr:hover {{ background: #fafafa; }}
 <body>
 
 <div class="header">
-    <h1>🗺️ Observador del Noreste</h1>
+    <div class="header-top">
+        <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
+        <h1>🗺️ Observador del Noreste</h1>
+    </div>
     <div class="sub">Noreste de Puerto Rico — {now}</div>
     <div class="stats">
         <div class="stat-box"><div class="num">{total}</div><div class="label">Total Noticias</div></div>
