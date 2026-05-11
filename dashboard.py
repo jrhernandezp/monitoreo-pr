@@ -73,9 +73,11 @@ def collect_articles() -> tuple:
         scraped_articles = scrape_all()
         all_articles.extend(scraped_articles)
         source_status["El Nuevo Día (Scraping)"] = "✅ OK"
+        source_status["Carolina787 (Scraping)"] = "✅ OK"
     except Exception as e:
         print(f"  ❌ Scraping error: {e}")
         source_status["El Nuevo Día (Scraping)"] = f"❌ Error: {e}"
+        source_status["Carolina787 (Scraping)"] = f"❌ Error: {e}"
 
     # Deduplicate by link
     seen_links = set()
@@ -269,7 +271,7 @@ def generate_html(articles: List[Dict], source_status: Dict, state: Dict, facebo
         grupos[cat].append((name, status, ok))
 
     # Sort categories with most important first
-    orden_cat = ["📰 RSS Directo", "📰 Google News", "🏛️ Municipios", "🏛️ Gobierno", "📘 Facebook", "📡 Otros", "News API", "El Nuevo Día (Scraping)"]
+    orden_cat = ["📰 RSS Directo", "📰 Google News", "🏛️ Municipios", "🏛️ Gobierno", "📘 Facebook", "📡 Otros", "News API", "El Nuevo Día (Scraping)", "Carolina787 (Scraping)"]
     for cat in orden_cat:
         if cat not in grupos:
             continue
