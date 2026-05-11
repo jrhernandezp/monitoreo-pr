@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-11 12:04:58</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-11 12:34:27</div>
     <div class="stats">
         <div class="stat-box"><div class="num">2</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">25</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 12:04:58</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">27</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 12:34:27</div></div>
     </div>
 </div>
 
@@ -274,7 +274,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">7</div>
+            <div class="muni-count">8</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
@@ -282,7 +282,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">5</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
@@ -302,6 +302,12 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/11/dos-accidentes-fatales-de-hit-and-run-son-investigados-en-la-region-de-humacao/" target="_blank">Dos accidentes fatales de “hit and run” son investigados en la región de Humacao</a></td>
+            <td>Walo Radio</td>
+            <td>2026-05-11 16:10</td>
+        </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
             <td class="titular-cell"> <a href="https://waloradio.com/2026/05/11/maestra-denuncia-problemas-con-acondicionadores-de-aire-en-escuela-anita-otero-de-humacao/" target="_blank">Maestra denuncia problemas con acondicionadores de aire en escuela Anita Otero de Humacao</a></td>
@@ -344,6 +350,12 @@ tr:hover { background: #fafafa; }
             <td>Es Noticia</td>
             <td>2026-05-11 13:00</td>
         </tr>
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/tribunales/notas/causa-para-arresto-contra-presunto-lider-de-organizacion-criminal-de-residencial-publico-de-carolina/" target="_blank">Causa para arresto contra presunto líder de organización criminal de Carolina</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-11 12:31</td>
+        </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://esnoticiapr.com/hallan-cadaver-en-avanzado-estado-de-descomposicion-en-planta-de-aguas-residuales/" target="_blank">Hallan cadáver en avanzado estado de descomposición en planta de aguas residuales</a></td>
@@ -367,12 +379,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://noticel.com/noticias/20260511/hombre-muere-en-accidente-de-transito-en-humacao-3/?utm_source=rss&utm_medium=rss&utm_campaign=hombre-muere-en-accidente-de-transito-en-humacao-3" target="_blank">Hombre muere en accidente de tránsito en Humacao</a></td>
             <td>NotiCel</td>
             <td>2026-05-11 12:02</td>
-        </tr>
-        <tr class="article-row" data-municipios="Carolina">
-            <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/tribunales/notas/causa-para-arresto-contra-presunto-lider-de-organizacion-criminal-de-residencial-publico-de-carolina/" target="_blank">Causa para arresto contra presunto líder de organización criminal de Carolina</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-11 12:01</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan, Carolina">
             <td><span class="muni-tag">San Juan, Carolina</span></td>
@@ -415,6 +421,12 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxOaXJmdC1OQjFiYW9KaVAxNkdtX3kyMTNPNHVfakpKTGdkaVloV1g0dDhINThtTmpVMkVuZzQ4d3JZbkY1LTFTd0FubmRmaC1yTFdaUkpvTUZOWXhmMWlpZ2xwanNMamJIeC01LUpCRnpkMkxEVExYdy1uRk04U0R1dERQT2JIQ19xOXNJT0hFeWVqUGViS040bVk5Znh2ZUtSLU9UM2dwMTV4NDhfbjNiRnJoRkh1TGRyMHJWdW1pN1RnYXV1dlVDVnY3YnnSAcwBQVVfeXFMTmlyZnQtTkIxYmFvSmlQMTZHbV95MjEzTzR1X2pKSkxnZGlZaFdYNHQ4SDU4bU5qVTJFbmc0OHdyWW5GNS0xU3dBbm5kZmgtckxXWlJKb01GTll4ZjFpaWdscGpzTGpiSHgtNS1KQkZ6ZDJMRFRMWHctbkZNOFNEdXREUE9iSENfcTlzSU9IRXllalBlYktONG1ZOWZ4dmVLUi1PVDNncDE1eDQ4X24zYkZyaEZIdUxkcjByVnVtaTdUZ2F1dXZVQ1Z2N2J5?oc=5" target="_blank">Joven está grave tras quedar pillado en accidente en Luquillo - Telemundo Puerto Rico</a></td>
             <td>Luquillo</td>
             <td>2026-05-10 21:24</td>
+        </tr>
+        <tr class="article-row" data-municipios="Vieques">
+            <td><span class="muni-tag">Vieques</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxPOXFJd1NuX0pPVTNoSUJxaWo3Vy1GMXl0WlJhU01xUWZ2enA1NFUySkpJa3lXVlctdkhZYzdVN1N2NzdyeFZpRDRTMmtYejl1amRRWDgybFI1Q2RWV2FmYzBYaU5NbjNGaUZOSjBHRV9tTkNtUUI3UmRuUk5oa2pvYm44aXIxcW41T1ctaTI1UjdiNl91TjdtUl9mNVRxdklxdGRJaFRLQ1NCSHQzSlFnMWhuZ0IzMHEzLUU1b3dTeWtXTUN6TDZ6UXNPYy1UY0tuQlJkTC1INTA?oc=5" target="_blank">Asesinan a mujer en Vieques: investigan si hombre herido de bala tuvo que ver - Telemundo Puerto Rico</a></td>
+            <td>Vieques</td>
+            <td>2026-05-10 21:09</td>
         </tr>
         <tr class="article-row" data-municipios="Luquillo">
             <td><span class="muni-tag">Luquillo</span></td>
@@ -748,7 +760,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-11 12:04:58
+    Generado por Hermes Agent — 2026-05-11 12:34:27
 </div>
 
 <script>
