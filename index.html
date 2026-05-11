@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-11 15:05:09</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-11 15:34:33</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff5252">3</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">34</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 15:05:09</div></div>
+        <div class="stat-box"><div class="num">36</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 15:34:33</div></div>
     </div>
 </div>
 
@@ -238,7 +238,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">3</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
@@ -246,11 +246,11 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">4</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">6</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
@@ -274,7 +274,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">7</div>
+            <div class="muni-count">6</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
@@ -302,15 +302,33 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="Trujillo Alto, Canóvanas">
+            <td><span class="muni-tag">Trujillo Alto, Canóvanas</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxONmpKUkRMR0g5bE5ISTZ5UXVsWDFrQndpRUdUclpnODdDUEV4N09YSWdLRU43VDRIVnhLZUdfTnRZODUyYXpRcE1fNGhUbnBZSW83YlhEN3p1Tk1wc2JKaEUySDZVTjJTdEVTaEJfZDFHN1hOSV9oQ01OTTBhQXRwVTBQWTdTdmZCWE1kU3dva24yUlRLYjFIYUxhN0RORXMwdFVBSWVyOWZLd2pqN1pCZW1JVTRyRG1pUmQySExTVG9Ma1ozZnRxOXEtT0pZNXNXdmdpRjNZWjZCWjVmaDdJMV9HV1VsTThxTk8zUUdGS0g1R2c?oc=5" target="_blank">Conocemos a las candidatas de MUPR: Miss Canóvanas y Miss Trujillo Alto - wapa.tv</a></td>
+            <td>Trujillo Alto</td>
+            <td>2026-05-11 19:28</td>
+        </tr>
+        <tr class="article-row" data-municipios="Canóvanas">
+            <td><span class="muni-tag">Canóvanas</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://esnoticiapr.com/muere-conductor-de-camion-que-se-volco/" target="_blank">Muere conductor de camión que se volcó</a></td>
+            <td>Es Noticia</td>
+            <td>2026-05-11 19:15</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/11/empresa-puertorriquena-inaugura-planta-manufacturera-en-humacao-con-inversion-de-36-2-millones-y-203-nuevos-empleos/" target="_blank">Empresa puertorriqueña inaugura planta manufacturera en Humacao</a></td>
+            <td>Walo Radio</td>
+            <td>2026-05-11 19:15</td>
+        </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://nelpr.com/2026/05/11/justicia-evaluara-si-reabre-investigacion-sobre-suzanne-roig/" target="_blank">Justicia evaluará si reabre investigación sobre Suzanne Roig</a></td>
+            <td class="titular-cell"> <a href="https://nelpr.com/2026/05/11/justicia-evaluara-si-reabre-investigacion-sobre-suzanne-roig/" target="_blank">Justicia evaluará si reabre investigación sobre Suzanne Roig</a></td>
             <td>NELPR</td>
             <td>2026-05-11 18:52</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/identifican-a-hombre-asesinado-debajo-del-puente-de-la-ruta-66-en-carolina/" target="_blank">Identifican a hombre asesinado debajo del puente de la Ruta 66 en Carolina</a></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/identifican-a-hombre-asesinado-debajo-del-puente-de-la-ruta-66-en-carolina/" target="_blank">Identifican a hombre asesinado debajo del puente de la Ruta 66 en Carolina</a></td>
             <td>El Nuevo Día</td>
             <td>2026-05-11 18:37</td>
         </tr>
@@ -388,19 +406,13 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNVkItdlZPY1dZUDN3Rm5LOXd2TzhYTlAySXRLd1FwLThJZC1ZOUw3LWJyLXg1UXhEa3pfY2NrMGw2THZoU2RfSWxCWUdvS0tweEtKbmJha1pnaWRJcGpldDF0RnltaDVfMkNuOHp5WlZTaXl3NDZHTEp3ZG1ZOC1vQXpXbFVFaGJ3NnVwdlpR?oc=5" target="_blank">Municipio Autónomo de Humacao - facebook.com</a></td>
-            <td>FB - Humacao</td>
-            <td>2026-05-11 12:52</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxNRllFX0Y2dEVTTldveTVOWTBVUmJBMnUzbXBOZFZYYXFfdFBGU21lNjRrMVhrMG15MkdXZWNic2daWWJzdE1HcHpmZ2pYS2Z1Unh5UGlGVUc3bndYTzlEc2ZFWU1fb2Rvb0Z1ekRFZC1SN2xrUlJFVmNMRUxzYlByZ2Zrb2FPX1haVFBfaXAyQ1prV1ZqU0FvVTYxVGZ4MWZwRXNJM1dWU2p0WWtBZkxSTU9NM19yNGZlNWlvT0NDREFfVW5xbGhOVmQ0MzU2TGhnXzRkNlZaUW5Ieng2Z29ONmw0cnRyNmxTUVE?oc=5" target="_blank">Motorista fallece luego de que conductor lo chocara en Humacao y huyera - wapa.tv</a></td>
             <td>Humacao</td>
             <td>2026-05-11 12:45</td>
         </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxNaEFQcHoyX0VobHhLOXpSTk13bC1uZXlTQ003UDFKVUpaNHZaV2xSeGRZalk5VTBSMGZ1bWp1QWJVckQ2UlZsSGx1QWkzYWRmeDl4Znk3NjhqRW9OMDBSbjlUM3AxQ1VDdjlmZTFqQW5yb3hvaTRKeVp0aC1lRjBmMy1SNUhUY3FDU2ZYeGJqUjdRVEVpZUVNanBGbEFUS2xGSFdkN2JBdUxwempveTNJZjVON0JISUxwajVJTjNDNU11bDI1UmI2dnpjVQ?oc=5" target="_blank">Ortiz brothers to be honored in Trujillo Alto after historic Kentucky Derby finish - Noticias de Puerto Rico hoy</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxNaEFQcHoyX0VobHhLOXpSTk13bC1uZXlTQ003UDFKVUpaNHZaV2xSeGRZalk5VTBSMGZ1bWp1QWJVckQ2UlZsSGx1QWkzYWRmeDl4Znk3NjhqRW9OMDBSbjlUM3AxQ1VDdjlmZTFqQW5yb3hvaTRKeVp0aC1lRjBmMy1SNUhUY3FDU2ZYeGJqUjdRVEVpZUVNanBGbEFUS2xGSFdkN2JBdUxwempveTNJZjVON0JISUxwajVJTjNDNU11bDI1UmI2dnpjVQ?oc=5" target="_blank">Ortiz brothers to be honored in Trujillo Alto after historic Kentucky Derby finish - Noticias de Puerto Rico hoy</a></td>
             <td>Trujillo Alto</td>
             <td>2026-05-11 12:45</td>
         </tr>
@@ -415,12 +427,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://radioisla.tv/investigan-cadaver-en-alcantarilla-de-la-aaa-en-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=investigan-cadaver-en-alcantarilla-de-la-aaa-en-san-juan&utm_source=rss&utm_medium=rss&utm_campaign=investigan-cadaver-en-alcantarilla-de-la-aaa-en-san-juan" target="_blank">Investigan cadaver en alcantarilla de la AAA</a></td>
             <td>Radio Isla</td>
             <td>2026-05-11 11:39</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://esnoticiapr.com/hombre-muere-tras-accidente-de-motora-y-conductor-abandona-la-escena-en-humacao/" target="_blank">Hombre muere tras accidente de motora y conductor abandona la escena en Humacao</a></td>
-            <td>Es Noticia</td>
-            <td>2026-05-11 10:52</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -463,6 +469,12 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxPOXFJd1NuX0pPVTNoSUJxaWo3Vy1GMXl0WlJhU01xUWZ2enA1NFUySkpJa3lXVlctdkhZYzdVN1N2NzdyeFZpRDRTMmtYejl1amRRWDgybFI1Q2RWV2FmYzBYaU5NbjNGaUZOSjBHRV9tTkNtUUI3UmRuUk5oa2pvYm44aXIxcW41T1ctaTI1UjdiNl91TjdtUl9mNVRxdklxdGRJaFRLQ1NCSHQzSlFnMWhuZ0IzMHEzLUU1b3dTeWtXTUN6TDZ6UXNPYy1UY0tuQlJkTC1INTA?oc=5" target="_blank">Asesinan a mujer en Vieques: investigan si hombre herido de bala tuvo que ver - Telemundo Puerto Rico</a></td>
             <td>Vieques</td>
             <td>2026-05-10 21:09</td>
+        </tr>
+        <tr class="article-row" data-municipios="Luquillo">
+            <td><span class="muni-tag">Luquillo</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNNUkyX09XazAwMTdCYWg2UmFvXzdlUlNUNUdMN1VET0o5WEloUnQ2ZHVlQWd1OWUyWVhLd1FyMGZ6Z1pIbUZsRjg3dFZRSk94cDBfM0QwQWY4bEdsUlZLUGJTQ1pLaTdzdlhBWm96TXFGSUtVa1RPNWdHaHR3RUljM2ZkUy13UFNkVTBOTzZYSEpWWGRXQTBmTHZ2dFg3Q0ZtMTNaQ19mRXhpaEFXTnZoQk1QNGo?oc=5" target="_blank">Joven resulta gravemente herido en choque entre dos vehículos en Luquillo - Metro Puerto Rico</a></td>
+            <td>Luquillo</td>
+            <td>2026-05-10 16:05</td>
         </tr>
         <tr class="article-row" data-municipios="Luquillo">
             <td><span class="muni-tag">Luquillo</span></td>
@@ -806,7 +818,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-11 15:05:09
+    Generado por Hermes Agent — 2026-05-11 15:34:33
 </div>
 
 <script>
