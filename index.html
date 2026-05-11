@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-11 11:24:11</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-11 11:35:24</div>
     <div class="stats">
         <div class="stat-box"><div class="num">2</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">19</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 11:24:11</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">20</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 11:35:24</div></div>
     </div>
 </div>
 
@@ -248,9 +248,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Luquillo</div>
             <div class="muni-count">3</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
+        <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
@@ -302,23 +302,23 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
-        <tr class="article-row" data-municipios="Carolina">
-            <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/tribunales/notas/causa-para-arresto-contra-presunto-lider-de-organizacion-criminal-de-residencial-publico-de-carolina/" target="_blank">Causa para arresto contra presunto líder de organización criminal de residencial público de Carolina</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-11 14:15</td>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/11/maestra-denuncia-problemas-con-acondicionadores-de-aire-en-escuela-anita-otero-de-humacao/" target="_blank">Maestra denuncia problemas con acondicionadores de aire en escuela Anita Otero de Humacao</a></td>
+            <td>Walo Radio</td>
+            <td>2026-05-11 15:20</td>
+        </tr>
+        <tr class="article-row" data-municipios="Canóvanas">
+            <td><span class="muni-tag">Canóvanas</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPcDJlUnJzb2NsWVpLdUhXbmZwNUhMZVpjWlhvdk9DS1BmTFpBck8zSWZRY2ZPYVIyV2pCSmFLWVFkVWJpNmhsQlJSVU51amdBRUJ2NkFCWnZ0YmlMN2xBU1k1YTNSSC14VDlHeW14Mkc1RzA5SGRGR3lJakYwRXhjSE9oU2tPVHg4blY2ZmZMbnhzcUpoMENsRTBTWGstV3pnN0pqRUJZYUIxc2FOVmN1UWV2ZVDSAbwBQVVfeXFMTVA4VU1veDNSVjJfdHFXalBHR2c5b1RPV2h6YlE5RzZ0dlZ4Y2taUlRTeVhIQnlQRDZjU1hpaEJVV2NYUDdpT1lMMlluTmxIUWtacVkycHptNnd3RWVFMmNDbVEwNHUwU0VtN3gwbmRHQW9zMlVNQzkxeFJmV2RWekJaMXZ4NDdNQ1F5dlNhd3ZwRUNNeFltUWFnMFpQcHd1ejRVN0hJdXg1TzhLMDZmM0RrcEV1bk5FMncwT3A?oc=5" target="_blank">Camionero muere en accidente en la PR-185 en Canóvanas - Telemundo Puerto Rico</a></td>
+            <td>Canóvanas</td>
+            <td>2026-05-11 15:15</td>
         </tr>
         <tr class="article-row" data-municipios="Luquillo">
             <td><span class="muni-tag">Luquillo</span></td>
             <td class="titular-cell"> <a href="https://esnoticiapr.com/accidente-grave-deja-varios-heridos-en-luquillo/" target="_blank">Accidente grave deja varios heridos en Luquillo</a></td>
             <td>Es Noticia</td>
             <td>2026-05-11 13:00</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNVkItdlZPY1dZUDN3Rm5LOXd2TzhYTlAySXRLd1FwLThJZC1ZOUw3LWJyLXg1UXhEa3pfY2NrMGw2THZoU2RfSWxCWUdvS0tweEtKbmJha1pnaWRJcGpldDF0RnltaDVfMkNuOHp5WlZTaXl3NDZHTEp3ZG1ZOC1vQXpXbFVFaGJ3NnVwdlpR?oc=5" target="_blank">Municipio Autónomo de Humacao - facebook.com</a></td>
-            <td>FB - Humacao</td>
-            <td>2026-05-11 12:52</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
@@ -349,6 +349,12 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://radioisla.tv/investigan-cadaver-en-alcantarilla-de-la-aaa-en-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=investigan-cadaver-en-alcantarilla-de-la-aaa-en-san-juan&utm_source=rss&utm_medium=rss&utm_campaign=investigan-cadaver-en-alcantarilla-de-la-aaa-en-san-juan" target="_blank">Investigan cadaver en alcantarilla de la AAA</a></td>
             <td>Radio Isla</td>
             <td>2026-05-11 11:39</td>
+        </tr>
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/tribunales/notas/causa-para-arresto-contra-presunto-lider-de-organizacion-criminal-de-residencial-publico-de-carolina/" target="_blank">Causa para arresto contra presunto líder de organización criminal de Carolina</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-11 11:32</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -708,7 +714,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-11 11:24:11
+    Generado por Hermes Agent — 2026-05-11 11:35:24
 </div>
 
 <script>
