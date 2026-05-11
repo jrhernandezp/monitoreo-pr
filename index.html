@@ -192,12 +192,12 @@ tr:hover { background: #fafafa; }
 
 <div class="header">
     <h1>🗺️ Observador del Noreste</h1>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-11 06:07:12</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-11 07:33:55</div>
     <div class="stats">
         <div class="stat-box"><div class="num">2</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">16</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 06:07:12</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">4</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">17</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 07:33:55</div></div>
     </div>
 </div>
 
@@ -209,9 +209,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">San Juan</div>
             <div class="muni-count">3</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Carolina')">
+        <div class="muni-card inactive" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
@@ -249,9 +249,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Naguabo</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Humacao')">
+        <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">3</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
@@ -259,11 +259,11 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">4</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
+        <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
     </div>
 </div>
@@ -279,6 +279,30 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://esnoticiapr.com/hombre-muere-tras-accidente-de-motora-y-conductor-abandona-la-escena-en-humacao/" target="_blank">Hombre muere tras accidente de motora y conductor abandona la escena en Humacao</a></td>
+            <td>Es Noticia</td>
+            <td>2026-05-11 10:52</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/investigan-hit-and-run-que-dejo-un-motorista-muerto-en-humacao/" target="_blank">Investigan “hit and run” que dejó un motorista muerto en Humacao</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-11 10:21</td>
+        </tr>
+        <tr class="article-row" data-municipios="Vieques, Culebra">
+            <td><span class="muni-tag">Vieques, Culebra</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxQbm9LSUVVbm5TZXJORGRlWkVYMnphdVFidnVYSmdtQnhvcldWWmE2dThrcVhiZkZvTjZSNEctdkZTTGJ5b1hHSGx2aGZ1NDRvXzJtRnBaaWhRcnpfUXlFdHRmbHdEWkVqbkJuM05POENaRWdhQnV0d0JYTnRUV3NuY1FzQ1o0YW5aMm5KWExLU3hFZW1FSUkyaGdVVFhoQVNwNXUtSC1jalpWRDNyNUd0S3E2TVV5UkJ4dm54NmtPMWNqUkhpT0Z5TlJGR29mOTdfdlBUMjgxSWtBblRhYlpjVXNGMlRhNW5pbF9Ub3pOd9IB9AFBVV95cUxPQVFJXzBJS0YwZGxic01RWG96QjJYZ2h0dnloTlg1WDNFdTNXRWtiQ1lmSFVLemNHNFZmQWE0NGFRWEl5QmFfbXl4bEVBTVp2b3g2ME5hSjZXOGdCaktmUTJYT0tGcjczX2trbmJ6OW9SS0gtS1NPTk1aQ29mMG5QY211eUdDMnppZkhmX3JPTWo4b2diVE9UdExvS1NkeXBhdmlyc0luZVhBT2c1RWdBRjJqWkJfWlJpRUVmcVRHNWVCck1va3FjalB4b1dsTHRjZVdUZHlHMVU1cWtlX1ZGUXFNdVVfRS1MUm9kcDVJM0Z3MVBQ?oc=5" target="_blank">Alza en precio de la gasolina impacta con mayor fuerza a Vieques y Culebra - El Vocero de Puerto Rico</a></td>
+            <td>Vieques</td>
+            <td>2026-05-11 10:20</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://radioisla.tv/hit-and-run-motociclista-pierde-la-vida-tras-ser-impactado-por-un-vehiculo/?utm_source=rss&utm_medium=rss&utm_campaign=hit-and-run-motociclista-pierde-la-vida-tras-ser-impactado-por-un-vehiculo&utm_source=rss&utm_medium=rss&utm_campaign=hit-and-run-motociclista-pierde-la-vida-tras-ser-impactado-por-un-vehiculo" target="_blank">Hit and run: Individuo pierde la vida tras ser impactado por un vehículo</a></td>
+            <td>Radio Isla</td>
+            <td>2026-05-11 10:18</td>
+        </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxQY2Vyb1NRdjBEWVFlVVNjaS1NWVR3OURjM0ZtdFd4Sl9qYThVYXFraURGZ3hIUXVXRnptYTE5bzMwcUNvR1BkcjJuRmNKR0c0ZzJQUlp4QmN3YWdHaW95OXFUcFI3c2pEUFZuOVl2N2JfRTEzSzhsV2hPTFZLNDR5OFZQX0ZiSkUzbDdmY2N6UkkzaEc5QkhQUGhjMzFycFlSTDlDRHlmNGpvRXVycHpyMzBqSjVoUjNMZTlyMldPd28wZGxEN1FaMUdhU3VwamtnNGNfOGJRZnVYb1YyQmc?oc=5" target="_blank">Los hermanos Ortiz serán homenajeados en Trujillo Alto tras hazaña en el Kentucky Derby - Noticias de Puerto Rico hoy</a></td>
@@ -299,9 +323,9 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Luquillo">
             <td><span class="muni-tag">Luquillo</span></td>
-            <td class="titular-cell"> <a href="https://noticel.com/noticias/20260510/varios-heridos-en-accidente-de-transito-en-luquillo/?utm_source=rss&utm_medium=rss&utm_campaign=varios-heridos-en-accidente-de-transito-en-luquillo" target="_blank">Varios heridos en accidente de tránsito en Luquillo</a></td>
-            <td>NotiCel</td>
-            <td>2026-05-10 17:28</td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNNUkyX09XazAwMTdCYWg2UmFvXzdlUlNUNUdMN1VET0o5WEloUnQ2ZHVlQWd1OWUyWVhLd1FyMGZ6Z1pIbUZsRjg3dFZRSk94cDBfM0QwQWY4bEdsUlZLUGJTQ1pLaTdzdlhBWm96TXFGSUtVa1RPNWdHaHR3RUljM2ZkUy13UFNkVTBOTzZYSEpWWGRXQTBmTHZ2dFg3Q0ZtMTNaQ19mRXhpaEFXTnZoQk1QNGo?oc=5" target="_blank">Joven resulta gravemente herido en choque entre dos vehículos en Luquillo - Metro Puerto Rico</a></td>
+            <td>Luquillo</td>
+            <td>2026-05-10 16:05</td>
         </tr>
         <tr class="article-row" data-municipios="Luquillo">
             <td><span class="muni-tag">Luquillo</span></td>
@@ -333,18 +357,6 @@ tr:hover { background: #fafafa; }
             <td>Vieques</td>
             <td>2026-05-10 14:22</td>
         </tr>
-        <tr class="article-row" data-municipios="Carolina">
-            <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"> <a href="https://esnoticiapr.com/investigan-asesinato-de-un-hombre-bajo-puente-de-la-ruta-66-en-carolina/" target="_blank">Investigan asesinato de un hombre bajo puente de la Ruta 66 en Carolina</a></td>
-            <td>Es Noticia</td>
-            <td>2026-05-10 14:08</td>
-        </tr>
-        <tr class="article-row" data-municipios="Vieques">
-            <td><span class="muni-tag">Vieques</span></td>
-            <td class="titular-cell"> <a href="https://esnoticiapr.com/hombre-de-71-anos-se-priva-de-la-vida-en-vieques/" target="_blank">Hombre de 71 años se priva de la vida en Vieques</a></td>
-            <td>Es Noticia</td>
-            <td>2026-05-10 13:25</td>
-        </tr>
         <tr class="article-row" data-municipios="Vieques">
             <td><span class="muni-tag">Vieques</span></td>
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOcGJDY1FUVGdHeVRWSVd2VEVLR3RGMGVZQ0NZZkQ4Yy1uRnNiZHp2cllNa3ZSdk5UTlFUaDNieWhGV0h5SUMzYTV4VVk3Qnk0WlEySWNOZTUtS0s3Y1FfUTRBREFLdFZ5RGxzZlNWa3FMRWRQNFpSWFhPQUZJa2lhLU5temtmUjVESnBwWmtnRUhmWHRFeGpXYWc2MXUwTHlEYjBqZEh0c1RUQk5fUHZGcDRaTkw5UQ?oc=5" target="_blank">Muere baleada una mujer de 30 años en su residencia en Vieques - Noticias de Puerto Rico hoy</a></td>
@@ -356,12 +368,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOSnNfR3g0cWxLSk9UTnBiTk9STGNCTFVwdnhWQU53NFlNRmRhejNSanZXTHRwc0pOQjlEaGd4UDBMREtEU3l2ZGZHT3h2dG1aUlRjV21IeFlfbUM0NkFWWl83T29jSUNLa1dfa0JiMkY1S3dZSlM1TjR2b0QzeFQ1RHJRVlNfUEpKSE5IOWk4eXFRbVU0aWlvVURkTFJPQdIBpgFBVV95cUxPTU1wakk2WkR2UWR0YTEzTjl6RjNEbGQ0LUJVeDRCV1BCMkl4MU9fSU1PS2Y4bUhpTkI5VzNZSXo2ekhodkdISllGRWtuWDhLWm9wdGliUlpvR2Fkd2sxVFctaUl3YjVGaUJlOWllcDJqNXJRYk5FOEg1elBSM1JQTzV3VDc4LVFtcGI3VW5iM3dkOEVpaFctZXNNSm9VSVNtdVNhM0VB?oc=5" target="_blank">Asesinan a tiros a una mujer en Vieques - Telemundo Puerto Rico</a></td>
             <td>Vieques</td>
             <td>2026-05-10 11:57</td>
-        </tr>
-        <tr class="article-row" data-municipios="Vieques">
-            <td><span class="muni-tag">Vieques</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxQU2ltSGlsOVlILVgwV3o4cnlDSm9oN0lRUjBaQ1ozNmR2MXdpaXhpMi0tWThZSnBuV3FSVnMtVktHaDRKdVRLTlJYR3ZDLWIyUWdvRzNJaGVNOXN3LUNiZTV1Ul9iRTlWdk5Vc0NWaGJtSE1jOWs3Ykd4akxNLWVhNV8ybGl6c3BvTTd2SVVNQWp3LTcwc21kYk1IaE9KRlZ6eU5FVDF6NlBXZTBObi1qVDJEWElzYml3eEk4dHp2QVA1VHJwM19RblJMazkyRFZNTm9LcjhKYkY0OE85VlFzclhaWkPSAeoBQVVfeXFMUEdoY0ctS2s1Y3BJS2dxQmhTbFlwUC11dDFHSlZTUGZMejRHUjVhUDVvNkxiY2Q2UW9EOGU2YXhlYU9FZmdlTC1DbktRZzBuYmg2ZC1VY3BPVTI1Z056VHNaMTZnTld6NFZTaERwTUNaZEdPaEdYY2stWE5ZSlV6cjNFRUxpeVRiOEt2dXZJM1NNTlVobGZjbzlyTVpqMjZSclNPdWpPd2lOTW1Uc3FXRHFQdzNrMjFDUUtmT0Y4WWRIZEU0WExqcWV6NzlNTTRXNTFDWnRZNVN4RjBuVlctWlJ2bVV0YnpvLWdB?oc=5" target="_blank">Asesinan a balazos a mujer en Vieques en víspera del Día de las Madres - El Vocero de Puerto Rico</a></td>
-            <td>Vieques</td>
-            <td>2026-05-10 11:24</td>
         </tr>
         <tr class="article-row" data-municipios="Loíza">
             <td><span class="muni-tag">Loíza</span></td>
@@ -667,7 +673,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-11 06:07:12
+    Generado por Hermes Agent — 2026-05-11 07:33:55
 </div>
 
 <script>
