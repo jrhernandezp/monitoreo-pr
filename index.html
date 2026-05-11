@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-11 12:34:27</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-11 13:05:24</div>
     <div class="stats">
         <div class="stat-box"><div class="num">2</div><div class="label">Total Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">27</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 12:34:27</div></div>
+        <div class="stat-box"><div class="num">29</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 13:05:24</div></div>
     </div>
 </div>
 
@@ -250,7 +250,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">5</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
@@ -260,9 +260,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Loíza</div>
             <div class="muni-count">2</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
+        <div class="muni-card active" onclick="filtrarPor('Río Grande')">
             <div class="muni-name">Río Grande</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
             <div class="muni-name">Ceiba</div>
@@ -274,7 +274,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">8</div>
+            <div class="muni-count">7</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
@@ -302,9 +302,21 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="Canóvanas">
+            <td><span class="muni-tag">Canóvanas</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/muere-conductor-de-camion-de-basura-en-accidente-de-transito-en-canovanas/" target="_blank">Muere conductor de camión de basura en accidente de tránsito en Canóvanas</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-11 16:38</td>
+        </tr>
+        <tr class="article-row" data-municipios="Canóvanas">
+            <td><span class="muni-tag">Canóvanas</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPMHJMTWJJeDdxa2d2a0dkeGpJVTZodmpzWk94cXViNFJkM21CR3JTbmxUUUxPQ2NKb2hVRXJFeHNYekxJWmY0U0VwZ1R5Y3Y4YlhjczJYSmlNRjBjV3hWd1dHQldlWjZkb3NCVWdsZ3pDQWRfQl9XOVoyUTJ1bTZwTlR5WTlpQVdXa1ZHWHhBX3RISXU4aWZ6a1FJVkk3bHlJSm5OQUZDZ3pzaUxvVDZlNnJueDdxSWE0Qk9IU2pFYXUxUzVM?oc=5" target="_blank">Muere conductor de camión de basura en accidente de tránsito en Canóvanas - Noticias de Puerto Rico hoy</a></td>
+            <td>Canóvanas</td>
+            <td>2026-05-11 16:38</td>
+        </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/11/dos-accidentes-fatales-de-hit-and-run-son-investigados-en-la-region-de-humacao/" target="_blank">Dos accidentes fatales de “hit and run” son investigados en la región de Humacao</a></td>
+            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/11/dos-accidentes-fatales-de-hit-and-run-son-investigados-en-la-region-de-humacao/" target="_blank">Dos accidentes fatales de “hit and run” son investigados en la región de Humacao</a></td>
             <td>Walo Radio</td>
             <td>2026-05-11 16:10</td>
         </tr>
@@ -344,28 +356,34 @@ tr:hover { background: #fafafa; }
             <td>NELPR</td>
             <td>2026-05-11 13:27</td>
         </tr>
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/tribunales/notas/causa-para-arresto-contra-presunto-lider-de-organizacion-criminal-de-residencial-publico-de-carolina/" target="_blank">Causa para arresto contra presunto líder de organización criminal de Carolina</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-11 13:02</td>
+        </tr>
         <tr class="article-row" data-municipios="Luquillo">
             <td><span class="muni-tag">Luquillo</span></td>
             <td class="titular-cell"> <a href="https://esnoticiapr.com/accidente-grave-deja-varios-heridos-en-luquillo/" target="_blank">Accidente grave deja varios heridos en Luquillo</a></td>
             <td>Es Noticia</td>
             <td>2026-05-11 13:00</td>
         </tr>
-        <tr class="article-row" data-municipios="Carolina">
-            <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/tribunales/notas/causa-para-arresto-contra-presunto-lider-de-organizacion-criminal-de-residencial-publico-de-carolina/" target="_blank">Causa para arresto contra presunto líder de organización criminal de Carolina</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-11 12:31</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://esnoticiapr.com/hallan-cadaver-en-avanzado-estado-de-descomposicion-en-planta-de-aguas-residuales/" target="_blank">Hallan cadáver en avanzado estado de descomposición en planta de aguas residuales</a></td>
-            <td>Es Noticia</td>
-            <td>2026-05-11 12:20</td>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNVkItdlZPY1dZUDN3Rm5LOXd2TzhYTlAySXRLd1FwLThJZC1ZOUw3LWJyLXg1UXhEa3pfY2NrMGw2THZoU2RfSWxCWUdvS0tweEtKbmJha1pnaWRJcGpldDF0RnltaDVfMkNuOHp5WlZTaXl3NDZHTEp3ZG1ZOC1vQXpXbFVFaGJ3NnVwdlpR?oc=5" target="_blank">Municipio Autónomo de Humacao - facebook.com</a></td>
+            <td>FB - Humacao</td>
+            <td>2026-05-11 12:52</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxNRllFX0Y2dEVTTldveTVOWTBVUmJBMnUzbXBOZFZYYXFfdFBGU21lNjRrMVhrMG15MkdXZWNic2daWWJzdE1HcHpmZ2pYS2Z1Unh5UGlGVUc3bndYTzlEc2ZFWU1fb2Rvb0Z1ekRFZC1SN2xrUlJFVmNMRUxzYlByZ2Zrb2FPX1haVFBfaXAyQ1prV1ZqU0FvVTYxVGZ4MWZwRXNJM1dWU2p0WWtBZkxSTU9NM19yNGZlNWlvT0NDREFfVW5xbGhOVmQ0MzU2TGhnXzRkNlZaUW5Ieng2Z29ONmw0cnRyNmxTUVE?oc=5" target="_blank">Motorista fallece luego de que conductor lo chocara en Humacao y huyera - wapa.tv</a></td>
             <td>Humacao</td>
+            <td>2026-05-11 12:45</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://esnoticiapr.com/hallan-cadaver-en-avanzado-estado-de-descomposicion-en-planta-de-aguas-residuales/" target="_blank">Hallan cadáver en avanzado estado de descomposición en planta de aguas residuales</a></td>
+            <td>Es Noticia</td>
             <td>2026-05-11 12:20</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan, Carolina">
@@ -374,23 +392,11 @@ tr:hover { background: #fafafa; }
             <td>NotiCel</td>
             <td>2026-05-11 12:04</td>
         </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://noticel.com/noticias/20260511/hombre-muere-en-accidente-de-transito-en-humacao-3/?utm_source=rss&utm_medium=rss&utm_campaign=hombre-muere-en-accidente-de-transito-en-humacao-3" target="_blank">Hombre muere en accidente de tránsito en Humacao</a></td>
-            <td>NotiCel</td>
-            <td>2026-05-11 12:02</td>
-        </tr>
         <tr class="article-row" data-municipios="San Juan, Carolina">
             <td><span class="muni-tag">San Juan, Carolina</span></td>
             <td class="titular-cell"> <a href="https://radioisla.tv/investigan-cadaver-en-alcantarilla-de-la-aaa-en-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=investigan-cadaver-en-alcantarilla-de-la-aaa-en-san-juan&utm_source=rss&utm_medium=rss&utm_campaign=investigan-cadaver-en-alcantarilla-de-la-aaa-en-san-juan" target="_blank">Investigan cadaver en alcantarilla de la AAA</a></td>
             <td>Radio Isla</td>
             <td>2026-05-11 11:39</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxPd3o4M0Q5S05laDVzMF9RQ1ZyTVFCd0FpQjFTLUYxSXlrOU5hVlpPTkVsaFV3WnlaYUNOcG9WalR5aGVvc1YxT3M2OUpKSHB3eVBWdlpxcjRvT0JVTjh2MnE4YU5jUVlrb2Z6U0w3QVV4d1p3WTFaNFBFMWxVTlpINVJReGZET21BaDB3ZUI3bHdlbEdMd1k0b2VTSkJGVzg?oc=5" target="_blank">Hombre pierde la vida tras accidente de motora en Humacao - Metro Puerto Rico</a></td>
-            <td>Humacao</td>
-            <td>2026-05-11 11:21</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -410,6 +416,12 @@ tr:hover { background: #fafafa; }
             <td>Vieques</td>
             <td>2026-05-11 07:53</td>
         </tr>
+        <tr class="article-row" data-municipios="Río Grande">
+            <td><span class="muni-tag">Río Grande</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxNaXc0OHZEbThJbVlPbzBKNm0wVDN6RWdLT05PODktTHhJWlhvSmFybjVGUjA4N2k5bnpwZXotNENlZFFZMHdFRnljbHFnckw3SW4zRGh1S1NEMGNNMjVlcE93VEZmclY4WUtQV0hFeWNmQmFyblpBaVNHYmdSWFItSklNYkM1NGprUFdDRF9DWXc1YlJmOXBzYmpmN0tRNllKM0t0ZHU5NjdRNzJGRWdYcGM5SXQxVEtXa0xkX3Q0Z3lnM3FH?oc=5" target="_blank">Ultra-luxury condo-hotels in Rio Grande and Dorado begin expansion projects - Noticias de Puerto Rico hoy</a></td>
+            <td>Río Grande</td>
+            <td>2026-05-11 00:48</td>
+        </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxQY2Vyb1NRdjBEWVFlVVNjaS1NWVR3OURjM0ZtdFd4Sl9qYThVYXFraURGZ3hIUXVXRnptYTE5bzMwcUNvR1BkcjJuRmNKR0c0ZzJQUlp4QmN3YWdHaW95OXFUcFI3c2pEUFZuOVl2N2JfRTEzSzhsV2hPTFZLNDR5OFZQX0ZiSkUzbDdmY2N6UkkzaEc5QkhQUGhjMzFycFlSTDlDRHlmNGpvRXVycHpyMzBqSjVoUjNMZTlyMldPd28wZGxEN1FaMUdhU3VwamtnNGNfOGJRZnVYb1YyQmc?oc=5" target="_blank">Los hermanos Ortiz serán homenajeados en Trujillo Alto tras hazaña en el Kentucky Derby - Noticias de Puerto Rico hoy</a></td>
@@ -424,7 +436,7 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Vieques">
             <td><span class="muni-tag">Vieques</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxPOXFJd1NuX0pPVTNoSUJxaWo3Vy1GMXl0WlJhU01xUWZ2enA1NFUySkpJa3lXVlctdkhZYzdVN1N2NzdyeFZpRDRTMmtYejl1amRRWDgybFI1Q2RWV2FmYzBYaU5NbjNGaUZOSjBHRV9tTkNtUUI3UmRuUk5oa2pvYm44aXIxcW41T1ctaTI1UjdiNl91TjdtUl9mNVRxdklxdGRJaFRLQ1NCSHQzSlFnMWhuZ0IzMHEzLUU1b3dTeWtXTUN6TDZ6UXNPYy1UY0tuQlJkTC1INTA?oc=5" target="_blank">Asesinan a mujer en Vieques: investigan si hombre herido de bala tuvo que ver - Telemundo Puerto Rico</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxPOXFJd1NuX0pPVTNoSUJxaWo3Vy1GMXl0WlJhU01xUWZ2enA1NFUySkpJa3lXVlctdkhZYzdVN1N2NzdyeFZpRDRTMmtYejl1amRRWDgybFI1Q2RWV2FmYzBYaU5NbjNGaUZOSjBHRV9tTkNtUUI3UmRuUk5oa2pvYm44aXIxcW41T1ctaTI1UjdiNl91TjdtUl9mNVRxdklxdGRJaFRLQ1NCSHQzSlFnMWhuZ0IzMHEzLUU1b3dTeWtXTUN6TDZ6UXNPYy1UY0tuQlJkTC1INTA?oc=5" target="_blank">Asesinan a mujer en Vieques: investigan si hombre herido de bala tuvo que ver - Telemundo Puerto Rico</a></td>
             <td>Vieques</td>
             <td>2026-05-10 21:09</td>
         </tr>
@@ -760,7 +772,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-11 12:34:27
+    Generado por Hermes Agent — 2026-05-11 13:05:24
 </div>
 
 <script>
