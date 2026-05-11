@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-11 13:41:21</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-11 14:05:17</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">3</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">30</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 13:41:21</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">32</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 14:05:17</div></div>
     </div>
 </div>
 
@@ -230,11 +230,11 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">4</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">6</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
@@ -246,7 +246,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">4</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
@@ -302,6 +302,12 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="San Juan, Carolina">
+            <td><span class="muni-tag">San Juan, Carolina</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://esnoticiapr.com/identifican-hombre-baleado-y-hallado-bajo-un-puente-en-la-ruta-66/" target="_blank">Identifican hombre baleado y hallado bajo un puente en la Ruta 66</a></td>
+            <td>Es Noticia</td>
+            <td>2026-05-11 17:50</td>
+        </tr>
         <tr class="article-row" data-municipios="Canóvanas">
             <td><span class="muni-tag">Canóvanas</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/muere-conductor-de-camion-de-basura-en-accidente-de-transito-en-canovanas/" target="_blank">Muere conductor de camión de basura en accidente de tránsito en Canóvanas</a></td>
@@ -344,17 +350,17 @@ tr:hover { background: #fafafa; }
             <td>Canóvanas</td>
             <td>2026-05-11 15:07</td>
         </tr>
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/tribunales/notas/causa-para-arresto-contra-presunto-lider-de-organizacion-criminal-de-residencial-publico-de-carolina/" target="_blank">Causa para arresto contra presunto líder de organización criminal de Carolina</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-11 14:02</td>
+        </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://nelpr.com/2026/05/11/se-ira-la-luz-del-11-al-16-de-mayo-33-municipios-en-lista/" target="_blank">Se irá la luz del 11 al 16 de mayo; 33 municipios en lista</a></td>
             <td>NELPR</td>
             <td>2026-05-11 13:44</td>
-        </tr>
-        <tr class="article-row" data-municipios="Carolina">
-            <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/tribunales/notas/causa-para-arresto-contra-presunto-lider-de-organizacion-criminal-de-residencial-publico-de-carolina/" target="_blank">Causa para arresto contra presunto líder de organización criminal de Carolina</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-11 13:38</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -370,7 +376,7 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNVkItdlZPY1dZUDN3Rm5LOXd2TzhYTlAySXRLd1FwLThJZC1ZOUw3LWJyLXg1UXhEa3pfY2NrMGw2THZoU2RfSWxCWUdvS0tweEtKbmJha1pnaWRJcGpldDF0RnltaDVfMkNuOHp5WlZTaXl3NDZHTEp3ZG1ZOC1vQXpXbFVFaGJ3NnVwdlpR?oc=5" target="_blank">Municipio Autónomo de Humacao - facebook.com</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNVkItdlZPY1dZUDN3Rm5LOXd2TzhYTlAySXRLd1FwLThJZC1ZOUw3LWJyLXg1UXhEa3pfY2NrMGw2THZoU2RfSWxCWUdvS0tweEtKbmJha1pnaWRJcGpldDF0RnltaDVfMkNuOHp5WlZTaXl3NDZHTEp3ZG1ZOC1vQXpXbFVFaGJ3NnVwdlpR?oc=5" target="_blank">HumacaoConecta - facebook.com</a></td>
             <td>FB - Humacao</td>
             <td>2026-05-11 12:52</td>
         </tr>
@@ -412,19 +418,19 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.carolina787.com/n/noticia-fake-de-aaa" target="_blank">Noticia Fake de AAA</a></td>
+            <td class="titular-cell"> <a href="https://www.carolina787.com/n/noticia-fake-de-aaa" target="_blank">Noticia Fake de AAA</a></td>
             <td>Carolina787</td>
             <td>2026-05-11</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.carolina787.com/n/noticia-fake-de-dtop" target="_blank">Noticia Fake de DTOP</a></td>
+            <td class="titular-cell"> <a href="https://www.carolina787.com/n/noticia-fake-de-dtop" target="_blank">Noticia Fake de DTOP</a></td>
             <td>Carolina787</td>
             <td>2026-05-11</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.carolina787.com/n/noticia-fake-de-luma" target="_blank">Noticia Fake de LUMA</a></td>
+            <td class="titular-cell"> <a href="https://www.carolina787.com/n/noticia-fake-de-luma" target="_blank">Noticia Fake de LUMA</a></td>
             <td>Carolina787</td>
             <td>2026-05-11</td>
         </tr>
@@ -445,6 +451,12 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxPOXFJd1NuX0pPVTNoSUJxaWo3Vy1GMXl0WlJhU01xUWZ2enA1NFUySkpJa3lXVlctdkhZYzdVN1N2NzdyeFZpRDRTMmtYejl1amRRWDgybFI1Q2RWV2FmYzBYaU5NbjNGaUZOSjBHRV9tTkNtUUI3UmRuUk5oa2pvYm44aXIxcW41T1ctaTI1UjdiNl91TjdtUl9mNVRxdklxdGRJaFRLQ1NCSHQzSlFnMWhuZ0IzMHEzLUU1b3dTeWtXTUN6TDZ6UXNPYy1UY0tuQlJkTC1INTA?oc=5" target="_blank">Asesinan a mujer en Vieques: investigan si hombre herido de bala tuvo que ver - Telemundo Puerto Rico</a></td>
             <td>Vieques</td>
             <td>2026-05-10 21:09</td>
+        </tr>
+        <tr class="article-row" data-municipios="Luquillo">
+            <td><span class="muni-tag">Luquillo</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNNUkyX09XazAwMTdCYWg2UmFvXzdlUlNUNUdMN1VET0o5WEloUnQ2ZHVlQWd1OWUyWVhLd1FyMGZ6Z1pIbUZsRjg3dFZRSk94cDBfM0QwQWY4bEdsUlZLUGJTQ1pLaTdzdlhBWm96TXFGSUtVa1RPNWdHaHR3RUljM2ZkUy13UFNkVTBOTzZYSEpWWGRXQTBmTHZ2dFg3Q0ZtMTNaQ19mRXhpaEFXTnZoQk1QNGo?oc=5" target="_blank">Joven resulta gravemente herido en choque entre dos vehículos en Luquillo - Metro Puerto Rico</a></td>
+            <td>Luquillo</td>
+            <td>2026-05-10 16:05</td>
         </tr>
         <tr class="article-row" data-municipios="Luquillo">
             <td><span class="muni-tag">Luquillo</span></td>
@@ -782,7 +794,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-11 13:41:21
+    Generado por Hermes Agent — 2026-05-11 14:05:17
 </div>
 
 <script>
