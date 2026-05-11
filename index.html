@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-11 14:05:17</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-11 14:34:42</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">32</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 14:05:17</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">34</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-11 14:34:42</div></div>
     </div>
 </div>
 
@@ -230,7 +230,7 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">5</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
@@ -240,9 +240,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Trujillo Alto</div>
             <div class="muni-count">1</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
+        <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
@@ -284,9 +284,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Vieques</div>
             <div class="muni-count">5</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Culebra')">
+        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
     </div>
 </div>
@@ -302,17 +302,29 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://nelpr.com/2026/05/11/daco-actualiza-precios-de-la-gasolina-en-puerto-rico/" target="_blank">DACO actualiza precios de la gasolina en Puerto Rico</a></td>
+            <td>NELPR</td>
+            <td>2026-05-11 18:25</td>
+        </tr>
+        <tr class="article-row" data-municipios="Caguas">
+            <td><span class="muni-tag">Caguas</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/11/escalan-negocio-y-roban-maquinaria-de-construccion-en-caguas/" target="_blank">Escalan negocio y roban maquinaria de construcción en Caguas</a></td>
+            <td>Walo Radio</td>
+            <td>2026-05-11 18:24</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/11/director-de-edificios-publicos-asegura-que-ya-trabajan-en-mejoras-para-la-escuela-anita-otero-de-humacao/" target="_blank">Director de Edificios Públicos asegura que ya trabajan en mejoras para la escuela Anita Otero de Humacao</a></td>
+            <td>Walo Radio</td>
+            <td>2026-05-11 18:11</td>
+        </tr>
         <tr class="article-row" data-municipios="San Juan, Carolina">
             <td><span class="muni-tag">San Juan, Carolina</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://esnoticiapr.com/identifican-hombre-baleado-y-hallado-bajo-un-puente-en-la-ruta-66/" target="_blank">Identifican hombre baleado y hallado bajo un puente en la Ruta 66</a></td>
+            <td class="titular-cell"> <a href="https://esnoticiapr.com/identifican-hombre-baleado-y-hallado-bajo-un-puente-en-la-ruta-66/" target="_blank">Identifican hombre baleado y hallado bajo un puente en la Ruta 66</a></td>
             <td>Es Noticia</td>
             <td>2026-05-11 17:50</td>
-        </tr>
-        <tr class="article-row" data-municipios="Canóvanas">
-            <td><span class="muni-tag">Canóvanas</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/muere-conductor-de-camion-de-basura-en-accidente-de-transito-en-canovanas/" target="_blank">Muere conductor de camión de basura en accidente de tránsito en Canóvanas</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-11 16:38</td>
         </tr>
         <tr class="article-row" data-municipios="Canóvanas">
             <td><span class="muni-tag">Canóvanas</span></td>
@@ -350,23 +362,23 @@ tr:hover { background: #fafafa; }
             <td>Canóvanas</td>
             <td>2026-05-11 15:07</td>
         </tr>
+        <tr class="article-row" data-municipios="Canóvanas">
+            <td><span class="muni-tag">Canóvanas</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/muere-conductor-de-camion-de-basura-en-accidente-de-transito-en-canovanas/" target="_blank">Muere conductor de camión de basura en accidente de tránsito en Canóvanas</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-11 14:31</td>
+        </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/tribunales/notas/causa-para-arresto-contra-presunto-lider-de-organizacion-criminal-de-residencial-publico-de-carolina/" target="_blank">Causa para arresto contra presunto líder de organización criminal de Carolina</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-11 14:02</td>
+            <td>2026-05-11 14:31</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://nelpr.com/2026/05/11/se-ira-la-luz-del-11-al-16-de-mayo-33-municipios-en-lista/" target="_blank">Se irá la luz del 11 al 16 de mayo; 33 municipios en lista</a></td>
             <td>NELPR</td>
             <td>2026-05-11 13:44</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://nelpr.com/2026/05/11/hombre-muere-tras-salir-expulsado-en-accidente-6/" target="_blank">Hombre muere tras salir expulsado en accidente</a></td>
-            <td>NELPR</td>
-            <td>2026-05-11 13:27</td>
         </tr>
         <tr class="article-row" data-municipios="Luquillo">
             <td><span class="muni-tag">Luquillo</span></td>
@@ -409,12 +421,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://radioisla.tv/hit-and-run-motociclista-pierde-la-vida-tras-ser-impactado-por-un-vehiculo/?utm_source=rss&utm_medium=rss&utm_campaign=hit-and-run-motociclista-pierde-la-vida-tras-ser-impactado-por-un-vehiculo&utm_source=rss&utm_medium=rss&utm_campaign=hit-and-run-motociclista-pierde-la-vida-tras-ser-impactado-por-un-vehiculo" target="_blank">Hit and run: Individuo pierde la vida tras ser impactado por un vehículo</a></td>
             <td>Radio Isla</td>
             <td>2026-05-11 10:18</td>
-        </tr>
-        <tr class="article-row" data-municipios="Vieques, Culebra">
-            <td><span class="muni-tag">Vieques, Culebra</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxQbm9LSUVVbm5TZXJORGRlWkVYMnphdVFidnVYSmdtQnhvcldWWmE2dThrcVhiZkZvTjZSNEctdkZTTGJ5b1hHSGx2aGZ1NDRvXzJtRnBaaWhRcnpfUXlFdHRmbHdEWkVqbkJuM05POENaRWdhQnV0d0JYTnRUV3NuY1FzQ1o0YW5aMm5KWExLU3hFZW1FSUkyaGdVVFhoQVNwNXUtSC1jalpWRDNyNUd0S3E2TVV5UkJ4dm54NmtPMWNqUkhpT0Z5TlJGR29mOTdfdlBUMjgxSWtBblRhYlpjVXNGMlRhNW5pbF9Ub3pOd9IB9AFBVV95cUxPQVFJXzBJS0YwZGxic01RWG96QjJYZ2h0dnloTlg1WDNFdTNXRWtiQ1lmSFVLemNHNFZmQWE0NGFRWEl5QmFfbXl4bEVBTVp2b3g2ME5hSjZXOGdCaktmUTJYT0tGcjczX2trbmJ6OW9SS0gtS1NPTk1aQ29mMG5QY211eUdDMnppZkhmX3JPTWo4b2diVE9UdExvS1NkeXBhdmlyc0luZVhBT2c1RWdBRjJqWkJfWlJpRUVmcVRHNWVCck1va3FjalB4b1dsTHRjZVdUZHlHMVU1cWtlX1ZGUXFNdVVfRS1MUm9kcDVJM0Z3MVBQ?oc=5" target="_blank">Alza en precio de la gasolina impacta con mayor fuerza a Vieques y Culebra - El Vocero de Puerto Rico</a></td>
-            <td>Vieques</td>
-            <td>2026-05-11 07:53</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
@@ -481,6 +487,12 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOSnNfR3g0cWxLSk9UTnBiTk9STGNCTFVwdnhWQU53NFlNRmRhejNSanZXTHRwc0pOQjlEaGd4UDBMREtEU3l2ZGZHT3h2dG1aUlRjV21IeFlfbUM0NkFWWl83T29jSUNLa1dfa0JiMkY1S3dZSlM1TjR2b0QzeFQ1RHJRVlNfUEpKSE5IOWk4eXFRbVU0aWlvVURkTFJPQdIBpgFBVV95cUxPTU1wakk2WkR2UWR0YTEzTjl6RjNEbGQ0LUJVeDRCV1BCMkl4MU9fSU1PS2Y4bUhpTkI5VzNZSXo2ekhodkdISllGRWtuWDhLWm9wdGliUlpvR2Fkd2sxVFctaUl3YjVGaUJlOWllcDJqNXJRYk5FOEg1elBSM1JQTzV3VDc4LVFtcGI3VW5iM3dkOEVpaFctZXNNSm9VSVNtdVNhM0VB?oc=5" target="_blank">Asesinan a tiros a una mujer en Vieques - Telemundo Puerto Rico</a></td>
             <td>Vieques</td>
             <td>2026-05-10 11:57</td>
+        </tr>
+        <tr class="article-row" data-municipios="Vieques">
+            <td><span class="muni-tag">Vieques</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxQU2ltSGlsOVlILVgwV3o4cnlDSm9oN0lRUjBaQ1ozNmR2MXdpaXhpMi0tWThZSnBuV3FSVnMtVktHaDRKdVRLTlJYR3ZDLWIyUWdvRzNJaGVNOXN3LUNiZTV1Ul9iRTlWdk5Vc0NWaGJtSE1jOWs3Ykd4akxNLWVhNV8ybGl6c3BvTTd2SVVNQWp3LTcwc21kYk1IaE9KRlZ6eU5FVDF6NlBXZTBObi1qVDJEWElzYml3eEk4dHp2QVA1VHJwM19RblJMazkyRFZNTm9LcjhKYkY0OE85VlFzclhaWkPSAeoBQVVfeXFMUEdoY0ctS2s1Y3BJS2dxQmhTbFlwUC11dDFHSlZTUGZMejRHUjVhUDVvNkxiY2Q2UW9EOGU2YXhlYU9FZmdlTC1DbktRZzBuYmg2ZC1VY3BPVTI1Z056VHNaMTZnTld6NFZTaERwTUNaZEdPaEdYY2stWE5ZSlV6cjNFRUxpeVRiOEt2dXZJM1NNTlVobGZjbzlyTVpqMjZSclNPdWpPd2lOTW1Uc3FXRHFQdzNrMjFDUUtmT0Y4WWRIZEU0WExqcWV6NzlNTTRXNTFDWnRZNVN4RjBuVlctWlJ2bVV0YnpvLWdB?oc=5" target="_blank">Asesinan a balazos a mujer en Vieques en víspera del Día de las Madres - El Vocero de Puerto Rico</a></td>
+            <td>Vieques</td>
+            <td>2026-05-10 11:24</td>
         </tr>
         <tr class="article-row" data-municipios="Loíza">
             <td><span class="muni-tag">Loíza</span></td>
@@ -794,7 +806,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-11 14:05:17
+    Generado por Hermes Agent — 2026-05-11 14:34:42
 </div>
 
 <script>
