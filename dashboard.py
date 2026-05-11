@@ -8,7 +8,7 @@ import sys
 import json
 import subprocess
 import webbrowser
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import List, Dict
 
@@ -145,10 +145,11 @@ def collect_facebook_posts() -> tuple:
 
 
 def filter_today_only(articles: List[Dict]) -> List[Dict]:
-    """Keep only articles from today's date."""
+    """Keep only articles from the last 2 days (yesterday + today)."""
     hoy = datetime.now().strftime("%Y-%m-%d")
-    filtrados = [a for a in articles if a.get("fecha", "").startswith(hoy)]
-    print(f"  🗓️  Filtro del día: {len(filtrados)}/{len(articles)} artículos de hoy ({hoy})")
+    ayer = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+    filtrados = [a for a in articles if a.get("fecha", "").startswith(hoy) or a.get("fecha", "").startswith(ayer)]
+    print(f"  🗓️  Filtro últimos 2 días ({ayer} - {hoy}): {len(filtrados)}/{len(articles)} artículos")
     return filtrados
 
 
@@ -569,13 +570,25 @@ def main():
     hoy = datetime.now().strftime("%Y-%m-%d")
     state = load_state()
 
-    # Si el día cambió, resetear estado completamente (noticias frescas cada día)
+    # Reset semanal (cada lunes) en vez de diario
+    # para mantener badges NUEVO en artículos de ayer
     session_date = state.get("session_date", "")
-    if session_date != hoy:
-        print(f"\n📅 Nuevo día ({hoy}). Resetando estado — solo noticias frescas.")
-        state = {"seen": [], "last_run": None, "source_status": {}, "session_date": hoy}
+    today_weekday = datetime.now().weekday()
+    session_weekday = session_date[:10] if session_date else ""
+    # Resetear si pasaron 7+ días desde último reset
+    if session_date:
+        try:
+            last_reset = datetime.strptime(session_date[:10], "%Y-%m-%d")
+            days_since = (datetime.now() - last_reset).days
+            if days_since >= 7:
+                print(f"\n📅 Reset semanal ({days_since} días desde último reset).")
+                state = {"seen": [], "last_run": None, "source_status": {}, "session_date": hoy}
+            else:
+                print(f"\n📅 Estado activo ({days_since} días desde reset).")
+        except:
+            state = {"seen": [], "last_run": None, "source_status": {}, "session_date": hoy}
     else:
-        print(f"\n📅 Mismo día ({hoy}). Manteniendo estado para detectar novedades.")
+        state["session_date"] = hoy
 
     print("📡 Recolectando noticias...")
     articles, source_status = collect_articles()
