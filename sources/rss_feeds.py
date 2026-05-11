@@ -24,6 +24,7 @@ RSS_PERIODICOS = {
     "Walo Radio": "https://waloradio.com/feed/",
     "El Oriental": "https://periodicoeloriental.com/feed/",
     "PR es La Isa": "https://www.puertoricolaisla.com/rss.xml",
+    "NELPR": "https://nelpr.com/feed/",
 }
 
 # ============================================================
@@ -119,6 +120,7 @@ CATEGORIAS = {
     "Walo Radio": "📰 RSS Directo",
     "El Oriental": "📰 RSS Directo",
     "PR es La Isa": "📰 RSS Directo",
+    "NELPR": "📰 RSS Directo",
     # Google News - medios adicionales
     "Primera Hora": "📰 Google News",
     "El Nuevo Día (GN)": "📰 Google News",
