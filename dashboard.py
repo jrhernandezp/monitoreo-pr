@@ -12,7 +12,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import List, Dict
 
-from sources.rss_feeds import fetch_all as fetch_rss, MUNICIPIOS_NORESTE
+from sources.rss_feeds import fetch_all as fetch_rss, MUNICIPIOS_NORESTE, CATEGORIAS
 from sources.newsapi_source import fetch_newsapi
 from sources.scraper import scrape_all
 
@@ -49,16 +49,15 @@ def collect_articles() -> tuple:
     all_articles = []
     source_status = {}
 
-    # 1. RSS
+    # 1. RSS + Google News (all sources from rss_feeds.py)
     try:
-        rss_articles = fetch_rss()
+        rss_articles, rss_statuses = fetch_rss()
         all_articles.extend(rss_articles)
-        source_status["RSS - Primera Hora"] = "✅ OK"
-        source_status["RSS - Vocero"] = "✅ OK"
+        # Add all per-source status from rss_feeds
+        source_status.update(rss_statuses)
     except Exception as e:
-        print(f"  ❌ RSS error: {e}")
-        source_status["RSS - Primera Hora"] = f"❌ Error: {e}"
-        source_status["RSS - Vocero"] = f"❌ Error: {e}"
+        print(f"  ❌ RSS/News error: {e}")
+        source_status["RSS - General"] = f"❌ Error: {e}"
 
     # 2. News API
     try:
@@ -259,11 +258,33 @@ def generate_html(articles: List[Dict], source_status: Dict, state: Dict, facebo
     {facebook_html}
 </div>"""
     source_rows = ""
+    # Group by category
+    grupos = {}
     for name, status in source_status.items():
-        status_class = "status-ok" if status == "✅ OK" else "status-error"
+        cat = CATEGORIAS.get(name, "📡 Otros")
+        if cat not in grupos:
+            grupos[cat] = []
+        ok = "✅" in status
+        grupos[cat].append((name, status, ok))
+
+    # Sort categories with most important first
+    orden_cat = ["📰 RSS Directo", "📰 Google News", "🏛️ Municipios", "🏛️ Gobierno", "📘 Facebook", "📡 Otros", "News API", "El Nuevo Día (Scraping)"]
+    for cat in orden_cat:
+        if cat not in grupos:
+            continue
+        items = grupos[cat]
+        total = len(items)
+        ok_count = sum(1 for _, _, ok in items if ok)
+        # Add category header
         source_rows += f"""
+        <tr class="source-category">
+            <td colspan="2"><strong>{cat}</strong> <span class="source-summary">({ok_count}/{total} OK)</span></td>
+        </tr>"""
+        for name, status, _ in items:
+            status_class = "status-ok" if status == "✅ OK" else "status-error"
+            source_rows += f"""
         <tr>
-            <td>{name}</td>
+            <td style="padding-left:24px;font-size:12px;">{name}</td>
             <td class="{status_class}">{status}</td>
         </tr>"""
 
@@ -389,6 +410,8 @@ tr:hover {{ background: #fafafa; }}
     font-weight: 500;
 }}
 .source-table {{ max-width: 500px; }}
+.source-category td {{ background: #f5f5f5; border-bottom: 2px solid #e0e0e0; }}
+.source-summary {{ font-weight: normal; font-size: 11px; color: #666; }}
 .status-ok {{ color: #2e7d32; font-weight: 500; }}
 .status-error {{ color: #c62828; font-weight: 500; }}
 .footer {{ text-align: center; color: #999; font-size: 12px; margin-top: 30px; }}

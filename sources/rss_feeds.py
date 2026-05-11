@@ -1,8 +1,9 @@
 """RSS feed sources for municipal news monitoring."""
 import feedparser
 import re
+import sys
 from datetime import datetime, timedelta
-from typing import List, Dict
+from typing import List, Dict, Tuple
 
 # Solo noticias de los últimos N días
 MAX_DAYS_OLD = 14
@@ -19,26 +20,27 @@ RSS_PERIODICOS = {
     "Radio Isla": "https://radioisla.tv/feed/",
     "Es Noticia": "https://www.esnoticiapr.com/feed/",
     "Telemundo PR": "https://www.telemundopr.com/rss",
+    "El Vocero": "https://www.elvocero.com/rss/noticias",
+    "Walo Radio": "https://waloradio.com/feed/",
+    "El Oriental": "https://periodicoeloriental.com/feed/",
+    "PR es La Isa": "https://www.puertoricolaisla.com/rss.xml",
 }
 
 # ============================================================
 # GOOGLE NEWS — Búsquedas por municipio (15 noreste)
 # ============================================================
 RSS_MUNICIPIOS = {
-    # Grandes
     "San Juan": GNSS.format("\"San+Juan\"+municipio+Puerto+Rico"),
     "Carolina": GNSS.format("Carolina+Puerto+Rico+municipio"),
     "Caguas": GNSS.format("Caguas+Puerto+Rico+municipio"),
     "Fajardo": GNSS.format("Fajardo+Puerto+Rico"),
     "Humacao": GNSS.format("Humacao+Puerto+Rico"),
-    # Medianos
     "Trujillo Alto": GNSS.format("\"Trujillo+Alto\"+Puerto+Rico"),
     "Canóvanas": GNSS.format("Canovanas+Puerto+Rico"),
     "Loíza": GNSS.format("Loiza+Puerto+Rico"),
     "Río Grande": GNSS.format("\"Rio+Grande\"+Puerto+Rico"),
     "Luquillo": GNSS.format("Luquillo+Puerto+Rico"),
     "Ceiba": GNSS.format("Ceiba+Puerto+Rico+municipio"),
-    # Pequeños
     "Naguabo": GNSS.format("Naguabo+Puerto+Rico"),
     "Cataño": GNSS.format("Catano+Puerto+Rico"),
     "Vieques": GNSS.format("Vieques+Puerto+Rico"),
@@ -80,13 +82,17 @@ RSS_GOBIERNO = {
 }
 
 # ============================================================
-# GOOGLE NEWS — Medios y periodistas de PR
+# GOOGLE NEWS — Medios, periodistas, y sitios sin RSS
 # ============================================================
 RSS_MEDIOS = {
     "Primera Hora": GNSS.format("site:primerahora.com+Puerto+Rico"),
     "El Nuevo Día (GN)": GNSS.format("site:elnuevodia.com+Puerto+Rico"),
     "El Vocero (GN)": GNSS.format("site:elvocero.com+Puerto+Rico"),
     "WAPA TV": GNSS.format("site:wapa.tv+noticias"),
+    "NotiUno": GNSS.format("site:notiuno.com+Puerto+Rico"),
+    "WKAQ 580": GNSS.format("site:wkaq580.com+Puerto+Rico"),
+    "TeleOnce": GNSS.format("site:teleonce.com+Puerto+Rico"),
+    "Xposed Magazine": GNSS.format("site:xposedmagazinenews24.com+Puerto+Rico"),
     "NotiCentro WAPA": GNSS.format("site:facebook.com+noticentrowapa"),
     "Telenoticias": GNSS.format("site:facebook.com+telenoticiaspr"),
     "Telemundo FB": GNSS.format("site:facebook.com+telemundo+PR+noticias"),
@@ -96,6 +102,80 @@ RSS_MEDIOS = {
     "Última Hora PR": GNSS.format("site:facebook.com+ultimahorapr2020"),
     "Noticias En Línea": GNSS.format("site:facebook.com+noticiasenlineapr"),
     "En Contacto 787": GNSS.format("site:facebook.com+encontacto787tv"),
+}
+
+# ============================================================
+# CATEGORÍAS para la tabla de estado de fuentes
+# Mapea cada fuente a su categoría visible en el dashboard
+# ============================================================
+CATEGORIAS = {
+    # RSS directo
+    "El Nuevo Día": "📰 RSS Directo",
+    "NotiCel": "📰 RSS Directo",
+    "Radio Isla": "📰 RSS Directo",
+    "Es Noticia": "📰 RSS Directo",
+    "Telemundo PR": "📰 RSS Directo",
+    "El Vocero": "📰 RSS Directo",
+    "Walo Radio": "📰 RSS Directo",
+    "El Oriental": "📰 RSS Directo",
+    "PR es La Isa": "📰 RSS Directo",
+    # Google News - medios adicionales
+    "Primera Hora": "📰 Google News",
+    "El Nuevo Día (GN)": "📰 Google News",
+    "El Vocero (GN)": "📰 Google News",
+    "WAPA TV": "📰 Google News",
+    "NotiUno": "📰 Google News",
+    "WKAQ 580": "📰 Google News",
+    "TeleOnce": "📰 Google News",
+    "Xposed Magazine": "📰 Google News",
+    "NotiCentro WAPA": "📰 Google News",
+    "Telenoticias": "📰 Google News",
+    "Telemundo FB": "📰 Google News",
+    "Las Noticias T11": "📰 Google News",
+    "Moluscotv": "📰 Google News",
+    "Jay Fonseca": "📰 Google News",
+    "Última Hora PR": "📰 Google News",
+    "Noticias En Línea": "📰 Google News",
+    "En Contacto 787": "📰 Google News",
+    # Gobierno
+    "Gobierno PR": "🏛️ Gobierno",
+    "Senado PR": "🏛️ Gobierno",
+    "Cámara PR": "🏛️ Gobierno",
+    "Junta Gobierno": "🏛️ Gobierno",
+    "William Miranda": "🏛️ Gobierno",
+    "Limarys Román": "🏛️ Gobierno",
+    # Facebook
+    "FB - San Juan": "📘 Facebook",
+    "FB - Carolina": "📘 Facebook",
+    "FB - Trujillo Alto": "📘 Facebook",
+    "FB - Canóvanas": "📘 Facebook",
+    "FB - Loíza": "📘 Facebook",
+    "FB - Río Grande": "📘 Facebook",
+    "FB - Luquillo": "📘 Facebook",
+    "FB - Fajardo": "📘 Facebook",
+    "FB - Ceiba": "📘 Facebook",
+    "FB - Naguabo": "📘 Facebook",
+    "FB - Humacao": "📘 Facebook",
+    "FB - Caguas": "📘 Facebook",
+    "FB - Cataño": "📘 Facebook",
+    "FB - Vieques": "📘 Facebook",
+    "FB - Culebra": "📘 Facebook",
+    # Municipios (Google News)
+    "San Juan": "🏛️ Municipios",
+    "Carolina": "🏛️ Municipios",
+    "Caguas": "🏛️ Municipios",
+    "Fajardo": "🏛️ Municipios",
+    "Humacao": "🏛️ Municipios",
+    "Trujillo Alto": "🏛️ Municipios",
+    "Canóvanas": "🏛️ Municipios",
+    "Loíza": "🏛️ Municipios",
+    "Río Grande": "🏛️ Municipios",
+    "Luquillo": "🏛️ Municipios",
+    "Ceiba": "🏛️ Municipios",
+    "Naguabo": "🏛️ Municipios",
+    "Cataño": "🏛️ Municipios",
+    "Vieques": "🏛️ Municipios",
+    "Culebra": "🏛️ Municipios",
 }
 
 # ============================================================
@@ -143,8 +223,12 @@ def is_relevant_title(title: str) -> bool:
     return True
 
 
-def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10) -> List[Dict]:
-    """Fetch and parse an RSS feed, returning only recent articles about tracked municipalities."""
+def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10) -> Tuple[List[Dict], str]:
+    """Fetch and parse an RSS feed.
+    
+    Returns (articles, status_string).
+    Status is 'ok' for success or the error message for failure.
+    """
     try:
         feed = feedparser.parse(feed_url)
         articles = []
@@ -174,7 +258,7 @@ def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10) -> List[D
             if dt < cutoff:
                 continue
 
-            # --- Buscar municipio en título ---
+            # Buscar municipio en título
             municipios = mentions_municipio(title)
 
             # Si no encontró, buscar en descripción
@@ -192,15 +276,26 @@ def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10) -> List[D
                     "municipios": municipios,
                     "tipo": "RSS",
                 })
-        return articles
+
+        if articles:
+            return articles, "ok"
+        # Feed responded but no relevant articles found
+        feed_title = getattr(feed, 'feed', None)
+        if feed_title is not None or len(feed.entries) > 0:
+            return articles, "ok"
+        return articles, "ok"  # Empty feed but reachable
     except Exception as e:
-        print(f"  ⚠ Error: {source_name}: {e}")
-        return []
+        return [], f"error: {e}"
 
 
-def fetch_all(max_per_feed: int = 8) -> List[Dict]:
-    """Fetch all sources: periódicos, municipios, Facebook, gobierno, medios."""
+def fetch_all(max_per_feed: int = 8) -> Tuple[List[Dict], Dict[str, str]]:
+    """Fetch all sources and return (articles, source_status).
+    
+    source_status maps source name -> status string for the dashboard table.
+    """
     all_articles = []
+    source_status = {}
+
     fuentes = [
         ("📰 Periódicos", RSS_PERIODICOS),
         ("🏛️ Municipios", RSS_MUNICIPIOS),
@@ -213,16 +308,18 @@ def fetch_all(max_per_feed: int = 8) -> List[Dict]:
         for name, url in feed_dict.items():
             print(f"  {emoji} {name}...", end=" ")
             sys.stdout.flush()
-            articles = fetch_rss(name, url, max_per_feed)
+            articles, status = fetch_rss(name, url, max_per_feed)
             if articles:
                 print(f"→ {len(articles)}")
                 for a in articles:
                     print(f"       [{', '.join(a['municipios'])}] {a['titular'][:70]}")
             else:
-                print("→ 0")
+                print(f"→ {status}")
             all_articles.extend(articles)
+            # Guardar estado para el dashboard
+            if status == "ok":
+                source_status[name] = "✅ OK"
+            else:
+                source_status[name] = f"❌ {status}"
 
-    return all_articles
-
-
-import sys
+    return all_articles, source_status
