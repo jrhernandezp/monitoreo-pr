@@ -221,7 +221,7 @@ def generate_facebook_html(facebook_data: list) -> str:
 def generate_html(articles: List[Dict], source_status: Dict, state: Dict, facebook_data: list = None) -> str:
     """Generate the complete HTML dashboard."""
     by_muni = articles_by_municipio(articles)
-    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    now = datetime.now().strftime("%Y-%m-%d %I:%M:%S %p")
     total = len(articles)
     nuevas = sum(1 for a in articles if a.get("es_nueva"))
     last_run = state.get("last_run", "Nunca")
@@ -589,7 +589,7 @@ document.querySelectorAll('.muni-card').forEach(card => {{
 def main():
     print("=" * 50)
     print("🗺️  Dashboard de Observador del Noreste")
-    print(f"   Noreste de Puerto Rico — {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    print(f"   Noreste de Puerto Rico — {datetime.now().strftime('%Y-%m-%d %I:%M %p')}")
     print("=" * 50)
 
     hoy = datetime.now().strftime("%Y-%m-%d")
@@ -637,7 +637,7 @@ def main():
 
     # Update state
     state["seen"] = list(set(state.get("seen", []) + [a["enlace"] for a in articles]))
-    state["last_run"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    state["last_run"] = datetime.now().strftime("%Y-%m-%d %I:%M:%S %p")
     state["source_status"] = source_status
     save_state(state)
 
