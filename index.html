@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-12 10:34:57</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-12 11:05:23</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">37</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-12 10:34:57</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">38</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-12 11:05:23</div></div>
     </div>
 </div>
 
@@ -234,7 +234,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">5</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
@@ -256,9 +256,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Fajardo</div>
             <div class="muni-count">1</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
+        <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
             <div class="muni-name">Río Grande</div>
@@ -274,7 +274,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">14</div>
+            <div class="muni-count">15</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
@@ -302,9 +302,15 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="Carolina, Loíza, Humacao">
+            <td><span class="muni-tag">Carolina, Loíza, Humacao</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/12/continuan-las-ferias-de-pasaporte-a-humacao-las-piedras-carolina-y-loiza/" target="_blank">Continúan las ferias de pasaporte a Humacao, Las Piedras, Carolina y Loíza</a></td>
+            <td>Walo Radio</td>
+            <td>2026-05-12 14:44</td>
+        </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/12/empresarios-y-comerciantes-tendran-evento-gratuito-de-capacitacion-y-networking-en-humacao/" target="_blank">Empresarios y comerciantes tendrán evento gratuito de capacitación y “networking” en Humacao</a></td>
+            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/12/empresarios-y-comerciantes-tendran-evento-gratuito-de-capacitacion-y-networking-en-humacao/" target="_blank">Empresarios y comerciantes tendrán evento gratuito de capacitación y “networking” en Humacao</a></td>
             <td>Walo Radio</td>
             <td>2026-05-12 14:17</td>
         </tr>
@@ -472,7 +478,7 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxONjBKSnBqVlJvWXlQMzdhTUFyVHhGR3d6MUpwM0ZEeUJsNmFQVWVzd2JoOERXbmFBSXduTkp2QkM1UVIybGlFRlF4bDdrYmgzeE9kNk9Zd3dwRHNSbm50NkVuRzBuWDd5NGpqX0p6TzhmN3k2RHNnOGpLQ3RGdGFLcHNaYllBajhybXY0?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZGQwZ3h3UVlEWWZjODh1YUZlSHJsVFBiSk1QRjhOb2kzQnZReGdsWVBadkFuMDAzdHk2eVA4dGg0bFJSWDFiLXNmcFZFWlh2ZDFUZHNiUjF0UUdlZkxkZE52VmZSZVppY01qM25KTDhEcURpUENqb1Z1LTFrdWxmQlhqMFpCSlRoc3Uw?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a></td>
             <td>FB - Trujillo Alto</td>
             <td>2026-05-11 16:43</td>
         </tr>
@@ -508,7 +514,7 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxNaEFQcHoyX0VobHhLOXpSTk13bC1uZXlTQ003UDFKVUpaNHZaV2xSeGRZalk5VTBSMGZ1bWp1QWJVckQ2UlZsSGx1QWkzYWRmeDl4Znk3NjhqRW9OMDBSbjlUM3AxQ1VDdjlmZTFqQW5yb3hvaTRKeVp0aC1lRjBmMy1SNUhUY3FDU2ZYeGJqUjdRVEVpZUVNanBGbEFUS2xGSFdkN2JBdUxwempveTNJZjVON0JISUxwajVJTjNDNU11bDI1UmI2dnpjVQ?oc=5" target="_blank">Ortiz brothers to be honored in Trujillo Alto after historic Kentucky Derby finish - Noticias de Puerto Rico hoy</a></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxNdEJ5UnFCaG0zbmxHV0ZoQ3dhRnFIZkFKMURFdEU2UVRrQWRXUnVIUDVhZjV6QVhYNVJlbzNzVmFSbWtsU1h1OG5OdWFTcVQ4SFliMkdSWTdnM0s1ZHRZWkhranpESGpsSlMycnlKRlNhQzc0U1pycjN6V2JhemI1M1FGdmg3UmpVR1llZVRiR0tVRmF0QTA0VHRyLTZzNnNTYmQ4RDZFaUNXV3g5bzZaLVROc3huM1VjNllpcWc2V2tEcUhQNWZ4Sjc5VGFpWDFfZlBjM0Y5bUw?oc=5" target="_blank">Ortiz brothers to be honored in Trujillo Alto after historic Kentucky Derby finish - Noticias de Puerto Rico hoy</a></td>
             <td>Trujillo Alto</td>
             <td>2026-05-11 12:45</td>
         </tr>
@@ -824,7 +830,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-12 10:34:57
+    Generado por Hermes Agent — 2026-05-12 11:05:23
 </div>
 
 <script>
