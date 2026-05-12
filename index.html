@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-12 06:06:49</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-12 07:36:40</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">36</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-12 06:06:49</div></div>
+        <div class="stat-box"><div class="num">34</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-12 07:36:40</div></div>
     </div>
 </div>
 
@@ -230,11 +230,11 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">4</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">4</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
@@ -244,9 +244,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Caguas</div>
             <div class="muni-count">1</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Luquillo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
@@ -274,11 +274,11 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">13</div>
+            <div class="muni-count">12</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
+        <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
@@ -314,17 +314,17 @@ tr:hover { background: #fafafa; }
             <td>Humacao</td>
             <td>2026-05-12 03:45</td>
         </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/negocios/banca-finanzas/notas/se-acelera-la-reactivacion-industrial-en-el-este-de-puerto-rico/" target="_blank">Se acelera la reactivación industrial en el este de Puerto Rico</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-12 03:10</td>
-        </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://nelpr.com/2026/05/11/se-ira-la-luz-en-24-municipios-hasta-por-13-horas/" target="_blank">Se irá la luz en 24 municipios hasta por 13 horas</a></td>
             <td>NELPR</td>
             <td>2026-05-12 03:01</td>
+        </tr>
+        <tr class="article-row" data-municipios="Cataño">
+            <td><span class="muni-tag">Cataño</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9nYzNhZTI4aWpMcjhLU0FXcVVjVU9sMTdvdHBJbWJjMnVXU283dmpUWDNPUUx2bllVbGVKV2ROSkFHTzNUWXpZSmt4V1JHWVBIYmF3a29uemQyU1ZHenJ6eUNNcEhFak0?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a></td>
+            <td>FB - Cataño</td>
+            <td>2026-05-12 01:51</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
@@ -436,7 +436,7 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSWE5NHNsRjQ5R1UyN3NPQmp4dUZzUTRmRXdjdTdoX3VEcnByN1E3NTM5ZWx2LXVveXI1WEFYajZZZ1Z1QktYSlF5ZDN4UnRvb3RBbGtseXRpT0RfNjE3SUFfVTNQeFUtc3B2bDVUY01wREtVdW9mUXRaWE9UU3IwRWl0TDN2a01LUktXQ1RiaUV1WUVFSjJjY3RZSlNNajVZYXdTcUZXUkJvaGJWUjBCdEd5S2ItNGJD?oc=5" target="_blank">Acusan a mujer de San Juan de mentirle a los federales - Primera Hora</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSWE5NHNsRjQ5R1UyN3NPQmp4dUZzUTRmRXdjdTdoX3VEcnByN1E3NTM5ZWx2LXVveXI1WEFYajZZZ1Z1QktYSlF5ZDN4UnRvb3RBbGtseXRpT0RfNjE3SUFfVTNQeFUtc3B2bDVUY01wREtVdW9mUXRaWE9UU3IwRWl0TDN2a01LUktXQ1RiaUV1WUVFSjJjY3RZSlNNajVZYXdTcUZXUkJvaGJWUjBCdEd5S2ItNGJD?oc=5" target="_blank">Acusan a mujer de San Juan de mentirle a los federales - Primera Hora</a></td>
             <td>Primera Hora</td>
             <td>2026-05-11 18:12</td>
         </tr>
@@ -448,15 +448,9 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBkSTlkTHJYbG1xWEMyUGpObU5pM3BPTE5RX0JoRmotanFoUGpIUWg3ZUwzLUZ2bElDZjhGWXg4djJUVjBGVlJLUVAxN283WFNmSUdKZkRJb0NtYVJyZlZpbEpXYUpnRjNjVXJuWnhOU3NFNTJnejNuejBGRndPNEE?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWDllaVA0OF9iSXA1TWxkSkhoRERzLXdyY0wtYU1tM3VDZEtQQjItcWg2SWJJeTJVWGZsZU1TNGNaM0tFQVBCQnR1UmxDak01ekRJdmMzWGNzb3A2SjJRcGV2ZE4yeVdma0FmRzFHZlZnRUtoREpqUTZPMkhTS0ZuekZHM3ZlN3hRa1pr?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a></td>
             <td>FB - Trujillo Alto</td>
-            <td>2026-05-11 18:02</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan, Carolina">
-            <td><span class="muni-tag">San Juan, Carolina</span></td>
-            <td class="titular-cell"> <a href="https://esnoticiapr.com/identifican-hombre-baleado-y-hallado-bajo-un-puente-en-la-ruta-66/" target="_blank">Identifican hombre baleado y hallado bajo un puente en la Ruta 66</a></td>
-            <td>Es Noticia</td>
-            <td>2026-05-11 17:50</td>
+            <td>2026-05-11 17:34</td>
         </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
@@ -499,12 +493,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPV2NtT05ySjJLMEp4RnVQR25kTGxfTkxKbUFPaXdScFdOVXVfOHVlNXRUcFlXTWN6VUVVV2NkU2FBTkxxaXpYa083UHpMa1FOcnhzbkxGcm5jcUFtbS1ha1VrWDl5Rm0tcTZRbHZyREdNT3AwTUxzQjVZOTZUY09FbmdBN25XMW5COEtJ?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a></td>
             <td>FB - Trujillo Alto</td>
             <td>2026-05-11 13:15</td>
-        </tr>
-        <tr class="article-row" data-municipios="Luquillo">
-            <td><span class="muni-tag">Luquillo</span></td>
-            <td class="titular-cell"> <a href="https://esnoticiapr.com/accidente-grave-deja-varios-heridos-en-luquillo/" target="_blank">Accidente grave deja varios heridos en Luquillo</a></td>
-            <td>Es Noticia</td>
-            <td>2026-05-11 13:00</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -818,7 +806,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-12 06:06:49
+    Generado por Hermes Agent — 2026-05-12 07:36:40
 </div>
 
 <script>
