@@ -13,6 +13,21 @@ from pathlib import Path
 from typing import List, Dict
 
 from sources.rss_feeds import fetch_all as fetch_rss, MUNICIPIOS_NORESTE, CATEGORIAS
+
+
+def format_date_12h(date_str: str) -> str:
+    """Convert date string from 24h to 12h format (e.g. '2026-05-11 17:34' → '2026-05-11 05:34 PM')."""
+    if not date_str or " " not in date_str:
+        return date_str
+    for fmt_in, fmt_out in [
+        ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d %I:%M:%S %p"),
+        ("%Y-%m-%d %H:%M", "%Y-%m-%d %I:%M %p"),
+    ]:
+        try:
+            return datetime.strptime(date_str, fmt_in).strftime(fmt_out)
+        except ValueError:
+            continue
+    return date_str  # fallback: return as-is
 from sources.newsapi_source import fetch_newsapi
 from sources.scraper import scrape_all
 
@@ -196,7 +211,7 @@ def generate_facebook_html(facebook_data: list) -> str:
                 texto = texto[:247] + "..."
             posts_html += f"""
             <div class="fb-post">
-                <div class="fb-post-fecha">🕐 {fecha}</div>
+                <div class="fb-post-fecha">🕐 {format_date_12h(fecha)}</div>
                 <div class="fb-post-texto">{texto}</div>
             </div>"""
 
@@ -248,7 +263,7 @@ def generate_html(articles: List[Dict], source_status: Dict, state: Dict, facebo
             <td><span class="muni-tag">{municipios_str}</span></td>
             <td class="titular-cell">{new_badge} <a href="{a['enlace']}" target="_blank">{a['titular']}</a></td>
             <td>{a['fuente']}</td>
-            <td>{a['fecha']}</td>
+            <td>{format_date_12h(a['fecha'])}</td>
         </tr>"""
 
     # Build source status HTML
