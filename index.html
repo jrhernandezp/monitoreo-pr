@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-12 05:20:29 PM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-12 05:35:23 PM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">43</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-12 05:20:29 PM</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">42</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-12 05:35:23 PM</div></div>
     </div>
 </div>
 
@@ -230,7 +230,7 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">3</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
@@ -244,9 +244,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Caguas</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Luquillo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
@@ -264,9 +264,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Río Grande</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
+        <div class="muni-card active" onclick="filtrarPor('Ceiba')">
             <div class="muni-name">Ceiba</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
@@ -302,17 +302,17 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="Ceiba">
+            <td><span class="muni-tag">Ceiba</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/locales/notas/sembramos-conciencia-inauguran-en-ceiba-el-primer-plantel-de-la-zona-este-bajo-proyecto-ambiental-educativo/" target="_blank">“Sembramos conciencia”: inauguran en Ceiba el primer plantel de la zona este bajo proyecto ambiental educativo</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-12 09:15 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/el-tiempo/notas/meteorologia-emite-aviso-de-inundaciones-repentinas-para-san-juan/" target="_blank">Meteorología emite aviso de inundaciones repentinas para San Juan</a></td>
             <td>El Nuevo Día</td>
             <td>2026-05-12 08:18 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/notas/ante-senalamiento-de-la-junta-fiscal-josue-colon-asegura-que-barcaza-generatriz-puede-anclarse-en-la-bahia-de-san-juan/" target="_blank">Ante señalamiento de la Junta Fiscal, Josué Colón asegura que barcaza generatriz puede anclarse en la bahía de San Juan</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-12 08:08 PM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
@@ -352,6 +352,18 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/violento-crimen-en-humacao-asesinan-a-hombre-en-estacionamiento-de-dispensario-de-cannabis-medicinal/" target="_blank">Violento crimen en Humacao: asesinan a hombre en estacionamiento de dispensario de cannabis medicinal</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-12 05:32 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/recopilan-videos-mientras-esperan-identificar-cuerpo-hallado-en-estacion-de-bombas-de-la-aaa-en-carolina/" target="_blank">Recopilan videos mientras esperan identificar cuerpo hallado en estación de bombas de la AAA en Carolina</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-12 05:32 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOYUxXaUNtN2dZRElDczVnMjkyVHlwQ2hvMGlZVlUweUFxTi1zQ1RuR0ZDUlZPZEpfel9oVUNmTHVFd254NkRLWEptazFfcmxHdXhEb2ZOcXBaNkFwV3VHOFJqcVF1eGJ6VFRXcURoTC01ak4wZ2lsNkJ1ZFpEN2NtVXZJaFVIdzc2YU5lcDF5ZjhBX2NTYzR0OWFMN25aVzNiSGhkZ2QwTTlTME91dDFvZ9IBuAFBVV95cUxNd2ZRRnoyclVqbXlxTTRMTllmVVpHcGhxMHQ4VWJhZDdCcjlIOXBDRGlHSERtek0yVFZBaV9SbF9QbzJ2bGl6bzQtOVUwQzlMV0xsY2ZfclhDU1FuZEw5RTQzQk5rbUxzMmtSN0pHbHpPc01LYm9WNWlkM0FQMUdSelFoQ25ZN2NVTm0yRlpEck5LcTd3LWZoenJYdThOMlFfWHV5S19faTVOQ0R1NVBBVHR6eFlXZW1I?oc=5" target="_blank">Asesinan una persona y dejan herida de bala a otra en Humacao - Telemundo Puerto Rico</a></td>
             <td>Humacao</td>
             <td>2026-05-12 05:23 PM</td>
@@ -361,18 +373,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPSURmeWppYWgyaDhOMlpLLUxzVTc5eG1nbXhpV283aktpUWoxQm4wYTNtUzF3RWJsZVVUTV9FbUNNVGtDVUduWW5JVUFaR1Jwc1NMbjhNRlNFWVh2RVladnRwcklZck9PaXhFajNWUjdSX2gyMkJXSXIzamtvSmxDWlc4elJHU0NmUVZWUWVWS21rRGNuZm9JWjlfU2dUaXlr?oc=5" target="_blank">Asesinan hombre a balazos en Humacao - Primera Hora</a></td>
             <td>Humacao</td>
             <td>2026-05-12 05:22 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/violento-crimen-en-humacao-asesinan-a-hombre-en-estacionamiento-de-dispensario-de-cannabis-medicinal/" target="_blank">Violento crimen en Humacao: asesinan a hombre en estacionamiento de dispensario de cannabis medicinal</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-12 05:17 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Carolina">
-            <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/recopilan-videos-mientras-esperan-identificar-cuerpo-hallado-en-estacion-de-bombas-de-la-aaa-en-carolina/" target="_blank">Recopilan videos mientras esperan identificar cuerpo hallado en estación de bombas de la AAA en Carolina</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-12 05:17 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -397,12 +397,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://waloradio.com/2026/05/12/empresarios-y-comerciantes-tendran-evento-gratuito-de-capacitacion-y-networking-en-humacao/" target="_blank">Empresarios y comerciantes tendrán evento gratuito de capacitación y “networking” en Humacao</a></td>
             <td>Walo Radio</td>
             <td>2026-05-12 02:17 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Luquillo">
-            <td><span class="muni-tag">Luquillo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE03SE9XdmswRE9Wel84dl9aYTAzVEUxMWQ3Y19WNU55eUFadVcydEF3eVFnSHJBekk5TVNJOFNTM2VGN1N3S0dHdGJ5cW5LUjhETmlYNXZiNzlOTXVzTVR6OXhGNFVGRTlldHBn?oc=5" target="_blank">Municipio de Luquillo - facebook.com</a></td>
-            <td>FB - Luquillo</td>
-            <td>2026-05-12 02:15 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -860,7 +854,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-12 05:20:29 PM
+    Generado por Hermes Agent — 2026-05-12 05:35:23 PM
 </div>
 
 <script>
