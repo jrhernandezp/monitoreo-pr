@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-12 06:04:49 PM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-12 06:35:14 PM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">42</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-12 06:04:49 PM</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-12 06:35:14 PM</div></div>
     </div>
 </div>
 
@@ -234,7 +234,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">7</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
@@ -252,9 +252,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Canóvanas</div>
             <div class="muni-count">8</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
@@ -302,23 +302,17 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
-        <tr class="article-row" data-municipios="Ceiba">
-            <td><span class="muni-tag">Ceiba</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/notas/sembramos-conciencia-inauguran-en-ceiba-el-primer-plantel-de-la-zona-este-bajo-proyecto-ambiental-educativo/" target="_blank">“Sembramos conciencia”: inauguran en Ceiba el primer plantel de la zona este bajo proyecto ambiental educativo</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-12 09:15 PM</td>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxORXNlZTNWU2k0Wm9pRFFaU3dBSGhpWHBJVzRtdzhNTDNYU3hhSHVIcGFzbGcxVHhZWTF2dTAtWmlRYlJzN2w4T2pSN05DM1pmV0Q2LUdQMHpFaFl6TTE0MFoyeWd4VU5UZ2N0TnNGNFZJX0Viek5pLUJnNVppY0dGWl9JaDBtWU13aUg3U3Ntc21FNXczY1JPdWxwVEFJWE5VTDZOLWJJbTJNaHNpamQ1WXFsWURXaC14ajhHcjVkc1MxWlp1?oc=5" target="_blank">Onovexa inaugura planta en Humacao con inversión de $36.2 millones - Noticias de Puerto Rico hoy</a></td>
+            <td>Humacao</td>
+            <td>2026-05-12 10:07 PM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://radioisla.tv/dejaran-sin-materia-de-estudios-sociales-a-estudiantes-de-escuela-en-rio-piedras1/?utm_source=rss&utm_medium=rss&utm_campaign=dejaran-sin-materia-de-estudios-sociales-a-estudiantes-de-escuela-en-rio-piedras1&utm_source=rss&utm_medium=rss&utm_campaign=dejaran-sin-materia-de-estudios-sociales-a-estudiantes-de-escuela-en-rio-piedras1" target="_blank">Dejarán sin materia de Estudios Sociales a estudiantes de escuela en Río Piedras</a></td>
             <td>Radio Isla</td>
             <td>2026-05-12 07:35 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxORXNlZTNWU2k0Wm9pRFFaU3dBSGhpWHBJVzRtdzhNTDNYU3hhSHVIcGFzbGcxVHhZWTF2dTAtWmlRYlJzN2w4T2pSN05DM1pmV0Q2LUdQMHpFaFl6TTE0MFoyeWd4VU5UZ2N0TnNGNFZJX0Viek5pLUJnNVppY0dGWl9JaDBtWU13aUg3U3Ntc21FNXczY1JPdWxwVEFJWE5VTDZOLWJJbTJNaHNpamQ1WXFsWURXaC14ajhHcjVkc1MxWlp1?oc=5" target="_blank">Onovexa inaugura planta en Humacao con inversión de $36.2 millones - Noticias de Puerto Rico hoy</a></td>
-            <td>Humacao</td>
-            <td>2026-05-12 07:08 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -342,13 +336,25 @@ tr:hover { background: #fafafa; }
             <td><span class="muni-tag">Humacao</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/violento-crimen-en-humacao-asesinan-a-hombre-en-estacionamiento-de-dispensario-de-cannabis-medicinal/" target="_blank">Violento crimen en Humacao: asesinan a hombre en estacionamiento de dispensario de cannabis medicinal</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-12 06:01 PM</td>
+            <td>2026-05-12 06:32 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/recopilan-videos-mientras-esperan-identificar-cuerpo-hallado-en-estacion-de-bombas-de-la-aaa-en-carolina/" target="_blank">Recopilan videos mientras esperan identificar cuerpo hallado en estación de bombas de la AAA en Carolina</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-12 06:01 PM</td>
+            <td>2026-05-12 06:32 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Ceiba">
+            <td><span class="muni-tag">Ceiba</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/notas/sembramos-conciencia-inauguran-en-ceiba-el-primer-plantel-de-la-zona-este-bajo-proyecto-ambiental-educativo/" target="_blank">“Sembramos conciencia”: inauguran en Ceiba el primer plantel de la zona este bajo proyecto ambiental educativo</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-12 06:32 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Luquillo">
+            <td><span class="muni-tag">Luquillo</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBiNlJhdDFJLWFFTFdERXd2WnI3bElMc3BjLThWVkZvWWFUZDg1T0dobGR5OThhRklYdzNDdEdZZlZkQzdxOHo0aEg3NFp5TkRxcjVNYnV1QXhiUFFuai1KYmloaEU0U3RKWjZZaQ?oc=5" target="_blank">Municipio de Luquillo added a new... - Municipio de Luquillo - facebook.com</a></td>
+            <td>FB - Luquillo</td>
+            <td>2026-05-12 06:06 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -397,12 +403,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://waloradio.com/2026/05/12/empresarios-y-comerciantes-tendran-evento-gratuito-de-capacitacion-y-networking-en-humacao/" target="_blank">Empresarios y comerciantes tendrán evento gratuito de capacitación y “networking” en Humacao</a></td>
             <td>Walo Radio</td>
             <td>2026-05-12 02:17 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Luquillo">
-            <td><span class="muni-tag">Luquillo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE03SE9XdmswRE9Wel84dl9aYTAzVEUxMWQ3Y19WNU55eUFadVcydEF3eVFnSHJBekk5TVNJOFNTM2VGN1N3S0dHdGJ5cW5LUjhETmlYNXZiNzlOTXVzTVR6OXhGNFVGRTlldHBn?oc=5" target="_blank">Municipio de Luquillo - facebook.com</a></td>
-            <td>FB - Luquillo</td>
-            <td>2026-05-12 02:15 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -470,6 +470,12 @@ tr:hover { background: #fafafa; }
             <td>Carolina787</td>
             <td>2026-05-12</td>
         </tr>
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.carolina787.com/n/bomberos-de-carolina-ganan-competencias-bomberiles-2026-en-puerto-rico" target="_blank">Bomberos de Carolina ganan Competencias Bomberiles 2026 en Puerto Rico</a></td>
+            <td>Carolina787</td>
+            <td>2026-05-12</td>
+        </tr>
         <tr class="article-row" data-municipios="Vieques">
             <td><span class="muni-tag">Vieques</span></td>
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxQMVQ1ei1nZkduMzdGaU9mZ2VlSlF5RzI1LUk0TzJHU1NNajV2MzhhN3A0ZVR2NC16S0NTcUdaNUxKV2hKLVB5UnZadW81ajRFaXBZMmh0OEJKMGh6aE5STmZCNHlTT3dxRTZGRkd3UGR6OGM5UGVtMjY2NTJMUUZ1QmI3ZktWV0tGY2pzNV8zakduV09NOVA2UTU3YkZaZ0ExdFZKX3F3ZUdScUhiWEZ1SVROcG1ET3p1UVRfcXRzMHFpQnpfWVJac014M1N6UVBTbGgzUGpDZEhnRm1LYkJYQlkyTTlxUQ?oc=5" target="_blank">🏥 El Municipio de Vieques y su alcalde, José A. Junito Corcino Acevedo, extienden un merecido reconocimiento a todos los profesionales de la enfermería durante la celebración de la Semana del Profesional de Enfermería, del 11 al 15 de mayo de 2026. Ag - facebook.com</a></td>
@@ -499,12 +505,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNcmZfelRYclFMODM2cE42Q2NfalBNaWVuWjkxa0V4Nk9wNGdHWGN6YTBjRERlZ1JETnFkU3lvN1AxQUp4ZDhDQTY3N0o1YnV6TmFTb1FrNjFmTTZ6TXVtQjhDa1R1WjhMN2g3OXZseVdtYWRYYUlMX1I5UEgwNGNHLXhVeVpFcVNGUWRIRE1n?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
             <td>FB - Naguabo</td>
             <td>2026-05-11 08:04 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5TTnhxQ1Utc0hKX1dMVmJBV0E1UG4yamVNREQtb3pESmhkakU0Q3NKVmFXc0N3UXFOOEhFRUZVSU52NUI4MG9IQnRnMkZaVjktUmJaYW1EY2otcmRjZkxJM2hLZ2JScGRHVVNxZFNuZ2I?oc=5" target="_blank">Municipio Autónomo de Fajardo - facebook.com</a></td>
-            <td>FB - Fajardo</td>
-            <td>2026-05-11 07:56 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Trujillo Alto, Canóvanas">
             <td><span class="muni-tag">Trujillo Alto, Canóvanas</span></td>
@@ -854,7 +854,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-12 06:04:49 PM
+    Generado por Hermes Agent — 2026-05-12 06:35:14 PM
 </div>
 
 <script>
