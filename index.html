@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-12 11:05:23</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-12 11:34:48</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">38</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-12 11:05:23</div></div>
+        <div class="stat-box"><div class="num">39</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-12 11:34:48</div></div>
     </div>
 </div>
 
@@ -230,7 +230,7 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">4</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
@@ -238,11 +238,11 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">4</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
+        <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
@@ -302,11 +302,29 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="Caguas">
+            <td><span class="muni-tag">Caguas</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/tribunales/notas/defensa-por-incapacidad-mental-retrasa-juicio-contra-acusado-de-matar-a-su-hijo-en-caguas/" target="_blank">Defensa por incapacidad mental retrasa juicio contra acusado de matar a su hijo en Caguas</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-12 15:27</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxORXNlZTNWU2k0Wm9pRFFaU3dBSGhpWHBJVzRtdzhNTDNYU3hhSHVIcGFzbGcxVHhZWTF2dTAtWmlRYlJzN2w4T2pSN05DM1pmV0Q2LUdQMHpFaFl6TTE0MFoyeWd4VU5UZ2N0TnNGNFZJX0Viek5pLUJnNVppY0dGWl9JaDBtWU13aUg3U3Ntc21FNXczY1JPdWxwVEFJWE5VTDZOLWJJbTJNaHNpamQ1WXFsWURXaC14ajhHcjVkc1MxWlp1?oc=5" target="_blank">Onovexa inaugura planta en Humacao con inversión de $36.2 millones - Noticias de Puerto Rico hoy</a></td>
+            <td>Humacao</td>
+            <td>2026-05-12 15:22</td>
+        </tr>
         <tr class="article-row" data-municipios="Carolina, Loíza, Humacao">
             <td><span class="muni-tag">Carolina, Loíza, Humacao</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/12/continuan-las-ferias-de-pasaporte-a-humacao-las-piedras-carolina-y-loiza/" target="_blank">Continúan las ferias de pasaporte a Humacao, Las Piedras, Carolina y Loíza</a></td>
+            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/12/continuan-las-ferias-de-pasaporte-a-humacao-las-piedras-carolina-y-loiza/" target="_blank">Continúan las ferias de pasaporte a Humacao, Las Piedras, Carolina y Loíza</a></td>
             <td>Walo Radio</td>
             <td>2026-05-12 14:44</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://noticel.com/entretenimiento/20260512/eladio-carrion-cambia-a-canciones-positivas-para-que-sus-hijos-no-escuchen-cosas-malas/?utm_source=rss&utm_medium=rss&utm_campaign=eladio-carrion-cambia-a-canciones-positivas-para-que-sus-hijos-no-escuchen-cosas-malas" target="_blank">Eladio Carrión cambia a canciones positivas para que sus hijos no escuchen «cosas malas»</a></td>
+            <td>NotiCel</td>
+            <td>2026-05-12 14:32</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -325,12 +343,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://noticel.com/noticias/la-calle/policiacas/20260512/muere-conductor-de-camion-de-basura-tras-volcarse-en-canovanas/?utm_source=rss&utm_medium=rss&utm_campaign=muere-conductor-de-camion-de-basura-tras-volcarse-en-canovanas" target="_blank">Muere conductor de camión de basura tras volcarse en Canóvanas</a></td>
             <td>NotiCel</td>
             <td>2026-05-12 13:02</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxORXNlZTNWU2k0Wm9pRFFaU3dBSGhpWHBJVzRtdzhNTDNYU3hhSHVIcGFzbGcxVHhZWTF2dTAtWmlRYlJzN2w4T2pSN05DM1pmV0Q2LUdQMHpFaFl6TTE0MFoyeWd4VU5UZ2N0TnNGNFZJX0Viek5pLUJnNVppY0dGWl9JaDBtWU13aUg3U3Ntc21FNXczY1JPdWxwVEFJWE5VTDZOLWJJbTJNaHNpamQ1WXFsWURXaC14ajhHcjVkc1MxWlp1?oc=5" target="_blank">Onovexa inaugura planta en Humacao con inversión de $36.2 millones - Noticias de Puerto Rico hoy</a></td>
-            <td>Humacao</td>
-            <td>2026-05-12 12:49</td>
         </tr>
         <tr class="article-row" data-municipios="Canóvanas">
             <td><span class="muni-tag">Canóvanas</span></td>
@@ -511,12 +523,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPV2NtT05ySjJLMEp4RnVQR25kTGxfTkxKbUFPaXdScFdOVXVfOHVlNXRUcFlXTWN6VUVVV2NkU2FBTkxxaXpYa083UHpMa1FOcnhzbkxGcm5jcUFtbS1ha1VrWDl5Rm0tcTZRbHZyREdNT3AwTUxzQjVZOTZUY09FbmdBN25XMW5COEtJ?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a></td>
             <td>FB - Trujillo Alto</td>
             <td>2026-05-11 13:15</td>
-        </tr>
-        <tr class="article-row" data-municipios="Trujillo Alto">
-            <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxNdEJ5UnFCaG0zbmxHV0ZoQ3dhRnFIZkFKMURFdEU2UVRrQWRXUnVIUDVhZjV6QVhYNVJlbzNzVmFSbWtsU1h1OG5OdWFTcVQ4SFliMkdSWTdnM0s1ZHRZWkhranpESGpsSlMycnlKRlNhQzc0U1pycjN6V2JhemI1M1FGdmg3UmpVR1llZVRiR0tVRmF0QTA0VHRyLTZzNnNTYmQ4RDZFaUNXV3g5bzZaLVROc3huM1VjNllpcWc2V2tEcUhQNWZ4Sjc5VGFpWDFfZlBjM0Y5bUw?oc=5" target="_blank">Ortiz brothers to be honored in Trujillo Alto after historic Kentucky Derby finish - Noticias de Puerto Rico hoy</a></td>
-            <td>Trujillo Alto</td>
-            <td>2026-05-11 12:45</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -830,7 +836,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-12 11:05:23
+    Generado por Hermes Agent — 2026-05-12 11:34:48
 </div>
 
 <script>
