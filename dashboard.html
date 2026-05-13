@@ -3,41 +3,830 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Monitoreo Municipal - Noreste PR</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Observador del Noreste - Noreste PR</title>
+<link rel="icon" type="image/jpeg" href="logo-observador.jpg">
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: #0d1b2a;
-    color: #e0e0e0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    background: #f0f2f5;
+    color: #333;
     padding: 20px;
 }
-.container {
+.header {
+    background: linear-gradient(135deg, #1a237e, #283593);
+    color: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.header-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+@media (max-width: 600px) {
+    .header-logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+.header h1 { font-size: 28px; margin-bottom: 5px; }
+.header .sub { color: #aab6fe; font-size: 14px; }
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.stat-box {
+    background: rgba(255,255,255,0.1);
+    padding: 10px 20px;
+    border-radius: 8px;
     text-align: center;
-    max-width: 600px;
 }
-h1 { font-size: 32px; color: #ffb347; margin-bottom: 10px; }
-p { font-size: 16px; color: #8899aa; line-height: 1.6; }
-.spinner { font-size: 48px; margin: 30px 0; animation: pulse 2s ease-in-out infinite; }
-@keyframes pulse {
-    0% { opacity: 0.4; }
-    50% { opacity: 1; }
-    100% { opacity: 0.4; }
+.stat-box .num { font-size: 24px; font-weight: bold; }
+.stat-box .label { font-size: 12px; color: #aab6fe; }
+.muni-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 10px;
+    margin-bottom: 25px;
 }
-.footer { margin-top: 40px; font-size: 12px; color: #556677; }
+.muni-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.muni-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.muni-card.active { border-color: #1a237e; }
+.muni-card.active .muni-count {
+    background: #1a237e;
+    color: white;
+}
+.muni-card.inactive { opacity: 0.5; }
+.muni-name { font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+.muni-count {
+    display: inline-block;
+    background: #e0e0e0;
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+}
+.section { margin-bottom: 25px; }
+.section h2 { font-size: 18px; color: #1a237e; margin-bottom: 10px; }
+.toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+.btn-primary { background: #1a237e; color: white; }
+.btn-primary:hover { background: #283593; }
+.btn-secondary { background: #e0e0e0; color: #333; }
+.btn-secondary:hover { background: #bdbdbd; }
+table { width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; }
+th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #e0e0e0; }
+th { background: #f5f5f5; font-size: 12px; text-transform: uppercase; color: #666; }
+tr:hover { background: #fafafa; }
+.titular-cell a { color: #1a237e; text-decoration: none; font-weight: 500; }
+.titular-cell a:hover { text-decoration: underline; }
+.badge-nuevo {
+    display: inline-block;
+    background: #e53935;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.muni-tag {
+    display: inline-block;
+    background: #e8eaf6;
+    color: #1a237e;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+.source-table { max-width: 500px; }
+.source-category td { background: #f5f5f5; border-bottom: 2px solid #e0e0e0; }
+.source-summary { font-weight: normal; font-size: 11px; color: #666; }
+.status-ok { color: #2e7d32; font-weight: 500; }
+.status-error { color: #c62828; font-weight: 500; }
+.footer { text-align: center; color: #999; font-size: 12px; margin-top: 30px; }
+
+/* --- Facebook Section --- */
+.fb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 15px;
+}
+.fb-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-left: 4px solid #1877f2;
+}
+.fb-card-header {
+    background: linear-gradient(135deg, #1877f2, #166fe5);
+    color: white;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.fb-card-body {
+    padding: 10px 14px;
+}
+.fb-post {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.fb-post:last-child {
+    border-bottom: none;
+}
+.fb-post-fecha {
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 4px;
+}
+.fb-post-texto {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+}
+.facebook-empty {
+    color: #999;
+    font-style: italic;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+@media (max-width: 600px) {
+    .muni-grid { grid-template-columns: repeat(3, 1fr); }
+    .header h1 { font-size: 22px; }
+    .stats { gap: 10px; }
+    .stat-box { flex: 1; min-width: 80px; }
+}
 </style>
 </head>
 <body>
-<div class="container">
-    <div class="spinner">🌅</div>
-    <h1>Preparando noticias del día</h1>
-    <p>El dashboard se actualizará automáticamente a las 6:00 AM<br>
-    con las noticias más recientes de los 15 municipios del noreste de PR.</p>
-    <div class="footer">Última limpieza: 2026-05-12 23:59:32</div>
+
+<div class="header">
+    <div class="header-top">
+        <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
+        <h1>🗺️ Observador del Noreste</h1>
+    </div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-13 06:07:14 AM</div>
+    <div class="stats">
+        <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">33</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-13 06:07:14 AM</div></div>
+    </div>
 </div>
+
+<div class="section">
+    <h2>Municipios del Noreste</h2>
+    <div class="muni-grid" id="muniGrid">
+        
+        <div class="muni-card active" onclick="filtrarPor('San Juan')">
+            <div class="muni-name">San Juan</div>
+            <div class="muni-count">10</div>
+        </div>
+        <div class="muni-card active" onclick="filtrarPor('Carolina')">
+            <div class="muni-name">Carolina</div>
+            <div class="muni-count">6</div>
+        </div>
+        <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
+            <div class="muni-name">Trujillo Alto</div>
+            <div class="muni-count">1</div>
+        </div>
+        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
+            <div class="muni-name">Caguas</div>
+            <div class="muni-count">0</div>
+        </div>
+        <div class="muni-card active" onclick="filtrarPor('Luquillo')">
+            <div class="muni-name">Luquillo</div>
+            <div class="muni-count">1</div>
+        </div>
+        <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
+            <div class="muni-name">Canóvanas</div>
+            <div class="muni-count">4</div>
+        </div>
+        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
+            <div class="muni-name">Fajardo</div>
+            <div class="muni-count">0</div>
+        </div>
+        <div class="muni-card active" onclick="filtrarPor('Loíza')">
+            <div class="muni-name">Loíza</div>
+            <div class="muni-count">1</div>
+        </div>
+        <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
+            <div class="muni-name">Río Grande</div>
+            <div class="muni-count">0</div>
+        </div>
+        <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
+            <div class="muni-name">Ceiba</div>
+            <div class="muni-count">0</div>
+        </div>
+        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
+            <div class="muni-name">Naguabo</div>
+            <div class="muni-count">0</div>
+        </div>
+        <div class="muni-card active" onclick="filtrarPor('Humacao')">
+            <div class="muni-name">Humacao</div>
+            <div class="muni-count">13</div>
+        </div>
+        <div class="muni-card active" onclick="filtrarPor('Cataño')">
+            <div class="muni-name">Cataño</div>
+            <div class="muni-count">1</div>
+        </div>
+        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
+            <div class="muni-name">Vieques</div>
+            <div class="muni-count">0</div>
+        </div>
+        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
+            <div class="muni-name">Culebra</div>
+            <div class="muni-count">0</div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Noticias Recientes</h2>
+    <div class="toolbar">
+        <button class="btn btn-primary" onclick="filtrarPor('todos')">📋 Ver Todos</button>
+        <span style="font-size:13px;color:#666;line-height:34px;" id="filtroLabel"></span>
+    </div>
+    <div style="overflow-x:auto;">
+        <table>
+            <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
+            <tbody id="articlesBody">
+                
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQT19KWlhWT3o5VnpYQzNlVVZpaGRMbVFVZDZIME9kYTdlaF9oWGxvTUkzQzdYTU5kUWtWR0Q5WVZNNzhoZTV5aF9NYS1GTHdBMFgyZG03YnBwNmkyTTd4UHRNOE9meWVRbkRjbUFrTlhhaXpHRUUzUzFfd0FLZVRVMV9YcHVmTUhET3JwR3RfYXk?oc=5" target="_blank">San Juan impulsa primera Cumbre de Exportaciones - NotiCel</a></td>
+            <td>San Juan</td>
+            <td>2026-05-13 09:51 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://noticel.com/noticias/20260513/san-juan-impulsa-primera-cumbre-de-exportaciones/?utm_source=rss&utm_medium=rss&utm_campaign=san-juan-impulsa-primera-cumbre-de-exportaciones" target="_blank">San Juan impulsa primera Cumbre de Exportaciones</a></td>
+            <td>NotiCel</td>
+            <td>2026-05-13 09:46 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/videos/med-mooring-la-practica-que-mantiene-en-alerta-a-la-guardia-costera-en-la-bahia-de-san-juan-293814/" target="_blank">“Med mooring”: la práctica que mantiene en alerta a la Guardia Costera en la bahía de San Juan</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-13 06:04 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Carolina, Canóvanas">
+            <td><span class="muni-tag">Carolina, Canóvanas</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/deportes/baloncesto/notas/cangrejeros-caen-contra-los-gigantes-en-el-primer-juego-sin-nelson-colon-y-malik-beasley/" target="_blank">Cangrejeros caen contra los Gigantes en el primer juego sin Nelson Colón y Malik Beasley</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-13 03:26 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/notas/guardia-costera-advierte-sobre-problemas-de-seguridad-en-la-bahia-de-san-juan/" target="_blank">Orden de la Guardia Costera expone falta en muelles de carga en la bahía de San Juan: “Hay más competencia por el espacio”</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-13 03:10 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxORXNlZTNWU2k0Wm9pRFFaU3dBSGhpWHBJVzRtdzhNTDNYU3hhSHVIcGFzbGcxVHhZWTF2dTAtWmlRYlJzN2w4T2pSN05DM1pmV0Q2LUdQMHpFaFl6TTE0MFoyeWd4VU5UZ2N0TnNGNFZJX0Viek5pLUJnNVppY0dGWl9JaDBtWU13aUg3U3Ntc21FNXczY1JPdWxwVEFJWE5VTDZOLWJJbTJNaHNpamQ1WXFsWURXaC14ajhHcjVkc1MxWlp1?oc=5" target="_blank">Onovexa inaugura planta en Humacao con inversión de $36.2 millones - Noticias de Puerto Rico hoy</a></td>
+            <td>Humacao</td>
+            <td>2026-05-13 03:10 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://nelpr.com/2026/05/12/se-ira-la-luz-en-22-municipios-hasta-13-horas/" target="_blank">Se irá la luz en 22 municipios hasta 13 horas</a></td>
+            <td>NELPR</td>
+            <td>2026-05-13 02:14 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://nelpr.com/2026/05/12/hijo-de-exalcalde-de-anasco-se-expone-a-la-pena-de-muerte/" target="_blank">Hijo de exalcalde de Añasco se expone a la pena de muerte</a></td>
+            <td>NELPR</td>
+            <td>2026-05-13 01:49 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://nelpr.com/2026/05/12/gobernadora-presenta-nuevo-portal-que-integrara-alertas-amber-rosa-silver-y-ashanti/" target="_blank">Gobernadora presenta nuevo portal que integrará alertas AMBER, Rosa, Silver y Ashanti</a></td>
+            <td>NELPR</td>
+            <td>2026-05-13 01:40 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://nelpr.com/2026/05/12/policia-alerta-sobre-clonacion-de-tarjetas-en-comercios/" target="_blank">Policía alerta sobre clonación de tarjetas en comercios</a></td>
+            <td>NELPR</td>
+            <td>2026-05-13 01:33 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"> <a href="https://www.carolina787.com/n/noticia-fake-de-aaa" target="_blank">Noticia Fake de AAA</a></td>
+            <td>Carolina787</td>
+            <td>2026-05-13</td>
+        </tr>
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"> <a href="https://www.carolina787.com/n/noticia-fake-de-dtop" target="_blank">Noticia Fake de DTOP</a></td>
+            <td>Carolina787</td>
+            <td>2026-05-13</td>
+        </tr>
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"> <a href="https://www.carolina787.com/n/noticia-fake-de-luma" target="_blank">Noticia Fake de LUMA</a></td>
+            <td>Carolina787</td>
+            <td>2026-05-13</td>
+        </tr>
+        <tr class="article-row" data-municipios="Trujillo Alto">
+            <td><span class="muni-tag">Trujillo Alto</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxQRGtDUzQ4eEluSWszbExYdjlPWjgxUlRwQmpWaFBGMXktU0FneHp1VHJMckFZZ3FKUnlFTkd5SUZVVDFPVkNudk0tVWpFbkhaUE5IWEtFQV9vYWhyd0hubF95UkZmY3BrYW5nQ182d2lpZ3pDZVpLcEtTUTN2anNYTHZHRjNPNVJyTWJGdzRHaW1RbllTT1RiNTBidHN1ZDRPUUVOYkpEN1dsdnZOZ3J1VndfR2MtcWt6NzVHUFM0Qks4dnFORWVBZjBZMXdwOVhLZ3NFNDRkWGl0Y0lfTzlGeFBpS1l5QmgwVE1WR3g1aw?oc=5" target="_blank">Entre caballos y pétalos de rosas: José Luis e Irad Ortiz reciben homenaje de pueblo en Trujillo Alto - Noticias de Puerto Rico hoy</a></td>
+            <td>Trujillo Alto</td>
+            <td>2026-05-12 11:08 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://radioisla.tv/dejaran-sin-materia-de-estudios-sociales-a-estudiantes-de-escuela-en-rio-piedras1/?utm_source=rss&utm_medium=rss&utm_campaign=dejaran-sin-materia-de-estudios-sociales-a-estudiantes-de-escuela-en-rio-piedras1&utm_source=rss&utm_medium=rss&utm_campaign=dejaran-sin-materia-de-estudios-sociales-a-estudiantes-de-escuela-en-rio-piedras1" target="_blank">Dejarán sin materia de Estudios Sociales a estudiantes de escuela en Río Piedras</a></td>
+            <td>Radio Isla</td>
+            <td>2026-05-12 07:35 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"> <a href="https://esnoticiapr.com/asesinan-a-un-hombre-en-estacionamiento-de-dispensario-de-cannabis/" target="_blank">Asesinan a un hombre en estacionamiento de dispensario de cannabis</a></td>
+            <td>Es Noticia</td>
+            <td>2026-05-12 06:42 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Luquillo">
+            <td><span class="muni-tag">Luquillo</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBiNlJhdDFJLWFFTFdERXd2WnI3bElMc3BjLThWVkZvWWFUZDg1T0dobGR5OThhRklYdzNDdEdZZlZkQzdxOHo0aEg3NFp5TkRxcjVNYnV1QXhiUFFuai1KYmloaEU0U3RKWjZZaQ?oc=5" target="_blank">Municipio de Luquillo added a new... - Municipio de Luquillo - facebook.com</a></td>
+            <td>FB - Luquillo</td>
+            <td>2026-05-12 06:06 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxOdXBtRTA0NVM4S0dwMmVzVDFiNTl1Z2VoUm1XdFp6VEU0STlYVFl0Uy1TQnNfaWt6cmNyWElSRFRhX1NXY3FDd21Nd2NwYVd3Tk5lMVYzaXN2cGxZN0pwNm1xcldDVlRzMGozYzdQSGVGLVQzaWhxUUZEOTZEM3cwQ3Z2Qng3MGZBUGxpSkVoNXlvMzQtUXliQjVxM1JFNVZHSEV0SkFDREhrQnBxaThWcTlkZ2JqeTZuMmc0QjlvNjl2T0gxR284YkROazlsR2piV0llMU9lS2lxbXRaM3cwN3hhdjhvY1V6?oc=5" target="_blank">Violento crimen en Humacao: asesinan a hombre en estacionamiento de dispensario de cannabis medicinal - Noticias de Puerto Rico hoy</a></td>
+            <td>Humacao</td>
+            <td>2026-05-12 06:00 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOYUxXaUNtN2dZRElDczVnMjkyVHlwQ2hvMGlZVlUweUFxTi1zQ1RuR0ZDUlZPZEpfel9oVUNmTHVFd254NkRLWEptazFfcmxHdXhEb2ZOcXBaNkFwV3VHOFJqcVF1eGJ6VFRXcURoTC01ak4wZ2lsNkJ1ZFpEN2NtVXZJaFVIdzc2YU5lcDF5ZjhBX2NTYzR0OWFMN25aVzNiSGhkZ2QwTTlTME91dDFvZ9IBuAFBVV95cUxNd2ZRRnoyclVqbXlxTTRMTllmVVpHcGhxMHQ4VWJhZDdCcjlIOXBDRGlHSERtek0yVFZBaV9SbF9QbzJ2bGl6bzQtOVUwQzlMV0xsY2ZfclhDU1FuZEw5RTQzQk5rbUxzMmtSN0pHbHpPc01LYm9WNWlkM0FQMUdSelFoQ25ZN2NVTm0yRlpEck5LcTd3LWZoenJYdThOMlFfWHV5S19faTVOQ0R1NVBBVHR6eFlXZW1I?oc=5" target="_blank">Asesinan a hombre en estacionamiento de fábrica de cannabis en Humacao - Telemundo Puerto Rico</a></td>
+            <td>Humacao</td>
+            <td>2026-05-12 05:23 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Canóvanas">
+            <td><span class="muni-tag">Canóvanas</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPMHJMTWJJeDdxa2d2a0dkeGpJVTZodmpzWk94cXViNFJkM21CR3JTbmxUUUxPQ2NKb2hVRXJFeHNYekxJWmY0U0VwZ1R5Y3Y4YlhjczJYSmlNRjBjV3hWd1dHQldlWjZkb3NCVWdsZ3pDQWRfQl9XOVoyUTJ1bTZwTlR5WTlpQVdXa1ZHWHhBX3RISXU4aWZ6a1FJVkk3bHlJSm5OQUZDZ3pzaUxvVDZlNnJueDdxSWE0Qk9IU2pFYXUxUzVM?oc=5" target="_blank">Identifican a conductor de camión de basura que murió en accidente de tránsito en Canóvanas - Noticias de Puerto Rico hoy</a></td>
+            <td>Canóvanas</td>
+            <td>2026-05-12 05:21 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/12/julio-geigel-cambia-de-postura-y-anuncia-aspiracion-a-la-presidencia-del-pnp-en-humacao/" target="_blank">Julio Geigel cambia de postura y anuncia aspiración a la presidencia del PNP en Humacao</a></td>
+            <td>Walo Radio</td>
+            <td>2026-05-12 04:02 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/12/romeo-se-convirtio-en-el-primer-campeon-maximo-de-attitude-wrestling-academy-awa/" target="_blank">Romeo se convirtió en el primer Campeón Máximo de Attitude Wrestling Academy (AWA)</a></td>
+            <td>Walo Radio</td>
+            <td>2026-05-12 03:32 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Carolina, Loíza, Humacao">
+            <td><span class="muni-tag">Carolina, Loíza, Humacao</span></td>
+            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/12/continuan-las-ferias-de-pasaporte-a-humacao-las-piedras-carolina-y-loiza/" target="_blank">Continúan las ferias de pasaporte a Humacao, Las Piedras, Carolina y Loíza</a></td>
+            <td>Walo Radio</td>
+            <td>2026-05-12 02:44 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/12/empresarios-y-comerciantes-tendran-evento-gratuito-de-capacitacion-y-networking-en-humacao/" target="_blank">Empresarios y comerciantes tendrán evento gratuito de capacitación y “networking” en Humacao</a></td>
+            <td>Walo Radio</td>
+            <td>2026-05-12 02:17 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/12/vitalys-amplia-sus-servicios-con-la-integracion-de-certificados-de-salud-en-humacao/" target="_blank">Vitalys amplía sus servicios con la integración de certificados de salud en Humacao</a></td>
+            <td>Walo Radio</td>
+            <td>2026-05-12 01:46 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/12/upr-en-humacao-celebrara-cumbre-sobre-investigacion-e-innovacion/" target="_blank">UPR en Humacao celebrará cumbre sobre investigación e innovación</a></td>
+            <td>Walo Radio</td>
+            <td>2026-05-12 11:54 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Canóvanas">
+            <td><span class="muni-tag">Canóvanas</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxNWUdXaEIyRnRXbENFVWVmSTRQSlE0bmFWQ0gzaWFvZjd5aEdJTjBBRERWSG92ZHo3MFJlMXFKVmlPQVVEOXdQLXViZ0lNUjhLNC1TZnA0SDdzUVdXbGU1Q054eEVNRWRPZlQ4UUV2elNtdXVpYWJBbXRoRDdfN09QUmlzcEhUbE5uWU0yN0k2ZkdxUDA5MVZ4MXZIUHc1SzQyQWtpeE0xU1RlLXNYbU1HYWlraFZfbVRUVHJFQ0tGMEtyZnQzS3NST2ZMZkdETGsxVnh1cVpwLWFlOVFhdTNtZ2JVYTF0Qjd1QkE?oc=5" target="_blank">📢💼 ¡Oportunidad de empleo en el Municipio de Canóvanas! Se abre convocatoria para el puesto de Investigador(a) de Recaudos de Ingresos Municipales. Si cuentas con preparación en contabilidad y deseas formar parte del servicio público municipal, esta - facebook.com</a></td>
+            <td>FB - Canóvanas</td>
+            <td>2026-05-12 10:56 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Canóvanas">
+            <td><span class="muni-tag">Canóvanas</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxQaEplTnI3LVoyenJGYmJ1MzR4SUlNS1lRZXdtcUhJcVhkOTQ2NjZxLVdfbHFzU0J3N3hKano1M3ROX0Y3WENnY1htdEV5SUJBU3VrM21KNkxIYklBVEFKRzE5S3MxV2lYRzZtZ202d3prOFBxcG9hRVo2bWJHNF95UEl6NHhjTTlxU3NjcVdsTlRmclZZOUNwLThoV0lOb0VkWjlnWWRCNGNQUEpLcmFLR0FJdFFudmZmMlBtZWh1SHNYSHU5UUw1WXdOU3dlc0ZxYVRIZDFvZ0ZJVGNqc2E3cmgzTWNnS1J1N28w?oc=5" target="_blank">📢💼 ¡Oportunidad de empleo en el Municipio de Canóvanas! Se abre convocatoria para el puesto de Investigador(a) de Recaudos de Ingresos Municipales. Si cuentas con preparación en contabilidad y deseas formar parte del servicio público municipal, esta - facebook.com</a></td>
+            <td>FB - Canóvanas</td>
+            <td>2026-05-12 10:56 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQUtfUGVLQ2tXVWpjZlpRZU1KbTYyd05vajF6MzNCRjdWVGZKcU1zSVJNamktNGZpb1ZQUWRvRVJTRHZhYXJocGdraS13YnlZX0pfRGlSeThzU3hobjVUVXBkc29XX2dyWEw5bG1VbnB2MGYwNE1ianRoX2xXWllQY2xud294S2lvc0wydkdncmphRFdLb1RqZjU0TUxaMDZvMGx0ZjhsQ1o2UQ?oc=5" target="_blank">Onovexa invertirá $36.2 millones y creará 203 empleos en Humacao - News is My Business</a></td>
+            <td>Humacao</td>
+            <td>2026-05-12 09:11 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan, Humacao">
+            <td><span class="muni-tag">San Juan, Humacao</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQckRHQVMxUXh2RGhHUHpmbEN0QVI2VGNxRzk1VVdoc1RHc082ZEM2V2xRSENBcmhJel9zWFgtWVNaQnJPUTRBRjJfZk0wLXhyMC1VbTdkYnFhR1RlSW41THRpT0xsV0ZKbThIWmlGSGhpeDZCcjZMV2lYWE5CR3NfVTViaHdzVTVaQlpmak9YVFVjaVpUTVdKWWM0MmZReTEzU3c?oc=5" target="_blank">Anuncian inversión de 36.2 millones de Onovexa en Humacao. - San Juan Daily Star</a></td>
+            <td>Humacao</td>
+            <td>2026-05-12 08:22 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNaGJFT2UtM2FGUFBmVTRsN1QxcnduUXBldTR4TDktT0UzRzg5OV95LWN4ZDdULWM4TVJ6NWFjS25TU1NhRndITVZ2UVJuTEtPRmQzUkpKR1FGeWQ4MzRaZXNpMGxnX1IyeEl2dFdTaGl5TUVNQmlzSU5tS2tSNU9GVG5TZTlXUkszbUxnb3NTZDNzZW1KcGpaSDFxLTQzYzdhWUJLWlhqQm41Zw?oc=5" target="_blank">Anuncian nueva operación de manufactura en Humacao - Primera Hora</a></td>
+            <td>Humacao</td>
+            <td>2026-05-12 03:45 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Cataño">
+            <td><span class="muni-tag">Cataño</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9nYzNhZTI4aWpMcjhLU0FXcVVjVU9sMTdvdHBJbWJjMnVXU283dmpUWDNPUUx2bllVbGVKV2ROSkFHTzNUWXpZSmt4V1JHWVBIYmF3a29uemQyU1ZHenJ6eUNNcEhFak0?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a></td>
+            <td>FB - Cataño</td>
+            <td>2026-05-12 01:51 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"> <a href="https://www.carolina787.com/n/bomberos-de-carolina-ganan-competencias-bomberiles-2026-en-puerto-rico" target="_blank">Bomberos de Carolina ganan Competencias Bomberiles 2026 en Puerto Rico</a></td>
+            <td>Carolina787</td>
+            <td>2026-05-12</td>
+        </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    
+
+<div class="section">
+    <h2>📡 Estado de Fuentes</h2>
+    <table class="source-table">
+        <thead><tr><th>Fuente</th><th>Estado</th></tr></thead>
+        <tbody>
+            
+        <tr class="source-category">
+            <td colspan="2"><strong>📰 RSS Directo</strong> <span class="source-summary">(10/10 OK)</span></td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">El Nuevo Día</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">NotiCel</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Radio Isla</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Es Noticia</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Telemundo PR</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">El Vocero</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Walo Radio</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">El Oriental</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">PR es La Isa</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">NELPR</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr class="source-category">
+            <td colspan="2"><strong>📰 Google News</strong> <span class="source-summary">(17/17 OK)</span></td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Primera Hora</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">El Nuevo Día (GN)</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">El Vocero (GN)</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">WAPA TV</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">NotiUno</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">WKAQ 580</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">TeleOnce</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Xposed Magazine</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">NotiCentro WAPA</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Telenoticias</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Telemundo FB</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Las Noticias T11</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Moluscotv</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Jay Fonseca</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Última Hora PR</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Noticias En Línea</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">En Contacto 787</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr class="source-category">
+            <td colspan="2"><strong>🏛️ Municipios</strong> <span class="source-summary">(15/15 OK)</span></td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">San Juan</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Carolina</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Caguas</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Fajardo</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Humacao</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Trujillo Alto</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Canóvanas</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Loíza</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Río Grande</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Luquillo</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Ceiba</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Naguabo</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Cataño</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Vieques</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Culebra</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr class="source-category">
+            <td colspan="2"><strong>🏛️ Gobierno</strong> <span class="source-summary">(6/6 OK)</span></td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Gobierno PR</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Senado PR</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Cámara PR</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Junta Gobierno</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">William Miranda</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Limarys Román</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr class="source-category">
+            <td colspan="2"><strong>📘 Facebook</strong> <span class="source-summary">(15/15 OK)</span></td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">FB - San Juan</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">FB - Carolina</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">FB - Trujillo Alto</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">FB - Canóvanas</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">FB - Loíza</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">FB - Río Grande</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">FB - Luquillo</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">FB - Fajardo</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">FB - Ceiba</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">FB - Naguabo</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">FB - Humacao</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">FB - Caguas</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">FB - Cataño</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">FB - Vieques</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">FB - Culebra</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr class="source-category">
+            <td colspan="2"><strong>📡 Otros</strong> <span class="source-summary">(3/3 OK)</span></td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">News API</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">El Nuevo Día (Scraping)</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        <tr>
+            <td style="padding-left:24px;font-size:12px;">Carolina787 (Scraping)</td>
+            <td class="status-ok">✅ OK</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="footer">
+    Generado por Hermes Agent — 2026-05-13 06:07:14 AM
+</div>
+
+<script>
+function filtrarPor(municipio) {
+    const rows = document.querySelectorAll('.article-row');
+    const label = document.getElementById('filtroLabel');
+    if (municipio === 'todos') {
+        rows.forEach(r => r.style.display = '');
+        label.textContent = 'Mostrando todos los municipios';
+        return;
+    }
+    label.textContent = 'Filtrando: ' + municipio;
+    rows.forEach(r => {
+        const municipios = r.getAttribute('data-municipios') || '';
+        r.style.display = municipios.includes(municipio) ? '' : 'none';
+    });
+}
+// Highlight active card on click
+document.querySelectorAll('.muni-card').forEach(card => {
+    card.addEventListener('click', function() {
+        document.querySelectorAll('.muni-card').forEach(c => c.style.borderColor = 'transparent');
+        if (!this.classList.contains('inactive')) {
+            this.style.borderColor = '#e53935';
+        }
+    });
+});
+</script>
 </body>
 </html>
