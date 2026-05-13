@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-13 08:04:34 AM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-13 08:35:03 AM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">3</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">36</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-13 08:04:34 AM</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">34</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-13 08:35:03 AM</div></div>
     </div>
 </div>
 
@@ -230,7 +230,7 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">12</div>
+            <div class="muni-count">10</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
@@ -242,7 +242,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
@@ -274,7 +274,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">12</div>
+            <div class="muni-count">11</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
@@ -302,6 +302,12 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="Caguas">
+            <td><span class="muni-tag">Caguas</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://esnoticiapr.com/radican-cargos-por-agresion-sexual-contra-hombre-en-caguas-y-por-violencia-domestica-en-guayama/" target="_blank">Radican cargos por agresión sexual contra hombre en Caguas y por violencia doméstica en Guayama</a></td>
+            <td>Es Noticia</td>
+            <td>2026-05-13 12:28 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQZlVuUHBDTUhEVEVETF8yQnJ5dno3STZ2QTB3eVZqV3RxZlg1d0NVUFoxSzRJZV9sUkRBQldkcHpnVHNkT3JFNnFtY2l6LUJ0WllpNF8yMkhPUkNnUVNvM2NoZ3F2OFRaTm5UWFVzZlY4MXVmbFdWN2tsYkZjbnR5TkZDQW9tZ0JSTVY3cTgzc19vbVpf?oc=5" target="_blank">San Juan impulsa primera Cumbre de Exportaciones - NotiCel</a></td>
@@ -316,39 +322,27 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://noticel.com/noticias/20260513/san-juan-impulsa-primera-cumbre-de-exportaciones/?utm_source=rss&utm_medium=rss&utm_campaign=san-juan-impulsa-primera-cumbre-de-exportaciones" target="_blank">San Juan impulsa primera Cumbre de Exportaciones</a></td>
-            <td>NotiCel</td>
-            <td>2026-05-13 09:46 AM</td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/notas/guardia-costera-advierte-sobre-problemas-de-seguridad-en-la-bahia-de-san-juan/" target="_blank">Orden de la Guardia Costera expone falta en muelles de carga en la bahía de San Juan</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-13 08:32 AM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/videos/med-mooring-la-practica-que-mantiene-en-alerta-a-la-guardia-costera-en-la-bahia-de-san-juan-293814/" target="_blank">📹“Med mooring”: la práctica que mantiene en alerta a la Guardia Costera en la bahía de San Juan</a></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/videos/med-mooring-la-practica-que-mantiene-en-alerta-a-la-guardia-costera-en-la-bahia-de-san-juan-293814/" target="_blank">“Med mooring”: la práctica que mantiene en alerta a la Guardia Costera en la bahía de San Juan</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-13 08:01 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/fotogalerias/recorrido-por-la-bahia-de-san-juan-guardia-costera-lanza-advertencias-de-seguridad/" target="_blank">📸Recorrido por la bahía de San Juan: Guardia Costera lanza advertencias de seguridad</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-13 08:01 AM</td>
+            <td>2026-05-13 08:32 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Ceiba">
             <td><span class="muni-tag">Ceiba</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/locales/notas/sembramos-conciencia-inauguran-en-ceiba-el-primer-plantel-de-la-zona-este-bajo-proyecto-ambiental-educativo/" target="_blank">“Sembramos conciencia”: inauguran en Ceiba el primer plantel de la zona este bajo proyecto ambiental educativo</a></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/notas/sembramos-conciencia-inauguran-en-ceiba-el-primer-plantel-de-la-zona-este-bajo-proyecto-ambiental-educativo/" target="_blank">“Sembramos conciencia”: inauguran en Ceiba el primer plantel de la zona este bajo proyecto ambiental educativo</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-13 08:01 AM</td>
+            <td>2026-05-13 08:32 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina, Canóvanas">
             <td><span class="muni-tag">Carolina, Canóvanas</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/deportes/baloncesto/notas/cangrejeros-caen-contra-los-gigantes-en-el-primer-juego-sin-nelson-colon-y-malik-beasley/" target="_blank">Cangrejeros caen contra los Gigantes en el primer juego sin Nelson Colón y Malik Beasley</a></td>
             <td>El Nuevo Día</td>
             <td>2026-05-13 03:26 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/notas/guardia-costera-advierte-sobre-problemas-de-seguridad-en-la-bahia-de-san-juan/" target="_blank">Orden de la Guardia Costera expone falta en muelles de carga en la bahía de San Juan: “Hay más competencia por el espacio”</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-13 03:10 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -382,7 +376,7 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxOOVY0ekxUd1d5bTg2eGVKQ2paZm1YOU9RbDlTSENlMDdiaTNqVnZiRTdJUGV0OXBTRFkxOWQ2RG41Njh3UkNTWFFCdTNYSFluRTFnLUkybW11ejV5YkRRYm5SWUxOTmtjTE9YOWtlX2pFVURDWVdwVGtfSmdlM1dIN1dVdnpEUnVBLWoxVWJka0xlNnhGeHF6dFEzcXA4Y1JDRkVpSjdGa25BMTFJWEhpWm1YYzIxc1pDUG93VUpLWHgwNXgxRUZJUXJWN0Nta3VpVjRiLXNqZHVrUVhaSUlHcHNZNWlvN19Pd1E?oc=5" target="_blank">Aviso de inundación emitido el 12 de mayo a las 08:00 PM hasta el 12 de mayo a las 09:00 PM por NWS San Juan PR - El Vocero de Puerto Rico</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxOOVY0ekxUd1d5bTg2eGVKQ2paZm1YOU9RbDlTSENlMDdiaTNqVnZiRTdJUGV0OXBTRFkxOWQ2RG41Njh3UkNTWFFCdTNYSFluRTFnLUkybW11ejV5YkRRYm5SWUxOTmtjTE9YOWtlX2pFVURDWVdwVGtfSmdlM1dIN1dVdnpEUnVBLWoxVWJka0xlNnhGeHF6dFEzcXA4Y1JDRkVpSjdGa25BMTFJWEhpWm1YYzIxc1pDUG93VUpLWHgwNXgxRUZJUXJWN0Nta3VpVjRiLXNqZHVrUVhaSUlHcHNZNWlvN19Pd1E?oc=5" target="_blank">Aviso de inundación emitido el 12 de mayo a las 08:00 PM hasta el 12 de mayo a las 09:00 PM por NWS San Juan PR - El Vocero de Puerto Rico</a></td>
             <td>El Vocero (GN)</td>
             <td>2026-05-13 12:15 AM</td>
         </tr>
@@ -415,12 +409,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://radioisla.tv/dejaran-sin-materia-de-estudios-sociales-a-estudiantes-de-escuela-en-rio-piedras1/?utm_source=rss&utm_medium=rss&utm_campaign=dejaran-sin-materia-de-estudios-sociales-a-estudiantes-de-escuela-en-rio-piedras1&utm_source=rss&utm_medium=rss&utm_campaign=dejaran-sin-materia-de-estudios-sociales-a-estudiantes-de-escuela-en-rio-piedras1" target="_blank">Dejarán sin materia de Estudios Sociales a estudiantes de escuela en Río Piedras</a></td>
             <td>Radio Isla</td>
             <td>2026-05-12 07:35 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://esnoticiapr.com/asesinan-a-un-hombre-en-estacionamiento-de-dispensario-de-cannabis/" target="_blank">Asesinan a un hombre en estacionamiento de dispensario de cannabis</a></td>
-            <td>Es Noticia</td>
-            <td>2026-05-12 06:42 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Luquillo">
             <td><span class="muni-tag">Luquillo</span></td>
@@ -508,7 +496,7 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Naguabo">
             <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPMm5MbFZZbVpGdzBDdXllVU9Ba0RZbHBEWXZMd012U2t3WkZrRFZhanl4bkZ1Y3pjMGhMV2F6UDF2MjctS1VXZ3RacU1tQk9zT19kUGdicmhid0ZjcTFZc0dra3pZTkZ0TlRBTG0yeU1NYklOMl9CRGNXMWF6VkdBZGlvVWdwYWZPSXdCYVdB?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPMm5MbFZZbVpGdzBDdXllVU9Ba0RZbHBEWXZMd012U2t3WkZrRFZhanl4bkZ1Y3pjMGhMV2F6UDF2MjctS1VXZ3RacU1tQk9zT19kUGdicmhid0ZjcTFZc0dra3pZTkZ0TlRBTG0yeU1NYklOMl9CRGNXMWF6VkdBZGlvVWdwYWZPSXdCYVdB?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
             <td>FB - Naguabo</td>
             <td>2026-05-12 12:49 AM</td>
         </tr>
@@ -818,7 +806,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-13 08:04:34 AM
+    Generado por Hermes Agent — 2026-05-13 08:35:03 AM
 </div>
 
 <script>
