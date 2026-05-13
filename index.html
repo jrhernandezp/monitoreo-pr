@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-13 03:04:30 PM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-13 03:34:55 PM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">3</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-13 03:04:30 PM</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-13 03:34:55 PM</div></div>
     </div>
 </div>
 
@@ -230,7 +230,7 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">8</div>
+            <div class="muni-count">9</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
@@ -238,7 +238,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">4</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
@@ -250,7 +250,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">2</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
@@ -270,7 +270,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
@@ -278,7 +278,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
@@ -302,11 +302,23 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://radioisla.tv/turista-pierde-una-pierna-tras-ser-impactada-en-el-expreso-221/?utm_source=rss&utm_medium=rss&utm_campaign=turista-pierde-una-pierna-tras-ser-impactada-en-el-expreso-221&utm_source=rss&utm_medium=rss&utm_campaign=turista-pierde-una-pierna-tras-ser-impactada-en-el-expreso-221" target="_blank">Turista pierde una pierna tras ser impactada en el expreso 22</a></td>
+            <td>Radio Isla</td>
+            <td>2026-05-13 07:23 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOSUJlUExoVmRxaVljMkhEZU1oRldhRTJkYk1VTC04M2lVdHJpbmo0MnBUajdlSVhjZUl3TGJRelFfUVZJZFhrSXFTaXhuaDdmRUlfSDdIRTlnTkMzTy1GWkhkLWxhbGVnQ1Z0aEw3aHpyczIxbFlsdWx1YzBhNmxHVWlKTnJGSFhLMnNpQUNaMGJXWldQMFVoYXNoTUFpNXpKTG1kaXdUSXFoblZrSEtNOHNB?oc=5" target="_blank">Hallan osamenta en antiguo motel de Trujillo Alto - Primera Hora</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOSUJlUExoVmRxaVljMkhEZU1oRldhRTJkYk1VTC04M2lVdHJpbmo0MnBUajdlSVhjZUl3TGJRelFfUVZJZFhrSXFTaXhuaDdmRUlfSDdIRTlnTkMzTy1GWkhkLWxhbGVnQ1Z0aEw3aHpyczIxbFlsdWx1YzBhNmxHVWlKTnJGSFhLMnNpQUNaMGJXWldQMFVoYXNoTUFpNXpKTG1kaXdUSXFoblZrSEtNOHNB?oc=5" target="_blank">Hallan osamenta en antiguo motel de Trujillo Alto - Primera Hora</a></td>
             <td>Trujillo Alto</td>
             <td>2026-05-13 06:51 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Trujillo Alto">
+            <td><span class="muni-tag">Trujillo Alto</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxNVjg4c1lVcm0zMXhodWlYTmNQWWhhVUQ2YjItNDFrYnBBbWZQcS1sSnFmR3lpSlRnWlQwXzRyRUZ2TkNqQlBxTEx1NTJHOVN3VGg4MGZJa3FZVkdvVjNlOEZOUWlvSXkza2hCVG5BM0RkZDlua0NpUGhFeFVGb04ya0FtSU9YM09LMEFCc1NmMU44ekVwWWZVNkJOZ1VwZHdRUHpjUjdHckZra29xNjBmSkFxQnhJVFUyUlFQUEdqUm55dUNOM01zSTVXblFmd9IB1gFBVV95cUxQS1IxcExidWNBTDhxLTBSZXFSQURkUDN2dUZjVWtwbF9FZmxkMUR3aGdvakVLNmxWMFZNTE1hWjRmTjJ3a3RHOWlzdlhrSXZSaEpMQkdhYlp1NllTQTkwNWczM01HaG0tNmhaUTVzZVU5b0JrS0FrZmhUa0tUMTBGTHlfaGxfNmppX3RyRGR2U25kY1BYTDNzMkkyWktFRWQyUk5iX1lXVVk1UzR2MkZhWUNLLVNtVzRXWmcwVTlmWGxjZWM2T1QxM2t5NlgtRkZ4T1VqNEV3?oc=5" target="_blank">Hallan cuerpo en estado de descomposición en antiguo motel en Trujillo Alto - Telemundo Puerto Rico</a></td>
+            <td>Trujillo Alto</td>
+            <td>2026-05-13 06:49 PM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
@@ -332,23 +344,29 @@ tr:hover { background: #fafafa; }
             <td>Walo Radio</td>
             <td>2026-05-13 03:56 PM</td>
         </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/13/sin-movil-el-asesinato-cometido-en-estacionamiento-de-la-empresa-prich-en-humacao/" target="_blank">Sin móvil el asesinato cometido en estacionamiento de la  empresa PRICH en Humacao</a></td>
-            <td>Walo Radio</td>
-            <td>2026-05-13 03:13 PM</td>
-        </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/videos/med-mooring-la-practica-que-mantiene-en-alerta-a-la-guardia-costera-en-la-bahia-de-san-juan-293814/" target="_blank">“Med mooring”: la práctica que mantiene en alerta a la Guardia Costera en la bahía de San Juan</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-13 03:01 PM</td>
+            <td>2026-05-13 03:31 PM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/fotogalerias/recorrido-por-la-bahia-de-san-juan-guardia-costera-lanza-advertencias-de-seguridad/" target="_blank">Recorrido por la bahía de San Juan: Guardia Costera lanza advertencias de seguridad</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-13 03:01 PM</td>
+            <td>2026-05-13 03:31 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Trujillo Alto">
+            <td><span class="muni-tag">Trujillo Alto</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/hallan-una-presunta-osamenta-en-los-predios-de-un-antiguo-motel-en-trujillo-alto/" target="_blank">Hallan una presunta osamenta en los predios de un antiguo motel en Trujillo Alto</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-13 03:31 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/13/sin-movil-el-asesinato-cometido-en-estacionamiento-de-la-empresa-prich-en-humacao/" target="_blank">Sin móvil el asesinato cometido en estacionamiento de la  empresa PRICH en Humacao</a></td>
+            <td>Walo Radio</td>
+            <td>2026-05-13 03:13 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Vieques">
             <td><span class="muni-tag">Vieques</span></td>
@@ -379,12 +397,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxORXNlZTNWU2k0Wm9pRFFaU3dBSGhpWHBJVzRtdzhNTDNYU3hhSHVIcGFzbGcxVHhZWTF2dTAtWmlRYlJzN2w4T2pSN05DM1pmV0Q2LUdQMHpFaFl6TTE0MFoyeWd4VU5UZ2N0TnNGNFZJX0Viek5pLUJnNVppY0dGWl9JaDBtWU13aUg3U3Ntc21FNXczY1JPdWxwVEFJWE5VTDZOLWJJbTJNaHNpamQ1WXFsWURXaC14ajhHcjVkc1MxWlp1?oc=5" target="_blank">Onovexa inaugura planta en Humacao con inversión de $36.2 millones - Noticias de Puerto Rico hoy</a></td>
             <td>Humacao</td>
             <td>2026-05-13 03:10 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Canóvanas">
-            <td><span class="muni-tag">Canóvanas</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxOdTJVX3piOXR2WFZPMFUyTmw5LWZuTGxmcVRtQzlfX2NqOTN1cVlyR3VyRHU5ZzdlRWpFUlRlcnFraFpkZVhNWmVtZGt0LXNxMlJQZkFfbElOOXlrU2N2TDB6ZkRZdURhR19iYXZPMmJzbkEyZHdHNFBDMmUtUk84WnJ6aFQ2dWdiRHJEeUprOGFuNHVIMkE3c1RzSGZDWG5acENQSmRDVVpuSXJlcTdiZnpmbEtGb1JuODRmSzVidUxoNFMzbnRDM3hOZjEwS01ISFE4Mmd0X1hXZFJRUVpBZUV0RTg2S0U?oc=5" target="_blank">¡Atención padres y encargados de estudiantes del Municipio de Canóvanas. ¡Orientatate sobre el proceso de entrega de vales para la compra de uniformes! ⬇️ - facebook.com</a></td>
-            <td>FB - Canóvanas</td>
-            <td>2026-05-13 12:38 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Naguabo">
             <td><span class="muni-tag">Naguabo</span></td>
@@ -452,15 +464,21 @@ tr:hover { background: #fafafa; }
             <td>FB - Luquillo</td>
             <td>2026-05-12 02:15 PM</td>
         </tr>
-        <tr class="article-row" data-municipios="Canóvanas">
-            <td><span class="muni-tag">Canóvanas</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxNWUdXaEIyRnRXbENFVWVmSTRQSlE0bmFWQ0gzaWFvZjd5aEdJTjBBRERWSG92ZHo3MFJlMXFKVmlPQVVEOXdQLXViZ0lNUjhLNC1TZnA0SDdzUVdXbGU1Q054eEVNRWRPZlQ4UUV2elNtdXVpYWJBbXRoRDdfN09QUmlzcEhUbE5uWU0yN0k2ZkdxUDA5MVZ4MXZIUHc1SzQyQWtpeE0xU1RlLXNYbU1HYWlraFZfbVRUVHJFQ0tGMEtyZnQzS3NST2ZMZkdETGsxVnh1cVpwLWFlOVFhdTNtZ2JVYTF0Qjd1QkE?oc=5" target="_blank">📢💼 ¡Oportunidad de empleo en el Municipio de Canóvanas! Se abre convocatoria para el puesto de Investigador(a) de Recaudos de Ingresos Municipales. Si cuentas con preparación en contabilidad y deseas formar parte del servicio público municipal, esta - facebook.com</a></td>
-            <td>FB - Canóvanas</td>
-            <td>2026-05-12 10:56 AM</td>
+        <tr class="article-row" data-municipios="Cataño">
+            <td><span class="muni-tag">Cataño</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBwU2ZWMlVUcUt3TDA5cWN4bUYybkFZeG9VWjBBT0Q5VVV0aTV4bkZJc1gtTnNBM1VwZE9uNkhUc1ptVXlxWDJOQVRaZnR4c25yM0dWMjNNZlNncnlDWmZYY1d1SlNqb2M?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a></td>
+            <td>FB - Cataño</td>
+            <td>2026-05-12 01:25 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Naguabo">
+            <td><span class="muni-tag">Naguabo</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNcDFQdWVNSDluYmhkbV9LUktqLUNfTk52SXMzdllQd2N3bjNRSXRQdXZvLTB0U2o5aFNmVWloaWtIa3Nwc1RJcHEyT2puMXVEcXhKTk5GNUc5TU90aHNPdTN1a0VJMHZndmVicU4xS3hQZks5UFhxeUx5VGpmbHAzQTlR?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
+            <td>FB - Naguabo</td>
+            <td>2026-05-12 11:24 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Canóvanas">
             <td><span class="muni-tag">Canóvanas</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxQaEplTnI3LVoyenJGYmJ1MzR4SUlNS1lRZXdtcUhJcVhkOTQ2NjZxLVdfbHFzU0J3N3hKano1M3ROX0Y3WENnY1htdEV5SUJBU3VrM21KNkxIYklBVEFKRzE5S3MxV2lYRzZtZ202d3prOFBxcG9hRVo2bWJHNF95UEl6NHhjTTlxU3NjcVdsTlRmclZZOUNwLThoV0lOb0VkWjlnWWRCNGNQUEpLcmFLR0FJdFFudmZmMlBtZWh1SHNYSHU5UUw1WXdOU3dlc0ZxYVRIZDFvZ0ZJVGNqc2E3cmgzTWNnS1J1N28w?oc=5" target="_blank">📢💼 ¡Oportunidad de empleo en el Municipio de Canóvanas! Se abre convocatoria para el puesto de Investigador(a) de Recaudos de Ingresos Municipales. Si cuentas con preparación en contabilidad y deseas formar parte del servicio público municipal, esta - facebook.com</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxNWUdXaEIyRnRXbENFVWVmSTRQSlE0bmFWQ0gzaWFvZjd5aEdJTjBBRERWSG92ZHo3MFJlMXFKVmlPQVVEOXdQLXViZ0lNUjhLNC1TZnA0SDdzUVdXbGU1Q054eEVNRWRPZlQ4UUV2elNtdXVpYWJBbXRoRDdfN09QUmlzcEhUbE5uWU0yN0k2ZkdxUDA5MVZ4MXZIUHc1SzQyQWtpeE0xU1RlLXNYbU1HYWlraFZfbVRUVHJFQ0tGMEtyZnQzS3NST2ZMZkdETGsxVnh1cVpwLWFlOVFhdTNtZ2JVYTF0Qjd1QkE?oc=5" target="_blank">📢💼 ¡Oportunidad de empleo en el Municipio de Canóvanas! Se abre convocatoria para el puesto de Investigador(a) de Recaudos de Ingresos Municipales. Si cuentas con preparación en contabilidad y deseas formar parte del servicio público municipal, esta - facebook.com</a></td>
             <td>FB - Canóvanas</td>
             <td>2026-05-12 10:56 AM</td>
         </tr>
@@ -800,7 +818,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-13 03:04:30 PM
+    Generado por Hermes Agent — 2026-05-13 03:34:55 PM
 </div>
 
 <script>
