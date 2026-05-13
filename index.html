@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-13 10:05:19 AM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-13 10:35:14 AM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">33</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-13 10:05:19 AM</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">35</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-13 10:35:14 AM</div></div>
     </div>
 </div>
 
@@ -230,11 +230,11 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">10</div>
+            <div class="muni-count">12</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">5</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
@@ -242,7 +242,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
@@ -250,7 +250,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">3</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
@@ -274,15 +274,15 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">11</div>
+            <div class="muni-count">10</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
             <div class="muni-count">1</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
+        <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
@@ -302,6 +302,18 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="Vieques">
+            <td><span class="muni-tag">Vieques</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/13/designan-carretera-en-vieques-con-nombre-gerardo-osorio-conocido-por-ayudar-a-familias-de-escasos-recursos/" target="_blank">Designan carretera en Vieques con nombre Gerardo Osorio conocido por ayudar a familias de escasos recursos</a></td>
+            <td>Walo Radio</td>
+            <td>2026-05-13 02:30 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://noticel.com/noticias/gobierno/20260513/comisionado-residente-defiende-a-los-gatos-callejeros-en-el-paseo-del-morro/?utm_source=rss&utm_medium=rss&utm_campaign=comisionado-residente-defiende-a-los-gatos-callejeros-en-el-paseo-del-morro" target="_blank">Comisionado residente defiende a los gatos callejeros en el Paseo del Morro</a></td>
+            <td>NotiCel</td>
+            <td>2026-05-13 01:55 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://esnoticiapr.com/cheito-hernandez-cita-de-urgencia-al-presidente-de-la-aaa-por-problemas-de-agua-en-san-juan/" target="_blank">“Cheito” Hernández cita de urgencia al presidente de la AAA por problemas de agua en San Juan</a></td>
@@ -316,33 +328,33 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQZlVuUHBDTUhEVEVETF8yQnJ5dno3STZ2QTB3eVZqV3RxZlg1d0NVUFoxSzRJZV9sUkRBQldkcHpnVHNkT3JFNnFtY2l6LUJ0WllpNF8yMkhPUkNnUVNvM2NoZ3F2OFRaTm5UWFVzZlY4MXVmbFdWN2tsYkZjbnR5TkZDQW9tZ0JSTVY3cTgzc19vbVpf?oc=5" target="_blank">San Juan impulsa primera Cumbre de Exportaciones - NotiCel</a></td>
-            <td>San Juan</td>
-            <td>2026-05-13 11:12 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Carolina, Caguas">
-            <td><span class="muni-tag">Carolina, Caguas</span></td>
-            <td class="titular-cell"> <a href="https://noticel.com/deportes/20260513/vaqueros-y-gigantes-ascienden-en-la-tabla-de-posiciones-del-bsn/?utm_source=rss&utm_medium=rss&utm_campaign=vaqueros-y-gigantes-ascienden-en-la-tabla-de-posiciones-del-bsn" target="_blank">Vaqueros y Gigantes ascienden en la tabla de posiciones del BSN</a></td>
-            <td>NotiCel</td>
-            <td>2026-05-13 10:31 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/notas/guardia-costera-advierte-sobre-problemas-de-seguridad-en-la-bahia-de-san-juan/" target="_blank">Orden de la Guardia Costera expone falta en muelles de carga en la bahía de San Juan: “Hay más competencia por el espacio”</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-13 10:02 AM</td>
+            <td>2026-05-13 10:32 AM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/videos/med-mooring-la-practica-que-mantiene-en-alerta-a-la-guardia-costera-en-la-bahia-de-san-juan-293814/" target="_blank">“Med mooring”: la práctica que mantiene en alerta a la Guardia Costera en la bahía de San Juan</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-13 10:02 AM</td>
+            <td>2026-05-13 10:32 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/fotogalerias/recorrido-por-la-bahia-de-san-juan-guardia-costera-lanza-advertencias-de-seguridad/" target="_blank">Recorrido por la bahía de San Juan: Guardia Costera lanza advertencias de seguridad</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-13 10:32 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Ceiba">
             <td><span class="muni-tag">Ceiba</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/notas/sembramos-conciencia-inauguran-en-ceiba-el-primer-plantel-de-la-zona-este-bajo-proyecto-ambiental-educativo/" target="_blank">“Sembramos conciencia”: inauguran en Ceiba el primer plantel de la zona este bajo proyecto ambiental educativo</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-13 10:02 AM</td>
+            <td>2026-05-13 10:32 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQT19KWlhWT3o5VnpYQzNlVVZpaGRMbVFVZDZIME9kYTdlaF9oWGxvTUkzQzdYTU5kUWtWR0Q5WVZNNzhoZTV5aF9NYS1GTHdBMFgyZG03YnBwNmkyTTd4UHRNOE9meWVRbkRjbUFrTlhhaXpHRUUzUzFfd0FLZVRVMV9YcHVmTUhET3JwR3RfYXk?oc=5" target="_blank">San Juan impulsa primera Cumbre de Exportaciones - NotiCel</a></td>
+            <td>San Juan</td>
+            <td>2026-05-13 09:51 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -373,6 +385,12 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://nelpr.com/2026/05/12/policia-alerta-sobre-clonacion-de-tarjetas-en-comercios/" target="_blank">Policía alerta sobre clonación de tarjetas en comercios</a></td>
             <td>NELPR</td>
             <td>2026-05-13 01:33 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Canóvanas">
+            <td><span class="muni-tag">Canóvanas</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxOdTJVX3piOXR2WFZPMFUyTmw5LWZuTGxmcVRtQzlfX2NqOTN1cVlyR3VyRHU5ZzdlRWpFUlRlcnFraFpkZVhNWmVtZGt0LXNxMlJQZkFfbElOOXlrU2N2TDB6ZkRZdURhR19iYXZPMmJzbkEyZHdHNFBDMmUtUk84WnJ6aFQ2dWdiRHJEeUprOGFuNHVIMkE3c1RzSGZDWG5acENQSmRDVVpuSXJlcTdiZnpmbEtGb1JuODRmSzVidUxoNFMzbnRDM3hOZjEwS01ISFE4Mmd0X1hXZFJRUVpBZUV0RTg2S0U?oc=5" target="_blank">¡Atención padres y encargados de estudiantes del Municipio de Canóvanas. ¡Orientatate sobre el proceso de entrega de vales para la compra de uniformes! ⬇️ - Facebook</a></td>
+            <td>FB - Canóvanas</td>
+            <td>2026-05-13 12:38 AM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
@@ -406,7 +424,7 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Luquillo">
             <td><span class="muni-tag">Luquillo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBiNlJhdDFJLWFFTFdERXd2WnI3bElMc3BjLThWVkZvWWFUZDg1T0dobGR5OThhRklYdzNDdEdZZlZkQzdxOHo0aEg3NFp5TkRxcjVNYnV1QXhiUFFuai1KYmloaEU0U3RKWjZZaQ?oc=5" target="_blank">Municipio de Luquillo added a new... - Municipio de Luquillo - facebook.com</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBiNlJhdDFJLWFFTFdERXd2WnI3bElMc3BjLThWVkZvWWFUZDg1T0dobGR5OThhRklYdzNDdEdZZlZkQzdxOHo0aEg3NFp5TkRxcjVNYnV1QXhiUFFuai1KYmloaEU0U3RKWjZZaQ?oc=5" target="_blank">Municipio de Luquillo added a new... - Municipio de Luquillo - Facebook</a></td>
             <td>FB - Luquillo</td>
             <td>2026-05-12 06:06 PM</td>
         </tr>
@@ -452,15 +470,9 @@ tr:hover { background: #fafafa; }
             <td>Walo Radio</td>
             <td>2026-05-12 02:17 PM</td>
         </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/12/vitalys-amplia-sus-servicios-con-la-integracion-de-certificados-de-salud-en-humacao/" target="_blank">Vitalys amplía sus servicios con la integración de certificados de salud en Humacao</a></td>
-            <td>Walo Radio</td>
-            <td>2026-05-12 01:46 PM</td>
-        </tr>
         <tr class="article-row" data-municipios="Canóvanas">
             <td><span class="muni-tag">Canóvanas</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxNWUdXaEIyRnRXbENFVWVmSTRQSlE0bmFWQ0gzaWFvZjd5aEdJTjBBRERWSG92ZHo3MFJlMXFKVmlPQVVEOXdQLXViZ0lNUjhLNC1TZnA0SDdzUVdXbGU1Q054eEVNRWRPZlQ4UUV2elNtdXVpYWJBbXRoRDdfN09QUmlzcEhUbE5uWU0yN0k2ZkdxUDA5MVZ4MXZIUHc1SzQyQWtpeE0xU1RlLXNYbU1HYWlraFZfbVRUVHJFQ0tGMEtyZnQzS3NST2ZMZkdETGsxVnh1cVpwLWFlOVFhdTNtZ2JVYTF0Qjd1QkE?oc=5" target="_blank">📢💼 ¡Oportunidad de empleo en el Municipio de Canóvanas! Se abre convocatoria para el puesto de Investigador(a) de Recaudos de Ingresos Municipales. Si cuentas con preparación en contabilidad y deseas formar parte del servicio público municipal, esta - facebook.com</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxNWUdXaEIyRnRXbENFVWVmSTRQSlE0bmFWQ0gzaWFvZjd5aEdJTjBBRERWSG92ZHo3MFJlMXFKVmlPQVVEOXdQLXViZ0lNUjhLNC1TZnA0SDdzUVdXbGU1Q054eEVNRWRPZlQ4UUV2elNtdXVpYWJBbXRoRDdfN09QUmlzcEhUbE5uWU0yN0k2ZkdxUDA5MVZ4MXZIUHc1SzQyQWtpeE0xU1RlLXNYbU1HYWlraFZfbVRUVHJFQ0tGMEtyZnQzS3NST2ZMZkdETGsxVnh1cVpwLWFlOVFhdTNtZ2JVYTF0Qjd1QkE?oc=5" target="_blank">📢💼 ¡Oportunidad de empleo en el Municipio de Canóvanas! Se abre convocatoria para el puesto de Investigador(a) de Recaudos de Ingresos Municipales. Si cuentas con preparación en contabilidad y deseas formar parte del servicio público municipal, esta - Facebook</a></td>
             <td>FB - Canóvanas</td>
             <td>2026-05-12 10:56 AM</td>
         </tr>
@@ -484,13 +496,13 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Cataño">
             <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9nYzNhZTI4aWpMcjhLU0FXcVVjVU9sMTdvdHBJbWJjMnVXU283dmpUWDNPUUx2bllVbGVKV2ROSkFHTzNUWXpZSmt4V1JHWVBIYmF3a29uemQyU1ZHenJ6eUNNcEhFak0?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9nYzNhZTI4aWpMcjhLU0FXcVVjVU9sMTdvdHBJbWJjMnVXU283dmpUWDNPUUx2bllVbGVKV2ROSkFHTzNUWXpZSmt4V1JHWVBIYmF3a29uemQyU1ZHenJ6eUNNcEhFak0?oc=5" target="_blank">Municipio Autónomo de Cataño - Facebook</a></td>
             <td>FB - Cataño</td>
             <td>2026-05-12 01:51 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Naguabo">
             <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPMm5MbFZZbVpGdzBDdXllVU9Ba0RZbHBEWXZMd012U2t3WkZrRFZhanl4bkZ1Y3pjMGhMV2F6UDF2MjctS1VXZ3RacU1tQk9zT19kUGdicmhid0ZjcTFZc0dra3pZTkZ0TlRBTG0yeU1NYklOMl9CRGNXMWF6VkdBZGlvVWdwYWZPSXdCYVdB?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPMm5MbFZZbVpGdzBDdXllVU9Ba0RZbHBEWXZMd012U2t3WkZrRFZhanl4bkZ1Y3pjMGhMV2F6UDF2MjctS1VXZ3RacU1tQk9zT19kUGdicmhid0ZjcTFZc0dra3pZTkZ0TlRBTG0yeU1NYklOMl9CRGNXMWF6VkdBZGlvVWdwYWZPSXdCYVdB?oc=5" target="_blank">Municipio Autónomo de Naguabo - Facebook</a></td>
             <td>FB - Naguabo</td>
             <td>2026-05-12 12:49 AM</td>
         </tr>
@@ -800,7 +812,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-13 10:05:19 AM
+    Generado por Hermes Agent — 2026-05-13 10:35:14 AM
 </div>
 
 <script>
