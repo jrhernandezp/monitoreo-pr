@@ -68,7 +68,7 @@ echo "  ✅ Dashboard placeholder generado"
 
 # Hacer commit y push para GitHub Pages
 cd "$DASH_DIR"
-git add dashboard.html data/state.json
+git add index.html data/state.json
 git commit -m "cleanup: daily reset $(date +'%Y-%m-%d')" --quiet
 git push --quiet 2>&1
 echo "  ✅ Push a GitHub Pages completado"

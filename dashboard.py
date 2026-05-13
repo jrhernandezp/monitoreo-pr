@@ -13,6 +13,14 @@ from pathlib import Path
 from typing import List, Dict
 
 from sources.rss_feeds import fetch_all as fetch_rss, MUNICIPIOS_NORESTE, CATEGORIAS
+from sources.newsapi_source import fetch_newsapi
+from sources.scraper import scrape_all
+
+
+def article_key(article: dict) -> str:
+    """Generate a stable dedup key from title+source (not URL, because
+    Google News RSS URLs with ?oc=5 tracking params change per fetch)."""
+    return f'{article.get("titular","")[:100]}|{article.get("fuente","")}'
 
 
 def format_date_12h(date_str: str) -> str:
@@ -28,8 +36,6 @@ def format_date_12h(date_str: str) -> str:
         except ValueError:
             continue
     return date_str  # fallback: return as-is
-from sources.newsapi_source import fetch_newsapi
-from sources.scraper import scrape_all
 
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
@@ -171,10 +177,12 @@ def filter_today_only(articles: List[Dict]) -> List[Dict]:
 
 
 def mark_new_articles(articles: List[Dict], state: Dict) -> List[Dict]:
-    """Mark articles as NEW if not seen before."""
+    """Mark articles as NEW if not seen before. Uses stable content hash
+    (title+source) so Google News RSS URLs with rotating tracking params
+    don't break dedup."""
     seen = set(state.get("seen", []))
     for a in articles:
-        a["es_nueva"] = a["enlace"] not in seen
+        a["es_nueva"] = article_key(a) not in seen
     return articles
 
 
@@ -240,6 +248,7 @@ def generate_html(articles: List[Dict], source_status: Dict, state: Dict, facebo
     total = len(articles)
     nuevas = sum(1 for a in articles if a.get("es_nueva"))
     last_run = state.get("last_run", "Nunca")
+    municipios_activos = sum(1 for v in by_muni.values() if v)
 
     # Build municipality cards HTML
     cards_html = ""
@@ -527,7 +536,7 @@ tr:hover {{ background: #fafafa; }}
     <div class="stats">
         <div class="stat-box"><div class="num">{total}</div><div class="label">Total Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff5252">{nuevas}</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">{len(articles)}</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">{municipios_activos}</div><div class="label">Municipios</div></div>
         <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">{last_run}</div></div>
     </div>
 </div>
@@ -610,6 +619,13 @@ def main():
     hoy = datetime.now().strftime("%Y-%m-%d")
     state = load_state()
 
+    # Migrate seen keys: old format stored full URLs (Google News RSS
+    # with rotating ?oc=5 params). Detect and reset so new dedup works.
+    seen = state.get("seen", [])
+    if seen and seen[0].startswith("http"):
+        print("  🔄 Migrando state.json: reemplazando URLs por claves estables")
+        state["seen"] = []
+
     # Reset semanal (cada lunes) en vez de diario
     # para mantener badges NUEVO en artículos de ayer
     session_date = state.get("session_date", "")
@@ -650,8 +666,8 @@ def main():
     if not articles:
         print("  ⚠️  No se encontraron noticias de hoy para los municipios del noreste.")
 
-    # Update state
-    state["seen"] = list(set(state.get("seen", []) + [a["enlace"] for a in articles]))
+    # Update state — dedup by content key, not URL
+    state["seen"] = list(set(state.get("seen", []) + [article_key(a) for a in articles]))
     state["last_run"] = datetime.now().strftime("%Y-%m-%d %I:%M:%S %p")
     state["source_status"] = source_status
     save_state(state)
