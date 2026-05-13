@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-13 01:35:02 AM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-13 02:04:21 AM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">34</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-13 01:35:02 AM</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-13 02:04:21 AM</div></div>
     </div>
 </div>
 
@@ -240,9 +240,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Trujillo Alto</div>
             <div class="muni-count">1</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
+        <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
@@ -278,7 +278,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
@@ -320,11 +320,23 @@ tr:hover { background: #fafafa; }
             <td>Humacao</td>
             <td>2026-05-13 03:10 AM</td>
         </tr>
+        <tr class="article-row" data-municipios="Caguas">
+            <td><span class="muni-tag">Caguas</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOcHVYX1BKaWhuVHprYmxwdVk3RWMzeG5EQThPUlltTnVtS1hzTWRnT0N1X09hcTJESkVjV0FGZE8wbDZhdm5hd1lJWHZBRkpJVVVhX2VOT1hxSmhpYVh0X1B0ejlVeWs2UmNYNDRoeWtQYU9rMzB0MmY5TFN2al90OTV3b0ZRWEhBZmhReE9n?oc=5" target="_blank">Diócesis de Caguas, Puerto Rico - Página Ofi - facebook.com</a></td>
+            <td>FB - Caguas</td>
+            <td>2026-05-13 02:34 AM</td>
+        </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://nelpr.com/2026/05/12/se-ira-la-luz-en-22-municipios-hasta-13-horas/" target="_blank">Se irá la luz en 22 municipios hasta 13 horas</a></td>
             <td>NELPR</td>
             <td>2026-05-13 02:14 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/videos/med-mooring-la-practica-que-mantiene-en-alerta-a-la-guardia-costera-en-la-bahia-de-san-juan-293814/" target="_blank">“Med mooring”: la práctica que mantiene en alerta a la Guardia Costera en la bahía de San Juan</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-13 02:01 AM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
@@ -343,12 +355,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://nelpr.com/2026/05/12/policia-alerta-sobre-clonacion-de-tarjetas-en-comercios/" target="_blank">Policía alerta sobre clonación de tarjetas en comercios</a></td>
             <td>NELPR</td>
             <td>2026-05-13 01:33 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/videos/med-mooring-la-practica-que-mantiene-en-alerta-a-la-guardia-costera-en-la-bahia-de-san-juan-293814/" target="_blank">“Med mooring”: la práctica que mantiene en alerta a la Guardia Costera en la bahía de San Juan</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-13 01:32 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -424,7 +430,7 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Cataño">
             <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFAxTkpwQVYwYWJhY003U1B6cFJHMEVhX2tBelhyQ3MzYTV6ZEN3Y0dPcWFqRmYyTjZRaXdjOFJHQmwtWXd2VU9vQ2JmVVpOdmpYR3hnd1JZbVp2OTB3ZHRkNUlvdHAxQXZkUGVwTU1IRm5GNEE?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE0wdFZDXzNjNjI2M09sMXp6Y2g0eFZ1bXVZekRrRHhMMG9QTjdsSzI1dTJTRnBrLXBobFBYRV83bXNoV0p3eW5FZGo5OFQxMnROV3ZMZzN2a2U5OURldnpPejF4MWhPdnBmcHltMVJqVDl2eU0?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a></td>
             <td>FB - Cataño</td>
             <td>2026-05-12 03:46 PM</td>
         </tr>
@@ -448,7 +454,7 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Luquillo">
             <td><span class="muni-tag">Luquillo</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE03SE9XdmswRE9Wel84dl9aYTAzVEUxMWQ3Y19WNU55eUFadVcydEF3eVFnSHJBekk5TVNJOFNTM2VGN1N3S0dHdGJ5cW5LUjhETmlYNXZiNzlOTXVzTVR6OXhGNFVGRTlldHBn?oc=5" target="_blank">Municipio de Luquillo - facebook.com</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE03SE9XdmswRE9Wel84dl9aYTAzVEUxMWQ3Y19WNU55eUFadVcydEF3eVFnSHJBekk5TVNJOFNTM2VGN1N3S0dHdGJ5cW5LUjhETmlYNXZiNzlOTXVzTVR6OXhGNFVGRTlldHBn?oc=5" target="_blank">Municipio de Luquillo - facebook.com</a></td>
             <td>FB - Luquillo</td>
             <td>2026-05-12 02:15 PM</td>
         </tr>
@@ -493,12 +499,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNaGJFT2UtM2FGUFBmVTRsN1QxcnduUXBldTR4TDktT0UzRzg5OV95LWN4ZDdULWM4TVJ6NWFjS25TU1NhRndITVZ2UVJuTEtPRmQzUkpKR1FGeWQ4MzRaZXNpMGxnX1IyeEl2dFdTaGl5TUVNQmlzSU5tS2tSNU9GVG5TZTlXUkszbUxnb3NTZDNzZW1KcGpaSDFxLTQzYzdhWUJLWlhqQm41Zw?oc=5" target="_blank">Anuncian nueva operación de manufactura en Humacao - Primera Hora</a></td>
             <td>Humacao</td>
             <td>2026-05-12 03:45 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9nYzNhZTI4aWpMcjhLU0FXcVVjVU9sMTdvdHBJbWJjMnVXU283dmpUWDNPUUx2bllVbGVKV2ROSkFHTzNUWXpZSmt4V1JHWVBIYmF3a29uemQyU1ZHenJ6eUNNcEhFak0?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a></td>
-            <td>FB - Cataño</td>
-            <td>2026-05-12 01:51 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
@@ -806,7 +806,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-13 01:35:02 AM
+    Generado por Hermes Agent — 2026-05-13 02:04:21 AM
 </div>
 
 <script>
