@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-14 03:04:29 PM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-14 03:35:00 PM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">4</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-14 03:04:29 PM</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-14 03:35:00 PM</div></div>
     </div>
 </div>
 
@@ -230,15 +230,15 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">12</div>
+            <div class="muni-count">14</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">7</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">5</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
@@ -254,11 +254,11 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">3</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
             <div class="muni-name">Río Grande</div>
@@ -278,7 +278,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">4</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
@@ -302,21 +302,33 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="San Juan, Carolina">
+            <td><span class="muni-tag">San Juan, Carolina</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://esnoticiapr.com/municipios-advierten-impacto-a-autonomia-en-reforma-de-permisos/" target="_blank">Municipios advierten impacto a autonomía en reforma de permisos</a></td>
+            <td>Es Noticia</td>
+            <td>2026-05-14 07:12 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Cataño">
+            <td><span class="muni-tag">Cataño</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxNTThzZU5IRnNjaHRXUFBPOWpET0ZFQ1lXT1lnNW1FMWZLWUpscksta09odFZJRVI0UnFnRVJhU3U3UTBOVUhRVnVkZWx3ZjJyLVdQd3cxWlpCbVFYWXplaVdKcmhJSWtJeDVQVER2aS1SYkZLNmtFU0JKU1dXaXRZZnRBYzhKTFptUFJ0cXRHelJXNERjb2plNFZsMDdVUnJEQUFJRlBFcEtpQ3BSOUphNDNhVnVVN3piUF9KUVRWRUlIcTdyWE1aNGpqUQ?oc=5" target="_blank">Hurtan propiedad de la construcción en parque La Esperanza de Cataño - Primera Hora</a></td>
+            <td>Cataño</td>
+            <td>2026-05-14 07:09 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/14/senadora-cuestiona-lentitud-en-proyectos-del-balneario-y-muelle-de-punta-santiago-en-humacao/" target="_blank">Senadora cuestiona lentitud en proyectos del balneario y muelle de Punta Santiago en Humacao</a></td>
+            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/14/senadora-cuestiona-lentitud-en-proyectos-del-balneario-y-muelle-de-punta-santiago-en-humacao/" target="_blank">Senadora cuestiona lentitud en proyectos del balneario y muelle de Punta Santiago en Humacao</a></td>
             <td>Walo Radio</td>
             <td>2026-05-14 06:55 PM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://radioisla.tv/radican-resolucion-para-investigar-interrupciones-de-agua-en-san-juan1/?utm_source=rss&utm_medium=rss&utm_campaign=radican-resolucion-para-investigar-interrupciones-de-agua-en-san-juan1&utm_source=rss&utm_medium=rss&utm_campaign=radican-resolucion-para-investigar-interrupciones-de-agua-en-san-juan1" target="_blank">Radican resolución para investigar interrupciones de agua en San Juan</a></td>
+            <td class="titular-cell"> <a href="https://radioisla.tv/radican-resolucion-para-investigar-interrupciones-de-agua-en-san-juan1/?utm_source=rss&utm_medium=rss&utm_campaign=radican-resolucion-para-investigar-interrupciones-de-agua-en-san-juan1&utm_source=rss&utm_medium=rss&utm_campaign=radican-resolucion-para-investigar-interrupciones-de-agua-en-san-juan1" target="_blank">Radican resolución para investigar interrupciones de agua en San Juan</a></td>
             <td>Radio Isla</td>
             <td>2026-05-14 06:42 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Cataño">
             <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNNHVxbDRsbGpDZ2p2dl9LSGt6X1VLS3JDZXZoUUZsYUgzNVlqb01oV0h0NUVZZHBLV2ZBTG9MaWQ4V0plVC1QaC04X1pESUZrU1dEYW1CZTl1UVFIbE9XV1lHSVlPNjJ2clVRcTdNbmU0RVVKVGRrRWhSejZqTFdXSG9qOXBBYkdVU0FxZVF0NUZ5NU5yXzdHQTNB?oc=5" target="_blank">Cataño inicia revitalización de la Avenida Las Nereidas - NotiCel</a></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNNHVxbDRsbGpDZ2p2dl9LSGt6X1VLS3JDZXZoUUZsYUgzNVlqb01oV0h0NUVZZHBLV2ZBTG9MaWQ4V0plVC1QaC04X1pESUZrU1dEYW1CZTl1UVFIbE9XV1lHSVlPNjJ2clVRcTdNbmU0RVVKVGRrRWhSejZqTFdXSG9qOXBBYkdVU0FxZVF0NUZ5NU5yXzdHQTNB?oc=5" target="_blank">Cataño inicia revitalización de la Avenida Las Nereidas - NotiCel</a></td>
             <td>Cataño</td>
             <td>2026-05-14 06:31 PM</td>
         </tr>
@@ -368,11 +380,29 @@ tr:hover { background: #fafafa; }
             <td>NotiCel</td>
             <td>2026-05-14 04:17 PM</td>
         </tr>
+        <tr class="article-row" data-municipios="Naguabo">
+            <td><span class="muni-tag">Naguabo</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPUXhhVTd3RGxMNml5OHVRcHN6dWRTVzVWRXhWMFphN1FyRm0yZVBhdVYyRUlTUGg0MnBSLUxkOVJFNnBIRS1VZEszUk1UcXdZVTY3ZGxsUjBtUHBVZmJnWXg2bmFNdWl2T2pLcE1xcFdMalJGS09UTndGRzI2dHp4aDdkcnlGdEJOSU56V0dB?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
+            <td>FB - Naguabo</td>
+            <td>2026-05-14 04:05 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://nelpr.com/2026/05/14/la-licencia-de-tu-vehiculo-estara-disponible-siempre-en-cesco-digital/" target="_blank">La licencia de tu vehículo estará disponible siempre en CESCO Digital</a></td>
             <td>NELPR</td>
             <td>2026-05-14 04:02 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/videos/momento-en-que-explota-tubo-en-la-avenida-kennedy-de-san-juan-293819/" target="_blank">Momento en que explota tubo en la avenida Kennedy de San Juan</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-14 03:32 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/fotogalerias/recorrido-por-la-bahia-de-san-juan-guardia-costera-lanza-advertencias-de-seguridad/" target="_blank">Recorrido por la bahía de San Juan: Guardia Costera lanza advertencias de seguridad</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-14 03:32 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -386,18 +416,6 @@ tr:hover { background: #fafafa; }
             <td>Radio Isla</td>
             <td>2026-05-14 03:03 PM</td>
         </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/videos/momento-en-que-explota-tubo-en-la-avenida-kennedy-de-san-juan-293819/" target="_blank">Momento en que explota tubo en la avenida Kennedy de San Juan</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-14 03:01 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/fotogalerias/recorrido-por-la-bahia-de-san-juan-guardia-costera-lanza-advertencias-de-seguridad/" target="_blank">Recorrido por la bahía de San Juan: Guardia Costera lanza advertencias de seguridad</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-14 03:01 PM</td>
-        </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
             <td class="titular-cell"> <a href="https://waloradio.com/2026/05/14/estudiante-de-escuela-de-bellas-artes-de-humacao-recibe-prestigiosa-beca/" target="_blank">Estudiante de escuela de Bellas Artes de Humacao recibe prestigiosa beca</a></td>
@@ -410,17 +428,17 @@ tr:hover { background: #fafafa; }
             <td>Es Noticia</td>
             <td>2026-05-14 12:33 PM</td>
         </tr>
+        <tr class="article-row" data-municipios="Trujillo Alto">
+            <td><span class="muni-tag">Trujillo Alto</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9XaHpLbUwzRlAzUWlNSFBLM0c1MFdnclAyRHJEcXR5M2x4RzdINW9xZjdTY04xcUVIWlhDRUp5eWJETnFncV9SeFZENXlPREwzVjl2Y1dKMmFWbzRwbVBRcWF6cV9HeXdEYno1NXJRdEZCel9td19UR2lOZjl3b2s?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a></td>
+            <td>FB - Trujillo Alto</td>
+            <td>2026-05-14 12:30 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="Fajardo">
             <td><span class="muni-tag">Fajardo</span></td>
             <td class="titular-cell"> <a href="https://waloradio.com/2026/05/14/diligencian-orden-de-arresto-contra-confinado-federal-por-doble-asesinato-en-fajardo/" target="_blank">Diligencian orden de arresto contra confinado federal por doble asesinato en Fajardo</a></td>
             <td>Walo Radio</td>
             <td>2026-05-14 11:54 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"> <a href="https://esnoticiapr.com/orden-de-arresto-contra-confinado-federal-por-doble-asesinato-en-fajardo/" target="_blank">Orden de arresto contra confinado federal por doble asesinato en Fajardo</a></td>
-            <td>Es Noticia</td>
-            <td>2026-05-14 11:44 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
@@ -458,6 +476,12 @@ tr:hover { background: #fafafa; }
             <td>Vieques</td>
             <td>2026-05-13 09:23 PM</td>
         </tr>
+        <tr class="article-row" data-municipios="Cataño">
+            <td><span class="muni-tag">Cataño</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5CZTV5U3dzTU1GR3JFRkRrTDZseHZkV1Z2cUdsN0M5TGNvSlhnQWVPXy1ER2hTSzBGbl9aRld1Q3F6Y2NSZFNJeENOWXZfZUpER0FTcjFFaG15ZVZiN1pMMVA4ZENreEU?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a></td>
+            <td>FB - Cataño</td>
+            <td>2026-05-13 08:32 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
             <td class="titular-cell"> <a href="https://waloradio.com/2026/05/13/ex-alcalde-de-humacao-retiro-su-intencion-de-aspirar-a-la-presidencia-del-pnp/" target="_blank">Ex alcalde de Humacao retiró su intención de aspirar a la presidencia del PNP</a></td>
@@ -482,6 +506,12 @@ tr:hover { background: #fafafa; }
             <td>Trujillo Alto</td>
             <td>2026-05-13 06:49 PM</td>
         </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQeXF4NENtS1NVMXRIZWR6c1RNcDRXanFCa0VGTm1JTEJsTGthUHl5MHFGNF9DTTVBMjhrOTI1UkpQWlNmVnd5Q0hKaGJmRVlSSG9hY25NRktSbGNPZjVPZkZKQkJudzlmM1FycXhaYzlEWFZpMUVhUlF4ZWNoWlpTZW1OUE1JMW5NUW5tRWNSekY?oc=5" target="_blank">Jay Fonseca. . 🚨 Residentes de San Juan llevan 9 días sin agua y la AAA sigue anunciando que "hay servicio". 💧 Lo que no te dicen es que hay solo 3 libras de presión. Eso significa que apenas le llega un chorrito. 🏢 Y si vives de un segundo piso pa' arriba - facebook.com</a></td>
+            <td>Jay Fonseca</td>
+            <td>2026-05-13 05:00 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="Naguabo">
             <td><span class="muni-tag">Naguabo</span></td>
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPRFVmdEpGMUFOX2JUcEpYdW5sTkJGVUVGZHo0Ukt2Tmc2ODdFVmwyQ2lmZlJvazB0enF5SlV6SmlXWlhTV0FnTDBrQWdYOW1jYlZCSWg1YzBSRllUX2dQTVRfaFNHcTFOYTQ0WmkzcTNpZzk0WHB6WVRZYi1pTm9sVlRYOC1RRmtIREQ0UWJn?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
@@ -499,12 +529,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRDQ5dmVoRGVjMVd3bUNrUWN1QjdsNEItMjVZekI0NU9aN2xMb2pwa2I0cy1kUmJnNy03bTducWN0SlBvU2pJbm9lNjV5V0REb1hQZGRBNkpwcS1vRlJvQkRQdWZKeXBndy16aWRxOGtKQnNKQ2hiQkJMUUt1ek43Q1VVeC14c0NMX2Y1MklNbGlWS3NvZXhGMWh4RjlOdnlPTFM2eTVSdElabjZDWHVlOFhsNmpKZUpST0FDMnVsYldVMktuZlY2Y1ZnMmNkQnU2VDQtbDRLckpMY1AzOWR6VHVhNzBMZw?oc=5" target="_blank">El Municipio de Loíza trabaja en conjunto con la organización ambientalista sin fines de lucro LimPiAr e IFCO Recycling. Detalles: https://buff.ly/q4RISs6 - facebook.com</a></td>
             <td>FB - Loíza</td>
             <td>2026-05-13 01:50 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Loíza">
-            <td><span class="muni-tag">Loíza</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPSVB2S2RYOWVYVHIxR2FXZ29qanBaYlNfcEdCV0I2c1pIcElwZHRDZVdPdDV5Q0s0UDNoR1pHbWwtbmFxYjFPeVBQeElSVXBBZ0JVckNEV21aUWVJeVJRUGlrU0NVNXlwcHNBU0stUno3MHYzeHBROWg0OWc2bXNZVlNrcURiei1zUHg3WVNraG94dTFNa0FKbzFfMFRqdldZWlM4RmtLbHBiQ2hfVU9zSU5QcG9hZld2V1FReko1c2VERmIxVXk2UDRDdncyZ3c4YXJXVHVmYlZCMVk?oc=5" target="_blank">International Wrestling Association (IWA Puerto Rico Official Page). . La Administracion Municipal de Loiza, y su Alcaldesa, Julia María Nazario Fuentes presentan: 💥EL GRAN FESTIVAL DE LUCHA LIBRE IWA💥 🗓️ Sábado 16 Mayo 2026 📍 Plaza Pública Ca - facebook.com</a></td>
-            <td>FB - Loíza</td>
-            <td>2026-05-13 10:39 AM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
@@ -529,12 +553,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxOdTJVX3piOXR2WFZPMFUyTmw5LWZuTGxmcVRtQzlfX2NqOTN1cVlyR3VyRHU5ZzdlRWpFUlRlcnFraFpkZVhNWmVtZGt0LXNxMlJQZkFfbElOOXlrU2N2TDB6ZkRZdURhR19iYXZPMmJzbkEyZHdHNFBDMmUtUk84WnJ6aFQ2dWdiRHJEeUprOGFuNHVIMkE3c1RzSGZDWG5acENQSmRDVVpuSXJlcTdiZnpmbEtGb1JuODRmSzVidUxoNFMzbnRDM3hOZjEwS01ISFE4Mmd0X1hXZFJRUVpBZUV0RTg2S0U?oc=5" target="_blank">¡Atención padres y encargados de estudiantes del Municipio de Canóvanas. ¡Orientatate sobre el proceso de entrega de vales para la compra de uniformes! ⬇️ - facebook.com</a></td>
             <td>FB - Canóvanas</td>
             <td>2026-05-13 12:38 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPeXgwNHpQMGowNmRpR05rQ0s2YVAzLWRlSEh3M3FYaU5Bc3JfNWlYamFuWG1xNklmcEZGc0JrejFodWZqRjJidG00bVFoZnkwdi1TTmhFMnBYcEJLQ3dIdnZZMXh2eFZ0aWRFSTQ1dFhQdkpKelVyd0h3NV9aVzVsQXAweklfdXNXenNYc3dn?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
-            <td>FB - Naguabo</td>
-            <td>2026-05-13 12:33 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
@@ -842,7 +860,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-14 03:04:29 PM
+    Generado por Hermes Agent — 2026-05-14 03:35:00 PM
 </div>
 
 <script>
