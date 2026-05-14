@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-14 12:04:29 PM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-14 12:34:56 PM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-14 12:04:29 PM</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-14 12:34:56 PM</div></div>
     </div>
 </div>
 
@@ -230,7 +230,7 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">8</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
@@ -254,11 +254,11 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">4</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
             <div class="muni-name">Río Grande</div>
@@ -268,9 +268,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Ceiba</div>
             <div class="muni-count">1</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">2</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
@@ -302,6 +302,12 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://nelpr.com/2026/05/14/la-licencia-de-tu-vehiculo-estara-disponible-siempre-en-cesco-digital/" target="_blank">La licencia de tu vehículo estará disponible siempre en CESCO Digital</a></td>
+            <td>NELPR</td>
+            <td>2026-05-14 04:02 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
             <td class="titular-cell"> <a href="https://waloradio.com/2026/05/14/residentes-denuncian-peligrosidad-y-accidentes-frecuentes-en-la-avenida-tejas-de-humacao/" target="_blank">Residentes denuncian peligrosidad y accidentes frecuentes en la avenida Tejas de Humacao</a></td>
@@ -330,13 +336,13 @@ tr:hover { background: #fafafa; }
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/videos/momento-en-que-explota-tubo-en-la-avenida-kennedy-de-san-juan-293819/" target="_blank">Momento en que explota tubo en la avenida Kennedy de San Juan</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-14 12:01 PM</td>
+            <td>2026-05-14 12:31 PM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/fotogalerias/recorrido-por-la-bahia-de-san-juan-guardia-costera-lanza-advertencias-de-seguridad/" target="_blank">Recorrido por la bahía de San Juan: Guardia Costera lanza advertencias de seguridad</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-14 12:01 PM</td>
+            <td>2026-05-14 12:31 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Fajardo">
             <td><span class="muni-tag">Fajardo</span></td>
@@ -370,6 +376,12 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Fajardo">
             <td><span class="muni-tag">Fajardo</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi_gFBVV95cUxPUXVwVXB4MGt2RzNsOEh1QzFLcWpvc0YtTUhoUUxZX2tlZ2hKNklzUlFRc1E4b2ZncklhVWhPX1U4T0VFY2NpOVBYYXJlTzh0cVNQZGNkSVBHTU1aX1RkWWlSVVNTRXN0T25WdWQzNnZ0a2xZdTViSXhrR1lHQW11ZlE2ZHhmMnc5cXJqejdka1BZeHliUlhGY0IwcmpYNExRbzhBZlVuNjFQQ21SRVFwSGFsUkh3dTMwX2ZfSDRoT3p3MXdMZUV3QTk3YVBTZFVmSngtdXdPUVNwb0VvWEIzSERyVDc0MERIWUJGdmdoZkdDcnFiUXdBU05JSU9Wdw?oc=5" target="_blank">▪️Llegó Alternative Meal Prep a #Fajardo y pueblos limítrofes. "¡Ustedes mandan y aquí los complacemos! Porque nos lo pidieron con insistencia, el Chef Garcia obedece: ¡nuestros especiales se quedan una semana más! No queremos que nadie se quede - facebook.com</a></td>
+            <td>En Contacto 787</td>
+            <td>2026-05-13 11:13 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Fajardo">
+            <td><span class="muni-tag">Fajardo</span></td>
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOb1NkUjV6UTYwbXlrTnhTRmt6SFNiM3V6VmZtSXpQZnlHRXY4NVFfR2lQQ1ozeDJ5U0tiXzV3d3Y4dE1YeW9XbUI3Z2hMcXhZbUxJT094Y09IdS13VmdvM2hpM2dXeGRQQkdEU01KaHRsYWVlTHk3VlFQQk9uSnFWTHNWakVVOGR3Q1RoaGFXaDNGa3pNSXVJdnB3VHk3QW8wdzd3R0RiZEZUeVpwd2E0d1FDVQ?oc=5" target="_blank">Fajardo hace historia con la primera graduación de capellanes juveniles escolares en Puerto Rico - wipr.pr</a></td>
             <td>Fajardo</td>
             <td>2026-05-13 10:28 PM</td>
@@ -398,6 +410,12 @@ tr:hover { background: #fafafa; }
             <td>Radio Isla</td>
             <td>2026-05-13 07:50 PM</td>
         </tr>
+        <tr class="article-row" data-municipios="Trujillo Alto">
+            <td><span class="muni-tag">Trujillo Alto</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxPNGMyLWttaTRiUkRFRDkwTWtTbkxIMUgtYzIySlc0bDZtdF85b1pzN1JJWDdPaVpRNkt3dUhFTlFZUURFRWZVR1ptZnFGX2hoTjVtcE9YQzJyd1g4QTEyZ3dSczAtYk0yNGtuRmJsR3BNQS1iVlByaURVNDJPVnNPcUdoS05wdzFienNhVy0xXzRHU2ozUksteWVGcm1GUXlnajM3cW5UZmJ4aUdKNU9rRThfREJNNGpoU3JTakZzSmVCYVBmOU1QcWlDZGZuQQ?oc=5" target="_blank">Hallan una presunta osamenta en los predios de un antiguo motel en Trujillo Alto - Noticias de Puerto Rico hoy</a></td>
+            <td>Trujillo Alto</td>
+            <td>2026-05-13 07:28 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://radioisla.tv/turista-pierde-una-pierna-tras-ser-impactada-en-el-expreso-221/?utm_source=rss&utm_medium=rss&utm_campaign=turista-pierde-una-pierna-tras-ser-impactada-en-el-expreso-221&utm_source=rss&utm_medium=rss&utm_campaign=turista-pierde-una-pierna-tras-ser-impactada-en-el-expreso-221" target="_blank">Turista pierde una pierna tras ser impactada en el expreso 22</a></td>
@@ -422,11 +440,23 @@ tr:hover { background: #fafafa; }
             <td>Trujillo Alto</td>
             <td>2026-05-13 06:49 PM</td>
         </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQeXF4NENtS1NVMXRIZWR6c1RNcDRXanFCa0VGTm1JTEJsTGthUHl5MHFGNF9DTTVBMjhrOTI1UkpQWlNmVnd5Q0hKaGJmRVlSSG9hY25NRktSbGNPZjVPZkZKQkJudzlmM1FycXhaYzlEWFZpMUVhUlF4ZWNoWlpTZW1OUE1JMW5NUW5tRWNSekY?oc=5" target="_blank">Jay Fonseca. . 🚨 Residentes de San Juan llevan 9 días sin agua y la AAA sigue anunciando que "hay servicio". 💧 Lo que no te dicen es que hay solo 3 libras de presión. Eso significa que apenas le llega un chorrito. 🏢 Y si vives de un segundo piso pa' arriba - facebook.com</a></td>
+            <td>Jay Fonseca</td>
+            <td>2026-05-13 05:00 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="Ceiba">
             <td><span class="muni-tag">Ceiba</span></td>
             <td class="titular-cell"> <a href="https://waloradio.com/2026/05/13/director-de-la-autoridad-para-el-redesarrollo-de-roosevelt-roads-deja-subsecretaria-del-ddec/" target="_blank">Director de la Autoridad para el Redesarrollo de Roosevelt Roads deja subsecretaría del DDEC</a></td>
             <td>Walo Radio</td>
             <td>2026-05-13 03:56 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Naguabo">
+            <td><span class="muni-tag">Naguabo</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPRFVmdEpGMUFOX2JUcEpYdW5sTkJGVUVGZHo0Ukt2Tmc2ODdFVmwyQ2lmZlJvazB0enF5SlV6SmlXWlhTV0FnTDBrQWdYOW1jYlZCSWg1YzBSRllUX2dQTVRfaFNHcTFOYTQ0WmkzcTNpZzk0WHB6WVRZYi1pTm9sVlRYOC1RRmtIREQ0UWJn?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
+            <td>FB - Naguabo</td>
+            <td>2026-05-13 02:20 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
@@ -440,6 +470,12 @@ tr:hover { background: #fafafa; }
             <td>FB - Loíza</td>
             <td>2026-05-13 01:50 PM</td>
         </tr>
+        <tr class="article-row" data-municipios="Loíza">
+            <td><span class="muni-tag">Loíza</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPSVB2S2RYOWVYVHIxR2FXZ29qanBaYlNfcEdCV0I2c1pIcElwZHRDZVdPdDV5Q0s0UDNoR1pHbWwtbmFxYjFPeVBQeElSVXBBZ0JVckNEV21aUWVJeVJRUGlrU0NVNXlwcHNBU0stUno3MHYzeHBROWg0OWc2bXNZVlNrcURiei1zUHg3WVNraG94dTFNa0FKbzFfMFRqdldZWlM4RmtLbHBiQ2hfVU9zSU5QcG9hZld2V1FReko1c2VERmIxVXk2UDRDdncyZ3c4YXJXVHVmYlZCMVk?oc=5" target="_blank">International Wrestling Association (IWA Puerto Rico Official Page). . La Administracion Municipal de Loiza, y su Alcaldesa, Julia María Nazario Fuentes presentan: 💥EL GRAN FESTIVAL DE LUCHA LIBRE IWA💥 🗓️ Sábado 16 Mayo 2026 📍 Plaza Pública Ca - facebook.com</a></td>
+            <td>FB - Loíza</td>
+            <td>2026-05-13 10:39 AM</td>
+        </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQT19KWlhWT3o5VnpYQzNlVVZpaGRMbVFVZDZIME9kYTdlaF9oWGxvTUkzQzdYTU5kUWtWR0Q5WVZNNzhoZTV5aF9NYS1GTHdBMFgyZG03YnBwNmkyTTd4UHRNOE9meWVRbkRjbUFrTlhhaXpHRUUzUzFfd0FLZVRVMV9YcHVmTUhET3JwR3RfYXk?oc=5" target="_blank">San Juan impulsa primera Cumbre de Exportaciones - NotiCel</a></td>
@@ -452,17 +488,17 @@ tr:hover { background: #fafafa; }
             <td>Humacao</td>
             <td>2026-05-13 03:10 AM</td>
         </tr>
-        <tr class="article-row" data-municipios="Trujillo Alto">
-            <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNZHdhLVdDSUR3NDVFcFpCNE42ZnI5Mmx0dnFCcVZnZExfb1VWcGVYRmhJR2ZRUDNka3NxbzA3M212WDVDQWNGZjU4MnBjLUZvY09sbmViZDNOTWQ0dHloMUdmMU5tcEtQaUt0anlNbnI3YThKQ2g0RWY1dEgxMzlCRHBLYTBJd1NXQXNGZjlPWi1SbWJaQjFjN0ln?oc=5" target="_blank">Luis Martínez Quiroz Obituario - Trujillo Alto, PR - Dignity Memorial</a></td>
-            <td>Trujillo Alto</td>
-            <td>2026-05-13 12:51 AM</td>
-        </tr>
         <tr class="article-row" data-municipios="Canóvanas">
             <td><span class="muni-tag">Canóvanas</span></td>
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxOdTJVX3piOXR2WFZPMFUyTmw5LWZuTGxmcVRtQzlfX2NqOTN1cVlyR3VyRHU5ZzdlRWpFUlRlcnFraFpkZVhNWmVtZGt0LXNxMlJQZkFfbElOOXlrU2N2TDB6ZkRZdURhR19iYXZPMmJzbkEyZHdHNFBDMmUtUk84WnJ6aFQ2dWdiRHJEeUprOGFuNHVIMkE3c1RzSGZDWG5acENQSmRDVVpuSXJlcTdiZnpmbEtGb1JuODRmSzVidUxoNFMzbnRDM3hOZjEwS01ISFE4Mmd0X1hXZFJRUVpBZUV0RTg2S0U?oc=5" target="_blank">¡Atención padres y encargados de estudiantes del Municipio de Canóvanas. ¡Orientatate sobre el proceso de entrega de vales para la compra de uniformes! ⬇️ - facebook.com</a></td>
             <td>FB - Canóvanas</td>
             <td>2026-05-13 12:38 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Naguabo">
+            <td><span class="muni-tag">Naguabo</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPeXgwNHpQMGowNmRpR05rQ0s2YVAzLWRlSEh3M3FYaU5Bc3JfNWlYamFuWG1xNklmcEZGc0JrejFodWZqRjJidG00bVFoZnkwdi1TTmhFMnBYcEJLQ3dIdnZZMXh2eFZ0aWRFSTQ1dFhQdkpKelVyd0h3NV9aVzVsQXAweklfdXNXenNYc3dn?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
+            <td>FB - Naguabo</td>
+            <td>2026-05-13 12:33 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
@@ -770,7 +806,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-14 12:04:29 PM
+    Generado por Hermes Agent — 2026-05-14 12:34:56 PM
 </div>
 
 <script>
