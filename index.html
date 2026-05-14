@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-14 11:34:59 AM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-14 12:04:29 PM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-14 11:34:59 AM</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-14 12:04:29 PM</div></div>
     </div>
 </div>
 
@@ -230,7 +230,7 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">9</div>
+            <div class="muni-count">6</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
@@ -240,9 +240,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Trujillo Alto</div>
             <div class="muni-count">4</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Caguas')">
+        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
@@ -268,13 +268,13 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Ceiba</div>
             <div class="muni-count">1</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">5</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
@@ -304,13 +304,13 @@ tr:hover { background: #fafafa; }
                 
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/14/residentes-denuncian-peligrosidad-y-accidentes-frecuentes-en-la-avenida-tejas-de-humacao/" target="_blank">Residentes denuncian peligrosidad y accidentes frecuentes en la avenida Tejas de Humacao</a></td>
+            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/14/residentes-denuncian-peligrosidad-y-accidentes-frecuentes-en-la-avenida-tejas-de-humacao/" target="_blank">Residentes denuncian peligrosidad y accidentes frecuentes en la avenida Tejas de Humacao</a></td>
             <td>Walo Radio</td>
             <td>2026-05-14 03:16 PM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://radioisla.tv/para-diciembre-iniciaria-demolicion-del-paseo-lineal-en-puerta-de-tierra/?utm_source=rss&utm_medium=rss&utm_campaign=para-diciembre-iniciaria-demolicion-del-paseo-lineal-en-puerta-de-tierra&utm_source=rss&utm_medium=rss&utm_campaign=para-diciembre-iniciaria-demolicion-del-paseo-lineal-en-puerta-de-tierra" target="_blank">Para diciembre iniciaría demolición del Paseo Lineal en Puerta de Tierra</a></td>
+            <td class="titular-cell"> <a href="https://radioisla.tv/para-diciembre-iniciaria-demolicion-del-paseo-lineal-en-puerta-de-tierra/?utm_source=rss&utm_medium=rss&utm_campaign=para-diciembre-iniciaria-demolicion-del-paseo-lineal-en-puerta-de-tierra&utm_source=rss&utm_medium=rss&utm_campaign=para-diciembre-iniciaria-demolicion-del-paseo-lineal-en-puerta-de-tierra" target="_blank">Para diciembre iniciaría demolición del Paseo Lineal en Puerta de Tierra</a></td>
             <td>Radio Isla</td>
             <td>2026-05-14 03:03 PM</td>
         </tr>
@@ -322,27 +322,21 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://nelpr.com/2026/05/14/intenso-calor-y-sectores-con-60-de-potencial-de-lluvia/" target="_blank">Intenso calor y sectores con 60% de potencial de lluvia</a></td>
-            <td>NELPR</td>
-            <td>2026-05-14 02:02 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://nelpr.com/2026/05/14/emiten-alerta-de-calor-para-52-municipios-se-sentira-hasta-de-111-grados/" target="_blank">Emiten alerta de calor para 52 municipios; se sentirá hasta de 111 grados</a></td>
-            <td>NELPR</td>
-            <td>2026-05-14 01:44 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://noticel.com/deportes/20260514/las-grises-de-humacao-tienen-un-nuevo-apoderado/?utm_source=rss&utm_medium=rss&utm_campaign=las-grises-de-humacao-tienen-un-nuevo-apoderado" target="_blank">Las Grises de Humacao tienen un nuevo apoderado</a></td>
-            <td>NotiCel</td>
-            <td>2026-05-14 01:04 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://esnoticiapr.com/rotura-de-tuberia-en-la-avenida-kennedy-deja-sin-agua-a-miles-de-abonados/" target="_blank">Rotura de tubería en la avenida Kennedy deja sin agua a miles de abonados</a></td>
             <td>Es Noticia</td>
             <td>2026-05-14 12:33 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/videos/momento-en-que-explota-tubo-en-la-avenida-kennedy-de-san-juan-293819/" target="_blank">Momento en que explota tubo en la avenida Kennedy de San Juan</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-14 12:01 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/fotogalerias/recorrido-por-la-bahia-de-san-juan-guardia-costera-lanza-advertencias-de-seguridad/" target="_blank">Recorrido por la bahía de San Juan: Guardia Costera lanza advertencias de seguridad</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-14 12:01 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Fajardo">
             <td><span class="muni-tag">Fajardo</span></td>
@@ -355,18 +349,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://esnoticiapr.com/orden-de-arresto-contra-confinado-federal-por-doble-asesinato-en-fajardo/" target="_blank">Orden de arresto contra confinado federal por doble asesinato en Fajardo</a></td>
             <td>Es Noticia</td>
             <td>2026-05-14 11:44 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/videos/momento-en-que-explota-tubo-en-la-avenida-kennedy-de-san-juan-293819/" target="_blank">Momento en que explota tubo en la avenida Kennedy de San Juan</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-14 11:31 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/fotogalerias/recorrido-por-la-bahia-de-san-juan-guardia-costera-lanza-advertencias-de-seguridad/" target="_blank">Recorrido por la bahía de San Juan: Guardia Costera lanza advertencias de seguridad</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-14 11:31 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
@@ -416,12 +398,6 @@ tr:hover { background: #fafafa; }
             <td>Radio Isla</td>
             <td>2026-05-13 07:50 PM</td>
         </tr>
-        <tr class="article-row" data-municipios="Trujillo Alto">
-            <td><span class="muni-tag">Trujillo Alto</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxPNGMyLWttaTRiUkRFRDkwTWtTbkxIMUgtYzIySlc0bDZtdF85b1pzN1JJWDdPaVpRNkt3dUhFTlFZUURFRWZVR1ptZnFGX2hoTjVtcE9YQzJyd1g4QTEyZ3dSczAtYk0yNGtuRmJsR3BNQS1iVlByaURVNDJPVnNPcUdoS05wdzFienNhVy0xXzRHU2ozUksteWVGcm1GUXlnajM3cW5UZmJ4aUdKNU9rRThfREJNNGpoU3JTakZzSmVCYVBmOU1QcWlDZGZuQQ?oc=5" target="_blank">Hallan una presunta osamenta en los predios de un antiguo motel en Trujillo Alto - Noticias de Puerto Rico hoy</a></td>
-            <td>Trujillo Alto</td>
-            <td>2026-05-13 07:28 PM</td>
-        </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://radioisla.tv/turista-pierde-una-pierna-tras-ser-impactada-en-el-expreso-221/?utm_source=rss&utm_medium=rss&utm_campaign=turista-pierde-una-pierna-tras-ser-impactada-en-el-expreso-221&utm_source=rss&utm_medium=rss&utm_campaign=turista-pierde-una-pierna-tras-ser-impactada-en-el-expreso-221" target="_blank">Turista pierde una pierna tras ser impactada en el expreso 22</a></td>
@@ -446,23 +422,11 @@ tr:hover { background: #fafafa; }
             <td>Trujillo Alto</td>
             <td>2026-05-13 06:49 PM</td>
         </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQeXF4NENtS1NVMXRIZWR6c1RNcDRXanFCa0VGTm1JTEJsTGthUHl5MHFGNF9DTTVBMjhrOTI1UkpQWlNmVnd5Q0hKaGJmRVlSSG9hY25NRktSbGNPZjVPZkZKQkJudzlmM1FycXhaYzlEWFZpMUVhUlF4ZWNoWlpTZW1OUE1JMW5NUW5tRWNSekY?oc=5" target="_blank">Jay Fonseca. . 🚨 Residentes de San Juan llevan 9 días sin agua y la AAA sigue anunciando que "hay servicio". 💧 Lo que no te dicen es que hay solo 3 libras de presión. Eso significa que apenas le llega un chorrito. 🏢 Y si vives de un segundo piso pa' arriba - facebook.com</a></td>
-            <td>Jay Fonseca</td>
-            <td>2026-05-13 05:00 PM</td>
-        </tr>
         <tr class="article-row" data-municipios="Ceiba">
             <td><span class="muni-tag">Ceiba</span></td>
             <td class="titular-cell"> <a href="https://waloradio.com/2026/05/13/director-de-la-autoridad-para-el-redesarrollo-de-roosevelt-roads-deja-subsecretaria-del-ddec/" target="_blank">Director de la Autoridad para el Redesarrollo de Roosevelt Roads deja subsecretaría del DDEC</a></td>
             <td>Walo Radio</td>
             <td>2026-05-13 03:56 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPRFVmdEpGMUFOX2JUcEpYdW5sTkJGVUVGZHo0Ukt2Tmc2ODdFVmwyQ2lmZlJvazB0enF5SlV6SmlXWlhTV0FnTDBrQWdYOW1jYlZCSWg1YzBSRllUX2dQTVRfaFNHcTFOYTQ0WmkzcTNpZzk0WHB6WVRZYi1pTm9sVlRYOC1RRmtIREQ0UWJn?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
-            <td>FB - Naguabo</td>
-            <td>2026-05-13 02:20 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
@@ -488,11 +452,11 @@ tr:hover { background: #fafafa; }
             <td>Humacao</td>
             <td>2026-05-13 03:10 AM</td>
         </tr>
-        <tr class="article-row" data-municipios="Caguas">
-            <td><span class="muni-tag">Caguas</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOY1g1T05KMlliTVJVSU9ES3FPN3BrV3RfTXpkTTRLaWx4YXotMUdTc2lLMGR1TnI1ZktrU2F5VWU1RE1tUDVoNTFqRGJnR1ZrSGZpQVQ5Sjg1dzFEa3lTcWdpSEFSQ3dWNDByMy0wSkNVamp6V3hCNk1RY1FwVFFBd3B3?oc=5" target="_blank">Diócesis... - Diócesis de Caguas, Puerto Rico - Página Oficial - facebook.com</a></td>
-            <td>FB - Caguas</td>
-            <td>2026-05-13 02:34 AM</td>
+        <tr class="article-row" data-municipios="Trujillo Alto">
+            <td><span class="muni-tag">Trujillo Alto</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNZHdhLVdDSUR3NDVFcFpCNE42ZnI5Mmx0dnFCcVZnZExfb1VWcGVYRmhJR2ZRUDNka3NxbzA3M212WDVDQWNGZjU4MnBjLUZvY09sbmViZDNOTWQ0dHloMUdmMU5tcEtQaUt0anlNbnI3YThKQ2g0RWY1dEgxMzlCRHBLYTBJd1NXQXNGZjlPWi1SbWJaQjFjN0ln?oc=5" target="_blank">Luis Martínez Quiroz Obituario - Trujillo Alto, PR - Dignity Memorial</a></td>
+            <td>Trujillo Alto</td>
+            <td>2026-05-13 12:51 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Canóvanas">
             <td><span class="muni-tag">Canóvanas</span></td>
@@ -806,7 +770,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-14 11:34:59 AM
+    Generado por Hermes Agent — 2026-05-14 12:04:29 PM
 </div>
 
 <script>
