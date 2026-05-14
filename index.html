@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-14 08:04:58 AM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-14 08:34:23 AM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-14 08:04:58 AM</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-14 08:34:23 AM</div></div>
     </div>
 </div>
 
@@ -230,7 +230,7 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">7</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
@@ -268,9 +268,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Ceiba</div>
             <div class="muni-count">1</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
@@ -302,15 +302,21 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/arrestan-a-sujeto-que-presuntamente-vendia-drogas-desde-una-escuela-abandonada-en-san-juan/" target="_blank">Arrestan a sujeto que presuntamente vendía drogas desde una escuela abandonada en San Juan</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-14 12:16 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="Fajardo">
             <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/14/diligencian-orden-de-arresto-contra-confinado-federal-por-doble-asesinato-en-fajardo/" target="_blank">Diligencian orden de arresto contra confinado federal por doble asesinato en Fajardo</a></td>
+            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/14/diligencian-orden-de-arresto-contra-confinado-federal-por-doble-asesinato-en-fajardo/" target="_blank">Diligencian orden de arresto contra confinado federal por doble asesinato en Fajardo</a></td>
             <td>Walo Radio</td>
             <td>2026-05-14 11:54 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Fajardo">
             <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://esnoticiapr.com/orden-de-arresto-contra-confinado-federal-por-doble-asesinato-en-fajardo/" target="_blank">Orden de arresto contra confinado federal por doble asesinato en Fajardo</a></td>
+            <td class="titular-cell"> <a href="https://esnoticiapr.com/orden-de-arresto-contra-confinado-federal-por-doble-asesinato-en-fajardo/" target="_blank">Orden de arresto contra confinado federal por doble asesinato en Fajardo</a></td>
             <td>Es Noticia</td>
             <td>2026-05-14 11:44 AM</td>
         </tr>
@@ -324,7 +330,7 @@ tr:hover { background: #fafafa; }
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/fotogalerias/recorrido-por-la-bahia-de-san-juan-guardia-costera-lanza-advertencias-de-seguridad/" target="_blank">Recorrido por la bahía de San Juan: Guardia Costera lanza advertencias de seguridad</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-14 08:01 AM</td>
+            <td>2026-05-14 08:31 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
@@ -445,12 +451,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://waloradio.com/2026/05/13/designan-carretera-en-vieques-con-nombre-gerardo-osorio-conocido-por-ayudar-a-familias-de-escasos-recursos/" target="_blank">Designan carretera en Vieques con nombre Gerardo Osorio conocido por ayudar a familias de escasos recursos</a></td>
             <td>Walo Radio</td>
             <td>2026-05-13 02:30 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPRFVmdEpGMUFOX2JUcEpYdW5sTkJGVUVGZHo0Ukt2Tmc2ODdFVmwyQ2lmZlJvazB0enF5SlV6SmlXWlhTV0FnTDBrQWdYOW1jYlZCSWg1YzBSRllUX2dQTVRfaFNHcTFOYTQ0WmkzcTNpZzk0WHB6WVRZYi1pTm9sVlRYOC1RRmtIREQ0UWJn?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
-            <td>FB - Naguabo</td>
-            <td>2026-05-13 02:20 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Loíza">
             <td><span class="muni-tag">Loíza</span></td>
@@ -782,7 +782,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-14 08:04:58 AM
+    Generado por Hermes Agent — 2026-05-14 08:34:23 AM
 </div>
 
 <script>
