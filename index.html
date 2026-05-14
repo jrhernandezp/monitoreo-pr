@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-14 10:35:05 AM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-14 11:04:31 AM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-14 10:35:05 AM</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-14 11:04:31 AM</div></div>
     </div>
 </div>
 
@@ -234,7 +234,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">7</div>
+            <div class="muni-count">6</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
@@ -254,11 +254,11 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">5</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
             <div class="muni-name">Río Grande</div>
@@ -282,7 +282,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
@@ -302,15 +302,21 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="Fajardo">
+            <td><span class="muni-tag">Fajardo</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/tribunales/notas/avanza-caso-contra-confinado-que-se-nego-a-ser-trasladado-al-tribunal-para-enfrentar-cargos/" target="_blank">Avanza caso contra confinado que se negó a ser trasladado al tribunal para enfrentar cargos</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-14 02:36 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/14/estudiante-de-escuela-de-bellas-artes-de-humacao-recibe-prestigiosa-beca/" target="_blank">Estudiante de escuela de Bellas Artes de Humacao recibe prestigiosa beca</a></td>
+            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/14/estudiante-de-escuela-de-bellas-artes-de-humacao-recibe-prestigiosa-beca/" target="_blank">Estudiante de escuela de Bellas Artes de Humacao recibe prestigiosa beca</a></td>
             <td>Walo Radio</td>
             <td>2026-05-14 02:26 PM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://nelpr.com/2026/05/14/intenso-calor-y-sectores-con-60-de-potencial-de-lluvia/" target="_blank">Intenso calor y sectores con 60% de potencial de lluvia</a></td>
+            <td class="titular-cell"> <a href="https://nelpr.com/2026/05/14/intenso-calor-y-sectores-con-60-de-potencial-de-lluvia/" target="_blank">Intenso calor y sectores con 60% de potencial de lluvia</a></td>
             <td>NELPR</td>
             <td>2026-05-14 02:02 PM</td>
         </tr>
@@ -322,7 +328,7 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://noticel.com/deportes/20260514/las-grises-de-humacao-tienen-un-nuevo-apoderado/?utm_source=rss&utm_medium=rss&utm_campaign=las-grises-de-humacao-tienen-un-nuevo-apoderado" target="_blank">Las Grises de Humacao tienen un nuevo apoderado</a></td>
+            <td class="titular-cell"> <a href="https://noticel.com/deportes/20260514/las-grises-de-humacao-tienen-un-nuevo-apoderado/?utm_source=rss&utm_medium=rss&utm_campaign=las-grises-de-humacao-tienen-un-nuevo-apoderado" target="_blank">Las Grises de Humacao tienen un nuevo apoderado</a></td>
             <td>NotiCel</td>
             <td>2026-05-14 01:04 PM</td>
         </tr>
@@ -348,19 +354,13 @@ tr:hover { background: #fafafa; }
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/videos/momento-en-que-explota-tubo-en-la-avenida-kennedy-de-san-juan-293819/" target="_blank">Momento en que explota tubo en la avenida Kennedy de San Juan</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-14 10:32 AM</td>
+            <td>2026-05-14 11:01 AM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/fotogalerias/recorrido-por-la-bahia-de-san-juan-guardia-costera-lanza-advertencias-de-seguridad/" target="_blank">Recorrido por la bahía de San Juan: Guardia Costera lanza advertencias de seguridad</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-14 10:32 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Carolina">
-            <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"> <a href="https://nelpr.com/2026/05/13/amordazan-pareja-durante-robo-domiciliario/" target="_blank">Amordazan pareja durante robo domiciliario</a></td>
-            <td>NELPR</td>
-            <td>2026-05-14 02:22 AM</td>
+            <td>2026-05-14 11:01 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
@@ -464,12 +464,6 @@ tr:hover { background: #fafafa; }
             <td>Walo Radio</td>
             <td>2026-05-13 03:13 PM</td>
         </tr>
-        <tr class="article-row" data-municipios="Vieques">
-            <td><span class="muni-tag">Vieques</span></td>
-            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/13/designan-carretera-en-vieques-con-nombre-gerardo-osorio-conocido-por-ayudar-a-familias-de-escasos-recursos/" target="_blank">Designan carretera en Vieques con nombre Gerardo Osorio conocido por ayudar a familias de escasos recursos</a></td>
-            <td>Walo Radio</td>
-            <td>2026-05-13 02:30 PM</td>
-        </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNUw1NF9oT1pXVUhzVW0zbG1UbDZ2TXVwT19FYXNLNU80VWFYSGFQci1GdklEWUdVT1JKbHg2TEsxNWVqQTgzNUM0bE1qMDh4QXZqVExoSjdBSXVZUHdhWEg0WEFmcDdWT0FBc3JfVkZKcVI5NmtIdTVlUGwzcWlRUUdaYU42bWdqdlpQcWY0ZE1LS01rVWxwVUpUWDM4d0V6Q3lMd0pEVHU2QQ?oc=5" target="_blank">Investigan hallazgo de osamenta en antiguo motel de Trujillo Alto - Metro Puerto Rico</a></td>
@@ -481,6 +475,12 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRDQ5dmVoRGVjMVd3bUNrUWN1QjdsNEItMjVZekI0NU9aN2xMb2pwa2I0cy1kUmJnNy03bTducWN0SlBvU2pJbm9lNjV5V0REb1hQZGRBNkpwcS1vRlJvQkRQdWZKeXBndy16aWRxOGtKQnNKQ2hiQkJMUUt1ek43Q1VVeC14c0NMX2Y1MklNbGlWS3NvZXhGMWh4RjlOdnlPTFM2eTVSdElabjZDWHVlOFhsNmpKZUpST0FDMnVsYldVMktuZlY2Y1ZnMmNkQnU2VDQtbDRLckpMY1AzOWR6VHVhNzBMZw?oc=5" target="_blank">El Municipio de Loíza trabaja en conjunto con la organización ambientalista sin fines de lucro LimPiAr e IFCO Recycling. Detalles: https://buff.ly/q4RISs6 - facebook.com</a></td>
             <td>FB - Loíza</td>
             <td>2026-05-13 01:50 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Loíza">
+            <td><span class="muni-tag">Loíza</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPSVB2S2RYOWVYVHIxR2FXZ29qanBaYlNfcEdCV0I2c1pIcElwZHRDZVdPdDV5Q0s0UDNoR1pHbWwtbmFxYjFPeVBQeElSVXBBZ0JVckNEV21aUWVJeVJRUGlrU0NVNXlwcHNBU0stUno3MHYzeHBROWg0OWc2bXNZVlNrcURiei1zUHg3WVNraG94dTFNa0FKbzFfMFRqdldZWlM4RmtLbHBiQ2hfVU9zSU5QcG9hZld2V1FReko1c2VERmIxVXk2UDRDdncyZ3c4YXJXVHVmYlZCMVk?oc=5" target="_blank">International Wrestling Association (IWA Puerto Rico Official Page). . La Administracion Municipal de Loiza, y su Alcaldesa, Julia María Nazario Fuentes presentan: 💥EL GRAN FESTIVAL DE LUCHA LIBRE IWA💥 🗓️ Sábado 16 Mayo 2026 📍 Plaza Pública Ca - facebook.com</a></td>
+            <td>FB - Loíza</td>
+            <td>2026-05-13 10:39 AM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
@@ -806,7 +806,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-14 10:35:05 AM
+    Generado por Hermes Agent — 2026-05-14 11:04:31 AM
 </div>
 
 <script>
