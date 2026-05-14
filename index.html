@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-14 11:04:31 AM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-14 11:34:59 AM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-14 11:04:31 AM</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-14 11:34:59 AM</div></div>
     </div>
 </div>
 
@@ -230,7 +230,7 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">8</div>
+            <div class="muni-count">9</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
@@ -240,9 +240,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Trujillo Alto</div>
             <div class="muni-count">4</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
+        <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
@@ -254,11 +254,11 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">3</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
             <div class="muni-name">Río Grande</div>
@@ -268,9 +268,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Ceiba</div>
             <div class="muni-count">1</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
@@ -302,11 +302,17 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/tribunales/notas/avanza-caso-contra-confinado-que-se-nego-a-ser-trasladado-al-tribunal-para-enfrentar-cargos/" target="_blank">Avanza caso contra confinado que se negó a ser trasladado al tribunal para enfrentar cargos</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-14 02:36 PM</td>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/14/residentes-denuncian-peligrosidad-y-accidentes-frecuentes-en-la-avenida-tejas-de-humacao/" target="_blank">Residentes denuncian peligrosidad y accidentes frecuentes en la avenida Tejas de Humacao</a></td>
+            <td>Walo Radio</td>
+            <td>2026-05-14 03:16 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://radioisla.tv/para-diciembre-iniciaria-demolicion-del-paseo-lineal-en-puerta-de-tierra/?utm_source=rss&utm_medium=rss&utm_campaign=para-diciembre-iniciaria-demolicion-del-paseo-lineal-en-puerta-de-tierra&utm_source=rss&utm_medium=rss&utm_campaign=para-diciembre-iniciaria-demolicion-del-paseo-lineal-en-puerta-de-tierra" target="_blank">Para diciembre iniciaría demolición del Paseo Lineal en Puerta de Tierra</a></td>
+            <td>Radio Isla</td>
+            <td>2026-05-14 03:03 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -354,13 +360,13 @@ tr:hover { background: #fafafa; }
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/videos/momento-en-que-explota-tubo-en-la-avenida-kennedy-de-san-juan-293819/" target="_blank">Momento en que explota tubo en la avenida Kennedy de San Juan</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-14 11:01 AM</td>
+            <td>2026-05-14 11:31 AM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/fotogalerias/recorrido-por-la-bahia-de-san-juan-guardia-costera-lanza-advertencias-de-seguridad/" target="_blank">Recorrido por la bahía de San Juan: Guardia Costera lanza advertencias de seguridad</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-14 11:01 AM</td>
+            <td>2026-05-14 11:31 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
@@ -379,12 +385,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://www.carolina787.com/n/noticia-fake-de-luma" target="_blank">Noticia Fake de LUMA</a></td>
             <td>Carolina787</td>
             <td>2026-05-14</td>
-        </tr>
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi_gFBVV95cUxPUXVwVXB4MGt2RzNsOEh1QzFLcWpvc0YtTUhoUUxZX2tlZ2hKNklzUlFRc1E4b2ZncklhVWhPX1U4T0VFY2NpOVBYYXJlTzh0cVNQZGNkSVBHTU1aX1RkWWlSVVNTRXN0T25WdWQzNnZ0a2xZdTViSXhrR1lHQW11ZlE2ZHhmMnc5cXJqejdka1BZeHliUlhGY0IwcmpYNExRbzhBZlVuNjFQQ21SRVFwSGFsUkh3dTMwX2ZfSDRoT3p3MXdMZUV3QTk3YVBTZFVmSngtdXdPUVNwb0VvWEIzSERyVDc0MERIWUJGdmdoZkdDcnFiUXdBU05JSU9Wdw?oc=5" target="_blank">▪️Llegó Alternative Meal Prep a #Fajardo y pueblos limítrofes. "¡Ustedes mandan y aquí los complacemos! Porque nos lo pidieron con insistencia, el Chef Garcia obedece: ¡nuestros especiales se quedan una semana más! No queremos que nadie se quede - facebook.com</a></td>
-            <td>En Contacto 787</td>
-            <td>2026-05-13 11:13 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Fajardo">
             <td><span class="muni-tag">Fajardo</span></td>
@@ -458,11 +458,11 @@ tr:hover { background: #fafafa; }
             <td>Walo Radio</td>
             <td>2026-05-13 03:56 PM</td>
         </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/13/sin-movil-el-asesinato-cometido-en-estacionamiento-de-la-empresa-prich-en-humacao/" target="_blank">Sin móvil el asesinato cometido en estacionamiento de la  empresa PRICH en Humacao</a></td>
-            <td>Walo Radio</td>
-            <td>2026-05-13 03:13 PM</td>
+        <tr class="article-row" data-municipios="Naguabo">
+            <td><span class="muni-tag">Naguabo</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPRFVmdEpGMUFOX2JUcEpYdW5sTkJGVUVGZHo0Ukt2Tmc2ODdFVmwyQ2lmZlJvazB0enF5SlV6SmlXWlhTV0FnTDBrQWdYOW1jYlZCSWg1YzBSRllUX2dQTVRfaFNHcTFOYTQ0WmkzcTNpZzk0WHB6WVRZYi1pTm9sVlRYOC1RRmtIREQ0UWJn?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
+            <td>FB - Naguabo</td>
+            <td>2026-05-13 02:20 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
@@ -476,12 +476,6 @@ tr:hover { background: #fafafa; }
             <td>FB - Loíza</td>
             <td>2026-05-13 01:50 PM</td>
         </tr>
-        <tr class="article-row" data-municipios="Loíza">
-            <td><span class="muni-tag">Loíza</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPSVB2S2RYOWVYVHIxR2FXZ29qanBaYlNfcEdCV0I2c1pIcElwZHRDZVdPdDV5Q0s0UDNoR1pHbWwtbmFxYjFPeVBQeElSVXBBZ0JVckNEV21aUWVJeVJRUGlrU0NVNXlwcHNBU0stUno3MHYzeHBROWg0OWc2bXNZVlNrcURiei1zUHg3WVNraG94dTFNa0FKbzFfMFRqdldZWlM4RmtLbHBiQ2hfVU9zSU5QcG9hZld2V1FReko1c2VERmIxVXk2UDRDdncyZ3c4YXJXVHVmYlZCMVk?oc=5" target="_blank">International Wrestling Association (IWA Puerto Rico Official Page). . La Administracion Municipal de Loiza, y su Alcaldesa, Julia María Nazario Fuentes presentan: 💥EL GRAN FESTIVAL DE LUCHA LIBRE IWA💥 🗓️ Sábado 16 Mayo 2026 📍 Plaza Pública Ca - facebook.com</a></td>
-            <td>FB - Loíza</td>
-            <td>2026-05-13 10:39 AM</td>
-        </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQT19KWlhWT3o5VnpYQzNlVVZpaGRMbVFVZDZIME9kYTdlaF9oWGxvTUkzQzdYTU5kUWtWR0Q5WVZNNzhoZTV5aF9NYS1GTHdBMFgyZG03YnBwNmkyTTd4UHRNOE9meWVRbkRjbUFrTlhhaXpHRUUzUzFfd0FLZVRVMV9YcHVmTUhET3JwR3RfYXk?oc=5" target="_blank">San Juan impulsa primera Cumbre de Exportaciones - NotiCel</a></td>
@@ -493,6 +487,12 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxORXNlZTNWU2k0Wm9pRFFaU3dBSGhpWHBJVzRtdzhNTDNYU3hhSHVIcGFzbGcxVHhZWTF2dTAtWmlRYlJzN2w4T2pSN05DM1pmV0Q2LUdQMHpFaFl6TTE0MFoyeWd4VU5UZ2N0TnNGNFZJX0Viek5pLUJnNVppY0dGWl9JaDBtWU13aUg3U3Ntc21FNXczY1JPdWxwVEFJWE5VTDZOLWJJbTJNaHNpamQ1WXFsWURXaC14ajhHcjVkc1MxWlp1?oc=5" target="_blank">Onovexa inaugura planta en Humacao con inversión de $36.2 millones - Noticias de Puerto Rico hoy</a></td>
             <td>Humacao</td>
             <td>2026-05-13 03:10 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Caguas">
+            <td><span class="muni-tag">Caguas</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOY1g1T05KMlliTVJVSU9ES3FPN3BrV3RfTXpkTTRLaWx4YXotMUdTc2lLMGR1TnI1ZktrU2F5VWU1RE1tUDVoNTFqRGJnR1ZrSGZpQVQ5Sjg1dzFEa3lTcWdpSEFSQ3dWNDByMy0wSkNVamp6V3hCNk1RY1FwVFFBd3B3?oc=5" target="_blank">Diócesis... - Diócesis de Caguas, Puerto Rico - Página Oficial - facebook.com</a></td>
+            <td>FB - Caguas</td>
+            <td>2026-05-13 02:34 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Canóvanas">
             <td><span class="muni-tag">Canóvanas</span></td>
@@ -806,7 +806,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-14 11:04:31 AM
+    Generado por Hermes Agent — 2026-05-14 11:34:59 AM
 </div>
 
 <script>
