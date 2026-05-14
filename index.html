@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-14 01:35:10 PM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-14 02:04:38 PM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">8</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-14 01:35:10 PM</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-14 02:04:38 PM</div></div>
     </div>
 </div>
 
@@ -230,7 +230,7 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">7</div>
+            <div class="muni-count">10</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
@@ -254,7 +254,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">3</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
@@ -302,6 +302,12 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://noticel.com/ultima-hora/20260514/arrestan-en-arizona-a-hombre-acusado-de-matar-a-su-abuelo-en-cayey/?utm_source=rss&utm_medium=rss&utm_campaign=arrestan-en-arizona-a-hombre-acusado-de-matar-a-su-abuelo-en-cayey" target="_blank">Arrestan en Arizona a hombre acusado de matar a su abuelo en Cayey</a></td>
+            <td>NotiCel</td>
+            <td>2026-05-14 05:31 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
             <td class="titular-cell"> <a href="https://waloradio.com/2026/05/14/las-grises-tienen-un-nuevo-apoderado/" target="_blank">Las Grises tienen un nuevo apoderado</a></td>
@@ -342,13 +348,19 @@ tr:hover { background: #fafafa; }
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/videos/momento-en-que-explota-tubo-en-la-avenida-kennedy-de-san-juan-293819/" target="_blank">Momento en que explota tubo en la avenida Kennedy de San Juan</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-14 01:32 PM</td>
+            <td>2026-05-14 02:01 PM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/fotogalerias/recorrido-por-la-bahia-de-san-juan-guardia-costera-lanza-advertencias-de-seguridad/" target="_blank">Recorrido por la bahía de San Juan: Guardia Costera lanza advertencias de seguridad</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-14 01:32 PM</td>
+            <td>2026-05-14 02:01 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/legislatura/notas/alcalde-de-san-juan-pide-que-no-aplique-a-los-municipios-el-pago-de-fianza-al-impugnar-permisos/" target="_blank">Alcalde de San Juan pide que no aplique  a los municipios el pago de fianza al impugnar permisos</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-14 02:01 PM</td>
         </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
@@ -385,12 +397,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://www.carolina787.com/n/noticia-fake-de-luma" target="_blank">Noticia Fake de LUMA</a></td>
             <td>Carolina787</td>
             <td>2026-05-14</td>
-        </tr>
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi_gFBVV95cUxPUXVwVXB4MGt2RzNsOEh1QzFLcWpvc0YtTUhoUUxZX2tlZ2hKNklzUlFRc1E4b2ZncklhVWhPX1U4T0VFY2NpOVBYYXJlTzh0cVNQZGNkSVBHTU1aX1RkWWlSVVNTRXN0T25WdWQzNnZ0a2xZdTViSXhrR1lHQW11ZlE2ZHhmMnc5cXJqejdka1BZeHliUlhGY0IwcmpYNExRbzhBZlVuNjFQQ21SRVFwSGFsUkh3dTMwX2ZfSDRoT3p3MXdMZUV3QTk3YVBTZFVmSngtdXdPUVNwb0VvWEIzSERyVDc0MERIWUJGdmdoZkdDcnFiUXdBU05JSU9Wdw?oc=5" target="_blank">▪️Llegó Alternative Meal Prep a #Fajardo y pueblos limítrofes. "¡Ustedes mandan y aquí los complacemos! Porque nos lo pidieron con insistencia, el Chef Garcia obedece: ¡nuestros especiales se quedan una semana más! No queremos que nadie se quede - facebook.com</a></td>
-            <td>En Contacto 787</td>
-            <td>2026-05-13 11:13 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Fajardo">
             <td><span class="muni-tag">Fajardo</span></td>
@@ -439,6 +445,12 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxNVjg4c1lVcm0zMXhodWlYTmNQWWhhVUQ2YjItNDFrYnBBbWZQcS1sSnFmR3lpSlRnWlQwXzRyRUZ2TkNqQlBxTEx1NTJHOVN3VGg4MGZJa3FZVkdvVjNlOEZOUWlvSXkza2hCVG5BM0RkZDlua0NpUGhFeFVGb04ya0FtSU9YM09LMEFCc1NmMU44ekVwWWZVNkJOZ1VwZHdRUHpjUjdHckZra29xNjBmSkFxQnhJVFUyUlFQUEdqUm55dUNOM01zSTVXblFmd9IB1gFBVV95cUxQS1IxcExidWNBTDhxLTBSZXFSQURkUDN2dUZjVWtwbF9FZmxkMUR3aGdvakVLNmxWMFZNTE1hWjRmTjJ3a3RHOWlzdlhrSXZSaEpMQkdhYlp1NllTQTkwNWczM01HaG0tNmhaUTVzZVU5b0JrS0FrZmhUa0tUMTBGTHlfaGxfNmppX3RyRGR2U25kY1BYTDNzMkkyWktFRWQyUk5iX1lXVVk1UzR2MkZhWUNLLVNtVzRXWmcwVTlmWGxjZWM2T1QxM2t5NlgtRkZ4T1VqNEV3?oc=5" target="_blank">Hallan cuerpo en estado de descomposición en antiguo motel en Trujillo Alto - Telemundo Puerto Rico</a></td>
             <td>Trujillo Alto</td>
             <td>2026-05-13 06:49 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQeXF4NENtS1NVMXRIZWR6c1RNcDRXanFCa0VGTm1JTEJsTGthUHl5MHFGNF9DTTVBMjhrOTI1UkpQWlNmVnd5Q0hKaGJmRVlSSG9hY25NRktSbGNPZjVPZkZKQkJudzlmM1FycXhaYzlEWFZpMUVhUlF4ZWNoWlpTZW1OUE1JMW5NUW5tRWNSekY?oc=5" target="_blank">Jay Fonseca. . 🚨 Residentes de San Juan llevan 9 días sin agua y la AAA sigue anunciando que "hay servicio". 💧 Lo que no te dicen es que hay solo 3 libras de presión. Eso significa que apenas le llega un chorrito. 🏢 Y si vives de un segundo piso pa' arriba - facebook.com</a></td>
+            <td>Jay Fonseca</td>
+            <td>2026-05-13 05:00 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
@@ -782,7 +794,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-14 01:35:10 PM
+    Generado por Hermes Agent — 2026-05-14 02:04:38 PM
 </div>
 
 <script>
