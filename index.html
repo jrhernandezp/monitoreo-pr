@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-15 01:34:24 PM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-15 02:04:53 PM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-15 01:34:24 PM</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-15 02:04:53 PM</div></div>
     </div>
 </div>
 
@@ -234,7 +234,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">4</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
@@ -286,7 +286,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
     </div>
 </div>
@@ -302,9 +302,21 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://nelpr.com/2026/05/15/grupo-que-organiza-trabajadores-levanta-su-preocupacion-por-el-futuro-del-salario-minimo-en-puerto-rico/" target="_blank">Grupo que organiza trabajadores levanta su preocupación por el futuro del salario mínimo en Puerto Rico</a></td>
+            <td>NELPR</td>
+            <td>2026-05-15 05:49 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Culebra">
+            <td><span class="muni-tag">Culebra</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://nelpr.com/2026/05/15/adfan-entrega-unidad-movil-para-servicios-en-culebra/" target="_blank">ADFAN entrega unidad móvil para servicios en Culebra</a></td>
+            <td>NELPR</td>
+            <td>2026-05-15 05:39 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/15/acusan-a-tres-personas-por-apropiarse-de-mas-de-23-mil-mediante-documentos-falsificados/" target="_blank">Acusan a tres personas por apropiarse de más de $23 mil mediante documentos falsificados</a></td>
+            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/15/acusan-a-tres-personas-por-apropiarse-de-mas-de-23-mil-mediante-documentos-falsificados/" target="_blank">Acusan a tres personas por apropiarse de más de $23 mil mediante documentos falsificados</a></td>
             <td>Walo Radio</td>
             <td>2026-05-15 05:12 PM</td>
         </tr>
@@ -330,13 +342,7 @@ tr:hover { background: #fafafa; }
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/videos/momento-en-que-explota-tubo-en-la-avenida-kennedy-de-san-juan-293819/" target="_blank">Momento en que explota tubo en la avenida Kennedy de San Juan</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-15 01:31 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://noticel.com/ultima-hora/20260515/el-municipio-de-san-juan-no-quiere-pagar-la-fianza-de-10-para-impugnar-proyectos/?utm_source=rss&utm_medium=rss&utm_campaign=el-municipio-de-san-juan-no-quiere-pagar-la-fianza-de-10-para-impugnar-proyectos" target="_blank">El Municipio de San Juan no quiere pagar la fianza de 10% para impugnar proyectos</a></td>
-            <td>NotiCel</td>
-            <td>2026-05-15 12:41 PM</td>
+            <td>2026-05-15 02:01 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -409,12 +415,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOM1NVWFBOS3JtLTFNU3hTbHRzYW1fSDZYdUhHaDVTV0oydHRocm5FSDNTWEdjR1RXSzR4ZFVrNVJXRF9UODhtYUVWVlF2M21vMmxMUGNITWJzeW42ei1sdmhtVEdHUXlSXzJpYUlzbThmcHVvNl9FVlNfYlNBRGdaeU8xX3B2TW4xa3N4dEF3?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
             <td>FB - Naguabo</td>
             <td>2026-05-14 04:05 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Carolina">
-            <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxQRGViV0FEOThvWmVTWVM3ZmY1Qm1Ld3hvRmYyOWo4NjBTRlBpeVpQRmU4VGd0R3FMeGt0QkVUd28yZnEtTVJJZFBBYlRxLWNrS0loejBzNkEtS2lfRHNDWHVkZnAxQmtXVmxEQXplU3UtNnVwdnd4MDZJX2NUd2NMcVpxWDRYVUFlT1RsaGdTbkUwMDZaRHN2UjkzZDVJb0lZYTJ5clV2YWJuVTRYLWJBUEpMNVdma1ZLcTlJY3I1TmJycl9TQ1dXUEh6THgxSEUyVW1URg?oc=5" target="_blank">Comerciantes viven momentos de terror durante robo domiciliario en Carolina - Primera Hora</a></td>
-            <td>Primera Hora</td>
-            <td>2026-05-14 02:26 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Trujillo Alto">
             <td><span class="muni-tag">Trujillo Alto</span></td>
@@ -728,7 +728,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-15 01:34:24 PM
+    Generado por Hermes Agent — 2026-05-15 02:04:53 PM
 </div>
 
 <script>
