@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-15 06:04:46 PM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-15 06:35:17 PM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-15 06:04:46 PM</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-15 06:35:17 PM</div></div>
     </div>
 </div>
 
@@ -230,7 +230,7 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">4</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
@@ -264,9 +264,9 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Río Grande</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Ceiba')">
+        <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
             <div class="muni-name">Ceiba</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
@@ -278,15 +278,15 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">3</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Vieques')">
+        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">2</div>
         </div>
     </div>
 </div>
@@ -302,6 +302,12 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/negocios/banca-finanzas/notas/otro-reves-federal-para-banco-internacional-en-puerto-rico/" target="_blank">Otro revés federal para banco internacional en Puerto Rico</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-15 10:00 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="San Juan">
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/notas/cheito-hernandez-elevara-pedido-de-salida-del-jefe-de-la-aaa-si-no-ofrece-resultados-ante-interrupciones-en-san-juan/" target="_blank">“Cheíto” Hernández elevará pedido de salida del jefe de la AAA si no ofrece resultados ante interrupciones en San Juan</a></td>
@@ -368,12 +374,6 @@ tr:hover { background: #fafafa; }
             <td>Walo Radio</td>
             <td>2026-05-15 02:37 PM</td>
         </tr>
-        <tr class="article-row" data-municipios="Ceiba, Vieques, Culebra">
-            <td><span class="muni-tag">Ceiba, Vieques, Culebra</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5tdHNUa29sSTdDUGtwNEo3OTIyME9hZE40cDl2eWl5b0xmYVhuQVVvamI5Q2RkNmRKNFZkQjU0RnFEcHhIdG5hdUN3cEd0dTFYMFh6ZkZvTktubHZyZG1DUW5CUnhwbHlUUUx2eW1kdk9BQVVHMDVVMVE1UGw?oc=5" target="_blank">Ven a disfrutar de este Penthouse con vista al mar y atardeceres – cerca de la marina Puerto del Rey Ceiba, PR📍 A pasos del ferry de vieques & culebra⛴️ Capacidad hasta 6 personas… https://www.airbnb.com/h/casadelsolpenthouseceiba - facebook.com</a></td>
-            <td>FB - Ceiba</td>
-            <td>2026-05-15 01:56 PM</td>
-        </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
             <td class="titular-cell"> <a href="https://waloradio.com/2026/05/15/humacao-celebrara-exposicion-artistica-dedicada-a-la-memoria-y-la-identidad-de-su-gente/" target="_blank">Humacao celebrará exposición artística dedicada a la memoria y la identidad de su gente</a></td>
@@ -433,6 +433,12 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxNVG1TYURxN2U2QTRQTWUwU1RzREt6aUZIaUJvZ1VNY3BYZ0t4MXJxSDYyNGhZQlpDOW4xMW5oSGZVeW1NSm5SNnRyT0loQ2lxSjJ1U0RwUkNnaUk5RzVZR0lWZVpaZEdZSGVXNC1NNU5idG1tVk13SU5sLXFObElhSzRxNTAzR1FHT1hKcTZzbnZQVEU4eEVLaG8yY3BSRDNXdFFvTV9YT241M3lyQS1QMkR0cnRrZDhfSWpPRjBaSGdER1dOMEpUWlJQb2lOWFFFN3NoVDFVOFFuNjJHNE9McXd0Y1E?oc=5" target="_blank">Alcalde de San Juan pide que no aplique a los municipios el pago de fianza al impugnar permisos - Noticias de Puerto Rico hoy</a></td>
             <td>San Juan</td>
             <td>2026-05-14 05:57 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Cataño">
+            <td><span class="muni-tag">Cataño</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9hY2JkUkN0MGxtVVFuX1NzRC14UjhEWDZpTVZ2Y29BLUJsUnA3bllyX2Q1V19LUTFrSmFYU3k2Z2dfRXJWS3B4dVNYNnJfcDNQTGZjVW50eWd6NEgxSVYtN2VDWG5NU3JtRXdkaEhSb0Jydk0?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a></td>
+            <td>FB - Cataño</td>
+            <td>2026-05-14 05:17 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Naguabo">
             <td><span class="muni-tag">Naguabo</span></td>
@@ -758,7 +764,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-15 06:04:46 PM
+    Generado por Hermes Agent — 2026-05-15 06:35:17 PM
 </div>
 
 <script>
