@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-15 09:04:30 AM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-15 09:35:00 AM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">8</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-15 09:04:30 AM</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-15 09:35:00 AM</div></div>
     </div>
 </div>
 
@@ -230,7 +230,7 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">7</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
@@ -238,7 +238,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
@@ -302,9 +302,15 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://noticel.com/ultima-hora/20260515/el-municipio-de-san-juan-no-quiere-pagar-la-fianza-de-10-para-impugnar-proyectos/?utm_source=rss&utm_medium=rss&utm_campaign=el-municipio-de-san-juan-no-quiere-pagar-la-fianza-de-10-para-impugnar-proyectos" target="_blank">El Municipio de San Juan no quiere pagar la fianza de 10% para impugnar proyectos</a></td>
+            <td>NotiCel</td>
+            <td>2026-05-15 12:41 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="Caguas">
             <td><span class="muni-tag">Caguas</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://noticel.com/ultima-hora/20260515/ganan-san-german-santurce-caguas-y-arecibo-en-el-bsn/?utm_source=rss&utm_medium=rss&utm_campaign=ganan-san-german-santurce-caguas-y-arecibo-en-el-bsn" target="_blank">Ganan San Germán, Santurce, Caguas y Arecibo en el BSN</a></td>
+            <td class="titular-cell"> <a href="https://noticel.com/ultima-hora/20260515/ganan-san-german-santurce-caguas-y-arecibo-en-el-bsn/?utm_source=rss&utm_medium=rss&utm_campaign=ganan-san-german-santurce-caguas-y-arecibo-en-el-bsn" target="_blank">Ganan San Germán, Santurce, Caguas y Arecibo en el BSN</a></td>
             <td>NotiCel</td>
             <td>2026-05-15 12:32 PM</td>
         </tr>
@@ -318,7 +324,7 @@ tr:hover { background: #fafafa; }
             <td><span class="muni-tag">San Juan</span></td>
             <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/videos/momento-en-que-explota-tubo-en-la-avenida-kennedy-de-san-juan-293819/" target="_blank">Momento en que explota tubo en la avenida Kennedy de San Juan</a></td>
             <td>El Nuevo Día</td>
-            <td>2026-05-15 09:01 AM</td>
+            <td>2026-05-15 09:32 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Caguas">
             <td><span class="muni-tag">Caguas</span></td>
@@ -439,6 +445,12 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE8zZjVHenVFNXdzOG9LaTRtbDVxSjRGdXVhajJ4cDB6U3VIZVktcEZFQWRMUTVHbldRV2JHSEgtUTVGVy1kbzdteFR5YTl5cUU0NFFVR0x3TGozc1N1ME92LWNqY3Y2SXQ4S0JFWjR4NEpiX0NTN2dobXJwUUo1UW8?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a></td>
             <td>FB - Trujillo Alto</td>
             <td>2026-05-14 01:53 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Trujillo Alto">
+            <td><span class="muni-tag">Trujillo Alto</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9XaHpLbUwzRlAzUWlNSFBLM0c1MFdnclAyRHJEcXR5M2x4RzdINW9xZjdTY04xcUVIWlhDRUp5eWJETnFncV9SeFZENXlPREwzVjl2Y1dKMmFWbzRwbVBRcWF6cV9HeXdEYno1NXJRdEZCel9td19UR2lOZjl3b2s?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a></td>
+            <td>FB - Trujillo Alto</td>
+            <td>2026-05-14 12:30 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
@@ -746,7 +758,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-15 09:04:30 AM
+    Generado por Hermes Agent — 2026-05-15 09:35:00 AM
 </div>
 
 <script>
