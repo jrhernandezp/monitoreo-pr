@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-15 05:04:53 PM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-15 05:35:23 PM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-15 05:04:53 PM</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">4</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-15 05:35:23 PM</div></div>
     </div>
 </div>
 
@@ -230,7 +230,7 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">3</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
@@ -254,19 +254,19 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
+        <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
             <div class="muni-name">Río Grande</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
+        <div class="muni-card active" onclick="filtrarPor('Ceiba')">
             <div class="muni-name">Ceiba</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
@@ -280,13 +280,13 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Cataño</div>
             <div class="muni-count">2</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
+        <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">3</div>
         </div>
     </div>
 </div>
@@ -302,6 +302,18 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/locales/notas/cheito-hernandez-elevara-pedido-de-salida-del-jefe-de-la-aaa-si-no-ofrece-resultados-ante-interrupciones-en-san-juan/" target="_blank">“Cheíto” Hernández elevará pedido de salida del jefe de la AAA si no ofrece resultados ante interrupciones en San Juan</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-15 09:19 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Loíza">
+            <td><span class="muni-tag">Loíza</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMDlUb1RjRFBQdmx1ekt5blRCa0ZtUWdYamotLTlEbGE5YWVzWWpaTHJieDRBOTlPUmo2ZkJ6VDB6aG1OTW15SUpTYnE3S0J2RzZGSTFaaF9ZZllHRDVqQlJPT3VqTnk1VEdYZU4wODZRTlJza2hzd2lsSm9ISWhMdnEwY3g0NWZxbFZ2N1dZekJFdXY1UkFBS2Fhenp1UGgwZ0Z2RjZXdVE2dEVEV1pLUmJXUGkyRXFyaHpRWVR2OS04bHhmSmpYdEpJVnRmSGtYdE1ySFB30gHeAUFVX3lxTE8zUkFHb2xpcVRmdjFibEdoN0VxZlRDQVBvLVN3ZTRXTU40bTY0Q1N1QUF4aEFjekludDdkbFdmTlhla0NjZ01uYWJmaEJ6enRNakZJWkoxRUx4cE1zLXIxaWRjTkRrRC1KdlFpRmpaX2hmQS1uSFVkTFNqQlBTMFB5eE9ZQlFMYVBFQklnVVd5UEN5LW5kb0tjT3ExS0RZRDlPNHpGWTZJel9OTk5fNVBpaDZTajBQYnM2RndHVnFkSVduQ0NiNFZKb0VadThxc1ZMS3NQQnBobGZWbzlhUQ?oc=5" target="_blank">Salvation Army lleva orientaciones, música y alimentos a comunidad en Loíza - Telemundo Puerto Rico</a></td>
+            <td>Loíza</td>
+            <td>2026-05-15 08:28 PM</td>
+        </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
             <td class="titular-cell"> <a href="https://waloradio.com/2026/05/15/geigel-asegura-que-el-respaldo-de-lideres-lo-motivo-a-aspirar-a-la-presidencia-del-pnp/" target="_blank">Geigel asegura que el respaldo de líderes lo motivó a aspirar a la presidencia del PNP</a></td>
@@ -326,11 +338,11 @@ tr:hover { background: #fafafa; }
             <td>Walo Radio</td>
             <td>2026-05-15 05:12 PM</td>
         </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/videos/momento-en-que-explota-tubo-en-la-avenida-kennedy-de-san-juan-293819/" target="_blank">Momento en que explota tubo en la avenida Kennedy de San Juan</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-15 05:01 PM</td>
+        <tr class="article-row" data-municipios="Fajardo">
+            <td><span class="muni-tag">Fajardo</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFB0OTZBbXZmYzIydWN1bXY4RXNqWDhyOXY5SEFNT3lQdjJWbWVLOElFU25QcE5GOGdVcWRQOER3aHBvLURMY3UyVnNTdDh2OWtEd3BGbHdaRHJmdXd3Sy15TGlSdTM5RHV6clNUZVp0QU5NWlVaQlpkemdObWQ?oc=5" target="_blank">Municipio Autónomo de Fajardo - facebook.com</a></td>
+            <td>FB - Fajardo</td>
+            <td>2026-05-15 04:07 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Naguabo">
             <td><span class="muni-tag">Naguabo</span></td>
@@ -356,11 +368,11 @@ tr:hover { background: #fafafa; }
             <td>Walo Radio</td>
             <td>2026-05-15 02:37 PM</td>
         </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://noticel.com/ultima-hora/20260515/el-municipio-de-san-juan-no-quiere-pagar-la-fianza-de-10-para-impugnar-proyectos/?utm_source=rss&utm_medium=rss&utm_campaign=el-municipio-de-san-juan-no-quiere-pagar-la-fianza-de-10-para-impugnar-proyectos" target="_blank">El Municipio de San Juan no quiere pagar la fianza de 10% para impugnar proyectos</a></td>
-            <td>NotiCel</td>
-            <td>2026-05-15 12:41 PM</td>
+        <tr class="article-row" data-municipios="Ceiba, Vieques, Culebra">
+            <td><span class="muni-tag">Ceiba, Vieques, Culebra</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5tdHNUa29sSTdDUGtwNEo3OTIyME9hZE40cDl2eWl5b0xmYVhuQVVvamI5Q2RkNmRKNFZkQjU0RnFEcHhIdG5hdUN3cEd0dTFYMFh6ZkZvTktubHZyZG1DUW5CUnhwbHlUUUx2eW1kdk9BQVVHMDVVMVE1UGw?oc=5" target="_blank">Ven a disfrutar de este Penthouse con vista al mar y atardeceres – cerca de la marina Puerto del Rey Ceiba, PR📍 A pasos del ferry de vieques & culebra⛴️ Capacidad hasta 6 personas… https://www.airbnb.com/h/casadelsolpenthouseceiba - facebook.com</a></td>
+            <td>FB - Ceiba</td>
+            <td>2026-05-15 01:56 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
@@ -406,7 +418,7 @@ tr:hover { background: #fafafa; }
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.carolina787.com/n/policia-alerta-sobre-casos-de-clonacion-de-tarjetas-con-skimmers-en-varios-municipios-de-puerto-rico" target="_blank">Policía alerta sobre casos de clonación de tarjetas con skimmers en varios municipios de Puerto Rico</a></td>
+            <td class="titular-cell"> <a href="https://www.carolina787.com/n/policia-alerta-sobre-casos-de-clonacion-de-tarjetas-con-skimmers-en-varios-municipios-de-puerto-rico" target="_blank">Policía alerta sobre casos de clonación de tarjetas con skimmers en varios municipios de Puerto Rico</a></td>
             <td>Carolina787</td>
             <td>2026-05-15</td>
         </tr>
@@ -740,7 +752,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-15 05:04:53 PM
+    Generado por Hermes Agent — 2026-05-15 05:35:23 PM
 </div>
 
 <script>
