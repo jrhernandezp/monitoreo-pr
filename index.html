@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-15 11:04:41 PM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-15 11:35:02 PM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-15 11:04:41 PM</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-15 11:35:02 PM</div></div>
     </div>
 </div>
 
@@ -230,7 +230,7 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
@@ -238,7 +238,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
@@ -254,7 +254,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
@@ -264,13 +264,13 @@ tr:hover { background: #fafafa; }
             <div class="muni-name">Río Grande</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Ceiba')">
+        <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
             <div class="muni-name">Ceiba</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">3</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
@@ -278,7 +278,7 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">3</div>
         </div>
         <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
@@ -302,17 +302,17 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQVTYwbVQ3c2t0SERZbURmaTdJbUJmeTlrcVdiTjRNQklTV3ZyVl9OZlRaN0IwbWNtb203NXJPZ2hmWERqcjQ2LThGdC02ZW5KS2ZBYV9GMzM3bnpGV2JPT09MUjAxNEZZd2VQdkl2Y1o1dFoxTWQ1eXA0b19SRWstNDJZdGM2d2U2SkR3ZEZ3?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
-            <td>FB - Naguabo</td>
-            <td>2026-05-15 11:29 PM</td>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/locales/notas/mataron-el-proyecto-de-la-casa-dominicana-disputa-ensombrece-el-futuro-de-la-iniciativa-municipal-de-san-juan-para-la-comunidad-migrante/" target="_blank">Disputa por el control de la Casa Dominicana en San Juan ensombrece su futuro</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-15 11:32 PM</td>
         </tr>
-        <tr class="article-row" data-municipios="Ceiba">
-            <td><span class="muni-tag">Ceiba</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxNcFA5Ym5KbDBhNWlmTU5tbnEtemF2NTRYUEVTQkZXTWUxVkNxZHkybFZSaWYxSmUzdTFDUHNTMGhtS1lNYzNOUGJRd3BEaDFvVWhkRGMzb1V0OGNLdUFFdDlGb2ZaSUNlRFg1MVo5Rm41OTBKcmUxbUJuYk44SWRzaFR3dWxfVWlEenRObWVTR0s2Wi1fMjF2aGZYM2pSemFLWVZMYW85aG9zVzkwQ0FuWV8yOU03cW9DcHl4cTRZZEZsaGptWFlv?oc=5" target="_blank">Vota por Ceiba !!!🙏😘🥰 Conquistando Puerto Rico!!!😘🥰 Puerto Rico Gana!!!🥂😛❤️ - facebook.com</a></td>
-            <td>FB - Ceiba</td>
-            <td>2026-05-15 10:26 PM</td>
+        <tr class="article-row" data-municipios="Cataño">
+            <td><span class="muni-tag">Cataño</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/gobierno/notas/informe-de-la-contralora-encontro-irregularidades-en-el-uso-de-materiales-personal-y-fondos-del-municipio-de-catano/" target="_blank">Informe de la Contralora encontró irregularidades en el uso de materiales, personal y fondos del Municipio de Cataño</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-15 11:32 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Loíza">
             <td><span class="muni-tag">Loíza</span></td>
@@ -343,12 +343,6 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://waloradio.com/2026/05/15/acusan-a-tres-personas-por-apropiarse-de-mas-de-23-mil-mediante-documentos-falsificados/" target="_blank">Acusan a tres personas por apropiarse de más de $23 mil mediante documentos falsificados</a></td>
             <td>Walo Radio</td>
             <td>2026-05-15 05:12 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFB0OTZBbXZmYzIydWN1bXY4RXNqWDhyOXY5SEFNT3lQdjJWbWVLOElFU25QcE5GOGdVcWRQOER3aHBvLURMY3UyVnNTdDh2OWtEd3BGbHdaRHJmdXd3Sy15TGlSdTM5RHV6clNUZVp0QU5NWlVaQlpkemdObWQ?oc=5" target="_blank">Municipio Autónomo de Fajardo - facebook.com</a></td>
-            <td>FB - Fajardo</td>
-            <td>2026-05-15 04:07 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Naguabo">
             <td><span class="muni-tag">Naguabo</span></td>
@@ -445,6 +439,12 @@ tr:hover { background: #fafafa; }
             <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE8zZjVHenVFNXdzOG9LaTRtbDVxSjRGdXVhajJ4cDB6U3VIZVktcEZFQWRMUTVHbldRV2JHSEgtUTVGVy1kbzdteFR5YTl5cUU0NFFVR0x3TGozc1N1ME92LWNqY3Y2SXQ4S0JFWjR4NEpiX0NTN2dobXJwUUo1UW8?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a></td>
             <td>FB - Trujillo Alto</td>
             <td>2026-05-14 01:53 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Trujillo Alto">
+            <td><span class="muni-tag">Trujillo Alto</span></td>
+            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9XaHpLbUwzRlAzUWlNSFBLM0c1MFdnclAyRHJEcXR5M2x4RzdINW9xZjdTY04xcUVIWlhDRUp5eWJETnFncV9SeFZENXlPREwzVjl2Y1dKMmFWbzRwbVBRcWF6cV9HeXdEYno1NXJRdEZCel9td19UR2lOZjl3b2s?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a></td>
+            <td>FB - Trujillo Alto</td>
+            <td>2026-05-14 12:30 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
@@ -752,7 +752,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-15 11:04:41 PM
+    Generado por Hermes Agent — 2026-05-15 11:35:02 PM
 </div>
 
 <script>
