@@ -215,12 +215,12 @@ tr:hover { background: #fafafa; }
         <img src="logo-observador.jpg" alt="Observador del Noreste" class="header-logo">
         <h1>🗺️ Observador del Noreste</h1>
     </div>
-    <div class="sub">Noreste de Puerto Rico — 2026-05-16 08:34:19 AM</div>
+    <div class="sub">Noreste de Puerto Rico — 2026-05-17 05:07:31 AM</div>
     <div class="stats">
         <div class="stat-box"><div class="num">3</div><div class="label">Total Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff5252">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
-        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-16 08:34:19 AM</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff5252">36</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
+        <div class="stat-box" style="font-size:11px;"><div class="num" style="font-size:14px;">Último scrape</div><div class="label">2026-05-17 05:07:31 AM</div></div>
     </div>
 </div>
 
@@ -230,35 +230,35 @@ tr:hover { background: #fafafa; }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">7</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">9</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
+        <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
+            <div class="muni-count">2</div>
+        </div>
+        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
+            <div class="muni-name">Caguas</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Caguas')">
-            <div class="muni-name">Caguas</div>
+        <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
+            <div class="muni-name">Luquillo</div>
+            <div class="muni-count">0</div>
+        </div>
+        <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
+            <div class="muni-name">Canóvanas</div>
             <div class="muni-count">3</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Luquillo')">
-            <div class="muni-name">Luquillo</div>
-            <div class="muni-count">1</div>
-        </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
-            <div class="muni-name">Canóvanas</div>
+        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
+            <div class="muni-name">Fajardo</div>
             <div class="muni-count">0</div>
         </div>
-        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
-            <div class="muni-name">Fajardo</div>
-            <div class="muni-count">1</div>
-        </div>
-        <div class="muni-card active" onclick="filtrarPor('Loíza')">
+        <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">0</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
             <div class="muni-name">Río Grande</div>
@@ -270,19 +270,19 @@ tr:hover { background: #fafafa; }
         </div>
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">1</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">7</div>
+            <div class="muni-count">3</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">8</div>
         </div>
-        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
+        <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">2</div>
         </div>
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
@@ -302,203 +302,221 @@ tr:hover { background: #fafafa; }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Fecha</th></tr></thead>
             <tbody id="articlesBody">
                 
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://esnoticiapr.com/muere-hombre-que-intento-cruzar-paseo-peatonal/" target="_blank">Muere hombre que intentó cruzar paseo peatonal</a></td>
+        <tr class="article-row" data-municipios="Trujillo Alto">
+            <td><span class="muni-tag">Trujillo Alto</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.elnuevodia.com/noticias/locales/notas/no-hay-espacio-para-tantos-muertos-aumentan-las-exhumaciones-y-se-agrava-la-crisis-en-los-cementerios-municipales/" target="_blank">No hay espacio para tantos muertos: aumentan las exhumaciones y se agrava la crisis en los cementerios municipales</a></td>
+            <td>El Nuevo Día</td>
+            <td>2026-05-17 03:10 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://nelpr.com/2026/05/16/luma-energy-anuncia-que-se-ira-la-luz-en-11-municipios/" target="_blank">LUMA Energy anuncia que se irá la luz en 10 municipios</a></td>
+            <td>NELPR</td>
+            <td>2026-05-17 01:06 AM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.carolina787.com/n/noticia-fake-de-aaa" target="_blank">Noticia Fake de AAA</a></td>
+            <td>Carolina787</td>
+            <td>2026-05-17</td>
+        </tr>
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.carolina787.com/n/noticia-fake-de-dtop" target="_blank">Noticia Fake de DTOP</a></td>
+            <td>Carolina787</td>
+            <td>2026-05-17</td>
+        </tr>
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.carolina787.com/n/noticia-fake-de-luma" target="_blank">Noticia Fake de LUMA</a></td>
+            <td>Carolina787</td>
+            <td>2026-05-17</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZkVkSFR2cTJDbF83STNOZzUtTWU2Q2dBQVgteTQ4QVlUUXpnVlhpWU9qaEdOdF9KYjBwT1VWUzJWX3R3MlNzSGFiYVl3X0ZINl9Mcm82bEhSQ1hraS1jVEdrd3h4SzU0dW5nSXdoRU5iLVpKV04tYTdDZVl0RlpsS2liMzlrX2J3WTZsN05TMGt3RjVITjlFUXdiVlBfbDlxZFVFNWhWUmdTZGM5eV82b0MyQzAyc0h2azN3ZFE5cHpaNUHSAcgBQVVfeXFMT1lEaGhhUDdJY0htY2NhbS1CeTR6QzJTUHIxTnR1bnBac2Z6SVpNX25Pd1pZUkdfMS1fOVFRWURHalVCUkNEUGFnUDR2anlxWUtUdGJQRms5cVVXcFg4VnJXdGZfMlR6X0haTjhBWlJqVF9TRlZFTm9kZU95QXE0MHBjQUh3U3k0MUwwVmJNd29pWmE0MWZsYV9MSTV1UnpMbXZoYTNkR201WklqSEdYNlRtMXc2ZmhYaFZYeEMwVWQtOFJNaHdwNTU?oc=5" target="_blank">Se genera disputa por el control de la Casa Dominicana en San Juan, Puerto Rico - Listín Diario</a></td>
+            <td>San Juan</td>
+            <td>2026-05-16 11:37 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Carolina, Canóvanas">
+            <td><span class="muni-tag">Carolina, Canóvanas</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi_AFBVV95cUxQSlNxQ2VxbVBIYzJhLW10VkFQaWJYTVZVVUVGVVBiQjNZbVdLUlY2bDJYVEJMX0ZTNWFNX0g4Rk1jQjZERzM0dG5BXzJOZmZCTzFqeDh4Q1pEZUdndWdQdEEtQW5PY1R2NnZIZ1QxYnR4ei0wdi10S2hkZjRWT3YxTy00cDBIYUJPdzZwVkhGbEkxNi1PeU9lMVFTQ3lhSUw5OUFub3pFVUFQMmNUUFNqX0dsMjZ1U1FqTnF0N1p5aHNYUFYwN2l6aXpaSHZrS0hOLUU1OFhVdUNWbEVhOTEwbERtX3VOYVBsTjdvQnBHYU9YQ3d1VnRYUGF2YmE?oc=5" target="_blank">Autoridades investigan dos asesinatos con horas de diferencia en Canóvanas y Carolina - wapa.tv</a></td>
+            <td>Canóvanas</td>
+            <td>2026-05-16 10:46 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdi1CLVkwNGRmM3U1MGgyVVRVaV93b2VyZENKSVRYd2ZvMTRpLVdhb2RGQnhqMTZNbEMyVnZnRVpRNjV0WGlKVmNiQVVOYUJOQ1JNSTU1clR4RDE3VEd5OHVHNTk5bUI4bTZKVzBVcmlucE5jRnNid1llVWcwTjNfQ21wNWEwTnlyemloNWp1VThWZDhkTkU2b3lCR1RvQ3BDa1QxMG9qdjRVRl9STXZwWVdDWVZnWGZo?oc=5" target="_blank">Municipio de San Juan completa mejoras al Gimnasio de Boxeo de Parcelas Falú - Metro Puerto Rico</a></td>
+            <td>San Juan</td>
+            <td>2026-05-16 09:46 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Canóvanas">
+            <td><span class="muni-tag">Canóvanas</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdzlIOFNzTXJjZzFPazY2MTRaSXNGQ2JDVUFfenQweGVYQ0VZS3IxcXJSdHdZSVZjWmJZTlNVTUdRU0JYUnZaZUR6TEJEa09VRUltQVhSVkl5eEZsRFdJWUdna0lkNHRCcDdjQUhYZXBxMjh4NEphMHRobE5yWmdXLUxCSktfRWV3VUIxazUzX0Z6UkZNTHpUcWdUcDMwLU1hdFlVZV90a04?oc=5" target="_blank">Investigan varios escalamientos en centro comercial en Canóvanas - Metro Puerto Rico</a></td>
+            <td>Canóvanas</td>
+            <td>2026-05-16 09:46 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Cataño">
+            <td><span class="muni-tag">Cataño</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxNWWhmeTdDeFRHWjN6aFpmUm03MVVfdkVNa3BmR1QwUkVaRnJtRUVLYTczQkRmMlBjdGxBVnZlZ2Q5XzVNRWVVaE1fdS0yV2NzQi1PbU1ya0Z3eGx0QkJXVVNyTE52VFVDWHF5Rjh0OUlacXBFc0I4dkRhcXVYX2ZWMm1mMElEQjhMREIyUThrcDJ1NzZGQU01WXJIZVBMZFhMcmdJamJhWC0xdEZWeDRLRU5fekJzdHVOMVVfS0FuSnBIR3FSRTZrNFNWRzBwUTFmRDdqekJzc0x5d2puWHJjelplY3gxUlE?oc=5" target="_blank">“Corrupción había sido señalada antes”: Portavoz PPD en Legislatura de Cataño reacciona sobre informe de Contralor - Metro Puerto Rico</a></td>
+            <td>Cataño</td>
+            <td>2026-05-16 09:46 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Vieques">
+            <td><span class="muni-tag">Vieques</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE4xRWtJMmJhaDRMZXBEbDJnUFdQNm5teGJ4Y2toazgxQlI4RlNjdDVQaW9VM1VpWDVQN3U2REVLcUFFYTRaMVdKNmEzS05OVVNUejFsMG54LXNiVmV2OXBnM3RVNENXcnlLWGVoRzdSR3BUcEU?oc=5" target="_blank">Municipio de Vieques - facebook.com</a></td>
+            <td>FB - Vieques</td>
+            <td>2026-05-16 08:40 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://noticel.com/deportes/20260516/san-juan-reinaugura-el-gimnasio-de-boxeo-de-las-parcelas-falu/?utm_source=rss&utm_medium=rss&utm_campaign=san-juan-reinaugura-el-gimnasio-de-boxeo-de-las-parcelas-falu" target="_blank">San Juan reinaugura el gimnasio de boxeo de las Parcelas Falú</a></td>
+            <td>NotiCel</td>
+            <td>2026-05-16 08:05 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Trujillo Alto">
+            <td><span class="muni-tag">Trujillo Alto</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQelp1S0NmTVNaZ3pqY0NlaExhZ2NwWTIxMHhmTTFMcldxb1RrOTNKVWZ6RDFDS3ZFZkduNmIxZk1DR2RHYXNFRHpCS2xoSEtNX1dUODl3Z0xWTGVtNWt1QlVHX2Z1aS1QLWpISGp2T3V5WVVSU2NOckdSemJZdGJhTTk5UWxjNmc4XzJr?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a></td>
+            <td>FB - Trujillo Alto</td>
+            <td>2026-05-16 07:38 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Cataño">
+            <td><span class="muni-tag">Cataño</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxNM1Y0SVNaZlRycXMzdS1pOWprZXNDZzQ2RnZ6MkdTWFM2eWFhSUFFTmNzczVYR0MxaGZzakloUkQ2QUVpRm1rVUZHM3FqdWtNSzFoSjd4LXNESl9wSU9nTWlMNzFOYlJ3c29INnU3NmtDSmhJRU1zMmtIdEVMR201Y0ZuOXdRVlhLQ3BsTTZYYlhEbXBUR19xQTdOUFBqblRKYi0wX2NqZTBEMlpVNXlic20tejkxZGh3?oc=5" target="_blank">Contraloría asegura que prevalecerá en disputa contra el municipio de Cataño - Metro Puerto Rico</a></td>
+            <td>Cataño</td>
+            <td>2026-05-16 07:21 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Cataño">
+            <td><span class="muni-tag">Cataño</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxOMWc5VjVaazVuclZzVnlkb1hTLTBQb1ZLdXhqbThTeXJWdkxKN0JxUy11T3BuRXc4WVFjUzlOWmVTc3NZQWNGbFp2aHJubmtBTkhnbEdjdm5wS2djeHhCdjdqVnl5ekxIVmwyVmhsSWkzNXlHODJhQ3dROVVFTEIyS3NUT1VOdFhWT0hYdU1tdGNnQjJoT0VQYmFGWXBBVmVB?oc=5" target="_blank">Oficina de Contralora confía en prevalecer en caso de Cataño - NotiCel</a></td>
+            <td>Cataño</td>
+            <td>2026-05-16 06:32 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://nelpr.com/2026/05/16/emiten-alerta-de-inundaciones-para-varios-municipios-79/" target="_blank">Emiten alerta de inundaciones para varios municipios</a></td>
+            <td>NELPR</td>
+            <td>2026-05-16 06:18 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Cataño">
+            <td><span class="muni-tag">Cataño</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://noticel.com/noticias/20260516/oficina-de-contralora-confia-en-prevalecer-en-caso-de-catano/?utm_source=rss&utm_medium=rss&utm_campaign=oficina-de-contralora-confia-en-prevalecer-en-caso-de-catano" target="_blank">Oficina de Contralora confía en prevalecer en caso de Cataño</a></td>
+            <td>NotiCel</td>
+            <td>2026-05-16 06:13 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Cataño">
+            <td><span class="muni-tag">Cataño</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiiwJBVV95cUxPQlgtTFBWR3RLR3FXZ3J5U2IzOTltR083NnBhSWplbWhlaExVNGVSQkV0RGo4Q200WDVBbEExT3V5eFpIVWdieWlJQlE3UmFPTWxVM3VZVF9fNTVpX3BqV2NKdVNQUG9ReDdETThQbEpjZWhIU1UyMnM1TXBncExrSnZHeW05U3FYQVA3MjNGa0VQTE0zcllLSy1hbzZ6dS1aTnhWTTE0ZGk5Xy1yNU0wQS1LVGYtT1pGUzhNcld5SGZuUzFiaUxuUHFMVzlzelA4bFdtWmNKaHVOMnh1OVJnRWcwQy1sY042T0VLWGNibGprempFLWFOVC1CRVAzQWIyTl80X1VaUWJrejg?oc=5" target="_blank">Municipio de Cataño denuncia que publicación de informe de la Contraloría en su contra es un “desafío directo al proceso judicial” - Noticias de Puerto Rico hoy</a></td>
+            <td>Cataño</td>
+            <td>2026-05-16 05:08 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://nelpr.com/2026/05/16/joven-reportado-desaparecido-fue-hallado-muerto-en-instalacion-de-la-aaa/" target="_blank">Joven reportado desaparecido fue hallado muerto en instalación de la AAA</a></td>
+            <td>NELPR</td>
+            <td>2026-05-16 04:31 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Naguabo">
+            <td><span class="muni-tag">Naguabo</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNSkd2UFhmandFMGRZai1iNU1PZ1IwME5YcTg4TVdaWmxMTVpmZF9mcGFkeTBqV0tiQjNSdXh5VnQ4SHFmOFp0OTRUQldaR3haLVdWUzdVVVJ3SjlVR2VCN21WZDN2NXNLSmcwcEdBNWxlZll3aW5CVGg4ZU1BY1hBZXZB?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
+            <td>FB - Naguabo</td>
+            <td>2026-05-16 04:26 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Cataño">
+            <td><span class="muni-tag">Cataño</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE42MHp0NzE1UzgtczJLal9VQjhYQ1VBSmVUb2sxM0plVVo5b19yYjdiclN6X0pjMzFjUmRUcU1CY0tZU1JDU19oZ0xuVDJXUjc1UFA1NFhRXzJpQ3RuQWdfRHNZdWRMemVPX0UtUU1XU0VfTUk?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a></td>
+            <td>FB - Cataño</td>
+            <td>2026-05-16 04:00 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxNbWFzNWx0dERfRm1YdzdsZkhyZzFVZkVoOThya21SWGhzOGxZb0ZPejl6eU1SeE9MRk1xUmZDc0dJdUhRVWVyTE5jTVlJaWNkN3pXM2RCUVJTVDZldlRpMXFkZDZ2VEZkdTVfREVlOU5IMUthWElWcHF3VDlWcTlreEJUQnl4ZTIyNHNNZW5HRl9SWVBUSWRjbW5iSEpyVV90bENYbm04V2QtS2V1YWlYMk02WE5ydTFDUlpEOTZJT1l2UlVuZFVSZWVyNjhISXkyWjc3TkdnUzdtRW1BOHBZVGtyZjhYVFE?oc=5" target="_blank">Cuerpo hallado en estación de bombas de la AAA pertenece a joven desaparecido en Carolina - Primera Hora</a></td>
+            <td>Primera Hora</td>
+            <td>2026-05-16 03:50 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Carolina">
+            <td><span class="muni-tag">Carolina</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxQYUpPbmdBT2t0MFVuNGVnNmVtYi1LQXJnQkhGOC1pOFM3R3BNM2EwdHVEQjlkUkdmdFktWEt0TlFCWjJ3QkhpSVhwQjhYc1d2MkZ2ZG90aDlFRXdMOF9LejZxbjRJZ29mTGF0UjIxQmFqbTFjM1hCVmNaMlk5WDFHN0VVX3FQTEF4YmdKVUhucDc5SW5oenk5SDAzbFVVX09iWlo2RmF6TkZfVENjY3Z6WVBiLVAtbFF3bmFUNkptR2UzeVBQUjRyVm52WHlNSXdub25NdGtjRmg0Q0VZOVRMXzR2Q0VKb2VwMndNLU56UWlkbEhibUc4?oc=5" target="_blank">Ciencias Forenses identifica cuerpo hallado en estación de bombas de la AAA como joven desaparecido en Carolina - Noticias de Puerto Rico hoy</a></td>
+            <td>El Nuevo Día (GN)</td>
+            <td>2026-05-16 03:40 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Cataño">
+            <td><span class="muni-tag">Cataño</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://esnoticiapr.com/refieren-a-justicia-auditoria-que-revela-que-catano-uso-propiedad-municipal-en-campana-politica/" target="_blank">Refieren a Justicia auditoria que revela que Cataño uso propiedad municipal en campaña política</a></td>
             <td>Es Noticia</td>
-            <td>2026-05-16 12:01 PM</td>
+            <td>2026-05-16 03:25 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://nelpr.com/2026/05/16/fuerte-temblor-de-magnitud-6-1-se-registra-en-el-caribe-oriental/" target="_blank">Fuerte temblor de magnitud 6.1 se registra en el Caribe oriental</a></td>
+            <td>NELPR</td>
+            <td>2026-05-16 03:02 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="San Juan">
+            <td><span class="muni-tag">San Juan</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://nelpr.com/2026/05/16/mujer-muere-atropellada-por-auto-10/" target="_blank">Mujer muere atropellada por auto</a></td>
+            <td>NELPR</td>
+            <td>2026-05-16 02:54 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Cataño">
+            <td><span class="muni-tag">Cataño</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPVGgydk8wcy1HQlNWcnZCd3J4dTFfTUVZLWpNZDFvaFJxYU5JT2d6Z0xiZ1Y2b1dhNV9mWThBeF9CLTl6VkFCTk12QjFXaVhmcjItWDhLQS14dmxyeDF4Y3ZYOV9zOGVoeVdQVW5fRGxPRjUwNDBkUG1WbWJaZ2hBVkx2bDlHSGY2T1dMaXJ4MGUtOXZwNlMwTUVvSXh0SHFtYjYxTkpEbmNqOU41UUY5ZElSazVSVFdVcUlLdHJjcw?oc=5" target="_blank">Informe de Contraloría revela presuntas irregularidades en el Municipio de Cataño - Metro Puerto Rico</a></td>
+            <td>Cataño</td>
+            <td>2026-05-16 02:43 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Vieques, Culebra">
+            <td><span class="muni-tag">Vieques, Culebra</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxQbm9LSUVVbm5TZXJORGRlWkVYMnphdVFidnVYSmdtQnhvcldWWmE2dThrcVhiZkZvTjZSNEctdkZTTGJ5b1hHSGx2aGZ1NDRvXzJtRnBaaWhRcnpfUXlFdHRmbHdEWkVqbkJuM05POENaRWdhQnV0d0JYTnRUV3NuY1FzQ1o0YW5aMm5KWExLU3hFZW1FSUkyaGdVVFhoQVNwNXUtSC1jalpWRDNyNUd0S3E2TVV5UkJ4dm54NmtPMWNqUkhpT0Z5TlJGR29mOTdfdlBUMjgxSWtBblRhYlpjVXNGMlRhNW5pbF9Ub3pOd9IB9AFBVV95cUxPQVFJXzBJS0YwZGxic01RWG96QjJYZ2h0dnloTlg1WDNFdTNXRWtiQ1lmSFVLemNHNFZmQWE0NGFRWEl5QmFfbXl4bEVBTVp2b3g2ME5hSjZXOGdCaktmUTJYT0tGcjczX2trbmJ6OW9SS0gtS1NPTk1aQ29mMG5QY211eUdDMnppZkhmX3JPTWo4b2diVE9UdExvS1NkeXBhdmlyc0luZVhBT2c1RWdBRjJqWkJfWlJpRUVmcVRHNWVCck1va3FjalB4b1dsTHRjZVdUZHlHMVU1cWtlX1ZGUXFNdVVfRS1MUm9kcDVJM0Z3MVBQ?oc=5" target="_blank">Alza en precio de la gasolina impacta con mayor fuerza a Vieques y Culebra - El Vocero de Puerto Rico</a></td>
+            <td>Vieques</td>
+            <td>2026-05-16 01:30 PM</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxPalNQTzJ5Ym1hUlNVVlBUdVFtX3pXUkw2LUNTVTZId182OXFyWEZkdDFSRUdPRUZwMUxxb2F3azRmY095OFZBZjBEV0VsREZQSW5oN1VpT0xMTXFkeG51UzFQenRLU3JmZWlXeERoWWNzOUF3ZnZaUWJCTnF4bWZJSXpoZ2ZUeUY3OUNGREQ0QXRNQUV0Ykg2OWZJYWYtOVBNX1l1V2Y5XzVJU04tWE1GY1NkNDlYMmh5U1J4NU85dVZCNlQtT3Jncmp3?oc=5" target="_blank">Sexagenario es arrollado mortalmente en Humacao - wapa.tv</a></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNNEpCY2FpNE5iX2ZTWjFJb2haeTZZazhtLWNUZzUwTFU4dzN3N3dTUloydGZKSnhVUFpVYXBDRmxQYmZmT0lFTGRFNzVuU2lqdkMxQm9mOE1uejd0czNfaWROTl9rQzctakhlUkFqa3NUM2VKWWdhMnRmMnZTdWJseTN4ay1pUGRuaG1VSzZmLWJ0eEFXUHU0eVpmamdpeS1TQXVsbdIBrAFBVV95cUxNczBPTHJlcWg2NHAycEpRS1Vpd3AtQjdxS0RyRks3OGZ0S3J5MXp6cGZ3TzhaRm4xRWl2VWNaWWc2UG1ubkVPT2pueXVfc1g3c3JkcDVWYm1TMjI4Wm13b3dOUk1aZm9ZZ21yMHlXdnpPMF9iQ3VydXJ0M2VxaVBDQ01hWjhLTFBUSURXYTUzMEVEZERXbTgwbUFWUVAxTXJOZWtNWmIyVVdkcE05?oc=5" target="_blank">Hombre de 63 años muere arrollado en Humacao - Telemundo Puerto Rico</a></td>
             <td>Humacao</td>
-            <td>2026-05-16 11:38 AM</td>
+            <td>2026-05-16 12:52 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Canóvanas">
+            <td><span class="muni-tag">Canóvanas</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPV3JoZlJxZXQ5TENoUVprTUpTWE1vdXlPUDgxN19mSlpwb1NBZXVEa2dzdlFvMDRKdjJwdmVaZldWX2VJbGk5dXlIRW5wd2F1aUgwdG1SUVpPbWIzTkFSOFZWUHEtR0FqUlRwYzlWMFRrQXJqOWlnbnpWUURzT2V3Y0tQZmVZb01qYzhFOWZmczVrdjZybUd5ekk4ODRKNlZUR2RDaG9yUkZKal9UcjBseGN2YmJhQmV6UnRWZHRhNGtLdWd30gHMAUFVX3lxTFBnNGN1Z1FTQTg5ZVJhY3JRZVgtTnM1c0ZhOHcwVV94U2N4b1AxMGRqU1dtVDRMbGNELV9rYTJnU0FtX1VwZkp6OXQtZjBqaEhnY2NIbkxoRjFZNHNQYUpJc0ozOS00YlhsUGdWR1pyVUQ1LUNTUlFwcTY3VlpSQlA0SWFfT2k5R1dscElRSEJSeld6WFd4M3F6UVBLeC0yM3U5YmJRbkF2enNXdjNtR2toaDUzc0xhSGRXUXU1NXpsZTZCb3R5aDE2bGdHWg?oc=5" target="_blank">Con expediente criminal hombre asesinado a plena mañana en Canóvanas - Telemundo Puerto Rico</a></td>
+            <td>Canóvanas</td>
+            <td>2026-05-16 12:44 PM</td>
+        </tr>
+        <tr class="article-row" data-municipios="Humacao">
+            <td><span class="muni-tag">Humacao</span></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxPalNQTzJ5Ym1hUlNVVlBUdVFtX3pXUkw2LUNTVTZId182OXFyWEZkdDFSRUdPRUZwMUxxb2F3azRmY095OFZBZjBEV0VsREZQSW5oN1VpT0xMTXFkeG51UzFQenRLU3JmZWlXeERoWWNzOUF3ZnZaUWJCTnF4bWZJSXpoZ2ZUeUY3OUNGREQ0QXRNQUV0Ykg2OWZJYWYtOVBNX1l1V2Y5XzVJU04tWE1GY1NkNDlYMmh5U1J4NU85dVZCNlQtT3Jncmp3?oc=5" target="_blank">Sexagenario es arrollado mortalmente en Humacao - wapa.tv</a></td>
+            <td>Humacao</td>
+            <td>2026-05-16 11:48 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Río Grande">
             <td><span class="muni-tag">Río Grande</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOb2dmMV9Ld2s2Y3N1UEZzWjFTNlFsOVNPZUxLWWROQi1FZGhMWnRlbURKYkV2Q2tXYzJETlpFMk1lZzZ1a0s4eXVaUGNBLS1HSF9SQVUxcHdGQ2lFckxtQUhHa1lVd0tjTkVwQk9RTjdTZU9TVFNGWV9EYVVNcGhMdEpXNFE5bXowSkUxS2ZwT2VLNDAzR2JxMkxDTzcwUnB5bE5SMVBEZVF4aWlCNDk2SGJqZw?oc=5" target="_blank">Río Grande celebrará jornada dedicada al talento artesanal y empresarial - Metro Puerto Rico</a></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOb2dmMV9Ld2s2Y3N1UEZzWjFTNlFsOVNPZUxLWWROQi1FZGhMWnRlbURKYkV2Q2tXYzJETlpFMk1lZzZ1a0s4eXVaUGNBLS1HSF9SQVUxcHdGQ2lFckxtQUhHa1lVd0tjTkVwQk9RTjdTZU9TVFNGWV9EYVVNcGhMdEpXNFE5bXowSkUxS2ZwT2VLNDAzR2JxMkxDTzcwUnB5bE5SMVBEZVF4aWlCNDk2SGJqZw?oc=5" target="_blank">Río Grande celebrará jornada dedicada al talento artesanal y empresarial - Metro Puerto Rico</a></td>
             <td>Río Grande</td>
-            <td>2026-05-16 11:37 AM</td>
+            <td>2026-05-16 11:42 AM</td>
         </tr>
         <tr class="article-row" data-municipios="Humacao">
             <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/16/identifican-a-peaton-arrollado-fatalmente-en-humacao/" target="_blank">Identifican a peatón arrollado fatalmente en Humacao</a></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://waloradio.com/2026/05/16/identifican-a-peaton-arrollado-fatalmente-en-humacao/" target="_blank">Identifican a peatón arrollado fatalmente en Humacao</a></td>
             <td>Walo Radio</td>
             <td>2026-05-16 11:34 AM</td>
         </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/seguridad/notas/fatal-accidente-en-humacao-hombre-muere-tras-ser-arrollado-en-cruce-peatonal/" target="_blank">Fatal accidente en Humacao: hombre muere tras ser arrollado en cruce peatonal</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-16 11:33 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxQYlhGUGJReTB5cllsS1czZGV4aWtyWFFvYnVJSVp5TmJQRkp0NUp2Z0dWdkxFdVRIVzVVbkFFZTd6LVY3NUlCQ1huNTZYeUQ2QjFOcUZNanpkZDZoZTBNNzFLRVRhT0Q4WHJQMHYwSlZOOHp4eGt4OGxLVHhHNzhSZjR3WWFCQ3ZNblJsV0tvQkUybUtHSWMzLWF0ZVpvUG1xZ1lNRVpLclA1MG4xbEN6R2xVTy1OUHdrVm9tZ21CTVY5MnVGV19OXzhtRkVqb1lXSC11ZGYwSFJnajhrSGtMeThSWXA2REtiX3hsaG1uV0dlb3FJWmdidm1kZw?oc=5" target="_blank">Informe de la Contralora encontró irregularidades en el uso de materiales, personal y fondos del Municipio de Cataño - Noticias de Puerto Rico hoy</a></td>
-            <td>Cataño</td>
-            <td>2026-05-16 09:11 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/locales/notas/mataron-el-proyecto-de-la-casa-dominicana-disputa-ensombrece-el-futuro-de-la-iniciativa-municipal-de-san-juan-para-la-comunidad-migrante/" target="_blank">Disputa por el control de la Casa Dominicana en San Juan ensombrece su futuro</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-16 08:31 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/noticias/gobierno/notas/informe-de-la-contralora-encontro-irregularidades-en-el-uso-de-materiales-personal-y-fondos-del-municipio-de-catano/" target="_blank">Informe de la Contralora encontró irregularidades en el uso de materiales, personal y fondos del Municipio de Cataño</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-16 08:31 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Cataño">
-            <td><span class="muni-tag">Cataño</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPVGgydk8wcy1HQlNWcnZCd3J4dTFfTUVZLWpNZDFvaFJxYU5JT2d6Z0xiZ1Y2b1dhNV9mWThBeF9CLTl6VkFCTk12QjFXaVhmcjItWDhLQS14dmxyeDF4Y3ZYOV9zOGVoeVdQVW5fRGxPRjUwNDBkUG1WbWJaZ2hBVkx2bDlHSGY2T1dMaXJ4MGUtOXZwNlMwTUVvSXh0SHFtYjYxTkpEbmNqOU41UUY5ZElSazVSVFdVcUlLdHJjcw?oc=5" target="_blank">Informe de Contraloría revela presuntas irregularidades en el Municipio de Cataño - Metro Puerto Rico</a></td>
-            <td>Cataño</td>
-            <td>2026-05-16 07:00 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://www.elnuevodia.com/negocios/turismo/notas/en-vilo-operaciones-de-puerto-base-de-importante-linea-de-cruceros-en-san-juan/" target="_blank">En vilo las operaciones de puerto base de importante línea de cruceros en San Juan</a></td>
-            <td>El Nuevo Día</td>
-            <td>2026-05-16 06:09 AM</td>
-        </tr>
         <tr class="article-row" data-municipios="Ceiba">
             <td><span class="muni-tag">Ceiba</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxNcFA5Ym5KbDBhNWlmTU5tbnEtemF2NTRYUEVTQkZXTWUxVkNxZHkybFZSaWYxSmUzdTFDUHNTMGhtS1lNYzNOUGJRd3BEaDFvVWhkRGMzb1V0OGNLdUFFdDlGb2ZaSUNlRFg1MVo5Rm41OTBKcmUxbUJuYk44SWRzaFR3dWxfVWlEenRObWVTR0s2Wi1fMjF2aGZYM2pSemFLWVZMYW85aG9zVzkwQ0FuWV8yOU03cW9DcHl4cTRZZEZsaGptWFlv?oc=5" target="_blank">Vota por Ceiba !!!🙏😘🥰 Conquistando Puerto Rico!!!😘🥰 Puerto Rico Gana!!!🥂😛❤️ - facebook.com</a></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxNcFA5Ym5KbDBhNWlmTU5tbnEtemF2NTRYUEVTQkZXTWUxVkNxZHkybFZSaWYxSmUzdTFDUHNTMGhtS1lNYzNOUGJRd3BEaDFvVWhkRGMzb1V0OGNLdUFFdDlGb2ZaSUNlRFg1MVo5Rm41OTBKcmUxbUJuYk44SWRzaFR3dWxfVWlEenRObWVTR0s2Wi1fMjF2aGZYM2pSemFLWVZMYW85aG9zVzkwQ0FuWV8yOU03cW9DcHl4cTRZZEZsaGptWFlv?oc=5" target="_blank">Vota por Ceiba !!!🙏😘🥰 Conquistando Puerto Rico!!!😘🥰 Puerto Rico Gana!!!🥂😛❤️ - facebook.com</a></td>
             <td>FB - Ceiba</td>
             <td>2026-05-16 01:52 AM</td>
         </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://nelpr.com/2026/05/15/se-ira-la-luz-sabado-y-domingo-19-municipios-en-lista/" target="_blank">Se irá la luz sábado y domingo; 19 municipios en lista</a></td>
-            <td>NELPR</td>
-            <td>2026-05-16 01:25 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://nelpr.com/2026/05/15/aurora-y-noah-encabezan-tendencia-de-nombres-de-bebes-en-puerto-rico/" target="_blank">Aurora y Noah encabezan tendencia de nombres de bebés en Puerto Rico</a></td>
-            <td>NELPR</td>
-            <td>2026-05-16 01:11 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://nelpr.com/2026/05/15/asaltan-gasolinera-y-roban-mas-de-8-mil-en-efectivo/" target="_blank">Asaltan gasolinera y roban más de $8 mil en efectivo</a></td>
-            <td>NELPR</td>
-            <td>2026-05-16 12:31 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="San Juan">
-            <td><span class="muni-tag">San Juan</span></td>
-            <td class="titular-cell"> <a href="https://nelpr.com/2026/05/15/emiten-alertas-de-inundaciones-para-varios-municipios-114/" target="_blank">Emiten alertas de inundaciones para varios municipios</a></td>
-            <td>NELPR</td>
-            <td>2026-05-16 12:00 AM</td>
-        </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"> <a href="https://www.carolina787.com/n/noticia-fake-de-aaa" target="_blank">Noticia Fake de AAA</a></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.carolina787.com/n/icf-identifica-cuerpo-hallado-en-tuberia-de-la-aaa-como-joven-desaparecido-en-carolina" target="_blank">ICF identifica cuerpo hallado en tubería de la AAA como joven desaparecido en Carolina</a></td>
             <td>Carolina787</td>
             <td>2026-05-16</td>
         </tr>
         <tr class="article-row" data-municipios="Carolina">
             <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"> <a href="https://www.carolina787.com/n/noticia-fake-de-dtop" target="_blank">Noticia Fake de DTOP</a></td>
+            <td class="titular-cell"><span class="badge-nuevo">NUEVO</span> <a href="https://www.carolina787.com/n/hombre-es-asesinado-en-villa-fontana-y-una-mujer-resulta-herida-hay-un-detenido" target="_blank">Hombre es asesinado en Villa Fontana y una mujer resulta herida; hay un detenido</a></td>
             <td>Carolina787</td>
             <td>2026-05-16</td>
-        </tr>
-        <tr class="article-row" data-municipios="Carolina">
-            <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"> <a href="https://www.carolina787.com/n/noticia-fake-de-luma" target="_blank">Noticia Fake de LUMA</a></td>
-            <td>Carolina787</td>
-            <td>2026-05-16</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQVTYwbVQ3c2t0SERZbURmaTdJbUJmeTlrcVdiTjRNQklTV3ZyVl9OZlRaN0IwbWNtb203NXJPZ2hmWERqcjQ2LThGdC02ZW5KS2ZBYV9GMzM3bnpGV2JPT09MUjAxNEZZd2VQdkl2Y1o1dFoxTWQ1eXA0b19SRWstNDJZdGM2d2U2SkR3ZEZ3?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
-            <td>FB - Naguabo</td>
-            <td>2026-05-15 11:29 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Loíza">
-            <td><span class="muni-tag">Loíza</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMDlUb1RjRFBQdmx1ekt5blRCa0ZtUWdYamotLTlEbGE5YWVzWWpaTHJieDRBOTlPUmo2ZkJ6VDB6aG1OTW15SUpTYnE3S0J2RzZGSTFaaF9ZZllHRDVqQlJPT3VqTnk1VEdYZU4wODZRTlJza2hzd2lsSm9ISWhMdnEwY3g0NWZxbFZ2N1dZekJFdXY1UkFBS2Fhenp1UGgwZ0Z2RjZXdVE2dEVEV1pLUmJXUGkyRXFyaHpRWVR2OS04bHhmSmpYdEpJVnRmSGtYdE1ySFB30gHeAUFVX3lxTE8zUkFHb2xpcVRmdjFibEdoN0VxZlRDQVBvLVN3ZTRXTU40bTY0Q1N1QUF4aEFjekludDdkbFdmTlhla0NjZ01uYWJmaEJ6enRNakZJWkoxRUx4cE1zLXIxaWRjTkRrRC1KdlFpRmpaX2hmQS1uSFVkTFNqQlBTMFB5eE9ZQlFMYVBFQklnVVd5UEN5LW5kb0tjT3ExS0RZRDlPNHpGWTZJel9OTk5fNVBpaDZTajBQYnM2RndHVnFkSVduQ0NiNFZKb0VadThxc1ZMS3NQQnBobGZWbzlhUQ?oc=5" target="_blank">Salvation Army lleva orientaciones, música y alimentos a comunidad en Loíza - Telemundo Puerto Rico</a></td>
-            <td>Loíza</td>
-            <td>2026-05-15 08:28 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Caguas">
-            <td><span class="muni-tag">Caguas</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxNYkZWTXBfYmZyS2ZMM2V1bXpSOXpvSjZqU0d5ZXREX1I3Rjdxd0xMQ3VNb1dsN2tEY3ptTklqcVRGVzhUcHNBcWZPRWltYTN0WWEwQmIySUt6dGZZNDUycVEtSnRsNk5yNUZpTmN5WHFEZWhQdWFNaTVBYVFJZmd5b19GemkwZDcyeno2dWZ1MmRrTHVkTDV3T013cGUxSHluXzNrUHNoUDlJSE1xM0FOWVY2ZC1lRVJQRDZveXdYNnJNTkhuazBLSnlnV0Jsd0xWcG85cndLcw?oc=5" target="_blank">Orgulloso no es suficiente para describir lo que siento. Hoy en Caguas, Puerto Rico, vi a mi nieto @kylediesel787 subir al ring con valentía, disciplina y corazón — y ganar por KO. Proud doesn’t even begin to describe it. Today in Caguas, Puerto Rico, I watch - facebook.com</a></td>
-            <td>FB - Caguas</td>
-            <td>2026-05-15 07:40 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Loíza">
-            <td><span class="muni-tag">Loíza</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE04XzZ5RzlwVE9KeUdJRzhOeWtyY3h5REoycGctODQtNlZQUUs5QV9ZR2N3UzlDcFMxVDRIbk9xMnhMb3RaMjg3b0VWZ0VwY3M3dnBNSl9UWml0RUdfS2hzQmh3R1k5c2hpOFo1a2hpTjBwb3lJaWthTQ?oc=5" target="_blank">Municipio de Loíza added a new photo. - Municipio de Loíza - facebook.com</a></td>
-            <td>FB - Loíza</td>
-            <td>2026-05-15 07:11 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/15/geigel-asegura-que-el-respaldo-de-lideres-lo-motivo-a-aspirar-a-la-presidencia-del-pnp/" target="_blank">Geigel asegura que el respaldo de líderes lo motivó a aspirar a la presidencia del PNP</a></td>
-            <td>Walo Radio</td>
-            <td>2026-05-15 06:13 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Luquillo">
-            <td><span class="muni-tag">Luquillo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBMMXZwcF9Yd002WjQ4bEIwT19KMkNyOUlKdk1GVGpWY0JYMURxREVkVW4yUUtsMnlER1h4MzRWMkxMeno0SFNBV2dHMWwwZlJIN0NZaHlOUF9GeGRvT1AzX2xENS1lYTk0LXBB?oc=5" target="_blank">Municipio de Luquillo - facebook.com</a></td>
-            <td>FB - Luquillo</td>
-            <td>2026-05-15 06:13 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/15/acusan-a-tres-personas-por-apropiarse-de-mas-de-23-mil-mediante-documentos-falsificados/" target="_blank">Acusan a tres personas por apropiarse de más de $23 mil mediante documentos falsificados</a></td>
-            <td>Walo Radio</td>
-            <td>2026-05-15 05:12 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNRW1NSm1Qb1dBaE1jU0RPM2hDcGNLVExnS1FZS0VGb2NObEhkOEIwMkZrRVhnNXVzSEFLVnVZemRzUUlTOTF5MThCcWZ1UEx5ZWhSYkxMV3ZCamVmV1lVRnBkOEhBTXRDWTdnOWxvNUF3d1pxQmVUYXJOOWVVQ3luZ0R3?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
-            <td>FB - Naguabo</td>
-            <td>2026-05-15 03:37 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Culebra">
-            <td><span class="muni-tag">Culebra</span></td>
-            <td class="titular-cell"> <a href="https://radioisla.tv/entregan-vehiculo-a-personal-de-adfan-en-culebra1/?utm_source=rss&utm_medium=rss&utm_campaign=entregan-vehiculo-a-personal-de-adfan-en-culebra1&utm_source=rss&utm_medium=rss&utm_campaign=entregan-vehiculo-a-personal-de-adfan-en-culebra1" target="_blank">Entregan vehículo a personal de ADFAN en Culebra</a></td>
-            <td>Radio Isla</td>
-            <td>2026-05-15 03:35 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Naguabo">
-            <td><span class="muni-tag">Naguabo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNR0ZCXzhiUS1TUnAzN01aZkNZMG0waUhUWTZnbHFNeGNiYUlJd2YwczBpcmlDalU2Y3lNajNBeFVJZGVfcEpPUlI2ZDEySk9xSTZ6NXJzeTRZYkVNY2ZxTXI0WW9SMHhpQmtTbFgtbXVLVzBfYW5OVzBGUDZhdHJnRkpn?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a></td>
-            <td>FB - Naguabo</td>
-            <td>2026-05-15 02:55 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Caguas">
-            <td><span class="muni-tag">Caguas</span></td>
-            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/15/juez-determina-causa-para-arresto-contra-joven-sospechoso-de-crimenes-violentos-en-juncos/" target="_blank">Juez determina causa para arresto contra joven sospechoso de crímenes violentos en Juncos</a></td>
-            <td>Walo Radio</td>
-            <td>2026-05-15 02:37 PM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Humacao">
-            <td><span class="muni-tag">Humacao</span></td>
-            <td class="titular-cell"> <a href="https://waloradio.com/2026/05/15/humacao-celebrara-exposicion-artistica-dedicada-a-la-memoria-y-la-identidad-de-su-gente/" target="_blank">Humacao celebrará exposición artística dedicada a la memoria y la identidad de su gente</a></td>
-            <td>Walo Radio</td>
-            <td>2026-05-15 11:40 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Caguas">
-            <td><span class="muni-tag">Caguas</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxOclg3MjlfRnZmb1hyajZ1ek53Y0lPSVFBNmVMXzh5Z1pJMjBpZG9qLWxlcjJKU0RGbGI2Q2pUUTROQ0ZydDhlRHZmd3VITFhKbXVmMmItMnUyM0xCZjF0VEhvT3dvelR3akRuYXlfN0gwcFJFVExXRE5yNU1oTEZhZA?oc=5" target="_blank">Diócesis de Caguas, Puerto Rico - Página Oficial - facebook.com</a></td>
-            <td>FB - Caguas</td>
-            <td>2026-05-15 06:50 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Fajardo">
-            <td><span class="muni-tag">Fajardo</span></td>
-            <td class="titular-cell"> <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQQ0lsYTc2aTNKVVlDbllVOVEwRmxneHhTZGRaSjNoaXVLaWNlWG9tUDhnLTcyZjFzb2w1bThoQnlyU3BxWFQxRmJKM0dDbldDTUZPc3lYdTFLemNPT0g1Sll1OUtsLUFKNXBLODJ4UnVhQTFyYU9paDVrXzFFOEI3NURsWHJjRzZRY2RHdzl6RnAzWWpIclYtZjR2WmFuYXBwWTV3TnQySVpjbjY3c3locmtUMGFVaWNpcy1DZNIBxAFBVV95cUxQRTRUQkZ4aDRUOU43SHpTeklURngxUVloYjYzLXJrQlFiZV9wZll4Q3pZZDUxX1BhU201cHZJR2l6bmtOTmRoUk5kUUNDZzVHSklTUlZHbHh1T0tmMGZLd2J2Vl82NUZiM3o1NWl4UlZWMTVnX2NwYVJLRmFUUWZPOE9fQXdzUUJHdHltSU9pUVkzZHpfZk52STRBa1Y4VmluZFpGMWFDNm9uekJYeDFJaUtvWVliMDRLRThvU1Byb0pEbU44?oc=5" target="_blank">Investigan muerte sin causa determinada de un joven en Fajardo - Telemundo Puerto Rico</a></td>
-            <td>Fajardo</td>
-            <td>2026-05-15 12:54 AM</td>
-        </tr>
-        <tr class="article-row" data-municipios="Carolina">
-            <td><span class="muni-tag">Carolina</span></td>
-            <td class="titular-cell"> <a href="https://www.carolina787.com/n/policia-alerta-sobre-casos-de-clonacion-de-tarjetas-con-skimmers-en-varios-municipios-de-puerto-rico" target="_blank">Policía alerta sobre casos de clonación de tarjetas con skimmers en varios municipios de Puerto Rico</a></td>
-            <td>Carolina787</td>
-            <td>2026-05-15</td>
         </tr>
             </tbody>
         </table>
@@ -800,7 +818,7 @@ tr:hover { background: #fafafa; }
 </div>
 
 <div class="footer">
-    Generado por Hermes Agent — 2026-05-16 08:34:19 AM
+    Generado por Hermes Agent — 2026-05-17 05:07:31 AM
 </div>
 
 <script>
