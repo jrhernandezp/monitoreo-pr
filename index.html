@@ -10,30 +10,30 @@
 <link rel="icon" type="image/jpeg" href="logo-observador.jpg">
 <style>
 :root {
-    --bg: #0f1117;
-    --surface: #161822;
-    --surface2: #1c1f2e;
-    --border: #2a2d3e;
-    --text: #e4e6f0;
-    --text-dim: #8b8fa3;
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --surface2: #f0f2f5;
+    --border: #e0e0e0;
+    --text: #1a1a2e;
+    --text-dim: #6b7280;
     --accent: #4f8cff;
     --accent2: #6c5ce7;
     --red: #ff4757;
     --orange: #ffa502;
     --green: #2ed573;
     --yellow: #ffd32a;
-    --header-bg: linear-gradient(135deg, #1a1d2e 0%, #161822 100%);
+    --header-bg: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        --bg: #f0f2f5;
-        --surface: #ffffff;
-        --surface2: #f8f9fa;
-        --border: #e0e0e0;
-        --text: #1a1a2e;
-        --text-dim: #666;
-        --header-bg: linear-gradient(135deg, #1a237e, #283593);
+        --bg: #0f1117;
+        --surface: #161822;
+        --surface2: #1c1f2e;
+        --border: #2a2d3e;
+        --text: #e4e6f0;
+        --text-dim: #8b8fa3;
+        --header-bg: linear-gradient(135deg, #1a1d2e 0%, #161822 100%);
     }
 }
 
@@ -79,14 +79,14 @@ body {
     flex-wrap: wrap;
 }
 .stat-box {
-    background: rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.15);
     padding: 8px 14px;
     border-radius: 8px;
     text-align: center;
     min-width: 70px;
 }
 .stat-box .num { font-size: 18px; font-weight: bold; }
-.stat-box .label { font-size: 10px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.5px; }
+.stat-box .label { font-size: 10px; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.5px; }
 
 /* === SEARCH === */
 .search-bar {
@@ -155,7 +155,7 @@ body {
     transition: all 0.2s;
     border: 2px solid transparent;
 }
-.muni-card:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+.muni-card:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
 .muni-card.active { border-color: var(--accent); }
 .muni-card.active .muni-count { background: var(--accent); color: white; }
 .muni-card.inactive { opacity: 0.4; }
@@ -317,15 +317,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-18 01:35:48 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-18 02:55:09 PM</span></div>
         </div>
     </div>
     <div class="stats">
         <div class="stat-box"><div class="num">28</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">19</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">8</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">64/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-18 01:35:48 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-18 02:55:09 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -341,25 +341,25 @@ tr:hover { background: var(--surface2); }
         <h2>🔴 Breaking News</h2>
         
         <div class="breaking-item">
-            <span class="time">ahora mismo</span> —
+            <span class="time">hace 1min</span> —
             <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/exhumaran-200-cadaveres-en-trujillo-alto-asi-lucen-los-nichos-del-cementerio-municipal/" target="_blank">Exhumarán 200 cadáveres en Trujillo Alto: así lucen los nichos del cementerio municipal</a>
             <span style="opacity:0.6"> [Trujillo Alto]</span>
         </div>
         
         <div class="breaking-item">
-            <span class="time">hace 2h</span> —
+            <span class="time">hace 3h</span> —
             <a href="https://radioisla.tv/operativo-federal-deja-23-ordenes-de-arresto-por-asesinatos-en-carolina-y-santurce/?utm_source=rss&utm_medium=rss&utm_campaign=operativo-federal-deja-23-ordenes-de-arresto-por-asesinatos-en-carolina-y-santurce&utm_source=rss&utm_medium=rss&utm_campaign=operativo-federal-deja-23-ordenes-de-arresto-por-asesinatos-en-carolina-y-santurce" target="_blank">Operativo federal deja 23 órdenes de arresto por asesinatos en Carolina y Santurce</a>
             <span style="opacity:0.6"> [Carolina]</span>
         </div>
         
         <div class="breaking-item">
-            <span class="time">hace 3h</span> —
+            <span class="time">hace 4h</span> —
             <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxPbk9QeFh4Rm5LajN1cHhtTnZfMjZyZTdVVHdCVk5ua09vdlFUaDN0cHVQTG1UNkJDX3k0QjJJQVk3X2FOOGc1dVppNmwzUFBuSXZyMDhVOE5UTHN2SHlvRm9MbGJCbWZXTFhWcmsxVV9md3l5THBldzNOekgzSnJ0am5Fb3ZCeHd5OXMxUlhTUk4zV2RhZzg4TGxSNHh1VnlvMzZ0NW1TWUdWMlRkcHl2VnBicHFXTC1jSGdtOEZjbkQtYzRhYk01Qk1IZjFwM0JZQ1pxcjJGeGhGZVA5NUVoUGlpbXR1SzkzbkRHZA?oc=5" target="_blank">Operativo federal contra ganga vinculada al asesinato de cinco hombres en Carolina y San Juan - Primera Hora</a>
             <span style="opacity:0.6"> [San Juan, Carolina]</span>
         </div>
         
         <div class="breaking-item">
-            <span class="time">hace 19h</span> —
+            <span class="time">hace 20h</span> —
             <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxQRTg0ZEZGVzY5VjBic1VMSi1kWWdiOXpzZEJaNzVOWXE3V2NqQmFuRjUzSUw4UVcxcnFCTmVDV2xKd2tvZ1NXWjYzaHJzb2hYTFhkQ2lZY1liODZFenBtWmlFVlItdUVZTXNnQjJmTVpGcFhCLV9PQVJpanNhRV82aHU2LXJKNUV5dXU5bnF5S19TSV8wanlVVmVmbUs0RGU0YkhkSzhUVGVUeEtneDI4Y05EZzJqT0doVjQtVTUxSEl0WlhUenMtMHNjVGxob04yS2pBRFNMUGJXMnBTakkzWGlVQkt1cm1jdEE?oc=5" target="_blank">Aviso de inundación emitido el 17 de mayo a las 02:00 PM hasta el 17 de mayo a las 06:00 PM por NWS San Juan PR - El Vocero de Puerto Rico</a>
             <span style="opacity:0.6"> [San Juan]</span>
         </div>
@@ -380,17 +380,17 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">7</div>
+            <div class="muni-count">8</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
@@ -430,12 +430,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">4</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">7</div>
+            <div class="muni-count">6</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
@@ -467,10 +467,40 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="Humacao" data-titular="Desde Humacao para el mundo: conoce la historia de Isamar Elysha y el lanzamiento de su primer sencillo “Seres Como Tú”">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/05/18/desde-humacao-para-el-mundo-conoce-la-historia-de-isamar-elysha-y-el-lanzamiento-de-su-primer-sencillo-seres-como-tu/" target="_blank">Desde Humacao para el mundo: conoce la historia de Isamar Elysha y el lanzamiento de su primer sencillo “Seres Como Tú”</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-05-18 18:43">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Humacao apuesta a la tecnología para reforzar seguridad municipal">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://waloradio.com/2026/05/18/humacao-apuesta-a-la-tecnologia-para-reforzar-seguridad-municipal/" target="_blank">Humacao apuesta a la tecnología para reforzar seguridad municipal</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-05-18 17:57">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Arrestan a dos hombres en Carolina con guagua que fue reportada como hurtada en Juana Díaz">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/arrestan-a-dos-hombres-en-carolina-con-guagua-que-fue-reportada-como-hurtada-en-juana-diaz/" target="_blank">Arrestan a dos hombres en Carolina con guagua que fue reportada como hurtada en Juana Díaz</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-05-18 17:38">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="San Juan" data-titular="Anciano se privó de la vida; fue identificado">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://nelpr.com/2026/05/18/anciano-se-privo-de-la-vida-fue-identificado-2/" target="_blank">Anciano se privó de la vida; fue identificado</a>
                     </td>
                     <td>NELPR</td>
@@ -480,7 +510,7 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="San Juan" data-titular="A días del inicio de la temporada, conoce la lista de nombres de huracanes 2026">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://nelpr.com/2026/05/18/a-dias-del-inicio-de-la-temporada-conoce-la-lista-de-nombres-de-huracanes-2026/" target="_blank">A días del inicio de la temporada, conoce la lista de nombres de huracanes 2026</a>
                     </td>
                     <td>NELPR</td>
@@ -490,7 +520,7 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="San Juan" data-titular="Liberty nombra a nuevo gerente general en Puerto Rico">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://nelpr.com/2026/05/18/liberty-nombra-a-nuevo-gerente-general-en-puerto-rico/" target="_blank">Liberty nombra a nuevo gerente general en Puerto Rico</a>
                     </td>
                     <td>NELPR</td>
@@ -500,7 +530,7 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="San Juan" data-titular="Joven de 24 años se privó de la vida; fue identificado">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://nelpr.com/2026/05/18/joven-de-24-anos-se-privo-de-la-vida-fue-identificado/" target="_blank">Joven de 24 años se privó de la vida; fue identificado</a>
                     </td>
                     <td>NELPR</td>
@@ -510,7 +540,7 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Humacao" data-titular="Denuncia falta de comunicación con el Departamento de la Familia por caso de envejeciente en hogar de cuidado prolongado">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://waloradio.com/2026/05/18/denuncia-falta-de-comunicacion-con-el-departamento-de-la-familia-por-caso-de-envejeciente-en-hogar-de-cuidado-prolongado/" target="_blank">Denuncia falta de comunicación con el Departamento de la Familia por caso de envejeciente en hogar de cuidado prolongado</a>
                     </td>
                     <td>Walo Radio</td>
@@ -520,7 +550,7 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Carolina" data-titular="Seis equipos completan barridas y avanzan a las finales de sección">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://waloradio.com/2026/05/18/seis-equipos-completan-barridas-y-avanzan-a-las-finales-de-seccion/" target="_blank">Seis equipos completan barridas y avanzan a las finales de sección</a>
                     </td>
                     <td>Walo Radio</td>
@@ -530,41 +560,11 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Humacao" data-titular="Tropa 132 del Área Este abre convocatoria para futuras líderes desde los 6 años">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://waloradio.com/2026/05/18/tropa-132-del-area-este-abre-convocatoria-para-futuras-lideres-desde-los-6-anos/" target="_blank">Tropa 132 del Área Este abre convocatoria para futuras líderes desde los 6 años</a>
                     </td>
                     <td>Walo Radio</td>
                     <td class="time-ago" data-date="2026-05-18 15:36">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan,Trujillo Alto" data-titular="Autoridades buscan fugitivo que evadió arresto de la DEA en operativo ‘La última serenata’">
-                    <td><span class="muni-tag">San Juan, Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://noticel.com/noticias/20260518/autoridades-buscan-fugitivo-que-evadio-arresto-de-la-dea-en-operativo-la-ultima-serenata/?utm_source=rss&utm_medium=rss&utm_campaign=autoridades-buscan-fugitivo-que-evadio-arresto-de-la-dea-en-operativo-la-ultima-serenata" target="_blank">Autoridades buscan fugitivo que evadió arresto de la DEA en operativo ‘La última serenata’</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-05-18 14:39">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Culebra" data-titular="Temblor de 4.2 se registra al norte de Culebra - Primera Hora">
-                    <td><span class="muni-tag">Culebra</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNVms5aWNEeDVvTnFZeXhodnUwWVhZRDlROV96amgtcWVacUdVZHFvVXpxZnJ3LVhMSVgyOHpBelVCWVhqV2k5RE1rNmt6N1h2aDNkVzl5TnlnWWZfWFV0OGZRcjNIVGNtTlhEVmt4YTRpeGZsYUN0eFdkNHptNy16czZsc0RYQnJwS2ZERWZnMTV4T296Z2ZLQk1ZeVdLczhWelhhd1VfLVRXZUNi?oc=5" target="_blank">Temblor de 4.2 se registra al norte de Culebra - Primera Hora</a>
-                    </td>
-                    <td>Culebra</td>
-                    <td class="time-ago" data-date="2026-05-18 14:10">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFBDS25xdEV0Ym9XaEltZkljVHNVdU1RcmN4YVdHM1FOV3pSU29Md25pYkJUWFVRUml5R21ZaXJkTC1OUlZZVVFrZGtfOEktOUFYRk10aG5XLTFOdDlScVUybGUxdWh2VU1fc2EtSWRHX1FNcjQ?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
-                    </td>
-                    <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-05-18 13:57">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Exhumarán 200 cadáveres en Trujillo Alto: así lucen los nichos del cementerio municipal">
@@ -574,17 +574,27 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/exhumaran-200-cadaveres-en-trujillo-alto-asi-lucen-los-nichos-del-cementerio-municipal/" target="_blank">Exhumarán 200 cadáveres en Trujillo Alto: así lucen los nichos del cementerio municipal</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-18 13:35">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-18 14:54">hace 1min</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                <tr class="article-row" data-municipios="San Juan,Trujillo Alto" data-titular="Autoridades buscan fugitivo que evadió arresto de la DEA en operativo ‘La última serenata’">
+                    <td><span class="muni-tag">San Juan, Trujillo Alto</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdU1kNWVpaHBXUktJYmdkRHFWVUJaZFpJRE9EcjEtX0JmZUc4Vl9TWjZ6RXhWNkU2WENJQllYNi02Ym94ZlRGa3ZqcGszb0dCX1c0TEozVGlTWU54Z3hmcy0wS1ctQ3NIYjQ3VERrODFGeFFVUC1rZUF5cUNsb3F4T2RUbnVXY01wczVF?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
+                        
+                        <a href="https://noticel.com/noticias/20260518/autoridades-buscan-fugitivo-que-evadio-arresto-de-la-dea-en-operativo-la-ultima-serenata/?utm_source=rss&utm_medium=rss&utm_campaign=autoridades-buscan-fugitivo-que-evadio-arresto-de-la-dea-en-operativo-la-ultima-serenata" target="_blank">Autoridades buscan fugitivo que evadió arresto de la DEA en operativo ‘La última serenata’</a>
                     </td>
-                    <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-05-18 13:08">hace 27min</td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-05-18 14:39">hace 16min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Culebra" data-titular="Temblor de 4.2 se registra al norte de Culebra - Primera Hora">
+                    <td><span class="muni-tag">Culebra</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNVms5aWNEeDVvTnFZeXhodnUwWVhZRDlROV96amgtcWVacUdVZHFvVXpxZnJ3LVhMSVgyOHpBelVCWVhqV2k5RE1rNmt6N1h2aDNkVzl5TnlnWWZfWFV0OGZRcjNIVGNtTlhEVmt4YTRpeGZsYUN0eFdkNHptNy16czZsc0RYQnJwS2ZERWZnMTV4T296Z2ZLQk1ZeVdLczhWelhhd1VfLVRXZUNi?oc=5" target="_blank">Temblor de 4.2 se registra al norte de Culebra - Primera Hora</a>
+                    </td>
+                    <td>Culebra</td>
+                    <td class="time-ago" data-date="2026-05-18 14:10">hace 45min</td>
                 </tr>
                 
                 
@@ -593,41 +603,41 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Cataño" data-titular="“Todo salió a la luz”: PPD en Cataño exige cargos tras informe del Contralor">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://radioisla.tv/todo-salio-a-la-luz-ppd-en-catano-exige-cargos-tras-informe-del-contralor/?utm_source=rss&utm_medium=rss&utm_campaign=todo-salio-a-la-luz-ppd-en-catano-exige-cargos-tras-informe-del-contralor&utm_source=rss&utm_medium=rss&utm_campaign=todo-salio-a-la-luz-ppd-en-catano-exige-cargos-tras-informe-del-contralor" target="_blank">“Todo salió a la luz”: PPD en Cataño exige cargos tras informe del Contralor</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-05-18 12:20">hace 1h</td>
+                    <td class="time-ago" data-date="2026-05-18 12:20">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Operativo federal deja 23 órdenes de arresto por asesinatos en Carolina y Santurce">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://radioisla.tv/operativo-federal-deja-23-ordenes-de-arresto-por-asesinatos-en-carolina-y-santurce/?utm_source=rss&utm_medium=rss&utm_campaign=operativo-federal-deja-23-ordenes-de-arresto-por-asesinatos-en-carolina-y-santurce&utm_source=rss&utm_medium=rss&utm_campaign=operativo-federal-deja-23-ordenes-de-arresto-por-asesinatos-en-carolina-y-santurce" target="_blank">Operativo federal deja 23 órdenes de arresto por asesinatos en Carolina y Santurce</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-05-18 11:29">hace 2h</td>
+                    <td class="time-ago" data-date="2026-05-18 11:29">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Activan venta sin IVU para preparación de la temporada de huracanes">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://radioisla.tv/activan-venta-sin-ivu-para-preparacion-de-la-temporada-de-huracanes/?utm_source=rss&utm_medium=rss&utm_campaign=activan-venta-sin-ivu-para-preparacion-de-la-temporada-de-huracanes&utm_source=rss&utm_medium=rss&utm_campaign=activan-venta-sin-ivu-para-preparacion-de-la-temporada-de-huracanes" target="_blank">Activan venta sin IVU para preparación de la temporada de huracanes</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-05-18 10:26">hace 3h</td>
+                    <td class="time-ago" data-date="2026-05-18 10:26">hace 4h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan,Carolina" data-titular="Operativo federal contra ganga vinculada al asesinato de cinco hombres en Carolina y San Juan - Primera Hora">
                     <td><span class="muni-tag">San Juan, Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxPbk9QeFh4Rm5LajN1cHhtTnZfMjZyZTdVVHdCVk5ua09vdlFUaDN0cHVQTG1UNkJDX3k0QjJJQVk3X2FOOGc1dVppNmwzUFBuSXZyMDhVOE5UTHN2SHlvRm9MbGJCbWZXTFhWcmsxVV9md3l5THBldzNOekgzSnJ0am5Fb3ZCeHd5OXMxUlhTUk4zV2RhZzg4TGxSNHh1VnlvMzZ0NW1TWUdWMlRkcHl2VnBicHFXTC1jSGdtOEZjbkQtYzRhYk01Qk1IZjFwM0JZQ1pxcjJGeGhGZVA5NUVoUGlpbXR1SzkzbkRHZA?oc=5" target="_blank">Operativo federal contra ganga vinculada al asesinato de cinco hombres en Carolina y San Juan - Primera Hora</a>
                     </td>
                     <td>Primera Hora</td>
-                    <td class="time-ago" data-date="2026-05-18 10:18">hace 3h</td>
+                    <td class="time-ago" data-date="2026-05-18 10:18">hace 4h</td>
                 </tr>
                 
                 
@@ -640,27 +650,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbjRnc19UZjRnS0Nyb1YxY2g2U1haSHg2OXJLZ2RHRzNhNHFNUU1JZTdsZXI2U3FpdGRxU1BhXzh2TjRFVy1CMDItdVFkVG9DQkY3WWVCVkZ1RmltSUpNdnJvdmxGa0NFaE0wOHZ2N2NvXzNlc2t3bGhMQnZMZ2RxVVZINTNrUTdacG9hUFNyekFUREpTZThkbWduTzQ5YTJqd1Vlby02S3JqZWdxZ1RwRlU2dG9OV19f0gHAAUFVX3lxTE9sWXJfN3hGN3JQT2w0N1VPZHQtUEw4cUVQelpiMVM2bHZ3QjZtLTdPUUxram5SU1MtSG1zYllUWVZkdHJmWVJ2VnBrWV9CSFBvYnpTNlc4STRfa0ZoeG8zNjR5X2dDeTgxZlZFNkRucXp5Q2pRN052WGFveG1PbG1WTTYxaEJXVzctOVhFNUFkTXZ3ZG1RS29fSjlLa2lfRzNSd3hsMjFCdTZwNWtkMU5zWUU5Ukl1dUZIZUt3XzkxMw?oc=5" target="_blank">Persona resulta herida tras accidente con jet ski en Cataño - Telemundo Puerto Rico</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-05-17 19:52">hace 17h</td>
+                    <td class="time-ago" data-date="2026-05-17 19:52">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Aviso de inundación emitido el 17 de mayo a las 02:00 PM hasta el 17 de mayo a las 06:00 PM por NWS San Juan PR - El Vocero de Puerto Rico">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxQRTg0ZEZGVzY5VjBic1VMSi1kWWdiOXpzZEJaNzVOWXE3V2NqQmFuRjUzSUw4UVcxcnFCTmVDV2xKd2tvZ1NXWjYzaHJzb2hYTFhkQ2lZY1liODZFenBtWmlFVlItdUVZTXNnQjJmTVpGcFhCLV9PQVJpanNhRV82aHU2LXJKNUV5dXU5bnF5S19TSV8wanlVVmVmbUs0RGU0YkhkSzhUVGVUeEtneDI4Y05EZzJqT0doVjQtVTUxSEl0WlhUenMtMHNjVGxob04yS2pBRFNMUGJXMnBTakkzWGlVQkt1cm1jdEE?oc=5" target="_blank">Aviso de inundación emitido el 17 de mayo a las 02:00 PM hasta el 17 de mayo a las 06:00 PM por NWS San Juan PR - El Vocero de Puerto Rico</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-05-17 18:30">hace 19h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="#AtletismoPuertoRico #coquiinternationalcup #caguas #puertorico #atletismoPR - facebook.com">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxPOENfMXlFYl95M2p1TVhLSWExYkZwSmd4RS1VME5YNng1S0IycUJSb3ZLWjlhZmNuVHUxT2dYMjRGZnpQQ2hfbjRaejNOclJBcHo1NVVjVEZPTGprZE54UDktTUd2UUU3NXBWQ0l3clQxQy14MUI3dTVuYmFnZFVCd210d1d3ZE9fTjdNaThud193c2VZSmQ4X2I2SDNZeUpBamNEbW5CdVpWdVdScmFQYWNBTld0d2xLbmJiNk92T2hSR0FoWTMyV25YWG5SeWl4dWFRa05OMlp3UQ?oc=5" target="_blank">#AtletismoPuertoRico #coquiinternationalcup #caguas #puertorico #atletismoPR - facebook.com</a>
-                    </td>
-                    <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-05-17 16:32">hace 21h</td>
+                    <td class="time-ago" data-date="2026-05-17 18:30">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba" data-titular="Semana de la Policía Municipal de Puerto Rico La Administración Municipal de Ceiba y nuestro alcalde, Samuel Rivera Báez, felicitan con profundo orgullo y agradecimiento a todos los hombres y mujeres que forman parte de la Policía Municipal de Ceiba, li - facebook.com">
@@ -670,27 +670,27 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxNWG03bWdSVEwydkgwR3pCWWlzbndPaUxmVnNzeWdHZWxQWkcxLUhDYjBTY2J4WGwwejhtY09Bd0xYQkZJbnZEMWFiMk1DN0s5VWFBMnk3VnJ5R3gwbmJQa1FTd2hGR3BkZHR0cUNoX2YyYnhCOEh1UUU4MTZ4SUJHZ19NRVFvMXNrSm11U1RzcjU4cFAxLW1RYjlSSGZIMnZLckdtU2Q0RHVUYnVYdGpCMU0zYXc1ZXJ2X2JHUmZLVUw2ODc5SzlYdTdsRjBuZHd3Y2NOMHhTdzlKZUkzU0lTUURKdjc2Nnpzbnlz?oc=5" target="_blank">Semana de la Policía Municipal de Puerto Rico La Administración Municipal de Ceiba y nuestro alcalde, Samuel Rivera Báez, felicitan con profundo orgullo y agradecimiento a todos los hombres y mujeres que forman parte de la Policía Municipal de Ceiba, li - facebook.com</a>
                     </td>
                     <td>FB - Ceiba</td>
-                    <td class="time-ago" data-date="2026-05-17 16:29">hace 21h</td>
+                    <td class="time-ago" data-date="2026-05-17 16:29">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Diócesis de Caguas, Puerto Rico - Página Oficial - facebook.com">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPZEg0X1RfamFabFE3U051MTNMY1NJRDR1OGhvWS1SNzlKQWpSNXNQSXg0U0laUXR4emhJbElhUGk2REt6dlAwYnZLYnRQSGVsbDNVbXB2bzFIYTRTS2dVcWdpSDlXQ1ZzaUxaRldPNVFIaGlheW1mSFZJUEswNlV2Ug?oc=5" target="_blank">Diócesis de Caguas, Puerto Rico - Página Oficial - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-05-17 16:20">hace 21h</td>
+                    <td class="time-ago" data-date="2026-05-17 16:20">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Asesinan joven de 25 años en Cataño - Primera Hora">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxOMkhfN25xUE9sUUVMUEwwMFJmdnd5eG9uVVhKVENJZlB0bUNVWVlHVTN1RXNabzRNa1Fxd3E2aGRxVU9vbjFKVHpKa0ZmZDhKNUdIaXVQVzRzem9fWExzaXNSUlZrd1VaNWZpVHFCTjRzVTJTc3NDa3lOUWdUaG82em5hZGR2dmM2S1BNWmwxZUF0eVpIbmtCa2pCS1gwQlU?oc=5" target="_blank">Asesinan joven de 25 años en Cataño - Primera Hora</a>
                     </td>
                     <td>Primera Hora</td>
-                    <td class="time-ago" data-date="2026-05-17 14:32">hace 23h</td>
+                    <td class="time-ago" data-date="2026-05-17 14:32">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Representante exige acción inmediata tras hallazgos de la Contralora en Cataño - Metro Puerto Rico">
@@ -908,7 +908,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-18 01:35:48 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-18 02:55:09 PM<br>
     Actualización automática cada 30 min
 </div>
 
