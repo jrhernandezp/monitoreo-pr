@@ -1,7 +1,5 @@
 """RSS feed sources for municipal news monitoring."""
 import feedparser
-import urllib.request
-import io
 import re
 import sys
 from datetime import datetime, timedelta
@@ -234,14 +232,7 @@ def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10) -> Tuple[
     Status is 'ok' for success or the error message for failure.
     """
     try:
-        # Fetch with timeout to prevent hanging on slow feeds
-        try:
-            req = urllib.request.Request(feed_url, headers={'User-Agent': 'Mozilla/5.0'})
-            with urllib.request.urlopen(req, timeout=25) as resp:
-                feed_data = resp.read()
-            feed = feedparser.parse(io.BytesIO(feed_data))
-        except Exception as e:
-            return [], f"timeout/error: {e}"
+        feed = feedparser.parse(feed_url)
         articles = []
         cutoff = datetime.now() - timedelta(days=MAX_DAYS_OLD)
 

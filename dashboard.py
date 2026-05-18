@@ -133,7 +133,7 @@ def collect_facebook_posts() -> tuple:
             [str(FACEBOOK_PYTHON), str(FACEBOOK_SCRAPER), "--json"],
             capture_output=True,
             text=True,
-            timeout=180,
+            timeout=30,
         )
         if result.returncode != 0:
             error_msg = result.stderr.strip()[:200] or "Unknown error"
@@ -649,9 +649,16 @@ def main():
     print("📡 Recolectando noticias...")
     articles, source_status = collect_articles()
 
-    # 4. Facebook (via subprocess to tools-venv)
-    facebook_data, fb_status = collect_facebook_posts()
-    source_status.update(fb_status)
+    # 4. Facebook (via subprocess to tools-venv) — timeout agresivo
+    facebook_data = []
+    fb_status = {}
+    try:
+        facebook_data, fb_status = collect_facebook_posts()
+        source_status.update(fb_status)
+    except Exception as e:
+        print(f"  ⚠️ Facebook omitido: {e}")
+        fb_status = {"Facebook (28 páginas)": f"⚠️ Omitido: {str(e)[:80]}"}
+        source_status.update(fb_status)
 
     # Filtrar Facebook del estado de fuentes visible (monitoreo en segundo plano)
     source_status = {k: v for k, v in source_status.items() if "Facebook" not in k}

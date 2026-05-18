@@ -143,17 +143,39 @@ def scrape_elnuevodia(max_articles: int = 30) -> List[Dict]:
     return articles
 
 
-def scrape_all() -> List[Dict]:
-    """Run all scrapers and return articles."""
-    articles = []
-    print("  🕸️  Scraping: El Nuevo Día...")
-    end_articles = scrape_elnuevodia()
-    print(f"     → {len(end_articles)} articles from END")
-    articles.extend(end_articles)
+def scrape_all(max_total_seconds: int = 60) -> List[Dict]:
+    """Run all scrapers and return articles. Hard timeout via alarm signal."""
+    import signal
 
-    print("  🕸️  Scraping: Carolina787...")
-    c787_articles = scrape_carolina787()
-    print(f"     → {len(c787_articles)} articles from Carolina787")
-    articles.extend(c787_articles)
+    articles = []
+
+    def _timeout_handler(signum, frame):
+        raise TimeoutError(f"scrape_all exceeded {max_total_seconds}s")
+
+    old_handler = signal.signal(signal.SIGALRM, _timeout_handler)
+    signal.alarm(max_total_seconds)
+
+    try:
+        print("  🕸️  Scraping: El Nuevo Día...")
+        try:
+            end_articles = scrape_elnuevodia()
+            print(f"     → {len(end_articles)} articles from END")
+            articles.extend(end_articles)
+        except Exception as e:
+            print(f"     ⚠ END error: {e}")
+
+        print("  🕸️  Scraping: Carolina787...")
+        try:
+            c787_articles = scrape_carolina787()
+            print(f"     → {len(c787_articles)} articles from Carolina787")
+            articles.extend(c787_articles)
+        except Exception as e:
+            print(f"     ⚠ Carolina787 error: {e}")
+
+    except TimeoutError:
+        print(f"  ⏰ scrape_all timeout ({max_total_seconds}s) — returning {len(articles)} articles collected so far")
+    finally:
+        signal.alarm(0)
+        signal.signal(signal.SIGALRM, old_handler)
 
     return articles
