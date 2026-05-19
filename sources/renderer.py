@@ -8,6 +8,7 @@ from jinja2 import Template
 from sources.collector import (
     articles_by_municipio,
     is_breaking,
+    is_recent_breaking,
     time_ago,
     format_date_12h,
 )
@@ -149,8 +150,8 @@ def generate_html(
         a["time_ago"] = time_ago(a.get("fecha", ""))
     time_groups = _group_by_time(articles_sorted)
 
-    # Breaking news
-    breaking = [a for a in articles_sorted if is_breaking(a)]
+    # Breaking news (only from last 4 hours)
+    breaking = [a for a in articles_sorted if is_recent_breaking(a, max_age_hours=4)]
     breaking_list = []
     for b in breaking[:5]:  # Max 5 breaking
         breaking_list.append({

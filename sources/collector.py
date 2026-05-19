@@ -110,6 +110,35 @@ def is_breaking(article: Dict) -> bool:
     return any(kw in text for kw in breaking_keywords)
 
 
+def is_recent_breaking(article: Dict, max_age_hours: int = 4) -> bool:
+    """Detect if an article is breaking news and from the last N hours."""
+    if not is_breaking(article):
+        return False
+    
+    # Check if article is recent
+    fecha_str = article.get("fecha", "")
+    if not fecha_str:
+        return False
+        
+    try:
+        # Try parsing with seconds first, then without
+        for fmt in ["%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M"]:
+            try:
+                article_time = datetime.strptime(fecha_str, fmt)
+                break
+            except ValueError:
+                continue
+        else:
+            # If none of the formats worked
+            return False
+            
+        now = datetime.now()
+        diff_hours = (now - article_time).total_seconds() / 3600
+        return diff_hours <= max_age_hours
+    except Exception:
+        return False
+
+
 def time_ago(date_str: str) -> str:
     """Convert a date string to a human-readable 'time ago' string."""
     if not date_str:
