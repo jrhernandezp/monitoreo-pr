@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-20 06:32:21 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-20 07:02:25 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">42</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">43</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">13</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">64/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-20 06:32:21 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-20 07:02:25 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -360,7 +360,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">5</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
@@ -373,9 +373,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">4</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
+        <div class="muni-card active" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
@@ -405,7 +405,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
@@ -484,8 +484,31 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/ismael-guadalupe-una-trayectoria-de-activismo-y-lucha-en-nombre-de-vieques/" target="_blank">Ismael Guadalupe: una trayectoria de activismo y lucha en nombre de Vieques</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-20 18:32">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-20 19:02">ahora mismo</td>
                 </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Derrota legal para Aerostar: Tribunal desestima demanda contra concesionarios">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://noticel.com/ultima-hora/20260520/derrota-legal-para-aerostar-tribunal-desestima-demanda-contra-concesionarios/?utm_source=rss&utm_medium=rss&utm_campaign=derrota-legal-para-aerostar-tribunal-desestima-demanda-contra-concesionarios" target="_blank">Derrota legal para Aerostar: Tribunal desestima demanda contra concesionarios</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-05-20 18:38">hace 24min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo - Facebook">
+                    <td><span class="muni-tag">Luquillo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE4zUjFxRS1MYVJqWnNxdGNabnZhR2x2M3pVb2paSlJuNkNEQ05pZ0M1TUNmTXlOR1FIdTdTRkFZNkxBQTVBdnZvNzVTQUh4aDRKNENNMGdTY1hQeDBqbGJteEl1R0RaeExBVHcxSk5rQ2w0MHpDNTNTSQ?oc=5" target="_blank">Municipio de Luquillo - Facebook</a>
+                    </td>
+                    <td>FB - Luquillo</td>
+                    <td class="time-ago" data-date="2026-05-20 18:05">hace 57min</td>
+                </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Policía fortalece lazos comunitarios con actividades educativas en Humacao y Maunabo">
                     <td><span class="muni-tag">Humacao</span></td>
@@ -494,11 +517,8 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/20/policia-fortalece-lazos-comunitarios-con-actividades-educativas-en-humacao-y-maunabo/" target="_blank">Policía fortalece lazos comunitarios con actividades educativas en Humacao y Maunabo</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-20 17:43">hace 49min</td>
+                    <td class="time-ago" data-date="2026-05-20 17:43">hace 1h</td>
                 </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Arrestan a cuatro en un punto de drogas en sector La Polilla en Juncos">
                     <td><span class="muni-tag">Caguas</span></td>
@@ -537,7 +557,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/20/amigos-de-lo-ajeno-hurtan-cactus-en-area-verde-de-entrada-a-naguabo/" target="_blank">Amigos de lo ajeno hurtan cactus en área verde de entrada a Naguabo</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-20 15:49">hace 2h</td>
+                    <td class="time-ago" data-date="2026-05-20 15:49">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Buscan a dos mujeres por alegado fraude contra anciana de 90 años en Juncos">
@@ -577,7 +597,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZ2J6MmM5US16WVIyLVFiSXNJQVAzdnNHRWN3ZkUybGVvSktZM2tyMU9xR1VGTDBrdzBoajJmNmVaRTZTZGxleXV3bExZWXlXeVNwWTVVVTdZWGtaN0ZYaE5lN2JJUnJzUkZOdWxTSWtISUY2ZmhMaVA1UlN6TTFhYjlEaU5TeTdxbDcw?oc=5" target="_blank">Municipio De Trujillo Alto - Facebook</a>
                     </td>
                     <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-05-20 11:00">hace 7h</td>
+                    <td class="time-ago" data-date="2026-05-20 11:00">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="La “oficina de hoy” fue el municipio de Cataño. Entre faenas, transmisiones y preguntas siempre es grato conectar con colegas y amigos con los que no siempre tenemos la oportunidad de coincidir. Y eso siempre es ganancia - Facebook">
@@ -620,7 +640,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi_AFBVV95cUxPMmRfTmpGc0MwVW9xVk5MN0JhVjViUFFvZXVsNHZMSUNNRVY5R3JqZTY2bTAyTWxlR0NIdkptVUYzTGVrU1dXMXdUcWE5SU4xNnFkM1RpQ00xZm16MmVqa0hDTnFkR002SkQydFFSTVNtTXlzbjh0ZlNsOFBzRHFRYWlkZ0JqRWttNGdLZWdkUzBjZmY0TnR0SEdTVDE0SFVwUG8weXZZYm9VdlJQQVpYYnVYTU1ndUZIaTRQNFpsS3ozMUNZMktHQzUtUTU0ZWRJZW9iTW9Vb05Ua0pRSURNdjRmMl9taDV5eHpDOWNxQlgyZkZ0ZGJaeTJWTXA?oc=5" target="_blank">Alcalde de Cataño reconoce “fallas administrativas”, pero evita dar nombres de imputados en auditoría de la Contraloría - Noticias de Puerto Rico hoy</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-05-19 20:35">hace 21h</td>
+                    <td class="time-ago" data-date="2026-05-19 20:35">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - Facebook">
@@ -691,16 +711,6 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>Fajardo</td>
                     <td class="time-ago" data-date="2026-05-19 17:05">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - Facebook">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOcjd6MF83VUlJMnRlZ2ZKWEpUMWJ1TklPTkVYX25uUHc3Qi1EOVd6dXoyNUlVMTFiRDkyTWZKczBrNUk3YU5fWkVLWDNDWUZpQkd6dy03TW0xMXV6Yjc5dllLWjBDMkxocnhIOVFFT0FpU0pzM3dBdFdLdVhJcUMxbEFXNVpES2stWFFxaFZB?oc=5" target="_blank">Municipio Autónomo de Naguabo - Facebook</a>
-                    </td>
-                    <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-05-19 16:45">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="El BSNF aprueba el traslado de las Cafeteras de Yauco a Fajardo - Primera Hora">
@@ -1028,7 +1038,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-20 06:32:21 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-20 07:02:25 PM<br>
     Actualización automática cada 30 min
 </div>
 
