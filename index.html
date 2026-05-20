@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-20 01:32:33 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-20 02:02:11 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">39</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">42</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">4</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">64/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-20 01:32:33 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-20 02:02:11 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -352,7 +352,7 @@ tr:hover { background: var(--surface2); }
         <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
         
         <div class="breaking-item">
-            <span class="time">ahora mismo</span> —
+            <span class="time">hace 1min</span> —
             <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/exhumaran-200-cadaveres-en-trujillo-alto-asi-lucen-los-nichos-del-cementerio-municipal/" target="_blank">Exhumarán 200 cadáveres en Trujillo Alto: así lucen los nichos del cementerio municipal</a>
             <span style="opacity:0.6"> [Trujillo Alto]</span>
         </div>
@@ -368,7 +368,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -398,12 +398,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">7</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
+        <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
@@ -423,12 +423,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">4</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">6</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
@@ -460,10 +460,20 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="Humacao" data-titular="Policía fortalece lazos comunitarios con actividades educativas en Humacao y Maunabo">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/05/20/policia-fortalece-lazos-comunitarios-con-actividades-educativas-en-humacao-y-maunabo/" target="_blank">Policía fortalece lazos comunitarios con actividades educativas en Humacao y Maunabo</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-05-20 17:43">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Caguas" data-titular="Arrestan a cuatro en un punto de drogas en sector La Polilla en Juncos">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://waloradio.com/2026/05/20/arrestan-a-cuatro-en-un-punto-de-drogas-en-sector-la-polilla-en-juncos/" target="_blank">Arrestan a cuatro en un punto de drogas en sector La Polilla en Juncos</a>
                     </td>
                     <td>Walo Radio</td>
@@ -520,14 +530,14 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-20 15:12">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Tiempo inestable y calor afectarán a Puerto Rico hoy con aguaceros y fuertes vientos">
-                    <td><span class="muni-tag">San Juan</span></td>
+                <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza - facebook.com">
+                    <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/05/20/tiempo-inestable-y-calor-afectaran-a-puerto-rico-hoy-con-aguaceros-y-fuertes-vientos/" target="_blank">Tiempo inestable y calor afectarán a Puerto Rico hoy con aguaceros y fuertes vientos</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTFB0Q2dtamtVR0RTREFkT0RveGxicGhNV003QTdhYVA1RkIyQ2ExTUUxNkdtTDE1aFFnMXNMRlowUjJPN01KdXpQUFpTOXAwbWFqS2I4MllPUlFaVldRY3o3V3p1RzdISVNEYklNRVY0M0RMV3lmdGJV?oc=5" target="_blank">Municipio de Loíza - facebook.com</a>
                     </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-20 14:30">ahora</td>
+                    <td>FB - Loíza</td>
+                    <td class="time-ago" data-date="2026-05-20 15:09">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Nuevo concepto gastronómico abre sus puertas en Humacao con la llegada de Café Late">
@@ -547,7 +557,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/ismael-guadalupe-una-trayectoria-de-activismo-y-lucha-en-nombre-de-vieques/" target="_blank">Ismael Guadalupe: una trayectoria de activismo y lucha en nombre de Vieques</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-20 13:32">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-20 14:01">hace 1min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Exhumarán 200 cadáveres en Trujillo Alto: así lucen los nichos del cementerio municipal">
@@ -557,7 +567,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/exhumaran-200-cadaveres-en-trujillo-alto-asi-lucen-los-nichos-del-cementerio-municipal/" target="_blank">Exhumarán 200 cadáveres en Trujillo Alto: así lucen los nichos del cementerio municipal</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-20 13:32">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-20 14:01">hace 1min</td>
                 </tr>
                 
                 
@@ -590,7 +600,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZ2J6MmM5US16WVIyLVFiSXNJQVAzdnNHRWN3ZkUybGVvSktZM2tyMU9xR1VGTDBrdzBoajJmNmVaRTZTZGxleXV3bExZWXlXeVNwWTVVVTdZWGtaN0ZYaE5lN2JJUnJzUkZOdWxTSWtISUY2ZmhMaVA1UlN6TTFhYjlEaU5TeTdxbDcw?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
                     </td>
                     <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-05-20 11:00">hace 2h</td>
+                    <td class="time-ago" data-date="2026-05-20 11:00">hace 3h</td>
                 </tr>
                 
                 
@@ -613,7 +623,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxOQjEwcWJOdW1QMV9oRHFBdTdmWHhuS2pEZ3BuekZpNUlBYzU3MFY5NXFZR0hFVzFJTnVEVHJpbFJpMzd1ODdiOEg1Qi1fUEFzU2EyX2RFbnVwSnZXdG94Q2FvWGdvNVdDVl9mUjJ3QmxYb1E3Wm1nZ09vWjdNdE4tdS1RS3JUWllIRDFVVnhra2ZnLUNoWTVqdE9ucUpieE9TWnlRcDlVdFg2Q2FHX2hpMkE0T0xmREVsdnRtYzN5RW9xalJOU1ZQSUlKSDZVc3J0eS05d3ZTaE5oejB1Tk1v?oc=5" target="_blank">🚨🙏 SE NECESITAN DONANTES DE SANGRE URGENTEMENTE PARA JOVEN DE #NAGUABO. 🙏🚨 Familiares y allegados solicitan la ayuda de la ciudadanía para un joven que sufrió un accidente de tránsito en Naguabo y se encuentra delicado de salud, - facebook.com</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-05-19 21:35">hace 15h</td>
+                    <td class="time-ago" data-date="2026-05-19 21:35">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Culebra" data-titular="“Gongo” sufre incidente al capturar una culebra: “Lo que me cayó en la boca no fue baby food” - Metro Puerto Rico">
@@ -633,7 +643,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/19/senadora-soto-tolentino-entrega-cheques-de-ayuda-a-clases-graduandas-del-distrito-de-humacao/" target="_blank">Senadora Soto Tolentino entrega cheques de ayuda  a clases graduandas del Distrito de Humacao</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-19 20:40">hace 16h</td>
+                    <td class="time-ago" data-date="2026-05-19 20:40">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Alcalde de Cataño reconoce “fallas administrativas”, pero evita dar nombres de imputados en auditoría de la Contraloría - Noticias de Puerto Rico hoy">
@@ -643,7 +653,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi_AFBVV95cUxPMmRfTmpGc0MwVW9xVk5MN0JhVjViUFFvZXVsNHZMSUNNRVY5R3JqZTY2bTAyTWxlR0NIdkptVUYzTGVrU1dXMXdUcWE5SU4xNnFkM1RpQ00xZm16MmVqa0hDTnFkR002SkQydFFSTVNtTXlzbjh0ZlNsOFBzRHFRYWlkZ0JqRWttNGdLZWdkUzBjZmY0TnR0SEdTVDE0SFVwUG8weXZZYm9VdlJQQVpYYnVYTU1ndUZIaTRQNFpsS3ozMUNZMktHQzUtUTU0ZWRJZW9iTW9Vb05Ua0pRSURNdjRmMl9taDV5eHpDOWNxQlgyZkZ0ZGJaeTJWTXA?oc=5" target="_blank">Alcalde de Cataño reconoce “fallas administrativas”, pero evita dar nombres de imputados en auditoría de la Contraloría - Noticias de Puerto Rico hoy</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-05-19 20:35">hace 16h</td>
+                    <td class="time-ago" data-date="2026-05-19 20:35">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="‼️TU SEGURIDAD PRIMERO‼️ No sigas perdiendo el tiempo con improvisaciones fatulas. En una sola llamada los muchachos de la armeria y club de tiro Bull's Eye Gun Shop, en el pueblo de #Fajardo aclararán todas tus dudas. Aquí conseguirás todo lo q - facebook.com">
@@ -683,7 +693,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi8AFBVV95cUxPQmJNOXBsVmZRNG1NOU9KYlQ5eHhnZGlvTlA4MnhYcjlWc2hQWVhvNWFqQ2NDR29jMkFuR19rRmI5TTVNRkNuZGhJcVh4VTdDOTFCSDU5QW03VE9CbVlHVlV6R19RQ243SUpSc2RpRHJNblZzRDN0dXpBMjFlVFJPejlMOVdRS3IzMGlFSGRmX2RPSU5GeWZSNlNDVkFnS0txbEdjSzlkaDlIZ3dONU9uSHZULXlvcXZGb093NnFEMzhUN2NsM19qQVQ4N1BsZEVKVkgySENIWkxTbnlEb2NSMFNBdkp3d0plaUE3YmtoSFA?oc=5" target="_blank">Alcalde de Cataño rechaza informe de la OCPR y asegura que el Municipio defenderá su integridad “en los tribunales y con evidencia” - Periódico El Sol de Puerto Rico</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-05-19 18:58">hace 18h</td>
+                    <td class="time-ago" data-date="2026-05-19 18:58">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Alcalde de Cataño rechaza informe de la Contralora y asegura que defenderá al municipio “en los tribunales” - El Vocero de Puerto Rico">
@@ -704,6 +714,16 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>Fajardo</td>
                     <td class="time-ago" data-date="2026-05-19 17:05">hace 20h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="El BSNF aprueba el traslado de las Cafeteras de Yauco a Fajardo - Primera Hora">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQandTU21Ra1RxU3VhNklXSFozcGxTOVB2OHhVOFE5cmZ0M2Y0SjNnTGNkUE1BVUhSTWhjdUtmNXptNmVDNEN5UUhidUFadHozYlZJTVhOTERUWW9wNWhGbWVKczlJMUY4NmpOelItRjgzLU1JclowVTBIX2h1WlpnYWp4eXVVSzVxVnpCNWo0dkJtTDJLV0ozOEgzbW5ucHhZX0EyV0Utcnc4R3FMOU9uRUxpUzNPLTVzWmc?oc=5" target="_blank">El BSNF aprueba el traslado de las Cafeteras de Yauco a Fajardo - Primera Hora</a>
+                    </td>
+                    <td>Fajardo</td>
+                    <td class="time-ago" data-date="2026-05-19 15:27">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Las mejores barras del patio protagonizarán el Summer Sunset Party en Humacao - wapa.tv">
@@ -733,7 +753,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPMXhkdW9KQ2YwbmJrcEFaa3VBYkhCTXBYRzZFMG5IMkc3RExkTXF6NHNwalpCbUpnR0NtZm5oTFZCTENHVktRTFo1TmpNTml4THVhMTRtQk9jbWMzWEp3enpfN1RBVGVLem1BNXFpV003Q3ZvWk1TVmhjTW5Kek8zNlowaTlsdWh1Z1REU0VNMjNqZENra2pYaFpIcEMzQzNMTHVJ?oc=5" target="_blank">Cariduras de Fajardo regresan al BSNF para la temporada 2026 - Metro Puerto Rico</a>
                     </td>
                     <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-05-19 15:00">hace 22h</td>
+                    <td class="time-ago" data-date="2026-05-19 15:00">hace 23h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE1ON1lZOEpScU04TjFCbDdwQUNfbndpdTN6Rld4QjlFOFN2V0xjU2NBelNjX09VOVcyRXNoUkhGN0RwSUtQMWZDRGRIWVBMX0t4SGdCY0Vsc3R0ZDhQTXZXcGg5TVl2YkxsdjhkeGY5T3oyaWM?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
+                    </td>
+                    <td>FB - Cataño</td>
+                    <td class="time-ago" data-date="2026-05-19 13:43">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - facebook.com">
@@ -743,7 +773,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOX2JDWV82ZzhPa19BZWg0ZHpBU1BrTjVuVVlSOFpoRkh0NE50WWpEeXdSNnhsc3hRRU5RQUdPeUo0QXMwdy1TZ215ckdoa184TUNnMHRxN2FSUTlaekpFaU1nN2Z3dnZ3NjVMUE5RMk4wTWt4d0FVZ1BlaWpPX2IyeHBR?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-05-19 13:42">hace 23h</td>
+                    <td class="time-ago" data-date="2026-05-19 13:42">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular=""Cuando quieras te rompo la cara": alcalde de Fajardo protagoniza incidente - Telemundo Puerto Rico">
@@ -1011,7 +1041,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-20 01:32:33 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-20 02:02:11 PM<br>
     Actualización automática cada 30 min
 </div>
 
