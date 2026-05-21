@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-21 10:32:14 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-21 11:01:57 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">28</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">29</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">13</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">64/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-21 10:32:14 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-21 11:01:57 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -368,7 +368,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">9</div>
+            <div class="muni-count">10</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -460,6 +460,16 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="Old San Juan project plans removal of about 50 trees near El Morro and La Fortaleza">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/english/news/story/old-san-juan-project-plans-removal-of-about-50-trees-near-el-morro-and-la-fortaleza/" target="_blank">Old San Juan project plans removal of about 50 trees near El Morro and La Fortaleza</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-05-21 14:52">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="San Juan" data-titular="Fragata de la armada española llega al puerto de San Juan">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
@@ -510,16 +520,6 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-21 12:16">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Hombre es herido de bala en puesto de gasolina en Fajardo - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNbkhwYW5GRDU4WHdJemtqTk9iRTREWTc4R3UxRXdvcllEeldYbTViOEJHdXBuNWNES05kMXpQSWtpYTlXcGhJOThpNDJXNGp2S0ZNSVFxVlV2WVhZRFBCLWd6WGgtSzdHZ3BQVDZ2T3Z3NW9FMUU0aWFoc2xXN3FuSnZpLVFmYUNjcmZFOGdxdEd2UXVvZTRwd1QzUTlFU0RqQ21LRWstdjBvLUljYXdrcHNMaXpHZ9IBvgFBVV95cUxOMkRNOElYNzk4d0V5MXh0QmhULUVQeGdxalRocDdDQlFma2JBek9SVDhHUzVYSEd5c1QyUnJ1MWRPMEllS20xc040RWpLMnhXWExpZk1ZR3NjeDIxb1ZBZGJQb3RHZHhadmcwc2QyNEpCZURwUERmbW9xMEk2dDRvUU4wdHR3a3JkWjZsQ0UwZmVtX0thNEFJVGpkYkFETWh2ZnpoUjRnRnFRUmM5MjVJUWdBX0F0X3ZQOFRXTHR3?oc=5" target="_blank">Hombre es herido de bala en puesto de gasolina en Fajardo - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-05-21 10:46">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="San Juan" data-titular="¿Peligra la sombra en el Viejo San Juan? Denuncian plan para talar 50 árboles entre La Fortaleza y el Morro">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
@@ -527,7 +527,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/notas/peligra-la-sombra-en-el-viejo-san-juan-denuncian-plan-para-talar-50-arboles-entre-la-fortaleza-y-el-morro/" target="_blank">¿Peligra la sombra en el Viejo San Juan? Denuncian plan para talar 50 árboles entre La Fortaleza y el Morro</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-21 10:31">hace 1min</td>
+                    <td class="time-ago" data-date="2026-05-21 11:01">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Ismael Guadalupe: una trayectoria de activismo y lucha en nombre de Vieques">
@@ -537,7 +537,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/ismael-guadalupe-una-trayectoria-de-activismo-y-lucha-en-nombre-de-vieques/" target="_blank">Ismael Guadalupe: una trayectoria de activismo y lucha en nombre de Vieques</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-21 10:31">hace 1min</td>
+                    <td class="time-ago" data-date="2026-05-21 11:01">ahora mismo</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="Hombre es herido de bala en puesto de gasolina en Fajardo - Telemundo Puerto Rico">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNbkhwYW5GRDU4WHdJemtqTk9iRTREWTc4R3UxRXdvcllEeldYbTViOEJHdXBuNWNES05kMXpQSWtpYTlXcGhJOThpNDJXNGp2S0ZNSVFxVlV2WVhZRFBCLWd6WGgtSzdHZ3BQVDZ2T3Z3NW9FMUU0aWFoc2xXN3FuSnZpLVFmYUNjcmZFOGdxdEd2UXVvZTRwd1QzUTlFU0RqQ21LRWstdjBvLUljYXdrcHNMaXpHZ9IBvgFBVV95cUxOMkRNOElYNzk4d0V5MXh0QmhULUVQeGdxalRocDdDQlFma2JBek9SVDhHUzVYSEd5c1QyUnJ1MWRPMEllS20xc040RWpLMnhXWExpZk1ZR3NjeDIxb1ZBZGJQb3RHZHhadmcwc2QyNEpCZURwUERmbW9xMEk2dDRvUU4wdHR3a3JkWjZsQ0UwZmVtX0thNEFJVGpkYkFETWh2ZnpoUjRnRnFRUmM5MjVJUWdBX0F0X3ZQOFRXTHR3?oc=5" target="_blank">Hombre es herido de bala en puesto de gasolina en Fajardo - Telemundo Puerto Rico</a>
+                    </td>
+                    <td>Fajardo</td>
+                    <td class="time-ago" data-date="2026-05-21 10:46">hace 15min</td>
                 </tr>
                 
                 
@@ -570,7 +580,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/20/advierten-multas-a-lanchas-que-no-reporten-llegada/" target="_blank">Advierten multas a lanchas que no reporten llegada</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-21 00:56">hace 9h</td>
+                    <td class="time-ago" data-date="2026-05-21 00:56">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Airbnb añade vehículos, hoteles y experiencias de la Copa Mundial">
@@ -580,7 +590,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/20/airbnb-anade-vehiculos-hoteles-y-experiencias-de-la-copa-mundial/" target="_blank">Airbnb añade vehículos, hoteles y experiencias de la Copa Mundial</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-21 00:55">hace 9h</td>
+                    <td class="time-ago" data-date="2026-05-21 00:55">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Sexagenario muere atropellado mientras cruzaba la PR-3 en Humacao - El Vocero de Puerto Rico">
@@ -613,7 +623,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNNHBhaE11emo0Q3h5UzZyRkxsR0hOSTV6RHpxZVpKM05qY1BfeUFRYnRHRDJ6MWZoWnlmbDQ5b3U0S3dyMEk3cENibnFKVzNNa2NsakVUYnpmYW5OdkJzVWtKM3kyR0NZLTNTTEdsVTZqWm5MdXJXcm16QnFUMF9SQlZkZVVzYUlodjlnSDg1SnZHekxCOG5oQWM5cGdCZw?oc=5" target="_blank">🚨📢 Oportunidad de empleo en el Municipio de Canóvanas ¿Quieres servir a tu comunidad y ser parte del equipo que responde cuando más se necesita? El Municipio de Canóvanas anuncia la disponibilidad de la plaza de: 👨‍🚒 Auxiliar de Manejo de Emerge - facebook.com</a>
                     </td>
                     <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-05-20 20:00">hace 14h</td>
+                    <td class="time-ago" data-date="2026-05-20 20:00">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Aduanas recuerda obligación de reportar llegada de embarcaciones entre Puerto Rico y las Islas Vírgenes">
@@ -623,7 +633,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/20/aduanas-recuerda-obligacion-de-reportar-llegada-de-embarcaciones-entre-puerto-rico-y-las-islas-virgenes/" target="_blank">Aduanas recuerda obligación de reportar llegada de embarcaciones entre Puerto Rico y las Islas Vírgenes</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-20 19:49">hace 14h</td>
+                    <td class="time-ago" data-date="2026-05-20 19:49">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Policía fortalece lazos comunitarios con actividades educativas en Humacao y Maunabo">
@@ -633,7 +643,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/20/policia-fortalece-lazos-comunitarios-con-actividades-educativas-en-humacao-y-maunabo/" target="_blank">Policía fortalece lazos comunitarios con actividades educativas en Humacao y Maunabo</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-20 17:43">hace 16h</td>
+                    <td class="time-ago" data-date="2026-05-20 17:43">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Arrestan a cuatro en un punto de drogas en sector La Polilla en Juncos">
@@ -663,7 +673,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE52SGJkMnZXUExtb0pQNl95b2l1VC1aS0VyQ1RVUnFPWnltRW1OWm1ZaUY1ZHUzQmpIdHdYT29ibl95UzNwU29pT0hjN0I0WnBVY1VfUXR2YTQ4ZXJYTzJody1yRmRpTmFPSUlTcXZxaE9UNGQwTk5MR2lDamJuQVk?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
                     </td>
                     <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-05-20 17:00">hace 17h</td>
+                    <td class="time-ago" data-date="2026-05-20 17:00">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza - facebook.com">
@@ -683,7 +693,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQOTB5bWE2YkVWSS1SeUVYRXh0UzZCbmU4Y3JqSEdfMHRIcmNXZVo5TDdrTUVVeVhCNkNSWmxJQ3VJNjR1bzkzTUtmYi1NZGhoLTBSWll3S3RBVTFWMTlYd0M2aDdWQWxMY1dQbUcxVnB1T25IRVZtNzllZXBrUEZUSlgzQ3pENWh5Z1dTSXo1WkdnZGJFcTlkdUc5MkNQZm5HMk1Xeg?oc=5" target="_blank">Todos a disfrutar de Verano Inclusivo en balneario de Luquillo - Periódico La Perla</a>
                     </td>
                     <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-05-20 13:35">hace 20h</td>
+                    <td class="time-ago" data-date="2026-05-20 13:35">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="Todo lo que tiene Río Grande te conecta con la esencia de Puerto Rico: cascadas, aventura, gastronomía, naturaleza y experiencias únicas en un solo pueblo. Desde El Yunque hasta sus sabores y paisajes, aquí siempre hay algo por descubrir. #TurismoPR - facebook.com">
@@ -703,7 +713,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE40WXlOTkZXakM1YklvS1oyc2FCbXNTamlpRFAxMUdlT3dQSTdZcWtOT0w1RUxxU0dqbWxSaXVfQ3FzZ3pFVEJ6ZlRlY0kwSjd6OHk1UWQtUnprbmpqbnU5RS05dkNiUEUxWUw2cWZkcWg0S1NrQmlpZ2IxMVFkcWs?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
                     </td>
                     <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-05-20 11:00">hace 23h</td>
+                    <td class="time-ago" data-date="2026-05-20 11:00">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="La “oficina de hoy” fue el municipio de Cataño. Entre faenas, transmisiones y preguntas siempre es grato conectar con colegas y amigos con los que no siempre tenemos la oportunidad de coincidir. Y eso siempre es ganancia - facebook.com">
@@ -901,7 +911,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-21 10:32:14 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-21 11:01:57 AM<br>
     Actualización automática cada 30 min
 </div>
 
