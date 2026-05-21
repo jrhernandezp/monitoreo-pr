@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-21 04:31:55 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-21 05:02:38 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">33</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">35</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">64/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-21 04:31:55 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-21 05:02:38 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -404,12 +404,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
@@ -432,14 +432,14 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">2</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
+        <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">8</div>
+            <div class="muni-count">10</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
@@ -465,6 +465,26 @@ tr:hover { background: var(--surface2); }
             <tbody id="articlesBody">
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="Vieques decreta tres días de duelo ante el fallecimiento de Ismael Guadalupe - NotiCel">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQaGlsTHBjX2ZnS2hJbGdTLS14TTVjbzd2UEpQV2ZrZk1CYzAtd3RPSjBINFpDT3phX25mdnljeTlHNnJoTHJkNFkxcE9EZWE4Y1JCTHBvYm9hQy1QdVktZDlZaFZOdXZreVhqaUgxNmZaTU9tQ1V6UmxMV1Nrd2U5dmlhbnN3bVlZYWhVLXBwdks0dXFFNWFza180aTZCNmlKalQtc0pZODhpLXE5MGxkYkszLXo3SHFPaFE?oc=5" target="_blank">Vieques decreta tres días de duelo ante el fallecimiento de Ismael Guadalupe - NotiCel</a>
+                    </td>
+                    <td>Vieques</td>
+                    <td class="time-ago" data-date="2026-05-21 20:48">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="Vieques decreta tres días de duelo ante el fallecimiento de Ismael Guadalupe">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/noticias/20260521/vieques-decreta-tres-dias-de-duelo-ante-el-fallecimiento-de-ismael-guadalupe/?utm_source=rss&utm_medium=rss&utm_campaign=vieques-decreta-tres-dias-de-duelo-ante-el-fallecimiento-de-ismael-guadalupe" target="_blank">Vieques decreta tres días de duelo ante el fallecimiento de Ismael Guadalupe</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-05-21 20:19">ahora</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Alcalde de San Juan destaca unión entre municipios durante Segunda Cumbre de Preparación Segura">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -566,34 +586,24 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-21 17:19">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Joven resulta herido de bala en una gasolinera de Fajardo - Primera Hora">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOM2JhVE9RbVNWQWt1SnNhMGNZejdJOUFLckExNHBuQmV1dEtvR3M3dlk4NnlpeDhMTWFOUUpielZ4R2pxQlc4cnN4RUZiTGZzYnJCQjBMRHRfQkU2VUVsN180MlRRZ3FjeVNSSGhxZG5SNktVVzBuUkZMTWpMd3hpMXJoa0UwX3AydDJfXzRWbF9wazhGSXJZdjhIaHd4ZVQtSGhZS2stT0VYNzU5QXFpTVN1aXR1cndsQUxjUg?oc=5" target="_blank">Joven resulta herido de bala en una gasolinera de Fajardo - Primera Hora</a>
-                    </td>
-                    <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-05-21 17:16">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Muere Ismael Guadalupe, figura crucial de la campaña contra la presencia militar en ViequesNacido y criado en la isla municipio, la lucha contra la Marina de Guerra de Estados Unidos marcó la totalidad de su vida">
+                <tr class="article-row" data-municipios="Vieques" data-titular="Muere Ismael Guadalupe, figura crucial de la campaña contra la presencia militar en ViequesNacido y criado en la isla municipio, la lucha contra la Marina de Guerra de Estados Unidos marcó la totalidad de su vida. Tenía 82 años.">
                     <td><span class="muni-tag">Vieques</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://www.elnuevodia.com/noticias/locales/notas/muere-ismael-guadalupe-figura-crucial-de-la-campana-contra-la-presencia-militar-en-vieques/" target="_blank">Muere Ismael Guadalupe, figura crucial de la campaña contra la presencia militar en ViequesNacido y criado en la isla municipio, la lucha contra la Marina de Guerra de Estados Unidos marcó la totalidad de su vida</a>
+                        <a href="https://www.elnuevodia.com/noticias/locales/notas/muere-ismael-guadalupe-figura-crucial-de-la-campana-contra-la-presencia-militar-en-vieques/" target="_blank">Muere Ismael Guadalupe, figura crucial de la campaña contra la presencia militar en ViequesNacido y criado en la isla municipio, la lucha contra la Marina de Guerra de Estados Unidos marcó la totalidad de su vida. Tenía 82 años.</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-21 16:31">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-21 17:02">ahora mismo</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Vieques" data-titular="📸 Ismael Guadalupe: una trayectoria de activismo y lucha en nombre de Vieques">
+                <tr class="article-row" data-municipios="Vieques" data-titular="📷 Ismael Guadalupe: una trayectoria de activismo y lucha en nombre de Vieques">
                     <td><span class="muni-tag">Vieques</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/ismael-guadalupe-una-trayectoria-de-activismo-y-lucha-en-nombre-de-vieques/" target="_blank">📸 Ismael Guadalupe: una trayectoria de activismo y lucha en nombre de Vieques</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/ismael-guadalupe-una-trayectoria-de-activismo-y-lucha-en-nombre-de-vieques/" target="_blank">📷 Ismael Guadalupe: una trayectoria de activismo y lucha en nombre de Vieques</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-21 16:31">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-21 17:02">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="📷 En imágenes: así quedó la embarcación “Chiqui Lilly” tras encallar en Fajardo">
@@ -603,7 +613,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/fotogalerias/en-imagenes-asi-quedo-la-embarcacion-chiqui-lilly-tras-encallar-en-fajardo/" target="_blank">📷 En imágenes: así quedó la embarcación “Chiqui Lilly” tras encallar en Fajardo</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-21 16:31">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-21 17:02">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="📷 ¿Peligra la sombra en el Viejo San Juan? Denuncian plan para talar 50 árboles">
@@ -613,7 +623,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/en-imagenes-confirman-plan-de-tala-de-arboles-en-el-viejo-san-juan/" target="_blank">📷 ¿Peligra la sombra en el Viejo San Juan? Denuncian plan para talar 50 árboles</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-21 16:31">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-21 17:02">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Fallece el líder viequense Ismael Guadalupe">
@@ -623,7 +633,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://noticel.com/ultima-hora/20260521/fallece-el-lider-viequense-ismael-guadalupe/?utm_source=rss&utm_medium=rss&utm_campaign=fallece-el-lider-viequense-ismael-guadalupe" target="_blank">Fallece el líder viequense Ismael Guadalupe</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-05-21 16:30">hace 1min</td>
+                    <td class="time-ago" data-date="2026-05-21 16:30">hace 32min</td>
                 </tr>
                 
                 
@@ -656,7 +666,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxNa0NLQnNUaXl1N05UamVUUWZxSm8tendWNWg5c29ZZkhoYnJzeDZMZGZmRnRxRVM1WG9RdEo1SVZDN01EbkRhT2RULXdnNlZKVXg0NjdFV3dLZWNqdVpHaEpnc0lScFlhWjJLZzVDVjVJSktTVGpocy0ybkIxRDhXblduNVU4ckIyZHZLYjlHTlJpUFpOUFFyclNMamMtTGh2YWNTbVBJSFFZOHY3VHJfellCY3hrODZGZmJzbFhNYkxkMnpuSWlMa3ZrdTRuQUdQZWlBNlowMy1VcVpEbWtkcXhESzBxYjIxVVU40gHwAUFVX3lxTE9LRy1xazBJa1liaWc2X2pRZTZPQUVpWWp0Rmt3WVZHNHktMEdoR3VVaGo5U2lla3BzYzRKZzlCNkl2eXVyTFlzVkZsLWFQa256d2tpVHh1UkFlcDNDVHg2QzlPTDUwN2I3MGFWU2tQWUR2RklvTS1RRzUzcGE3cmVxaFE0QU9mcnhKa0VGN21IV19SVWRiaU8wRXN4N1dmdURQYVlsZWpqLTdHdWlVTm13dXIwVkV5YTFFZXJjSFBpbzVJTU9fOEdiMURsWXBHaUREanJwZUVxX2ZUM2xsNGNNYUdCOUdEQWpHZmw2RWM5Mg?oc=5" target="_blank">Su amigo manipulaba un arma: Hombre resulta herido de bala en Fajardo - El Vocero de Puerto Rico</a>
                     </td>
                     <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-05-21 10:37">hace 5h</td>
+                    <td class="time-ago" data-date="2026-05-21 10:37">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="La AAA espera restaurar mañana el servicio de agua en zonas de San Juan tras avería de línea en Santurce - Noticias de Puerto Rico hoy">
@@ -667,6 +677,16 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>San Juan</td>
                     <td class="time-ago" data-date="2026-05-21 01:28">hace 15h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8zcEZ5YWFQYjU3STVnc2tsaWJKRDN4QkpRVDNUeHFELUZfQm0xVkpHM1p4Q0VjTWN3NHcyVWhVMzA0WWN5empuNzloQmxRR0JCeUUzdVllQVpCb0lrUEJPYUJVZjJtenc?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
+                    </td>
+                    <td>FB - Cataño</td>
+                    <td class="time-ago" data-date="2026-05-21 01:00">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Sexagenario muere atropellado mientras cruzaba la PR-3 en Humacao - El Vocero de Puerto Rico">
@@ -699,7 +719,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNNHBhaE11emo0Q3h5UzZyRkxsR0hOSTV6RHpxZVpKM05qY1BfeUFRYnRHRDJ6MWZoWnlmbDQ5b3U0S3dyMEk3cENibnFKVzNNa2NsakVUYnpmYW5OdkJzVWtKM3kyR0NZLTNTTEdsVTZqWm5MdXJXcm16QnFUMF9SQlZkZVVzYUlodjlnSDg1SnZHekxCOG5oQWM5cGdCZw?oc=5" target="_blank">🚨📢 Oportunidad de empleo en el Municipio de Canóvanas ¿Quieres servir a tu comunidad y ser parte del equipo que responde cuando más se necesita? El Municipio de Canóvanas anuncia la disponibilidad de la plaza de: 👨‍🚒 Auxiliar de Manejo de Emerge - facebook.com</a>
                     </td>
                     <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-05-20 20:00">hace 20h</td>
+                    <td class="time-ago" data-date="2026-05-20 20:00">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
@@ -709,7 +729,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE52SGJkMnZXUExtb0pQNl95b2l1VC1aS0VyQ1RVUnFPWnltRW1OWm1ZaUY1ZHUzQmpIdHdYT29ibl95UzNwU29pT0hjN0I0WnBVY1VfUXR2YTQ4ZXJYTzJody1yRmRpTmFPSUlTcXZxaE9UNGQwTk5MR2lDamJuQVk?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
                     </td>
                     <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-05-20 17:00">hace 23h</td>
+                    <td class="time-ago" data-date="2026-05-20 17:00">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza - facebook.com">
@@ -720,26 +740,6 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>FB - Loíza</td>
                     <td class="time-ago" data-date="2026-05-20 15:09">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza added a new photo. - Municipio de Loíza - facebook.com">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNUktucDRfQVI4X1l1RjR6b0VTX1FUU1Y2dlhqNUpfSS14S2xmTVUxcG5Qelp1dHlkYUZjTWxMQmJhQmJTNjBicFZrc0syV0pWbE1qaklSS2VZek1jUk4wM1VlS21rUkNjb2VRVEZEZTgxR3dPbFZidDBPeEtkOUwxSFBPZ0YyNjJPVHJQeTVB?oc=5" target="_blank">Municipio de Loíza added a new photo. - Municipio de Loíza - facebook.com</a>
-                    </td>
-                    <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-05-20 15:09">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1MYkduZlVKRG5mVEIta0RrUlhuZ1c2NWxRZ3NlOFNiSURsZzlGV2ZkSTVkUGJJQmhHeEc5ZkUwVUFyUDNzNFNPekYzem43a0twUGlZNDV2ejZFUjBQWUF0Zjh6b3pKZEFGRU0tMXBTVWU4S3lBZ2Nrbkp4Q1B4T00?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
-                    </td>
-                    <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-05-20 14:00">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Todos a disfrutar de Verano Inclusivo en balneario de Luquillo - Periódico La Perla">
@@ -770,6 +770,26 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>FB - Trujillo Alto</td>
                     <td class="time-ago" data-date="2026-05-20 11:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1PMkxQSGhpbDJiTVZfb1dZRXFiekktT3FEaXUxdHVvbW5YWGVCOFZZSUdKLWRzYl9oOEZuaHV0WC10dGJsWkFOa3Zfc3JLQmxBdEhZdnVSRDAzZmRfQzFCcmdUTS1QZzduRzdkNUp6VDItbjB2ck5ZZFpHX0RCYU0?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
+                    </td>
+                    <td>FB - Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-05-20 11:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="La “oficina de hoy” fue el municipio de Cataño. Entre faenas, transmisiones y preguntas siempre es grato conectar con colegas y amigos con los que no siempre tenemos la oportunidad de coincidir. Y eso siempre es ganancia - facebook.com">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxQT3hvQzRHZGN4cGJLV3RjY1ZSOG9BZ2V6R2NacDdnZlY2Y1NqYUduTXR3czh1LTFPT2trWnkteE9SbnZQeDFaMzZFMUh4WlpoclAwYlVPcnNPUnhyb2JrTGhMWUQxSHRTeHFIRF9NVVJsck92bFdwYkQxUGlXdE9BallaOEgwV2lPZ3lxNEtzb3k1SXd1SGwxRGZJOUExd2hKaXRqUGtKMzZGNEFYb3dCTDJpVFBCVVhkclFhTnU2cUN0RUhRNi1vMFVkcFlDVUR1OXFMdXVrWXp1NjlUWXhvYU9fMjBaM0E?oc=5" target="_blank">La “oficina de hoy” fue el municipio de Cataño. Entre faenas, transmisiones y preguntas siempre es grato conectar con colegas y amigos con los que no siempre tenemos la oportunidad de coincidir. Y eso siempre es ganancia - facebook.com</a>
+                    </td>
+                    <td>FB - Cataño</td>
+                    <td class="time-ago" data-date="2026-05-20 01:07">hace 1d</td>
                 </tr>
                 
                 
@@ -957,7 +977,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-21 04:31:55 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-21 05:02:38 PM<br>
     Actualización automática cada 30 min
 </div>
 
