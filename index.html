@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-21 08:31:49 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-21 09:02:29 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">25</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">28</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">13</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">64/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-21 08:31:49 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-21 09:02:29 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -370,7 +370,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
@@ -415,17 +415,17 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         
     </div>
@@ -447,10 +447,30 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="Sectores con 30, 70 y 80% de potencial de lluvia">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/05/21/sectores-con-30-70-y-80-de-potencial-de-lluvia/" target="_blank">Sectores con 30, 70 y 80% de potencial de lluvia</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-05-21 12:44">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="La mayoría de las playas en Puerto Rico, Vieques y Culebra mantienen un riesgo moderado de corrientes marinas. - facebook.com">
+                    <td><span class="muni-tag">Vieques, Culebra</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNWjlCVUw1a2JIbmJPNWtRRk1nb0NpdFJOUXhDdFh0cWVSVldlaklQOFk2OXctbldvZHQ1TjRxdHU2MF9KZHE4ZmVtNk9LNUpkNzBrdUpra1BzVUFnUy1qUlplYnNjeXVURGRSMzFubm9DOERiVkFNUlBaRV82OHIzUTZPTjc3MGlCZUJIQm9leXFfejF1cHFtNzNNdzdYWDY3UWZwMV9uUVFURksyVmoxd0lreVBRb3JXallVZl9fZGdqZ0wwX2JHRFp3TUd2TmRDajlKd0xHSHNEaGNpWkE?oc=5" target="_blank">La mayoría de las playas en Puerto Rico, Vieques y Culebra mantienen un riesgo moderado de corrientes marinas. - facebook.com</a>
+                    </td>
+                    <td>FB - Culebra</td>
+                    <td class="time-ago" data-date="2026-05-21 12:30">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Caguas" data-titular="Escuelas especializadas de Las Piedras y Caguas anuncian interrupción de servicios por alegada falta de pagos del Departamento de Educación">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://waloradio.com/2026/05/21/escuelas-especializadas-de-las-piedras-y-caguas-anuncian-interrupcion-de-servicios-por-alegada-falta-de-pagos-del-departamento-de-educacion/" target="_blank">Escuelas especializadas de Las Piedras y Caguas anuncian interrupción de servicios por alegada falta de pagos del Departamento de Educación</a>
                     </td>
                     <td>Walo Radio</td>
@@ -484,7 +504,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/notas/peligra-la-sombra-en-el-viejo-san-juan-denuncian-plan-para-talar-50-arboles-entre-la-fortaleza-y-el-morro/" target="_blank">¿Peligra la sombra en el Viejo San Juan? Denuncian plan para talar 50 árboles entre La Fortaleza y el Morro</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-21 10:00">ahora</td>
+                    <td class="time-ago" data-date="2026-05-21 09:02">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Ismael Guadalupe: una trayectoria de activismo y lucha en nombre de Vieques">
@@ -494,7 +514,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/ismael-guadalupe-una-trayectoria-de-activismo-y-lucha-en-nombre-de-vieques/" target="_blank">Ismael Guadalupe: una trayectoria de activismo y lucha en nombre de Vieques</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-21 08:31">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-21 09:02">ahora mismo</td>
                 </tr>
                 
                 
@@ -527,7 +547,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/20/advierten-multas-a-lanchas-que-no-reporten-llegada/" target="_blank">Advierten multas a lanchas que no reporten llegada</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-21 00:56">hace 7h</td>
+                    <td class="time-ago" data-date="2026-05-21 00:56">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Airbnb añade vehículos, hoteles y experiencias de la Copa Mundial">
@@ -537,21 +557,21 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/20/airbnb-anade-vehiculos-hoteles-y-experiencias-de-la-copa-mundial/" target="_blank">Airbnb añade vehículos, hoteles y experiencias de la Copa Mundial</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-21 00:55">hace 7h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Junta Fiscal no prevee solución este año a la quiebra de la AEE">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/05/20/junta-fiscal-no-prevee-solucion-este-ano-a-la-quiebra-de-la-aee/" target="_blank">Junta Fiscal no prevee solución este año a la quiebra de la AEE</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-21 00:48">hace 7h</td>
+                    <td class="time-ago" data-date="2026-05-21 00:55">hace 8h</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Caguas será sede del Fogueo de Para Tenis de Mesa este sábado, 23 de mayo, desde las 9:00 a.m. en el Centro Apoyo Mutuo, ubicado en la calle Vizcarrondo #70 en Caguas. La actividad reunirá atletas y personas interesadas en conocer el movimiento pa - facebook.com">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxOUm8xdXIzSzcyWU8wVUY5RDdLOEdndGhMdlMtbTMwZldRYktHck5CTGN4UjFJLU53ZEdxMGhaRlRQdkI2Q01abG9vN3l2dk9Yc3M5bTdPOEhXOHJNLVhkQlJLN1VxNzYwZDBjb2JXMzJaalBZTHJaZGlFeUpNNzUzY19adXZzMzRITHEwUVcwSjlFS0dnb28xNWVJTk9fR1ZFU1Ntb0Fwc09aVjNEcmdDY25xUjd4N1gtZHdnTVh6MFA1UnROQWdpeFU1alItSkVPTVRPNEdqLXB1bFhJTHROdDF0UXF6UQ?oc=5" target="_blank">Caguas será sede del Fogueo de Para Tenis de Mesa este sábado, 23 de mayo, desde las 9:00 a.m. en el Centro Apoyo Mutuo, ubicado en la calle Vizcarrondo #70 en Caguas. La actividad reunirá atletas y personas interesadas en conocer el movimiento pa - facebook.com</a>
+                    </td>
+                    <td>FB - Caguas</td>
+                    <td class="time-ago" data-date="2026-05-20 20:30">hace 12h</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="🚨📢 Oportunidad de empleo en el Municipio de Canóvanas ¿Quieres servir a tu comunidad y ser parte del equipo que responde cuando más se necesita? El Municipio de Canóvanas anuncia la disponibilidad de la plaza de: 👨‍🚒 Auxiliar de Manejo de Emerge - facebook.com">
                     <td><span class="muni-tag">Canóvanas</span></td>
@@ -560,7 +580,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNNHBhaE11emo0Q3h5UzZyRkxsR0hOSTV6RHpxZVpKM05qY1BfeUFRYnRHRDJ6MWZoWnlmbDQ5b3U0S3dyMEk3cENibnFKVzNNa2NsakVUYnpmYW5OdkJzVWtKM3kyR0NZLTNTTEdsVTZqWm5MdXJXcm16QnFUMF9SQlZkZVVzYUlodjlnSDg1SnZHekxCOG5oQWM5cGdCZw?oc=5" target="_blank">🚨📢 Oportunidad de empleo en el Municipio de Canóvanas ¿Quieres servir a tu comunidad y ser parte del equipo que responde cuando más se necesita? El Municipio de Canóvanas anuncia la disponibilidad de la plaza de: 👨‍🚒 Auxiliar de Manejo de Emerge - facebook.com</a>
                     </td>
                     <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-05-20 20:00">hace 12h</td>
+                    <td class="time-ago" data-date="2026-05-20 20:00">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Aduanas recuerda obligación de reportar llegada de embarcaciones entre Puerto Rico y las Islas Vírgenes">
@@ -570,7 +590,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/20/aduanas-recuerda-obligacion-de-reportar-llegada-de-embarcaciones-entre-puerto-rico-y-las-islas-virgenes/" target="_blank">Aduanas recuerda obligación de reportar llegada de embarcaciones entre Puerto Rico y las Islas Vírgenes</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-20 19:49">hace 12h</td>
+                    <td class="time-ago" data-date="2026-05-20 19:49">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Sexagenario muere atropellado mientras cruzaba la PR-3 en Humacao - El Vocero de Puerto Rico">
@@ -580,7 +600,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxOTzN1VWViX2NMZ1c1cHhBSl9ZY0I1R0ZYVjFmcjZoZ2pkOHQ0Z21CT0ttNnI0TTFEU3VvVjk0dmNOWHpTdDNHUk52WXUzRWp1NlJVSnl0YmRPczUtM2RrdkJhNzY5eTh2MHVGT1lhQ2hxaEdSTkw5V0pJOGk4cElRQlJDSFZBS1hrTmlGOHE2MTJSRWVfN2lZci14c3BSMnFJWVZRZHd1ejVIeDdfRmh5MFpZQUJoOU9FN0lhN1o5SFdqVEtvbjEwU21LRXpJb25NM0YycFRKcThKMndJcW9OOVdsR3diQ0HSAewBQVVfeXFMUG1sZUlXTFIyMms3SVhkX0s0bVNpSnREYkdDaTVUalVYNTZzb3ZXbmJCRzRmek5rZjhCUXdFOUV6WkxZN1ZxUU5vNTRTYjNEWW5wLTE5a21idEthSmQwYkJldzlUa2RQN0M2Tml1NVpDckZVR1c3S29pWUY5MnZUQWJ6cWpoUVp5QWZQTFJfZV9ycEYyX3czSWdsZXYzMmlVNFY5ZTBkZU9oZFg4bDUxYnVfRjZFZGNEaFZlZ0lRQTVOOWxtTnIwR3NKY3hnYlRQMV9xdHo3bDBWUm9BRDVpLXU0bjJ5ek1aZ2FxRk8?oc=5" target="_blank">Sexagenario muere atropellado mientras cruzaba la PR-3 en Humacao - El Vocero de Puerto Rico</a>
                     </td>
                     <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-05-20 18:51">hace 13h</td>
+                    <td class="time-ago" data-date="2026-05-20 18:51">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Policía fortalece lazos comunitarios con actividades educativas en Humacao y Maunabo">
@@ -590,7 +610,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/20/policia-fortalece-lazos-comunitarios-con-actividades-educativas-en-humacao-y-maunabo/" target="_blank">Policía fortalece lazos comunitarios con actividades educativas en Humacao y Maunabo</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-20 17:43">hace 14h</td>
+                    <td class="time-ago" data-date="2026-05-20 17:43">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Arrestan a cuatro en un punto de drogas en sector La Polilla en Juncos">
@@ -620,7 +640,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE52SGJkMnZXUExtb0pQNl95b2l1VC1aS0VyQ1RVUnFPWnltRW1OWm1ZaUY1ZHUzQmpIdHdYT29ibl95UzNwU29pT0hjN0I0WnBVY1VfUXR2YTQ4ZXJYTzJody1yRmRpTmFPSUlTcXZxaE9UNGQwTk5MR2lDamJuQVk?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
                     </td>
                     <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-05-20 17:00">hace 15h</td>
+                    <td class="time-ago" data-date="2026-05-20 17:00">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza - facebook.com">
@@ -640,7 +660,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQOTB5bWE2YkVWSS1SeUVYRXh0UzZCbmU4Y3JqSEdfMHRIcmNXZVo5TDdrTUVVeVhCNkNSWmxJQ3VJNjR1bzkzTUtmYi1NZGhoLTBSWll3S3RBVTFWMTlYd0M2aDdWQWxMY1dQbUcxVnB1T25IRVZtNzllZXBrUEZUSlgzQ3pENWh5Z1dTSXo1WkdnZGJFcTlkdUc5MkNQZm5HMk1Xeg?oc=5" target="_blank">Todos a disfrutar de Verano Inclusivo en balneario de Luquillo - Periódico La Perla</a>
                     </td>
                     <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-05-20 13:35">hace 18h</td>
+                    <td class="time-ago" data-date="2026-05-20 13:35">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="Todo lo que tiene Río Grande te conecta con la esencia de Puerto Rico: cascadas, aventura, gastronomía, naturaleza y experiencias únicas en un solo pueblo. Desde El Yunque hasta sus sabores y paisajes, aquí siempre hay algo por descubrir. #TurismoPR - facebook.com">
@@ -660,7 +680,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZ2J6MmM5US16WVIyLVFiSXNJQVAzdnNHRWN3ZkUybGVvSktZM2tyMU9xR1VGTDBrdzBoajJmNmVaRTZTZGxleXV3bExZWXlXeVNwWTVVVTdZWGtaN0ZYaE5lN2JJUnJzUkZOdWxTSWtISUY2ZmhMaVA1UlN6TTFhYjlEaU5TeTdxbDcw?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
                     </td>
                     <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-05-20 11:00">hace 21h</td>
+                    <td class="time-ago" data-date="2026-05-20 11:00">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
@@ -670,7 +690,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE40WXlOTkZXakM1YklvS1oyc2FCbXNTamlpRFAxMUdlT3dQSTdZcWtOT0w1RUxxU0dqbWxSaXVfQ3FzZ3pFVEJ6ZlRlY0kwSjd6OHk1UWQtUnprbmpqbnU5RS05dkNiUEUxWUw2cWZkcWg0S1NrQmlpZ2IxMVFkcWs?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
                     </td>
                     <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-05-20 11:00">hace 21h</td>
+                    <td class="time-ago" data-date="2026-05-20 11:00">hace 22h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="La “oficina de hoy” fue el municipio de Cataño. Entre faenas, transmisiones y preguntas siempre es grato conectar con colegas y amigos con los que no siempre tenemos la oportunidad de coincidir. Y eso siempre es ganancia - facebook.com">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxQT3hvQzRHZGN4cGJLV3RjY1ZSOG9BZ2V6R2NacDdnZlY2Y1NqYUduTXR3czh1LTFPT2trWnkteE9SbnZQeDFaMzZFMUh4WlpoclAwYlVPcnNPUnhyb2JrTGhMWUQxSHRTeHFIRF9NVVJsck92bFdwYkQxUGlXdE9BallaOEgwV2lPZ3lxNEtzb3k1SXd1SGwxRGZJOUExd2hKaXRqUGtKMzZGNEFYb3dCTDJpVFBCVVhkclFhTnU2cUN0RUhRNi1vMFVkcFlDVUR1OXFMdXVrWXp1NjlUWXhvYU9fMjBaM0E?oc=5" target="_blank">La “oficina de hoy” fue el municipio de Cataño. Entre faenas, transmisiones y preguntas siempre es grato conectar con colegas y amigos con los que no siempre tenemos la oportunidad de coincidir. Y eso siempre es ganancia - facebook.com</a>
+                    </td>
+                    <td>FB - Cataño</td>
+                    <td class="time-ago" data-date="2026-05-20 01:07">hace 1d</td>
                 </tr>
                 
                 
@@ -858,7 +888,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-21 08:31:49 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-21 09:02:29 AM<br>
     Actualización automática cada 30 min
 </div>
 
