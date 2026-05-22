@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-22 03:02:23 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-22 03:32:24 PM</span></div>
         </div>
     </div>
     <div class="stats">
         <div class="stat-box"><div class="num">40</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
-        <div class="stat-box"><div class="num" style="font-size:12px">64/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-22 03:02:23 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num" style="font-size:12px">63/67</div><div class="label">Fuentes OK</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-22 03:32:24 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -353,6 +353,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="breaking-item">
             <span class="time">ahora</span> —
+            <a href="https://nelpr.com/2026/05/22/balacera-esta-tarde-deja-un-muerto-3/" target="_blank">Balacera esta tarde deja un muerto</a>
+            <span style="opacity:0.6"> [San Juan]</span>
+        </div>
+        
+        <div class="breaking-item">
+            <span class="time">ahora</span> —
             <a href="https://waloradio.com/2026/05/22/investigan-hallazgo-de-cadaver-en-zona-rocosa-de-playa-en-loiza/" target="_blank">Investigan hallazgo de cadáver en zona rocosa de playa en Loíza</a>
             <span style="opacity:0.6"> [Loíza]</span>
         </div>
@@ -364,13 +370,7 @@ tr:hover { background: var(--surface2); }
         </div>
         
         <div class="breaking-item">
-            <span class="time">ahora</span> —
-            <a href="https://nelpr.com/2026/05/22/hallan-cadaver-de-una-persona-en-la-playa/" target="_blank">Hallan cadáver de una persona en la playa</a>
-            <span style="opacity:0.6"> [Loíza]</span>
-        </div>
-        
-        <div class="breaking-item">
-            <span class="time">ahora</span> —
+            <span class="time">hace 26min</span> —
             <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQTjhTYzlvU0ZrTVB6QjdhWGxuOXRoaXNYUlA1MlJxSmQ5X28xZTZESm1tWWFJd3hGc1NvdjJ5dU5HMV9XYkVmYjZQRkswUXF6ODh5dVlLd2dQSFpjRUZ3cHRFaVdBaFhKdFc5U3F5MXZIUF9acm50UGdHY01HTXdNQ1hkLWhkVFl6VkJTWlRPVk0xcVk0b3cwV0dBQQ?oc=5" target="_blank">Hallan cadáver en playa de Loíza - Primera Hora</a>
             <span style="opacity:0.6"> [Loíza]</span>
         </div>
@@ -386,7 +386,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">7</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -406,12 +406,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">2</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
+        <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
@@ -421,7 +421,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">11</div>
+            <div class="muni-count">9</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
@@ -456,7 +456,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         
     </div>
@@ -477,6 +477,26 @@ tr:hover { background: var(--surface2); }
             <tbody id="articlesBody">
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Balacera esta tarde deja un muerto">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/05/22/balacera-esta-tarde-deja-un-muerto-3/" target="_blank">Balacera esta tarde deja un muerto</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-05-22 19:29">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Baterista puertorriqueño debuta en el Coliseo junto a Fit for an Autopsy">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/05/22/baterista-puertorriqueno-debuta-en-el-coliseo-junto-a-fit-for-an-autopsy/" target="_blank">Baterista puertorriqueño debuta en el Coliseo junto a Fit for an Autopsy</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-05-22 19:25">ahora</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Humacao fortalece su Policía Municipal con ascensos, tecnología y nuevas medidas de seguridad">
                     <td><span class="muni-tag">Humacao</span></td>
@@ -538,16 +558,6 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-22 16:25">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="El Hospital Municipal de San Juan celebra la graduación de 49 médicos residentes">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/ultima-hora/20260522/el-hospital-municipal-de-san-juan-celebra-la-graduacion-de-49-medicos-residentes/?utm_source=rss&utm_medium=rss&utm_campaign=el-hospital-municipal-de-san-juan-celebra-la-graduacion-de-49-medicos-residentes" target="_blank">El Hospital Municipal de San Juan celebra la graduación de 49 médicos residentes</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-05-22 16:13">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Loíza" data-titular="Investigan hallazgo de cadáver en zona rocosa de playa en Loíza">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
@@ -578,56 +588,6 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-22 15:37">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Loíza" data-titular="Hallan cadáver de una persona en la playa">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/05/22/hallan-cadaver-de-una-persona-en-la-playa/" target="_blank">Hallan cadáver de una persona en la playa</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-22 15:33">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Investigan hallazgo de un cuerpo humano en playa de Loíza - Noticias de Puerto Rico hoy">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNbU0xeGwteElQS293MGJHeGl6dGdZa09HRDlsVzhZanhHMGNPUzFwV3hXUFNsaU1vMGd6bmR0YjhnRks1NGtocGVvNC03SnpFb19CUUhwZjJvQVBCWDRLQ2IyTU1rZUJlRzRNbUpwY0NydE9pd3UtcTVFc3FCZ2g4bUJ3eHNySEloT0NTZm80Qlh4RDdWREljaGVFeUxOYnFvTHVlSkpVT0lMQl8yZENV?oc=5" target="_blank">Investigan hallazgo de un cuerpo humano en playa de Loíza - Noticias de Puerto Rico hoy</a>
-                    </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-22 15:25">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Investigan hallazgo de una persona muerta en playa de Loíza - Noticias de Puerto Rico hoy">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOel9tdjEyQ3hMRDQ3TFhkb21TS0V5djAzNTBoU0JHOGtCQXk2SVktR0kzcm1CRjl4NFRpaVVlazhYcy1CZE50d1hBS2V3SDZiQjVNSUxrQlFOZ05zY21OWDFKdjlxV1htRmNsVjJGeXdvWlhUbFhhaGdFbGZHVlZoZFRfN1QxTVo4NlVWS09tZlhPUzdzRDhVTHUyRXhZNlB3elhfeUVNeEtpb2xDenpvRDhB?oc=5" target="_blank">Investigan hallazgo de una persona muerta en playa de Loíza - Noticias de Puerto Rico hoy</a>
-                    </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-22 15:25">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Encuentran una persona muerta en playa de Loíza - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMlhJOENkY2JJbWx4cVVia2hRYVZlcEk5VkktcjNTcy1nZ2dMVmZjT0N4UDVKTHNfVEIxMDV3cGlvc0RIaTAtWmpjWmdfUUxfempMNWV1bXhDc3Q0LUtYV2ZTeFNBNTR6Q3pBVjl0eUplU1NqNVZpanM5aDZ6bTRiUklvNXlla0NKT00zU2pCb05XbnBuVXp1SVNoYmxiNTk5VjJ1ekx1dHXSAbABQVVfeXFMTl84V3ROaFlLcHYyYmpTWjdtWXRnOC1RbFFIWXZVM1Y5QmlDb2lMMUIzMVVpcXhHVndqaldLTklxUHpQNE11MERnU1RkUjl4N191UExBVkxuZDVUSUhRczJiZWk4N0JZOUdFa2NzZ2Y5TVJ2T1ZZdG1kWGdKY1pKRDB3d2dpeFMyS1JzaUp1WlJsZGNKazdUY2lCSlNUOUJSQnlGeVRBMlVPcTZHWFZ0S2w?oc=5" target="_blank">Encuentran una persona muerta en playa de Loíza - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-22 15:21">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Hallan cadáver en playa de Loíza - Primera Hora">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQTjhTYzlvU0ZrTVB6QjdhWGxuOXRoaXNYUlA1MlJxSmQ5X28xZTZESm1tWWFJd3hGc1NvdjJ5dU5HMV9XYkVmYjZQRkswUXF6ODh5dVlLd2dQSFpjRUZ3cHRFaVdBaFhKdFc5U3F5MXZIUF9acm50UGdHY01HTXdNQ1hkLWhkVFl6VkJTWlRPVk0xcVk0b3cwV0dBQQ?oc=5" target="_blank">Hallan cadáver en playa de Loíza - Primera Hora</a>
-                    </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-22 15:06">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Fajardo" data-titular="En imágenes: así quedó la embarcación “Chiqui Lilly” tras encallar en Fajardo">
                     <td><span class="muni-tag">Fajardo</span></td>
                     <td class="titular-cell">
@@ -635,7 +595,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/fotogalerias/en-imagenes-asi-quedo-la-embarcacion-chiqui-lilly-tras-encallar-en-fajardo/" target="_blank">En imágenes: así quedó la embarcación “Chiqui Lilly” tras encallar en Fajardo</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-22 15:02">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-22 15:32">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="En imágenes: confirman plan de tala de árboles en el Viejo San Juan">
@@ -645,7 +605,47 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/en-imagenes-confirman-plan-de-tala-de-arboles-en-el-viejo-san-juan/" target="_blank">En imágenes: confirman plan de tala de árboles en el Viejo San Juan</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-22 15:02">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-22 15:32">ahora mismo</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="Investigan hallazgo de un cuerpo humano en playa de Loíza - Noticias de Puerto Rico hoy">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNbU0xeGwteElQS293MGJHeGl6dGdZa09HRDlsVzhZanhHMGNPUzFwV3hXUFNsaU1vMGd6bmR0YjhnRks1NGtocGVvNC03SnpFb19CUUhwZjJvQVBCWDRLQ2IyTU1rZUJlRzRNbUpwY0NydE9pd3UtcTVFc3FCZ2g4bUJ3eHNySEloT0NTZm80Qlh4RDdWREljaGVFeUxOYnFvTHVlSkpVT0lMQl8yZENV?oc=5" target="_blank">Investigan hallazgo de un cuerpo humano en playa de Loíza - Noticias de Puerto Rico hoy</a>
+                    </td>
+                    <td>Loíza</td>
+                    <td class="time-ago" data-date="2026-05-22 15:25">hace 7min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="Investigan hallazgo de una persona muerta en playa de Loíza - Noticias de Puerto Rico hoy">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOel9tdjEyQ3hMRDQ3TFhkb21TS0V5djAzNTBoU0JHOGtCQXk2SVktR0kzcm1CRjl4NFRpaVVlazhYcy1CZE50d1hBS2V3SDZiQjVNSUxrQlFOZ05zY21OWDFKdjlxV1htRmNsVjJGeXdvWlhUbFhhaGdFbGZHVlZoZFRfN1QxTVo4NlVWS09tZlhPUzdzRDhVTHUyRXhZNlB3elhfeUVNeEtpb2xDenpvRDhB?oc=5" target="_blank">Investigan hallazgo de una persona muerta en playa de Loíza - Noticias de Puerto Rico hoy</a>
+                    </td>
+                    <td>Loíza</td>
+                    <td class="time-ago" data-date="2026-05-22 15:25">hace 7min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="Encuentran una persona muerta en playa de Loíza - Telemundo Puerto Rico">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMlhJOENkY2JJbWx4cVVia2hRYVZlcEk5VkktcjNTcy1nZ2dMVmZjT0N4UDVKTHNfVEIxMDV3cGlvc0RIaTAtWmpjWmdfUUxfempMNWV1bXhDc3Q0LUtYV2ZTeFNBNTR6Q3pBVjl0eUplU1NqNVZpanM5aDZ6bTRiUklvNXlla0NKT00zU2pCb05XbnBuVXp1SVNoYmxiNTk5VjJ1ekx1dHXSAbABQVVfeXFMTl84V3ROaFlLcHYyYmpTWjdtWXRnOC1RbFFIWXZVM1Y5QmlDb2lMMUIzMVVpcXhHVndqaldLTklxUHpQNE11MERnU1RkUjl4N191UExBVkxuZDVUSUhRczJiZWk4N0JZOUdFa2NzZ2Y5TVJ2T1ZZdG1kWGdKY1pKRDB3d2dpeFMyS1JzaUp1WlJsZGNKazdUY2lCSlNUOUJSQnlGeVRBMlVPcTZHWFZ0S2w?oc=5" target="_blank">Encuentran una persona muerta en playa de Loíza - Telemundo Puerto Rico</a>
+                    </td>
+                    <td>Loíza</td>
+                    <td class="time-ago" data-date="2026-05-22 15:21">hace 11min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="Hallan cadáver en playa de Loíza - Primera Hora">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQTjhTYzlvU0ZrTVB6QjdhWGxuOXRoaXNYUlA1MlJxSmQ5X28xZTZESm1tWWFJd3hGc1NvdjJ5dU5HMV9XYkVmYjZQRkswUXF6ODh5dVlLd2dQSFpjRUZ3cHRFaVdBaFhKdFc5U3F5MXZIUF9acm50UGdHY01HTXdNQ1hkLWhkVFl6VkJTWlRPVk0xcVk0b3cwV0dBQQ?oc=5" target="_blank">Hallan cadáver en playa de Loíza - Primera Hora</a>
+                    </td>
+                    <td>Loíza</td>
+                    <td class="time-ago" data-date="2026-05-22 15:06">hace 26min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Más de 250 empresarios y profesionales participan del “Upgrade Empresarial Summit” en Humacao">
@@ -655,7 +655,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/22/mas-de-250-empresarios-y-profesionales-participan-del-upgrade-empresarial-summit-en-humacao/" target="_blank">Más de 250 empresarios y profesionales participan del “Upgrade Empresarial Summit” en Humacao</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-22 14:57">hace 5min</td>
+                    <td class="time-ago" data-date="2026-05-22 14:57">hace 35min</td>
                 </tr>
                 
                 
@@ -668,7 +668,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVEdsZmxCeXhOMDVIb3NVd0pnQkRZLVBtNFZJSEZtNVFMN0p0M1Y0Y3Fsb1drcnNPRTc1T19hWHZneHVLdmtZMkZDQlZTX2ZQYWFSOFRReVlXdlMweUY5WHVjM1VFSHJvblcxTC1pVksxQUtjc3FIVmZoQnJMX1gxWGZVaG9QcTNYMGtiTU0wMldMU1QwczY5eGlWSi1INEsybk9CU1VVbklHNW8?oc=5" target="_blank">Autoridades desalojan égida en Humacao por situación con ascensor - Metro Puerto Rico</a>
                     </td>
                     <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-05-22 13:31">hace 1h</td>
+                    <td class="time-ago" data-date="2026-05-22 13:31">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Arrestan a sujeto que le apuntó con arma de fuego a policía en Luquillo - Metro Puerto Rico">
@@ -731,18 +731,18 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-22 02:56">hace 12h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza - facebook.com">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE5NeXlfU0lOTzcyTEx3MFVSbFdMdy1VVDcwUFIxOUh3TV9aQzVTYldlT0NfdDNYTS1RSFJCUmJ2ZFBwall3N3J3WkNIQV83cDJYY0Y4eWJfRXB0X0V4bzN6MWpwVkR5X0E1ZmpXNjBRdVVhOUk5czRZ?oc=5" target="_blank">Municipio de Loíza - facebook.com</a>
-                    </td>
-                    <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-05-22 01:48">hace 13h</td>
-                </tr>
-                
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="📢 Oportunidad de empleo en Canóvanas Anunciamos la disponibilidad del puesto transitorio de Director(a) Auxiliar para nuestra Oficina de Obras Públicas y Mejoras Municipales. 💵 Sueldo mensual: $3,425.00 Buscamos una persona con preparación acadé - facebook.com">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxQUWY0aF9rR3h6R0pwQmI0dWhsVEQ0akwzZzVZako0YzlzNFlLWlhuN00yRlRYTjc4Q1o2eVBYd29ibkdfd0dWSEJQekp5UE5kUXNvNWIwWkpPQXFhT1M3QURKeHZqSk5aZUhzajZReXJNUU53NXpMVVBNcHN1bFJiOHBrRWw1UmpCd2dnRnVSbFNnMmJDT0YyZTZwYlRFUzlFN2s1ejVsbGZYTmhYcmJabWVIajlHZWd4OWJTWU5BU0lyOHNYeWRRMEVOQlpkMkFVNXpoY29tQW9zblJlcUhfQjlQd2FBWm82a2c?oc=5" target="_blank">📢 Oportunidad de empleo en Canóvanas Anunciamos la disponibilidad del puesto transitorio de Director(a) Auxiliar para nuestra Oficina de Obras Públicas y Mejoras Municipales. 💵 Sueldo mensual: $3,425.00 Buscamos una persona con preparación acadé - facebook.com</a>
+                    </td>
+                    <td>FB - Canóvanas</td>
+                    <td class="time-ago" data-date="2026-05-21 23:37">hace 15h</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="📢 ALCALDE DE VIEQUES DECRETA TRES DÍAS DE DUELO CON BANDERAS A MEDIA ASTA EN MEMORIA Y LEGADO DE ISMAEL GUADALUPE ORTIZ 🕊️ El Municipio de Vieques y su alcalde, Hon. José A. Junito Corcino Acevedo, rinden un respetuos - facebook.com">
                     <td><span class="muni-tag">Vieques</span></td>
@@ -751,7 +751,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxNVmNIU1BpZVd4U3p3U0dqeWlGRl9qT05yX1FwVi1MQ3JFc0FJbWdGRE5CYjBoSGRzQWRzaFpmVXBOeG9fWXBreFJzbGVuLVVSZmIwUVkxczFuNmRpdlk1X3lXR1ZQd3ZYaVZ0TlZmdWxyQkJ6N2dlVlhXRUVVVTRSTHZ1dEdxVEFpdDl0MUFXZDZWRWg3ZUtKRXBQMFJuNGN2WUI2OHcwSFB0X2JiS2RnRktYZ3JNVjdwQW11X0phVGIwdjJkRVVvV0Y1N1R3eHlHOTJqZFVNcUY3TFJqMHdBSHJLNHVyb1E?oc=5" target="_blank">📢 ALCALDE DE VIEQUES DECRETA TRES DÍAS DE DUELO CON BANDERAS A MEDIA ASTA EN MEMORIA Y LEGADO DE ISMAEL GUADALUPE ORTIZ 🕊️ El Municipio de Vieques y su alcalde, Hon. José A. Junito Corcino Acevedo, rinden un respetuos - facebook.com</a>
                     </td>
                     <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-05-21 21:16">hace 17h</td>
+                    <td class="time-ago" data-date="2026-05-21 21:16">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Vieques decreta tres días de duelo ante el fallecimiento de Ismael Guadalupe - NotiCel">
@@ -771,7 +771,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQbi1fX091VEk5Y1pBbXdTRTMzRC03YjhnOEVpUkpMak1yZE1sbmFCV3ZsQzRudFNaU1kyYThFUURoUEk1TXUwc2wtaDZWR0l4c1ZCQUIyVy0xWXBYSW9teVNfVk9aNmRXTllvaXNzVGFiMzBZZ09XX2xveEdEbFRUbjB1bFJIcTlsQXhCdWl0WHpiaTJQMEwzY3RWTQ?oc=5" target="_blank">Ismael Guadalupe héroe de la libertad de Vieques y de la Patria - claridadpuertorico.com</a>
                     </td>
                     <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-05-21 19:05">hace 19h</td>
+                    <td class="time-ago" data-date="2026-05-21 19:05">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Cariduras de Fajardo anuncian conferencia de prensa para presentar su nueva etapa en el BSNF - wipr.pr">
@@ -781,7 +781,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPeGl3cmt4R2xfbkVmSW9GQ01JNTVZM2pxLTJHUG1PNTVPNUpCYjRMbU9NMHNhbEpxZHE0NTZxdlpTYlIydnRQVWhfeWRyVm5lNkw4eGRZbmd2S2FDckhtSUpnZDU4dzFlcnB3bFJ4S2J6V0QwWTcxVUxwWTR1ZWpnVjU2ZkpJV2ZyU1lfQmF1VXloam9Dc2dhNjRFWmcxeUo0TXRIMkQyeHpwcXItWlE?oc=5" target="_blank">Cariduras de Fajardo anuncian conferencia de prensa para presentar su nueva etapa en el BSNF - wipr.pr</a>
                     </td>
                     <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-05-21 18:17">hace 20h</td>
+                    <td class="time-ago" data-date="2026-05-21 18:17">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Ismael Guadalupe, crucial figure in campaign against military presence in Vieques, passed away - Noticias de Puerto Rico hoy">
@@ -804,14 +804,14 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-21 17:39">hace 21h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo - facebook.com">
-                    <td><span class="muni-tag">Luquillo</span></td>
+                <tr class="article-row" data-municipios="Culebra" data-titular="Una de las playas más bellas de la Isla de Culebra, Puerto Rico 🇵🇷 #Puertorico #culebrapuertorico #culebraisland #TurismoPR #aventurandopormiisla #culebraisland - facebook.com">
+                    <td><span class="muni-tag">Culebra</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTFBHWV9qNzBCcE82TnRSMkdWRnNmbmVsR3pvdXVTY1ZtdTFSNmpCTFdlNEwtSHdzUXB4bEJ6M1laT3AyalBIRklQYUVIc05pcHVxd212WjRMTzBBS2RvX2d6NkhsYzY2cGhjUmtEcUpKQVVhUUZGUzBPTw?oc=5" target="_blank">Municipio de Luquillo - facebook.com</a>
+                        <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxPaUwtV2lMVU0wV0ZrVkIyZzBiWUVrLWlLS2FiN2dMa2Z0SHl1Q194UzJ6bnc1TTE3eEk5Q0NBdE9fQTVvOExnb3g3YlR5OWVGc3BndmxuOG1DYk1PR0w3OC1sakZTNXRZTFRnLWRyQVBreFRabnFsbklNa05nYTRmMUo4ZmMtWWtrZkFta1dfaWpjUHBxQlA5N0xqZ0tZU2tZLUl1cklhaTBwR21qQVJMQU1GMjdIT0FPSnBvcmdZZmRfUUViUG5UQUM0dTExM3VxYmNZS3A5dmloUlQySWVSekJTNGhmdGxIMmtFeg?oc=5" target="_blank">Una de las playas más bellas de la Isla de Culebra, Puerto Rico 🇵🇷 #Puertorico #culebrapuertorico #culebraisland #TurismoPR #aventurandopormiisla #culebraisland - facebook.com</a>
                     </td>
-                    <td>FB - Luquillo</td>
-                    <td class="time-ago" data-date="2026-05-21 17:30">hace 21h</td>
+                    <td>FB - Culebra</td>
+                    <td class="time-ago" data-date="2026-05-21 16:24">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="La mayoría de las playas en Puerto Rico, Vieques y Culebra mantienen un riesgo moderado de corrientes marinas. - facebook.com">
@@ -903,7 +903,7 @@ tr:hover { background: var(--surface2); }
         
         <span class="source-badge ok">🟢 El Nuevo Día: OK</span>
         
-        <span class="source-badge ok">🟢 NotiCel: OK</span>
+        <span class="source-badge err">🔴 NotiCel: Error</span>
         
         <span class="source-badge ok">🟢 Radio Isla: OK</span>
         
@@ -1039,7 +1039,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-22 03:02:23 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-22 03:32:24 PM<br>
     Actualización automática cada 30 min
 </div>
 
