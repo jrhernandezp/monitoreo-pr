@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-22 10:02:10 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-22 10:31:45 AM</span></div>
         </div>
     </div>
     <div class="stats">
         <div class="stat-box"><div class="num">36</div><div class="label">Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">64/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-22 10:02:10 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-22 10:31:45 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -355,7 +355,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">9</div>
+            <div class="muni-count">10</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -420,12 +420,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">8</div>
+            <div class="muni-count">7</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Culebra')">
+        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
     </div>
@@ -447,14 +447,44 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="Hasta 90% de potencial de lluvia para hoy">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/05/22/hasta-90-de-potencial-de-lluvia-para-hoy-8/" target="_blank">Hasta 90% de potencial de lluvia para hoy</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-05-22 14:22">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Carolina" data-titular="Cae “Papo”, señalado por la Policía como presunto líder de “La Familia Carolina”">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://www.elnuevodia.com/noticias/seguridad/notas/cae-papo-senalado-por-la-policia-como-presunto-lider-de-la-familia-carolina/" target="_blank">Cae “Papo”, señalado por la Policía como presunto líder de “La Familia Carolina”</a>
                     </td>
                     <td>El Nuevo Día</td>
                     <td class="time-ago" data-date="2026-05-22 13:51">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Autoridades desalojan égida en Humacao por situación con ascensor - Metro Puerto Rico">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVEdsZmxCeXhOMDVIb3NVd0pnQkRZLVBtNFZJSEZtNVFMN0p0M1Y0Y3Fsb1drcnNPRTc1T19hWHZneHVLdmtZMkZDQlZTX2ZQYWFSOFRReVlXdlMweUY5WHVjM1VFSHJvblcxTC1pVksxQUtjc3FIVmZoQnJMX1gxWGZVaG9QcTNYMGtiTU0wMldMU1QwczY5eGlWSi1INEsybk9CU1VVbklHNW8?oc=5" target="_blank">Autoridades desalojan égida en Humacao por situación con ascensor - Metro Puerto Rico</a>
+                    </td>
+                    <td>Humacao</td>
+                    <td class="time-ago" data-date="2026-05-22 13:31">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Comisión senatorial evalúa hoy proyecto para que se juegue más en Puerto Rico">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://noticel.com/ultima-hora/20260522/comision-senatorial-evalua-hoy-proyecto-para-que-se-juegue-mas-en-puerto-rico/?utm_source=rss&utm_medium=rss&utm_campaign=comision-senatorial-evalua-hoy-proyecto-para-que-se-juegue-mas-en-puerto-rico" target="_blank">Comisión senatorial evalúa hoy proyecto para que se juegue más en Puerto Rico</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-05-22 13:10">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="División de Drogas de Caguas ocupa decenas de sustancias controladas y realiza varios arrestos">
@@ -497,16 +527,6 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-22 10:47">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Humacao" data-titular="Autoridades desalojan égida en Humacao por situación con ascensor - Metro Puerto Rico">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVEdsZmxCeXhOMDVIb3NVd0pnQkRZLVBtNFZJSEZtNVFMN0p0M1Y0Y3Fsb1drcnNPRTc1T19hWHZneHVLdmtZMkZDQlZTX2ZQYWFSOFRReVlXdlMweUY5WHVjM1VFSHJvblcxTC1pVksxQUtjc3FIVmZoQnJMX1gxWGZVaG9QcTNYMGtiTU0wMldMU1QwczY5eGlWSi1INEsybk9CU1VVbklHNW8?oc=5" target="_blank">Autoridades desalojan égida en Humacao por situación con ascensor - Metro Puerto Rico</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-05-22 10:35">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Humacao" data-titular="Desalojan égida en Humacao tras fuerte olor a quemado - Primera Hora">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
@@ -517,16 +537,6 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-22 10:35">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Humacao" data-titular="Investigan fuerte olor a quemado y emanación de gases en égida de Humacao">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://radioisla.tv/investigan-fuerte-olor-a-quemado-y-emanacion-de-gases-en-egida-de-humacao/?utm_source=rss&utm_medium=rss&utm_campaign=investigan-fuerte-olor-a-quemado-y-emanacion-de-gases-en-egida-de-humacao&utm_source=rss&utm_medium=rss&utm_campaign=investigan-fuerte-olor-a-quemado-y-emanacion-de-gases-en-egida-de-humacao" target="_blank">Investigan fuerte olor a quemado y emanación de gases en égida de Humacao</a>
-                    </td>
-                    <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-05-22 10:19">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Fajardo" data-titular="En imágenes: así quedó la embarcación “Chiqui Lilly” tras encallar en Fajardo">
                     <td><span class="muni-tag">Fajardo</span></td>
                     <td class="titular-cell">
@@ -534,7 +544,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/fotogalerias/en-imagenes-asi-quedo-la-embarcacion-chiqui-lilly-tras-encallar-en-fajardo/" target="_blank">En imágenes: así quedó la embarcación “Chiqui Lilly” tras encallar en Fajardo</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-22 10:01">hace 1min</td>
+                    <td class="time-ago" data-date="2026-05-22 10:31">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="En imágenes: confirman plan de tala de árboles en el Viejo San Juan">
@@ -544,7 +554,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/en-imagenes-confirman-plan-de-tala-de-arboles-en-el-viejo-san-juan/" target="_blank">En imágenes: confirman plan de tala de árboles en el Viejo San Juan</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-22 10:01">hace 1min</td>
+                    <td class="time-ago" data-date="2026-05-22 10:31">ahora mismo</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Investigan fuerte olor a quemado y emanación de gases en égida de Humacao">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://radioisla.tv/investigan-fuerte-olor-a-quemado-y-emanacion-de-gases-en-egida-de-humacao/?utm_source=rss&utm_medium=rss&utm_campaign=investigan-fuerte-olor-a-quemado-y-emanacion-de-gases-en-egida-de-humacao&utm_source=rss&utm_medium=rss&utm_campaign=investigan-fuerte-olor-a-quemado-y-emanacion-de-gases-en-egida-de-humacao" target="_blank">Investigan fuerte olor a quemado y emanación de gases en égida de Humacao</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-05-22 10:19">hace 12min</td>
                 </tr>
                 
                 
@@ -607,7 +627,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/21/san-juan-presenta-plan-de-preparacion-para-temporada-de-huracanes-2026/" target="_blank">San Juan presenta plan de preparación para temporada de huracanes 2026</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-22 01:28">hace 8h</td>
+                    <td class="time-ago" data-date="2026-05-22 01:28">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="LUMA anuncia apagones programados en varios municipios">
@@ -617,17 +637,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/21/luma-anuncia-apagones-programados-en-varios-municipios/" target="_blank">LUMA anuncia apagones programados en varios municipios</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-22 01:23">hace 8h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Hecho en Puerto Rico reconoce empresas locales por calidad e innovación">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/05/21/hecho-en-puerto-rico-reconoce-empresas-locales-por-calidad-e-innovacion/" target="_blank">Hecho en Puerto Rico reconoce empresas locales por calidad e innovación</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-22 00:50">hace 9h</td>
+                    <td class="time-ago" data-date="2026-05-22 01:23">hace 9h</td>
                 </tr>
                 
                 
@@ -670,7 +680,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQbi1fX091VEk5Y1pBbXdTRTMzRC03YjhnOEVpUkpMak1yZE1sbmFCV3ZsQzRudFNaU1kyYThFUURoUEk1TXUwc2wtaDZWR0l4c1ZCQUIyVy0xWXBYSW9teVNfVk9aNmRXTllvaXNzVGFiMzBZZ09XX2xveEdEbFRUbjB1bFJIcTlsQXhCdWl0WHpiaTJQMEwzY3RWTQ?oc=5" target="_blank">Ismael Guadalupe héroe de la libertad de Vieques y de la Patria - claridadpuertorico.com</a>
                     </td>
                     <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-05-21 19:05">hace 14h</td>
+                    <td class="time-ago" data-date="2026-05-21 19:05">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Director de Manejo de Emergencias de Humacao adquiere nuevos equipos y radios comunitarios">
@@ -690,7 +700,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/comunicado-de-prensa-fallecimiento-de-ismael-guadalupe-ortiz/?utm_source=rss&utm_medium=rss&utm_campaign=comunicado-de-prensa-fallecimiento-de-ismael-guadalupe-ortiz&utm_source=rss&utm_medium=rss&utm_campaign=comunicado-de-prensa-fallecimiento-de-ismael-guadalupe-ortiz" target="_blank">Fallece el líder de Vieques Ismael Guadalupe Ortiz</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-05-21 18:24">hace 15h</td>
+                    <td class="time-ago" data-date="2026-05-21 18:24">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Cariduras de Fajardo anuncian conferencia de prensa para presentar su nueva etapa en el BSNF - wipr.pr">
@@ -700,7 +710,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPeGl3cmt4R2xfbkVmSW9GQ01JNTVZM2pxLTJHUG1PNTVPNUpCYjRMbU9NMHNhbEpxZHE0NTZxdlpTYlIydnRQVWhfeWRyVm5lNkw4eGRZbmd2S2FDckhtSUpnZDU4dzFlcnB3bFJ4S2J6V0QwWTcxVUxwWTR1ZWpnVjU2ZkpJV2ZyU1lfQmF1VXloam9Dc2dhNjRFWmcxeUo0TXRIMkQyeHpwcXItWlE?oc=5" target="_blank">Cariduras de Fajardo anuncian conferencia de prensa para presentar su nueva etapa en el BSNF - wipr.pr</a>
                     </td>
                     <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-05-21 18:17">hace 15h</td>
+                    <td class="time-ago" data-date="2026-05-21 18:17">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Ismael Guadalupe, crucial figure in campaign against military presence in Vieques, passed away - Noticias de Puerto Rico hoy">
@@ -740,17 +750,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/21/fallece-ismael-guadalupe-ortiz-emblematico-lider-de-la-lucha-viequense-contra-la-marina/" target="_blank">Fallece Ismael Guadalupe Ortiz, emblemático líder de la lucha viequense contra la Marina</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-21 17:30">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="La mayoría de las playas en Puerto Rico, Vieques y Culebra mantienen un riesgo moderado de corrientes marinas. - facebook.com">
-                    <td><span class="muni-tag">Vieques, Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNWjlCVUw1a2JIbmJPNWtRRk1nb0NpdFJOUXhDdFh0cWVSVldlaklQOFk2OXctbldvZHQ1TjRxdHU2MF9KZHE4ZmVtNk9LNUpkNzBrdUpra1BzVUFnUy1qUlplYnNjeXVURGRSMzFubm9DOERiVkFNUlBaRV82OHIzUTZPTjc3MGlCZUJIQm9leXFfejF1cHFtNzNNdzdYWDY3UWZwMV9uUVFURksyVmoxd0lreVBRb3JXallVZl9fZGdqZ0wwX2JHRFp3TUd2TmRDajlKd0xHSHNEaGNpWkE?oc=5" target="_blank">La mayoría de las playas en Puerto Rico, Vieques y Culebra mantienen un riesgo moderado de corrientes marinas. - facebook.com</a>
-                    </td>
-                    <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-05-21 12:30">hace 21h</td>
+                    <td class="time-ago" data-date="2026-05-21 17:30">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Escuelas especializadas de Las Piedras y Caguas anuncian interrupción de servicios por alegada falta de pagos del Departamento de Educación">
@@ -760,7 +760,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/21/escuelas-especializadas-de-las-piedras-y-caguas-anuncian-interrupcion-de-servicios-por-alegada-falta-de-pagos-del-departamento-de-educacion/" target="_blank">Escuelas especializadas de Las Piedras y Caguas anuncian interrupción de servicios por alegada falta de pagos del Departamento de Educación</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-21 12:16">hace 21h</td>
+                    <td class="time-ago" data-date="2026-05-21 12:16">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="La AAA espera restaurar mañana el servicio de agua en zonas de San Juan tras avería de línea en Santurce - Noticias de Puerto Rico hoy">
@@ -968,7 +968,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-22 10:02:10 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-22 10:31:45 AM<br>
     Actualización automática cada 30 min
 </div>
 
