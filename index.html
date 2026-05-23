@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-23 04:31:48 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-23 05:02:24 PM</span></div>
         </div>
     </div>
     <div class="stats">
         <div class="stat-box"><div class="num">33</div><div class="label">Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">64/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-23 04:31:48 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-23 05:02:24 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -355,7 +355,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">5</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -375,7 +375,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
@@ -390,7 +390,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">7</div>
+            <div class="muni-count">9</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
@@ -405,7 +405,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">4</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
@@ -418,9 +418,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">1</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Vieques')">
+        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
@@ -446,6 +446,16 @@ tr:hover { background: var(--surface2); }
             <tbody id="articlesBody">
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="La Policía aguarda por el proceso de identificación del cuerpo de un hombre encontrado en playa de Loíza">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/la-policia-aguarda-por-el-proceso-de-identificacion-del-cuerpo-de-un-hombre-encontrado-en-playa-de-loiza/" target="_blank">La Policía aguarda por el proceso de identificación del cuerpo de un hombre encontrado en playa de Loíza</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-05-23 20:43">ahora</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Emiten AVISO y Advertencia de inundaciones para varios municipios">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -474,7 +484,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/23/tirotean-a-conductor-en-pleno-expreso-3/" target="_blank">Tirotean a conductor en pleno Expreso</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-23 16:52">ahora</td>
+                    <td class="time-ago" data-date="2026-05-23 16:52">hace 10min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Hombre se hiere accidentalmente con arma de fuego">
@@ -484,31 +494,11 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/23/hombre-se-hiere-accidentalmente-con-arma-de-fuego/" target="_blank">Hombre se hiere accidentalmente con arma de fuego</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-23 16:50">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Ocupan varias máquinas tragamonedas en negocios en Luquillo">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20260523/ocupan-varias-maquinas-tragamonedas-en-negocios-en-luquillo/?utm_source=rss&utm_medium=rss&utm_campaign=ocupan-varias-maquinas-tragamonedas-en-negocios-en-luquillo" target="_blank">Ocupan varias máquinas tragamonedas en negocios en Luquillo</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-05-23 15:36">hace 55min</td>
+                    <td class="time-ago" data-date="2026-05-23 16:50">hace 12min</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Hasta 90% de potencial de lluvia para hoy">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/05/23/hasta-90-de-potencial-de-lluvia-para-hoy-9/" target="_blank">Hasta 90% de potencial de lluvia para hoy</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-23 13:10">hace 3h</td>
-                </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Mujer detenida por presunta agresión contra su madre de 74 años en Trujillo Alto - Telemundo Puerto Rico">
                     <td><span class="muni-tag">Trujillo Alto</span></td>
@@ -517,21 +507,11 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxPanotQW13RE14ejRVZTN3eGJhd0ZyeHhCQ0hmaUpPSElBOGVRZlZYY2Rra3FTNzZqeU1meDdkdldIVUlCRDdDaHBEdHVmVkxmbU1IVnNRM1REdzN2WnA4V2sweDduSmtTaGdXaV9mNXU2VFh2cFk3OHowZ2RVYUVUVEZ5NmRUbHZwMGZvanpWamxXYVdoNWx2dGJFUnV5NmNfdEhnM0hqbnZSUGZCX0ZWQklXLUI4RGJOYTFaNWlBckFUYXNwaUV0Qmpoc3p5MERZYlVxZdIB3AFBVV95cUxPQUNnOV85dHFtcG5iVHVJUzV0Rjd5UU85VThvYlpXNkx4YTJlUE9IZU1sUFNjMDVxZ0JVZEpGRm1MU3lCUzQ1Q2J3TjBtbVAyb2xBWlNTV05DUzZJaWFRVG5YRVVkMVpVbEpvX09aSWl4UXUwVFBlZzR1UXNRcVd6dm83elotR05CMktPWDJINFRlWm5qT1FJblRTZXZjZjV6ZEljdFk0d01kVW9XMjR1cnBvWm4zT3F5SmRxd1FVVkdQUkdvQnl6UTdrd0U3dHBfekZWWHFfcnlidzhz?oc=5" target="_blank">Mujer detenida por presunta agresión contra su madre de 74 años en Trujillo Alto - Telemundo Puerto Rico</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-05-23 00:50">hace 15h</td>
+                    <td class="time-ago" data-date="2026-05-23 00:50">hace 16h</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFBWdFZfcnBJUEdCTWJzWWNuMmV4VzBnZS1iZWNGZ2ZvX2tocDdJLUl4QU8xU3lYVHBLbEx0QjhIdEZpeVBlaUxheE9PeWJnSXN4RXVZZnVVRHhCbHZZVURaYWU4cThKY0ZMXzdzaHZKN21DQmM?oc=5" target="_blank">Municipio de Vieques - facebook.com</a>
-                    </td>
-                    <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-05-22 23:48">hace 16h</td>
-                </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - facebook.com">
                     <td><span class="muni-tag">Naguabo</span></td>
@@ -543,6 +523,16 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-22 20:07">hace 20h</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza added a new photo. - Municipio de Loíza - facebook.com">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9iNzNUWUlYdzRRazYyRFZBM0UxREpYWmduQXpWaGpycXJjZk9URVA4MlNVWnZaMlpoSVlxbGxLdTZZRFBBNHZmaWdMM0NWYWJGTDVIemYyQWYzVFI5bFFyNmx4WGpCbElSYlVJbVhYRS16aURkMlpGYg?oc=5" target="_blank">Municipio de Loíza added a new photo. - Municipio de Loíza - facebook.com</a>
+                    </td>
+                    <td>FB - Loíza</td>
+                    <td class="time-ago" data-date="2026-05-22 19:41">hace 21h</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Loíza" data-titular="Autoridades encuentran cuerpo de hombre entre piedras de una playa en Loíza - Metro Puerto Rico">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
@@ -550,7 +540,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPODNud19FMEYycDNxcEFHdHNVY0k5a29vSFlZRHpaQ1FydDZnekx5Z0Mwdm1PY2g3d01FNFBFaWxTV203aEowMzRFOEx0Q0x5LVUzSG12cmlTdnlXV1NQLW5aZGJnY0JhazlRZDBETm1LMHFGdFRObGQ1eGdYUGV1dFRnRzJMcnU1OGEySFZseWRsUl9lOFBQNUU2WEdFOUJubkhQb1BKeDcxdnpBTGM1SWNYUS00dzUy?oc=5" target="_blank">Autoridades encuentran cuerpo de hombre entre piedras de una playa en Loíza - Metro Puerto Rico</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-22 18:36">hace 21h</td>
+                    <td class="time-ago" data-date="2026-05-22 18:36">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Humacao fortalece su Policía Municipal con ascensos, tecnología y nuevas medidas de seguridad">
@@ -573,6 +563,16 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-22 17:12">hace 23h</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="El Hospital Municipal de San Juan celebra la graduación de 49 médicos residentes - NotiCel">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdGV5RFN6SWhEYzRuelVEX2VKN1lMMGh2TU9XbHlmeFRfaGVJQXNlc21EMllCT1ZGMjBSRFJoc0dGSTVQUG91a1V1UnRoNTBWWXYxWUZ6MVhYdzNXeEJPamR1WjFDUHpJVG5BRlY0aUVVWXp6bVZXY0c3c2s2Nkxkc3NESkExLVVERklvdzVHQ2FZQnZXdWZYOE9OTDZHRE95YjloNUtaUC1ibjFSSGw4eFAtQUZFbS1DZDNZd2MwSE5Nc2c?oc=5" target="_blank">El Hospital Municipal de San Juan celebra la graduación de 49 médicos residentes - NotiCel</a>
+                    </td>
+                    <td>San Juan</td>
+                    <td class="time-ago" data-date="2026-05-22 17:01">hace 1d</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="San Juan" data-titular="Hospital Municipal de San Juan celebra ceremonia de graduación de 49 médicos residentes - wipr.pr">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
@@ -580,7 +580,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQNjBjODFWNU9mNFdMbUxMVE16ekdUZTZzMzRwNUVQMFhCb2NWME1UNUJfLXlna2RhSnc5SXZGRjJ5NzdoTXc5MGVOWWgwVzc1MnBNY290OTFNdFE5SXBzTzQ1eWpMODFpaFVWMjNTZzZlZkh2VEx6dHEyUmhfd1k4OU43U3NfeUttdG1yWmQzcXBYRTFvMGdXY1VJSGNwWk0tTTFDZDlUOA?oc=5" target="_blank">Hospital Municipal de San Juan celebra ceremonia de graduación de 49 médicos residentes - wipr.pr</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-05-22 16:59">hace 23h</td>
+                    <td class="time-ago" data-date="2026-05-22 16:59">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - facebook.com">
@@ -590,17 +590,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNY0VTWkJUVTFhUnRnZ0d4cWpzcHVJZVAtcHB3LVdmRlFrTEJZak42VXltZkpPTlBOaWF6M3RjWWVITTdKN2xNMTh6UldRVGpPQkNOMGdCRXRMMnRRZEpJaGdIZHZPWGtTeUJ1MHFnSE9CM29ESmZ0OHBhTlkwdE5rTlQ1VWpfYUpSTXhYaU5R?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-05-22 16:59">hace 23h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="El Hospital Municipal de San Juan celebra la graduación de 49 médicos residentes - NotiCel">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOOTFsdnBtQ0NWM3JDcGxyM0YxVllGUGJsdzMwQ2xmb2hXNl81UFRBY09vVVhMd24zMjBrSlExU0FkdnVCeVlEQ1RlbE9WTktwTFdCQVJMMXpxbjA1ODZIZEVUeEI1UDNxSlZhSG1NQmdUUE1VNF8yOVRmdFFGYnJkZ3JmOGhWMVltaC1BMTZDVjNTOWRJTVdDdThVbjF6TklNUVJHLVV1NmdFUHVYUGxHMzBHdTI3Q1lhazN4MFRZQQ?oc=5" target="_blank">El Hospital Municipal de San Juan celebra la graduación de 49 médicos residentes - NotiCel</a>
-                    </td>
-                    <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-05-22 16:35">hace 23h</td>
+                    <td class="time-ago" data-date="2026-05-22 16:59">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Se gradúan 49 médicos residentes del Hospital Municipal de San Juan - Primera Hora">
@@ -677,7 +667,7 @@ tr:hover { background: var(--surface2); }
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxOS2dYNHQ5ODdlOEVlVUJvNWV1LTBOcmVueWh5Qk96VWFGSVM3Q3lxRC1BZEVQeW9zSV93RlZsRVI1bm5WMV80VV9POEFsRFphYVJ2QUVTMGZvXzhXV000RlJUaXNQY1Zwejk0MmUxT25oVzV6cE9qX2x2RzJ3OWd4aVNxN3llMnU4d01aZ3o4NGNVX0d4ZFhiVVdlX19LX0IzWnByU3NSM2RNZw?oc=5" target="_blank">Autoridades desalojan égida en Humacao por situación con ascensor - Metro Puerto Rico</a>
+                        <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVEdsZmxCeXhOMDVIb3NVd0pnQkRZLVBtNFZJSEZtNVFMN0p0M1Y0Y3Fsb1drcnNPRTc1T19hWHZneHVLdmtZMkZDQlZTX2ZQYWFSOFRReVlXdlMweUY5WHVjM1VFSHJvblcxTC1pVksxQUtjc3FIVmZoQnJMX1gxWGZVaG9QcTNYMGtiTU0wMldMU1QwczY5eGlWSi1INEsybk9CU1VVbklHNW8?oc=5" target="_blank">Autoridades desalojan égida en Humacao por situación con ascensor - Metro Puerto Rico</a>
                     </td>
                     <td>Humacao</td>
                     <td class="time-ago" data-date="2026-05-22 13:31">hace 1d</td>
@@ -686,7 +676,7 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo added a new... - Municipio de Luquillo - facebook.com">
                     <td><span class="muni-tag">Luquillo</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBXZ0h4TEN1ZE4ydlkta29Ga21OUXdVZ0xuQXdIZk9vMVMwd1NZVVZaUkh1ek5yVjlJVGUxOWQ2RWlka1NqdE1HRWtQZm0xczJTX2hzajh0ODh1SWxrR28xeDd0dXZxNGstMXBsWg?oc=5" target="_blank">Municipio de Luquillo added a new... - Municipio de Luquillo - facebook.com</a>
                     </td>
                     <td>FB - Luquillo</td>
@@ -741,6 +731,16 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>FB - Canóvanas</td>
                     <td class="time-ago" data-date="2026-05-22 10:35">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Naguabo" data-titular="Empleado de ornato resulta gravemente herido tras caer de camión en movimiento en Naguabo - El Vocero de Puerto Rico">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMihwJBVV95cUxQd2otTWVXUDlQNlBIZ3E3LUxPNUxTei1YaFphZzhQTVYzUmVTQUpTazA0YXRvYklWbzcyZVd3aUk5RGFuU3YyRVNraVpXMUpmUktaQ0pwbndkU2VpYkx1R1FGNWJjVTJ5bkVLWG5oRER1Mmx1UzBUVDdMbTFfTk54UFZtdEJaXzhDY21MdUItWklLV2NCc2E5TnN4dmtfR0llWEl3RzZHM3M5LVZPeE5tZUNMQkRMVkFVcG10SG9Rd1VjcFU2YUFUTmg0TnI4cFFDdVZvS1RMcUtiRTgyM1hOYkNndmpzNy1LblZKRThaaC1RNFo1NXdyWGJwWlNYXzlWOEZIRTA0MNIBjAJBVV95cUxPdW1GOFVaVHpEcnNLZ0tpTm5kS182dUZNcE9jdFJFY200eV9VbU1NallyTjNfVmFhSjdEaENUeHZ0ZzczVVc5QUczOGpkbzd2VXBYal92enFoVG5xd013NTRfamdnYzNOQVkxVFljOEhlMk1QdGVpZkxFeHljTWRWdC1ndFdsdzQ1QzZCWm0zQXNRR1ZDN3NMOEhROF80MDhqeFNUTm1mWl85Z2Z3UDNxSXBtMzlPNkwwU3hSMFJoVXBVVFgwWmo4Z1UxSkV0TVlLZ0FKb3NFOEdzSU1uOExzS215UEtrbFd0cmIwRTJXS1U2R3BFWWgzd0RLVjhtcWRzaFZpTWs1NkI5U0V0?oc=5" target="_blank">Empleado de ornato resulta gravemente herido tras caer de camión en movimiento en Naguabo - El Vocero de Puerto Rico</a>
+                    </td>
+                    <td>Naguabo</td>
+                    <td class="time-ago" data-date="2026-05-22 05:54">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza - facebook.com">
@@ -938,7 +938,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-23 04:31:48 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-23 05:02:24 PM<br>
     Actualización automática cada 30 min
 </div>
 
