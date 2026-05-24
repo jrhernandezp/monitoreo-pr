@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-24 01:02:30 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-24 01:32:06 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">11</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">6</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">5</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">64/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-24 01:02:30 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-24 01:32:06 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -363,9 +363,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">3</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
+        <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
@@ -447,6 +447,16 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="Caen en Puerto Rico premios de $500,000 y $100,000 del Powerball">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/05/24/caen-en-puerto-rico-premios-de-500000-y-100000-del-powerball/" target="_blank">Caen en Puerto Rico premios de $500,000 y $100,000 del Powerball</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-05-24 17:08">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="San Juan" data-titular="Asesinan a dos jóvenes; aparentan tener de 20 a 25 años">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
@@ -470,16 +480,6 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz hasta 12 horas">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/05/23/se-ira-la-luz-hasta-12-horas-el-domingo/" target="_blank">Se irá la luz hasta 12 horas</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-24 01:52">hace 11h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Humacao" data-titular="Desalojan égida en Humacao tras humo y fuerte olor a quemado - El Vocero de Puerto Rico">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
@@ -487,7 +487,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxQQndUUEpXLWEyNDE4MmI5OGVHUjg5NGxIWXFBOFd6THBkTHhOUTJhclhjVmRPclI5b0Iwem1KVHhuZ2djUXk3cEJVVm1CWHRfUDFuNkFXMUZ2UkotZE5VRkJXQ0llbXBIdFN4bzJJbC04QUhFaWVwMjRHM2ZqcVNhVU1GTzBWdDhnYk9OeDNtTDA2MmNnem00RHpjQTNPanlhQ2htRktnZTNiTHdHb3BmUllqenRMeF9CZkNqTzZJeTNvZ0hhOGdMWGtReWZGXzVMZ0ZaSW9COF9XT3lKOHfSAeMBQVVfeXFMTlhsVDhOX3FldkJIbC1mcUk1OE5ITXNneXJTWEdKM044cXUtYWZYWmJBWHVLbHVYTjZ1ekZMZ1VWazRmYkxaSGR6ZHEwX2dTM0lETlBWRjlsTzJHeHJEdGlLd2xRWTg5Z0FtQ1RjeUk5eC1jY2V2SjBxSjAtQ2JnY0lrVXY3c09jMTF2QjZQem9pdWZiWjcxU00zTUVBeXY4bHNRb2dYOHBCQWdyR1hpa0dubDBVX1lyUDEtRTRVNDBtc1ZrMFQyWFhtdVJOMWxEOHZqenJDX2dVV3RZaHgtZTh5Q2c?oc=5" target="_blank">Desalojan égida en Humacao tras humo y fuerte olor a quemado - El Vocero de Puerto Rico</a>
                     </td>
                     <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-05-24 01:10">hace 11h</td>
+                    <td class="time-ago" data-date="2026-05-24 01:10">hace 12h</td>
                 </tr>
                 
                 
@@ -500,7 +500,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxNQkdwUzdHWVh4b01PckNwM3lMYVpXVE95V0F1Rnc1d3VmY3dxQUplYVNxdnFxNFFGcXNjendJMzZ0M1Z6MXAzNE1FcnZKazU2T1RGblZrb2N5WW5pMkJWeWpLbGhsV21ZNTBPR1E3YlJkajNQUjhWeF8tR3lSVXJRUWRrSGtwQV9MQ2ZSNVFlS2FPWHlNc2REUUh0Q0w0NXVCcVVwb0Z4VlB5Rm9CbTRCVE9XMjNNMWhQVEp0OXpmTkNZenU0TlVwdFoxRUw5eHQxU1FJeWhHb2FxbEs4d3htZEMweWJNbGRmNHhibUZFajlNaTd1dmRz0gH8AUFVX3lxTE9qZ1BxaWdiaTFGWWxLWktJcHEzal9Qb1Joa3JkeEp3R1BlUWhGRGJUZUwxbGJpeXJTS2hFQ1RwbjAySk5QYmV0aDlDdGVYVlZFSEtuQ08tTmxKbnJwYmQxeVRHcWU2b1dSUGNYVGktWVhzZG5UQm5OLTFuZHBLV0dlMlVpZndFWEsxWnYxOTZvRFB6QnRINUZ4aC1tU2pjQWdpbVZGd1pJQXJkSWw1R3d6TV9BaTNyTVdLbHZlaldkb05EelBfc3o3Q2p6YmZtNjJ1eS10ZEFpaGNzd3Y1OUVMLVNQSU10WTFfMTRtTnh5Zno1c3l6WkVid1hiSQ?oc=5" target="_blank">Advertencia de inundación repentina emitida el 23 de mayo a las 02:00 PM hasta el 23 de mayo a las 05:00 PM por NWS San Juan PR - El Vocero de Puerto Rico</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-05-23 18:15">hace 18h</td>
+                    <td class="time-ago" data-date="2026-05-23 18:15">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo - facebook.com">
@@ -510,7 +510,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE9LRG9xa3l2cm9FX3N0ZEd0dFlLZHZsaXNFdk02N0d2Z1lxN2ZEOGp3NktLNVNKZDRaeWxsQno5aVJIX3poMXZSakFSbTd4dG1UT2ZWVnZaV2VudlhRZDl0V2JNX0dEaEVwSklV?oc=5" target="_blank">Municipio de Luquillo - facebook.com</a>
                     </td>
                     <td>FB - Luquillo</td>
-                    <td class="time-ago" data-date="2026-05-23 16:17">hace 20h</td>
+                    <td class="time-ago" data-date="2026-05-23 16:17">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="Sousa_PR. Rawayana · Se Vienen Cositas. Si me invitas… Nos vamos a La Playa 🌴🇵🇷 Playa Las Picuas, Rio Grande #PuertoRico #PR #RioGrande #Beach #ClearWater - facebook.com">
@@ -521,16 +521,6 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>FB - Río Grande</td>
                     <td class="time-ago" data-date="2026-05-23 13:38">hace 23h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Mujer detenida por presunta agresión contra su madre de 74 años en Trujillo Alto - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxPanotQW13RE14ejRVZTN3eGJhd0ZyeHhCQ0hmaUpPSElBOGVRZlZYY2Rra3FTNzZqeU1meDdkdldIVUlCRDdDaHBEdHVmVkxmbU1IVnNRM1REdzN2WnA4V2sweDduSmtTaGdXaV9mNXU2VFh2cFk3OHowZ2RVYUVUVEZ5NmRUbHZwMGZvanpWamxXYVdoNWx2dGJFUnV5NmNfdEhnM0hqbnZSUGZCX0ZWQklXLUI4RGJOYTFaNWlBckFUYXNwaUV0Qmpoc3p5MERZYlVxZdIB3AFBVV95cUxPQUNnOV85dHFtcG5iVHVJUzV0Rjd5UU85VThvYlpXNkx4YTJlUE9IZU1sUFNjMDVxZ0JVZEpGRm1MU3lCUzQ1Q2J3TjBtbVAyb2xBWlNTV05DUzZJaWFRVG5YRVVkMVpVbEpvX09aSWl4UXUwVFBlZzR1UXNRcVd6dm83elotR05CMktPWDJINFRlWm5qT1FJblRTZXZjZjV6ZEljdFk0d01kVW9XMjR1cnBvWm4zT3F5SmRxd1FVVkdQUkdvQnl6UTdrd0U3dHBfekZWWHFfcnlidzhz?oc=5" target="_blank">Mujer detenida por presunta agresión contra su madre de 74 años en Trujillo Alto - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-05-23 00:50">hace 1d</td>
                 </tr>
                 
                 
@@ -718,7 +708,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-24 01:02:30 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-24 01:32:06 PM<br>
     Actualización automática cada 30 min
 </div>
 
