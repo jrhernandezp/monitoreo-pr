@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-25 05:02:25 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-25 05:32:02 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">31</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num">32</div><div class="label">Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">8</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">64/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-25 05:02:25 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-25 05:32:02 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -358,7 +358,7 @@ tr:hover { background: var(--surface2); }
         </div>
         
         <div class="breaking-item">
-            <span class="time">hace 1h</span> —
+            <span class="time">hace 2h</span> —
             <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxONWtzeEI3Vld0SnNtWVFuZjFMT2VIVFNPVWZoNklRX0F4aFBiMHNTNm1Bc3BHQUFROHY1RG4wTEhzOVpRRVBCZHdVS1Y2WXN6UGI5Z3RPT0J1STNoSkoxUnI5ZE1FM1BkMlY2Y3VyYTRlY1FXbXcyR3paTmFnWldxaEh5SV9kR0hwdF9OMWVFUGhsZGNPVzNKcVVxRFB6RGxOOW94cERkY05BZUN6aWhITlkxMkhvbTlwdTU0MWhqSXdkRjNL?oc=5" target="_blank">Tercera masacre del año ocurre en Loíza, mientras que en Guayama y Juana Díaz investigan asesinatos - Univision</a>
             <span style="opacity:0.6"> [Loíza]</span>
         </div>
@@ -379,7 +379,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">6</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
@@ -429,7 +429,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
@@ -439,12 +439,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">6</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
+        <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
     </div>
@@ -466,10 +466,20 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="Loíza" data-titular="Repavimentación en la calle Loíza provocará cierres parciales y desvíos por 45 días">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/locales/notas/repavimentacion-en-la-calle-loiza-provocara-cierres-parciales-y-desvios-por-45-dias/" target="_blank">Repavimentación en la calle Loíza provocará cierres parciales y desvíos por 45 días</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-05-25 20:58">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Carolina" data-titular="Un menor y una mujer resultan heridos tras incidente con perro que se le escapó a su dueño en Carolina">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://www.elnuevodia.com/noticias/seguridad/notas/un-menor-y-una-mujer-resultan-heridos-tras-incidente-con-perro-que-se-le-escapo-a-su-dueno-en-carolina/" target="_blank">Un menor y una mujer resultan heridos tras incidente con perro que se le escapó a su dueño en Carolina</a>
                     </td>
                     <td>El Nuevo Día</td>
@@ -479,7 +489,7 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="San Juan" data-titular="Aviso de inundación emitido el 25 de mayo a las 03:00 PM hasta el 25 de mayo a las 06:00 PM por NWS San Juan PR - El Vocero de Puerto Rico">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxPc2tCdEVXM051Yzc4RXVvYmZSanl5RHJodW1kRE9GdzdkcDdMLWhWdTdueWROTmJuV0lCZkZUVF9SU3pscUVzampRYVgxc2Y2ZWdONm9mUXBJLXRZR3ZQX2RzN002ZEFEb3dqX0ZIeVNkSzloMlpGSjhMYmJQQURUbUJVMjE0cE9QcnJkblRJQ0VFdkN3VUZTYUQ5d0FhMDBVemg3V3lkMDR2TnBGSEZ0ODY5SzVheEZTZjBOekJFRUJzLWFwVld0Wl90bzU0T0VPNWRidDBReXgyZFV4Y1ZHYUZUNEtwam9hUnc?oc=5" target="_blank">Aviso de inundación emitido el 25 de mayo a las 03:00 PM hasta el 25 de mayo a las 06:00 PM por NWS San Juan PR - El Vocero de Puerto Rico</a>
                     </td>
                     <td>El Vocero (GN)</td>
@@ -523,7 +533,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPQmg1OU1MWFBKcHpBVVQxOVRKMkRZdE81b0ZaTldTelJGU2ZOVVRlMWlFbi1lZGV3bFpVSkhLRDBSd29zb1Y0Wnl0U0VtYmlhUHc2NzV0bXlER1VaU2tyLXJUNzBwZnJSMF93X1l6ajMzM0VvOTlZVVRkaERqU21yMm9LN0NmMzFTTHZIQ0VrM1VCVHpKaDB0Z3owM0ttVnlmZTQ0TWlDZzFwd0NZRG1Wa244VklkUQ?oc=5" target="_blank">Municipio de San Juan anuncia inicio de plan de repavimentación y mejoras viales en la Calle Loíza - wipr.pr</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-05-25 17:28">ahora</td>
+                    <td class="time-ago" data-date="2026-05-25 17:28">hace 4min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="🌺 La Administración Municipal de Vieques y nuestro alcalde, José A. Junito Corcino Acevedo, expresan su más sincero agradecimiento a todo el pueblo viequense por el respaldo, la hospitalidad y el excelente comportamiento demostrado durante la celebra - facebook.com">
@@ -533,7 +543,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxOc1NKX2NjVGlwMFIwZVY2N3VlU3I0b2tZQUJoMzhjMTFUdVd4N29zZ1FncjJJbHFRWDg5VlctalhLbDFuN3hLTTVHYzhSUllpOVVOQVRvaEw3cXlrOV9EZGRHbnFzcXdNWndQUlBFcjRxQ1JOR2cycXFobG1PSVViNWFGSmk2dE1TU3M0SGt2UXNfYzRiY2Vvcm9Zai13bEgzN0Vza05Fc2dITXpsRG5CVjZNOW1ocDNRdEpUemdyWTFlR2FfYjZ0WGRQY3JRejNPMGNkWnk2ekNjU2RRNDhyQkRoT2d2U1dDVlBHTQ?oc=5" target="_blank">🌺 La Administración Municipal de Vieques y nuestro alcalde, José A. Junito Corcino Acevedo, expresan su más sincero agradecimiento a todo el pueblo viequense por el respaldo, la hospitalidad y el excelente comportamiento demostrado durante la celebra - facebook.com</a>
                     </td>
                     <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-05-25 17:04">ahora</td>
+                    <td class="time-ago" data-date="2026-05-25 17:04">hace 28min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Vigilantes del DRNA expiden 90 boletos durante el Vieques Music Fest">
@@ -543,7 +553,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://noticel.com/noticias/20260525/vigilantes-del-drna-expiden-90-boletos-durante-el-vieques-music-fest/?utm_source=rss&utm_medium=rss&utm_campaign=vigilantes-del-drna-expiden-90-boletos-durante-el-vieques-music-fest" target="_blank">Vigilantes del DRNA expiden 90 boletos durante el Vieques Music Fest</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-05-25 17:02">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-25 17:02">hace 30min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan,Loíza" data-titular="Municipio de San Juan anuncia inicio de plan de repavimentación y mejoras viales en la Calle Loíza">
@@ -553,7 +563,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/25/municipio-de-san-juan-anuncia-inicio-de-plan-de-repavimentacion-y-mejoras-viales-en-la-calle-loiza/" target="_blank">Municipio de San Juan anuncia inicio de plan de repavimentación y mejoras viales en la Calle Loíza</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-25 16:58">hace 4min</td>
+                    <td class="time-ago" data-date="2026-05-25 16:58">hace 34min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Representante busca crear subcomisión para atender la ola criminal en la Isla">
@@ -563,7 +573,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/25/representante-busca-crear-subcomision-para-atender-la-ola-criminal-en-la-isla/" target="_blank">Representante busca crear subcomisión para atender la ola criminal en la Isla</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-25 16:56">hace 6min</td>
+                    <td class="time-ago" data-date="2026-05-25 16:56">hace 36min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Hombre resulta con heridas tras ser atacado por varios individuos">
@@ -573,8 +583,11 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/25/hombre-resulta-con-heridas-tras-ser-atacado-por-varios-individuos/" target="_blank">Hombre resulta con heridas tras ser atacado por varios individuos</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-25 16:43">hace 19min</td>
+                    <td class="time-ago" data-date="2026-05-25 16:43">hace 49min</td>
                 </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Identifican a los tres hombres asesinados en masacre en Loíza - wapa.tv">
                     <td><span class="muni-tag">Loíza</span></td>
@@ -583,7 +596,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxOTnVXYXRzT0JEc1hMNVJCS2dJWmNkZ3FJWi10NDQ0aFZoWFZ5cnc3dm5pNFZtWEhoVlZoaUV4dG11djRpM0lBdG53d3JURlRXTVoxRF8ybFo1WXB3aGhpN1pKTkItRFZQanhzSkFkbXRkQlVQQU96U0lqUkluVy03X0hPbHlFTi1QdWZqZGRxYnFrdDEzdEFhZzhVOGdIUXZKYXh0VGdreG44TmlXcFZHWDdwVm4tT0xRT1AxbVRhQzVCRkdpcUZWYXFsWTJXTHlSV1MtU19iNWNWTndQ?oc=5" target="_blank">Identifican a los tres hombres asesinados en masacre en Loíza - wapa.tv</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-25 16:30">hace 32min</td>
+                    <td class="time-ago" data-date="2026-05-25 16:30">hace 1h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="DRNA expide decenas de multas en operativo durante festival en Vieques - Metro Puerto Rico">
@@ -593,11 +606,8 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNNHNKcEtoRFp5dWtOTXFlZWhTZ2VkeE0yOV85MWhJaVZ6c19kcWgxdDJqODJ1RzUtTi0zZWhwV095T1J2cS1jcXJLUjdEUjlKZFVYNlZpS1prcEhjWW9jUkdLV21lUWYxWjBOeEdtNEpEQ3ExNmwtRFRjaEdHY0NaU3pZX0hFRlpOczF6dk5YVTBfelpaTUhGeS0zemd4anNGeld0VFBkV29lWS1SYmRRVlN30gHGAUFVX3lxTFBhZ2s3N2NsMmtJV0pUeHdienEtaWNJMXVNQWxYNUwza0lfenpRLTlUUm5FUHpqMXpzN2NHSGJqN2Z4RkR4ekxxRXI0ckk2U3VTWURsNE5xamJtNXFQNHpzTWtSUDYtbmhPSmQ1MmJOcVhReTdISF9MRzA3eDdpaE5kR0QyY3hyb0t5N1FoWWtpTUJwMlJGNzBzSUM1N2t5eXQyX1hpa3ZGZkgxc1k3aWp0SHBjSG1MLXZmYzdhSGh1VDVIZ3hUdw?oc=5" target="_blank">DRNA expide decenas de multas en operativo durante festival en Vieques - Metro Puerto Rico</a>
                     </td>
                     <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-05-25 16:23">hace 39min</td>
+                    <td class="time-ago" data-date="2026-05-25 16:23">hace 1h</td>
                 </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Tercera masacre del año ocurre en Loíza, mientras que en Guayama y Juana Díaz investigan asesinatos - Univision">
                     <td><span class="muni-tag">Loíza</span></td>
@@ -606,7 +616,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxONWtzeEI3Vld0SnNtWVFuZjFMT2VIVFNPVWZoNklRX0F4aFBiMHNTNm1Bc3BHQUFROHY1RG4wTEhzOVpRRVBCZHdVS1Y2WXN6UGI5Z3RPT0J1STNoSkoxUnI5ZE1FM1BkMlY2Y3VyYTRlY1FXbXcyR3paTmFnWldxaEh5SV9kR0hwdF9OMWVFUGhsZGNPVzNKcVVxRFB6RGxOOW94cERkY05BZUN6aWhITlkxMkhvbTlwdTU0MWhqSXdkRjNL?oc=5" target="_blank">Tercera masacre del año ocurre en Loíza, mientras que en Guayama y Juana Díaz investigan asesinatos - Univision</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-25 15:20">hace 1h</td>
+                    <td class="time-ago" data-date="2026-05-25 15:20">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Piden reforzar la presencia policiaca en Loíza tras masacre - Metro Puerto Rico">
@@ -627,16 +637,6 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>Radio Isla</td>
                     <td class="time-ago" data-date="2026-05-25 13:58">hace 3h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Discusión fue el detonante de masacre en Loíza - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPZXFPdkVDZXBQa0hwRDcwa2pyVzB6dnYzcHM2VkRWOE9vZWJEY0t2TG5fRk5ZMzlvaTFMTklTYnp1bFFEdlpiSThLTHJIS1ctNUFVTEFiVlhjZ0YtN1J0T0FHSHBWMFhoTFhfNVE1LTlHaE1abEVUU19LTGZqQnlJa3FPcUdWcW1ZcDA0THhCS0FOdDhJQ3BXbWgwc2tsNl9yS3JPMGF3N0puRHU1MkHSAbYBQVVfeXFMTWVwNzhDWk9PdVRkU1o1V1c4My16Znh3eEFSbC1SYUluRnZIR1o0Rk1mOHZEa0g1VUZucF9OREpGSS1IRmUtRjBxcFVaZ1VTZzlYbktabXFpRl85S18tS2h0MmcyMlBHdU85aHk3UkhMTnB6UG9uaGthZENiQU05RFJacG5ZZFFUVzJBSGFUeHg0NVUxZnJLeEFEUXpxXzM3a1ppb1FsSVBXWkh0djFwT1ZabWV6OGc?oc=5" target="_blank">Discusión fue el detonante de masacre en Loíza - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-25 12:32">hace 4h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Alcalde de San Juan presentará esta semana una demanda ante el Tribunal Federal contra la Autoridad de Acueductos y Alcantarillados">
@@ -666,7 +666,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOd2pwczAwdHJDczNlNlJwZ3Z6RVBUUzNJeXhjdTNjU1drZTNMSjgtSnhBaXVybGN3WmM3SHZqd2VCZWNSdngzNS1MODJhLWNKVDdTMUZfdFROdzBCNnJXb0dBTThSME9LOV94c09IOXZLYUFEb0dNOWtIdkhQZHZKdFh0SGRzd1JvT052ZkRneFoteFJ4RTJydFo4NGhZN1RFV2FJVkQ4SDFlWG83dDJrZ2FqTzI1cm9rSFZEbg?oc=5" target="_blank">Masacre en Loíza: identifican a las tres víctimas mortales - Primera Hora</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-25 10:12">hace 6h</td>
+                    <td class="time-ago" data-date="2026-05-25 10:12">hace 7h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Masacre en Loíza: balacera deja tres muertos y dos heridos - Telemundo Puerto Rico">
@@ -676,7 +676,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQUVdfQWg5ejlhTHMxazhlQ2JfSGJMT2lIR0RUa1JoUnJpRHBQQ0U3M1hfbi0yU2xsRzlWd0lsOUdpOC1GNjNHcXpOWWI2ckhFVWI2N2FaMUFuQndpa3ZycGh4UDUySHNRRWk2cGgySDJaSEtkYzhBRElKTjJtQ0tPaFhwcEFtRl9qcThLS2hxSjVWRUVMbVc5UTNibDZhYkxCWWNVNmh0NEtjQ2pyclFOMk5aMXhldGl0cVhQMdIBxAFBVV95cUxQQXRGSTVja0VZQS1tV0JFam5oSzZkQzBOTkU2T180Y19OM1NUOHhhblc1Q3ptRFhCUGRoNzNFTmNDNXdJc2pmSzk4TVRISTZmSTZ3di1STVBnMko0X3EwQ0U3YUJ2T1NVTXdzU3dfY09TejhVV2NPMnpnT3ItOVhMWFBZLWhHbEktNHRnSF9kdFJQcV83ajJaRUxMc25EQmh3bTdySGJXWHktTUZBMHE5RTloaDM3a1FVMnhrN2ZjdHRTMUJU?oc=5" target="_blank">Masacre en Loíza: balacera deja tres muertos y dos heridos - Telemundo Puerto Rico</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-25 10:07">hace 6h</td>
+                    <td class="time-ago" data-date="2026-05-25 10:07">hace 7h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Se registra la tercera masacre del año en Loíza">
@@ -706,21 +706,21 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxNa0NLQnNUaXl1N05UamVUUWZxSm8tendWNWg5c29ZZkhoYnJzeDZMZGZmRnRxRVM1WG9RdEo1SVZDN01EbkRhT2RULXdnNlZKVXg0NjdFV3dLZWNqdVpHaEpnc0lScFlhWjJLZzVDVjVJSktTVGpocy0ybkIxRDhXblduNVU4ckIyZHZLYjlHTlJpUFpOUFFyclNMamMtTGh2YWNTbVBJSFFZOHY3VHJfellCY3hrODZGZmJzbFhNYkxkMnpuSWlMa3ZrdTRuQUdQZWlBNlowMy1VcVpEbWtkcXhESzBxYjIxVVU40gHwAUFVX3lxTE9LRy1xazBJa1liaWc2X2pRZTZPQUVpWWp0Rmt3WVZHNHktMEdoR3VVaGo5U2lla3BzYzRKZzlCNkl2eXVyTFlzVkZsLWFQa256d2tpVHh1UkFlcDNDVHg2QzlPTDUwN2I3MGFWU2tQWUR2RklvTS1RRzUzcGE3cmVxaFE0QU9mcnhKa0VGN21IV19SVWRiaU8wRXN4N1dmdURQYVlsZWpqLTdHdWlVTm13dXIwVkV5YTFFZXJjSFBpbzVJTU9fOEdiMURsWXBHaUREanJwZUVxX2ZUM2xsNGNNYUdCOUdEQWpHZmw2RWM5Mg?oc=5" target="_blank">Su amigo manipulaba un arma: Hombre resulta herido de bala en Fajardo - El Vocero de Puerto Rico</a>
                     </td>
                     <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-05-25 06:22">hace 10h</td>
+                    <td class="time-ago" data-date="2026-05-25 06:22">hace 11h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="Aumentan los viajes hacia Vieques y Culebra - El Vocero de Puerto Rico">
+                    <td><span class="muni-tag">Vieques, Culebra</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPRVNROWF3QUVORklEcHVWYXliZjYyVWtWaF9pRGcxc0FVYl9vNDFBQUZoME1ZTmJPWnFKZWktRDVCY2hFTkMybmt5Yzl4ekNicUVNS2V1NjN2di0wUWFIZmtVem5kdTU2TnBtMEE1dlJjVXRRdkYyNC1VOHNoMUJKTTRyODFMQUwxUWpJSXdZaTJLTFBrV0NHSnh0SVZoemNuZGdvZ1ZCdHVTSU5ta3cyWW1RcnBxNGNPTWxLZXdUTTgyZGV6V1HSAcsBQVVfeXFMTi1vYWVCSlhZVGd5YnZlYXNjbHBSUWVGaTVXUS1BSmoxT0F6dzdLeVUwUllBcHZrN0JrS2cwM2NzYUlBS1Fsb0RfeE1nTl9McEV4cHJtVUdrQ2xxWDcwbERCWmVOODNTU3BybGV3M21qMnVKc3NXVWhsaFdGalV2NVJUckI2UEU4WlN3WU4yV3JpUmYzcnlRZmpISXZZR1Z6Q1pSc3RidVphUkFDN2p3SUp4OXNPZ2ViU2p4TWdnMXZvYzVkMEozaFlPelU?oc=5" target="_blank">Aumentan los viajes hacia Vieques y Culebra - El Vocero de Puerto Rico</a>
+                    </td>
+                    <td>Vieques</td>
+                    <td class="time-ago" data-date="2026-05-25 05:42">hace 11h</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="En la Legislatura Municipal de Humacao nos unimos al Mes del Manejo y Seguridad del Motociclista en las Carreteras, promoviendo la responsabilidad, prevención y el respeto en nuestras vías públicas. Tu seguridad siempre debe ser prioridad. - facebook.com">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxOTzE0SEhLZ3R2SW5HSC1CbHFGdzZwWmJ4d01NX1BLSU5YWTBnWEpnZXU0MWlMTXdTaG9MSG5tQUFRMU9UcWdITzZvNVJJUzd1MnB4RlBsdGFoMW10UHVNMzBXM19rN1N5SU5GTWhqdHlQb3NUd1JWSGgtdERXUlRrLTVfaUpjSENYMVdYWXpUN0ItZV8xb1M3UERsSWN1SENiOVE5S19Vb1g5aUJYVG54UVhUN0hvRXRJN19WQWx0OW9VRXN4MThkUEluSS0wclo5eEY3b05PQlVsd1Itd0hSanRqZ2JwTExaUjlQTzd6SzJpa2hYNlJr?oc=5" target="_blank">En la Legislatura Municipal de Humacao nos unimos al Mes del Manejo y Seguridad del Motociclista en las Carreteras, promoviendo la responsabilidad, prevención y el respeto en nuestras vías públicas. Tu seguridad siempre debe ser prioridad. - facebook.com</a>
-                    </td>
-                    <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-05-24 21:09">hace 19h</td>
-                </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Declaración de corriente de resaca emitida el 24 de mayo a las 04:00 PM hasta el 25 de mayo a las 06:00 AM por NWS San Juan PR - El Vocero de Puerto Rico">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -729,7 +729,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxQOGRhY3dENGZJbjdIV01STTRmN3FGQUo5ZlJiek10UE5UQlhYM1piYldPdGpqSUJLNWU1bWMtNlJxTTIzbkRRM1MxR0k1V3ZKa0V2c3dKa3Y0SXg3ZjhRWnlqS0JjUkVLaGVEMm1JTlNzN3ItODhCVFlVelB2WnJPb29MNHVCeWVTMFh6SUhyeEpvYU1hbkRCMXVFWlM2NDh3NUE4eFBpaWpzZHptc2FDUGV5V3pmYVdVQU1iR3lmQmZJbUpKOEUwdTFIMm10NlY3RXNmNXJOZHFMbDMyNGFnLXpEaFBhOE1MSjB2QmdlYVhEdw?oc=5" target="_blank">Declaración de corriente de resaca emitida el 24 de mayo a las 04:00 PM hasta el 25 de mayo a las 06:00 AM por NWS San Juan PR - El Vocero de Puerto Rico</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-05-24 20:15">hace 20h</td>
+                    <td class="time-ago" data-date="2026-05-24 20:15">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="🚨🇵🇷 ¡CAGUAS SIGUE EXPORTANDO ESTRELLAS PARA EL MUNDO! 🔥⚾🏃‍♀️ Redacción por Romualdo Galarza Figueroa ✍️ 🌎 🏃‍♀️ 🇵🇷Puerto Rico vive un momento histórico gracias a dos hermanos que continúan elevando el nombre de la isla en esc - facebook.com">
@@ -739,7 +739,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxOT1JPZjMxcHRlblJLOXBSUzc1RENXMXFQM2VYTFppU0UzaHJTVUVKOHlfRVptUFR5M09YWFBRbWkzZVZsemlQQS16aHp5VXlSSEJPVUUtQUZFa3pIZ2pGMGh0LUMya0lnNHpFNDlkV2hWUE1WYmtnQ0lpeWt0NGx5YXFZemFxcGJpZlcxTVNkV0tGLVJIbm1zWnFSbWZ0SEVuMmNIbXRnSmQ3LWFOQnRoQXZTc29sS2Z5aDQtZmFudGN1bldtT1FzT1BFMTlpUkNRdjJjRVc2RmFfWWtHN20tdGZSNEdEX183cU1naXB6M1FJRGZvSGYw?oc=5" target="_blank">🚨🇵🇷 ¡CAGUAS SIGUE EXPORTANDO ESTRELLAS PARA EL MUNDO! 🔥⚾🏃‍♀️ Redacción por Romualdo Galarza Figueroa ✍️ 🌎 🏃‍♀️ 🇵🇷Puerto Rico vive un momento histórico gracias a dos hermanos que continúan elevando el nombre de la isla en esc - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-05-24 17:04">hace 23h</td>
+                    <td class="time-ago" data-date="2026-05-24 17:04">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Desalojan égida en Humacao tras humo y fuerte olor a quemado - El Vocero de Puerto Rico">
@@ -780,6 +780,16 @@ tr:hover { background: var(--surface2); }
                     <td class="titular-cell">
                         
                         <a href="https://www.carolina787.com/n/noticia-fake-de-luma" target="_blank">Noticia Fake de LUMA</a>
+                    </td>
+                    <td>Carolina787</td>
+                    <td class="time-ago" data-date="2026-05-25">2026-05-25</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Niña y mujer hospitalizadas tras ataque de perro en Vistamar, Carolina">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.carolina787.com/n/nina-y-mujer-hospitalizadas-tras-ataque-de-perro-en-vistamar-carolina" target="_blank">Niña y mujer hospitalizadas tras ataque de perro en Vistamar, Carolina</a>
                     </td>
                     <td>Carolina787</td>
                     <td class="time-ago" data-date="2026-05-25">2026-05-25</td>
@@ -937,7 +947,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-25 05:02:25 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-25 05:32:02 PM<br>
     Actualización automática cada 30 min
 </div>
 
