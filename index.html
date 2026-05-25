@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-25 07:32:33 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-25 08:02:18 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">14</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">15</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">6</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">64/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-25 07:32:33 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-25 08:02:18 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -350,6 +350,12 @@ tr:hover { background: var(--surface2); }
 <div class="section breaking-section">
     <div class="breaking-banner">
         <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">ahora</span> —
+            <a href="https://news.google.com/rss/articles/CBMickFVX3lxTFBqTVFMRy1NYjdsaXI5VFRodGRJQ2ZjTnJfYmxMTm5pNE8yS2h2emZTc2QySkw1VTNqSk1GRzI4MnAwWGx0S0xWNmhDS2d0UnhGQW5QMkdOMDlqb21BR2tPaUljZEJhZ2xwb0JQVUY4TnhvUQ?oc=5" target="_blank">Triple asesinato en Loíza - NotiCel</a>
+            <span style="opacity:0.6"> [Loíza]</span>
+        </div>
         
         <div class="breaking-item">
             <span class="time">ahora</span> —
@@ -374,7 +380,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">6</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -409,7 +415,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">4</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
@@ -429,7 +435,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
@@ -466,6 +472,26 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="Alcalde de San Juan presentará esta semana una demanda ante el Tribunal Federal contra la Autoridad de Acueductos y Alcantarillados">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/alcalde-de-san-juan-presentara-esta-semana-una-demanda-ante-el-tribunal-federal-contra-la-autoridad-de-acueductos-y-alcantarillados1/?utm_source=rss&utm_medium=rss&utm_campaign=alcalde-de-san-juan-presentara-esta-semana-una-demanda-ante-el-tribunal-federal-contra-la-autoridad-de-acueductos-y-alcantarillados1&utm_source=rss&utm_medium=rss&utm_campaign=alcalde-de-san-juan-presentara-esta-semana-una-demanda-ante-el-tribunal-federal-contra-la-autoridad-de-acueductos-y-alcantarillados1" target="_blank">Alcalde de San Juan presentará esta semana una demanda ante el Tribunal Federal contra la Autoridad de Acueductos y Alcantarillados</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-05-25 11:56">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="Triple asesinato en Loíza - NotiCel">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMickFVX3lxTFBqTVFMRy1NYjdsaXI5VFRodGRJQ2ZjTnJfYmxMTm5pNE8yS2h2emZTc2QySkw1VTNqSk1GRzI4MnAwWGx0S0xWNmhDS2d0UnhGQW5QMkdOMDlqb21BR2tPaUljZEJhZ2xwb0JQVUY4TnhvUQ?oc=5" target="_blank">Triple asesinato en Loíza - NotiCel</a>
+                    </td>
+                    <td>Loíza</td>
+                    <td class="time-ago" data-date="2026-05-25 11:54">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Loíza" data-titular="Asesinan a tres personas y otras dos resultan heridas en balacera en Loíza">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
@@ -479,7 +505,7 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Loíza" data-titular="Masacre en Loíza: balacera deja tres muertos y dos heridos - Telemundo Puerto Rico">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQUVdfQWg5ejlhTHMxazhlQ2JfSGJMT2lIR0RUa1JoUnJpRHBQQ0U3M1hfbi0yU2xsRzlWd0lsOUdpOC1GNjNHcXpOWWI2ckhFVWI2N2FaMUFuQndpa3ZycGh4UDUySHNRRWk2cGgySDJaSEtkYzhBRElKTjJtQ0tPaFhwcEFtRl9qcThLS2hxSjVWRUVMbVc5UTNibDZhYkxCWWNVNmh0NEtjQ2pyclFOMk5aMXhldGl0cVhQMdIBxAFBVV95cUxQQXRGSTVja0VZQS1tV0JFam5oSzZkQzBOTkU2T180Y19OM1NUOHhhblc1Q3ptRFhCUGRoNzNFTmNDNXdJc2pmSzk4TVRISTZmSTZ3di1STVBnMko0X3EwQ0U3YUJ2T1NVTXdzU3dfY09TejhVV2NPMnpnT3ItOVhMWFBZLWhHbEktNHRnSF9kdFJQcV83ajJaRUxMc25EQmh3bTdySGJXWHktTUZBMHE5RTloaDM3a1FVMnhrN2ZjdHRTMUJU?oc=5" target="_blank">Masacre en Loíza: balacera deja tres muertos y dos heridos - Telemundo Puerto Rico</a>
                     </td>
                     <td>Loíza</td>
@@ -498,16 +524,6 @@ tr:hover { background: var(--surface2); }
                 
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="En la Legislatura Municipal de Humacao nos unimos al Mes del Manejo y Seguridad del Motociclista en las Carreteras, promoviendo la responsabilidad, prevención y el respeto en nuestras vías públicas. Tu seguridad siempre debe ser prioridad. - facebook.com">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxOTzE0SEhLZ3R2SW5HSC1CbHFGdzZwWmJ4d01NX1BLSU5YWTBnWEpnZXU0MWlMTXdTaG9MSG5tQUFRMU9UcWdITzZvNVJJUzd1MnB4RlBsdGFoMW10UHVNMzBXM19rN1N5SU5GTWhqdHlQb3NUd1JWSGgtdERXUlRrLTVfaUpjSENYMVdYWXpUN0ItZV8xb1M3UERsSWN1SENiOVE5S19Vb1g5aUJYVG54UVhUN0hvRXRJN19WQWx0OW9VRXN4MThkUEluSS0wclo5eEY3b05PQlVsd1Itd0hSanRqZ2JwTExaUjlQTzd6SzJpa2hYNlJr?oc=5" target="_blank">En la Legislatura Municipal de Humacao nos unimos al Mes del Manejo y Seguridad del Motociclista en las Carreteras, promoviendo la responsabilidad, prevención y el respeto en nuestras vías públicas. Tu seguridad siempre debe ser prioridad. - facebook.com</a>
-                    </td>
-                    <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-05-24 21:09">hace 10h</td>
-                </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Declaración de corriente de resaca emitida el 24 de mayo a las 04:00 PM hasta el 25 de mayo a las 06:00 AM por NWS San Juan PR - El Vocero de Puerto Rico">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -566,7 +582,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi_wFBVV95cUxQV1FpLWwxQ0FpRzF5NDBFZ05TT0pEUVo3STZQR0wxYXZlWG5ZVktkcm9uV241ZWxVQ0VBS3VTLW85THNYdW52a0wwUmxTUHlIdExqWHdXWVZGZkZidi00TXE5WWY2eFVlSGUzcGFPZmR0a09RSUpVVGRvYzdzQU1BQmVZNENNNk1yaTM5NjU2UUYxLWNXZkFWalFqUGhLSTFKdnhXdzVTeWhTRWNVbGwtQzBWUzBYNmQyWU5QZnRhdFdLQnhSUFdxVzlBbUtUTnowZHhFR2Fka0Y2REplYWFTRlY3R0RnUXZ6OGVzZ3dVZlczWGRtUTRkX181NUZ6Tm_SAYQCQVVfeXFMTWZUTV9JOElyTG8xa3lUdTl2VnVub20xb24wa0pDR3JQZF9qT2RHZi1EeDY4bE5hdmVNVE9HdEFsWmkxVURKVXZTQkNLUWhGMVhQVHdhY3BmeDdvMjlXdXozSm9NSi1QWUczc19sdkNkbmd2WjFtSGhQWFc3dlNaaFAwVEZDZTFfcUVxQ2dKVjZndmZnNTlFVVdSNllqbWIzVzBVdnFFY1J3M1FJaGVITGdJWVV3SW1QLXZHSW8yZmlDRVpJemNMc3RtRjRJSC03VGlxOXpiRHQ1OHpLUG53cEZ1M0RyVFlqcWQ5cTBfODJvUXl3LVRYT212eGQzS2pCdjFmdUc?oc=5" target="_blank">Alcalde de Cataño rechaza informe de la Contralora y asegura que defenderá al municipio “en los tribunales” - El Vocero de Puerto Rico</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-05-24 07:43">hace 23h</td>
+                    <td class="time-ago" data-date="2026-05-24 07:43">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Desalojan égida en Humacao tras humo y fuerte olor a quemado - El Vocero de Puerto Rico">
@@ -764,7 +780,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-25 07:32:33 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-25 08:02:18 AM<br>
     Actualización automática cada 30 min
 </div>
 
