@@ -328,7 +328,7 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-25 06:01:37 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-25 06:04:20 AM</span></div>
         </div>
     </div>
     <div class="stats">
@@ -336,7 +336,7 @@ tr:hover { background: var(--surface2); }
         <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">6</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">64/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-25 06:01:37 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-25 06:04:20 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -403,7 +403,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
@@ -428,7 +428,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
@@ -457,6 +457,19 @@ tr:hover { background: var(--surface2); }
         <table>
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
+                
+                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="Se registra la tercera masacre del año en Loíza">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/se-registra-la-tercera-masacre-del-ano-en-loiza1/?utm_source=rss&utm_medium=rss&utm_campaign=se-registra-la-tercera-masacre-del-ano-en-loiza1&utm_source=rss&utm_medium=rss&utm_campaign=se-registra-la-tercera-masacre-del-ano-en-loiza1" target="_blank">Se registra la tercera masacre del año en Loíza</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-05-25 10:00">ahora</td>
+                </tr>
+                
                 
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
@@ -491,16 +504,6 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>El Vocero (GN)</td>
                     <td class="time-ago" data-date="2026-05-24 20:15">hace 9h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBKS3pOZWRQWHA5TnoyWGJranpoZFFCQlVHaXNnbUdDYklLS19IREVNU1JVUGZyOGl0dDlmN0ZRbERKWGgySTJrRmNvOHFvMy1UbVR0cmdDTTZqRlRBN3NNY21qRUp4QQ?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
-                    </td>
-                    <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-05-24 18:26">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Aviso de inundación emitido el 24 de mayo a las 02:00 PM hasta el 24 de mayo a las 05:00 PM por NWS San Juan PR - El Vocero de Puerto Rico">
@@ -748,7 +751,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-25 06:01:37 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-25 06:04:20 AM<br>
     Actualización automática cada 30 min
 </div>
 
