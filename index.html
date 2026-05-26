@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-26 05:01:53 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-26 05:32:31 PM</span></div>
         </div>
     </div>
     <div class="stats">
         <div class="stat-box"><div class="num">39</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-26 05:01:53 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-26 05:32:31 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -352,7 +352,13 @@ tr:hover { background: var(--surface2); }
         <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
         
         <div class="breaking-item">
-            <span class="time">hace 1h</span> —
+            <span class="time">ahora mismo</span> —
+            <a href="https://www.elnuevodia.com/noticias/seguridad/notas/asesinan-a-tres-personas-y-otras-dos-resultan-heridas-en-balacera-en-loiza/" target="_blank">Asesinan a tres personas y otras dos resultan heridas en balacera en Loíza</a>
+            <span style="opacity:0.6"> [Loíza]</span>
+        </div>
+        
+        <div class="breaking-item">
+            <span class="time">hace 2h</span> —
             <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxOR2JfX1pWOXVReFRueVhTclp1LVp1YnFYZ1FfeVJTbUI3VjRJREJmRFVRenpEZ0ZUV1RVSEJ1ZmJCZDZCdnFjbi0zb2s5RjNVQWNNNEFqUUFyWnN3Z0NqSWI2RTBjRE1TU3JnZ1JGWWZmQ3NjT09jQTNFOGNvN21qY2hXWHROMTFSUl9TVmstYllDaEZ1TUtWUzVaSS1LTVNjRzZxOVFoSEMxR1ppdEF4ZG0yNnRwVE5qVGRYRy1waXV3R0hmWEZVTmFtdjVLbWRfQmRQUy1hNFFFR0djYm9nbVdDOHdKNW0wTUFvMmljMElEbUd5UUcw?oc=5" target="_blank">Confrontación por acceso a una calle pudo haber provocado asesinato de tres en Loíza - wapa.tv</a>
             <span style="opacity:0.6"> [Loíza]</span>
         </div>
@@ -373,12 +379,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">10</div>
+            <div class="muni-count">11</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
@@ -403,7 +409,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">9</div>
+            <div class="muni-count">10</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
@@ -433,7 +439,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
@@ -463,7 +469,7 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Carolina" data-titular="“Tenía miedo”: víctima de feminicidio en Carolina habría buscado ayuda tras patrón de acecho de su expareja">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://www.elnuevodia.com/noticias/seguridad/notas/investigan-asesinato-suicidio-en-el-expreso-baldorioty-en-carolina/" target="_blank">“Tenía miedo”: víctima de feminicidio en Carolina habría buscado ayuda tras patrón de acecho de su expareja</a>
                     </td>
                     <td>El Nuevo Día</td>
@@ -508,6 +514,16 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>Walo Radio</td>
                     <td class="time-ago" data-date="2026-05-26 19:46">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Gruero asesina a su expareja y luego se priva de la vida en Carolina - Primera Hora">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQX2VjbHlTODBBMEUwV3JUQmxrczR5cVcya0ZjLUQ0UFk5SG1uNVJ1UlNQN2VlTzdjQUs1Z3JNdkxjdTRjT3E5UElTZ1g3V3lTQWxRMnRLRVlUVkNIQ1BOV3k2UnNDZy1nMkZqN0ZRV0lpOHRKdHlPYlhNcWI2UDlpVEMwR1N1NGJwVnN5d2MwZi1pWWpuZFdCcjgyRk5MSTgwMXF2ZVBqdzUtVnRRSURwQ1ZKS2JSdnVyMmU0ajZqT1lBNktkYy1PYzlGOA?oc=5" target="_blank">Gruero asesina a su expareja y luego se priva de la vida en Carolina - Primera Hora</a>
+                    </td>
+                    <td>Primera Hora</td>
+                    <td class="time-ago" data-date="2026-05-26 19:26">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Superintendente autoriza entrega de armas a enfermero vinculado al caso del biólogo">
@@ -570,34 +586,24 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-26 17:38">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Emiten alerta de inundaciones para varios municipios">
-                    <td><span class="muni-tag">San Juan</span></td>
+                <tr class="article-row" data-municipios="Loíza" data-titular="Asesinan a tres personas y otras dos resultan heridas en balacera en Loíza">
+                    <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/05/26/emiten-alerta-de-inundaciones-para-varios-municipios-80/" target="_blank">Emiten alerta de inundaciones para varios municipios</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-26 17:22">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Cangrejeros debutan con triunfo en la liga de polo acuático">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/deportes/20260526/cangrejeros-debutan-con-triunfo-en-la-liga-de-polo-acuatico/?utm_source=rss&utm_medium=rss&utm_campaign=cangrejeros-debutan-con-triunfo-en-la-liga-de-polo-acuatico" target="_blank">Cangrejeros debutan con triunfo en la liga de polo acuático</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-05-26 17:06">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Compran más de $45,000 en aires acondicionados con tarjetas de crédito clonadas en San Juan">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/compran-mas-de-45000-en-aires-acondicionados-con-tarjetas-de-credito-clonadas-en-san-juan/" target="_blank">Compran más de $45,000 en aires acondicionados con tarjetas de crédito clonadas en San Juan</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/asesinan-a-tres-personas-y-otras-dos-resultan-heridas-en-balacera-en-loiza/" target="_blank">Asesinan a tres personas y otras dos resultan heridas en balacera en Loíza</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-26 17:01">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-26 17:32">ahora mismo</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Asesinan a un hombre en los predios del residencial Jardines de Sellés en San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/asesinan-a-un-hombre-en-los-predios-del-residencial-jardines-de-selles-en-san-juan/" target="_blank">Asesinan a un hombre en los predios del residencial Jardines de Sellés en San Juan</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-05-26 17:32">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto,Río Grande" data-titular="Alumnos de Río Grande y Trujillo Alto empacan 300 compras para personas necesitadas">
@@ -607,7 +613,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/el-nuevo-dia-educador/notas/alumnos-de-rio-grande-y-trujillo-alto-empacan-300-compras-para-personas-necesitadas/" target="_blank">Alumnos de Río Grande y Trujillo Alto empacan 300 compras para personas necesitadas</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-26 17:01">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-26 17:32">ahora mismo</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Emiten alerta de inundaciones para varios municipios">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://nelpr.com/2026/05/26/emiten-alerta-de-inundaciones-para-varios-municipios-80/" target="_blank">Emiten alerta de inundaciones para varios municipios</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-05-26 17:22">hace 10min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="ACTUALIZADO | Hombre asesina a mujer y luego se priva de la vida">
@@ -617,7 +633,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/26/asesinan-mujer-a-plena-luz-del-dia-hombre-resulta-herido/" target="_blank">ACTUALIZADO | Hombre asesina a mujer y luego se priva de la vida</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-26 16:48">hace 13min</td>
+                    <td class="time-ago" data-date="2026-05-26 16:48">hace 44min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Secretario del DDEC renuncia alegando intervenciones de La Fortaleza">
@@ -627,8 +643,11 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/26/secretario-del-ddec-renuncia-alegando-intervenciones-de-la-fortaleza/" target="_blank">Secretario del DDEC renuncia alegando intervenciones de La Fortaleza</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-26 16:34">hace 27min</td>
+                    <td class="time-ago" data-date="2026-05-26 16:34">hace 58min</td>
                 </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz del 26 al 31 de mayo; 40 municipios en lista">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -637,11 +656,8 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/26/se-ira-la-luz-del-26-al-31-de-mayo-40-municipios-en-lista/" target="_blank">Se irá la luz del 26 al 31 de mayo; 40 municipios en lista</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-26 16:14">hace 47min</td>
+                    <td class="time-ago" data-date="2026-05-26 16:14">hace 1h</td>
                 </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Confrontación por acceso a una calle pudo haber provocado asesinato de tres en Loíza - wapa.tv">
                     <td><span class="muni-tag">Loíza</span></td>
@@ -650,13 +666,13 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxOR2JfX1pWOXVReFRueVhTclp1LVp1YnFYZ1FfeVJTbUI3VjRJREJmRFVRenpEZ0ZUV1RVSEJ1ZmJCZDZCdnFjbi0zb2s5RjNVQWNNNEFqUUFyWnN3Z0NqSWI2RTBjRE1TU3JnZ1JGWWZmQ3NjT09jQTNFOGNvN21qY2hXWHROMTFSUl9TVmstYllDaEZ1TUtWUzVaSS1LTVNjRzZxOVFoSEMxR1ppdEF4ZG0yNnRwVE5qVGRYRy1waXV3R0hmWEZVTmFtdjVLbWRfQmRQUy1hNFFFR0djYm9nbVdDOHdKNW0wTUFvMmljMElEbUd5UUcw?oc=5" target="_blank">Confrontación por acceso a una calle pudo haber provocado asesinato de tres en Loíza - wapa.tv</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-26 15:27">hace 1h</td>
+                    <td class="time-ago" data-date="2026-05-26 15:27">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - facebook.com">
                     <td><span class="muni-tag">Naguabo</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOTmxZMW4tR0Y5MC0tNUc1TDVZXzJ6d0JwSThPUVBiRXowakhrSXE2bjZOVEdfam02Z1RZWkVNWGpkcktuN052ZVFkekg5bGZWYnVHQkZzUU53ZkxjMVVsYnBURU5JQ3N5RFZDaVJydVJNRTd1S0dQc01QNlFIT1FLMzNn?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
                     </td>
                     <td>FB - Naguabo</td>
@@ -675,16 +691,6 @@ tr:hover { background: var(--surface2); }
                 
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques added a new photo. - Municipio de Vieques - facebook.com">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1qNnBaZUt0MndHSWs4amJtYkE5Tjl5VUhEMU9kNjdlSW1Mcm5IZzdOUHJyQXhSaU1GUHNWaGluYXRpQnNfNExEeFNOTkI0WHBQNEsyZGZVYkticzJGSGdIREtaWXBnczNMSUVCSGlsWDE2UUdH?oc=5" target="_blank">Municipio de Vieques added a new photo. - Municipio de Vieques - facebook.com</a>
-                    </td>
-                    <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-05-25 22:55">hace 18h</td>
-                </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Madre e hijo son presuntamente atacados por un perro en Carolina - El Vocero de Puerto Rico">
                     <td><span class="muni-tag">Carolina</span></td>
@@ -713,7 +719,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPQmg1OU1MWFBKcHpBVVQxOVRKMkRZdE81b0ZaTldTelJGU2ZOVVRlMWlFbi1lZGV3bFpVSkhLRDBSd29zb1Y0Wnl0U0VtYmlhUHc2NzV0bXlER1VaU2tyLXJUNzBwZnJSMF93X1l6ajMzM0VvOTlZVVRkaERqU21yMm9LN0NmMzFTTHZIQ0VrM1VCVHpKaDB0Z3owM0ttVnlmZTQ0TWlDZzFwd0NZRG1Wa244VklkUQ?oc=5" target="_blank">Municipio de San Juan anuncia inicio de plan de repavimentación y mejoras viales en la Calle Loíza - wipr.pr</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-05-25 17:28">hace 23h</td>
+                    <td class="time-ago" data-date="2026-05-25 17:28">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="🌺 La Administración Municipal de Vieques y nuestro alcalde, José A. Junito Corcino Acevedo, expresan su más sincero agradecimiento a todo el pueblo viequense por el respaldo, la hospitalidad y el excelente comportamiento demostrado durante la celebra - facebook.com">
@@ -723,7 +729,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxQU2FaSEdhclN3M1gzT2dqY1c3NXVHWFJWTmxNMEdJX3Ziczl4b0MwakNRUVppTjA2a1BMSHlNcUU3QXJ5ampBcm15dFhTS2VIb1dCdWFyTm1qRFc3R1EyRk1mOXRFTHNxRGdxRlg3bXVRUUV1YTJUaDlwWGlkLXRONTB3elkxbzhLWG12ZXNHOFV1OFZaVWpBQngtVmg1NkJQSjVMbVNqcGhfcDl2WUVISGdRYXl3TUFfTmtIbVRmek1CVnh3UHZQZ1UxR0g5cTcwTW5hdzY0alRvdzgtbVI4ZDBtd3VOUmRNV2VlTXd3?oc=5" target="_blank">🌺 La Administración Municipal de Vieques y nuestro alcalde, José A. Junito Corcino Acevedo, expresan su más sincero agradecimiento a todo el pueblo viequense por el respaldo, la hospitalidad y el excelente comportamiento demostrado durante la celebra - facebook.com</a>
                     </td>
                     <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-05-25 17:04">hace 23h</td>
+                    <td class="time-ago" data-date="2026-05-25 17:04">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="DRNA expide decenas de multas en operativo durante festival en Vieques - Metro Puerto Rico">
@@ -1011,7 +1017,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-26 05:01:53 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-26 05:32:31 PM<br>
     Actualización automática cada 30 min
 </div>
 
