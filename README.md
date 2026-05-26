@@ -54,3 +54,4 @@ crontab -e
 # Añade esta línea:
 0 6 * * * cd ~/monitoreo-municipal && python3 dashboard.py
 ```
+
