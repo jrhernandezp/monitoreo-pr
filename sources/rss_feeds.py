@@ -20,9 +20,9 @@ RSS_PERIODICOS = {
     "El Nuevo Día": "https://www.elnuevodia.com/arc/outboundfeeds/rss/?outputType=xml",
     "NotiCel": "https://www.noticel.com/rss",
     "Radio Isla": "https://radioisla.tv/feed/",
-    "Es Noticia": "https://www.esnoticiapr.com/feed/",
+    "Es Noticia": ("https://www.esnoticiapr.com/feed/", {"User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"}, True),
     "Telemundo PR": "https://www.telemundopr.com/rss",
-    "El Vocero": "https://www.elvocero.com/rss/noticias",
+    # El Vocero RSS roto (404) — usando Google News en su lugar
     "Walo Radio": "https://waloradio.com/feed/",
     "El Oriental": "https://periodicoeloriental.com/feed/",
     "PR es La Isa": "https://www.puertoricolaisla.com/rss.xml",
@@ -118,7 +118,7 @@ CATEGORIAS = {
     "Radio Isla": "📰 RSS Directo",
     "Es Noticia": "📰 RSS Directo",
     "Telemundo PR": "📰 RSS Directo",
-    "El Vocero": "📰 RSS Directo",
+    # El Vocero RSS directo removido (404) — cubierto por Google News
     "Walo Radio": "📰 RSS Directo",
     "El Oriental": "📰 RSS Directo",
     "PR es La Isa": "📰 RSS Directo",
@@ -227,7 +227,7 @@ def is_relevant_title(title: str) -> bool:
     return True
 
 
-def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10) -> Tuple[List[Dict], str]:
+def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10, extra_headers: dict = None, use_curl: bool = False) -> Tuple[List[Dict], str]:
     """Fetch and parse an RSS feed.
     
     Returns (articles, status_string).
@@ -236,10 +236,28 @@ def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10) -> Tuple[
     try:
         # Fetch with timeout to prevent hanging on slow feeds
         try:
-            req = urllib.request.Request(feed_url, headers={'User-Agent': 'Mozilla/5.0'})
-            with urllib.request.urlopen(req, timeout=25) as resp:
-                feed_data = resp.read()
-            feed = feedparser.parse(io.BytesIO(feed_data))
+            if use_curl:
+                # Some sites block Python's TLS — use curl instead
+                import subprocess as sp
+                curl_cmd = ['curl', '-sL', '--max-time', '25']
+                if extra_headers:
+                    for k, v in extra_headers.items():
+                        curl_cmd += ['-H', f'{k}: {v}']
+                else:
+                    curl_cmd += ['-H', 'User-Agent: Mozilla/5.0']
+                curl_cmd.append(feed_url)
+                result = sp.run(curl_cmd, capture_output=True, text=True, timeout=30)
+                if result.returncode != 0:
+                    return [], f"curl error: exit {result.returncode}"
+                feed = feedparser.parse(result.stdout)
+            else:
+                headers = {'User-Agent': 'Mozilla/5.0'}
+                if extra_headers:
+                    headers.update(extra_headers)
+                req = urllib.request.Request(feed_url, headers=headers)
+                with urllib.request.urlopen(req, timeout=25) as resp:
+                    feed_data = resp.read()
+                feed = feedparser.parse(io.BytesIO(feed_data))
         except Exception as e:
             return [], f"timeout/error: {e}"
         articles = []
@@ -316,10 +334,17 @@ def fetch_all(max_per_feed: int = 8) -> Tuple[List[Dict], Dict[str, str]]:
     ]
 
     for emoji, feed_dict in fuentes:
-        for name, url in feed_dict.items():
+        for name, entry in feed_dict.items():
+            # Support plain URLs, (url, headers) tuples, and (url, headers, use_curl) tuples
+            if isinstance(entry, tuple):
+                url = entry[0]
+                extra_headers = entry[1] if len(entry) > 1 else None
+                use_curl = entry[2] if len(entry) > 2 else False
+            else:
+                url, extra_headers, use_curl = entry, None, False
             print(f"  {emoji} {name}...", end=" ")
             sys.stdout.flush()
-            articles, status = fetch_rss(name, url, max_per_feed)
+            articles, status = fetch_rss(name, url, max_per_feed, extra_headers, use_curl)
             if articles:
                 print(f"→ {len(articles)}")
                 for a in articles:

@@ -83,7 +83,7 @@ def collect_facebook_posts() -> Tuple[List[Dict], Dict[str, str]]:
             [str(FACEBOOK_PYTHON), str(FACEBOOK_SCRAPER), "--json"],
             capture_output=True,
             text=True,
-            timeout=20,  # Aggressive: 20s total for all pages
+            timeout=90,  # 28 pages × ~3s each + browser launch
         )
         if result.returncode == 0 and result.stdout.strip():
             facebook_data = json.loads(result.stdout)
@@ -103,7 +103,7 @@ def collect_facebook_posts() -> Tuple[List[Dict], Dict[str, str]]:
             raise RuntimeError(error_msg)
 
     except subprocess.TimeoutExpired:
-        print("    ⏱️ Facebook timeout (20s) — usando cache")
+        print("    ⏱️ Facebook timeout (60s) — usando cache")
         facebook_data = load_cache()
         if facebook_data:
             source_status["Facebook"] = f"⚠️ cache ({len(facebook_data)} páginas)"
