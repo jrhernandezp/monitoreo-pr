@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-26 06:32:08 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-26 07:01:48 PM</span></div>
         </div>
     </div>
     <div class="stats">
         <div class="stat-box"><div class="num">39</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
-        <div class="stat-box"><div class="num" style="font-size:12px">64/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-26 06:32:08 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num" style="font-size:12px">65/67</div><div class="label">Fuentes OK</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-26 07:01:48 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -352,7 +352,7 @@ tr:hover { background: var(--surface2); }
         <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
         
         <div class="breaking-item">
-            <span class="time">hace 1min</span> —
+            <span class="time">ahora mismo</span> —
             <a href="https://www.elnuevodia.com/noticias/seguridad/notas/asesinan-a-tres-personas-y-otras-dos-resultan-heridas-en-balacera-en-loiza/" target="_blank">Asesinan a tres personas y otras dos resultan heridas en balacera en Loíza</a>
             <span style="opacity:0.6"> [Loíza]</span>
         </div>
@@ -374,12 +374,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">9</div>
+            <div class="muni-count">10</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">9</div>
+            <div class="muni-count">10</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
@@ -387,9 +387,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">2</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Caguas')">
+        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
@@ -404,12 +404,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">11</div>
+            <div class="muni-count">10</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
@@ -422,9 +422,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
@@ -466,30 +466,10 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="Loíza" data-titular="Residentes de Loíza lamentan masacre, pero afirman sentirse seguros - wapa.tv">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxOdS1uemdtZDMxRkhpTlFsbVRuU2M2QXphdGUwRF9ibDJWLTRkd3g4Y3JiUUxQbmVSNWhocVZYNTlKLUpBNklsaU5CSEtpUDNmYk5qTEhkUEFVRlVPNWtqYUl0azVHelgyOTFZNDlRUldkaTFxcGFQUEpwQjAyS0hwV2RqNVJOTEhrZzVqVk1nSWQ0eG5lLTEwYXlicXh4OXZmR0tNc1dnajVHeEpnbm5mNDFscmJaNi0ySm1RS0lDYVA0VEw0Rld6OW5GeXpKT01TOFo1NjhzSUtFVEhlS0FpQTI2NA?oc=5" target="_blank">Residentes de Loíza lamentan masacre, pero afirman sentirse seguros - wapa.tv</a>
-                    </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-26 21:36">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="“Tenía miedo”: víctima de feminicidio en Carolina habría buscado ayuda tras patrón de acecho de su expareja">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/investigan-asesinato-suicidio-en-el-expreso-baldorioty-en-carolina/" target="_blank">“Tenía miedo”: víctima de feminicidio en Carolina habría buscado ayuda tras patrón de acecho de su expareja</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-26 20:43">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Luquillo,Río Grande" data-titular="Luquillo y Río Grande bajo advertencia de inundaciones - Metro Puerto Rico">
                     <td><span class="muni-tag">Luquillo, Río Grande</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNYW1JbXJMQXZxVTFJNlpYdWZacXM4Nlo3VTNjSEpZU01JOEp3dmsxb0RncnFaZ216aU5hN3oxYVBjTzRUSDd2U19XeEc4TVlneEVOdzZZQ1ZOZDdaQUtCdFUxV2FqLVJ4b2hDX21iYlNObUsxYmVHWjgtUkpROGN2RmlMLWFEdmhWbWlEc1djVHJkYk1Qa0tjSDVzbGPSAbABQVVfeXFMTUZaQUNlc3NpVkZ2dmxTa1Q1YXV0NkQwMzRfRjZyWnE3UTh3Mmlya0JBbFBzb2l6Nl9hSXctZkl1b3FWd0pQVEdKUnlQbGw4ZW5qa0s3LUlQTTFpb3MtVFVtdG11VE5FVkhVTmR3dmN5VHhfUEh6T1lYTmU5MlRoZ2M1RXVkSjBzWU1sd2pTSm1sUVhrcUZLSjdWZTJRYm1keEhhbGYwRGxGYXJ0eUpmSkM?oc=5" target="_blank">Luquillo y Río Grande bajo advertencia de inundaciones - Metro Puerto Rico</a>
                     </td>
                     <td>Río Grande</td>
@@ -504,6 +484,16 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>Walo Radio</td>
                     <td class="time-ago" data-date="2026-05-26 20:23">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Gruero asesina a su expareja y luego se priva de la vida en Carolina - Primera Hora">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQX2VjbHlTODBBMEUwV3JUQmxrczR5cVcya0ZjLUQ0UFk5SG1uNVJ1UlNQN2VlTzdjQUs1Z3JNdkxjdTRjT3E5UElTZ1g3V3lTQWxRMnRLRVlUVkNIQ1BOV3k2UnNDZy1nMkZqN0ZRV0lpOHRKdHlPYlhNcWI2UDlpVEMwR1N1NGJwVnN5d2MwZi1pWWpuZFdCcjgyRk5MSTgwMXF2ZVBqdzUtVnRRSURwQ1ZKS2JSdnVyMmU0ajZqT1lBNktkYy1PYzlGOA?oc=5" target="_blank">Gruero asesina a su expareja y luego se priva de la vida en Carolina - Primera Hora</a>
+                    </td>
+                    <td>Primera Hora</td>
+                    <td class="time-ago" data-date="2026-05-26 20:19">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="“The Forgotten Borinqueneer”: Family seeks for Puerto Rican Julio Figueroa to be included in Washington D.C. and San Juan monuments - Noticias de Puerto Rico hoy">
@@ -536,16 +526,6 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-26 19:46">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Carolina" data-titular="Gruero asesina a su expareja y luego se priva de la vida en Carolina - Primera Hora">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQX2VjbHlTODBBMEUwV3JUQmxrczR5cVcya0ZjLUQ0UFk5SG1uNVJ1UlNQN2VlTzdjQUs1Z3JNdkxjdTRjT3E5UElTZ1g3V3lTQWxRMnRLRVlUVkNIQ1BOV3k2UnNDZy1nMkZqN0ZRV0lpOHRKdHlPYlhNcWI2UDlpVEMwR1N1NGJwVnN5d2MwZi1pWWpuZFdCcjgyRk5MSTgwMXF2ZVBqdzUtVnRRSURwQ1ZKS2JSdnVyMmU0ajZqT1lBNktkYy1PYzlGOA?oc=5" target="_blank">Gruero asesina a su expareja y luego se priva de la vida en Carolina - Primera Hora</a>
-                    </td>
-                    <td>Primera Hora</td>
-                    <td class="time-ago" data-date="2026-05-26 19:26">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="San Juan" data-titular="Superintendente autoriza entrega de armas a enfermero vinculado al caso del biólogo">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
@@ -556,6 +536,16 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-26 19:14">ahora</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Carolina" data-titular="“Tenía miedo”: víctima de feminicidio en Carolina habría buscado ayuda tras patrón de acecho de su exparejaLa loiceña había salido de su trabajo cuando aparentemente fue interceptada por el hombre, quien le disparó y se privó de la vida">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/investigan-asesinato-suicidio-en-el-expreso-baldorioty-en-carolina/" target="_blank">“Tenía miedo”: víctima de feminicidio en Carolina habría buscado ayuda tras patrón de acecho de su exparejaLa loiceña había salido de su trabajo cuando aparentemente fue interceptada por el hombre, quien le disparó y se privó de la vida</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-05-26 19:01">ahora mismo</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Loíza" data-titular="Asesinan a tres personas y otras dos resultan heridas en balacera en Loíza">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
@@ -563,7 +553,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/notas/asesinan-a-tres-personas-y-otras-dos-resultan-heridas-en-balacera-en-loiza/" target="_blank">Asesinan a tres personas y otras dos resultan heridas en balacera en Loíza</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-26 18:31">hace 1min</td>
+                    <td class="time-ago" data-date="2026-05-26 19:01">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Asesinan a un hombre en los predios del residencial Jardines de Sellés en San Juan">
@@ -573,7 +563,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/notas/asesinan-a-un-hombre-en-los-predios-del-residencial-jardines-de-selles-en-san-juan/" target="_blank">Asesinan a un hombre en los predios del residencial Jardines de Sellés en San Juan</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-26 18:31">hace 1min</td>
+                    <td class="time-ago" data-date="2026-05-26 19:01">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto,Río Grande" data-titular="Alumnos de Río Grande y Trujillo Alto empacan 300 compras para personas necesitadas">
@@ -583,7 +573,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/el-nuevo-dia-educador/notas/alumnos-de-rio-grande-y-trujillo-alto-empacan-300-compras-para-personas-necesitadas/" target="_blank">Alumnos de Río Grande y Trujillo Alto empacan 300 compras para personas necesitadas</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-26 18:31">hace 1min</td>
+                    <td class="time-ago" data-date="2026-05-26 19:01">ahora mismo</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="Alcalde de Fajardo recibe al Comisionado del Negociado de Bomberos de Puerto Rico y reconoce a Danny García como Bombero del Año - wipr.pr">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxNWUR0c2RIMUpBZUZUeFdyLUpzek1uczV1YTZwX2pEM0RhdjRXM0x2ME1IREdqdThDSGd1WFhXNTVBdk5ZNUNtem53eTFWOEJtSmZiOVdNd0FjaWpkM0ZSUUZDYmhRY0lfVWhCOTE2VWdTNm9vMEdZN2YzWnNERk5QY3VJbHFrZF9SVEwzeHA3N0lSbzhfaEpWYnpVbTFJS2xQNW15SnZsVnZ1bTZHXzhpUHR1SGtybE9kOXRPdlFzdlJKT1d6Wkl2TWQybUx1ajBCVWZhMlhEX0ZweW9qN1NmVQ?oc=5" target="_blank">Alcalde de Fajardo recibe al Comisionado del Negociado de Bomberos de Puerto Rico y reconoce a Danny García como Bombero del Año - wipr.pr</a>
+                    </td>
+                    <td>Fajardo</td>
+                    <td class="time-ago" data-date="2026-05-26 18:39">hace 22min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Asesina mujer y se suicida en avenida de San Juan">
@@ -593,7 +593,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/asesina-mujer-y-se-suicida-en-avenida-de-san-juan/" target="_blank">Asesina mujer y se suicida en avenida de San Juan</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-05-26 18:28">hace 4min</td>
+                    <td class="time-ago" data-date="2026-05-26 18:28">hace 33min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Mujer es víctima de feminicidio íntimo por parte de su expareja, quien se quitó la vida en Carolina">
@@ -603,8 +603,21 @@ tr:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/asesinan-a-una-mujer-y-un-hombre-se-quita-la-vida-en-carolina1/?utm_source=rss&utm_medium=rss&utm_campaign=asesinan-a-una-mujer-y-un-hombre-se-quita-la-vida-en-carolina1&utm_source=rss&utm_medium=rss&utm_campaign=asesinan-a-una-mujer-y-un-hombre-se-quita-la-vida-en-carolina1" target="_blank">Mujer es víctima de feminicidio íntimo por parte de su expareja, quien se quitó la vida en Carolina</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-05-26 18:11">hace 21min</td>
+                    <td class="time-ago" data-date="2026-05-26 18:11">hace 50min</td>
                 </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Hombre mata a mujer y se suicida en Carolina">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://noticel.com/ultima-hora/20260526/hombre-mata-a-mujer-y-se-suicida-en-carolina/?utm_source=rss&utm_medium=rss&utm_campaign=hombre-mata-a-mujer-y-se-suicida-en-carolina" target="_blank">Hombre mata a mujer y se suicida en Carolina</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-05-26 18:07">hace 54min</td>
+                </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Cultivos Frescos de Aquí celebrará Festival de Niños y Familias en Humacao">
                     <td><span class="muni-tag">Humacao</span></td>
@@ -613,11 +626,18 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/26/cultivos-frescos-de-aqui-celebrara-festival-de-ninos-y-familias-en-humacao/" target="_blank">Cultivos Frescos de Aquí celebrará Festival de Niños y Familias en Humacao</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-26 17:52">hace 40min</td>
+                    <td class="time-ago" data-date="2026-05-26 17:52">hace 1h</td>
                 </tr>
                 
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
+                <tr class="article-row" data-municipios="San Juan" data-titular="Advertencia de inundaciones para municipios del norte y oeste">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://noticel.com/el-tiempo/20260526/advertencia-de-inundaciones-para-municipios-del-norte-y-oeste/?utm_source=rss&utm_medium=rss&utm_campaign=advertencia-de-inundaciones-para-municipios-del-norte-y-oeste" target="_blank">Advertencia de inundaciones para municipios del norte y oeste</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-05-26 17:38">hace 1h</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Emiten alerta de inundaciones para varios municipios">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -636,7 +656,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/26/asesinan-mujer-a-plena-luz-del-dia-hombre-resulta-herido/" target="_blank">ACTUALIZADO | Hombre asesina a mujer y luego se priva de la vida</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-26 16:48">hace 1h</td>
+                    <td class="time-ago" data-date="2026-05-26 16:48">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Secretario del DDEC renuncia alegando intervenciones de La Fortaleza">
@@ -646,7 +666,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/26/secretario-del-ddec-renuncia-alegando-intervenciones-de-la-fortaleza/" target="_blank">Secretario del DDEC renuncia alegando intervenciones de La Fortaleza</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-26 16:34">hace 1h</td>
+                    <td class="time-ago" data-date="2026-05-26 16:34">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz del 26 al 31 de mayo; 40 municipios en lista">
@@ -669,16 +689,6 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-26 15:27">hace 3h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - facebook.com">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQV01LRkZRNTg5ZENUY1Q5V0pTQ0FKWXNnazlTTTZqVExkeXo4QjNDdDdBMjBLMVFwbTVYLXI0aFg3V2hIQjVSeGdKakphWHBZNjZlb1h0SHgtZjNUUmZLUGxmMGFQZndFUVhySGRENkF0QmtWc3M5ay1vRkloWDJiaEYxUmhRTkxXVWZFMWp3?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
-                    </td>
-                    <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-05-26 13:37">hace 4h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Trujillo Alto,Río Grande" data-titular="Alumnos de Río Grande y Trujillo Alto empacan 300 compras para personas necesitadas - Noticias de Puerto Rico hoy">
                     <td><span class="muni-tag">Trujillo Alto, Río Grande</span></td>
                     <td class="titular-cell">
@@ -686,7 +696,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxPMW9ydWxrNWNJcE5mdFVvMVNkaHRKVk1RVUlDVkJXU2g1OGFsV1lyeXEweFROQ1VldG05QmJtUV9sbTNCN2staGV4TkQ3WXVvNndGRGl0Q3J0dEVnSGFzNWxCbmZETm9JMzBQNXpaclZ2WnluUVJfbVV2Y1dmWXpEcm9ZNUs2TmkyN1hDZEUwQ1R4a21IVjVPVFcxRWozTVdadDVGenF5UjhlbG5HZjlRd3QxYlhjTVpwcHVfLUFoS19icHg3bU1XZ0RONkYzQ3huV0wxUzB2VzAxRnN0dDIxVnFB?oc=5" target="_blank">Alumnos de Río Grande y Trujillo Alto empacan 300 compras para personas necesitadas - Noticias de Puerto Rico hoy</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-05-26 10:00">hace 8h</td>
+                    <td class="time-ago" data-date="2026-05-26 10:00">hace 9h</td>
                 </tr>
                 
                 
@@ -750,16 +760,6 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>Loíza</td>
                     <td class="time-ago" data-date="2026-05-25 15:20">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Diócesis de Caguas, Puerto Rico - Página Oficial - facebook.com">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxOeWdkZnU5SzJzQkktcG44c29hVEY5NEJHb3B5VUNCdnB4RXBpc0hNMjZMQlJBNnlJcExaRWxLV2J3WVFfZG1KZGVoMEk1UlVMZG1Ua0xfalZxZVZTUkQ0S1J2a2FLYTNyNUQ2dlBtQkJRWTdaN24zVFM2RDFqLWdkeA?oc=5" target="_blank">Diócesis de Caguas, Puerto Rico - Página Oficial - facebook.com</a>
-                    </td>
-                    <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-05-25 13:46">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Municipio Autónomo de Fajardo - facebook.com">
@@ -881,7 +881,7 @@ tr:hover { background: var(--surface2); }
         
         <span class="source-badge ok">🟢 El Nuevo Día: OK</span>
         
-        <span class="source-badge err">🔴 NotiCel: Error</span>
+        <span class="source-badge ok">🟢 NotiCel: OK</span>
         
         <span class="source-badge ok">🟢 Radio Isla: OK</span>
         
@@ -1017,7 +1017,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-26 06:32:08 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-26 07:01:48 PM<br>
     Actualización automática cada 30 min
 </div>
 
