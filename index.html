@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-26 02:01:38 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-26 02:32:23 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">34</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">40</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">7</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-26 02:01:38 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-26 02:32:23 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -368,12 +368,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">8</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">8</div>
+            <div class="muni-count">12</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
@@ -460,10 +460,40 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="Asesina mujer y se suicida en avenida de San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/asesina-mujer-y-se-suicida-en-avenida-de-san-juan/" target="_blank">Asesina mujer y se suicida en avenida de San Juan</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-05-26 18:28">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Asesinan a una mujer y un hombre se quita la vida en Carolina">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/asesinan-a-una-mujer-y-un-hombre-se-quita-la-vida-en-carolina1/?utm_source=rss&utm_medium=rss&utm_campaign=asesinan-a-una-mujer-y-un-hombre-se-quita-la-vida-en-carolina1&utm_source=rss&utm_medium=rss&utm_campaign=asesinan-a-una-mujer-y-un-hombre-se-quita-la-vida-en-carolina1" target="_blank">Asesinan a una mujer y un hombre se quita la vida en Carolina</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-05-26 18:11">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="“El Borinqueneer olvidado”: piden incluir en monumentos de Washington D.C. y San Juan al puertorriqueño Julio Figueroa">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/corresponsalias/washington-dc/notas/el-borinqueneer-olvidado-piden-incluir-en-monumentos-de-washington-dc-y-san-juan-al-puertorriqueno-julio-figueroa/" target="_blank">“El Borinqueneer olvidado”: piden incluir en monumentos de Washington D.C. y San Juan al puertorriqueño Julio Figueroa</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-05-26 18:00">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Humacao" data-titular="Cultivos Frescos de Aquí celebrará Festival de Niños y Familias en Humacao">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://waloradio.com/2026/05/26/cultivos-frescos-de-aqui-celebrara-festival-de-ninos-y-familias-en-humacao/" target="_blank">Cultivos Frescos de Aquí celebrará Festival de Niños y Familias en Humacao</a>
                     </td>
                     <td>Walo Radio</td>
@@ -473,7 +503,7 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="San Juan" data-titular="Advertencia de inundaciones para municipios del norte y oeste">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://noticel.com/el-tiempo/20260526/advertencia-de-inundaciones-para-municipios-del-norte-y-oeste/?utm_source=rss&utm_medium=rss&utm_campaign=advertencia-de-inundaciones-para-municipios-del-norte-y-oeste" target="_blank">Advertencia de inundaciones para municipios del norte y oeste</a>
                     </td>
                     <td>NotiCel</td>
@@ -490,10 +520,20 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-26 17:22">ahora</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Carolina" data-titular="Asesinan a balazos a una mujer en Carolina - Primera Hora">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNTU5MWVQeWpfMHM0YzF4aDhUalhlUFN4X3p4WEh6ekp1UHBzeGdoS0dKWkZxeGRFNU45bkhDVC1WbVRqNkJNNm5ZdnV5SG52bFk0TV9jR1cxRHk5MFJ3bURUM2djN2VEbHozOHloQjZ0WHhVUDFjYVFBUUVHY3VZQlFFRENWT3F5Nl9RQllZTlVyRnpPZ213c0N4T0IwV21OUFBDdzJ6cUc?oc=5" target="_blank">Asesinan a balazos a una mujer en Carolina - Primera Hora</a>
+                    </td>
+                    <td>Primera Hora</td>
+                    <td class="time-ago" data-date="2026-05-26 17:10">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Cangrejeros debutan con triunfo en la liga de polo acuático">
                     <td><span class="muni-tag">Trujillo Alto</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://noticel.com/deportes/20260526/cangrejeros-debutan-con-triunfo-en-la-liga-de-polo-acuatico/?utm_source=rss&utm_medium=rss&utm_campaign=cangrejeros-debutan-con-triunfo-en-la-liga-de-polo-acuatico" target="_blank">Cangrejeros debutan con triunfo en la liga de polo acuático</a>
                     </td>
                     <td>NotiCel</td>
@@ -518,6 +558,16 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>NELPR</td>
                     <td class="time-ago" data-date="2026-05-26 16:48">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Violencia sin tregua: asesinan a una mujer en Carolina - Noticias de Puerto Rico hoy">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPNUFyRUZlbTNXb0JlcDhNd1FiWkdxbGkzNEs1b18wNXd6RjljVFo0SWl1UU1uV20tM05EaXh0dVJaVEV4TklESkdMTF9oZk56RHRqRlFSNThuTWpVVmdVUEtkdlN4YnlrZkJSS1QtWk5Wdkp1MlY1aGdkcEZJbnZqRWFpaFplOUJUd2k5YUxiUGJ4SE8xLWJzLXFjLWpoNUhmMERnTnNiV0N1RXptRDBuZE5haGFxdFB3R1E?oc=5" target="_blank">Violencia sin tregua: asesinan a una mujer en Carolina - Noticias de Puerto Rico hoy</a>
+                    </td>
+                    <td>El Nuevo Día (GN)</td>
+                    <td class="time-ago" data-date="2026-05-26 16:46">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Secretario del DDEC renuncia alegando intervenciones de La Fortaleza">
@@ -560,14 +610,14 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-26 14:48">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Carolina" data-titular="Violencia sin tregua: asesinan a una mujer y un hombre resulta herido de bala en Carolina">
+                <tr class="article-row" data-municipios="Carolina" data-titular="Violencia sin tregua: asesinan a una mujer en Carolina">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/violencia-sin-tregua-asesinan-a-un-hombre-y-una-mujer-en-carolina/" target="_blank">Violencia sin tregua: asesinan a una mujer y un hombre resulta herido de bala en Carolina</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/violencia-sin-tregua-asesinan-a-un-hombre-y-una-mujer-en-carolina/" target="_blank">Violencia sin tregua: asesinan a una mujer en Carolina</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-26 14:01">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-26 14:32">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto,Río Grande" data-titular="Alumnos de Río Grande y Trujillo Alto empacan 300 compras para personas necesitadas">
@@ -577,7 +627,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/el-nuevo-dia-educador/notas/alumnos-de-rio-grande-y-trujillo-alto-empacan-300-compras-para-personas-necesitadas/" target="_blank">Alumnos de Río Grande y Trujillo Alto empacan 300 compras para personas necesitadas</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-26 14:01">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-26 14:32">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="DRNA expide 90 boletos y realiza más de 100 abordajes durante el ‘Vieques Music Fest’">
@@ -587,8 +637,11 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/26/drna-expide-90-boletos-y-realiza-mas-de-100-abordajes-durante-el-vieques-music-fest/" target="_blank">DRNA expide 90 boletos y realiza más de 100 abordajes durante el ‘Vieques Music Fest’</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-26 13:58">hace 3min</td>
+                    <td class="time-ago" data-date="2026-05-26 13:58">hace 34min</td>
                 </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Investigan agresión grave en Vieques">
                     <td><span class="muni-tag">Vieques</span></td>
@@ -597,11 +650,8 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/26/investigan-agresion-grave-en-vieques/" target="_blank">Investigan agresión grave en Vieques</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-26 13:28">hace 33min</td>
+                    <td class="time-ago" data-date="2026-05-26 13:28">hace 1h</td>
                 </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Menor y su madre resultan heridos tras presunto ataque de perro pitbull">
                     <td><span class="muni-tag">Carolina</span></td>
@@ -611,16 +661,6 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>Es Noticia</td>
                     <td class="time-ago" data-date="2026-05-26 12:41">hace 1h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="DRNA expide 90 boletos durante el Vieques Music Fest 2026">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/drna-expide-90-boletos-durante-el-vieques-music-fest-2026/" target="_blank">DRNA expide 90 boletos durante el Vieques Music Fest 2026</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-05-26 11:05">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto,Río Grande" data-titular="Alumnos de Río Grande y Trujillo Alto empacan 300 compras para personas necesitadas - Noticias de Puerto Rico hoy">
@@ -635,6 +675,16 @@ tr:hover { background: var(--surface2); }
                 
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques added a new photo. - Municipio de Vieques - facebook.com">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1telpnRXBic3hsc1otTk84WmRjWmZWMkxHdWI4anJTczBWNTZ3VGZ5ekIzUDFRbWxjdTctZ193SDN5dlZlbENJdkNGbjhJVmFURFM3ZmZVTjVCMlZEQnRBZ2pEdHhYcEw4S1dSOFl6cWc0QkM5?oc=5" target="_blank">Municipio de Vieques added a new photo. - Municipio de Vieques - facebook.com</a>
+                    </td>
+                    <td>FB - Vieques</td>
+                    <td class="time-ago" data-date="2026-05-25 22:56">hace 15h</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Madre e hijo son presuntamente atacados por un perro en Carolina - El Vocero de Puerto Rico">
                     <td><span class="muni-tag">Carolina</span></td>
@@ -673,7 +723,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPQmg1OU1MWFBKcHpBVVQxOVRKMkRZdE81b0ZaTldTelJGU2ZOVVRlMWlFbi1lZGV3bFpVSkhLRDBSd29zb1Y0Wnl0U0VtYmlhUHc2NzV0bXlER1VaU2tyLXJUNzBwZnJSMF93X1l6ajMzM0VvOTlZVVRkaERqU21yMm9LN0NmMzFTTHZIQ0VrM1VCVHpKaDB0Z3owM0ttVnlmZTQ0TWlDZzFwd0NZRG1Wa244VklkUQ?oc=5" target="_blank">Municipio de San Juan anuncia inicio de plan de repavimentación y mejoras viales en la Calle Loíza - wipr.pr</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-05-25 17:28">hace 20h</td>
+                    <td class="time-ago" data-date="2026-05-25 17:28">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="🌺 La Administración Municipal de Vieques y nuestro alcalde, José A. Junito Corcino Acevedo, expresan su más sincero agradecimiento a todo el pueblo viequense por el respaldo, la hospitalidad y el excelente comportamiento demostrado durante la celebra - facebook.com">
@@ -683,7 +733,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxQU2FaSEdhclN3M1gzT2dqY1c3NXVHWFJWTmxNMEdJX3Ziczl4b0MwakNRUVppTjA2a1BMSHlNcUU3QXJ5ampBcm15dFhTS2VIb1dCdWFyTm1qRFc3R1EyRk1mOXRFTHNxRGdxRlg3bXVRUUV1YTJUaDlwWGlkLXRONTB3elkxbzhLWG12ZXNHOFV1OFZaVWpBQngtVmg1NkJQSjVMbVNqcGhfcDl2WUVISGdRYXl3TUFfTmtIbVRmek1CVnh3UHZQZ1UxR0g5cTcwTW5hdzY0alRvdzgtbVI4ZDBtd3VOUmRNV2VlTXd3?oc=5" target="_blank">🌺 La Administración Municipal de Vieques y nuestro alcalde, José A. Junito Corcino Acevedo, expresan su más sincero agradecimiento a todo el pueblo viequense por el respaldo, la hospitalidad y el excelente comportamiento demostrado durante la celebra - facebook.com</a>
                     </td>
                     <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-05-25 17:04">hace 20h</td>
+                    <td class="time-ago" data-date="2026-05-25 17:04">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="DRNA expide decenas de multas en operativo durante festival en Vieques - Metro Puerto Rico">
@@ -693,7 +743,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNNHNKcEtoRFp5dWtOTXFlZWhTZ2VkeE0yOV85MWhJaVZ6c19kcWgxdDJqODJ1RzUtTi0zZWhwV095T1J2cS1jcXJLUjdEUjlKZFVYNlZpS1prcEhjWW9jUkdLV21lUWYxWjBOeEdtNEpEQ3ExNmwtRFRjaEdHY0NaU3pZX0hFRlpOczF6dk5YVTBfelpaTUhGeS0zemd4anNGeld0VFBkV29lWS1SYmRRVlN30gHGAUFVX3lxTFBhZ2s3N2NsMmtJV0pUeHdienEtaWNJMXVNQWxYNUwza0lfenpRLTlUUm5FUHpqMXpzN2NHSGJqN2Z4RkR4ekxxRXI0ckk2U3VTWURsNE5xamJtNXFQNHpzTWtSUDYtbmhPSmQ1MmJOcVhReTdISF9MRzA3eDdpaE5kR0QyY3hyb0t5N1FoWWtpTUJwMlJGNzBzSUM1N2t5eXQyX1hpa3ZGZkgxc1k3aWp0SHBjSG1MLXZmYzdhSGh1VDVIZ3hUdw?oc=5" target="_blank">DRNA expide decenas de multas en operativo durante festival en Vieques - Metro Puerto Rico</a>
                     </td>
                     <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-05-25 16:23">hace 21h</td>
+                    <td class="time-ago" data-date="2026-05-25 16:23">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Piden reforzar la presencia policiaca en Loíza tras masacre - Metro Puerto Rico">
@@ -713,7 +763,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxONWtzeEI3Vld0SnNtWVFuZjFMT2VIVFNPVWZoNklRX0F4aFBiMHNTNm1Bc3BHQUFROHY1RG4wTEhzOVpRRVBCZHdVS1Y2WXN6UGI5Z3RPT0J1STNoSkoxUnI5ZE1FM1BkMlY2Y3VyYTRlY1FXbXcyR3paTmFnWldxaEh5SV9kR0hwdF9OMWVFUGhsZGNPVzNKcVVxRFB6RGxOOW94cERkY05BZUN6aWhITlkxMkhvbTlwdTU0MWhqSXdkRjNL?oc=5" target="_blank">Tercera masacre del año ocurre en Loíza, mientras que en Guayama y Juana Díaz investigan asesinatos - Univision</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-25 15:20">hace 22h</td>
+                    <td class="time-ago" data-date="2026-05-25 15:20">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Municipio Autónomo de Fajardo - facebook.com">
@@ -794,6 +844,16 @@ tr:hover { background: var(--surface2); }
                     <td class="titular-cell">
                         
                         <a href="https://www.carolina787.com/n/noticia-fake-de-luma" target="_blank">Noticia Fake de LUMA</a>
+                    </td>
+                    <td>Carolina787</td>
+                    <td class="time-ago" data-date="2026-05-26">2026-05-26</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Mujer asesinada a tiros dentro de vehículo en la Baldorioty en Carolina; hombre resulta herido">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.carolina787.com/n/mujer-asesinada-a-tiros-dentro-de-vehiculo-en-la-baldorioty-en-carolina-hombre-resulta-herido" target="_blank">Mujer asesinada a tiros dentro de vehículo en la Baldorioty en Carolina; hombre resulta herido</a>
                     </td>
                     <td>Carolina787</td>
                     <td class="time-ago" data-date="2026-05-26">2026-05-26</td>
@@ -961,7 +1021,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-26 02:01:38 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-26 02:32:23 PM<br>
     Actualización automática cada 30 min
 </div>
 
