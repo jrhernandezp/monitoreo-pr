@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-26 07:32:27 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-26 08:02:14 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">39</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">41</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/67</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-26 07:32:27 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-26 08:02:14 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -352,7 +352,7 @@ tr:hover { background: var(--surface2); }
         <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
         
         <div class="breaking-item">
-            <span class="time">ahora mismo</span> —
+            <span class="time">hace 1min</span> —
             <a href="https://www.elnuevodia.com/noticias/seguridad/notas/asesinan-a-tres-personas-y-otras-dos-resultan-heridas-en-balacera-en-loiza/" target="_blank">Asesinan a tres personas y otras dos resultan heridas en balacera en Loíza</a>
             <span style="opacity:0.6"> [Loíza]</span>
         </div>
@@ -388,7 +388,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
@@ -408,7 +408,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
             <div class="muni-name">Río Grande</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">4</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
@@ -433,7 +433,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
@@ -460,14 +460,44 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="Humacao" data-titular="Radican cargos a hombre por fraude en ejecución de obras y apropiación ilegal">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/05/26/radican-cargos-a-hombre-por-fraude-en-ejecucion-de-obras-y-apropiacion-ilegal/" target="_blank">Radican cargos a hombre por fraude en ejecución de obras y apropiación ilegal</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-05-26 23:50">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Firma leyes dirigidas a preservar estructuras históricas, entre ellas la Catedral de San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/noticias/20260526/firma-leyes-dirigidas-a-preservar-estructuras-historicas-entre-ellas-la-catedral-de-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=firma-leyes-dirigidas-a-preservar-estructuras-historicas-entre-ellas-la-catedral-de-san-juan" target="_blank">Firma leyes dirigidas a preservar estructuras históricas, entre ellas la Catedral de San Juan</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-05-26 22:53">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Luquillo,Río Grande" data-titular="Luquillo y Río Grande bajo advertencia de inundaciones - Metro Puerto Rico">
                     <td><span class="muni-tag">Luquillo, Río Grande</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNRlpBQ2Vzc2lWRnZ2bFNrVDVhdXQ2RDAzNF9GNnJacTdROHcyaXJrQkFsUHNvaXo2X2FJdy1mSXVvcVZ3SlBUR0pSeVBsbDhlbmprSzctSVBNMWlvcy1UVW10bXVUTkVWSFVOZHd2Y3lUeF9QSHpPWVhOZTkyVGhnYzVFdWRKMHNZTWx3alNKbWxRWGtxRktKN1ZlMlFibWR4SGFsZjBEbEZhcnR5SmZKQ9IBsAFBVV95cUxNRlpBQ2Vzc2lWRnZ2bFNrVDVhdXQ2RDAzNF9GNnJacTdROHcyaXJrQkFsUHNvaXo2X2FJdy1mSXVvcVZ3SlBUR0pSeVBsbDhlbmprSzctSVBNMWlvcy1UVW10bXVUTkVWSFVOZHd2Y3lUeF9QSHpPWVhOZTkyVGhnYzVFdWRKMHNZTWx3alNKbWxRWGtxRktKN1ZlMlFibWR4SGFsZjBEbEZhcnR5SmZKQw?oc=5" target="_blank">Luquillo y Río Grande bajo advertencia de inundaciones - Metro Puerto Rico</a>
                     </td>
                     <td>Luquillo</td>
                     <td class="time-ago" data-date="2026-05-26 20:33">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Luquillo,Río Grande" data-titular="Luquillo y Río Grande bajo advertencia de inundaciones - Metro Puerto Rico">
+                    <td><span class="muni-tag">Luquillo, Río Grande</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNYW1JbXJMQXZxVTFJNlpYdWZacXM4Nlo3VTNjSEpZU01JOEp3dmsxb0RncnFaZ216aU5hN3oxYVBjTzRUSDd2U19XeEc4TVlneEVOdzZZQ1ZOZDdaQUtCdFUxV2FqLVJ4b2hDX21iYlNObUsxYmVHWjgtUkpROGN2RmlMLWFEdmhWbWlEc1djVHJkYk1Qa0tjSDVzbGPSAbABQVVfeXFMTUZaQUNlc3NpVkZ2dmxTa1Q1YXV0NkQwMzRfRjZyWnE3UTh3Mmlya0JBbFBzb2l6Nl9hSXctZkl1b3FWd0pQVEdKUnlQbGw4ZW5qa0s3LUlQTTFpb3MtVFVtdG11VE5FVkhVTmR3dmN5VHhfUEh6T1lYTmU5MlRoZ2M1RXVkSjBzWU1sd2pTSm1sUVhrcUZLSjdWZTJRYm1keEhhbGYwRGxGYXJ0eUpmSkM?oc=5" target="_blank">Luquillo y Río Grande bajo advertencia de inundaciones - Metro Puerto Rico</a>
+                    </td>
+                    <td>Río Grande</td>
+                    <td class="time-ago" data-date="2026-05-26 20:30">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Radican cargos en ausencia contra mujer de Humacao por apropiación ilegal en tienda por departamento">
@@ -490,36 +520,6 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-26 20:19">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="“The Forgotten Borinqueneer”: Family seeks for Puerto Rican Julio Figueroa to be included in Washington D.C. and San Juan monuments - Noticias de Puerto Rico hoy">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMigwJBVV95cUxQM2NSWGU4Yld2X0lOQm1XYzdWX0I0NnFjNkV4SmRaNzJRUFNqU1I0UXBSZmo1LU1xNUtnZ1R6ZHFnUWNmaGx2Z1pYeFp3NkFzOHd1MzBCOXZPcTA5NkU4WS1UNUN2YlNwMUNvejJNajd1WVFETElFaHJaRVRPbGZQd3QtQWtCU2Q4SjRodGVqT1B2R05IRzc0T2kzQWJYSW5rQ2J6b2hqVi1kSlh2ZHJzNlhNQmlXVlR2WWxVLUJzaHJwaDJJZFZIMzljb1NZczVPQTJpd3AtalYwY1hqWXJvZXZPaDV0enpPNFJNZ2VuRnhBLVdOTTdzNjhRQXBrbWpnR3kw?oc=5" target="_blank">“The Forgotten Borinqueneer”: Family seeks for Puerto Rican Julio Figueroa to be included in Washington D.C. and San Juan monuments - Noticias de Puerto Rico hoy</a>
-                    </td>
-                    <td>El Nuevo Día (GN)</td>
-                    <td class="time-ago" data-date="2026-05-26 20:15">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Radican cargos en ausencia por apropiación ilegal en tienda de Humacao">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/05/26/radican-cargos-en-ausencia-por-apropiacion-ilegal-en-tienda-de-humacao/" target="_blank">Radican cargos en ausencia por apropiación ilegal en tienda de Humacao</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-26 19:55">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Anuncian cierre temporal de vías en la avenida Font Martelo por trabajos de LUMA en Humacao">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/05/26/anuncian-cierre-temporal-de-vias-en-la-avenida-font-martelo-por-trabajos-de-luma-en-humacao/" target="_blank">Anuncian cierre temporal de vías en la avenida Font Martelo por trabajos de LUMA en Humacao</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-26 19:46">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Carolina" data-titular="“Tenía miedo”: víctima de feminicidio en Carolina habría buscado ayuda tras patrón de acecho de su exparejaLa loiceña había salido de su trabajo cuando aparentemente fue interceptada por el hombre, quien le disparó y se privó de la vida">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
@@ -527,7 +527,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/notas/investigan-asesinato-suicidio-en-el-expreso-baldorioty-en-carolina/" target="_blank">“Tenía miedo”: víctima de feminicidio en Carolina habría buscado ayuda tras patrón de acecho de su exparejaLa loiceña había salido de su trabajo cuando aparentemente fue interceptada por el hombre, quien le disparó y se privó de la vida</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-26 19:32">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-26 20:01">hace 1min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Asesinan a tres personas y otras dos resultan heridas en balacera en Loíza">
@@ -537,7 +537,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/notas/asesinan-a-tres-personas-y-otras-dos-resultan-heridas-en-balacera-en-loiza/" target="_blank">Asesinan a tres personas y otras dos resultan heridas en balacera en Loíza</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-26 19:32">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-26 20:01">hace 1min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Asesinan a un hombre en los predios del residencial Jardines de Sellés en San Juan">
@@ -547,7 +547,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/notas/asesinan-a-un-hombre-en-los-predios-del-residencial-jardines-de-selles-en-san-juan/" target="_blank">Asesinan a un hombre en los predios del residencial Jardines de Sellés en San Juan</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-26 19:32">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-26 20:01">hace 1min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto,Río Grande" data-titular="Alumnos de Río Grande y Trujillo Alto empacan 300 compras para personas necesitadas">
@@ -557,7 +557,27 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/el-nuevo-dia-educador/notas/alumnos-de-rio-grande-y-trujillo-alto-empacan-300-compras-para-personas-necesitadas/" target="_blank">Alumnos de Río Grande y Trujillo Alto empacan 300 compras para personas necesitadas</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-26 19:32">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-05-26 20:01">hace 1min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Radican cargos en ausencia por apropiación ilegal en tienda de Humacao">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://waloradio.com/2026/05/26/radican-cargos-en-ausencia-por-apropiacion-ilegal-en-tienda-de-humacao/" target="_blank">Radican cargos en ausencia por apropiación ilegal en tienda de Humacao</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-05-26 19:55">hace 7min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Anuncian cierre temporal de vías en la avenida Font Martelo por trabajos de LUMA en Humacao">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://waloradio.com/2026/05/26/anuncian-cierre-temporal-de-vias-en-la-avenida-font-martelo-por-trabajos-de-luma-en-humacao/" target="_blank">Anuncian cierre temporal de vías en la avenida Font Martelo por trabajos de LUMA en Humacao</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-05-26 19:46">hace 16min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Superintendente autoriza entrega de armas a enfermero vinculado al caso del biólogo">
@@ -567,8 +587,11 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/26/superintendente-autoriza-entrega-de-armas-a-enfermero-vinculado-al-caso-del-biologo/" target="_blank">Superintendente autoriza entrega de armas a enfermero vinculado al caso del biólogo</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-26 19:14">hace 18min</td>
+                    <td class="time-ago" data-date="2026-05-26 19:14">hace 48min</td>
                 </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Alcalde de Fajardo recibe al Comisionado del Negociado de Bomberos de Puerto Rico y reconoce a Danny García como Bombero del Año - wipr.pr">
                     <td><span class="muni-tag">Fajardo</span></td>
@@ -577,11 +600,8 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxNWUR0c2RIMUpBZUZUeFdyLUpzek1uczV1YTZwX2pEM0RhdjRXM0x2ME1IREdqdThDSGd1WFhXNTVBdk5ZNUNtem53eTFWOEJtSmZiOVdNd0FjaWpkM0ZSUUZDYmhRY0lfVWhCOTE2VWdTNm9vMEdZN2YzWnNERk5QY3VJbHFrZF9SVEwzeHA3N0lSbzhfaEpWYnpVbTFJS2xQNW15SnZsVnZ1bTZHXzhpUHR1SGtybE9kOXRPdlFzdlJKT1d6Wkl2TWQybUx1ajBCVWZhMlhEX0ZweW9qN1NmVQ?oc=5" target="_blank">Alcalde de Fajardo recibe al Comisionado del Negociado de Bomberos de Puerto Rico y reconoce a Danny García como Bombero del Año - wipr.pr</a>
                     </td>
                     <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-05-26 18:39">hace 53min</td>
+                    <td class="time-ago" data-date="2026-05-26 18:39">hace 1h</td>
                 </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Asesina mujer y se suicida en avenida de San Juan">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -613,16 +633,6 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-26 18:07">hace 1h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Humacao" data-titular="Cultivos Frescos de Aquí celebrará Festival de Niños y Familias en Humacao">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/05/26/cultivos-frescos-de-aqui-celebrara-festival-de-ninos-y-familias-en-humacao/" target="_blank">Cultivos Frescos de Aquí celebrará Festival de Niños y Familias en Humacao</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-26 17:52">hace 1h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="San Juan" data-titular="Emiten alerta de inundaciones para varios municipios">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
@@ -640,7 +650,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/26/asesinan-mujer-a-plena-luz-del-dia-hombre-resulta-herido/" target="_blank">ACTUALIZADO | Hombre asesina a mujer y luego se priva de la vida</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-26 16:48">hace 2h</td>
+                    <td class="time-ago" data-date="2026-05-26 16:48">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Secretario del DDEC renuncia alegando intervenciones de La Fortaleza">
@@ -650,7 +660,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/26/secretario-del-ddec-renuncia-alegando-intervenciones-de-la-fortaleza/" target="_blank">Secretario del DDEC renuncia alegando intervenciones de La Fortaleza</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-26 16:34">hace 2h</td>
+                    <td class="time-ago" data-date="2026-05-26 16:34">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz del 26 al 31 de mayo; 40 municipios en lista">
@@ -677,10 +687,10 @@ tr:hover { background: var(--surface2); }
                     <td><span class="muni-tag">Naguabo</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQV01LRkZRNTg5ZENUY1Q5V0pTQ0FKWXNnazlTTTZqVExkeXo4QjNDdDdBMjBLMVFwbTVYLXI0aFg3V2hIQjVSeGdKakphWHBZNjZlb1h0SHgtZjNUUmZLUGxmMGFQZndFUVhySGRENkF0QmtWc3M5ay1vRkloWDJiaEYxUmhRTkxXVWZFMWp3?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
+                        <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOTmxZMW4tR0Y5MC0tNUc1TDVZXzJ6d0JwSThPUVBiRXowakhrSXE2bjZOVEdfam02Z1RZWkVNWGpkcktuN052ZVFkekg5bGZWYnVHQkZzUU53ZkxjMVVsYnBURU5JQ3N5RFZDaVJydVJNRTd1S0dQc01QNlFIT1FLMzNn?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-05-26 13:37">hace 5h</td>
+                    <td class="time-ago" data-date="2026-05-26 13:37">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto,Río Grande" data-titular="Alumnos de Río Grande y Trujillo Alto empacan 300 compras para personas necesitadas - Noticias de Puerto Rico hoy">
@@ -690,11 +700,21 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxPMW9ydWxrNWNJcE5mdFVvMVNkaHRKVk1RVUlDVkJXU2g1OGFsV1lyeXEweFROQ1VldG05QmJtUV9sbTNCN2staGV4TkQ3WXVvNndGRGl0Q3J0dEVnSGFzNWxCbmZETm9JMzBQNXpaclZ2WnluUVJfbVV2Y1dmWXpEcm9ZNUs2TmkyN1hDZEUwQ1R4a21IVjVPVFcxRWozTVdadDVGenF5UjhlbG5HZjlRd3QxYlhjTVpwcHVfLUFoS19icHg3bU1XZ0RONkYzQ3huV0wxUzB2VzAxRnN0dDIxVnFB?oc=5" target="_blank">Alumnos de Río Grande y Trujillo Alto empacan 300 compras para personas necesitadas - Noticias de Puerto Rico hoy</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-05-26 10:00">hace 9h</td>
+                    <td class="time-ago" data-date="2026-05-26 10:00">hace 10h</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques added a new photo. - Municipio de Vieques - facebook.com">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1qNnBaZUt0MndHSWs4amJtYkE5Tjl5VUhEMU9kNjdlSW1Mcm5IZzdOUHJyQXhSaU1GUHNWaGluYXRpQnNfNExEeFNOTkI0WHBQNEsyZGZVYkticzJGSGdIREtaWXBnczNMSUVCSGlsWDE2UUdH?oc=5" target="_blank">Municipio de Vieques added a new photo. - Municipio de Vieques - facebook.com</a>
+                    </td>
+                    <td>FB - Vieques</td>
+                    <td class="time-ago" data-date="2026-05-25 22:55">hace 21h</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="San Juan,Loíza" data-titular="Municipio de San Juan inicia plan de repavimentación en la Calle Loíza - Metro Puerto Rico">
                     <td><span class="muni-tag">San Juan, Loíza</span></td>
@@ -1011,7 +1031,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-26 07:32:27 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-26 08:02:14 PM<br>
     Actualización automática cada 30 min
 </div>
 
