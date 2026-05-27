@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-27 06:33:27 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-27 07:03:10 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">31</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">33</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-27 06:33:27 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-27 07:03:10 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -347,6 +347,25 @@ tr:hover { background: var(--surface2); }
 
 <!-- BREAKING NEWS -->
 
+<div class="section breaking-section">
+    <div class="breaking-banner">
+        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">ahora</span> —
+            <a href="https://noticel.com/noticias/20260527/gobernadora-declara-estado-de-emergencia-por-la-erosion-costera-en-loiza-y-otras-areas/?utm_source=rss&utm_medium=rss&utm_campaign=gobernadora-declara-estado-de-emergencia-por-la-erosion-costera-en-loiza-y-otras-areas" target="_blank">Gobernadora declara estado de emergencia por la erosión costera en Loíza y otras áreas</a>
+            <span style="opacity:0.6"> [Loíza]</span>
+        </div>
+        
+        <div class="breaking-item">
+            <span class="time">hace 2min</span> —
+            <a href="https://www.elnuevodia.com/noticias/gobierno/notas/jenniffer-gonzalez-declara-estado-de-emergencia-por-la-erosion-costera-en-loiza/" target="_blank">Jenniffer González declara estado de emergencia por la erosión costera en Loíza</a>
+            <span style="opacity:0.6"> [Loíza]</span>
+        </div>
+        
+    </div>
+</div>
+
 
 <!-- MUNICIPALITIES -->
 <div class="section">
@@ -355,7 +374,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">11</div>
+            <div class="muni-count">10</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -390,7 +409,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
@@ -415,7 +434,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
@@ -445,6 +464,29 @@ tr:hover { background: var(--surface2); }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
                 
+                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="Gobernadora declara estado de emergencia por la erosión costera en Loíza y otras áreas">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/noticias/20260527/gobernadora-declara-estado-de-emergencia-por-la-erosion-costera-en-loiza-y-otras-areas/?utm_source=rss&utm_medium=rss&utm_campaign=gobernadora-declara-estado-de-emergencia-por-la-erosion-costera-en-loiza-y-otras-areas" target="_blank">Gobernadora declara estado de emergencia por la erosión costera en Loíza y otras áreas</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-05-27 10:47">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="Jenniffer González declara estado de emergencia por la erosión costera en Loíza">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/gobierno/notas/jenniffer-gonzalez-declara-estado-de-emergencia-por-la-erosion-costera-en-loiza/" target="_blank">Jenniffer González declara estado de emergencia por la erosión costera en Loíza</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-05-27 07:01">hace 2min</td>
+                </tr>
+                
+                
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Ismael Guadalupe y su legado heroico a la paz de Vieques y a la libertad de nuestra Patria - claridadpuertorico.com">
@@ -464,7 +506,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/26/se-ira-la-luz-hasta-15-horas/" target="_blank">Se irá la luz hasta 15 horas</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-27 02:02">hace 4h</td>
+                    <td class="time-ago" data-date="2026-05-27 02:02">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Lamentan renuncia de Sebastián Negrón Reichard">
@@ -474,7 +516,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/26/lamentan-renuncia-de-sebastian-negron-reichard/" target="_blank">Lamentan renuncia de Sebastián Negrón Reichard</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-27 00:51">hace 5h</td>
+                    <td class="time-ago" data-date="2026-05-27 00:51">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Policía ordena devolver licencia y armas a Eduardo Meléndez">
@@ -484,7 +526,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/26/policia-ordena-devolver-licencia-y-armas-a-eduardo-melendez/" target="_blank">Policía ordena devolver licencia y armas a Eduardo Meléndez</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-27 00:50">hace 5h</td>
+                    <td class="time-ago" data-date="2026-05-27 00:50">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Gobernadora fima medida que permite remodelar la catedral del Viejo San Juan">
@@ -494,7 +536,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/26/gobernadora-fima-medida-que-permite-remodelar-la-catedral-del-viejo-san-juan/" target="_blank">Gobernadora fima medida que permite remodelar la catedral del Viejo San Juan</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-27 00:49">hace 5h</td>
+                    <td class="time-ago" data-date="2026-05-27 00:49">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Gobernadora se muestra “decepcionada” tras renuncia de secretario del DDEC">
@@ -504,7 +546,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/26/gobernadora-se-muestra-decepcionada-tras-renuncia-de-secretario-del-ddec/" target="_blank">Gobernadora se muestra “decepcionada” tras renuncia de secretario del DDEC</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-27 00:47">hace 5h</td>
+                    <td class="time-ago" data-date="2026-05-27 00:47">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Pedro Rosaly preside Hecho en Puerto Rico">
@@ -514,7 +556,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/26/pedro-rosaly-preside-hecho-en-puerto-rico/" target="_blank">Pedro Rosaly preside Hecho en Puerto Rico</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-27 00:46">hace 5h</td>
+                    <td class="time-ago" data-date="2026-05-27 00:46">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Gobernadora inaugura mejoras en Muelle Panamericano Oeste">
@@ -524,7 +566,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/26/gobernadora-inaugura-mejoras-en-muelle-panamericano-oeste/" target="_blank">Gobernadora inaugura mejoras en Muelle Panamericano Oeste</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-27 00:44">hace 5h</td>
+                    <td class="time-ago" data-date="2026-05-27 00:44">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Empleados de tribunales piden trabajar remoto por los costos de gasolina">
@@ -534,7 +576,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/26/empleados-de-tribunales-piden-trabajar-remoto-por-los-costos-de-gasolina/" target="_blank">Empleados de tribunales piden trabajar remoto por los costos de gasolina</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-27 00:42">hace 5h</td>
+                    <td class="time-ago" data-date="2026-05-27 00:42">hace 6h</td>
                 </tr>
                 
                 
@@ -547,17 +589,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/26/radican-cargos-a-hombre-por-fraude-en-ejecucion-de-obras-y-apropiacion-ilegal/" target="_blank">Radican cargos a hombre por fraude en ejecución de obras y apropiación ilegal</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-26 23:50">hace 6h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Firma leyes dirigidas a preservar estructuras históricas, entre ellas la Catedral de San Juan">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20260526/firma-leyes-dirigidas-a-preservar-estructuras-historicas-entre-ellas-la-catedral-de-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=firma-leyes-dirigidas-a-preservar-estructuras-historicas-entre-ellas-la-catedral-de-san-juan" target="_blank">Firma leyes dirigidas a preservar estructuras históricas, entre ellas la Catedral de San Juan</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-05-26 22:53">hace 7h</td>
+                    <td class="time-ago" data-date="2026-05-26 23:50">hace 7h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Alcalde Cataño reafirma rechazo a planteamientos de auditoría - El Vocero de Puerto Rico">
@@ -617,7 +649,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/26/radican-cargos-en-ausencia-por-apropiacion-ilegal-en-tienda-de-humacao/" target="_blank">Radican cargos en ausencia por apropiación ilegal en tienda de Humacao</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-26 19:55">hace 10h</td>
+                    <td class="time-ago" data-date="2026-05-26 19:55">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Anuncian cierre temporal de vías en la avenida Font Martelo por trabajos de LUMA en Humacao">
@@ -627,7 +659,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/26/anuncian-cierre-temporal-de-vias-en-la-avenida-font-martelo-por-trabajos-de-luma-en-humacao/" target="_blank">Anuncian cierre temporal de vías en la avenida Font Martelo por trabajos de LUMA en Humacao</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-26 19:46">hace 10h</td>
+                    <td class="time-ago" data-date="2026-05-26 19:46">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Superintendente autoriza entrega de armas a enfermero vinculado al caso del biólogo">
@@ -647,7 +679,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxNWUR0c2RIMUpBZUZUeFdyLUpzek1uczV1YTZwX2pEM0RhdjRXM0x2ME1IREdqdThDSGd1WFhXNTVBdk5ZNUNtem53eTFWOEJtSmZiOVdNd0FjaWpkM0ZSUUZDYmhRY0lfVWhCOTE2VWdTNm9vMEdZN2YzWnNERk5QY3VJbHFrZF9SVEwzeHA3N0lSbzhfaEpWYnpVbTFJS2xQNW15SnZsVnZ1bTZHXzhpUHR1SGtybE9kOXRPdlFzdlJKT1d6Wkl2TWQybUx1ajBCVWZhMlhEX0ZweW9qN1NmVQ?oc=5" target="_blank">Alcalde de Fajardo recibe al Comisionado del Negociado de Bomberos y reconoce a Danny García como Bombero del Año - wipr.pr</a>
                     </td>
                     <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-05-26 18:39">hace 11h</td>
+                    <td class="time-ago" data-date="2026-05-26 18:39">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Asesina mujer y se suicida en avenida de San Juan">
@@ -677,7 +709,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdWpwVUxoMGUtV2lLY1p1UkVzMW56dTdCcHF2ckRkaXFNbU5FVTh2WG1IT0tDMTdVa2U5UXhUYmlqQkEzN3J6THY1SkhtMnRzMWRiOU5YeUUyT1JMUUp5amt2dm82NFZ5bHFJMHlYRHI3Rktyb21ET19LYWtqS2Q2R1J1V0NsdEhNdnJKczFjWUxiVE1CTlNCZEEzdUJwN0NnZy1tRGxTUms4N29tUmh4SnVFMVFQRE9HaG00?oc=5" target="_blank">“Tenía miedo”: víctima de feminicidio en Carolina habría buscado ayuda tras patrón de acecho de su expareja - Noticias de Puerto Rico hoy</a>
                     </td>
                     <td>El Nuevo Día (GN)</td>
-                    <td class="time-ago" data-date="2026-05-26 16:46">hace 13h</td>
+                    <td class="time-ago" data-date="2026-05-26 16:46">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Hombre presuntamente asesina a mujer y luego se priva de la vida a plena luz del día en Carolina - El Vocero de Puerto Rico">
@@ -687,7 +719,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxNdFpMdmF5VmVGTl9HTGlKTkxpWDJTdDJtalFkWlBOQ2hRVVlfSUVRT3ZFSXdnY08yX29BYVJqZXhFakxqN2g4cWF6OUxkZ0ZTdnJ2QWY1cWg2c0ZjM0ttRjJlREV0TTN1R2haTW8xb1hVaWlWTFNRSzhVQWNGYkxncXlIZ1BCRGxCM3ZOeS16RmpWTUhOcmZfNDBHa25TbWd2UnpFU2xsa3l3V3p3ZmoydS1Ea2NVUGs2SWVERmdoUmx5cnRYTGt4UnZtalJUTVU5RnRabm1Pak00VTVUUWdUSkpUZjdzdVgzcU96MTVYSW5nbGdnOXc40gH8AUFVX3lxTFBoVGxPcXBEaF9OUWVKWmhNNW5taGJmamJUTkd1cldkci1oWXprcjBVbTNqOU9jOUFxNU8taVNsWjYtc0pDYTFJOTlLUTUwX1NXM2o5Vk80Q1dpVDBRVUZSdmZvVU54bk44V3hoeDRMRzVwZ2pzMTBSZk5lLW1jNXZjWFZLSGJMdTVBUHhoMTJKRmtGMkRYaTR3WU50ZHVfTmlySDYxYmxmQkx6V2t0ZnJVUlFqN3U5WHpWbC1tTWtydG12ZUFIQ3FrUkRkVjNWWGltZDdZdXFEcHlwdW1Ja0tjOEw1cUhJSnRwNTlFZXdtQzk5R3IzTHBySlhaUg?oc=5" target="_blank">Hombre presuntamente asesina a mujer y luego se priva de la vida a plena luz del día en Carolina - El Vocero de Puerto Rico</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-05-26 16:39">hace 13h</td>
+                    <td class="time-ago" data-date="2026-05-26 16:39">hace 14h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBKRERiVHVrdXctVXVVU05nQXdweWpscU90dE1IUDJOWDVnMThoaWxWZTRSNDMxdmVZLV9fa0ZraHplLVpUM1FnWU1aSUVVUG5IbUFPeUs1dm0wZmg1ZzB5QUlLWWNZM0U?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
+                    </td>
+                    <td>FB - Cataño</td>
+                    <td class="time-ago" data-date="2026-05-26 15:54">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
@@ -707,7 +749,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQV01LRkZRNTg5ZENUY1Q5V0pTQ0FKWXNnazlTTTZqVExkeXo4QjNDdDdBMjBLMVFwbTVYLXI0aFg3V2hIQjVSeGdKakphWHBZNjZlb1h0SHgtZjNUUmZLUGxmMGFQZndFUVhySGRENkF0QmtWc3M5ay1vRkloWDJiaEYxUmhRTkxXVWZFMWp3?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-05-26 13:37">hace 16h</td>
+                    <td class="time-ago" data-date="2026-05-26 13:37">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto,Río Grande" data-titular="Alumnos de Río Grande y Trujillo Alto empacan 300 compras para personas necesitadas - Noticias de Puerto Rico hoy">
@@ -717,7 +759,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxPMW9ydWxrNWNJcE5mdFVvMVNkaHRKVk1RVUlDVkJXU2g1OGFsV1lyeXEweFROQ1VldG05QmJtUV9sbTNCN2staGV4TkQ3WXVvNndGRGl0Q3J0dEVnSGFzNWxCbmZETm9JMzBQNXpaclZ2WnluUVJfbVV2Y1dmWXpEcm9ZNUs2TmkyN1hDZEUwQ1R4a21IVjVPVFcxRWozTVdadDVGenF5UjhlbG5HZjlRd3QxYlhjTVpwcHVfLUFoS19icHg3bU1XZ0RONkYzQ3huV0wxUzB2VzAxRnN0dDIxVnFB?oc=5" target="_blank">Alumnos de Río Grande y Trujillo Alto empacan 300 compras para personas necesitadas - Noticias de Puerto Rico hoy</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-05-26 10:00">hace 20h</td>
+                    <td class="time-ago" data-date="2026-05-26 10:00">hace 21h</td>
                 </tr>
                 
                 
@@ -913,7 +955,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-27 06:33:27 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-27 07:03:10 AM<br>
     Actualización automática cada 30 min
 </div>
 
