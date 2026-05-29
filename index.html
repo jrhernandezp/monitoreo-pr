@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-29 11:33:43 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-29 12:03:33 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">28</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">29</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-29 11:33:43 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-29 12:03:33 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -376,9 +376,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">6</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
+        <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
@@ -463,7 +463,7 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="San Juan" data-titular="Bruma del Sahara y calor intenso dominarán el tiempo hoy en Puerto Rico">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://nelpr.com/2026/05/29/bruma-sahara-calor-tiempo-hoy-puerto-rico/" target="_blank">Bruma del Sahara y calor intenso dominarán el tiempo hoy en Puerto Rico</a>
                     </td>
                     <td>NELPR</td>
@@ -473,7 +473,7 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="San Juan" data-titular="San Juan demanda a la AAA por servicio deficiente">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://esnoticiapr.com/san-juan-demanda-a-la-aaa-por-servicio-deficiente/" target="_blank">San Juan demanda a la AAA por servicio deficiente</a>
                     </td>
                     <td>Es Noticia</td>
@@ -520,6 +520,16 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-29 14:03">ahora</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Loíza" data-titular="Entre escombros y humo: incendio destruye negocio familiar de 20 años en Loíza">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/fotogalerias/entre-escombros-y-humo-incendio-destruye-negocio-familiar-de-20-anos-en-loiza/" target="_blank">Entre escombros y humo: incendio destruye negocio familiar de 20 años en Loíza</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-05-29 12:02">hace 1min</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Estable peatón arrollado en Naguabo mientras se disponía a depositar basura en contenedor">
                     <td><span class="muni-tag">Naguabo</span></td>
                     <td class="titular-cell">
@@ -527,7 +537,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/29/estable-peaton-arrollado-en-naguabo-mientras-se-disponia-a-depositar-basura-en-contenedor/" target="_blank">Estable peatón arrollado en Naguabo mientras se disponía a depositar basura en contenedor</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-29 11:54">ahora</td>
+                    <td class="time-ago" data-date="2026-05-29 11:54">hace 9min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Ocupan sustancias y un vehículo en intervención en residencial de Caguas">
@@ -537,17 +547,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/29/ocupan-sustancias-y-un-vehiculo-en-intervencion-en-residencial-de-caguas/" target="_blank">Ocupan sustancias y un vehículo en intervención en residencial de Caguas</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-29 11:39">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Entre escombros y humo: incendio destruye negocio familiar de 20 años en Loíza">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/seguridad/fotogalerias/entre-escombros-y-humo-incendio-destruye-negocio-familiar-de-20-anos-en-loiza/" target="_blank">Entre escombros y humo: incendio destruye negocio familiar de 20 años en Loíza</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-29 11:32">hace 1min</td>
+                    <td class="time-ago" data-date="2026-05-29 11:39">hace 24min</td>
                 </tr>
                 
                 
@@ -570,7 +570,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/28/se-ira-la-luz-en-17-municipios-hasta-12-horas-3/" target="_blank">Se irá la luz en 17 municipios hasta 12 horas</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-29 00:47">hace 10h</td>
+                    <td class="time-ago" data-date="2026-05-29 00:47">hace 11h</td>
                 </tr>
                 
                 
@@ -603,7 +603,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/28/gobierno-pagara-factura-de-luz-a-los-que-tengan-atrasos/" target="_blank">Gobierno pagará factura de luz a los que tengan atrasos</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-28 21:59">hace 13h</td>
+                    <td class="time-ago" data-date="2026-05-28 21:59">hace 14h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFA2Q2ZzR0txOFZabU1EanFxQ21JMklnYnQxLTNyMVpNcjJ5Um51X3J3U2NVZEV3V3lPOW9KX3B6bV85TjBnMDVFZFFSY1BkU3pNelVjQ2EtR1BETC1uMTA1VVI3c1pnaG41WnNERVEwZVc3UDhhVzY1OHFYc0k4TlE?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
+                    </td>
+                    <td>FB - Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-05-28 20:17">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo - facebook.com">
@@ -620,7 +630,7 @@ tr:hover { background: var(--surface2); }
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQTFVXdUhWdFI1U1dGcEFXM1FxMWNFekZpUDZkZ042T2gtUlJ1YXNnVUU0UWI1LWd0bjdzUXJpRUZ0ZmoyU3R0Rm5fR0FELXpYSUFsRTZtcFVmeFBPTVdQTFpBdnBfV2Q1VWlVVjMxUllzeEwxR3VwcWxfdmN4NktuNVp5NzI?oc=5" target="_blank">Municipio de Loíza added a new photo. - Municipio de Loíza - facebook.com</a>
+                        <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQTUxJTmw0a2UtRm1OSjRndmNIemVHRm5yQXp2TmNCYTlmQ3VMWmJMaWg2THZWM2xDOFNLcUxjMUUwcWNES3J0a21aNThJRjhtaVd3LTlscEJlMGpETUIyRmZUYU5saDNWVlZRSWdDYmFLai1uR1phblBKUjNrM2ZETEhKWGM?oc=5" target="_blank">Municipio de Loíza added a new photo. - Municipio de Loíza - facebook.com</a>
                     </td>
                     <td>FB - Loíza</td>
                     <td class="time-ago" data-date="2026-05-28 17:28">hace 18h</td>
@@ -669,7 +679,7 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Loíza" data-titular="Quemado en su totalidad: incendio consume un negocio en Loíza - Noticias de Puerto Rico hoy">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPWEdFT0M3aHhuTUFPblNsM0k3RlNHSTdRR0dLV0lweEF5VXlxY2E2Vi1TVlAyT2RLZEVzUldtUFU2Tm9QVWJDMkk5bHVwWXdreXNIbHJiYjd5aHAzVk9MVXhIN3lHTkgydDZhT25vTmU3NVhHRmVxYW1vdl9QV1pvUXRubGlnVFplbkFJVXExY1lsT0xVOFlYVHY1b2QxYUJXX2FTMnhsbWxuM212b2kxQzBkaw?oc=5" target="_blank">Quemado en su totalidad: incendio consume un negocio en Loíza - Noticias de Puerto Rico hoy</a>
                     </td>
                     <td>Loíza</td>
@@ -899,7 +909,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-29 11:33:43 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-29 12:03:33 PM<br>
     Actualización automática cada 30 min
 </div>
 
