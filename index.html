@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-28 07:33:22 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-28 08:03:10 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">32</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num">35</div><div class="label">Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-28 07:33:22 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-28 08:03:10 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -373,12 +373,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">7</div>
+            <div class="muni-count">8</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
@@ -386,9 +386,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">4</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
+        <div class="muni-card active" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
@@ -403,7 +403,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">4</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
@@ -433,7 +433,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
@@ -459,6 +459,16 @@ tr:hover { background: var(--surface2); }
             <tbody id="articlesBody">
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Radican cargos contra hombre que impactó una patrulla e intentó huir en Carolina">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/radican-cargos-contra-hombre-que-impacto-una-patrulla-e-intento-huir-en-carolina/" target="_blank">Radican cargos contra hombre que impactó una patrulla e intentó huir en Carolina</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-05-28 23:29">ahora</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Encarcelan joven por robo de  cuatro vehículos Mercedes Benz">
                     <td><span class="muni-tag">Caguas</span></td>
@@ -500,46 +510,6 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-28 21:13">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Carolina" data-titular="Justicia presenta cargos contra imputado de quitarle la vida a adulto mayor en Carolina">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20260528/justicia-presenta-cargos-contra-imputado-de-quitarle-la-vida-a-adulto-mayor-en-carolina/?utm_source=rss&utm_medium=rss&utm_campaign=justicia-presenta-cargos-contra-imputado-de-quitarle-la-vida-a-adulto-mayor-en-carolina" target="_blank">Justicia presenta cargos contra imputado de quitarle la vida a adulto mayor en Carolina</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-05-28 19:50">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Encarcelan joven por robo de cuatro Mercedes Benz">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/encarcelan-joven-por-robo-de-cuatro-mercedes-benz/" target="_blank">Encarcelan joven por robo de cuatro Mercedes Benz</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-05-28 19:49">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Emiten advertencia de inundaciones para varios municipios">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/05/28/emiten-advertencia-de-inundaciones-para-varios-municipios-10/" target="_blank">Emiten advertencia de inundaciones para varios municipios</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-28 19:44">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Planet Fitness recauda artículos para la Casa Manuel Fernández Juncos">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/05/28/planet-fitness-recauda-articulos-para-la-casa-manuel-fernandez-juncos/" target="_blank">Planet Fitness recauda artículos para la Casa Manuel Fernández Juncos</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-28 19:37">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Carolina" data-titular="Llamó al 9-1-1 y reportó que la víctima no se movía: acusan a hombre por crimen en Carolina">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
@@ -547,7 +517,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/tribunales/notas/llamo-al-9-1-1-y-reporto-que-la-victima-no-se-movia-acusan-a-hombre-por-crimen-en-carolina/" target="_blank">Llamó al 9-1-1 y reportó que la víctima no se movía: acusan a hombre por crimen en Carolina</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-28 19:31">hace 2min</td>
+                    <td class="time-ago" data-date="2026-05-28 20:01">hace 2min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Entre escombros y humo: incendio destruye negocio familiar de 20 años en Loíza">
@@ -557,7 +527,47 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/fotogalerias/entre-escombros-y-humo-incendio-destruye-negocio-familiar-de-20-anos-en-loiza/" target="_blank">Entre escombros y humo: incendio destruye negocio familiar de 20 años en Loíza</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-28 19:31">hace 2min</td>
+                    <td class="time-ago" data-date="2026-05-28 20:01">hace 2min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Justicia presenta cargos contra imputado de quitarle la vida a adulto mayor en Carolina">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://noticel.com/noticias/20260528/justicia-presenta-cargos-contra-imputado-de-quitarle-la-vida-a-adulto-mayor-en-carolina/?utm_source=rss&utm_medium=rss&utm_campaign=justicia-presenta-cargos-contra-imputado-de-quitarle-la-vida-a-adulto-mayor-en-carolina" target="_blank">Justicia presenta cargos contra imputado de quitarle la vida a adulto mayor en Carolina</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-05-28 19:50">hace 13min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Encarcelan joven por robo de cuatro Mercedes Benz">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://esnoticiapr.com/encarcelan-joven-por-robo-de-cuatro-mercedes-benz/" target="_blank">Encarcelan joven por robo de cuatro Mercedes Benz</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-05-28 19:49">hace 14min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Emiten advertencia de inundaciones para varios municipios">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://nelpr.com/2026/05/28/emiten-advertencia-de-inundaciones-para-varios-municipios-10/" target="_blank">Emiten advertencia de inundaciones para varios municipios</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-05-28 19:44">hace 19min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Planet Fitness recauda artículos para la Casa Manuel Fernández Juncos">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://nelpr.com/2026/05/28/planet-fitness-recauda-articulos-para-la-casa-manuel-fernandez-juncos/" target="_blank">Planet Fitness recauda artículos para la Casa Manuel Fernández Juncos</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-05-28 19:37">hace 26min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="OIG cuestiona más de $32,000 en gastos de viaje de ASSMCA">
@@ -567,11 +577,21 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/28/oig-cuestiona-mas-de-32000-en-gastos-de-viaje-de-assmca/" target="_blank">OIG cuestiona más de $32,000 en gastos de viaje de ASSMCA</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-28 19:22">hace 11min</td>
+                    <td class="time-ago" data-date="2026-05-28 19:22">hace 41min</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
+                
+                <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo - facebook.com">
+                    <td><span class="muni-tag">Luquillo</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE0zUHVHYWF5QzBfd1BZdXZLMFpjeTRQOEROTTNmUzJMYjduSWYwZTB5TkdfMjZLei1jN3Njd3Q0UGR0eDVObXBDQ0NuNW0wNE9pN3BVZ0pycGtyRnlOUWlyTmtMQ2tXNUtiUUxN?oc=5" target="_blank">Municipio de Luquillo - facebook.com</a>
+                    </td>
+                    <td>FB - Luquillo</td>
+                    <td class="time-ago" data-date="2026-05-28 18:10">hace 1h</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Ismael Guadalupe y Vieques: unidos más allá de la vida - claridadpuertorico.com">
                     <td><span class="muni-tag">Vieques</span></td>
@@ -583,16 +603,6 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-28 14:23">hace 5h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9WemNlQUtLNUZveXRPZ1A1U0xOZ2VmbEM1NnBONVN3QzhyYzQtb1hFZDZmMmpTWWpYc2p5VnhOaTY0NTRxMUQ5eDl5TUhtTUdlUkp5NkRuSG5TSXNOUnhBbjM5VlVoWlhlQVdqV3VBcnpKS28?oc=5" target="_blank">Municipio de Vieques - facebook.com</a>
-                    </td>
-                    <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-05-28 14:08">hace 5h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Loíza" data-titular="Entre escombros y humo: incendio destruye negocio familiar de 20 años en Loíza - Noticias de Puerto Rico hoy">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
@@ -600,7 +610,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxNNkVuZjU1a0pXdjZZYjJBcDB1YmVWcUxSNDFtYnB6Vm5WTURZc0txaGVyWXJxSnNQVlZEZTFZSWFUQlBDTTl6dFZGQWxTTWZoemp5VmxLUFZyajNPQWNiaVdKTHhVOGRUOUVybVNTdXpLZURPYkZXQ2EzRkJmck9WbkJBSFl4QjdENTdLVDRndm5mTkZrQW9LYVFBdHNOTFpfRWFvTDVlejdXWlc2Y25ROXNucmIwQlFSZ0hPdXB4UzNCYk5acW44T3lWakp0N2N3TEZj?oc=5" target="_blank">Entre escombros y humo: incendio destruye negocio familiar de 20 años en Loíza - Noticias de Puerto Rico hoy</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-28 13:53">hace 5h</td>
+                    <td class="time-ago" data-date="2026-05-28 13:53">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Gana $200 mil en Powerball con boleto vendido en San Juan">
@@ -610,7 +620,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/gana-200-mil-en-powerball-con-boleto-vendido-en-san-juan/" target="_blank">Gana $200 mil en Powerball con boleto vendido en San Juan</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-05-28 12:57">hace 6h</td>
+                    <td class="time-ago" data-date="2026-05-28 12:57">hace 7h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Cierran tramo de la PR-187 en Loíza por fuego en establecimiento - NotiCel">
@@ -640,7 +650,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxOc0gyeEttc0tva1U2bHhOazRMNElKdXJmRXUxLVRCRFlGRFVOWXdleExzbnNjd2QyaGdIREl5Tjdqam85VmJsOUFLX3ZNYnpVaWZJN1RHT25DTC1OWHBKenBabllXM1pDZ18ySFRXbDVtRGVYSEhpWUtkT2tXZUYzNGhacGxNa0FkZ3hreXBza21nQWw2ajIyTFZ3dmlvelkzTWFQR0EwSjhIbFV0V0RzaDJmc1lQRUpNVE9RUmJfVkEyMEI0TEtNbHNReEYwSlI5bjZVWlp1U0s?oc=5" target="_blank">The Miss Universe Puerto Rico pageant announced a partnership with the Four Points by Sheraton Caguas Real Hotel & Casino, which will become the official hotel and venue for several of the competition's main events leading up to the final night. #Caguas - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-05-28 00:00">hace 19h</td>
+                    <td class="time-ago" data-date="2026-05-28 00:00">hace 20h</td>
                 </tr>
                 
                 
@@ -653,7 +663,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOSHEtSFFWcWpvZ25LRmZZUThwNUhMN25NblpQWVBYLVV6YXlGWnJfRlRoQkVzdHpFemJyVjNqd1ZjbEh4LWdMc1VuZ3lscVJBOU9jZkxjMDF2a3BzSDgzZGlKSmVESS05bVJ2bGVOMVg1d09MOVo5MkdDcHpLUWtsTE95ZE9HWUE2SGl0NzdMdmJQMllSMFI0SGdobjljZmhFekU2QnFSUUZJOFNTR1FZ0gHDAUFVX3lxTE9xd21IMEdudjFqeWRLMzk1emwwY1A5dHhJdC1aS18zcy1HZzBzS2xpeVRuZENhQkphUW9UWEQ3ZTRiN3BBTmRxMC1PbVNtOUF1a3g5NVByUTZLR1I4ZjRpTU5JYUxqaV9UaUlDX2Noa0tjdDcyUG1XMGpVZ2FDS3VkdmE0QXlIWlNiT1JtajV5RGhYR2tCTnBvMjBuRzdBTm5KcVZwSUttQ1oyU1VqWjg5RmFHNWNZcFZBbXh0dmZOck5BYw?oc=5" target="_blank">EN VIVO: Miguel Romero presenta presupuesto del municipio de San Juan - Metro Puerto Rico</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-05-27 21:53">hace 21h</td>
+                    <td class="time-ago" data-date="2026-05-27 21:53">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Contratista provoca rotura y AAA asume reparación en Humacao">
@@ -673,7 +683,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPcGJfUUZObDBlTGZRUE9YbDZBVjFaV0JNVkZqWHdaeDg5WmhTLW0tb0d1R2YyNURIV0wtZ2hvaHk2VXFqT0JUd1dDQWRqUEFReTR6Z0hzRVA1Y3Z2Qmk1MEExdDVvbjJHM2ZXYlF1LTJfbmNIVDY1cENtMUhScFd5MTNUU0ZJRW9GR3RsWnVRdnhtcURMSXJ0dHJuejZ6c0xjZGdhbnQzeEpjQUVPdnc?oc=5" target="_blank">Miguel Romero adelanta que demandará a la AAA en el mensaje de presupuesto del Municipio de San Juan - Noticias de Puerto Rico hoy</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-05-27 21:01">hace 22h</td>
+                    <td class="time-ago" data-date="2026-05-27 21:01">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Culebra" data-titular="Gongo sufre accidente mientras capturaba culebra de 12 pies: “son marcas de guerra” - Metro Puerto Rico">
@@ -686,11 +696,21 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-27 19:08">hace 1d</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza - facebook.com">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1KTVdoeDBleVVBeWt1aUNhTGQtV2pQalF6YzFGejdPcXBrME9uRW4zX05hRlo0bU5zN0ttWUVOeUdxS0dYUjR0dmhyQ0wxeERyOFZnLWhpR1k3Nk5La2tnLUNaZXhKekJXYzRobVJGa1diNlZSb1NZ?oc=5" target="_blank">Municipio de Loíza - facebook.com</a>
+                    </td>
+                    <td>FB - Loíza</td>
+                    <td class="time-ago" data-date="2026-05-27 18:16">hace 1d</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Ocupan 166 kilos de cocaína tras persecución en Fajardo - Metro Puerto Rico">
                     <td><span class="muni-tag">Fajardo</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOSXQxcDNCNXJTOGZpeFR5eVZXSS1kYVBiYlBRcmM4X2FaN0RfWXhrSlRkajhwcGtKYjlCNEI2T1J4ZVQ5bUxmODJ6MUN6ME5CUktIZjctZ3FIOWZBLUNySl9fcW9wMmxRbmJmTzFwZl95QmFJckMzeGE4UlE5SlFmWTBSUlJjUlo2RnoxY0xJNVlfSWREWi1MX0M4ZTjSAbIBQVVfeXFMT2xDOEdfM0J2UDNrd3Q3eDlENWJVbzZjMGFjRUlFeDNtTlowajdXcXFaU25KczN4dUZmaDFMNXVjX0k2WDZ4ZWp2R1QzTmdMSXBhOTZ3VktBRVd3MzFMWFhlZmJiNWhyQ2c3RWkwbzlaSV9yQ1pmYnFsRXJHTGxwTDRhdWN2WUxhNklkdGc5OFJ6WWh3Q1pyWF9KSk1Qd29mb0VhSjRwd2tEb0psYnE3TkhZUQ?oc=5" target="_blank">Ocupan 166 kilos de cocaína tras persecución en Fajardo - Metro Puerto Rico</a>
+                        <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOdHNsSk1iSDBZUUNjZkJqVnd5ZjlJc2xDWXo1NXVpMnl1Qm5rWW1GUl9ZWmNpTkgyTmJkT3VGMzJKRFppZnJRS2lFSTJ1ZGRnZUhOQk11d0hNWWJqX0dSUlBzdzItWEVKZDQ2SmlDZnNrZVJDYVlYRTRkekJ5Qk9MVW15UXBXZ1I5NGdnckFuUTV6RDMybVdWTlZFQmg4Z9IBsgFBVV95cUxPbEM4R18zQnZQM2t3dDd4OUQ1YlVvNmMwYWNFSUV4M21OWjBqN1dxcVpTbkpzM3h1RmZoMUw1dWNfSTZYNnhlanZHVDNOZ0xJcGE5NndWS0FFV3czMUxYWGVmYmI1aHJDZzdFaTBvOVpJX3JDWmZicWxFckdMbHBMNGF1Y3ZZTGE2SWR0Zzk4UnpZaHdDWnJYX0pKTVB3b2ZvRWFKNHB3a0RvSmxicTdOSFlR?oc=5" target="_blank">Ocupan 166 kilos de cocaína tras persecución en Fajardo - Metro Puerto Rico</a>
                     </td>
                     <td>Fajardo</td>
                     <td class="time-ago" data-date="2026-05-27 18:08">hace 1d</td>
@@ -704,6 +724,16 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>FB - Humacao</td>
                     <td class="time-ago" data-date="2026-05-27 17:47">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBIaTN6MnRhU2FxX1NscGlYanRHZ1hDOHNEYk9UTWU1Nnk1QUFZc0V6NTRYWW1SM0NoMXA2VGZvaW5QUEVONzZ2UFpQbU9CMFVpOU9feEhDcTVHREE0dU5qVFJVelFhRlJZNy05bFFCVk5UNldwMWVEaDZaQWpzOE0?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
+                    </td>
+                    <td>FB - Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-05-27 17:30">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
@@ -772,7 +802,7 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Carolina" data-titular="Acusan a hombre por asesinato de adulto mayor en edificio abandonado en Carolina">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://www.carolina787.com/n/acusan-a-hombre-por-asesinato-de-adulto-mayor-en-edificio-abandonado-en-carolina" target="_blank">Acusan a hombre por asesinato de adulto mayor en edificio abandonado en Carolina</a>
                     </td>
                     <td>Carolina787</td>
@@ -939,7 +969,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-28 07:33:22 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-28 08:03:10 PM<br>
     Actualización automática cada 30 min
 </div>
 
