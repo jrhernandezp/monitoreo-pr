@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-29 01:03:10 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-29 01:33:00 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">29</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">8</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">32</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-29 01:03:10 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-29 01:33:00 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -374,7 +374,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">8</div>
+            <div class="muni-count">10</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -429,17 +429,17 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
+        <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
@@ -466,10 +466,30 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Balacera deja a dos personas heridas">
+                <tr class="article-row" data-municipios="San Juan" data-titular="El Nuevo Día Soccer Blast vuelve a encender el verano futbolero en San Juan">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/deportes/futbol/notas/el-nuevo-dia-soccer-blast-vuelve-a-encender-el-verano-futbolero-en-san-juan/" target="_blank">El Nuevo Día Soccer Blast vuelve a encender el verano futbolero en San Juan</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-05-29 17:22">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Jay Wheeler regresa a sus raíces del trap en su nuevo disco ‘La voz favorita’">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/entretenimiento/20260529/jay-wheeler-regresa-a-sus-raices-del-trap-en-su-nuevo-disco-la-voz-favorita/?utm_source=rss&utm_medium=rss&utm_campaign=jay-wheeler-regresa-a-sus-raices-del-trap-en-su-nuevo-disco-la-voz-favorita" target="_blank">Jay Wheeler regresa a sus raíces del trap en su nuevo disco ‘La voz favorita’</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-05-29 17:05">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Balacera deja a dos personas heridas">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
                         <a href="https://nelpr.com/2026/05/29/balacera-deja-a-dos-personas-heridas-5/" target="_blank">Balacera deja a dos personas heridas</a>
                     </td>
                     <td>NELPR</td>
@@ -484,16 +504,6 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>Walo Radio</td>
                     <td class="time-ago" data-date="2026-05-29 16:11">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Miguel Romero demanda a la AAA por fallas recurrentes en el servicio de agua potable en San Juan">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/tribunales/notas/miguel-romero-demanda-a-la-aaa-por-fallas-recurrentes-en-el-servicio-de-agua-potable-en-san-juan/" target="_blank">Miguel Romero demanda a la AAA por fallas recurrentes en el servicio de agua potable en San Juan</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-29 16:09">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Bruma del Sahara y calor intenso dominarán el tiempo hoy en Puerto Rico">
@@ -546,6 +556,16 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-29 14:03">ahora</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="Miguel Romero demanda a la AAA por fallas recurrentes en el servicio de agua potable en San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://www.elnuevodia.com/noticias/tribunales/notas/miguel-romero-demanda-a-la-aaa-por-fallas-recurrentes-en-el-servicio-de-agua-potable-en-san-juan/" target="_blank">Miguel Romero demanda a la AAA por fallas recurrentes en el servicio de agua potable en San Juan</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-05-29 13:31">hace 2min</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Loíza" data-titular="Entre escombros y humo: incendio destruye negocio familiar de 20 años en Loíza">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
@@ -553,7 +573,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/fotogalerias/entre-escombros-y-humo-incendio-destruye-negocio-familiar-de-20-anos-en-loiza/" target="_blank">Entre escombros y humo: incendio destruye negocio familiar de 20 años en Loíza</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-29 13:01">hace 2min</td>
+                    <td class="time-ago" data-date="2026-05-29 13:31">hace 2min</td>
                 </tr>
                 
                 
@@ -579,16 +599,6 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-29 11:39">hace 1h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Humacao" data-titular="Policía retirado asesina a su expareja en Humacao al expirar su orden de restricción - Univision">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPZjN1VElLWGZkR1N6LVdJLUdYRTJnTDNrNDF3YWRqa2k0X2lvaGxibVg4WkVTcENYYnBzMnREMVpzMlk1aEFYNXdITDhzc2lvd2dNM015SzJFb3B4TWlvNEJGSHFsTGZSb0E2UlNNLXJPLW1ORTI2QVAzZlJvdHVpa1B0WmRkUFVROXFHNDQyNUxhN1ZkUlhpOWFENzdOaE1QZTRKYWlvSUVEaEVvYWtOVw?oc=5" target="_blank">Policía retirado asesina a su expareja en Humacao al expirar su orden de restricción - Univision</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-05-29 01:27">hace 11h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Carolina" data-titular="Balneario de Carolina repite como la mejor playa de Puerto Rico según USA Today - Primera Hora">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
@@ -596,7 +606,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZ1dJajdaWTVOcWJ5NGtqWm5RaExRUlRIU05LaDhxdFBQb1F5aTloa3B5ZEs3amFPNk9lVXNkbEdkTEpqS25JcGZSc242M29VSnQ5d21iVlVWeWg5M3dKV0Q5dGRnbEs3TUctYzMwQzAxWnU0cDEwOFFjZ0lYS21LTkNrdEs3S0xpXzFzRVh0dlIzOUZjZTVac3VYdHBOSzMzeUFOLVlXcUNFZ01kQzhmMjNraEpEUFhsYjdnUVV4X01DTFRIS3h5WFRJTXg5OWs1?oc=5" target="_blank">Balneario de Carolina repite como la mejor playa de Puerto Rico según USA Today - Primera Hora</a>
                     </td>
                     <td>Primera Hora</td>
-                    <td class="time-ago" data-date="2026-05-29 01:19">hace 11h</td>
+                    <td class="time-ago" data-date="2026-05-29 01:19">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz en 17 municipios hasta 12 horas">
@@ -619,7 +629,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/28/encarcelan-joven-por-robo-de-cuatro-vehiculos-mercedes-benz/" target="_blank">Encarcelan joven por robo de  cuatro vehículos Mercedes Benz</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-28 22:33">hace 14h</td>
+                    <td class="time-ago" data-date="2026-05-28 22:33">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="T-Mobile lanza tecnología que traduce conversaciones telefónicas en más de 80 idiomas">
@@ -629,7 +639,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/28/tmobile-live-translation-llamadas-tiempo-real/" target="_blank">T-Mobile lanza tecnología que traduce conversaciones telefónicas en más de 80 idiomas</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-28 22:28">hace 14h</td>
+                    <td class="time-ago" data-date="2026-05-28 22:28">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo - facebook.com">
@@ -639,7 +649,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE0zUHVHYWF5QzBfd1BZdXZLMFpjeTRQOEROTTNmUzJMYjduSWYwZTB5TkdfMjZLei1jN3Njd3Q0UGR0eDVObXBDQ0NuNW0wNE9pN3BVZ0pycGtyRnlOUWlyTmtMQ2tXNUtiUUxN?oc=5" target="_blank">Municipio de Luquillo - facebook.com</a>
                     </td>
                     <td>FB - Luquillo</td>
-                    <td class="time-ago" data-date="2026-05-28 18:10">hace 18h</td>
+                    <td class="time-ago" data-date="2026-05-28 18:10">hace 19h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFA4ZFlqMld2cHowMUVRM2JhZE1FNkdJclMtYW1YVmwtaEVqbTdZWURqNlZaQmsySFlSQ3dJLWRjclkxbVF2UkhPX1pjZlJTTkVTNG1IZzZnUXJQbEE1VTVDdHpDNlpabkNBcGEwTkFhT25VSFk?oc=5" target="_blank">Municipio de Vieques - facebook.com</a>
+                    </td>
+                    <td>FB - Vieques</td>
+                    <td class="time-ago" data-date="2026-05-28 17:32">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza added a new photo. - Municipio de Loíza - facebook.com">
@@ -649,7 +669,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQTFVXdUhWdFI1U1dGcEFXM1FxMWNFekZpUDZkZ042T2gtUlJ1YXNnVUU0UWI1LWd0bjdzUXJpRUZ0ZmoyU3R0Rm5fR0FELXpYSUFsRTZtcFVmeFBPTVdQTFpBdnBfV2Q1VWlVVjMxUllzeEwxR3VwcWxfdmN4NktuNVp5NzI?oc=5" target="_blank">Municipio de Loíza added a new photo. - Municipio de Loíza - facebook.com</a>
                     </td>
                     <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-05-28 17:28">hace 19h</td>
+                    <td class="time-ago" data-date="2026-05-28 17:28">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - facebook.com">
@@ -659,7 +679,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQY2RWZkxJbDRjZ2d1b1F3eFZyMWEzR1FiZmZjMHBLU0tWSkZ6alNKc0RPd1l4UHA2MjJyTEd6alA2aS02NHlweS11MEcwcDE3V1RqMzlHc1hOcVBmYnhpZGxoT1YyVHpxMEU2NzJqd1JpODZSVEh5b0U3NTJtNWJPRG5XZFB5UkhwOVVuVW9B?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-05-28 15:30">hace 21h</td>
+                    <td class="time-ago" data-date="2026-05-28 15:30">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Ismael Guadalupe y Vieques: unidos más allá de la vida - claridadpuertorico.com">
@@ -669,7 +689,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQb2NwNnJCUGJSd01YM0NKZWlCREdBaVBUX2U5aTFoUzhEOW82UzFLdnZrcWNwUFkzREE4cEgzNHB4WEZya21HS0ZVc2V6Uzh3aTRqVjRURlA4WGhMcXFRSEFzTXlQdGM5OGx2czRZWGVJeUl3cVVrcUluUXktVXNQWDJESU5kd0lWNjZNcjlB?oc=5" target="_blank">Ismael Guadalupe y Vieques: unidos más allá de la vida - claridadpuertorico.com</a>
                     </td>
                     <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-05-28 15:26">hace 21h</td>
+                    <td class="time-ago" data-date="2026-05-28 15:26">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - facebook.com">
@@ -679,7 +699,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOVjVGU0RYa2laMGRaZjhxa21Gejg3M0xRWkZua1FYOWJDTmd5dnlUenZZcGxRMy1KRE1TQ1F5N1h3NUZOUEYzUmF3Tm11XzdFSFQ4QjFxWXpUTFFvQk5vYjdfM1dGdEZTUHc5WE1JMFhjclFZeWRDVGJSbXJGaTM0eU9LTzVhaXdfQzFTbnlB?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-05-28 15:14">hace 21h</td>
+                    <td class="time-ago" data-date="2026-05-28 15:14">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
@@ -689,7 +709,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5UZXVFX214U2F6am9LVGV1OG5PTGtFaW16VlBCM1NFWU9SRkZPSmlCMWJ3TmRUVF95ODNvS0lHYWVjOUdQQXZVWEpGa3YyNVFLenJJWDdxcy1YV1Z1cTJWQTJnUlh6cUZFWS1KSzJhYTV2ODA?oc=5" target="_blank">Municipio de Vieques - facebook.com</a>
                     </td>
                     <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-05-28 14:08">hace 22h</td>
+                    <td class="time-ago" data-date="2026-05-28 14:08">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Quemado en su totalidad: incendio consume un negocio en Loíza - Noticias de Puerto Rico hoy">
@@ -700,6 +720,16 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>Loíza</td>
                     <td class="time-ago" data-date="2026-05-28 11:18">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1FWEhkR0RZUFo4LUFtd25BaUYyWGFQamI4Vjd1RDA1V2Y3RmE4ZFNKMFFCY0NiMmVDWmdBeHhEaUplNzUwZWxmcEN4YUpxYTEyWHFjY01qWlN3UTd4cnAzbmFHeGI5Yzg?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
+                    </td>
+                    <td>FB - Cataño</td>
+                    <td class="time-ago" data-date="2026-05-28 00:51">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="The Miss Universe Puerto Rico pageant announced a partnership with the Four Points by Sheraton Caguas Real Hotel & Casino, which will become the official hotel and venue for several of the competition's main events leading up to the final night. #Caguas - facebook.com">
@@ -915,7 +945,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-29 01:03:10 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-29 01:33:00 PM<br>
     Actualización automática cada 30 min
 </div>
 
