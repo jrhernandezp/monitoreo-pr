@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-30 08:03:15 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-30 08:32:54 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">27</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num">29</div><div class="label">Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-30 08:03:15 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-30 08:32:54 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -352,7 +352,7 @@ tr:hover { background: var(--surface2); }
         <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
         
         <div class="breaking-item">
-            <span class="time">hace 2min</span> —
+            <span class="time">hace 1min</span> —
             <a href="https://www.elnuevodia.com/noticias/seguridad/fotogalerias/entre-escombros-y-humo-incendio-destruye-negocio-familiar-de-20-anos-en-loiza/" target="_blank">Entre escombros y humo: incendio destruye negocio familiar de 20 años en Loíza</a>
             <span style="opacity:0.6"> [Loíza]</span>
         </div>
@@ -368,7 +368,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">8</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -391,9 +391,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
+        <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
@@ -428,7 +428,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
@@ -460,6 +460,16 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="Policía herido de bala durante operativo en La Perla">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/policia-herido-de-bala-durante-operativo-en-la-perla/" target="_blank">Policía herido de bala durante operativo en La Perla</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-05-30 12:13">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Loíza" data-titular="Entre escombros y humo: incendio destruye negocio familiar de 20 años en Loíza">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
@@ -467,7 +477,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/fotogalerias/entre-escombros-y-humo-incendio-destruye-negocio-familiar-de-20-anos-en-loiza/" target="_blank">Entre escombros y humo: incendio destruye negocio familiar de 20 años en Loíza</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-30 08:01">hace 2min</td>
+                    <td class="time-ago" data-date="2026-05-30 08:31">hace 1min</td>
                 </tr>
                 
                 
@@ -480,7 +490,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/29/se-ira-la-luz-sabado-y-domingo-15-municipios-en-lista/" target="_blank">Se irá la luz sábado y domingo; 15 municipios en lista</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-30 03:07">hace 4h</td>
+                    <td class="time-ago" data-date="2026-05-30 03:07">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Periodista Pepo García presenta libro sobre salud emocional y el vínculo con su perro Paco">
@@ -523,7 +533,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxNeFNvaV90TzRZV3BkeXZOVXZqVDNVNzFvSEhENzlYYmdmYWN4OW05aVRhVXB1akwwUk9ya29YWVhYclJjem9hdFpuRDV4SVMtNUNacXBsQ0lfU3NxWEw4eEQyYUVSWkI3cGhxdkNBWlFqeTBwM256RVd3aXp3UHItZ1cwejBFMUo3U1BJelBhSjVxUHhCR1lLYnBhZDhRUUtSYzlUWEw0MHFMREdRTFl5QkF6Z2dGWU8yTDE0Z2d0STV2eE9zZ1N0TlRHR0JncndYUzR0RXk0Z25yUQ?oc=5" target="_blank">Miss Universe Puerto Rico. . Conoce a las candidatas de Miss Universe Puerto Rico desde Caguas 2026. 👑✨ Accede 📲 muniversepr.com para seguir su paso hacia la corona. 🇵🇷 - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-05-29 19:31">hace 12h</td>
+                    <td class="time-ago" data-date="2026-05-29 19:31">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Citado a vista evidenciaria ante el Tribunal presidente de Acueductos">
@@ -533,7 +543,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/acueductos1/?utm_source=rss&utm_medium=rss&utm_campaign=acueductos1&utm_source=rss&utm_medium=rss&utm_campaign=acueductos1" target="_blank">Citado a vista evidenciaria ante el Tribunal presidente de Acueductos</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-05-29 19:27">hace 12h</td>
+                    <td class="time-ago" data-date="2026-05-29 19:27">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Acusan a hombre de Toa Alta por drogas y armas en residencial de Vega Baja">
@@ -543,7 +553,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/29/acusan-a-hombre-de-toa-alta-por-drogas-y-armas-en-residencial-de-vega-baja/" target="_blank">Acusan a hombre de Toa Alta por drogas y armas en residencial de Vega Baja</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-29 19:25">hace 12h</td>
+                    <td class="time-ago" data-date="2026-05-29 19:25">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Comunidades de Naguabo y Las Piedras fortalecen esfuerzos de seguridad junto a la Policía">
@@ -553,7 +563,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/29/comunidades-de-naguabo-y-las-piedras-fortalecen-esfuerzos-de-seguridad-junto-a-la-policia/" target="_blank">Comunidades de Naguabo y Las Piedras fortalecen esfuerzos de seguridad junto a la Policía</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-29 19:08">hace 12h</td>
+                    <td class="time-ago" data-date="2026-05-29 19:08">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Identifican restos humanos hallados en motel de Trujillo Alto - Metro Puerto Rico">
@@ -586,6 +596,16 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-29 18:44">hace 13h</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="Municipio de San Juan, Ciudad Capital https://sanjuan.pr/ https://www.facebook.com/SJCiudadCapital/ https://www.instagram.com/sjciudadcapital/?hl=en Su apoyo hizo posible una actividad llena de esperanza, unión, deporte adaptado y amor por nuestra co - facebook.com">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVzZtYUtvaG9sbFNpMWJiMzBVT1RvTVhpMG9XTW8tbWV1bXJyVUNqZU9WRlVqOUhpdGxSdnZ3aW9Sc2cyTmVyZHhVc3pEMW93dkJCd1JCSm9VeDNTS2pjU2dBZEVWR2U2anVMbnVFTDdudUdZVjYxVDNfRHM5Q092S0FzSWI0Qmswbzd6M3I3OVVMa1ozZERUTHRvT0RzaWVVYVpwNEhUd1J4clJaUEt4LW11dEUwQnJ0Zm9rcHo0M25HSTU3aG96WkF1elpQUURFYk5SU3pn?oc=5" target="_blank">Municipio de San Juan, Ciudad Capital https://sanjuan.pr/ https://www.facebook.com/SJCiudadCapital/ https://www.instagram.com/sjciudadcapital/?hl=en Su apoyo hizo posible una actividad llena de esperanza, unión, deporte adaptado y amor por nuestra co - facebook.com</a>
+                    </td>
+                    <td>FB - San Juan</td>
+                    <td class="time-ago" data-date="2026-05-29 18:44">hace 13h</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Humacao" data-titular="Educación abre matrícula para programas de verano recreativo y remedial en la región de Humacao">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
@@ -599,11 +619,11 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - facebook.com">
                     <td><span class="muni-tag">Naguabo</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNbUNyUFpURU9tN2ZWaFdKdU1lejh3dXpPeTlaTHpDX1BmaVBDbk9HV1Rvb3lWSlp4N2FoeEU5U3c3M0MzT19OZEFJQ0hQYkZRNjVoUmpFTVFIRHNUMDQ3NUZQLU9IVUhKQzBOcVRfaFAtOC1hTGpTMVNzakIzTHdiZlBB?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-05-29 18:29">hace 13h</td>
+                    <td class="time-ago" data-date="2026-05-29 18:29">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Cataño inaugura Parque Recreativo de Juana Matos tras inversión que supera $1.2 millones - Metro Puerto Rico">
@@ -643,7 +663,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/29/directora-de-matria-cuestiona-manejo-judicial-en-caso-reciente-de-feminicidio/" target="_blank">Directora de Matria cuestiona manejo judicial en caso reciente de feminicidio</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-29 16:11">hace 15h</td>
+                    <td class="time-ago" data-date="2026-05-29 16:11">hace 16h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="La actividad contará con el apoyo del Municipio de Canóvanas, aliados estratégicos y entidades colaboradoras comprometidas con el desarrollo empresarial y económico del País. Detalles: https://buff.ly/Z5jhIcT - facebook.com">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPYkFINS12YmgyOEk5S0lwME9fUTdVcWRubXlCeXF5ZnlwSlBUa2lNUHBhTy03RE50Z09semdieDljaEF0NnJOcjFOZG9xM19GOGxSTFBMNVFOX29GY2MzbFBqT0NZUENUS1pOX0YxUTIwSUZxOXJiTWp6SUdxaUJEbG1sSzlOYjczSXRKa3Bn?oc=5" target="_blank">La actividad contará con el apoyo del Municipio de Canóvanas, aliados estratégicos y entidades colaboradoras comprometidas con el desarrollo empresarial y económico del País. Detalles: https://buff.ly/Z5jhIcT - facebook.com</a>
+                    </td>
+                    <td>FB - Canóvanas</td>
+                    <td class="time-ago" data-date="2026-05-29 15:40">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Delegación de legisladores municipales en Humacao endosan a Alejandro Martínez para la presidencia del PNP">
@@ -694,16 +724,6 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>Humacao</td>
                     <td class="time-ago" data-date="2026-05-29 01:27">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFByaGVKQy1ZZFN0YTViVS12ZFZHcU5NRGxlaDd2RmQ0Tndtd1hRc2VUQjIzZVMyd241UkV0THdhZVV5NnlhSFFFd1VwUGxycWdCSHRyMjhLSThiMi1jMGhnR1JwWVFfS3Vwdk5XcFIxU1lIMzA?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
-                    </td>
-                    <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-05-29 00:36">hace 1d</td>
                 </tr>
                 
                 
@@ -889,7 +909,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-30 08:03:15 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-30 08:32:54 AM<br>
     Actualización automática cada 30 min
 </div>
 
