@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-30 10:03:48 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-30 10:33:34 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">26</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">32</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
-        <div class="stat-box"><div class="num" style="font-size:12px">64/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-30 10:03:48 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-30 10:33:34 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -355,7 +355,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">8</div>
+            <div class="muni-count">9</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -380,7 +380,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
@@ -390,7 +390,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
@@ -405,7 +405,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">4</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
@@ -415,7 +415,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
@@ -447,6 +447,16 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="Loíza" data-titular="Avioneta cae en área de Loíza">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/avioneta-cae-en-area-de-loiza/" target="_blank">Avioneta cae en área de Loíza</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-05-30 14:26">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Loíza,Río Grande" data-titular="Reportan la caída de una avioneta a orillas del río Grande de Loíza">
                     <td><span class="muni-tag">Loíza, Río Grande</span></td>
                     <td class="titular-cell">
@@ -454,7 +464,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/notas/reportan-la-caida-de-una-avioneta-a-orillas-del-rio-grande-de-loiza/" target="_blank">Reportan la caída de una avioneta a orillas del río Grande de Loíza</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-30 13:26">ahora</td>
+                    <td class="time-ago" data-date="2026-05-30 14:23">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="Avioneta se estrella en sector de Loíza">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/noticias/la-calle/20260530/avioneta-se-estrella-en-sector-de-loiza/?utm_source=rss&utm_medium=rss&utm_campaign=avioneta-se-estrella-en-sector-de-loiza" target="_blank">Avioneta se estrella en sector de Loíza</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-05-30 13:57">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Policía herido de bala durante operativo en La Perla">
@@ -477,7 +497,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/29/se-ira-la-luz-sabado-y-domingo-15-municipios-en-lista/" target="_blank">Se irá la luz sábado y domingo; 15 municipios en lista</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-30 03:07">hace 6h</td>
+                    <td class="time-ago" data-date="2026-05-30 03:07">hace 7h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Periodista Pepo García presenta libro sobre salud emocional y el vínculo con su perro Paco">
@@ -520,7 +540,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxNeFNvaV90TzRZV3BkeXZOVXZqVDNVNzFvSEhENzlYYmdmYWN4OW05aVRhVXB1akwwUk9ya29YWVhYclJjem9hdFpuRDV4SVMtNUNacXBsQ0lfU3NxWEw4eEQyYUVSWkI3cGhxdkNBWlFqeTBwM256RVd3aXp3UHItZ1cwejBFMUo3U1BJelBhSjVxUHhCR1lLYnBhZDhRUUtSYzlUWEw0MHFMREdRTFl5QkF6Z2dGWU8yTDE0Z2d0STV2eE9zZ1N0TlRHR0JncndYUzR0RXk0Z25yUQ?oc=5" target="_blank">Miss Universe Puerto Rico. . Conoce a las candidatas de Miss Universe Puerto Rico desde Caguas 2026. 👑✨ Accede 📲 muniversepr.com para seguir su paso hacia la corona. 🇵🇷 - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-05-29 19:31">hace 14h</td>
+                    <td class="time-ago" data-date="2026-05-29 19:31">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Citado a vista evidenciaria ante el Tribunal presidente de Acueductos">
@@ -530,7 +550,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/acueductos1/?utm_source=rss&utm_medium=rss&utm_campaign=acueductos1&utm_source=rss&utm_medium=rss&utm_campaign=acueductos1" target="_blank">Citado a vista evidenciaria ante el Tribunal presidente de Acueductos</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-05-29 19:27">hace 14h</td>
+                    <td class="time-ago" data-date="2026-05-29 19:27">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Acusan a hombre de Toa Alta por drogas y armas en residencial de Vega Baja">
@@ -540,7 +560,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/29/acusan-a-hombre-de-toa-alta-por-drogas-y-armas-en-residencial-de-vega-baja/" target="_blank">Acusan a hombre de Toa Alta por drogas y armas en residencial de Vega Baja</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-29 19:25">hace 14h</td>
+                    <td class="time-ago" data-date="2026-05-29 19:25">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Comunidades de Naguabo y Las Piedras fortalecen esfuerzos de seguridad junto a la Policía">
@@ -550,7 +570,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/29/comunidades-de-naguabo-y-las-piedras-fortalecen-esfuerzos-de-seguridad-junto-a-la-policia/" target="_blank">Comunidades de Naguabo y Las Piedras fortalecen esfuerzos de seguridad junto a la Policía</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-29 19:08">hace 14h</td>
+                    <td class="time-ago" data-date="2026-05-29 19:08">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Identifican restos humanos hallados en motel de Trujillo Alto - Metro Puerto Rico">
@@ -573,6 +593,16 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-29 18:44">hace 15h</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="Municipio de San Juan, Ciudad Capital https://sanjuan.pr/ https://www.facebook.com/SJCiudadCapital/ https://www.instagram.com/sjciudadcapital/?hl=en Su apoyo hizo posible una actividad llena de esperanza, unión, deporte adaptado y amor por nuestra co - facebook.com">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVzZtYUtvaG9sbFNpMWJiMzBVT1RvTVhpMG9XTW8tbWV1bXJyVUNqZU9WRlVqOUhpdGxSdnZ3aW9Sc2cyTmVyZHhVc3pEMW93dkJCd1JCSm9VeDNTS2pjU2dBZEVWR2U2anVMbnVFTDdudUdZVjYxVDNfRHM5Q092S0FzSWI0Qmswbzd6M3I3OVVMa1ozZERUTHRvT0RzaWVVYVpwNEhUd1J4clJaUEt4LW11dEUwQnJ0Zm9rcHo0M25HSTU3aG96WkF1elpQUURFYk5SU3pn?oc=5" target="_blank">Municipio de San Juan, Ciudad Capital https://sanjuan.pr/ https://www.facebook.com/SJCiudadCapital/ https://www.instagram.com/sjciudadcapital/?hl=en Su apoyo hizo posible una actividad llena de esperanza, unión, deporte adaptado y amor por nuestra co - facebook.com</a>
+                    </td>
+                    <td>FB - San Juan</td>
+                    <td class="time-ago" data-date="2026-05-29 18:44">hace 15h</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Humacao" data-titular="Educación abre matrícula para programas de verano recreativo y remedial en la región de Humacao">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
@@ -581,6 +611,16 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>Walo Radio</td>
                     <td class="time-ago" data-date="2026-05-29 18:41">hace 15h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - facebook.com">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNbUNyUFpURU9tN2ZWaFdKdU1lejh3dXpPeTlaTHpDX1BmaVBDbk9HV1Rvb3lWSlp4N2FoeEU5U3c3M0MzT19OZEFJQ0hQYkZRNjVoUmpFTVFIRHNUMDQ3NUZQLU9IVUhKQzBOcVRfaFAtOC1hTGpTMVNzakIzTHdiZlBB?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
+                    </td>
+                    <td>FB - Naguabo</td>
+                    <td class="time-ago" data-date="2026-05-29 18:29">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Cataño inaugura Parque Recreativo de Juana Matos tras inversión que supera $1.2 millones - Metro Puerto Rico">
@@ -610,7 +650,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/29/directora-de-matria-cuestiona-manejo-judicial-en-caso-reciente-de-feminicidio/" target="_blank">Directora de Matria cuestiona manejo judicial en caso reciente de feminicidio</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-29 16:11">hace 17h</td>
+                    <td class="time-ago" data-date="2026-05-29 16:11">hace 18h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="La actividad contará con el apoyo del Municipio de Canóvanas, aliados estratégicos y entidades colaboradoras comprometidas con el desarrollo empresarial y económico del País. Detalles: https://buff.ly/Z5jhIcT - facebook.com">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxPVi1JdW9Kbll0cm9adzJaYzBrOVJmenQ5VU1FVW1kckg5TEhSQTNGZmdSOG13ZEx1aTgyQmVzb2k5STUzbXRIaldNMUpuM1dVMFp0YzY2YS1wbWRRcmJUMWFDaERkNGt0Mm44Snk4OVZNWEFndkl2V3BMNFVLbk5UcDlmWEpyNnMzTmlBXzVrd05hMVdVb2R4X21kMnVYQUF5REpfRTJualE0ZDk1b0JjRExFNE81YkRfdXM3Nm5ZN2FVc2xpTUVwQVNFMUJRTFpEeXJsYkQwMC1oazFLY21nRi1QX0FESXdHcHk5bw?oc=5" target="_blank">La actividad contará con el apoyo del Municipio de Canóvanas, aliados estratégicos y entidades colaboradoras comprometidas con el desarrollo empresarial y económico del País. Detalles: https://buff.ly/Z5jhIcT - facebook.com</a>
+                    </td>
+                    <td>FB - Canóvanas</td>
+                    <td class="time-ago" data-date="2026-05-29 15:40">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="La actividad contará con el apoyo del Municipio de Canóvanas, aliados estratégicos y entidades colaboradoras comprometidas con el desarrollo empresarial y económico del País. Detalles: https://buff.ly/Z5jhIcT - facebook.com">
@@ -683,6 +733,16 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-29 01:27">hace 1d</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFByaGVKQy1ZZFN0YTViVS12ZFZHcU5NRGxlaDd2RmQ0Tndtd1hRc2VUQjIzZVMyd241UkV0THdhZVV5NnlhSFFFd1VwUGxycWdCSHRyMjhLSThiMi1jMGhnR1JwWVFfS3Vwdk5XcFIxU1lIMzA?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
+                    </td>
+                    <td>FB - Cataño</td>
+                    <td class="time-ago" data-date="2026-05-29 00:36">hace 1d</td>
+                </tr>
+                
                 
                 <tr class="time-group-header"><td colspan="4">📋 Anteriores</td></tr>
                 
@@ -732,7 +792,7 @@ tr:hover { background: var(--surface2); }
         
         <span class="source-badge ok">🟢 El Nuevo Día: OK</span>
         
-        <span class="source-badge err">🔴 NotiCel: Error</span>
+        <span class="source-badge ok">🟢 NotiCel: OK</span>
         
         <span class="source-badge ok">🟢 Radio Isla: OK</span>
         
@@ -866,7 +926,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-30 10:03:48 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-30 10:33:34 AM<br>
     Actualización automática cada 30 min
 </div>
 
