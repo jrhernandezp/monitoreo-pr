@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-30 11:03:26 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-30 11:33:13 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">29</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">32</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">5</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-30 11:03:26 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-30 11:33:13 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -355,7 +355,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">8</div>
+            <div class="muni-count">9</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -390,7 +390,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">5</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
@@ -415,7 +415,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
@@ -423,9 +423,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Culebra')">
+        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
     </div>
@@ -447,10 +447,50 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="Loíza" data-titular="Dos hombres sobreviven tras accidente de avioneta">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/05/30/dos-hombres-sobreviven-tras-accidente-de-avioneta/" target="_blank">Dos hombres sobreviven tras accidente de avioneta</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-05-30 15:18">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Hombre muere al caerle encima el carro que arreglaba">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/noticias/la-calle/20260530/hombre-muere-al-caerle-encima-el-carro-que-arreglaba/?utm_source=rss&utm_medium=rss&utm_campaign=hombre-muere-al-caerle-encima-el-carro-que-arreglaba" target="_blank">Hombre muere al caerle encima el carro que arreglaba</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-05-30 15:15">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Polvo del Sahara domina el ambiente, pero algunas zonas tienen un 60% de potencial de lluvia">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/05/30/polvo-sahara-bruma-calor-puerto-rico-fin-semana/" target="_blank">Polvo del Sahara domina el ambiente, pero algunas zonas tienen un 60% de potencial de lluvia</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-05-30 15:15">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Vivienda se reunirá con residentes de Juana Matos para evaluar “alternativas” de reubicación">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/locales/notas/vivienda-se-reunira-con-residentes-de-juana-matos-para-evaluar-alternativas-de-reubicacion/" target="_blank">Vivienda se reunirá con residentes de Juana Matos para evaluar “alternativas” de reubicación</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-05-30 15:01">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Carolina" data-titular="Boricuas Unidos en la Diáspora exhorta a votar por la puertorriqueña Mayra Rivera Vázquez en Carolina del Sur">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://www.elnuevodia.com/corresponsalias/washington-dc/notas/boricuas-unidos-en-la-diaspora-exhorta-a-votar-por-la-puertorriquena-mayra-rivera-vazquez-en-carolina-del-sur/" target="_blank">Boricuas Unidos en la Diáspora exhorta a votar por la puertorriqueña Mayra Rivera Vázquez en Carolina del Sur</a>
                     </td>
                     <td>El Nuevo Día</td>
@@ -497,6 +537,16 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-05-30 12:13">ahora</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Loíza" data-titular="En imágenes: así quedó la avioneta que cayó en una finca en Loíza">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/fotogalerias/en-imagenes-asi-quedo-la-avioneta-que-cayo-en-una-finca-en-loiza/" target="_blank">En imágenes: así quedó la avioneta que cayó en una finca en Loíza</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-05-30 11:31">hace 2min</td>
+                </tr>
+                
                 
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
@@ -507,7 +557,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/05/29/se-ira-la-luz-sabado-y-domingo-15-municipios-en-lista/" target="_blank">Se irá la luz sábado y domingo; 15 municipios en lista</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-30 03:07">hace 7h</td>
+                    <td class="time-ago" data-date="2026-05-30 03:07">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Periodista Pepo García presenta libro sobre salud emocional y el vínculo con su perro Paco">
@@ -523,26 +573,6 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="LUMA presenta plan de emergencia para la temporada de huracanes 2026">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/05/29/luma-presenta-plan-de-emergencia-para-la-temporada-de-huracanes-2026/" target="_blank">LUMA presenta plan de emergencia para la temporada de huracanes 2026</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-29 22:49">hace 12h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Culebra" data-titular="Culebra se pasea por estacionamiento de tienda Sam’s Club">
-                    <td><span class="muni-tag">Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/05/29/culebra-se-pasea-por-estacionamiento-de-tienda-sams-club/" target="_blank">Culebra se pasea por estacionamiento de tienda Sam’s Club</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-29 19:50">hace 15h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Caguas" data-titular="Miss Universe Puerto Rico. . Conoce a las candidatas de Miss Universe Puerto Rico desde Caguas 2026. 👑✨ Accede 📲 muniversepr.com para seguir su paso hacia la corona. 🇵🇷 - facebook.com">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
@@ -550,7 +580,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxNeFNvaV90TzRZV3BkeXZOVXZqVDNVNzFvSEhENzlYYmdmYWN4OW05aVRhVXB1akwwUk9ya29YWVhYclJjem9hdFpuRDV4SVMtNUNacXBsQ0lfU3NxWEw4eEQyYUVSWkI3cGhxdkNBWlFqeTBwM256RVd3aXp3UHItZ1cwejBFMUo3U1BJelBhSjVxUHhCR1lLYnBhZDhRUUtSYzlUWEw0MHFMREdRTFl5QkF6Z2dGWU8yTDE0Z2d0STV2eE9zZ1N0TlRHR0JncndYUzR0RXk0Z25yUQ?oc=5" target="_blank">Miss Universe Puerto Rico. . Conoce a las candidatas de Miss Universe Puerto Rico desde Caguas 2026. 👑✨ Accede 📲 muniversepr.com para seguir su paso hacia la corona. 🇵🇷 - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-05-29 19:31">hace 15h</td>
+                    <td class="time-ago" data-date="2026-05-29 19:31">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Citado a vista evidenciaria ante el Tribunal presidente de Acueductos">
@@ -560,7 +590,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/acueductos1/?utm_source=rss&utm_medium=rss&utm_campaign=acueductos1&utm_source=rss&utm_medium=rss&utm_campaign=acueductos1" target="_blank">Citado a vista evidenciaria ante el Tribunal presidente de Acueductos</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-05-29 19:27">hace 15h</td>
+                    <td class="time-ago" data-date="2026-05-29 19:27">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Comunidades de Naguabo y Las Piedras fortalecen esfuerzos de seguridad junto a la Policía">
@@ -570,7 +600,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/29/comunidades-de-naguabo-y-las-piedras-fortalecen-esfuerzos-de-seguridad-junto-a-la-policia/" target="_blank">Comunidades de Naguabo y Las Piedras fortalecen esfuerzos de seguridad junto a la Policía</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-29 19:08">hace 15h</td>
+                    <td class="time-ago" data-date="2026-05-29 19:08">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Identifican restos humanos hallados en motel de Trujillo Alto - Metro Puerto Rico">
@@ -620,7 +650,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNbUNyUFpURU9tN2ZWaFdKdU1lejh3dXpPeTlaTHpDX1BmaVBDbk9HV1Rvb3lWSlp4N2FoeEU5U3c3M0MzT19OZEFJQ0hQYkZRNjVoUmpFTVFIRHNUMDQ3NUZQLU9IVUhKQzBOcVRfaFAtOC1hTGpTMVNzakIzTHdiZlBB?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-05-29 18:29">hace 16h</td>
+                    <td class="time-ago" data-date="2026-05-29 18:29">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Cataño inaugura Parque Recreativo de Juana Matos tras inversión que supera $1.2 millones - Metro Puerto Rico">
@@ -650,7 +680,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/05/29/directora-de-matria-cuestiona-manejo-judicial-en-caso-reciente-de-feminicidio/" target="_blank">Directora de Matria cuestiona manejo judicial en caso reciente de feminicidio</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-05-29 16:11">hace 18h</td>
+                    <td class="time-ago" data-date="2026-05-29 16:11">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="La actividad contará con el apoyo del Municipio de Canóvanas, aliados estratégicos y entidades colaboradoras comprometidas con el desarrollo empresarial y económico del País. Detalles: https://buff.ly/Z5jhIcT - facebook.com">
@@ -896,7 +926,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-30 11:03:26 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-05-30 11:33:13 AM<br>
     Actualización automática cada 30 min
 </div>
 
