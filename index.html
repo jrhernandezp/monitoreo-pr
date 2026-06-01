@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-05-31 06:05:47 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-01 05:05:46 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">21</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">8</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">20</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">20</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-05-31 06:05:47 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-01 05:05:46 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -347,19 +347,6 @@ tr:hover { background: var(--surface2); }
 
 <!-- BREAKING NEWS -->
 
-<div class="section breaking-section">
-    <div class="breaking-banner">
-        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
-        
-        <div class="breaking-item">
-            <span class="time">hace 1min</span> —
-            <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/estado-de-emergencia-por-erosion-en-loiza-asi-luce-la-costa-en-parcelas-suarez/" target="_blank">Estado de emergencia por erosión en Loíza: así luce la costa en Parcelas Suárez</a>
-            <span style="opacity:0.6"> [Loíza]</span>
-        </div>
-        
-    </div>
-</div>
-
 
 <!-- MUNICIPALITIES -->
 <div class="section">
@@ -368,7 +355,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -383,27 +370,27 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">2</div>
-        </div>
-        
-        <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
-            <div class="muni-name">Luquillo</div>
-            <div class="muni-count">0</div>
-        </div>
-        
-        <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
-            <div class="muni-name">Canóvanas</div>
             <div class="muni-count">1</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
-            <div class="muni-name">Fajardo</div>
+        <div class="muni-card active" onclick="filtrarPor('Luquillo')">
+            <div class="muni-name">Luquillo</div>
+            <div class="muni-count">1</div>
+        </div>
+        
+        <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
+            <div class="muni-name">Canóvanas</div>
             <div class="muni-count">0</div>
+        </div>
+        
+        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
+            <div class="muni-name">Fajardo</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
@@ -421,19 +408,19 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Humacao')">
+        <div class="muni-card inactive" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
+        <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
@@ -460,190 +447,180 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="Loíza" data-titular="Estado de emergencia por erosión en Loíza: así luce la costa en Parcelas Suárez">
+                <tr class="article-row" data-municipios="Loíza" data-titular="En imágenes: así quedó la avioneta que cayó en una finca en Loíza">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/estado-de-emergencia-por-erosion-en-loiza-asi-luce-la-costa-en-parcelas-suarez/" target="_blank">Estado de emergencia por erosión en Loíza: así luce la costa en Parcelas Suárez</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/fotogalerias/en-imagenes-asi-quedo-la-avioneta-que-cayo-en-una-finca-en-loiza/" target="_blank">En imágenes: así quedó la avioneta que cayó en una finca en Loíza</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-05-31 06:04">hace 1min</td>
+                    <td class="time-ago" data-date="2026-06-01 05:04">hace 1min</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz hasta 12 horas este domingo">
+                <tr class="article-row" data-municipios="Vieques" data-titular="Vieques se lanza a repoblar sus corales - Primera Hora">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPWk1uX3R3eGR1U3J1Y3RlaUc4N0s5SkdSTldEYmhGdTNHaElqaEpkQVJhbjdFdFZrc3p6MU5ZaXpqdGpNM1hXZjZkVFVORzV5M2Z1ZWRxSnlfcmEzV000eVZVOHk5cTJ2bW4wbXoyOGhxSzVVbXozRDlyVU9ONHNOUnhyYWZ0dVVDTzRMQzdubUw2cWV1UjZobTJWaw?oc=5" target="_blank">Vieques se lanza a repoblar sus corales - Primera Hora</a>
+                    </td>
+                    <td>Vieques</td>
+                    <td class="time-ago" data-date="2026-06-01 03:45">hace 1h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="FOTOS: Así hacen crecer los corales en Vieques - Primera Hora">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxOVzEyLVpXR3E4WFBIMzZwM1Iya1AtSHRRMGJlY1lSTzRRb3p4dHl2MmZQeVhwQmZRYmJVcFdQbEtMSHRGZExPS3VFN2NaT1VjbGtHVV9ldGJGWlRSMWZMRUMxa2ZRbVFYU2NOektCU1I1SmJhSUtndmNIZ1F1LXlXM1FQM19FSFROT3dpU3RZZXB3OXVxUjllTEd2V0hxenRvVjQyeXlkd2RGdUxt?oc=5" target="_blank">FOTOS: Así hacen crecer los corales en Vieques - Primera Hora</a>
+                    </td>
+                    <td>Vieques</td>
+                    <td class="time-ago" data-date="2026-06-01 03:43">hace 1h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="¿Una guardería de corales en Vieques? - Primera Hora">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxQeU1sZHZpa3poX0dUMVFjX2ZVaHpyeC14NDVHTFB0MElwSHVYZFNwQnhCenVxbHJMZmF2LXJnMEpWVlBibHZYLUUzcVVZbUt6Y1F4ZWJWR0JRVHI4bWs0Y3dwWDg5TVZIWGE3U2hwWWRLTU90TzdsVjRxWWtVamFWWkdvdUJITExMdTNRTzNGM282eTRydE9SM3ZDN0dVWFh4?oc=5" target="_blank">¿Una guardería de corales en Vieques? - Primera Hora</a>
+                    </td>
+                    <td>Vieques</td>
+                    <td class="time-ago" data-date="2026-06-01 03:38">hace 1h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="LUMA anuncia que se irá la luz hasta 15 horas; 16 municipios están en lista">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/05/30/se-ira-la-luz-hasta-12-horas-este-domingo/" target="_blank">Se irá la luz hasta 12 horas este domingo</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/05/31/luma-trabajos-programados-16-municipios-1-junio-2026/" target="_blank">LUMA anuncia que se irá la luz hasta 15 horas; 16 municipios están en lista</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-31 03:08">hace 2h</td>
+                    <td class="time-ago" data-date="2026-06-01 02:25">hace 2h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Carolina" data-titular="Tres sujetos armados asaltan farmacia Walgreens">
+                <tr class="article-row" data-municipios="San Juan" data-titular="Denuncian alcalde de San Juan gasta millones en resaltar su imagen en vez de conseguir agua para los sanjuaneros">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/05/31/denuncian-alcalde-de-san-juan-gasta-millones-en-resaltar-su-imagen-en-vez-de-conseguir-agua-para-los-sanjuaneros/" target="_blank">Denuncian alcalde de San Juan gasta millones en resaltar su imagen en vez de conseguir agua para los sanjuaneros</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-01 00:34">hace 4h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="Asaltan pescadores y les roban vehículo y celulares">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/05/31/asaltan-pescadores-y-les-roban-vehiculo-y-celulares/" target="_blank">Asaltan pescadores y les roban vehículo y celulares</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-01 00:31">hace 4h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Acusan a hombre de múltiples fraudes en instituciones financieras">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/05/30/tres-sujetos-armados-asaltan-farmacia-walgreens/" target="_blank">Tres sujetos armados asaltan farmacia Walgreens</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/05/31/acusan-a-hombre-de-multiples-fraudes-en-instituciones-financieras/" target="_blank">Acusan a hombre de múltiples fraudes en instituciones financieras</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-31 02:28">hace 3h</td>
+                    <td class="time-ago" data-date="2026-06-01 00:29">hace 4h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Humacao" data-titular="Arrestan mujer por robar mercancía en tienda Marshalls">
-                    <td><span class="muni-tag">Humacao</span></td>
+                <tr class="article-row" data-municipios="San Juan" data-titular="Charlas sobre lactancia en Auxilio Mutuo">
+                    <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/05/30/arrestan-mujer-por-robar-mercancia-en-tienda-marshalls/" target="_blank">Arrestan mujer por robar mercancía en tienda Marshalls</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/05/31/charlas-sobre-lactancia-en-auxilio-mutuo/" target="_blank">Charlas sobre lactancia en Auxilio Mutuo</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-31 02:16">hace 3h</td>
+                    <td class="time-ago" data-date="2026-06-01 00:19">hace 4h</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
                 
-                <tr class="article-row" data-municipios="Loíza" data-titular="Brasileños resultan con lesiones tras aterrizaje forzoso en Loíza - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Loíza</span></td>
+                <tr class="article-row" data-municipios="Luquillo" data-titular="Luis Rodríguez Díaz deja WIPR con la mira puesta en la alcaldía de Luquillo: “No ha sido una decisión fácil” - Noticias de Puerto Rico hoy">
+                    <td><span class="muni-tag">Luquillo</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNVXdmNGsxYXVqanhzelFPNTBDZThuSlNIMFpYa3BZTE5uN3ZVYl9keXh3eHp4cWk1bFJLT3oxZ2g3bjRHR2hxZjdTeTNWaV9vM0tHd3pRbm9pd09PM0tWanN5eGJSaHFmT25HTUFyXzRneFJkMkdJRW5ZZWdPdE1LTHppSUx6ejhDRDJSSTdUSmtLRXpYaUxMRXd1UEtTX0NwVERYcWJwV3lXMFduNzdySWVmeHRHenlUeGdrQTZILXVhX0NZMFNoRGpB0gHSAUFVX3lxTFB6MFh3cFZVdVdfUlF0bTlnSGpvYzlIOEIzWkV2bXkxMlIweUsyZHE1OUlQQWF3NnBPMjVxR0txMDExb3BSTUg0VEJSaDhXejQyVlV6Zk1tdC1rM1dzWmhDQVp1TU5rTE00MFU2WkRBV05mc2M0Y0lNXzk4YXk2YVktVEJocUZlOXhUVVRUYUxTNlM0UTEtSFdHbnBISE9vVDVuTTFUTWgyVFV4SERpb2lKQzg0eUdXd1YtT0Q4WUZjaUdzNFZQY1g5TFJIeXNOM0xuUQ?oc=5" target="_blank">Brasileños resultan con lesiones tras aterrizaje forzoso en Loíza - Telemundo Puerto Rico</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxNOG5Cc3l0ZlRsWEtfR3NOaDl6ZWVOWEpCdVBJUTlKUUpSRy0tMmJtNk52ZlpzODE3S1lLc1lUT2liUU9jREU2cTdHaUtKSkFCR1Qzd3duTXRBZi1wNHZGQ3pNOXVRMjNYNWFnSXVqY3Z4Y29QbkFMZjJiODBfM1dQbmppRHcxd2hBMDAxbFJWZTBKV21nbVpHOVVsWUFiOGhXZDU2dGJlTnNMQ1lpbW5TZ0pDOFFvZzBTS0RDZllvc0wtMEFPVWdRM3R3bGJJcTlaSkZTSXlCcGszcGZJSmdJdlQ5dEZPNmJhZHhjMnd5d1pxUGZmMEEw?oc=5" target="_blank">Luis Rodríguez Díaz deja WIPR con la mira puesta en la alcaldía de Luquillo: “No ha sido una decisión fácil” - Noticias de Puerto Rico hoy</a>
                     </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-30 21:05">hace 9h</td>
+                    <td>Luquillo</td>
+                    <td class="time-ago" data-date="2026-05-31 19:35">hace 9h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Caguas" data-titular="Wapa TV. . Conoce a las candidatas de Miss Universe Puerto Rico desde Caguas 2026. 👑✨ Accede 📲 muniversepr.com para seguir su paso hacia la corona. 🇵🇷 - facebook.com">
+                <tr class="article-row" data-municipios="Caguas" data-titular="Cangrejeros, Caguas y Vaqueros suman victorias en el BSN">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxQV3ZSVW0tb0NTaWMzRVBUcTVkVktpbUg5UmFoR0VIdWFPbnJCNENwOWhVeFdsOERjR00zYjRlVUxYdFNJbDVQUmp0blVtd0g3bWlvMUtwUzVLQjZfcFZYQW5WNWtvY3NnbDRiYmUyM24ybHFmVzN4aG9ncWo0M1dTZC0waDEybXVTVW9DZk5BTF85RGZ6VXV3M1dpeml0TWZoWGZMYl9mN1F4RnNrWndIa284c2tDRHJNcklkRjdXQTJmV2JQeVI5ZmlDS1FpaC1PaGc?oc=5" target="_blank">Wapa TV. . Conoce a las candidatas de Miss Universe Puerto Rico desde Caguas 2026. 👑✨ Accede 📲 muniversepr.com para seguir su paso hacia la corona. 🇵🇷 - facebook.com</a>
-                    </td>
-                    <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-05-30 19:30">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Continúa la acción del tercer Nacional de hockey de sala">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/deportes/20260530/continua-la-accion-del-tercer-nacional-de-hockey-de-sala/?utm_source=rss&utm_medium=rss&utm_campaign=continua-la-accion-del-tercer-nacional-de-hockey-de-sala" target="_blank">Continúa la acción del tercer Nacional de hockey de sala</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/deportes/20260531/cangrejeros-caguas-y-vaqueros-suman-victorias-en-el-bsn/?utm_source=rss&utm_medium=rss&utm_campaign=cangrejeros-caguas-y-vaqueros-suman-victorias-en-el-bsn" target="_blank">Cangrejeros, Caguas y Vaqueros suman victorias en el BSN</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-05-30 18:20">hace 11h</td>
+                    <td class="time-ago" data-date="2026-05-31 15:44">hace 13h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Policía resulta herido de bala en operativo">
-                    <td><span class="muni-tag">San Juan</span></td>
+                <tr class="article-row" data-municipios="Culebra" data-titular="La playa más famosa de Puerto Rico... Playa Flamenco, Culebra luce hoy preciosa - facebook.com">
+                    <td><span class="muni-tag">Culebra</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/05/30/policia-resulta-herido-de-bala-en-operativo/" target="_blank">Policía resulta herido de bala en operativo</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxOczVOZHhQSEpBMVp6aHNlUk5GMzZMb3YzSDJpZVNENWdqSlptaExxT1V6S3RHbWtjcDdTY2JLQUwzbGZMbWp5UE9URW9YQ2s4ODJGZThMWE1Obms3N0U2eW1BREM5R3lyRjBWcWtrNXo2SGExekMwNDQ4ckZndF9lNDNZcEpLU0VaYWJfUWZnYXNnUkg0SldHRjBtU093VjE5bmt3UmZIWDl1QWJLUmVWbC1fMEZIX1pQSjNwUWFYYnQzb3VWTTdJYVpacmg1OGZ0enNrUm5R?oc=5" target="_blank">La playa más famosa de Puerto Rico... Playa Flamenco, Culebra luce hoy preciosa - facebook.com</a>
                     </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-05-30 17:55">hace 12h</td>
+                    <td>FB - Culebra</td>
+                    <td class="time-ago" data-date="2026-05-31 15:39">hace 13h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Sargento de la Policía resulta herido de bala durante intervención en La Perla">
-                    <td><span class="muni-tag">San Juan</span></td>
+                <tr class="article-row" data-municipios="Cataño" data-titular="Boricua en Cataño se gana $50,000 en premio de Powerball - wapa.tv">
+                    <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/la-calle/20260530/sargento-de-la-policia-resulta-herido-de-bala-durante-intervencion-en-la-perla/?utm_source=rss&utm_medium=rss&utm_campaign=sargento-de-la-policia-resulta-herido-de-bala-durante-intervencion-en-la-perla" target="_blank">Sargento de la Policía resulta herido de bala durante intervención en La Perla</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxOVXZPSklLT1FORlRrUlozLVRtRGp3QVp0SmJQN2F6b2dERE9IU2VVUmpBQ2laS1hRTlFwLUxVc3JsRnZYRzNFS1EwRFozWk0xM2o5bDU5SC1UVkd4cEpZR3o1ekstaTVISDFjdTdkdm9LODdRemw2VzhFd25fWTV6bTVsbklpcmd5OWRGMU1UcGpLaU1BTXBlbnVKY0MxeDJjc0NSNm93V1ZoSjZSVnBiQ0pIZGVZMk1sQ3RSVW8xTDVDaWZ5Z0Q5ai10VHdJdEdjcTlTSXdWNkhDZ1BWODVR?oc=5" target="_blank">Boricua en Cataño se gana $50,000 en premio de Powerball - wapa.tv</a>
+                    </td>
+                    <td>Cataño</td>
+                    <td class="time-ago" data-date="2026-05-31 15:34">hace 13h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Boleto vendido en Cataño otorga premio de $50,000 en Powerball Double Play">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/boleto-vendido-en-catano-otorga-premio-de-50000-en-powerball-double-play/" target="_blank">Boleto vendido en Cataño otorga premio de $50,000 en Powerball Double Play</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-05-31 15:28">hace 13h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Premio de Powerball de $50 mil cae en jugador en Cataño">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/noticias/20260531/premio-de-powerball-de-50-mil-cae-en-jugador-en-catano/?utm_source=rss&utm_medium=rss&utm_campaign=premio-de-powerball-de-50-mil-cae-en-jugador-en-catano" target="_blank">Premio de Powerball de $50 mil cae en jugador en Cataño</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-05-30 16:59">hace 13h</td>
+                    <td class="time-ago" data-date="2026-05-31 15:12">hace 13h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Humacao" data-titular="Legislatura Municipal de Humacao - facebook.com">
-                    <td><span class="muni-tag">Humacao</span></td>
+                <tr class="article-row" data-municipios="Fajardo" data-titular="2 Cond La Loma, Fajardo, PR 00738 - Realtor.com">
+                    <td><span class="muni-tag">Fajardo</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdVJ6RGpEbnp2OU04RWRaR1BPd3pyZFRCSDNGZTNLcFFSdllERkNRMEwyUWtJaUNKU05Tc2NBUDlxMVdLUGpkUGhyN0U0NVp6LS03TVI1dWI3WlFZbGlzR21qNWp0WjljdkRUWWY3UklTRU5ZT3ptTWd6RGplU21tWkg3X2htbXRxZlNJ?oc=5" target="_blank">Legislatura Municipal de Humacao - facebook.com</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxOaDdqQ3RydE9OZmlvLTlsdUNCdVc4djAwN245S3h6bUd0S3VMSXc4TVJKdm9pOU5UckptRXQ1dDEtbmkzaUduZEZENXpKbkZaeEQ2MFVjTFNKZmEtdWRiSHdkMVZmT1dyNVhlbjQ4RHdzQnNXeXU5X0N4cTU0c1VVQ0c1bVJYMXdtdnBJVg?oc=5" target="_blank">2 Cond La Loma, Fajardo, PR 00738 - Realtor.com</a>
                     </td>
-                    <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-05-30 16:52">hace 13h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Canóvanas" data-titular="💜🏐 Nos sentimos orgullosos de Las Indias de Canóvanas y de todo lo que lograron durante esta tercera temporada. Gracias por representar a nuestro pueblo con entrega, disciplina y corazón dentro y fuera de la cancha. A nuestras jugadoras, cuerpo técnico - facebook.com">
-                    <td><span class="muni-tag">Canóvanas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxPMnI3OU5rQlFpXzY5Zkdnb1VUX0haVVhXNGlmWFVFb2lFSV81dUNFYTBrczN3MUZhVFNHYkhHRXM0YWl0dmEzM2pabjAwX0NtVnJiakRqbU1rOXhHN19IdDVGR1NLVV9RUEZrWUdTVDZEdFRnbnhhdUswcnE3V1RPQXRIamRtbHl6UHJtRUhseENyNFp6Vlp0SkZMVHNiUjNMUUYtdHdHZ1hoemhuN256NDdmN2RjcEdObHZSWTJ0YXlVd3VpRjh2OUZoeE14NmhrUExsTmc4SF9BcVdlSWlONEVWSG5ndlB0d3c?oc=5" target="_blank">💜🏐 Nos sentimos orgullosos de Las Indias de Canóvanas y de todo lo que lograron durante esta tercera temporada. Gracias por representar a nuestro pueblo con entrega, disciplina y corazón dentro y fuera de la cancha. A nuestras jugadoras, cuerpo técnico - facebook.com</a>
-                    </td>
-                    <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-05-30 16:21">hace 13h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques added a new photo. - Municipio de Vieques - facebook.com">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPcVdyb0JQQW0xOUNXaHVlZk5PVnpTN3ZpMEJRa3FOc3pQWmpkSjBodUg3VTRpeDJVb1J6NWs3V3BnNG9GZmJ2M0Nva2x3U09SR2prUlZrTjVfVGlpUEdrTC0yc1pxRS14MGpTUGpINVh1MDBRTTFpWGp5MHlVbmNrWQ?oc=5" target="_blank">Municipio de Vieques added a new photo. - Municipio de Vieques - facebook.com</a>
-                    </td>
-                    <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-05-30 15:23">hace 14h</td>
+                    <td>Fajardo</td>
+                    <td class="time-ago" data-date="2026-05-31 10:23">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Avioneta cae en finca de Loíza - Metro Puerto Rico">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE4ya2s0aG4zcTdUbWtrVnRjT01PbnNxdk1YLXVXcFpVWGJhM3dnNURzRFFlMEtLX0VJR0s1RDg2OFUtamtSVXR2ZEhWUVZTQXFjR0xORk5hU2MzcHJrOGQxb0ZmdVk0Sm5YbVNNTkZZYkZ1d3pMTFZRdTM1OWfSAZABQVVfeXFMUHFOb1Nha2FqQkVZQ0gtbk9oZDNvYXpuZ0Q2UnBuQVhBOWtvejRRYTkxOV9SaEVsTXdZaVF3VDZrVGJmbjhsQUpESVo0TG83UU54RGFlUUlGdWxvQkxjZEtXal8wQ0lLTmtpWFZCWUt0aEdiM3RFOElmQzZINkE2NjlDNE55NldXWWRsbmFLa19N?oc=5" target="_blank">Avioneta cae en finca de Loíza - Metro Puerto Rico</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE5WQ3gyMUh5MGM1OU56Y1ZBeWRTa1dZMnhfcEFMaXIzMXZheW5HOXNiYjBPVUg4ZkdwWFpVbDIyX0x6a192Qm91d1J3LTAxdWtTUmJBeGtObDQyTTJQTC1wNTA0QTlJZ2pGUXFDTUpnR01SU3g0djNpV0VuONIBkAFBVV95cUxQcU5vU2FrYWpCRVlDSC1uT2hkM29hem5nRDZScG5BWEE5a296NFFhOTE5X1JoRWxNd1lpUXdUNmtUYmZuOGxBSkRJWjRMbzdRTnhEYWVRSUZ1bG9CTGNkS1dqXzBDSUtOa2lYVkJZS3RoR2IzdEU4SWZDNkg2QTY2OUM0Tnk2V1dZZGxuYUtrX00?oc=5" target="_blank">Avioneta cae en finca de Loíza - Metro Puerto Rico</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-30 14:49">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Avioneta cae en área de Loíza">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/avioneta-cae-en-area-de-loiza/" target="_blank">Avioneta cae en área de Loíza</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-05-30 14:26">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Avioneta cae en finca de Loíza - Primera Hora">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOWWdIMkEwR3E5QVdWdlY5cDhzQ19GSU1lVFhXV2s0Qlg3WlF5SGwwYjBFMXRndGozc0dIVVFpLXVmeUs1cXdrcVdya2xOT1dXa0IzY1JzaTdtcnpfUXFBUmFwMUlzT0NHRllmNUhVU3o0aWFsdTRlb3hucU5oVWItRFRCUzRTYW1PMGtKUzlQZTctd1BSVHdB?oc=5" target="_blank">Avioneta cae en finca de Loíza - Primera Hora</a>
-                    </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-05-30 13:57">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Guardia Costera intercepta embarcación con ocho inmigrantes en el puerto de San Juan - El Vocero de Puerto Rico">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMigAJBVV95cUxOZ3VrVUxNS2JISnptZkQ4TnRuVGQxdG5JNzV6aVZxQTFXa2t4UTgwdGVPRmlTUEpQWWtYMXFPa2Q1LU42ejd0TUphRHhyUnFKa2hjTUdfWUJnb1V3UUVFZnp1RXhXaFQ4OXFPVEtZMU5GZDUtb1dHSjdNaU5IY0ZnaUtuWkp6LUZxS0pfckx5Y012QVVkTEhxLUd5ZldxLUlfWWxiS25Vb3lhSmZ6bWwwc1BycTVDaGNQY0RDV2hEV1VNS3gwSllnOUxxRjNHQlZOanpVZGFfdHFmaG92RFBjMFVKckxZempWbHNzSExGME5xNDdWeHowZll0VXRmdzF10gGGAkFVX3lxTE8zeXNHbjRTcnBEOTZwMXFLWWlSSXFGR2VUWFZETm9USjZxWHAyRS1kMnpOZmdIYXJGaXBjYXdrdTJZRDRSSkZ5MDlnNEZXTzc0NFpiemd0QTlSamNuSTdEYm9uNmcxWEM0dmpmUXF3SkY2eVVtM25zTUk2WHh0T2FIb2xpM0JGaFJlRVFqVElnRjJYcEtZbEtNYW5temtQZm05QmtNN3ZwN2t3U2VUcWdjUlQzVDR1cGd4V09BWllhSUowZ1RUVnlLNm02MnAwSDdlRHZQd1dSMFRBY3JCZFd4OG5yeTNKOWVLTl9vSHRjLXo3M1F0Qkp2LWZfR1dmQXJZQUh1dXc?oc=5" target="_blank">Guardia Costera intercepta embarcación con ocho inmigrantes en el puerto de San Juan - El Vocero de Puerto Rico</a>
-                    </td>
-                    <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-05-30 13:53">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Policía herido de bala durante operativo en La Perla">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/policia-herido-de-bala-durante-operativo-en-la-perla/" target="_blank">Policía herido de bala durante operativo en La Perla</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-05-30 12:13">hace 17h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Culebra" data-titular="Buenos Días - Good Morning 🌴🌊🍽️🥰 Photo: Flamenco Beach, Culebras Puerto Rico (2017) ♥️🇵🇷☀️ #PuertoRico #Culebra #Flamencobeach #GM #Beach - facebook.com">
-                    <td><span class="muni-tag">Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMihgJBVV95cUxQV1dKX2hNc05GUUlIV2RqYWZQTldqak5OWXhTUTByWWt5eWlHSmxQT2ZYZ3ZRUkRodFU5MUZPQWlZWGpWek1EclgydlpuWGo2eHpkcEptTU9oaktwN21nOWJUNEpLbXBzS3FQSVJ6V240ZVN4QWdPRDA4cWEya1NvbURKQU9DZXQ4WGZHQ0Vsd1ZqSi15a3VxRHJPWlFRT3NwbjhFRlJaMXVRQzRZMGo0SkVreVZhYjZfd01OYm9USkxQVXEyYXgwcnZWNG9rdUhBaWJnU1N5TkR3eXUtdEltVS0zYUJWcl9PY1V6RkZhX1gydDA3WF9DV0UxS1ZiWHlMQmJsRUtB?oc=5" target="_blank">Buenos Días - Good Morning 🌴🌊🍽️🥰 Photo: Flamenco Beach, Culebras Puerto Rico (2017) ♥️🇵🇷☀️ #PuertoRico #Culebra #Flamencobeach #GM #Beach - facebook.com</a>
-                    </td>
-                    <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-05-30 11:39">hace 18h</td>
+                    <td class="time-ago" data-date="2026-05-31 10:06">hace 18h</td>
                 </tr>
                 
                 
@@ -652,31 +629,31 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Carolina" data-titular="Noticia Fake de AAA">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        
+                        <span class="badge-nuevo">NUEVO</span>
                         <a href="https://www.carolina787.com/n/noticia-fake-de-aaa" target="_blank">Noticia Fake de AAA</a>
                     </td>
                     <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-05-31">2026-05-31</td>
+                    <td class="time-ago" data-date="2026-06-01">2026-06-01</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Noticia Fake de DTOP">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        
+                        <span class="badge-nuevo">NUEVO</span>
                         <a href="https://www.carolina787.com/n/noticia-fake-de-dtop" target="_blank">Noticia Fake de DTOP</a>
                     </td>
                     <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-05-31">2026-05-31</td>
+                    <td class="time-ago" data-date="2026-06-01">2026-06-01</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Noticia Fake de LUMA">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        
+                        <span class="badge-nuevo">NUEVO</span>
                         <a href="https://www.carolina787.com/n/noticia-fake-de-luma" target="_blank">Noticia Fake de LUMA</a>
                     </td>
                     <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-05-31">2026-05-31</td>
+                    <td class="time-ago" data-date="2026-06-01">2026-06-01</td>
                 </tr>
                 
                 
@@ -829,7 +806,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-05-31 06:05:47 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-06-01 05:05:46 AM<br>
     Actualización automática cada 30 min
 </div>
 
