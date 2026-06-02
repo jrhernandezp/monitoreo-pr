@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-02 05:10:00 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-02 06:05:32 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">25</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">8</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">27</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">4</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-02 05:10:00 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-02 06:05:32 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -355,7 +355,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">9</div>
+            <div class="muni-count">8</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -420,12 +420,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">3</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
+        <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
     </div>
@@ -445,6 +445,19 @@ tr:hover { background: var(--surface2); }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
                 
+                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular=""Quiero vivir en el Caribe" Bringing Southern Charm to Vieques, Puerto Rico (Episodio de TV) - Imágenes - IMDb">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE15RjZsTmg3M2l4bkdZaUJsM2ZVejNsX0FaeHdxN1daMXlZUldRYVA0V0t5b2lsMlNJWnVlQTkzWjEySlJIUTJLNDIwem40NUxBWUlOQ0dVVV9tQld0Z2pRcFlmbHRiQQ?oc=5" target="_blank">"Quiero vivir en el Caribe" Bringing Southern Charm to Vieques, Puerto Rico (Episodio de TV) - Imágenes - IMDb</a>
+                    </td>
+                    <td>Vieques</td>
+                    <td class="time-ago" data-date="2026-06-02 05:23">hace 42min</td>
+                </tr>
+                
+                
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="LUMA Energy anuncia interrupciones programadas del servicio eléctrico en 18 municipios">
@@ -454,17 +467,27 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/06/01/luma-energy-anuncia-interrupciones-programadas-del-servicio-electrico-en-18-municipios/" target="_blank">LUMA Energy anuncia interrupciones programadas del servicio eléctrico en 18 municipios</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-02 03:50">hace 1h</td>
+                    <td class="time-ago" data-date="2026-06-02 03:50">hace 2h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Analizarán acuerdos preferenciales en los muelles tras la cancelación de salidas del Norwegian Viva">
-                    <td><span class="muni-tag">San Juan</span></td>
+                <tr class="article-row" data-municipios="Vieques" data-titular="Fotos: Ella es la bióloga que vela porque siga brillando la bahía de Vieques - Primera Hora">
+                    <td><span class="muni-tag">Vieques</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/negocios/turismo/notas/analizaran-acuerdos-preferenciales-en-los-muelles-de-cruceros-tras-cancelacion-de-salidas-del-norwegian-viva/" target="_blank">Analizarán acuerdos preferenciales en los muelles tras la cancelación de salidas del Norwegian Viva</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxQLWxfcjBWeGVma1dmMzdnc3RjdGlHeFZCYzlUY2NEa2k3c0NqQXdBV0U1cjN6dlBnSUlQN19veGhteUNnREVqc2Q5bk9TdUY3UjJkR28yV19EbXZUZUctb1NhR28yQXhCX1l6cVJRSHpGbDVJYUp5TDRScDQ2aXRDX2VscFQ4RlgzNkhQOWtPM3M1Q3NEbFVGOWhSNVNOS0lrRG1oM3hKbkpHb3haNGNlUVpiNEI4ckt2TXFaNXFNYjlKWUVkcWVZb2pIX3RWaDBiWTlYcQ?oc=5" target="_blank">Fotos: Ella es la bióloga que vela porque siga brillando la bahía de Vieques - Primera Hora</a>
                     </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-06-02 03:10">hace 2h</td>
+                    <td>Vieques</td>
+                    <td class="time-ago" data-date="2026-06-02 03:48">hace 2h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Culebra" data-titular="Zoni Beach, es una de las playas más hermosas y tranquilas de la isla municipio de Culebra. Ubicada en la costa noreste, se distingue por su extensa franja de arena blanca, aguas cristalinas de color turquesa y un ambiente mucho más relajado que otras pl - Facebook">
+                    <td><span class="muni-tag">Culebra</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxNYlJubFdzVHdRaEFSWGlRZVFqWHY3SWlvV3F4amJ0d1pMbGwzdkJQd2lqSVltaWZvZU5ub2JJSDF4eS1mZWZJWmdRX3NKSmdPeEVoVHVTeE9aUFlKM2gtdTc5WU0xb0w1RmtzSHJTeXZHLVVnQS1OOERlVGFoSzZRWkFKaE83OHpRN05iVlpPTGVqaS0xUmt3OEZsR2N5NTNXV3hBcXpuLW9qQlhrT1Z5LUZ0Z0hoSF9OVzdNSXlLOFZYSjZPVVBZb040eUZUNy1CczdLZW9jSjdMRTBFY1VWR2hR?oc=5" target="_blank">Zoni Beach, es una de las playas más hermosas y tranquilas de la isla municipio de Culebra. Ubicada en la costa noreste, se distingue por su extensa franja de arena blanca, aguas cristalinas de color turquesa y un ambiente mucho más relajado que otras pl - Facebook</a>
+                    </td>
+                    <td>FB - Culebra</td>
+                    <td class="time-ago" data-date="2026-06-02 02:11">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Claro invierte más de $750 millones para fortalecer su red ante la temporada de huracanes">
@@ -474,7 +497,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/06/01/claro-invierte-mas-de-750-millones-para-fortalecer-su-red-ante-la-temporada-de-huracanes/" target="_blank">Claro invierte más de $750 millones para fortalecer su red ante la temporada de huracanes</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-02 00:41">hace 4h</td>
+                    <td class="time-ago" data-date="2026-06-02 00:41">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Nike lanzará tenis inspirados en la bandera puertorriqueña de 1895">
@@ -484,7 +507,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/06/01/nike-shox-r4-puerto-rico-bandera-historica/" target="_blank">Nike lanzará tenis inspirados en la bandera puertorriqueña de 1895</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-02 00:36">hace 4h</td>
+                    <td class="time-ago" data-date="2026-06-02 00:36">hace 5h</td>
                 </tr>
                 
                 
@@ -497,7 +520,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/senado-cita-a-presidente-de-aaa-por-crisis-de-agua/" target="_blank">Senado cita a presidente de AAA por crisis de agua</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-06-01 21:43">hace 7h</td>
+                    <td class="time-ago" data-date="2026-06-01 21:43">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Turista pierde Rolex, tenis y $1,200 en asalto en San Juan">
@@ -507,7 +530,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/turista-pierde-rolex-tenis-y-1200-en-asalto-en-san-juan/" target="_blank">Turista pierde Rolex, tenis y $1,200 en asalto en San Juan</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-06-01 21:15">hace 7h</td>
+                    <td class="time-ago" data-date="2026-06-01 21:15">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Municipio de Cataño inicia Verano Recreativo Adaptado 2026 para fortalecer inclusión y desarrollo de participantes con diversidad funcional - wipr.pr">
@@ -517,7 +540,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxQZk1xN013aVhCVld1S29EUE9zT2J6Nkd3SlE5Z2JXRTJyNVJsR1A4NTMtQTdXS19vQ3VKUklLRWg2cXo3X1pCMy1zcHIwTk1XVlJTcjExcUFUa0V2REhybEpKeXI4TkVZMXhtVF94b1BHanItM3A4dHVUNEMyaVhLb2hZcG82VndhNUE0aXNTdDFmUEo2WVhnQnh6YkZ0Q3lmTlJ4OWI4bzhiZGtnNFYyb1htdE5nUUtKcGJLZWlxZHNfRWZaTlA4THBVOHdiYVlsVWMtSTFtUVU1SzR0WGZuUlNrTkRrTVR3M1d4aw?oc=5" target="_blank">Municipio de Cataño inicia Verano Recreativo Adaptado 2026 para fortalecer inclusión y desarrollo de participantes con diversidad funcional - wipr.pr</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-06-01 21:00">hace 8h</td>
+                    <td class="time-ago" data-date="2026-06-01 21:00">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Jiménez denuncia falta de comunicación durante pasada administración">
@@ -527,7 +550,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/01/jimenez-denuncia-falta-de-comunicacion-durante-pasada-administracion/" target="_blank">Jiménez denuncia falta de comunicación durante pasada administración</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-01 20:51">hace 8h</td>
+                    <td class="time-ago" data-date="2026-06-01 20:51">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Kike García rechaza acusaciones de traición">
@@ -537,7 +560,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/01/kike-garcia-rechaza-acusaciones-de-traicion/" target="_blank">Kike García rechaza acusaciones de traición</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-01 20:16">hace 8h</td>
+                    <td class="time-ago" data-date="2026-06-01 20:16">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Identifican Policía Municipal que se privó de la vida">
@@ -547,7 +570,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/identifican-policia-municipal-que-se-privo-de-la-vida/" target="_blank">Identifican Policía Municipal que se privó de la vida</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-06-01 20:04">hace 9h</td>
+                    <td class="time-ago" data-date="2026-06-01 20:04">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Más de 500 boletos y 17 arrestos durante operativo policiaco en el área de Humacao">
@@ -557,7 +580,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/01/mas-de-500-boletos-y-17-arrestos-durante-operativo-policiaco-en-el-area-de-humacao/" target="_blank">Más de 500 boletos y 17 arrestos durante operativo policiaco en el área de Humacao</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-01 19:24">hace 9h</td>
+                    <td class="time-ago" data-date="2026-06-01 19:24">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Reportan hurto de cable de cobre en Fajardo">
@@ -567,7 +590,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/01/reportan-hurto-de-cable-de-cobre-en-fajardo/" target="_blank">Reportan hurto de cable de cobre en Fajardo</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-01 18:39">hace 10h</td>
+                    <td class="time-ago" data-date="2026-06-01 18:39">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Portavoz de delegación PNP en Humacao asegura que Alejandro Martínez representa organización y unidad">
@@ -577,7 +600,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/01/portavoz-de-delegacion-pnp-en-humacao-asegura-que-alejandro-martinez-representa-organizacion-y-unidad/" target="_blank">Portavoz de delegación PNP en Humacao asegura que Alejandro Martínez representa organización y unidad</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-01 18:28">hace 10h</td>
+                    <td class="time-ago" data-date="2026-06-01 18:28">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="La opinión de Herrero: Analista cuestiona la viabilidad legal de demanda de Miguel Romero contra la AAA">
@@ -587,7 +610,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/la-opinion-de-herrero-analista-cuestiona-la-viabilidad-legal-de-demanda-de-miguel-romero-contra-la-aaa/?utm_source=rss&utm_medium=rss&utm_campaign=la-opinion-de-herrero-analista-cuestiona-la-viabilidad-legal-de-demanda-de-miguel-romero-contra-la-aaa&utm_source=rss&utm_medium=rss&utm_campaign=la-opinion-de-herrero-analista-cuestiona-la-viabilidad-legal-de-demanda-de-miguel-romero-contra-la-aaa" target="_blank">La opinión de Herrero: Analista cuestiona la viabilidad legal de demanda de Miguel Romero contra la AAA</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-06-01 16:52">hace 12h</td>
+                    <td class="time-ago" data-date="2026-06-01 16:52">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Escalamiento en Canóvanas culmina con el robo de armas, equipos electrónicos y un perro de raza French Bulldog">
@@ -597,7 +620,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/01/escalamiento-en-canovanas-culmina-con-el-robo-de-armas-equipos-electronicos-y-un-perro-de-raza-french-bulldog/" target="_blank">Escalamiento en Canóvanas culmina con el robo de armas, equipos electrónicos y un perro de raza French Bulldog</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-01 15:47">hace 13h</td>
+                    <td class="time-ago" data-date="2026-06-01 15:47">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Continúan trabajos de instalación de luminarias en la PR-52 de Salinas hacia Caguas">
@@ -607,7 +630,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/01/continuan-trabajos-de-instalacion-de-luminarias-en-la-pr-52-de-salinas-hacia-caguas/" target="_blank">Continúan trabajos de instalación de luminarias en la PR-52 de Salinas hacia Caguas</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-01 15:35">hace 13h</td>
+                    <td class="time-ago" data-date="2026-06-01 15:35">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Le roban dron, cámaras, prendas, pistolas y hasta el perro a hombre en Canóvanas - wapa.tv">
@@ -617,7 +640,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxQRkEybENrcE02OGVTdE8tRlFMRlRVZzlJOG9SYURFV0w1RkcyLU9WSkdUMkNtZ3lXcUFUTUVmUVVpR1pGRzV6eVZ5MlhDTk02RXZrWERzX1BRRngxN0xyYUZ2Wlk2a2d1YzNNZ0V2eXdnQ2ptRElvOHloUThUd0lPeG56VlZyVDFmbXZPOFAxY0VaaDlYYlNJRFRfTVlhMkJpWXRZQTRRYTM0UU8xaWt2bXJOc2VGWjBXTGVkN3N5c3BZUVp3Tk82dzJGNHZ0ZGowSm8xakdKYTZ0ZGNjZmFmZGVNa2FzNDhMd3c?oc=5" target="_blank">Le roban dron, cámaras, prendas, pistolas y hasta el perro a hombre en Canóvanas - wapa.tv</a>
                     </td>
                     <td>Canóvanas</td>
-                    <td class="time-ago" data-date="2026-06-01 15:33">hace 13h</td>
+                    <td class="time-ago" data-date="2026-06-01 15:33">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Policía reporta robos en Canóvanas y Vega Baja; se llevaron hasta un perro - Metro Puerto Rico">
@@ -627,17 +650,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPSmM4aTh4aDFxX01UbGxsMC1vNGhtaVJ2dU10Q0FfUVV6OXdRTE5GWm00SWxjRVI1Y0tOalg0cENFUEdBM0Q4OUk2czNuS21TZFg1bUEwcUQwQlJZMlVZS1VjOFhRR09lZG9pX0NhUGw1ZXk0M0IwNDdfalVtcHo4aHpjcjljaDRwNEl5Ti14OWdHVHhuRDBTYzAyQ2FYN2lRamhyXzVSOUZuSzNlMHJWX2lmXzNKd9IBygFBVV95cUxPZ1RIaV9lVkFwU0VUenJ3TzdVQTU3ZUppdjhKRVd2M2lwd3BEOFFQY0U4cG9JbVA2T3B1QnpKWTlyNE1XT3UxN0ZoQVI3NEN3YW43enE3bGJ1NjgxRHNLTzB6RjUxdXNaMzF1YU1XZWlJYy1hcFh0UnJ2ZjZnbWhXd2FLdkQ2eXdxemlLSUV3bjNjNDZvR1pqTk5NbEpkZllWNTBZanZnZzBGMFpyR1R2dGtVVUZZMERUblMzdWZYNS1JUDVBTThVOVhR?oc=5" target="_blank">Policía reporta robos en Canóvanas y Vega Baja; se llevaron hasta un perro - Metro Puerto Rico</a>
                     </td>
                     <td>Canóvanas</td>
-                    <td class="time-ago" data-date="2026-06-01 14:44">hace 14h</td>
+                    <td class="time-ago" data-date="2026-06-01 14:44">hace 15h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
+                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - Facebook">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5QX1FBT1lTRjFnQXRTVzNsTGc2SWw3V3dBS0FIVnpaWFhndE5oaFhzalRrOUVKRVRFTS04WUxCYVNTSEsySUpYeFBVNHlrSVBrT2t1Nk1UQmN3QlpFYUZzRnBGenhxS0U?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5QX1FBT1lTRjFnQXRTVzNsTGc2SWw3V3dBS0FIVnpaWFhndE5oaFhzalRrOUVKRVRFTS04WUxCYVNTSEsySUpYeFBVNHlrSVBrT2t1Nk1UQmN3QlpFYUZzRnBGenhxS0U?oc=5" target="_blank">Municipio Autónomo de Cataño - Facebook</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-06-01 11:46">hace 17h</td>
+                    <td class="time-ago" data-date="2026-06-01 11:46">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Conexión Laboral San Juan: una puerta abierta al empleo y nuevas oportunidades - El Vocero de Puerto Rico">
@@ -647,26 +670,26 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxQOUR6UXhZSU5nb3F6anlVaGQyZmIwSXRhamdiS0Rva1ZKZjRoN2R1Uk1XeUlfZDRVbnVxM0ItR3hhUlBqTjFuS0tqaVhkWGlaUF8zbXNrbUE2RzNRc3ZRbjdwdXFLT0NtcjFHVElZY2tuSXNPQ29LNnpJX0Y4ZTdNeWZqNVJSTWhwZEIzaTRlVU9xVzZKTXc0RUZKVVFHWHljTVZ6RUlwdFRSU2N0c09sUzJRTGhNa3pocW5KcWdhZ0lNSnlQR0d1UXN1VmJ0RmNsa0c3THA2aFlQUkRyMHk0Z0RqamduV2FmWUoyOHNUa2NBLTTSAfgBQVVfeXFMTjFFaHRTQXJMSDVnWXVhcE15cV9heVB5UzdObmFRV2hVclN1U3NPRGFmWnM3dFdFOEhEaWFBbG94RURORG9JLXZtNFVjdjlXaEhCV1JQbTVVcUJYX29HVFZ1emJmUmRoLTdsVHBaay1sX3dDOFlKTFIwTER3eHpuQ1lWQVFyeVUycDBNSXRia0xmSmV0M2RhSW5ZTWJKWGtmbDJWY2pGOThpcmFNa1ZyTHB3WnZFeWZNWUxpWVNYakdwb3BLS3BqcGZVZ1dJOVJmdzJJeWxBaTk3d2FQclVSNWJ2QVY3amJ1WTNKXzNQQWRqNS1UMmVWbFI?oc=5" target="_blank">Conexión Laboral San Juan: una puerta abierta al empleo y nuevas oportunidades - El Vocero de Puerto Rico</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-06-01 11:43">hace 17h</td>
+                    <td class="time-ago" data-date="2026-06-01 11:43">hace 18h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Canóvanas" data-titular="Canóvanas es más. . 🏠 En Canóvanas seguimos llevando soluciones que protegen la salud y seguridad de nuestras familias. A través del programa Healthy Homes, con fondos federales de HUD, realizamos evaluaciones en hogares cualificados para identif - facebook.com">
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="Canóvanas es más. . 🏠 En Canóvanas seguimos llevando soluciones que protegen la salud y seguridad de nuestras familias. A través del programa Healthy Homes, con fondos federales de HUD, realizamos evaluaciones en hogares cualificados para identif - Facebook">
                     <td><span class="muni-tag">Canóvanas</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxOZEhKdUgxaDZDSS1YZ0ZnTTQza29OSnM3Nm42TUw2NXN3LVpnSE5qa2hyQ0oxSzJqRTVkeEsxcDI5WWtMVEZrZ1dYNXZ5QUhSYXJYc3dtZDJ4VmxHYU9ucEtPOS1kbEhid2V1RDVGVV9iM3hhUGktVjNLWHI4dTBSMXcwbkk3TnpMck5UdEZsUmlGcmZsb0Q4VGRhZG1MZ0V0bkkyUUVrbTBQOWh0M3VVa1hCQlhIYjFkU0FidGs3WnRib1B4TjJ3dDlVWi1Fd2xzMDM4Nzh0NlMtVnA1ZVlKSUhzVWxpeUxJazlV?oc=5" target="_blank">Canóvanas es más. . 🏠 En Canóvanas seguimos llevando soluciones que protegen la salud y seguridad de nuestras familias. A través del programa Healthy Homes, con fondos federales de HUD, realizamos evaluaciones en hogares cualificados para identif - facebook.com</a>
+                        <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxOZEhKdUgxaDZDSS1YZ0ZnTTQza29OSnM3Nm42TUw2NXN3LVpnSE5qa2hyQ0oxSzJqRTVkeEsxcDI5WWtMVEZrZ1dYNXZ5QUhSYXJYc3dtZDJ4VmxHYU9ucEtPOS1kbEhid2V1RDVGVV9iM3hhUGktVjNLWHI4dTBSMXcwbkk3TnpMck5UdEZsUmlGcmZsb0Q4VGRhZG1MZ0V0bkkyUUVrbTBQOWh0M3VVa1hCQlhIYjFkU0FidGs3WnRib1B4TjJ3dDlVWi1Fd2xzMDM4Nzh0NlMtVnA1ZVlKSUhzVWxpeUxJazlV?oc=5" target="_blank">Canóvanas es más. . 🏠 En Canóvanas seguimos llevando soluciones que protegen la salud y seguridad de nuestras familias. A través del programa Healthy Homes, con fondos federales de HUD, realizamos evaluaciones en hogares cualificados para identif - Facebook</a>
                     </td>
                     <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-06-01 11:40">hace 17h</td>
+                    <td class="time-ago" data-date="2026-06-01 11:40">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="¿Una guardería de corales en Vieques? - Primera Hora">
                     <td><span class="muni-tag">Vieques</span></td>
                     <td class="titular-cell">
-                        
+                        <span class="badge-nuevo">NUEVO</span>
                         <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxQeU1sZHZpa3poX0dUMVFjX2ZVaHpyeC14NDVHTFB0MElwSHVYZFNwQnhCenVxbHJMZmF2LXJnMEpWVlBibHZYLUUzcVVZbUt6Y1F4ZWJWR0JRVHI4bWs0Y3dwWDg5TVZIWGE3U2hwWWRLTU90TzdsVjRxWWtVamFWWkdvdUJITExMdTNRTzNGM282eTRydE9SM3ZDN0dVWFh4?oc=5" target="_blank">¿Una guardería de corales en Vieques? - Primera Hora</a>
                     </td>
-                    <td>Vieques</td>
+                    <td>Primera Hora</td>
                     <td class="time-ago" data-date="2026-06-01 03:38">hace 1d</td>
                 </tr>
                 
@@ -853,7 +876,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-06-02 05:10:00 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-06-02 06:05:32 AM<br>
     Actualización automática cada 30 min
 </div>
 
