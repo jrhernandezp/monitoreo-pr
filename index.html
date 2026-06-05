@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-04 06:05:49 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-05 05:03:41 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">30</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">34</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">34</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">15</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-04 06:05:49 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-05 05:03:41 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -355,22 +355,22 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">6</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">8</div>
+            <div class="muni-count">4</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
+        <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">3</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
+        <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
@@ -388,29 +388,29 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">1</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
+        <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">4</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
             <div class="muni-name">Río Grande</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Ceiba')">
             <div class="muni-name">Ceiba</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">2</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">5</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
@@ -420,12 +420,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">10</div>
+            <div class="muni-count">2</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
+        <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
     </div>
@@ -447,250 +447,310 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="Carolina" data-titular="Capturan a “El Papito”, uno de los más buscados del área de Carolina">
-                    <td><span class="muni-tag">Carolina</span></td>
+                <tr class="article-row" data-municipios="Ceiba" data-titular="Roosevelt Roads vuelve al centro de atención: nueva movilización militar genera debate en Ceiba">
+                    <td><span class="muni-tag">Ceiba</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/capturan-a-el-papito-uno-de-los-mas-buscados-del-area-de-carolina/?utm_source=elnuevodia.com&utm_medium=widget&utm_campaign=las_mas_vistas" target="_blank">Capturan a “El Papito”, uno de los más buscados del área de Carolina</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/locales/videos/roosevelt-roads-vuelve-al-centro-de-atencion-nueva-movilizacion-militar-genera-debate-en-ceiba-293893/" target="_blank">Roosevelt Roads vuelve al centro de atención: nueva movilización militar genera debate en Ceiba</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-06-04 06:04">hace 1min</td>
+                    <td class="time-ago" data-date="2026-06-05 05:02">hace 1min</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
-                <tr class="article-row" data-municipios="Carolina,Canóvanas" data-titular="¡Lo vuelve hacer! Jaylen Nowell le da el triunfo a los Gigantes contra los Vaqueros en tiempo extra">
-                    <td><span class="muni-tag">Carolina, Canóvanas</span></td>
+                <tr class="article-row" data-municipios="Loíza" data-titular=""Todo está perdido aquí": Denuncian el deterioro en los quioscos de Loíza - wapa.tv">
+                    <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/deportes/baloncesto/notas/lo-vuelve-hacer-jaylen-nowell-le-da-el-triunfo-a-los-gigantes-contra-los-vaqueros-en-tiempo-extra/" target="_blank">¡Lo vuelve hacer! Jaylen Nowell le da el triunfo a los Gigantes contra los Vaqueros en tiempo extra</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxQLXJvckxaV1V5aUVuN1VDa0hvcTg2eUJhV1M4bUNvQTZEX1Zhc1c2bVptaUk5cXc1bDE1bEdSUjM2MFpMWEUzck1zTzNoSS1ucDM5N0l4eG9zNGVmUXJyOXlBY2tsRlRzZ1VNTEZ5TU9tUTllbDBscU93V1hxc3NhdFhKVFFjSFFhQWp1Mld0dXRNQkVrZW9FQ2M2UFB2NzNTWW5BM1ozNmJzRUxxdFZWaU9xbUNLVUtIMjRvbnVjWEFpRlRIQmRQb0E0VTdxaHU2M2xWN0lLeThVaDkzdV9SNzFJZG1Jdw?oc=5" target="_blank">"Todo está perdido aquí": Denuncian el deterioro en los quioscos de Loíza - wapa.tv</a>
+                    </td>
+                    <td>Loíza</td>
+                    <td class="time-ago" data-date="2026-06-05 03:28">hace 1h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Arde junio">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/opinion/punto-de-vista/arde-junio/" target="_blank">Arde junio</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-06-04 03:40">hace 2h</td>
+                    <td class="time-ago" data-date="2026-06-05 03:10">hace 1h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Interrupciones programadas de LUMA afectarán 16 municipios">
+                <tr class="article-row" data-municipios="San Juan" data-titular="LUMA anuncia interrupciones programadas en 13 municipios">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/06/03/interrupciones-programadas-de-luma-afectaran-16-municipios/" target="_blank">Interrupciones programadas de LUMA afectarán 16 municipios</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/06/04/luma-anuncia-interrupciones-programadas-en-13-municipios/" target="_blank">LUMA anuncia interrupciones programadas en 13 municipios</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-04 01:47">hace 4h</td>
+                    <td class="time-ago" data-date="2026-06-05 02:14">hace 2h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Educación reconoce a 1,612 estudiantes con promedio perfecto">
+                <tr class="article-row" data-municipios="San Juan" data-titular="Nueva aplicación de Turismo permite verificar condiciones del mar antes de visitar una playa">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/06/03/educacion-reconoce-a-1612-estudiantes-con-promedio-perfecto/" target="_blank">Educación reconoce a 1,612 estudiantes con promedio perfecto</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/06/04/nueva-aplicacion-de-turismo-permite-verificar-condiciones-del-mar-antes-de-visitar-una-playa/" target="_blank">Nueva aplicación de Turismo permite verificar condiciones del mar antes de visitar una playa</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-04 00:39">hace 5h</td>
+                    <td class="time-ago" data-date="2026-06-05 01:47">hace 3h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Cooperativas mantienen estabilidad financiera en primer trimestre de 2026">
+                <tr class="article-row" data-municipios="San Juan" data-titular="Cuatro farmacias pagarán $4.6 millones de dólares por señalamientos de fraude">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/06/03/cooperativas-mantienen-estabilidad-financiera-en-primer-trimestre-de-2026/" target="_blank">Cooperativas mantienen estabilidad financiera en primer trimestre de 2026</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/06/04/cuatro-farmacias-pagaran-4-6-millones-de-dolares-por-senalamientos-de-fraude/" target="_blank">Cuatro farmacias pagarán $4.6 millones de dólares por señalamientos de fraude</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-04 00:34">hace 5h</td>
+                    <td class="time-ago" data-date="2026-06-05 01:36">hace 3h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Orquesta Sinfónica presentará temporada 2026-2027 en velada para abonados">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/06/04/orquesta-sinfonica-presentara-temporada-2026-2027-en-velada-para-abonados/" target="_blank">Orquesta Sinfónica presentará temporada 2026-2027 en velada para abonados</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-05 01:31">hace 3h</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Justicia niega que haya 229 casos de corrupción archivados sin investigar">
+                <tr class="article-row" data-municipios="Cataño" data-titular="Residentes de Cataño denuncian que trabajos constantes en Centro de Distribución de USPS afectan su salud - Primera Hora">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxNZkhnbjAwX2xDV2VtNDlsRWN3X0FQZXdtQnJnRGF6WUJaMTdRX2FjaVRQM1NaUURaazU3a2xhVzE2VFRyRXpiS2J4bEJBQTRLYjFfNDk3b0tMRGFQdWlmWlkzR2lOOVAwTHNuOE9pVXRmVWFVanNaaGtXSUlyOUg0RXVFLU1mQ2czaE1nNlJuY2lZUWxyV0VJU3BGT21BbV8tTWV5SFRKRjZOcFlXR1RpR1laMFdJcTVuUkZ2eWJoZWF1VnBSTDZXcExQNEI1ZjBUMFpvdXVzQTYtYnR5MHdBM2FsS3M1RjFXTEt2QTkwcm9GYjA?oc=5" target="_blank">Residentes de Cataño denuncian que trabajos constantes en Centro de Distribución de USPS afectan su salud - Primera Hora</a>
+                    </td>
+                    <td>Cataño</td>
+                    <td class="time-ago" data-date="2026-06-04 22:20">hace 6h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="Más cerca a su llegada equipo clínico para hospital de Vieques">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/mas-cerca-a-su-llegada-equipo-clinico-para-hospital-de-vieques1/?utm_source=rss&utm_medium=rss&utm_campaign=mas-cerca-a-su-llegada-equipo-clinico-para-hospital-de-vieques1&utm_source=rss&utm_medium=rss&utm_campaign=mas-cerca-a-su-llegada-equipo-clinico-para-hospital-de-vieques1" target="_blank">Más cerca a su llegada equipo clínico para hospital de Vieques</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-06-04 21:46">hace 7h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Tribunal fija primera vista vista en demanda del Municipio de San Juan contra la AAA - El Vocero de Puerto Rico">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/06/03/justicia-niega-que-haya-229-casos-de-corrupcion-archivados-sin-investigar/" target="_blank">Justicia niega que haya 229 casos de corrupción archivados sin investigar</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi_AFBVV95cUxOSEh1dnFLbWlDRkR2b3Nib0Jnb3I4ZUpRQzNRUlphYzhSOWpTeWF0cW1jQ05QYXJHc0tCWmZkTW96cXhjYmFxUEdUQmpXQ0N1SS1SVHQzLTNpd0JNN1hYUGZLZnlJSE5WQVVacHFtZjh1WV8wdUJmejhaWHI3amNSMk1BQ01BSlMxY2RvRUs3VmdmTnBrQ1M3dFVyVklYYTM0LVpVYzRMdmk0Z2I2blBfeFFBSTFwOFBaNXZKNGFVU2ZueG1LUEs5dEotWnJZbWEwb0d2VmZackJ0bXBRR2FXV1BySTJSLU4tWE9YQ0Z5UkhweHlPQVhfQTBKcE_SAYICQVVfeXFMUHBNZmxjU2k4aS1wUFdYSUZsWTdycFRxTHhnM3QtQjQ5X1hZVnpVaVFCVzZmUkk2YmoyYXZkNjFTaFJtN0JQQnY5SGpQZUM4bnZzbEE4ek0yTUlMcXNaRWgwOHpRa2hKdEZ5M1o1NWdYWjBUZ2VWSmZiOC10NXdoYjBpcXA5aldFMDFEdU45ZlR5UlZzS1ZwbnMxcUppREdBQ1FMekVQWERNUUZOZ3FuQlFJMEVqSGpXZndtVlVZQkZ4UGpFS2x6Nzk4SFdwaU5zSHRNYy01UTJTcV9aZk02aDgyektOMkREN3J5aVFHYjQya3JSUkJNSmNfcDN3NEoweVV3?oc=5" target="_blank">Tribunal fija primera vista vista en demanda del Municipio de San Juan contra la AAA - El Vocero de Puerto Rico</a>
                     </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-03 22:58">hace 7h</td>
+                    <td>San Juan</td>
+                    <td class="time-ago" data-date="2026-06-04 21:24">hace 7h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Vieques" data-titular="Autoridad de Edificios Públicos impacta escuelas, tribunal y cuartel en Vieques">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/06/03/autoridad-de-edificios-publicos-impacta-escuelas-tribunal-y-cuartel-en-vieques/" target="_blank">Autoridad de Edificios Públicos impacta escuelas, tribunal y cuartel en Vieques</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-03 20:45">hace 9h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Río Grande,Humacao" data-titular="Causa para arresto contra octogenario por apuntar con arma de fuego en la PR-30">
-                    <td><span class="muni-tag">Río Grande, Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/06/03/causa-para-arresto-contra-octogenario-por-apuntar-con-arma-de-fuego-en-la-pr-30/" target="_blank">Causa para arresto contra octogenario por apuntar con arma de fuego en la PR-30</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-03 20:04">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Sentida despedida para el Maestro de Vieques, Ismael Guadalupe - claridadpuertorico.com">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPb2FfYlUwX244WkpFYUFZRFJDRlpvaXFaNFozRENQS0xDRWV2X0pUdmgtdmJBV1ctVzlEWDZXYmIwd1FWaTZWaVJqZUJxZDNaZWlJMF95Mk5CRjAxN0xiOFZfVjdNY2tmWkZWUGVwLWNjTVI5Zkd4dGNpT1ZLZVFNVml4VHNITE9PaFRPZmN0REhUWk85dGVjeg?oc=5" target="_blank">Sentida despedida para el Maestro de Vieques, Ismael Guadalupe - claridadpuertorico.com</a>
-                    </td>
-                    <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-06-03 19:43">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Hallan muerto a turista dentro de residencia en Vieques - El Vocero de Puerto Rico">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQc0xvN3pFTVFUSlVkUm5mMVVLdUJrVDQzRDNEZHBOclFuc2VVc0FIaHhLbmo2U1BIckd2TG56R0VuRnd1bFJVM3c2LWJiUmsxWWFsUGp2eUh6U0w5M29UaXFPUXVCNW1YWWNNeUVNdGpmTnhRSnA4VWJCM2hGVEYtZ3ozWXROMnBaUmtUMmJuOEtBX1dyQmNYWVhZbHlkdG5jUXBiSjVKUWlBRjBrRVNWQnFQQ0hQMXZMR1VlRnN4YUdIY1l5WlIxc1R3aW5kSkVRV1Nyam9OdFhjQdIB3wFBVV95cUxPMUlFVEVhOGM4MmdFdGMzd3FLS3NBR2lYRjk1ZDVnamNaMlBRVXg2S2t5ZzVDTUdTNDF6aFBVZHpRcEVrT3FQZlF4YmZ5YlZYNEVZZEZwTFplMXRSd3ljb0JkV2dockVMSThWSVJKd0FKV0N1eVNKX1AwRkdFSlBIUlVMaUZ6U1NCQXBWSzBOazRzeUNnUEdtcWF1cWJMaGo4eFNZclA1M1E2QWQ3Wmh6QTJscDY4TGd1TG1sblVJTzBQbGcxNjZNNVNKaDNiQW9oUXkxSXEzWUVaWmQ3U01N?oc=5" target="_blank">Hallan muerto a turista dentro de residencia en Vieques - El Vocero de Puerto Rico</a>
-                    </td>
-                    <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-06-03 19:29">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Alcalde viequense aclara situación con vehículo D7 del municipio de Humacao">
+                <tr class="article-row" data-municipios="Humacao" data-titular="Legislatura Municipal de Humacao aprueba disolución de corporación que administraba el Coliseo y Bellas Artes">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/06/03/alcalde-viequense-aclara-situacion-con-vehiculo-d7-del-municipio-de-humacao/" target="_blank">Alcalde viequense aclara situación con vehículo D7 del municipio de Humacao</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/04/legislatura-municipal-de-humacao-aprueba-disolucion-de-corporacion-que-administraba-el-coliseo-y-bellas-artes/" target="_blank">Legislatura Municipal de Humacao aprueba disolución de corporación que administraba el Coliseo y Bellas Artes</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-03 19:25">hace 10h</td>
+                    <td class="time-ago" data-date="2026-06-04 20:06">hace 8h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="Autoridades identifican a hombre asesinado en parque de Loíza; tenía expediente criminal - Metro Puerto Rico">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxQX0tFU28tSjdxWXRIRjJsdDBxbUMwWFoxb1BqQU9QZGFuTk5oVnAyUzZfYVVaQ1BGamtZTkVtRVcwQmtiMjhackVVNWVVQjBha1pyMFh5TzJtY0puUk5zT2p2YkpBTEZadHpTTlpESHRGSFU4TXpjM3NuSkwtWUVOejBVS1M2WWI1WGJlRUFNVlJSWVBZNl9iZDhRUkFvbTcwbjRHOTlOOE9laHRpa01UNDR1ZWtoWEh3VUJlZkJ6Uzc4VmVUNTRJTNIB3AFBVV95cUxQRHZXRzU3TFJNNWFKLTFhNDN2NV8waFAzUE90YWhCT1Z3YUFIdzdkSzFmR1dCRXZpVGY1UjRwWUxQSXBsQjRIOEZKZ3hJaWFxTGt4UTJMVGhJQlM3eXo0cUJlX3o5dVZiRXMtS1pER1pjaWpLVXNnbTZRbGlub08yNmptZVRLeWRhU00wR3d6cW5yLWRlRkEybC1pLTJQdzJ6cFFsNldpeWN4WUFJa2FqWUJwU1VUbGdMUll3a0I0S0txb0xoRWxkUGNyRnJWWDJOd1plR0tOX3VORXFq?oc=5" target="_blank">Autoridades identifican a hombre asesinado en parque de Loíza; tenía expediente criminal - Metro Puerto Rico</a>
+                    </td>
+                    <td>Loíza</td>
+                    <td class="time-ago" data-date="2026-06-04 20:03">hace 9h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao,Vieques" data-titular="Legislatura de Humacao desconocía que era un solo el que estaba en Vieques">
+                    <td><span class="muni-tag">Humacao, Vieques</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/04/legislatura-de-humacao-desconocia-que-era-un-solo-el-que-estaba-en-vieques/" target="_blank">Legislatura de Humacao desconocía que era un solo el que estaba en Vieques</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-04 19:34">hace 9h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Río Grande" data-titular="Venden el hotel Hyatt Regency Grand Reserve en Río Grande - Noticias de Puerto Rico hoy">
+                    <td><span class="muni-tag">Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxOX1Y4WDN0bi1vQ1FOb01ncUhXU1NWcU9BSkJpODh4TU9BUDF0RW1zcTQ3dnZHb3RoOHhYU0tmN0dYVHdVQVhkS3ZHb0lkSDNBOHpEZXJ2V1BvRTBudXJsTzlCdU41VXF1M2tMQWR0dlJnMzlFSWhacl94LVJTZEdZMGJzQVJxYUxTbVpSdzk5cHhpeVJFY2N6cXhYamp3ZHBFUzdwNXVJQjNsNWVB?oc=5" target="_blank">Venden el hotel Hyatt Regency Grand Reserve en Río Grande - Noticias de Puerto Rico hoy</a>
+                    </td>
+                    <td>Río Grande</td>
+                    <td class="time-ago" data-date="2026-06-04 19:27">hace 9h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Detectan múltiples violaciones durante inspecciones a talleres y depósitos de chatarra en Yabucoa y Maunabo">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/04/detectan-multiples-violaciones-durante-inspecciones-a-talleres-y-depositos-de-chatarra-en-yabucoa-y-maunabo/" target="_blank">Detectan múltiples violaciones durante inspecciones a talleres y depósitos de chatarra en Yabucoa y Maunabo</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-04 17:18">hace 11h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="Aún sin identificar hombre asesinado en Loíza">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/aun-sin-identificar-hombre-asesinado-en-loiza1/?utm_source=rss&utm_medium=rss&utm_campaign=aun-sin-identificar-hombre-asesinado-en-loiza1&utm_source=rss&utm_medium=rss&utm_campaign=aun-sin-identificar-hombre-asesinado-en-loiza1" target="_blank">Aún sin identificar hombre asesinado en Loíza</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-06-04 16:09">hace 12h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Humacao Hornets abre registro para su temporada de otoño de flag football">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/04/humacao-hornets-abre-registro-para-su-temporada-de-otono-de-flag-football/" target="_blank">Humacao Hornets abre registro para su temporada de otoño de flag football</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-04 15:56">hace 13h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Naguabo" data-titular="Maizales impulsa taller de costura para fortalecer destrezas y apoyar la economía familiar">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/04/maizales-impulsa-taller-de-costura-para-fortalecer-destrezas-y-apoyar-la-economia-familiar/" target="_blank">Maizales impulsa taller de costura para fortalecer destrezas y apoyar la economía familiar</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-04 15:49">hace 13h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Las Grises de Humacao regresan a casa para enfrentar a Guánica en la LPSF">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/04/las-grises-de-humacao-regresan-a-casa-para-enfrentar-a-guanica-en-la-lpsf/" target="_blank">Las Grises de Humacao regresan a casa para enfrentar a Guánica en la LPSF</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-04 15:45">hace 13h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Buscan a menor desaparecido en Caguas">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/buscan-a-menor-desaparecido-en-caguas1/?utm_source=rss&utm_medium=rss&utm_campaign=buscan-a-menor-desaparecido-en-caguas1&utm_source=rss&utm_medium=rss&utm_campaign=buscan-a-menor-desaparecido-en-caguas1" target="_blank">Buscan a menor desaparecido en Caguas</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-06-04 15:41">hace 13h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Ceiba" data-titular="Populares de Ceiba y Maunabo escogerán nuevos presidentes municipales">
+                    <td><span class="muni-tag">Ceiba</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/04/populares-de-ceiba-y-maunabo-escogeran-nuevos-presidentes-municipales/" target="_blank">Populares de Ceiba y Maunabo escogerán nuevos presidentes municipales</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-04 15:32">hace 13h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Culebra" data-titular="Playa Flamenco: una de las mejores playas del mundo 🌊✨¿Quién más quiere estar aquí ahora? 😍 Crédito: @juan.santana.50 #PuertoRico #Culebra #Reels #FPV #PlayaFlamenco - facebook.com">
+                    <td><span class="muni-tag">Culebra</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxNbWFIOGs2VW1RSXRBU2JnM25hQjhOdGJ3RXBuVlJIU1NLYkpkY0lwNmJKaGRuTndOSUJ3NzRqTlZDS2xqekQ3R05manJjSG12YTZJbjVtaEJXWmtxNnVab1lObDhmZXFOZnN1VzdUcjZ4UUowYVVkSEdrUnJNd2NXTTZucGpuc2RnR01Tb3RFS3BNT1VxZTI0X2MtUGg3dEpiOTlNMGd2TmVMcWdkYnhUWXlUSEt6NHFTbHA2b1hOY0xKeUxuMFFYS3N0SkJkdFNwYWM2T2phcUJKWFIzdDExMjBrS1JGdDE1dnVtZTMzcGY5YUU?oc=5" target="_blank">Playa Flamenco: una de las mejores playas del mundo 🌊✨¿Quién más quiere estar aquí ahora? 😍 Crédito: @juan.santana.50 #PuertoRico #Culebra #Reels #FPV #PlayaFlamenco - facebook.com</a>
+                    </td>
+                    <td>FB - Culebra</td>
+                    <td class="time-ago" data-date="2026-06-04 13:31">hace 15h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbHNFdjd3RnI4VkxycThWTTFzMTJoN3lFRzB1ZkZiTnlPUGl5M1ZFRzVnQXprQnpvYmVhdmZUVlg2cGg1S2pYNXFwTUpuT0RnZEM5aGMtbWRTVUVkTktOYm1VMEttQlMwQ2pXZWRxX3NSeG5DcHc3Y3ZUc1p3VkRnaWVpVEtUUXdEOVo4?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
+                    </td>
+                    <td>FB - Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-06-04 13:01">hace 16h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Río Grande" data-titular="Fondo internacional adquiere el Hyatt Regency Grand Reserve en Río Grande - Metro Puerto Rico">
+                    <td><span class="muni-tag">Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPc0Vhelk3S1pfaE1RZEVsQ25ydmNYakRmdkJGNXRBOHFHWUljRmlVU2s1WGhIR3czakRhM2drMFZYUENjbHAyNUU3Zl9jNmViMUczbldkcUpjbnlfc3dRNWJ1di1hMDJXcTV5cjdEckRCOVBySWVIX0VsMDF2WW5udU9HVE1CbllITlgybEFOY3hpZ1dwdmdNMFg2TmxsbVROeU1JRUJpM1hTMGhPN3Q0TGJmc3oxUdIBygFBVV95cUxPSHZCbFRyVHF3eGhPcUdCNklhUkNMVm9vRHo2T2lBNFdBYWMwVS04ODhrSDJnOUF6OWxuMk1tTnhqRkhOaXlUaXF1VU0wWGRWM0w2N2FwX25aNW9lZzVjR3NtekxESnpvenJEUjcxeFRaVFBuaGJ4bUdBcG1WR1hBbDFCMy0tcUpoM09uUGVxcm03M2YyWDMtZVc4Szl3WEg0ZVZSX2ZjQUtiRTZVa1FIVEpSWUY0VkpSNllJSERMcFJwTVg4ZUEwckp3?oc=5" target="_blank">Fondo internacional adquiere el Hyatt Regency Grand Reserve en Río Grande - Metro Puerto Rico</a>
+                    </td>
+                    <td>Río Grande</td>
+                    <td class="time-ago" data-date="2026-06-04 12:39">hace 16h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="CLASES DE PREPARACIÓN DE PARTO Y LACTANCIA en el Centro 2 Gen y Biblioteca Ricardo S. Belaval de Fajardo 🤰👶🏻 SE DISCUTIRÁN TEMAS COMO: • Embarazo • Proceso de Parto • Parto • Post Parto • Técnicas de relajación • Los primeros minutos c - facebook.com">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPTWVlcF9mLWxJU0dJREpvQWl4US1OV1VTekRXME9WUVFXbG9saUhyeXV3aDVMZXlIVnk5QUFNMzhzTUpnQWs5XzBoQTdFRkU2NFhGVU9WM2E3MmpxeWJhaE8zY29NMjhkQm1CTzNRaWQ0MUh1QkF1SXVFMXVPNEVISmcyNVQ4bGVaRmhsZWhSSDJoWjBzYzJ4clZQb2tIdw?oc=5" target="_blank">CLASES DE PREPARACIÓN DE PARTO Y LACTANCIA en el Centro 2 Gen y Biblioteca Ricardo S. Belaval de Fajardo 🤰👶🏻 SE DISCUTIRÁN TEMAS COMO: • Embarazo • Proceso de Parto • Parto • Post Parto • Técnicas de relajación • Los primeros minutos c - facebook.com</a>
+                    </td>
+                    <td>FB - Fajardo</td>
+                    <td class="time-ago" data-date="2026-06-04 11:21">hace 17h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTFB3UUhnQmpCQXk0Y2tVbzY1c3k5MTdYM2xHSm5sb2tEVDgxVUVjZ0Z6MFFmS0Q0dEZlLTVoWjdsQkQtTDBTZE9mbzF1dHR3LVBPdWtzWWQwa3FrZDk2MTFRUTJyVVY5SU12WFl3MGNZRnNIN0dwa1YwanZQSWlYdw?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
+                    </td>
+                    <td>FB - Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-06-04 11:00">hace 18h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYm5pTGxqdlRZeTJrSndxVng0QUVvTUhlRWp1QklPYldNWS1mVFp4andQeWN4bVcxdkIwdGxKVUx0Yzkzc011OUZJLWhqODh3WkEteEZhRkVOVWlzaHg1VWdqbVZWdFF6LTUyTXFmZ1RtTVpvOVQtNnhGdzE2dlNCcVlsamRWSlI5R0Yw?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
+                    </td>
+                    <td>FB - Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-06-04 11:00">hace 18h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="Asesinan a hombre en parque de pelota en Loíza - Telemundo Puerto Rico">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxORmZqS1ZSY3RQbXpGektRUDJ5NEhheF83Yl9MSjBVaUhzVF9RdlZRWDFpVjdNbWdCb1FKVXJqcjZDZTY1WjFycGE4b0Z2R2UxWTJBa2kzOUpGZlNpVDBBYWtnTjJBcXlKbzZ6QlRhTkJ2OURrUXJvWTdNVk8xYU9XclBnTHFLWVlGTFdweVhsVS0tNFhDMjgyV3lrZDN1OWwtZXFMczEyUdIBrwFBVV95cUxPS0xNWmJtWGtfMmxMLWNWWURGV1lzUE9KMUNPYU1obFJiZWMtNFlYZXFrQkpLYW9OOHJMRENYTHZ2Z2FKbjFWMFpab2lVNXQxZmVJMWJuLU9PN2w0cUNGbldwTGFkdVdWVlNMZTA0bXFpRDZIenFlTG83SWYtZ3ZuQldyRGVHT0xMQUM4aXVBWEMxcHRORTJodzI0T2YwckdidWZ6WjhfVHdsRWdzcHdF?oc=5" target="_blank">Asesinan a hombre en parque de pelota en Loíza - Telemundo Puerto Rico</a>
+                    </td>
+                    <td>Loíza</td>
+                    <td class="time-ago" data-date="2026-06-04 10:22">hace 18h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="🚨📢 Oportunidad de empleo en el Municipio de Canóvanas ¿Quieres servir a tu comunidad y ser parte del equipo que responde cuando más se necesita? El Municipio de Canóvanas anuncia la disponibilidad de la plaza de: 👨‍🚒 Auxiliar de Manejo de Emerge - facebook.com">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxNbEJFS0xLN1dQS0RITk5hbWhVQ3UtdUZmWnBBVWlfdWZTQ2NqYnZDbE1YY3JGVHJJcnd1VW5fc1Zrd2RfbFkxWm5ycW9vVWhfZ2ZXWlNkTkt6cnJzbThjSnExRVUyZ3JRZkljOVdTbUtObGUwN0lGLVYzeENDalRvT1lrRkFLaGZRa01lUmFBaThyc09TeEtTWFA4OU55ckJ5VDFPTnI1ZWJSRWVsclNtblRNQlRqNU9lU1R1WktMMEc3RWZaeDUxbjcxcWZ6UnhQR3AxOVJ1eUx6OFlpampBOHNTWDAxMTFnQVpV?oc=5" target="_blank">🚨📢 Oportunidad de empleo en el Municipio de Canóvanas ¿Quieres servir a tu comunidad y ser parte del equipo que responde cuando más se necesita? El Municipio de Canóvanas anuncia la disponibilidad de la plaza de: 👨‍🚒 Auxiliar de Manejo de Emerge - facebook.com</a>
+                    </td>
+                    <td>FB - Canóvanas</td>
+                    <td class="time-ago" data-date="2026-06-04 10:05">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo added a new... - Municipio de Luquillo - facebook.com">
                     <td><span class="muni-tag">Luquillo</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOWUZiS2tOWmw0clJlV1Z1cDc1X1RsSERnbng5TnJUS0tDWEZIalEwTnM1T1FYcmpMZjJlaUhYdXhQLTlEb3VHT2VobWVTSjYxWUdvOHRFbFdnN204emlyZkxTZjMtYnVxM1ZoTkl3TU84VlNXSVcyZmxqQnhiSFhLNU5USjVaRWpZWG54NGFB?oc=5" target="_blank">Municipio de Luquillo added a new... - Municipio de Luquillo - facebook.com</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTFBHQjkteEZzNVVySEl1WjJuS2FnMG1VWHIyWHNuajdIVTNENjE4X0pKZkpJQ05rb3E1a1dfMHZINDBXa0xGa1JJcjJKcGI1Zno3eV9qelhVSFRTOVFSMldvbHRCajFuYy1sZGI1bTVyWFNNY2JqVDY4dA?oc=5" target="_blank">Municipio de Luquillo added a new... - Municipio de Luquillo - facebook.com</a>
                     </td>
                     <td>FB - Luquillo</td>
-                    <td class="time-ago" data-date="2026-06-03 18:39">hace 11h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Ceiba" data-titular="Senado investigará el futuro de Roosevelt Roads y el alcance de las operaciones militares en Ceiba">
-                    <td><span class="muni-tag">Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/06/03/senado-investigara-el-futuro-de-roosevelt-roads-y-el-alcance-de-las-operaciones-militares-en-ceiba/" target="_blank">Senado investigará el futuro de Roosevelt Roads y el alcance de las operaciones militares en Ceiba</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-03 18:07">hace 11h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Hallan cuerpo de turista en Vieques">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://radioisla.tv/hallan-cuerpo-de-turista-en-vieques1/?utm_source=rss&utm_medium=rss&utm_campaign=hallan-cuerpo-de-turista-en-vieques1&utm_source=rss&utm_medium=rss&utm_campaign=hallan-cuerpo-de-turista-en-vieques1" target="_blank">Hallan cuerpo de turista en Vieques</a>
-                    </td>
-                    <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-06-03 18:06">hace 11h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Impulsan atraer vuelos internacionales al aeropuerto de Vieques - NotiUno">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxOcG1telk2NXpQTGdySS14YjJhVE90a0tkSk9tTHZiUElDMnkySi13NUN6eTRsVW9XQkpfZWlhMVVzYTlMRElOSTlfVko2SmRWRWJ5WHJIUHZkZ1Q4cExNelNYRDRndVpNY2NkRUlFLTVJckN3WEpib3dXdzdyelZJRHNJcFFIX2RxWE5FaXdZY2lSdURoek5MV3FBVDhzMFB0bDk0TkdwR2lNbkxsdWJVWlhIdjVOVzR0U3JrbkpaRFQ5Rmt0SEhpOFlwRUxOblQwV29GUWJDOHpMNFRyX1pDUnlyS3F5R21IX1hV?oc=5" target="_blank">Impulsan atraer vuelos internacionales al aeropuerto de Vieques - NotiUno</a>
-                    </td>
-                    <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-06-03 17:37">hace 12h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Ceiba" data-titular="💦🎓El municipio también auspiciará un pasadía para todos los graduandos residentes de Ceiba en el parque acuático del Albergue Olímpico, en Salinas - facebook.com">
-                    <td><span class="muni-tag">Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxQYWpacjZZeFJ1Wm9zWG5DeDJvbS1BVnpicTJDWnlTaUNpZWc2X1hBdzdhaHB2RE9JRVdmM2FQcnFCd1NLSllxdzBjNHlodXRQUnN1cXkydUZzQWxpWWRYSHNnaS1pcGhBQ1ZPYXlQZlZoZ0x0VjFIYkRLOW10QmZSVEVYd3ZHT2lpTWFyRHotS0lLN3NrdGMyenZWZEZWTWg4SW4yZy1KZDNQc3JfVGxMNVd5dkNxTlZfZGkxNEtCYmcxNTl4aWtwdjV2blBNVDc0LVZfc3N5ekhTLVhldUItWmhQamZiRHM?oc=5" target="_blank">💦🎓El municipio también auspiciará un pasadía para todos los graduandos residentes de Ceiba en el parque acuático del Albergue Olímpico, en Salinas - facebook.com</a>
-                    </td>
-                    <td>FB - Ceiba</td>
-                    <td class="time-ago" data-date="2026-06-03 16:30">hace 13h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Hallan muerto a residente de Texas en baño de residencia en Vieques">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/hallan-muerto-a-residente-de-texas-en-bano-de-residencia-en-vieques/" target="_blank">Hallan muerto a residente de Texas en baño de residencia en Vieques</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-06-03 16:26">hace 13h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Investigan muerte de hombre de Texas en residencia de Vieques">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/06/03/investigan-muerte-de-hombre-de-texas-en-residencia-de-vieques/" target="_blank">Investigan muerte de hombre de Texas en residencia de Vieques</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-03 15:29">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Investigan muerte de turista hallado en una residencia en Vieques - Noticias de Puerto Rico hoy">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPaG5aWlQzd2t4a1E4NnZWdlJjbGJZMmpvWFd0V0VKZVh6ZlRaVXRNMXdKc0FmN2dqOUMyQkxMTTBqb05qaVhIS3RtMnRBRFg5SkRkUXE1TkVQcUpzRVZhbEVKZ1JHWnJ5NzhZaFZGVHp3X3hPZlFvY0NHNHVvdHFnWWRBZnRCV2VqdXRZRWMzaElYdHhRTjdUa0NtTzZ0N253QUx2OF9NMmttQkJ1Y1I5OXg0MTMtTktzWVE?oc=5" target="_blank">Investigan muerte de turista hallado en una residencia en Vieques - Noticias de Puerto Rico hoy</a>
-                    </td>
-                    <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-06-03 15:26">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Encuentran sin vida a hombre de 45 años en Vieques - Metro Puerto Rico">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxONklseGhIZ3pMS014ajNDWWN3NzlPVVBmTVJLNjBrd2RZVXJ6bTZWa2UwbVZMbERkSWptMlFsNloyT09Rdi1WVWNIcDBEa3dZcUdVdDdTR2FnN1V4cjFZQ3k0TGlIbFNtNUFmYmkzT0gwbzg5QWZwNXd1b0pYbHBKWm9JUS0yM3BQY2NTNFdYVkk0WEloeWg40gGrAUFVX3lxTE1RLVNJZlUtUkJYU2VzYTBmaHNiTUFBQ3RtMWxoRHhEUS1vLXoxTnRHdlluM0NodVpHYWF6NXVlcHV2YlFoNEdBQndmLTJwUEZaR2N1Sk1wekg3WXlnOTlTVHFTQkIzQTkwUFJSdEZpbXkyMG03U0dqemVBVk9iLVNCZW85WXVMRG1LekRmcS0tV09uN3R2RGFRMlBOeGxpUklYdU9UajQ1cmd6QQ?oc=5" target="_blank">Encuentran sin vida a hombre de 45 años en Vieques - Metro Puerto Rico</a>
-                    </td>
-                    <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-06-03 15:20">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Johnny Méndez impulsa expansión de operaciones en el aeropuerto de Vieques">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/06/03/johnny-mendez-impulsa-expansion-de-operaciones-en-el-aeropuerto-de-vieques/" target="_blank">Johnny Méndez impulsa expansión de operaciones en el aeropuerto de Vieques</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-03 14:58">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Ceiba" data-titular="Municipio de Ceiba premia a graduandos con dinero: entérate cuánto - Metro Puerto Rico">
-                    <td><span class="muni-tag">Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR0lSWnVwaVU5OGM3YTlLYkRDdlZQOWxqUUREbU9SUFdkcDdDbDV2R3JBSGdPRU1LQzBJc2YtQ043ZDg2TUNHZWxUblhKdzFtNVlERU9oZXpGa005eWQ1bkNfWkh2MWRsY3ZNcEEtVnR5Q1Q3TmtNTG9JTlFvNXpoZHFaeTRLS0hncVl6ZkRZZmp5emphSzJCcnkyRm9VWkhLMXlDX2U2Yi1uRHPSAb8BQVVfeXFMTm5ITmFrZXY0OHlPOFhvME9FRWJOaExFMUxuTmNUUy1HSnJRemFncGlNaVpZT05WZUpWZTFyOTRTWG9VVV8xNl8wck1UOTdOYXFZWnhDSmRuQW1tc0xhUTJfSTJ3ZVFFMjRBMGZjY29wSmtqU2hrMkE4a2tQOTNXeXN6bEhtWURNYVlIV0YzUkhNXzdRaXR3RmpZX3R4YTRuQjlEUXp1RS1XQUUwSUYtby04eDJWRV92ZlhLOWxQZGc?oc=5" target="_blank">Municipio de Ceiba premia a graduandos con dinero: entérate cuánto - Metro Puerto Rico</a>
-                    </td>
-                    <td>Ceiba</td>
-                    <td class="time-ago" data-date="2026-06-03 14:48">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Fajardo continúa MEJORANDO RUTAS HACIA TU DESTINO FAVORITO 🛣️ 🚧 Atención residente de BELTRÁN eI Gobierno Municipal Autónomo de Fajardo informa que se están realizando trabajos de REPAVIMENTACIÓN DE CARRETERAS en su comuni - facebook.com">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxQYXlOZGdIUHMtdXg4NWxjTEFSNFBkZ0hLOEI4VnJFT2xCLUFMSE81NWtKNHRxUFNmOFAxQWNwYUxpSU56UUJJRjNyemc4M3VwNmUwRkVidDNrbkpLOFN3X013YV9QQktwd3VPSktBUFg3SmpGYnhxOUpadmFua0RHR2FYbUlFYVVDSU9oc2FJRzg4RGZwbkhWMlRNVGYyR3YwMGhXaVdWOWE5Y1dnWXJINjdwbHRkRmlMRGFEN3NHNkJweXQtVFFkZE1IdEVnMHZYb3ZCUVR6VHo0aG56UGpQLUQ4VUlEMF84eE01WnA2cXdNcVY1?oc=5" target="_blank">Fajardo continúa MEJORANDO RUTAS HACIA TU DESTINO FAVORITO 🛣️ 🚧 Atención residente de BELTRÁN eI Gobierno Municipal Autónomo de Fajardo informa que se están realizando trabajos de REPAVIMENTACIÓN DE CARRETERAS en su comuni - facebook.com</a>
-                    </td>
-                    <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-06-03 12:47">hace 17h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB2V3ZvRWZ6LUpkb1lET3RQdjdHdWJBeDRDLTM3TE5sdWhjSUdsV2FHX056ejZFU01LbnZSTzZqODJQdWhjNTlwRlhMWmJ1a1Vfb0ZKQnhwZ3Jual9zUWlZcXF1VlBFMTg?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
-                    </td>
-                    <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-06-03 11:32">hace 18h</td>
+                    <td class="time-ago" data-date="2026-06-04 00:45">hace 1d</td>
                 </tr>
                 
                 
@@ -699,61 +759,41 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Carolina" data-titular="Noticia Fake de AAA">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        
+                        <span class="badge-nuevo">NUEVO</span>
                         <a href="https://www.carolina787.com/n/noticia-fake-de-aaa" target="_blank">Noticia Fake de AAA</a>
                     </td>
                     <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-06-04">2026-06-04</td>
+                    <td class="time-ago" data-date="2026-06-05">2026-06-05</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Noticia Fake de DTOP">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        
+                        <span class="badge-nuevo">NUEVO</span>
                         <a href="https://www.carolina787.com/n/noticia-fake-de-dtop" target="_blank">Noticia Fake de DTOP</a>
                     </td>
                     <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-06-04">2026-06-04</td>
+                    <td class="time-ago" data-date="2026-06-05">2026-06-05</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Noticia Fake de LUMA">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        
+                        <span class="badge-nuevo">NUEVO</span>
                         <a href="https://www.carolina787.com/n/noticia-fake-de-luma" target="_blank">Noticia Fake de LUMA</a>
                     </td>
                     <td>Carolina787</td>
+                    <td class="time-ago" data-date="2026-06-05">2026-06-05</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Dan último adiós a Gemillie Lozada, víctima de feminicidio en Carolina">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.carolina787.com/n/dan-ultimo-adios-a-gemillie-lozada-victima-de-feminicidio-en-carolina" target="_blank">Dan último adiós a Gemillie Lozada, víctima de feminicidio en Carolina</a>
+                    </td>
+                    <td>Carolina787</td>
                     <td class="time-ago" data-date="2026-06-04">2026-06-04</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Policía busca identificar sospechosos de robo en supermercado de Carolina con amenaza a gerente">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.carolina787.com/n/policia-busca-identificar-sospechosos-de-robo-en-supermercado-de-carolina-con-amenaza-a-gerente" target="_blank">Policía busca identificar sospechosos de robo en supermercado de Carolina con amenaza a gerente</a>
-                    </td>
-                    <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-06-03">2026-06-03</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Hombre amenaza con cuchilla durante robo en farmacia Walgreens en Carolina">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.carolina787.com/n/hombre-amenaza-con-cuchilla-durante-robo-en-farmacia-walgreens-en-carolina" target="_blank">Hombre amenaza con cuchilla durante robo en farmacia Walgreens en Carolina</a>
-                    </td>
-                    <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-06-03">2026-06-03</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Roban armas y equipo policial de vehículo en urbanización Vistamar de Carolina">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.carolina787.com/n/roban-armas-y-equipo-policial-de-vehiculo-en-urbanizacion-vistamar-de-carolina" target="_blank">Roban armas y equipo policial de vehículo en urbanización Vistamar de Carolina</a>
-                    </td>
-                    <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-06-03">2026-06-03</td>
                 </tr>
                 
                 
@@ -906,7 +946,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-06-04 06:05:49 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-06-05 05:03:41 AM<br>
     Actualización automática cada 30 min
 </div>
 
