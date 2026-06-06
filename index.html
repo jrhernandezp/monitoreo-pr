@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-06 06:08:09 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-06 06:12:51 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">41</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">4</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">39</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-06 06:08:09 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-06 06:12:51 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -370,7 +370,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">7</div>
+            <div class="muni-count">6</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
@@ -413,9 +413,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">3</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Cataño')">
+        <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
@@ -454,7 +454,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/tribunales/videos/es-un-inepto-que-es-esto-a-gritos-en-el-tribunal-de-san-juan-contra-el-jefe-de-la-aaa-293898/" target="_blank">“Es un inepto. ¡Qué es esto!”: a gritos en el Tribunal de San Juan contra el jefe de la AAA</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-06-06 06:06">hace 2min</td>
+                    <td class="time-ago" data-date="2026-06-06 06:11">hace 1min</td>
                 </tr>
                 
                 
@@ -478,16 +478,6 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>Loíza</td>
                     <td class="time-ago" data-date="2026-06-06 00:56">hace 5h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE1oTHlybjVVSmNmSVZXQ1lFeFBUZE4yOTd6ejhaVVR1aFUwMm1Gd2lrdndyUmFNbVhRRGs2d2o0M2U5OTU3VDlHOEpxblBOc21jMV95R2FNYjFPZUxuRWhfVzltb2FSRGdMUEtIWVlfUGtJM00?oc=5" target="_blank">Municipio de Vieques - facebook.com</a>
-                    </td>
-                    <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-06-06 00:06">hace 6h</td>
                 </tr>
                 
                 
@@ -531,16 +521,6 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>NELPR</td>
                     <td class="time-ago" data-date="2026-06-05 23:15">hace 6h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Lo Sé Todo. . Conoce a las candidatas de MISS UNIVERSE PUERTO RICO desde Caguas. 📲ACCEDE A WAPA.TV/PROGRAMAS/LOSETODO/ PARA MÁS CONTENIDO DEL PROGRAMA. #LOSÉTODO - facebook.com">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxOa0FGY1k0X3A4akpfdnJZbzl4ZGZHdWE1N05rRXJKVC1RM21LWUdqQzN5cFZOdXJHSTdtbE1hTTJxakVpa29sMGozQU85dHhFMi1pQlJMOGMxQWxtVFJUeGY2Y2djTnp2bzhHbGZDakFLbFhDcW01R0RKb1lPMmVZTWxXMHZvd2dSTFNEY0J0NzVpaHZtdUhBd2hpMWRCTWN2SVpVN1VOZFVDZmRlTTR2S0lZczJyQUFyc0tRT1Izc2hQSWtyWERZdlQ2SkFaakFUWDNibTB4LU8?oc=5" target="_blank">Lo Sé Todo. . Conoce a las candidatas de MISS UNIVERSE PUERTO RICO desde Caguas. 📲ACCEDE A WAPA.TV/PROGRAMAS/LOSETODO/ PARA MÁS CONTENIDO DEL PROGRAMA. #LOSÉTODO - facebook.com</a>
-                    </td>
-                    <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-06-05 23:00">hace 7h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Antilles Military Academy en Trujillo Alto cierra después de 67 años - Telemundo Puerto Rico">
@@ -613,6 +593,16 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-06-05 19:01">hace 11h</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFBldXljc05ram01SXh3VjlHWUdmdUlMNENVNmpobzhsTGJTUHlFZHRnVm9JRjlvU3M4UzF0YjBISERXdmV0d0tjUGdDUXd1bnpoVTBiaGpfMWQ1UDZVN1ZzZDc0UGE5bEtQX2pzb1BDX2JUdzQ?oc=5" target="_blank">Municipio de Vieques - facebook.com</a>
+                    </td>
+                    <td>FB - Vieques</td>
+                    <td class="time-ago" data-date="2026-06-05 18:49">hace 11h</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Anuncian “cierre total” de colegio en Trujillo Alto tras 67 años de servicio - Primera Hora">
                     <td><span class="muni-tag">Trujillo Alto</span></td>
                     <td class="titular-cell">
@@ -656,7 +646,7 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="Genera PR tendrá a cargo microredes para las islas municipio de Vieques y Culebra - Metro Puerto Rico">
                     <td><span class="muni-tag">Vieques, Culebra</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxOX0dZeVdqNlREanlIZ3hPVHY5ZTExS3FhWHl2cUl2ZFBaNC1UZGRfYjlzUHpleFlHcjBIM0pKQmg0aEpwNGRWSjZKQ1o1UnB5amdxWmhWTTFWSmJZWUtqSm9nYThSUlBQNXBKRGt1clNyMVlSYzlNdHpRNmphU0xxNUd0bGlSRjRTNVBCZmI3M1I5dHpyeENWZkxHWlM1dk1pSHJRSDdxM2V1VDRtZ1FLTnJGcThWbm5WQ1NZeG03Q2zSAdQBQVVfeXFMUEFpeDh0VnNKcmRqVTdMOHF5VUpqUm5ZRmZIa3hacHN0TmhGakNWeU1OTWRKaDVTbzIyYUxEQzRnaHdXQ3d2b0pHQkU1UzRCTTVlbTdqblY4Qkw0eWdkODJ0a0x0X3lLYUQyM05SVXJrMVl4d1hWd3JRVThmRHM3SlRZNXZXRGoybHNUVnpvM3lMbUlXR3g3WDJIWTZuaUctU3YzNlUtT0ZIZVFBell5V1NSLXhkbkNLTDNhWjIySHJ5ajl3enN5Zk4yWGttM0JvajFOaGY?oc=5" target="_blank">Genera PR tendrá a cargo microredes para las islas municipio de Vieques y Culebra - Metro Puerto Rico</a>
                     </td>
                     <td>Culebra</td>
@@ -720,7 +710,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxNTmoxZm9YUnNBM09WdllmMllOekxxUWE2MXNoNVktWmlkMWhiVk50VW9hTUIwX1BhaVhLNFhNUWpwcHk1OWxqR0pxTk5hWThEV2xKdnlQOFU4ZkpsNlkzeVpGeHFDZEVneUs0cXViOGxWQU5RTTJ5R0JtNGRUUkxVdjZJZWh5eUFBUVRyX1EzSDBaRzZPNHdEbmpSa3pValhfMmFQd2FoeWlOak95bWs0RjJQRmV3cDZvU1VIMlk1SGRlRm9tekhCWWl6eHNWZkdJMEplS0ozV1l2WlZmbFVRNThCV25BY0xM?oc=5" target="_blank">Identifican a hombre asesinado en estacionamiento de negocio en Caguas - wapa.tv</a>
                     </td>
                     <td>WAPA TV</td>
-                    <td class="time-ago" data-date="2026-06-05 16:11">hace 13h</td>
+                    <td class="time-ago" data-date="2026-06-05 16:11">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Secuestran a conductora en Bayamón y le tumban auto a hombre en Trujillo Alto - Metro Puerto Rico">
@@ -731,16 +721,6 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>Trujillo Alto</td>
                     <td class="time-ago" data-date="2026-06-05 14:23">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9lako0Qkw0NFZtRmdGRUoyNnE0QlZ6Z05IdVhVWlJGdDlvQk41R2NmZy01NGtsOVRTQ25ucU00ZHZzQXpYUVZHM2c5RnEwM1BXVEp5ZE9TWjd6X2ZxdUoxX0tlZllsZHM?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
-                    </td>
-                    <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-06-05 14:01">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Dos sujetos armados roban vehículo durante “carjacking” en Trujillo Alto - Noticias de Puerto Rico hoy">
@@ -770,13 +750,13 @@ tr:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/autoridades-invevstigan-occiso-baleado-el-negocio-el-nuevo-amanecer-en-caguas/?utm_source=rss&utm_medium=rss&utm_campaign=autoridades-invevstigan-occiso-baleado-el-negocio-el-nuevo-amanecer-en-caguas&utm_source=rss&utm_medium=rss&utm_campaign=autoridades-invevstigan-occiso-baleado-el-negocio-el-nuevo-amanecer-en-caguas" target="_blank">Discusión deja un hombre baleado y otro herido en el negocio el Nuevo Amanecer en Caguas</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-06-05 11:09">hace 18h</td>
+                    <td class="time-ago" data-date="2026-06-05 11:09">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="▪️Asesinan a un hombre frente a un negocio en el pueblo Caguas. La División de Homicidios de Caguas investiga un asēsinatø reportado a las 2:54 de la madrugada de hoy, en la carretera PR-172, específicamente en el estacionamiento del negocio El Nue - facebook.com">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMi8AFBVV95cUxQVWN6a1htV3RnbnpEMjdVZGNPT1JVcGpDeFpYS29HSkJuTGxYazNlMDJQNDZoZVhaaXlfdjZkT3FZYjc5cC1FWGN5QUYyc2pNbDl1UGgyeW5TbnphRmwwNlR2M3RCdjM0dmZsMTlZQ21hUW93UU1xTDhrUlVDdFlhUkVPdXVuZFRIejZQMTFkUVBwZFJfU3ktVG9WVHFKUU5xSWRvRTJKVlRIT3JZNEdUWGRUXzNQdmxIMlVzQzVsUmgzcjZyc0ZDRkZUYUNaZ3BlcmRTZHFNY3Ztb1hBTzhQanphQjVWUEVVNFowVGdneTc?oc=5" target="_blank">▪️Asesinan a un hombre frente a un negocio en el pueblo Caguas. La División de Homicidios de Caguas investiga un asēsinatø reportado a las 2:54 de la madrugada de hoy, en la carretera PR-172, específicamente en el estacionamiento del negocio El Nue - facebook.com</a>
                     </td>
                     <td>En Contacto 787</td>
@@ -1016,7 +996,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-06-06 06:08:09 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-06-06 06:12:51 AM<br>
     Actualización automática cada 30 min
 </div>
 
