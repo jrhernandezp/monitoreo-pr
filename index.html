@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-07 06:05:28 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-07 06:10:30 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">16</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">8</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">15</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-07 06:05:28 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-07 06:10:30 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -346,19 +346,6 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <!-- BREAKING NEWS -->
-
-<div class="section breaking-section">
-    <div class="breaking-banner">
-        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
-        
-        <div class="breaking-item">
-            <span class="time">hace 2min</span> —
-            <a href="https://www.elnuevodia.com/noticias/locales/notas/averia-en-cable-electrico-de-vieques-a-culebra-obliga-a-encender-generadores-de-emergencia/" target="_blank">Avería en cable eléctrico de Vieques a Culebra obliga a encender generadores de emergencia</a>
-            <span style="opacity:0.6"> [Vieques, Culebra]</span>
-        </div>
-        
-    </div>
-</div>
 
 
 <!-- MUNICIPALITIES -->
@@ -383,7 +370,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
@@ -391,9 +378,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
+        <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
@@ -433,12 +420,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         
     </div>
@@ -458,38 +445,22 @@ tr:hover { background: var(--surface2); }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
                 
-                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
-                
-                <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="Avería en cable eléctrico de Vieques a Culebra obliga a encender generadores de emergencia">
-                    <td><span class="muni-tag">Vieques, Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/locales/notas/averia-en-cable-electrico-de-vieques-a-culebra-obliga-a-encender-generadores-de-emergencia/" target="_blank">Avería en cable eléctrico de Vieques a Culebra obliga a encender generadores de emergencia</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-06-07 06:03">hace 2min</td>
-                </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Esteban Santos: de Caguas a dirigir las operaciones globales de Amgen">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/negocios/empresas-comercios/notas/esteban-santos-de-caguas-a-dirigir-las-operaciones-globales-de-amgen/" target="_blank">Esteban Santos: de Caguas a dirigir las operaciones globales de Amgen</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-06-07 03:10">hace 2h</td>
-                </tr>
-                
-                
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="📣 Oportunidad de empleo en el Municipio de Canóvanas ¿Tienes experiencia en el manejo de equipos de comunicación y deseas aportar a la seguridad de nuestra comunidad? La Oficina Municipal para el Manejo de Emergencias de Canóvanas cuenta co - facebook.com">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxPMTFKSVY5UHJnZ0FUNEZ1WFZFSFFpSkxPVFptWURrUEo0TGJvRXpHdmJhRDdJQjI5WTVTWkNJTWR1aXpEUGpIaUwwZDNraFZtd1BKemUtX0NpbllDT1VUV3ZPTndZNjlZNzQxZXNmVlFIa2NiaDI3ZDBBei1uc203c2N3NEpMbHlObE9yN1pidThfNmdfajNHRE5qMWRQM0tPZFBFSU96VTNkdE45MWFoUVFTUFFtRHF4TG1qWVZnVmo5cXVETlUtUnU5YjJIazREWmozSXBreXVqLTNzMDZOU2dPRTVaTVBBUnc?oc=5" target="_blank">📣 Oportunidad de empleo en el Municipio de Canóvanas ¿Tienes experiencia en el manejo de equipos de comunicación y deseas aportar a la seguridad de nuestra comunidad? La Oficina Municipal para el Manejo de Emergencias de Canóvanas cuenta co - facebook.com</a>
+                    </td>
+                    <td>FB - Canóvanas</td>
+                    <td class="time-ago" data-date="2026-06-06 22:53">hace 7h</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="En Loíza también pasan las de Caín por la falta de agua - Telemundo Puerto Rico">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPN3lwVlIyZFNwSTRicG1EV1FKX2FmdW42VklkRmN2QkFReXdocENLMXY4STNuX20wTWZZdFA5dElLRzJlVExkdjNqZHdMUmY1Y214RUNoN3l6TEoxR1BhVWprMlg1YnlPYzlIUWZGUENTOE9seWxlc0pLSDcyOG5xck1oUlBpSTVkQXdlczF1Y2NUUnJhbFNDOXhOUHgtWmxGZ1djR29Uclh3eXFlZnJrb2UzdEVaQVlJalR6M2owRmE2SE0w0gHEAUFVX3lxTE83eXBWUjJkU3BJNGJwbURXUUpfYWZ1bjZWSWRGY3ZCQVF5d2hwQ0sxdjhJM25fbTBNZll0UDl0SUtHMmVUTGR2M2pkd0xSZjVjbXhFQ2g3eXpMSjFHUGFVamsyWDVieU9jOUhRZkZQQ1M4T2x5bGVzSktINzI4bnFyTWhSUGlJNWRBd2VzMXVjY1RScmFsU0M5eE5QeC1abEZnV2NHb1RyWHd5cWVmcmtvZTN0RVpBWUlqVHozajBGYTZITTA?oc=5" target="_blank">En Loíza también pasan las de Caín por la falta de agua - Telemundo Puerto Rico</a>
                     </td>
                     <td>Loíza</td>
@@ -573,7 +544,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPMV9FT3Z2VHlPam1VYThxaWdxUnYxNGtSTXBxZFFfclpiOFFPUFNHYWpFZlpEX3hkOUNhNVpNM1U3dnROS0NIZXpyVWRtdnpfcm1mbHFmdzNGWUZNaFhwcl9MYjVsbU9VUnpId21fSnRKNTlERnZhUFFKcWw0d29BaHZqdnQ3M0F0Mk9RSllyRUhkRFEwd3pZTVExWkZiLTdxbmg3NG5Kbl9uWEVHME9ET2ZUY0ptd9IBvgFBVV95cUxOa2VsZnRxRm10d3NNM3Z3S2E5NVZwaVdseEFLaFkxS25aV0xFVElQY2cyNGNjcUs4WVpMYVgxTEhlek5uS29qSTdISHMzMkZfenc3Y1hTRE1pNzZhMGhqTGduTE16bjY0Rm5jUVRZN3NUbnl6VjU5eUkwWFJieHA5YkNqQ19QeGw4Q1JKNFdGeFBNbUxHak5OT3NUZ1dCbG9aV1lYbGtjdzRWeGthVm4yRy1KbUU4LUdxZ3dHUEJR?oc=5" target="_blank">Ocupan drogas, rifles y municiones en residencial de Loíza - Telemundo Puerto Rico</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-06-06 14:09">hace 15h</td>
+                    <td class="time-ago" data-date="2026-06-06 14:09">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="San Juan lanza portal para reportar comunidades sin agua - Telemundo Puerto Rico">
@@ -779,7 +750,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-06-07 06:05:28 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-06-07 06:10:30 AM<br>
     Actualización automática cada 30 min
 </div>
 
