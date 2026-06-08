@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-08 06:13:01 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-08 12:02:19 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">26</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">32</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">17</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-08 06:13:01 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-08 12:02:19 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -346,6 +346,25 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <!-- BREAKING NEWS -->
+
+<div class="section breaking-section">
+    <div class="breaking-banner">
+        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">ahora</span> —
+            <a href="https://nelpr.com/2026/06/08/iglesia-reconoce-a-policias-que-auxiliaron-a-53-personas-durante-incendio-de-autobus/" target="_blank">Iglesia reconoce a policías que auxiliaron a 53 personas durante incendio de autobús</a>
+            <span style="opacity:0.6"> [Trujillo Alto]</span>
+        </div>
+        
+        <div class="breaking-item">
+            <span class="time">hace 5min</span> —
+            <a href="https://radioisla.tv/estamos-hartos-13-dias-sin-agua-en-pinones/?utm_source=rss&utm_medium=rss&utm_campaign=estamos-hartos-13-dias-sin-agua-en-pinones&utm_source=rss&utm_medium=rss&utm_campaign=estamos-hartos-13-dias-sin-agua-en-pinones" target="_blank">“Estamos hartos”: 13 días sin agua en Piñones</a>
+            <span style="opacity:0.6"> [Loíza]</span>
+        </div>
+        
+    </div>
+</div>
 
 
 <!-- MUNICIPALITIES -->
@@ -360,22 +379,22 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">3</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
+        <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">4</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
@@ -403,14 +422,14 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">3</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Humacao')">
+        <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">6</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
@@ -420,12 +439,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">2</div>
         </div>
         
     </div>
@@ -447,6 +466,46 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz del 8 al 14 de junio; 34 municipios en lista">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/06/08/se-ira-la-luz-del-8-al-14-de-junio-34-municipios-en-lista/" target="_blank">Se irá la luz del 8 al 14 de junio; 34 municipios en lista</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-08 15:58">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="El hogar inteligente deja de ser una promesa  y se convierte en una realidad cotidiana con SmartThings">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/06/08/el-hogar-inteligente-deja-de-ser-una-promesa-y-se-convierte-en-una-realidad-cotidiana-con-smartthings/" target="_blank">El hogar inteligente deja de ser una promesa  y se convierte en una realidad cotidiana con SmartThings</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-08 15:48">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Iglesia reconoce a policías que auxiliaron a 53 personas durante incendio de autobús">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/06/08/iglesia-reconoce-a-policias-que-auxiliaron-a-53-personas-durante-incendio-de-autobus/" target="_blank">Iglesia reconoce a policías que auxiliaron a 53 personas durante incendio de autobús</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-08 15:29">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Estudiante de Las Piedras es escogida por segundo año consecutivo para internado en MIT">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/08/estudiante-de-las-piedras-es-escogida-por-segundo-ano-consecutivo-para-internado-en-mit/" target="_blank">Estudiante de Las Piedras es escogida por segundo año consecutivo para internado en MIT</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-08 15:23">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="Genera PR se incorpora a proyectos de microrredes eléctricas en Vieques y Culebra - Noticias de Puerto Rico hoy">
                     <td><span class="muni-tag">Vieques, Culebra</span></td>
                     <td class="titular-cell">
@@ -454,7 +513,120 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxNY2sya0NPYkNBa2JDUUVMX3lOZGdUM0Ewa3pNbnJNdGx6Vmg1Sjdpbkx5eEhPTm9rMFJ3N2xfSS1mTEJLR0c3clZYMVkwalBEN2d6QkJKaU5MSjZMQkFlTlBUN2cxZUZRWC1mTUtzVFA4dXhDMjFhUjIwZ1FsakU0NzdtZTJRbXVvUEpYT3B5QW53Zm1CbFFEcXI0blprNmxpY0ZuWG1KY21TdlVmel9uSjlYUHZfNjlEbUxwamZ1OUQ5MTV2SjNmZ0Fsdm0?oc=5" target="_blank">Genera PR se incorpora a proyectos de microrredes eléctricas en Vieques y Culebra - Noticias de Puerto Rico hoy</a>
                     </td>
                     <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-06-08 09:15">ahora</td>
+                    <td class="time-ago" data-date="2026-06-08 15:15">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Naguabo" data-titular="Policía fortalece el diálogo comunitario con encuentros en Naguabo y Maunabo">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/08/policia-fortalece-el-dialogo-comunitario-con-encuentros-en-naguabo-y-maunabo/" target="_blank">Policía fortalece el diálogo comunitario con encuentros en Naguabo y Maunabo</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-08 15:03">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Determinan causa para arresto contra hombre acusado de fraude y apropiación ilegal en tienda de Humacao">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/08/determinan-causa-para-arresto-contra-hombre-acusado-de-fraude-y-apropiacion-ilegal-en-tienda-de-humacao/" target="_blank">Determinan causa para arresto contra hombre acusado de fraude y apropiación ilegal en tienda de Humacao</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-08 14:49">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Proyecto facilitaría que inversionistas adquieran más rápido estorbos públicos">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/ultima-hora/20260608/proyecto-facilitaria-que-inversionistas-adquieran-mas-rapido-estorbos-publicos/?utm_source=rss&utm_medium=rss&utm_campaign=proyecto-facilitaria-que-inversionistas-adquieran-mas-rapido-estorbos-publicos" target="_blank">Proyecto facilitaría que inversionistas adquieran más rápido estorbos públicos</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-06-08 14:28">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Mañana martes y el miércoles habrá cierre de rampa en la PR-909 de Humacao a Yabucoa">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/08/manana-martes-y-el-miercoles-habra-cierre-de-rampa-en-la-pr-909-de-humacao-a-yabucoa/" target="_blank">Mañana martes y el miércoles habrá cierre de rampa en la PR-909 de Humacao a Yabucoa</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-08 14:25">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Naguabo,Humacao" data-titular="#Policiacas | Las intervenciones realizadas en Humacao, Las Piedras, Naguabo, Yabucoa y Maunabo también resultaron en la investigación de 76 accidentes y 224 querellas. Para detalles acceda al enlace. - facebook.com">
+                    <td><span class="muni-tag">Naguabo, Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxPUG9mVE9xYk5rWG9EbjloUHBrRFhSdUZVam5kNW9xYzNIZEs0Ykx6aWlJZ0JsVGJURXNuQ0lxMEQzSGpmYkxUdm5acW9scnNpREFSZURfWFJKSFloVWoxUUxiam9IQ015dFR4cDUtdnQxRzdvVkpiYVo3VmZGOEg4Vml6cTd3bC1FeHl2VVdDdkJvdGFEcU5mUjU1cE9mRnUtTldaZFBnUG1KU1VNUlpwMTFyQTZER3JxblhvT0JzdGhBbFZYdHAyQ2NZUDRlTWFzNVZubURB?oc=5" target="_blank">#Policiacas | Las intervenciones realizadas en Humacao, Las Piedras, Naguabo, Yabucoa y Maunabo también resultaron en la investigación de 76 accidentes y 224 querellas. Para detalles acceda al enlace. - facebook.com</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-06-08 14:20">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Policía expide 375 boletos y realiza 23 arrestos durante operativo en municipios del este">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/08/policia-expide-375-boletos-y-realiza-23-arrestos-durante-operativo-en-municipios-del-este/" target="_blank">Policía expide 375 boletos y realiza 23 arrestos durante operativo en municipios del este</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-08 14:17">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Humacao honra la memoria de Ronnie “Petenko” Vega durante encuentro de sóftbol femenino">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/08/humacao-honra-la-memoria-de-ronnie-petenko-vega-durante-encuentro-de-softbol-femenino/" target="_blank">Humacao honra la memoria de Ronnie “Petenko” Vega durante encuentro de sóftbol femenino</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-08 14:09">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="En condición crítica un niño de 3 años atropellado en San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/en-condicion-critica-un-nino-de-3-anos-atropellado-en-san-juan/" target="_blank">En condición crítica un niño de 3 años atropellado en San Juan</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-06-08 14:02">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Aviso de calor emitido el 08 de junio a las 09:00 AM hasta el 08 de junio a las 05:00 PM por NWS San Juan PR - El Vocero de Puerto Rico">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxPdVpxOUZZdGxWSWpFbEdmcTYyV3Mwdm00Znc1ZjZwOHlaanVKN1VkeTh0MDBOYmUtdXZiSzNyZmx5NmpJTTRoRlNFb1BGSlNLWDVqdjZtQ1RNRzkxZHJ4VzFWQTBEdjFTc1VJblIzNVluUmgxYVpEeFVndWt2VEtraU5sUzBub204MDFPQ2dCRXZ0aVpzaFBtX3gtanBVeVFzc3p5dHk3TXhiMW5qQU5icF95WWp5Zkd2dTNlcFozY0d1Yks4YzV6clhsRExiRXQ4SUg4Y3c4X25JR01XZ3NpLW5PR2VOWTdM0gHuAUFVX3lxTE5lVkVKaWRmUU9tbEsxOE9uV290dWNwSk0yTjFUUFdUUzFVeEN2dkdOWklaSnc3VjVmWl9SN0dGeDFscDFPLThYcnFBeVJ2RVpvaFlMSHI0cDdCSmdjWVNRQ2dvMDVXbjBwaVlKdnRNdjlQRERsdU5OYXFJbWg0LWJkUnViVFRTbFVtY0VSaFpHdUpGUlI5Q3ZsTXJ3RlFCYm5BbjVwaFZZUkdYTGhDTnNWdHNKbWhqazBQcEFEZVFDYnZtUFpFTGNuSFZRS2tYZUdBanhrVVMyc3FhSG5POHUzRmdpSm9CSG1nQ1lzVEE?oc=5" target="_blank">Aviso de calor emitido el 08 de junio a las 09:00 AM hasta el 08 de junio a las 05:00 PM por NWS San Juan PR - El Vocero de Puerto Rico</a>
+                    </td>
+                    <td>El Vocero (GN)</td>
+                    <td class="time-ago" data-date="2026-06-08 13:30">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="“Estamos hartos”: 13 días sin agua en Piñones">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/estamos-hartos-13-dias-sin-agua-en-pinones/?utm_source=rss&utm_medium=rss&utm_campaign=estamos-hartos-13-dias-sin-agua-en-pinones&utm_source=rss&utm_medium=rss&utm_campaign=estamos-hartos-13-dias-sin-agua-en-pinones" target="_blank">“Estamos hartos”: 13 días sin agua en Piñones</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-06-08 11:57">hace 5min</td>
+                </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="En condición crítica menor de tres años atropellado en San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/atropellan-accidentalmente-a-menor-de-tres-anos-en-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=atropellan-accidentalmente-a-menor-de-tres-anos-en-san-juan&utm_source=rss&utm_medium=rss&utm_campaign=atropellan-accidentalmente-a-menor-de-tres-anos-en-san-juan" target="_blank">En condición crítica menor de tres años atropellado en San Juan</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-06-08 10:31">hace 1h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="VIDEO: Municipio de San Juan regresa al tribunal para exigir acciones de la AAA ante crisis de agua - El Vocero de Puerto Rico">
@@ -464,30 +636,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxQMUV4Q3hmWWtjeDZvVmJDeVRsSk9tTHUzdU1walJaV2htNkt6Z0dCSkFSLXNvYlZqS0lyUEQwR3JMdnJDakItRnQ1SE5sWDd0blV2NEZzVGprbVNudnM2UkU1a0NXQXpQaEM0SXZIOTVKRXFRSTZTNHVCSzBpekFaQ21wckU2UW56YnZ1SWFSeTBLWUlCc3BJOTgwdlhvQXJkbkZoRXN1UjVpTGZBYWNuc1YzLWp2dGVJdE5WWVV1bzBwZjA3X1hhUjA2cE1ybTBnOERzUXRaUzljNVdTYlB0RFdaQW1wMTNScWtxVC12Z0R4VG9CYVFUT2kxa9IBgAJBVV95cUxNamcxOVVBTlNMTXl2VGFRNkhlRTZySUtvVXVKelVyNlBrY3pJR2RieTY4aXRjWTgzRjJ4X2U4V2RQTi1yYjFlUVc3YjdfZmZ3Q3Y0ZXVlWXVBWDFKVXBtMGtGN01yWDV6cHc5eTFXNXgxX3A4b0JjR1ZQYUlJTnZYaW5ucU00cEFTS0lyVTNtQk1NUEZzUXRkb0dpT0QwbUZLQUVGTk5OYjVLWDhSRkthcC0xX2daR0wyOGxhWEdJMUh3MUFTRnpKZ3MxMlM2OF8wTXZaLVg1d3NVd2tQelcxbUotV2FaUFBJc1g1S3A5LVVvbTNnVC1XQzFzRkNncUMy?oc=5" target="_blank">VIDEO: Municipio de San Juan regresa al tribunal para exigir acciones de la AAA ante crisis de agua - El Vocero de Puerto Rico</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-06-08 07:52">ahora</td>
-                </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="“Marbella”: La nueva propuesta de David Antonio de una sofisticación relajada">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/magacin/moda/notas/marbella-la-nueva-propuesta-de-david-antonio-de-una-sofisticacion-relajada/" target="_blank">“Marbella”: La nueva propuesta de David Antonio de una sofisticación relajada</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-06-08 03:45">hace 2h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="Genera PR se incorpora a proyectos de microrredes eléctricas en Vieques y Culebra">
-                    <td><span class="muni-tag">Vieques, Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/locales/notas/genera-pr-se-incorpora-a-proyectos-de-microrredes-electricas-en-vieques-y-culebra/" target="_blank">Genera PR se incorpora a proyectos de microrredes eléctricas en Vieques y Culebra</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-06-08 03:10">hace 3h</td>
+                    <td class="time-ago" data-date="2026-06-08 07:52">hace 4h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Aviso de calor emitido el 07 de junio a las 10:00 PM hasta el 08 de junio a las 06:00 AM por NWS San Juan PR - El Vocero de Puerto Rico">
@@ -497,51 +646,11 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxOcTZ3TTc2clFoNUpqVmhTMlduZ2hpLU9kYl9VbzlVU1lySHMtVmVnb3U4LXBwNnBZRVFNRXY0RllYaFd4aTVvamhiV2xMWEVYZWlMaWgtNmhaN2ZEZkxxcXpsRXVTTmtKSVBGd0VZMHNCSHJSaWRIWEdlQ2Y2djk4aUVfc1B4Z2o2a016NGxiaWRROGRLRTdXYl9TZXVFSEp2WGZfQXFwX0VCdXVGWkdVX1luSGVlQ3F4TkFNVHpDN3V3S2hvZC02andVMWJ4c1lfMHdpTkhWQUFoZ2dUaHlMN19pU1VDNktC0gHuAUFVX3lxTE1QQmZ4b0pERjBhNkxpUjBtTy1hNURPUkJnbDZqTXhPRzFzbnRfdUFNODVrMXVldF9xR29zTUhUN3Rvc0VtZGY4a19abk00ZzRUTmEtbEJNNlE5ak5QR1MteXAxaEdIUmE4dTFsZFMxU25NTHlhZmp4YkdfNXRZVU9IQ1pFcEhxU2hkMEZzR3ZPaExEeUIzb1FqdjVlUGxZMGFwTHBSbzZ5enFldkpTbW5RQjdXemZ1WnJ5akF1ekxrUV83Zy1hWEJDak1ybG9jcFU1YmRpb1JPRmZmQ3RwNlYyd3N5NDlNQ09qOTNVMlE?oc=5" target="_blank">Aviso de calor emitido el 07 de junio a las 10:00 PM hasta el 08 de junio a las 06:00 AM por NWS San Juan PR - El Vocero de Puerto Rico</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-06-08 02:00">hace 4h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="LUMA anuncia interrupciones programadas en 11 municipios de Puerto Rico">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/06/07/luma-interrupciones-programadas-11-municipios-puerto-rico-8-junio-2026/" target="_blank">LUMA anuncia interrupciones programadas en 11 municipios de Puerto Rico</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-08 00:49">hace 5h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="PIP impulsa resoluciones municipales en defensa del carso">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/06/07/pip-impulsa-resoluciones-municipales-en-defensa-del-carso/" target="_blank">PIP impulsa resoluciones municipales en defensa del carso</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-08 00:20">hace 5h</td>
+                    <td class="time-ago" data-date="2026-06-08 02:00">hace 10h</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Alcaldes de San Juan y Bayamón acuerdan colaborar en seguridad">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/06/07/alcaldes-de-san-juan-y-bayamon-acuerdan-colaborar-en-seguridad/" target="_blank">Alcaldes de San Juan y Bayamón acuerdan colaborar en seguridad</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-07 23:01">hace 7h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Exalumnos University Gardens otorga beca">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/06/07/exalumnos-university-gardens-otorga-beca/" target="_blank">Exalumnos University Gardens otorga beca</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-07 23:00">hace 7h</td>
-                </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Autoridad de los Puertos busca construir tres muelles en Toa Baja y Cataño - Noticias de Puerto Rico hoy">
                     <td><span class="muni-tag">Cataño</span></td>
@@ -550,7 +659,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxOdzlpdi1TMXUya0VFY2JJRkJyb0hIcHM3RTRyREdKajhZdXJpeXBxQy1vUGpPQUtBeEpZWk54VmZtMVZoaVFCUHBJclhzVGFiOFA2S3ZqdEJhNGpqSGhrejBVb1N0VXBxMlpqWUZXX2JoemktemJMLWFXaUJOUEUwTmdQX044S0Q4ZkczeFJqWXNSczQ5ZzJIMnFkbEJaeFZZUGcxYnB1YWFRNkgteDVJcm04XzRjZFVKOUZMa1dmbU42SlJ4?oc=5" target="_blank">Autoridad de los Puertos busca construir tres muelles en Toa Baja y Cataño - Noticias de Puerto Rico hoy</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-06-07 21:54">hace 8h</td>
+                    <td class="time-ago" data-date="2026-06-07 21:54">hace 14h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Municipios de San Juan y Bayamón firman acuerdo de seguridad - Telemundo Puerto Rico">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxQalp1OW1UYlJ5SEFnYWFFRXdVZndWNXR2X2xVRUY4dGEwM2YwbHd5bDR0SHR1M3dVbkZSQU12TzV5a3FqZkx5UDVlMGhUbXg1S1l4ZFJnRWQxX1c2UkoxRnN6bm1ROC1jRnRnQXdUNktEZjNFXzNVTC04WnJpZC0yZnd4NUJ4cG1jNUJnWVB0alpTR0ZDeFlsdkZNR0Q1REl0eUxRcXRseVVmQjhHbWNtR3ducTBSWUl6anh3R21Ld0xGcWfSAcsBQVVfeXFMTXlvY01Ib3lpeFdUTGx6V1dxQy1ZUHNPaVo2OFUzcGR1aG5qWmoyVlpNbks5Q3VvOW5INWVZWFVFUHJpWFlTMzlZTER0QXVnMDhFYnltc2dUbmF5dUJWQ0RJWm5jb05tM0VaeDllRm9rLVUteUZrZm5WdHAybXJrdGprYkxleUZBeTREaU94Y09tU0xPZmRMOW10bE9zV2VubHJpSFlYOFI0QTd4LWlRMzBVcVRCWWtmZU1hME9MbUZ1clo4T2E3SU9QcUU?oc=5" target="_blank">Municipios de San Juan y Bayamón firman acuerdo de seguridad - Telemundo Puerto Rico</a>
+                    </td>
+                    <td>San Juan</td>
+                    <td class="time-ago" data-date="2026-06-07 21:30">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Diócesis... - Diócesis de Caguas, Puerto Rico - Página Oficial - facebook.com">
@@ -560,7 +679,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQYlZ0U3RtT2R6MjltenJnTEl0eWI5UmdxYTZnc3BwcDgycjdSQWRkNWVWc2tvUGpfVzNVbnVRTDJSNlMyWHplUUY0TVZ4RU4tLTB6RVFzbXhkSHhoZ3oyUE51TzFxUllIMl9xdTY4X2VzSFl0VEFHcFFmZUVpZ2MtLVZ1a3k4aDB1dzRpWjZ3?oc=5" target="_blank">Diócesis... - Diócesis de Caguas, Puerto Rico - Página Oficial - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-06-07 21:22">hace 8h</td>
+                    <td class="time-ago" data-date="2026-06-07 21:22">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Municipio Autónomo de Fajardo - facebook.com">
@@ -570,7 +689,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE16aEs2eTYzbUhwRGJjUnpWZHhXTXlYMG1ubHM5X0VmU0hMVjNRanAxSnc1aEJPVFNoaVJIcnVHZ0p5dTNtWlRaV1BodXJPYl9VM3ozSVBBYVBWdFpQTkNTbzVPZ0RKb1A4QmpXdGxrZ0dmZmtOX0U2ekpVSWk?oc=5" target="_blank">Municipio Autónomo de Fajardo - facebook.com</a>
                     </td>
                     <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-06-07 20:59">hace 9h</td>
+                    <td class="time-ago" data-date="2026-06-07 20:59">hace 15h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - facebook.com">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNd3VLSnBKcGpFNHRMVG9IenczVUV5SlIwaldJVkdoLTJrbE5YSTN5TFJSa2tDWmlQam5XYlZRN2FXNFV1MnFJRTFZR0Jub2xfRGluR2kzSUFudFllb3RKbHpWWGJ4MzlvMGtNYlkyVzF4WnJGdy1lOGVvWTRrLVp0MDdB?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
+                    </td>
+                    <td>FB - Naguabo</td>
+                    <td class="time-ago" data-date="2026-06-07 19:41">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Rompen ventana de residencia y se roban sobre $190,000 en efectivo en Luquillo - Telemundo Puerto Rico">
@@ -580,17 +709,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxOalN1OE5KQ0pacEhJT1NoQnN3M3JqNTZGTmNMdWJQbGdvQ051Nk1acXNtSTRrVHZaazg5YTBwUVlQcDlVa3BsdWhOcDByc050T3U4V1oyd0Y2YzZjeTZpNDdSUEtoVVBIbkZDQnM5OUFWR2t2M1hVd0RhQ216VE1Zakc5M09iMlpkUlBReHN1LXEwS0FZMVdYTG84Yk9aWGtPYzFXWUplWmdhN09tTlZxSGJ3NkQwbU1yMGp1cHpsMjRqSWxSWXVSdzh4OWNlWDjSAdcBQVVfeXFMTUNlSTBYNUpqLUNGSlQ0UDJheUJKbEhzcmFQMFlZbExSck9lekFaYzEwaEo0am1ONHJadnI4SC1KbnEtX2RhUGdmY1gxdEhQdy04bHVPdzFMRjVwVUhQVnpiaEpDT3Z2a05zQjd6TmJhVEpJV2N6RklKSkFMNVNHYkQ4dWJURVFaVVdJQUV5MW56RXVvYkEta2ZrQzNmVV9TT2VxMTJXcGc2cWctZ2ZPZUsxU0txamx6WEl6V0k4U0RsbzQxMW5PRkptYVFWWEUyZXRCenFHalU?oc=5" target="_blank">Rompen ventana de residencia y se roban sobre $190,000 en efectivo en Luquillo - Telemundo Puerto Rico</a>
                     </td>
                     <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-06-07 19:16">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Alcaldes de SJ y Bayamón acuerdan colaborar en seguridad">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20260607/alcaldes-de-sj-y-bayamon-acuerdan-colaborar-en-seguridad/?utm_source=rss&utm_medium=rss&utm_campaign=alcaldes-de-sj-y-bayamon-acuerdan-colaborar-en-seguridad" target="_blank">Alcaldes de SJ y Bayamón acuerdan colaborar en seguridad</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-06-07 18:44">hace 11h</td>
+                    <td class="time-ago" data-date="2026-06-07 19:16">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Hurtan más de $200 mil de hacienda en Luquillo - Metro Puerto Rico">
@@ -600,27 +719,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNS0tySzFSWkk5UFhyQ2pyWTZoMjRIR0JJYlFvampva19ldk1SRHJTM25nMUN4bXZCcW56SVA4VUtncDl2MTB4NUpTdjZ5N05mTlBYQ0E0cGpmWHJ2S2xaLXdCdmZta1M5Y3Bnc0FHYUZneTc0VnY2R01UVVlPN1g1VWVCRXBOQlFtSms3dGJJTmY?oc=5" target="_blank">Hurtan más de $200 mil de hacienda en Luquillo - Metro Puerto Rico</a>
                     </td>
                     <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-06-07 18:36">hace 11h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina,Loíza" data-titular="Legislador llevará crisis de agua en Carolina y Loíza ante Comisión Total del Senado - Metro Puerto Rico">
-                    <td><span class="muni-tag">Carolina, Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxOT0xQTU5TR0NlemlEYTRyWXVoTXBSbVNVWTlWR3dyeml0NW9VVUNfd0dFaHR3YzUzSThIdEZmdmFPLTVHMV9ycG5pTG9pUFhOVGR2SUVsRjF5N1hWSFJuWEtNRzhfcVFaX09rNEI2Y2V2V21UNTRXSEpYd3UxSUN6ZU1fWi1Ga2FQUlJQRExFUEJTclNVZEJHWHRGak04elhQcUJJWndndUstN1hlbXdubnhzcC0xSGFzLWp2STNDdkxybGpy0gHYAUFVX3lxTE8xOGZCUk5LdUtaa3l5cEl5YmpWY1UxdUg3ZURQOTZfUHI3b0RwbVdYckZ4SVBFcElJY3ludnNsTDRpMmVTZ1ZVS0hmVE9CY29rUmRlR2loUzAwcS1JQTZhNklhYmNMWlE2QTBva3BSTDFLMlJlVVVjVXBhYWlsaERzVFVYdjFZNHhQUzNheE1sX3ZWV1dGS2hzbkl6NDl4SDMzcTlWR181cjhuUUo3S3pudGlCSXdxelUtTmxBcmpWQWkyV0pZNGRNWk44TVdPSGpobHpmMFZ3Yw?oc=5" target="_blank">Legislador llevará crisis de agua en Carolina y Loíza ante Comisión Total del Senado - Metro Puerto Rico</a>
-                    </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-06-07 17:47">hace 12h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Roban más de $200 mil en Hacienda en Luquillo">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20260607/roban-mas-de-200-mil-en-hacienda-en-luquillo/?utm_source=rss&utm_medium=rss&utm_campaign=roban-mas-de-200-mil-en-hacienda-en-luquillo" target="_blank">Roban más de $200 mil en Hacienda en Luquillo</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-06-07 17:14">hace 12h</td>
+                    <td class="time-ago" data-date="2026-06-07 18:36">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="⚖️ Prieto & Asociados en Fajardo ⚖️ Lic Ricardo Prieto abogado criminalista y notario con amplia experiencia en: - Casos criminales, civiles, federales. - Familia - Daños y perjuicios - Notaria ☎️ 787-860-0875 (Oficina) ⌨️ oficina@prietolawoffice.c0m 📍 C - facebook.com">
@@ -630,17 +729,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxObmZhLWFEc0czRjlhQkFEQUlTb0s2TjVDTERKMmxkUFFpM1R5dHZxcU9oVzM5aHUwa2JETll4azFscU5iY1BmYnFaYTZDckh4U3VKb25HYmVLQ2pwTnBNd2pBdUpuMFVLMDFRWWJxR3VMNHNVZzlaekpZdjhOV3Eza0lrdDBjQUs3Q3BVSHpEcm1SRG5vdnZyRi13T1NWYVNLazdmMHVfN2FRRU5PczU2U3pNVTdPZDNYVEQzMHhCYTJjU0VYdzR5Zm4zSzlEaVg5RjJvOXhBa19qMHBHUjVSUmpKUjVac0l3amdybVVpVGFkakU?oc=5" target="_blank">⚖️ Prieto & Asociados en Fajardo ⚖️ Lic Ricardo Prieto abogado criminalista y notario con amplia experiencia en: - Casos criminales, civiles, federales. - Familia - Daños y perjuicios - Notaria ☎️ 787-860-0875 (Oficina) ⌨️ oficina@prietolawoffice.c0m 📍 C - facebook.com</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-06-07 16:10">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Más de 50 municipios bajo alerta de calor; índices pueden alcanzar los 111 grados">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/06/07/mas-de-50-municipios-bajo-alerta-de-calor-indices-pueden-alcanzar-los-111-grados/" target="_blank">Más de 50 municipios bajo alerta de calor; índices pueden alcanzar los 111 grados</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-07 15:12">hace 15h</td>
+                    <td class="time-ago" data-date="2026-06-07 16:10">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Culebra" data-titular="Sousa_PR. Bad Bunny · PERFuMITO NUEVO. Los Dias de Playa son mejores en Culebra, Puerto Rico 👋🏻🇵🇷 #PuertoRico #PR #Culebra #Beach #Clearwater - facebook.com">
@@ -650,37 +739,27 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxONGhweXBwNVNqRzcyck9zV1J2TU80Z1haZVdFV0VKUXYzeDRUVmNKYlhUZG9kOFQtdVNMbVJDZ1ZzbnhjRWtoVHo1RWZxcHVUMFdNN2VuYm1wZ0l2TEg5WWZkVzlRUWVxRlVYdEZHdzEzSk5PN3hQZnZmN09JUW9UeHoxdlRrd2c1djB3V2dsWElhb2pMWHQ0ZlJSU3R4OF9XNXFDRzYtdWtIdU9Qc0FXWWkxanZaMXVzY2VLTGQ2RFJuelV4YmxTeFZURjdwSlU5QU02MXMwQTYxV2NHQ040?oc=5" target="_blank">Sousa_PR. Bad Bunny · PERFuMITO NUEVO. Los Dias de Playa son mejores en Culebra, Puerto Rico 👋🏻🇵🇷 #PuertoRico #PR #Culebra #Beach #Clearwater - facebook.com</a>
                     </td>
                     <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-06-07 15:04">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Roban más de $190,000.00 en efectivo de una casa">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/06/07/roban-mas-de-190000-00-en-efectivo-de-una-casa/" target="_blank">Roban más de $190,000.00 en efectivo de una casa</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-07 14:53">hace 15h</td>
+                    <td class="time-ago" data-date="2026-06-07 15:04">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Se tumban más de $200,000 en escalamiento en residencia de Luquillo - El Vocero de Puerto Rico">
                     <td><span class="muni-tag">Luquillo</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxQU0hHR0tpOGZoaTQxdkMyeE5vUUxPZ2lweTJuRnJjaFpDQU9UNGViUkhLb0d6S0tWUU9zYk4yQXUybG10WTk3ODRGRWp2VkJIclhGajcyRDVZSnNaLWl3OWJrSVlDT2otOG8ybHZvRmlEYlpwaDJJd3dfOWhjb29SU2V6SG1WV3RmUTJ1ZlZVTnB1bmNnZWV3MEFGTWplVVNBQV9qb3BxVWNuaHV6eGZrWnRIUkgyNkY1c0NkVWkzci0yU00zWGFJazVBeFFsZDRlb25rcmZCSzZqT3FzNTJySUYyYTh6V2hF0gHuAUFVX3lxTE5CeS1UMUpYRnloMGZ5SXdORnV6a0JBNHdQR1lFVDlCYTJPakxsQkxrMkUxeHVIcDZRNlI2bmhwTl9Ka2dUazI0UTJFZ214dU9OWi1XUmJvWkZ6T3dDTGpvR2t1eV9nbDl1d3NjekE5V1ZYSW0yaTUwME5VOU5mdGhDMkVtY1RFTVVBMDJOdUtpMFNBdjRldDVNbmcwd25RSzY3Yl93cUJ1LU8yaG1DM280ME5XcGlCbU9mTUh2UHhuQUV2cGlVXzRnc0djaFd1ZWkxazRVRk1ZYmFSTUpWTmZPYVFOd053ODMwX3d4eEE?oc=5" target="_blank">Se tumban más de $200,000 en escalamiento en residencia de Luquillo - El Vocero de Puerto Rico</a>
                     </td>
                     <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-06-07 13:36">hace 16h</td>
+                    <td class="time-ago" data-date="2026-06-07 13:43">hace 22h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Caguas" data-titular="Identifican a hombre asesinado en Caguas">
-                    <td><span class="muni-tag">Caguas</span></td>
+                <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo added a new... - Municipio de Luquillo - facebook.com">
+                    <td><span class="muni-tag">Luquillo</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/identifican-a-hombre-asesinado-en-caguas/" target="_blank">Identifican a hombre asesinado en Caguas</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE80VVZIUFRNTEdMV3BoRG53eWtCcEJ0YmlCQTVLMUx4anU1RzRXaXg3blQ3YXlyVjVsck9OMEZEajJ5SmsxajI5X0h6R20yMjhXb3lqdDJoTG55X1hmUTliQnVsa0h6cW5QR3V1cQ?oc=5" target="_blank">Municipio de Luquillo added a new... - Municipio de Luquillo - facebook.com</a>
                     </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-06-07 12:51">hace 17h</td>
+                    <td>FB - Luquillo</td>
+                    <td class="time-ago" data-date="2026-06-07 00:19">hace 1d</td>
                 </tr>
                 
                 
@@ -860,13 +939,13 @@ tr:hover { background: var(--surface2); }
         
         <span class="source-badge ok">🟢 Carolina787 (Scraping): OK</span>
         
-        <span class="source-badge warn">🟡 Facebook: ❌ timeout, sin cache</span>
+        <span class="source-badge err">🔴 Facebook: Error</span>
         
     </div>
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-06-08 06:13:01 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-06-08 12:02:19 PM<br>
     Actualización automática cada 30 min
 </div>
 
