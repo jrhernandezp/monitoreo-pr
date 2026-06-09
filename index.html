@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-09 06:04:39 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-09 12:02:18 PM</span></div>
         </div>
     </div>
     <div class="stats">
         <div class="stat-box"><div class="num">35</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">8</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">13</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-09 06:04:39 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-09 12:02:18 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -355,7 +355,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">12</div>
+            <div class="muni-count">13</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -368,9 +368,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">1</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
+        <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
@@ -390,7 +390,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
@@ -425,7 +425,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         
     </div>
@@ -445,7 +445,80 @@ tr:hover { background: var(--surface2); }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
                 
+                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Advertencia de calor sigue vigente en Puerto Rico con sensación térmica sobre 100 grados">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/06/09/advertencia-de-calor-sigue-vigente-en-puerto-rico-con-sensacion-termica-sobre-100-grados/" target="_blank">Advertencia de calor sigue vigente en Puerto Rico con sensación térmica sobre 100 grados</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-09 15:46">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Cucco Peña lleva el nombre de Humacao al TLTN 2026 y reafirma décadas de apoyo a SER de Puerto Rico">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/09/cucco-pena-lleva-el-nombre-de-humacao-al-tltn-2026-y-reafirma-decadas-de-apoyo-a-ser-de-puerto-rico/" target="_blank">Cucco Peña lleva el nombre de Humacao al TLTN 2026 y reafirma décadas de apoyo a SER de Puerto Rico</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-09 15:44">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Roban datos de tarjetas bancarias en Puerto Rico tras hackeo a proveedor de Evertec">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/06/09/roban-datos-de-tarjetas-bancarias-en-puerto-rico-tras-hackeo-a-proveedor-de-evertec/" target="_blank">Roban datos de tarjetas bancarias en Puerto Rico tras hackeo a proveedor de Evertec</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-09 15:19">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="Loíza será sede de la Serie Latinoamericana y del Caribe de Pequeñas Ligas - Primera Hora">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxNZDFkbGVyOTYtbEZRUnRsUDNpSFpGdENtVlBVLTAzbW9wX0ZNQWZadFE3SzZLa3l5WFpJSlI1LWlKTTFFVjBETDREUk1xVkxtTlZPQ3NUbGpGN25tbGhnenp2VW85cW1aNmNUMWZBNHRuS0hweGc0ZERwREhIZURKQzFEa0s3dWNPc1ZzWW12VW54eUFjTXE0TURUZVB6RTdFbVN5NHZWeUtpVzJlUFhvQ3Znd3NZenNqZXBwZ1E3QmdULU1R?oc=5" target="_blank">Loíza será sede de la Serie Latinoamericana y del Caribe de Pequeñas Ligas - Primera Hora</a>
+                    </td>
+                    <td>Loíza</td>
+                    <td class="time-ago" data-date="2026-06-09 12:53">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Puerto Rico water outages force hotels in San Juan and Isla Verde to increase operating costs - Noticias de Puerto Rico hoy">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxOTUZBRV9hUFJqS2MzMnJNODVyNzFvMFkwUXB2a3pSUFh4M2pNTU9iWnlYSHNhWVJMUXFISHNXeDJSempmSUtCckxXS2FIeDhudU1rSV9rdWFfM3R3dllFaV95Z19sNkYwTkN4VDA0RWQ5c3FQLVlHZnN0bWpiMUtYajJ4Unh0RS1Qa2lkcjJlVTRoYk9CeURhT01iOHFKZXRTTEdMQzdySTZncXR6eGo5MGt1YWJ0QU1rWTVNX3ZQdl81NFlmMXM4Mm5KcWNZZnNwYnl3dk5Ma2Z6b2NE?oc=5" target="_blank">Puerto Rico water outages force hotels in San Juan and Isla Verde to increase operating costs - Noticias de Puerto Rico hoy</a>
+                    </td>
+                    <td>El Nuevo Día (GN)</td>
+                    <td class="time-ago" data-date="2026-06-09 12:17">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="En atención intensiva niño de 3 años atropellado en San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/en-atencion-intensiva-nino-de-3-anos-atropellado-en-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=en-atencion-intensiva-nino-de-3-anos-atropellado-en-san-juan&utm_source=rss&utm_medium=rss&utm_campaign=en-atencion-intensiva-nino-de-3-anos-atropellado-en-san-juan" target="_blank">En atención intensiva niño de 3 años atropellado en San Juan</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-06-09 11:14">hace 48min</td>
+                </tr>
+                
+                
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Violento ataque: hieren a hombre con arma blanca en múltiples ocasiones en Humacao - Telemundo Puerto Rico">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVU9pbUhwblRVMjJFTlFDZDBOanZRbFdxMUxMZnpMYXByOTFvaDlSLXN3ZFhRQnV5czZkZnZTVDhIMGRSQ1pJaktIWnZYRDFlSEJXaGp4bUVmWkU4TFc3REVwRTNYMHJrVEVXYVA2RVNYX3NGa0hUbjhUUUZoT2c0WUlWSFM2OXBLM3JWSE9YRVRHbUdGLUFRSEZLM1VlSzZfdDdTVkNyRXpFdGlKaTc1OFI1WUxKeURLNndPUU1OdERVcFBYVUtyU0R5QjdseE11SThaSU5B0gHeAUFVX3lxTE4xSjdoUmFack1zMzhTaS1XRS0wVnozZWVWazE0N3llem05SThTSmkwNXJKMng3YzBhZGxWeS16cWZtbnA2UnE1R2RtTUdBcHlDbVRNWUZBMk1BQmJXVGtDNVpoT3h6cTl6UWcwVnV0SWQ2eUZKak5EWHNyMHlvSjQ0RFc0UHF4dlhXQW9MQ2FUOWROM1gwczB6OHhwb1BVRDBxdTNqNWhnOEFxbENzd2xaY2xtS3JxSFNqWGM1MHlaTDFMTTZhU0FndzhaOTNULTZiUXRNY1FBeEVuU0FQZw?oc=5" target="_blank">Violento ataque: hieren a hombre con arma blanca en múltiples ocasiones en Humacao - Telemundo Puerto Rico</a>
+                    </td>
+                    <td>Humacao</td>
+                    <td class="time-ago" data-date="2026-06-09 10:38">hace 1h</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="Genera PR se incorpora a proyectos de microrredes eléctricas en Vieques y Culebra - Noticias de Puerto Rico hoy">
                     <td><span class="muni-tag">Vieques, Culebra</span></td>
@@ -454,7 +527,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxNY2sya0NPYkNBa2JDUUVMX3lOZGdUM0Ewa3pNbnJNdGx6Vmg1Sjdpbkx5eEhPTm9rMFJ3N2xfSS1mTEJLR0c3clZYMVkwalBEN2d6QkJKaU5MSjZMQkFlTlBUN2cxZUZRWC1mTUtzVFA4dXhDMjFhUjIwZ1FsakU0NzdtZTJRbXVvUEpYT3B5QW53Zm1CbFFEcXI0blprNmxpY0ZuWG1KY21TdlVmel9uSjlYUHZfNjlEbUxwamZ1OUQ5MTV2SjNmZ0Fsdm0?oc=5" target="_blank">Genera PR se incorpora a proyectos de microrredes eléctricas en Vieques y Culebra - Noticias de Puerto Rico hoy</a>
                     </td>
                     <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-06-09 03:10">hace 2h</td>
+                    <td class="time-ago" data-date="2026-06-09 03:10">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="LUMA anuncia interrupciones eléctricas en 21 municipios">
@@ -464,7 +537,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/06/08/luma-interrupciones-electricas-21-municipios-9-junio-2026/" target="_blank">LUMA anuncia interrupciones eléctricas en 21 municipios</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-09 02:09">hace 3h</td>
+                    <td class="time-ago" data-date="2026-06-09 02:09">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Contralora señala pagos indebidos en Quebradillas">
@@ -474,7 +547,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/06/08/contralora-senala-pagos-indebidos-en-quebradillas/" target="_blank">Contralora señala pagos indebidos en Quebradillas</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-09 01:13">hace 4h</td>
+                    <td class="time-ago" data-date="2026-06-09 01:13">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Contralora refiere a Justicia investigación sobre empleo temporero en Arroyo">
@@ -484,7 +557,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/06/08/contralora-refiere-a-justicia-investigacion-sobre-empleo-temporero-en-arroyo/" target="_blank">Contralora refiere a Justicia investigación sobre empleo temporero en Arroyo</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-09 01:13">hace 4h</td>
+                    <td class="time-ago" data-date="2026-06-09 01:13">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="AAA estima más de 8 mil clientes sin servicio luego de averías en sistemas zona metro y superacueducto">
@@ -494,7 +567,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/06/08/aaa-estima-mas-de-8-mil-clientes-sin-servicio-luego-de-averias-en-sistemas-zona-metro-y-superacueducto/" target="_blank">AAA estima más de 8 mil clientes sin servicio luego de averías en sistemas zona metro y superacueducto</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-09 01:11">hace 4h</td>
+                    <td class="time-ago" data-date="2026-06-09 01:11">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Aerostar destina 4.7 millones a preparación del aeropuerto ante huracanes">
@@ -504,7 +577,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/06/08/aerostar-destina-4-7-millones-a-preparacion-del-aeropuerto-ante-huracanes/" target="_blank">Aerostar destina 4.7 millones a preparación del aeropuerto ante huracanes</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-09 01:08">hace 4h</td>
+                    <td class="time-ago" data-date="2026-06-09 01:08">hace 10h</td>
                 </tr>
                 
                 
@@ -517,7 +590,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQRjh3OEo1Q0RUc2ViSWdXaTFnc2FRUFl6Z1h3Qm9seUNUYXYwTlN2akRUcnVwXzJZanBVS01QLS1LUTFRNnEyalhmRHI4N1hGakhwQ1hIT2tJVzdOV1ZEalVrU1RzOExnOEpzRHpjX0w0cllQSkdBVXEwc08ta1FqR2tILXpFU040dnJBREpOV1VzclFwbDVWejB2NA?oc=5" target="_blank">Humacao rendirá tributo a Lucy Fabery - Primera Hora</a>
                     </td>
                     <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-06-08 22:40">hace 7h</td>
+                    <td class="time-ago" data-date="2026-06-08 22:40">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Humacao registra la segunda mayor reducción en incidencia criminal de Puerto Rico">
@@ -527,7 +600,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/08/humacao-registra-la-segunda-mayor-reduccion-en-incidencia-criminal-de-puerto-rico/" target="_blank">Humacao registra la segunda mayor reducción en incidencia criminal de Puerto Rico</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-08 21:56">hace 8h</td>
+                    <td class="time-ago" data-date="2026-06-08 21:56">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Niños con diversidad funcional disfrutan de verano recreativo en Cataño - Telemundo Puerto Rico">
@@ -537,17 +610,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxQMFU3aHpFS3VELU9Eb3pyWTUxUXd4eU8yVjU4cURabzVHUjNfVnhKc002M1hYR1ZGM0tOMW9xQVludG43bXpWOS1xRmExa04xcUV3T05NdVJpYl84dlRjYzlBTUZsenMwajhyM3dYdkxRNHVoYXhXellWTXNjYWxBRTVBSlRSd2M3dzgyNUFHdnBiZVhXQ2dESVBNOWVzTUlKdzlGdHlsUG1UUUYwRWd1MmtFSUdyQlZLYXhUbjgwalZpRUh6YTlyRnJYUFhraURDMWfSAdoBQVVfeXFMT2Z4NjBLNEZNdjN4eXFqbU9teTJ3TUlnZGRwTHlGSTR3bGU2VGhPWERZNlNxcE9CaFlGY3NfVUpzV01lN2ZISjFNZldXeW0zV3d6a1FZLWtvWlhOcHpjdW9UUGxfSnNBYkR2Vno2SDdRczA5ZGxhdm1YVHByUEpLTHFfVUxfVWNDQ0RxYXhodEJxZEp3bERGWm9CcVAwWVFJV1FIU05fNGl3d3JfcWRWSVlEWndnOEJTWmh5bVpvd05mQWhKdTN2SWMxaVBBWFB4TVNudkt4aUtDN0E?oc=5" target="_blank">Niños con diversidad funcional disfrutan de verano recreativo en Cataño - Telemundo Puerto Rico</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-06-08 21:37">hace 8h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Juicio contra acusado de matar a turistas peruanos en Loíza - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQRGQ4bzA4b1NjNW9uNjBLcDNoZTNjMnQ4LWN2UUZHTU9DTHVFcWcxWVI5UFdUaXVpUDMxZ2JUUEN3QVFCT25MQzRtZmdVbnpjazdJRnFvVVh3ZkdoTWk1T0Z3LXZsUG9xQWk2akJORTdvSTJlbWFWRUxEc0tINnYyQnNicTFRNHFnMFBMWGE1S0tYQnJOaHgxbWduTTZ0aWJRVG1vVDF5blpSTEQ3ZWk0emwtSG1QaEdnVUczc0pKQ0JPZ9IBygFBVV95cUxQWGVNeXF0R19hZm56QUo4ZGh5TG5CY0xFc0I3cUctZEN3UE96XzdSdzI4a1pid245d01oZTBockJTWktlS3pZZjdWZFlGVmFWdXNPNVNxQzB1b3dtLTFidkM4cjR5MEk4MDZtdjAyREtsbXd1TjJiaTN0eGVCNnhqUzhKR2U2VzZyNHBlSGNsLVAxSzFDTm44ZTJSSGQ3elNMRlkxUVhYZjRQZGhtdDBMSDlHZWN3djN6QkkxbmhiVk1qTEp1OC1yVHNR?oc=5" target="_blank">Juicio contra acusado de matar a turistas peruanos en Loíza - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-06-08 21:29">hace 8h</td>
+                    <td class="time-ago" data-date="2026-06-08 21:37">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Tribunal permitirá que el Municipio de San Juan participe de las decisiones de la AAA">
@@ -557,7 +620,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/tribunal-permitira-que-el-municipio-de-san-juan-participe-de-las-decisiones-de-la-aaa1/?utm_source=rss&utm_medium=rss&utm_campaign=tribunal-permitira-que-el-municipio-de-san-juan-participe-de-las-decisiones-de-la-aaa1&utm_source=rss&utm_medium=rss&utm_campaign=tribunal-permitira-que-el-municipio-de-san-juan-participe-de-las-decisiones-de-la-aaa1" target="_blank">Tribunal permitirá que el Municipio de San Juan participe de las decisiones de la AAA</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-06-08 20:12">hace 9h</td>
+                    <td class="time-ago" data-date="2026-06-08 20:12">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Municipio de San Juan y AAA llegan a acuerdos en demanda por falta de agua - wapa.tv">
@@ -567,7 +630,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxQR0xKTFliYjMwWEQ5YWM0UjdvaF8xZHgyUnhGdFZRVjdfN2JfMkJZLXBWYUNVTmp1M3RNUHgwVUI1VUUxNDEzX09JWWhBZUFteGpNTEVfaHB1ZDlpX0lUMGVrcE1YR2U5azBKNUJWZ0k4cThUVHAtWGJuSGtLb0JFX2t0YnZQLTJ5R1FFRDVVMHhHb09nSUpLNEk1YmNYMHVONzkwbW1ULVZUZk5mczlZeG5LQXFDUDJiYlluWVVHcXc4dTJJeUQ2UU9WbTA5ZzkyLTllRUFvRV9fSUtDSkZsWnFxcy13emowNmZrWlRURFhhbWs?oc=5" target="_blank">Municipio de San Juan y AAA llegan a acuerdos en demanda por falta de agua - wapa.tv</a>
                     </td>
                     <td>WAPA TV</td>
-                    <td class="time-ago" data-date="2026-06-08 20:00">hace 10h</td>
+                    <td class="time-ago" data-date="2026-06-08 20:00">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Municipio de San Juan y la AAA llegan a acuerdo en el tribunal - Telemundo Puerto Rico">
@@ -577,7 +640,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxPdURsU2tsVTFWWVpFdnNGNkRpVjEySUc2S3pJLUJGMWtqcFdxT1BBV1JsMVpBQy1QUlFOZTJLZEtmaXo1eHBoYm1CTmFNb24wcWxtdkFHMUNJY3kxbEZGbFg4UlptSEhpa3hqcVFHYVNXQUhodmNVR3hyV3JNWndKN2haQWxqRlJPM0pNZ1RIYmxyNUYzQUYxRy0xVi0zb1I2V1B2YzV4YTJmS0xmU3NsYTRLR2dVY3VkV1hzM9IBxAFBVV95cUxNSVl2WThkbjlHLXVXc29qLXppS0dZMWgyS2hqOWJUWW9UcVFZYUFGdnlrQWJ5MHlIbUJUU3FzUmI1ejdhdll0TmF3M1o0QVdoVW8yZ3JhejY2aUpFRFZUU3RaZ2FQS19aTGNESDFwNEYtSno4REdGYUxEZGlkbFVoRkhmOTlNNE5ZVFowTVZfRFBna3p0Sk05TVFZZGw3Z1dHeVcwOGFiNEtBNjNNUmtYOG1OdnJHdXZTdGpoZnlzeU9pLUtM?oc=5" target="_blank">Municipio de San Juan y la AAA llegan a acuerdo en el tribunal - Telemundo Puerto Rico</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-06-08 19:21">hace 10h</td>
+                    <td class="time-ago" data-date="2026-06-08 19:21">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Humacao dedicará tramo de la PR-924 a la legendaria cantante Lucy Fabery">
@@ -587,7 +650,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/08/humacao-dedicara-tramo-de-la-pr-924-a-la-legendaria-cantante-lucy-fabery/" target="_blank">Humacao dedicará tramo de la PR-924 a la legendaria cantante Lucy Fabery</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-08 18:46">hace 11h</td>
+                    <td class="time-ago" data-date="2026-06-08 18:46">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo added a new... - Municipio de Luquillo - facebook.com">
@@ -597,37 +660,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE42SW5CZW8yR254MmswZEMycnRzZmlMbzZ5bWlWRk0yT0tVNGZpR2ZGQ3V1UmFUOWFjTHVXZmhxMWJNZFB0SHdXRmxTSUZZVEd2WjFza3ZFQ2tBYkFxYjYxdlJOVXBLVDVjZm05U1c3aXhTUXNZU1lkRA?oc=5" target="_blank">Municipio de Luquillo added a new... - Municipio de Luquillo - facebook.com</a>
                     </td>
                     <td>FB - Luquillo</td>
-                    <td class="time-ago" data-date="2026-06-08 18:44">hace 11h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Llegan a un acuerdo la AAA y el Municipio de San Juan">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/ultima-hora/20260608/llegan-a-un-acuerdo-la-aaa-y-el-municipio-de-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=llegan-a-un-acuerdo-la-aaa-y-el-municipio-de-san-juan" target="_blank">Llegan a un acuerdo la AAA y el Municipio de San Juan</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-06-08 18:04">hace 12h</td>
+                    <td class="time-ago" data-date="2026-06-08 18:44">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Senado convoca reunión con la alcaldesa de Loíza y el presidente de la AAA - Metro Puerto Rico">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPSVB3c0ZHb21CTXFPY1ZHSDBwdWlta0t1OHhIOG9oS3RYc0M5T2NjV25IOFlWUFVGZWtZZmVaLVRNMGVhNkNHcHdFT1RwNXJUUlJtQWV1ZGMyaUNtNG96ZUhFTy1LYlBvbmJZekthV21YRTBRaDBvSGlYdlFrOHdjdFdWUlgwQjZRNXZoc3hiOVBrdTJFWEwxTmNiQW5vNHZpTUNNb1RHN3N2VnJtR3NtT1BldjQ5UGPSAcsBQVVfeXFMTTJpX21yMEZJMUlDZVZja2NybTJ1aURYM3FkY2xqYzNuUlU3N0VITFZWWTBjUEFBanNGbTQwM3dhSGZEUURwNVg3S2ZFZm9taW16b3VWdVkzZ3BUVW11TUVka0JuQkJkQ3FJSE5BZDNRX0dVZFQ1MGVrOEhtaDllVkIwSk5nUXZFc004Q1RWQWdfYmRxQkZONTZ0Ny1RekFwcjZ3bnBieGxfNmFhRDhINGRwX2g2RzdfQ3pWYWl6ZGgxRDRjaHE1YkMyV0U?oc=5" target="_blank">Senado convoca reunión con la alcaldesa de Loíza y el presidente de la AAA - Metro Puerto Rico</a>
+                        <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOMlZZMTZFZWZmQVh3X2FPVVFGWVJNZUc1U1VqcmdIcVdLdm0ybFl5WkxURzVxNWhhQXpjeHBrUi1rTXI0dEpoU0JncENPS2ZHdDlIdmh2ZEZSN3gzYlNWbnRyV1o2bWhBUUl3NHFQbll5MzE1djZleWkwSUQ5Wks0enZfWDZzUklwT3JxRXlMclg4ZDYzcEl1emtlc2s4cEtJYm5Da1Bkenl2OTRpX3ZsVzh6bmNpZ9IBywFBVV95cUxNMmlfbXIwRkkxSUNlVmNrY3JtMnVpRFgzcWRjbGpjM25SVTc3RUhMVlZZMGNQQUFqc0ZtNDAzd2FIZkRRRHA1WDdLZkVmb21pbXpvdVZ1WTNncFRVbXVNRWRrQm5CQmRDcUlITkFkM1FfR1VkVDUwZWs4SG1oOWVWQjBKTmdRdkVzTThDVFZBZ19iZHFCRk41NnQ3LVF6QXByNnducGJ4bF82YWFEOEg0ZHBfaDZHN19DelZhaXpkaDFENGNocTViQzJXRQ?oc=5" target="_blank">Senado convoca reunión con la alcaldesa de Loíza y el presidente de la AAA - Metro Puerto Rico</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-06-08 16:53">hace 13h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Sectores de Loíza superan los 13 días sin agua potable">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20260608/sectores-de-loiza-superan-los-13-dias-sin-agua-potable/?utm_source=rss&utm_medium=rss&utm_campaign=sectores-de-loiza-superan-los-13-dias-sin-agua-potable" target="_blank">Sectores de Loíza superan los 13 días sin agua potable</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-06-08 16:51">hace 13h</td>
+                    <td class="time-ago" data-date="2026-06-08 16:53">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Estudiante de Las Piedras es escogida por segundo año consecutivo para internado en MIT">
@@ -637,7 +680,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/08/estudiante-de-las-piedras-es-escogida-por-segundo-ano-consecutivo-para-internado-en-mit/" target="_blank">Estudiante de Las Piedras es escogida por segundo año consecutivo para internado en MIT</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-08 15:23">hace 14h</td>
+                    <td class="time-ago" data-date="2026-06-08 15:23">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Policía fortalece el diálogo comunitario con encuentros en Naguabo y Maunabo">
@@ -647,7 +690,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/08/policia-fortalece-el-dialogo-comunitario-con-encuentros-en-naguabo-y-maunabo/" target="_blank">Policía fortalece el diálogo comunitario con encuentros en Naguabo y Maunabo</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-08 15:03">hace 15h</td>
+                    <td class="time-ago" data-date="2026-06-08 15:03">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Determinan causa para arresto contra hombre acusado de fraude y apropiación ilegal en tienda de Humacao">
@@ -657,7 +700,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/08/determinan-causa-para-arresto-contra-hombre-acusado-de-fraude-y-apropiacion-ilegal-en-tienda-de-humacao/" target="_blank">Determinan causa para arresto contra hombre acusado de fraude y apropiación ilegal en tienda de Humacao</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-08 14:49">hace 15h</td>
+                    <td class="time-ago" data-date="2026-06-08 14:49">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
@@ -667,37 +710,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFBSMERMNDUyVVNpNHV5LXUxZE9zeFhwSU1KcDFMZmFVcjRiNEZhU0NHVzdnTkI1SDNwWllGNlBiMkxaOHhVRWhkcHp4bG1WYlNCcEUxblNxNWttYUxPNEpkNzhZVXFjdFM5V3oyMmg3azl5T2s?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-06-08 14:48">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Mañana martes y el miércoles habrá cierre de rampa en la PR-909 de Humacao a Yabucoa">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/06/08/manana-martes-y-el-miercoles-habra-cierre-de-rampa-en-la-pr-909-de-humacao-a-yabucoa/" target="_blank">Mañana martes y el miércoles habrá cierre de rampa en la PR-909 de Humacao a Yabucoa</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-08 14:25">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Policía expide 375 boletos y realiza 23 arrestos durante operativo en municipios del este">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/06/08/policia-expide-375-boletos-y-realiza-23-arrestos-durante-operativo-en-municipios-del-este/" target="_blank">Policía expide 375 boletos y realiza 23 arrestos durante operativo en municipios del este</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-08 14:17">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza added a new photo. - Municipio de Loíza - facebook.com">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOVzRZWDNhaTNlQjIwbjhGYmtkUEpmUEMtYjV2ZjBvQ002RlNtTkJYeVI5T1ZHUmtzVnE3eWZoclJWSkJNWlFvRXdMS1YzUEMzbEFIc2FFM0pHamYwbnR3dEtuUHcxc3NBQUlINzF0QlJjVDFKRTZxLWJsOHBwVXNCeDhmMEE?oc=5" target="_blank">Municipio de Loíza added a new photo. - Municipio de Loíza - facebook.com</a>
-                    </td>
-                    <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-06-08 13:37">hace 16h</td>
+                    <td class="time-ago" data-date="2026-06-08 14:48">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="Turisteando en Puerto Rico. Kolektivo · Aprovecha Que Llego El Sabor (feat. Septeto Santiaguero). Playa Las Picuas en Rio Grande, Puerto Rico. 😍 #PUERTORICO #boricua - facebook.com">
@@ -707,17 +720,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxQbkVqWnlVb01FT3ZSV1M3MHRCdkFEM0JTY1B6Ykd3V0FFR1hMaFpSTDlFYjRLNk15aE1SbEJqMTRnYlVEV1FDMS1JUnJnWl9pcUtobHdYS2tpV1daUVlydGUxR0hTaElmQXFfUkxJWEF2NXp2aS00ZmFyWjhiQ3BiMzBZRlJaQS1yVDlPY3Yzall4VzAzelRENFQ1Uk5SN0dUeUxlbFJCWHJSdU5UOVR2Zm8tbHdBSXZubnh0VkVpZ0xGb0pnZ1lzeHZkeFR3akQx?oc=5" target="_blank">Turisteando en Puerto Rico. Kolektivo · Aprovecha Que Llego El Sabor (feat. Septeto Santiaguero). Playa Las Picuas en Rio Grande, Puerto Rico. 😍 #PUERTORICO #boricua - facebook.com</a>
                     </td>
                     <td>FB - Río Grande</td>
-                    <td class="time-ago" data-date="2026-06-08 13:27">hace 16h</td>
+                    <td class="time-ago" data-date="2026-06-08 13:27">hace 22h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Loíza" data-titular="“Estamos hartos”: 13 días sin agua en Piñones">
-                    <td><span class="muni-tag">Loíza</span></td>
+                <tr class="article-row" data-municipios="Culebra" data-titular="Playa Flamenco, Culebra🤤 Sabes que si quieres ir Flamenco o al resto a Culebra este verano puedes darle like Pure Adventure - facebook.com">
+                    <td><span class="muni-tag">Culebra</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://radioisla.tv/estamos-hartos-13-dias-sin-agua-en-pinones/?utm_source=rss&utm_medium=rss&utm_campaign=estamos-hartos-13-dias-sin-agua-en-pinones&utm_source=rss&utm_medium=rss&utm_campaign=estamos-hartos-13-dias-sin-agua-en-pinones" target="_blank">“Estamos hartos”: 13 días sin agua en Piñones</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxNUGdINWdDbXl3RldLNmVyd05BWkVFNEhMNjR1b1I4aG55Z2tOZFh2T0hJeE9NZVNCX2g5S09IbkZLT3gwSTdHS2JfTUhNc2pKaTdRd1pNQ1k1cVFMMk5nck8xOGQ1cU9PR01vdkR2a1BQVHI4eEQ1eGlpTzhTZU9qNDFKV1ktNmhRRG9fRXNQZGRQQ3ZfZnFaUUl4RnBUeU5IQnVIanhLbENuY1FpZUhrakphNTdMMS1XUXBoOG0yWnJUSTRGNklSZDJfRjRYV0JpcUpEcQ?oc=5" target="_blank">Playa Flamenco, Culebra🤤 Sabes que si quieres ir Flamenco o al resto a Culebra este verano puedes darle like Pure Adventure - facebook.com</a>
                     </td>
-                    <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-06-08 11:57">hace 18h</td>
+                    <td>FB - Culebra</td>
+                    <td class="time-ago" data-date="2026-06-08 11:52">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
@@ -727,27 +740,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFAyV1ZFMjNyckx6M3ZuUkdwOVpGdlczdmZtR2s3bkhYRkUzaURGRjFxNHVGMmUwV256dXdWeVYyNFROQU5hS080NGhaRWx0N1ZZTTNLQ2YzU1lqQ0lHZndBeWhtWTd3U29RU1pPYWdVM2xXckd4TGVYSzdONUdnZTQ?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
                     </td>
                     <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-06-08 11:00">hace 19h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="En condición crítica menor de tres años atropellado en San Juan">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://radioisla.tv/atropellan-accidentalmente-a-menor-de-tres-anos-en-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=atropellan-accidentalmente-a-menor-de-tres-anos-en-san-juan&utm_source=rss&utm_medium=rss&utm_campaign=atropellan-accidentalmente-a-menor-de-tres-anos-en-san-juan" target="_blank">En condición crítica menor de tres años atropellado en San Juan</a>
-                    </td>
-                    <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-06-08 10:31">hace 19h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Conductora atropella a niño de 3 años al salir de actividad religiosa en San Juan - Primera Hora">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxQZ2pVSjFDX3B0UjY0b0tydnc3M2Z4ekRYVGxhWEtZMUN6eXAtVldRaEk5Q2U2QTRYS25rV1h3aWo0NjRYTWlXYmZBVHQxaW1rdUtEVWJUU0IzX1pNa0MzTUdTVF94ZW1lanlodFJHUzZnTjdzYXpvMG02WlRqMk1EQVJRUXFYZy01dDR0QUxkREprclY2RWtFQjN6alZtYnlHR3JaQVhJZDIydE5fenEyRHhqUnN4MUVFS211OW1iN0JSVjY4UEJZc09CSlRvTTU2NEhaOXdJc2JEY3Rf?oc=5" target="_blank">Conductora atropella a niño de 3 años al salir de actividad religiosa en San Juan - Primera Hora</a>
-                    </td>
-                    <td>Primera Hora</td>
-                    <td class="time-ago" data-date="2026-06-08 10:22">hace 19h</td>
+                    <td class="time-ago" data-date="2026-06-08 11:00">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="VIDEO: Municipio de San Juan regresa al tribunal para exigir acciones de la AAA ante crisis de agua - El Vocero de Puerto Rico">
@@ -757,7 +750,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxQMUV4Q3hmWWtjeDZvVmJDeVRsSk9tTHUzdU1walJaV2htNkt6Z0dCSkFSLXNvYlZqS0lyUEQwR3JMdnJDakItRnQ1SE5sWDd0blV2NEZzVGprbVNudnM2UkU1a0NXQXpQaEM0SXZIOTVKRXFRSTZTNHVCSzBpekFaQ21wckU2UW56YnZ1SWFSeTBLWUlCc3BJOTgwdlhvQXJkbkZoRXN1UjVpTGZBYWNuc1YzLWp2dGVJdE5WWVV1bzBwZjA3X1hhUjA2cE1ybTBnOERzUXRaUzljNVdTYlB0RFdaQW1wMTNScWtxVC12Z0R4VG9CYVFUT2kxa9IBgAJBVV95cUxNamcxOVVBTlNMTXl2VGFRNkhlRTZySUtvVXVKelVyNlBrY3pJR2RieTY4aXRjWTgzRjJ4X2U4V2RQTi1yYjFlUVc3YjdfZmZ3Q3Y0ZXVlWXVBWDFKVXBtMGtGN01yWDV6cHc5eTFXNXgxX3A4b0JjR1ZQYUlJTnZYaW5ucU00cEFTS0lyVTNtQk1NUEZzUXRkb0dpT0QwbUZLQUVGTk5OYjVLWDhSRkthcC0xX2daR0wyOGxhWEdJMUh3MUFTRnpKZ3MxMlM2OF8wTXZaLVg1d3NVd2tQelcxbUotV2FaUFBJc1g1S3A5LVVvbTNnVC1XQzFzRkNncUMy?oc=5" target="_blank">VIDEO: Municipio de San Juan regresa al tribunal para exigir acciones de la AAA ante crisis de agua - El Vocero de Puerto Rico</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-06-08 07:52">hace 22h</td>
+                    <td class="time-ago" data-date="2026-06-08 07:52">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Municipio Autónomo de Fajardo - facebook.com">
@@ -768,6 +761,16 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>FB - Fajardo</td>
                     <td class="time-ago" data-date="2026-06-08 02:01">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Caguas, Puerto Rico. 200 estudiantes. Una tarde de aprendizaje real. 🎵 La Fundación Cultural Latin GRAMMY visitó el programa Berklee en Puerto Rico junto a Choco Orta para hablar de ritmo, identidad, perseverancia y la importancia de crear nuevas oport - facebook.com">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxNUktYMnVvMlVBek11RXFHb0FZd1pISldoVGppZmhLSFZuSjhJTEQtZ0xQQVloM0hOWFFoT0VORmZDYzRWZnI1ZVBfVUU1TjM3NHpXR21ZMXcyeG1za0V2RUF4a2JMUHNVOFJMVnE3bUJabWFZbG9WNjdGcElOTjRNbE9SM1RMMkQ3eW5vZ2pLOUZGN1YzZkc5dFJadnlfWXB3di0zWGIzbWRzVE8ydk5xcElWUnE3eWw5LU5JU1haNTNocU9QTW1xOG1vN1Jvc2tEdkJoYnBvdjBMbngybk9HNmtDdXpzcFpNbmRIeg?oc=5" target="_blank">Caguas, Puerto Rico. 200 estudiantes. Una tarde de aprendizaje real. 🎵 La Fundación Cultural Latin GRAMMY visitó el programa Berklee en Puerto Rico junto a Choco Orta para hablar de ritmo, identidad, perseverancia y la importancia de crear nuevas oport - facebook.com</a>
+                    </td>
+                    <td>FB - Caguas</td>
+                    <td class="time-ago" data-date="2026-06-08 00:45">hace 1d</td>
                 </tr>
                 
                 
@@ -953,7 +956,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-06-09 06:04:39 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-06-09 12:02:18 PM<br>
     Actualización automática cada 30 min
 </div>
 
