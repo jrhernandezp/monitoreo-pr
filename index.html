@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-12 12:01:50 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-13 06:05:20 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">17</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">10</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">38</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">13</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-12 12:01:50 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-13 06:05:20 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -347,6 +347,19 @@ tr:hover { background: var(--surface2); }
 
 <!-- BREAKING NEWS -->
 
+<div class="section breaking-section">
+    <div class="breaking-banner">
+        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">hace 3h</span> —
+            <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxOT3pWckx2VW85TmM5REo1aHF0N1VJdXY1emhjN1JOc2xlVG1DRkVuSmdVWUg0Mnh4Snh0VEg1ZWg0RDFkYWFTU0RKQm8zYkl4anlyRVppSmZVb0VBelNQLTQ4ZEVMMVNxNGs3UGNZYTQyMGY3cE5ObUkzR1JGN1dleVp4RWpQQVNhRnh6NUEyTUYwb3NleGdJYzNR?oc=5" target="_blank">Culebra provoca apagón en comunidad de Los Hidalgos, Puerto Plata - El Nuevo Diario</a>
+            <span style="opacity:0.6"> [Culebra]</span>
+        </div>
+        
+    </div>
+</div>
+
 
 <!-- MUNICIPALITIES -->
 <div class="section">
@@ -355,7 +368,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">6</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -365,12 +378,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">5</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
@@ -390,7 +403,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
@@ -398,34 +411,34 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">1</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
+        <div class="muni-card active" onclick="filtrarPor('Ceiba')">
             <div class="muni-name">Ceiba</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">5</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
+        <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">5</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
+        <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">3</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
+        <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
     </div>
@@ -447,150 +460,360 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Centro Madre Teresa de Calcuta recibe importante donativo de MCS Foundation en Naguabo">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/06/12/centro-madre-teresa-de-calcuta-recibe-importante-donativo-de-mcs-foundation-en-naguabo/" target="_blank">Centro Madre Teresa de Calcuta recibe importante donativo de MCS Foundation en Naguabo</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-12 15:44">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Ingresan a prisión de hombre acusado de agresión sexual conyugal y maltrato agravado en Las Piedras">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/06/12/ingresan-a-prision-de-hombre-acusado-de-agresion-sexual-conyugal-y-maltrato-agravado-en-las-piedras/" target="_blank">Ingresan a prisión de hombre acusado de agresión sexual conyugal y maltrato agravado en Las Piedras</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-12 15:15">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Juez ordena ingreso a prisión de hombre acusado de maltrato en caso de violencia doméstica">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/06/12/juez-ordena-ingreso-a-prision-de-hombre-acusado-de-maltrato-en-caso-de-violencia-domestica/" target="_blank">Juez ordena ingreso a prisión de hombre acusado de maltrato en caso de violencia doméstica</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-12 14:43">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - Facebook">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPLTVOWnFiWl9BdUU4emZoajdJZC1aSjF6UlF1RktsWlRqWGhmOHBEemNmR0dQVEhlWEs3dWJuekx1UHdaaWRTamtENjAzeUFoQVlUNTM4YlhsTGtEbUM3MHJyZHRCa1J0OWY4VDV4SUdPNXppM0NRUDdTakNVYXI1cVN0azZNaUN6VnVXMnpB?oc=5" target="_blank">Municipio Autónomo de Naguabo - Facebook</a>
-                    </td>
-                    <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-06-12 14:41">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Polvo del Sahara y sectores con 60% de potencial de lluvia">
+                <tr class="article-row" data-municipios="San Juan" data-titular="Autorizan a Genera PR a proceder con proyecto federal de gasificación de dos unidades de la central San Juan">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://nelpr.com/2026/06/12/polvo-del-sahara-y-sectores-con-60-de-potencial-de-lluvia/" target="_blank">Polvo del Sahara y sectores con 60% de potencial de lluvia</a>
+                        
+                        <a href="https://www.elnuevodia.com/noticias/locales/notas/autorizan-a-genera-pr-a-proceder-con-proyecto-federal-de-gasificacion-de-dos-unidades-de-la-central-san-juan/" target="_blank">Autorizan a Genera PR a proceder con proyecto federal de gasificación de dos unidades de la central San Juan</a>
                     </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-12 14:38">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - Facebook">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE41T0pZM2NxNXZJNnNPektLemZQQUloajQtUmpyT1k2VVJWQzRfMkh5cmwxOE5oX2thSXZEYjhTRnlFTEdJTFNnb1ZRZ3pRck9XMDF0cmRyc0ZlV2cwbHBGd0FmWGR2M19oMkhWU09LTUZ4a3U3S0FMSlk2cW5zRzA?oc=5" target="_blank">Municipio De Trujillo Alto - Facebook</a>
-                    </td>
-                    <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-06-12 14:00">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Policía divulga lista de los 10 fugitivos más buscados en el área de Caguas">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/06/12/policia-divulga-lista-de-los-10-fugitivos-mas-buscados-en-el-area-de-caguas/" target="_blank">Policía divulga lista de los 10 fugitivos más buscados en el área de Caguas</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-12 11:58">hace 3min</td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-06-13 06:05">ahora mismo</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz hasta 12 horas; 16 municipios en lista">
+                <tr class="article-row" data-municipios="Caguas" data-titular="¡Ruge el Monstruo! Atléticos llegan a las 20 victorias tras superar a Caguas">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://www.elnuevodia.com/deportes/baloncesto/notas/ruge-el-monstruo-atleticos-llegan-a-las-20-victorias-tras-superar-a-caguas/" target="_blank">¡Ruge el Monstruo! Atléticos llegan a las 20 victorias tras superar a Caguas</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-06-13 04:16">hace 1h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="En la mira inicio de gasificaciones de San Juan y Palo Seco en las próximas semanas">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://nelpr.com/2026/06/11/se-ira-la-luz-hasta-12-horas-16-municipios-en-lista/" target="_blank">Se irá la luz hasta 12 horas; 16 municipios en lista</a>
+                        <a href="https://www.elnuevodia.com/noticias/locales/notas/en-la-mira-inicio-de-gasificaciones-de-san-juan-y-palo-seco-en-las-proximas-semanas/" target="_blank">En la mira inicio de gasificaciones de San Juan y Palo Seco en las próximas semanas</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-06-13 03:10">hace 2h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Culebra" data-titular="Culebra provoca apagón en comunidad de Los Hidalgos, Puerto Plata - El Nuevo Diario">
+                    <td><span class="muni-tag">Culebra</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxOT3pWckx2VW85TmM5REo1aHF0N1VJdXY1emhjN1JOc2xlVG1DRkVuSmdVWUg0Mnh4Snh0VEg1ZWg0RDFkYWFTU0RKQm8zYkl4anlyRVppSmZVb0VBelNQLTQ4ZEVMMVNxNGs3UGNZYTQyMGY3cE5ObUkzR1JGN1dleVp4RWpQQVNhRnh6NUEyTUYwb3NleGdJYzNR?oc=5" target="_blank">Culebra provoca apagón en comunidad de Los Hidalgos, Puerto Plata - El Nuevo Diario</a>
+                    </td>
+                    <td>Culebra</td>
+                    <td class="time-ago" data-date="2026-06-13 02:07">hace 3h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBNN1kwWFZZd3AtQUZMLTB1Vkpyd3htdGo1ajhfSm1rRjZzdl9HNmlrVUpLX1RKT05jdnlLSVRWakYwdU5jQ05RVDg0N19XeVd0VzZuR0w3TEdmNlZmUWQ2RUFwNVR5SG9fYlpOS19OMXUwWjZVMDVwdTZuZVNVNjQ?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
+                    </td>
+                    <td>FB - Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-06-13 01:45">hace 4h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Vivienda Pública recibe evaluación favorable de COR3 sobre fondos federales">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://nelpr.com/2026/06/12/vivienda-publica-recibe-evaluacion-favorable-de-cor3-sobre-fondos-federales/" target="_blank">Vivienda Pública recibe evaluación favorable de COR3 sobre fondos federales</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-12 01:47">hace 10h</td>
+                    <td class="time-ago" data-date="2026-06-13 01:44">hace 4h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz sábado y domingo; 21 municipios en lista">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://nelpr.com/2026/06/12/se-ira-la-luz-sabado-y-domingo-21-municipios-en-lista/" target="_blank">Se irá la luz sábado y domingo; 21 municipios en lista</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-13 01:33">hace 4h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Ceiba" data-titular="Vota por Ceiba !!!🥰😍❤️ Conquistando Puerto Rico!!! Puerto Rico Gana!!!❤️🥰💪 - facebook.com">
+                    <td><span class="muni-tag">Ceiba</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxOdl9JUkN1djdROE80SVR4dFRlRFNkd0kwSW9mU3RDeDdvaC0wZGZmZHdlVFMzSHFBLVprU0t2WHpIcHFpMUZtZ1RpZnUwZEVjRnJwZWI2TmdCTTY3X2hJY1FQcHlYRnJOMG9GRExOQm03a0ZreTIxaE5scjh3VGRtcGRFZjRicUJWb1ViNVBoX1RLV2xFWVFuSmpqRzVEbnFRaXRmcVdoYjQzbEk0REhfZk5mU0s3b3FkVkNlOUh1UGt6RjFYUkxkYmJNbF81amJEaGlJ?oc=5" target="_blank">Vota por Ceiba !!!🥰😍❤️ Conquistando Puerto Rico!!! Puerto Rico Gana!!!❤️🥰💪 - facebook.com</a>
+                    </td>
+                    <td>FB - Ceiba</td>
+                    <td class="time-ago" data-date="2026-06-13 00:15">hace 5h</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Arrestan a cuatro por robo de identidad y fraude en Puerto Rico">
+                <tr class="article-row" data-municipios="San Juan" data-titular="Crisis del agua alcanza al turismo: hoteles evalúan cancelar reservaciones">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://nelpr.com/2026/06/11/arrestan-a-cuatro-por-robo-de-identidad-y-fraude-en-puerto-rico/" target="_blank">Arrestan a cuatro por robo de identidad y fraude en Puerto Rico</a>
+                        <a href="https://nelpr.com/2026/06/12/crisis-del-agua-alcanza-al-turismo-hoteles-evaluan-cancelar-reservaciones/" target="_blank">Crisis del agua alcanza al turismo: hoteles evalúan cancelar reservaciones</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-11 23:59">hace 12h</td>
+                    <td class="time-ago" data-date="2026-06-12 22:10">hace 7h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Río Grande" data-titular="Estafan a mujer que envió $300 para alquiler a corto plazo en Río Grande - Metro Puerto Rico">
-                    <td><span class="muni-tag">Río Grande</span></td>
+                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
+                    <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOMzlkX2Fxd05iTUNWaXdScmVmYnF0UlFPNWtLRm41WnVPOEhwNjBJYU84c3ZmZHp2TDdza1VxZ1ViSjkwaDFaaGFPVktfeGtGa0E5Y3YtMWt3QVhwQldHSU1jZ2NvRUNwYldHVTdwSzk1Z0dFS21vY2lOWnJTdjhBaEJOQnZsYS13blRQZFdhbjRmcXNCMHpaWTQ0WjU3QUh1QVZnRXBJS1ZXVlJ5LUw3em1rONIBxwFBVV95cUxOV1JtYmVka2M5eWxtcmZFenpvOUg2N0d4TTN2b0k4VTNmNHd1RlJwQkRLWjl1SXFFbFZ0NzRTWkRXc0N1RjFzd0VVcW5tUF9UQVJ4STdrQmxUUjNzZVdYcHVQSzh5bVVLV2lfYU1BTEQ2WjZJc2JOd1FMZlA2a0k1SXNtcG54NG8wSktEeHpoUmtzbVNvamEwemNqN213d1F1V2ZfUTZjY3FVYmw4dDZIYk10SU42cFdJenQyZDEybjZxYm9NaFp3?oc=5" target="_blank">Estafan a mujer que envió $300 para alquiler a corto plazo en Río Grande - Metro Puerto Rico</a>
+                        <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4waFNfRkpPOGRRTDdlNHFRRFlZdzNDSHNQX3hNSE5ZUWFpTWNjQUE0bmFaWW1NQ3JhempvZHJNOWowR1FRV08zeDI1VXpDVTJZb2VBTHdLQlpVbGhRTFBZYUFlTFFLUTg?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
                     </td>
-                    <td>Río Grande</td>
-                    <td class="time-ago" data-date="2026-06-11 22:53">hace 13h</td>
+                    <td>FB - Cataño</td>
+                    <td class="time-ago" data-date="2026-06-12 21:34">hace 8h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Loíza" data-titular="Sin agua o con baja presión: así viven comunidades de Loíza - Telemundo Puerto Rico">
+                <tr class="article-row" data-municipios="Loíza" data-titular="Atrapados entre el río y el mar: así intentan salvar a dos manatíes en Loíza - Noticias de Puerto Rico hoy">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcFJSYnZ6Z3IwNnVHRFVNSXhmN2luS18wTXh0VUtjWnozUE5uUkRTYTRDMGxNQWk4RmFDSXp1OGs4WldidUdmNFZ4SUxYS05mbXhIeUtjTVdxb1NLQXZhWVJZRUJUUVczQTk2ZVdTUWFKMHJSNzlNZVAyN1VxRUI1YWgyN21vMXpYbnhZaGlsYU0zc2xrYzJBOEtXYzR4ZjVmQUM5SG5tbDB6RWQwaW9xd0J6ZjNFU3Izd0E2RjFOZWXSAcgBQVVfeXFMT05vbWpBVnBvM3N1aV9nbUlwckNhRExJMzVuNl9sSmNkZFNhNl80aG9XdTRGMjkwTVVwQ2wyWFk5LS15MHZfaFFuZHMxcUhScVhhU0lDSlF2Q2ozZDA0SEF0b1dSbDJkUEJ1RU80S2JEXzdhaUxQdTBTd3VSbDl5ZXNlUnpHbXRGWW9SOWswVXllaU1fS1d0RVJYc0RULVZNOWNTbHR1ZlRCRXlCdXg1d3VwVVd3MkladzJaaHl1Zmdzc1pFNS1NaTk?oc=5" target="_blank">Sin agua o con baja presión: así viven comunidades de Loíza - Telemundo Puerto Rico</a>
+                        <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxPTTZQZWtXSHp5cTJBdGN5ekY2c3RQUXBvdDhiQXlNN3lrMHpzTW03Yk5RZHBlSkNfeGdTU0EzTnRsZ3ZnRnFUbDlBeUptNHhFczNBbGE3N2ZoNHVrM0wtc3ExNUs4VkRfSGk0LXFWUVpSd1diM3JITlE3dU5UZmFiQ0ktbzBwdGQxM1RlYW5SMWlCcnhfLXdLUGx4TlpzV1NrWTNvT3haODgzYzhIWnVZZzFMOG9TNmVCOWZidktyTVJHSXFzQ3V5NmJFX0t6Wk1DbkstSg?oc=5" target="_blank">Atrapados entre el río y el mar: así intentan salvar a dos manatíes en Loíza - Noticias de Puerto Rico hoy</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-06-11 21:16">hace 14h</td>
+                    <td class="time-ago" data-date="2026-06-12 21:03">hace 9h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Municipio Autónomo de Fajardo - Facebook">
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE15XzhoRFRJelhHUG1PZ3U4dFdsUkloSS00Vnczb0UtdnMyWkNsMEdIMHkzN3BoSkJBTHppUzZGeEZ5VFdVWWVTeDlPTmx0SDRXRERKbmZHUUtZT09GMHMwRWx0TzBpZGFoa2YwTFQyMHllc1Z6X2ptVXgtbVZtTjg?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
+                    </td>
+                    <td>FB - Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-06-12 20:30">hace 9h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5MUHJhT0V4WElPbmtqZlQ3a0pocGVscFpwZmJXZmRuODAxU01Ua09OVzFQdkJSRVJrUWV6N0tLSUdIQ05jbDA4YW10djJkNTFheG8yQ0w2dEtaeC00Qk03Z1E5eFl2a00?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
+                    </td>
+                    <td>FB - Cataño</td>
+                    <td class="time-ago" data-date="2026-06-12 20:04">hace 10h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Humacao, Capital del Este - facebook.com">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE90ZFluaHNUT1lHdE9PMjB5Z1g1RFpOY1ppVktMazl6NDY3Z3c3LXR1blpfX0xVWFZqVlNUR193bUhzeDBYWVZNV2ptbGtsbHFLMjZPQ1FmUkdhRm1wdjZnQ1JSR1BjMm40VUFWdDRqZGlOTjRhaHNIMEhn?oc=5" target="_blank">Humacao, Capital del Este - facebook.com</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-06-12 19:43">hace 10h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Formalizan alianza para apoyar a comunidades vulnerables en situaciones de emergencia">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://waloradio.com/2026/06/12/formalizan-alianza-para-apoyar-a-comunidades-vulnerables-en-situaciones-de-emergencia/" target="_blank">Formalizan alianza para apoyar a comunidades vulnerables en situaciones de emergencia</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-12 19:37">hace 10h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Humacao, Capital del Este - facebook.com">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9XNGhLMk83Qk5HR2JEcFFMajdzS3BOcUVDQ1gwTWhDUVdsWDljWlZ2WW9UU3UtZ0RmTEJXR2tQVUNfNmsxZUtMc29pNjFQZ0R5dWtSTmU0c19mNHA4TC1JY1pycmFOUEI3UG50YUhkR2V6Z3RyMVpKNUpZMA?oc=5" target="_blank">Humacao, Capital del Este - facebook.com</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-06-12 19:36">hace 10h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFB6aUVRRVBXZWZ6czJJeWRXTFdwVGU2ZUo3N3FsdFhVQkM3RVZsRlFwVE14R09DM2dGVzhBVFFGNkM0SXBKX0dDbnlZeTUweTlaS3dpQkMtUU9yb3lULWhmR0hIeFhKY0hwR0RfYjlIcldRQ0E?oc=5" target="_blank">Municipio de Vieques - facebook.com</a>
+                    </td>
+                    <td>FB - Vieques</td>
+                    <td class="time-ago" data-date="2026-06-12 19:33">hace 10h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Fraude en Trujillo Alto: sujetos alteran máquina de juegos para obtener premio de $2,500 - Noticias de Puerto Rico hoy">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMjRXWWVTdDdOb0w2ZWlFR21BSUw5OFJaa1JsVWtvTUEzMkNCd0U0UUdLcXhSN0MzOFhfU1Z1MUJqTFYxLXRMTVItcVBYOFh1MXJJTzJVU2laUlBMN21WczhiUFEtXzRMWFBnVzdySGR6VDBQS1BWV3picWpIUW5lSERwZnRZQnZEOVMyblRoQlRTalh2Tkc3ZGx4bXZnTEhFMjlnVVFQNE9NTl8tQ0VkR1ZiNERsZjVWd1RqQ0VNTV9jOXRrb3FVOXZpUmpCWE1pWWI2Mw?oc=5" target="_blank">Fraude en Trujillo Alto: sujetos alteran máquina de juegos para obtener premio de $2,500 - Noticias de Puerto Rico hoy</a>
+                    </td>
+                    <td>Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-06-12 19:25">hace 10h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - facebook.com">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOSHZqREx4cGdIV0w5dXY0S0hiYW9ndTlFRHBNNTNXNGx3UlhEREJ4VE9OaDBLRjRjX2RKV0s4M3UzYTM4SzFHZ3RleC1Na1JjVzJuSUxSazFZdkF6WkVuYVRZUjBMTTFvRzNMS3F2ZThRWnVkMERUc3FCbVNWdkJySjBrV1VCU2lyZnhjMTFB?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
+                    </td>
+                    <td>FB - Naguabo</td>
+                    <td class="time-ago" data-date="2026-06-12 19:24">hace 10h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Acueductos coordina distribución de agua en Caguas, Gurabo y Juncos">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://waloradio.com/2026/06/12/acueductos-coordina-distribucion-de-agua-en-caguas-gurabo-y-juncos/" target="_blank">Acueductos coordina distribución de agua en Caguas, Gurabo y Juncos</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-12 18:56">hace 11h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0zQW9LZk9EWHNzY0tJVDlrZzdrTDlZYnB5WUctUHBFR3N0QVRBeE1iV25laENTZWg0Q2ctcFBXTzhCcGJyNF96bERnamNwLXlLbDR1dExqN2dXYTR1VlI1LWNYNk9KRWs?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
+                    </td>
+                    <td>FB - Cataño</td>
+                    <td class="time-ago" data-date="2026-06-12 18:44">hace 11h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE8td2ItVkZCcmVjd3JaWi1DcFpHNFBiXy11VWZSRURhbkt6MEZSSWJIc3VvNFBqY18xX1VpbVVUQU5QcE9MRjcxNEV2SGJ4ZzVmMi1IVWhMXzY5b3NHaGFUR2NPcUxNMlpjbEUyQzA3NGtxVVE?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
+                    </td>
+                    <td>FB - Cataño</td>
+                    <td class="time-ago" data-date="2026-06-12 18:44">hace 11h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="Gobernadora firma nuevas leyes y autoriza nombre a carretera en Vieques">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://esnoticiapr.com/gobernadora-firma-nuevas-leyes-y-autoriza-nombre-a-carretera-en-vieques/" target="_blank">Gobernadora firma nuevas leyes y autoriza nombre a carretera en Vieques</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-06-12 18:07">hace 11h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza,Río Grande" data-titular="Dos manatíes quedan atrapados en la desembocadura del Río Grande de Loíza - wapa.tv">
+                    <td><span class="muni-tag">Loíza, Río Grande</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxNNV9Mc0RuZjZGNERwRTVrczFxdzJGdmxsYUh3VVZhS1dqUHdaV3NVaGtSSmFoYV8wMVJtQlhKOVJINHVWWFV3bS1kMEl1UHJpX0Jhdnp6X25rUjdxU3pkNmpldXNnVlZTc0JZaXZTZ0NlNzY1SGZUVTdKZXNkeXp4dkZ0R3hBUl9PV0x3NWRmWkpWWThWNG5ES3BKM3JuSUZKVmFtY1lqLThwUXRLN2RPcU1OcnN0dHlQRDB6YUlST3h6cGhIaGxsLWQ4MlN2WWY5WlFOYzdUNXJjamdqZ0hxbkg4dmJkUDFmaGIwTw?oc=5" target="_blank">Dos manatíes quedan atrapados en la desembocadura del Río Grande de Loíza - wapa.tv</a>
+                    </td>
+                    <td>Loíza</td>
+                    <td class="time-ago" data-date="2026-06-12 17:37">hace 12h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9nVUZVVW54c0c3Q0FpZ0o3X21nTUtyZEpNaUVOME0zTlNBNV95bm9mQTllVEJycUplYmw0Smdlc3c4dDI5WnFyd3liN050Z3RoeG5GdWhMaHZQbXA4ODRTX2NkeXNJOWw3QkpwRzFrNEFCN0thMDRHVzR2dFRidk0?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
+                    </td>
+                    <td>FB - Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-06-12 16:55">hace 13h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5qZTNYdkVLTUNKczgyQUxEUTdfQmV2XzQ0cWtZc2lpMnZra09sQl8zcnNpRXZUSVJUcTBPaVFCV1dFd2I4OFNTY2tkdkY3S0dnVjFWRUZDdDBhbWQtSzNZcjUxTE93VlFwZ0ZGRHlBOVpUQkk?oc=5" target="_blank">Municipio de Vieques - facebook.com</a>
+                    </td>
+                    <td>FB - Vieques</td>
+                    <td class="time-ago" data-date="2026-06-12 16:45">hace 13h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - facebook.com">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOZmlKSzJUNG1BcmdpMXk1bndwV3VLNUotTU10bXB0RzNhMHZPbzJUV0F6bmNGRUJPQ21DZlVFX2QwMGRrQzlJdVJlX2ludVMwTGdXSGZHblk4bGRtOVNiUUlqMUFTREV1WWFLNnFHb3NadG9WdzBXZDNsalF5ZktqbjJn?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
+                    </td>
+                    <td>FB - Naguabo</td>
+                    <td class="time-ago" data-date="2026-06-12 16:40">hace 13h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="Municipio Autónomo de Fajardo - facebook.com">
                     <td><span class="muni-tag">Fajardo</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1UajNRY2E5OG9kZXZ5ZTdRN2RFZjBBYVBQdUNEX2NzbG5ISmFrRDhMSG5rUG5NVjhiaE8tLXNLR2ZRUlMwY3d4ekFPU2xJRF9JR2hVN1Q5elJ4MkxPNHA1M3FkdU9NTm1ueTR6eERNTWc?oc=5" target="_blank">Municipio Autónomo de Fajardo - Facebook</a>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFBjazUzVURhd1BUZWpfMEhHdlY2cjRsejBQbVNleEtxY1U5SVhOYTR5QWVTU3hXeFBPdTFyY2ItMmVEQU9kRlc1MVYwZkV4SkpvTGl5YVBHaEFTSkN6Z2MwSUhnWjdUZFZHNnlZNXdyRE81U3pUc1VQZWFqdUU?oc=5" target="_blank">Municipio Autónomo de Fajardo - facebook.com</a>
                     </td>
                     <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-06-11 19:41">hace 16h</td>
+                    <td class="time-ago" data-date="2026-06-12 16:22">hace 13h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - Facebook">
+                <tr class="article-row" data-municipios="Naguabo" data-titular="Centro Madre Teresa de Calcuta recibe importante donativo de MCS Foundation en Naguabo">
                     <td><span class="muni-tag">Naguabo</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxQVXNndjR4bk1DSTQ3cWFfRFZGU3VONkx3M1B0d3hOd2VVWjVwU2RqQm5Fd0RodnpaRGFZdnpoQ3ByMlRKVlU5WXJZeWx0ZkJLeXdrTXkxb1VxTjhyQmxwNnZhenYtLVVPLXRvYVpqVEZKTjlCSWRvcDdZMXVldnhlaDF3?oc=5" target="_blank">Municipio Autónomo de Naguabo - Facebook</a>
+                        
+                        <a href="https://waloradio.com/2026/06/12/centro-madre-teresa-de-calcuta-recibe-importante-donativo-de-mcs-foundation-en-naguabo/" target="_blank">Centro Madre Teresa de Calcuta recibe importante donativo de MCS Foundation en Naguabo</a>
                     </td>
-                    <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-06-11 18:07">hace 17h</td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-12 15:44">hace 14h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - Facebook">
-                    <td><span class="muni-tag">Naguabo</span></td>
+                <tr class="article-row" data-municipios="Humacao" data-titular="Ingresan a prisión de hombre acusado de agresión sexual conyugal y maltrato agravado en Las Piedras">
+                    <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNZmF6WHNZNllGbkszMzBLU1l2X0RWU2hOc3Y2ay1iY1lINVZzNlRPQmtVWThabnRZb3VXV2Y1LWg0blJZMlRiMUh2WG9taUFZaHNPemtUVkNrbmo3aHBMeTNfNGU2bXVwNEQ0MmkySzVieTVwNTZZM2d2TTFJT2tOWWpzLTFPSlRBaGNWc0l3?oc=5" target="_blank">Municipio Autónomo de Naguabo - Facebook</a>
+                        
+                        <a href="https://waloradio.com/2026/06/12/ingresan-a-prision-de-hombre-acusado-de-agresion-sexual-conyugal-y-maltrato-agravado-en-las-piedras/" target="_blank">Ingresan a prisión de hombre acusado de agresión sexual conyugal y maltrato agravado en Las Piedras</a>
                     </td>
-                    <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-06-11 10:00">hace 1d</td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-12 15:15">hace 14h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Juez ordena ingreso a prisión de hombre acusado de maltrato en caso de violencia doméstica">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://waloradio.com/2026/06/12/juez-ordena-ingreso-a-prision-de-hombre-acusado-de-maltrato-en-caso-de-violencia-domestica/" target="_blank">Juez ordena ingreso a prisión de hombre acusado de maltrato en caso de violencia doméstica</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-12 14:43">hace 15h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE41T0pZM2NxNXZJNnNPektLemZQQUloajQtUmpyT1k2VVJWQzRfMkh5cmwxOE5oX2thSXZEYjhTRnlFTEdJTFNnb1ZRZ3pRck9XMDF0cmRyc0ZlV2cwbHBGd0FmWGR2M19oMkhWU09LTUZ4a3U3S0FMSlk2cW5zRzA?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
+                    </td>
+                    <td>FB - Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-06-12 14:00">hace 16h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Las candidatas de Miss Universe Puerto Rico 2026 desde Caguas, visitaron las facilidades de Goya Puerto Rico , donde disfrutaron de talleres y un recorrido exclusivo para conocer de cerca los procesos detrás de la elaboración de sus productos. #Legado2 - facebook.com">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxPckZrWnYtamRtOV9WcmtvZXdyN2lkNmpZeXhkYUtvVllMZFdkR25tSlh3bTlJdFhDaVZNWEN0TTBtUWh1VTdyOXd6MVBVTnRMMUw5Nlh1TTREVVQzZ2JqcUNBLXVSaGhlZ0pna1ZXNWg5U0x1R0tCV0RzRGVyNl9YMlhJdDN6NVk4TWhDMU5YTzE2OWFkRk5hWFE1YS1PcUR3dXhpVEFkLUNaS0NhSVpQMGZDWWtiZ1lYU1ZSQUZOYVJFQWVvNGdzcjZCRWxVekRQRVZtWE5hVjY2UQ?oc=5" target="_blank">Las candidatas de Miss Universe Puerto Rico 2026 desde Caguas, visitaron las facilidades de Goya Puerto Rico , donde disfrutaron de talleres y un recorrido exclusivo para conocer de cerca los procesos detrás de la elaboración de sus productos. #Legado2 - facebook.com</a>
+                    </td>
+                    <td>FB - Caguas</td>
+                    <td class="time-ago" data-date="2026-06-12 13:01">hace 17h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Arrestan a seis personas en operativo antidrogas en el residencial Juana Matos en Cataño - Noticias de Puerto Rico hoy">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxOLWxPN2VSZnIxaXZoWnhtT1p4RVo1c2dEMTBxRENpYTNLT2FQZGpodWN0eGZnY1hKRHVsZmh1d2JnQVRmRUtIVTdPcE5ya1pfTE5xOFhsSWhpcHRWb0RlWmdERGw4S3NIY0E1Uno1WmtkSmJMX3BwaFJxeWIxMUNnelRIUHJ2QjM3Y2FmLU5nMXRabWd4UnRLZ19qOW03aHNPZjRVMU5SOXlpdVJfbXBTMk5mdGgxUkduVmtveEs2TUtYQ0o3UElKY1NkTTRKMGg4RWJieEtxbno?oc=5" target="_blank">Arrestan a seis personas en operativo antidrogas en el residencial Juana Matos en Cataño - Noticias de Puerto Rico hoy</a>
+                    </td>
+                    <td>Cataño</td>
+                    <td class="time-ago" data-date="2026-06-12 12:51">hace 17h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Alcalde de San Juan espera “en los próximos días” se vean mejoras en el servicio de agua - wapa.tv">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxOQXJlLUFlLVU5ekxTc2NKSUMxaFBUa3BTaDJIYVBCc0l3cy1UUklPUkIyMkg2VGhlUTNBTk1LWHZUTzV3QWY3Vnc1TTJjaXFzT0Qtc0piR1NoOU03N0gwYjNuUmIzR2liZnNMSlpodVVPclM1QkhQMVg1aUFiRjJuUjQ1VU5wZi1MNHJNbjVEYkl5T1E4bDBveHVPQ2dpQXVSY1JTMUNhdWJUQTQ4UWJCSG90R2ZkZEFxSm95UlUxOVJSWEdmeWpic2syS1pqZ2dyQXRMQk9PY3dwOHp4ajZub2RhZw?oc=5" target="_blank">Alcalde de San Juan espera “en los próximos días” se vean mejoras en el servicio de agua - wapa.tv</a>
+                    </td>
+                    <td>San Juan</td>
+                    <td class="time-ago" data-date="2026-06-12 08:22">hace 21h</td>
                 </tr>
                 
                 
@@ -603,7 +826,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.carolina787.com/n/noticia-fake-de-aaa" target="_blank">Noticia Fake de AAA</a>
                     </td>
                     <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-06-12">2026-06-12</td>
+                    <td class="time-ago" data-date="2026-06-13">2026-06-13</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Noticia Fake de DTOP">
@@ -613,7 +836,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.carolina787.com/n/noticia-fake-de-dtop" target="_blank">Noticia Fake de DTOP</a>
                     </td>
                     <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-06-12">2026-06-12</td>
+                    <td class="time-ago" data-date="2026-06-13">2026-06-13</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Noticia Fake de LUMA">
@@ -623,7 +846,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.carolina787.com/n/noticia-fake-de-luma" target="_blank">Noticia Fake de LUMA</a>
                     </td>
                     <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-06-12">2026-06-12</td>
+                    <td class="time-ago" data-date="2026-06-13">2026-06-13</td>
                 </tr>
                 
                 
@@ -776,7 +999,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-06-12 12:01:50 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-06-13 06:05:20 AM<br>
     Actualización automática cada 30 min
 </div>
 
