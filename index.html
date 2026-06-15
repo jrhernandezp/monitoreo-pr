@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-16 05:02:05 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-15 12:02:12 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">33</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">33</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">24</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">10</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">7</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-16 05:02:05 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-15 12:02:12 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -347,6 +347,19 @@ tr:hover { background: var(--surface2); }
 
 <!-- BREAKING NEWS -->
 
+<div class="section breaking-section">
+    <div class="breaking-banner">
+        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">ahora</span> —
+            <a href="https://nelpr.com/2026/06/15/calor-intenso-riesgo-elevado-de-incendios-y-sensacion-termica-sobre-los-100-grados/" target="_blank">Calor intenso, riesgo elevado de incendios y sensación térmica sobre los 100 grados</a>
+            <span style="opacity:0.6"> [San Juan]</span>
+        </div>
+        
+    </div>
+</div>
+
 
 <!-- MUNICIPALITIES -->
 <div class="section">
@@ -355,7 +368,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">6</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -370,17 +383,17 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">2</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Luquillo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
@@ -388,9 +401,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
+        <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
@@ -403,29 +416,29 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">7</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">2</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Vieques')">
+        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Culebra')">
+        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
     </div>
@@ -445,269 +458,96 @@ tr:hover { background: var(--surface2); }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
                 
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
+                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz hasta 13 horas; 20 municipios en lista">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://nelpr.com/2026/06/15/se-ira-la-luz-hasta-13-horas-20-municipios-en-lista/" target="_blank">Se irá la luz hasta 13 horas; 20 municipios en lista</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-16 03:37">hace 1h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="En jaque la red de transmisión: LUMA Energy estima en $1,000 millones inversión necesaria para nueva generación y mayor consumo">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://www.elnuevodia.com/noticias/locales/notas/en-jaque-la-red-de-transmision-luma-energy-estima-en-1000-millones-inversion-necesaria-para-nueva-generacion-y-alzas-en-consumo/" target="_blank">En jaque la red de transmisión: LUMA Energy estima en $1,000 millones inversión necesaria para nueva generación y mayor consumo</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-06-16 03:10">hace 1h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Nuevos equipos fortalecen las labores de mantenimiento en Luquillo Las brigadas de áreas verdes de la Oficina de Obras Públicas Municipal (OPM) recibieron nuevos equipos por parte del alcalde Jesús “Jerry” Márquez Rodríguez, con el propósito de contin - Facebook">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxORm9JVDlPU0FCQzJyWk5rQnN2UldMUnNkZ0s2LUFIblEyOXRXSUFreUlJN1hhTU5UUnJwQWs5SVUxN21aaVdZdk5SQ0FuZ1JZa3JkdmhoWnNIUS1WdjhCNXJ6RDNtdzIwemRQODJCYTJ3U3dTV3dkV2pEUjVWTGZfb0ltMncwSk1LSDZkZVotYUZibS1JcnE5VGJLRVJZOWdrQm8tbWtNYndad2NGTGY4dU1oOGpJcWdIcDVrTVBLM1JTNmdrVUZIUGl3VTdON2k4OVo2bUs5OA?oc=5" target="_blank">Nuevos equipos fortalecen las labores de mantenimiento en Luquillo Las brigadas de áreas verdes de la Oficina de Obras Públicas Municipal (OPM) recibieron nuevos equipos por parte del alcalde Jesús “Jerry” Márquez Rodríguez, con el propósito de contin - Facebook</a>
-                    </td>
-                    <td>FB - Luquillo</td>
-                    <td class="time-ago" data-date="2026-06-16 02:16">hace 2h</td>
-                </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="🚧 AVISO IMPORTANTE|| TRABAJOS DE REPAVIMENTACIÓN El Municipio Autónomo de Naguabo informa a los residentes y conductores que mañana, martes, 16 de junio de 2026, en horario de 8:00 A.M. a 4:00 P.M., se estarán realizando trabajos de repa - Facebook">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi-gFBVV95cUxNRGtVV0NqTk1zY2xtNVNlRlJKanJUUXAzak5Lamp4Y3FQRE9vMzFOMWVPRXB1RVVJbVdhZDRwMlhjY3VtYkhkWVN2bkhWaVNidExzdHRBbjNTRy1SU1k2bFh3UDRzREpQM1o2SXBYdDVPSnQ4TndSUU1VSlJTRjRfUDRrZW4zb2RIb2FCNm16VDYwamFqdlZzMklMYkgxcl96Q3JqTmdNYnBZT2RGWldReGFQUjI3OU1wZmUybzFSTFlMUW1oNlFta2pUdUNzVnRpZHduWlVITnJFY3RjNnZOa1F5MEZRTGN2VFhUWWpSQ0hWSHZRaTIzQXpB?oc=5" target="_blank">🚧 AVISO IMPORTANTE|| TRABAJOS DE REPAVIMENTACIÓN El Municipio Autónomo de Naguabo informa a los residentes y conductores que mañana, martes, 16 de junio de 2026, en horario de 8:00 A.M. a 4:00 P.M., se estarán realizando trabajos de repa - Facebook</a>
-                    </td>
-                    <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-06-15 23:27">hace 5h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Canóvanas" data-titular="📣 Oportunidad de empleo en el Municipio de Canóvanas Estamos reclutando para el puesto de: 🔹 Director(a) de Recuperación, Reconstrucción y Resiliencia 📍 Dependencia: Oficina de la Alcaldesa – Programa de Gerencia de Proyectos 💰 Sueldo mensual: - Facebook">
-                    <td><span class="muni-tag">Canóvanas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxNNFg3VV9tbUdrWl9ZUTRFaWlzQjZXSFNlOUN4UEJndy1ickctRzlTTkc4aFNBelpmNjF1WUQ4T3luMDJnZ3g4WXhtSEwxOWIyQTRBOG1JaHh5NG04OGxndEl0SjFDMDIxYWdMSmNHSGVQRUxiRVQtMFR3MW9PSy1uVnBDQUJVQ045NkR2U29WcWRHQnNNRHN6WGtET21MWVlzNGhYcHhzV0ZNOUNfaXhtdURtRVZnek5DRC1ZV3hiaXZNeTltQkpmelEwREFFR05sUk5teTlKV3VvOFliMzFiUmtBd0g2ZTV0alE?oc=5" target="_blank">📣 Oportunidad de empleo en el Municipio de Canóvanas Estamos reclutando para el puesto de: 🔹 Director(a) de Recuperación, Reconstrucción y Resiliencia 📍 Dependencia: Oficina de la Alcaldesa – Programa de Gerencia de Proyectos 💰 Sueldo mensual: - Facebook</a>
-                    </td>
-                    <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-06-15 20:16">hace 8h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Canóvanas" data-titular="📣 Oportunidad de empleo en el Municipio de Canóvanas Estamos reclutando para el puesto de: 🔹 Director(a) de Recuperación, Reconstrucción y Resiliencia 📍 Dependencia: Oficina de la Alcaldesa – Programa de Gerencia de Proyectos 💰 Sueldo mensual: - Facebook">
-                    <td><span class="muni-tag">Canóvanas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxQY3l4R2JzRndZNnZXNy1LWldwRGljZjQyRUEtY1hmUC1EeFZmVURnX19qeWtQSUltVFBBdmhRZkJFODFuaURiZV9SbEhBajg1NFl2akUzNGN1bzJfaGU0NmFONmRhNDRHVWVGZkxacUV6R1dQZWp5cjNDM3hQRS1takx0LU5ici10S18wM25kdGtEUV9yQVl2eWh5N1lFRlljb3FrOTJRZkFaSWFUV1BTU3pxTHlxRDhUbjVLWWVxMGNkdlBOX0tCSmJiVDcxQy14bHdpVVpwYmdzVlRPVUl2SU85VzBpbVhTbjEw?oc=5" target="_blank">📣 Oportunidad de empleo en el Municipio de Canóvanas Estamos reclutando para el puesto de: 🔹 Director(a) de Recuperación, Reconstrucción y Resiliencia 📍 Dependencia: Oficina de la Alcaldesa – Programa de Gerencia de Proyectos 💰 Sueldo mensual: - Facebook</a>
-                    </td>
-                    <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-06-15 20:16">hace 8h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Culebra" data-titular="Aventurando por mi Isla. . Visitando las hermosas playas de Culebra, Puerto Rico 🇵🇷 🌎 Síguenos en YouTube para que no te pierdas ningún video. 🇵🇷 - Facebook">
-                    <td><span class="muni-tag">Culebra</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxNWnZ2SnVJc2lJQnQtRzVtSHdET29LOHhmaUZXXzhKNGctMFh3NEl3eEFzRVFpMXgxbkdTUVExb21lVmt4VC1mZW8yeklxWkVjMnlvREhWQXJPdVppRWJFZ0dBYVIweUNkMm1JNXJsWmVqcmNjYmd2cUI3cHNVVlZGUjBBRjJZQUIyY1p3LXRVWjRNWm4xc1ExUHdRWjhDY0FNb21IVXJXMV95SlRtNFdGdm93cUNFRm5WaE5DZF9nOWpxY0dQU1lxVXJMSGdhWlItNWlEOUZTV0FaT09jMHpUTE94R3NKQmdQODE4?oc=5" target="_blank">Aventurando por mi Isla. . Visitando las hermosas playas de Culebra, Puerto Rico 🇵🇷 🌎 Síguenos en YouTube para que no te pierdas ningún video. 🇵🇷 - Facebook</a>
-                    </td>
-                    <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-06-15 20:01">hace 9h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="#ConservaciónYOrnato | Nuestras brigadas continúan trabajando para mantener a Humacao limpio y hermoso. Durante el día de hoy realizaron labores de mantenimiento, desyerbo y embellecimiento en los siguientes sectores: 📍 Salida PR-60 (hacia el Hos - Facebook">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxPQlpCd19xREoyX3JZUEpnT3E4YzVMTWFzNFRLay1jSnlIWnRBNWxrSjA2MVV4SVdwbXh0Wkp3NXJFdEkxSmtVZTRRVXhQYXhIcFlWanpsQjJMREduaHRBNUp0bDhsUGJ4Y2ZfajJOVFVBTHFkcnJMcGhseFpFY0J6aHZ3RVVpVWk0WV8wNlRPM1JNbFVlSHhsNU9JMmNYVVRUS2s0V3FYWms2NHJEcXlDakE0U0Mxb2p5cVBHWV9SU3FjZWI3eG1xOFNpZk40cVVRZGdHTElkYWVMeGhxWG9jbmpva1ljNFJQYjRVVjYzUm80WGc?oc=5" target="_blank">#ConservaciónYOrnato | Nuestras brigadas continúan trabajando para mantener a Humacao limpio y hermoso. Durante el día de hoy realizaron labores de mantenimiento, desyerbo y embellecimiento en los siguientes sectores: 📍 Salida PR-60 (hacia el Hos - Facebook</a>
-                    </td>
-                    <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-06-15 19:22">hace 9h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Artesanos en tu Plaza | Humacao | Apoyar a nuestros artesanos es apoyar nuestra cultura, nuestras tradiciones y el talento de nuestra gente. 💛❤️💚 Te invito a darte la vuelta por la Plaza de Recreo Luis Muñoz Rivera y descubrir todo lo que nuestros artesan - Facebook">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxOcE1SLXBIcTRDRDFhaFlsVmc4c2otdVJ6Sy16cElVZWtRN2U5TWhsbXM2WUYxX0hkMU9VSTA3ajkxZ1Z1cGpMX3kwdl9NZXg4ZDBjWjlsSjNIS1FKSkFCUC1aSVdpSWc1dWlENnlDS1BITF9TbURQdXBMVXFyYnF4Y0ZEWXRaekNFZnh0MmNfNjQ5STJKRTUzVXNHV3FmQlB6X0RiWUswV2NLSXFxMnJ1cGFkUEdyRXhOU3pSd0VTMDd1aEYtMXhYRVotcTBfT3BIdlV6djdsclNoMGJTalJfOG51OHNmZw?oc=5" target="_blank">Artesanos en tu Plaza | Humacao | Apoyar a nuestros artesanos es apoyar nuestra cultura, nuestras tradiciones y el talento de nuestra gente. 💛❤️💚 Te invito a darte la vuelta por la Plaza de Recreo Luis Muñoz Rivera y descubrir todo lo que nuestros artesan - Facebook</a>
-                    </td>
-                    <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-06-15 19:12">hace 9h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="🎓✨ El Municipio de Vieques y su alcalde, José A. Junito Corcino Acevedo, felicitan a Yairalis López por completar su Bachillerato en Administración de Hoteles y Restaurantes, con concentración en Alimentos y Comidas. Celebramos este logro fruto de su esf - Facebook">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxNYV9ndDZCYVozSXZCaTVPUHJuaUhEWGJfUXpNa2NvSmFYQTltcW84Tk5iWVl1Y0tBbHhWalFrMUc2cEZOaVJZcVhzOG1tTG5ORHpWVW1aTDNGdWJuZ1lvYTZKdjNKNEFvRERWSUxITmxWWUhkX0JaVzJ5MGZQZzF4c2g3SlBBWk44YlJkN2NWLTN5U251Uzllckhvb29BeDg1MDdKTW04RU5BSTVWcDVURTRMSnJ5UUQ2Mml3bnhPbjZZNzNQT2NKN3RmOXdva05jVlV3ZEZHQmh6ZFRmbGwwUGkwQWV5dEE?oc=5" target="_blank">🎓✨ El Municipio de Vieques y su alcalde, José A. Junito Corcino Acevedo, felicitan a Yairalis López por completar su Bachillerato en Administración de Hoteles y Restaurantes, con concentración en Alimentos y Comidas. Celebramos este logro fruto de su esf - Facebook</a>
-                    </td>
-                    <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-06-15 19:05">hace 9h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Plaza Las Américas celebrará la 44ta Feria Anual de Artesanía con cerca de 260 artesanos">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://nelpr.com/2026/06/15/plaza-las-americas-celebrara-la-44ta-feria-anual-de-artesania-con-cerca-de-260-artesanos/" target="_blank">Plaza Las Américas celebrará la 44ta Feria Anual de Artesanía con cerca de 260 artesanos</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-15 18:55">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Faro de los Animales enfrenta crisis económica y urge adopciones para continuar su misión">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/06/15/faro-de-los-animales-enfrenta-crisis-economica-y-urge-adopciones-para-continuar-su-mision/" target="_blank">Faro de los Animales enfrenta crisis económica y urge adopciones para continuar su misión</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-15 18:49">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Acueductos estima restablecimiento gradual del servicio de agua en Caguas, Gurabo y Juncos">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/06/15/acueductos-estima-restablecimiento-gradual-del-servicio-de-agua-en-caguas-gurabo-y-juncos/" target="_blank">Acueductos estima restablecimiento gradual del servicio de agua en Caguas, Gurabo y Juncos</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-15 18:43">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - Facebook">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE1salhoTGt6M0ZhQ3hXWHRHaDJLejlQdldNVG5zT2FBOG1OZUR3cnlsZVpsa09zMmdETUlaS3dwZkpSTXlkSGNjLUtHM3ZSVjJqd0d5eFlldVNLckdhdERnbzVUNVZMVXJNZXo3NFZ2S055WUE?oc=5" target="_blank">Municipio Autónomo de Cataño - Facebook</a>
-                    </td>
-                    <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-06-15 18:29">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - Facebook">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5KU3dhbnVxSVEyTE9HR29qVjFvZjlFOHQxS0FJS244bWQ4RjlXOF9hVFk5UER4MkdTQmNpYkVsa05KektzZDk5Q0pMRzRDdWw0YUJiM0RGdWx3ZlNvM1JCU1BaTzVCalE?oc=5" target="_blank">Municipio Autónomo de Cataño - Facebook</a>
-                    </td>
-                    <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-06-15 18:29">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Humacao entra a la postemporada con marca de 9-1 y entre los mejores seis de Puerto Rico (Humacao, P.R.)–Los Grises Jr de Humacao continúan demostrando el crecimiento del baloncesto en la Ciudad Gris tras concluir la temporada regular de la Liga Int - Facebook">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRnVWS19yc3JOWDhRaGtuWkxYaWlvMVY4MlFWQkYxTnl6XzVnUVpwT3lmWEJLVldaOGhqbXBiMmdyYXd6TjFKZDRSZS1RNFJ1alNZR25uQkRGNVNWMWlsVTFTdmVCWkJKdk1oOXlQZ1lRRVVyeDFJbHctdTgtMktaLXlWZ2ZuY3dpbDVNZGs3MXd3QmVNbllEZTI0SE4wQ0FpaE51dS14Sm5rc0xuZXNJY285X1hqMk9NcWs2VFJwcXZXRG93NnRxQktrMGJJUHZxZlQxMjhRUGNSaTA?oc=5" target="_blank">Humacao entra a la postemporada con marca de 9-1 y entre los mejores seis de Puerto Rico (Humacao, P.R.)–Los Grises Jr de Humacao continúan demostrando el crecimiento del baloncesto en la Ciudad Gris tras concluir la temporada regular de la Liga Int - Facebook</a>
-                    </td>
-                    <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-06-15 18:12">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Canóvanas" data-titular="📣 Oportunidades de empleo en el Municipio de Canóvanas Estamos reclutando profesionales para las siguientes posiciones: 🔹 Ingeniero(a) en Entrenamiento 💰 Sueldo mensual: $3,100.00 Requisitos mínimos: ✅ Bachillerato en Ingeniería de un colegio o u - Facebook">
-                    <td><span class="muni-tag">Canóvanas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxPUGFSVWJwMWpPLS1QWVY0V1NaTmw3Vk1fNXpicG9CRTNXbmktZ2Vtc1dQMDdfbE51OFRQVlJ5R3E4NVVjd1I5UElEVU05OUpadFdLU2c2Yjdkd3h5aTk2dzFZYzY1Wk9pSEh5ZWx2UWdmMDdRd3RHcjd3bUpOcFZkQ1hURTNqbEd0WXdJWU5FNnFqQ2NDRFRfSllFeExZUUpKZjVJTjNOb09FOHhfVjJkSUZGOTNUanlySnVELTczWDd0VXhnVy1DNnE1dk0zMnJQZE5TeTRfc3ZoMmw5TDJmaXFOLXJaQVV1LVE?oc=5" target="_blank">📣 Oportunidades de empleo en el Municipio de Canóvanas Estamos reclutando profesionales para las siguientes posiciones: 🔹 Ingeniero(a) en Entrenamiento 💰 Sueldo mensual: $3,100.00 Requisitos mínimos: ✅ Bachillerato en Ingeniería de un colegio o u - Facebook</a>
-                    </td>
-                    <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-06-15 18:11">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo added a new... - Municipio de Luquillo - Facebook">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9DUFFYQ3NtenlVYzRtMEhueW1SajhIM2RHMXZZNjhEZV9TeEVYcHc4aktmWEVMenkyanI2bkt1YV94ZmgxNDlqVnJZUlJfVDFtOVBLYm1SMmZzYko4TkNYSG0yQmtUbHV3aHI1RGNXbnVOSVRxNWJ3Vw?oc=5" target="_blank">Municipio de Luquillo added a new... - Municipio de Luquillo - Facebook</a>
-                    </td>
-                    <td>FB - Luquillo</td>
-                    <td class="time-ago" data-date="2026-06-15 17:36">hace 11h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Exalcalde de Humacao pide acción ante estado de rampas de acceso a la PR-924 en Pitahaya">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/06/15/exalcalde-de-humacao-pide-accion-ante-estado-de-rampas-de-acceso-a-la-pr-924-en-pitahaya/" target="_blank">Exalcalde de Humacao pide acción ante estado de rampas de acceso a la PR-924 en Pitahaya</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-15 17:14">hace 11h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - Facebook">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNTDJNWGQ3NmQta0w0TFVOMjV1VWtWVFh2T3FYcDZXNUdUQk9KTzhtcEtlSmNtdHluS3hjTHVCR2tiTzJBUnRLMmpXd0FQek9RNTJ2QV9SbXkzTUNiSUlHWFBHV0tyb3ZuZGtnYzB2TUxkY1pmQVJ5R3NhbXdra1lqdi0tZFBqMzROM3RLdTRR?oc=5" target="_blank">Municipio Autónomo de Naguabo - Facebook</a>
-                    </td>
-                    <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-06-15 17:01">hace 12h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Humacao, Capital del Este - Facebook">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE1peWVMak5ZYVV4ZHRIQjBHTXRNTVBkeXpQQjFsaWcxRm96Tk9jN3hieU41ZmxtSFNPVTk1c2hUVHhqdjZXV0VIQ2JPRTVuWFRvWnlkUmNuaWtXcWFVc0xnaUY2TWl3Mk15YldQUXhibHphZnFnUlVFMUpB?oc=5" target="_blank">Humacao, Capital del Este - Facebook</a>
-                    </td>
-                    <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-06-15 15:24">hace 13h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - Facebook">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOQ0hjSGNCeTdmOHdqZnJ4QzgzM2tHZWNWc09iMTZQZ0JId0piQ09iY2RpRjJZZ2Rjcl9KdjVFemYxZ0FlM1lxWTNhdGJoTklfNnUyVU1RaHJwcGFZbEJRYzVyNVNXVGRBS0F5bXl4eFhxa05vTC1qYk5mc2VXcTY0RS0zZ0NZQ21aSjEzVnpR?oc=5" target="_blank">Municipio Autónomo de Naguabo - Facebook</a>
-                    </td>
-                    <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-06-15 15:12">hace 13h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - Facebook">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9EdWo4Zjk1Mjg5dkpFN181Vm9QMFhCa2RtY2ZISVl3UnQ5cXRpaENyU2tseGNyMlZMcHZEaDYzY256RVdDVTNsV3hCNVBFSWdaMU5PSnExXzczWXhaM1F0RTRVSTAzTUM1OVhoQ3dsT1d2VWM?oc=5" target="_blank">Municipio Autónomo de Cataño - Facebook</a>
-                    </td>
-                    <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-06-15 14:50">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - Facebook">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiR0Nnai15X1d2ME5sMUF6aVVBTjVSNU5LZnNNQi1NWXo4eWNQbXZjNkppVEFtVTB4LTdSREJDSHRPRU9Sb0QySjBOaGRyZzltazJPU0RpUnp5bmJ3cDZURjFROW82ZEE?oc=5" target="_blank">Municipio Autónomo de Cataño - Facebook</a>
-                    </td>
-                    <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-06-15 14:50">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Presentarán cargos criminales contra mujer denunciada por agredir a embarazada en Carolina - Metro Puerto Rico">
+                <tr class="article-row" data-municipios="Carolina" data-titular="UPR Carolina otorga doctorado honoris causa a “Remi”">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxQZUc1OWdha1JfY3hIZEtsY3lCaS00YTdfcERkZkZnRWpaQWkxaS1tWlZuZUJ4aFVmaGc0ZjZjdllGdW1xUjVmMDBGTHpDTk5GTjBFQzhzbEFNb3hjdDUyYkcwU3dlU1IweWx0ZEFpS3luOEFWajhQWW9SbWs4aUFxMkZEbHl2RVd0d01DeEpOcjFRa0UwemRmRFRSOE9wTFdXcE9VbTczeHVXZElzTlNYckJVcm9MNFFSclcxS1RyZG1BTGtrbkFYT2czQW_SAeABQVVfeXFMUGEycWVOQmxZSzZSMFBaT3k2RklSXzF2MGtOdXlLWFJtazRfa2RsZVlKTUNEbEs0MWppVTZISE80clAzMTlJa2RlOEFEaExOTjVINVN3MDBYYXQ5d0U2eUhQZzdnM0k1YkVJVFRpdnNjUFp5M2xiejlWd1VSWURQVkFFb2JUZjBjWktMSkZRMnYtRFhDOUFOQzJZcGlFVEdNeU1JdDR6Y0JXcDhRWnk4dzg5dVhScmZocWNxMGRKa0tNV3FrNVdrRDVzVEJ1UnhnZlIxNEpWQWxYQzFMendIS3c?oc=5" target="_blank">Presentarán cargos criminales contra mujer denunciada por agredir a embarazada en Carolina - Metro Puerto Rico</a>
+                        <a href="https://nelpr.com/2026/06/15/upr-carolina-otorga-doctorado-honoris-causa-a-remi/" target="_blank">UPR Carolina otorga doctorado honoris causa a “Remi”</a>
                     </td>
-                    <td>Carolina</td>
-                    <td class="time-ago" data-date="2026-06-15 14:40">hace 14h</td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-15 15:56">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - Facebook">
-                    <td><span class="muni-tag">Naguabo</span></td>
+                <tr class="article-row" data-municipios="Humacao" data-titular="Humacao protagoniza la sorpresa de la jornada en el sóftbol femenino">
+                    <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxPLW9CbFNGZ3FlNklGWnhFV243UmY5STlGQjZIaWUzX0cyektGQWg0YVFuR3lyVUNheDd5Yk1leWt4cHJTZGF3YU5vd1Q4eDJKd1pibXVPeGxLOF93c2ljei1QbExzbTdEYmNQb01JcVF0dXJvemtBVkxiMlNRQ3A1YUdn?oc=5" target="_blank">Municipio Autónomo de Naguabo - Facebook</a>
+                        <a href="https://nelpr.com/2026/06/15/humacao-protagoniza-la-sorpresa-de-la-jornada-en-el-softbol-femenino/" target="_blank">Humacao protagoniza la sorpresa de la jornada en el sóftbol femenino</a>
                     </td>
-                    <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-06-15 14:34">hace 14h</td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-15 15:50">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Calor intenso, riesgo elevado de incendios y sensación térmica sobre los 100 grados">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/06/15/calor-intenso-riesgo-elevado-de-incendios-y-sensacion-termica-sobre-los-100-grados/" target="_blank">Calor intenso, riesgo elevado de incendios y sensación térmica sobre los 100 grados</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-15 15:36">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Criollos, ¡ya está disponible la nueva edición de Caguas Comunica + La Revista! Descubran todo lo que está pasando en nuestra ciudad y cómo seguimos avanzando juntos. 📰 📲 Accedan aquí: https://indd.adobe.com/view/612b0173-ea0d-4684-af11-38fc37 - facebook.com">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi_AFBVV95cUxNT2w2MkQ2clVoRkdGWlZMWHIxN0dJWS1waHNRZnRENjBqRlBtcFJ3eU1YU3BFVUZxODVCT0w2cTQ5TF82WWtJaWlJRV9PX3IzMTd1ajdaaGNCUVhGZEw1TTZzWVd3VHdEOHBaRWkyb1BQQzhwRS1lTXN3LTZNdzEyYnZvaXJTUEplNHRoQ09PMWd3Y2ZQcjRvTmpCM1lYaGh5TjJPWjlWRjRFSGRkbUY4VE9QSTNkWHR3ejAxWlFTNDIzeUlNcWttVU12cC0tVF9vWlhkZDhFazlhS2JBaF9kMTBhSDJ5OGZ0X0tJWXZCRnlZSzBQVWZ0c0lPQ0M?oc=5" target="_blank">Criollos, ¡ya está disponible la nueva edición de Caguas Comunica + La Revista! Descubran todo lo que está pasando en nuestra ciudad y cómo seguimos avanzando juntos. 📰 📲 Accedan aquí: https://indd.adobe.com/view/612b0173-ea0d-4684-af11-38fc37 - facebook.com</a>
+                    </td>
+                    <td>William Miranda</td>
+                    <td class="time-ago" data-date="2026-06-15 15:35">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Humacao, Capital del Este - facebook.com">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE1peWVMak5ZYVV4ZHRIQjBHTXRNTVBkeXpQQjFsaWcxRm96Tk9jN3hieU41ZmxtSFNPVTk1c2hUVHhqdjZXV0VIQ2JPRTVuWFRvWnlkUmNuaWtXcWFVc0xnaUY2TWl3Mk15YldQUXhibHphZnFnUlVFMUpB?oc=5" target="_blank">Humacao, Capital del Este - facebook.com</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-06-15 15:24">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9EdWo4Zjk1Mjg5dkpFN181Vm9QMFhCa2RtY2ZISVl3UnQ5cXRpaENyU2tseGNyMlZMcHZEaDYzY256RVdDVTNsV3hCNVBFSWdaMU5PSnExXzczWXhaM1F0RTRVSTAzTUM1OVhoQ3dsT1d2VWM?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
+                    </td>
+                    <td>FB - Cataño</td>
+                    <td class="time-ago" data-date="2026-06-15 14:50">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiR0Nnai15X1d2ME5sMUF6aVVBTjVSNU5LZnNNQi1NWXo4eWNQbXZjNkppVEFtVTB4LTdSREJDSHRPRU9Sb0QySjBOaGRyZzltazJPU0RpUnp5bmJ3cDZURjFROW82ZEE?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
+                    </td>
+                    <td>FB - Cataño</td>
+                    <td class="time-ago" data-date="2026-06-15 14:50">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Carreteras anuncia continuación de trabajos de rehabilitación en la PR-30 en Humacao">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/15/carreteras-anuncia-continuacion-de-trabajos-de-rehabilitacion-en-la-pr-30-en-humacao/" target="_blank">Carreteras anuncia continuación de trabajos de rehabilitación en la PR-30 en Humacao</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-15 14:25">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Humacao sorprende a las Bravas">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/15/humacao-sorprende-a-las-bravas/" target="_blank">Humacao sorprende a las Bravas</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-15 14:20">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Crisis de agua pone en riesgo a Puerto Rico como puerto base de cruceros">
@@ -717,27 +557,123 @@ tr:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/crisis-de-agua-pone-en-riesgo-a-puerto-rico-como-puerto-base-de-cruceros/?utm_source=rss&utm_medium=rss&utm_campaign=crisis-de-agua-pone-en-riesgo-a-puerto-rico-como-puerto-base-de-cruceros&utm_source=rss&utm_medium=rss&utm_campaign=crisis-de-agua-pone-en-riesgo-a-puerto-rico-como-puerto-base-de-cruceros" target="_blank">Crisis de agua pone en riesgo a Puerto Rico como puerto base de cruceros</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-06-15 13:30">hace 15h</td>
+                    <td class="time-ago" data-date="2026-06-15 13:30">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Caguas" data-titular="Diócesis de Caguas, Puerto Rico - Página Oficial - Facebook">
-                    <td><span class="muni-tag">Caguas</span></td>
+                <tr class="article-row" data-municipios="Carolina" data-titular="Motociclista resulta gravemente herido tras accidente en Carolina">
+                    <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNdFRuNWNtcXVXRldaMXJKUGs0d1RJVEY3WnlJeWJtaHloal9wamUzNFFtSDBxNjdvNTJKYnFleER0QS0xSEdmb2xEdXJWWk9MUTFXa0RoZWJOd1YwSzA2MUdJNXBYbjQ4cmxRSVJNUVA3N0tqWnJFYk03SVJ3ellkQg?oc=5" target="_blank">Diócesis de Caguas, Puerto Rico - Página Oficial - Facebook</a>
+                        <a href="https://esnoticiapr.com/motociclista-resulta-gravemente-herido-tras-accidente-en-carolina/" target="_blank">Motociclista resulta gravemente herido tras accidente en Carolina</a>
                     </td>
-                    <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-06-15 03:54">hace 1d</td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-06-15 12:51">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Caguas" data-titular="Diócesis de Caguas, Puerto Rico - Página Oficial - Facebook">
-                    <td><span class="muni-tag">Caguas</span></td>
+                <tr class="article-row" data-municipios="Humacao" data-titular="Se informan trabajos de rehabilitación de losas de pavimento en la PR-30 en el kilómetro 25.4 al 25.8, como parte del Programa Acelerado de Mejoras de Seguridad en el municipio de Humacao. Las labores se realizarán el martes, 16 y miércoles, 17 de juni - facebook.com">
+                    <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPbTZxeXJONkViMEVxWWNlUnBiT211dzFfcHdVR2NPTUNlUERXTG9xMkZ0bFlKaFFrQjUxZnJXekRoTEYzclNqc2FRVDF1NTRHNFhHbko5TGZGeW5TbUZWd3lJdUszd2ZlUW1rSFBNajgtX3ZpZ29PWnQ4Z3k5aDJncg?oc=5" target="_blank">Diócesis de Caguas, Puerto Rico - Página Oficial - Facebook</a>
+                        <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxPUXc5RnBYVDJnRl9pbm85ZVlNTDFjaTd2ZXJyeHVoZXBsTG1PQTZ3MW9Oam1zOVp5WUNEY1ROdU1DSDhsdHpDcjBZNGhzcjYyc3drYWo3VGFQN05RMGk1S1l0SmNLYVdvSHdMeWRiRVpfeWFHUGY1SDVKaDJ5ZlVhSEwtcnMtYXliUUZ5WUswYnREWi1UV19zTVFaZDluaTNmaTUyN0lWX1J3dlJpY0xZdThHSEZ0S0ltSkdEbmNfMnJUTmZRVWFaYjNUU1JEQVdUTDNJU3RR?oc=5" target="_blank">Se informan trabajos de rehabilitación de losas de pavimento en la PR-30 en el kilómetro 25.4 al 25.8, como parte del Programa Acelerado de Mejoras de Seguridad en el municipio de Humacao. Las labores se realizarán el martes, 16 y miércoles, 17 de juni - facebook.com</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-06-15 12:13">ahora</td>
+                </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Motociclista se accidenta con un vehiculo y sufre heridas de gravedad">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://radioisla.tv/motociclista-se-accidenta-con-un-vehiculo-y-sufre-heridas-de-gravedad/?utm_source=rss&utm_medium=rss&utm_campaign=motociclista-se-accidenta-con-un-vehiculo-y-sufre-heridas-de-gravedad&utm_source=rss&utm_medium=rss&utm_campaign=motociclista-se-accidenta-con-un-vehiculo-y-sufre-heridas-de-gravedad" target="_blank">Motociclista se accidenta con un vehiculo y sufre heridas de gravedad</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-06-15 10:39">hace 1h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Diócesis de Caguas, Puerto Rico - Página Oficial - facebook.com">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPbTZxeXJONkViMEVxWWNlUnBiT211dzFfcHdVR2NPTUNlUERXTG9xMkZ0bFlKaFFrQjUxZnJXekRoTEYzclNqc2FRVDF1NTRHNFhHbko5TGZGeW5TbUZWd3lJdUszd2ZlUW1rSFBNajgtX3ZpZ29PWnQ4Z3k5aDJncg?oc=5" target="_blank">Diócesis de Caguas, Puerto Rico - Página Oficial - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-06-15 02:33">hace 1d</td>
+                    <td class="time-ago" data-date="2026-06-15 02:33">hace 9h</td>
+                </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz hasta 12 horas en estos municipios">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://nelpr.com/2026/06/14/se-ira-la-luz-hasta-12-horas-en-estos-municipios-75/" target="_blank">Se irá la luz hasta 12 horas en estos municipios</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-14 23:44">hace 12h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Humacao, Capital del Este - facebook.com">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE1lRVRFUExiajB3S2ZNZEgwbEtvUGtCSFVONkdHU0VVRVZraEE3LWtLanJabFU2OWluZFlxeVo0bmg5eXdaWHQ4RXFtMlNMZjlmN3NwX1JncG0yR2hqWS11ZmtKcnhNYkdDSVJkTklyRUxjRmZOeURqdkpn?oc=5" target="_blank">Humacao, Capital del Este - facebook.com</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-06-14 23:39">hace 12h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="En Calle Loíza llevan 90 días con interrupciones en servicio del agua - Telemundo Puerto Rico">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxPbXNoYXZOVm1ZU2UwdW5YRFR0bHlCRFhqQnR1RHdPR0VnRVlpMkVSeXdweVpPeHRzLXFaWkRHMjluS1ZlZGFJLUlsaEFyM2ZwZllBRlE1ZzVVRU55OGMxMXhpWElYR0NpMXh0b0Q3TWhxNElUdWpRV2NHOGw4OWk3NVNmWW9jTVNtRmVtb2h2NDVkWDgwaWtvV0J0WkVaYThvSmw2TVJFTGZjWkxzQUx3X1J1RFk0QnpyYWx6MUR5U01HbU1pWVJkOUNGa2JrczjSAdcBQVVfeXFMTVJoVThIVUduUmpGb0Vtd3VfU1cwUEZpUTBJWU4tVFd0RXVyTGJNV2RHMkcwU2E2VzN0N3VJOVZlUldCZzhLM3VjVF9MTGFScnhBUjRRM1Jscy01bE1yMUN5cE95WUJHZXQtZExSRWhKWnRmMkZ6SEt4cWxLQWt0VVhBa3pKaS1Rcmt6Mk45cnNmR2p5R3JVQUhVWmhKN1YzbUxPWjdBeEtkTUdCRUJrbVlXWVZKbEZEd3RXWHZ0djhsektxdy1rQk5TRk1kTHlXV2tiaTNsdU0?oc=5" target="_blank">En Calle Loíza llevan 90 días con interrupciones en servicio del agua - Telemundo Puerto Rico</a>
+                    </td>
+                    <td>Loíza</td>
+                    <td class="time-ago" data-date="2026-06-14 22:35">hace 13h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Alcalde de San Juan agradece ayuda de otros municipios en acarreo de agua - NotiCel">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPSjlNczJVeGYtWjFBcm5XSVZLcXY4YVZDQmMwTnNyaWlkUkJhNGFwQklwNGVvMGxzYm15OVpVNS1SWnl3QUYzSDkxSjJGTzBKSTVvR0JzZkJFMEd3UWczTExQMlVLS1lwMVpYcTV2Mnd2UGl2TFZZbkFTTnZDS1BUU1NLbE80NVV3N0d4eFhsVUpUUzdZalBoYzNmY3p0WmdzVEZCOU9nSEF6MzVnb0FKUG1NY1FUQQ?oc=5" target="_blank">Alcalde de San Juan agradece ayuda de otros municipios en acarreo de agua - NotiCel</a>
+                    </td>
+                    <td>San Juan</td>
+                    <td class="time-ago" data-date="2026-06-14 21:00">hace 15h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="Canóvanas es más - facebook.com">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9RUjl3X3V2WDVvbVpVWGw2RlNPclJUb1pzNDdCWnBHaEw1SklrZXB5MHBBcE1CU1BKcDBaTk5uYmdkSnJCNHNFdVJpWkxCQ1RNVWpfLWhkNzgwbS1fSmtDcllLUGdoZEVvQ0p1Nm5BcmhkcTNNWWpB?oc=5" target="_blank">Canóvanas es más - facebook.com</a>
+                    </td>
+                    <td>FB - Canóvanas</td>
+                    <td class="time-ago" data-date="2026-06-14 18:22">hace 17h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="¿No tienes agua? Estos son los oasis activos en San Juan - Metro Puerto Rico">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxNb1lMM1FjVnRqRkZKdWlZaDByeWZEam0wWFJtT3JfZ296d2pYdHlFdjk3SjFabDkwSC1VZHJLQ2MxR1ZqZTRHSlM4RGtWc1VTcHh2QWwzcXN1UlRqLUVxX3FQRkhic2RxM2pxWWdzTjRLdzJPbUw4Nlk4cUhvbEsyUVBEaHVHRWdqZk0wZE5QZUlUbFFqTUZZUUg0a9IBsAFBVV95cUxQU3E3Q2k2VUxqWThLaVE4dVZZd0QtaEU5SExoQ0x0cUk3SC0taXZ1Ujd0QUN2ZU1GOWtBcDBTc3J4QXl2UG1LNkNseEF5STl4U2ttUWgzSTAxUDN3UDVxdDhEamVsckhuT0l0NzdhZUFvejlrU01aZjVaUnFvOXJTV3paa09hRy1VeEhJZEhwS1R3SGl2VWt4MjJpS1RwenN6eGJxTU1BMXQwdU9HazZveg?oc=5" target="_blank">¿No tienes agua? Estos son los oasis activos en San Juan - Metro Puerto Rico</a>
+                    </td>
+                    <td>San Juan</td>
+                    <td class="time-ago" data-date="2026-06-14 16:20">hace 19h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Muere conductora tras chocar contra camión cisterna en la PR-52 en San Juan - El Vocero de Puerto Rico">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxPMndEM0tHRm1RTFVxeUtvUDZYNERfSG5MbUJxSGlyYXAxQzV2d0dQdE9fSm9tX19lZHBTS0RGTS05bmxIU1R1dEtvSDVaTUlBVW9pbGNHYUZqQmkta1VFUTZocU5WbGVKUkNTbVlVcWhqUG9MSnpBV2NtWkdLaFh2UzlwRVZjNTV6ekZ6bmszdkxlSC1JVXRYTEQwOHdZZThmbDRaVXFHNFhhNHkyLWJFaWh1Sl9pcTlyOVVIMWM3eUtpVzhoem5WMzNHWTluNmxLb1ZqU3UwNnRmeW12UXRvSUVrYlBfdm9MWnZEdXJrTzhRb0JZ0gH6AUFVX3lxTE5CRVRzcm4tMnRBVXJzazNONmo0Y0g1dEE0TkdrVEV2QkNoRmhBV0hRYUNrWHlYZjVnQ1pnajVlQ2VZcGxqejllZEl6TkZxRjkyNWx3bUREcUN4RklZNllaQWQyVHFVRHp4U0tfT2RZMHc3T1JSb3l3MlFZczJuMkJkZng0YzIyN2lha1FNejJFY1pTc1NaQnVfODFaSEVXR19TellCT05Wa0VxMlZkLWNtMkx4ZUtYYzZxb3VEeDBsdTFLRThHSEFPNGVtaUFSMVpqSkRsbFNZMzM0cl9sY0wwZjlUY3JKQkIyNmtEWC02akU3Nkk2QXdHaWc?oc=5" target="_blank">Muere conductora tras chocar contra camión cisterna en la PR-52 en San Juan - El Vocero de Puerto Rico</a>
+                    </td>
+                    <td>El Vocero (GN)</td>
+                    <td class="time-ago" data-date="2026-06-14 12:29">hace 23h</td>
                 </tr>
                 
                 
@@ -746,38 +682,28 @@ tr:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Carolina" data-titular="Noticia Fake de AAA">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://www.carolina787.com/n/noticia-fake-de-aaa" target="_blank">Noticia Fake de AAA</a>
                     </td>
                     <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-06-16">2026-06-16</td>
+                    <td class="time-ago" data-date="2026-06-15">2026-06-15</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Noticia Fake de DTOP">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://www.carolina787.com/n/noticia-fake-de-dtop" target="_blank">Noticia Fake de DTOP</a>
                     </td>
                     <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-06-16">2026-06-16</td>
+                    <td class="time-ago" data-date="2026-06-15">2026-06-15</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Noticia Fake de LUMA">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://www.carolina787.com/n/noticia-fake-de-luma" target="_blank">Noticia Fake de LUMA</a>
-                    </td>
-                    <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-06-16">2026-06-16</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Justicia presentará cargos contra mujer por presunta agresión a embarazada en Carolina">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://www.carolina787.com/n/justicia-presentara-cargos-contra-mujer-por-presunta-agresion-a-embarazada-en-carolina" target="_blank">Justicia presentará cargos contra mujer por presunta agresión a embarazada en Carolina</a>
                     </td>
                     <td>Carolina787</td>
                     <td class="time-ago" data-date="2026-06-15">2026-06-15</td>
@@ -933,7 +859,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-06-16 05:02:05 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-06-15 12:02:12 PM<br>
     Actualización automática cada 30 min
 </div>
 
