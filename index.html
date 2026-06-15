@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-15 06:07:22 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-15 08:20:40 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">20</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">18</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">7</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-15 06:07:22 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-15 08:20:40 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -355,7 +355,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">9</div>
+            <div class="muni-count">7</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -368,9 +368,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
+        <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
@@ -383,9 +383,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">1</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
@@ -398,9 +398,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Ceiba')">
+        <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
             <div class="muni-name">Ceiba</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
@@ -410,7 +410,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
@@ -423,9 +423,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Culebra')">
+        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
     </div>
@@ -445,6 +445,42 @@ tr:hover { background: var(--surface2); }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
                 
+                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Motociclista se accidenta con un vehiculo y sufre heridas de gravedad">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/motociclista-se-accidenta-con-un-vehiculo-y-sufre-heridas-de-gravedad/?utm_source=rss&utm_medium=rss&utm_campaign=motociclista-se-accidenta-con-un-vehiculo-y-sufre-heridas-de-gravedad&utm_source=rss&utm_medium=rss&utm_campaign=motociclista-se-accidenta-con-un-vehiculo-y-sufre-heridas-de-gravedad" target="_blank">Motociclista se accidenta con un vehiculo y sufre heridas de gravedad</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-06-15 10:39">ahora</td>
+                </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Diócesis de Caguas, Puerto Rico - Página Oficial - facebook.com">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNdFRuNWNtcXVXRldaMXJKUGs0d1RJVEY3WnlJeWJtaHloal9wamUzNFFtSDBxNjdvNTJKYnFleER0QS0xSEdmb2xEdXJWWk9MUTFXa0RoZWJOd1YwSzA2MUdJNXBYbjQ4cmxRSVJNUVA3N0tqWnJFYk03SVJ3ellkQg?oc=5" target="_blank">Diócesis de Caguas, Puerto Rico - Página Oficial - facebook.com</a>
+                    </td>
+                    <td>FB - Caguas</td>
+                    <td class="time-ago" data-date="2026-06-15 03:54">hace 4h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Rondalla de Humacao. Jayme Stone · Tico-Tico (feat. Trio Brasileiro). Concierto "Nuestra Voz por la Niñez" para el Hogar Niñito Jesús.🎵🇵🇷 - facebook.com">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxPb0Q3UHhGUmNHQnR4X2tmaGxZUHpGcXYxYkxaRmZ3QnctTVYzb2hkZVJmM3FxT2hCMDF2R01MejZkVGlMUXF3QnVMdzliamVwQjNHVGUyR1FJMU1HaHNPUXdyVXozVm5vWkJRYk5HeHhvdzBFTnRFN1drZ1RvQ2tRd1l5SVZSd1pYNHd6bWxSSnRzZ2tZZVczSHYzMFdadjM5TDBMMmpta0NhbmM5X0Vzak5vczNWS3FuMlhWZjVxNXdFRHdjd1c2bFJISTNEVEJIa0lRc3Jrc2ZjajhW?oc=5" target="_blank">Rondalla de Humacao. Jayme Stone · Tico-Tico (feat. Trio Brasileiro). Concierto "Nuestra Voz por la Niñez" para el Hogar Niñito Jesús.🎵🇵🇷 - facebook.com</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-06-15 00:22">hace 7h</td>
+                </tr>
+                
+                
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz hasta 12 horas en estos municipios">
@@ -454,7 +490,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/06/14/se-ira-la-luz-hasta-12-horas-en-estos-municipios-75/" target="_blank">Se irá la luz hasta 12 horas en estos municipios</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-14 23:44">hace 6h</td>
+                    <td class="time-ago" data-date="2026-06-14 23:44">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Humacao, Capital del Este - facebook.com">
@@ -464,7 +500,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE1lRVRFUExiajB3S2ZNZEgwbEtvUGtCSFVONkdHU0VVRVZraEE3LWtLanJabFU2OWluZFlxeVo0bmg5eXdaWHQ4RXFtMlNMZjlmN3NwX1JncG0yR2hqWS11ZmtKcnhNYkdDSVJkTklyRUxjRmZOeURqdkpn?oc=5" target="_blank">Humacao, Capital del Este - facebook.com</a>
                     </td>
                     <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-06-14 23:39">hace 6h</td>
+                    <td class="time-ago" data-date="2026-06-14 23:39">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Alcalde de San Juan agradece ayuda de otros municipios en acarreo de agua - NotiCel">
@@ -474,7 +510,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPSjlNczJVeGYtWjFBcm5XSVZLcXY4YVZDQmMwTnNyaWlkUkJhNGFwQklwNGVvMGxzYm15OVpVNS1SWnl3QUYzSDkxSjJGTzBKSTVvR0JzZkJFMEd3UWczTExQMlVLS1lwMVpYcTV2Mnd2UGl2TFZZbkFTTnZDS1BUU1NLbE80NVV3N0d4eFhsVUpUUzdZalBoYzNmY3p0WmdzVEZCOU9nSEF6MzVnb0FKUG1NY1FUQQ?oc=5" target="_blank">Alcalde de San Juan agradece ayuda de otros municipios en acarreo de agua - NotiCel</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-06-14 21:00">hace 9h</td>
+                    <td class="time-ago" data-date="2026-06-14 21:00">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="LUMA advierte de apagones para esta noche">
@@ -484,7 +520,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/06/14/luma-advierte-de-apagones-para-esta-noche/" target="_blank">LUMA advierte de apagones para esta noche</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-14 20:18">hace 9h</td>
+                    <td class="time-ago" data-date="2026-06-14 20:18">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Tres personas se bajan de un vehículo y asaltan a mujer">
@@ -494,7 +530,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/06/14/tres-personas-se-bajan-de-un-vehiculo-y-asaltan-a-mujer/" target="_blank">Tres personas se bajan de un vehículo y asaltan a mujer</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-14 19:33">hace 10h</td>
+                    <td class="time-ago" data-date="2026-06-14 19:33">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Accidente fatal cobra la vida de mujer en la carretera PR-52">
@@ -504,7 +540,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/06/14/accidente-fatal-cobra-la-vida-de-mujer-en-la-carretera-pr-52/" target="_blank">Accidente fatal cobra la vida de mujer en la carretera PR-52</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-14 19:21">hace 10h</td>
+                    <td class="time-ago" data-date="2026-06-14 19:21">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Canóvanas es más - facebook.com">
@@ -514,7 +550,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9RUjl3X3V2WDVvbVpVWGw2RlNPclJUb1pzNDdCWnBHaEw1SklrZXB5MHBBcE1CU1BKcDBaTk5uYmdkSnJCNHNFdVJpWkxCQ1RNVWpfLWhkNzgwbS1fSmtDcllLUGdoZEVvQ0p1Nm5BcmhkcTNNWWpB?oc=5" target="_blank">Canóvanas es más - facebook.com</a>
                     </td>
                     <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-06-14 18:22">hace 11h</td>
+                    <td class="time-ago" data-date="2026-06-14 18:22">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo - facebook.com">
@@ -524,7 +560,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFB5a0ljREl5a2ZWUFRIQ2pNdzMtSXlVVXhoMEhuYi1DRWFGM1pnQ2o5Q2NuWk10VWRER3JPVUlHS3dVMmg0bkpiUXI0aFRFOGhVbEVhNUJ3Q2h3b1ZqcjRmY1hkQU1jaVFQd2Vr?oc=5" target="_blank">Municipio de Luquillo - facebook.com</a>
                     </td>
                     <td>FB - Luquillo</td>
-                    <td class="time-ago" data-date="2026-06-14 17:18">hace 12h</td>
+                    <td class="time-ago" data-date="2026-06-14 17:18">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
@@ -534,17 +570,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8yekFKNUF3Z0Y4OUczZUdVQm56V3Fma2RXNllxT25qbzZVWjdhR2p4UXItVDFtNXFQa2Z3V01pN0gzT0tJdkVWMTYyV2tjaElMeGlvQzN5emZsMUNNZmZ2dEFMWHZsWXc?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-06-14 16:41">hace 13h</td>
+                    <td class="time-ago" data-date="2026-06-14 16:41">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="¿No tienes agua? Estos son los oasis activos en San Juan - Metro Puerto Rico">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQWlFXcXltMnJiNWJpX1JzMWZwdGhQZC1uSXZQTDZWaUE0eFl3VFN3RzF5T0J5LVpPd3F1QzR6TnpBU0RaTXFKT01tajdCaTdIRWF5c21mQlVncENaT1llMFVuQUt4NVRLamZQNlY0Zll2RVF4aVR6cWNBSm8ybk5tY05QV3h0Qkx1U0lpTkp6SGhJa1VtNzUyM2UtOTfSAbABQVVfeXFMUFNxN0NpNlVMalk4S2lROHVWWXdELWhFOUhMaENMdHFJN0gtLWl2dVI3dEFDdmVNRjlrQXAwU3NyeEF5dlBtSzZDbHhBeUk5eFNrbVFoM0kwMVAzd1A1cXQ4RGplbHJIbk9JdDc3YWVBb3o5a1NNWmY1WlJxbzlyU1d6WmtPYUctVXhISWRIcEtUd0hpdlVreDIyaUtUcHpzenhicU1NQTF0MHVPR2s2b3o?oc=5" target="_blank">¿No tienes agua? Estos son los oasis activos en San Juan - Metro Puerto Rico</a>
+                        <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxNb1lMM1FjVnRqRkZKdWlZaDByeWZEam0wWFJtT3JfZ296d2pYdHlFdjk3SjFabDkwSC1VZHJLQ2MxR1ZqZTRHSlM4RGtWc1VTcHh2QWwzcXN1UlRqLUVxX3FQRkhic2RxM2pxWWdzTjRLdzJPbUw4Nlk4cUhvbEsyUVBEaHVHRWdqZk0wZE5QZUlUbFFqTUZZUUg0a9IBsAFBVV95cUxQU3E3Q2k2VUxqWThLaVE4dVZZd0QtaEU5SExoQ0x0cUk3SC0taXZ1Ujd0QUN2ZU1GOWtBcDBTc3J4QXl2UG1LNkNseEF5STl4U2ttUWgzSTAxUDN3UDVxdDhEamVsckhuT0l0NzdhZUFvejlrU01aZjVaUnFvOXJTV3paa09hRy1VeEhJZEhwS1R3SGl2VWt4MjJpS1RwenN6eGJxTU1BMXQwdU9HazZveg?oc=5" target="_blank">¿No tienes agua? Estos son los oasis activos en San Juan - Metro Puerto Rico</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-06-14 16:20">hace 13h</td>
+                    <td class="time-ago" data-date="2026-06-14 16:20">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="San Juan amplía operativo de emergencia por interrupciones en el servicio de agua">
@@ -554,47 +590,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/san-juan-amplia-operativo-de-emergencia-por-interrupciones-en-el-servicio-de-agua/" target="_blank">San Juan amplía operativo de emergencia por interrupciones en el servicio de agua</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-06-14 15:55">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Culebra" data-titular="Sousa_PR. Tego Calderón · Pa Que Te Lo Gozes. ¿LA MEJOR PLAYA DE PUERTO RICO? 🤔🇵🇷 No ignores la señal 😂💪🏻 #PuertoRico #PR #Beach #Culebra #ClearWater - facebook.com">
-                    <td><span class="muni-tag">Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxNUFFudGtaTi1laXNzU1dTdGpMZGRoZm4zRmRkMEJRVG9lZnZMel9Lb1AySUhCX3VaV1g1YTBrc2hWbDk5NVVHdHJzUHFsY3FYOGpyR19mMEhudjFQWXFveENhTmsxU1czZ1UxSEJnd0txcE4zRjd1TzNTdXNnRmZ4SVJYdk82cHlkVXdxQy1nQW9URHFfZ2JDRzRLWnl3aGRzV0sxRlVid0xvc3YwN29wc0xwaTlPcE9DZFN4Q29LNzVSSV9Tckh0eFBxMzBxZzB3dXlTZm5Uc01qWUcwaGxNNW90TVVidw?oc=5" target="_blank">Sousa_PR. Tego Calderón · Pa Que Te Lo Gozes. ¿LA MEJOR PLAYA DE PUERTO RICO? 🤔🇵🇷 No ignores la señal 😂💪🏻 #PuertoRico #PR #Beach #Culebra #ClearWater - facebook.com</a>
-                    </td>
-                    <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-06-14 15:00">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo,Ceiba" data-titular="Puerto Rico Gana. . La competencia se pone intensa en Conquistando Puerto Rico, donde la tensión aumenta y el premio es nada menos que 15.000 dólares. Dos pueblos frente a frente: Fajardo y Ceiba, representados por Loida Viera y Adriana Lullando, se - facebook.com">
-                    <td><span class="muni-tag">Fajardo, Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxONk05OWF4bzN5YU9VUkJqd3hmUVVyZG1oN3JtOTdESVFLNE9aYXF5M2NoS3ZiVWNiMmhxRFgyazk4aHNjYUNVN0liUWVwMl9CbmI0WGppeUxPbWkzQXhua20wWVN0MUlEOGFjbXI3ejdPcU5wV0loWXVKeUR0VFhNWlBXeVIxYjdwWEY5UWw2c1JsdUhWU3hFOTBnd2xnWXdYc1dvTWNXazNhUFJtWWNlRVQySnlfdHFVNzRtb2d0N3dmb2VsRzlnTFBudEtZT2ZPTFVpV2tWYm04bWFrOE9na1JUYTM?oc=5" target="_blank">Puerto Rico Gana. . La competencia se pone intensa en Conquistando Puerto Rico, donde la tensión aumenta y el premio es nada menos que 15.000 dólares. Dos pueblos frente a frente: Fajardo y Ceiba, representados por Loida Viera y Adriana Lullando, se - facebook.com</a>
-                    </td>
-                    <td>FB - Ceiba</td>
-                    <td class="time-ago" data-date="2026-06-14 14:56">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Humacao, Capital del Este - facebook.com">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9zOEFKNzhhRmd0Mmp6LWpmdThfTXdBMmhGTUFDVWVaTDZTUkJBejFWblFMbTctbVJobnRvTlJlOXdfQno3dkRwT20wdVA0RWI1V0pUQjdJbTNGWkp5OFdIVUtVZUNCelJsM1B1OXNkbkIxQURya0tSTGJwRQ?oc=5" target="_blank">Humacao, Capital del Este - facebook.com</a>
-                    </td>
-                    <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-06-14 14:08">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Mujer pierde la vida en accidente fatal en el Expreso de San Juan">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/mujer-pierde-la-vida-en-accidente-fatal-en-el-expreso-de-san-juan/" target="_blank">Mujer pierde la vida en accidente fatal en el Expreso de San Juan</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-06-14 13:51">hace 16h</td>
+                    <td class="time-ago" data-date="2026-06-14 15:55">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Muere conductora tras chocar contra camión cisterna en la PR-52 en San Juan - El Vocero de Puerto Rico">
@@ -604,17 +600,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxPMndEM0tHRm1RTFVxeUtvUDZYNERfSG5MbUJxSGlyYXAxQzV2d0dQdE9fSm9tX19lZHBTS0RGTS05bmxIU1R1dEtvSDVaTUlBVW9pbGNHYUZqQmkta1VFUTZocU5WbGVKUkNTbVlVcWhqUG9MSnpBV2NtWkdLaFh2UzlwRVZjNTV6ekZ6bmszdkxlSC1JVXRYTEQwOHdZZThmbDRaVXFHNFhhNHkyLWJFaWh1Sl9pcTlyOVVIMWM3eUtpVzhoem5WMzNHWTluNmxLb1ZqU3UwNnRmeW12UXRvSUVrYlBfdm9MWnZEdXJrTzhRb0JZ0gH6AUFVX3lxTE5CRVRzcm4tMnRBVXJzazNONmo0Y0g1dEE0TkdrVEV2QkNoRmhBV0hRYUNrWHlYZjVnQ1pnajVlQ2VZcGxqejllZEl6TkZxRjkyNWx3bUREcUN4RklZNllaQWQyVHFVRHp4U0tfT2RZMHc3T1JSb3l3MlFZczJuMkJkZng0YzIyN2lha1FNejJFY1pTc1NaQnVfODFaSEVXR19TellCT05Wa0VxMlZkLWNtMkx4ZUtYYzZxb3VEeDBsdTFLRThHSEFPNGVtaUFSMVpqSkRsbFNZMzM0cl9sY0wwZjlUY3JKQkIyNmtEWC02akU3Nkk2QXdHaWc?oc=5" target="_blank">Muere conductora tras chocar contra camión cisterna en la PR-52 en San Juan - El Vocero de Puerto Rico</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-06-14 12:29">hace 17h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="En San Juan, el salario semanal promedio aumentó 3.1% en el cuarto trimestre de 2025 - Sin Comillas">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYkIycEJaSXg4cTQxYWQ1SjRnZXhCX2xidnNQUnFPamMtelFDSzM1TEZxLWw1RHllTjZUV3VsWG9iaVpjMVhOWUM5T0FxeTQ5b1gxWHRRUTRLLV9nNmhHd3BfdHJfRDlCYzVQRk15ZGtmQlExMXpVRGNuYkp2VlJLTFlrQ3RlNzBkcGVHeGJXZHNMNkdFbXItenpoa3VCT2tUTHpYSUVjLXhDblk?oc=5" target="_blank">En San Juan, el salario semanal promedio aumentó 3.1% en el cuarto trimestre de 2025 - Sin Comillas</a>
-                    </td>
-                    <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-06-14 03:01">hace 1d</td>
+                    <td class="time-ago" data-date="2026-06-14 12:29">hace 19h</td>
                 </tr>
                 
                 
@@ -800,7 +786,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-06-15 06:07:22 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-06-15 08:20:40 AM<br>
     Actualización automática cada 30 min
 </div>
 
