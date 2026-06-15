@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-14 12:01:39 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-15 06:05:54 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">29</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">8</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">13</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">20</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-14 12:01:39 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-15 06:05:54 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -347,19 +347,6 @@ tr:hover { background: var(--surface2); }
 
 <!-- BREAKING NEWS -->
 
-<div class="section breaking-section">
-    <div class="breaking-banner">
-        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
-        
-        <div class="breaking-item">
-            <span class="time">ahora</span> —
-            <a href="https://esnoticiapr.com/san-juan-amplia-operativo-de-emergencia-por-interrupciones-en-el-servicio-de-agua/" target="_blank">San Juan amplía operativo de emergencia por interrupciones en el servicio de agua</a>
-            <span style="opacity:0.6"> [San Juan]</span>
-        </div>
-        
-    </div>
-</div>
-
 
 <!-- MUNICIPALITIES -->
 <div class="section">
@@ -368,22 +355,22 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">8</div>
+            <div class="muni-count">9</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">4</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
+        <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Caguas')">
+        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
@@ -391,19 +378,19 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">1</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
+        <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">1</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Loíza')">
+        <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
@@ -416,9 +403,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">1</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
@@ -431,14 +418,14 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">1</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Vieques')">
+        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         
     </div>
@@ -458,60 +445,167 @@ tr:hover { background: var(--surface2); }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
                 
-                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz hasta 12 horas en estos municipios">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://nelpr.com/2026/06/14/se-ira-la-luz-hasta-12-horas-en-estos-municipios-75/" target="_blank">Se irá la luz hasta 12 horas en estos municipios</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-14 23:44">hace 6h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Humacao, Capital del Este - facebook.com">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE1lRVRFUExiajB3S2ZNZEgwbEtvUGtCSFVONkdHU0VVRVZraEE3LWtLanJabFU2OWluZFlxeVo0bmg5eXdaWHQ4RXFtMlNMZjlmN3NwX1JncG0yR2hqWS11ZmtKcnhNYkdDSVJkTklyRUxjRmZOeURqdkpn?oc=5" target="_blank">Humacao, Capital del Este - facebook.com</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-06-14 23:39">hace 6h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Alcalde de San Juan agradece ayuda de otros municipios en acarreo de agua - NotiCel">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPSjlNczJVeGYtWjFBcm5XSVZLcXY4YVZDQmMwTnNyaWlkUkJhNGFwQklwNGVvMGxzYm15OVpVNS1SWnl3QUYzSDkxSjJGTzBKSTVvR0JzZkJFMEd3UWczTExQMlVLS1lwMVpYcTV2Mnd2UGl2TFZZbkFTTnZDS1BUU1NLbE80NVV3N0d4eFhsVUpUUzdZalBoYzNmY3p0WmdzVEZCOU9nSEF6MzVnb0FKUG1NY1FUQQ?oc=5" target="_blank">Alcalde de San Juan agradece ayuda de otros municipios en acarreo de agua - NotiCel</a>
+                    </td>
+                    <td>San Juan</td>
+                    <td class="time-ago" data-date="2026-06-14 21:00">hace 9h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="LUMA advierte de apagones para esta noche">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://nelpr.com/2026/06/14/luma-advierte-de-apagones-para-esta-noche/" target="_blank">LUMA advierte de apagones para esta noche</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-14 20:18">hace 9h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Tres personas se bajan de un vehículo y asaltan a mujer">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://nelpr.com/2026/06/14/tres-personas-se-bajan-de-un-vehiculo-y-asaltan-a-mujer/" target="_blank">Tres personas se bajan de un vehículo y asaltan a mujer</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-14 19:33">hace 10h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Accidente fatal cobra la vida de mujer en la carretera PR-52">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://nelpr.com/2026/06/14/accidente-fatal-cobra-la-vida-de-mujer-en-la-carretera-pr-52/" target="_blank">Accidente fatal cobra la vida de mujer en la carretera PR-52</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-14 19:21">hace 10h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="Canóvanas es más - facebook.com">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9RUjl3X3V2WDVvbVpVWGw2RlNPclJUb1pzNDdCWnBHaEw1SklrZXB5MHBBcE1CU1BKcDBaTk5uYmdkSnJCNHNFdVJpWkxCQ1RNVWpfLWhkNzgwbS1fSmtDcllLUGdoZEVvQ0p1Nm5BcmhkcTNNWWpB?oc=5" target="_blank">Canóvanas es más - facebook.com</a>
+                    </td>
+                    <td>FB - Canóvanas</td>
+                    <td class="time-ago" data-date="2026-06-14 18:22">hace 11h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo - facebook.com">
+                    <td><span class="muni-tag">Luquillo</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFB5a0ljREl5a2ZWUFRIQ2pNdzMtSXlVVXhoMEhuYi1DRWFGM1pnQ2o5Q2NuWk10VWRER3JPVUlHS3dVMmg0bkpiUXI0aFRFOGhVbEVhNUJ3Q2h3b1ZqcjRmY1hkQU1jaVFQd2Vr?oc=5" target="_blank">Municipio de Luquillo - facebook.com</a>
+                    </td>
+                    <td>FB - Luquillo</td>
+                    <td class="time-ago" data-date="2026-06-14 17:18">hace 12h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8yekFKNUF3Z0Y4OUczZUdVQm56V3Fma2RXNllxT25qbzZVWjdhR2p4UXItVDFtNXFQa2Z3V01pN0gzT0tJdkVWMTYyV2tjaElMeGlvQzN5emZsMUNNZmZ2dEFMWHZsWXc?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
+                    </td>
+                    <td>FB - Cataño</td>
+                    <td class="time-ago" data-date="2026-06-14 16:41">hace 13h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="¿No tienes agua? Estos son los oasis activos en San Juan - Metro Puerto Rico">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQWlFXcXltMnJiNWJpX1JzMWZwdGhQZC1uSXZQTDZWaUE0eFl3VFN3RzF5T0J5LVpPd3F1QzR6TnpBU0RaTXFKT01tajdCaTdIRWF5c21mQlVncENaT1llMFVuQUt4NVRLamZQNlY0Zll2RVF4aVR6cWNBSm8ybk5tY05QV3h0Qkx1U0lpTkp6SGhJa1VtNzUyM2UtOTfSAbABQVVfeXFMUFNxN0NpNlVMalk4S2lROHVWWXdELWhFOUhMaENMdHFJN0gtLWl2dVI3dEFDdmVNRjlrQXAwU3NyeEF5dlBtSzZDbHhBeUk5eFNrbVFoM0kwMVAzd1A1cXQ4RGplbHJIbk9JdDc3YWVBb3o5a1NNWmY1WlJxbzlyU1d6WmtPYUctVXhISWRIcEtUd0hpdlVreDIyaUtUcHpzenhicU1NQTF0MHVPR2s2b3o?oc=5" target="_blank">¿No tienes agua? Estos son los oasis activos en San Juan - Metro Puerto Rico</a>
+                    </td>
+                    <td>San Juan</td>
+                    <td class="time-ago" data-date="2026-06-14 16:20">hace 13h</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="San Juan amplía operativo de emergencia por interrupciones en el servicio de agua">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://esnoticiapr.com/san-juan-amplia-operativo-de-emergencia-por-interrupciones-en-el-servicio-de-agua/" target="_blank">San Juan amplía operativo de emergencia por interrupciones en el servicio de agua</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-06-14 15:55">ahora</td>
+                    <td class="time-ago" data-date="2026-06-14 15:55">hace 14h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Mujer muere en accidente de tránsito en San Juan">
-                    <td><span class="muni-tag">San Juan</span></td>
+                <tr class="article-row" data-municipios="Culebra" data-titular="Sousa_PR. Tego Calderón · Pa Que Te Lo Gozes. ¿LA MEJOR PLAYA DE PUERTO RICO? 🤔🇵🇷 No ignores la señal 😂💪🏻 #PuertoRico #PR #Beach #Culebra #ClearWater - facebook.com">
+                    <td><span class="muni-tag">Culebra</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://noticel.com/noticias/20260614/mujer-muere-en-accidente-de-transito-en-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=mujer-muere-en-accidente-de-transito-en-san-juan" target="_blank">Mujer muere en accidente de tránsito en San Juan</a>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxNUFFudGtaTi1laXNzU1dTdGpMZGRoZm4zRmRkMEJRVG9lZnZMel9Lb1AySUhCX3VaV1g1YTBrc2hWbDk5NVVHdHJzUHFsY3FYOGpyR19mMEhudjFQWXFveENhTmsxU1czZ1UxSEJnd0txcE4zRjd1TzNTdXNnRmZ4SVJYdk82cHlkVXdxQy1nQW9URHFfZ2JDRzRLWnl3aGRzV0sxRlVid0xvc3YwN29wc0xwaTlPcE9DZFN4Q29LNzVSSV9Tckh0eFBxMzBxZzB3dXlTZm5Uc01qWUcwaGxNNW90TVVidw?oc=5" target="_blank">Sousa_PR. Tego Calderón · Pa Que Te Lo Gozes. ¿LA MEJOR PLAYA DE PUERTO RICO? 🤔🇵🇷 No ignores la señal 😂💪🏻 #PuertoRico #PR #Beach #Culebra #ClearWater - facebook.com</a>
                     </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-06-14 15:14">ahora</td>
+                    <td>FB - Culebra</td>
+                    <td class="time-ago" data-date="2026-06-14 15:00">hace 15h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo,Ceiba" data-titular="Puerto Rico Gana. . La competencia se pone intensa en Conquistando Puerto Rico, donde la tensión aumenta y el premio es nada menos que 15.000 dólares. Dos pueblos frente a frente: Fajardo y Ceiba, representados por Loida Viera y Adriana Lullando, se - facebook.com">
+                    <td><span class="muni-tag">Fajardo, Ceiba</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxONk05OWF4bzN5YU9VUkJqd3hmUVVyZG1oN3JtOTdESVFLNE9aYXF5M2NoS3ZiVWNiMmhxRFgyazk4aHNjYUNVN0liUWVwMl9CbmI0WGppeUxPbWkzQXhua20wWVN0MUlEOGFjbXI3ejdPcU5wV0loWXVKeUR0VFhNWlBXeVIxYjdwWEY5UWw2c1JsdUhWU3hFOTBnd2xnWXdYc1dvTWNXazNhUFJtWWNlRVQySnlfdHFVNzRtb2d0N3dmb2VsRzlnTFBudEtZT2ZPTFVpV2tWYm04bWFrOE9na1JUYTM?oc=5" target="_blank">Puerto Rico Gana. . La competencia se pone intensa en Conquistando Puerto Rico, donde la tensión aumenta y el premio es nada menos que 15.000 dólares. Dos pueblos frente a frente: Fajardo y Ceiba, representados por Loida Viera y Adriana Lullando, se - facebook.com</a>
+                    </td>
+                    <td>FB - Ceiba</td>
+                    <td class="time-ago" data-date="2026-06-14 14:56">hace 15h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Humacao, Capital del Este - facebook.com">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9zOEFKNzhhRmd0Mmp6LWpmdThfTXdBMmhGTUFDVWVaTDZTUkJBejFWblFMbTctbVJobnRvTlJlOXdfQno3dkRwT20wdVA0RWI1V0pUQjdJbTNGWkp5OFdIVUtVZUNCelJsM1B1OXNkbkIxQURya0tSTGJwRQ?oc=5" target="_blank">Humacao, Capital del Este - facebook.com</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-06-14 14:08">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Mujer pierde la vida en accidente fatal en el Expreso de San Juan">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://esnoticiapr.com/mujer-pierde-la-vida-en-accidente-fatal-en-el-expreso-de-san-juan/" target="_blank">Mujer pierde la vida en accidente fatal en el Expreso de San Juan</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-06-14 13:51">ahora</td>
+                    <td class="time-ago" data-date="2026-06-14 13:51">hace 16h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan,Caguas" data-titular="Mujer fallece tras chocar contra camión cisterna en el expreso PR-52">
-                    <td><span class="muni-tag">San Juan, Caguas</span></td>
+                <tr class="article-row" data-municipios="San Juan" data-titular="Muere conductora tras chocar contra camión cisterna en la PR-52 en San Juan - El Vocero de Puerto Rico">
+                    <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/mujer-fallece-tras-chocar-contra-camion-cisterna-en-el-expreso-pr-52/" target="_blank">Mujer fallece tras chocar contra camión cisterna en el expreso PR-52</a>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxPMndEM0tHRm1RTFVxeUtvUDZYNERfSG5MbUJxSGlyYXAxQzV2d0dQdE9fSm9tX19lZHBTS0RGTS05bmxIU1R1dEtvSDVaTUlBVW9pbGNHYUZqQmkta1VFUTZocU5WbGVKUkNTbVlVcWhqUG9MSnpBV2NtWkdLaFh2UzlwRVZjNTV6ekZ6bmszdkxlSC1JVXRYTEQwOHdZZThmbDRaVXFHNFhhNHkyLWJFaWh1Sl9pcTlyOVVIMWM3eUtpVzhoem5WMzNHWTluNmxLb1ZqU3UwNnRmeW12UXRvSUVrYlBfdm9MWnZEdXJrTzhRb0JZ0gH6AUFVX3lxTE5CRVRzcm4tMnRBVXJzazNONmo0Y0g1dEE0TkdrVEV2QkNoRmhBV0hRYUNrWHlYZjVnQ1pnajVlQ2VZcGxqejllZEl6TkZxRjkyNWx3bUREcUN4RklZNllaQWQyVHFVRHp4U0tfT2RZMHc3T1JSb3l3MlFZczJuMkJkZng0YzIyN2lha1FNejJFY1pTc1NaQnVfODFaSEVXR19TellCT05Wa0VxMlZkLWNtMkx4ZUtYYzZxb3VEeDBsdTFLRThHSEFPNGVtaUFSMVpqSkRsbFNZMzM0cl9sY0wwZjlUY3JKQkIyNmtEWC02akU3Nkk2QXdHaWc?oc=5" target="_blank">Muere conductora tras chocar contra camión cisterna en la PR-52 en San Juan - El Vocero de Puerto Rico</a>
                     </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-06-14 13:41">ahora</td>
+                    <td>El Vocero (GN)</td>
+                    <td class="time-ago" data-date="2026-06-14 12:29">hace 17h</td>
                 </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="#radazone Ya estamos en Fajardo así que arramca para aca!!!! Municipio Autónomo de Fajardo FATHER DAY AUTO SHOW FAJARDO PUERTO RICO 14/JUNIO/2026 Síguenos en RADAZONE porque siempre tenemos mucho mas y diferente para tí...porque - facebook.com">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxPTVF4Q040bmgtWFVQbTFXNG51dTVHTm1xZWtQZVMwZkJHYXFiWEw3cGNGVWJFQXJCeDl4UjB5bmk1SlR3OEVwQTNaWG1Mbm9rRXZHTWo2VGtiN3pFNS1GZ2FBYkYyUkJkM0VocGp5MndRaHFfYjRHM0xhczdCb0cxWkNrZVVISUtuQ2l1aUhNUkZNVDJhLVk4ZWZ5OFlkbnVZQ0ZpSmZBWThqT2xUbk5Vd2U3eFZ3QzJMUHp1MzJUaEZtVlVMYjBLMmx1U2l6dXlJMFBzYi1QTUxCcy05?oc=5" target="_blank">#radazone Ya estamos en Fajardo así que arramca para aca!!!! Municipio Autónomo de Fajardo FATHER DAY AUTO SHOW FAJARDO PUERTO RICO 14/JUNIO/2026 Síguenos en RADAZONE porque siempre tenemos mucho mas y diferente para tí...porque - facebook.com</a>
-                    </td>
-                    <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-06-14 13:13">ahora</td>
-                </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="En San Juan, el salario semanal promedio aumentó 3.1% en el cuarto trimestre de 2025 - Sin Comillas">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -520,210 +614,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYkIycEJaSXg4cTQxYWQ1SjRnZXhCX2xidnNQUnFPamMtelFDSzM1TEZxLWw1RHllTjZUV3VsWG9iaVpjMVhOWUM5T0FxeTQ5b1gxWHRRUTRLLV9nNmhHd3BfdHJfRDlCYzVQRk15ZGtmQlExMXpVRGNuYkp2VlJLTFlrQ3RlNzBkcGVHeGJXZHNMNkdFbXItenpoa3VCT2tUTHpYSUVjLXhDblk?oc=5" target="_blank">En San Juan, el salario semanal promedio aumentó 3.1% en el cuarto trimestre de 2025 - Sin Comillas</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-06-14 03:01">hace 9h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Hasta 12 horas sin electricidad: LUMA informa interrupciones para este domingo">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/06/13/hasta-12-horas-sin-electricidad-luma-informa-interrupciones-para-este-domingo/" target="_blank">Hasta 12 horas sin electricidad: LUMA informa interrupciones para este domingo</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-14 02:52">hace 9h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Micro RGB: Un televisor que redefine la categoría premium">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/06/13/micro-rgb-un-televisor-que-redefine-la-categoria-premium/" target="_blank">Micro RGB: Un televisor que redefine la categoría premium</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-14 01:47">hace 10h</td>
-                </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Hormigueros Municipio 1 vence 51-40 a Humacao Basketball B en la División 2 del #TorneoNovicios de la @fbpurligajuvenil Javier López fue el jugador más destacado con 14 Puntos. - facebook.com">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxPQ3poY29rR1g0ajc2Rzl6VWQtQVlrbG5tRU1jckozYVgwWFNCdmRJanhQbnUzc2JhaXZhVUk0OXh2YWZvY1AzckxocVBQb3hvYkN0SVFVdzhJVWtYc29odTMxSE52dGVMRzEzSnVOWkVPMFRTUXFGWVhFTVc5Z3FoMmVrU053MEo5QUxQcHB4WkwzUVN1UEw3WWlUSkJzRXFvSWhZZnJrbnlTQ1FPOXk5aV9oQldpaWhXcnl4QkJidlM0TkpCMTVRd29HX1lweVlFUU41VC1rSTV3TjZsS0JnWGJQZw?oc=5" target="_blank">Hormigueros Municipio 1 vence 51-40 a Humacao Basketball B en la División 2 del #TorneoNovicios de la @fbpurligajuvenil Javier López fue el jugador más destacado con 14 Puntos. - facebook.com</a>
-                    </td>
-                    <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-06-13 23:31">hace 12h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - facebook.com">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxQNmM3NFhvWUFHMGMweGRVWUR6cEU1eXBKQ3UwS1NSb2xmMFJwMUg0TVNmdDZ3YlMwbEtWQ2ZBUlRLd0lQdFIzRnJ4Y2xWSGdNcVNJQkpHbnE0M0RkeTUtaUdYUFNGb3lTek90MnZzcFdhV0dUamdXRFlBaFlkTThvbjhR?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
-                    </td>
-                    <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-06-13 22:21">hace 13h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Culebra" data-titular="Playa Flamenco en Culebra, Puerto Rico. 🏝😍 #PUERTORICO - facebook.com">
-                    <td><span class="muni-tag">Culebra</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxNRTV1R2tMX19KYXZDS1NvNTExMEdCNDkwdzIzakpoRGJ3eWRuZ0VKT0FKb016eTBhaUNZUklkUjVSSllpaThPTjBwSVB3cWFpWmdwRUltWGRoRUxReGo2OV9sbDJYUHN4cUMwZ3h5cWVaUVUxMUhFcGdSeUJYNGZQcmJKYkp0VnZ3dTFtRkxSSm43V3RhbTZiN0Nyb19XcHJUYU1KUEtwYks3TUZmUDAzUzYxbVhmakFUd203bXZn?oc=5" target="_blank">Playa Flamenco en Culebra, Puerto Rico. 🏝😍 #PUERTORICO - facebook.com</a>
-                    </td>
-                    <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-06-13 21:04">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdm5SSXh4b2dmOHROQ2N3czVVaDZqNUd0WGZsemd0SXZRZFVMNU1HMF9POWRXZlkwcWJ5a3JQQi1Yc09OaHQxTFJoV011RzVLM0tac1pINXA5NURuZnRwQVdsMDNHOXRUTl9KUG5hUlBwMzN4d2NDdkpNZjFxUGhzVjd0TTlrRU16R3d3?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
-                    </td>
-                    <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-06-13 21:00">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Humacao, Capital del Este - facebook.com">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE1JOUFudlpCMzZMTnd4T1M1a2NfdWJnVkRha25VV1g0c2tNZVVSQTljU21HRWtZLVR4azhORDRmaXdwQm5DX1JaYldlRlpSRm1MR282aURFbGVHV19QVHBGU0VGWGQ4R0xrUl8wSlFuenlmSTdxWl9yMS1aUQ?oc=5" target="_blank">Humacao, Capital del Este - facebook.com</a>
-                    </td>
-                    <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-06-13 20:44">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Policía hiere a hombre que presuntamente apuntó con un arma a un agente">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/06/13/policia-hiere-a-hombre-que-presuntamente-apunto-con-un-arma-a-un-agente/" target="_blank">Policía hiere a hombre que presuntamente apuntó con un arma a un agente</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-13 20:35">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="¡El 2nd Mom & Dad Pets Festival regresa a Cataño! Les esperamos el sábado, 27 de junio, en el área verde del Malecón. Disfruta carreras de mascotas, yoga, bowling canino, desfile de modas y más. Tendremos también vacunación de mascotas a bajo cost - facebook.com">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxPVGFoVlBaLWlZYWg1VVNOV3RFNmsxdlBhcWYxdFdFeE1nWWJYX2p3MTl1eDBvQ0k3UnZ3RFRXOHpaRGRSUW5fcEROTWNmRUtiRVJsaUpKam1UMC03RlFhWklIRks4WFJzT3JWa1JrNjFBWkdZU1hxRF9vQlROUnNOWGpQanREQjE4eFpudmI3OWVybWFsMUdRNG9ORDl6a3JLRmhvN2VKTDZVMlYzcjNpMnFsQXc4M2NOa3NYaS1mT3QwbmtIcTFxOTNvaDhkNklwMmZJU2Q5eTR6bjBUN2pEMA?oc=5" target="_blank">¡El 2nd Mom & Dad Pets Festival regresa a Cataño! Les esperamos el sábado, 27 de junio, en el área verde del Malecón. Disfruta carreras de mascotas, yoga, bowling canino, desfile de modas y más. Tendremos también vacunación de mascotas a bajo cost - facebook.com</a>
-                    </td>
-                    <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-06-13 20:33">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE04U3Q0VEtXYjFlRUhPUnptLXRqd1dPcHFCd2d2dUczLVFfM2NlWDBoNmJuemdmTDJPM2stZDFNdEY5dy1VTVFvSXFydFZGZjVPWnh3djY1eDZ4TlMtb3hiMjIzOTkzUnZvZWg5LTdZbktpbVdNeXExam5vdkM5aFk?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
-                    </td>
-                    <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-06-13 19:40">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Reportan desaparición de joven en Fajardo - Metro Puerto Rico">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVGE4a2pUOFZxTXk0UjduNVNCd3hZaXg1M0JhMjI4ZjFBbzdKZi1XcFBaMjNvUnpDNVBNRnpwUzVHYlM2QWZ5dXlpODl4VjdOcHFEQ1ZKZkkxRWFmbnFBOWlMenhIU0NvSk85aV9vekUwQ09sYlp6NkYzZ2k0eXF4R2M4RHJOUFdSMHZv0gGfAUFVX3lxTE5jRkhlVUp1MlBfbmFiUkZ6RmtfZUp6V3Y5Y3Z3SXhHZXdUUGZhOEZGRFBKUGJKMzJLMGJzdmRDLU11T0l6SnkzdUF2eDZpYTNPTDZHRUhSV2dzM2R3d0hqTWtNMkNDTGp3RE1EcjJ5Y3FTUWs3enVDVHVsbmt6ZzAxMFZ6U3AzaGZaS0k4UkNkVWZYdWRmZk9NMmFnMHRhaw?oc=5" target="_blank">Reportan desaparición de joven en Fajardo - Metro Puerto Rico</a>
-                    </td>
-                    <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-06-13 16:08">hace 19h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Buscan a menor de 17 años desparecido desde el miércoles en Fajardo - wapa.tv">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxNYVB2TTNKY0JPOHJNeEl4T2JubWt6a01ITkZheURERGtLanM3UE0zZkZ1SVpnMGZRVEdjUmdoQ0JtNVNmNWc5WllrODRteUZuUEp6LW1BMld0MXVkN1R5aEg0dUp4NXdsR1BXYWk2bDBxTzJGaE5oV0lDcDdCbVptWFRLRVV6aVkyMUFzZC1aZFhlbUx4OEV0dUFzYW9qd2RfTjBibzExLWlrMVRYZmNsSzZiUHFjQVQyaXlMbVl0R0k4N0ZIcmxyd2NFTmlHMkp4UGhtcjUtVkRfT2ktLXhtVWZlclY?oc=5" target="_blank">Buscan a menor de 17 años desparecido desde el miércoles en Fajardo - wapa.tv</a>
-                    </td>
-                    <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-06-13 15:51">hace 20h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Buscan a adolescente desaparecido en Fajardo - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPc2RaSGlyWHQwTlpwS1pSd1dCdXlCUXpaSlZidk9vRHp1V1E2OVBTOGJTRGxzVlR1SkJvTi1lM3RWUndadER5NWRXeFBqRjRZRlRJSzJWWEpyU1FDQ3pXbkp0cmF2aHRDWEJXYnIwNllxdUFlcmN2d3FYQUlpVm1EcVpsOHZNalFmQVZDTXRCWEZkdnQ2TVlUSElZQ1NuMnpOUTJpVdIBrAFBVV95cUxQRFVnMlIwYVZzNGJHaE0yRnR4aGQxTUhBMHFtdE83NjRZTmozZDVSRkJjYW1jUGpvejJQclB3LTRPd2lZTXRyaEtBcEhFS25nNk5iR3pHSWdqOU85WDRxclNtVk5PVXhmd2NJM0hiZ3RTaVRFSVRwcVo1THZ1X0pLbnJHcVZrOUlRSDlJS1NCLVdDNUJTcUxaNkpDWThxWnplY3kzS0Zrczl2VzRN?oc=5" target="_blank">Buscan a adolescente desaparecido en Fajardo - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-06-13 15:42">hace 20h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza added a new photo. - Municipio de Loíza - facebook.com">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxPV0U1MmlyUElOSGI1UFZMckFuOVZFVVZqd1BEWTlVZlpQYWRXMWhjR01ISWZUc3ZWS05BQXRoRDJuWDRLNG5YeXJmVU4tNng1MkdiNVJ3Wk9VN3FScGVfWDhSU3RyUmVKZjFkc2M4c1ItRkdzQ0hWc1pfY0tMdi1yd1NTYTM?oc=5" target="_blank">Municipio de Loíza added a new photo. - Municipio de Loíza - facebook.com</a>
-                    </td>
-                    <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-06-13 13:11">hace 22h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="“Había forzado la puerta de los baños y las ventanas”: sorprenden a hombre dentro de escuela en Fajardo - Noticias de Puerto Rico hoy">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxOWDNBcmdCU1NIZ05kdkd0MTZzdEJuaFlIQXNEMlpPMDg2aFhMd0VCMEs2cjdCVzdSNDF0aVE1UzNQTVIxR0dOTUlMMFlDNlVaWmhtWWc3Y3ZQM3BqTWl3RUpkZS1odWVzSXhqOFBWTlB4c1R0UkhGX1N6UVlFZUdwRnhWVmMwNUpfTEJvMDVTajMxVkh2cS1jNkFMaVlwV0hjelFidS16ZTM3bThvelRqVmJOM2VualBsTjcyMWx3c1lmb1N6U2NYWkpxczJfaGxNVk9fTTBYbVdNS2RGTGZyVUhIall3UG9B?oc=5" target="_blank">“Había forzado la puerta de los baños y las ventanas”: sorprenden a hombre dentro de escuela en Fajardo - Noticias de Puerto Rico hoy</a>
-                    </td>
-                    <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-06-13 12:46">hace 23h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo added a new... - Municipio de Luquillo - facebook.com">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxPanhwSWtuUzhpaFVIZjJwUGtOMEF4U1JzdjJUVnlaVE9rOF8tdVBTTm5uelZmZ0dtTk1ONFZtdlBLaFZZbWRia3FUWnVheU50N29Pbm93MTdkTkp4bW1FTjhOVlU0OXh5NDVfaUdlNm55cDBCeWE4TnZvSERKUFppUWF3?oc=5" target="_blank">Municipio de Luquillo added a new... - Municipio de Luquillo - facebook.com</a>
-                    </td>
-                    <td>FB - Luquillo</td>
-                    <td class="time-ago" data-date="2026-06-13 06:02">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="👩‍🎓 👩‍🎓 El Municipio de Vieques y su alcalde, Hon. José A. Junito Corcino Acevedo, extienden sus más sinceras felicitaciones a Yadira Paris y Alexandra Díaz por alcanzar la importante meta de culminar sus estudios y graduarse como maestras. Les deseam - facebook.com">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxPb0VtSWwwc0dqWERnSmZZVWtXTUtGY2lrUy1iVlk2VEhIRG1XVWNOSmE0azItWXVwWmsxNm50b0tkTnlPc21NVk5hTHR5SU4yVnctRmhwLUtIRzdOM2VTUDkzRGJpUWpMU1ZoS1dtUmlxYmR3Yk53QUVlaElJcHltNl9iT0hjY2wyWElBNU5DX1laMlBYZC1uMmRmNVZ5bkRFazBpc0xHNTBuQ1hVODRFOHpfYTJlb21yVnhLX01NQV84Z25OZVV3M2ZQNnJ0SmFWYUk0YXVXejlPazk1d1JPLVpHaHFSdw?oc=5" target="_blank">👩‍🎓 👩‍🎓 El Municipio de Vieques y su alcalde, Hon. José A. Junito Corcino Acevedo, extienden sus más sinceras felicitaciones a Yadira Paris y Alexandra Díaz por alcanzar la importante meta de culminar sus estudios y graduarse como maestras. Les deseam - facebook.com</a>
-                    </td>
-                    <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-06-13 03:10">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Culebra" data-titular="Culebra provoca apagón en comunidad de Los Hidalgos, Puerto Plata - El Nuevo Diario">
-                    <td><span class="muni-tag">Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxOT3pWckx2VW85TmM5REo1aHF0N1VJdXY1emhjN1JOc2xlVG1DRkVuSmdVWUg0Mnh4Snh0VEg1ZWg0RDFkYWFTU0RKQm8zYkl4anlyRVppSmZVb0VBelNQLTQ4ZEVMMVNxNGs3UGNZYTQyMGY3cE5ObUkzR1JGN1dleVp4RWpQQVNhRnh6NUEyTUYwb3NleGdJYzNR?oc=5" target="_blank">Culebra provoca apagón en comunidad de Los Hidalgos, Puerto Plata - El Nuevo Diario</a>
-                    </td>
-                    <td>Culebra</td>
-                    <td class="time-ago" data-date="2026-06-13 02:07">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Así de hermosa se ve de noche la plaza Plaza de Caguas, Puerto Rico 🇵🇷 🎥 Síguenos en YouTube 🇵🇷 Como : Aventurando por mi isla 🏝️ 📍 Caguas, Puerto Rico 🇵🇷 - facebook.com">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxPbG1WNHhzaTlZZW41U0JHdHIyZmttdlBJd1h6Xy15ZFZBZXZGeUpPRnBldjhLQ2lZRzlTaTZWNU5zRDI5S1FzZlBMNGdDUU9Ua19SYThnZFJWb1Q4V083emR4ZEpzX0hsVHVHTWt5LUhMZzR5bFdZY3d0M1lyTlNVUTdJeVlwSkMxNFBmSU5nUl9rRHliRVVnN2NhZzhSSjlmdnlWdlR3UlhyZ2FZQ0VYTXRHTWk4V1ZXTTFBVEVuekNpc2Z4OVN3LWwwblA3TzRFVmkxdVNiVWh3TWEwMUVwVmdyZ2U5SkxhcGE4Y0pMZGFCQQ?oc=5" target="_blank">Así de hermosa se ve de noche la plaza Plaza de Caguas, Puerto Rico 🇵🇷 🎥 Síguenos en YouTube 🇵🇷 Como : Aventurando por mi isla 🏝️ 📍 Caguas, Puerto Rico 🇵🇷 - facebook.com</a>
-                    </td>
-                    <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-06-13 01:21">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Ceiba" data-titular="Martinetito jocoso, Ceiba PR - facebook.com">
-                    <td><span class="muni-tag">Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFBtdEhQVlUzODhYUXJabm5JczR6TE85X0dOTFNHQjhyd0xLRzFKRGltYm1Sc21yRm1acGxTM0lhYjh1eU1nR21sc0Q3aE9wUGkwdVYzbktTbWhNNWtxN3lzNXE0STVkcE4yUkRIb2Y0RU1Dem1ZOV9IVWIwOE0?oc=5" target="_blank">Martinetito jocoso, Ceiba PR - facebook.com</a>
-                    </td>
-                    <td>FB - Ceiba</td>
-                    <td class="time-ago" data-date="2026-06-13 00:48">hace 1d</td>
+                    <td class="time-ago" data-date="2026-06-14 03:01">hace 1d</td>
                 </tr>
                 
                 
@@ -736,7 +627,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.carolina787.com/n/noticia-fake-de-aaa" target="_blank">Noticia Fake de AAA</a>
                     </td>
                     <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-06-14">2026-06-14</td>
+                    <td class="time-ago" data-date="2026-06-15">2026-06-15</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Noticia Fake de DTOP">
@@ -746,7 +637,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.carolina787.com/n/noticia-fake-de-dtop" target="_blank">Noticia Fake de DTOP</a>
                     </td>
                     <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-06-14">2026-06-14</td>
+                    <td class="time-ago" data-date="2026-06-15">2026-06-15</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Noticia Fake de LUMA">
@@ -756,7 +647,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.carolina787.com/n/noticia-fake-de-luma" target="_blank">Noticia Fake de LUMA</a>
                     </td>
                     <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-06-14">2026-06-14</td>
+                    <td class="time-ago" data-date="2026-06-15">2026-06-15</td>
                 </tr>
                 
                 
@@ -909,7 +800,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-06-14 12:01:39 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-06-15 06:05:54 AM<br>
     Actualización automática cada 30 min
 </div>
 
