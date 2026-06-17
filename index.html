@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-17 06:05:54 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-17 06:07:26 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">37</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num">36</div><div class="label">Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-17 06:05:54 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-17 06:07:26 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -355,12 +355,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">7</div>
+            <div class="muni-count">6</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">6</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
@@ -383,9 +383,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">2</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
@@ -444,19 +444,6 @@ tr:hover { background: var(--surface2); }
         <table>
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
-                
-                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="San Juan Urbano celebra los logros de su primera generación de estudiantes">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20260617/san-juan-urbano-celebra-los-logros-de-su-primera-generacion-de-estudiantes/?utm_source=rss&utm_medium=rss&utm_campaign=san-juan-urbano-celebra-los-logros-de-su-primera-generacion-de-estudiantes" target="_blank">San Juan Urbano celebra los logros de su primera generación de estudiantes</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-06-17 09:48">ahora</td>
-                </tr>
-                
                 
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
@@ -543,6 +530,16 @@ tr:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-06-16 22:03">hace 8h</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Carolina" data-titular="Justicia presenta cargos por alteración a la paz, daños y agresión a embarazada en Carolina">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://noticel.com/noticias/20260616/justicia-presenta-cargos-por-alteracion-a-la-paz-danos-y-agresion-a-embarazada-en-carolina/?utm_source=rss&utm_medium=rss&utm_campaign=justicia-presenta-cargos-por-alteracion-a-la-paz-danos-y-agresion-a-embarazada-en-carolina" target="_blank">Justicia presenta cargos por alteración a la paz, daños y agresión a embarazada en Carolina</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-06-16 22:02">hace 8h</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Caguas" data-titular="⚽🏆 ¡Campeonas de Puerto Rico Caribbean Stars de Caguas! - facebook.com">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
@@ -620,7 +617,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9fRVF2VnJ0dGVuMkhFSmlmV2J1UWl2dEJ6Zzh1aC1seHhWcVdrdnQwSFoyQ3dweVo3N0xmSHA3QTF3VG5SSkRxLThaVDZxRXFQMFBRNTZzUnlLUmh5TGRfY0FfampSdUphMWJTVWFQa0c2ek0?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-06-16 18:07">hace 11h</td>
+                    <td class="time-ago" data-date="2026-06-16 18:07">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Incertidumbre entre padres: B You Academy cierra operaciones en Caguas">
@@ -741,16 +738,6 @@ tr:hover { background: var(--surface2); }
                     </td>
                     <td>FB - Canóvanas</td>
                     <td class="time-ago" data-date="2026-06-16 13:54">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Municipio Autónomo de Fajardo - facebook.com">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE8tajZfRUJrOUZBSzY3dWJTeDdXQnM4X0xTVWdUZVVmMTBwRVM2S1hTeDZwYnlZTEFDckFsVnRlcTF6TEI1QTdOaU4tQ1d2RkQ0d2dlY2RyalpKd0hlNEQ3eHJvckhDOF9tbGl3LUJiWHRqMWFvSjBnal9pTHA?oc=5" target="_blank">Municipio Autónomo de Fajardo - facebook.com</a>
-                    </td>
-                    <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-06-16 13:28">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="AAA asegura Súpertubo ya se reparó; Caguas, Gurabo y Juncos serán los últimos - wapa.tv">
@@ -976,7 +963,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-06-17 06:05:54 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-06-17 06:07:26 AM<br>
     Actualización automática cada 30 min
 </div>
 
