@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-20 06:10:56 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-20 12:02:04 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">33</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">45</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">21</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-20 06:10:56 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-20 12:02:04 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -346,6 +346,31 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <!-- BREAKING NEWS -->
+
+<div class="section breaking-section">
+    <div class="breaking-banner">
+        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">ahora</span> —
+            <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxNRlJXTTNhUGFHaUd2QUJIV3lmYmIxWFJaR3g4ZzhVdTV1ejVPcldOa1dFcFRURnJSb0tZeUtZWGdVTjZ6NzRNeG1Mc3dKb3M2MW9mVGYzOXE2S2xvVGMxQTVEZUhzbjhMX0dkSmJEaV9SZmlYUjZ6a3lPWmN1Rjk2SENJbE53bko5R1RuU2xwcXlwVDJs?oc=5" target="_blank">Investigan asesinato de mujer en Canóvanas - NotiCel</a>
+            <span style="opacity:0.6"> [Canóvanas]</span>
+        </div>
+        
+        <div class="breaking-item">
+            <span class="time">ahora</span> —
+            <a href="https://noticel.com/noticias/la-calle/20260620/investigan-asesinato-de-mujer-en-canovanas/?utm_source=rss&utm_medium=rss&utm_campaign=investigan-asesinato-de-mujer-en-canovanas" target="_blank">Investigan asesinato de mujer en Canóvanas</a>
+            <span style="opacity:0.6"> [Canóvanas]</span>
+        </div>
+        
+        <div class="breaking-item">
+            <span class="time">ahora</span> —
+            <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPamFpbEhISHVPQU5td3Z4U05IbkNLdi1uejM1dmsweFRoaUlVSDUxQ1ZxalNnWFJfa19aVG9keFZ0WFlSR0R5NjFxY0tjSDJ0OWZsbDlHUFdDd24xOTZOazd5ZUVXNWR1TkhaMV9DMGNWWDBKbmY2UmlwdVU0UXo1NS0tSkZpa0FTQlk3YWlkbC1lVlhXaTFybW5GYWwwY2Mw0gGgAUFVX3lxTE9qYWlsSEhIdU9BTm13dnhTTkhuQ0t2LW56MzV2azB4VGhpSVVINTFDVnFqU2dYUl9rX1pUb2R4VnRYWVJHRHk2MXFjS2NIMnQ5ZmxsOUdQV0N3bjE5Nk5rN3llRVc1ZHVOSFoxX0MwY1ZYMEpuZjZSaXB1VTRRejU1LS1KRmlrQVNCWTdhaWRsLWVWWFdpMXJtbkZhbDBjYzA?oc=5" target="_blank">Investigan asesinato de mujer en Canóvanas - Metro Puerto Rico</a>
+            <span style="opacity:0.6"> [Canóvanas]</span>
+        </div>
+        
+    </div>
+</div>
 
 
 <!-- MUNICIPALITIES -->
@@ -360,7 +385,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">6</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
@@ -370,7 +395,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
@@ -380,12 +405,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">10</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
@@ -405,12 +430,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">4</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
@@ -447,6 +472,196 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="Mientras se amarraba los tenis: le roban cadena a turista en el Viejo San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/mientras-se-amarraba-los-tenis-le-roban-cadena-a-turista-en-el-viejo-san-juan/" target="_blank">Mientras se amarraba los tenis: le roban cadena a turista en el Viejo San Juan</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-06-20 15:57">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFB5S25fUFpNVFlKRV9NaEtWSmlTbl9lZXhoYWk1OXhnS3lxNzBTNnJaNWZXTnpwaGdWN3J1WWYyWldXbzBWR3dFSUFpUzFJNFRxYkxJSFBnbDVEdkJlc3Q5RGlrbzE3VjZBZlJRUHQ1NDRjMEU?oc=5" target="_blank">Municipio de Vieques - facebook.com</a>
+                    </td>
+                    <td>FB - Vieques</td>
+                    <td class="time-ago" data-date="2026-06-20 15:49">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Petateros, Gigantes, Azucareros y Pescadores del Plata dominan primera tanda">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/deportes/20260620/petateros-gigantes-azucareros-y-pescadores-del-plata-dominan-primera-tanda/?utm_source=rss&utm_medium=rss&utm_campaign=petateros-gigantes-azucareros-y-pescadores-del-plata-dominan-primera-tanda" target="_blank">Petateros, Gigantes, Azucareros y Pescadores del Plata dominan primera tanda</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-06-20 15:31">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="Investigan asesinato de mujer en Canóvanas - NotiCel">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxNRlJXTTNhUGFHaUd2QUJIV3lmYmIxWFJaR3g4ZzhVdTV1ejVPcldOa1dFcFRURnJSb0tZeUtZWGdVTjZ6NzRNeG1Mc3dKb3M2MW9mVGYzOXE2S2xvVGMxQTVEZUhzbjhMX0dkSmJEaV9SZmlYUjZ6a3lPWmN1Rjk2SENJbE53bko5R1RuU2xwcXlwVDJs?oc=5" target="_blank">Investigan asesinato de mujer en Canóvanas - NotiCel</a>
+                    </td>
+                    <td>Canóvanas</td>
+                    <td class="time-ago" data-date="2026-06-20 15:24">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="Investigan asesinato de mujer en Canóvanas">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/noticias/la-calle/20260620/investigan-asesinato-de-mujer-en-canovanas/?utm_source=rss&utm_medium=rss&utm_campaign=investigan-asesinato-de-mujer-en-canovanas" target="_blank">Investigan asesinato de mujer en Canóvanas</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-06-20 15:12">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Persona muere atropellada frente a hospital">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/06/20/persona-muere-atropellada-frente-a-hospital/" target="_blank">Persona muere atropellada frente a hospital</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-20 14:58">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="Hallan mujer asesinada en interior de vehículo">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/06/20/hallan-mujer-asesinada-en-interior-de-vehiculo/" target="_blank">Hallan mujer asesinada en interior de vehículo</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-20 14:56">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - facebook.com">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNWTlNeS1RVlRSb2JxVExaN003Y1ZQVFA3TUt2dnA4VldLRmNOaHhYU3JvbzFabzY0T3VRb1R0ei1FUjRjLVZlZF9mbmVwb2c2Nmxwc1FFaHpLRzhVYmJPMHloY1dCdXN4bmFpWmhLTGRjOHF2bjJKUlVWT2tqbGtHdzl1d0NZT3lvdTBuU0Z3?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
+                    </td>
+                    <td>FB - Naguabo</td>
+                    <td class="time-ago" data-date="2026-06-20 13:57">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Dos mujeres y un hombre heridos de bala en Río Piedras y Trujillo Alto">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/dos-mujeres-y-un-hombre-heridos-de-bala-en-rio-piedras-y-trujillo-alto/" target="_blank">Dos mujeres y un hombre heridos de bala en Río Piedras y Trujillo Alto</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-06-20 13:36">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="⚖️ Prieto & Asociados en Fajardo ⚖️ Lic Ricardo Prieto abogado criminalista y notario con amplia experiencia en: - Casos criminales, civiles, federales. - Familia - Daños y perjuicios - Notaria ☎️ 787-860-0875 (Oficina) ⌨️ oficina@prietolawoffice.c0m 📍 C - facebook.com">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxNU2luRGtPRlBEVFU2YUk5SEFuWlhzeVhvV0tWRG1RaTFxVEJHSldQR2FGQzN0dFpKNEFBRVdQTHVaVlZFNHNPckVlZDVLVmFiUV82Q3otSktWenEtN2FlWjFnZ01CaXlreDl2c1RQLXFCOE80djFvR3M3SGhLUFpCV21KVkN4WDZWNEhEU3h3bjhWTnBwb3JoQWJoWGN6YXZYTVZ1MXRaOWxIbnFKV0F6Vy1rNE1JaDB5ZXhZbUE5QXZHS25WLXdzclhFTm55eWNULUJxYW0xN2RmNklZV1hLRkc5ck1BZXEyVDZLWG9hRm4ySXVh?oc=5" target="_blank">⚖️ Prieto & Asociados en Fajardo ⚖️ Lic Ricardo Prieto abogado criminalista y notario con amplia experiencia en: - Casos criminales, civiles, federales. - Familia - Daños y perjuicios - Notaria ☎️ 787-860-0875 (Oficina) ⌨️ oficina@prietolawoffice.c0m 📍 C - facebook.com</a>
+                    </td>
+                    <td>En Contacto 787</td>
+                    <td class="time-ago" data-date="2026-06-20 13:33">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Corren 5K América 250 en el Viejo San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/corren-5k-america-250-en-el-viejo-san-juan/" target="_blank">Corren 5K América 250 en el Viejo San Juan</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-06-20 13:27">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Balean a hombre en predios de "fast food" en Trujillo Alto - Telemundo Puerto Rico">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOU182WjhBSk9wZmV4RmlOZ0hWWVF0ZURDSDVLS003SjRqejZIa21US1duUDJ2a29qaGs4OWZrQ056d0RoRmp0UURtMUNpREVuUUM0NFpYczZCRE5tSU9RMW1VZkJjaHNZdWw4QVBXVC03TGh6R0d6dmR6RkRlXzVfQm5VcXVPdUpxMzBQMktsd2Z4M1ZLZms5amF1WnlBZEQ3aVNjTnZtWnRYMzBqdk0zTjAwcVU?oc=5" target="_blank">Balean a hombre en predios de "fast food" en Trujillo Alto - Telemundo Puerto Rico</a>
+                    </td>
+                    <td>Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-06-20 13:27">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="Investigan asesinato de mujer en Canóvanas - Metro Puerto Rico">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPamFpbEhISHVPQU5td3Z4U05IbkNLdi1uejM1dmsweFRoaUlVSDUxQ1ZxalNnWFJfa19aVG9keFZ0WFlSR0R5NjFxY0tjSDJ0OWZsbDlHUFdDd24xOTZOazd5ZUVXNWR1TkhaMV9DMGNWWDBKbmY2UmlwdVU0UXo1NS0tSkZpa0FTQlk3YWlkbC1lVlhXaTFybW5GYWwwY2Mw0gGgAUFVX3lxTE9qYWlsSEhIdU9BTm13dnhTTkhuQ0t2LW56MzV2azB4VGhpSVVINTFDVnFqU2dYUl9rX1pUb2R4VnRYWVJHRHk2MXFjS2NIMnQ5ZmxsOUdQV0N3bjE5Nk5rN3llRVc1ZHVOSFoxX0MwY1ZYMEpuZjZSaXB1VTRRejU1LS1KRmlrQVNCWTdhaWRsLWVWWFdpMXJtbkZhbDBjYzA?oc=5" target="_blank">Investigan asesinato de mujer en Canóvanas - Metro Puerto Rico</a>
+                    </td>
+                    <td>Canóvanas</td>
+                    <td class="time-ago" data-date="2026-06-20 12:43">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="Asesinan fémina a balazos">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/asesinan-femina-a-balazos/" target="_blank">Asesinan fémina a balazos</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-06-20 12:25">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="Feria de hombres emprendedores en Fajardo - Metro Puerto Rico">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxOMUJZdEY1bHdBSDRoTHlRaEtVc1JHQ21CN00tLUs5SUxoZGlKaWltaTZfOFRHUXluZk1ZZWZSOVI4azZ1R3ZqTmVzcWEyR3JlS1lDZExmZllsYnV3UFVnQ0xQVzFaNWpiZGRPQlc4N3R3dExMWWtQTW15X3FadU9ROUM2VkpOZ1RfeXBFYXk4dVNEeFVuN21HZ1pBdVRmZ0HSAZ8BQVVfeXFMTjFCWXRGNWx3QUg0aEx5UWhLVXNSR0NtQjdNLS1LOUlMaGRpSmlpbWk2XzhUR1F5bmZNWWVmUjlSOGs2dUd2ak5lc3FhMkdyZUtZQ2RMZmZZbGJ1d1BVZ0NMUFcxWjVqYmRkT0JXODd0d3RMTFlrUE1teV9xWnVPUTlDNlZKTmdUX3lwRWF5OHVTRHhVbjdtR2daQXVUZmdB?oc=5" target="_blank">Feria de hombres emprendedores en Fajardo - Metro Puerto Rico</a>
+                    </td>
+                    <td>Fajardo</td>
+                    <td class="time-ago" data-date="2026-06-20 12:23">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="Asesinan a una mujer en el interior de un vehículo en Canóvanas - Noticias de Puerto Rico hoy">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNZy1Qc3FxXzJuWWdpalNxanNwcDk0c1ZfREkyNDFoSWpqbTUyRWJVSDlkRm5fTWEybGgzSGlZQjJ3QTRMQ0wzelFSeTlqSWhiUnAwd2xyUE5BZUdXcnJZM2NseG9yNVFHalYyZnZIeUNMZEhmMExOMG9nWktBSXdkNm9val9CeGQxTnhKTVhURXFXNTMxOExkVklHR2Y3ZlhDSVFfUXQ5MVFISzJtLWhPM1NNRWQ3UnM?oc=5" target="_blank">Asesinan a una mujer en el interior de un vehículo en Canóvanas - Noticias de Puerto Rico hoy</a>
+                    </td>
+                    <td>Canóvanas</td>
+                    <td class="time-ago" data-date="2026-06-20 12:21">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="Mujer es asesinada en Canóvanas - wapa.tv">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQZk0tbDg1a1NwOC1SRFJucUlhMFlZWnZYWHZ1OFdBMm5yMGxBS3lvOEREVktkbHg3QTAyZkxIdlRtQ1JGcHFuRVZIQkpaa1FFQXhUUmVvMU1vazE3X08wLVdPelZreGdzUDBwbHVEYnZoM3l5TTV0ZWJNeG1OT2duT2pqMkxaaVNkTXUzOHJFT1BmeHUwa0kwUEZ6TjFfelZKVy1IN3c0THVveDE2OFNZWUxsemo?oc=5" target="_blank">Mujer es asesinada en Canóvanas - wapa.tv</a>
+                    </td>
+                    <td>Canóvanas</td>
+                    <td class="time-ago" data-date="2026-06-20 12:16">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="Asesinan a mujer dentro de vehículo en Canóvanas - Telemundo Puerto Rico">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNUnBPcVJkVVc5YmZzWk1SMWFmWUpHbTZaTmV1ZmU2UklyV3luZUJUbGNkWnotVUxBa0JxWkJudjk2SHdoTGtyallNakhnSVllclN5NWxuNmtHUnBwYmZwYUxDY093RU9QT3VsbWFlQ01vd1BleWEtaUx4ekhVRGE0RGMwalZxRkJSRXREX1FqUTFKRmJqaGN2SUZVNWlTVmdnUWZCaENNXzFTOEZhbXUyRy1R0gGyAUFVX3lxTE1ScE9xUmRVVzliZnNaTVIxYWZZSkdtNlpOZXVmZTZSSXJXeW5lQlRsY2Raei1VTEFrQnFaQm52OTZId2hMa3JqWU1qSGdJWWVyU3k1bG42a0dScHBiZnBhTENjT3dFT1BPdWxtYWVDTW93UGV5YS1pTHh6SFVEYTREYzBqVnFGQlJFdERfUWpRMUpGYmpoY3ZJRlU1aVNWZ2dRZkJoQ01fMVM4RmFtdTJHLVE?oc=5" target="_blank">Asesinan a mujer dentro de vehículo en Canóvanas - Telemundo Puerto Rico</a>
+                    </td>
+                    <td>Canóvanas</td>
+                    <td class="time-ago" data-date="2026-06-20 12:15">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="Asesinan a una mujer en el interior de un vehículo en Canóvanas">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/asesinan-a-una-mujer-en-el-interior-de-un-vehiculo-en-canovanas/" target="_blank">Asesinan a una mujer en el interior de un vehículo en Canóvanas</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-06-20 12:02">ahora mismo</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="San Juan" data-titular="Municipio de San Juan busca cómo mitigar la falta del agua potable a sus residentes">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
@@ -454,7 +669,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/notas/9-oasis-55-camiones-cisternas-y-banos-portatiles-san-juan-busca-como-mitigar-la-falta-del-agua-potable-a-sus-residentes/?utm_source=elnuevodia.com&utm_medium=widget&utm_campaign=las_mas_vistas" target="_blank">Municipio de San Juan busca cómo mitigar la falta del agua potable a sus residentes</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-06-20 06:10">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-06-20 12:02">ahora mismo</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Calor de hasta 111 grados y sectores con 70% de potencial de lluvia">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/06/20/calor-de-hasta-111-grados-y-sectores-con-70-de-potencial-de-lluvia/" target="_blank">Calor de hasta 111 grados y sectores con 70% de potencial de lluvia</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-06-20 11:57">hace 5min</td>
                 </tr>
                 
                 
@@ -467,17 +692,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxOc1FWb25WZ0tWWlF6c1VteVh1M1laUXZZOUptNHJ6dFdodzMtYUhOU1BvVWhKY2QtUXNESDJIYV9WakxtZS15UlZDSC15c0NNN2FpUl9xdVdtSEdfeVRKWkdqbkN5THVfQnVMajB6UmZycy00N043SGFqbzN4S09vUDBfU1l4YzVYZm16RWQ1TklkaEM3dlYtLUI0VlU2Z1BwLVJwUmtyNDZ0UXpzNGYxRHpjVk1LTGFXN0NmWmVVNEMwZjc0YWYwOUpVRndXb3oxUS13MERnSDVFekxmM2Z0THlRT3VKcTRFRWRVOXdR0gHzAUFVX3lxTE5kZjExNjBKamc1QUZrNDljTXpCNThBYUx4NDFXUFZuUjktdGhwaWZ2djZNNFU3ckYwVXRpZkh2d2JoR0JMS0tFOWgyYXVqYzVMR2NIQzJCb3haYXMyTjB2cnVHUFI4UlY2N3lFSmxYR01IRzR4UGlIVDlfNk9NMWlzcmRjSTV3cnlVWHVudUJWQjZYaWFWVHJrVGZmRlhDdTNYdndYNnNoMURuS3RZYl9zNmNlUl94QTZSMUNTLU1rQlpTUXdmZWZhNy1nMEVVdGQ3MlNVUGdVZW40N2lic1c2aFg5LXRETnVNb2FGTHBKSVVEdw?oc=5" target="_blank">Aviso de calor emitido el 20 de junio a las 01:00 de la madrugada y vigente hasta el 20 de junio a las 12:00 del mediodía por el Servicio Meteorológico Nacional (NWS) de San Juan (Puerto Rico) - El Vocero de Puerto Rico</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-06-20 04:45">hace 1h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Enclave de lujo Moncayo cierra más de $34 millones en ventas">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/negocios/bienes-raices/notas/enclave-de-lujo-moncayo-cierra-mas-de-34-millones-en-ventas/" target="_blank">Enclave de lujo Moncayo cierra más de $34 millones en ventas</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-06-20 03:10">hace 3h</td>
+                    <td class="time-ago" data-date="2026-06-20 04:45">hace 7h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
@@ -487,7 +702,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5uWG9LYkJ5ZHZNaVBCejJOVUNtd1R5dWpacGNCV1FuY0xmbnNBdUlMbl95bHFabkh0aUs2d2hQTl9FcE9FNnlMRy1MY0pqaUdWUkRDRWFfSUxfdFplczh1S0dfSXI2b2lrWFhpSTJSX19QcVU?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-06-20 01:24">hace 4h</td>
+                    <td class="time-ago" data-date="2026-06-20 01:24">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz sábado y domingo; múltiples municipios en lista">
@@ -497,7 +712,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/06/19/se-ira-la-luz-sabado-y-domingo-multiples-municipios-en-lista/" target="_blank">Se irá la luz sábado y domingo; múltiples municipios en lista</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-20 00:27">hace 5h</td>
+                    <td class="time-ago" data-date="2026-06-20 00:27">hace 11h</td>
                 </tr>
                 
                 
@@ -510,7 +725,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE0wR0dwQmxpcUN0UDlzNlVvdVpLTEJ6VS1Dd0JmWTBWYnNhdGNuWmlIVW1BN0lEOEotTmNiNnhEU25JSi1OMVNyczdHa25MLU1VYW9VODdxM0U3dGV0ZGFRZDdSOGs1Zk5yZmM2bUV6aDE0WVk?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-06-19 23:54">hace 6h</td>
+                    <td class="time-ago" data-date="2026-06-19 23:54">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza added a new photo. - Municipio de Loíza - facebook.com">
@@ -520,17 +735,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTFAwMks5UFp1NjhXSDd3czhUcDQzdkFSbzlteWl1Z0dkaVZUTHJoMzNMS1FJWFJybXhkWllDTktzaklmN3NCRXZSQk5tVDVyTVJQN1BGaHB0MkRGUXpWbDJuWFRqM1lGZDRLUVZpT1ctT19pdGY3VG5hSg?oc=5" target="_blank">Municipio de Loíza added a new photo. - Municipio de Loíza - facebook.com</a>
                     </td>
                     <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-06-19 21:19">hace 8h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="LUMA refuerza la infraestructura eléctrica en Vieques de cara al pico de la temporada de huracanes">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/06/19/luma-refuerza-la-infraestructura-electrica-en-vieques-de-cara-al-pico-de-la-temporada-de-huracanes/" target="_blank">LUMA refuerza la infraestructura eléctrica en Vieques de cara al pico de la temporada de huracanes</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-19 21:00">hace 9h</td>
+                    <td class="time-ago" data-date="2026-06-19 21:19">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Capturan a hombre buscado por presuntos hurtos en comercios de Humacao">
@@ -540,27 +745,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/19/capturan-a-hombre-buscado-por-presuntos-hurtos-en-comercios-de-humacao/" target="_blank">Capturan a hombre buscado por presuntos hurtos en comercios de Humacao</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-19 20:04">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="BSN confisca un triunfo a los Criollos por usar jugador inelegible">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/deportes/20260619/bsn-confisca-un-triunfo-a-los-criollos-por-usar-jugador-inelegible/?utm_source=rss&utm_medium=rss&utm_campaign=bsn-confisca-un-triunfo-a-los-criollos-por-usar-jugador-inelegible" target="_blank">BSN confisca un triunfo a los Criollos por usar jugador inelegible</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-06-19 17:46">hace 12h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Canóvanas" data-titular="Canóvanas es más - facebook.com">
-                    <td><span class="muni-tag">Canóvanas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTFBVWlNHbEU2cHlod3BmbUFwdER2SlYwMjZJV3R0MDRJc1ROb2V3MHZ1c1lRNlJfWTFxY1BFcVhjenpPX3M3TDhGQzhFSEJaMlFNdDVTYm9CMERwNC1jcHJwWk9FWG5DQ3NxRHRMUENpQ0FGN3Z5aEJNZw?oc=5" target="_blank">Canóvanas es más - facebook.com</a>
-                    </td>
-                    <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-06-19 15:30">hace 14h</td>
+                    <td class="time-ago" data-date="2026-06-19 20:04">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Culebra" data-titular="Sousa_PR. Danny Ocean · Si tú supieras…. Wikén Largo y el cuerpo pide PLAYITA 🔥🇵🇷 Culebra, Puerto Rico #PuertoRico #PR #Culebra #Beach #Clearwater - facebook.com">
@@ -570,27 +755,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxQcE9HOERLRmkyNHgtdHVFMzd4QkVQaGtwNnF2d0I4YzhROWhIZFgzaEd1RWlxMUtVbTV3ZmJYWmxveUVBMjZJUWRmYjgtY2VITTdHWnUwWVVhcWE1cThqcUJGMkNfVDEzMTdsc2FRanFyV3FDTXNKOXB0ZzhKSEJGMm9HNFBucW43b0RhcTVJanFtS2tRa3JlZGFUYXZ6WXJGeEN3clAxczZVNjJyNG1IU0dRcllZOXd1aC03bVh4cUE0RDJ0WXhlcS1zTVk2YTlsanZtQWhnb1RfbFlXcUpjTFQxbE4wdw?oc=5" target="_blank">Sousa_PR. Danny Ocean · Si tú supieras…. Wikén Largo y el cuerpo pide PLAYITA 🔥🇵🇷 Culebra, Puerto Rico #PuertoRico #PR #Culebra #Beach #Clearwater - facebook.com</a>
                     </td>
                     <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-06-19 15:25">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="San Juan destina $1 millón para instalar cisternas en hogares afectados por la crisis de agua">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20260619/san-juan-destina-1-millon-para-instalar-cisternas-en-hogares-afectados-por-la-crisis-de-agua/?utm_source=rss&utm_medium=rss&utm_campaign=san-juan-destina-1-millon-para-instalar-cisternas-en-hogares-afectados-por-la-crisis-de-agua" target="_blank">San Juan destina $1 millón para instalar cisternas en hogares afectados por la crisis de agua</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-06-19 15:15">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Tirotean, amordazan y queman parcialmente a hombre en Trujillo Alto - wapa.tv">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQbHZtUkxLTkZheUNwWEZsYi1VS3JZT2xub0dQT1pBNUFwR045RFRqcUlpVUNmTTh6WDltRTV1cGxaTXRwdWpZSUdWVXlLYWhrLUw0TkV1NVU1XzBKODJkVmVjS1pkOFBBTmtRcFEyd2xuaHBMRzR0MXIzdmNXSTR3M3U0aDNiVFhhRldXcFF1ZjdtOEhaSEF5dmxBdTdaVF9WVW0tZzE2ZDJoOWpQWFQ4RkJKVUYzVzlwYmtEVjdkMlFlOExZUDZYaFJ6a3VnY3did3RteGRra0lNV3dWTF9Jbjk4OA?oc=5" target="_blank">Tirotean, amordazan y queman parcialmente a hombre en Trujillo Alto - wapa.tv</a>
-                    </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-06-19 15:07">hace 15h</td>
+                    <td class="time-ago" data-date="2026-06-19 15:25">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="¿Thomas Rivera Schatz buscará la gobernación en 2028?">
@@ -600,7 +765,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/thomas-rivera-schatz-buscara-la-gobernacion-en-2028/?utm_source=rss&utm_medium=rss&utm_campaign=thomas-rivera-schatz-buscara-la-gobernacion-en-2028&utm_source=rss&utm_medium=rss&utm_campaign=thomas-rivera-schatz-buscara-la-gobernacion-en-2028" target="_blank">¿Thomas Rivera Schatz buscará la gobernación en 2028?</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-06-19 14:55">hace 15h</td>
+                    <td class="time-ago" data-date="2026-06-19 14:55">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Luis Peña: el padre musical de generaciones en el este de Puerto Rico">
@@ -610,17 +775,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/19/luis-pena-el-padre-musical-de-generaciones-en-el-este-de-puerto-rico/" target="_blank">Luis Peña: el padre musical de generaciones en el este de Puerto Rico</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-19 14:28">hace 15h</td>
+                    <td class="time-ago" data-date="2026-06-19 14:28">hace 21h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Arzobispo de San Juan recuerda que negar el agua a los pobres en ‘negarles el derecho a la vida’">
-                    <td><span class="muni-tag">San Juan</span></td>
+                <tr class="article-row" data-municipios="Humacao" data-titular="Querella ética contra exempleada de Humacao por usar propiedad pública para estudiar Derecho - NotiCel">
+                    <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/arzobispo-de-san-juan-recuerda-que-negar-el-agua-a-los-pobres-en-negarles-el-derecho-a-la-vida/" target="_blank">Arzobispo de San Juan recuerda que negar el agua a los pobres en ‘negarles el derecho a la vida’</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxOVmhDckhuSThDbk5vanlOdXpqS2gyTFduLWNESzhFcl9CQXp3X0R0Z0JNUGoxcnd6UWE2RldzR1ZXNTdaMm11bEZjZ3FvbmhReEp4WlB6VlZmYlNoOVYzcDkyMlZlRkp1dkFCb0RXYjdnMExGWkMtdFVmQzVoLW5aR19xaEdzb3pOSHdRYzBMU04zUjZlTE1VV002QzF0VGU4ekhaU1VzelBiN2VWQkNzZGVyTkRzcmYtamc1RUdoREdqUHktRDFNN0ZrVUlsT28?oc=5" target="_blank">Querella ética contra exempleada de Humacao por usar propiedad pública para estudiar Derecho - NotiCel</a>
                     </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-06-19 13:58">hace 16h</td>
+                    <td>Humacao</td>
+                    <td class="time-ago" data-date="2026-06-19 13:22">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Leap Social propone traslado de estudiantes a plantel en Dorado tras cierre en Trujillo Alto">
@@ -630,7 +795,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/leap-social-propone-traslado-de-estudiantes-a-plantel-en-dorado-tras-cierre-en-trujillo-alto/?utm_source=rss&utm_medium=rss&utm_campaign=leap-social-propone-traslado-de-estudiantes-a-plantel-en-dorado-tras-cierre-en-trujillo-alto&utm_source=rss&utm_medium=rss&utm_campaign=leap-social-propone-traslado-de-estudiantes-a-plantel-en-dorado-tras-cierre-en-trujillo-alto" target="_blank">Leap Social propone traslado de estudiantes a plantel en Dorado tras cierre en Trujillo Alto</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-06-19 13:16">hace 16h</td>
+                    <td class="time-ago" data-date="2026-06-19 13:16">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
@@ -640,7 +805,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5hWFF2TEdIVEhNMmJndkY0WlZaZUFIQzZBMmxLbUtydUtMQzZvalE3T00yU2lQc1JPdmFzQ056dXRNZkxnYXF2dlJqRzROc0FySUo0bXpLa2FwS2E4Qkk0ck02NjJ0ZEE?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-06-19 13:01">hace 17h</td>
+                    <td class="time-ago" data-date="2026-06-19 13:01">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Hari Sabnani: una historia de éxito empresarial sin perder de vista su rol más importante, ser padre">
@@ -650,17 +815,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/19/hari-sabnani-una-historia-de-exito-empresarial-sin-perder-de-vista-su-rol-mas-importante-ser-padre/" target="_blank">Hari Sabnani: una historia de éxito empresarial sin perder de vista su rol más importante, ser padre</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-19 12:45">hace 17h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Detienen menores con guagua que tenía gravamen de hurtada">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/detienen-menores-con-guagua-que-tenia-gravamen-de-hurtada/" target="_blank">Detienen menores con guagua que tenía gravamen de hurtada</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-06-19 12:06">hace 18h</td>
+                    <td class="time-ago" data-date="2026-06-19 12:45">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="🚨 ACTUALIZACIÓN OASIS DE AGUA POTABLE 🚨 📅 Viernes, 19 de junio 🕒 7:45 A.M. – Caguas, Puerto Rico ✅ Oasis de agua potable disponibles en este momento: 1️⃣ Parque del Monte – 24 horas 2️⃣ Los Parques – 24 horas 3️⃣ Hacienda San José – - facebook.com">
@@ -670,7 +825,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxOSUZFbjNhbE5EQ3VHUWw3Uzd0dW5TcXZwYnBTd2lqSUM4ZVBOTlluVndMcEp2S1hSdC0xaVBIUG1qSFFIZUZFWi1QVk91Q1NsUmFkcl96WmFGOWhOaEUzeGU0OWlnMkFmOFJKRUl5b1NpSFRLdm45Mnk0djFieldNbks5VVhSMmVYM3l5MUtBWDBDWExETWQxLWNrTDlCdUVrbkJoaWFybEV2Zl95TUIxQ19STTNyRzlCaWV0UHlabmh2Yk9OQ3BiUHFCS2dEY0dCV3dtQnVodG5yMUJSaDZR?oc=5" target="_blank">🚨 ACTUALIZACIÓN OASIS DE AGUA POTABLE 🚨 📅 Viernes, 19 de junio 🕒 7:45 A.M. – Caguas, Puerto Rico ✅ Oasis de agua potable disponibles en este momento: 1️⃣ Parque del Monte – 24 horas 2️⃣ Los Parques – 24 horas 3️⃣ Hacienda San José – - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-06-19 11:47">hace 18h</td>
+                    <td class="time-ago" data-date="2026-06-19 11:47">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Naguabo fortalece la respuesta ante emergencias con nueva unidad especializada 4×4">
@@ -680,7 +835,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/19/naguabo-fortalece-la-respuesta-ante-emergencias-con-nueva-unidad-especializada-4x4/" target="_blank">Naguabo fortalece la respuesta ante emergencias con nueva unidad especializada 4×4</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-19 11:45">hace 18h</td>
+                    <td class="time-ago" data-date="2026-06-19 11:45">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Radican cargo por maltrato bajo la Ley 54 contra Walter Hodge Muñoz">
@@ -690,7 +845,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/06/19/radican-cargo-por-maltrato-bajo-la-ley-54-contra-residente-de-gurabo/" target="_blank">Radican cargo por maltrato bajo la Ley 54 contra Walter Hodge Muñoz</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-06-19 11:27">hace 18h</td>
+                    <td class="time-ago" data-date="2026-06-19 11:27">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Encuentran cuerpo de hombre amordazado y quemado en Trujillo Alto - Periódico La Perla">
@@ -700,7 +855,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOTW93Q1NfNmVBN2NmRWtFMG5qcWdfbVU3S2s5T0VqQ2FfR0hvamRjM0prOWlmQmJ0TzhqdlFOOXBhdzUwdHByTTF6aDhucHlNYzcyTFM2Ri02dTNVOUxGMzhwUlA2ZDdDZzRIY2hKZnh1ZVJIWDBveExLeDR0c0kxSGR6SEYwOTJFMHVaNEtOempXV19mTmQ2SHMwcWFEcE1lbURwd2FIam1XR3E5WGc?oc=5" target="_blank">Encuentran cuerpo de hombre amordazado y quemado en Trujillo Alto - Periódico La Perla</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-06-19 11:18">hace 18h</td>
+                    <td class="time-ago" data-date="2026-06-19 11:18">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Aviso de calor emitido el 19 de junio a las 07:00 hasta el 19 de junio a las 18:00 por el Servicio Meteorológico Nacional (NWS) de San Juan (Puerto Rico) - El Vocero de Puerto Rico">
@@ -710,17 +865,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxNWlB4THRnYU56MFBNS0plTGw1aUtMNnpnMDJFbWFNVE0zMHpSN1hZYzdGWDVsQzdmMDhBQl92QVFlX0lta3pla29ELWlxQ09teEhlSHFFQmFIMUwxcGwxZVdycTdaS2doeE10dmd2bTc5bzc2clFZcmR2aGVPX3dNQ3VlcERpR3FYZVlWTkZQOW9aVU55Y3NBTWROQlNTS3RmaExpM29TMEpiWUdPZ3o3QVZrcDRRemQ0SEY4M1hKVngtR2tWeDBuODJ4YUFtM0V6V2ZLd1BwTXYyR2lWVEVGWjVPQnZYTUpW0gHuAUFVX3lxTE9DLVRFMTJ0U2U5dldTOU9uSlFNTmZrdnVNOEZ2b3dEVTJ4X2Z0eEJQeUtLVTdDc0lIWGJ1M0tFWjRhX3Jvek1TMDBTSmx4bWpwUlBYSndiaTMzSHQ2UEl6bFJWOGVsei0wbkQxdTVCTEotMjlNWGYyX2VDY2toYVNvSS02TFcxN0tyZHJuUWUzSERTOXR2NDZHZDdDVDhLbktsd3kwaE0tVEE2Z3NTTjcxNll1dE9DV216ZGdlNVlNNlBQOVhmWEp1ZnhZVkVvRzdpRDVUeWI5YmpOeHVybFJBbFU0YURBd0gzYTMyYlE?oc=5" target="_blank">Aviso de calor emitido el 19 de junio a las 07:00 hasta el 19 de junio a las 18:00 por el Servicio Meteorológico Nacional (NWS) de San Juan (Puerto Rico) - El Vocero de Puerto Rico</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-06-19 11:15">hace 18h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Amordazado y parcialmente quemado: ultiman a hombre en Trujillo Alto - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxPMlBRUC1LTlozLWhxOFlodGZJQmxfNHh5UzdENHdUdTJjRV9PZmEwbGQzZVkzOWRNRGRHRFdKZ1p2NG1WMGJlNG8za0tBZzRHSnhPNmo2SlhLRlJJb0pRRmZzMENKUU5jYThCV2tDT0x4emROcVlEeTZPcjVEdjFiQmV6NXFNb0lNLTF5MjE4azFTUFI1UklkTHJnSHlTUU0zWkwtY0VTNXNNVzZ5MFh4bXBHUU96X2ozSlJFV1h4MksxUW_SAcsBQVVfeXFMT1M2NzdlNjh0UE05R0paSjVfOURGYTU5aHdJRDQ1ZjllMXNCZlNManRrNXo0V0pxV3l1ZUdHMUZuVWx1VTJrUjdaOFRGNGUxWnJzSXV5S0pzaWlGeWZ1cnR4UFVuRTI3cTVLS05vUHFMbjRkQ2x5Z0Q4Mk1qakhZN1RNNXNPVkM1TlZrNWMyYzRxaXJBVG5IemJHNW9aTnBoNkdEeWJVOXJpU2xqblRubF8xelV5Unl6VDhZVkZ2Mk54elNmeG9sVHgzUkE?oc=5" target="_blank">Amordazado y parcialmente quemado: ultiman a hombre en Trujillo Alto - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-06-19 10:38">hace 19h</td>
+                    <td class="time-ago" data-date="2026-06-19 11:15">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Hallan hombre amordazado, baleado y parcialmente quemado en Trujillo Alto - Primera Hora">
@@ -730,7 +875,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxOa0xFNXFMRlBTRUEyMC1jbTBsUTFFSzB6UlRIejdKTDF6b2Q3c3V2dS0yWjl2cUY0cmt1d0ZsSlhsRGRTMUJJa3VUQXZmT3E0dVE0VnZoY0dCZ010dEJNRm4tZHhhd1RDWHlqZnp6eHA3eFdmOWdIdUFPek5DSUpheEdkTUUyclRuekpTYlVFZXJPd3Rfcm9GN0RrVnQ0MXE2UjB3R3F2Wnhvc0NhMm9LYm1QNUt0RFpjOVRsRkRVby1jUjlRVUlUVlZmamRiQndX?oc=5" target="_blank">Hallan hombre amordazado, baleado y parcialmente quemado en Trujillo Alto - Primera Hora</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-06-19 10:26">hace 19h</td>
+                    <td class="time-ago" data-date="2026-06-19 10:26">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="📣 Oportunidades de empleo en el Municipio de Canóvanas Estamos reclutando profesionales para las siguientes posiciones: 🔹 Ingeniero(a) en Entrenamiento 💰 Sueldo mensual: $3,100.00 Requisitos mínimos: ✅ Bachillerato en Ingeniería de un colegio o u - facebook.com">
@@ -740,7 +885,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxQWE9HdFZTYlZYZEdKRWhaVzBzT24zMVQ0QlFvNkp4ZUpybkZ5aWhtQ3NDV0FVdFQ5R0h5dXRlaXlPdmtmcnM2UzVBXzFlLTBvelY2NEpTTl9kandqYTBXYUJDYXpkTjgwU3htNXFsUjE1NlFKeTRhM3BBQndfcEEyUkhiTGI3SkZjSnloMXVjMjgtMUQxd0tWT2sxNUxiTVZ5TzVWSkt0alludTJRTEk1c1JsVklvcFBLdGJ2UlVsaU5aSUhqN0hYRUJMTndnZmhqb0ZkOWZHZ2JzNy03RXBJcW1oalZtVzhaS3dv?oc=5" target="_blank">📣 Oportunidades de empleo en el Municipio de Canóvanas Estamos reclutando profesionales para las siguientes posiciones: 🔹 Ingeniero(a) en Entrenamiento 💰 Sueldo mensual: $3,100.00 Requisitos mínimos: ✅ Bachillerato en Ingeniería de un colegio o u - facebook.com</a>
                     </td>
                     <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-06-19 10:13">hace 19h</td>
+                    <td class="time-ago" data-date="2026-06-19 10:13">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Aviso de calor emitido el 18 de junio a las 23:00 horas y vigente hasta el 19 de junio a las 11:00 horas por el Servicio Meteorológico Nacional (NWS) de San Juan (Puerto Rico) - El Vocero de Puerto Rico">
@@ -936,7 +1081,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-06-20 06:10:56 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-06-20 12:02:04 PM<br>
     Actualización automática cada 30 min
 </div>
 
