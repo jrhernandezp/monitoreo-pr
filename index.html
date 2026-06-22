@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-22 06:11:40 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-06-22 12:01:41 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">25</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">36</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">19</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-22 06:11:40 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-06-22 12:01:41 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -346,6 +346,31 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <!-- BREAKING NEWS -->
+
+<div class="section breaking-section">
+    <div class="breaking-banner">
+        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">hace 6min</span> —
+            <a href="https://waloradio.com/2026/06/22/un-muerto-y-un-hombre-gravemente-herido-en-accidentes-de-transito-ocurridos-en-caguas-y-luquillo/" target="_blank">Un muerto y un hombre gravemente herido en accidentes de tránsito ocurridos en Caguas y Luquillo</a>
+            <span style="opacity:0.6"> [Caguas, Luquillo]</span>
+        </div>
+        
+        <div class="breaking-item">
+            <span class="time">hace 44min</span> —
+            <a href="https://esnoticiapr.com/un-muerto-y-un-herido-en-tiroteo-reportado-en-trujillo-alto/" target="_blank">Un muerto y un herido en tiroteo reportado en Trujillo Alto</a>
+            <span style="opacity:0.6"> [Trujillo Alto]</span>
+        </div>
+        
+        <div class="breaking-item">
+            <span class="time">hace 1h</span> —
+            <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNb0wwUnRPWXNvQjR2MzlHdzFINEc4ZjExRG9kSko0djRXS3RWemFuNUo3LVU3Q1BUbFQ3akcyQ0hEX1JvdzZwWmliSTJpd0ZYZl9kVHEwMVBMMGp1V2hpdXRHSEVINEhqaE1pMXlmb204WFJ0ckRMXzNkS2ZFQXhaVEFzM3d4blZWbk8xb2RIdjBRaGlXWXFEYlVzVFV6ak40YlNRS1J0YkdoWVJDV0l3RVMtSHJhZw?oc=5" target="_blank">Balacera en Trujillo Alto deja un muerto y un herido - Primera Hora</a>
+            <span style="opacity:0.6"> [Trujillo Alto]</span>
+        </div>
+        
+    </div>
+</div>
 
 
 <!-- MUNICIPALITIES -->
@@ -365,22 +390,22 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">12</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">4</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">3</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
+        <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">4</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
@@ -390,7 +415,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">6</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
@@ -398,19 +423,19 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Ceiba')">
+        <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
             <div class="muni-name">Ceiba</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
@@ -447,14 +472,187 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Las más leídas del fin de semana: imágenes del caso de Gabriela Nicole Pratts y el enclave de lujo Moncayo en Fajardo - Noticias de Puerto Rico hoy">
+                <tr class="article-row" data-municipios="Naguabo" data-titular="Alcaldesa de Naguabo presentará hoy su Mensaje de Presupuesto 2026-2027">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/22/alcaldesa-de-naguabo-presentara-hoy-su-mensaje-de-presupuesto-2026-2027/" target="_blank">Alcaldesa de Naguabo presentará hoy su Mensaje de Presupuesto 2026-2027</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-22 15:22">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQUGJMSVVtaFVoUmtGUUdwMHd5UVh6ZjFfOGdBMzNPS1B2RWlLQnJFMWtlSE9ZLUt3SkNwZ0NJSGkyb080dmpUYnRKT0RlT3lLWUVhYjRtMUJqWTMtV094RWZubWh6UVN6eWo1ZExZSkpUc19LV2NaNi0yZUtid213OFZ5NXg1QTIxSHZV?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
+                    </td>
+                    <td>FB - Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-06-22 15:19">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Querella contra exfuncionaria de Humacao por alegado uso de equipos municipales para estudios de Derecho">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/22/querella-contra-exfuncionaria-de-humacao-por-alegado-uso-de-equipos-municipales-para-estudios-de-derecho/" target="_blank">Querella contra exfuncionaria de Humacao por alegado uso de equipos municipales para estudios de Derecho</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-22 14:59">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Grises Jr. de Humacao avanzan a los Sweet 16 de la Liga  Intermedia Sub-22">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/22/grises-jr-de-humacao-avanzan-a-los-sweet-16-de-la-liga-intermedia-sub-22/" target="_blank">Grises Jr. de Humacao avanzan a los Sweet 16 de la Liga  Intermedia Sub-22</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-22 13:52">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza,Canóvanas" data-titular="https://radioisla.tv/racionamiento-de-agua-llega-a-loiza-y-canovanas-alcaldesa-exige-trato-igualitario/ - facebook.com">
+                    <td><span class="muni-tag">Loíza, Canóvanas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNcERlSWlSXy01YUt6cEx1TGdmVUdkU2FWb0kyZjdGZHFMZmpOb0VIOFNRYmJWMkx4MVNOZHlpLTRZVlphZDJXb1RNSHNEU1o4WEU1UUtaNGw5d2RKNGJZc3NEMVRYRHg4WVptWk8ySzY4LXNfdHBHNVNyN2JrSzhjVmw5WQ?oc=5" target="_blank">https://radioisla.tv/racionamiento-de-agua-llega-a-loiza-y-canovanas-alcaldesa-exige-trato-igualitario/ - facebook.com</a>
+                    </td>
+                    <td>FB - Loíza</td>
+                    <td class="time-ago" data-date="2026-06-22 13:20">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas,Loíza" data-titular="Alcaldesa de Loíza anuncia que viene racionamiento para su pueblo y Canóvanas">
+                    <td><span class="muni-tag">Canóvanas, Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/ultima-hora/20260622/alcaldesa-de-loiza-anuncia-que-viene-racionamiento-para-su-pueblo-y-canovanas/?utm_source=rss&utm_medium=rss&utm_campaign=alcaldesa-de-loiza-anuncia-que-viene-racionamiento-para-su-pueblo-y-canovanas" target="_blank">Alcaldesa de Loíza anuncia que viene racionamiento para su pueblo y Canóvanas</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-06-22 12:28">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Identifican hombre asesinado el domingo en Trujillo Alto - Primera Hora">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxOOTZoRVBXeFRBMTNvQ3BVWUo0ZkdpMnBWS3dWTkxNbldzdXloNWlPUEpKMUVxcEpLakRSNDh4TWtVMjYtYjhucEV5NXNNZ0QzaFFLaVlEWWNMSWczRTUzVldqYkxCQ3pPb0xDdG84cjBSSVFCNVdjaW9udmQ3cjZJOHdwUzBNX0dGMVI4NmRyWmc2b3hoM2l3WHBrallsbTZpdVl6LTU3YkNuQnJCTDhFeXZ6dUZKb1R4QXJZ?oc=5" target="_blank">Identifican hombre asesinado el domingo en Trujillo Alto - Primera Hora</a>
+                    </td>
+                    <td>Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-06-22 12:21">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="⚠️ATENCIÓN | QUEBRADA VUELTAS⚠️ Fajardo continúa MEJORANDO RUTAS HACIA TU DESTINO FAVORITO 🛣️ 🚧 Atención residente de QUEBRADA VUELTAS, eI Gobierno Municipal Autónomo de Fajardo informa que se están realizando trabajos d - facebook.com">
                     <td><span class="muni-tag">Fajardo</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxOQmNldXMwOUFxZkMxQ0Njc3Y2YzUxRlBUSkVHYkJpRFNRS05qRVVBZEpKbTU3NDlvTmFURW5JY1JnbkJzRmF1a0xhYWVrYmpQXzdKaFdXLUw0NDQ4SFdzdm1sTWRYS2xLT3dkOXI0ZGNqT1Z0T1psRWI1d2c3WjV1QzVYNEJxeTRXLTVTenNsczVUMjdhZUdEcEd2YzFEcjJhclhwcXFZS3BxMGlFZ1ptT21RSElvem9NblJxU1k3WnBUVU5zTmphUjlRN3B0Wm5wWHBRYTZkX083Qm1QMm94Q2J4Zy1hVW1XZzlvQ3liYVRuS2s3Z0txRnMzZw?oc=5" target="_blank">Las más leídas del fin de semana: imágenes del caso de Gabriela Nicole Pratts y el enclave de lujo Moncayo en Fajardo - Noticias de Puerto Rico hoy</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi_wFBVV95cUxPYzNrUDU1UEhKS2h4eldONmdpUUs5ODBwQTFrb29SVWdOVGg0MEdyVVk3dkN2emdTb3hFUnlVelFsRWFhZndUV3FtbjhFOXMwYkU3SGV4UURXZDRvU0JodGsya0piX1VWaTE1cFZxOGNycHgtbVM2dk9jenlNZ1RzckxRRW1xVE1mTDZhQm9LSnQtT0J1OVo1RnEySXNCRzROXzZmRjlyMVNGUWZBX3FWdm81UWFUODdobmJPUDJ1VFlhY3lUcVBJTm8tU3hTOF9QbGZES2NUdlFUUE15MDA0MzVKdnN6aDhGNkpXcnpiOUV1djdFZS1Xc0s0SFFQelk?oc=5" target="_blank">⚠️ATENCIÓN | QUEBRADA VUELTAS⚠️ Fajardo continúa MEJORANDO RUTAS HACIA TU DESTINO FAVORITO 🛣️ 🚧 Atención residente de QUEBRADA VUELTAS, eI Gobierno Municipal Autónomo de Fajardo informa que se están realizando trabajos d - facebook.com</a>
                     </td>
-                    <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-06-22 06:25">ahora</td>
+                    <td>FB - Fajardo</td>
+                    <td class="time-ago" data-date="2026-06-22 12:10">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas,Loíza" data-titular="¿Habrá racionamiento en Loíza y Canóvanas? Alcaldesas esperan hoy una respuesta de la AAA">
+                    <td><span class="muni-tag">Canóvanas, Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/locales/notas/habra-racionamiento-en-loiza-y-canovanas-alcaldesas-esperan-hoy-una-respuesta-de-la-aaa/" target="_blank">¿Habrá racionamiento en Loíza y Canóvanas? Alcaldesas esperan hoy una respuesta de la AAA</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-06-22 12:01">ahora mismo</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Más cápsulas informativas del Municipio Autónomo de Caguas. Este próximo jueves, 25 de junio, nuestra ciudad será escenario de la gran final de Miss Universe Puerto Rico 2026. Nos llena de orgullo ser la sede de esta importante celebración, donde cono - facebook.com">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxNdHVGOW1fb2tfbkFRZ0tQZTZNVk14dXZIM2xSbG9RWS0xNF9VS3hFZUppa1FSR1FxS1N5Q3RyLVcxSE1raGJvQXlsUko5UnV4QXpXdzdtc29jMldYV3B3Y2RLUmNQcms1WGhHTFgwRFdTcGZ6OThTLUtxcEplVEs5cTFVeUgzdW5ET3pMd3pZX0RvMHVLRXBibDRCbGFKQWdCV1Zxdzh3dnBkY2M1ZXU5ZWd3MFhkU1c1N0FYelVIM2FfczRreFAtV3dLQjI5dGhaM0M4eEgwT0xDRDI4VDZTVld2Rmd2MHhySVZxcTNkVWw2b2M?oc=5" target="_blank">Más cápsulas informativas del Municipio Autónomo de Caguas. Este próximo jueves, 25 de junio, nuestra ciudad será escenario de la gran final de Miss Universe Puerto Rico 2026. Nos llena de orgullo ser la sede de esta importante celebración, donde cono - facebook.com</a>
+                    </td>
+                    <td>FB - Caguas</td>
+                    <td class="time-ago" data-date="2026-06-22 12:00">hace 1min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas,Luquillo" data-titular="Un muerto y un hombre gravemente herido en accidentes de tránsito ocurridos en Caguas y Luquillo">
+                    <td><span class="muni-tag">Caguas, Luquillo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/22/un-muerto-y-un-hombre-gravemente-herido-en-accidentes-de-transito-ocurridos-en-caguas-y-luquillo/" target="_blank">Un muerto y un hombre gravemente herido en accidentes de tránsito ocurridos en Caguas y Luquillo</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-22 11:55">hace 6min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Hombre de 41 años se priva de la vida en el sector La Barra de Caguas">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/06/22/hombre-de-41-anos-se-priva-de-la-vida-en-el-sector-la-barra-de-caguas/" target="_blank">Hombre de 41 años se priva de la vida en el sector La Barra de Caguas</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-06-22 11:36">hace 25min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Un muerto y un herido en tiroteo reportado en Trujillo Alto">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/un-muerto-y-un-herido-en-tiroteo-reportado-en-trujillo-alto/" target="_blank">Un muerto y un herido en tiroteo reportado en Trujillo Alto</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-06-22 11:17">hace 44min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Fallece uno de los hombres tiroteados en Trujillo Alto - Noticias de Puerto Rico hoy">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZDhUeFA3WVB6dTVrR2ZxU0gtbFhvU29MZ3JFRXFxek9Vc0dNZEJOaTMxQnFHdFRSYVhPTUFUa3FrS3pndndHM1g4dmkzdWh1cERESHNZRUNVTlNSd19vOEtrWl9VTWlOMEdUaURtcUxyRVowU0QtNEtaTE1VOENsUFF2bW8zVUZOWjMxZXpxZ1UtMF93bW9hOTdMejNBd2trRlRRTEJkbnRpcDQ?oc=5" target="_blank">Fallece uno de los hombres tiroteados en Trujillo Alto - Noticias de Puerto Rico hoy</a>
+                    </td>
+                    <td>Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-06-22 11:09">hace 52min</td>
+                </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOS1dMa3V2OWV5NGxzd1Nma1J1U2lPVlNhdGFJQl9Odl9yeDVOWXd2Q2JCU2VTVVViRjQtWEpvZ0JDazc3MW1fOGQ5QjZ1djE0SDFNb3lKSnZGSmJyQ0JqM2pKSWJOMXlJOEtDS2FMemg4ekxscTh3TGFYczBLZUJ4RlV4dGRURFQ1U2dV?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
+                    </td>
+                    <td>FB - Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-06-22 11:00">hace 1h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Balacera en Trujillo Alto deja un muerto y un herido - Primera Hora">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNb0wwUnRPWXNvQjR2MzlHdzFINEc4ZjExRG9kSko0djRXS3RWemFuNUo3LVU3Q1BUbFQ3akcyQ0hEX1JvdzZwWmliSTJpd0ZYZl9kVHEwMVBMMGp1V2hpdXRHSEVINEhqaE1pMXlmb204WFJ0ckRMXzNkS2ZFQXhaVEFzM3d4blZWbk8xb2RIdjBRaGlXWXFEYlVzVFV6ak40YlNRS1J0YkdoWVJDV0l3RVMtSHJhZw?oc=5" target="_blank">Balacera en Trujillo Alto deja un muerto y un herido - Primera Hora</a>
+                    </td>
+                    <td>Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-06-22 10:54">hace 1h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas,Loíza" data-titular="Racionamiento de agua llega a Loíza y Canóvanas; alcaldesa exige trato igualitario">
+                    <td><span class="muni-tag">Canóvanas, Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/racionamiento-de-agua-llega-a-loiza-y-canovanas-alcaldesa-exige-trato-igualitario/?utm_source=rss&utm_medium=rss&utm_campaign=racionamiento-de-agua-llega-a-loiza-y-canovanas-alcaldesa-exige-trato-igualitario&utm_source=rss&utm_medium=rss&utm_campaign=racionamiento-de-agua-llega-a-loiza-y-canovanas-alcaldesa-exige-trato-igualitario" target="_blank">Racionamiento de agua llega a Loíza y Canóvanas; alcaldesa exige trato igualitario</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-06-22 10:53">hace 1h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Atletas completan 5K América 250 en el Viejo San Juan - NotiUno.com">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxQOEJERmVBLTRMUVgxbWRaMUpyX2dUOS01Tmw4bnQ5UG5NTEQyRlFKbHFiUWNfbjNoVkM5NUF6TmhpMUtvbDdQZ3F0RmtHYzM2MldmSHROXzVrWUVaYTBralRlTVMzc3dpMUZ5RHRsaFdVZVNuUHBldlJMVG94M2VidUppb3JsSFhLYmFvcG9oN1BHd2hMVmtLVUkzNXpiRmYzNmhrQVY4TlFESnQ2ak91em1kVjlnZ08tNVJjbXpIeF91S0huVzlHQ0VlUlpiYUI1TW04aDFQaEhwZENiT2c?oc=5" target="_blank">Atletas completan 5K América 250 en el Viejo San Juan - NotiUno.com</a>
+                    </td>
+                    <td>San Juan</td>
+                    <td class="time-ago" data-date="2026-06-22 09:13">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Aviso de calor emitido el 22 de junio a las 02:00 hasta el 22 de junio a las 10:00 por el Servicio Meteorológico Nacional (NWS) de San Juan (Puerto Rico) - El Vocero de Puerto Rico">
@@ -464,21 +662,8 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxQd0pLOEZLTEVHR2lkLXJCaWIzUWhzeEpzWGRua3hmY3pFcHpPc2pXZDFGamgzeWpCLXYxUi0wcE9uM09ka2hvYlNDOU9yWkl0dVJuZnVsaXcyMnZaZzduZ0hZcHdWQVJ6Rk55bkpkSG92dk5KZXFueENzVkR0RlVDNU9QVXlIX3BtdTA0Z1E0WXpfR1UwY0s1WlZBWVBjbnE3ampMT0gzM1RVbUtBU2VvVDdMTkZYX3l0eW5QZldzRXUzZlVUcEdYdHZweFJvVlFLM3FVS1h6aXJfbHVVdUp4U2dTZVR4NjNz0gHuAUFVX3lxTE11a2J2Zm9nWlpOYjJ5T1JPaG5VTm1ZT2hCR2o3VlhvWERWMHpxUElUTW9VMTdaSGozVzUwRU1ZOFM4RlhsbGMyMW9LdnZwOFE1LXhVbjJHLXAxNW1zZlBTa2kzWjJCQXBBTzlUV1VrSU1aN0hYajRTUVJRdmJOU1c5RFJOaDNEQVJUZXN0RHhUYU9ESWI3U0lLY0diS1V6Zjh1N1NubkdXZk9mcUQ2eHJWaEx2TDE0d0JpcXFIc3hxUmdjaENNcHVieWhzMFVka3pwQ1pQV29fRHhOVEduWENfaTcyWVhJUXhETG8td2c?oc=5" target="_blank">Aviso de calor emitido el 22 de junio a las 02:00 hasta el 22 de junio a las 10:00 por el Servicio Meteorológico Nacional (NWS) de San Juan (Puerto Rico) - El Vocero de Puerto Rico</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-06-22 06:15">ahora</td>
+                    <td class="time-ago" data-date="2026-06-22 06:15">hace 5h</td>
                 </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Las más leídas del fin de semana: imágenes del caso de Gabriela Nicole Pratts y el enclave de lujo Moncayo en Fajardo">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/locales/notas/las-mas-leidas-del-fin-de-semana-imagenes-del-caso-de-gabriela-nicole-pratts-y-el-enclave-de-lujo-moncayo-en-fajardo/" target="_blank">Las más leídas del fin de semana: imágenes del caso de Gabriela Nicole Pratts y el enclave de lujo Moncayo en Fajardo</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-06-22 06:11">ahora mismo</td>
-                </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="El Tío de las Reinas. . Las candidatas de Miss Universe Puerto Rico 2026 desde Caguas desfilan en la pasarela de apertura de la gala preliminar. #Legado2026 ✨ #MissUniversePuertoRico - facebook.com">
                     <td><span class="muni-tag">Caguas</span></td>
@@ -487,7 +672,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWTduNXM1VWxPNENqOWVSOFZabjRSd1NoR0tYVGlPQnpqWDBKMEJKaUFMM2ZxLVNYX0ZiWmkzNDlvZ2RiS01sZDBkZ3RyRG52dWR3Wm5rSnd3S25UbTEyM2lfNVdWQzVXUU1TTGhadWNIV01DZHZraTgwZm1taHF4ZnFjdzh6RmdhOTg5UXRTdU9PZ1ExX1pvU3pPWGo1bFhGM3ctV195Vm9rN2xvd0pFYXVwS19MbC1VMmZxUTJDenY5V1Q0NTNma0dacHMxSmxkbUprYTdmS3NlX3BSNk9wYw?oc=5" target="_blank">El Tío de las Reinas. . Las candidatas de Miss Universe Puerto Rico 2026 desde Caguas desfilan en la pasarela de apertura de la gala preliminar. #Legado2026 ✨ #MissUniversePuertoRico - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-06-22 04:02">hace 2h</td>
+                    <td class="time-ago" data-date="2026-06-22 04:02">hace 7h</td>
                 </tr>
                 
                 
@@ -500,7 +685,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/06/21/tiroteo-deja-a-dos-hombres-heridos-2/" target="_blank">Tiroteo deja a dos hombres heridos</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-21 21:25">hace 8h</td>
+                    <td class="time-ago" data-date="2026-06-21 21:25">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Tiroteo a plena luz del día en Trujillo Alto: dos hombres resultan heridos - Noticias de Puerto Rico hoy">
@@ -510,7 +695,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPRm43eU1KXzBQZ2lyVkZkN3cyQUl3ZjN3bnJ0MEh1OVUxOFQyMXoxdVhfZUdYcU1YbzJwaVJfVFdtcUhfaXlfeGNwdU5uWDM3QnhtQlZuaUZiUlNia3dxTXVrR09qSkMxZExzb0ZlUThZaVdrMDhINUhENUNybU9EOEhSQTJsZ1lmTk82VWNUeVZ2c2lfQ0V3ajRHMTVPazlZYjdFTUMtd205ck1kZy1saGpyVFlSRUlEVFI2UVFpd3ZLQWoz?oc=5" target="_blank">Tiroteo a plena luz del día en Trujillo Alto: dos hombres resultan heridos - Noticias de Puerto Rico hoy</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-06-21 21:20">hace 8h</td>
+                    <td class="time-ago" data-date="2026-06-21 21:20">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Hombre fallece y otro resulta herido en medio de tiroteo en Trujillo Alto - Telemundo Puerto Rico">
@@ -520,7 +705,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdXpIekNENmxkVnNiZDYzQmFocmE4QWVyUnoyc0t0eTVOQks5VVRZUFU2aVBJSVFrYnM0R1FicEptOEVNQ0hxNlU0X3dIdDdFMEJVX1dDWVJ5U2dXTEVhUEJCdGF4d3BTdEtRQjluNnEwdHIzVzZJSjQ4MUlQSjVMaUNGblJtWThyUlFQVDM0cFJ6cVAxRVhiS1gtVzJvMkZUeGpiZGw5ZjRtaVlBbWpBQk5zZXFMdjAxalAwQTFzSnfSAcgBQVVfeXFMUHpYQVJRcUxRQnZWd29OdjMxZVdRenc3SXpURXdvaWtLekY2RUlhd0ZEamQxMGcxM3BYWHZEbWxBOGVTYVdQZDYtYk50NW9fM2Ewd05IaXVPQUNpVk5BRC0wV2JjVDVvNldRZGFEaVRDZUx1ZWpuU2ptWUExd3BZUHdUaV9jcUdMYTQwa0lUWEVwb21VQ1VGSGhoeHpRT19GTXd4elZqWTAwbmRlNlBFRHpaQlM0YmF3eUlrVThkZ2ZvdDRJblZmSFQ?oc=5" target="_blank">Hombre fallece y otro resulta herido en medio de tiroteo en Trujillo Alto - Telemundo Puerto Rico</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-06-21 21:05">hace 9h</td>
+                    <td class="time-ago" data-date="2026-06-21 21:05">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Tiroteo deja a dos hombres heridos en Trujillo Alto - El Vocero de Puerto Rico">
@@ -530,7 +715,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxPeV9LSUNxakJTcXVlWFBKMjZ4XzY1aUlhWkVkY2lmWGRWeHNCdlo2V3ZWcGtQelNWQzRnRkV3aVd2SjR4dWs5bUptdTJpSHI5Q0d5VExZWS0zNVhZcUpYdllpenBNOWo5RXRzODdGbi1zQVctTjA0MUJweGpZMnVTQzdXSzVyVzZoa0pzaXhMZDR3bGJwc0V3cWh1Mm1QS0VObldDVms1R19CZ2JweThrWElsdVNfWlBUQm9IWDhTX0lveUVFaktkelk3M1c2Z01XWV9nSNIB2gFBVV95cUxPbGZlX0wwOGtUdkg1M3JkSjRBekZ0TEQtSHQ1WVJIRDkzSnJWZkh0X1JjWVN0ekNKUi1haldIczRZbkp5NUJlaWdJMzU1eFdJcVZQNWZVNmFZWmpuSHpGRE1SdGN6UUpUdGIxY3FDRXQ2eGlWNkdGTDIwS3dqNmJ1blhaQXV5X2p0TGRqdVlTNUxPM0pwV2ZwZzc1MFEyZEpZeW9OZllnTWdUYjVGb3QwLWc4RlhsR3FHWm5nTlp6MmpuMlFURV9uLWFDT0haU0F1dnVqbnpnUGdLQQ?oc=5" target="_blank">Tiroteo deja a dos hombres heridos en Trujillo Alto - El Vocero de Puerto Rico</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-06-21 20:20">hace 9h</td>
+                    <td class="time-ago" data-date="2026-06-21 20:20">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Balacera en Trujillo Alto eleva a cinco los asesinatos durante el fin de semana de los Padres - El Vocero de Puerto Rico">
@@ -540,7 +725,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi_gFBVV95cUxQdGxPUUJ0RkFrQ3AxcXJxOU9iYnlyMjQzelA4MmZqNHdpczI3TDJlOUR0bkNfUzhBQ3FYN2htclRmU09GV2JXc2pyV0FxWGxmT0k0LVNjN01mX096RUE1Zk83MTJCLVpQcGkweC04OXBJcFo5a2h1RXd0YXhnZE1wN255TDkwTDVRYlNveUpKU2N5a1hHSXRUNXU4T1hBN2FILU1zZWVKM0FOZ3BTOGNiSC15WWZ1S2pYQ0RhVi1HOVhKT3c4U0pOWjlIUmw2UXJBR3NjVTM0Y1A5U1V6SlU2dGtNLTdGQl9PV0JjMTYwTDNva1ZrUnlJRTQ0a2d5QQ?oc=5" target="_blank">Balacera en Trujillo Alto eleva a cinco los asesinatos durante el fin de semana de los Padres - El Vocero de Puerto Rico</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-06-21 20:20">hace 9h</td>
+                    <td class="time-ago" data-date="2026-06-21 20:20">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Grises Jr. de Humacao avanzan a los Sweet 16 de la Liga Intermedia Sub-22">
@@ -550,7 +735,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/06/21/grises-jr-de-humacao-avanzan-a-los-sweet-16-de-la-liga-intermedia-sub-22/" target="_blank">Grises Jr. de Humacao avanzan a los Sweet 16 de la Liga Intermedia Sub-22</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-06-21 19:31">hace 10h</td>
+                    <td class="time-ago" data-date="2026-06-21 19:31">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Aviso de inundación emitido el 21 de junio a las 14:00 horas y vigente hasta el 21 de junio a las 16:00 horas por el Servicio Meteorológico Nacional (NWS) de San Juan (Puerto Rico) - El Vocero de Puerto Rico">
@@ -560,7 +745,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxOT1phOUJQdjg4eHVpcGl5dnA5NEZKcUpjQl95WkYweDl0S1pMMU1nWW1GajZ6NHZzVW10RDB5Y3V1QVB4QjBXNWowcEJIOVF1dV9vdDV4eFNUNFlKamxCd0c1ZGRrZmtETUpnS3gzcDE2SE93eXNJdm1KUzRXQ3RqZG9vNzRMdWk1VDRaRkRTOVp3WEFfQ2RVWkhlS3NIRWl6M0FPRlZ1ejZ4dFF5ZEE1OU9EWGxPdFd4V2JMSmNadmZtdkJKbk1KLTVNSEM4a2t5Zkc4VFV5bEVIXzJYa0M0NHZkZnpiSTdVZFE?oc=5" target="_blank">Aviso de inundación emitido el 21 de junio a las 14:00 horas y vigente hasta el 21 de junio a las 16:00 horas por el Servicio Meteorológico Nacional (NWS) de San Juan (Puerto Rico) - El Vocero de Puerto Rico</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-06-21 18:15">hace 11h</td>
+                    <td class="time-ago" data-date="2026-06-21 18:15">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Turista es baleado en los predios de un restaurante en Trujillo Alto - Primera Hora">
@@ -570,27 +755,17 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOX01ZeWNmU1lVcXZ0UVI0bDlTRUMwTGxDWkVSQzNVbWtVS3c1OHlIY3JwTUhObXhtWV9ud3pXMEtXSTdnRWpxMTZVLWtPN3k3T1hNX0hlRG90MXZMSTdmbzUxdHg0anZHZnVCRm5lczhGVkNsaHBHR25LM2pBc3djZDU4REUwUFpQbkVXdTFKSzU2Z0w4Nll6MVlRNUFNcUN6THhuQjRrbVhiNnRnaEJyd1VWUGxJeDJsQm56NUlRVHMwQWpuUWVwNDdHaw?oc=5" target="_blank">Turista es baleado en los predios de un restaurante en Trujillo Alto - Primera Hora</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-06-21 17:56">hace 12h</td>
+                    <td class="time-ago" data-date="2026-06-21 17:56">hace 18h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Caguas" data-titular="Tres personas mueren en accidentes de tránsito por separado durante el fin de semana">
-                    <td><span class="muni-tag">Caguas</span></td>
+                <tr class="article-row" data-municipios="Fajardo" data-titular="FELIZ DÍA DE LOS PADRES les desea la Administración Municipal de Fajardo y su alcalde, hon.José Aníbal "Joey" Meléndez - facebook.com">
+                    <td><span class="muni-tag">Fajardo</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20260621/tres-personas-mueren-en-accidentes-de-transito-por-separado-durante-el-fin-de-semana/?utm_source=rss&utm_medium=rss&utm_campaign=tres-personas-mueren-en-accidentes-de-transito-por-separado-durante-el-fin-de-semana" target="_blank">Tres personas mueren en accidentes de tránsito por separado durante el fin de semana</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxNVV91SXFtb191RkRwam9qcU9CWjkyUDVmTWlYeURJQ0QtYklfVGR0Ukg1S1NaLVFtVnNVT0hYQnlxZ0R6UmJMQWNfaVRlMFp1NDZGdTg2bDF1UzB3eF9KY043ZDh3ZlRCTnNmNUk3OVpBTFhvYW9xblZtZHA4bXE5RUtpTWZSd0NVLWl2NFZqQ3ZhRmJrMXlnVjJzUUItanM1c0VTdEVLMGgtd3lKTDQwSnRfbEg2RFlXQTdnN1gwcktEMldmaU84NHp1c19IWW9tXzRrcE5fbVkxX3hNSzZaMXhudmhaN1B4RXc?oc=5" target="_blank">FELIZ DÍA DE LOS PADRES les desea la Administración Municipal de Fajardo y su alcalde, hon.José Aníbal "Joey" Meléndez - facebook.com</a>
                     </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-06-21 16:29">hace 13h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Investigan suicidio reportado en Caguas">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/investigan-suicidio-reportado-en-caguas/" target="_blank">Investigan suicidio reportado en Caguas</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-06-21 15:03">hace 15h</td>
+                    <td>FB - Fajardo</td>
+                    <td class="time-ago" data-date="2026-06-21 15:00">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Arrestan a hombre que atropelló a peatón en Luquillo - NotiCel">
@@ -600,17 +775,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOdXExSFZxSlpPSTB6RkhoRkFiSVI5ZTlDMEhlN2lSNTJ6S3FNQTJqemEybGhtQXhFUHlYRWFxeTZxNDlJeGdMTXF5ZXc1cFZkU293WVFGcUZZNlhSY3pLUzhPU1h5RTBSdGgweFlfODVEQlNtRlNvbzRQRUJXV05lbVhURjFZbVZNRmhRTzV4RWVXSGRTQlE?oc=5" target="_blank">Arrestan a hombre que atropelló a peatón en Luquillo - NotiCel</a>
                     </td>
                     <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-06-21 14:55">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Conductor muere tras accidente de tránsito en carretera PR-763 en Caguas">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/conductor-muere-tras-accidente-de-transito-en-carretera-pr-763-en-caguas/" target="_blank">Conductor muere tras accidente de tránsito en carretera PR-763 en Caguas</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-06-21 14:34">hace 15h</td>
+                    <td class="time-ago" data-date="2026-06-21 14:55">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Alcaldesa de Loíza reclama acción debido a la falta de agua desde el viernes - Telemundo Puerto Rico">
@@ -620,7 +785,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxNX3BTVmdzSE4tZUdLam1tQmhJaXFfZkpIRFJLeTl6eHF0Vm1hQjNRM2hoTDhPU3dUZExiQkdMb0Zaam04MTV0NnRRcjRMM3pGZjV0Xy1sR1RvOXB5dkhZRXk2bDUwVHlXemo1elE0M1R4TXdGckM2cnVyODRxV3hBNGtCLXpmU2lFNUtjZWdjU01Yc2tFYUFEYzRwOTVCSkJ4TkxJbnhCX0o0UlVJY3R0ZUNoS1NNeUxLd3dNaEtvWUhKeVFtMFBMQk93UkZvT1nSAdcBQVVfeXFMUER2UTZEY1o3TXFQV3V6VWllLVVnMno5UHB0MWV6RkRKOUc0bDZORDFpT1hEVHQzSGpIY0wtZ3pGWFRobGhmY3hON2loSHNlc2dmYzlZeWR3Mk9ZTUV4LWh3UXFZX0todmdOTW1ZQ1ItX1BGZVhzV1NBRlBxR25oVFNNQ08xUm05Mkdac01TNXNlVzlfZXJ0UDdlWmZTY0tUVEVDR2JEUmhVemg1RGN5aFkwWWs4VUVSUklDclJ5SFV5aDRWZ253b0k5bW9ubzRBdDI4a2ZHblU?oc=5" target="_blank">Alcaldesa de Loíza reclama acción debido a la falta de agua desde el viernes - Telemundo Puerto Rico</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-06-21 14:21">hace 15h</td>
+                    <td class="time-ago" data-date="2026-06-21 14:21">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo added a new... - Municipio de Luquillo - facebook.com">
@@ -630,37 +795,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5MSl8tVF9pQkdsZUF0UDNjUWNTQ25pZ2l5bllMeWdxdnF1aVBQZnRPMzZZc2syT2RzY2hpN3BkZFZRWnowNktoQ1lseFdSeVItRVppM3BNcnpIakp1UnY2eDh1ajNCdkpaTk9Wag?oc=5" target="_blank">Municipio de Luquillo added a new... - Municipio de Luquillo - facebook.com</a>
                     </td>
                     <td>FB - Luquillo</td>
-                    <td class="time-ago" data-date="2026-06-21 14:05">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="¡Lamentable! Hombre de priva de la vida en #Caguas Agentes de la Policía de Puerto Rico, adscritos al Distrito de Caguas, investigaron un suicidio reportado en horas de la tarde de ayer, en hechos ocurridos en la calle 10 del sector La Barra, en este munici - facebook.com">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxNOVlQV2c3UlotWFQya0luNEdPU2V2M3VUSnZrY1Vob2d4SUl6SVB5eW9jTHRWdldGOUQ0bXNoUTRHWWNJLXJvbWNyY3N6bURNdk1RbnloRTZ4TWZiSDdZem0tY0ZxR05pREt0ZzM1NnpacVNWbFJYaTc4Z1lnNFdKMkNDM2tHa1dZZ245N1lyRVB3SEt3emhTTnVPZmZjb2RyMW9PVDI4Y2JfcktmSnBDaW5uRjZCMy1yYldMY20yZHZTMk51NDh2MTNoNnlPSTNZQU5lMWpGT0VSVEct?oc=5" target="_blank">¡Lamentable! Hombre de priva de la vida en #Caguas Agentes de la Policía de Puerto Rico, adscritos al Distrito de Caguas, investigaron un suicidio reportado en horas de la tarde de ayer, en hechos ocurridos en la calle 10 del sector La Barra, en este munici - facebook.com</a>
-                    </td>
-                    <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-06-21 13:20">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Ceiba" data-titular="Lecciones desde Ceiba: cultivan mangles para remover carbono y restaurar las costas de Puerto Rico - Noticias de Puerto Rico hoy">
-                    <td><span class="muni-tag">Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi-AFBVV95cUxPZkFVLURCZWdTdXdGZkVmSTZXdEdPWDJOMEwxbzhfU3VXSlJHWWhrVzV5Y0RuZ0ZENkFaQjBERklHQ1dhclUtZ1VCVG02aE8wd2hmODVWRDZtV3FweVQ4ZzJFUFF4NEYzYUhMQmozZUNhamN4RzJ6MXliQmxEVTlBaTNTRXVBNkMybXkxM3p3TXloU3lES3JTbno4aU5kUXlsYThrckJMSU56VlZvcHZXYklPdFJRVDd3aS1zbUpCcE51VE9sanZzQjVBTlZ6d0ROQUpXbXNrakQ5cWtQNFJUVlktQkNjR3VTeHZlZWcxQnU1NlZWanhBQg?oc=5" target="_blank">Lecciones desde Ceiba: cultivan mangles para remover carbono y restaurar las costas de Puerto Rico - Noticias de Puerto Rico hoy</a>
-                    </td>
-                    <td>El Nuevo Día (GN)</td>
-                    <td class="time-ago" data-date="2026-06-21 13:00">hace 17h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Investigan asesinato de hombre hallado en estructura abandonada en Río Piedras">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/investigan-asesinato-de-hombre-hallado-en-estructura-abandonada-en-rio-piedras/" target="_blank">Investigan asesinato de hombre hallado en estructura abandonada en Río Piedras</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-06-21 12:52">hace 17h</td>
+                    <td class="time-ago" data-date="2026-06-21 14:05">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza - facebook.com">
@@ -856,7 +991,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-06-22 06:11:40 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-06-22 12:01:41 PM<br>
     Actualización automática cada 30 min
 </div>
 
