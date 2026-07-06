@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-07-05 09:30:58 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-07-06 10:49:06 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">30</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">13</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">35</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">35</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-07-05 09:30:58 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-07-06 10:49:06 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -347,19 +347,6 @@ tr:hover { background: var(--surface2); }
 
 <!-- BREAKING NEWS -->
 
-<div class="section breaking-section">
-    <div class="breaking-banner">
-        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
-        
-        <div class="breaking-item">
-            <span class="time">ahora mismo</span> —
-            <a href="https://www.elnuevodia.com/noticias/seguridad/notas/policia-confirma-que-muerte-de-enfermera-en-caguas-fue-un-asesinato/" target="_blank">Policía confirma que muerte de enfermera en Caguas fue un asesinato</a>
-            <span style="opacity:0.6"> [Caguas]</span>
-        </div>
-        
-    </div>
-</div>
-
 
 <!-- MUNICIPALITIES -->
 <div class="section">
@@ -368,7 +355,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">7</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -378,27 +365,27 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">7</div>
+            <div class="muni-count">4</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">1</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Luquillo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">10</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
@@ -408,12 +395,12 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
             <div class="muni-name">Río Grande</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">11</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Ceiba')">
             <div class="muni-name">Ceiba</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
@@ -431,9 +418,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">1</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Vieques')">
+        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
@@ -460,87 +447,290 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="Canóvanas,Río Grande" data-titular="AAA anuncia plan de racionamiento desde mañana para comunidades de Río Grande y Canóvanas">
-                    <td><span class="muni-tag">Canóvanas, Río Grande</span></td>
+                <tr class="article-row" data-municipios="San Juan" data-titular="Calor intenso y polvo del Sahara dominarán las condiciones del tiempo hoy">
+                    <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/locales/notas/aaa-anuncia-plan-racionamiento-desde-manana-para-comunidades-de-rio-grande-y-canovanas/" target="_blank">AAA anuncia plan de racionamiento desde mañana para comunidades de Río Grande y Canóvanas</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/07/06/calor-intenso-y-polvo-del-sahara-dominaran-las-condiciones-del-tiempo-hoy/" target="_blank">Calor intenso y polvo del Sahara dominarán las condiciones del tiempo hoy</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-07-06 14:47">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Identifican a hombre asesinado en Trujillo Alto">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/identifican-a-hombre-asesinado-en-trujillo-alto/?utm_source=rss&utm_medium=rss&utm_campaign=identifican-a-hombre-asesinado-en-trujillo-alto&utm_source=rss&utm_medium=rss&utm_campaign=identifican-a-hombre-asesinado-en-trujillo-alto" target="_blank">Identifican a hombre asesinado en Trujillo Alto</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-07-06 14:30">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="Imponen $800,000 de fianza a hombre acusado de agredir con un martillo a una mujer en Fajardo">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/07/06/imponen-800000-de-fianza-a-hombre-acusado-de-agredir-con-un-martillo-a-una-mujer-en-fajardo/" target="_blank">Imponen $800,000 de fianza a hombre acusado de agredir con un martillo a una mujer en Fajardo</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-07-06 14:16">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Asesinan a tiros al dueño de una gomera en Trujillo Alto: ocupan más de $11,000 en efectivo y un arma de fuego - Noticias de Puerto Rico hoy">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxQMVQ3V1kta01XLTUxTDZSRVgxV24wVzZfOXNoU3JzSVhabmgyZDc4TW9PVzdEa3NmcGc5T1UxU191dzNvekNXUDZlUDh4azV0VllDNmVhclluR1l4V3BONF9PeUlnVGx1SUhuLV9QZXEzUjloR1JmRi1yZWFYNmU2LUxQeHZCYW10cmNSQmtLVHJjRS05Sk1ZMDVoWi1Id3VWUXc0bW5kU0NNcy1LOGVoOWxjS1Q4NFhNdml0RGo3TjZmR3habWY4U2NQNndTaFFaNDhSbWlsOXJRU29aU1hyU3BLTFRaaFI3QUY0d0Rna3NfQQ?oc=5" target="_blank">Asesinan a tiros al dueño de una gomera en Trujillo Alto: ocupan más de $11,000 en efectivo y un arma de fuego - Noticias de Puerto Rico hoy</a>
+                    </td>
+                    <td>Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-07-06 14:06">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Asesinan a tiros al dueño de una gomera en Trujillo Alto: ocupan más de $11,000 en efectivo y un arma de fuego">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/asesinan-a-tiros-al-dueno-de-una-gomera-en-trujillo-alto-ocupan-mas-de-11000-en-efectivo-y-un-arma-de-fuego/" target="_blank">Asesinan a tiros al dueño de una gomera en Trujillo Alto: ocupan más de $11,000 en efectivo y un arma de fuego</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-07-05 23:42">ahora</td>
+                    <td class="time-ago" data-date="2026-07-06 13:58">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Canóvanas,Río Grande" data-titular="AAA anuncia plan racionamiento desde mañana para comunidades de Río Grande y Canóvanas - Noticias de Puerto Rico hoy">
-                    <td><span class="muni-tag">Canóvanas, Río Grande</span></td>
+                <tr class="article-row" data-municipios="San Juan" data-titular="Colberg pide al Departamento del Interior que intervenga en el caso de El Escambrón">
+                    <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSzdHaWJJT1F2TTVfNnZWS0RDaHkycEdOcVFkLXFFOUpWZnFMTzZFRmViNUpSYXpYUlFMTHA0azNuR0JnWHRCOXh6OFdpRlp0N0N2MDVDRTZ6ek0ySTRlYlZyclRDZWdiS1dBd01GSU0xR3kzWnpBZVBBSEdrb180X1ZiYUNhUlNIQXJmZHFPWGIzVEpQRXFfWElYdU1hSVNjaXNhSUlNUWw1cHVfUjZqanpfblFfUDN3TVYtRWpXNWNuWnltSlNCVU95VE42T0JjSEZB?oc=5" target="_blank">AAA anuncia plan racionamiento desde mañana para comunidades de Río Grande y Canóvanas - Noticias de Puerto Rico hoy</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/ultima-hora/20260706/colberg-pide-al-departamento-del-interior-que-intervenga-en-el-caso-de-el-escambron/?utm_source=rss&utm_medium=rss&utm_campaign=colberg-pide-al-departamento-del-interior-que-intervenga-en-el-caso-de-el-escambron" target="_blank">Colberg pide al Departamento del Interior que intervenga en el caso de El Escambrón</a>
                     </td>
-                    <td>Canóvanas</td>
-                    <td class="time-ago" data-date="2026-07-05 23:42">ahora</td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-07-06 13:36">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Canóvanas,Río Grande" data-titular="AAA anuncia plan de racionamiento para Río Grande y Canóvanas - Telemundo Puerto Rico">
+                <tr class="article-row" data-municipios="Culebra" data-titular="DRNA evaluates deploying equipment to Culebra due to extreme sargassum accumulation">
+                    <td><span class="muni-tag">Culebra</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/english/news/story/drna-evaluates-deploying-equipment-to-culebra-due-to-extreme-sargassum-accumulation/" target="_blank">DRNA evaluates deploying equipment to Culebra due to extreme sargassum accumulation</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-07-06 13:13">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Culebra" data-titular="DRNA evaluates deploying equipment to Culebra due to extreme sargassum accumulation - Noticias de Puerto Rico hoy">
+                    <td><span class="muni-tag">Culebra</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxPR3h2cmE5M2haNW9MSFlBNXA1SkxuREtuMmJFRndzSzRHbWtyQUJTQzRRN1dERUFzNDdBeTdyVGx6OUd5OHYwQVNadVoyRkdlYUt4SzNoWTdHeklYMndJU2FjY1htUU83MG16QXoxQUxFMW9QbU10ZFU0N3JmWDZKdHBTVXAwTExrSm9IVlFTbEVnVUNLZERpSlpiSTZGZHF5bWFMQU1wbUhOMndSRkJ1VVNtdG5pVEdwWnhPdXlTMlJxSFUyNlVIY0Vn?oc=5" target="_blank">DRNA evaluates deploying equipment to Culebra due to extreme sargassum accumulation - Noticias de Puerto Rico hoy</a>
+                    </td>
+                    <td>Culebra</td>
+                    <td class="time-ago" data-date="2026-07-06 13:13">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas,Río Grande" data-titular="Racionamiento en Río Grande y Canóvanas: AAA explica su plan - Telemundo Puerto Rico">
                     <td><span class="muni-tag">Canóvanas, Río Grande</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZUxDd1lRR2ZyYzFsUXlTbnpKSDhLQWwzM3YxQ0o0YTJiQ3QwMm5udWFKRDlEaUxQVEJORGFZLXFuWVZfYndYb1FEcGI3c3kyWmNqTG9vRnBGTEJBeXRqa2tfenVqN1ZCSFZZZGVPYUU4a3BkTDdyejZYbUdaMWZucnRYQmhNU1BuNmkxZnNfcXNPd2FtSjJZRnRfeWlKOGZGNjVha2ZKZDNFTXpFejJxd1k4ekdiQTFta3R30gHDAUFVX3lxTE5uWlRVN0xPQi1yMjF1QUxKRWxRdl85ZU5jUmlYeFVjOTdiRDJ6dmJ2YUVWcWtYdXM4Qk5YRzZMcEM2RmhOaE9GNlJBa3MzTThzRV82dnNxRVhMa0JZNVFpN0xldHhkQ3p3V3ZKRkhmVjhhcS1oLW1ZYm9ZTThPY1hibDZLQkZvaVhQNVZzajhhRW1LZk1iU2JTcW1kRENxbXdWYnUxTnhYUkV0Ty1hSGUxMHA3QmZRVlN2QTd4VndTTUdUWQ?oc=5" target="_blank">AAA anuncia plan de racionamiento para Río Grande y Canóvanas - Telemundo Puerto Rico</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOOFBEUWRJMUFQejdOQURXUG9ZYjJvTVo1eHlkaGgtWkJmM1RveE1iZXJyS1Z2dzljQW13ekRYVU16U0pRbzdWWE8zcmVROHl6MTJwb0M2eVhMTUVPbEY3ZlpYanFMN3hlejRXQTlDVVNObDAwSk9Sc1lKRmVzSFVxdnlUQk1xTzZiM0JlNEZSM1JfZ293TXo1bm9LM1hsSi1HSkhXVElJVmNBdUVGX0lzaFl4VWJJQTFrR3NyS3pwONIBxwFBVV95cUxNenpzNkVLazJIanMtd0h4a3pXT1Z2QlQwUGhVblFEMXdjekhfaUdCNjk0TnNURWhtd3N6anBHczhUbkxIMnJFblE2WVVxSV9UcDkySXRLRm9DbzFqaHpRVS1MR1BESWdfa0JjQlBMZTVqNk83TjYtZVhHNl90cmlmV09nOE56MlQ4aTlnRXpVN2w5ejFHcW5yejMwR2lXRUZvS0h0b3R0NWVNMHFVVHBtcDhtdW5URUFYZnVhM01uU1p3ZVVtdUF3?oc=5" target="_blank">Racionamiento en Río Grande y Canóvanas: AAA explica su plan - Telemundo Puerto Rico</a>
                     </td>
                     <td>Canóvanas</td>
-                    <td class="time-ago" data-date="2026-07-05 23:27">ahora</td>
+                    <td class="time-ago" data-date="2026-07-06 13:12">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas,Río Grande" data-titular="Cuestionan manejo de la AAA en racionamiento de agua en Río Grande y Canóvanas - Metro Puerto Rico">
+                    <td><span class="muni-tag">Canóvanas, Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxNNmdzUGlnZFNnbk5vWXRqSXdUbFVydnJNQkZCcHotcmFRY2FjazNHZkx3QlFpTDJJSnVHUlRxVHFRTkdXWDFKd1FBTnlFRDRud1d2bEFwbHJTVHZyQVRlMFVVVmtYRkxHNmpXWUlxQVlOdkdXT2JVd3AxNnVyWHlhQ0lpTFhzWjByWS1VRUhINzJRazIwcW5CbjBoQkp4MEU3R2FidlNpUnh5bGF5ZDNDNWJFWFl6SEJPS0w2R9IB0AFBVV95cUxNaEpIbjhjQ2RraXNnWnY5eHdmWnU3SmVVX3lEaGUzOWpOc0p1OGc2cDZfeXVDTlBCVGF5OFk1akNyZnlJQnNaeDI1ZEcyUXctSWdSNm1aX2JHeDd1RFBxbUhiem1WanBhU0xid2pERlpEd3YxVFUwYzh6YVNwTmNEQ3ZUZ0RiN2xZNnRXY3k1Ym1OR0FnTnZ5VmRSTm91TmRGTWt0cG5ybi1xaFBLY1NJMlJDaUV5WURkNDk2OE8xY0VZRm1FenZDQnRVckt0UFgx?oc=5" target="_blank">Cuestionan manejo de la AAA en racionamiento de agua en Río Grande y Canóvanas - Metro Puerto Rico</a>
+                    </td>
+                    <td>Canóvanas</td>
+                    <td class="time-ago" data-date="2026-07-06 13:10">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Río Grande" data-titular="Denuncia falta de planificación del gobierno ante racionamiento de agua en Río Grande">
+                    <td><span class="muni-tag">Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/noticias/20260706/denuncia-falta-de-planificacion-del-gobierno-ante-racionamiento-de-agua-en-rio-grande/?utm_source=rss&utm_medium=rss&utm_campaign=denuncia-falta-de-planificacion-del-gobierno-ante-racionamiento-de-agua-en-rio-grande" target="_blank">Denuncia falta de planificación del gobierno ante racionamiento de agua en Río Grande</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-07-06 12:56">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Colberg eleva a Washington el caso de El Escambrón, pide al Departamento del Interior que intervenga">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/colberg-eleva-a-washington-el-caso-de-el-escambron-pide-al-departamento-del-interior-que-intervenga/?utm_source=rss&utm_medium=rss&utm_campaign=colberg-eleva-a-washington-el-caso-de-el-escambron-pide-al-departamento-del-interior-que-intervenga&utm_source=rss&utm_medium=rss&utm_campaign=colberg-eleva-a-washington-el-caso-de-el-escambron-pide-al-departamento-del-interior-que-intervenga" target="_blank">Colberg eleva a Washington el caso de El Escambrón, pide al Departamento del Interior que intervenga</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-07-06 12:16">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Representantes del PPD exigen investigación sobre la JLBP tras feminicidio en Caguas">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/representantes-del-ppd-exigen-investigacion-sobre-la-jlbp-tras-feminicidio-en-caguas/" target="_blank">Representantes del PPD exigen investigación sobre la JLBP tras feminicidio en Caguas</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-07-06 12:05">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Hombre de 39 años se priva de la vida en Yabucoa">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/07/06/hombre-de-39-anos-se-priva-de-la-vida-en-yabucoa/" target="_blank">Hombre de 39 años se priva de la vida en Yabucoa</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-07-06 11:31">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas,Río Grande" data-titular="Bajo plan de racionamiento Río Grande y Canóvanas">
+                    <td><span class="muni-tag">Canóvanas, Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/bajo-plan-de-racionamiento-rio-grande-y-canovanas/?utm_source=rss&utm_medium=rss&utm_campaign=bajo-plan-de-racionamiento-rio-grande-y-canovanas&utm_source=rss&utm_medium=rss&utm_campaign=bajo-plan-de-racionamiento-rio-grande-y-canovanas" target="_blank">Bajo plan de racionamiento Río Grande y Canóvanas</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-07-06 11:15">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas,Río Grande" data-titular="Plan de racionamiento en Río Grande y Canóvanas comienza hoy: aquí el calendario - wapa.tv">
+                    <td><span class="muni-tag">Canóvanas, Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxOQ05sSlBnOUlocVFGdlJZRXQ0X1dITzlORnJZZXpFQzE3eUp2Rm1LVjc1SGE2VVJkYlFnclNBM0h2UldnS21vNzBHSFpsTllCM0NsdFlfM0dIb0ZBWXEtZkItUWtmWHY4ZWJXblJ2eWtyTS1OZERkNWR2R1FnTHQ4NFhlN1Q3TDF6SFZFN0VseEF6ekZNaTRuOEwtN3ZnNFphWll3RGZ4cnFjM2I3bU92U1VHRHU5Mm9fdXdpejBIZFNMVGx1Q3lvV2VyTC1OZ0hGcmZmZTd5OHVlTHNEbkRoUW1jVWhqeUpVUHh2TmdNeHhPLVE?oc=5" target="_blank">Plan de racionamiento en Río Grande y Canóvanas comienza hoy: aquí el calendario - wapa.tv</a>
+                    </td>
+                    <td>Canóvanas</td>
+                    <td class="time-ago" data-date="2026-07-06 11:03">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas,Río Grande" data-titular="AAA anuncia plan de racionamiento para comunidades de Río Grande y Canóvanas">
+                    <td><span class="muni-tag">Canóvanas, Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/locales/notas/aaa-anuncia-plan-racionamiento-desde-manana-para-comunidades-de-rio-grande-y-canovanas/" target="_blank">AAA anuncia plan de racionamiento para comunidades de Río Grande y Canóvanas</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-07-06 10:49">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Culebra" data-titular="DRNA evalúa movilizar equipo a Culebra por acumulación extrema de sargazo">
                     <td><span class="muni-tag">Culebra</span></td>
                     <td class="titular-cell">
-                        
+                        <span class="badge-nuevo">NUEVO</span>
                         <a href="https://www.elnuevodia.com/noticias/locales/notas/drna-evalua-movilizar-equipo-a-culebra-por-acumulacion-extrema-de-sargazo/" target="_blank">DRNA evalúa movilizar equipo a Culebra por acumulación extrema de sargazo</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-07-05 23:05">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Policía confirma que muerte de enfermera en Caguas fue un asesinato">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/policia-confirma-que-muerte-de-enfermera-en-caguas-fue-un-asesinato/" target="_blank">Policía confirma que muerte de enfermera en Caguas fue un asesinato</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-07-05 21:30">ahora mismo</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Ceiba" data-titular="Secuestran hombre y le roban más de $30,000">
-                    <td><span class="muni-tag">Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/07/05/secuestran-hombre-y-le-roban-mas-de-30000/" target="_blank">Secuestran hombre y le roban más de $30,000</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-05 21:14">hace 16min</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Cuatro afortunados ganan premios secundarios del Powerball en Puerto Rico">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/07/05/cuatro-afortunados-ganan-premios-secundarios-del-powerball-en-puerto-rico/" target="_blank">Cuatro afortunados ganan premios secundarios del Powerball en Puerto Rico</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-05 21:11">hace 19min</td>
+                    <td class="time-ago" data-date="2026-07-06 10:49">ahora mismo</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
+                <tr class="article-row" data-municipios="Canóvanas,Río Grande" data-titular="Abonados de Río Grande y Canóvanas comienzan racionamiento de agua de 48 horas">
+                    <td><span class="muni-tag">Canóvanas, Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/noticias/20260706/abonados-de-rio-grande-y-canovanas-comienzan-racionamiento-de-agua-de-48-horas/?utm_source=rss&utm_medium=rss&utm_campaign=abonados-de-rio-grande-y-canovanas-comienzan-racionamiento-de-agua-de-48-horas" target="_blank">Abonados de Río Grande y Canóvanas comienzan racionamiento de agua de 48 horas</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-07-06 09:49">hace 1h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Aviso de calor emitido el 6 de julio a las 03:00 de la madrugada y vigente hasta el 6 de julio a las 17:00, por el Servicio Meteorológico Nacional (NWS) de San Juan (Puerto Rico) - El Vocero de Puerto Rico">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxOVVQtTzlEYUp1cGljeHVCUDA5SFV3TkpWU3VQMjVBVmJURjBwekpZUUhEVGNQYzdoam9Rc2NGT0VLNExCTl93RXlZVnFuS2RaUXVOa2JUN3RiWmxHVXdQaVlnSElKdEo1MXRYYlo1N0Q4MWhxT2szUGdvUWlabmJBazM4NjE0VjFrVUhCT3FGVGJhYnlaNUsxcGdFQm15T3BqQmx6XzUwREQ0OUl6WDNJU3NZdjA5NW5zeERkYTNIekRVQ1MxTWdpV2UzaVQxUGhpbEFsc05SdTBPN09mTXVRbnFEbFQ0OUY4bFFUONIB8gFBVV95cUxPNjdwclY1ekJKNVUyTWhSendLNDJpNWdzc2gwYnBXbEp3NHd2ZGtVX0RsYm80MWN0WVNXN21iLS1BcE4tcllkN3F6RUJuR1dTelJ1ZE93bUNVc2d0cklTN05GR0hiSWxrdUMzVlZ3NmZKa0tHRHNob1ZKMDBsU1BpR09HTWlPWUxSVGl5cHNaYk55VHE0Q3N2U1dKSTVHc2I5UHhhUFpwcC1NZ1F4YkVTQlFsT0x4d0VHR1hfTHFmV1lWa0MzY1B3bV9YX2tSNFJHenl0am9BQklMQ3JnNXRCcTFMZ3p3ZHVOb1Y5OElwb1kxUQ?oc=5" target="_blank">Aviso de calor emitido el 6 de julio a las 03:00 de la madrugada y vigente hasta el 6 de julio a las 17:00, por el Servicio Meteorológico Nacional (NWS) de San Juan (Puerto Rico) - El Vocero de Puerto Rico</a>
+                    </td>
+                    <td>El Vocero (GN)</td>
+                    <td class="time-ago" data-date="2026-07-06 06:45">hace 4h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Hoy se irá la luz hasta 12 horas">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/07/06/hoy-se-ira-la-luz-hasta-12-horas/" target="_blank">Hoy se irá la luz hasta 12 horas</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-07-06 05:00">hace 5h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas,Río Grande" data-titular="Implementan plan de racionamiento en Río Grande y Canóvanas - Primera Hora">
+                    <td><span class="muni-tag">Canóvanas, Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOODBaM1RXa3BRSTN3R2tselhkQ1FjSThsVWZrRW5Zc2tfWTEwczRaNmxIVEdkVk5HbnJVdzFpRnNlZXFrVVhBOXhIaGNLYmd5VUtsMkNHNVB0bXRaNjVWZDctMDZ6SFhNQXNzTERKeGpuMklDR2o4TzlZUWJ0VVB2aGxFZER1SjljZm1mSHRaR3pWZC1PX2kyOUVCTDlVZHo4dnBubFR1bkpkLVRTeWRvWF9VSUh1QQ?oc=5" target="_blank">Implementan plan de racionamiento en Río Grande y Canóvanas - Primera Hora</a>
+                    </td>
+                    <td>Canóvanas</td>
+                    <td class="time-ago" data-date="2026-07-06 02:40">hace 8h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Apagón deja a miles sin luz esta noche">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/07/05/apagon-deja-a-miles-sin-luz-esta-noche/" target="_blank">Apagón deja a miles sin luz esta noche</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-07-06 01:51">hace 8h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas,Río Grande" data-titular="Abonados de Río Grande y Canóvanas comienzan racionamiento de agua de 48 horas - Metro Puerto Rico">
+                    <td><span class="muni-tag">Canóvanas, Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOMFcweUw1dnBrSy13WXY4U25ZWGRKNjFBV3ZzQ1drdS12ZGpiNDRYOExMdlNPcEt4RzNULXNBZEs4T05EeHkwYU5aUHZsTEM5X0ZoV3FwY2NSQ1RaZWkySUhKQmQ1ekRXMExYTU4yTFlCOEVSNmtFVEdxcjFjM2ZVMGhmZXhaYS14NjM1OWhXRDBWbHFpbkVwSHR5REUxUWpIcGhTWWdqcDZldHRMRmtOcnl4SFRJVjNSbVlCV9IB0AFBVV95cUxOYThnZnhIX21iS3c2Ry1tMk1uLUVxVksyR3Y0eWl4SnhtaW1GUGlxM3IxSlJqRzh6bzB2U1dPNGFLdHhyRVdmMWM5MHdNaTZLdGh2cU0tc3lwUmk1M3hCN0tNdGl5eFNNZFl5VkpUME9oVzZSZmowUGNOb0xlUHJjalRLWnJwSjc4Y1FjVjNJTFVWak9jd1NFMEgxRG5yVXI2SFVEUzRhSWtRQnp3djZFWWlWamZ6XzJlLTQ1QnJINHRERkVXbTkzSXUxNHI0RTlU?oc=5" target="_blank">Abonados de Río Grande y Canóvanas comienzan racionamiento de agua de 48 horas - Metro Puerto Rico</a>
+                    </td>
+                    <td>Río Grande</td>
+                    <td class="time-ago" data-date="2026-07-06 01:30">hace 9h</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Roban bicicletas y equipos valorados en casi $8,000 de residencia en Fajardo - Metro Puerto Rico">
                     <td><span class="muni-tag">Fajardo</span></td>
                     <td class="titular-cell">
-                        
+                        <span class="badge-nuevo">NUEVO</span>
                         <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPZTkzSkVwbHpkNjNLbkZvS1FaQ3hOdkJkUVRjNFBrVGpQdDhQLVVGQnAya05pdFNVWG82VjJVOXY0TGt2YURNZ3ZlRXQ3a3RRMFplejhvcDgwTFdCb0ZyV0RlUWZzYmFvVzhWaWtlV01HbjhwenJiYjl2dW11a25nOTF0ejJVNXZiX0JjWVliUGlKZ1IwNGNsRlZ0UWhmUndIejgtNlRpcm9DeDNEaVpGR09Ra05MNmvSAcsBQVVfeXFMTkdKbHlxYlVqMjhVSnJacldXN1ZBNDJ3WUV0dHZCRTNRclg0NGNnTW55RnB5d2lCUzZxSTZSbHJIcWJvdTZqTTJoRFhuRTlIS0swTC1MMFI1aTA0NGpVb0p2bndKbW1ubHJ4VGZVUm1JQVJYS21aTXhmTjZ6T0xvRnd4U1ZUSHZTc0F6N2luY3RfWTBFV3lTMFF0VzQtaXd0UTNRaWFFcllpZ3ZhNjh6ckZjU3lpSXozRlhfUDJ6eUhWY0wxYVdnN0ZJc28?oc=5" target="_blank">Roban bicicletas y equipos valorados en casi $8,000 de residencia en Fajardo - Metro Puerto Rico</a>
                     </td>
                     <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-07-05 18:54">hace 2h</td>
+                    <td class="time-ago" data-date="2026-07-06 00:44">hace 10h</td>
+                </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas,Río Grande" data-titular="AAA anuncia plan de racionamiento para comunidades de Río Grande y Canóvanas - Noticias de Puerto Rico hoy">
+                    <td><span class="muni-tag">Canóvanas, Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSzdHaWJJT1F2TTVfNnZWS0RDaHkycEdOcVFkLXFFOUpWZnFMTzZFRmViNUpSYXpYUlFMTHA0azNuR0JnWHRCOXh6OFdpRlp0N0N2MDVDRTZ6ek0ySTRlYlZyclRDZWdiS1dBd01GSU0xR3kzWnpBZVBBSEdrb180X1ZiYUNhUlNIQXJmZHFPWGIzVEpQRXFfWElYdU1hSVNjaXNhSUlNUWw1cHVfUjZqanpfblFfUDN3TVYtRWpXNWNuWnltSlNCVU95VE42T0JjSEZB?oc=5" target="_blank">AAA anuncia plan de racionamiento para comunidades de Río Grande y Canóvanas - Noticias de Puerto Rico hoy</a>
+                    </td>
+                    <td>Canóvanas</td>
+                    <td class="time-ago" data-date="2026-07-05 23:42">hace 11h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas,Río Grande" data-titular="AAA anuncia plan de racionamiento para Río Grande y Canóvanas - Telemundo Puerto Rico">
+                    <td><span class="muni-tag">Canóvanas, Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZUxDd1lRR2ZyYzFsUXlTbnpKSDhLQWwzM3YxQ0o0YTJiQ3QwMm5udWFKRDlEaUxQVEJORGFZLXFuWVZfYndYb1FEcGI3c3kyWmNqTG9vRnBGTEJBeXRqa2tfenVqN1ZCSFZZZGVPYUU4a3BkTDdyejZYbUdaMWZucnRYQmhNU1BuNmkxZnNfcXNPd2FtSjJZRnRfeWlKOGZGNjVha2ZKZDNFTXpFejJxd1k4ekdiQTFta3R30gHDAUFVX3lxTE5uWlRVN0xPQi1yMjF1QUxKRWxRdl85ZU5jUmlYeFVjOTdiRDJ6dmJ2YUVWcWtYdXM4Qk5YRzZMcEM2RmhOaE9GNlJBa3MzTThzRV82dnNxRVhMa0JZNVFpN0xldHhkQ3p3V3ZKRkhmVjhhcS1oLW1ZYm9ZTThPY1hibDZLQkZvaVhQNVZzajhhRW1LZk1iU2JTcW1kRENxbXdWYnUxTnhYUkV0Ty1hSGUxMHA3QmZRVlN2QTd4VndTTUdUWQ?oc=5" target="_blank">AAA anuncia plan de racionamiento para Río Grande y Canóvanas - Telemundo Puerto Rico</a>
+                    </td>
+                    <td>Canóvanas</td>
+                    <td class="time-ago" data-date="2026-07-05 23:27">hace 11h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Ceiba" data-titular="Secuestran hombre y le roban más de $30,000">
+                    <td><span class="muni-tag">Ceiba</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/07/05/secuestran-hombre-y-le-roban-mas-de-30000/" target="_blank">Secuestran hombre y le roban más de $30,000</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-07-05 21:14">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo,Humacao" data-titular="Victoria para Fajardo💙🖤. Fajardo Municipio vence a Humacao Basket 2 en la División 2 del #TorneoJuvenil de la @fbpurligajuvenil - facebook.com">
@@ -550,220 +740,67 @@ tr:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxNMHRna21lNXdiTWZCWE1scmhvQ2Rwb0E0VnpYVmFjcGJrUVVwcTBjT0NzZllXaXE4eHM3c2VDVmZHbzVhbDlUTUpvTEVKRzE3eXRydHBTM25sNjVhbDVkQUw0VUs4YVMxMGJYNXFDNEJrODlhQm8xZW02cHVRT2V4Nm1FbGFRU1E1cDRSbFMtYi16UGtNbjVKak5TazhYZEp4VExuMW4tNE5pMW9tcjZtdHNlQXhrTU9POVliTEtBQXBIdTd3OEpVNDJkS19mWV83N2lhRDBTOFZYY2lhVmVmTm1rMA?oc=5" target="_blank">Victoria para Fajardo💙🖤. Fajardo Municipio vence a Humacao Basket 2 en la División 2 del #TorneoJuvenil de la @fbpurligajuvenil - facebook.com</a>
                     </td>
                     <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-07-05 17:02">hace 4h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Ceiba" data-titular="Individuos secuestran y luego roban más de $30 mil en efectivo a sexagenario en Ceiba">
-                    <td><span class="muni-tag">Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20260705/individuos-secuestran-y-luego-roban-mas-de-30-mil-en-efectivo-a-sexagenario-en-ceiba/?utm_source=rss&utm_medium=rss&utm_campaign=individuos-secuestran-y-luego-roban-mas-de-30-mil-en-efectivo-a-sexagenario-en-ceiba" target="_blank">Individuos secuestran y luego roban más de $30 mil en efectivo a sexagenario en Ceiba</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-07-05 16:37">hace 4h</td>
+                    <td class="time-ago" data-date="2026-07-05 17:02">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Culebra" data-titular="Representante exige acción inmediata del DRNA ante grave acumulación de sargazo en Culebra">
                     <td><span class="muni-tag">Culebra</span></td>
                     <td class="titular-cell">
-                        
+                        <span class="badge-nuevo">NUEVO</span>
                         <a href="https://waloradio.com/2026/07/05/representante-exige-accion-inmediata-del-drna-ante-grave-acumulacion-de-sargazo-en-culebra/" target="_blank">Representante exige acción inmediata del DRNA ante grave acumulación de sargazo en Culebra</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-07-05 15:38">hace 5h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Policía realiza intervenciones y ocupa vehículos todo terreno en operativos separados">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/policia-realiza-intervenciones-y-ocupa-vehiculos-todo-terreno-en-operativos-separados/" target="_blank">Policía realiza intervenciones y ocupa vehículos todo terreno en operativos separados</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-07-05 15:33">hace 5h</td>
+                    <td class="time-ago" data-date="2026-07-05 15:38">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao,Cataño" data-titular="Hurtan herramientas y cable de cobre de vehículos oficiales de LUMA">
                     <td><span class="muni-tag">Humacao, Cataño</span></td>
                     <td class="titular-cell">
-                        
+                        <span class="badge-nuevo">NUEVO</span>
                         <a href="https://waloradio.com/2026/07/05/hurtan-herramientas-y-cable-de-cobre-de-vehiculos-oficiales-de-luma/" target="_blank">Hurtan herramientas y cable de cobre de vehículos oficiales de LUMA</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-07-05 15:18">hace 6h</td>
+                    <td class="time-ago" data-date="2026-07-05 15:18">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba" data-titular="Cinco encapuchados protagonizan violento robo domiciliario y secuestro en Ceiba">
                     <td><span class="muni-tag">Ceiba</span></td>
                     <td class="titular-cell">
-                        
+                        <span class="badge-nuevo">NUEVO</span>
                         <a href="https://waloradio.com/2026/07/05/cinco-encapuchados-protagonizan-violento-robo-domiciliario-y-secuestro-en-ceiba/" target="_blank">Cinco encapuchados protagonizan violento robo domiciliario y secuestro en Ceiba</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-07-05 15:01">hace 6h</td>
+                    <td class="time-ago" data-date="2026-07-05 15:01">hace 19h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Carolina" data-titular="Comerío, Carolina, Juncos y Yabucoa a la semifinal de la Doble A">
+                <tr class="article-row" data-municipios="Carolina" data-titular="Definido el Final Four del Béisbol Doble A con Comerío, Yabucoa Carolina y Juncos - Primera Hora">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20260705/comerio-carolina-juncos-y-yabucoa-a-la-semifinal-de-la-doble-a/?utm_source=rss&utm_medium=rss&utm_campaign=comerio-carolina-juncos-y-yabucoa-a-la-semifinal-de-la-doble-a" target="_blank">Comerío, Carolina, Juncos y Yabucoa a la semifinal de la Doble A</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxNYzZXMTg3SV96dC13SGlib0hVeHcwQmF3MGJROWpuY0lPYVZ2SkJWZTJUdGg0R1RrMi1WY04tejdzamxyZzNsMmhJWnNObklqTFRyRXV3NjE4eGV0N0FnVHZ0NUNwV1B0R0pxeUxZRGRwOTc0eFNWOWN0aHVyTmprSi1QcFV3T1FSWTFGakdCeUhmUVVab1R3cDkxWmNPb1hyUTlleVBXQ2NDX01Fb2g3OEJOSXRvX0VmRFRFRHhGR0pPek1KdEdnUFVjMTA?oc=5" target="_blank">Definido el Final Four del Béisbol Doble A con Comerío, Yabucoa Carolina y Juncos - Primera Hora</a>
                     </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-07-05 14:44">hace 6h</td>
+                    <td>Primera Hora</td>
+                    <td class="time-ago" data-date="2026-07-05 14:47">hace 20h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Delen suave en la Calle y sigan pasándola bien área de Buchanan a San Juan - facebook.com">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxQWFl6dUFJY25MRi1IT000SlN6U1p3OVZhSDdLOWV3NDlvM1M2a2ZGSUdaMzlEQm81ZG1VNHpoYmxrRnFMQ01DUTFEbUxuQTBYLXAydUJPMjhFT3hxbldzUVg5Zmtjckk1X0dvdjd6T2tEZWhMV0VnMFI5Ukw0QVlCNnRJcDBjcXZzSXVralYySXZxQ0FBdXlQeHk4aXVNeW1HOWQ2Mm9XU3RxdEZud2tPMlVsZEhIbGRmZ3g3ek5RYUFHYXVGbkdxc3RwUi1YVlZXelljNkVRbjNKSW51QWE1OXgtanQ?oc=5" target="_blank">Delen suave en la Calle y sigan pasándola bien área de Buchanan a San Juan - facebook.com</a>
+                    </td>
+                    <td>Última Hora PR</td>
+                    <td class="time-ago" data-date="2026-07-05 02:51">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Recuperan casquillos en la escena del asesinato de un hombre en Trujillo Alto - Noticias de Puerto Rico hoy">
                     <td><span class="muni-tag">Trujillo Alto</span></td>
                     <td class="titular-cell">
-                        
+                        <span class="badge-nuevo">NUEVO</span>
                         <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPanc0TklreHI1OVEya1FnMVloQmZTQXRMSC1KNHkzcUhfT2l3MW5WRXBrSnlhSFhvQXFxZ3VpdVNMc3ZVeHpoOVcyTF81bnFveHVVeVFsTGxsZ0RyRTRhb0x6ZE9WSGlSMXlNcDNyWlZ6S1FFRWhoR2tNTVEwYzZ3anhoTGFVbEZuYzd1QjdCZml0RjBkOXMtQW1OeE1Wbnd1bW1GVXR0cFJzVUpDZ2ZaTg?oc=5" target="_blank">Recuperan casquillos en la escena del asesinato de un hombre en Trujillo Alto - Noticias de Puerto Rico hoy</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-07-05 00:54">hace 20h</td>
-                </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Sábado 18 de julio, llegan los Servicios Municipales al Barrio Beatriz. Estaremos en el Centro Comunal Las Piñas, de 9:00 a.m. a 1:00 p.m. ¡Los esperamos! 🙌 📍 Ubicación Centro Comunal: https://maps.app.goo.gl/6rgyZF2jKv2StjDB6. #Caguas #AlcaldeEnT - facebook.com">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi9gFBVV95cUxPRzV5ZUNORUNjMUY1aVhIbloteHhfSFRGQk5QRDloY3RXYWRNZDFZNXp5ajlNbW5QSlNkakRzdWpPUTFzZXFwLXJ5LWxnMmZnT00xck1XZWJKQmNicEQ4bVpQeGM1U1llY21UeHJPdllHYTVoVVpFX19WdDIydXJXM3I0ZHFUYlRpeG5DQjk3NDdVdlZfQzdrSmZvSFBQME96Q0FSWkROMGxiQUhEYzc0d0U3MzhVRDBVMjJWdXF2YTlqc2RfQjVjQVpoNDFza1d5b0tWSDNfaVUtX0QtSVN2UjA5YjVncjY4YXZLNEIwTUVVUVRidEE?oc=5" target="_blank">Sábado 18 de julio, llegan los Servicios Municipales al Barrio Beatriz. Estaremos en el Centro Comunal Las Piñas, de 9:00 a.m. a 1:00 p.m. ¡Los esperamos! 🙌 📍 Ubicación Centro Comunal: https://maps.app.goo.gl/6rgyZF2jKv2StjDB6. #Caguas #AlcaldeEnT - facebook.com</a>
-                    </td>
-                    <td>William Miranda</td>
-                    <td class="time-ago" data-date="2026-07-04 21:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Fallece exalcalde de Luquillo, Juan Bernabe Guzmán - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUjI1cHhFcXJmMDcyeWlVRFV4ZmcxRjBxaU1xZWR6czJsQURxMnpGeDZLbnNoa0hVcDFjY2hNUm5COW1VSUNFQ05VM3VvUHFoc1lJaVlxZWVWNTc0TlhlY2RWTEo0ZktJM3czWmdHdEo3aEVPaWZEVTgwN2NFWVotc2FTLVFFQjJvQlZ5bk1hVVVvX0Y4clVaWmF4REc3d2YxaTFsbFVGUGpRWWPSAbMBQVVfeXFMUDBCYklFN1E5YUM4UFBtVTRqMHYwRU1RellCd05MZUVmZ0VmbGU1WFE0ZndRbXk2b3U2bTZVR2VGMC1HUWxfOUlJQ1dJQTdqbm5heUdhdEdwLWNZT0RDQjFZM0FQQ285YzYwdlRlLTZiLVMzU3VtM3JyR29HUFBUNUlLRkVqMWJxcFBTMGViMHQ4MDZFdEZ3aGg2UWJUSXg3WGRBTnFwUnlaTFJlci1kVmZmblE?oc=5" target="_blank">Fallece exalcalde de Luquillo, Juan Bernabe Guzmán - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-07-04 20:03">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Asesinan a tiros al dueño de una gomera en Trujillo Alto: ocupan más de $11,000 en efectivo y un arma de fuego - Noticias de Puerto Rico hoy">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxQMVQ3V1kta01XLTUxTDZSRVgxV24wVzZfOXNoU3JzSVhabmgyZDc4TW9PVzdEa3NmcGc5T1UxU191dzNvekNXUDZlUDh4azV0VllDNmVhclluR1l4V3BONF9PeUlnVGx1SUhuLV9QZXEzUjloR1JmRi1yZWFYNmU2LUxQeHZCYW10cmNSQmtLVHJjRS05Sk1ZMDVoWi1Id3VWUXc0bW5kU0NNcy1LOGVoOWxjS1Q4NFhNdml0RGo3TjZmR3habWY4U2NQNndTaFFaNDhSbWlsOXJRU29aU1hyU3BLTFRaaFI3QUY0d0Rna3NfQQ?oc=5" target="_blank">Asesinan a tiros al dueño de una gomera en Trujillo Alto: ocupan más de $11,000 en efectivo y un arma de fuego - Noticias de Puerto Rico hoy</a>
-                    </td>
-                    <td>El Nuevo Día (GN)</td>
-                    <td class="time-ago" data-date="2026-07-04 18:37">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Fallece el primer alcalde PNP de Luquillo, Juan Benabe Guzmán - Metro Puerto Rico">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOc0xCSXVmajlKT1RPUDIwYmp4azRfSVZnVEpQQXFjdHFNQ2htbDVjYjEtQThkOEJEZzRFQVI4Q29MclJtZDI2WjRzOWxhYlF5ZXQycjRqeWwyMFNrYWNUUFNTUHhteVVOR0EzVHo3N3lzWW8wRWRkZGNGME5STzdiUnQ2MzhJUzBQSjVpS253bmxmMzVsSHI5TVAzbGVWSFNvRVNXVdIBuAFBVV95cUxQbndNS19Sd2o5M0UtYm5pVGs1eXozOWpmV1AyYWJiSlM0QWdBT0Zscng1VTB6N1VnaFUwaGk2OURIY2IyZjBqXy10TndMMHIyVVRtbzlYZTd2QzJubzVxVDFUQ0ZWSmlwRW1sMk5lZVBqWURmUUNCOXZ6SUJUN3JBUHN3bkh5RjJqRW50LTJIYWpKNGpGUEp1d0xOZDRIaG1EVk9sSkdSTkRfWC0xUDQyWWxSWHBhTXVB?oc=5" target="_blank">Fallece el primer alcalde PNP de Luquillo, Juan Benabe Guzmán - Metro Puerto Rico</a>
-                    </td>
-                    <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-07-04 16:16">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Ceiba" data-titular="Gobernadora anuncia proyectos de desarrollo económico en Ceiba - Metro Puerto Rico">
-                    <td><span class="muni-tag">Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQbFNyaHl2VFNodjVmYWgtaWY5aVR1NDFzSGpLRXl0a1R6ei1yS1Y4SVU2ZlcxRi1RakFUdGt4LV80RUlJc2dHbnNTeDIzalNWazhwNkpXdThPelZ5RjlMZzZleV9JazFZT0ZiYjV0NTNTVWQzanFjcGM4OUZrVFFURHBOekFqYkFIREp1NktsRWZSNHlBZnJiaXNiQzJRajFhZFhzc3hiNNIBuwFBVV95cUxNbU5QSUtzMEdUUEF1WncyTU5tY0hobUFzcmJaSlVXcGItcVRrYTBHaVN1M3Nxd01NQUhpeWpqZndrWk9GUV9IajdUMEI0Z1R0STRnVzFuWGZ3R1dBVnVUQlUwUUxuV1FMdGhneGM3UDJRc2tDY0IzVzh4M1laNFZIZ3ltX0YzcUUzMXNkbGJhOE5xMkpsenlkVGhUVG5uMEQydl9NU01HWV90N3A2Nkw0aEtTLUU5UEVYNkJR?oc=5" target="_blank">Gobernadora anuncia proyectos de desarrollo económico en Ceiba - Metro Puerto Rico</a>
-                    </td>
-                    <td>Ceiba</td>
-                    <td class="time-ago" data-date="2026-07-04 16:08">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Ceiba" data-titular="La Autoridad para el Redesarrollo Local de Roosevelt Roads (LRA) se unió a la celebración en Ceiba de los 250 años de la fundación de nuestra Nación, una ocasión para conmemorar nuestra historia y reafirmar los valores de libertad, democracia y servici - facebook.com">
-                    <td><span class="muni-tag">Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxQTmoxQmJLcnVTaUM4VklWbXlrbDZCWlcyOFZSWkxZSU5lSWczakthQy1pMFhBakJDUzNTT24tM3ZsTlFpaExlOVZuNy1tQ1RWai1nQnlZZlZzbnVWZ1BZT25BZFlYTWhMUmlNRVJpV2c1RHY4YWZmYk9jLWIyWnBnaHpFM1JMc2Q2TEo1Nkg0Tm5xUTFYRTViY1pzMzI1OWpscjN1am5iUXRwWUhYT2lyZ0FCV1l6SWNZOUFTVlFfTmJGMm9GUTZ2MTNVcFBaTEhQLUwyVXAtdFY4aVNfaXh2Uk4wN3Rndw?oc=5" target="_blank">La Autoridad para el Redesarrollo Local de Roosevelt Roads (LRA) se unió a la celebración en Ceiba de los 250 años de la fundación de nuestra Nación, una ocasión para conmemorar nuestra historia y reafirmar los valores de libertad, democracia y servici - facebook.com</a>
-                    </td>
-                    <td>FB - Ceiba</td>
-                    <td class="time-ago" data-date="2026-07-04 14:56">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Asesinan a un hombre y una mujer resulta herida de bala en Trujillo Alto - Primera Hora">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxQR3JHcFNRVDhNT3VVRjNYQ3FLSXZWRjFtZmktb0l5dVJwdnBkdlBiV0dLSjVJQWQ4TU1xbGdxQ2dFcFYtQ09CSDQ2b0hRQnpjRlphY21EbjJad0VLX24wbmVxM2JMQ1d2cGNCd0JNaHJEU0RwMmVWbVROV1BpcW92NjF3WmdoYmdQZ3Rjb01oMko3VmFpVUVia2xCb1lBREQyRlI0R0N1dTBfMHhWRGdsdldFVHBlc1JvSVFpMzFBNnZkN0JiYWRmQzFGZDdlQ01K?oc=5" target="_blank">Asesinan a un hombre y una mujer resulta herida de bala en Trujillo Alto - Primera Hora</a>
-                    </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-07-04 13:20">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Tiroteo en Trujillo Alto deja un hombre muerto y una mujer herida - Periódico La Perla">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOcklsSjFlX01QNUFBTTZYcnpxNWxxakVNQ0wyVzVEUno1c1ppWnhsUEttZ090ZGV4SHctbVJXS3Vwb2laazhvbUpOTVo3QVE3NXhCRGhaUTYxM3hHdEROZldfVkdYSHVUNy1nMTh5T0ZJSVAtaG5vaENrbVF4SWVxaHhNWVNJSW5hdGdGMm5FVmVGMHVtYVNsUnVlQVV0MlN6bnd6R2VsbGVrbTlsLXc?oc=5" target="_blank">Tiroteo en Trujillo Alto deja un hombre muerto y una mujer herida - Periódico La Perla</a>
-                    </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-07-04 12:21">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="5 playas para disfrutar este 4 de julio en Puerto Rico 🌊 ☀️ 🏖️ 🇵🇷 1. Playa Flamenco en Culebra 2. Playa Sun Bay en Vieques 3. Playa Crash Boat en Aguadilla 4. Playa Puerto Nuevo en Vega Baja 5. Playa Buyé en Cabo Rojo https://youtube.com/@aventur - facebook.com">
-                    <td><span class="muni-tag">Vieques, Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE5jZ1VkMzB5VDQwRk1uRkpzdUxjRmZiRUtzRHgtOU1xcEFXRjFqSDZnWmE4MVNXcUNIYXhDMnFqaHpMTE5TWjRjT3JPRDl4cldzQjd3UTFVM21Pb0Z5d3REYTN1RmppVjVKeUgtZHA4Q0l6MHppS1BOdFR4MA?oc=5" target="_blank">5 playas para disfrutar este 4 de julio en Puerto Rico 🌊 ☀️ 🏖️ 🇵🇷 1. Playa Flamenco en Culebra 2. Playa Sun Bay en Vieques 3. Playa Crash Boat en Aguadilla 4. Playa Puerto Nuevo en Vega Baja 5. Playa Buyé en Cabo Rojo https://youtube.com/@aventur - facebook.com</a>
-                    </td>
-                    <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-07-04 12:07">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="Opinión | Vieques y Culebra necesitan acceso confiable - Noticias de Puerto Rico hoy">
-                    <td><span class="muni-tag">Vieques, Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPckhjMjFsMVhTYk5lWkVaUUVwSjZzMFlUdFhhMUNrNldWM0RMYXY0RU1hdDF6dDJmTUhQMlVjZ3R0c1FIWXVsMHJKZHhZaXJfZy1HMDdVUWVqa0NFWWRHSklyMlhFQXJaSmxXTlVlZlpTdGd2Ukp0bnBGNHptSEhvMGs5Z2ltbzNiMXlJbm56TEFJbml2UWxBMlRuVQ?oc=5" target="_blank">Opinión | Vieques y Culebra necesitan acceso confiable - Noticias de Puerto Rico hoy</a>
-                    </td>
-                    <td>Culebra</td>
-                    <td class="time-ago" data-date="2026-07-04 03:15">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Un muerto y una mujer herida tras balacera en Trujillo Alto - Metro Puerto Rico">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQSjhFSXp6eTU2ZVhwM0JPYnUtWjRKajF6QkFhNHhIWGluSEVKZ241SFpXRkI0OXJ6Mm9pVDZkMU9UN0dfdlRHWDRaeVBrWW9PdlZtZEI0RjR3VVB6Z2k3aGV5eGtPN1BlTUNaWFMyaTAtR0RMakdvd1lNSUVzZ2ZJV29UQ2lSV3RuckwtVDlsblJCcmg1cU1hQ29VVmdGV1Y4czFr0gG3AUFVX3lxTE40eklyUEJoc2FVT1owSWhRdllKb0duZUtmaFpWWk5xc3N2X0RyX3pLMl9FXzdmZXY0dVNyckxGWmtfNFpHQTg0bjFtU2xnTF9NRDF1bTRWQ2sxNnZ3OFc1NnJ5bDh6RWYzaGFjWmM3bHFvQVJVOWxDWDg2RDV4cm04djFpdmpEVld4YkJNZWJZc0l1YWtLT1FzTXpET3BNTE9HaV9ZS01CR3d0QUVOMFcxaGpBZ2Ewdw?oc=5" target="_blank">Un muerto y una mujer herida tras balacera en Trujillo Alto - Metro Puerto Rico</a>
-                    </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-07-04 01:04">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Ceiba" data-titular="El Festival America 250 Puerto Rico reunió a cientos de familias en Ceiba para conmemorar la historia, los valores y el orgullo de ser parte de los Estados Unidos. Desde el Departamento de la Vivienda celebramos estos espacios de encuentro comunitario, d - facebook.com">
-                    <td><span class="muni-tag">Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxPVGczWEF6dnVBdjJPQ3p2OEx4cl9VWGJsNlROeVR2RE5FZnpGTkY4b2wzSC1kOUJndXFQVE1RV1l6cVVaT0x0eFIwTUp3T1I1VXpHVGJIaE9zVE1fQ2JWcDBhRlhLSUhUcHp0aW5FVHAtZjdCTjRBd3lMYlktZjJSelBzay1VRHdldEo3UGw1VUZpYVE1aGdzNlRZN1NwTUxhbE5TaF9hSHJ6T2FGTEtCaXpvWWpURWJMRUJRWDQwUlhBX2lqc19majlkWDBtTDdXY2k5bnFjVUhXMUtzT19rNUR3?oc=5" target="_blank">El Festival America 250 Puerto Rico reunió a cientos de familias en Ceiba para conmemorar la historia, los valores y el orgullo de ser parte de los Estados Unidos. Desde el Departamento de la Vivienda celebramos estos espacios de encuentro comunitario, d - facebook.com</a>
-                    </td>
-                    <td>FB - Ceiba</td>
-                    <td class="time-ago" data-date="2026-07-04 00:32">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Asesinan a empleado de gomera y clienta resulta herida en Trujillo Alto - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxOREw3R2lJb3d4M0FXYUxqZWJ3YVlDdmpuTWhhdTc1c2E1QVV3RHhTaWNlNkc0TmJOOW5DRm1OZXdyWDRQSTdNRkpGbzI1cEp4VjB0em9XS0F5RzI4UWZuNDN3dmRuM3RNR2JQcWE5TXpXM294MGhHSWdTXzEyUjhveGJDME5OSERkTnJpTkh3eGtFSDBnSGVzeEhtNEpZRkxsd0FlY1J1ejFVbV91NkpZcFIySFdXdjFwQ3hScTdzZDJKWHlpNXcxeNIB0AFBVV95cUxNcGoyQmpESnhsVkIyR041TlpGR3dRTTB5LWpseXlBUEtmb2FOX3RvNV85WlNCbHlGbk1CeG5tUWNxYUxiWkxPbUNtOUxRN0prMDZlcGwzTEJpY0ZVWWtFNDJ5Yjk3QVcxSURfVnlwUmlFRjJNeDI1d29vc0ZwU0trczNWaVJxRnNiUC1FbXQ2VDJLakhyUnZXMHFKZk9ONVB3dzkxeHNvRDN3UHYzTXN1aE5PT3IxQ0FVbmRlQWUwdDN2WGhhdlAtVG9XLUR5RkxP?oc=5" target="_blank">Asesinan a empleado de gomera y clienta resulta herida en Trujillo Alto - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-07-04 00:03">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Asesinan a un hombre y una mujer resulta herida en medio de balacera en Trujillo Alto - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxNY2o4UTVUMjVsOV9JTmpNV2ptbExhUHlFYkxLX1NIR2xBaERuWUs0MGVmZUk0QnJ2N3NxYVJiWG8xblJtdE5MRXp0ZlJHVmlDTlVxbkhodHF5bXdnNjY5bkRNVGgzUk5KejJOV2loeTlJbWpBLTFqOW1TbjQ2V0xFMUhjLUVjUW5ud2E4d3p4aGV6emlnRzlrRjBxMDJkMTFNODhTN2hSa095WDdJaWFPNHBNUTVjV3M2N3ZyTzJIRjJ1Zk9iMTd1dFliQVhhN0E5?oc=5" target="_blank">Asesinan a un hombre y una mujer resulta herida en medio de balacera en Trujillo Alto - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-07-04 00:03">hace 1d</td>
+                    <td class="time-ago" data-date="2026-07-05 00:54">hace 1d</td>
                 </tr>
                 
                 
@@ -916,7 +953,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-07-05 09:30:58 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-07-06 10:49:06 AM<br>
     Actualización automática cada 30 min
 </div>
 
