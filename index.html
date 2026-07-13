@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-07-12 10:49:02 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-07-13 07:24:28 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">29</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">29</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
-        <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-07-12 10:49:02 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num">20</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">20</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">7</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num" style="font-size:12px">64/66</div><div class="label">Fuentes OK</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-07-13 07:24:28 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -355,42 +355,42 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">1</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
+        <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">6</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
-            <div class="muni-count">5</div>
-        </div>
-        
-        <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
-            <div class="muni-name">Canóvanas</div>
             <div class="muni-count">2</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
-            <div class="muni-name">Fajardo</div>
+        <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
+            <div class="muni-name">Canóvanas</div>
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Loíza')">
-            <div class="muni-name">Loíza</div>
+        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
+            <div class="muni-name">Fajardo</div>
             <div class="muni-count">1</div>
+        </div>
+        
+        <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
+            <div class="muni-name">Loíza</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
@@ -403,9 +403,9 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Humacao')">
@@ -415,17 +415,17 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">5</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Culebra')">
+        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
     </div>
@@ -447,24 +447,150 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="Cataño" data-titular="New marine sanctuary proposed off Cataño’s coast to protect Puerto Rico’s unique shark">
-                    <td><span class="muni-tag">Cataño</span></td>
+                <tr class="article-row" data-municipios="Caguas" data-titular="Advertencia de calor y polvo del Sahara para el inicio de la semana">
+                    <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://www.elnuevodia.com/english/news/story/new-marine-sanctuary-proposed-off-catanos-coast-to-protect-puerto-ricos-unique-shark/" target="_blank">New marine sanctuary proposed off Cataño’s coast to protect Puerto Rico’s unique shark</a>
+                        <a href="https://esnoticiapr.com/advertencia-de-calor-y-polvo-del-sahara-para-el-inicio-de-la-semana/" target="_blank">Advertencia de calor y polvo del Sahara para el inicio de la semana</a>
                     </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-07-12 14:39">ahora</td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-07-13 10:33">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Cataño" data-titular="New marine sanctuary proposed off Cataño’s coast to protect Puerto Rico’s unique shark - Noticias de Puerto Rico hoy">
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="Joven resulta gravemente herido tras accidente de motora">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/07/12/joven-resulta-gravemente-herido-tras-accidente-de-motora/" target="_blank">Joven resulta gravemente herido tras accidente de motora</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-07-13 02:50">hace 4h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="En prisión turista que agredió a pareja en hotel">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/07/12/en-prision-turista-que-agredio-a-pareja-en-hotel/" target="_blank">En prisión turista que agredió a pareja en hotel</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-07-13 02:48">hace 4h</td>
+                </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="Municipio Autónomo de Fajardo - facebook.com">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE12eVhjWm96TmtzZkxVN0pMZHhIQl9nOGRfR0pEWU0xaGR3dy16TXlUS1REYzJFcjhaYjY2Tmd6ZEZuY25QYkljNFptZUZVU3MxeHRGenlaQzZ2R3kzd2E4NFdobkQ3TEc4V1ZiOU1aVlA?oc=5" target="_blank">Municipio Autónomo de Fajardo - facebook.com</a>
+                    </td>
+                    <td>FB - Fajardo</td>
+                    <td class="time-ago" data-date="2026-07-12 21:07">hace 10h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio de Cataño entrega 1,000 mochilas y materiales escolares - Telemundo Puerto Rico">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOb0FNOVZKSUotSldIS2ZIWUlZdUtaUWlnQWczSTA5U0RYRUJYbXRXbjUwWWJxTjVUNFRZU0MzZFVVUXhGVHhZSHVGd3BrQnQzRk12dm5GOHJSOEFMcmNkQWJDWDNsa0Q1dUhZamhSaTNHdWc3bHN2Vk8xVTZBOXZ3NkdkbERvLWVxRm5ucjF0Y1NTY01VdnhPR1Z1ckZVRHdzVUpXeTI4QVJBTXBBbWQ2TFNyd0lkMjRoY3NtZHBaVWMxZzU5cWtfNlYwaw?oc=5" target="_blank">New marine sanctuary proposed off Cataño’s coast to protect Puerto Rico’s unique shark - Noticias de Puerto Rico hoy</a>
+                        <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOOTRBWXFfNTYyZm1JZzZGbjBYRl90REdXMFY3VkxTTFYxTHQ5Q0p0S1lNWktzWlpYQVRySEJvX1NYSGFDby1SQXZRQzI1M3Z5eGYxNmM3bVhDa3ZKUkFMR2VvX1cwZVNvVXl4ZXJGNGl1YWJwbmFlMlJDakw0SWpBb3djWlpOZ2xuOUZLV01xR2tEZkV2aWVPNWVFVmtLQmtvcG5HXy1YV2ZRQzlzT3RTazVlQVdDZW1tdVZ4XzhyWdIBxwFBVV95cUxPRDN5V3FuM3BIUUpwdVhXY2ZuSzNKWVJ6U2JRQ1VnYVMzYm1ZWVk4TzlHYWdMaWphSW1nVmU4cWJsVk5LN21DbjNrZGl0Z0hwNXkzTk5JTGNod3B2UVVERWZWajVxamRLMFg4VEhxV1BUcklieWF2dVl1NFZ1dE95R1JzenZmWmJ5d1YtbkFDSVpnQ2luc21BZ2NfNXlpa0RGcjNoaENvZTNsMnhtM0Y0UUJjRWgyZ2tCN2tuVE16T0dGSjhNeG04?oc=5" target="_blank">Municipio de Cataño entrega 1,000 mochilas y materiales escolares - Telemundo Puerto Rico</a>
+                    </td>
+                    <td>Cataño</td>
+                    <td class="time-ago" data-date="2026-07-12 20:37">hace 10h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Jovencito a la cárcel por unos  mensajes de texto que envió a su madre adoptiva">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/07/12/jovencito-a-la-carcel-por-unos-mensajes-de-texto-que-envio-a-su-madre-adoptiva/" target="_blank">Jovencito a la cárcel por unos  mensajes de texto que envió a su madre adoptiva</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-07-12 19:19">hace 12h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="De cuidado joven de 20 años tras caer de su motora en Vieques - Telemundo Puerto Rico">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUzlBLVhHbm9fNUJpcnRacXRadnZ0U3VEZ1ZydzBKVmoxdVlLdTlnaXgwMlhXZ3F2dVBaNThHeXpiVXVraWVMWVUxQVFFbFhRMzdrOURzbEZxRXM2a1l6R1NrcjlNaFhqZFV6NlFOSElKeGFwc2t0RF95cXgwWHZ6eVJhdEhRTFlkY0dqVlgtMDF5alphQ0NjTFdpQ1dTTl9nWHVPelZtTzFEMG1LVTlya0FQeWszSzlsYXpv0gHDAUFVX3lxTFBuYmxJeU9YLUNSUDlUN1luU3NhZ1lyV2FyUUFSS0ZhalVkcWF1UXZPQkdaejJla3Fsd3FsRVFqMXFsaDhQLXFzNFpDcGdac25EQXdTTzVzSnBvNFBtRzNqUGZsMGg4UFdUMU91Z01leGxSODJSQ0JpUXk1ZDBvUWJXMEZMU3JpaVRwV3J6eGh5ZFAyTmVZX1BEajJ5ZWxYVHBhQTJtd2RNMHRqZl9fdmpJRmt1N3FXcEpoMHlONENUYy1jdw?oc=5" target="_blank">De cuidado joven de 20 años tras caer de su motora en Vieques - Telemundo Puerto Rico</a>
+                    </td>
+                    <td>Vieques</td>
+                    <td class="time-ago" data-date="2026-07-12 18:54">hace 12h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Próximo sábado 18 de julio, llegan los Servicios Municipales al Barrio Beatriz. Estaremos en el Centro Comunal Las Piñas, de 9:00 a.m. a 1:00 p.m. ¡Los esperamos! 🙌 📍 Ubicación Centro Comunal: https://maps.app.goo.gl/6rgyZF2jKv2StjDB6. #Caguas #Alc - facebook.com">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi_AFBVV95cUxQaUd2Zk5nUGQ4Z0xsdnFPUUtuZ2NqbGRUTUJNSUZJUWNNdWxRQzd0VWM3enhJRFppT20xdzJhaTFtOC03S0ZKLUdhbXF2d2lYYzBjZ0s3MDJzakhyR3VHaGx2UEFBSVJTM2ZEM0h2SFpwelpMSG5MNjIwUWFwdkxqd19aSXhEaW9QaV9reGhPTUgweWNuVE9xVmlKRkdxSXJ6T0ctcEt6UnNNaG5wVVhDWmJ4ZUJQZklzdEVQSW5SaFpiOWREYUZIdEpmaGJMOU5RMjktemVPTlRKdnlMcV9iMUFMbXc4M3BGOGNQb0hJMGZHclR0RGtaeUtnN0w?oc=5" target="_blank">Próximo sábado 18 de julio, llegan los Servicios Municipales al Barrio Beatriz. Estaremos en el Centro Comunal Las Piñas, de 9:00 a.m. a 1:00 p.m. ¡Los esperamos! 🙌 📍 Ubicación Centro Comunal: https://maps.app.goo.gl/6rgyZF2jKv2StjDB6. #Caguas #Alc - facebook.com</a>
+                    </td>
+                    <td>William Miranda</td>
+                    <td class="time-ago" data-date="2026-07-12 18:30">hace 12h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="Veinteañero en condición de cuidado tras accidente de motora en Vieques - wapa.tv">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxNOUkyV0dtQkxZU3d0Vi1aZEducEticXZ5dEw5cHRkQWpBcUEtSVF6enUwYzhDWEdLLXRPSGZhVWRVREZWUFlLNHpRS0lpeDQxbkhZblE4OWoyWVJtT1hfcmp3dUlUcmhEMXZoVTNVNENaT3puUDBnWTg4NHYwZndRVG8teHpFTk02MjZhbmdvMVVmanhUOXBxSG5MdElJU01QZld0dm93d2htVm1FRjNkYXd5RGxzUGNuNlRTR3JMeVVrcDNtVkZzWTJoclVQV09ORm02d1FPazk5R2NJYjk3bW5WYXZ6b3Z1aVE?oc=5" target="_blank">Veinteañero en condición de cuidado tras accidente de motora en Vieques - wapa.tv</a>
+                    </td>
+                    <td>Vieques</td>
+                    <td class="time-ago" data-date="2026-07-12 18:20">hace 13h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="Joven de 20 años resulta gravemente herido tras accidente de motora en Vieques - Metro Puerto Rico">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQVE1HSnFfN0JvaU5xMEU3X2oyYk9Fal9GUFdwSVNOTzM5bXZlOE9OQnlFX2hwYnh3T29wTkJQdFl4dDlIN3VIOEJRdWpUb0pINVVENXJpT0liOTNGNUlNbUMtWmFyakE4Z1ZIcllYVzRjU01JVnlTUW9sWHMzSUN3eGZJZkI0WWRaNzR0TFAyTkw1QWp5UjdxVnVyYjY0dkJhcXowWHpmN0I4bnc1YjhuMW5pTThsZk9Cdm5yd9IB0AFBVV95cUxNcDAyVlJzZkxUeWN3RE9VZFB5RXRCWjFUbWpoVnhpaEJOUnlSdE82cVVCME5GMzVQQmY1RWNTdlR0WU02MkUwY2JTNE4wWjRWWGd1TnBZMUxTR1duT3V2NWxtOE5oTUNHWTR2cU81NlhQUGgzT0ZDVFJqczhUTWV4NVlDNDNqS2dpNjlKQWxnOE53OWQyNkxsZG90SkVSN0ZyV0x2bTNtTTVBRDl6RGxjdzNBVERfUjlmLWVRZHFaQ3lPZXducUV5aUwwSHlzaVo2?oc=5" target="_blank">Joven de 20 años resulta gravemente herido tras accidente de motora en Vieques - Metro Puerto Rico</a>
+                    </td>
+                    <td>Vieques</td>
+                    <td class="time-ago" data-date="2026-07-12 17:36">hace 13h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Luquillo" data-titular="¡Visita el exhibidor del Municipio de Luquillo en la Gran Feria de Turismo Interno en Cabo Rojo! ☀️ Ven y descubre todo lo que Luquillo tiene para ofrecer: playas, gastronomía, recursos naturales, hospederías, historia y llévate artículos promocionales de nu - facebook.com">
+                    <td><span class="muni-tag">Luquillo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxNRHBOQUN3ek01aS1vemlpcGJmYk1lTExqank5bHV5d21zYUZ0UGhNdHdRNzhjZ3lSd2g2VlR4bERBSmxJZi1OS2hrQWoySWJDTkNWSEEtcVhfRU45cS1TYmVuX09OTmJkWG1CYnRlQ0JtalpjVVgtTlVHVnZSQjhrQW5ETEJDNEE1Z19mbXVnODl4d2U2dF9HRXFWY0N5aWF6MG10alN4TGdiOU9HY0dkVnh1XzYxSUl0UlVta013RXBDaGJ4TTNHdzg1dzBnblU0bE1yYnZxdw?oc=5" target="_blank">¡Visita el exhibidor del Municipio de Luquillo en la Gran Feria de Turismo Interno en Cabo Rojo! ☀️ Ven y descubre todo lo que Luquillo tiene para ofrecer: playas, gastronomía, recursos naturales, hospederías, historia y llévate artículos promocionales de nu - facebook.com</a>
+                    </td>
+                    <td>FB - Luquillo</td>
+                    <td class="time-ago" data-date="2026-07-12 16:59">hace 14h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Dos incidentes de disparos dejan tres personas heridas en Caguas y Vega Alta">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/dos-incidentes-de-disparos-dejan-tres-personas-heridas-en-caguas-y-vega-alta/" target="_blank">Dos incidentes de disparos dejan tres personas heridas en Caguas y Vega Alta</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-07-12 16:03">hace 15h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Guardia de seguridad es baleado por motoristas en Caguas - El Nuevo Día">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNcnFvVFZqdTRKNUlPdlM1OVR2OEgtNHVNQ2Q5ZnktUnQ2aTJ5bkxsZlhqQ3JkYjVaVUdPX3hINmN0bVVvcV9HUzcydUR5SGVMOFdsVk1lak11RE9EZW4wbGdxMUk0YlpIay1hTnI2VFJWZDlWX1hHdTAzYzdOa3QtUFVaLUU4R291ODZ5eHdBa1luTGhTOV9ya0oyelpoeXBlS3JRQ2UyM0hZOHBQRHc?oc=5" target="_blank">Guardia de seguridad es baleado por motoristas en Caguas - El Nuevo Día</a>
+                    </td>
+                    <td>Caguas</td>
+                    <td class="time-ago" data-date="2026-07-12 15:34">hace 15h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="New marine sanctuary proposed off Cataño’s coast to protect Puerto Rico’s unique shark - El Nuevo Día">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOb0FNOVZKSUotSldIS2ZIWUlZdUtaUWlnQWczSTA5U0RYRUJYbXRXbjUwWWJxTjVUNFRZU0MzZFVVUXhGVHhZSHVGd3BrQnQzRk12dm5GOHJSOEFMcmNkQWJDWDNsa0Q1dUhZamhSaTNHdWc3bHN2Vk8xVTZBOXZ3NkdkbERvLWVxRm5ucjF0Y1NTY01VdnhPR1Z1ckZVRHdzVUpXeTI4QVJBTXBBbWQ2TFNyd0lkMjRoY3NtZHBaVWMxZzU5cWtfNlYwaw?oc=5" target="_blank">New marine sanctuary proposed off Cataño’s coast to protect Puerto Rico’s unique shark - El Nuevo Día</a>
                     </td>
                     <td>El Nuevo Día (GN)</td>
-                    <td class="time-ago" data-date="2026-07-12 14:39">ahora</td>
+                    <td class="time-ago" data-date="2026-07-12 14:39">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Tirotean a guardia de seguridad de urbanización">
@@ -474,7 +600,7 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/07/12/tirotean-a-guardia-de-seguridad-de-urbanizacion/" target="_blank">Tirotean a guardia de seguridad de urbanización</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-12 14:25">ahora</td>
+                    <td class="time-ago" data-date="2026-07-12 14:25">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Radican múltiples cargos contra mujer por incidente familiar">
@@ -484,263 +610,47 @@ tr:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/07/12/radican-multiples-cargos-contra-mujer-por-incidente-familiar/" target="_blank">Radican múltiples cargos contra mujer por incidente familiar</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-12 14:20">ahora</td>
+                    <td class="time-ago" data-date="2026-07-12 14:20">hace 17h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Carolina" data-titular="Muere el senador republicano Lindsey Graham a los 71 años, según informó su oficina">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://esnoticiapr.com/muere-el-senador-republicano-lindsey-graham-a-los-71-anos-segun-informo-su-oficina/" target="_blank">Muere el senador republicano Lindsey Graham a los 71 años, según informó su oficina</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-07-12 13:51">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Calor intenso y sectores con 80% de probabilidad de lluvia">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://nelpr.com/2026/07/12/calor-intenso-y-sectores-con-80-de-probabilidad-de-lluvia/" target="_blank">Calor intenso y sectores con 80% de probabilidad de lluvia</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-12 13:31">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Proponen un nuevo refugio marino en la costa de Cataño para tiburón único de Puerto Rico - Noticias de Puerto Rico hoy">
+                <tr class="article-row" data-municipios="Cataño" data-titular="Proponen un nuevo refugio marino en la costa de Cataño para tiburón único de Puerto Rico - El Nuevo Día">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxQVmliTXBtTmE0SDhmZV9leWJsZFhfN3Ric2xpazd4T1NSbzdPU3k1T0E4bzRQZENyMmY2cmNhc05vMWFBdHJ2NGpXemdaOVJ5Q0pHVE0yMF83Zi1kMUg2R2h2WEo4b25SYmpfSjk3Y1hzREJycTNuSEFTUElVcjNyNVRCMVJkbXhUQVhEM0pSdTF2eWJ3RXBDV3k5a2VCQm5BUU0yaUh1OFRDVWV2RXczVFY1d1B3VWU3WDRTZElYU3FiMFdzaXZ3aVpaMEJUOHZQaWgwOEEzbzViYzRFTVN4aHA2T3R5QQ?oc=5" target="_blank">Proponen un nuevo refugio marino en la costa de Cataño para tiburón único de Puerto Rico - Noticias de Puerto Rico hoy</a>
+                        <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxQVmliTXBtTmE0SDhmZV9leWJsZFhfN3Ric2xpazd4T1NSbzdPU3k1T0E4bzRQZENyMmY2cmNhc05vMWFBdHJ2NGpXemdaOVJ5Q0pHVE0yMF83Zi1kMUg2R2h2WEo4b25SYmpfSjk3Y1hzREJycTNuSEFTUElVcjNyNVRCMVJkbXhUQVhEM0pSdTF2eWJ3RXBDV3k5a2VCQm5BUU0yaUh1OFRDVWV2RXczVFY1d1B3VWU3WDRTZElYU3FiMFdzaXZ3aVpaMEJUOHZQaWgwOEEzbzViYzRFTVN4aHA2T3R5QQ?oc=5" target="_blank">Proponen un nuevo refugio marino en la costa de Cataño para tiburón único de Puerto Rico - El Nuevo Día</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-07-12 13:03">ahora</td>
+                    <td class="time-ago" data-date="2026-07-12 13:03">hace 18h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Cataño" data-titular="Proponen un nuevo refugio marino en la costa de Cataño para tiburón único de Puerto Rico">
-                    <td><span class="muni-tag">Cataño</span></td>
+                <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
+                    <td><span class="muni-tag">Vieques</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://www.elnuevodia.com/ciencia-ambiente/flora-fauna/notas/proponen-un-nuevo-refugio-marino-en-la-costa-de-catano-para-tiburon-unico-de-puerto-rico/" target="_blank">Proponen un nuevo refugio marino en la costa de Cataño para tiburón único de Puerto Rico</a>
+                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5iWmg3d3FSem83dlBnZC15cWl4b1RMVlNneDdoeE03M3JkSXpVUDhsSkFZUWJ1VmpqeW1nNnNONzl0RWJKVXAxR3RzeEhSd3pQN0w2b2h3Z01BaWpocUhDOXZNdmdXVF9UdlR6VER2RE05Tkk?oc=5" target="_blank">Municipio de Vieques - facebook.com</a>
                     </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-07-12 13:00">ahora</td>
+                    <td>FB - Vieques</td>
+                    <td class="time-ago" data-date="2026-07-12 12:15">hace 19h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Carolina" data-titular="Arrestan a un hombre por armas y drogas y multan negocio durante operativo">
-                    <td><span class="muni-tag">Carolina</span></td>
+                <tr class="article-row" data-municipios="Luquillo" data-titular="Cuerpo calcinado hallado en Luquillo tenía una herida de bala en la cabeza - El Nuevo Día">
+                    <td><span class="muni-tag">Luquillo</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://esnoticiapr.com/arrestan-a-un-hombre-por-armas-y-drogas-y-multan-negocio-durante-operativo/" target="_blank">Arrestan a un hombre por armas y drogas y multan negocio durante operativo</a>
+                        <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxQeUJHRE94aFRXeDNwdGt4c1lnYWhYNWtrcU5YaEdsY09kVmVuam0zOEVCMVBHYVdiYWp3WnREcWZtdEgzMl93V2c3UlZTbVc1TTdPOXBBS3gtT242a2U3ZG9LZUdSbTQ4Tl9VSVR1MERZYjFud0doOGRNUW9DcWhGcHZjRkFNV2xuTk5QWkJmRUZQcWEzMUhBaVZTS2NOcTF3d0R3YW9qUW5yTDBQMkEzVFFIazRXbTlKSjU0MUtZUW9HYnpjalE?oc=5" target="_blank">Cuerpo calcinado hallado en Luquillo tenía una herida de bala en la cabeza - El Nuevo Día</a>
                     </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-07-12 12:24">ahora</td>
+                    <td>Luquillo</td>
+                    <td class="time-ago" data-date="2026-07-12 10:56">hace 20h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Cuestionan transparencia policial tras incidente con mujer herida de bala en Naguabo">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://esnoticiapr.com/cuestionan-transparencia-policial-tras-incidente-con-mujer-herida-de-bala-en-naguabo/" target="_blank">Cuestionan transparencia policial tras incidente con mujer herida de bala en Naguabo</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-07-12 11:48">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Fallece el senador republicano Lindsey Graham, de Carolina del Sur, a los 71 años">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://www.elnuevodia.com/noticias/estados-unidos/notas/fallece-el-senador-republicano-lindsey-graham-de-carolina-del-sur-a-los-71-anos/" target="_blank">Fallece el senador republicano Lindsey Graham, de Carolina del Sur, a los 71 años</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-07-12 10:49">ahora mismo</td>
-                </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Radican cargos a hombre por robo en tienda TJ Maxx">
+                <tr class="article-row" data-municipios="San Juan" data-titular="Aviso de calor emitido el 12 de julio a las 02:00 de la madrugada hasta el 12 de julio a las 12:00 del mediodía por el Servicio Meteorológico Nacional (NWS) de San Juan (Puerto Rico) - El Vocero de Puerto Rico">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://nelpr.com/2026/07/11/radican-cargos-a-hombre-por-robo-en-tienda-tj-maxx/" target="_blank">Radican cargos a hombre por robo en tienda TJ Maxx</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-12 01:30">hace 9h</td>
-                </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Estudiante de la UPR Carolina representa a Puerto Rico en competencia internacional de atletismo en México - El Vocero de Puerto Rico">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMikAJBVV95cUxNUzlSTXNKMkl1dDJ5Qm1oTnh4TTQwQkNEdXdGSkRzYkFCcmEzZ2MwY05pbzdieXc3MWt1TDBzem1KQ3pVbmoyR2ZfOGxRcnc4LWtPeEszVVljSFNrRlJyYjV1c24tUjRoU05FNUhnbW1MNFdiRThNTVpFY21yRUttQlpRdllQU0FId09mZ0hTVzd1YXFXY00xMkE1NmNIYkwtZG1sWW9OWHdab3U5RGdfQ19vZXZhQlY1TjUyWTR6YVFHMFJOUUZ5WVlTTVFIdU5HUkNzeFB2NEh4dXp6dFFXMUc0QV9UeFgwRXJlZTI1MHJKMWFUenJzRlhHTllObTJseWFET0NVbDVodkpDQVFnRNIBlgJBVV95cUxOZUZfQzkxMnptaERZbHNxZ1dUbDhJQXdtaEM2T2tuZHBESkFSLXp0andfQjM5emY1eE1GWnVUTTE1YUdhUGRKNVFlQ0RHaFZaZzB6WGpucWx3YmhyRDR4YmFPcDl1MlFhZTl1ZUtjR2taTHVTdkdPb0ltZ0hReGI5LUhmaVNYeWFkQmVwdHpJQkRiYVRneWFaOUd2bDdjcDRTUlMzQmtBYndLcWh3N3kxb3poRmEydHBGUGktcnp2VTlrMWxQYmdTRXFoaUJMb05wVFl2X3FXbW1ndmVmaDR0Unhxcm9QREx4TGtDTXV3dzBkdUVjby1kOGpGMUE1aE9tUkt6dzZkNjhSYmFSUFRLQ2pVMFVpQQ?oc=5" target="_blank">Estudiante de la UPR Carolina representa a Puerto Rico en competencia internacional de atletismo en México - El Vocero de Puerto Rico</a>
+                        <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxQMF9zVnc5dEVtb1JLWVgwVjZIYW1tamFtckEtdWdoYTQtZ1h5RnA3dG91TENocW80ZEI2ZW1OcmdIMXVDZ1lGOFBNSmhyNzFjNGRDSnJYWU1YNmhkdEQ1X2NFTmZySi0tbkFBVVRHNUwwX1V4d1kwT3FSTTNyM0pyRDNjRVZMT1gwb2ViSWJtemhIQ18yWGhOUE5RVXZ5M2hHTmNmRThRQ3JHbmRucnhJRDR2SGtWSUw5SGJnYk1HVEVKNDI4V1d3QmFJZzgzbHBSU3d4dHdfWVMzZ0tFZnlCb0JVZDZSUV9HRC1DMHd30gHzAUFVX3lxTFBkTFRyZFRUQTZJekQxa2I0RFhHZnZXQzVKU0EzOGpnSmdvNTl0UkxyckFBczVsWU5lb0RrMnpzNDVUTFoxX2F6Z0lOUnhHMFVWVDhLRW5kemNRV040TFV3Wno2UllMX1MzYVMyMUdGNHJyY1RRNFBPVzFuSHoxbHc3aUVrVjhtQWZVM0xZQ1hHekNURDZvMEJWVE5SbmZSMmRHRkt3eXhZSjZidVVQSjFNZHJzeG9Cemk0VlBhYVZXZXVTQ1ozN1dzLUpRbl9FYXd1TlNmTVV5dFJNbmc0X3VMM1VyQ0w0Z012RnZWendDUU85Yw?oc=5" target="_blank">Aviso de calor emitido el 12 de julio a las 02:00 de la madrugada hasta el 12 de julio a las 12:00 del mediodía por el Servicio Meteorológico Nacional (NWS) de San Juan (Puerto Rico) - El Vocero de Puerto Rico</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-07-11 23:04">hace 11h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Cuestionan transparencia en caso de agresión por parte de policía municipal en Naguabo - wapa.tv">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi_gFBVV95cUxQQ0ttX0lVZ2pmQ21Sd0hDNVBrX2VfR0RidEdMNTNxc0tyU3ZhY0ZYcllKOVF2QjJhVHFzZFFHbGl0Z1R2NWZrSU5xVXFzWWZ5ek5DcnpTdl90WDJJMV9yelpnOXVPUU1oNElrREhxUTd1WmpWQ19lX2hUUk5wcVo0MlN4Nmg0ZFRwUm9ZRHFlOEdBdEV3cmI4T0k1SDZLaGpjeVplQWdqc0thUF90RExzdU5RdWNDaUlrSmVDQUlxVGZNOUFlS3gxZlp6MlRCUm43bFFRdmlST3VXSEJYWHRkSHB2UkpEeV9rXzRsWVZoa2N3N3dzZ1EydE1ZV0NvZw?oc=5" target="_blank">Cuestionan transparencia en caso de agresión por parte de policía municipal en Naguabo - wapa.tv</a>
-                    </td>
-                    <td>Naguabo</td>
-                    <td class="time-ago" data-date="2026-07-11 21:23">hace 13h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Encuentra cuerpo calcinado en auto envuelto en llamas">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://esnoticiapr.com/encuentra-cuerpo-calcinado-en-auto-envuelto-en-llamas/" target="_blank">Encuentra cuerpo calcinado en auto envuelto en llamas</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-07-11 20:23">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Encuentran vehículo incendiado con cadáver en Luquillo - Metro Puerto Rico">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNcEw4NzlPSVprVWc1NC1jLUU0OWR4TU81U3BWZEZOa0pTSlZMX0FsSGZrUlZXRnJZN3JhM0ExQlNHWG1WV2cxOEpJSWh2YkVnVm9IcF9peVV6NmJQTU95RXVyQmdHU282SWxucE14MjJvN2VGMlJiUm1xUkl3RFdOR3M5NzlNd1BRTlFJS0V1OHhxRTZwd2k4WDh5YlXSAbABQVVfeXFMTzNya253VHBWZGVGNk1rUGNobzdFMktWQ0RGTmpBRlIycHdZZDNQa1JzVDhsWGxFSzAwa3hXUk9vQ0VlTDdBQWZDUWd4ZzdUUFRRbExIb3VWS09ub2s5LVlLZnRQOTEwV2lmT2pLVFhLZmhxY0NIdkYtZW5KRWRfOXh2YnNRTDloN2Z4bExtMlg1OURvUF9wTkJBbWliQzgwZ1FZV1B6VndCNld0MjZXUDE?oc=5" target="_blank">Encuentran vehículo incendiado con cadáver en Luquillo - Metro Puerto Rico</a>
-                    </td>
-                    <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-07-11 20:18">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Hallan auto quemado con un cuerpo en su interior">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://noticel.com/noticias/20260711/hallan-auto-quemado-con-un-cuerpo-en-su-interior/?utm_source=rss&utm_medium=rss&utm_campaign=hallan-auto-quemado-con-un-cuerpo-en-su-interior" target="_blank">Hallan auto quemado con un cuerpo en su interior</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-07-11 20:10">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Encuentran carro en llamas con un cuerpo en su interior en Luquillo - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxNREY2amRVSE1mLTZNUVl3QWg2MTl3STZiUlNIbjZESDFTanJsbmlVR3B3NHJ0YjUxU2Y2U0c4WXY1YTZ3bXhFZVZmVEFZamNCcUNqVzRLendLdHNpbVhaeWhCMlJab0t3S2s1OWpZTlQxMHJHZXdTNnIyRzdEMFRYaHMtTnYyNW9pQzUyRDhkdjJLYjdKdzU5aGNmaWs4clZEMHlvcDhrYldnTVEyaG50R3BLY1Q2UkVrRTFfRHpPZHhoMnfSAcsBQVVfeXFMT2RKaWtnanV4NmxodldJWmxOVXUwN3MtNE9heFF3YmN1dklVTG40TjlUX0Q2cWVJSVZVU241RmFVbkFtQVFFYk5JMmpsV1pSaU83NTNrRjNVR2pQbkcxaHJrQXd4ZkNMSmcyR01pLVJvZ0pmbE1xa2NORHpwbDhQaDgtTWtKYldYbDdWRTluT2NYX0E0SmVkQjVUblR2ZkRtRWxMRmtCN29xcm5LWGg1WXhnSlBVZ280MFpFWGVTZmR1WVFNNng2RU5WSjA?oc=5" target="_blank">Encuentran carro en llamas con un cuerpo en su interior en Luquillo - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-07-11 20:08">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="MAÑANA • Llega el momento de disfrutar del Tríalo de Cataño. Te esperamos desde las 6:00 a.m. en La Puntilla, Frente Marítimo Edwin Rivera Sierra, para vivir una mañana llena de energía, deporte y sana competencia. ¡Los esperamos! - facebook.com">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxPWXh5TUlzblBnVm0yeHFJSFJqVjNEbTFpOXF1b2NSdUxKSkxSWkdjZEEtdFdudmpFcDlsdVVOMWl5M2tfbXI2cjl2anNNajJ4MDdmbHVGUlo1d284cnhXOFllZEc1dGpLUXNSa3dMYUs5MWtsVWo5WnZqaFFLY0tocF83RFNOQm5CRU83MGdfWG5mU28yRkRtWnIwUG92aXhJdGloeENSOE1qa3c3UlNsUk9FdEhHOFYzSC1IcGo1eW1nSTAwWEMwVzM3azhYU3dJYm9abXpZN1pnOFhlTE0tX3Fya1NZRFU?oc=5" target="_blank">MAÑANA • Llega el momento de disfrutar del Tríalo de Cataño. Te esperamos desde las 6:00 a.m. en La Puntilla, Frente Marítimo Edwin Rivera Sierra, para vivir una mañana llena de energía, deporte y sana competencia. ¡Los esperamos! - facebook.com</a>
-                    </td>
-                    <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-07-11 20:04">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Encuentan vehículo incendiado con un cuerpo en su interior en Luquillo - Primera Hora">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxPbTNfSEtPWlhJM3V2UVNYSXVZSkRvMDdHV2xtZnZTOGtFQVNfZEJ6UmR4N1lxTzNfd3g1ajdfRWZncGd0RnI3VWdJSTE3NkZ4TnhzVFZGV041UXRCN0VEWVBmZy1IMUhMdzhqUGVwOHRaR0FmVV9UUzdXekNhV0ZtZnhQa01HS0tybFRkenh5VW5mbnlqeUxwVkRxal9ybi1PLTROVzN0c0lkeEl3Mm4zT2t1RklXYjZiaEZMMzU5OWE4NlNELTJveGJyZlJMZw?oc=5" target="_blank">Encuentan vehículo incendiado con un cuerpo en su interior en Luquillo - Primera Hora</a>
-                    </td>
-                    <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-07-11 20:00">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan,Carolina,Loíza" data-titular="AAA reporta aumento en presiones y mantiene ajustes operacionales en San Juan, Carolina y Loíza - Metro Puerto Rico">
-                    <td><span class="muni-tag">San Juan, Carolina, Loíza</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxQdmNmcUkzNk9oS0VEc3g0dW5YcjRZMUlEeWNDazVmTTdmTVBMSnVKLVItODhyM0xLaGtzNHVxUG5aTzZvQ2lEWEgyVmxub3M0ZFJ1dEM1b3JsZ05RQlgzakZHVTVqWmFMVWlZMU5ycm15NmZNckxRT3R3VE5XdHM5M2Z2djZlb3JzTHhxQ0oxUGFGRk56bk4zbDRxOG5jdmpkdkFHMGNCQ0ZEZDFxcDluMThMeXJoRkg5eTYyb1ljbXdVcTlLQ1JiQTl6MUphUmtON2fSAeYBQVVfeXFMT01HTWZIZVVabWhiQTFhZkZoSUcwVi1GeGN5YVByejU3X2hqNG5ZQ3hZN1otTzE2bXFuVTNJNkRldUpKX1B0U2NlSEo1VGttTndtZzNrVVRZUG1IY2FRMVBuOVJpSnFRMmNvLVRDZU5IT19HWjlhZW54U1o5Q2luOWhOUnNEUjhhNldGQ1hvY1BsNEliOVMzR0xhSVk4VXk1RnVTaFhuODVkbkhJR2c4WU5DaVdhWUJGenVXeW1jOXpsdC0xS1luWEFDbTRhRzltNVVaUGhYdEpoME5iaUhyMk9vYnl0bnc?oc=5" target="_blank">AAA reporta aumento en presiones y mantiene ajustes operacionales en San Juan, Carolina y Loíza - Metro Puerto Rico</a>
-                    </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-07-11 19:06">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Mujer que disparó a otra en medio de discusión en Naguabo es policía - wapa.tv">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxQbXp1Zl9DNENyc0g3SG5hb3ZSckV1WjIyYUEzUU9XUFVrTUNTQmpwdllKQk5EOFp1Rk9MVDJObUhJcVNGZW10WjJxYzNiWm8ydUNTWnMybElRXzJ5MUVZVjBtMnRjT1RRVnpRVEJneTdMQm5MVmFFWHRfRXFBNXpkbXRTSERPN2VQRDdKTDI5N1Q2Q1NSLXRjeHBtVTZGVmgtYm9PZDNFbmlIYTJEM29Da29xcE1kcTh1b1YyanVHM0NCMm1kNllXaFVtV3pObmdTR3VBOHYzYVVxdlJseHp5dERqOE4?oc=5" target="_blank">Mujer que disparó a otra en medio de discusión en Naguabo es policía - wapa.tv</a>
-                    </td>
-                    <td>Naguabo</td>
-                    <td class="time-ago" data-date="2026-07-11 19:02">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Criollos, ¡Los esperamos hoy en "Sábados Pa’ la Plaza"! 🎉 🕛 Desde las 6:00PM en nuestra Plaza Palmer. 🎤 Noche de Karaoke 🪑 Traigan sus sillas y a pasar una noche agradable en un ambiente familiar y seguro. 🙌 #Caguas #SabadosPaLaPlaza #ParaTod - facebook.com">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi9gFBVV95cUxOa0hHRFJVaVJJWlpkMExkVC16d092SkRMUTdiaHl2VjBkamNpUVBEM043UVh4bUxGbkV2VTYzbnFPUGFXS1JsVVVJMFlZdlpoWGN4bGo1dVYwNmRxLWVtaUtKZnRON0V2YU5YT09admg0STlGemtrNW8xbEJJNnduM01TT3hfRW9SZEstc3hidVlja2xrbHN0bzJ2UHJvdjZJcUVjZWtnaDl5N3g2X1RpVTU3Q19EQmx6LVRkeHFWWmR0MXZvbVVVZ2xLVU5VMThWdURzcE9oelJ0UHBnODFDVUlOTEVCRXU1cHFhSHRBUFd1c2YxcVE?oc=5" target="_blank">Criollos, ¡Los esperamos hoy en "Sábados Pa’ la Plaza"! 🎉 🕛 Desde las 6:00PM en nuestra Plaza Palmer. 🎤 Noche de Karaoke 🪑 Traigan sus sillas y a pasar una noche agradable en un ambiente familiar y seguro. 🙌 #Caguas #SabadosPaLaPlaza #ParaTod - facebook.com</a>
-                    </td>
-                    <td>William Miranda</td>
-                    <td class="time-ago" data-date="2026-07-11 18:00">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Multan en miles de dólares a negocio en Trujillo Alto por máquinas de azar - Metro Puerto Rico">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPS2dzd1ZaUDk0N1VXSHYxSjR5OGdTYjJlaFVFY05DUFVZNm9RQzhOQlZPSVB4enVONGpTSVFNM1FDcDgwWWRDbHFKcFVmR0NCZFNsZnNDNXZyTmJSY3EyMXVDcVE1YmVZTU9pQzhWaFZBeE5Ib3JtZEFIdHRHZ2pvWXN2XzBKamtmc09mckxySmFSRDFnbmd2UzloNmZJMy1RbndXZXZUTi1MTFAxTGwyZUkyU0NmYmvSAcsBQVVfeXFMUEJpMUtucTVtSUU5dlYwdDV2YVdRZ0dNeEdSOXBwWG53N29vYUtoM0EyNXlxSTdxelBZTnAzOGtuanJ2NW1QaDhSZl9yTHN2dWg1ZkVTY0FsUnlzZ1hPZVZiLW9Wc192WXNyNlZGYWgyUDUwLW10UjJ0NGt5dVpJUDRfVUhfdDhRcHJ0LXJXdDhmNUV1MnRCR0ZkVHc2aHdZZXRnbzJaQTY2ZUM0ai1rZ2lSZVliQ2xLb1otbXpMSkptZzFweVB3b1JXUVU?oc=5" target="_blank">Multan en miles de dólares a negocio en Trujillo Alto por máquinas de azar - Metro Puerto Rico</a>
-                    </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-07-11 17:33">hace 17h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Canóvanas" data-titular="🚌 Todo Canóvanas conectado. Seguimos ampliando las opciones de movilidad municipal con 3 rutas, 1 municipio y servicio sin costo para nuestra gente. ✅ El Poncito: transporte urbano con 24 paradas, 700+ espacios y horario de 6:30 a.m. a 4:30 p.m. ✅ SIT - facebook.com">
-                    <td><span class="muni-tag">Canóvanas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxOYUFGRTZOemg5R1l6TGtnWVJCNTVKRW5DS3lRT3M0R1dPbEJvaE9kNnQzTUlMZ1pYb0tWR2FjQVdvV1RNY1hxLTFpOF9iQjBYVlRqU1Z1RjhGYWVjeHZTZVJZNzhibDVUMEhmNF92VS1IVEs0NW1VVXY0alFuUkdtSG1EVGIyaXQ0QTU0X3RGZGJNLTMwOFVTWmZYQ3picENKSkliTGtCUmxzRWc5SjFRcnd5OXU3VkpiNnVUcGRHbFZnWjNzQktDOE5HNDVSV3gtX2hRSUJkS05zRklnVjh4VnRGMnlnUndzTWc?oc=5" target="_blank">🚌 Todo Canóvanas conectado. Seguimos ampliando las opciones de movilidad municipal con 3 rutas, 1 municipio y servicio sin costo para nuestra gente. ✅ El Poncito: transporte urbano con 24 paradas, 700+ espacios y horario de 6:30 a.m. a 4:30 p.m. ✅ SIT - facebook.com</a>
-                    </td>
-                    <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-07-11 17:00">hace 17h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Gracias Lourdes Roldán por tu asistencia y representación del Municipio de Vieques y la Oficina de Asuntos Culturales y Turismo Vieques - facebook.com">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxQN29GN0k0aHpRX20yQll1eWRGVzJTVm1TZ2FSc3o4RDg5aE55eGtWMnk5cVN4Q294Mjc3UTVaN3M5RXNsZHZZUlc0LS1uZkVwdTFETlZtRHBsRlNwdnJOQVRPakhOaWRsV2xzbmQwWmlmX1cxUjcxN1duQWJKZHRJWlJ6eGY5NkNodVFUZzFlMkNQdGw5TWRzYWJta1VsTnFhajEwMG1TeGhsX3pQbkRvSEtmODZ5LWp1RzQ4WmE5SDhWWnZiWi12bTRpUkRqdmdmUVNCMEVZWlR3bHQyQ2pLaFY3MWNCZzJZb2xUQzVR?oc=5" target="_blank">Gracias Lourdes Roldán por tu asistencia y representación del Municipio de Vieques y la Oficina de Asuntos Culturales y Turismo Vieques - facebook.com</a>
-                    </td>
-                    <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-07-11 16:44">hace 18h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="🌴✨ El Municipio de Vieques, a través de la Oficina de Asuntos Culturales y Turismo Vieques y nuestra representante, la Sra. Lourdes Roldán, dice presente en la Gran Feria de Turismo Interno 2026, que se celebrará los días 11 y 12 de julio en el Balneario d - facebook.com">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxOdXpqSTg0ckszcFVIV2JlRW1leVFRTVBwYnRfdVluVlRWOXB2bDRLUVZ3LV91clhGQ2wxUkoyaUs5V3pBd2oxRUxmaGc3ZVg2LTQ3RF9ncnhqSDk3TWFiV0JtUkFoLVBSTWNMZFBucjZYMmVObXFKVEhjTVRaeE5acUNQWFg1dzhld0J6R19hUmtmd0dGUlp6bHRoS0hmQmZxXzM0ZnlFRE1oVHNxZ1R0TkczTzZlLV84LWJLU1h0NFM5UHh1ZTVwUFM0Mlp2eXZhOFVzdnJkN004VjctTDRaOTUtbmhBQQ?oc=5" target="_blank">🌴✨ El Municipio de Vieques, a través de la Oficina de Asuntos Culturales y Turismo Vieques y nuestra representante, la Sra. Lourdes Roldán, dice presente en la Gran Feria de Turismo Interno 2026, que se celebrará los días 11 y 12 de julio en el Balneario d - facebook.com</a>
-                    </td>
-                    <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-07-11 16:43">hace 18h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Culebra" data-titular="Sousa_PR. Toya Jahan Jerin · Que Bonito Te Queda El Mar. Verano en La Isla del Encanto 🔥🇵🇷 #PuertoRico #PR #Culebra #Beach #Clearwater - facebook.com">
-                    <td><span class="muni-tag">Culebra</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxOMGhvMVZQS2N3aEtBek9fWktFZGlFWUVKZlA2UUdjVEhuWkoyeG9mMFg0ckZ4U2ViR3ZDQTNraDhlc1JBanNpeWdVd3pJSkRXb1BVZUVVTVNCcE5TVW5HSXRKSjU3Mm9mOW5ieDU1OE10S29ORjZGOWI1RlR1bWhWWVhzUlFiVEx4blhGSDE5ckN3UzdaRzJ2VlI5WExPYkdiZWF2Q2VKWXpWNExrTFliVmdfUnAzMWVkU3E2T29iZlk2MF8yVENjOGprNERhb3M?oc=5" target="_blank">Sousa_PR. Toya Jahan Jerin · Que Bonito Te Queda El Mar. Verano en La Isla del Encanto 🔥🇵🇷 #PuertoRico #PR #Culebra #Beach #Clearwater - facebook.com</a>
-                    </td>
-                    <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-07-11 15:34">hace 19h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Canóvanas" data-titular="🚌 Todo Canóvanas conectado. Seguimos ampliando las opciones de movilidad municipal con 3 rutas, 1 municipio y servicio sin costo para nuestra gente. ✅ El Poncito: transporte urbano con 24 paradas, 700+ espacios y horario de 6:30 a.m. a 4:30 p.m. ✅ SIT - facebook.com">
-                    <td><span class="muni-tag">Canóvanas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxQbFFaZjRvbmxzcVNEMElKd0owNmI1NHBpR0tKRmFveF9aNmlQci1hdFprbmJFRjF2NkVxWWY0UFZIMUdGTnFMYk1UZi11MExPWlktMWVIYnhxN1RkZHp4djRYNThQdW55emJya3hhWk1TUEY0RjJ6Q3J3bTZfWHN5SUxTTF9aSW1zTXFjYWN5ZE9RX3p1NG95MDZpTnZvVmxBUDhsOWl2YV8zZklSdXZWMjk2bWxveDVBYzk2WFJCZnZOMnU4YnVpeHEzWDJHVC1BSlJnWUszRHVnYnhubHFWb0FWamFtcGRwZUlv?oc=5" target="_blank">🚌 Todo Canóvanas conectado. Seguimos ampliando las opciones de movilidad municipal con 3 rutas, 1 municipio y servicio sin costo para nuestra gente. ✅ El Poncito: transporte urbano con 24 paradas, 700+ espacios y horario de 6:30 a.m. a 4:30 p.m. ✅ SIT - facebook.com</a>
-                    </td>
-                    <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-07-11 15:07">hace 19h</td>
+                    <td class="time-ago" data-date="2026-07-12 06:00">hace 1d</td>
                 </tr>
                 
                 
@@ -759,7 +669,7 @@ tr:hover { background: var(--surface2); }
         
         <span class="source-badge ok">🟢 El Nuevo Día: OK</span>
         
-        <span class="source-badge ok">🟢 NotiCel: OK</span>
+        <span class="source-badge err">🔴 NotiCel: Error</span>
         
         <span class="source-badge ok">🟢 Radio Isla: OK</span>
         
@@ -893,7 +803,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-07-12 10:49:02 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-07-13 07:24:28 AM<br>
     Actualización automática cada 30 min
 </div>
 
