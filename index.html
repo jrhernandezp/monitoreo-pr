@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="auto">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,11 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <title>Observador del Noreste - Noreste PR</title>
-<link rel="icon" type="image/png" href="icon.png">
+<link rel="icon" type="image/jpeg" href="logo-observador.jpg">
 <style>
+/* ============================================================
+   CSS VARIABLES — Light theme (default)
+   ============================================================ */
 :root {
     --bg: #f5f6f8;
     --surface: #ffffff;
@@ -23,10 +26,19 @@
     --green: #2ed573;
     --yellow: #ffd32a;
     --header-bg: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 30px rgba(0,0,0,0.10);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 14px;
 }
 
-@media (prefers-color-scheme: light) {
-    :root {
+/* ============================================================
+   DARK THEME — System preference (auto) or manual override
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+    :root[data-theme="auto"] {
         --bg: #0f1117;
         --surface: #161822;
         --surface2: #1c1f2e;
@@ -34,293 +46,743 @@
         --text: #e4e6f0;
         --text-dim: #8b8fa3;
         --header-bg: linear-gradient(135deg, #1a1d2e 0%, #161822 100%);
+        --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+        --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+        --shadow-lg: 0 8px 30px rgba(0,0,0,0.5);
     }
 }
 
+/* Manual dark override */
+:root[data-theme="dark"] {
+    --bg: #0f1117;
+    --surface: #161822;
+    --surface2: #1c1f2e;
+    --border: #2a2d3e;
+    --text: #e4e6f0;
+    --text-dim: #8b8fa3;
+    --header-bg: linear-gradient(135deg, #1a1d2e 0%, #161822 100%);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+    --shadow-lg: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+/* Manual light override */
+:root[data-theme="light"] {
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --surface2: #f0f2f5;
+    --border: #e0e0e0;
+    --text: #1a1a2e;
+    --text-dim: #6b7280;
+    --header-bg: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 30px rgba(0,0,0,0.10);
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
 * { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: var(--bg);
     color: var(--text);
     padding: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
+    font-size: 15px;
+    min-width: 320px;
 }
 
-/* === HEADER === */
+/* ============================================================
+   THEME TOGGLE BUTTON
+   ============================================================ */
+.theme-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.2s, box-shadow 0.2s;
+    line-height: 1;
+}
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
 .header {
     background: var(--header-bg);
     color: white;
-    padding: 20px 24px;
-    border-radius: 14px;
-    margin-bottom: 20px;
+    padding: 24px 28px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 24px;
     border: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
 }
 .header-top {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
     flex-wrap: wrap;
 }
 .header-logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
     object-fit: cover;
     flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
-.header h1 { font-size: 22px; font-weight: 700; }
-.header .sub { color: rgba(255,255,255,0.6); font-size: 13px; margin-top: 4px; }
+.header h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.3px; }
+.header .sub { color: rgba(255,255,255,0.65); font-size: 14px; margin-top: 4px; }
 
 .stats {
     display: flex;
     gap: 12px;
-    margin-top: 14px;
+    margin-top: 18px;
     flex-wrap: wrap;
 }
 .stat-box {
     background: rgba(255,255,255,0.15);
-    padding: 8px 14px;
-    border-radius: 8px;
+    padding: 10px 16px;
+    border-radius: 10px;
     text-align: center;
-    min-width: 70px;
+    min-width: 75px;
+    backdrop-filter: blur(4px);
+    transition: background 0.2s;
 }
-.stat-box .num { font-size: 18px; font-weight: bold; }
-.stat-box .label { font-size: 10px; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.5px; }
+.stat-box:hover { background: rgba(255,255,255,0.22); }
+.stat-box .num { font-size: 20px; font-weight: bold; }
+.stat-box .label { font-size: 11px; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.6px; margin-top: 2px; }
 
-/* === SEARCH === */
+/* ============================================================
+   SECTION HEADINGS
+   ============================================================ */
+.section { margin-bottom: 24px; }
+.section > h2 {
+    font-size: 16px;
+    color: var(--text-dim);
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.section-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+}
+
+/* ============================================================
+   SEARCH BAR
+   ============================================================ */
 .search-bar {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     position: relative;
+}
+.search-bar .search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    opacity: 0.5;
 }
 .search-bar input {
     width: 100%;
-    padding: 12px 16px 12px 42px;
-    border: 1px solid var(--border);
-    border-radius: 10px;
+    padding: 14px 44px 14px 46px;
+    border: 2px solid var(--border);
+    border-radius: var(--radius-md);
     background: var(--surface);
     color: var(--text);
-    font-size: 14px;
+    font-size: 15px;
     outline: none;
-    transition: border-color 0.2s;
+    transition: border-color 0.25s, box-shadow 0.25s;
+    box-shadow: var(--shadow-sm);
 }
-.search-bar input:focus { border-color: var(--accent); }
-.search-bar::before {
-    content: "🔍";
+.search-bar input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(79,140,255,0.15);
+}
+.search-bar .search-clear {
     position: absolute;
-    left: 14px;
+    right: 12px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 14px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--text-dim);
+    padding: 4px 8px;
+    border-radius: 50%;
+    display: none;
+    line-height: 1;
+    transition: color 0.15s, background 0.15s;
 }
+.search-bar .search-clear:hover {
+    color: var(--text);
+    background: var(--surface2);
+}
+.search-bar .search-clear.visible { display: block; }
 
-/* === BREAKING NEWS === */
-.breaking-section {
-    margin-bottom: 20px;
+/* ============================================================
+   NO RESULTS MESSAGE
+   ============================================================ */
+.no-results {
+    display: none;
+    text-align: center;
+    padding: 32px 16px;
+    color: var(--text-dim);
+    font-size: 15px;
 }
+.no-results.visible { display: block; }
+.no-results .no-results-icon { font-size: 40px; margin-bottom: 8px; }
+
+/* ============================================================
+   BREAKING NEWS
+   ============================================================ */
+.breaking-section { margin-bottom: 24px; }
 .breaking-banner {
     background: linear-gradient(135deg, #ff4757, #ff6b81);
     color: white;
-    padding: 14px 18px;
-    border-radius: 10px;
+    padding: 18px 22px;
+    border-radius: var(--radius-md);
     margin-bottom: 8px;
+    box-shadow: 0 4px 20px rgba(255,71,87,0.25);
 }
-.breaking-banner h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+.breaking-banner h2 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
 .breaking-badge {
     background: rgba(255,255,255,0.2);
     border: 1px solid rgba(255,255,255,0.3);
     border-radius: 4px;
-    padding: 2px 8px;
-    font-size: 10px;
+    padding: 2px 10px;
+    font-size: 11px;
     font-weight: 600;
     letter-spacing: 0.5px;
-    margin-left: 8px;
+    margin-left: 10px;
     vertical-align: middle;
 }
 .breaking-item {
-    padding: 6px 0;
-    font-size: 13px;
+    padding: 8px 0;
+    font-size: 14px;
     border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 .breaking-item:last-child { border-bottom: none; }
-.breaking-item .time { opacity: 0.7; font-size: 11px; }
+.breaking-item .time { opacity: 0.75; font-size: 12px; }
 .breaking-item a { color: white; text-decoration: none; font-weight: 500; }
 .breaking-item a:hover { text-decoration: underline; }
 
-/* === MUNICIPALITIES === */
-.section { margin-bottom: 20px; }
-.section h2 { font-size: 15px; color: var(--text-dim); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
-
-.muni-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-    gap: 8px;
-    margin-bottom: 8px;
+/* ============================================================
+   MUNICIPALITIES — Horizontal scrollable chips
+   ============================================================ */
+.muni-chips-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 4px 0 12px 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
 }
-.muni-card {
-    background: var(--surface);
+.muni-chips-scroll::-webkit-scrollbar { height: 6px; }
+.muni-chips-scroll::-webkit-scrollbar-track { background: transparent; }
+.muni-chips-scroll::-webkit-scrollbar-thumb {
+    background: var(--border);
     border-radius: 10px;
-    padding: 12px 8px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.2s;
-    border: 2px solid transparent;
 }
-.muni-card:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
-.muni-card.active { border-color: var(--accent); }
-.muni-card.active .muni-count { background: var(--accent); color: white; }
-.muni-card.inactive { opacity: 0.4; }
-.muni-name { font-size: 11px; font-weight: 600; margin-bottom: 6px; color: var(--text-dim); }
-.muni-count {
-    display: inline-block;
+
+.muni-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 50px;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.25s ease;
+    box-shadow: var(--shadow-sm);
+    user-select: none;
+}
+.muni-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent);
+}
+.muni-card.active {
+    border-color: var(--accent);
+    background: rgba(79,140,255,0.08);
+}
+.muni-card.inactive {
+    opacity: 0.4;
+    cursor: default;
+    border-color: var(--border);
+}
+.muni-card .muni-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+}
+.muni-card.inactive .muni-name { color: var(--text-dim); }
+.muni-card .muni-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background: var(--surface2);
     color: var(--text);
-    font-size: 16px;
-    font-weight: bold;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+    min-width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    padding: 0 8px;
+    transition: all 0.25s;
+}
+.muni-card.active .muni-count {
+    background: var(--accent);
+    color: white;
 }
 
-/* === TOOLBAR === */
+/* ============================================================
+   TOOLBAR — Sticky
+   ============================================================ */
 .toolbar {
     display: flex;
-    gap: 8px;
-    margin-bottom: 10px;
+    gap: 10px;
+    margin-bottom: 14px;
     flex-wrap: wrap;
     align-items: center;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--bg);
+    transition: box-shadow 0.3s;
+}
+.toolbar.scrolled {
+    padding: 12px 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    border-radius: var(--radius-md);
 }
 .btn {
-    padding: 7px 14px;
-    border: 1px solid var(--border);
-    border-radius: 8px;
+    padding: 9px 16px;
+    border: 2px solid var(--border);
+    border-radius: 50px;
     cursor: pointer;
-    font-size: 12px;
-    transition: all 0.2s;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
     background: var(--surface);
     color: var(--text);
+    box-shadow: var(--shadow-sm);
 }
-.btn:hover { background: var(--surface2); }
-.btn.active { background: var(--accent); color: white; border-color: var(--accent); }
-#filtroLabel { font-size: 12px; color: var(--text-dim); }
+.btn:hover {
+    background: var(--surface2);
+    transform: translateY(-1px);
+}
+.btn.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    box-shadow: 0 2px 12px rgba(79,140,255,0.3);
+}
+#filtroLabel { font-size: 14px; color: var(--text-dim); font-weight: 500; }
 
-/* === TIME GROUPS === */
-.time-group {
-    margin-bottom: 16px;
-}
+/* ============================================================
+   TIME GROUP HEADERS
+   ============================================================ */
 .time-group-header {
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 14px !important;
+    font-weight: 700 !important;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--accent);
-    padding: 6px 0;
+    padding: 10px 0 !important;
     border-bottom: 2px solid var(--accent);
     margin-bottom: 4px;
 }
 
-/* === ARTICLES TABLE === */
-table { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: 10px; overflow: hidden; }
-th, td { padding: 9px 10px; text-align: left; border-bottom: 1px solid var(--border); font-size: 13px; }
-th { background: var(--surface2); font-size: 10px; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.5px; }
-tr:hover { background: var(--surface2); }
-.titular-cell a { color: var(--text); text-decoration: none; font-weight: 500; }
+/* ============================================================
+   ARTICLES TABLE (Desktop)
+   ============================================================ */
+.articles-wrapper { overflow-x: auto; }
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+th, td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+}
+th {
+    background: var(--surface2);
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    letter-spacing: 0.6px;
+    font-weight: 700;
+    position: sticky;
+    top: 58px;
+    z-index: 5;
+}
+tr.article-row {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+tr.article-row:hover { background: var(--surface2); }
+.titular-cell a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
 .titular-cell a:hover { color: var(--accent); text-decoration: underline; }
 
 .badge-nuevo {
     display: inline-block;
     background: var(--red);
     color: white;
-    font-size: 9px;
-    font-weight: bold;
-    padding: 1px 5px;
-    border-radius: 3px;
-    margin-right: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-right: 6px;
     vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
 }
 .muni-tag {
     display: inline-block;
     background: var(--surface2);
     color: var(--accent);
-    font-size: 10px;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-weight: 500;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 600;
 }
-.time-ago { font-size: 11px; color: var(--text-dim); }
+.time-ago { font-size: 13px; color: var(--text-dim); white-space: nowrap; }
 
-/* === FACEBOOK SECTION === */
+/* ============================================================
+   FACEBOOK SECTION
+   ============================================================ */
 .fb-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 12px;
+    gap: 16px;
 }
 .fb-card {
     background: var(--surface);
-    border-radius: 10px;
+    border-radius: var(--radius-md);
     overflow: hidden;
-    border-left: 3px solid #1877f2;
+    border-left: 4px solid #1877f2;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s;
 }
+.fb-card:hover { box-shadow: var(--shadow-md); }
 .fb-card-header {
     background: linear-gradient(135deg, #1877f2, #166fe5);
     color: white;
-    padding: 8px 12px;
-    font-size: 12px;
+    padding: 10px 16px;
+    font-size: 14px;
     font-weight: 600;
 }
-.fb-card-body { padding: 8px 12px; }
-.fb-post { padding: 6px 0; border-bottom: 1px solid var(--border); }
+.fb-card-body { padding: 10px 16px; }
+.fb-post { padding: 8px 0; border-bottom: 1px solid var(--border); }
 .fb-post:last-child { border-bottom: none; }
-.fb-post-fecha { font-size: 10px; color: var(--text-dim); margin-bottom: 3px; }
-.fb-post-texto { font-size: 12px; line-height: 1.4; }
+.fb-post-fecha { font-size: 12px; color: var(--text-dim); margin-bottom: 4px; }
+.fb-post-texto { font-size: 14px; line-height: 1.5; }
 
-/* === SOURCE STATUS === */
+/* ============================================================
+   SOURCE STATUS
+   ============================================================ */
 .source-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 8px;
 }
 .source-badge {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
-    padding: 4px 10px;
+    gap: 5px;
+    padding: 6px 14px;
     border-radius: 20px;
-    font-size: 11px;
+    font-size: 13px;
+    font-weight: 500;
     background: var(--surface);
-    border: 1px solid var(--border);
+    border: 2px solid var(--border);
+    transition: transform 0.15s;
 }
+.source-badge:hover { transform: scale(1.03); }
 .source-badge.ok { border-color: var(--green); color: var(--green); }
 .source-badge.err { border-color: var(--red); color: var(--red); }
 .source-badge.warn { border-color: var(--orange); color: var(--orange); }
 
-/* === FOOTER === */
+/* ============================================================
+   FOOTER
+   ============================================================ */
 .footer {
     text-align: center;
     color: var(--text-dim);
-    font-size: 11px;
-    margin-top: 24px;
-    padding-top: 16px;
+    font-size: 13px;
+    margin-top: 32px;
+    padding-top: 20px;
     border-top: 1px solid var(--border);
 }
 
-/* === RESPONSIVE === */
-@media (max-width: 600px) {
-    body { padding: 10px; }
-    .muni-grid { grid-template-columns: repeat(3, 1fr); }
-    .header h1 { font-size: 18px; }
+/* ============================================================
+   BACK-TO-TOP FAB
+   ============================================================ */
+.fab-back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    box-shadow: 0 4px 20px rgba(79,140,255,0.4);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fab-back-to-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+.fab-back-to-top:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(79,140,255,0.5);
+}
+
+/* ============================================================
+   HIDDEN (JS filter)
+   ============================================================ */
+.hidden { display: none !important; }
+
+/* ============================================================
+   RESPONSIVE — Mobile card layout (< 768px)
+   ============================================================ */
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .header {
+        padding: 18px 16px;
+        border-radius: var(--radius-md);
+    }
+    .header h1 { font-size: 20px; }
+    .header .sub { font-size: 13px; }
+    .header-logo { width: 44px; height: 44px; }
+
     .stats { gap: 8px; }
-    .stat-box { flex: 1; min-width: 60px; }
-    th, td { padding: 6px 8px; font-size: 12px; }
+    .stat-box { flex: 1 1 calc(50% - 8px); min-width: 60px; padding: 8px 10px; }
+    .stat-box .num { font-size: 17px; }
+    .stat-box .label { font-size: 10px; }
+
+    .section > h2 { font-size: 15px; margin-bottom: 12px; }
+    .search-bar input { font-size: 15px; padding: 14px 44px 14px 46px; }
+
+    /* Toolbar */
+    .toolbar { top: 0; gap: 6px; padding: 10px 0; }
+    .btn { padding: 8px 14px; font-size: 13px; }
+    #filtroLabel { font-size: 13px; }
+
+    /* Table → Card transformation */
+    .articles-wrapper { overflow-x: visible; }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    table {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    thead { display: none; }
+
+    /* Time group headers remain but restyled */
+    tr.time-group-header {
+        padding: 10px 4px 6px 4px !important;
+        border-bottom: 2px solid var(--accent);
+        margin-bottom: 8px;
+        font-size: 13px !important;
+        background: transparent;
+        border-radius: 0;
+    }
+
+    /* Article cards */
+    tr.article-row {
+        background: var(--surface);
+        border-radius: var(--radius-md);
+        padding: 14px 16px;
+        margin-bottom: 12px;
+        box-shadow: var(--shadow-sm);
+        border: 1px solid var(--border);
+        transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.2s;
+    }
+    tr.article-row:hover {
+        box-shadow: var(--shadow-md);
+        background: var(--surface);
+    }
+    tr.article-row.hidden {
+        opacity: 0;
+        transform: translateY(-8px);
+        margin-bottom: 0;
+        padding: 0;
+        border: none;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    /* Card internal layout */
+    tr.article-row td {
+        padding: 3px 0;
+        border-bottom: none;
+        font-size: 14px;
+    }
+
+    /* Municipality chip */
+    tr.article-row td:first-child {
+        margin-bottom: 4px;
+    }
+    .muni-tag {
+        font-size: 11px;
+        padding: 3px 10px;
+    }
+
+    /* Title row — big */
+    tr.article-row td.titular-cell {
+        padding: 4px 0 6px 0;
+    }
+    tr.article-row td.titular-cell a {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    /* Source + time row */
+    tr.article-row td:nth-child(3),
+    tr.article-row td:nth-child(4) {
+        display: inline-block;
+    }
+    tr.article-row td:nth-child(3) {
+        font-size: 12px;
+        color: var(--text-dim);
+        margin-right: 12px;
+    }
+    tr.article-row td:nth-child(4) {
+        font-size: 12px;
+        color: var(--text-dim);
+    }
+
+    /* NUEVO badge */
+    .badge-nuevo {
+        font-size: 9px;
+        padding: 2px 6px;
+    }
+
+    .fb-grid { grid-template-columns: 1fr; gap: 12px; }
+    .fb-card-header { font-size: 13px; }
+    .fb-post-texto { font-size: 13px; }
+
+    .source-badge { font-size: 12px; padding: 5px 10px; }
+    .footer { font-size: 12px; }
+
+    .fab-back-to-top {
+        bottom: 16px;
+        right: 16px;
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE — Small phones (< 480px)
+   ============================================================ */
+@media (max-width: 479px) {
+    body { padding: 8px; }
+    .header { padding: 14px 12px; }
+    .header h1 { font-size: 18px; }
+    .header-logo { width: 38px; height: 38px; }
+    .stat-box { flex: 1 1 100%; }
+    .muni-card { padding: 8px 14px; }
+    .muni-card .muni-name { font-size: 13px; }
+    .muni-card .muni-count { font-size: 12px; min-width: 24px; height: 24px; }
     .fb-grid { grid-template-columns: 1fr; }
 }
 
-/* === HIDDEN (JS filter) === */
-.hidden { display: none !important; }
+/* ============================================================
+   LARGE SCREENS (> 1200px)
+   ============================================================ */
+@media (min-width: 1200px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 24px 32px;
+    }
+    .header h1 { font-size: 26px; }
+    .stats { gap: 14px; }
+    .stat-box { padding: 12px 20px; }
+    .fb-grid { grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); }
+}
 </style>
 </head>
 <body>
+
+<!-- THEME TOGGLE -->
+<button class="theme-toggle" id="themeToggle" title="Alternar modo oscuro" aria-label="Alternar modo oscuro">🌙</button>
 
 <!-- HEADER -->
 <div class="header">
@@ -328,494 +790,156 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-07-27 11:49:58 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-07-31 01:40:55 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">34</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
-        <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-07-27 11:49:58 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num">2</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">2</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num" style="font-size:14px">3/5</div><div class="label">Fuentes OK</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-07-31 01:40:55 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
 <!-- SEARCH -->
 <div class="search-bar">
+    <span class="search-icon">🔍</span>
     <input type="text" id="searchInput" placeholder="Buscar por palabra clave..." oninput="onSearch()">
+    <button class="search-clear" id="searchClear" onclick="clearSearch()" title="Limpiar búsqueda" aria-label="Limpiar búsqueda">✕</button>
 </div>
 
 <!-- BREAKING NEWS -->
 
-<div class="section breaking-section">
-    <div class="breaking-banner">
-        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
-        
-        <div class="breaking-item">
-            <span class="time">ahora</span> —
-            <a href="https://esnoticiapr.com/policia-busca-identificar-cuerpo-hallado-en-rio-grande/" target="_blank">Policía busca identificar cuerpo hallado en Río Grande</a>
-            <span style="opacity:0.6"> [Río Grande]</span>
-        </div>
-        
-        <div class="breaking-item">
-            <span class="time">ahora</span> —
-            <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPZHRLSUNRX0trZnNSM004TlVwY2pjWE9OSU1sbFIyamszdHRtODFONEt5aFlHMElsNWdIX3prZldjVDhkSW0xZUZ4OElXaEpKTm5XOHk3cUY2cDA3WHNWZlBBV1hjOWI5THFwVWRfVkxETF90NVBiNmE4NmJXb3dlMl9rcnhubDJyTExOMDU3WG4ycC1tMVpKS2tYZXhJSFNxeTQtSE1GMEU3MXlYX2ZBTdIBuAFBVV95cUxOMld2MnNFTmhRTTFlVTA4dkRVeWpfUG9MZFc1d3BjRGw1X0ZLQWlNZHNjSHhjX0kzTmRidS16dXhXSDdGa0xPOEtJaE5ZMVFKcWlIRm1ON3RId0hLLTV3c2NndlhJVFlyNjdKX2JRUUZ1N3RuN1U2aVRxbnkyMFVxTnVUdDFGdmZrbDBpQXk2bFAtQ2thZHQ5dVVvVGc0V3VNaFlKVXFLd0FHejVOMTVqeDNRX1ZYMTli?oc=5" target="_blank">Hallan cadáver de hombre en un pastizal en Río Grande - Telemundo Puerto Rico</a>
-            <span style="opacity:0.6"> [Río Grande]</span>
-        </div>
-        
-        <div class="breaking-item">
-            <span class="time">ahora</span> —
-            <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxOX2c4SURpamd2VjhHa21ELUkzUmpFQXVRaG8tejRTbXBXaUlVNmtHQVc2eHFoLUxuMHNPUjNScUN4Q1VqR09qZ0JSelhDUU9OVE1fUDBmWk1kdGFMOWZpRVFTVkFsZDM3c2p6cFpoNDdTRkFDazE3b1dHeW9SMEIwUzBlSkxsQVlhajA5Z1Rma9IBowFBVV95cUxNYk1yc2VyUlg3OWN5UlE3UU1KcFVYelZqZVpYcU1oVVZ3TUNERWwzUnpTaVRjNVlkVmRrQ1dhVnRseEpQSTZtSnpDVE1vZkJDTk5HYmpHWU83T2EyaUZZUlFxSEVkOWNSc19EaEhQcHRNcE9LOURZTDhqVkFjV2kyY1hPanpLY1labHBnRnJKMmtvREV4OC1XaXNnYlRnNmNDR0xB?oc=5" target="_blank">Encuentran cadáver en pastizal en Río Grande - Metro Puerto Rico</a>
-            <span style="opacity:0.6"> [Río Grande]</span>
-        </div>
-        
-    </div>
-</div>
-
 
 <!-- MUNICIPALITIES -->
 <div class="section">
-    <h2>Municipios del Noreste</h2>
-    <div class="muni-grid" id="muniGrid">
+    <h2>📍 Municipios del Noreste</h2>
+    <div class="muni-chips-scroll" id="muniGrid">
         
-        <div class="muni-card active" onclick="filtrarPor('San Juan')">
-            <div class="muni-name">San Juan</div>
-            <div class="muni-count">9</div>
+        <div class="muni-card inactive" onclick="filtrarPor('San Juan')">
+            <span class="muni-name">San Juan</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
-            <div class="muni-name">Carolina</div>
-            <div class="muni-count">1</div>
+            <span class="muni-name">Carolina</span>
+            <span class="muni-count">1</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
-            <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">1</div>
+        <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
+            <span class="muni-name">Trujillo Alto</span>
+            <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Caguas')">
-            <div class="muni-name">Caguas</div>
-            <div class="muni-count">3</div>
+        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
+            <span class="muni-name">Caguas</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
-            <div class="muni-name">Luquillo</div>
-            <div class="muni-count">0</div>
+            <span class="muni-name">Luquillo</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
-            <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">0</div>
+            <span class="muni-name">Canóvanas</span>
+            <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
-            <div class="muni-name">Fajardo</div>
-            <div class="muni-count">2</div>
+        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
+            <span class="muni-name">Fajardo</span>
+            <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Loíza')">
-            <div class="muni-name">Loíza</div>
-            <div class="muni-count">4</div>
+        <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
+            <span class="muni-name">Loíza</span>
+            <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Río Grande')">
-            <div class="muni-name">Río Grande</div>
-            <div class="muni-count">4</div>
+        <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
+            <span class="muni-name">Río Grande</span>
+            <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Ceiba')">
-            <div class="muni-name">Ceiba</div>
-            <div class="muni-count">1</div>
+        <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
+            <span class="muni-name">Ceiba</span>
+            <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
-            <div class="muni-name">Naguabo</div>
-            <div class="muni-count">1</div>
+        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
+            <span class="muni-name">Naguabo</span>
+            <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Humacao')">
-            <div class="muni-name">Humacao</div>
-            <div class="muni-count">9</div>
+        <div class="muni-card inactive" onclick="filtrarPor('Humacao')">
+            <span class="muni-name">Humacao</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
-            <div class="muni-name">Cataño</div>
-            <div class="muni-count">0</div>
+            <span class="muni-name">Cataño</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
-            <div class="muni-name">Vieques</div>
-            <div class="muni-count">0</div>
+            <span class="muni-name">Vieques</span>
+            <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
-            <div class="muni-name">Culebra</div>
-            <div class="muni-count">0</div>
+        <div class="muni-card active" onclick="filtrarPor('Culebra')">
+            <span class="muni-name">Culebra</span>
+            <span class="muni-count">1</span>
         </div>
         
     </div>
 </div>
+
+<hr class="section-divider">
 
 <!-- ARTICLES -->
 <div class="section">
     <h2>📰 Noticias Recientes</h2>
-    <div class="toolbar">
+    <div class="toolbar" id="filterToolbar">
         <button class="btn active" onclick="filtrarPor('todos')" id="btnTodos">📋 Todos</button>
         <span id="filtroLabel"></span>
         <span style="flex:1"></span>
-        <span id="resultCount" style="font-size:12px;color:var(--text-dim)"></span>
+        <span id="resultCount" style="font-size:14px;color:var(--text-dim);font-weight:500"></span>
     </div>
-    <div style="overflow-x:auto;">
+
+    <div class="no-results" id="noResults">
+        <div class="no-results-icon">🔍</div>
+        <div>No se encontraron resultados</div>
+    </div>
+
+    <div class="articles-wrapper">
         <table>
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="Humacao" data-titular="Hombre muere en accidente de tránsito">
-                    <td><span class="muni-tag">Humacao</span></td>
+                <tr class="article-row" data-municipios="Culebra" data-titular="Capitán de bote fallece ahogado en Culebra: se lanzó al mar tras ver una embarcación a la deriva">
+                    <td><span class="muni-tag">Culebra</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://nelpr.com/2026/07/27/hombre-muere-en-accidente-de-transito-57/" target="_blank">Hombre muere en accidente de tránsito</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-27 15:21">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Reportan avería en paneles eléctricos en Represa Borinquen en Caguas">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/07/27/reportan-averia-en-paneles-electricos-en-represa-borinquen-en-caguas/" target="_blank">Reportan avería en paneles eléctricos en Represa Borinquen en Caguas</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-07-27 15:19">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Río Grande" data-titular="Policía busca identificar cuerpo hallado en Río Grande">
-                    <td><span class="muni-tag">Río Grande</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/policia-busca-identificar-cuerpo-hallado-en-rio-grande/" target="_blank">Policía busca identificar cuerpo hallado en Río Grande</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-07-27 14:58">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Río Grande" data-titular="Hallan cadáver de hombre en un pastizal en Río Grande - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Río Grande</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPZHRLSUNRX0trZnNSM004TlVwY2pjWE9OSU1sbFIyamszdHRtODFONEt5aFlHMElsNWdIX3prZldjVDhkSW0xZUZ4OElXaEpKTm5XOHk3cUY2cDA3WHNWZlBBV1hjOWI5THFwVWRfVkxETF90NVBiNmE4NmJXb3dlMl9rcnhubDJyTExOMDU3WG4ycC1tMVpKS2tYZXhJSFNxeTQtSE1GMEU3MXlYX2ZBTdIBuAFBVV95cUxOMld2MnNFTmhRTTFlVTA4dkRVeWpfUG9MZFc1d3BjRGw1X0ZLQWlNZHNjSHhjX0kzTmRidS16dXhXSDdGa0xPOEtJaE5ZMVFKcWlIRm1ON3RId0hLLTV3c2NndlhJVFlyNjdKX2JRUUZ1N3RuN1U2aVRxbnkyMFVxTnVUdDFGdmZrbDBpQXk2bFAtQ2thZHQ5dVVvVGc0V3VNaFlKVXFLd0FHejVOMTVqeDNRX1ZYMTli?oc=5" target="_blank">Hallan cadáver de hombre en un pastizal en Río Grande - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Río Grande</td>
-                    <td class="time-ago" data-date="2026-07-27 14:20">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Intenso calor y sectores con 90 y 100% de potencial de lluvia tras paso de Onda Tropical">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/07/27/intenso-calor-y-sectores-con-90-y-100-de-potencial-de-lluvia-tras-paso-de-onda-tropical/" target="_blank">Intenso calor y sectores con 90 y 100% de potencial de lluvia tras paso de Onda Tropical</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-27 14:07">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Reportan accidente fatal de motorista en Humacao - wapa.tv">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQQ05GLTdtOUNEVjdfVjlGWDIzY1pYSU1xWFBxWURQZUx4RHM1aWxkaTNOU3c0azJTaG8zTjBseFBMNng2SmowalViVG8xWnhQNktpekVwazY1bGJCejJCdWUydHBaMzRfSDlhaW1rbVdYV3IxcFlsU2RaeHpnaFBfN3ExZXl0Q2o4b2FfcVJITFdOX1U1cUpzZ3hyTElvY1M1V3I3YjdNN2VhcllQQ3NlSFJKX2F0UGpQUWpGbUFteC1VTk83eUNaOEdkMA?oc=5" target="_blank">Reportan accidente fatal de motorista en Humacao - wapa.tv</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-07-27 13:35">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Hombre pierde la vida en accidente de motora">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://noticel.com/noticias/20260727/hombre-pierde-la-vida-en-accidente-de-motora-3/?utm_source=rss&utm_medium=rss&utm_campaign=hombre-pierde-la-vida-en-accidente-de-motora-3" target="_blank">Hombre pierde la vida en accidente de motora</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-07-27 13:33">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Río Grande" data-titular="Encuentran cadáver en pastizal en Río Grande - Metro Puerto Rico">
-                    <td><span class="muni-tag">Río Grande</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxOX2c4SURpamd2VjhHa21ELUkzUmpFQXVRaG8tejRTbXBXaUlVNmtHQVc2eHFoLUxuMHNPUjNScUN4Q1VqR09qZ0JSelhDUU9OVE1fUDBmWk1kdGFMOWZpRVFTVkFsZDM3c2p6cFpoNDdTRkFDazE3b1dHeW9SMEIwUzBlSkxsQVlhajA5Z1Rma9IBowFBVV95cUxNYk1yc2VyUlg3OWN5UlE3UU1KcFVYelZqZVpYcU1oVVZ3TUNERWwzUnpTaVRjNVlkVmRrQ1dhVnRseEpQSTZtSnpDVE1vZkJDTk5HYmpHWU83T2EyaUZZUlFxSEVkOWNSc19EaEhQcHRNcE9LOURZTDhqVkFjV2kyY1hPanpLY1labHBnRnJKMmtvREV4OC1XaXNnYlRnNmNDR0xB?oc=5" target="_blank">Encuentran cadáver en pastizal en Río Grande - Metro Puerto Rico</a>
-                    </td>
-                    <td>Río Grande</td>
-                    <td class="time-ago" data-date="2026-07-27 13:23">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Autoridades investigan alegada querella contra Cosculluela">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20260727/autoridades-investigan-alegada-querella-contra-cosculluela/?utm_source=rss&utm_medium=rss&utm_campaign=autoridades-investigan-alegada-querella-contra-cosculluela" target="_blank">Autoridades investigan alegada querella contra Cosculluela</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-07-27 13:14">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Río Grande" data-titular="Investigan el hallazgo de un cuerpo sin vida en un pastizal en Río Grande - El Nuevo Día">
-                    <td><span class="muni-tag">Río Grande</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPOTJxR240SjFMX3ZyS2JoZVlrUjhoRmJEWnFYQTFCZFd1eDlMaHJQWHlnYUt1OGc5WFpsZVBBUXlNU0ZYY05kZjBBRmM2VTgzTHdnYkVadlBZbHl5MndPdkdsYXEwS1FzWmVLLVRhUS0tVzlIaktqM1Vlek1xLXM0d2NCbVpONW1qYk9oTUp6bmRpM0Yyd0pUTWVzZWJ0MEFnaTktUF9OVUdhMUFuWVdhaV9uY1ByYjlUUGtUaWlaa1owbkNt?oc=5" target="_blank">Investigan el hallazgo de un cuerpo sin vida en un pastizal en Río Grande - El Nuevo Día</a>
-                    </td>
-                    <td>Río Grande</td>
-                    <td class="time-ago" data-date="2026-07-27 12:43">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Naguabo obtiene concesión del DRNA para impulsar la reconstrucción y el desarrollo de El Malecón">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/07/27/naguabo-obtiene-concesion-del-drna-para-impulsar-la-reconstruccion-y-el-desarrollo-de-el-malecon/" target="_blank">Naguabo obtiene concesión del DRNA para impulsar la reconstrucción y el desarrollo de El Malecón</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-07-27 11:53">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Conductor de 22 años fallece tras accidente de tránsito en San Juan">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/conductor-de-22-anos-fallece-tras-accidente-de-transito-en-san-juan/?utm_source=elnuevodia.com&utm_medium=widget&utm_campaign=las_mas_vistas" target="_blank">Conductor de 22 años fallece tras accidente de tránsito en San Juan</a>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/capitan-de-bote-fallece-ahogado-en-culebra-se-lanzo-al-mar-tras-ver-una-embarcacion-a-la-deriva/?utm_source=elnuevodia.com&utm_medium=widget&utm_campaign=las_mas_vistas" target="_blank">Capitán de bote fallece ahogado en Culebra: se lanzó al mar tras ver una embarcación a la deriva</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-07-27 11:49">ahora mismo</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Autoridades identifican a motociclista que murió tras accidente en Humacao">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://radioisla.tv/autoridades-identifican-a-motociclista-que-murio-tras-accidente-en-humacao/?utm_source=rss&utm_medium=rss&utm_campaign=autoridades-identifican-a-motociclista-que-murio-tras-accidente-en-humacao&utm_source=rss&utm_medium=rss&utm_campaign=autoridades-identifican-a-motociclista-que-murio-tras-accidente-en-humacao" target="_blank">Autoridades identifican a motociclista que murió tras accidente en Humacao</a>
-                    </td>
-                    <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-07-27 11:30">hace 19min</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Sin identificar motorista que falleció anoche en Humacao">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/07/27/sin-identificar-motorista-que-fallecio-anoche-en-humacao/" target="_blank">Sin identificar motorista que falleció anoche en Humacao</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-07-27 11:29">hace 20min</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Muere motorista tras perder el control y caer al pavimento en Humacao - Primera Hora">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxQcmZackwzbWF2SEh1RkQ5ZnByd21ESW1KX1laN21Vd0s5YzZra0pJSEtybVpLYnV5eUdZNXl3dVFGYWZiQk4yMlo3RkJEV1lYZ0lYVy1iQmhGTEx6TjZIYUdwdFhtblZ2RDRhWEdhOFFONTFWbXU1ZnFUVVFCblNNNkNodmo5NjZnM0Jkanc3ZmJwZEg1MlYxaWtnelRGU0duZEFhek5iR281MVowVVJybFFCNEJ2dW1VSWtYZWpNWC1fR0FiRXFPRDhvU3A?oc=5" target="_blank">Muere motorista tras perder el control y caer al pavimento en Humacao - Primera Hora</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-07-27 11:27">hace 22min</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Motociclista muere tras perder el control de su motora en Humacao">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/motociclista-muere-tras-perder-el-control-de-su-motora-en-humacao/" target="_blank">Motociclista muere tras perder el control de su motora en Humacao</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-07-27 11:24">hace 25min</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Motorista muere en accidente en Humacao - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNbmRPUnRBekRDTF9MeUFJRkhIRnlfSE5rLTNYNEVBZUpuQTZjaGRQbTgzQWVCZHowNUdXTHlDZEJHcTZGVXVNNjNocWl3cll4THR1clAza05jaXVtYVhpT3A1eTE1V3BjSk5IQWxWbmZURFd0blI4ZkFjQXJ3bkZ1V1ZiMWVLVHZSMlB1ZEFadG9fQVNvLVVzY0U2X0s3WFF3blR0Nl9R0gGmAUFVX3lxTE1uZE9SdEF6RENMX0x5QUlGSEhGeV9ITmstM1g0RUFlSm5BNmNoZFBtODNBZUJkejA1R1dMeUNkQkdxNkZVdU02M2hxaXdyWXhMdHVyUDNrTmNpdW1hWGlPcDV5MTVXcGNKTkhBbFZuZlREV3RuUjhmQWNBcnduRnVXVmIxZUtUdlIyUHVkQVp0b19BU28tVXNjRTZfSzdYUXduVHQ2X1E?oc=5" target="_blank">Motorista muere en accidente en Humacao - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-07-27 11:23">hace 26min</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Criollos empatan serie semifinal A en el BSN">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/deportes/20260727/criollos-empatan-serie-semifinal-a-en-el-bsn/?utm_source=rss&utm_medium=rss&utm_campaign=criollos-empatan-serie-semifinal-a-en-el-bsn" target="_blank">Criollos empatan serie semifinal A en el BSN</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-07-27 10:51">hace 58min</td>
+                    <td class="time-ago" data-date="2026-07-31 01:40">ahora mismo</td>
                 </tr>
                 
                 
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
+                <tr class="time-group-header"><td colspan="4">📋 Anteriores</td></tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Fallece joven de 22 años tras accidentarse con un árbol en San Juan">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://radioisla.tv/fallece-joven-de-22-anos-tras-accidentarse-con-un-arbol-en-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=fallece-joven-de-22-anos-tras-accidentarse-con-un-arbol-en-san-juan&utm_source=rss&utm_medium=rss&utm_campaign=fallece-joven-de-22-anos-tras-accidentarse-con-un-arbol-en-san-juan" target="_blank">Fallece joven de 22 años tras accidentarse con un árbol en San Juan</a>
-                    </td>
-                    <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-07-27 10:32">hace 1h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo,Ceiba" data-titular="Los eventos han sido reportados en municipios como Lajas, Fajardo, Yabucoa y Ceiba. - facebook.com">
-                    <td><span class="muni-tag">Fajardo, Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxQSHdLcnI1LUZTNjNrOXJVeHBwUWEwY05xWExlOE5KbDdXZEhEWXBXTEU2LW9JRU94V1pvNFBCWk5jX0tZcFpXSmVoYkJ6X0JMQ2lGSnJUMnRNckZtZHBqNVJwX20ybTlFRVRFYmo5TjAybWR6Y0hCdzdMaHFUeVpNUnNDbmFDZG1ZeG1nZTNFUmM2VkxSQkFsV1Yzb2U3Ynd6YWZZakFxWEhYWWFjMnhTVnBRT0lUQ2xzTnViTFNyMHdYWVZHMHlkM0k5RVRUMWk0alcyQ2d1R3YzYU53?oc=5" target="_blank">Los eventos han sido reportados en municipios como Lajas, Fajardo, Yabucoa y Ceiba. - facebook.com</a>
-                    </td>
-                    <td>FB - Ceiba</td>
-                    <td class="time-ago" data-date="2026-07-27 01:48">hace 10h</td>
-                </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz hasta 13 horas">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/07/26/se-ira-la-luz-hasta-13-horas-5/" target="_blank">Se irá la luz hasta 13 horas</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-26 22:28">hace 13h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Joven que murió al impactar árbol en San Juan era muy respetado por su comunidad - wapa.tv">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxOblJzdjl3ODhFV1g2Z20zZDBEamhtTnVlSW5ISTNkSXNTRXRacFNvVThjOWM0aEtPclF1dWpmTExVcXlZUWVESm02TkNvZW5IbmdlWXZTeXdsQTZvLTE0RE5FMFpmeE1jQnE0VGlYZlB6WkpaT3h1RzNmR1dYMDFWSDZIeVhvYmJBSmR1eWNqXzZ2SVlzWnhxdlBRaUFtSEwzY2NEaWpOYWYzNmRvenhqQ0lwSDI5dDZraVBYOFEwR0w1emNOd0F6NHRrejRDdmc2Wm1QQ2RZRUU2QWJSdzA2aEdDYkNIcmo0ZGR0UjVlMGZPQjg?oc=5" target="_blank">Joven que murió al impactar árbol en San Juan era muy respetado por su comunidad - wapa.tv</a>
-                    </td>
-                    <td>WAPA TV</td>
-                    <td class="time-ago" data-date="2026-07-26 21:14">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Roban cartera con $2,000 en efectivo de un vehículo">
+                <tr class="article-row" data-municipios="Carolina" data-titular="Recortes en Educación reducirán guardias escolares y pondrían en riesgo 600 empleos de Genesis Security">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://nelpr.com/2026/07/26/roban-cartera-con-2000-en-efectivo-de-un-vehiculo/" target="_blank">Roban cartera con $2,000 en efectivo de un vehículo</a>
+                        <a href="https://www.carolina787.com/n/recortes-en-educacion-reduciran-guardias-escolares-y-pondrian-en-riesgo-600-empleos-de-genesis-security" target="_blank">Recortes en Educación reducirán guardias escolares y pondrían en riesgo 600 empleos de Genesis Security</a>
                     </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-26 20:02">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Conductor pierde el control y muere tras impactar un árbol">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/07/26/conductor-pierde-el-control-y-muere-tras-impactar-un-arbol/" target="_blank">Conductor pierde el control y muere tras impactar un árbol</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-26 19:59">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Emiten alerta: Vientos de hasta 40MPH y posibilidad de granizo">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/07/26/emiten-alerta-vientos-de-hasta-40mph-y-posibilidad-de-granizo/" target="_blank">Emiten alerta: Vientos de hasta 40MPH y posibilidad de granizo</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-26 18:58">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Motociclista resulta gravemente herido tras choque con un automóvil">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/07/26/motociclista-resulta-gravemente-herido-tras-choque-con-un-automovil/" target="_blank">Motociclista resulta gravemente herido tras choque con un automóvil</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-26 18:47">hace 17h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Asaltante en motora roba pulsera de oro valorada en más de $5,000">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/07/26/asaltante-en-motora-roba-pulsera-de-oro-valorada-en-mas-de-5000/" target="_blank">Asaltante en motora roba pulsera de oro valorada en más de $5,000</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-26 18:25">hace 17h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Investigan asesinato de hombre baleado a la orilla de la carretera en Piñones">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/investigan-asesinato-de-hombre-baleado-a-la-orilla-de-la-carretera-en-pinones/" target="_blank">Investigan asesinato de hombre baleado a la orilla de la carretera en Piñones</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-07-26 17:11">hace 18h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Hallan cuerpo baleado de hombre a orillas de carretera en Loíza - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxNMUR1SFR4UWVXMkJ6T1ZRZk82TEFObEhKa2J0WmxqNTVvR2Qta0xSdi1fSVdUaXVSOXY0eDJUV01ZRXAzUElNOHhMNmJOVzVLUVYxLVNJd0lEN0l5dXVfWFNoYlBVVUFCeWJlZHo4cGtCUkhvc0hBUHNzRllGRm4yNmMwMjBkWXl0TVc0SktmdFJEam1uTE1mR3RRTlNZdS1mbVkyNktDSUZqVlZmLXBmMEZNR0dUTnUwdENoV2NUTVNOb0pfMFHSAcYBQVVfeXFMTTFEdUhUeFFlVzJCek9WUWZPNkxBTmxISmtidFpsajU1b0dkLWtMUnYtX0lXVGl1Ujl2NHgyVFdNWUVwM1BJTTh4TDZiTlc1S1FWMS1TSXdJRDdJeXV1X1hTaGJQVVVBQnliZWR6OHBrQlJIb3NIQVBzc0ZZRkZuMjZjMDIwZFl5dE1XNEpLZnRSRGptbkxNZkd0UU5TWXUtZm1ZMjZLQ0lGalZWZi1wZjBGTUdHVE51MHRDaFdjVE1TTm9KXzBR?oc=5" target="_blank">Hallan cuerpo baleado de hombre a orillas de carretera en Loíza - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-07-26 17:08">hace 18h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Tradición, música y cultura toman las calles de Loíza - El Vocero de Puerto Rico">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxOOTZRX2w4ZGR0T09KWlFmaUNJVWwydzl1NmgtSE1kYWJvM1d1ek9Ya0hiQlJwbUd5c0o4VTVHR2ExcERhbFhsWlY1dnF4dlJiZXJ0LXVkSHFqeEMybVBiM1FsMzUzQ3E1eG5aZEphazY3aGRGbndTM3ZYd1dPeV9wNGhxVDJLT29FUFVIRFNOWDZsNVlMUnYzdlluRDQ1NnNXdUhxazBTblU0SUExVHdyczZLZDVxTkFYeUdTTzFQa2llRC1qSHA2T1puX3hHQjU4WHfSAdcBQVVfeXFMUEkyYWZVYWtfdW1JcWs1RWJEWktHc3ZKYXp4TUhBalAwN1I5VTA4UURIQmZZSHhwcUdPMDVraXYwdXgyMEktMW5oV0w2TnpQN0dlRXIwdGYzUl9XeFdSMndmQ3Z4UHpJZjV2bDZRR1lEc0J2dFprRVNHOHIwNi1vWFhwcDl0ZGR3Z3k0dzlQbThaTTVYMHNsSnl2MF94VmQwTnBwU0NpaVVZUXhsQVlrUjBZcTdsMDhibl8zakFLdDJWQmRoZkI4cHk3ZmxiLWFfVldyOWdaMlk?oc=5" target="_blank">Tradición, música y cultura toman las calles de Loíza - El Vocero de Puerto Rico</a>
-                    </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-07-26 16:30">hace 19h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="El Municipio Autónomo de Fajardo, junto al Hon. Alcalde José Aníbal “Joey” Meléndez Méndez y la Primera Dama Yarenis M. López De Jesús, te invitan a disfrutar del último día de las Fiestas y Carnaval de Fajardo 2026. 📍Lugar: Frente a la Casa Alcaldía (Pl - facebook.com">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi9gFBVV95cUxOU0t3WDRSUTlIbTFxQTJ0Yi0zVGtMNENUb3RycEE2SXJiY1lua3NORnlWMDdXSnJrSjl1SHNLQ3lWRTlFV0FJdjlyLVdaUWZXRm9kdWt1OTlrNE1rRXZzQTc4Sl9LSVc1UW5hRnE0b1FURU9DblNlWWp2MWI0ZEhDeUZUTVNqVVc4MWpoRjE0bV9mTDFYUHg5aEt2YldqNV9TcDlVS2hkeXF5MjJ1QWtOcExMQzlOUVF0RktTNkE5T1FnUFUwYnBlNUcxN2pVNEo5VFhsTFp4Wi1DUlZoQ2F1MEhrOTg1M0VFRVM5WTM0ZzNrUVRHcHc?oc=5" target="_blank">El Municipio Autónomo de Fajardo, junto al Hon. Alcalde José Aníbal “Joey” Meléndez Méndez y la Primera Dama Yarenis M. López De Jesús, te invitan a disfrutar del último día de las Fiestas y Carnaval de Fajardo 2026. 📍Lugar: Frente a la Casa Alcaldía (Pl - facebook.com</a>
-                    </td>
-                    <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-07-26 15:21">hace 20h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza - facebook.com">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1rS2V2ZlZkajBjaTBmMkZpYWhzMXNwYVhkaEtuM3V5REdUUVQwR2dTbFhJT1BJOUJfc0R6RTNrMnF5VmJ2Z1pEcUNuUmplNVdmVmN1RWc5di1PeTlDTVNPOEJ1TXZRMjZ6SXhEczQ1Q2x6eEd2a25z?oc=5" target="_blank">Municipio de Loíza - facebook.com</a>
-                    </td>
-                    <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-07-26 11:59">hace 23h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Realizarán cierre parcial en tramo de la PR-30 en Humacao este sábado - El Vocero de Puerto Rico">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxPVGlSUGZQUDg3SFYtS1hndnVCOFFBUFM3ZHRPOUZrVDhZTi1oNnpVcTFSaWtud1Y2Q09DNlFldmxWaVFrLTZiRkt4ZVk5ZDZ1LUdlLW5jQ0J2Z3VUWjI0UVI5SlV3WXRfRXZ2ME1hNkdDWmNqZndxaVV4ejlGNktueDVkT1l5bF9tZGtINS0ydFRHcUtJZzkyNGViYnJ2VE9GZUpPWmk0ODRVN3RYLTloVmJiMTBEb1B1MVVYcUFLVDdxWmFnZ1Z3akdOdVp3YWR2b3RiOTR0RHpJbEgtWTdZSHpUc2ZfaXBweVNPT1ZvMXpiTURf0gH6AUFVX3lxTE9hZEdqQ1dILTU4a3RsZEpjMnRCZTZyb0JUMHNoVlYzZ2lHMTBaWjFMempSZU5tbDgzOTR2RWJpMVFPYXF3VkVseFprX01valhJUEl3M3cxWF9MRm5HQ3plZDVxdXo3YldtakJWbzF3enItZURCcElCd3dfTloxZnVqS1Q5TkJIWk5aRGNCaGlXOEhpamRsUUpuV0FzSDdnZ1hlV1l5RnlNOTZ2SktyNy14QWh6TTJIQjB5Z3ZyRGQ2RjZvanJuRWdGMmhmWTFTRGdmdDc2dl9KcHhSRG9RMHpaV0hzSHhJMFN5dTFhbXVzV3g5LVNVUmlGSlE?oc=5" target="_blank">Realizarán cierre parcial en tramo de la PR-30 en Humacao este sábado - El Vocero de Puerto Rico</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-07-26 02:37">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Diócesis de Caguas, Puerto Rico - Página Oficial (@diocesisdecaguaspuertorico) - Komunita - facebook.com">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxORnowaDNyOU11NkVhWVNtZmVyamh3UmZSZGNiQlJhVnF0TkFGMk80cVd4QmU2ZEtORzBJd2RudmxsM3ZiQ2R1WWVRU0dBMEpEUzNwWHI2aFlrdFRwZDRFNTNyVTI5Y29RSEFDRkRwbDd2VVc4SHZTbmlCWkZod0d4Yg?oc=5" target="_blank">Diócesis de Caguas, Puerto Rico - Página Oficial (@diocesisdecaguaspuertorico) - Komunita - facebook.com</a>
-                    </td>
-                    <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-07-26 01:15">hace 1d</td>
+                    <td>Carolina787</td>
+                    <td class="time-ago" data-date="2026-07-30">2026-07-30</td>
                 </tr>
                 
                 
@@ -832,129 +956,7 @@ tr:hover { background: var(--surface2); }
     <h2>📡 Estado de Fuentes</h2>
     <div class="source-container">
         
-        <span class="source-badge ok">🟢 El Nuevo Día: OK</span>
-        
-        <span class="source-badge ok">🟢 NotiCel: OK</span>
-        
-        <span class="source-badge ok">🟢 Radio Isla: OK</span>
-        
-        <span class="source-badge ok">🟢 Es Noticia: OK</span>
-        
-        <span class="source-badge ok">🟢 Telemundo PR: OK</span>
-        
-        <span class="source-badge ok">🟢 Walo Radio: OK</span>
-        
-        <span class="source-badge ok">🟢 El Oriental: OK</span>
-        
-        <span class="source-badge ok">🟢 PR es La Isa: OK</span>
-        
-        <span class="source-badge ok">🟢 NELPR: OK</span>
-        
-        <span class="source-badge ok">🟢 San Juan: OK</span>
-        
-        <span class="source-badge ok">🟢 Carolina: OK</span>
-        
-        <span class="source-badge ok">🟢 Caguas: OK</span>
-        
-        <span class="source-badge ok">🟢 Fajardo: OK</span>
-        
-        <span class="source-badge ok">🟢 Humacao: OK</span>
-        
-        <span class="source-badge ok">🟢 Trujillo Alto: OK</span>
-        
-        <span class="source-badge ok">🟢 Canóvanas: OK</span>
-        
-        <span class="source-badge ok">🟢 Loíza: OK</span>
-        
-        <span class="source-badge ok">🟢 Río Grande: OK</span>
-        
-        <span class="source-badge ok">🟢 Luquillo: OK</span>
-        
-        <span class="source-badge ok">🟢 Ceiba: OK</span>
-        
-        <span class="source-badge ok">🟢 Naguabo: OK</span>
-        
-        <span class="source-badge ok">🟢 Cataño: OK</span>
-        
-        <span class="source-badge ok">🟢 Vieques: OK</span>
-        
-        <span class="source-badge ok">🟢 Culebra: OK</span>
-        
-        <span class="source-badge ok">🟢 FB - San Juan: OK</span>
-        
-        <span class="source-badge ok">🟢 FB - Carolina: OK</span>
-        
-        <span class="source-badge ok">🟢 FB - Trujillo Alto: OK</span>
-        
-        <span class="source-badge ok">🟢 FB - Canóvanas: OK</span>
-        
-        <span class="source-badge ok">🟢 FB - Loíza: OK</span>
-        
-        <span class="source-badge ok">🟢 FB - Río Grande: OK</span>
-        
-        <span class="source-badge ok">🟢 FB - Luquillo: OK</span>
-        
-        <span class="source-badge ok">🟢 FB - Fajardo: OK</span>
-        
-        <span class="source-badge ok">🟢 FB - Ceiba: OK</span>
-        
-        <span class="source-badge ok">🟢 FB - Naguabo: OK</span>
-        
-        <span class="source-badge ok">🟢 FB - Humacao: OK</span>
-        
-        <span class="source-badge ok">🟢 FB - Caguas: OK</span>
-        
-        <span class="source-badge ok">🟢 FB - Cataño: OK</span>
-        
-        <span class="source-badge ok">🟢 FB - Vieques: OK</span>
-        
-        <span class="source-badge ok">🟢 FB - Culebra: OK</span>
-        
-        <span class="source-badge ok">🟢 Gobierno PR: OK</span>
-        
-        <span class="source-badge ok">🟢 Senado PR: OK</span>
-        
-        <span class="source-badge ok">🟢 Cámara PR: OK</span>
-        
-        <span class="source-badge ok">🟢 Junta Gobierno: OK</span>
-        
-        <span class="source-badge ok">🟢 William Miranda: OK</span>
-        
-        <span class="source-badge ok">🟢 Limarys Román: OK</span>
-        
-        <span class="source-badge ok">🟢 Primera Hora: OK</span>
-        
-        <span class="source-badge ok">🟢 El Nuevo Día (GN): OK</span>
-        
-        <span class="source-badge ok">🟢 El Vocero (GN): OK</span>
-        
-        <span class="source-badge ok">🟢 WAPA TV: OK</span>
-        
-        <span class="source-badge ok">🟢 NotiUno: OK</span>
-        
-        <span class="source-badge ok">🟢 WKAQ 580: OK</span>
-        
-        <span class="source-badge ok">🟢 TeleOnce: OK</span>
-        
-        <span class="source-badge ok">🟢 Xposed Magazine: OK</span>
-        
-        <span class="source-badge ok">🟢 NotiCentro WAPA: OK</span>
-        
-        <span class="source-badge ok">🟢 Telenoticias: OK</span>
-        
-        <span class="source-badge ok">🟢 Telemundo FB: OK</span>
-        
-        <span class="source-badge ok">🟢 Las Noticias T11: OK</span>
-        
-        <span class="source-badge ok">🟢 Moluscotv: OK</span>
-        
-        <span class="source-badge ok">🟢 Jay Fonseca: OK</span>
-        
-        <span class="source-badge ok">🟢 Última Hora PR: OK</span>
-        
-        <span class="source-badge ok">🟢 Noticias En Línea: OK</span>
-        
-        <span class="source-badge ok">🟢 En Contacto 787: OK</span>
+        <span class="source-badge err">🔴 RSS - General: Error</span>
         
         <span class="source-badge ok">🟢 News API: OK</span>
         
@@ -968,11 +970,131 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-07-27 11:49:58 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-07-31 01:40:55 AM<br>
     Actualización automática cada 30 min
 </div>
 
+<!-- BACK-TO-TOP FAB -->
+<button class="fab-back-to-top" id="fabTop" onclick="scrollToTop()" title="Volver arriba" aria-label="Volver arriba">⬆</button>
+
 <script>
+// ============================================================
+// DARK MODE TOGGLE
+// ============================================================
+(function() {
+    const html = document.documentElement;
+    const toggle = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('hermes-theme');
+    if (saved === 'dark' || saved === 'light') {
+        html.setAttribute('data-theme', saved);
+    }
+    updateToggleIcon();
+
+    toggle.addEventListener('click', function() {
+        const current = html.getAttribute('data-theme');
+        let next;
+        if (current === 'auto') {
+            // Check actual preference
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            next = prefersDark ? 'light' : 'dark';
+        } else if (current === 'dark') {
+            next = 'light';
+        } else {
+            next = 'dark';
+        }
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('hermes-theme', next);
+        updateToggleIcon();
+    });
+
+    function updateToggleIcon() {
+        const theme = html.getAttribute('data-theme');
+        let isDark;
+        if (theme === 'auto') {
+            isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        } else {
+            isDark = (theme === 'dark');
+        }
+        toggle.textContent = isDark ? '☀️' : '🌙';
+        toggle.title = isDark ? 'Modo claro' : 'Modo oscuro';
+    }
+
+    // Listen for system preference changes when in auto mode
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+        if (html.getAttribute('data-theme') === 'auto') {
+            updateToggleIcon();
+        }
+    });
+})();
+
+// ============================================================
+// SEARCH CLEAR BUTTON
+// ============================================================
+(function() {
+    const input = document.getElementById('searchInput');
+    const clearBtn = document.getElementById('searchClear');
+    input.addEventListener('input', function() {
+        clearBtn.classList.toggle('visible', input.value.length > 0);
+    });
+})();
+
+function clearSearch() {
+    const input = document.getElementById('searchInput');
+    input.value = '';
+    document.getElementById('searchClear').classList.remove('visible');
+    onSearch();
+    input.focus();
+}
+
+// ============================================================
+// STICKY TOOLBAR — Add shadow when scrolled
+// ============================================================
+(function() {
+    const toolbar = document.getElementById('filterToolbar');
+    let ticking = false;
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            requestAnimationFrame(function() {
+                if (window.scrollY > 10) {
+                    toolbar.classList.add('scrolled');
+                } else {
+                    toolbar.classList.remove('scrolled');
+                }
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+})();
+
+// ============================================================
+// BACK-TO-TOP FAB
+// ============================================================
+(function() {
+    const fab = document.getElementById('fabTop');
+    let ticking = false;
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            requestAnimationFrame(function() {
+                if (window.scrollY > 400) {
+                    fab.classList.add('visible');
+                } else {
+                    fab.classList.remove('visible');
+                }
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+})();
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ============================================================
+// KEEP ALL EXISTING JS LOGIC BELOW — DO NOT MODIFY
+// ============================================================
 let activeMunicipio = 'todos';
 
 function getMunicipios(el) {
@@ -999,6 +1121,8 @@ function updateTimeGroupHeaders() {
 function onSearch() {
     const q = document.getElementById('searchInput').value.toLowerCase();
     const rows = document.querySelectorAll('.article-row');
+    const noResults = document.getElementById('noResults');
+    const articlesWrapper = document.querySelector('.articles-wrapper');
     let visible = 0;
     rows.forEach(row => {
         const title = row.getAttribute('data-titular') || '';
@@ -1016,6 +1140,15 @@ function onSearch() {
     });
     updateTimeGroupHeaders();
     document.getElementById('resultCount').textContent = visible + ' resultados';
+
+    // Show/hide no-results message
+    if (visible === 0 && rows.length > 0) {
+        noResults.classList.add('visible');
+        articlesWrapper.style.display = 'none';
+    } else {
+        noResults.classList.remove('visible');
+        articlesWrapper.style.display = '';
+    }
 }
 
 // Municipality filter
