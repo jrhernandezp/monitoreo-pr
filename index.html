@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-08-01 07:27:48 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-08-03 12:20:17 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">46</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">46</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">24</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">24</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-08-01 07:27:48 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-08-03 12:20:17 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -347,6 +347,19 @@ tr:hover { background: var(--surface2); }
 
 <!-- BREAKING NEWS -->
 
+<div class="section breaking-section">
+    <div class="breaking-banner">
+        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">hace 1h</span> —
+            <a href="https://noticel.com/noticias/20260803/declaran-emergencia-y-cuarentena-agricola-por-mosca-del-mediterraneo/?utm_source=rss&utm_medium=rss&utm_campaign=declaran-emergencia-y-cuarentena-agricola-por-mosca-del-mediterraneo" target="_blank">Declaran emergencia y cuarentena agrícola por mosca del Mediterráneo</a>
+            <span style="opacity:0.6"> [San Juan, Loíza, Cataño]</span>
+        </div>
+        
+    </div>
+</div>
+
 
 <!-- MUNICIPALITIES -->
 <div class="section">
@@ -355,7 +368,7 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">7</div>
+            <div class="muni-count">5</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -363,34 +376,34 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">3</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
+        <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">2</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Luquillo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
             <div class="muni-name">Luquillo</div>
-            <div class="muni-count">6</div>
+            <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
+        <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">1</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
+        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">3</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
@@ -398,34 +411,34 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Ceiba')">
+        <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
             <div class="muni-name">Ceiba</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">1</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">12</div>
+            <div class="muni-count">4</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <div class="muni-name">Cataño</div>
+            <div class="muni-count">2</div>
+        </div>
+        
+        <div class="muni-card active" onclick="filtrarPor('Vieques')">
+            <div class="muni-name">Vieques</div>
             <div class="muni-count">3</div>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
-            <div class="muni-name">Vieques</div>
-            <div class="muni-count">0</div>
-        </div>
-        
-        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
+        <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">0</div>
+            <div class="muni-count">2</div>
         </div>
         
     </div>
@@ -447,473 +460,250 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="Humacao" data-titular="Ballenas piloto varadas en playa de Humacao regresan al mar y están a salvo - wapa.tv">
+                <tr class="article-row" data-municipios="Vieques" data-titular="Denuncian limitaciones de estacionamiento para personas con impedimentos en terminal marítimo de Vieques">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/08/03/denuncian-limitaciones-de-estacionamiento-para-personas-con-impedimentos-en-terminal-maritimo-de-vieques/" target="_blank">Denuncian limitaciones de estacionamiento para personas con impedimentos en terminal marítimo de Vieques</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-08-03 15:56">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Naguabo" data-titular="Expo Pasaporte del Estudiante Naguabeño 2026 supera expectativas con amplia participación de familias">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/08/03/expo-pasaporte-del-estudiante-naguabeno-2026-supera-expectativas-con-amplia-participacion-de-familias/" target="_blank">Expo Pasaporte del Estudiante Naguabeño 2026 supera expectativas con amplia participación de familias</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-08-03 15:27">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Entregan bultos y materiales escolares de estudiantes del distrito de Humacao">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxPd000ZnBwMU9VTE9OSFlMeU1sZ2pXQ2c3SFh2dlF6UVlvQWtGRFJld3BJbWZlcG8zbzBabFV6V2ZEaTBrMWVid2VRRjZsUTVDeGtfV1NwTE9yR2djS0QyeUJhOEM4WjB3Vm5BLVpvd0pCTHdnTEJVdVJ2SnpzZkNycTVlbnFyRWlESk1YODhzSUdadXRYbHQtVlRWMW05aEZ5SW1FbE9MYVlkNEJQSmk2Tm1QdzBqSkk4UVBuNWtWMktUSC1DVWpyTnJEcGpyNVkwdkgzTUln?oc=5" target="_blank">Ballenas piloto varadas en playa de Humacao regresan al mar y están a salvo - wapa.tv</a>
+                        <a href="https://waloradio.com/2026/08/03/entregan-bultos-y-materiales-escolares-de-estudiantes-del-distrito-de-humacao/" target="_blank">Entregan bultos y materiales escolares de estudiantes del distrito de Humacao</a>
                     </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-08-01 09:53">ahora</td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-08-03 15:16">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Caguas" data-titular="“Ahora soy libre”: mujer que sobrevivió la drogadicción en las calles narra su transformación en La Perla de Gran PrecioCynthia Sevilla Pérez fue participante de la organización que abrirá un nuevo proyecto en Caguas, en donde 2,208 personas viven con VIH">
+                <tr class="article-row" data-municipios="Culebra" data-titular="¡Qué bonito me queda el mar! 🌊🤍 Amo ser caribeña, y este fin de semana en Culebra, PR, me lo recordó. No iba desde hace más de 10 años, y esta vez no solo disfruté de sus playas: conocí a su gente y entendí por qué aman y defienden tanto esta isla. Gra - facebook.com">
+                    <td><span class="muni-tag">Culebra</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxNSWQxd0ZBcEVYbUd1cjN2TkhFdHFCZnNDcnNvV2NSSTE3aU14SWVIY05fbWplN1lHWFR0NE9CbU1WS2Y5elpuVF82emt4TjdOZVdkYTkzZENXWC1iVUNIV2ZLZzY3cGZaU0d3VFZOQ3BkWDgxOUhyY0xaWEt6NVRPazl3d3h3N2c4bnltcTZTeW5Ib256NVNucGxRNlYwTGZWTFJJbU5nYWVBZWdMMVpfWUlDMFJvZnQxTlIxM0R6QkxYbVYtNGVXS1pDVS1BQkU2YTBfRF9rR21rWDlNVElBUWZDRmVEQkNydktEMXRmU0lGQQ?oc=5" target="_blank">¡Qué bonito me queda el mar! 🌊🤍 Amo ser caribeña, y este fin de semana en Culebra, PR, me lo recordó. No iba desde hace más de 10 años, y esta vez no solo disfruté de sus playas: conocí a su gente y entendí por qué aman y defienden tanto esta isla. Gra - facebook.com</a>
+                    </td>
+                    <td>FB - Culebra</td>
+                    <td class="time-ago" data-date="2026-08-03 14:42">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Apóstol de Humacao Migdalia Torres presenta libro bilingüe con 80 devocionales para  fortalecer la fe">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/08/03/apostol-de-humacao-migdalia-torres-presenta-libro-bilingue-con-80-devocionales-para-fortalecer-la-fe/" target="_blank">Apóstol de Humacao Migdalia Torres presenta libro bilingüe con 80 devocionales para  fortalecer la fe</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-08-03 14:24">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Quique Torres denuncia falta de apoyo del Municipio de Humacao para tercera exaltación de Humacaeños Ilustres">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/08/03/quique-torres-denuncia-falta-de-apoyo-del-municipio-de-humacao-para-tercera-exaltacion-de-humacaenos-ilustres/" target="_blank">Quique Torres denuncia falta de apoyo del Municipio de Humacao para tercera exaltación de Humacaeños Ilustres</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-08-03 14:08">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Tribunal cita vista en su fondo por demanda de San Juan contra la AAA">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/tribunal-cita-vista-en-su-fondo-por-demanda-de-san-juan-contra-la-aaa/?utm_source=rss&utm_medium=rss&utm_campaign=tribunal-cita-vista-en-su-fondo-por-demanda-de-san-juan-contra-la-aaa&utm_source=rss&utm_medium=rss&utm_campaign=tribunal-cita-vista-en-su-fondo-por-demanda-de-san-juan-contra-la-aaa" target="_blank">Tribunal cita vista en su fondo por demanda de San Juan contra la AAA</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-08-03 13:33">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Vaqueros buscarán hoy su pase a la final en Caguas">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://www.elnuevodia.com/noticias/locales/notas/ahora-soy-libre-mujer-que-sobrevivio-la-drogadiccion-en-las-calles-narra-su-transformacion-en-la-perla-de-gran-precio/" target="_blank">“Ahora soy libre”: mujer que sobrevivió la drogadicción en las calles narra su transformación en La Perla de Gran PrecioCynthia Sevilla Pérez fue participante de la organización que abrirá un nuevo proyecto en Caguas, en donde 2,208 personas viven con VIH</a>
+                        <a href="https://noticel.com/deportes/20260803/vaqueros-buscaran-hoy-su-pase-a-la-final-en-caguas/?utm_source=rss&utm_medium=rss&utm_campaign=vaqueros-buscaran-hoy-su-pase-a-la-final-en-caguas" target="_blank">Vaqueros buscarán hoy su pase a la final en Caguas</a>
                     </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-08-01 07:27">ahora mismo</td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-08-03 12:20">ahora mismo</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="🚨 ¡En vivo ahora! 🚨 Estamos junto a Millie Méndez en Telemundo PR y Radio Isla 1320 hablando sobre los temas más importantes para San Juan y Puerto Rico. 🇵🇷 ¡Conéctate a Pega’os en la Mañana y acompáñanos! https://www.telemundopr.com/en-vivo - facebook.com">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVnNndWxOcDMyM19PZkZxUVRrN1E3aDRWNldJUlpBVk1XTVZoUWRKdE9NN1czcWpqSmpreW5FQ2ctSGtWN3JMcXFiTHZnMFZJRV9YZVczOWlET0hXQ2JiclFYZl8zaTVkN1NlNTJrbmMxYWhEWnVwYnNiOWZCbVVOQVNMaXpBMXdlOHp1SjlVLWJ5aVVHeUNqLTBvZVJyS3lLU2hNNFE1YVR4czhzNGRLZ0lVLWVUOTFHVTIwV0UwX2liOFZqS2RTSG16ZDlKaGdQZkx2SmdUcUdyOC1QLWktZTYyT3o?oc=5" target="_blank">🚨 ¡En vivo ahora! 🚨 Estamos junto a Millie Méndez en Telemundo PR y Radio Isla 1320 hablando sobre los temas más importantes para San Juan y Puerto Rico. 🇵🇷 ¡Conéctate a Pega’os en la Mañana y acompáñanos! https://www.telemundopr.com/en-vivo - facebook.com</a>
+                    </td>
+                    <td>Telemundo FB</td>
+                    <td class="time-ago" data-date="2026-08-03 11:28">hace 52min</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz hasta 12 horas">
-                    <td><span class="muni-tag">San Juan</span></td>
+                <tr class="article-row" data-municipios="Carolina" data-titular="Muere joven de 21 años tras caerle encima un montacargas mientras trabajaba en Carolina">
+                    <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://nelpr.com/2026/07/31/se-ira-la-luz-hasta-12-horas-4/" target="_blank">Se irá la luz hasta 12 horas</a>
+                        <a href="https://esnoticiapr.com/muere-joven-de-21-anos-tras-caerle-encima-un-montacargas-mientras-trabajaba-en-carolina/" target="_blank">Muere joven de 21 años tras caerle encima un montacargas mientras trabajaba en Carolina</a>
                     </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-08-01 03:33">hace 3h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Declaran el 21 de marzo Día de las Mujeres Tocadoras y Bailadoras de Bomba de Loíza - Periódico El Sol de Puerto Rico">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPTFdLbzZIU3poQ1dRZEZUbVh5ZU8wT2JxOFpqSldHbnZIQkRfb1BHa3hvemxwakhnN2d0UnU1alQ0Zmhnd29pa1lWOWRWZ2RCRXFFbC1YelVRellVNnRBc1ZQNjF5ZmFpLWxvQzZtWjN4MU1XanJuMXg5SGhhcmp5YzYyT1UtS3JxTXlPLTZWUEt1UU91QTJsdDdqTlJHbllCY05wUFgzbUxndTFzOWs0VGVlNA?oc=5" target="_blank">Declaran el 21 de marzo Día de las Mujeres Tocadoras y Bailadoras de Bomba de Loíza - Periódico El Sol de Puerto Rico</a>
-                    </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-08-01 02:10">hace 5h</td>
-                </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="Ceiba" data-titular="Vota por Ceiba!!!😍🥰❤️ Conquistando Puerto Rico!!! Puerto Rico Gana!!!😜🥰❤️ - facebook.com">
-                    <td><span class="muni-tag">Ceiba</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZHU0UzJ0aTZKVTVtY0V6ZDJCU3VYaGx2WldVYzIwR0hqd2NsVmw3RkJEZUVYeHBXNnpPZlRNYm5XcDVaV3JnZlFWUVZNRDlyTmE5dEJzLWtXQ3kwZXd0REE0NHI5R1dQYTJMeFJaVkZlczMzdmZHUjdoWmFxX2w2MnFUVTBmN0hadkZGRXFoSzVWNWxoT0hMQUVJN0dBYURSRFdHcWswZFMyNmFCV0p3b0VDSl9BNkNVaFRmNWRNaUNjTWVsYXl4TFJ4eDhpZ1NVQXc?oc=5" target="_blank">Vota por Ceiba!!!😍🥰❤️ Conquistando Puerto Rico!!! Puerto Rico Gana!!!😜🥰❤️ - facebook.com</a>
-                    </td>
-                    <td>FB - Ceiba</td>
-                    <td class="time-ago" data-date="2026-07-31 23:40">hace 7h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Más de 100,000 sin luz por relevos de carga">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://nelpr.com/2026/07/31/mas-de-100000-sin-luz-por-relevos-de-carga-4/" target="_blank">Más de 100,000 sin luz por relevos de carga</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-31 22:40">hace 8h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="“Una diferencia en prioridades”: presidente de la AAA rechaza que exista un “impasse” con el Municipio de San Juan - El Nuevo Día">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxPN0pfaXVFbmpRdkVTSXE2cFdNWnV4ZWRJcVRlclhzX3NTM1RFREhJNEt6b1RmdHVNZG12Rk4zUWF0WU5QWExrcE55UnEyazlMNjFtTXBVSU9OUkpuUnppdEtKblpUUk0tUnFvNW1neWJWOGVqN2ZWTjNRUXRRcFdyU3RtYmlTVGYycEZ4amlUaXhGUlVjQ2lhOTlYZnpGdXE1SFZkcGdWTEFmRDFnM01ZdDRPekdNUGlVNTc2LV9xRTdDbGhGeFhtLUpwZWtUaFJPd09Ka0hXZzE0U2NwSGxFTURUaWhTdS0wenZ4bi1lWVBqUQ?oc=5" target="_blank">“Una diferencia en prioridades”: presidente de la AAA rechaza que exista un “impasse” con el Municipio de San Juan - El Nuevo Día</a>
-                    </td>
-                    <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-07-31 22:04">hace 9h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBNd3pOY1BZSEtRVEVEZ3lHem16NVJyRmFrY2JJV05tQkVNbmhsX2E5ZVRhYzFWM3VqRC12UTNHd2lmV0kzRHROSENTRFJXVHh0d2lIanNmUDRzbkYtQ21pa1QtemhkTW8?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
-                    </td>
-                    <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-07-31 21:54">hace 9h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Conductor está grave tras salir expulsado en accidente en Luquillo - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOM3doblBveWk5Ymk3UlEyS0U5UDZFV0V6RndTWjctVTdqekdmRXgzcGtPa0ZSczFvZlNkMUdEWGxQcWJkckJfQV9nckJYN3JYeENpTDBXd01La0NjN3ViQURhNmtVQmZGcnNrSXZxVDFxQU9Td0JEZFZYV3hmS0RjNkJhc0xMZ2puUmdEYktHUl90OFZqRlZHWUdnYXp4YWRJLUFubmF3bDFDRGQzVmRJUmI1VlBvNm1ScEktbEtwUVlBSVNWWHRFTi1WMNIB0wFBVV95cUxPVHZiMm1Jd2hRdUJVM3JOZEZTeE5DWjdMRFRPaUJzbHFWT1E3NGdCbWVwcVpHQmFGWGw1aGpENUJGQmJDeFNrNnVYOG1VQ0ROX1Z1TVZDampwZFdDaXR0Vm1UbDR1WmEwZHAzN0RqTHZCT2JXWWVQX2tPNWVSMGhiM21WQ3NpXzFPZ2JZc1I3b2FFa3VNLVVNcHYzaC0zUG5pSlZpUDdxV2ZWYUU4V1VHT190RVE3a0JITDgxdG5ESVl4V0ZTbE1ZQWlvREtKb1BBNmxv?oc=5" target="_blank">Conductor está grave tras salir expulsado en accidente en Luquillo - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-07-31 21:24">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Una persona sale expulsada de un vehículo en accidente de tránsito">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://nelpr.com/2026/07/31/una-persona-sale-expulsada-de-un-vehiculo-en-accidente-de-transito/" target="_blank">Una persona sale expulsada de un vehículo en accidente de tránsito</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-31 20:42">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Tradición, música y cultura toman las calles de Loíza - El Vocero de Puerto Rico">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxOOTZRX2w4ZGR0T09KWlFmaUNJVWwydzl1NmgtSE1kYWJvM1d1ek9Ya0hiQlJwbUd5c0o4VTVHR2ExcERhbFhsWlY1dnF4dlJiZXJ0LXVkSHFqeEMybVBiM1FsMzUzQ3E1eG5aZEphazY3aGRGbndTM3ZYd1dPeV9wNGhxVDJLT29FUFVIRFNOWDZsNVlMUnYzdlluRDQ1NnNXdUhxazBTblU0SUExVHdyczZLZDVxTkFYeUdTTzFQa2llRC1qSHA2T1puX3hHQjU4WHfSAdcBQVVfeXFMUEkyYWZVYWtfdW1JcWs1RWJEWktHc3ZKYXp4TUhBalAwN1I5VTA4UURIQmZZSHhwcUdPMDVraXYwdXgyMEktMW5oV0w2TnpQN0dlRXIwdGYzUl9XeFdSMndmQ3Z4UHpJZjV2bDZRR1lEc0J2dFprRVNHOHIwNi1vWFhwcDl0ZGR3Z3k0dzlQbThaTTVYMHNsSnl2MF94VmQwTnBwU0NpaVVZUXhsQVlrUjBZcTdsMDhibl8zakFLdDJWQmRoZkI4cHk3ZmxiLWFfVldyOWdaMlk?oc=5" target="_blank">Tradición, música y cultura toman las calles de Loíza - El Vocero de Puerto Rico</a>
-                    </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-07-31 20:40">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Accidente provoca el cierre parcial de la PR-3 en Luquillo">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://noticel.com/noticias/la-calle/20260731/accidente-provoca-el-cierre-parcial-de-la-pr-3-en-luquillo/?utm_source=rss&utm_medium=rss&utm_campaign=accidente-provoca-el-cierre-parcial-de-la-pr-3-en-luquillo" target="_blank">Accidente provoca el cierre parcial de la PR-3 en Luquillo</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-07-31 20:35">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Atienden accidente grave en la PR-3 de Luquillo - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWGhDTnZwdG5KRjNxcDZ0ZWg4NVNlV2x2U1l0SzlMQ1dnVG41bGNudjVpRWJwNVk3NEdSZ1pPelVTZmZseFNhaUNkcnRvelZBaTlBVW1pNDkwVHFCbjgyelVHTEg3YzFEQTBmUFFtREtLRVZTVFlJcS1xS3dGQ2Mtdnl1aGY1VklEVDdBTDBTVFVqQmw4TThBX0NBMkJlRXBMbmkyTFFJcFfSAbABQVVfeXFMTU56SzdxMTdaZXFYd0dpYWFLUGwxR3luOG5FQ09tTkRBZ09ON1ktY0hZckVvSVV5dHJibU54eDZJLTVGM3JZWFByNlFVOTJBN1N0cEFBVmE4M2JseTVTcmhCMC1jbmJUclMxYjJyWDRnSEtIaXZjeGJZWXZPdHpORld5Z0hrcFhYeHBTc1F2YWZzaFBpdngxZ0M2MWdvRzNsQjZTWTZib2RZeTBNQlR6TEE?oc=5" target="_blank">Atienden accidente grave en la PR-3 de Luquillo - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-07-31 20:33">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Accidente grave obliga cierre de la PR-3 en Luquillo - Metro Puerto Rico">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPVlU1VjVNMnNTUFNxdnMyS0hlbHR5Q2RQemQ3Y3hPSHZnYjM0bFltZEd6ZHhUdHI5NUlISEdWTFFid1pwb0R0MG4ybEp1WWJDOWUwU29UdUw5M3h1NmZHZkNQcFNzMjBEbDdoaXdzY2pOZ2tzLTBNM2FtcTZfOVh0akFveW1fNXJmc1R5TWdxZUtWVnBhSFNMQVZ3?oc=5" target="_blank">Accidente grave obliga cierre de la PR-3 en Luquillo - Metro Puerto Rico</a>
-                    </td>
-                    <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-07-31 20:19">hace 11h</td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-08-03 11:16">hace 1h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan,Loíza,Cataño" data-titular="Declaran emergencia y cuarentena agrícola por mosca del Mediterráneo">
                     <td><span class="muni-tag">San Juan, Loíza, Cataño</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://esnoticiapr.com/declaran-emergencia-y-cuarentena-agricola-por-mosca-del-mediterraneo/" target="_blank">Declaran emergencia y cuarentena agrícola por mosca del Mediterráneo</a>
+                        <a href="https://noticel.com/noticias/20260803/declaran-emergencia-y-cuarentena-agricola-por-mosca-del-mediterraneo/?utm_source=rss&utm_medium=rss&utm_campaign=declaran-emergencia-y-cuarentena-agricola-por-mosca-del-mediterraneo" target="_blank">Declaran emergencia y cuarentena agrícola por mosca del Mediterráneo</a>
                     </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-07-31 19:58">hace 11h</td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-08-03 10:26">hace 1h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño - facebook.com">
+                
+                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Comunidades estarán hasta 13 horas sin luz">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/08/02/comunidades-estaran-hasta-13-horas-sin-luz-2/" target="_blank">Comunidades estarán hasta 13 horas sin luz</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-08-02 23:02">hace 13h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Miles sin luz por relevos de carga">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/08/02/miles-sin-luz-por-relevos-de-carga-5/" target="_blank">Miles sin luz por relevos de carga</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-08-02 22:37">hace 13h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="El Municipio Autónomo de Cataño rechaza categóricamente la información falsa que circula en redes sociales sobre un alegado incidente ocurrido anoche. En primer lugar, es falso que los hechos descritos ocurrieran en la Plaza Pública de Cataño, ya que e - facebook.com">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPRkd6OXNyVWFNWFpkenc4VE1sNWZ3a0J5TGNVZDltcDdIbGpVSkExT0VSeXVMLXY5M2I5LVh2V3pqVHc4SUJUbnowbU9mbHFqZF81eUxSbVVuMmwtQm9Tbjk4Q2hOeW1ycXM1UTZVYU1sVk5GX3ktN1l4SjBGUUI5UFBkNlNiRmZ1UkM3RS1TX044MkxpdEZCLTZ5RnVCdw?oc=5" target="_blank">Municipio Autónomo de Cataño - facebook.com</a>
+                        <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxOV0Zxd2hKZkd4SWxTOXpjSlBzRVcxU3o4d2x3c3lnZ2dlNGZLWVZLVnhVa2lyTTFZWWdUX3hxMktweTV3djJ3cjY4ZGZiMW9aZ2JVeGVoRVJzWllHVklfcDBjV3pIb19mT01kWGFiTl9qM3FtQjNjbTNiczItLUhRaFNDNXVXN3Ria2Q1eFZOUFctektPN01ScWZQS2tWcjJfMjkyVjhiUk9JVmRib3VrNnNPN21ISmFPeVpkUVAyWXg2c2RXRjAxUXBMTUhkd00tMGhFRVBiRW9qQUg3cnYzTTFaVFhzWEU4T3pBRQ?oc=5" target="_blank">El Municipio Autónomo de Cataño rechaza categóricamente la información falsa que circula en redes sociales sobre un alegado incidente ocurrido anoche. En primer lugar, es falso que los hechos descritos ocurrieran en la Plaza Pública de Cataño, ya que e - facebook.com</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-07-31 19:57">hace 11h</td>
+                    <td class="time-ago" data-date="2026-08-02 22:36">hace 13h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Humacao" data-titular="Ballenas piloto en Humacao: una presencia normal en el Caribe, pero su cercanía a la costa requiere vigilancia - El Vocero de Puerto Rico">
-                    <td><span class="muni-tag">Humacao</span></td>
+                <tr class="article-row" data-municipios="Vieques" data-titular="El Municipio de Vieques y su alcalde, José A. Junito Corcino Acevedo, felicitan a Dylan Feliciano Ventura por su destacada participación en el torneo de boxeo de los Juegos Centroamericanos y del Caribe, celebrados en la República Dominicana 2026. Aun - facebook.com">
+                    <td><span class="muni-tag">Vieques</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi_gFBVV95cUxNazZ3aUg3Um04Nm1jYldaRGZwZ1VsMGxod1BvT01wTWZCMmdKVktUQnE2Ynh5TEpPN3FRX2NvVXVoYjJ6OUhjQkZNV3dteXlFMDNEbk8yazh3ZV8tZ0RzYnlqOWpWSjlBaEp0ZzlCa2ZwMVVrT25POHJuVTZzaGhveng1Z2NLVUNvZEVpd3JSU2J2LVhlek4yOURuSGtfYTlrdEVPRkN3a0FCRkZtc3BSMmI0bnFCMUtVQU96RFM1UkVpbVQwMDhMOGtGZk5ZQkdqM0JTWW1iWXhxaGNKdnRxYmU0OXZvcTNiV2FGUE9vSUs2UGRSeHhIR2JYSHVoZ9IB_gFBVV95cUxNazZ3aUg3Um04Nm1jYldaRGZwZ1VsMGxod1BvT01wTWZCMmdKVktUQnE2Ynh5TEpPN3FRX2NvVXVoYjJ6OUhjQkZNV3dteXlFMDNEbk8yazh3ZV8tZ0RzYnlqOWpWSjlBaEp0ZzlCa2ZwMVVrT25POHJuVTZzaGhveng1Z2NLVUNvZEVpd3JSU2J2LVhlek4yOURuSGtfYTlrdEVPRkN3a0FCRkZtc3BSMmI0bnFCMUtVQU96RFM1UkVpbVQwMDhMOGtGZk5ZQkdqM0JTWW1iWXhxaGNKdnRxYmU0OXZvcTNiV2FGUE9vSUs2UGRSeHhIR2JYSHVoZw?oc=5" target="_blank">Ballenas piloto en Humacao: una presencia normal en el Caribe, pero su cercanía a la costa requiere vigilancia - El Vocero de Puerto Rico</a>
+                        <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxPNGtjczhXQzBDZU44dnRsTmlLcUUzd0lIOWJwMjdJeUxJYmhscVc0ZlZ0WEFEVHBzWXJfZHJxeVRGMUNRZmk5cUJWWHpkeWlfVmxlM1BrZFA4ZU9lRTdQQkV4dnU1ek5jTTdna0xOcHZJRFdTMkdaaHVfTHFOZU5lVkJZRC05Mkg5Tk9IM1BkalNQNDJCcmQ1WFc1TGd0REQzTVNJSDUwT0s4bXV6Q0QwRzBpYUxsWWJlTUZIVXVJRm81T1JMRDJ2blNDRWwyN21LRVFLSVR6SXNvTzc3RVlubDUxMUs5R2M?oc=5" target="_blank">El Municipio de Vieques y su alcalde, José A. Junito Corcino Acevedo, felicitan a Dylan Feliciano Ventura por su destacada participación en el torneo de boxeo de los Juegos Centroamericanos y del Caribe, celebrados en la República Dominicana 2026. Aun - facebook.com</a>
                     </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-07-31 19:41">hace 11h</td>
+                    <td>FB - Vieques</td>
+                    <td class="time-ago" data-date="2026-08-02 18:18">hace 18h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Hallan cadáver atado de manos y baleado en Trujillo Alto - El Vocero de Puerto Rico">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                <tr class="article-row" data-municipios="Carolina" data-titular="Empleado muere tras quedar atrapado por un montacargas en Carolina - Primera Hora">
+                    <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxQeGNWS05JZjM1WHZvQ2tPMnpKUEtpTktpNGxMdzNGNUNrS1hMRlZxYzB5Z3NKeXdtNklFb1Jwdm9BckQwYTJNb1cxRHowZkpreGt1UjR4SjlWSDFWTU5LeWxBdlBEWmo0MnhHSVlEY3laVGZOUENXTVFwOFhSSmluNzlSVVZCS21GV0stSm9VVGVjTnBRWk84dnZDdC1ra3ZmX0FjeWloQllHVy1HMFg4cC1ySEtqTDFJNlVpQkxuWVMzeUU5YU1oNWk5QzB1djBveFpwejN4RWpoLThXRmJtN0FuT0lmX3hmREHSAe8BQVVfeXFMT2dxb0NLZkpTZExvSFNPb1h0cnVYb0tWMjdxanZfTFZydTJBSXNJRXR3ZlFNbWJnUkFYY1k1TFBsZEpyRjhrWVR3LTBwVnpvUXI5X1c0UV85TEZtTjk0dXZpZWZJTTdxNmF1ZkhaSHJWdTNwYkdvX1hSUnY3eDhBS1duTlcxNjdoamt2SEhQVng3V2V6NHJHdDIxTFNTMU91OXctNV91ZHF3cGRlTTRBN3B1TmJ3WFFlMmxNdHk3SG9lWjFhV282d3laM2U0c2ZKeEhuQVhqVTY2ZGx5bFNCRWFPNGZLLUlnMjlwOW1fSjQ?oc=5" target="_blank">Hallan cadáver atado de manos y baleado en Trujillo Alto - El Vocero de Puerto Rico</a>
+                        <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTEFSYXhLakgyNEo2bF90T1JWcUM4cUpiN0IzS1JPeXVLUmdrbUVZb2xkakNTSWVIcC1HTXNwQ1BqVTgyaFVMWVlicmlxQkpKZFYtMUhsczFmR2h2UUpiUExMTjd5My1ncWk5d3h6UGJybkVlZzhBTFFxM3AzY1IwelhIbkZtUWxTM3piVmc3TUp1cXJPLXVTcjF3RTdnWEJZMGVWTVlXZWlPX3dfOGpIbUc1Rlg0LUhCZFlYWUdrTUx5R1k2QUR0bQ?oc=5" target="_blank">Empleado muere tras quedar atrapado por un montacargas en Carolina - Primera Hora</a>
                     </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-07-31 19:40">hace 11h</td>
+                    <td>Primera Hora</td>
+                    <td class="time-ago" data-date="2026-08-02 17:32">hace 18h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Reportan accidente de carácter grave en Luquillo - Primera Hora">
-                    <td><span class="muni-tag">Luquillo</span></td>
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="🏃‍♀️ ¡Canóvanas fue sede del gran cierre de La Isla Run Trip! Nuestra alcaldesa, Lornna Soto, compartió con cerca de 2,000 participantes que aceptaron el reto de recorrer Manatí, Aguadilla y culminar esta gran experiencia deportiva en nuestro municipio. - facebook.com">
+                    <td><span class="muni-tag">Canóvanas</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOb3dFZm1ySmtyc3J6ZUVldno4d2ZqZUpkdERuYVRacUtlVXQxMk5rcXhWcGg4OGh2eDN0SnlQNmlzLWZtbEwwVEczLWVmeDJkM0NFT2NRQkJrcVZZTWFUbng5bUJZa1RCOURDdmYzRXJ1Vjg0WXJkRXI3VFF0OVM4Y25jb0Z3aTRGR3dfaHpTbDBSdkF5Y19YYW9RZDY0N0hoQlBvc3dkLU9DWmNTSFFtdA?oc=5" target="_blank">Reportan accidente de carácter grave en Luquillo - Primera Hora</a>
+                        <a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxPS3BDVzB0SDdTWUM3VE9OSHZsOUx3YjV1UUVoNnNmV3VFYUVJd2JvTHhhSFRNNGF3a0FhdjNobWdDc013OXhQNWluazVPa3J6VnkyMXY3RlZ3NWR6WlRCUFhlcjkxRURFeEQ0aHZKZEJCb0JQUVBEMmtTNXJzWlg1bTRMejIyQ09fZjVVN2NqalRsdFFjWmtvX3ZRR3RnbEpKVkFJcHJoMUVqaWtENk5OMjZVZ2FZRHlMYVp2REhWcWdKZVRIZ1ZnbnhHVzJnbzVnZjZRbGZZdjM4SlVHQUd4UVhQNUF2ZWRINWYxMm5Qd3luN0xs?oc=5" target="_blank">🏃‍♀️ ¡Canóvanas fue sede del gran cierre de La Isla Run Trip! Nuestra alcaldesa, Lornna Soto, compartió con cerca de 2,000 participantes que aceptaron el reto de recorrer Manatí, Aguadilla y culminar esta gran experiencia deportiva en nuestro municipio. - facebook.com</a>
                     </td>
-                    <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-07-31 19:40">hace 11h</td>
+                    <td>FB - Canóvanas</td>
+                    <td class="time-ago" data-date="2026-08-02 17:11">hace 19h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Humacao" data-titular="Hombre asegura que video viral no muestra una agresión, sino un presunto robo ocurrido en Humacao">
-                    <td><span class="muni-tag">Humacao</span></td>
+                <tr class="article-row" data-municipios="Carolina" data-titular="Empleado muere en accidente laboral">
+                    <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/07/31/hombre-asegura-que-video-viral-no-muestra-una-agresion-sino-un-presunto-robo-ocurrido-en-humacao/" target="_blank">Hombre asegura que video viral no muestra una agresión, sino un presunto robo ocurrido en Humacao</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-07-31 19:38">hace 11h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Romero le pide al DTOP que convoque a la comunidad sobre proyecto cerca de El Morro">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://noticel.com/ultima-hora/20260731/romero-le-pide-al-dtop-que-convoque-a-la-comunidad-sobre-proyecto-cerca-de-el-morro/?utm_source=rss&utm_medium=rss&utm_campaign=romero-le-pide-al-dtop-que-convoque-a-la-comunidad-sobre-proyecto-cerca-de-el-morro" target="_blank">Romero le pide al DTOP que convoque a la comunidad sobre proyecto cerca de El Morro</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-07-31 18:55">hace 12h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Emiten advertencia de inundaciones y alerta especial por fuertes tormentas eléctricas">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://nelpr.com/2026/07/31/emiten-advertencia-de-inundaciones-y-alerta-especial-por-fuertes-tormentas-electricas/" target="_blank">Emiten advertencia de inundaciones y alerta especial por fuertes tormentas eléctricas</a>
+                        <a href="https://nelpr.com/2026/08/02/empleado-muere-en-accidente-laboral-2/" target="_blank">Empleado muere en accidente laboral</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-31 18:54">hace 12h</td>
+                    <td class="time-ago" data-date="2026-08-02 16:40">hace 19h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Caguas" data-titular="Momento cuando el elenco de "Qué Loca Familia" invadió #ElRefugio de MoluscoTV por YouTube 🤣🤣🤣. 15 y 16 de agosto en el Centro de Bellas Artes de Caguas. Boletos en molusco.com. COMEDIA 100% FAMILIAR con PAULA PABÓN , OCEAN PABON , - facebook.com">
+                <tr class="article-row" data-municipios="Fajardo" data-titular="Hallan hombre muerto con las manos y el cuello atados en Fajardo - Primera Hora">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPeFJQWktkU2hCQmlUMmJhVUFHMWEyNmRPcV9EUzlDODJ6aWxBTVlyblc2T18zOE1LXzVZcEFQYklCcWZtdXA1S1dubktxTVJ4SER3X2lZcWE0bzV0MDFKNjRiU3NkLUUzeDNSSk1SOUVYaUV5ZW5fY0x0NDV0T1F5SlJoNDhYYjdKMGFYRXNmbWVwV0hVYjVuUnhRdnNtVWdUR19TRGhnbU42ekFEMWNIN3l4QlJ2b2NTUWhaYnJzNmxBc0UtT1E?oc=5" target="_blank">Hallan hombre muerto con las manos y el cuello atados en Fajardo - Primera Hora</a>
+                    </td>
+                    <td>Fajardo</td>
+                    <td class="time-ago" data-date="2026-08-02 13:18">hace 23h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="Hallan cuerpo de hombre atado de manos y cuello en Fajardo - Telemundo Puerto Rico">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOTW1ZV2stUjlfT3VYeXBuSUlqcWx2NllqV1NNQllGaEhmZWNreGZIbXROM0ZsQ3pwVjJtbmRydnM0MjJGeDJFUWxGMldaZ2d5R3hlRE1ienlDM2F3dlVYd2pHek5ZbVoyS1M2NzFVbm5ER3I5Yk1lZ29IclpRUVV5RnRmT0xqYklycXk0dkNEY2JfLVBYY29kWEVQY2VsUUtxNFBCWE8zUkRpemZVdU5UQmhiRHR0VWvSAb8BQVVfeXFMTy1sWXFNSmhlVWhKZ25yZ2ptc2E5RUtBdm9HUGkteFBqR3lrVmE4dGV6dmNVQklsRmFYdUpYbGUxcDVDbGh3elJodGMtRnN3czNNT0xVRlVMdlhhZGljS3VPRVdWaG05c094S0ZtMlhZYUhSQ3QzWXNUV1FxS2NOVFhUclB6M2NGM2RySDVnbWszVmVpakFSNTJEcHRwbTMxVnhXN0pBS2tndmtRUHNqekwyRjJsYjJ6cVJjOHlLQzA?oc=5" target="_blank">Hallan cuerpo de hombre atado de manos y cuello en Fajardo - Telemundo Puerto Rico</a>
+                    </td>
+                    <td>Fajardo</td>
+                    <td class="time-ago" data-date="2026-08-02 13:08">hace 23h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="Asesinan a hombre a balazos cerca de una panadería en Fajardo - El Nuevo Día">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNVXl3RkxGRmNCajNmbC1VRzlCNEkxWjM0bUNfd1E0Z1d3cFpVOVBXVnpPVUJueTk5QzNIU3NCbjdnV3RyTkdQbS1pSHA5WHVBN0RqUkxSYnk3Zkc2Z2hvM3N3aTdWdV9IZVljQmxRYUZMeEd2VS1FanVrSDc2WnhxMVI5SzBIby1pN004Tm10ZDExTzJ2aVhmd0JYTjl4TXRfdW5IXzFXMFd5cHdIYVctYlBSWFI?oc=5" target="_blank">Asesinan a hombre a balazos cerca de una panadería en Fajardo - El Nuevo Día</a>
+                    </td>
+                    <td>Fajardo</td>
+                    <td class="time-ago" data-date="2026-08-02 11:40">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Diócesis de Caguas, Puerto Rico - Página Oficial (@diocesisdecaguaspuertorico) - ټولنه | فېسبوک - facebook.com">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQWWs5Q0ptd0p5ZU5YX3RyRGNtdl94VnlzeksxOU1NelRhSTc5bEstOHJ0UV9ZYnBuUkNXODhTMUhsTm1CTEN4T24zUWFXcDB3OWZGTnoxU2xRaHA4VkZSRXhLWGloc0NSTWdHaXlGQ1NBQXJIS0htcDB6MVVDd3kxWEJJcC02ZlF1UG0tc3lLZG15ZnN5NnU1anpQdDZGcURRVFBuMVJZZ1k4WlZuT0htVGpCcERvNDZiMHprRGZQc2Y4dTV2U3R6b0J0R1BYemJuX0xBQVBING1zZmFVaWJKOWZsWQ?oc=5" target="_blank">Momento cuando el elenco de "Qué Loca Familia" invadió #ElRefugio de MoluscoTV por YouTube 🤣🤣🤣. 15 y 16 de agosto en el Centro de Bellas Artes de Caguas. Boletos en molusco.com. COMEDIA 100% FAMILIAR con PAULA PABÓN , OCEAN PABON , - facebook.com</a>
-                    </td>
-                    <td>Moluscotv</td>
-                    <td class="time-ago" data-date="2026-07-31 18:39">hace 12h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Cuatro ballenas piloto quedan varadas en playa de Humacao - Metro Puerto Rico">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxOT1psYjRpWmVrOVZrQkQ0RTh5Y3V1LVJ5MU5KNS1VUmdwTWF4VERFZzhsVTBub2NVV2pqSUpaZjJjdF9BM3NYRTJZazkzN1VYcEFsT2JiRkpjcXJTZkZEWWRNLWc2N0RwalJPU25PQ0otWG5kSHJ6dC00dU51bVozQkdXMHpWa2Z1Y1ExcEVPQ09kTXA5dkZlVmFIVDRIOGc?oc=5" target="_blank">Cuatro ballenas piloto quedan varadas en playa de Humacao - Metro Puerto Rico</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-07-31 18:11">hace 13h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Secuestran a hombre durante un robo domiciliario en Naguabo - noticel.com">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPeVVGVlAyTXhRNTRQempIdE1SZE1SRTYyRDJ5aEhFbmhUb1VzN2dSMEVuajctb0JkMlUwZ3AxeXhpeEpYUU5rZnl1aldnVW5yZXBhUGtEa3JncF9QWHdRaHFaZkZES0p4dS1BR1Zma1oycUprS3NzRnVKZ3hpU2ZNTDNuSVlnZUVqQjc4aktQV1dJV3JoWC1wSjU5T3lwSTFtUnV2aWlOLXhyNVFVZU1Pb3VodmQzYXVnbUE?oc=5" target="_blank">Secuestran a hombre durante un robo domiciliario en Naguabo - noticel.com</a>
-                    </td>
-                    <td>Naguabo</td>
-                    <td class="time-ago" data-date="2026-07-31 17:48">hace 13h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Secuestran a hombre durante un robo domiciliario en Naguabo">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://noticel.com/noticias/la-calle/policiacas/20260731/secuestran-a-hombre-durante-un-robo-domiciliario-en-naguabo/?utm_source=rss&utm_medium=rss&utm_campaign=secuestran-a-hombre-durante-un-robo-domiciliario-en-naguabo" target="_blank">Secuestran a hombre durante un robo domiciliario en Naguabo</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-07-31 17:31">hace 13h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Le roban el carro tras visita a un motel en Trujillo Alto: acusa a su acompañante - Metro Puerto Rico">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPVlB5bGoxWVVoS0JleXlSRHRHOGY0N01GbnluZ25haWNkVkl3ckQ1a2pKLXlKZ24tU2hZdXdLT3FSMG5oOGVtTl9lVUlDRWpKUVJaRVFwN001cFVOa09zcW90c01BSWFiSGVkLVV4MmQ5V1V0TUdLdl9HMkRXVVVaUTUzcWo4ZHY5NVUxa0pNeWd6QVQxeWpUUDA2Qy05UDFUTmRIUFh1X3hSTVF0NGVKVnoxWGgySXM0ZEttejhjbw?oc=5" target="_blank">Le roban el carro tras visita a un motel en Trujillo Alto: acusa a su acompañante - Metro Puerto Rico</a>
-                    </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-07-31 17:22">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="La AAA pide más tiempo para responder y San Juan insiste en que Cuevas los cite ya">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://noticel.com/ultima-hora/20260731/la-aaa-pide-mas-tiempo-para-responder-y-san-juan-insiste-en-que-cuevas-los-cite-ya/?utm_source=rss&utm_medium=rss&utm_campaign=la-aaa-pide-mas-tiempo-para-responder-y-san-juan-insiste-en-que-cuevas-los-cite-ya" target="_blank">La AAA pide más tiempo para responder y San Juan insiste en que Cuevas los cite ya</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-07-31 16:54">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Víctima de robo domiciliario logra desarmar a uno de los asaltantes y frustrar su huida en Naguabo">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/07/31/victima-de-robo-domiciliario-logra-desarmar-a-uno-de-los-asaltantes-y-frustrar-su-huida-en-naguabo/" target="_blank">Víctima de robo domiciliario logra desarmar a uno de los asaltantes y frustrar su huida en Naguabo</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-07-31 16:24">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Vecinos y voluntarios se lanzan al mar para rescatar a varias ballenas varadas en Punta Santiago">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/07/31/vecinos-y-voluntarios-se-lanzan-al-mar-para-rescatar-a-varias-ballenas-varadas-en-punta-santiago/" target="_blank">Vecinos y voluntarios se lanzan al mar para rescatar a varias ballenas varadas en Punta Santiago</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-07-31 16:24">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Ciclista queda en condición crítica tras atropello">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://nelpr.com/2026/07/31/ciclista-queda-en-condicion-critica-tras-atropello/" target="_blank">Ciclista queda en condición crítica tras atropello</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-07-31 16:00">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Hombre denuncia que su acompañante le hurtó el carro en motel de Trujillo Alto - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUjZrbll0eHU4SUEzTW15b0p0RDdhRktwMjVRZWtpY3p4b2dzVWpGSnJlR29BTE8yR19mUExPOWZxbGl6NkZiREVpa2JzMnhJb050S3hMN1RBbUtmdDhubTc5T1RVZGF4R2ZWb0s0dUFTTUNtZWhOQkF2Y19vYi1OTFhVQXliZU5qUFBtNmhoWEQtWXF4WXlPSFBzcUd6WWFjTW5PQ21YZFpzUXRSUExDTUZjanMxN0g4THNsYV9YUVp3SzRfWGNnM1FrQzAxYkp1YXfSAdoBQVVfeXFMTnQ5X1F6RjRZd2VmbjRKT2JCQkdHRTFkOTZ0enlVdndJT045Mk5BX29keDg1a1VQQUdhM1dsNk1kUFJCVWtnTVZqVXVaaW91UnlpWG0xUnR3bE13OVQ4bTF3b2RVOXlmSHJHZm1qX2JXdXVxR25vMXo2UHQ0VVV1d1NMeE5DOEVJeVMyWEcxTk9fTHBJV083cE9YZ1VNZXhIalZ1MGhteVMzTVU4QndxOXo4YkxCRmFZMkxBdDdmV0JNcDdYNEFQenBTd0VaX2NJMFNvanJfSEZ0V0E?oc=5" target="_blank">Hombre denuncia que su acompañante le hurtó el carro en motel de Trujillo Alto - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-07-31 15:53">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Hombre denuncia robo de vehículo alquilado de motel en Trujillo Alto - Primera Hora">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQY2FRQWVPSmpPMGlWa01RMzV5R0RYS3VXWHo4VkZkRC1CTU9FVmdubm5ZZl9ZZjFObUljU2Z4NWlGMjFBb2s3T3JDR0N4XzM1UFVxMTd6RzlKZHpIcXVWZE1RVmJGMm5jeUJqR1gzNk1LNS1qdXJVcmVQeGdOSHR0NjYxbEVOOThuZ2RicGlQQjFLMWlFUHpJcFk1RE9wNXByLWNyby1qalBTWFZYSFJ5NmN4c2hlLWhlMXVxemhGcFF5eDdXMXBFVmxibw?oc=5" target="_blank">Hombre denuncia robo de vehículo alquilado de motel en Trujillo Alto - Primera Hora</a>
-                    </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-07-31 15:38">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Cuatro ballenas piloto quedan varadas en Punta Santiago en Humacao - El Nuevo Día">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSmd4SVRjWnQ0ajZaeHByNWdlUnBja0JaYmFPX180dERGSW5iRXZpVlA0dGxERjJmTno4WTRoNVFyc2F6Rk1uR2tyN01ZaXhqcklqY0ZIVjQ3UEJsazZNWlF4ZU83YktnbGd5SFJOanZvNHIza2JTZEliSDJtaEpmRTJqNmV4dDcxOWdSdHdrdHE3SEw2ekxsODNxQmd5LUpNaFdtMTN1VUN0Y2QzTGk4SnRhS2F5Z2hkTGpLLW1QbUtEcHY2X1dyVQ?oc=5" target="_blank">Cuatro ballenas piloto quedan varadas en Punta Santiago en Humacao - El Nuevo Día</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-07-31 15:27">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="VIDEO | Ballenas varadas en costa de Humacao - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNZUFZZ0laYWxuUVRTNEI4T3hQaGcwS0NqR09VYnlZTUlwNXVuTUlOcjl5OE41TlhhZ0s0dXhNZTNUQ3Rwa2ZDVDhLNXVUQUdwVUNwczZNS1ZmQlBYcXJwOXFKZUQ4QzlYa19vSVhsZ3MxN1dsaXptNHMzTWQtZTlfWEJvcWlIX0pFaGdGLXBaUWw5SnN4Yi1pOExNRkRwNDjSAacBQVVfeXFMTmpUUnZLX1pkWC13UnhhLUNJMFZ3MFJtR09RMHhBZTFVS1YxdVFtaldNQ1R3MkZCY3RqdjM2TG9tRmNfU05KUTh4ZDh6a0tjeGI0Z3pFc3FhSUQtRWlldmExbU1fZW1hTWdkdzVwZ3dSRkhEd09hVE4xcklfOGxDUlA3Sm9HbTN1aHQtWE5hWnFyNE0xdmtGOEFKRnFESndWck1CaHRDLXM?oc=5" target="_blank">VIDEO | Ballenas varadas en costa de Humacao - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-07-31 15:23">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Ballenas quedan varadas en costa de Humacao - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxONXNoZWNXZEx3SVhCNXVPNFVfY2ItQmZJLWhKbTZ1MjBjdlFlWkhScVBUTC0xeHoyQ1NoUjFTd0gyLU1TaExfc0dWejctRlRBbXRuZ2taamZ4Rzl6OGl3MzhNWnRfdllfamVXS1pJdms0TDlKY0xvOUxzRkxzWUNkWVRfYUdLdWZxc3l2RFRPSWljRHlLMUNuaE9OSkZNdjF6LWZz0gGrAUFVX3lxTFBlYTItUUJLSk5YZTM5ZTRjNjctaEQ3NkhLX1NFZ2p6d0o1VnFrT2lOTWItT3U0aURuczcteHRBaXNQaUlNSXBYWjRFajcxQ2dyNENfMWhiNk9HcVFHOENTNWZFdndaeDFYZDdDRHQyVHRxS01fWFlkcy1TNk1TSlcxRFJPTUxMeHZ4ZGh1M1ZfVV9PeVJNSVB6M2Iwb3RJS0RSXzQ1Y1JIZmxfcw?oc=5" target="_blank">Ballenas quedan varadas en costa de Humacao - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-07-31 15:11">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="En estado crítico ciclista impactado por un vehículo en Humacao - Primera Hora">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxNd3l2Qm9xS3VEb3Y3VnJ0d3drMzBvNjBnVFNzSFpOblZfMlpNemdBdkt5UzJ4emI1SzljMUI1c1Jwa0VPdlJaM0l1alVEYko4eEZoV20zM0ppUnZzdU9TeWpLZURjbHllRFZCcUxSVl93SWZsVUkxbVV0S0NtOFZPWldmV0JjSnZfa3B5amV6Rm1kSDdVWkF0YU1wTnZFNkxVT1ZUc2pTVlh0VEFBZzUzT1JETzVkRFp0eUliZ0xPTmxOOGhG?oc=5" target="_blank">En estado crítico ciclista impactado por un vehículo en Humacao - Primera Hora</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-07-31 14:48">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Hit & Run en Humacao deja ciclista con heridas graves">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://radioisla.tv/hit-run-en-humacao-deja-ciclista-con-heridas-graves/?utm_source=rss&utm_medium=rss&utm_campaign=hit-run-en-humacao-deja-ciclista-con-heridas-graves&utm_source=rss&utm_medium=rss&utm_campaign=hit-run-en-humacao-deja-ciclista-con-heridas-graves" target="_blank">Hit & Run en Humacao deja ciclista con heridas graves</a>
-                    </td>
-                    <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-07-31 14:41">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Ciclista resulta gravemente herido tras ser impactado por vehículo que abandonó la escena en Humacao">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/07/31/ciclista-resulta-gravemente-herido-tras-ser-impactado-por-vehiculo-que-abandono-la-escena-en-humacao/" target="_blank">Ciclista resulta gravemente herido tras ser impactado por vehículo que abandonó la escena en Humacao</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-07-31 14:41">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Agradecidos del Municipio de Loíza por el apoyo ofrecido en la edición 2026 del 21k CSILO, evento que se a convertido en uno de los eventos favoritos de los runners en todo Puerto Rico. ¡Enhorabuena! - facebook.com">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxOZ0kwUGd6d2F0dTBpUmZhNEMxU3gwUGlQX3Zqb0Z2STRWRzUxQ2xXQU9tajM5WWFYUk1kUW9DT1FhRHdLaDhsb0x0bXNGWmRJYU1UcjlkNGlnSEhGb1IyMWY3Z3pvX2FPeWR3ZDRvMFpXUjJOMXFYUVRrMHZ5MXBSWHQtNmlsa2t6RlV6NS1oNmxVXzRtT21yd0dmeTFyLWFad3lOeTNqamFNMTJsazRGU0otdkNWSEN6OU1ZZkVwX3RVcjJNX1RYU1M3a3JGRW1ubG9aTjRDQ0Z5Q250REFLRXFMV3dreGlTZnc?oc=5" target="_blank">Agradecidos del Municipio de Loíza por el apoyo ofrecido en la edición 2026 del 21k CSILO, evento que se a convertido en uno de los eventos favoritos de los runners en todo Puerto Rico. ¡Enhorabuena! - facebook.com</a>
-                    </td>
-                    <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-07-31 03:44">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="#LaMásDura desde Caguas, Puerto Rico 🙌🏀✨ - facebook.com">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQbE5ETVpzUnAzNFNnRjlZeDhGcEJLX0k2VHNNZm5DNUhiVnRzVXB5X0dEdXhMbWh1TlpoWFh3ZnR4cUNJYk9EdzFVclRVc2dXV3VobjBNdDRjT1M0TTlGQ3FkVU56UlY2QXRsNVNVb1VGcmxZSHNZbzZ3SVF0SW1xX0J4ck1MN3NkSUxEbmVDWUZMc2VMUDlfLXFxdw?oc=5" target="_blank">#LaMásDura desde Caguas, Puerto Rico 🙌🏀✨ - facebook.com</a>
+                        <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxOQmVSLTV5Y1hWN3lFV1ZncDRnQ2R0MDgyMlVGZmZkRUlFaDB3Zzl5alRKWkpVSHdqNm16NmI5WmhzTTF4YjFseGZQOEFzNDVsbzZBVWc4Z3Y3MUEwTml5TEVzZEh3RkRDemU1cUpuWHdrUlBBUWdBcXJGUDVzWWo1Qg?oc=5" target="_blank">Diócesis de Caguas, Puerto Rico - Página Oficial (@diocesisdecaguaspuertorico) - ټولنه | فېسبوک - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-07-31 02:13">hace 1d</td>
+                    <td class="time-ago" data-date="2026-08-02 04:47">hace 1d</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Puerto Rico Select Volleyball Club comienza su temporada 2026-2027 este 3 de agosto en Trujillo Alto - wipr.pr">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                <tr class="article-row" data-municipios="Humacao" data-titular="Palacios del Este ofrece casas nuevas desde $270,000 en Humacao - El Nuevo Día">
+                    <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUG1VcWJDR25sVTJuWEdMVlZIejB3QkltaUVBY0NkN1otTXQ2TWRVb0pDYllKRmFITmNERHZoMmxsUzdFNnZXY1VqV2JEYVJKVUtCX21JNzctUDEzeFMtS0hnTU9TOGtrNFc1MzlLVjR6ZDFaUjBUb3JiOVhaTmdQYkhvOVBIRmtnak1qTmVaaV9yNXZibXpwdUpGVjVFNFRSbVpFZnRoYjBZdHQtMXVDbUoteW4tZ1l3?oc=5" target="_blank">Puerto Rico Select Volleyball Club comienza su temporada 2026-2027 este 3 de agosto en Trujillo Alto - wipr.pr</a>
+                        <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxNV3hkTWtBMFZxWXZiMTFJUEN3dXpnNGY1anhzeEQybWREb0lva0h1WVJ0VHZWV1N1YUZRdkZuOEZnOGxuUDU5XzhRMTFNNDVlUWZfaXpiZ1pqNmd6cnJzTExRalpaWlNtcWlMYU00amZOUTV1QnpGdGZraEVxX3pJeVU3NTN3V0JrRlVDUmN6MER2ZEwwSFFxU3NWZjRQN1pZbW1OejhzOXIyRE9WdF9RbHRIM0RiVmhEUXc?oc=5" target="_blank">Palacios del Este ofrece casas nuevas desde $270,000 en Humacao - El Nuevo Día</a>
                     </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-07-31 00:52">hace 1d</td>
+                    <td>Humacao</td>
+                    <td class="time-ago" data-date="2026-08-02 03:10">hace 1d</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Caguas" data-titular="¡Alerta de juegazo! 🚨🔥 Ahora en directo desde Caguas: Juego 4 de Criollos y Vaqueros 🙌 #LaMásDura - facebook.com">
-                    <td><span class="muni-tag">Caguas</span></td>
+                <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="Angelee923. CKay · WAHALA (feat. Olamide). Currently missing Vieques and if you haven’t visited this island off the coast of Puerto Rico you should definitely put it on your bucket list 🫡 Everyone brags about Culebra but this hidden gem called Vieques has to - facebook.com">
+                    <td><span class="muni-tag">Vieques, Culebra</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxQVV9QWVV5bW5IVzJ2UTJNaUt1OVJCUWwtUU9GWjhnbTZ2UkVQTVY1aFl3RVV0cVJiYURxMTUtWFNoSks1WEVzcHBoVTV3YzV2ZXZ3QWdaRGp4M2pmT1o4bVFrWWVVcmR0T1VMNVpHcHNxeEpSYTdfbHdib1lGdVh0Uk9zcUVpalQ4Rk1Va1k4ZWNyc1NOeGVsUXJhcmtlZEdJaFdrS016TjNmQVhmUFhHM3FhcXFWU25ZMVZIT1FvQjl6S2JueDhHY09MUm9BemRl?oc=5" target="_blank">¡Alerta de juegazo! 🚨🔥 Ahora en directo desde Caguas: Juego 4 de Criollos y Vaqueros 🙌 #LaMásDura - facebook.com</a>
+                        <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxPV25XbXBoR2JuaFpjVlVIeFRjYzNJaFA3bTRYeEYzME01aTNCODVfUkxHZUxGN0Q4aEk3RExLRmVTZEpMNi1lNDRSdERIMUFYLTVYUUE0amh3Y0hCRFNGdEVDY0FxY3BpSlBjTVVMT3lQSXc5M2tIcTc2cE1FZk82T1pYTmxCaHA2bS1PbDh5Mmp6aE9xNy13UkdpU3E0RmFjQktNdWlnMmtOaDd0cVpZU2F5bzNCS252dGFWZ2FueW9pNENTdVhOVDFLN2NuZXh4cGRMcVNtQVcwTHBBaEM4?oc=5" target="_blank">Angelee923. CKay · WAHALA (feat. Olamide). Currently missing Vieques and if you haven’t visited this island off the coast of Puerto Rico you should definitely put it on your bucket list 🫡 Everyone brags about Culebra but this hidden gem called Vieques has to - facebook.com</a>
                     </td>
-                    <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-07-31 00:02">hace 1d</td>
-                </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">📋 Anteriores</td></tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Peregrinas toman ventaja en semifinal LBPF y comienza serie Gigantes vs Brujas">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://www.carolina787.com/n/peregrinas-toman-ventaja-en-semifinal-lbpf-y-comienza-serie-gigantes-vs-brujas" target="_blank">Peregrinas toman ventaja en semifinal LBPF y comienza serie Gigantes vs Brujas</a>
-                    </td>
-                    <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-07-31">2026-07-31</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Sebastian Bilingual School anuncia cierre definitivo días antes del inicio de clases y sorprende a familias">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://www.carolina787.com/n/sebastian-bilingual-school-anuncia-cierre-definitivo-dias-antes-del-inicio-de-clases-y-sorprende-a-familias" target="_blank">Sebastian Bilingual School anuncia cierre definitivo días antes del inicio de clases y sorprende a familias</a>
-                    </td>
-                    <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-07-31">2026-07-31</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Carta de Sebastian Bilingual School avisa cierre del colegio">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://www.carolina787.com/n/sc" target="_blank">Carta de Sebastian Bilingual School avisa cierre del colegio</a>
-                    </td>
-                    <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-07-31">2026-07-31</td>
+                    <td>FB - Culebra</td>
+                    <td class="time-ago" data-date="2026-08-02 00:47">hace 1d</td>
                 </tr>
                 
                 
@@ -1066,7 +856,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-08-01 07:27:48 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-08-03 12:20:17 PM<br>
     Actualización automática cada 30 min
 </div>
 
