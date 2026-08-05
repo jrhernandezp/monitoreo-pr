@@ -328,15 +328,15 @@ tr:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-08-04 07:32:57 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-08-05 08:59:04 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">31</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">31</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">22</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">22</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">8</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:12px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-08-04 07:32:57 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:11px;font-weight:normal">2026-08-05 08:59:04 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -347,6 +347,25 @@ tr:hover { background: var(--surface2); }
 
 <!-- BREAKING NEWS -->
 
+<div class="section breaking-section">
+    <div class="breaking-banner">
+        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">ahora</span> —
+            <a href="https://esnoticiapr.com/racionamiento-adelantado-en-algunos-sectores-mientras-gobierno-inicia-plan-de-emergencia/" target="_blank">«Racionamiento adelantado» en algunos sectores mientras gobierno inicia plan de emergencia</a>
+            <span style="opacity:0.6"> [Trujillo Alto]</span>
+        </div>
+        
+        <div class="breaking-item">
+            <span class="time">ahora</span> —
+            <a href="https://www.elnuevodia.com/noticias/locales/notas/sin-agua-en-san-juan-estos-son-los-oasis-municipales-disponibles/" target="_blank">¿Sin agua en San Juan? Estos son los oasis municipales disponibles</a>
+            <span style="opacity:0.6"> [San Juan]</span>
+        </div>
+        
+    </div>
+</div>
+
 
 <!-- MUNICIPALITIES -->
 <div class="section">
@@ -355,22 +374,22 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <div class="muni-name">San Juan</div>
-            <div class="muni-count">9</div>
+            <div class="muni-count">6</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <div class="muni-name">Carolina</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <div class="muni-name">Trujillo Alto</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">4</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <div class="muni-name">Caguas</div>
-            <div class="muni-count">3</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
@@ -380,17 +399,17 @@ tr:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <div class="muni-name">Canóvanas</div>
-            <div class="muni-count">4</div>
+            <div class="muni-count">1</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
             <div class="muni-name">Fajardo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <div class="muni-name">Loíza</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">2</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
@@ -403,14 +422,14 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
             <div class="muni-name">Naguabo</div>
-            <div class="muni-count">1</div>
+            <div class="muni-count">0</div>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <div class="muni-name">Humacao</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">8</div>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
@@ -418,14 +437,14 @@ tr:hover { background: var(--surface2); }
             <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Vieques')">
+        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
             <div class="muni-name">Vieques</div>
-            <div class="muni-count">5</div>
+            <div class="muni-count">0</div>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Culebra')">
+        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
             <div class="muni-name">Culebra</div>
-            <div class="muni-count">2</div>
+            <div class="muni-count">0</div>
         </div>
         
     </div>
@@ -447,323 +466,233 @@ tr:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="“No podemos seguir”: exigen cambios en la AAA ante la crisis en el servicio de agua">
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="«Racionamiento adelantado» en algunos sectores mientras gobierno inicia plan de emergencia">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/racionamiento-adelantado-en-algunos-sectores-mientras-gobierno-inicia-plan-de-emergencia/" target="_blank">«Racionamiento adelantado» en algunos sectores mientras gobierno inicia plan de emergencia</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-08-05 12:47">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="¿Sin agua en San Juan? Estos son los oasis municipales disponibles">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://www.elnuevodia.com/noticias/locales/notas/no-podemos-seguir-exigen-cambios-en-la-aaa-ante-la-crisis-en-el-servicio-de-agua/" target="_blank">“No podemos seguir”: exigen cambios en la AAA ante la crisis en el servicio de agua</a>
+                        <a href="https://www.elnuevodia.com/noticias/locales/notas/sin-agua-en-san-juan-estos-son-los-oasis-municipales-disponibles/" target="_blank">¿Sin agua en San Juan? Estos son los oasis municipales disponibles</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-08-04 11:22">ahora</td>
+                    <td class="time-ago" data-date="2026-08-05 11:55">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Caguas" data-titular="Bayamón elimina a Caguas y alcanza otra final en el BSN">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://noticel.com/ultima-hora/20260804/bayamon-elimina-a-caguas-y-alcanza-otra-final-en-el-bsn/?utm_source=rss&utm_medium=rss&utm_campaign=bayamon-elimina-a-caguas-y-alcanza-otra-final-en-el-bsn" target="_blank">Bayamón elimina a Caguas y alcanza otra final en el BSN</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-08-04 10:28">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Una rotonda y mejoras en las calles del Viejo San Juan generan debate sobre impacto en el patrimonio histórico">
+                <tr class="article-row" data-municipios="San Juan" data-titular="Municipio de San Juan activa plan para responder ante racionamiento programado por la AAA - elnuevodia.com">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://www.elnuevodia.com/noticias/locales/notas/una-rotonda-y-mejoras-en-las-calles-del-viejo-san-juan-generan-debate-sobre-impacto-en-el-patrimonio-historico/" target="_blank">Una rotonda y mejoras en las calles del Viejo San Juan generan debate sobre impacto en el patrimonio histórico</a>
+                        <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbmFoMzdQTDdzUG4tR3NvWEZ3cW9waEFvdllxOXRJTHFESHRIQnVTWUZINW5yWHFjRUlUODFuRk5lY1BWMDZUTnZwQTFGMHlrVkZKS0ExVnBrbEpRNWpMOU44SFFPN0U2NXV1bUN1SkI2NEItcDV2a3BFb2FDNnQ1cmVOLWVoTm5HZjBZT202MmtPR0dlWmVxRUI5UWFIQzUydjI5Y0lKWl9fSTZiSFNMeWt5OXYzSFZQdi1XRlNKWFg2Yk9MaS1jT1oyX1hOUl91ajdqLUVxT0o?oc=5" target="_blank">Municipio de San Juan activa plan para responder ante racionamiento programado por la AAA - elnuevodia.com</a>
                     </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-08-04 07:32">ahora mismo</td>
+                    <td>San Juan</td>
+                    <td class="time-ago" data-date="2026-08-05 11:31">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="Alcaldes recomiendan duplicar el tiempo de racionamiento de agua">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/alcaldes-recomiendan-duplicar-el-tiempo-de-racionamiento-de-agua/?utm_source=rss&utm_medium=rss&utm_campaign=alcaldes-recomiendan-duplicar-el-tiempo-de-racionamiento-de-agua&utm_source=rss&utm_medium=rss&utm_campaign=alcaldes-recomiendan-duplicar-el-tiempo-de-racionamiento-de-agua" target="_blank">Alcaldes recomiendan duplicar el tiempo de racionamiento de agua</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-08-05 11:08">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Tribunal determina por segunda ocasión no causa contra presidente de CODEPOLA">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/tribunal-determina-por-segunda-ocasion-no-causa-contra-presidente-de-codepola/" target="_blank">Tribunal determina por segunda ocasión no causa contra presidente de CODEPOLA</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-08-05 11:05">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Ofertas para rehabilitar aeropuerto de Humacao vencen el 2 de septiembre - News is My Business">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxNOGFDa0ZnZ29OQmlBeF8wOGhzcTk1WDJINWl4b1ZtRTV4bE91RTlmSWZKYy1Lc3g4WGpSVEREQTFtcW4xYUJLaDA4aUdfc2NaeFQyQW5TU2hRY3JvMmVpeEQxZnR4UmJYbzE3OXFJSDZNR25tLXcyZWh1SXlRV0lDTExMR0h6ejhJcHhMVnhWenU5bUVOT0FaSnZhdjY3S0RaUF9vdmRreHBhNzhNYnZ0SExzTktJRS1nemh1eFViTFdqT2pkeVZzbFB6U1QyWWh4R3VBTWpUZm1mcUU?oc=5" target="_blank">Ofertas para rehabilitar aeropuerto de Humacao vencen el 2 de septiembre - News is My Business</a>
+                    </td>
+                    <td>Humacao</td>
+                    <td class="time-ago" data-date="2026-08-05 10:33">ahora</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="San Juan Cruise Port inicia el proceso para reconstruir el histórico Muelle 1 del Viejo San Juan">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://www.elnuevodia.com/negocios/turismo/notas/san-juan-cruise-port-inicia-el-proceso-para-reconstruir-el-historico-muelle-1-del-viejo-san-juan/" target="_blank">San Juan Cruise Port inicia el proceso para reconstruir el histórico Muelle 1 del Viejo San Juan</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-08-04 03:10">hace 4h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Comunidades de 14 municipios estarán hasta 13 horas sin luz">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://nelpr.com/2026/08/03/comunidades-de-14-municipios-estaran-hasta-13-horas-sin-luz/" target="_blank">Comunidades de 14 municipios estarán hasta 13 horas sin luz</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-08-04 02:40">hace 4h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Fianza millonaria contra hombre que asesinó a vecino">
+                <tr class="article-row" data-municipios="Caguas" data-titular="“No satisfecho pero contento”: Wil Caanen aplaude el torneo de los Criollos y apunta a repetir el grupo en 2027">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://nelpr.com/2026/08/03/fianza-millonaria-contra-hombre-que-asesino-a-vecino/" target="_blank">Fianza millonaria contra hombre que asesinó a vecino</a>
+                        <a href="https://www.elnuevodia.com/deportes/baloncesto/notas/no-satisfecho-pero-contento-wil-caanen-aplaude-el-torneo-de-los-criollos-y-apunta-a-repetir-el-grupo-en-2027/" target="_blank">“No satisfecho pero contento”: Wil Caanen aplaude el torneo de los Criollos y apunta a repetir el grupo en 2027</a>
                     </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-08-04 02:05">hace 5h</td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-08-05 04:13">hace 4h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Contralora señala posible uso de fondos públicos para promover página personal del alcalde de Mayagüez">
+                <tr class="article-row" data-municipios="San Juan" data-titular="Revelan lugares exactos, fechas y zonas 1 y 2 del plan de racionamiento de agua">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://nelpr.com/2026/08/03/contralora-senala-posible-uso-de-fondos-publicos-para-promover-pagina-personal-del-alcalde-de-mayaguez/" target="_blank">Contralora señala posible uso de fondos públicos para promover página personal del alcalde de Mayagüez</a>
+                        <a href="https://nelpr.com/2026/08/04/revelan-lugares-exactos-fechas-y-zonas-1-y-2-del-plan-de-racionamiento-de-agua/" target="_blank">Revelan lugares exactos, fechas y zonas 1 y 2 del plan de racionamiento de agua</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-08-04 02:01">hace 5h</td>
+                    <td class="time-ago" data-date="2026-08-05 03:30">hace 5h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz hasta 12 horas">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/08/04/se-ira-la-luz-hasta-12-horas-5/" target="_blank">Se irá la luz hasta 12 horas</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-08-05 02:36">hace 6h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Pablo José Hernández busca continuar como presidente del PPD">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/08/04/pablo-jose-hernandez-busca-continuar-como-presidente-del-ppd/" target="_blank">Pablo José Hernández busca continuar como presidente del PPD</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-08-05 00:29">hace 8h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan,Carolina,Trujillo Alto,Canóvanas,Loíza" data-titular="La interrupción está programada para comenzar este viernes a partir de las 6:00 a.m. Sectores de San Juan, Trujillo Alto, Carolina, Juncos, Loíza, Canóvanas y Gurabo son los afectados. Más detalles en telemundopr.com 🔗 - facebook.com">
+                    <td><span class="muni-tag">San Juan, Carolina, Trujillo Alto, Canóvanas, Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxNa3RBNmxCZkdicG9MZDZsaUd1a3VvMVYxNFBrMldGdUkzZFlfRHM1aDdzMjdfOTlFRWlMdjJfb09HZEl1a1FMYVExRmZ3YVM5SlEzUTVhQ29tT3ZPbWdycnlpX3ZfRU5XamxBenlrbGlwWmVTXzY4b2w3bjNadlhFcS1qNmdPbXJxS2Y0RDNfeFVoN29QdV9Bb0E5QVJfNE1mOFVvbmRiZ0loQUlleFFfWVdTbW1fUlpuRUY1OERUR2JCSlhkcjN3bmdmeGh6MEFXdEN4LUJwRjNENkxXOWtCaDBaRVFqZw?oc=5" target="_blank">La interrupción está programada para comenzar este viernes a partir de las 6:00 a.m. Sectores de San Juan, Trujillo Alto, Carolina, Juncos, Loíza, Canóvanas y Gurabo son los afectados. Más detalles en telemundopr.com 🔗 - facebook.com</a>
+                    </td>
+                    <td>Telemundo FB</td>
+                    <td class="time-ago" data-date="2026-08-05 00:09">hace 8h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="La Administración Municipal de Caguas, junto al Departamento de Desarrollo Cultural, invita a la presentación del libro “El Plan Carretero de Puerto Rico en el Siglo XIX: Historia y Legado”. 📅 Jueves 27 de agosto 🕡 6:30 p.m. 📍 Archivo Histórico Abelardo Día - facebook.com">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxPa1VZdTEzU1NzU1AwbG9xR0YzU2xfNF93UWRMYjVZTjdVWU9kVjNOQUtzaFdsalpDUklfNGJQS1BBTm1ueDBJdmxsVC1xYWNGclUtTzBJd2NDOXZ6RVIwcnRIendXQXYwSzlWdTFBS3MtTGg1UENFaFdlQTd5Q1hiS1F6V3pIUkFHLVdheEpuUllQSnd5UHF6N3VKeS1GMTJDQUJNOWlpX0VvSmkyeE5BZU84OFF2a08yYXhSQ3g2MXliZ2FpNnlyUjJVS21GTzRaMnhxb2Q0U3pFM2dRYV9r?oc=5" target="_blank">La Administración Municipal de Caguas, junto al Departamento de Desarrollo Cultural, invita a la presentación del libro “El Plan Carretero de Puerto Rico en el Siglo XIX: Historia y Legado”. 📅 Jueves 27 de agosto 🕡 6:30 p.m. 📍 Archivo Histórico Abelardo Día - facebook.com</a>
+                    </td>
+                    <td>FB - Caguas</td>
+                    <td class="time-ago" data-date="2026-08-05 00:00">hace 8h</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
                 
-                <tr class="article-row" data-municipios="Vieques" data-titular="Quedan varados pasajeros de embarcación que viajó a Vieques - telemundopr.com">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxOSjVKSGY1S2d3OGF4SWNLc0M5RDdGOXFDeUVSN0ZHaFE4UURhU1kxVEZxWDBlWVUtVnE0SUNSMEFSRXR5VjBSSTV5SnhWc3NaUXV6bjdCV0tHUTUtOWY2VkhMYUhDNE1BcjBZLTZUM1dLWEN2YnBrc3A2c25jbWdHckZxOFpzT2R6TndDSXAtU2o0OFpYd3NjZVJqaTNMejRCSmc2RENNVUhqSG5teDdJNjRGMGR4a3hLdTJ2aW95cGdyX2dqZHNXSUV30gHKAUFVX3lxTE5KNUpIZjVLZ3c4YXhJY0tzQzlEN0Y5cUN5RVI3RkdoUThRRGFTWTFURnFYMGVZVS1WcTRJQ1IwQVJFdHlWMFJJNXlKeFZzc1pRdXpuN0JXS0dRNS05ZjZWSExhSEM0TUFyMFktNlQzV0tYQ3ZicGtzcDZzbmNtZ0dyRnE4WnNPZHpOd0NJcC1TajQ4Wlh3c2NlUmppM0x6NEJKZzZEQ01VSGpIbm14N0k2NEYwZHhreEt1MnZpb3lwZ3JfZ2pkc1dJRXc?oc=5" target="_blank">Quedan varados pasajeros de embarcación que viajó a Vieques - telemundopr.com</a>
-                    </td>
-                    <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-08-03 22:40">hace 8h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Canóvanas,Río Grande" data-titular="Continúa el racionamiento del agua para Canóvanas y Río Grande - Primera Hora">
-                    <td><span class="muni-tag">Canóvanas, Río Grande</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQQzI2cjBhSVVPYzB5eXpJcUpNX1JTM2hyUEY5bThMbl84NE9VVkVEWFRLUXUtbGFFZUktTnRYM1J4YlJJT2JLcjBHR015VkdsR05oSWZ2Znh1QnNydkFkMjMxbWlpX0hFbXN3R0ltOGJUV0Jfa1BPcE1XLXJRbjlSNUcxZWZ6ckh2Zld6bElxaFVISWpBeE1FR21VZ05SdXRNSUxtNzdYZw?oc=5" target="_blank">Continúa el racionamiento del agua para Canóvanas y Río Grande - Primera Hora</a>
-                    </td>
-                    <td>Canóvanas</td>
-                    <td class="time-ago" data-date="2026-08-03 20:59">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Con desperfectos mecánicos lancha que transporta ciudadanos a islas municipio">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://radioisla.tv/con-desperfectos-mecanicos-lancha-que-transporta-ciudadanos-a-islas-municipio1/?utm_source=rss&utm_medium=rss&utm_campaign=con-desperfectos-mecanicos-lancha-que-transporta-ciudadanos-a-islas-municipio1&utm_source=rss&utm_medium=rss&utm_campaign=con-desperfectos-mecanicos-lancha-que-transporta-ciudadanos-a-islas-municipio1" target="_blank">Con desperfectos mecánicos lancha que transporta ciudadanos a islas municipio</a>
-                    </td>
-                    <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-08-03 20:48">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Pasajeros viven momentos de tensión al dañarse ferry camino a Vieques: barco bota humo en pleno viaje - Metro Puerto Rico">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxNQnR1YzN0RDlKdGg1MlVDek1XTjFELWdyWXp5cEJlZlU4WEdlcUFlcHZwSm5fYXRQaUdzWlJpZF84Y1gzbFpHekQ1aGdaWW1IOWJfT2daeHZtNGhZMWRfSUs1LWh1TEtKN19KbmdQbjV3djZoVzcyU0JfNFhPNk5tMmF2ZnBVcWN4NEhiTndVMkJzME1lRnp3OWlRWFNCdzlEVFhsQ2lVTjNlRmNlMVNqSnZUODktZVE4QWhfSXJ3QkNzWnFINS10OUxsQ1RWemNGUlhQbFVQUFMxUQ?oc=5" target="_blank">Pasajeros viven momentos de tensión al dañarse ferry camino a Vieques: barco bota humo en pleno viaje - Metro Puerto Rico</a>
-                    </td>
-                    <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-08-03 20:44">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Pasajeros de ferry en dirección a Vieques quedan varados por desperfecto mecánico - wapa.tv">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxPQ1JWTU5xSl9vTG1YazExRWQ5TGRyRExud2NUNVNOVzFoVHEzYWh5akZLTGR3eEZCaDR6TExGaEQzdW96OGtqbnpmNTVrRkw4UTgyNldGNWc2MzFwYzYyZ3BsZW5lSFU0OVV1ekdhU2ZSb3ZwZ1JhOE1vbmUtMTRweXFxU2s4Q3BRa1BPY180cFVmMUdNTDZXV3BQZHhrSDg3WXhsVUJGLUJfUGNXejkxaF9FNEJ3RkhRWWdxMlhXQWFPdV9kekkxc2hHbEExbjdhNVc3MExSLUkzaTdCLU5yU3RkeHdWTmJZRXd6RTFnOWNTdEFkUTVZ?oc=5" target="_blank">Pasajeros de ferry en dirección a Vieques quedan varados por desperfecto mecánico - wapa.tv</a>
-                    </td>
-                    <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-08-03 20:39">hace 10h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Bióloga orienta sobre cómo actuar ante el varamiento de ballenas tras rescate en Punta Santiago">
+                <tr class="article-row" data-municipios="Humacao" data-titular="Región Educativa de Humacao lista para recibir a más de 30 mil estudiantes este 6 de agosto">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/08/03/biologa-orienta-sobre-como-actuar-ante-el-varamiento-de-ballenas-tras-rescate-en-punta-santiago/" target="_blank">Bióloga orienta sobre cómo actuar ante el varamiento de ballenas tras rescate en Punta Santiago</a>
+                        <a href="https://waloradio.com/2026/08/04/region-educativa-de-humacao-lista-para-recibir-a-mas-de-30-mil-estudiantes-este-6-de-agosto/" target="_blank">Región Educativa de Humacao lista para recibir a más de 30 mil estudiantes este 6 de agosto</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-08-03 20:36">hace 10h</td>
+                    <td class="time-ago" data-date="2026-08-04 20:18">hace 12h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Tu negocio podría ser el próximo en Plaza Las Américas con la oportunidad de Travesía al Éxito Empresarial">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://nelpr.com/2026/08/03/tu-negocio-podria-ser-el-proximo-en-plaza-las-americas-con-la-oportunidad-de-travesia-al-exito-empresarial/" target="_blank">Tu negocio podría ser el próximo en Plaza Las Américas con la oportunidad de Travesía al Éxito Empresarial</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-08-03 20:32">hace 11h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Documental sobre la Banda Municipal de Humacao ya está disponible gratis en YouTube">
+                <tr class="article-row" data-municipios="Humacao" data-titular="Sekaiju Con reunirá a coleccionistas y gamers en Humacao - Periódico La Perla">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/08/03/documental-sobre-la-banda-municipal-de-humacao-ya-esta-disponible-gratis-en-youtube/" target="_blank">Documental sobre la Banda Municipal de Humacao ya está disponible gratis en YouTube</a>
+                        <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOdi1NQk9PdVVwMXFtMTBnN25WYWZFaUpkSnVuc2tGdEpqMFRNNnphSzNQaHBVU3J3bTRjQmFuQ3VJVnNCOU4xcGR1UlcxUTZVN1ZfeHREOTVxN29hUDdGX21TSmtfS1JBVUpNQU5FclNyVFNvMU40N2YtdFc2QWZ3V3RzSVV3UXRqbml4V0xyUHctS25oMTgya2o4WXM?oc=5" target="_blank">Sekaiju Con reunirá a coleccionistas y gamers en Humacao - Periódico La Perla</a>
                     </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-08-03 20:09">hace 11h</td>
+                    <td>Humacao</td>
+                    <td class="time-ago" data-date="2026-08-04 19:44">hace 13h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Caguas,Culebra" data-titular="Gongo captura culebra en centro comercial de Caguas - Metro Puerto Rico">
-                    <td><span class="muni-tag">Caguas, Culebra</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOQkd2RmJWclYwOWdoS0J1RWRqMXNnQ2Rld3Itc0hndnFrOXBKTTQybWZPMmlOaThaclBlQ0RWYW1tLXN0X01hSHNVSWYyWnY2bHZWRU5JMHNMbFFEdFFyUG0ycUV4bmNvNFNNelRSZVRMNXdaMEJRRVV4U1Q4V0tEV3o2eExLb3FKTEdyTFB0YVVQbTMzNDZDOA?oc=5" target="_blank">Gongo captura culebra en centro comercial de Caguas - Metro Puerto Rico</a>
-                    </td>
-                    <td>Culebra</td>
-                    <td class="time-ago" data-date="2026-08-03 20:09">hace 11h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Canóvanas" data-titular="Senado exige a la AAA corregir fallas en planta de filtración de Canóvanas - Metro Puerto Rico">
-                    <td><span class="muni-tag">Canóvanas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQMzdOQ0tjNXZJcjRIaFgwRzFEVjRoWE42UGg3T1A2TlBzUThHTXA4NXZzSHRvcU5rV21QRkZOYTdhZW5mSnBiRlkyUG45UFN2TWNvaW5Jelh6WmZOVlJ4ck1QZk5BN1RvRFZjS2RCSzBZWkJubXNmeFlLb1lsbmctWVpnUEhocmREeHNkbmZGdlNtbENNd3lZZTEyVTlWa1BhQVNRNE9SdHJjNXNsRl9VT1RtZzI4SlU?oc=5" target="_blank">Senado exige a la AAA corregir fallas en planta de filtración de Canóvanas - Metro Puerto Rico</a>
-                    </td>
-                    <td>Canóvanas</td>
-                    <td class="time-ago" data-date="2026-08-03 19:34">hace 11h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Canóvanas" data-titular="📣 Oportunidad de empleo en el Municipio de Canóvanas Estamos reclutando para el puesto de: 🔹 Director(a) de Recuperación, Reconstrucción y Resiliencia 📍 Dependencia: Oficina de la Alcaldesa – Programa de Gerencia de Proyectos 💰 Sueldo mensual: - facebook.com">
-                    <td><span class="muni-tag">Canóvanas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxQMWctUVk0WkRDRGJfMEFVaGpaWnFvaDhKWnVJR25YaFU3RGhZNzV6Y1JoZ09RanFKNVkyOXE4Z1FoV0xXUG1oSmtHU1EzYnhvdWFUVFVOalh1ZFlWU1RvUmpvNzdSNDdkMDFOYkJrMTB2QkhIcEVDcDl4STVrdTVGdW5lOS1ESnNKUk56R0RVYV9ZY3FjR3YtdHZiMG5aZDFsY2pQZHEzNkdSSHRENTR4UGhIVHY5ZHFFcTM3N0pMWThDT2ZNemVUZ0JMRkRLc2ZvazFnSmtuM1hISVpxR2xUeUdRdTBKT0VvM29B?oc=5" target="_blank">📣 Oportunidad de empleo en el Municipio de Canóvanas Estamos reclutando para el puesto de: 🔹 Director(a) de Recuperación, Reconstrucción y Resiliencia 📍 Dependencia: Oficina de la Alcaldesa – Programa de Gerencia de Proyectos 💰 Sueldo mensual: - facebook.com</a>
-                    </td>
-                    <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-08-03 18:02">hace 13h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Lista para el inicio de clases escuela de Bellas Artes y anuncian inversión de más de $3 millones">
+                <tr class="article-row" data-municipios="Humacao" data-titular="Estudiantes de la UPR Humacao destacan por proyectos innovadores con impacto ambiental y social">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/08/03/lista-para-el-inicio-de-clases-escuela-de-bellas-artes-y-anuncian-inversion-de-mas-de-3-millones/" target="_blank">Lista para el inicio de clases escuela de Bellas Artes y anuncian inversión de más de $3 millones</a>
+                        <a href="https://waloradio.com/2026/08/04/estudiantes-de-la-upr-humacao-destacan-por-proyectos-innovadores-con-impacto-ambiental-y-social/" target="_blank">Estudiantes de la UPR Humacao destacan por proyectos innovadores con impacto ambiental y social</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-08-03 17:22">hace 14h</td>
+                    <td class="time-ago" data-date="2026-08-04 19:40">hace 13h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Entregan 1,200 mochilas con efectos escolares a niños durante masiva feria ‘Back-to-School’ celebrada en Fajardo - wipr.pr">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxOOUdzQ0JDQThIUXVMbnc0cmlHSTItZzRWcElTRGhBT3hYX3h4dGE3VjFYdXhteTNvaGI3Vzl4OG5QZHRXQ2k5d0JRYmx3b2NvTm9uYkJZWGdxcENPMFNaSzZVMWZjMTk1eE1vWEw2bTdRNFY4ZDFURGFKVjhHd1Voak5mbnBDUUs5NUc1ODBZUVpOeEloZFFFMF9UNVllT1gydFFWUGxzZllBalNaS1NZckpZUW1aNEZSOFZXZHVtV3FsUFk?oc=5" target="_blank">Entregan 1,200 mochilas con efectos escolares a niños durante masiva feria ‘Back-to-School’ celebrada en Fajardo - wipr.pr</a>
-                    </td>
-                    <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-08-03 17:08">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Denuncian limitaciones de estacionamiento para personas con impedimentos en terminal marítimo de Vieques">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/08/03/denuncian-limitaciones-de-estacionamiento-para-personas-con-impedimentos-en-terminal-maritimo-de-vieques/" target="_blank">Denuncian limitaciones de estacionamiento para personas con impedimentos en terminal marítimo de Vieques</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-08-03 15:56">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Expo Pasaporte del Estudiante Naguabeño 2026 supera expectativas con amplia participación de familias">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/08/03/expo-pasaporte-del-estudiante-naguabeno-2026-supera-expectativas-con-amplia-participacion-de-familias/" target="_blank">Expo Pasaporte del Estudiante Naguabeño 2026 supera expectativas con amplia participación de familias</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-08-03 15:27">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Entregan bultos y materiales escolares de estudiantes del distrito de Humacao">
+                <tr class="article-row" data-municipios="Humacao" data-titular="Hospital Ryder promueve la prevención y el bienestar con la tercera edición de su 5K">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/08/03/entregan-bultos-y-materiales-escolares-de-estudiantes-del-distrito-de-humacao/" target="_blank">Entregan bultos y materiales escolares de estudiantes del distrito de Humacao</a>
+                        <a href="https://waloradio.com/2026/08/04/hospital-ryder-promueve-la-prevencion-y-el-bienestar-con-la-tercera-edicion-de-su-5k/" target="_blank">Hospital Ryder promueve la prevención y el bienestar con la tercera edición de su 5K</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-08-03 15:16">hace 16h</td>
+                    <td class="time-ago" data-date="2026-08-04 19:30">hace 13h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Culebra" data-titular="¡Qué bonito me queda el mar! 🌊🤍 Amo ser caribeña, y este fin de semana en Culebra, PR, me lo recordó. No iba desde hace más de 10 años, y esta vez no solo disfruté de sus playas: conocí a su gente y entendí por qué aman y defienden tanto esta isla. Gra - facebook.com">
-                    <td><span class="muni-tag">Culebra</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxNSWQxd0ZBcEVYbUd1cjN2TkhFdHFCZnNDcnNvV2NSSTE3aU14SWVIY05fbWplN1lHWFR0NE9CbU1WS2Y5elpuVF82emt4TjdOZVdkYTkzZENXWC1iVUNIV2ZLZzY3cGZaU0d3VFZOQ3BkWDgxOUhyY0xaWEt6NVRPazl3d3h3N2c4bnltcTZTeW5Ib256NVNucGxRNlYwTGZWTFJJbU5nYWVBZWdMMVpfWUlDMFJvZnQxTlIxM0R6QkxYbVYtNGVXS1pDVS1BQkU2YTBfRF9rR21rWDlNVElBUWZDRmVEQkNydktEMXRmU0lGQQ?oc=5" target="_blank">¡Qué bonito me queda el mar! 🌊🤍 Amo ser caribeña, y este fin de semana en Culebra, PR, me lo recordó. No iba desde hace más de 10 años, y esta vez no solo disfruté de sus playas: conocí a su gente y entendí por qué aman y defienden tanto esta isla. Gra - facebook.com</a>
-                    </td>
-                    <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-08-03 14:42">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Apóstol de Humacao Migdalia Torres presenta libro bilingüe con 80 devocionales para  fortalecer la fe">
+                <tr class="article-row" data-municipios="Humacao" data-titular="Tropa 546 de Girl Scouts reabre sus puertas en Humacao e invita a nuevas integrantes">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://waloradio.com/2026/08/03/apostol-de-humacao-migdalia-torres-presenta-libro-bilingue-con-80-devocionales-para-fortalecer-la-fe/" target="_blank">Apóstol de Humacao Migdalia Torres presenta libro bilingüe con 80 devocionales para  fortalecer la fe</a>
+                        <a href="https://waloradio.com/2026/08/04/tropa-546-de-girl-scouts-reabre-sus-puertas-en-humacao-e-invita-a-nuevas-integrantes/" target="_blank">Tropa 546 de Girl Scouts reabre sus puertas en Humacao e invita a nuevas integrantes</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-08-03 14:24">hace 17h</td>
+                    <td class="time-ago" data-date="2026-08-04 18:22">hace 14h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Tribunal cita vista en su fondo por demanda de San Juan contra la AAA">
-                    <td><span class="muni-tag">San Juan</span></td>
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://radioisla.tv/tribunal-cita-vista-en-su-fondo-por-demanda-de-san-juan-contra-la-aaa/?utm_source=rss&utm_medium=rss&utm_campaign=tribunal-cita-vista-en-su-fondo-por-demanda-de-san-juan-contra-la-aaa&utm_source=rss&utm_medium=rss&utm_campaign=tribunal-cita-vista-en-su-fondo-por-demanda-de-san-juan-contra-la-aaa" target="_blank">Tribunal cita vista en su fondo por demanda de San Juan contra la AAA</a>
+                        <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5zTVJMVHVMTDI2WDRHYnp6Qi1sWUE5SHB5X1JSMTlwdWlsRDZGZXRoSm1ueHhaaXNueTFhdTFUOUl4MUFSalhBbHdQam4wTWhySUl6Y1lHaHU0cEpBcDVDb1NyWExQQWZZTUx5Z0JGeFNZWVNFcEF4ZGVtQUtERkE?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
                     </td>
-                    <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-08-03 13:33">hace 17h</td>
+                    <td>FB - Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-08-04 16:31">hace 16h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Loíza" data-titular="https://periodicovision.com/noche-nacional-afuera-en-loiza-es-manana-martes/ - facebook.com">
-                    <td><span class="muni-tag">Loíza</span></td>
+                <tr class="article-row" data-municipios="Humacao" data-titular="Residentes de Humacao reportan tubo roto - Ciudadanos del municipio de Humacao reportan un rotura en un tubo que ubica en la cuesta Los Serrano en el Barrio Candelero Arriba. Vea las imágenes aquí. #JugandoPelotaDura Video de Facebook/ Walo Ra - facebook.com">
+                    <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxPT1JkSzdJVkthR3pKMTJLMldCX3RJMDVQLWNnbmF3NzJKdGdwcklGMHRDOUxyNkhacW9vc1EyR2xqbnZqM1FhdWNMMTdKWHlBZWZvTHliaFItSEFyQ200SHF1QzVYSFJHRXhTUUtJaHhXdW50cjBWYzU5M29BQjh6ZG1vMA?oc=5" target="_blank">https://periodicovision.com/noche-nacional-afuera-en-loiza-es-manana-martes/ - facebook.com</a>
+                        <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxPcjhmYURWaW4zWmsyYXBtRDBFUDRYeXFlTDhNTjdZWVV0LTZHNGlTa1BhVTMzOFhPalFsRHZHMzMtVXZDa0dMeHRBWGtiVE1HVzlsNWwwRFpPc1FuM3h5TWtOelQwSkVQaGNDSzhQVm0tN2x2UmEzTkVnd29QelJtYVdZTzkwRHY1V294OFozT0M3NEpYQm1iLUFZYTVoUWRqZm9JT2V0bHRORWU2OHk2NWVTMHJaQXhDY2J1R2FTOGduNWh4bzZnSWR2LUFzeU9yT19aRVBDZWdyS213WHc?oc=5" target="_blank">Residentes de Humacao reportan tubo roto - Ciudadanos del municipio de Humacao reportan un rotura en un tubo que ubica en la cuesta Los Serrano en el Barrio Candelero Arriba. Vea las imágenes aquí. #JugandoPelotaDura Video de Facebook/ Walo Ra - facebook.com</a>
                     </td>
-                    <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-08-03 13:14">hace 18h</td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-08-04 15:00">hace 17h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan,Carolina,Trujillo Alto,Canóvanas" data-titular="¿Cuándo volverá el agua a sectores de San Juan, Trujillo Alto, Carolina y Canóvanas? - elvocero.com">
-                    <td><span class="muni-tag">San Juan, Carolina, Trujillo Alto, Canóvanas</span></td>
+                <tr class="article-row" data-municipios="Humacao" data-titular="Residentes de Humacao reportan tubo roto - Ciudadanos del municipio de Humacao reportan un rotura en un tubo que ubica en la cuesta Los Serrano en el Barrio Candelero Arriba. Vea las imágenes aquí. #JugandoPelotaDura Video de Facebook/ Walo Ra - facebook.com">
+                    <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi-gFBVV95cUxQejNVWmt4T1lUVmgyMEFkZ0ROdnhoLTNlNUlSbVA4Z0hPYUlkN0diUTJCaU1kazVEUnY0NndFbFJQRXl6eGpBQ3p1UnFwWVdpSzR0d0VaXzJXT1FrQkNKcGs0X1FNZjRKdGNfZnRuSGZYUnBwX0x3SnhYdVhvdUFIU3ZHM2ZkMzc2SlFpbzJLaTBZLVdMamRZS2pKTTEwUFcxcVJlRFBnQTBhYXpxWEhxYmJDRE9yQzZVUHQzdkJKeDBSV0xsRW1iY3RPN05oVXNjVUJnN1NZZGw1MEFKNG5MYTFwNFozWEdvNkNuaGx6OVdFVjVVYVRndzRR0gH_AUFVX3lxTE9RUFNEeUhKUndVWmlqVUJ6TVkzcDNvRFZPLXdzZnEzOFM5ZjhTLTF5SkhhVjRYOS05UGhNb3pRdmlUeVp0VDBOWjZtMFJ0OFJ4ZU1NUkZmUzVXTzZqanp3VGRRZXhSTVNvNU1KUnRiYUVnNVFDREJLbGhjbzNnaTR0dVkwbEVDaFZrR0drc3ViR3h1elZLemxoRzVaTmVGZ1ZGTEd5SEtNbm5PeDNUTXZ3SnZvenI5NC1yQy1LbmpZNXNVWGdERkFVT0RCWTNjTHBWRURLLXVFOURMVEpmZ0draEpxOFI0eFRoQWpYaWg4VDE0SG9YOGFBNkx6b1hYTQ?oc=5" target="_blank">¿Cuándo volverá el agua a sectores de San Juan, Trujillo Alto, Carolina y Canóvanas? - elvocero.com</a>
+                        <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxOSWRSOUUyR0hVRzdQNXBRVmJaSTZOd2hVdWk1RmJMb0h3bjVZVlBSNTlrdzVreWJsdUNSekJ4anp1MGMxQmk2d2Y5R2d4X0tOcGtoY1pwNW0wclhka0x6WW9xWmg4VXhfTXVWaHVVSXdVTGh6UEVvR0pqVFNqcjZ5ZUdkYlFPTDg5N0wxT0dYOUtLY21waG01eDNRal8tMmRudi01V21nQlBYRUVUVXJvUjdENkpHYnJuVWZGYU1UamNlbC13a3Q3NVV6T1ZnWG83UzhiSEM1Y2MyTUsxSTdZ?oc=5" target="_blank">Residentes de Humacao reportan tubo roto - Ciudadanos del municipio de Humacao reportan un rotura en un tubo que ubica en la cuesta Los Serrano en el Barrio Candelero Arriba. Vea las imágenes aquí. #JugandoPelotaDura Video de Facebook/ Walo Ra - facebook.com</a>
                     </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-08-03 12:32">hace 19h</td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-08-04 15:00">hace 17h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="🚨 ¡En vivo ahora! 🚨 Estamos junto a Millie Méndez en Telemundo PR y Radio Isla 1320 hablando sobre los temas más importantes para San Juan y Puerto Rico. 🇵🇷 ¡Conéctate a Pega’os en la Mañana y acompáñanos! https://www.telemundopr.com/en-vivo - facebook.com">
-                    <td><span class="muni-tag">San Juan</span></td>
+                <tr class="article-row" data-municipios="Río Grande" data-titular="Alexis Almodovar. Buddha Code · Moment of Peace. El Yunque, Río Grande Puerto Rico 🇵🇷🍃 . . . #puertorico #yunque #riogrande #paz #bosque - facebook.com">
+                    <td><span class="muni-tag">Río Grande</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVnNndWxOcDMyM19PZkZxUVRrN1E3aDRWNldJUlpBVk1XTVZoUWRKdE9NN1czcWpqSmpreW5FQ2ctSGtWN3JMcXFiTHZnMFZJRV9YZVczOWlET0hXQ2JiclFYZl8zaTVkN1NlNTJrbmMxYWhEWnVwYnNiOWZCbVVOQVNMaXpBMXdlOHp1SjlVLWJ5aVVHeUNqLTBvZVJyS3lLU2hNNFE1YVR4czhzNGRLZ0lVLWVUOTFHVTIwV0UwX2liOFZqS2RTSG16ZDlKaGdQZkx2SmdUcUdyOC1QLWktZTYyT3o?oc=5" target="_blank">🚨 ¡En vivo ahora! 🚨 Estamos junto a Millie Méndez en Telemundo PR y Radio Isla 1320 hablando sobre los temas más importantes para San Juan y Puerto Rico. 🇵🇷 ¡Conéctate a Pega’os en la Mañana y acompáñanos! https://www.telemundopr.com/en-vivo - facebook.com</a>
+                        <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxOSzMya1MxZjROdDBnaXA3MkcwZmpmS0hFTmRJSWE1OGNIUzNMME1QUUJHVGRkSDBZaWtlc25TX0VFM0hrVTlfRDhlYnpRV3lQckZIUnV2WnRsbUxSQk1Rc2xicVI3OGFBREtxdTRncWFiVGI0Z0ppMTdTZ0d1RTBPMzlfQzNTRGxIWmVkZE1KemlhNngyaDV4QTBxX2dWaVlKaXptWkd5MldGNWFZWmd2T0tSQXI4U2FlVVBUZXpFUm5QdGlWTm5IYUhTSHdGa3RGOHhFTjRnM0tqZw?oc=5" target="_blank">Alexis Almodovar. Buddha Code · Moment of Peace. El Yunque, Río Grande Puerto Rico 🇵🇷🍃 . . . #puertorico #yunque #riogrande #paz #bosque - facebook.com</a>
                     </td>
-                    <td>Telemundo FB</td>
-                    <td class="time-ago" data-date="2026-08-03 11:28">hace 20h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Joven pierde la vida al ser aplastado por un montacargas mientras trabajaba en Carolina - wapa.tv">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi_wFBVV95cUxOTlIzZm0wR25iRUxwYUl1N3hMNkFZQnZNZlVQWGhZZGl2QWNuUlN4RkZjMld3bEwwcnhpOGhhTTRjYXZwWFhralZEX1ZrX3ZYRUgzRXVQV1Y4emJXcEFObnJKRGQ3dS00NHIwTUlGYmhZUld6aE1YVkdBeXEzSzk0b3hfV3VYMmNRZndSa0R0OWFtTVE3ZmduOW9hZ0JkZDljd3dnX05uX0hrOXRhV0JDclZoTDFPbGo2NElDcS1YV3hOX1ljZ1pFRmRpRWswSDdxZk5ld3dFSzRGUlNWby15NVhJYXpHVVBkMkdOUlZIeTFvSXdxWjJQVkRoZ01vRms?oc=5" target="_blank">Joven pierde la vida al ser aplastado por un montacargas mientras trabajaba en Carolina - wapa.tv</a>
-                    </td>
-                    <td>WAPA TV</td>
-                    <td class="time-ago" data-date="2026-08-03 01:33">hace 1d</td>
+                    <td>FB - Río Grande</td>
+                    <td class="time-ago" data-date="2026-08-04 13:18">hace 19h</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">📋 Anteriores</td></tr>
                 
-                <tr class="article-row" data-municipios="Carolina" data-titular="Empleado de 21 años muere atrapado por montacargas en empresa de Carolina">
+                <tr class="article-row" data-municipios="Carolina" data-titular="Racionamiento de agua desde el 7 de agosto por sequía en Carraízo afectará a varios municipios">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://www.carolina787.com/n/empleado-de-21-anos-muere-atrapado-por-montacargas-en-empresa-de-carolina" target="_blank">Empleado de 21 años muere atrapado por montacargas en empresa de Carolina</a>
+                        <a href="https://www.carolina787.com/n/racionamiento-de-agua-desde-el-7-de-agosto-por-sequia-en-carraizo-afectara-a-varios-municipios" target="_blank">Racionamiento de agua desde el 7 de agosto por sequía en Carraízo afectará a varios municipios</a>
                     </td>
                     <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-08-03">2026-08-03</td>
+                    <td class="time-ago" data-date="2026-08-04">2026-08-04</td>
                 </tr>
                 
                 
@@ -916,7 +845,7 @@ tr:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-08-04 07:32:57 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-08-05 08:59:04 AM<br>
     Actualización automática cada 30 min
 </div>
 
