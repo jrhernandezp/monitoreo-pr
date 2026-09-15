@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-15 10:31:16 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-15 11:01:17 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">36</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">34</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-15 10:31:16 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-15 11:01:17 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -811,6 +811,19 @@ tr.article-row:hover { background: var(--surface2); }
 
 <!-- BREAKING NEWS -->
 
+<div class="section breaking-section">
+    <div class="breaking-banner">
+        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">ahora</span> —
+            <a href="https://waloradio.com/2026/09/15/ninos-y-jovenes-se-capacitan-como-primeros-respondedores-ante-emergencias-en-culebra/" target="_blank">Niños y jóvenes se capacitan como primeros respondedores ante emergencias en Culebra</a>
+            <span style="opacity:0.6"> [Culebra]</span>
+        </div>
+        
+    </div>
+</div>
+
 
 <!-- MUNICIPALITIES -->
 <div class="section">
@@ -819,7 +832,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">9</span>
+            <span class="muni-count">7</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -879,7 +892,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <span class="muni-name">Cataño</span>
-            <span class="muni-count">8</span>
+            <span class="muni-count">7</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
@@ -889,7 +902,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <span class="muni-name">Culebra</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">2</span>
         </div>
         
     </div>
@@ -918,6 +931,46 @@ tr.article-row:hover { background: var(--surface2); }
             <tbody id="articlesBody">
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Asesinan hombre en el interior de un vehículo">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/09/15/asesinan-hombre-en-el-interior-de-un-vehiculo-12/" target="_blank">Asesinan hombre en el interior de un vehículo</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-09-15 14:53">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Sube el petróleo: así están los precios de gasolina y diésel en Puerto Rico">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/09/15/sube-el-petroleo-asi-estan-los-precios-de-gasolina-y-diesel-en-puerto-rico/" target="_blank">Sube el petróleo: así están los precios de gasolina y diésel en Puerto Rico</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-09-15 14:43">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Hasta 70% de potencial de lluvia para hoy">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://nelpr.com/2026/09/15/hasta-70-de-potencial-de-lluvia-para-hoy-20/" target="_blank">Hasta 70% de potencial de lluvia para hoy</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-09-15 14:39">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Culebra" data-titular="Niños y jóvenes se capacitan como primeros respondedores ante emergencias en Culebra">
+                    <td><span class="muni-tag">Culebra</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/09/15/ninos-y-jovenes-se-capacitan-como-primeros-respondedores-ante-emergencias-en-culebra/" target="_blank">Niños y jóvenes se capacitan como primeros respondedores ante emergencias en Culebra</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-09-15 14:36">ahora</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Tribunal Supremo decide no entrar en controversia por la alcaldía de Cataño">
                     <td><span class="muni-tag">Cataño</span></td>
@@ -969,16 +1022,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-15 12:33">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Hallan cuerpo baleado de un hombre en San Juan">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20260915/hallan-cuerpo-baleado-de-un-hombre-en-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=hallan-cuerpo-baleado-de-un-hombre-en-san-juan" target="_blank">Hallan cuerpo baleado de un hombre en San Juan</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-09-15 12:08">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Cataño" data-titular="Camión derrama tierra en la PR-22 de Cataño a Bayamón - Telemundo Puerto Rico">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
@@ -986,7 +1029,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOb2g2Y2FIWnhLZ3RsdVhwSllfMF84d184OU1tUmZrVzZJZGwtTVdzZlFKbmw0MktPTElVTXh1LTFfR3I2RkZVQTZndEdZYXliTWtVNXU4V2tfUWFEVUFvZjRuc19NZFd4eHd1emRpZnRITUpCaXJaeUw2QktPVEdKYzNtZ2ZPZVVMX3FYWUVRU0l1eE9QdW1EOWFHY0VfTWRuSTF3UzRYdUFXLW1XR1MxVNIBuAFBVV95cUxPTFZMRXgzeE45Q2Y3UV9kbnBYRFpGdG1pSXYxdGdtUy12OU1xa1pZTjM4M2MtLW9KdmV5ZzB5cjJobzhiQjBpbHQ5R3k5TVBGR2dYOWpxSnFOZmc4ci14M2o5YkpPZldXOGRqNkJwNWR0eUlCeDRXMW5wTXdTODlzUjNrY3dQM05OM3lTVGcyWEVUWjZnemlVODRUOGJvZUtpSFppWnFzNzZwVXNMdUlEWUd6TXp0Z0N1?oc=5" target="_blank">Camión derrama tierra en la PR-22 de Cataño a Bayamón - Telemundo Puerto Rico</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-15 10:51">ahora</td>
+                    <td class="time-ago" data-date="2026-09-15 10:51">hace 10min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Investigan hallazgo de hombre baleado y posible desaparición de una mujer en San Juan">
@@ -996,7 +1039,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/investigan-hallazgo-de-hombre-baleado-y-posible-desaparicion-de-una-mujer-en-san-juan/" target="_blank">Investigan hallazgo de hombre baleado y posible desaparición de una mujer en San Juan</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-09-15 10:37">ahora</td>
+                    <td class="time-ago" data-date="2026-09-15 10:37">hace 24min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Camión pierde carga de piedras y provoca congestión hacia Bayamón">
@@ -1006,7 +1049,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/camion-pierde-carga-de-piedras-y-provoca-congestion-hacia-bayamon/?utm_source=rss&utm_medium=rss&utm_campaign=camion-pierde-carga-de-piedras-y-provoca-congestion-hacia-bayamon&utm_source=rss&utm_medium=rss&utm_campaign=camion-pierde-carga-de-piedras-y-provoca-congestion-hacia-bayamon" target="_blank">Camión pierde carga de piedras y provoca congestión hacia Bayamón</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-09-15 10:21">hace 10min</td>
+                    <td class="time-ago" data-date="2026-09-15 10:21">hace 40min</td>
                 </tr>
                 
                 
@@ -1022,56 +1065,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-15 02:11">hace 8h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Junta Fiscal advierte que podría bloquear aumento de pensiones en Puerto Rico">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/09/14/junta-fiscal-advierte-que-podria-bloquear-aumento-de-pensiones-en-puerto-rico/" target="_blank">Junta Fiscal advierte que podría bloquear aumento de pensiones en Puerto Rico</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-15 02:06">hace 8h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="PPD inicia movilización para Asamblea General en Ponce">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/09/14/ppd-inicia-movilizacion-para-asamblea-general-en-ponce/" target="_blank">PPD inicia movilización para Asamblea General en Ponce</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-15 02:05">hace 8h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Documental sobre los coquíes de Puerto Rico llega a los cines">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/09/14/documental-sobre-los-coquies-de-puerto-rico-llega-a-los-cines/" target="_blank">Documental sobre los coquíes de Puerto Rico llega a los cines</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-15 02:04">hace 8h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Utuado y Guayama se afianzan en el liderato del Béisbol Femenino">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/09/14/utuado-y-guayama-se-afianzan-en-el-liderato-del-beisbol-femenino/" target="_blank">Utuado y Guayama se afianzan en el liderato del Béisbol Femenino</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-15 02:03">hace 8h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Rafael Canino respalda a Bethzaida Rodríguez en elección especial de Cataño">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/09/14/rafael-canino-respalda-a-bethzaida-rodriguez-en-eleccion-especial-de-catano/" target="_blank">Rafael Canino respalda a Bethzaida Rodríguez en elección especial de Cataño</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-15 02:02">hace 8h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
                     <td><span class="muni-tag">Vieques</span></td>
                     <td class="titular-cell">
@@ -1079,7 +1072,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFBDNXBzeERqOUhLbVdTQlA0VGV5ME1LTDVxUF9mSERDd215THdGUS1KOGFSQmVnckFpT2lPNHlXWThQWWNKbzNIenNBZjlEQS02aEJJanJFbTZOSmp3NzZ0T0tSUjdHYmlFWGlSMXJ5ZGp5R0E?oc=5" target="_blank">Municipio de Vieques - facebook.com</a>
                     </td>
                     <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-09-15 02:00">hace 8h</td>
+                    <td class="time-ago" data-date="2026-09-15 02:00">hace 9h</td>
                 </tr>
                 
                 
@@ -1122,7 +1115,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/14/ddec-proyecta-iniciar-en-2027-construccion-de-centro-de-economia-azul-en-ceiba/" target="_blank">DDEC proyecta iniciar en 2027 construcción de centro de economía azul en Ceiba</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-14 18:49">hace 15h</td>
+                    <td class="time-ago" data-date="2026-09-14 18:49">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba,Vieques" data-titular="[CEIBA] IDENTIFICAN A HOMBRE DE VIEQUES QUE MURIÓ TRAS SER IMPACTADO EN LA PR-53 Redacción Islanewspr/ Las autoridades identificaron como Julio López Hernández, de 60 años y residente de Vieques, al peatón que falleció durante la ma - facebook.com">
@@ -1132,7 +1125,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNSjg2aWV4Q0VpM0wzaFNQM0dVdXNBcUx2UHAtR0EyRFY3amlkYWFWekNFQnVXbno4TVdETlNsWENzcGptdXMzZUxveFhLWURDQ19BS0cxR0FianpaYTFzQWdfcFRRbFF3bjZvMXZwd0lObGdHM0ZnSHMtbVFneVpmXzVlY2NjbWE1a0ZuU2tHY0FseWZ6NGJNS0VrTG9LY1d6QUt3Q1dnVXlfVmc4V0dWcGxwNWZJakpEdEliWUFvRjdTQ3JtNWt6cGQzQURGbXRRTEZCUDIyM2I3bWpCaWc?oc=5" target="_blank">[CEIBA] IDENTIFICAN A HOMBRE DE VIEQUES QUE MURIÓ TRAS SER IMPACTADO EN LA PR-53 Redacción Islanewspr/ Las autoridades identificaron como Julio López Hernández, de 60 años y residente de Vieques, al peatón que falleció durante la ma - facebook.com</a>
                     </td>
                     <td>FB - Ceiba</td>
-                    <td class="time-ago" data-date="2026-09-14 18:00">hace 16h</td>
+                    <td class="time-ago" data-date="2026-09-14 18:00">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Familias de Candelero Arriba reclaman solución a LUMA Energy tras problemas de bajo voltaje">
@@ -1142,7 +1135,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/14/familias-de-candelero-arriba-reclaman-solucion-a-luma-energy-tras-problemas-de-bajo-voltaje/" target="_blank">Familias de Candelero Arriba reclaman solución a LUMA Energy tras problemas de bajo voltaje</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-14 17:49">hace 16h</td>
+                    <td class="time-ago" data-date="2026-09-14 17:49">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Empleados del Municipio de Cataño realizaron labores de mantenimiento en las facilidades de la urbanización Villa Aurora, atendiendo distintas áreas para mejorar las condiciones de estos espacios. Estos trabajos atienden las necesidades de la comunida - facebook.com">
@@ -1172,7 +1165,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxNcmpaWnNLWHRQc2J6emJLMFU3cnVjcHFoa01GQzhnN0MzXy1GRTFiWDRFNmxpR2lfdlluUFFkTkFEdnhTclgyUWduVVFPNllTVV9OQ2Foang4d3Fmd0lDQ0dTblIybDRjQUJCZmFvelRWMnJ1T3FTSkxZR211UFY0MURpaXZBaW9BNWVzME01cWpzTGptZm5rX2taY0VnN2FtMU9rWUZTbGc1VElEeDRlMWN4NXp4UFhXeDhMTDZjVDlyUW92LTNucGVCMDlzbUdFU2c4QnBiRDJNUkdzYVRN?oc=5" target="_blank">EL MUNICIPIO DE HUMACAO CELEBRO CON EXITO LA SEGUNDA EDICIÓN DEL FESTIVAL DEL GRANO. ✅Música, gastronomía, artesanos y tradición se unieron en una jornada de celebración para residentes y visitantes. NRTZ - El Municipio Autónomo - facebook.com</a>
                     </td>
                     <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-09-14 16:45">hace 17h</td>
+                    <td class="time-ago" data-date="2026-09-14 16:45">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Más apagones: Miles sin luz por salida de la unidad 5 de la Central de San Juan - El Vocero de Puerto Rico">
@@ -1438,7 +1431,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-15 10:31:16 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-15 11:01:17 AM<br>
     Actualización automática cada 30 min
 </div>
 
