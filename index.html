@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-15 07:31:41 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-15 08:01:17 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">27</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
-        <div class="stat-box"><div class="num" style="font-size:14px">64/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-15 07:31:41 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num">30</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-15 08:01:17 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -811,6 +811,19 @@ tr.article-row:hover { background: var(--surface2); }
 
 <!-- BREAKING NEWS -->
 
+<div class="section breaking-section">
+    <div class="breaking-banner">
+        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">hace 1h</span> —
+            <a href="https://noticel.com/noticias/20260915/tormenta-fuerte-amenaza-con-rafagas-de-hasta-40-millas-por-hora-en-el-centro-y-oeste/?utm_source=rss&utm_medium=rss&utm_campaign=tormenta-fuerte-amenaza-con-rafagas-de-hasta-40-millas-por-hora-en-el-centro-y-oeste" target="_blank">Tormenta fuerte amenaza con ráfagas de hasta 40 millas por hora en el centro y oeste</a>
+            <span style="opacity:0.6"> [San Juan]</span>
+        </div>
+        
+    </div>
+</div>
+
 
 <!-- MUNICIPALITIES -->
 <div class="section">
@@ -819,7 +832,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">5</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -834,7 +847,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <span class="muni-name">Caguas</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">3</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
@@ -844,12 +857,12 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <span class="muni-name">Canóvanas</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">2</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
+        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <span class="muni-name">Fajardo</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
@@ -919,25 +932,58 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Matan a conductor dentro de un BMW">
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="Fernanda Ramos Obituario - Canovanas, PR - Dignity Memorial">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPQTdKcFFDSFlGUWtCbGdIaVhvWHB1TExScVdLYzNfendMZlE3am8xS21WTXlEb09hb1poTUVZLTAtbURhdnJUd2JiUkVMa2dIcEhiaFluaDUzdzBMemRNQnZ6cmM0Q2FoX200TVRKWmJMS2hycmh2ai1VbHBpMDM1aUlKU0Y0dUVlZ28wN05B?oc=5" target="_blank">Fernanda Ramos Obituario - Canovanas, PR - Dignity Memorial</a>
+                    </td>
+                    <td>Canóvanas</td>
+                    <td class="time-ago" data-date="2026-09-15 23:32">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Hallan el cuerpo de un hombre dentro de un vehículo en San Juan">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/hallan-el-cuerpo-de-un-hombre-dentro-de-un-vehiculo-en-san-juan/" target="_blank">Hallan el cuerpo de un hombre dentro de un vehículo en San Juan</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-09-15 23:30">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Matan a conductor dentro de un BMW">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
                         <a href="https://nelpr.com/2026/09/15/matan-a-conductor-dentro-de-un-bmw/" target="_blank">Matan a conductor dentro de un BMW</a>
                     </td>
                     <td>NELPR</td>
                     <td class="time-ago" data-date="2026-09-15 23:05">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Caguas" data-titular="Municipio de Caguas anuncia nueva fecha para celebrar el Día Nacional del Cuatro Puertorriqueño - primerahora.com">
+                <tr class="article-row" data-municipios="Caguas" data-titular="Municipio de Caguas anuncia nueva fecha para celebrar el Día Nacional del Cuatro Puertorriqueño - Primera Hora">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxNcnZnTXFFTVB4blYxZV81Y2ZCZjY3cWtKamtqazg3Q3F3VWR4c0RWbmNKWlZrUGVzSTRvZ0RYd0ZTbGdaNDdjS2dlYXVpSUhORDhnOU5ZREdKbDRjM1BFOUNxcDhybGZ5Zk5oRW8wUG1UYk5VdWx4ckppTjlRc0VWcGo3QkFUYl9wUEt4TmdHeWxxMm9JdmdMRDZZeHFLNXJQMDcweUNmNzBGSWJHRU5oUm8wVEJGN09JRXdRaFpMWF9vNHdfcFJrc3RKQ2VaSDFpZUlFaWZQTFVfMUVIV00xdE5VbGR4cVJmakNDdXI4a0tSeFl5ZlJr?oc=5" target="_blank">Municipio de Caguas anuncia nueva fecha para celebrar el Día Nacional del Cuatro Puertorriqueño - primerahora.com</a>
+                        <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxNcnZnTXFFTVB4blYxZV81Y2ZCZjY3cWtKamtqazg3Q3F3VWR4c0RWbmNKWlZrUGVzSTRvZ0RYd0ZTbGdaNDdjS2dlYXVpSUhORDhnOU5ZREdKbDRjM1BFOUNxcDhybGZ5Zk5oRW8wUG1UYk5VdWx4ckppTjlRc0VWcGo3QkFUYl9wUEt4TmdHeWxxMm9JdmdMRDZZeHFLNXJQMDcweUNmNzBGSWJHRU5oUm8wVEJGN09JRXdRaFpMWF9vNHdfcFJrc3RKQ2VaSDFpZUlFaWZQTFVfMUVIV00xdE5VbGR4cVJmakNDdXI4a0tSeFl5ZlJr?oc=5" target="_blank">Municipio de Caguas anuncia nueva fecha para celebrar el Día Nacional del Cuatro Puertorriqueño - Primera Hora</a>
                     </td>
                     <td>Caguas</td>
                     <td class="time-ago" data-date="2026-09-15 23:03">ahora</td>
                 </tr>
+                
+                <tr class="article-row" data-municipios="San Juan,Fajardo" data-titular="Arrestan a ocupantes de vehículo hurtado gracias a cámaras con inteligencia artificial">
+                    <td><span class="muni-tag">San Juan, Fajardo</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://noticel.com/noticias/20260915/arrestan-a-ocupantes-de-vehiculo-hurtado-gracias-a-camaras-con-inteligencia-artificial/?utm_source=rss&utm_medium=rss&utm_campaign=arrestan-a-ocupantes-de-vehiculo-hurtado-gracias-a-camaras-con-inteligencia-artificial" target="_blank">Arrestan a ocupantes de vehículo hurtado gracias a cámaras con inteligencia artificial</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-09-15 20:19">ahora</td>
+                </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Cataño entrega primeras 80 cartas de permanencia a empleados transitorios - Metro Puerto Rico">
                     <td><span class="muni-tag">Cataño</span></td>
@@ -946,11 +992,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQQ0FUcXRuVVdYSVNmVWZvYnlKMFFGbGMteUYyb2p6dmJic0VHZTRVWUwwTTBGMFVuN25OQmMwdzF3cTQwNHl0MDIwY05GVDdhUjV5eXZSNmdWWE12VHdFMEVWaFNTQUhKbk5MNms2VjRuMWtjWVFxTGU4S0RQdlA3X3JaQ1AwdXY5U3piQ3g2M1BFY2pjdTdYQS1kQ24wcjZmbS0xd0R1VDAxX3B3YTlwbm00aWZSQQ?oc=5" target="_blank">Cataño entrega primeras 80 cartas de permanencia a empleados transitorios - Metro Puerto Rico</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-15 18:33">hace 58min</td>
+                    <td class="time-ago" data-date="2026-09-15 18:33">hace 1h</td>
                 </tr>
                 
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
+                <tr class="article-row" data-municipios="San Juan" data-titular="Tormenta fuerte amenaza con ráfagas de hasta 40 millas por hora en el centro y oeste">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://noticel.com/noticias/20260915/tormenta-fuerte-amenaza-con-rafagas-de-hasta-40-millas-por-hora-en-el-centro-y-oeste/?utm_source=rss&utm_medium=rss&utm_campaign=tormenta-fuerte-amenaza-con-rafagas-de-hasta-40-millas-por-hora-en-el-centro-y-oeste" target="_blank">Tormenta fuerte amenaza con ráfagas de hasta 40 millas por hora en el centro y oeste</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-09-15 18:27">hace 1h</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Cataño entrega cartas de permanencia a menos de dos semanas de la elección - NotiCel">
                     <td><span class="muni-tag">Cataño</span></td>
@@ -969,7 +1022,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxNWEU3WHpzWHdJS1dyRkoydGlQcDJ4RlpHb2J5LTRhWmtNN1VHZTFoMzMxWHpNTHVWZ0JzUjBxTHZndy1MbGI2UmJPc2dXQXo5a1YyU09UQUZTQk9xYmNZU0VUTEVodUZEY182QlVSWFZZYWxkR0ZKZDFzRlpxSUt0UG9yWEppM1daVVplZi05blg5S0Eza1AyWDE5ZFNZREVvMWxydFI2bWN1RGRKb2xHRWd6dXlNR2dqWXBQYUVzdXZ4X0NnYXYydHh5S3pybllyam9VU2JRdE9CZW1SZU5F?oc=5" target="_blank">EL MUNICIPIO DE CATAÑO ENTREGA PRIMERAS 80 CARTAS DE PERMANENCIA A EMPLEADOS MUNICIPALES ✅La alcaldesa interina María de los Ángeles Pérez Ramos destacó que el proceso contó con la evaluación de la OATRH y fue viabilizado m - facebook.com</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-09-15 17:36">hace 1h</td>
+                    <td class="time-ago" data-date="2026-09-15 17:36">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza. Municipio de Loíza · Original audio. - facebook.com">
@@ -979,7 +1032,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE1lX0kxbkQ3cVlwRkd1RmJGR014Z2RqUzhLelVLWjlfOWpLbUJ2emhubUVyY2tHaTllMEFXd1hNOXJaVjIybGlYZXU1WkpEZjFyZ1pfOXFfRUVIbFY0cGhjS2ZmTm5SQmt6ZzVOOWo3Q3pUeS04Zk1JaA?oc=5" target="_blank">Municipio de Loíza. Municipio de Loíza · Original audio. - facebook.com</a>
                     </td>
                     <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-09-15 16:33">hace 2h</td>
+                    <td class="time-ago" data-date="2026-09-15 16:33">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Culebra" data-titular="Detenidos tres indocumentados que arribaron en costas de Culebra">
@@ -999,7 +1052,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/15/ninos-y-jovenes-se-capacitan-como-primeros-respondedores-ante-emergencias-en-culebra/" target="_blank">Niños y jóvenes se capacitan como primeros respondedores ante emergencias en Culebra</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-15 14:36">hace 4h</td>
+                    <td class="time-ago" data-date="2026-09-15 14:36">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Tribunal Supremo decide no entrar en controversia por la alcaldía de Cataño - El Nuevo Día">
@@ -1009,37 +1062,17 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPUHRUbUhkaG8xZWthcjRjSmRWWnVxV3QtR2VCSUx6NmxOUDZhS3FTcnhJTTN4NGpSU20xa09xTElhTEdud3E0QW9wTUJseW1sQXZudFRuLWMycGJyLXg5Sll6UlpublRnR0xvZm1Dakt2TVdsejVkRFQxYS02ZUUxNmZKUkVPdEp5YWR6ZVdyN1RDX2FqX09Ud2ZJX2NqM09HV211SmRXWDlIRVA2RmZLUFpaLWJ3V213dndReEJ4OEctb19oU2c?oc=5" target="_blank">Tribunal Supremo decide no entrar en controversia por la alcaldía de Cataño - El Nuevo Día</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-15 13:53">hace 5h</td>
+                    <td class="time-ago" data-date="2026-09-15 13:53">hace 6h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Cataño" data-titular="Reabren autopista PR-22 en dirección a Cataño - primerahora.com">
+                <tr class="article-row" data-municipios="Cataño" data-titular="Reabren autopista PR-22 en dirección a Cataño - Primera Hora">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPcWMzTG5EbWhJMTljZmRBbTI4eWh6c0NyMUdxQ0N4TG9TMU9DSWhoVFJEbktfQnROLVAyMDd5UkF3ZDZhMmo3RjhEeDB3ajREX2tMMkpSNHBxWWF4SXpuUk1lZUR0MFBGdHpqaWc0aFIzVTRlcVV4QnFncWZTRmxXRGdDb1BZZ2EyeTl2SDRGcFViWlFoWU1DY0RoRHZZem0yWHJHd2VHSkJCRjVo?oc=5" target="_blank">Reabren autopista PR-22 en dirección a Cataño - primerahora.com</a>
+                        <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPcWMzTG5EbWhJMTljZmRBbTI4eWh6c0NyMUdxQ0N4TG9TMU9DSWhoVFJEbktfQnROLVAyMDd5UkF3ZDZhMmo3RjhEeDB3ajREX2tMMkpSNHBxWWF4SXpuUk1lZUR0MFBGdHpqaWc0aFIzVTRlcVV4QnFncWZTRmxXRGdDb1BZZ2EyeTl2SDRGcFViWlFoWU1DY0RoRHZZem0yWHJHd2VHSkJCRjVo?oc=5" target="_blank">Reabren autopista PR-22 en dirección a Cataño - Primera Hora</a>
                     </td>
                     <td>Cataño</td>
                     <td class="time-ago" data-date="2026-09-15 13:12">hace 6h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="🏡 Propiedad disponible en Golden Gate, Caguas Ubicada en una comunidad con acceso controlado, esta residencia ofrece espacios amplios y una distribución funcional. 📍 Caguas, Puerto Rico 💰 Precio: $399,000 Características principales: • 3 habitacione - facebook.com">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdmxCc1JSQTlBWnZhRklJcnhVV2xaQTVCUzVLQ2l2Wkx0cUJKaldaUjBLQTBWeDFoa1pIMWFCVWdJeU05WUUtamlJcnVZZTFsQzhTeXFfR0NPMG1TdWRfbFNWbm9xbXplTGZTbXNiSUtyTXdJbkEzSGluOXBJVkZ1MFVwcW1aN3d2bUt4WjJaajRnU1p4Mkl1LXR1Zjcxc0c0NU1hQV9DeEJTc1lwekRsdl90OTdycE1iTlhTQjU0S2M2WVZPVnByLW80WTBWRkd2RTB0bnFmcnFRZE9P?oc=5" target="_blank">🏡 Propiedad disponible en Golden Gate, Caguas Ubicada en una comunidad con acceso controlado, esta residencia ofrece espacios amplios y una distribución funcional. 📍 Caguas, Puerto Rico 💰 Precio: $399,000 Características principales: • 3 habitacione - facebook.com</a>
-                    </td>
-                    <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-09-15 12:51">hace 6h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Huellitas de la Montaña. . 📍Caguas, Puerto Rico MANCHA NECESITA UN HOGAR Mancha lleva alrededor de 5 años siendo parte de la comunidad de la Escuela Nicolás Aguayo Aldea, en Caguas. Allí ha recibido cariño, cuidado y protección. Está esteriliza - facebook.com">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxNb1FQUXBuZ3llZTVCc05LTjlvaG83bk8zQlVpQy1kUjdSUTFzSXZJM2xqVUdibGFLNERoTWw2bUtLSjY3ZWsyODBsT2xjTkJVREhHYlZXMUg5NTBreFBJTGdGWW0zVlh2MGNxQ1lTVGctbjQ5d2UwQk02YzV5aEJaOVp5Rks0bHZielg0SVZvNU1TX2Zmb3htTG00R0lOeG1BOFdzZ1Q3MWxzRTdlaHJob2pxaWpfYjZnMFpZR2hpVkFES1JJOWZ6MmQ2ZVRCOS1JVVNiRE9YdDdjencwQkRLRjVkSTA3QTdveXpHOQ?oc=5" target="_blank">Huellitas de la Montaña. . 📍Caguas, Puerto Rico MANCHA NECESITA UN HOGAR Mancha lleva alrededor de 5 años siendo parte de la comunidad de la Escuela Nicolás Aguayo Aldea, en Caguas. Allí ha recibido cariño, cuidado y protección. Está esteriliza - facebook.com</a>
-                    </td>
-                    <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-09-15 12:33">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Camión derrama tierra y piedras en la PR-22 de Cataño a Bayamón - Telemundo Puerto Rico">
@@ -1049,7 +1082,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPVkdVMGMtZDBTa2doTkJyWks4d1gxUm1kQXhtRmc5LXZYcW5DZHBSUE4zMEp1OFlaZHZLRmVBX2lPdG5ZdXU4TjBaNU9NOGl5d0Zlam9wRzJDUGtjTzI0cjRTN3h2b2tkZ3g1ZUpSaUdTamF6LUtmRHMzXzVyNy1XODB5N3Z4UnNEWFRicWJORXdOUGlXUnJRNU1qbGlPU2FrWURwWVYzTGs2b0d0OHJGa2dUOWM2dEZLUzdzNk5n0gHGAUFVX3lxTE9uRUNQb2FKTDlTRWZKMVpyeWxyYU9ZUjI5c1Z1SDcwd1NPX0V3Y2l4b3NMVEtpTFNOaEM4OWVQUVgwOG1WN2NpWTBLWjlhZTlGZkpEVk01dGFENnpHTGFqRDZQRjhicURpUGFQU2RYLTVRNFhVNExJeEtNbnlBM3IwUzZUNDRkSTVweXd3SURkMWVycVYxQ3RWQV9LUU5INUJBWjVPZ0l3Z2FYaVpqY2dkRmY3ODAyeXhSVVFuSF9zUURXc1BFUQ?oc=5" target="_blank">Camión derrama tierra y piedras en la PR-22 de Cataño a Bayamón - Telemundo Puerto Rico</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-15 10:51">hace 8h</td>
+                    <td class="time-ago" data-date="2026-09-15 10:51">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Radican cargos contra hombre que habría entrado a vivienda y matado a tiros a una mujer en Vieques - El Vocero de Puerto Rico">
@@ -1059,7 +1092,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxNcnRveUlrQWt0eDdfaFBRamo4cG5NZDRqNG5QVXp2Tk51QmNBU3o4SFR2bXBqTEczWFJac1BxOUtmZ0FmOURabE5xMkF2c1lON2FwYVRPdVJtWFctNTB6ZDJLR25aT1ZaN0ZXTUJpNnM3dnlTd3Q0cDVwb3MwTVlJLXhIMUtOdGNwd016enVIeFZHTDVKbC1qd3B3NEdfd19RSUxvS2FpNUVzMkw5MnlpM2MtVG9COUtPTXBTRWpxZHk2UmpMMTd2V3dYTW9RdWVwbUlBbHRIYTBQeHpRYWg2UXNJQjBSelBwcXZwWnA4WTZQVWtFcW1R0gH8AUFVX3lxTE0yRWRHMzg4Wkl2WF8zNklQaF9YOXRWOEFxazRoY095LTBGUUNNSFRXX1RqRG1kWXY2ZXc5Qnprd05KVWVQNVg3bHQ3eTJIRGFNdGZpZFJUTWprOFczZFBzVGNkczhGclJEOXJkZGhRMjVkaDhfaE1LTDgwdS1jMTVEQmNaY2kyUUxPcGVxMnZwVTZZWmNpRGtKN2VBRUN0WjduMG1iSG5BNm8ybjBObW9CYnRYVXlkYUFPcGsweTFUVVZTWUd2LXpwTXdxbERoSEdqWG8wQl9mTnFQUWhETDhtbVdtR3RLTFdsYlI2eG5ycVFNdjhrRF9lWk9SVg?oc=5" target="_blank">Radican cargos contra hombre que habría entrado a vivienda y matado a tiros a una mujer en Vieques - El Vocero de Puerto Rico</a>
                     </td>
                     <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-09-15 10:47">hace 8h</td>
+                    <td class="time-ago" data-date="2026-09-15 10:47">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="🎉 ¡Naguabo se prepara para celebrar en grande! 🎶 El Municipio Autónomo de Naguabo y nuestra alcaldesa, Hon. Miraidaliz Rosario Pagán, les invitan a disfrutar de las Fiestas de Pueblo & Festival Gastronómico y Cultural. ✨ 📅 Viernes 9 al domingo 11 de o - facebook.com">
@@ -1069,7 +1102,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxNOGUyc2FpUXRUaG5NZEhLN3Q4Xzl6NHJmbjV3VzhzZnJPcG1XeW1jMXVZanczTUNIU1YwZ292aG5jeFI4SnkwUmkxcEJkeWQyYXpOTGRnTVl6WW0teTFNWnN4U1lCekdabTEyQkdjdHdweGo0U2MwMGdVUXZwbi00NUVPUnZmRFVEZl84UEF3U2FOMXRPbDVSMkxCbzdTbHJGa1Q2enplcVpQdFcxZm1iWFNGQzk4SkJhVHBhcmUta0hkRmpxNHhfZlBjdzJoTDVRbGlrNEtLRnIzZlEtb0VuRWxZNA?oc=5" target="_blank">🎉 ¡Naguabo se prepara para celebrar en grande! 🎶 El Municipio Autónomo de Naguabo y nuestra alcaldesa, Hon. Miraidaliz Rosario Pagán, les invitan a disfrutar de las Fiestas de Pueblo & Festival Gastronómico y Cultural. ✨ 📅 Viernes 9 al domingo 11 de o - facebook.com</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-09-15 03:42">hace 15h</td>
+                    <td class="time-ago" data-date="2026-09-15 03:42">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
@@ -1079,7 +1112,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFBDNXBzeERqOUhLbVdTQlA0VGV5ME1LTDVxUF9mSERDd215THdGUS1KOGFSQmVnckFpT2lPNHlXWThQWWNKbzNIenNBZjlEQS02aEJJanJFbTZOSmp3NzZ0T0tSUjdHYmlFWGlSMXJ5ZGp5R0E?oc=5" target="_blank">Municipio de Vieques - facebook.com</a>
                     </td>
                     <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-09-15 02:00">hace 17h</td>
+                    <td class="time-ago" data-date="2026-09-15 02:00">hace 18h</td>
                 </tr>
                 
                 
@@ -1143,6 +1176,16 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>FB - Caguas</td>
                     <td class="time-ago" data-date="2026-09-14 14:01">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Visité la Tienda Añoranzas en el Pueblo de Caguas, Puerto Rico 🇵🇷 - facebook.com">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUFdRYzY5VlJ0Zm5VVGxhZE1aaXlDNEViak5ZSExOWENMM0taX283ZlA1R0pEZTdwSzNpd1duVzVmQ0RZbjI4UDlnN0tUdG4weTB2VkJzSVpPUDAyakVFZ0llbDV2RjJWdDRXNzlSQ1E4anZnbDAxMnoyN2tVUUVZRjNqU2Rka0JaTUJYWUQxT3JqMW0wV01hN0Y4bGJvejRwTWYwQnJFRmU5bldfUUZTSWxKVUd6akNoLTJ1MWJfUGlySmN4OThCUkw4SlFqSFRZOXo0?oc=5" target="_blank">Visité la Tienda Añoranzas en el Pueblo de Caguas, Puerto Rico 🇵🇷 - facebook.com</a>
+                    </td>
+                    <td>FB - Caguas</td>
+                    <td class="time-ago" data-date="2026-09-14 13:04">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba,Vieques" data-titular="🚨 #PegaosEnLaMañana con Milly Méndez | El peatón que murió tras ser arrollado en la PR-53, en Ceiba, fue identificado como un hombre de 60 años, residente del barrio Florida, en Vieques. El capitán Elvis Zeno indicó que el hombre caminaba por un áre - facebook.com">
@@ -1214,7 +1257,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <span class="source-badge ok">🟢 El Nuevo Día: OK</span>
         
-        <span class="source-badge err">🔴 NotiCel: Error</span>
+        <span class="source-badge ok">🟢 NotiCel: OK</span>
         
         <span class="source-badge ok">🟢 Radio Isla: OK</span>
         
@@ -1348,7 +1391,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-15 07:31:41 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-15 08:01:17 PM<br>
     Actualización automática cada 30 min
 </div>
 
