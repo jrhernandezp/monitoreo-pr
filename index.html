@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-16 02:31:14 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-16 03:01:14 PM</span></div>
         </div>
     </div>
     <div class="stats">
         <div class="stat-box"><div class="num">30</div><div class="label">Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-16 02:31:14 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-16 03:01:14 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -862,9 +862,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">1</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
+        <div class="muni-card active" onclick="filtrarPor('Ceiba')">
             <span class="muni-name">Ceiba</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
@@ -879,7 +879,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <span class="muni-name">Cataño</span>
-            <span class="muni-count">5</span>
+            <span class="muni-count">4</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
@@ -919,10 +919,20 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="Ceiba" data-titular="Sindicato de Trabajadores emplaza a Secretario de Educación en medio de visita a escuela en Ceiba">
+                    <td><span class="muni-tag">Ceiba</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/09/16/sindicato-de-trabajadores-emplaza-a-secretario-de-educacion-en-medio-de-visita-a-escuela-en-ceiba/" target="_blank">Sindicato de Trabajadores emplaza a Secretario de Educación en medio de visita a escuela en Ceiba</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-09-16 18:58">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Caguas" data-titular="This is a real estate advertisement by Casas PR Real Estate for a property in Caguas, Puerto Rico, identified as Urb. Residencial Bairoa. The video provides a tour of the modern bungalow, showcasing its exterior, a laundry room, and an attached bathroom. Th - facebook.com">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQZkFJWVVlblpWLTU3YldGMm80Q0FIVTFraTlLMzE4aE5YV2pUWTN1bXFYNTR2RWtUQnNiT21peWVDbWxESXFKOTE4QXNqZmt4S0paQXRGQTRrbm5YaWJWWmpOU1llVS1RM2JmOG1RdzNMVTZqdHgwOTNLdVVwd1VLSWtIb2cwMDFTVEpJakxUcnhGbU9LQWVqNExnZzBYWkhiNDEtZUVVTmFOVEN2MUdBYkRoekNWNTdGNl9ZVDR3MjI4WXVEczlYRHNpbzZiMUFPQ2g1NGsxZWVNTUZkQWZiZkkyUQ?oc=5" target="_blank">This is a real estate advertisement by Casas PR Real Estate for a property in Caguas, Puerto Rico, identified as Urb. Residencial Bairoa. The video provides a tour of the modern bungalow, showcasing its exterior, a laundry room, and an attached bathroom. Th - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
@@ -986,7 +996,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdENZZTdRMHdCenlVRXNIQVM4dXZKR2JmYi1KZUJOdmliVENRTGlyUkg5Ymt6ZFJ5blNrbFZWbVprYzZGMkZBbHlsbnZkZGlTeUJGbXRiX1ZKTEZDWHV3QUpyaHFCWkVEN2tpNjRwZGE3NHpXYl9sbDZHQjNQd0hPYnhUVW0yeEZqYlBmaDhiWXk0SkZSRWRHbnpKZEtXd1FSbkhwX0FPTk5iUk1nRmhWd0VjUC1hWjlwT1JIN3NkTTlRcHE5YU1QWUNOdGZ1MjZnajBjRlZn?oc=5" target="_blank">En carrera por Cataño: estos son los cinco candidatos que se disputan la alcaldía - El Nuevo Día</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-16 14:08">hace 23min</td>
+                    <td class="time-ago" data-date="2026-09-16 14:08">hace 53min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo,Río Grande" data-titular="El Yunque conmemora 150 años con evento libre de costo">
@@ -996,7 +1006,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/16/el-yunque-conmemora-150-anos-con-evento-libre-de-costo/" target="_blank">El Yunque conmemora 150 años con evento libre de costo</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-16 14:06">hace 25min</td>
+                    <td class="time-ago" data-date="2026-09-16 14:06">hace 55min</td>
                 </tr>
                 
                 
@@ -1019,7 +1029,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxNTWRISWdBRHN6Z0p1ZHBnc05tVzhXNUFzejgzOWlud1BtWTM1b09tcjFiYmxySW9Mc3E5WWt5eFU5Tm1MSTBFendHSURNYVgwQmZDN1JvN0FWUnRxbk1NeXFDcUlqbkxweUgyTTNDTEttZDYwRFR4cnZKTTM0cThnYXZqUngyM0wtcV9neXhYaHZzUzV5ckpmdXFmRXM3WnpPYkozbWtmWkM5TGx2eGw2LTlKcEVPMThhbnpJdXJMZUlqbmxPamNXdk5OX19ndVlROW9sWjRzZF9iU2FkUC1idnR3ZHFlSUN1amlmQUZUZEduem44Y0JSVzY5b9IBgAJBVV95cUxOTnl4bTBIVDB2RVpySjZ2SS02M09EZi1tejByVjBpbldJenp1Ny1nbm54SXBKSlZHczlEWmp5OTdlWEZ1dmFXWkZCOVVkVkQ0cUxIYS1takVDXzFpSDJnQzgwcWY2Y3NkT2pvekVKR2dDNWRwSG4teldmT3pRUzJjZFhoMnJYSVVicmhpa2RVcm5pbzR2X0NfVTdjOVh1ekhOR0p1Uzl5UFhBNTFEdUJRTk5KY2kxM3NXejk4OXFURThBYjV3QWpzUVI2Z3o1aDZPTWZ6bVNfNFRyZVRFRWxGLURxSjBpOUJrUDhnMk1EVTV2SGxyNWhMYnFTM0xZM05a?oc=5" target="_blank">Investigan a familia de niña encontrada sola y sin ropa en carretera de Carolina - El Vocero de Puerto Rico</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-09-16 10:32">hace 3h</td>
+                    <td class="time-ago" data-date="2026-09-16 10:32">hace 4h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Hombre muere baleado frente al residencial Alturas de Cupey">
@@ -1039,7 +1049,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxNMUtRT3ZDTTQzVDBmR25zTVRkWmcxeUU0N2ZQc0ZRTWJSVmNsRms1djFrZ3N5Vi1wVXdmOTlzQVQ4NWVCTDlQemZnTzlwSng2LS1vRmNlVUdvMENYVlBNR28zTllTZHozZzBKOHM3Z01XRUhISDdhTEdUNk51dGoxUUZxc0hDT09NRjRMYlVsMllCeEQ5b3AxWjU2aXBpbWRMcm1GWU5IU0NrZEo3YkVpS01zeUdiY1ZLbjQxU0NQONIBxwFBVV95cUxNVm9YVDh6SXVna3piMF96QnVsdVloSU15Q1lZVU1jTGJLazUtaHJaZ2FGcXdSNFZXTld6ZkwzOWNtSk5VQTJoYXI0eEE0RHZRN3d4ZGMxa2FQTnNkRkZtS0xzaEtHNkV5TlpCV2d2WXZWYWVPUkJIUks2OF8zNVZ2WTFPS0twVHZuclN5LThHTWVKSXZjc25LNkh6RVhOeDh4UF9mTUZYX3Q3SndPTWVVaDZlaU85M0Fyd1dCZE9oLXBab1BmajlJ?oc=5" target="_blank">Dos arrestados tras localizar vehículo hurtado en Viejo San Juan - Telemundo Puerto Rico</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-09-16 01:56">hace 12h</td>
+                    <td class="time-ago" data-date="2026-09-16 01:56">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz en 15 municipios">
@@ -1062,7 +1072,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPQTdKcFFDSFlGUWtCbGdIaVhvWHB1TExScVdLYzNfendMZlE3am8xS21WTXlEb09hb1poTUVZLTAtbURhdnJUd2JiUkVMa2dIcEhiaFluaDUzdzBMemRNQnZ6cmM0Q2FoX200TVRKWmJMS2hycmh2ai1VbHBpMDM1aUlKU0Y0dUVlZ28wN05B?oc=5" target="_blank">Fernanda Ramos Obituario - Canovanas, PR - Dignity Memorial</a>
                     </td>
                     <td>Canóvanas</td>
-                    <td class="time-ago" data-date="2026-09-15 23:32">hace 14h</td>
+                    <td class="time-ago" data-date="2026-09-15 23:32">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Municipio de Caguas anuncia nueva fecha para celebrar el Día Nacional del Cuatro Puertorriqueño - Primera Hora">
@@ -1082,7 +1092,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE90TEhtaXRxWWllQ25ZcENTdkxrR1dLOC04YnNXeEw3SGZRcWpLeW1tYjREX2NZQjhRLWpuNUhySWJaQWt6SkZEc3dyWDdPbTBwYUVBbVdTTHFMSVV0cDl3VGpoLUZwaHFoWlAw?oc=5" target="_blank">Municipio de Luquillo - facebook.com</a>
                     </td>
                     <td>FB - Luquillo</td>
-                    <td class="time-ago" data-date="2026-09-15 19:44">hace 18h</td>
+                    <td class="time-ago" data-date="2026-09-15 19:44">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo - facebook.com">
@@ -1092,7 +1102,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOd3lvaktaMFQ0Vmd5SC1nckJ4dGh5ejNkaUtNaWRLakplUGQtVEEydWR5M1FtT1h1SF9wQUNIS0xDcVNadWdQNHB2eHMxZkhrM0UwRUFvNUFucVJTS016bkFScXpZbkhVQVh5Zld0bWktYTlrbVZiSXFrdkh6a2ticEZB?oc=5" target="_blank">Municipio Autónomo de Naguabo - facebook.com</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-09-15 18:51">hace 19h</td>
+                    <td class="time-ago" data-date="2026-09-15 18:51">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Cataño entrega cartas de permanencia a menos de dos semanas de la elección - NotiCel">
@@ -1102,17 +1112,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNcUZfTnYzYXRfaVZDb1RIaG1FbWlhQXBSSm4yWHU2NndlU1F0ZDFuLXFnLVE4WkFBQTMyNHotWTIxZmVnbk1oMDVJc21FX1pHYTE5MGdpcUFycUR4djFvQTFHOUY4QzNSVDhxancxbXppN3FJek5mY0tUV21FamFxc3Z3WjFncTJsYWtjdWtGbDAyVU9OLU1WQzNRendPQ29OSF9RVmNlRW1ZeGhCcDN4VzdKS3BCWUE?oc=5" target="_blank">Cataño entrega cartas de permanencia a menos de dos semanas de la elección - NotiCel</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-15 17:58">hace 20h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="EL MUNICIPIO DE CATAÑO ENTREGA PRIMERAS 80 CARTAS DE PERMANENCIA A EMPLEADOS MUNICIPALES ✅La alcaldesa interina María de los Ángeles Pérez Ramos destacó que el proceso contó con la evaluación de la OATRH y fue viabilizado m - facebook.com">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxNWEU3WHpzWHdJS1dyRkoydGlQcDJ4RlpHb2J5LTRhWmtNN1VHZTFoMzMxWHpNTHVWZ0JzUjBxTHZndy1MbGI2UmJPc2dXQXo5a1YyU09UQUZTQk9xYmNZU0VUTEVodUZEY182QlVSWFZZYWxkR0ZKZDFzRlpxSUt0UG9yWEppM1daVVplZi05blg5S0Eza1AyWDE5ZFNZREVvMWxydFI2bWN1RGRKb2xHRWd6dXlNR2dqWXBQYUVzdXZ4X0NnYXYydHh5S3pybllyam9VU2JRdE9CZW1SZU5F?oc=5" target="_blank">EL MUNICIPIO DE CATAÑO ENTREGA PRIMERAS 80 CARTAS DE PERMANENCIA A EMPLEADOS MUNICIPALES ✅La alcaldesa interina María de los Ángeles Pérez Ramos destacó que el proceso contó con la evaluación de la OATRH y fue viabilizado m - facebook.com</a>
-                    </td>
-                    <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-09-15 17:36">hace 20h</td>
+                    <td class="time-ago" data-date="2026-09-15 17:58">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza. Municipio de Loíza · Original audio. - facebook.com">
@@ -1122,7 +1122,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE1lX0kxbkQ3cVlwRkd1RmJGR014Z2RqUzhLelVLWjlfOWpLbUJ2emhubUVyY2tHaTllMEFXd1hNOXJaVjIybGlYZXU1WkpEZjFyZ1pfOXFfRUVIbFY0cGhjS2ZmTm5SQmt6ZzVOOWo3Q3pUeS04Zk1JaA?oc=5" target="_blank">Municipio de Loíza. Municipio de Loíza · Original audio. - facebook.com</a>
                     </td>
                     <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-09-15 16:33">hace 21h</td>
+                    <td class="time-ago" data-date="2026-09-15 16:33">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Reabren autopista PR-22 en dirección a Cataño - Primera Hora">
@@ -1378,7 +1378,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-16 02:31:14 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-16 03:01:14 PM<br>
     Actualización automática cada 30 min
 </div>
 
