@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-17 02:31:17 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-17 03:01:10 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">22</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num">23</div><div class="label">Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-17 02:31:17 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-17 03:01:10 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -810,19 +810,6 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <!-- BREAKING NEWS -->
-
-<div class="section breaking-section">
-    <div class="breaking-banner">
-        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
-        
-        <div class="breaking-item">
-            <span class="time">hace 3h</span> —
-            <a href="https://news.google.com/rss/articles/CBMigAJBVV95cUxQX1gwSGptbHY4M2FQZ1BtamxQMWhUN2JMekQ4Ukg0UHlJenlCMTZxc1UzSko4ZzJmVExvaWlxWWw3eGtjc01Cd3BjR2RkS2U4cWZvZVplTGxiaG82VFNGTjl6LTFjNlZ0SjRsaFZZR2szYV9MUDQ1NnN0dko5dHZzYnJRS0xDYjNITGh4RzB1NGdicmtpcTRtb25YV1RPQUIxM0M2VE5rb3RtZ0NBWGtvclF4UXc1VWgzcFktckNObTYtbk1EbEFZME0tWC0xX29KNmVWQmFzOWozWm4yY21VYlVTeUlVRHdoQ3pxOXZsZENNMUxjMnVOZEpobnZDNzJf?oc=5" target="_blank">Policía busca a menor de 15 años reportado desaparecido en Carolina - NotiUno.com</a>
-            <span style="opacity:0.6"> [Carolina]</span>
-        </div>
-        
-    </div>
-</div>
 
 
 <!-- MUNICIPALITIES -->
@@ -867,7 +854,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <span class="muni-name">Loíza</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">3</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
@@ -930,6 +917,19 @@ tr.article-row:hover { background: var(--surface2); }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
                 
+                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Loíza" data-titular="Plaza Loíza: “No tenemos intención de cerrar”">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://www.elnuevodia.com/negocios/empresas-comercios/notas/plaza-loiza-no-tenemos-intencion-de-cerrar/" target="_blank">Plaza Loíza: “No tenemos intención de cerrar”</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-09-17 03:10">ahora</td>
+                </tr>
+                
+                
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz; 16 municipios en la lista">
@@ -952,7 +952,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://noticel.com/noticias/20260916/trump-amenaza-con-grandes-aranceles-contra-europa-si-canada-se-asocia-con-union-europea/?utm_source=rss&utm_medium=rss&utm_campaign=trump-amenaza-con-grandes-aranceles-contra-europa-si-canada-se-asocia-con-union-europea" target="_blank">Trump amenaza con grandes aranceles contra Europa si Canadá se asocia con Unión Europea</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-09-16 23:36">hace 2h</td>
+                    <td class="time-ago" data-date="2026-09-16 23:36">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Policía busca a menor de 15 años reportado desaparecido en Carolina - NotiUno.com">
@@ -962,7 +962,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMigAJBVV95cUxQX1gwSGptbHY4M2FQZ1BtamxQMWhUN2JMekQ4Ukg0UHlJenlCMTZxc1UzSko4ZzJmVExvaWlxWWw3eGtjc01Cd3BjR2RkS2U4cWZvZVplTGxiaG82VFNGTjl6LTFjNlZ0SjRsaFZZR2szYV9MUDQ1NnN0dko5dHZzYnJRS0xDYjNITGh4RzB1NGdicmtpcTRtb25YV1RPQUIxM0M2VE5rb3RtZ0NBWGtvclF4UXc1VWgzcFktckNObTYtbk1EbEFZME0tWC0xX29KNmVWQmFzOWozWm4yY21VYlVTeUlVRHdoQ3pxOXZsZENNMUxjMnVOZEpobnZDNzJf?oc=5" target="_blank">Policía busca a menor de 15 años reportado desaparecido en Carolina - NotiUno.com</a>
                     </td>
                     <td>NotiUno</td>
-                    <td class="time-ago" data-date="2026-09-16 22:38">hace 3h</td>
+                    <td class="time-ago" data-date="2026-09-16 22:38">hace 4h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
@@ -982,7 +982,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxNS2d4VmNMUkhNMGtHOXNFemJYLUJ2Y0Yxc0I0OGdXSWc5Z0NOWXpIbXlSVmYtekIyOEVGM0QwR3dlY2VDY3NCdlAwdmc3VUtlUzdqQ24tWlc1T1NhNjNxQU1JMXktUnV5WmR5cEhSbWlBTk1QQ25wSVVScm9lQkxtMmNwNUhlZlRNc094eWRxbDl5eUthbENpQWlJU04tM1h2dnJWVURLNXUweTNOdTF4UVNobzJTd3lfRW1kLW95bXlLTWREQ1BuYWVEYnZITzBRUk92R2tDT0FsdTd3bXNJSEtB?oc=5" target="_blank">🚨 Últimos Espacios🚨 Este 19 de Septiembre nos vamos de excursión para una de la playas más bellas de Culebra, Cayo Luis Peña, una playa con aguas cristalinas y perfecta para snorkeling. : El pasadía incluye bebidas, almuerzo y equipo de snorkeling. : - facebook.com</a>
                     </td>
                     <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-09-16 21:56">hace 4h</td>
+                    <td class="time-ago" data-date="2026-09-16 21:56">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="LUMA anticipa posible aumento de $48 al mes en la factura de luz">
@@ -992,7 +992,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/09/16/luma-anticipa-posible-aumento-de-48-al-mes-en-la-factura-de-luz/" target="_blank">LUMA anticipa posible aumento de $48 al mes en la factura de luz</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-16 20:44">hace 5h</td>
+                    <td class="time-ago" data-date="2026-09-16 20:44">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Humacao recibirá a cientos de equipos en el inicio del torneo YBOA">
@@ -1022,7 +1022,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/16/sindicato-de-trabajadores-emplaza-a-secretario-de-educacion-en-medio-de-visita-a-escuela-en-ceiba/" target="_blank">Sindicato de Trabajadores emplaza a Secretario de Educación en medio de visita a escuela en Ceiba</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-16 18:58">hace 7h</td>
+                    <td class="time-ago" data-date="2026-09-16 18:58">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="This is a real estate advertisement by Casas PR Real Estate for a property in Caguas, Puerto Rico, identified as Urb. Residencial Bairoa. The video provides a tour of the modern bungalow, showcasing its exterior, a laundry room, and an attached bathroom. Th - facebook.com">
@@ -1112,7 +1112,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxNTWRISWdBRHN6Z0p1ZHBnc05tVzhXNUFzejgzOWlud1BtWTM1b09tcjFiYmxySW9Mc3E5WWt5eFU5Tm1MSTBFendHSURNYVgwQmZDN1JvN0FWUnRxbk1NeXFDcUlqbkxweUgyTTNDTEttZDYwRFR4cnZKTTM0cThnYXZqUngyM0wtcV9neXhYaHZzUzV5ckpmdXFmRXM3WnpPYkozbWtmWkM5TGx2eGw2LTlKcEVPMThhbnpJdXJMZUlqbmxPamNXdk5OX19ndVlROW9sWjRzZF9iU2FkUC1idnR3ZHFlSUN1amlmQUZUZEduem44Y0JSVzY5b9IBgAJBVV95cUxOTnl4bTBIVDB2RVpySjZ2SS02M09EZi1tejByVjBpbldJenp1Ny1nbm54SXBKSlZHczlEWmp5OTdlWEZ1dmFXWkZCOVVkVkQ0cUxIYS1takVDXzFpSDJnQzgwcWY2Y3NkT2pvekVKR2dDNWRwSG4teldmT3pRUzJjZFhoMnJYSVVicmhpa2RVcm5pbzR2X0NfVTdjOVh1ekhOR0p1Uzl5UFhBNTFEdUJRTk5KY2kxM3NXejk4OXFURThBYjV3QWpzUVI2Z3o1aDZPTWZ6bVNfNFRyZVRFRWxGLURxSjBpOUJrUDhnMk1EVTV2SGxyNWhMYnFTM0xZM05a?oc=5" target="_blank">Investigan a familia de niña encontrada sola y sin ropa en carretera de Carolina - El Vocero de Puerto Rico</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-09-16 10:32">hace 15h</td>
+                    <td class="time-ago" data-date="2026-09-16 10:32">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Dos arrestados tras localizar vehículo hurtado en Viejo San Juan - Telemundo Puerto Rico">
@@ -1308,7 +1308,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-17 02:31:17 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-17 03:01:10 AM<br>
     Actualización automática cada 30 min
 </div>
 
