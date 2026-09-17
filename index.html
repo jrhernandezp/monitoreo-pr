@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-17 01:01:09 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-17 01:31:35 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">32</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">36</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
-        <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-17 01:01:09 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:14px">64/66</div><div class="label">Fuentes OK</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-17 01:31:35 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -816,6 +816,12 @@ tr.article-row:hover { background: var(--surface2); }
         <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
         
         <div class="breaking-item">
+            <span class="time">ahora</span> —
+            <a href="https://www.elnuevodia.com/noticias/seguridad/notas/hallan-cadaver-de-una-mujer-en-avanzado-estado-de-descomposicion-en-una-casa-de-humacao/" target="_blank">Hallan cadáver de una mujer en avanzado estado de descomposición en una casa de Humacao</a>
+            <span style="opacity:0.6"> [Humacao]</span>
+        </div>
+        
+        <div class="breaking-item">
             <span class="time">hace 1h</span> —
             <a href="https://waloradio.com/2026/09/17/senadora-wandy-soto-entrega-vehiculo-a-manejo-de-emergencias-de-las-piedras/" target="_blank">Senadora Wandy Soto entrega vehículo a Manejo de Emergencias de Las Piedras</a>
             <span style="opacity:0.6"> [Humacao]</span>
@@ -828,7 +834,7 @@ tr.article-row:hover { background: var(--surface2); }
         </div>
         
         <div class="breaking-item">
-            <span class="time">hace 1h</span> —
+            <span class="time">hace 2h</span> —
             <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRFBYSi03QWtuWU5tX0dobFNHNlk5VFhrS09yVlRzT0c0Y1p5WEpianFFU3pZWFhrUGtpLU05V0JpOW51RGo1b2ZBZHVxZDdvYksxdVh0NVV0WVFOdVdLRG02US1vYlgwbU1tX1o3ZUMxWkoyYU5GTGZacGxnLUtLb0NEclplQXFEc3pscTNPWVhzY1BzREpiVEJfVmNobEh1VFk5cDZZUGMwWG9oQTVQU2lBNWYwdG5rUHhIZHktOE5jODBWeC1KTldWeGRxSWYw?oc=5" target="_blank">Incendio consume una residencia de madera en Fajardo - wapa.tv</a>
             <span style="opacity:0.6"> [Fajardo]</span>
         </div>
@@ -844,7 +850,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">6</span>
+            <span class="muni-count">7</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -884,7 +890,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
             <span class="muni-name">Río Grande</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
@@ -899,7 +905,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <span class="muni-name">Humacao</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">5</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
@@ -944,14 +950,44 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="Humacao" data-titular="Hallan cuerpo de mujer en avanzado estado de descomposición en Humacao - Metro Puerto Rico">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNZUYtWFZpLXAybzBjTTItdnhBN011eVIyQmFNQWphWnFOSnZZdnRvODVLaERqZDJ2UFYzd0hyWVphbkFpUThDRUtmRlRxX1NoMHlqS1NIdHNHRmlFRTUxMFlDRm42ci16cXVycWFwaUp4aUxJMllIRVBwWFBwTHpPVmhoTlBueG1CTXNUN3NMR1JmbEVwd2xYa0NOSnNDem9RcldnZ0lZT0dJdjJIRk53MzZB?oc=5" target="_blank">Hallan cuerpo de mujer en avanzado estado de descomposición en Humacao - Metro Puerto Rico</a>
+                    </td>
+                    <td>Humacao</td>
+                    <td class="time-ago" data-date="2026-09-17 17:23">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Hallan cadáver de una mujer en avanzado estado de descomposición en una casa de Humacao">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/hallan-cadaver-de-una-mujer-en-avanzado-estado-de-descomposicion-en-una-casa-de-humacao/" target="_blank">Hallan cadáver de una mujer en avanzado estado de descomposición en una casa de Humacao</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-09-17 17:20">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="San Juan" data-titular="Lluvias rescatan a Carraízo y lo devuelven a nivel seguro">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://nelpr.com/2026/09/17/lluvias-rescatan-a-carraizo-y-lo-devuelven-a-nivel-seguro/" target="_blank">Lluvias rescatan a Carraízo y lo devuelven a nivel seguro</a>
                     </td>
                     <td>NELPR</td>
                     <td class="time-ago" data-date="2026-09-17 16:45">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Río Grande" data-titular="Alcade de Río Grande denuncia continuos "apagones largos", mal servicio LUMA - wapa.tv">
+                    <td><span class="muni-tag">Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxNUmdlRnJqUzVBbktiZTgyenJzTlhnb3JlY2FtV2phOXVfYUk0S01vSUVGZTBMZE5XYV9Ra09wNm9WNUNzeVpROFY5ekN2V1p5N2pobVJuYUhyamlvRjlfQTFRS29FTGtQWkVYUmJHazhhOVlobWlRd3BNMnY3Nkd2OElZTEpSb0Q1OFh4dnJqLWxPSkxzbk5URDVES01pNzE4bDIycE5tTUxWQms5cHdmLTlBanZFMG5rd2x2V1hvbGZrRzAzZWMwdU1xbXgzOTloTFlFWEdxQkluVWtNLTVkV1NzVWlJWnZZb0RZVw?oc=5" target="_blank">Alcade de Río Grande denuncia continuos "apagones largos", mal servicio LUMA - wapa.tv</a>
+                    </td>
+                    <td>Río Grande</td>
+                    <td class="time-ago" data-date="2026-09-17 16:38">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Plaza Loíza: “No tenemos intención de cerrar” - El Nuevo Día">
@@ -1051,8 +1087,11 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/politica/fotogalerias/en-carrera-por-catano-estos-son-los-cinco-candidatos-que-se-disputan-la-alcaldia/" target="_blank">En carrera por Cataño: estos son los cinco candidatos que se disputan la alcaldía</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-17 13:01">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-09-17 13:31">ahora mismo</td>
                 </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Puerto Rico supermarket chain Plaza Loíza faces inventory shortages but rules out store closures - El Nuevo Día">
                     <td><span class="muni-tag">Loíza</span></td>
@@ -1061,7 +1100,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxQaVFsY182SGV4X3ZCcW1zNldSdUFweDJSOVA1YzdVV2h0Y21oOTM2azhhRWxVbHpKTkVubkgyVHZSZ1hGZTdveVEzVjIxMVpDLUZ0bWhHN2ZPZWRTdlVOVXozOXczOVZUcjl1MGk0eEMtWjIyQ0JSRWhscVgwbEtkaW56RS1Fc2FGVzBpVmtxWi1DSnVpOVNwMy1kajdWeDVxeHFnTkFFMHg4ZFhaT2FsckxUOVU5YUF1ei1fb3gtNEpQOUJMSnB0M0xVUFhyUUw4dkxEOFkyV0pMcnRZTVB5Sg?oc=5" target="_blank">Puerto Rico supermarket chain Plaza Loíza faces inventory shortages but rules out store closures - El Nuevo Día</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-09-17 12:16">hace 45min</td>
+                    <td class="time-ago" data-date="2026-09-17 12:16">hace 1h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Sujetos en motora le disparan a hombre en Trujillo Alto - Telemundo Puerto Rico">
@@ -1071,11 +1110,8 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPRzZhQ3JPdWY4eHk5QWVvS2pJRGQ0bkRMbUMxN2QycWozeHA5bDlRWndBSlpjVGNWQ1VhZDZYMmk1NTUyS04wcVhmQWs1dXVaTk1Ma3dVaDVnLXFmZ1ZfRWtiTmtTQ2JJOWh0MkpNa21iN01rd1ByUzltVEZrSnJPMFhnbDJEVmlLS1ZjenBnWUNYU1RrQ2RiazRiaFdQSXRKWUVrcHJhRmw2SlFVVzZ4bWhYVdIBuwFBVV95cUxNbWM2VTdRaG14Q1JwVVFrUlExSzZJRDdNUHRQOG5PeGk2NWluWC1lYVZRdF9keWVNblhGY2tXeHZQb3FQd2lvVEltb0oxTGtnSWl0OUQ4TzNQbmU4TUVJS3J0ek9xMzFKdU8wNzI5cUNzNGlvNTFsM3JsdFFIdDRUMGduajhDLTJSTjY0QmNqdmF6ZzB2Mmh3TVZwcTc0MGd0NVNWM2VtNVg2T3NCVEl6LS1qc04wMTc1QXBR?oc=5" target="_blank">Sujetos en motora le disparan a hombre en Trujillo Alto - Telemundo Puerto Rico</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-09-17 12:13">hace 48min</td>
+                    <td class="time-ago" data-date="2026-09-17 12:13">hace 1h</td>
                 </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Senadora Wandy Soto entrega vehículo a Manejo de Emergencias de Las Piedras">
                     <td><span class="muni-tag">Humacao</span></td>
@@ -1114,7 +1150,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/carraizo-sube-a-nivel-de-seguridad-tras-fuertes-lluvias-asociadas-a-onda-tropical/" target="_blank">Carraízo sube a nivel de Seguridad tras fuertes lluvias asociadas a onda tropical</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-09-17 11:15">hace 1h</td>
+                    <td class="time-ago" data-date="2026-09-17 11:15">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Incendio consume una residencia de madera en Fajardo - wapa.tv">
@@ -1124,7 +1160,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRFBYSi03QWtuWU5tX0dobFNHNlk5VFhrS09yVlRzT0c0Y1p5WEpianFFU3pZWFhrUGtpLU05V0JpOW51RGo1b2ZBZHVxZDdvYksxdVh0NVV0WVFOdVdLRG02US1vYlgwbU1tX1o3ZUMxWkoyYU5GTGZacGxnLUtLb0NEclplQXFEc3pscTNPWVhzY1BzREpiVEJfVmNobEh1VFk5cDZZUGMwWG9oQTVQU2lBNWYwdG5rUHhIZHktOE5jODBWeC1KTldWeGRxSWYw?oc=5" target="_blank">Incendio consume una residencia de madera en Fajardo - wapa.tv</a>
                     </td>
                     <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-09-17 11:07">hace 1h</td>
+                    <td class="time-ago" data-date="2026-09-17 11:07">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Hombre de 28 años resulta herido de bala en Trujillo Alto">
@@ -1157,7 +1193,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE14eVVBS2FLcWFYcGRjUjJfbXNxRWVxTkM0ZWVGTzVHSWRUNF9sak9qZ05MdTdmTWpUalA5Y3FOejdGQzF6NGJLZGFjU1hPZkFJSmZvZW9rbzFCYXJtaWh6ODI5RENTX252YnJSYjFNNldJemc?oc=5" target="_blank">Municipio de Vieques - facebook.com</a>
                     </td>
                     <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-09-16 22:02">hace 14h</td>
+                    <td class="time-ago" data-date="2026-09-16 22:02">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Culebra" data-titular="🚨 Últimos Espacios🚨 Este 19 de Septiembre nos vamos de excursión para una de la playas más bellas de Culebra, Cayo Luis Peña, una playa con aguas cristalinas y perfecta para snorkeling. : El pasadía incluye bebidas, almuerzo y equipo de snorkeling. : - facebook.com">
@@ -1177,7 +1213,17 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxObkc2TjZ4MVNyWXd2VlRhQTJ4QVpWYXVkcERMcGMzUEdOM1loeXFoQm40bnQyblZOZ0I4cm5MYVNkVWJiS2FHU283X25CS21oaVFMUzNOTmszU1pyZ2wtdlZreEd2Zkdha0F3dGVoOHJYVEZMcExMMlZLOE5xZzhNbkFmWVlFWkJoRmZCWFRlTFFWbmtCbG1Udkp5M1Q?oc=5" target="_blank">Roban dos vehículos todoterreno de negocio en Luquillo - Metro Puerto Rico</a>
                     </td>
                     <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-09-16 19:16">hace 17h</td>
+                    <td class="time-ago" data-date="2026-09-16 19:16">hace 18h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Estos son los fugitivos y sospechosos más buscados por el FBI en San Juan - El Vocero de Puerto Rico">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxQWkgyQTg5clVRbmZvbEJqT2lSN0dkckVHcmd1TlBiZFlCd3ltTUN2OHB6aFI4eTE5dmZyM2x1SXMwZ091eGZHcEFKbFdFenF4QnlYWUhLN281QWRQWmlFOG5vdm56cjZXa3hSU2pKRWlUcWZUOG9KVVFNUWRscW1FUkh3UWNoMnJKd3pkZmM1MFM5blRRa0JfMHNBTUlIc2dlRk9MaEVQbms4aWhhRDdiZGNlcmk1UktDalVRVXI5elIzT1dFcDlpQzhMcTJ5SXl5aHpoSFhtc19SOHlxdDl6eXhvZHEzc0RjMWhGZWk2dHFRd9IB9wFBVV95cUxQQXZpZTdCTWVhMEFHb3lxWE92UGZTRzI2T3Aza3NwRExCN1FIQWdWbHR6ZnViWXk0MUZmRWwyUzRpOGpHSzVYeTRZRUdBMjNwQ2ZnVldlS1Q0OE9ZTnloLURtWlpTVENZcVA0S1VEZS13VmozSnpBZEh3S3FlMXo2YzF5elBndVIzR05tSXJGdzhsWVUzdzFncXFaTDlEWk9fRXNIMHR2UXFlOE85dldydTJhM1FDMEZERk9lWXpFNkpQNHU4eklodS0zanRQNTl6Y2V5cklkM0ZnWGpscUUyZTVEaGlRZndnNW1XalQtMVFGYUU0WVBZ?oc=5" target="_blank">Estos son los fugitivos y sospechosos más buscados por el FBI en San Juan - El Vocero de Puerto Rico</a>
+                    </td>
+                    <td>El Vocero (GN)</td>
+                    <td class="time-ago" data-date="2026-09-16 17:04">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Arrestan a cinco personas tras allanamientos en Luquillo - Telemundo Puerto Rico">
@@ -1187,7 +1233,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOTnk1cENrdW9VUGpaTmdoU0JIUXFEb21LTzVONks0T2k3ZFNDR0l1U0I4bUV6Q3B4RXZWUkFnMDd0d1lIaGFkZ2JzTk5NM0QtX2RsWFBCcklNc0lTMkZ1TlRqUEpBWEJJc3Z1R1gtNlQ5WDM4WFhVVEZqSkNSV3Rja1RtTGNta3BzMUJvekVzdlVBN3lyVTc5LWx3emZrT055ZWowRXVUTnhQQUN0Y1JhTFV3bWbSAbwBQVVfeXFMTzM1ZWNjZm1xMjF0eXl6WHp3aGh5Z1N2bmFCRVZrUkNXbUVxQ1dhd2RqNHNzaVZrbk5MbnpRZ0Jpa3EtcjVDNVg2ckZ2dVpSTngtdm5pcmpuUzNqY0FHNW9nLWVIbzNGeUVXTWdPUFlUa2x5QkdDN3AxQ0VkYnJyQTZoZ0tXdHlwNTFzYUxsVkh6NDhmSTRCV0Z5SG9TWElnbEtJQ2U4RkJERlhqYlpfOWFuWXFsMHN3WXdiaEE?oc=5" target="_blank">Arrestan a cinco personas tras allanamientos en Luquillo - Telemundo Puerto Rico</a>
                     </td>
                     <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-09-16 16:13">hace 20h</td>
+                    <td class="time-ago" data-date="2026-09-16 16:13">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza - facebook.com">
@@ -1197,7 +1243,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTFA1ai1OOEp6bmNfa0lYUkw0Z2FKMVc2bzZ0X0FUT1U0RDItUGZHWUM1bm9zeUI4eWt5S0IyanNDb3I3emNfZ0lpQkdnVUtPZGNCVnU2MlFUbmlKNEZtWlV2V0dYSVpfRzdsT1poblhCVmRtX1JCSnFJ?oc=5" target="_blank">Municipio de Loíza - facebook.com</a>
                     </td>
                     <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-09-16 14:19">hace 22h</td>
+                    <td class="time-ago" data-date="2026-09-16 14:19">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="En carrera por Cataño: estos son los cinco candidatos que se disputan la alcaldía - El Nuevo Día">
@@ -1207,7 +1253,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdENZZTdRMHdCenlVRXNIQVM4dXZKR2JmYi1KZUJOdmliVENRTGlyUkg5Ymt6ZFJ5blNrbFZWbVprYzZGMkZBbHlsbnZkZGlTeUJGbXRiX1ZKTEZDWHV3QUpyaHFCWkVEN2tpNjRwZGE3NHpXYl9sbDZHQjNQd0hPYnhUVW0yeEZqYlBmaDhiWXk0SkZSRWRHbnpKZEtXd1FSbkhwX0FPTk5iUk1nRmhWd0VjUC1hWjlwT1JIN3NkTTlRcHE5YU1QWUNOdGZ1MjZnajBjRlZn?oc=5" target="_blank">En carrera por Cataño: estos son los cinco candidatos que se disputan la alcaldía - El Nuevo Día</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-16 14:08">hace 22h</td>
+                    <td class="time-ago" data-date="2026-09-16 14:08">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Dos arrestados tras localizar vehículo hurtado en Viejo San Juan - Telemundo Puerto Rico">
@@ -1289,7 +1335,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <span class="source-badge ok">🟢 El Nuevo Día: OK</span>
         
-        <span class="source-badge ok">🟢 NotiCel: OK</span>
+        <span class="source-badge err">🔴 NotiCel: Error</span>
         
         <span class="source-badge ok">🟢 Radio Isla: OK</span>
         
@@ -1423,7 +1469,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-17 01:01:09 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-17 01:31:35 PM<br>
     Actualización automática cada 30 min
 </div>
 
