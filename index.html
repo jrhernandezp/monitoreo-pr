@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-18 11:01:21 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-18 11:31:19 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">44</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">4</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">45</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-18 11:01:21 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-18 11:31:19 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -844,17 +844,17 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">8</span>
+            <span class="muni-count">9</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">5</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <span class="muni-name">Trujillo Alto</span>
-            <span class="muni-count">10</span>
+            <span class="muni-count">9</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
@@ -879,7 +879,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <span class="muni-name">Loíza</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
@@ -892,9 +892,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <span class="muni-name">Naguabo</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
@@ -914,7 +914,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <span class="muni-name">Culebra</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">2</span>
         </div>
         
     </div>
@@ -944,10 +944,20 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="Hasta 80% de potencial de lluvia para hoy">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/09/18/hasta-80-de-potencial-de-lluvia-para-hoy-15/" target="_blank">Hasta 80% de potencial de lluvia para hoy</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-09-18 15:06">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="San Juan,Caguas" data-titular="Sin cambios el costo de vida de Puerto Rico entre las zonas metropolitanas de Estados Unidos">
                     <td><span class="muni-tag">San Juan, Caguas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://noticel.com/ultima-hora/20260918/sin-cambios-el-costo-de-vida-de-puerto-rico-entre-las-zonas-metropolitanas-de-estados-unidos/?utm_source=rss&utm_medium=rss&utm_campaign=sin-cambios-el-costo-de-vida-de-puerto-rico-entre-las-zonas-metropolitanas-de-estados-unidos" target="_blank">Sin cambios el costo de vida de Puerto Rico entre las zonas metropolitanas de Estados Unidos</a>
                     </td>
                     <td>NotiCel</td>
@@ -971,7 +981,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQSTA1Ml82Zmg0dDR1Z1g0cVI1MlUySThnRnM4cWFibm9NamhadF84Y2xhUmxHT3ZYVnpud0ZCYmZONE9UeFZaZk5NX29oT1FWRVhFczRyajVpNm5SWGdIQ3dlSVUtelVRbm5ySVhMLTJJcHRkNFJBSUlzamw3MUNXcjJMd0VMOE9JU2hobXdveldiUVR4czN1MWt6a1B4RnR4NnhOZDhyQUdVaGM2QW9HV0dCTQ?oc=5" target="_blank">Hallan cuerpo de hombre atado y parcialmente calcinado en Trujillo Alto - Metro Puerto Rico</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-09-18 12:32">ahora</td>
+                    <td class="time-ago" data-date="2026-09-18 12:26">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Extraen $4 mil dólares del interior de vehículo en estacionamiento de centro comercial de Caguas">
@@ -994,26 +1004,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-18 11:43">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Culebra" data-titular="Solicitan al Senado y la Cámara que intervengan ante nuevos problemas en CDT de Culebra">
-                    <td><span class="muni-tag">Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20260918/solicitan-al-senado-y-la-camara-que-intervengan-ante-nuevos-problemas-en-cdt-de-culebra/?utm_source=rss&utm_medium=rss&utm_campaign=solicitan-al-senado-y-la-camara-que-intervengan-ante-nuevos-problemas-en-cdt-de-culebra" target="_blank">Solicitan al Senado y la Cámara que intervengan ante nuevos problemas en CDT de Culebra</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-09-18 11:32">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Hallan cuerpo hombre asesinado y calcinado en Trujillo Alto">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20260918/hallan-cuerpo-hombre-asesinado-y-calcinado-en-trujillo-alto/?utm_source=rss&utm_medium=rss&utm_campaign=hallan-cuerpo-hombre-asesinado-y-calcinado-en-trujillo-alto" target="_blank">Hallan cuerpo hombre asesinado y calcinado en Trujillo Alto</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-09-18 11:24">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Atado y con una bolsa en la cabeza: investigan asesinato de un hombre en Trujillo Alto">
                     <td><span class="muni-tag">Trujillo Alto</span></td>
                     <td class="titular-cell">
@@ -1021,7 +1011,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/notas/atado-y-con-una-bolsa-en-la-cabeza-investigan-asesinato-de-un-hombre-en-trujillo-alto/" target="_blank">Atado y con una bolsa en la cabeza: investigan asesinato de un hombre en Trujillo Alto</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-18 11:01">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-09-18 11:31">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="En imágenes: arrestan a tres personas ligadas a organización criminal en San Juan">
@@ -1031,7 +1021,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/fotogalerias/en-imagenes-arrestan-a-tres-personas-ligadas-a-organizacion-criminal-en-san-juan/" target="_blank">En imágenes: arrestan a tres personas ligadas a organización criminal en San Juan</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-18 11:01">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-09-18 11:31">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="En carrera por Cataño: estos son los cinco candidatos que se disputan la alcaldía">
@@ -1041,7 +1031,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/politica/fotogalerias/en-carrera-por-catano-estos-son-los-cinco-candidatos-que-se-disputan-la-alcaldia/" target="_blank">En carrera por Cataño: estos son los cinco candidatos que se disputan la alcaldía</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-18 11:01">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-09-18 11:31">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Investigan a organización criminal que se ha apoderado de apartamentos en residencial público de San Juan">
@@ -1051,7 +1041,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/notas/investigan-a-organizacion-criminal-que-se-ha-apoderado-de-apartamentos-en-residencial-publico-de-san-juan/?utm_source=elnuevodia.com&utm_medium=widget&utm_campaign=las_mas_vistas" target="_blank">Investigan a organización criminal que se ha apoderado de apartamentos en residencial público de San Juan</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-18 11:01">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-09-18 11:31">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Culebra" data-titular="Culebrenses solicitan al Senado y la Cámara que intervengan con el Secretario de Salud ante nuevos problemas en CDT de Culebra">
@@ -1061,17 +1051,17 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/culebrenses-solicitan-al-senado-y-la-camara-que-intervengan-con-el-secretario-de-salud-ante-nuevos-problemas-en-cdt-de-culebra/?utm_source=rss&utm_medium=rss&utm_campaign=culebrenses-solicitan-al-senado-y-la-camara-que-intervengan-con-el-secretario-de-salud-ante-nuevos-problemas-en-cdt-de-culebra&utm_source=rss&utm_medium=rss&utm_campaign=culebrenses-solicitan-al-senado-y-la-camara-que-intervengan-con-el-secretario-de-salud-ante-nuevos-problemas-en-cdt-de-culebra" target="_blank">Culebrenses solicitan al Senado y la Cámara que intervengan con el Secretario de Salud ante nuevos problemas en CDT de Culebra</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-09-18 10:58">hace 3min</td>
+                    <td class="time-ago" data-date="2026-09-18 10:58">hace 33min</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Hallan cuerpo de hombre atado, baleado y parcialmente calcinado en Trujillo Alto - Primera Hora">
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Hallan cuerpo de hombre atado, baleado y parcialmente calcinado en Trujillo Alto - primerahora.com">
                     <td><span class="muni-tag">Trujillo Alto</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQdTZrdTExVWVLdWo4ejhTYzdlM3hPcEU4ZlVUd05UdEJqdmszbU44UEF4V0lNYnhfdHh0azdGM25BemVjbWVLVS1DYkJhdEZTTkNwaHZ1eTJzSDVuM2NoQy01MG1fNTExVUpQcHpNNjZLckVqdFF5TF9NVVRQM0V0aGJnRWdyZjJRTzVjTFJlbW9RNEZBU1A4VFpuR1BmUk10R3RRVTFyNFZjNmkySHhpNnoyV2NTTl92ZGl1cmNWUFZ1SGI5WWh6WTNyZGVYLXNCYV9GLXc2V1FHdw?oc=5" target="_blank">Hallan cuerpo de hombre atado, baleado y parcialmente calcinado en Trujillo Alto - Primera Hora</a>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQdTZrdTExVWVLdWo4ejhTYzdlM3hPcEU4ZlVUd05UdEJqdmszbU44UEF4V0lNYnhfdHh0azdGM25BemVjbWVLVS1DYkJhdEZTTkNwaHZ1eTJzSDVuM2NoQy01MG1fNTExVUpQcHpNNjZLckVqdFF5TF9NVVRQM0V0aGJnRWdyZjJRTzVjTFJlbW9RNEZBU1A4VFpuR1BmUk10R3RRVTFyNFZjNmkySHhpNnoyV2NTTl92ZGl1cmNWUFZ1SGI5WWh6WTNyZGVYLXNCYV9GLXc2V1FHdw?oc=5" target="_blank">Hallan cuerpo de hombre atado, baleado y parcialmente calcinado en Trujillo Alto - primerahora.com</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-09-18 10:55">hace 6min</td>
+                    <td class="time-ago" data-date="2026-09-18 10:55">hace 36min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Cruel escena en Trujillo Alto: asesinan a hombre, lo queman y lo atan en pastizal - wapa.tv">
@@ -1081,7 +1071,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxPNXlVUHBPckx4WDJWeE9ZeDM4eTc2cm1UWnU3NGNrQmRVYkprVTl6ZHhUVG5IaXJObDN6Uk1mYWVKV0J0eXloNDFieU1yZHdNbWtOdElCWjFXOFhpUUUzRjIyOXpXc2tfUXFQLWNGRDhjWlpiR211ZFFJV3JzRmVoWE15Vnd6c2laTWN5a3VwdWgzeEstdFdFRGlnVEdvYjZUSzVFaXhaLWx4bG5kY1hFZllJMlBlX2hBN3BnSk9wMUtZU1ZzY1V2ZmpMZl9EUmhWZFdNbC1acWlTNGJGeXNJNUw5NHZDZmgweHVRT2NJaFVvQmpC?oc=5" target="_blank">Cruel escena en Trujillo Alto: asesinan a hombre, lo queman y lo atan en pastizal - wapa.tv</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-09-18 10:40">hace 21min</td>
+                    <td class="time-ago" data-date="2026-09-18 10:40">hace 51min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Hallan hombre atado, baleado y parcialmente calcinado en Trujillo Alto">
@@ -1091,8 +1081,11 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/hallan-hombre-atado-baleado-y-parcialmente-calcinado-en-trujillo-alto/?utm_source=rss&utm_medium=rss&utm_campaign=hallan-hombre-atado-baleado-y-parcialmente-calcinado-en-trujillo-alto&utm_source=rss&utm_medium=rss&utm_campaign=hallan-hombre-atado-baleado-y-parcialmente-calcinado-en-trujillo-alto" target="_blank">Hallan hombre atado, baleado y parcialmente calcinado en Trujillo Alto</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-09-18 10:39">hace 22min</td>
+                    <td class="time-ago" data-date="2026-09-18 10:39">hace 52min</td>
                 </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Encuentran cuerpo atado de manos y pies">
                     <td><span class="muni-tag">Trujillo Alto</span></td>
@@ -1101,7 +1094,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/encuentran-cuerpo-atado-de-manos-y-pies/" target="_blank">Encuentran cuerpo atado de manos y pies</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-09-18 10:31">hace 30min</td>
+                    <td class="time-ago" data-date="2026-09-18 10:31">hace 1h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Culebra" data-titular="Este 20 de Septiembre nos vamos de excursión para una de la playas más bellas de Culebra, Culebrita POR FIN🤣💪🙏, una playa con aguas cristalinas y perfecta para snorkeling. : El pasadía incluye bebidas, almuerzo y equipo de snorkeling. : Si te quieres ir - facebook.com">
@@ -1111,21 +1104,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxQaVV6SmtPTVQ0aUVxZHBwanRzbnFfMmxuNW8xbFVNSkNnZ18tVGRPTGwyemFxdE9SR1pncnBiSWJMQmtyWWlHVkdjbl9hMnp0UW9nTG4wTnI3eWVJUFdqbUNuSWxLVno5QzFzYnh3NGNyekk1SVBsUmVqQjdJY0JlaWZJa1hLN0dqRDBIaEJfX282WGFhZThacnpsUDlwTUUxNGcwcmpNSUFDd3JSQlZUWlZsVEZGSnJsakcwcEJkdlZfUTBSNk9CNlMxVERkQ1dQVGhwUmdXMzR4WVBVc1dHN2RR?oc=5" target="_blank">Este 20 de Septiembre nos vamos de excursión para una de la playas más bellas de Culebra, Culebrita POR FIN🤣💪🙏, una playa con aguas cristalinas y perfecta para snorkeling. : El pasadía incluye bebidas, almuerzo y equipo de snorkeling. : Si te quieres ir - facebook.com</a>
                     </td>
                     <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-09-18 10:30">hace 31min</td>
+                    <td class="time-ago" data-date="2026-09-18 10:30">hace 1h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Hallan cuerpo baleado y parcialmente calcinado en Trujillo Alto - Telemundo Puerto Rico">
                     <td><span class="muni-tag">Trujillo Alto</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxQdDh5dmxUUVRWNk5qRXczRmUxclk2Z0ZmNFlHQi14UzBRZU1uQWJoRk5jQVlwclR0ODRfUmhCbHlWWVNNbzNQWmFkYlRHOEdMdGtNaE13MnNhRE9mZWxrQ2dhLXRzSXJSbXVGZDV2aHE5ZjY5UXN5aUVkV2pjTHhFMFg0elJEX0IzX0lRblpucC1JY2E4Ty1rV1ZfcVl1OEsteE9xWVRNSGZrQlZuRTlHUnN0c0hyVU9jQ05nZ0lB0gHGAUFVX3lxTE9ySDZDbWI3U2F2X3gxWW5KcHBQNmdxY0VtX0lzTHVFYVhodG5IS1JWbVJ1SGptQU1uS2d4ZmdaY1RTNExteXJUc21rMVY2NGFnRkJsb1pPemdEWl9JOUg3eWlqNk9XT2FZd2dpV0MzUFJLaU44RVNaMkxCYnN5cVhkOUYtRkFfa1lwZXdMZXdWX3dkMnNRSTZVSUVHcXpmeEdOZ0pjZS1hT0tEWm5MeGx2aEF5bGdKYUJydWpVcmJBejgySlBZZw?oc=5" target="_blank">Hallan cuerpo baleado y parcialmente calcinado en Trujillo Alto - Telemundo Puerto Rico</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-09-18 10:07">hace 54min</td>
+                    <td class="time-ago" data-date="2026-09-18 10:07">hace 1h</td>
                 </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Plaza Loíza: “No tenemos intención de cerrar” - El Nuevo Día">
                     <td><span class="muni-tag">Loíza</span></td>
@@ -1134,7 +1124,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxONjduZWdGU2hQQkJQZjhzTkgyNzdtTWRHMWNkbkhlZnF2enQ4ZC1YR0doQVRlY2w2R3FJSjJlYnBTV3p0TlowNXZGeDlrZmNjZ3BOZUp0T2FJcmZtQW00TU9xNkszcDNWRkhYbE9TMnQwcXFqOU53RDJxeWhTTXVhbTd4cTU5YTQwb2IwdlN4QlNralZicXM0cDk3SHZSTWZ1NHdTc3N1NA?oc=5" target="_blank">Plaza Loíza: “No tenemos intención de cerrar” - El Nuevo Día</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-09-18 03:10">hace 7h</td>
+                    <td class="time-ago" data-date="2026-09-18 03:10">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz; 9 municipios están en lista">
@@ -1180,14 +1170,14 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-17 21:36">hace 13h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Humacao" data-titular="Hallan cadáver de una mujer en estado de descomposición en Humacao - Primera Hora">
+                <tr class="article-row" data-municipios="Humacao" data-titular="Hallan cadáver de una mujer en estado de descomposición en Humacao - primerahora.com">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTlZYemEybXBZNDI1cEFxTW5pSjNJeF9mSVBrTGVyajFQakM4Wjl5SkIzZTh3d2FGX0xwRkxNc0U4QjdDaktlSFM4ejJHM21kbnVrUG1HUFp5ckVBaUE3NGZWRG9XNWlQdEh1MlY1MXNxOFRJZ3dLNS14TjVEZHpaU19MVTZvTlQwclVvS2tRU2JzR1h5SlpQTEpXV3NZc0tYYi0yS08xS1BJYVp4cE1uc1V2aDIyeUUtVlMwQ2I4dWEtR3NQa1hTYQ?oc=5" target="_blank">Hallan cadáver de una mujer en estado de descomposición en Humacao - Primera Hora</a>
+                        <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTlZYemEybXBZNDI1cEFxTW5pSjNJeF9mSVBrTGVyajFQakM4Wjl5SkIzZTh3d2FGX0xwRkxNc0U4QjdDaktlSFM4ejJHM21kbnVrUG1HUFp5ckVBaUE3NGZWRG9XNWlQdEh1MlY1MXNxOFRJZ3dLNS14TjVEZHpaU19MVTZvTlQwclVvS2tRU2JzR1h5SlpQTEpXV3NZc0tYYi0yS08xS1BJYVp4cE1uc1V2aDIyeUUtVlMwQ2I4dWEtR3NQa1hTYQ?oc=5" target="_blank">Hallan cadáver de una mujer en estado de descomposición en Humacao - primerahora.com</a>
                     </td>
                     <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-09-17 21:05">hace 13h</td>
+                    <td class="time-ago" data-date="2026-09-17 21:05">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Municipio de Humacao anuncia acuerdos y designa director de la Banda Centenaria">
@@ -1220,6 +1210,16 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-17 20:32">hace 14h</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Naguabo" data-titular="AVISO IMPORTANTE|| Naguabo en Ruta El Municipio Autónomo de Naguabo informa a la ciudadanía que el servicio de transporte colectivo Naguabo en Ruta estará operando de forma limitada este viernes, 18 de septiembre de 2026, en el horario de las 7: - facebook.com">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxNUHoxNWRpU0pmZHFKaG5YaDVnVWVjeDBXTU9ocnF2bG1ETnJFM08wb1VMeER4Si1Sakd3TUw2YVRNX1J6aGVEbDQyLUVDQUpYYlRfakVEZFphWi1mUHBnT0YtOGExZnZaMWR0a0cyM253R2xGOC14d1pNdjlTSnFfaVdqMUZUTUxFSlhUYjlGLXY4NV9DN0RDamhuMWdQVTZfVzFzSG43UlFUbU9UWHhVNm5yeFBkU041TjFrQTRkNU5fYVVzQ2RHT3lSbVZZVUQ1LW9JTXJvSlRLZFRqMWVTVnkzbEVWLXJqTVRmMFdaYV9NbDQ?oc=5" target="_blank">AVISO IMPORTANTE|| Naguabo en Ruta El Municipio Autónomo de Naguabo informa a la ciudadanía que el servicio de transporte colectivo Naguabo en Ruta estará operando de forma limitada este viernes, 18 de septiembre de 2026, en el horario de las 7: - facebook.com</a>
+                    </td>
+                    <td>FB - Naguabo</td>
+                    <td class="time-ago" data-date="2026-09-17 19:39">hace 15h</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Humacao" data-titular="Hallan cuerpo de mujer en residencia en Villa Universitaria de Humacao sellada por más de tres años">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
@@ -1240,16 +1240,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-17 18:59">hace 16h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Río Grande" data-titular="Alcalde de Río Grande denuncia continuos "apagones largos", mal servicio LUMA - wapa.tv">
-                    <td><span class="muni-tag">Río Grande</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxPbWRNQXJzdWQtMUZPei1QWkR5VEg2SzY1U3BlWFpUREhSd0w1WUlYVzFSOGlMY3NPRXNxQmRoa2tBeExDSFdoYXFSRjVVQ2ZwZVRDM3l1TG5kV0g4YVIwWFFRc3FTdDFUdnBPRFdzU05mVVhGRVVqUW5OUzJ4V3pNU21YWWR5cGYzNHlNeGJVaEtZRFdXRWNaY1VjQVVablpKMDNoR1BmdzhLenAxMll0c0drQ29yS3UzWDNPbjM4X1RMdjBaR1QydjhhcnZGYWo4aEZzNUFtWDY2Q3pOSThHNnh2VkJlMmV4VnoxUzV3?oc=5" target="_blank">Alcalde de Río Grande denuncia continuos "apagones largos", mal servicio LUMA - wapa.tv</a>
-                    </td>
-                    <td>Río Grande</td>
-                    <td class="time-ago" data-date="2026-09-17 17:31">hace 17h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Humacao" data-titular="Hallan cuerpo de mujer en interior de residencia en Humacao - wapa.tv">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
@@ -1257,7 +1247,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxPLUNqcEpiekhQS1g0VFdxSW5XRkpVYkNsbVNmNVR4N3NkWVNoWURRd3hKcVFza0lpMWp2dHZET0NVeWFYcDlTNm5UX3MtdnQwWUt0bXJyWnlqS2pnYmI5U1dfVWpBeFExSl9WQ2kyV2d4RVUtcmxETEhaM1Z6UC12dkRpQlMtbDRtYTQxaU5xa1JaRkdRQ3pBQlpRLVJwbWRsNUkzWnZmY3QxWXF5LXVQc3lRcGdsaHROSTQydlJjWmVDa3g2MDFwdzdaSTRmRTN2ejNJMnQ2Y29kUQ?oc=5" target="_blank">Hallan cuerpo de mujer en interior de residencia en Humacao - wapa.tv</a>
                     </td>
                     <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-09-17 17:30">hace 17h</td>
+                    <td class="time-ago" data-date="2026-09-17 17:30">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Hallan cadáver de una mujer en avanzado estado de descomposición en una casa de Humacao - El Nuevo Día">
@@ -1267,17 +1257,17 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxNN3VodGV2R1VQZzA2M01wSnAyTWVYZGhyRkFSX2lpRXhwOFN6UFEzZ2xranNvXzBtdWk2OVlqYm14Q3hDSHJ1MTlVbmlxeGdyS0lXUndDSERiYUFQSE50Zks2R2RTd2tfX1dWZ08zSUJxWHJqcmVKd2hfT1k3MEVORG4yd2ttOTVEWXE1SUd1cmVtYzQxUnFQdy1PeklEZGpVM3dmaE5LNVBITE9Bem1TQjI1UEdvU1MyX2JZTk1pWG9KVVNnOFNZei1faVJ1dDRfVDNQM25uWQ?oc=5" target="_blank">Hallan cadáver de una mujer en avanzado estado de descomposición en una casa de Humacao - El Nuevo Día</a>
                     </td>
                     <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-09-17 17:20">hace 17h</td>
+                    <td class="time-ago" data-date="2026-09-17 17:20">hace 18h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza - facebook.com">
-                    <td><span class="muni-tag">Loíza</span></td>
+                <tr class="article-row" data-municipios="Río Grande" data-titular="Alcalde de Río Grande denuncia continuos "apagones largos", mal servicio LUMA - wapa.tv">
+                    <td><span class="muni-tag">Río Grande</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1MMjNsQ29fclVRZjhEZG1Sa08tVjg2aWRfa3pnRHdGc29tTXlkbHRPQmNSMEZHMm95d3pFdTNRaUZ4M1B0c2ZyWWNHcmYya0ZZSkpiU1ZFNmxBQ3lUb3A0SndaRE15Zll6bk5EQjhWc1NNQXBRQnZV?oc=5" target="_blank">Municipio de Loíza - facebook.com</a>
+                        <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxNUmdlRnJqUzVBbktiZTgyenJzTlhnb3JlY2FtV2phOXVfYUk0S01vSUVGZTBMZE5XYV9Ra09wNm9WNUNzeVpROFY5ekN2V1p5N2pobVJuYUhyamlvRjlfQTFRS29FTGtQWkVYUmJHazhhOVlobWlRd3BNMnY3Nkd2OElZTEpSb0Q1OFh4dnJqLWxPSkxzbk5URDVES01pNzE4bDIycE5tTUxWQms5cHdmLTlBanZFMG5rd2x2V1hvbGZrRzAzZWMwdU1xbXgzOTloTFlFWEdxQkluVWtNLTVkV1NzVWlJWnZZb0RZVw?oc=5" target="_blank">Alcalde de Río Grande denuncia continuos "apagones largos", mal servicio LUMA - wapa.tv</a>
                     </td>
-                    <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-09-17 16:06">hace 18h</td>
+                    <td>Río Grande</td>
+                    <td class="time-ago" data-date="2026-09-17 17:05">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Altrusa Humacao promueve envejecimiento activo mediante huerto comunitario en Ryder Housing">
@@ -1287,7 +1277,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/17/altrusa-humacao-promueve-envejecimiento-activo-mediante-huerto-comunitario-en-ryder-housing/" target="_blank">Altrusa Humacao promueve envejecimiento activo mediante huerto comunitario en Ryder Housing</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-17 15:29">hace 19h</td>
+                    <td class="time-ago" data-date="2026-09-17 15:29">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Arrestan en Las Piedras a hombre con orden pendiente por sustancias controladas">
@@ -1297,7 +1287,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/17/arrestan-en-las-piedras-a-hombre-con-orden-pendiente-por-sustancias-controladas/" target="_blank">Arrestan en Las Piedras a hombre con orden pendiente por sustancias controladas</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-17 15:11">hace 19h</td>
+                    <td class="time-ago" data-date="2026-09-17 15:11">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan,Caguas" data-titular="Carreteras continúa rehabilitación de la PR-52 de Caguas a San Juan">
@@ -1317,7 +1307,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/17/anticipan-que-camara-aprobara-reduccion-a-10-00-en-multas-de-autoexpreso/" target="_blank">Anticipan que Cámara aprobará reducción a $10.00 en multas de AutoExpreso</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-17 14:22">hace 20h</td>
+                    <td class="time-ago" data-date="2026-09-17 14:22">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="Miles de clientes sin servicio eléctrico en Río Grande - Telemundo Puerto Rico">
@@ -1330,6 +1320,16 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-17 13:47">hace 21h</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Naguabo" data-titular="🌈¡SEPTIEMBRE A TODO COLOR! 🌈 El Municipio Autónomo de Naguabo, junto a nuestra alcaldesa, Hon. Miraidaliz Rosario Pagán, y la Oficina de Servicios a Adultos Mayores, invita a nuestros adultos mayores a disfrutar de una mañana llena de alegría, mú - facebook.com">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxOQ3ZlWldYTWEtcUk4cXZDM1FmMFpUMmFZNHBHU3I1bHJtcWx1RnR3THpUNldHRGVHc3NsSG5MMmNwRHhiZWNKdHI4bWRNVnNvc0llWXRjTF8wbE5TQjRNZHV6ZGVfb2JtT3lhQ1JsV21zZTVCVmwtWHVVTUJONHBmazlFbVp2T18xU1I0OHFxU0JrRVU3a01YQU1IWkRtMm5NMDFuUEdaTFZHNkdxcGctZFJtRHQzLVBmNXJFVUxVTkFwLW04Z0tiaFJ4ay1iNWxVSTJGbnhhN0hRUEVkenI5ODBQSEtCcG16RGtDbzV2QnE4LXc?oc=5" target="_blank">🌈¡SEPTIEMBRE A TODO COLOR! 🌈 El Municipio Autónomo de Naguabo, junto a nuestra alcaldesa, Hon. Miraidaliz Rosario Pagán, y la Oficina de Servicios a Adultos Mayores, invita a nuestros adultos mayores a disfrutar de una mañana llena de alegría, mú - facebook.com</a>
+                    </td>
+                    <td>FB - Naguabo</td>
+                    <td class="time-ago" data-date="2026-09-17 12:45">hace 22h</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Loíza" data-titular="Puerto Rico supermarket chain Plaza Loíza faces inventory shortages but rules out store closures - El Nuevo Día">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
@@ -1337,7 +1337,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxQaVFsY182SGV4X3ZCcW1zNldSdUFweDJSOVA1YzdVV2h0Y21oOTM2azhhRWxVbHpKTkVubkgyVHZSZ1hGZTdveVEzVjIxMVpDLUZ0bWhHN2ZPZWRTdlVOVXozOXczOVZUcjl1MGk0eEMtWjIyQ0JSRWhscVgwbEtkaW56RS1Fc2FGVzBpVmtxWi1DSnVpOVNwMy1kajdWeDVxeHFnTkFFMHg4ZFhaT2FsckxUOVU5YUF1ei1fb3gtNEpQOUJMSnB0M0xVUFhyUUw4dkxEOFkyV0pMcnRZTVB5Sg?oc=5" target="_blank">Puerto Rico supermarket chain Plaza Loíza faces inventory shortages but rules out store closures - El Nuevo Día</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-09-17 12:16">hace 22h</td>
+                    <td class="time-ago" data-date="2026-09-17 12:16">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="La alcaldesa del Municipio Autónomo de Humacao, Rosamar Trujillo Plumey, anunció una serie de acciones dirigidas a fortalecer, reorganizar y proyectar hacia el futuro a la Centenaria Banda Municipal de Humacao, reafirmando que la histórica institución - facebook.com">
@@ -1357,16 +1357,26 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRFBYSi03QWtuWU5tX0dobFNHNlk5VFhrS09yVlRzT0c0Y1p5WEpianFFU3pZWFhrUGtpLU05V0JpOW51RGo1b2ZBZHVxZDdvYksxdVh0NVV0WVFOdVdLRG02US1vYlgwbU1tX1o3ZUMxWkoyYU5GTGZacGxnLUtLb0NEclplQXFEc3pscTNPWVhzY1BzREpiVEJfVmNobEh1VFk5cDZZUGMwWG9oQTVQU2lBNWYwdG5rUHhIZHktOE5jODBWeC1KTldWeGRxSWYw?oc=5" target="_blank">Incendio consume una residencia de madera en Fajardo - wapa.tv</a>
                     </td>
                     <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-09-17 11:07">hace 23h</td>
+                    <td class="time-ago" data-date="2026-09-17 11:07">hace 1d</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">📋 Anteriores</td></tr>
                 
-                <tr class="article-row" data-municipios="Carolina" data-titular="Presentan cargo por actos lascivos contra supervisor de Rayos X en Carolina">
+                <tr class="article-row" data-municipios="Carolina" data-titular="Sonrisas Especiales brinda atención dental gratuita a 50 familias con necesidades especiales">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.carolina787.com/n/sonrisas-especiales-brinda-atencion-dental-gratuita-a-50-familias-con-necesidades-especiales" target="_blank">Sonrisas Especiales brinda atención dental gratuita a 50 familias con necesidades especiales</a>
+                    </td>
+                    <td>Carolina787</td>
+                    <td class="time-ago" data-date="2026-09-18">2026-09-18</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Presentan cargo por actos lascivos contra supervisor de Rayos X en Carolina">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
                         <a href="https://www.carolina787.com/n/presentan-cargo-por-actos-lascivos-contra-supervisor-de-rayos-x-en-carolina" target="_blank">Presentan cargo por actos lascivos contra supervisor de Rayos X en Carolina</a>
                     </td>
                     <td>Carolina787</td>
@@ -1543,7 +1553,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-18 11:01:21 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-18 11:31:19 AM<br>
     Actualización automática cada 30 min
 </div>
 
