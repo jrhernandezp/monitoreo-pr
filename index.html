@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-21 05:01:01 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-21 05:16:15 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">42</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">44</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">13</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-21 05:01:01 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-21 05:16:15 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -814,6 +814,12 @@ tr.article-row:hover { background: var(--surface2); }
 <div class="section breaking-section">
     <div class="breaking-banner">
         <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">ahora</span> —
+            <a href="https://www.elnuevodia.com/noticias/seguridad/notas/investigan-muerte-de-una-mujer-hallada-en-una-residencia-en-carolina/" target="_blank">Investigan muerte de una mujer hallada en una residencia en Carolina</a>
+            <span style="opacity:0.6"> [Carolina]</span>
+        </div>
         
         <div class="breaking-item">
             <span class="time">ahora</span> —
@@ -849,7 +855,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">5</span>
+            <span class="muni-count">6</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
@@ -904,7 +910,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <span class="muni-name">Cataño</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">5</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
@@ -944,11 +950,21 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Arrestan a dos personas y ocupan drogas durante allanamiento en Trujillo Alto - notiuno.com">
+                <tr class="article-row" data-municipios="Carolina" data-titular="Investigan muerte de una mujer hallada en una residencia en Carolina">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/investigan-muerte-de-una-mujer-hallada-en-una-residencia-en-carolina/" target="_blank">Investigan muerte de una mujer hallada en una residencia en Carolina</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-09-21 21:08">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Arrestan a dos personas y ocupan drogas durante allanamiento en Trujillo Alto - NotiUno.com">
                     <td><span class="muni-tag">Trujillo Alto</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMijgJBVV95cUxPM1c1eUkzNVM5VWh5NnViNDhJS19GZTFoTGRyRVdKeDh2MlBSRGVrVzJISVZzRC04YmkxTHlfVkswOW9BYUhna3BZbExBNV9UNl9fcEdkU0VzamtJcUQyWUpwdzlfZXlNTm5CdHFjNEtEX1ItTXZqVm1IbTBnbkY4Wl9tTjN1OGwzNnYxWWVlLW9jcW9TUFVpeWRJdWRySjZZZ1BJTmREWjl5X0J5N3lja1dkUjNBQkI2T2dIbXN6aHZRb2ZHTFRkTG1zS2xoaFFRN3R2eVo2a0pzSy1lN0RTVFRyYkRrZE92T2s5UVdsdF9TMy1iSVlRUFQ5TjV4bW9DeDBGWk1PajhHdzdfa0E?oc=5" target="_blank">Arrestan a dos personas y ocupan drogas durante allanamiento en Trujillo Alto - notiuno.com</a>
+                        <a href="https://news.google.com/rss/articles/CBMijgJBVV95cUxPM1c1eUkzNVM5VWh5NnViNDhJS19GZTFoTGRyRVdKeDh2MlBSRGVrVzJISVZzRC04YmkxTHlfVkswOW9BYUhna3BZbExBNV9UNl9fcEdkU0VzamtJcUQyWUpwdzlfZXlNTm5CdHFjNEtEX1ItTXZqVm1IbTBnbkY4Wl9tTjN1OGwzNnYxWWVlLW9jcW9TUFVpeWRJdWRySjZZZ1BJTmREWjl5X0J5N3lja1dkUjNBQkI2T2dIbXN6aHZRb2ZHTFRkTG1zS2xoaFFRN3R2eVo2a0pzSy1lN0RTVFRyYkRrZE92T2s5UVdsdF9TMy1iSVlRUFQ5TjV4bW9DeDBGWk1PajhHdzdfa0E?oc=5" target="_blank">Arrestan a dos personas y ocupan drogas durante allanamiento en Trujillo Alto - NotiUno.com</a>
                     </td>
                     <td>Trujillo Alto</td>
                     <td class="time-ago" data-date="2026-09-21 20:40">ahora</td>
@@ -1131,7 +1147,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/21/familia-solicita-ayuda-para-gastos-funebres-de-mujer-arrollada-en-humacao/" target="_blank">Familia solicita ayuda para gastos fúnebres de mujer arrollada en Humacao</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-21 16:39">hace 22min</td>
+                    <td class="time-ago" data-date="2026-09-21 16:39">hace 37min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Identifican a hombre hallado atado, baleado y parcialmente calcinado en Trujillo Alto - Primera Hora">
@@ -1141,7 +1157,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxNU2JJOGt6SmwySnVpU1JDZWowa0FsczZfc1U1SFdVNXlhSnp4dUczSTNKRW5QdHpYV0M0cU5vVE96WkRHS1QwakdZSVlKclVsZk1Zb3VSeEtBNVIwdmZGUmJmTGJobFltM3dXWkU4c2FySE5ZbnhySHJtWXd4cFY5bm9USWFheTFRb2VCX1h6Y2xrU2txRDl3d3l0U0tjQnByVVZHQTlLRVg5RWRjejk1Snl0RklodXNLYTYyQ2NWQUVQMnQxWVlyWGdCU3ZJRXpEbzVBWXp5TEVCc1hhX09HTQ?oc=5" target="_blank">Identifican a hombre hallado atado, baleado y parcialmente calcinado en Trujillo Alto - Primera Hora</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-09-21 16:37">hace 24min</td>
+                    <td class="time-ago" data-date="2026-09-21 16:37">hace 39min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="▪️CD Realty en #Fajardo. - facebook.com">
@@ -1151,7 +1167,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQeHlCRWFLZ0VoQlVIcDFUSnplQUZfcDYzRkI0OGo0dGJwMDNQcHRLanZXSjNWblRBdGc4dE0zQ2V2Q25IS2Jjc1ZwLUdrN05MVnVqczk3WS1GVWduZF9xMjRxZnlmS0cyd1BHN1lkUlNOQ3NRVFcwamRmTHNheUJRWGpXdjBkYkNDNktJSE0xUXpUSzhDakY3bXVn?oc=5" target="_blank">▪️CD Realty en #Fajardo. - facebook.com</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-09-21 16:30">hace 31min</td>
+                    <td class="time-ago" data-date="2026-09-21 16:30">hace 46min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Identifican hombre asesinado y encontrado con bolsa en la cabeza y parcialmente calcinado en Trujillo Alto">
@@ -1161,7 +1177,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/21/identifican-hombre-asesinado-y-encontrado-con-bolsa-en-la-cabeza-y-parcialmente-calcinado-en-trujillo-alto/" target="_blank">Identifican hombre asesinado y encontrado con bolsa en la cabeza y parcialmente calcinado en Trujillo Alto</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-21 16:29">hace 32min</td>
+                    <td class="time-ago" data-date="2026-09-21 16:29">hace 47min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Victoria Ciudadana cuestiona que solo electores del PNP puedan escoger al próximo alcalde de Cataño - Periódico El Sol de Puerto Rico">
@@ -1171,7 +1187,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxNYTJlUldqeXRlamk5TDlrd3lHZzFLdTZQbFdiMmxFTmFtNk1aRm9BVzU3Z3ZpWGlmZTEzTTcxSnF0WDBsbmZud2xUZzNPN2xWVzVOY1RXdVpMMjItZFBuQ0JvLW1tVU5qbmx0dkplcm04WmJVWUp1Wk9CcllleEh4c3VUOTZkcWhtckFteHRiWVhLSTlDVWwxWmJDdlJpSjk0TnBBVGhsbmJSdWJZT3RSaC1ldkZMaFVSb01na200MmY5b1VTUmJMeg?oc=5" target="_blank">Victoria Ciudadana cuestiona que solo electores del PNP puedan escoger al próximo alcalde de Cataño - Periódico El Sol de Puerto Rico</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-21 16:20">hace 41min</td>
+                    <td class="time-ago" data-date="2026-09-21 16:20">hace 56min</td>
                 </tr>
                 
                 
@@ -1214,7 +1230,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/aaa-suspendio-racionamiento-hace-dos-semanas-a-rio-grande-canovanas-y-loiza-y-nadie-fue-informado/?utm_source=rss&utm_medium=rss&utm_campaign=aaa-suspendio-racionamiento-hace-dos-semanas-a-rio-grande-canovanas-y-loiza-y-nadie-fue-informado&utm_source=rss&utm_medium=rss&utm_campaign=aaa-suspendio-racionamiento-hace-dos-semanas-a-rio-grande-canovanas-y-loiza-y-nadie-fue-informado" target="_blank">AAA levantó racionamiento en Río Grande, Canóvanas y Loíza hace dos semanas sin anuncio público</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-09-21 12:12">hace 4h</td>
+                    <td class="time-ago" data-date="2026-09-21 12:12">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Muere peatona de 63 años tras ser atropellada en Humacao">
@@ -1224,7 +1240,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/muere-peatona-de-63-anos-tras-ser-atropellada-en-humacao/" target="_blank">Muere peatona de 63 años tras ser atropellada en Humacao</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-09-21 12:08">hace 4h</td>
+                    <td class="time-ago" data-date="2026-09-21 12:08">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Conductor atropella a sexagenaria en Humacao y huye de la escena - wapa.tv">
@@ -1237,11 +1253,11 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-21 11:37">hace 5h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Humacao" data-titular="Sexagenaria muere tras ser atropellada en Humacao - metro.pr">
+                <tr class="article-row" data-municipios="Humacao" data-titular="Sexagenaria muere tras ser atropellada en Humacao - Metro Puerto Rico">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOM0JOLVA1SzhqbThBRmhLN3JYTEVrRk8yeWlnNE9FSVE0NENsLVJxWVZCcTV3clUwYUw5ZmxsNlF2d3RGdmp3ZjU4UE9QVlpTZDFsd2ZjN0plNzBURUI4dnhjNU5IMEptWTVXXzhkUEU2RFQ3Rm5XejMyc0JWQ2VyS0N3S3dXWDdwVEFOMmxVZGxFbVU0SGc?oc=5" target="_blank">Sexagenaria muere tras ser atropellada en Humacao - metro.pr</a>
+                        <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOM0JOLVA1SzhqbThBRmhLN3JYTEVrRk8yeWlnNE9FSVE0NENsLVJxWVZCcTV3clUwYUw5ZmxsNlF2d3RGdmp3ZjU4UE9QVlpTZDFsd2ZjN0plNzBURUI4dnhjNU5IMEptWTVXXzhkUEU2RFQ3Rm5XejMyc0JWQ2VyS0N3S3dXWDdwVEFOMmxVZGxFbVU0SGc?oc=5" target="_blank">Sexagenaria muere tras ser atropellada en Humacao - Metro Puerto Rico</a>
                     </td>
                     <td>Humacao</td>
                     <td class="time-ago" data-date="2026-09-21 11:36">hace 5h</td>
@@ -1254,7 +1270,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOREJwUEJIOWh3UlhqRUp2UnVId1M2UjgxSnFtZmo0TlBIeWZsOEFCU2dxRkJOTVlWc29nejR4SEhvb29lTlR3dmFhV0ppeXJPcks1UEdBNDIyMHd2QmpXaS1KZFRGRXI3d25KcldVZ05rYzlzZk52dXkxUkduWHdrNmN0cDRHUzFBeGNGbXJfZmZ6M1AwTGVacncyWlPSAaQBQVVfeXFMTzFrNjNTMWgyZUVobmgxVE9yaVZQT1lNYzVjMExuSzd6Yk53MEZDVkpvMHllbnV4czRjcS1pSEVYMUFoN2txNTBMUEtiUFVYNDF4S2pJNlVVYkpMWmZKemdpMWgyN1RKRndyN2NMZ0JIMkNKQlBvdzJFanJXdGFsZl9pM1BtQ0I4YTFyTVU0M00wbjBNT0VkdWFRSEpVU1UzcTNlcVc?oc=5" target="_blank">Balacera alcanza residencia en Naguabo - Telemundo Puerto Rico</a>
                     </td>
                     <td>Naguabo</td>
-                    <td class="time-ago" data-date="2026-09-21 11:11">hace 5h</td>
+                    <td class="time-ago" data-date="2026-09-21 11:11">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Hit and run: mujer de 63 años muere arrollada en Humacao - Telemundo Puerto Rico">
@@ -1294,7 +1310,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQUFlqUzZ3dV85cnhzMzJGUGVrcnJCWHllUGd2M290bHJ0aWl3aXROc05UQzFZemF4TXdfUWlxQS1BeHRnTko2V3RYQzg4TmpnMUR5NkNSX1Fmajk1NkJ1bU5mUlB0OHQ2OVI1UmwzQ1ZQTkhIX3FGZk1hSTl2WFJBOWdUTGkwZ1ROMUFOdHBkX1l5OGs3SXVoNTNlTVlmM1Fkd3BDdWVPYmNnV0hCLWpUNnJfSXhNWTFTNlk0bXFGX29KOUdjNzVqOE8yZGJkampkX2NDdUE2TTVESTFNT05qaTV5WQ?oc=5" target="_blank">Las Criollas se mantienen invictas 🏀🫀🔥 Caguas, Puerto Rico, 20 de septiembre de 2026 – Las Criollas de Caguas resistieron un feroz ataque en la segunda mitad del partido por parte de las Pollitas de Isabela, y lograron así su tercera victoria en línea 79-74, - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-09-21 09:15">hace 7h</td>
+                    <td class="time-ago" data-date="2026-09-21 09:15">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
@@ -1318,6 +1334,16 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Cataño</td>
                     <td class="time-ago" data-date="2026-09-20 20:01">hace 21h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Hiram Torres Montalvo presenta Plan 90 X 90 para Cataño - Telemundo Puerto Rico">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPdk9tYVJUVDY0YkpYdmRiTzRIR0todzdfM2ZwQnNsUXc5blVaeWhJZTRuSWFWSEREeFl1aS1aSTM2QmpKc0ZUeENxM3hHYkRYQWVhN0R5cUJsdHg1am02Y0NfeWI1R2t2LWN2Vm1JdW5abTlfSDg5NnVhVmRmeGpjZ0xXcWxDdVQ4LWdjNFZtUkx6dVA3dFlmYm4wV3REVWFnQXo3d180OG5PX2s2VXFEbEF3WdIBuwFBVV95cUxOX2lXWjd0VWxrck9zbjM0UDJhSmRNYmhWU1lCT3JCUGtKazNIQU9SZE50aGQzeXRDYmx2czNiS0hsZzdKYVJDVzNtM1dEdFUxUnVoYTlZYmNLLU1oMGhXWmxNUkV5bm9GbU1XQ256QWRQUVd6cWRmd1JhZ1lzVC11cGVhNWN5WlgwN3N1SDVwcWJudTVCa19WRXhEcll6cXdOY1JSZ1o0eEFwOWdpeVp1ODNDQzlIZGZHaERn?oc=5" target="_blank">Hiram Torres Montalvo presenta Plan 90 X 90 para Cataño - Telemundo Puerto Rico</a>
+                    </td>
+                    <td>Cataño</td>
+                    <td class="time-ago" data-date="2026-09-20 18:57">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
@@ -1523,7 +1549,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-21 05:01:01 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-21 05:16:15 PM<br>
     Actualización automática cada 30 min
 </div>
 
