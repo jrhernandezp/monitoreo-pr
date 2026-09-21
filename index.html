@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-21 07:01:13 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-21 07:31:13 AM</span></div>
         </div>
     </div>
     <div class="stats">
         <div class="stat-box"><div class="num">20</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">8</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">4</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">7</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-21 07:01:13 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-21 07:31:13 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -824,7 +824,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">3</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
@@ -852,9 +852,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Loíza')">
+        <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
             <span class="muni-name">Loíza</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
@@ -867,24 +867,24 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <span class="muni-name">Naguabo</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <span class="muni-name">Humacao</span>
-            <span class="muni-count">5</span>
+            <span class="muni-count">6</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <span class="muni-name">Cataño</span>
-            <span class="muni-count">5</span>
+            <span class="muni-count">4</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Vieques')">
+        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
             <span class="muni-name">Vieques</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
@@ -919,10 +919,50 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="Humacao" data-titular="Sexagenaria muere tras ser impactada por conductor que abandonó la escena en Humacao">
+                <tr class="article-row" data-municipios="Naguabo" data-titular="Investigan incidente de impactos de bala en vivienda en Maizales de Naguabo">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/09/21/investigan-incidente-de-impactos-de-bala-en-vivienda-en-maizales-de-naguabo/" target="_blank">Investigan incidente de impactos de bala en vivienda en Maizales de Naguabo</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-09-21 11:27">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="“Hit and run” en Humacao: fallece una mujer de 63 años tras ser arrollada">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/hit-and-run-en-humacao-fallece-una-mujer-de-63-anos-tras-ser-arrollada/" target="_blank">“Hit and run” en Humacao: fallece una mujer de 63 años tras ser arrollada</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-09-21 11:18">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Fallece hombre que fue arrollado en Carolina mientras cambiaba un neumático">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/fallece-hombre-que-fue-arrollado-en-carolina-mientras-cambiaba-un-neumatico/" target="_blank">Fallece hombre que fue arrollado en Carolina mientras cambiaba un neumático</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-09-21 11:05">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Hit and run: mujer de 63 años muere arrollada en Humacao - Telemundo Puerto Rico">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNU2t3NkZabUgweUFhTWg1ZXF5YUtMVVBEMGVMWVdjTXZwMWN5WDAtNDFNMXNVVjlUdWVrV0xQNmE3aHJDR3hrYWJneXVfWkwyeTFsV0R4Nk9jZUUxOElOeDRWVFcwUkNLVkMxTlFjeDhnOUtCRG0wWFVOYWF4djhsS05HdmZOcW13NXFyeHlwSXBVeHAxZDNUTGpyR0s2SzVwRjB0elZIaGwwdjZPd3g4X1g0QdIBuwFBVV95cUxPa3NUbW0tLWlDYmpWR0ctaXRvbTBxaUliTW12OHQ2dkxDb3pxY2dWSkdleV93THM3cURrLVpxNlcybllVZ3lKMlhOMzlEMnlvQ0ZFTVJFaFJPY280Z3JVVFBucGNkU2xyTGlzczJDNkxDTC1HdEtjaDRLSEk2Z0dfOVYyTWFSTld1MnRQbkphdVhnMG9lTWRaMkJRNmxCb29aYXExRmw4aEdSM2VpSW12R1BpMU9NYTdKV25r?oc=5" target="_blank">Hit and run: mujer de 63 años muere arrollada en Humacao - Telemundo Puerto Rico</a>
+                    </td>
+                    <td>Humacao</td>
+                    <td class="time-ago" data-date="2026-09-21 10:57">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Sexagenaria muere tras ser impactada por conductor que abandonó la escena en Humacao">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
                         <a href="https://waloradio.com/2026/09/21/sexagenaria-muere-tras-ser-impactada-por-conductor-que-abandono-la-escena-en-humacao/" target="_blank">Sexagenaria muere tras ser impactada por conductor que abandonó la escena en Humacao</a>
                     </td>
                     <td>Walo Radio</td>
@@ -962,28 +1002,8 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-21 03:35">hace 3h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9BbTZiTTJVM2ptT0FjLWNmX3hXNnNnVlQ4T2tmMFZYa3VFX3BBQzVfQzVHYlZfbWxPN3hQdV9uY1owTWFlSHo0cEtpZlZFUi1uaElVaHppNFpfVmk2YTQweG9FXzFpdmQweG5PUmpmNG51ajA?oc=5" target="_blank">Municipio de Vieques - facebook.com</a>
-                    </td>
-                    <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-09-21 01:26">hace 5h</td>
-                </tr>
-                
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Hiram Torres Montalvo presenta plan de 90 acciones para sus primeros 90 días en Cataño - NotiCel">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxNWmNvZFVpeFp5Y2dXVzFHWVZxNk5uWEV1bl9MRHNLd0ZUMzUzX1lkNnNzUm9jeF90MG5lRGdoMlUyaFRLUXRCNVRPMlRLUjAwd0lEb0I4cGpCWDdQalZFejhmVmJqNFdobmNuV3ZsZHBpeDk1blJTQVFIUlJlN2QtZUlNWndyVTFvVkQ0QUxBc0lJT3JobnZCUFVJcmxPcGxDYnVsQVp2LVRrNFpDVEhNQXNncno4ODA4WVVDVWlVWG15cmc?oc=5" target="_blank">Hiram Torres Montalvo presenta plan de 90 acciones para sus primeros 90 días en Cataño - NotiCel</a>
-                    </td>
-                    <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-20 20:05">hace 10h</td>
-                </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Bethzaida Rodríguez Torres responde a propuestas de Hiram Torres Montalvo para Cataño - Telemundo Puerto Rico">
                     <td><span class="muni-tag">Cataño</span></td>
@@ -1075,26 +1095,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-20 13:55">hace 17h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Loíza" data-titular="Investigan balacera en Loíza que dejó herido de bala a un menor de 16 años">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/investigan-balacera-en-loiza-que-dejo-herido-de-bala-a-un-menor-de-16-anos/" target="_blank">Investigan balacera en Loíza que dejó herido de bala a un menor de 16 años</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-09-20 13:36">hace 17h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Hombre se dispara accidentalmente mientras limpiaba un arma en Humacao - primerahora.com">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxNTXdQRVE3Sjg5WnFzb1NWUEJtd1Q2NUlpUDdocXJzTmo2SFRYcHJna2JnQ0VzRDZucmhqSk1uaTZQQ05KRGY2aEkwWm5oNDhYeGVWWmNySzRFa2tueE14TzN0MU1rRDRFMFpPTTBuczJQOUdjY1F2a3IxeW5WQzZlUWNUOHRQZXdEY0ZGZDZqQmZfN21sRktjb0V4QmdyVDZEQWF5ekZpZ1pCOE9UaWg5ZUpwbDRDYzFEMlJPOTJqR2lMN3Q2akpTOXNiUkRyUQ?oc=5" target="_blank">Hombre se dispara accidentalmente mientras limpiaba un arma en Humacao - primerahora.com</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-09-20 12:47">hace 18h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Humacao" data-titular="Hombre resulta herido de bala mientras daba mantenimiento a su arma en Humacao - Telemundo Puerto Rico">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
@@ -1102,7 +1102,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxQczd5SHcyZ2IzSG1uby1UTnV0STVOajVDeWRlZ096aXBPYVl3LUhicFZlR1B4SW12WmNMZk5kUXNyZ005eGprVXdZZWF6UUhYam4ySkJHdUhCamtjb3l3REg1S2liNFN6WlNrajgwSWVyYy1Ta2diSWxiRUlpeXVJd2JzbkV1WVRnUUpWSmxZSndxd1dKRWtpWGJLYkc1S0xrN3VIc25RdnpCS3JLam9zaWE4bmRaLU5haGp2cVpiWHVDQzRGX0hjdmI5OEF4OVdmMXfSAdoBQVVfeXFMUFpIWE1kcl9rMHJkQXRpTWN5N1JRdGRTNjFpa255NmZYaEJ2eVFzdUdCWk1PZmdpLUxpdmgtbUNEWElCQ0JpM0I2UUlMNHJidHZCbE1lUkJ1X1ZhaDlkZjY3T0lXaGhQWGxQTEw3bW5rT0tUakFFLVU0X28zRU9xUll0enpLc3M2aVBWZFZzc0JMaWZoRERlNHo1eV8zdnhGTFJJWkVDRUt1VlQyQ0pOdjRVcjJ5NDNDbEZlLUYtd1NWYUtJRGxtU3dwMmRqUWZ5SnRBTndzLWhLNXc?oc=5" target="_blank">Hombre resulta herido de bala mientras daba mantenimiento a su arma en Humacao - Telemundo Puerto Rico</a>
                     </td>
                     <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-09-20 12:14">hace 18h</td>
+                    <td class="time-ago" data-date="2026-09-20 12:14">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Hombre resulta herido accidentalmente con su arma de fuego en Humacao">
@@ -1278,7 +1278,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-21 07:01:13 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-21 07:31:13 AM<br>
     Actualización automática cada 30 min
 </div>
 
