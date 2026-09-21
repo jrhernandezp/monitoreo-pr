@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-21 02:01:24 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-21 02:31:18 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">37</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">4</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">40</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">5</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">13</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-21 02:01:24 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-21 02:31:18 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -816,7 +816,13 @@ tr.article-row:hover { background: var(--surface2); }
         <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
         
         <div class="breaking-item">
-            <span class="time">hace 2h</span> —
+            <span class="time">ahora</span> —
+            <a href="https://radioisla.tv/identifican-a-hombre-hallado-muerto-en-trujillo-alto/?utm_source=rss&utm_medium=rss&utm_campaign=identifican-a-hombre-hallado-muerto-en-trujillo-alto&utm_source=rss&utm_medium=rss&utm_campaign=identifican-a-hombre-hallado-muerto-en-trujillo-alto" target="_blank">Identifican a hombre hallado muerto en Trujillo Alto</a>
+            <span style="opacity:0.6"> [Trujillo Alto]</span>
+        </div>
+        
+        <div class="breaking-item">
+            <span class="time">hace 3h</span> —
             <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOREJwUEJIOWh3UlhqRUp2UnVId1M2UjgxSnFtZmo0TlBIeWZsOEFCU2dxRkJOTVlWc29nejR4SEhvb29lTlR3dmFhV0ppeXJPcks1UEdBNDIyMHd2QmpXaS1KZFRGRXI3d25KcldVZ05rYzlzZk52dXkxUkduWHdrNmN0cDRHUzFBeGNGbXJfZmZ6M1AwTGVacncyWlPSAaQBQVVfeXFMTzFrNjNTMWgyZUVobmgxVE9yaVZQT1lNYzVjMExuSzd6Yk53MEZDVkpvMHllbnV4czRjcS1pSEVYMUFoN2txNTBMUEtiUFVYNDF4S2pJNlVVYkpMWmZKemdpMWgyN1RKRndyN2NMZ0JIMkNKQlBvdzJFanJXdGFsZl9pM1BtQ0I4YTFyTVU0M00wbjBNT0VkdWFRSEpVU1UzcTNlcVc?oc=5" target="_blank">Balacera alcanza residencia en Naguabo - Telemundo Puerto Rico</a>
             <span style="opacity:0.6"> [Naguabo]</span>
         </div>
@@ -832,17 +838,17 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">5</span>
+            <span class="muni-count">4</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">5</span>
+            <span class="muni-count">6</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <span class="muni-name">Trujillo Alto</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">5</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
@@ -887,12 +893,12 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <span class="muni-name">Humacao</span>
-            <span class="muni-count">9</span>
+            <span class="muni-count">10</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <span class="muni-name">Cataño</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">5</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
@@ -932,10 +938,60 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="Carolina" data-titular="Criollas y Atenienses siguen invictas mientras Moca gana por la mínima en el BSNF">
+                <tr class="article-row" data-municipios="San Juan" data-titular="Junta Fiscal libera fondos a la UPR">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/09/21/junta-fiscal-libera-fondos-a-la-upr/" target="_blank">Junta Fiscal libera fondos a la UPR</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-09-21 18:20">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Mujer muere atropellada por conductor que abandonó el lugar">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/09/21/mujer-muere-atropellada-por-conductor-que-abandono-el-lugar/" target="_blank">Mujer muere atropellada por conductor que abandonó el lugar</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-09-21 18:19">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Hombre muere atropellado mientras cambiaba una goma">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/09/21/hombre-muere-atropellado-mientras-cambiaba-una-goma/" target="_blank">Hombre muere atropellado mientras cambiaba una goma</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-09-21 18:14">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Identifican a hombre hallado muerto en Trujillo Alto">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/identifican-a-hombre-hallado-muerto-en-trujillo-alto/?utm_source=rss&utm_medium=rss&utm_campaign=identifican-a-hombre-hallado-muerto-en-trujillo-alto&utm_source=rss&utm_medium=rss&utm_campaign=identifican-a-hombre-hallado-muerto-en-trujillo-alto" target="_blank">Identifican a hombre hallado muerto en Trujillo Alto</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-09-21 18:11">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="“El Cano” Delgado se mete en la discusión por la alcaldía de Cataño - Primera Hora">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxQcmVGcFMyX09UUXYtcnNvcTZ0b2FBRlozQjJRd3Z3aG44cjQ2N2tLWlNYZzJmLTNPSGxWOTNvN3owb3pvZ3ZRLUJFbG5DSm9nNERfYTJHdzJMbVBVUlcxbk9ZUnBhX1NFNDdlLXZGUG5lZVFYdXlTUFNQVHRuaVByczZHekFMUEs1YjVrTDZENjdONC01RjNOTnpUSGFyMEQ0UFBBenduVWhFeHY2QkNUWWJYVlJJTHNOaFBPdDIxS1gySExHdHc?oc=5" target="_blank">“El Cano” Delgado se mete en la discusión por la alcaldía de Cataño - Primera Hora</a>
+                    </td>
+                    <td>Cataño</td>
+                    <td class="time-ago" data-date="2026-09-21 18:11">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Criollas y Atenienses siguen invictas mientras Moca gana por la mínima en el BSNF">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
                         <a href="https://www.elnuevodia.com/deportes/baloncesto/notas/criollas-y-atenienses-siguen-invictas-mientras-moca-gana-por-la-minima-en-el-bsnf/" target="_blank">Criollas y Atenienses siguen invictas mientras Moca gana por la mínima en el BSNF</a>
                     </td>
                     <td>El Nuevo Día</td>
@@ -945,7 +1001,7 @@ tr.article-row:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Ceiba" data-titular="Realizan ejercicios con explosiones controladas en Roosevelt Roads">
                     <td><span class="muni-tag">Ceiba</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://waloradio.com/2026/09/21/realizan-ejercicios-con-explosiones-controladas-en-roosevelt-roads/" target="_blank">Realizan ejercicios con explosiones controladas en Roosevelt Roads</a>
                     </td>
                     <td>Walo Radio</td>
@@ -955,7 +1011,7 @@ tr.article-row:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Humacao" data-titular="Humacao volverá a convertirse en la casa de la salsa con el Festival Tito Rojas 2026">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://waloradio.com/2026/09/21/humacao-volvera-a-convertirse-en-la-casa-de-la-salsa-con-el-festival-tito-rojas-2026/" target="_blank">Humacao volverá a convertirse en la casa de la salsa con el Festival Tito Rojas 2026</a>
                     </td>
                     <td>Walo Radio</td>
@@ -965,7 +1021,7 @@ tr.article-row:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="📢 ¡Nueva fecha para comerciantes y emprendedores de Canóvanas! 🤖💡 ¿Quieres aprender a utilizar la inteligencia artificial para mejorar la comunicación de tu negocio y desarrollar una estrategia sencilla y sostenible? Te invitamos al taller “Mejora la comu - facebook.com">
                     <td><span class="muni-tag">Canóvanas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxOVFB4S0l1QlllUWxiSmk4YlEzR3l1RlBkdWpLZkZpQmh5S044UzFRck41bFF2ZU5ucFNkUUV5N2kxRW1lYm05eGw2RV96M3BaS1Z1V3RaRU1QeTVTdVhsNUtfWmxLTUdqRXVzVUlTUWwxcUhuS0FRREZaeUpMTkh0MFFJVDNEN0dwckswRC1FY2Rra2M0SC13NmNFc052aDU1eFVtOTF1V1hpeGlla1Y2c25Od0d3S0gwU1E4elRNRXBVdHkzY21JMmw5bkJvbG9kV2NZakVrS2NpSllPVXRrLWNhMEZMQWJlTkE?oc=5" target="_blank">📢 ¡Nueva fecha para comerciantes y emprendedores de Canóvanas! 🤖💡 ¿Quieres aprender a utilizar la inteligencia artificial para mejorar la comunicación de tu negocio y desarrollar una estrategia sencilla y sostenible? Te invitamos al taller “Mejora la comu - facebook.com</a>
                     </td>
                     <td>FB - Canóvanas</td>
@@ -1052,16 +1108,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-21 14:52">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz del 21 al 26 de septiembre; 36 municipios en lista">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/09/21/se-ira-la-luz-del-21-al-26-de-septiembre-36-municipios-en-lista/" target="_blank">Se irá la luz del 21 al 26 de septiembre; 36 municipios en lista</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-21 14:13">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Carolina" data-titular="Fallece hombre que fue arrollado en Carolina mientras cambiaba un neumático">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
@@ -1069,7 +1115,17 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/notas/fallece-hombre-que-fue-arrollado-en-carolina-mientras-cambiaba-un-neumatico/" target="_blank">Fallece hombre que fue arrollado en Carolina mientras cambiaba un neumático</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-21 14:01">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-09-21 14:31">ahora mismo</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz del 21 al 26 de septiembre; 36 municipios en lista">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://nelpr.com/2026/09/21/se-ira-la-luz-del-21-al-26-de-septiembre-36-municipios-en-lista/" target="_blank">Se irá la luz del 21 al 26 de septiembre; 36 municipios en lista</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-09-21 14:13">hace 18min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Sectores con 90% de potencial de lluvia en la tarde">
@@ -1079,7 +1135,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/09/21/sectores-con-90-de-potencial-de-lluvia-en-la-tarde/" target="_blank">Sectores con 90% de potencial de lluvia en la tarde</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-21 13:54">hace 7min</td>
+                    <td class="time-ago" data-date="2026-09-21 13:54">hace 37min</td>
                 </tr>
                 
                 
@@ -1092,7 +1148,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://noticel.com/deportes/20260921/caguas-manati-y-moca-se-alzan-con-triunfos-en-el-bsnf/?utm_source=rss&utm_medium=rss&utm_campaign=caguas-manati-y-moca-se-alzan-con-triunfos-en-el-bsnf" target="_blank">Caguas, Manatí y Moca se alzan con triunfos en el  BSNF</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-09-21 12:31">hace 1h</td>
+                    <td class="time-ago" data-date="2026-09-21 12:31">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Conductor atropella a sexagenaria en Humacao y huye de la escena - WKAQ580">
@@ -1102,7 +1158,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxPZEdNSHpveUpyYno0X2lVMVJoUldibFRMM0xrMFp4WTZ0bThhcVprLVVZVDR2bnByZXpvekRQcEd0aXdXekNWV3VuN2Z5QldCMmRCNzVaMmVHYUFlV0lRVExCUEQ3OGpveERrRnpka2RCQ3lRWmprc3VhaEdUMUhreDlraDlMNlpGTGIwZHJQUnotWFVYaUsxTnBCZnVqQjZvMkpueUFGckF6bW00ZW4xVWpySEZZcHcxZC01bmEtZHBVeEw4eGNNTW9nUGVyTjJPT0dCZVNyMG4wSlJ3T0g2dg?oc=5" target="_blank">Conductor atropella a sexagenaria en Humacao y huye de la escena - WKAQ580</a>
                     </td>
                     <td>WKAQ 580</td>
-                    <td class="time-ago" data-date="2026-09-21 12:26">hace 1h</td>
+                    <td class="time-ago" data-date="2026-09-21 12:26">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas,Loíza,Río Grande" data-titular="AAA levantó racionamiento en Río Grande, Canóvanas y Loíza hace dos semanas sin anuncio público">
@@ -1112,7 +1168,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/aaa-suspendio-racionamiento-hace-dos-semanas-a-rio-grande-canovanas-y-loiza-y-nadie-fue-informado/?utm_source=rss&utm_medium=rss&utm_campaign=aaa-suspendio-racionamiento-hace-dos-semanas-a-rio-grande-canovanas-y-loiza-y-nadie-fue-informado&utm_source=rss&utm_medium=rss&utm_campaign=aaa-suspendio-racionamiento-hace-dos-semanas-a-rio-grande-canovanas-y-loiza-y-nadie-fue-informado" target="_blank">AAA levantó racionamiento en Río Grande, Canóvanas y Loíza hace dos semanas sin anuncio público</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-09-21 12:12">hace 1h</td>
+                    <td class="time-ago" data-date="2026-09-21 12:12">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Muere peatona de 63 años tras ser atropellada en Humacao">
@@ -1122,7 +1178,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/muere-peatona-de-63-anos-tras-ser-atropellada-en-humacao/" target="_blank">Muere peatona de 63 años tras ser atropellada en Humacao</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-09-21 12:08">hace 1h</td>
+                    <td class="time-ago" data-date="2026-09-21 12:08">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Conductor atropella a sexagenaria en Humacao y huye de la escena - wapa.tv">
@@ -1152,7 +1208,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/21/investigan-incidente-de-impactos-de-bala-en-vivienda-en-maizales-de-naguabo/" target="_blank">Investigan incidente de impactos de bala en vivienda en Maizales de Naguabo</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-21 11:27">hace 2h</td>
+                    <td class="time-ago" data-date="2026-09-21 11:27">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Balacera alcanza residencia en Naguabo - Telemundo Puerto Rico">
@@ -1162,7 +1218,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOREJwUEJIOWh3UlhqRUp2UnVId1M2UjgxSnFtZmo0TlBIeWZsOEFCU2dxRkJOTVlWc29nejR4SEhvb29lTlR3dmFhV0ppeXJPcks1UEdBNDIyMHd2QmpXaS1KZFRGRXI3d25KcldVZ05rYzlzZk52dXkxUkduWHdrNmN0cDRHUzFBeGNGbXJfZmZ6M1AwTGVacncyWlPSAaQBQVVfeXFMTzFrNjNTMWgyZUVobmgxVE9yaVZQT1lNYzVjMExuSzd6Yk53MEZDVkpvMHllbnV4czRjcS1pSEVYMUFoN2txNTBMUEtiUFVYNDF4S2pJNlVVYkpMWmZKemdpMWgyN1RKRndyN2NMZ0JIMkNKQlBvdzJFanJXdGFsZl9pM1BtQ0I4YTFyTVU0M00wbjBNT0VkdWFRSEpVU1UzcTNlcVc?oc=5" target="_blank">Balacera alcanza residencia en Naguabo - Telemundo Puerto Rico</a>
                     </td>
                     <td>Naguabo</td>
-                    <td class="time-ago" data-date="2026-09-21 11:11">hace 2h</td>
+                    <td class="time-ago" data-date="2026-09-21 11:11">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Hit and run: mujer de 63 años muere arrollada en Humacao - Telemundo Puerto Rico">
@@ -1182,7 +1238,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/mujer-de-63-anos-muere-tras-choque-hit-and-run-en-humacao/?utm_source=rss&utm_medium=rss&utm_campaign=mujer-de-63-anos-muere-tras-choque-hit-and-run-en-humacao&utm_source=rss&utm_medium=rss&utm_campaign=mujer-de-63-anos-muere-tras-choque-hit-and-run-en-humacao" target="_blank">Mujer de 63 años muere tras choque hit and run en Humacao</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-09-21 10:21">hace 3h</td>
+                    <td class="time-ago" data-date="2026-09-21 10:21">hace 4h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Las Criollas se mantienen invictas 🏀🫀🔥 Caguas, Puerto Rico, 20 de septiembre de 2026 – Las Criollas de Caguas resistieron un feroz ataque en la segunda mitad del partido por parte de las Pollitas de Isabela, y lograron así su tercera victoria en línea 79-74, - facebook.com">
@@ -1192,7 +1248,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQUFlqUzZ3dV85cnhzMzJGUGVrcnJCWHllUGd2M290bHJ0aWl3aXROc05UQzFZemF4TXdfUWlxQS1BeHRnTko2V3RYQzg4TmpnMUR5NkNSX1Fmajk1NkJ1bU5mUlB0OHQ2OVI1UmwzQ1ZQTkhIX3FGZk1hSTl2WFJBOWdUTGkwZ1ROMUFOdHBkX1l5OGs3SXVoNTNlTVlmM1Fkd3BDdWVPYmNnV0hCLWpUNnJfSXhNWTFTNlk0bXFGX29KOUdjNzVqOE8yZGJkampkX2NDdUE2TTVESTFNT05qaTV5WQ?oc=5" target="_blank">Las Criollas se mantienen invictas 🏀🫀🔥 Caguas, Puerto Rico, 20 de septiembre de 2026 – Las Criollas de Caguas resistieron un feroz ataque en la segunda mitad del partido por parte de las Pollitas de Isabela, y lograron así su tercera victoria en línea 79-74, - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-09-21 09:15">hace 4h</td>
+                    <td class="time-ago" data-date="2026-09-21 09:15">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
@@ -1202,7 +1258,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9BbTZiTTJVM2ptT0FjLWNmX3hXNnNnVlQ4T2tmMFZYa3VFX3BBQzVfQzVHYlZfbWxPN3hQdV9uY1owTWFlSHo0cEtpZlZFUi1uaElVaHppNFpfVmk2YTQweG9FXzFpdmQweG5PUmpmNG51ajA?oc=5" target="_blank">Municipio de Vieques - facebook.com</a>
                     </td>
                     <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-09-21 01:26">hace 12h</td>
+                    <td class="time-ago" data-date="2026-09-21 01:26">hace 13h</td>
                 </tr>
                 
                 
@@ -1228,16 +1284,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-20 18:57">hace 19h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Balacera esta tarde deja un muerto y un herido">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/09/20/balacera-esta-tarde-deja-un-muerto-y-un-herido-4/" target="_blank">Balacera esta tarde deja un muerto y un herido</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-20 17:59">hace 20h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Vieques" data-titular="Municipio de Vieques - facebook.com">
                     <td><span class="muni-tag">Vieques</span></td>
                     <td class="titular-cell">
@@ -1245,17 +1291,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE8wWE5nM1IzclpOOVZESElSOHdDQnpBRmxCWHBIa3lzcmhPUXdOVzR3VEZmSzMyMHgyVEdIb0FDMzl6RjNpV0hiRWEzd09XbTJETGVNNkRnWTBPTktaX0c5QW5FWHlNMmI4bl9MQ1pjRFp0czg?oc=5" target="_blank">Municipio de Vieques - facebook.com</a>
                     </td>
                     <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-09-20 16:15">hace 21h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Intenso calor y sectores con 90% de potencial de lluvia">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/09/20/intenso-calor-y-sectores-con-90-de-potencial-de-lluvia-2/" target="_blank">Intenso calor y sectores con 90% de potencial de lluvia</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-20 15:46">hace 22h</td>
+                    <td class="time-ago" data-date="2026-09-20 16:15">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Ingresan en prisión dos hombres acusados de violencia de género en San Juan">
@@ -1461,7 +1497,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-21 02:01:24 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-21 02:31:18 PM<br>
     Actualización automática cada 30 min
 </div>
 
