@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-22 06:16:40 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-22 06:31:10 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">38</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">40</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">13</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-22 06:16:39 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-22 06:31:10 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -811,6 +811,19 @@ tr.article-row:hover { background: var(--surface2); }
 
 <!-- BREAKING NEWS -->
 
+<div class="section breaking-section">
+    <div class="breaking-banner">
+        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">ahora</span> —
+            <a href="https://esnoticiapr.com/investigan-muerte-a-tiros-de-un-hombre-en-luquillo/" target="_blank">Investigan muerte a tiros de un hombre en Luquillo</a>
+            <span style="opacity:0.6"> [Luquillo]</span>
+        </div>
+        
+    </div>
+</div>
+
 
 <!-- MUNICIPALITIES -->
 <div class="section">
@@ -819,17 +832,17 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">5</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">4</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <span class="muni-name">Trujillo Alto</span>
-            <span class="muni-count">7</span>
+            <span class="muni-count">8</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
@@ -839,7 +852,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
             <span class="muni-name">Luquillo</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
@@ -874,7 +887,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <span class="muni-name">Humacao</span>
-            <span class="muni-count">11</span>
+            <span class="muni-count">10</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
@@ -919,10 +932,40 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Titoteo cobra la vida de hombre en Luquillo">
+                <tr class="article-row" data-municipios="Carolina,Trujillo Alto" data-titular="Policía pide ayuda para localizar a menor de 15 años desaparecida">
+                    <td><span class="muni-tag">Carolina, Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/policia-pide-ayuda-para-localizar-a-menor-de-15-anos-desaparecida/?utm_source=rss&utm_medium=rss&utm_campaign=policia-pide-ayuda-para-localizar-a-menor-de-15-anos-desaparecida&utm_source=rss&utm_medium=rss&utm_campaign=policia-pide-ayuda-para-localizar-a-menor-de-15-anos-desaparecida" target="_blank">Policía pide ayuda para localizar a menor de 15 años desaparecida</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-09-22 10:29">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Luquillo" data-titular="Investigan muerte a tiros de un hombre en Luquillo">
                     <td><span class="muni-tag">Luquillo</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/investigan-muerte-a-tiros-de-un-hombre-en-luquillo/" target="_blank">Investigan muerte a tiros de un hombre en Luquillo</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-09-22 10:24">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Hombre muere baleado en la calle Barbosa en San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/hombre-muere-baleado-en-la-calle-barbosa-en-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=hombre-muere-baleado-en-la-calle-barbosa-en-san-juan&utm_source=rss&utm_medium=rss&utm_campaign=hombre-muere-baleado-en-la-calle-barbosa-en-san-juan" target="_blank">Hombre muere baleado en la calle Barbosa en San Juan</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-09-22 10:19">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Luquillo" data-titular="Titoteo cobra la vida de hombre en Luquillo">
+                    <td><span class="muni-tag">Luquillo</span></td>
+                    <td class="titular-cell">
+                        
                         <a href="https://www.notiuno.com/noticias/seguridad-y-justicia/titoteo-cobra-la-vida-de-hombre-en-luquillo/article_84bb4251-a0e7-434a-8844-dffc5ac4596b.html" target="_blank">Titoteo cobra la vida de hombre en Luquillo</a>
                     </td>
                     <td>NotiUno</td>
@@ -939,7 +982,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/09/22/hoy-se-ira-la-luz-en-24-municipios/" target="_blank">HOY se irá la luz en 24 municipios</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-22 04:30">hace 1h</td>
+                    <td class="time-ago" data-date="2026-09-22 04:30">hace 2h</td>
                 </tr>
                 
                 
@@ -1012,7 +1055,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUkg1c1MtUGluS093amtoTGIwdW5YVHMyeWZXdTBXVkxhcHNOOFpaQmRVR0l3Ry1KVy1RS3VCUXhNQ3Z0UjRqb0JORDFPOTc4VHV5T2pBM2NtVVdtcm1JZUpZWVlTNGRMV0VzN0cybHZuUldja0MzOHpNeHVScEg3cXh0cDVsNG1hRlRrT2VYOGZ6R1U2bUctNHV2YUNTejBXMHliWUU5dmFrMWRoVEhJakFhX25JTktfcUhfWEVPYi00WkxfOXlvclcxSG1oeDVvcmJBMzQyZ0tDazdMOTlj?oc=5" target="_blank">EL MUNICIPIO DE HUMACAO VOLVERÁ A CONVERTIRSE EN LA CASA DE LA SALSA CON EL FESTIVAL TITO ROJAS 2026. ✅El evento se llevará a cabo el domingo, 11 de octubre desde las 12:00 del mediodía en la calle Tito Rojas, frente al Coliseo Mar - facebook.com</a>
                     </td>
                     <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-09-21 19:29">hace 10h</td>
+                    <td class="time-ago" data-date="2026-09-21 19:29">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Manejo de Emergencias de Humacao responde a denuncia por falta de ambulancia en evento de atletismo">
@@ -1092,7 +1135,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/21/humacao-volvera-a-convertirse-en-la-casa-de-la-salsa-con-el-festival-tito-rojas-2026/" target="_blank">Humacao volverá a convertirse en la casa de la salsa con el Festival Tito Rojas 2026</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-21 17:30">hace 12h</td>
+                    <td class="time-ago" data-date="2026-09-21 17:30">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="📢 ¡Nueva fecha para comerciantes y emprendedores de Canóvanas! 🤖💡 ¿Quieres aprender a utilizar la inteligencia artificial para mejorar la comunicación de tu negocio y desarrollar una estrategia sencilla y sostenible? Te invitamos al taller “Mejora la comu - facebook.com">
@@ -1102,7 +1145,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxOVFB4S0l1QlllUWxiSmk4YlEzR3l1RlBkdWpLZkZpQmh5S044UzFRck41bFF2ZU5ucFNkUUV5N2kxRW1lYm05eGw2RV96M3BaS1Z1V3RaRU1QeTVTdVhsNUtfWmxLTUdqRXVzVUlTUWwxcUhuS0FRREZaeUpMTkh0MFFJVDNEN0dwckswRC1FY2Rra2M0SC13NmNFc052aDU1eFVtOTF1V1hpeGlla1Y2c25Od0d3S0gwU1E4elRNRXBVdHkzY21JMmw5bkJvbG9kV2NZakVrS2NpSllPVXRrLWNhMEZMQWJlTkE?oc=5" target="_blank">📢 ¡Nueva fecha para comerciantes y emprendedores de Canóvanas! 🤖💡 ¿Quieres aprender a utilizar la inteligencia artificial para mejorar la comunicación de tu negocio y desarrollar una estrategia sencilla y sostenible? Te invitamos al taller “Mejora la comu - facebook.com</a>
                     </td>
                     <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-09-21 17:18">hace 12h</td>
+                    <td class="time-ago" data-date="2026-09-21 17:18">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Familia solicita ayuda para gastos fúnebres de mujer arrollada en Humacao">
@@ -1132,7 +1175,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQeHlCRWFLZ0VoQlVIcDFUSnplQUZfcDYzRkI0OGo0dGJwMDNQcHRLanZXSjNWblRBdGc4dE0zQ2V2Q25IS2Jjc1ZwLUdrN05MVnVqczk3WS1GVWduZF9xMjRxZnlmS0cyd1BHN1lkUlNOQ3NRVFcwamRmTHNheUJRWGpXdjBkYkNDNktJSE0xUXpUSzhDakY3bXVn?oc=5" target="_blank">▪️CD Realty en #Fajardo. - facebook.com</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-09-21 16:30">hace 13h</td>
+                    <td class="time-ago" data-date="2026-09-21 16:30">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Identifican hombre asesinado y encontrado con bolsa en la cabeza y parcialmente calcinado en Trujillo Alto">
@@ -1142,7 +1185,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/21/identifican-hombre-asesinado-y-encontrado-con-bolsa-en-la-cabeza-y-parcialmente-calcinado-en-trujillo-alto/" target="_blank">Identifican hombre asesinado y encontrado con bolsa en la cabeza y parcialmente calcinado en Trujillo Alto</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-21 16:29">hace 13h</td>
+                    <td class="time-ago" data-date="2026-09-21 16:29">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Victoria Ciudadana cuestiona que solo electores del PNP puedan escoger al próximo alcalde de Cataño - Periódico El Sol de Puerto Rico">
@@ -1152,7 +1195,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxNYTJlUldqeXRlamk5TDlrd3lHZzFLdTZQbFdiMmxFTmFtNk1aRm9BVzU3Z3ZpWGlmZTEzTTcxSnF0WDBsbmZud2xUZzNPN2xWVzVOY1RXdVpMMjItZFBuQ0JvLW1tVU5qbmx0dkplcm04WmJVWUp1Wk9CcllleEh4c3VUOTZkcWhtckFteHRiWVhLSTlDVWwxWmJDdlJpSjk0TnBBVGhsbmJSdWJZT3RSaC1ldkZMaFVSb01na200MmY5b1VTUmJMeg?oc=5" target="_blank">Victoria Ciudadana cuestiona que solo electores del PNP puedan escoger al próximo alcalde de Cataño - Periódico El Sol de Puerto Rico</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-21 16:20">hace 13h</td>
+                    <td class="time-ago" data-date="2026-09-21 16:20">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Juez declara procesable a enfermero acusado de agredir anciana en Centro Casa Dorada en Las Piedras">
@@ -1162,7 +1205,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/21/juez-declara-procesable-a-enfermero-acusado-de-agredir-anciana-en-centro-casa-dorada-en-las-piedras/" target="_blank">Juez declara procesable a enfermero acusado de agredir anciana en Centro Casa Dorada en Las Piedras</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-21 15:30">hace 14h</td>
+                    <td class="time-ago" data-date="2026-09-21 15:30">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="“El Cano” Delgado entra en la elección especial de Cataño y envía mensaje a los votantes - Metro Puerto Rico">
@@ -1182,7 +1225,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxPZEdNSHpveUpyYno0X2lVMVJoUldibFRMM0xrMFp4WTZ0bThhcVprLVVZVDR2bnByZXpvekRQcEd0aXdXekNWV3VuN2Z5QldCMmRCNzVaMmVHYUFlV0lRVExCUEQ3OGpveERrRnpka2RCQ3lRWmprc3VhaEdUMUhreDlraDlMNlpGTGIwZHJQUnotWFVYaUsxTnBCZnVqQjZvMkpueUFGckF6bW00ZW4xVWpySEZZcHcxZC01bmEtZHBVeEw4eGNNTW9nUGVyTjJPT0dCZVNyMG4wSlJ3T0g2dg?oc=5" target="_blank">Conductor atropella a sexagenaria en Humacao y huye de la escena - WKAQ580</a>
                     </td>
                     <td>WKAQ 580</td>
-                    <td class="time-ago" data-date="2026-09-21 12:26">hace 17h</td>
+                    <td class="time-ago" data-date="2026-09-21 12:26">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas,Loíza,Río Grande" data-titular="AAA levantó racionamiento en Río Grande, Canóvanas y Loíza hace dos semanas sin anuncio público">
@@ -1222,7 +1265,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNLWhFUVYwMjRfdHpsSGxCYlNWa1VxdXU3cE1tUExMdWk5dWdscjdUOTdWTG4wSDc3VjZwNGRlc2N0b0lXcXhkc3h2Z2dCQWNPRGREdnI1a3ZTVWp2T2FHOVl0MXBsTEFKRi03cjVwYmtFNTdPektCVzZuVWtndEpjVlVTQ3pERnJ6czUyRzVxUnBfcmdwT2ItcjlmdDlVdEcwZW1CQ1hWQzI0MktIWXJQRnFHbmEyREdXTlZSeDkyak1jclBvZTVtZzlyM0kwWlhtWU0yTUEwbks5OXBYWFE?oc=5" target="_blank">🚨 ¡En vivo ahora! 🚨 Estamos junto a Milly Mendez en Telemundo PR y Radio Isla 1320 hablando sobre los temas más importantes para San Juan y Puerto Rico. 🇵🇷 ¡Conéctate a Pega’os en la Mañana y acompáñanos! https://www.telemundopr.com/en-vivo - facebook.com</a>
                     </td>
                     <td>Telemundo FB</td>
-                    <td class="time-ago" data-date="2026-09-21 11:31">hace 18h</td>
+                    <td class="time-ago" data-date="2026-09-21 11:31">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Balacera alcanza residencia en Naguabo - Telemundo Puerto Rico">
@@ -1255,16 +1298,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-21 10:54">hace 19h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Humacao" data-titular="Mujer de 63 años muere tras choque hit and run en Humacao">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://radioisla.tv/mujer-de-63-anos-muere-tras-choque-hit-and-run-en-humacao/?utm_source=rss&utm_medium=rss&utm_campaign=mujer-de-63-anos-muere-tras-choque-hit-and-run-en-humacao&utm_source=rss&utm_medium=rss&utm_campaign=mujer-de-63-anos-muere-tras-choque-hit-and-run-en-humacao" target="_blank">Mujer de 63 años muere tras choque hit and run en Humacao</a>
-                    </td>
-                    <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-09-21 10:21">hace 19h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Humacao" data-titular="Muere mujer de 63 años tras ser atropellada en Humacao - Primera Hora">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
@@ -1272,14 +1305,14 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMmxVR3ZmUmV1MzV5Q1daNDltVVhVVGhrbm95M3NFRjdPUml0S3h2NlhabG1PbWV4Y29vT2E1TmF3cDNtTzIzTWJTOTlTVmphRUVJUXpxdnVxNHlBOUd6NEJMUWNUZXhYd3FWUHd2aEZYOGhkazJfR3VSSHB5d2lhRllJM3hQcUp4MmM5S2MzdkxQcDIydGFheWVZNEk2aTZXeUsxZFdxUEFQMl9hV2toSWhJMXI4bHpy?oc=5" target="_blank">Muere mujer de 63 años tras ser atropellada en Humacao - Primera Hora</a>
                     </td>
                     <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-09-21 10:19">hace 19h</td>
+                    <td class="time-ago" data-date="2026-09-21 10:19">hace 20h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Caguas" data-titular="Robert Rivera. Bad Bunny · DtMF. Las Criollas se mantienen invictas 🏀🫀🔥 Caguas, Puerto Rico, 20 de septiembre de 2026 – Las Criollas de Caguas resistieron un feroz ataque en la segunda mitad del partido por parte de las Pollitas de Isabela, y lograron as - facebook.com">
+                <tr class="article-row" data-municipios="Caguas" data-titular="Las Criollas se mantienen invictas 🏀🫀🔥 Caguas, Puerto Rico, 20 de septiembre de 2026 – Las Criollas de Caguas resistieron un feroz ataque en la segunda mitad del partido por parte de las Pollitas de Isabela, y lograron así su tercera victoria en línea 79-74, - facebook.com">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxPUm9kc0lKdWVTQ28xOFJ6RGJCZzRVcXA1R056YzJraXR5Unk3OUk2LWpyY1M0QUJTWWJqX3lGUWg0c2ZSTVgtZHhhbEN2S1hteXBBeWE0Qk81OG0zNDNmZ1Bub19HRDYxUnBtZGRPcHpYT1MycG1KcFYtaWJqNXpVNHhVQ1otY1JfUktneVA1bGdmSzhfRzMyQi1lNGNLSWdJLXQtVjlNRlVzSTl4UEljZWJPNjB5MEhSam9UbktBbjhVWFVqM0hjQ1hKRnd1S3VvSFU5NUdnY2dlbU1nR2M4c3hsRQ?oc=5" target="_blank">Robert Rivera. Bad Bunny · DtMF. Las Criollas se mantienen invictas 🏀🫀🔥 Caguas, Puerto Rico, 20 de septiembre de 2026 – Las Criollas de Caguas resistieron un feroz ataque en la segunda mitad del partido por parte de las Pollitas de Isabela, y lograron as - facebook.com</a>
+                        <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQUFlqUzZ3dV85cnhzMzJGUGVrcnJCWHllUGd2M290bHJ0aWl3aXROc05UQzFZemF4TXdfUWlxQS1BeHRnTko2V3RYQzg4TmpnMUR5NkNSX1Fmajk1NkJ1bU5mUlB0OHQ2OVI1UmwzQ1ZQTkhIX3FGZk1hSTl2WFJBOWdUTGkwZ1ROMUFOdHBkX1l5OGs3SXVoNTNlTVlmM1Fkd3BDdWVPYmNnV0hCLWpUNnJfSXhNWTFTNlk0bXFGX29KOUdjNzVqOE8yZGJkampkX2NDdUE2TTVESTFNT05qaTV5WQ?oc=5" target="_blank">Las Criollas se mantienen invictas 🏀🫀🔥 Caguas, Puerto Rico, 20 de septiembre de 2026 – Las Criollas de Caguas resistieron un feroz ataque en la segunda mitad del partido por parte de las Pollitas de Isabela, y lograron así su tercera victoria en línea 79-74, - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
                     <td class="time-ago" data-date="2026-09-21 09:15">hace 21h</td>
@@ -1458,7 +1491,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-22 06:16:40 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-22 06:31:10 AM<br>
     Actualización automática cada 30 min
 </div>
 
