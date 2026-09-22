@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-22 04:01:21 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-22 04:16:16 PM</span></div>
         </div>
     </div>
     <div class="stats">
         <div class="stat-box"><div class="num">54</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">14</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-22 04:01:21 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-22 04:16:16 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -811,19 +811,6 @@ tr.article-row:hover { background: var(--surface2); }
 
 <!-- BREAKING NEWS -->
 
-<div class="section breaking-section">
-    <div class="breaking-banner">
-        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
-        
-        <div class="breaking-item">
-            <span class="time">ahora mismo</span> —
-            <a href="https://www.elnuevodia.com/noticias/tribunales/notas/suspenden-vista-preliminar-de-carlos-estefano-pino-imputado-de-asesinato-de-enfermera-a-peticion-de-su-defensa/" target="_blank">Posponen la vista preliminar contra Carlos Estefano Pino por el asesinato de una enfermera en Caguas</a>
-            <span style="opacity:0.6"> [Caguas]</span>
-        </div>
-        
-    </div>
-</div>
-
 
 <!-- MUNICIPALITIES -->
 <div class="section">
@@ -832,7 +819,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">9</span>
+            <span class="muni-count">10</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -847,7 +834,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <span class="muni-name">Caguas</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
@@ -935,21 +922,41 @@ tr.article-row:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="San Juan" data-titular="San Juan lanzará “Mercado San Juan Online” para impulsar las ventas digitales de pequeños y medianos comerciantes">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://www.notiuno.com/noticias/gobierno-y-politica/san-juan-lanzar-mercado-san-juan-online-para-impulsar-las-ventas-digitales-de-peque-os/article_44ca56c2-29db-47ba-b491-7ff40a69b2c2.html" target="_blank">San Juan lanzará “Mercado San Juan Online” para impulsar las ventas digitales de pequeños y medianos comerciantes</a>
                     </td>
                     <td>NotiUno</td>
                     <td class="time-ago" data-date="2026-09-22 20:00">ahora</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Río Grande" data-titular="Tapones en la Ruta 66 de Río Grande continuarán: proyecto de elevados aún espera por permisos">
+                    <td><span class="muni-tag">Río Grande</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://www.elnuevodia.com/noticias/legislatura/notas/tapones-en-la-ruta-66-de-rio-grande-continuaran-proyecto-de-elevados-aun-espera-por-permisos/" target="_blank">Tapones en la Ruta 66 de Río Grande continuarán: proyecto de elevados aún espera por permisos</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-09-22 19:55">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Carolina" data-titular="Causa para arrestar a fémina que se apropió de $5,000 de la empresa de cosméticos en que trabajaba">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://esnoticiapr.com/causa-para-arrestar-a-femina-que-se-apropio-de-5000-de-la-empresa-de-cosmeticos-en-que-trabajaba/" target="_blank">Causa para arrestar a fémina que se apropió de $5,000 de la empresa de cosméticos en que trabajaba</a>
                     </td>
                     <td>Es Noticia</td>
                     <td class="time-ago" data-date="2026-09-22 19:47">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="San Juan lanza iniciativa digital para impulsar crecimiento de sus comercios locales">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/noticias/20260922/san-juan-lanza-iniciativa-digital-para-impulsar-crecimiento-de-sus-comercios-locales/?utm_source=rss&utm_medium=rss&utm_campaign=san-juan-lanza-iniciativa-digital-para-impulsar-crecimiento-de-sus-comercios-locales" target="_blank">San Juan lanza iniciativa digital para impulsar crecimiento de sus comercios locales</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-09-22 19:42">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Primo de mujer hallada muerta en Villa Universitaria comparte detalles sobre la historia de la familia">
@@ -992,26 +999,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-22 17:47">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Caguas" data-titular="Posponen la vista preliminar contra Carlos Estefano Pino por el asesinato de una enfermera en Caguas">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/tribunales/notas/suspenden-vista-preliminar-de-carlos-estefano-pino-imputado-de-asesinato-de-enfermera-a-peticion-de-su-defensa/" target="_blank">Posponen la vista preliminar contra Carlos Estefano Pino por el asesinato de una enfermera en Caguas</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-22 16:01">ahora mismo</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Río Grande" data-titular="Tapones en la Ruta 66 de Río Grande continuarán: proyecto de elevados aún espera por permisos">
-                    <td><span class="muni-tag">Río Grande</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://www.elnuevodia.com/noticias/legislatura/notas/tapones-en-la-ruta-66-de-rio-grande-continuaran-proyecto-de-elevados-aun-espera-por-permisos/" target="_blank">Tapones en la Ruta 66 de Río Grande continuarán: proyecto de elevados aún espera por permisos</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-22 16:01">ahora mismo</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Senado reconoce al Centro Madre Teresa de Calcuta por su labor contra el hambre">
                     <td><span class="muni-tag">Naguabo</span></td>
                     <td class="titular-cell">
@@ -1019,7 +1006,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/22/senado-reconoce-al-centro-madre-teresa-de-calcuta-por-su-labor-contra-el-hambre/" target="_blank">Senado reconoce al Centro Madre Teresa de Calcuta por su labor contra el hambre</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-22 15:44">hace 17min</td>
+                    <td class="time-ago" data-date="2026-09-22 15:44">hace 32min</td>
                 </tr>
                 
                 
@@ -1045,6 +1032,16 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-22 14:39">hace 1h</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Cataño" data-titular="Viuda del exalcalde de Cataño responde a Félix “El Cano” Delgado y niega haberle pedido ayuda electoral - Metro Puerto Rico">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxQc1QtRklsd1AxamZHd2FObVJRZFppdXdRQmRpVUxvZUdrREh0d256WHVwVGVKa1lhTXF4ZUdvVUszZm9scWJBNXpNbGw0ZEJ0Sjc5TFRRNTQwVHdaNlFvSE1ZZzViazlUTkxXRENaSTBuOFBnbGdQYldIb08xa0Z1UF83YlE0UktaV0tpVklkdkxXMUFtU0prOW5OeXpZSXpnMFUzRHhmWXpUVE4yRm9pNkViNkVaZVdUc1RtMlBmSDJUVlcwbXh2YnFnMlpDVmVuaVdtWU1UMHpSVk0?oc=5" target="_blank">Viuda del exalcalde de Cataño responde a Félix “El Cano” Delgado y niega haberle pedido ayuda electoral - Metro Puerto Rico</a>
+                    </td>
+                    <td>Cataño</td>
+                    <td class="time-ago" data-date="2026-09-22 13:57">hace 2h</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Localizan a menor de 15 años reportada como desaparecida en Trujillo Alto - primerahora.com">
                     <td><span class="muni-tag">Trujillo Alto</span></td>
                     <td class="titular-cell">
@@ -1062,17 +1059,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/arrestan-a-profugo-federal-en-residencial-los-laureles-y-ocupan-armas-sustancias-controladas-y-dinero-en-efectivo/?utm_source=rss&utm_medium=rss&utm_campaign=arrestan-a-profugo-federal-en-residencial-los-laureles-y-ocupan-armas-sustancias-controladas-y-dinero-en-efectivo&utm_source=rss&utm_medium=rss&utm_campaign=arrestan-a-profugo-federal-en-residencial-los-laureles-y-ocupan-armas-sustancias-controladas-y-dinero-en-efectivo" target="_blank">Arrestan a prófugo federal en residencial Los Laureles en Cupey</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-09-22 13:02">hace 2h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Viuda del exalcalde de Cataño responde a Félix “El Cano” Delgado y niega haberle pedido ayuda electoral - Metro Puerto Rico">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxQc1QtRklsd1AxamZHd2FObVJRZFppdXdRQmRpVUxvZUdrREh0d256WHVwVGVKa1lhTXF4ZUdvVUszZm9scWJBNXpNbGw0ZEJ0Sjc5TFRRNTQwVHdaNlFvSE1ZZzViazlUTkxXRENaSTBuOFBnbGdQYldIb08xa0Z1UF83YlE0UktaV0tpVklkdkxXMUFtU0prOW5OeXpZSXpnMFUzRHhmWXpUVE4yRm9pNkViNkVaZVdUc1RtMlBmSDJUVlcwbXh2YnFnMlpDVmVuaVdtWU1UMHpSVk0?oc=5" target="_blank">Viuda del exalcalde de Cataño responde a Félix “El Cano” Delgado y niega haberle pedido ayuda electoral - Metro Puerto Rico</a>
-                    </td>
-                    <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-22 12:31">hace 3h</td>
+                    <td class="time-ago" data-date="2026-09-22 13:02">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Actualización Canóvanas: Informamos que algunos clientes en este municipio continúan afectados por interrupción en el servicio. Ya varios clientes han sido restablecidos y nuestras brigadas realizan pruebas y trabajos para completar la restauración de for - facebook.com">
@@ -1122,7 +1109,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPQWJCUnZzeVRjRHlKVWhTTUtCRk15VHNxX19LbC1QUGxic2tvbDF5elpJMGw5bHdab01LeTZCWEpfMUlvSU40Q0ZKcXc5bVRCTGJNaENDOHRMMk9kS3hGVWVGd3NoamtaOFUyTGs5Nm5Mc1BFZ0k3TGd1bWE5V2h4cG5kMXpkSzQ2aEFuR0ZZSlhtUE15bmY1cUpIb3ZDMmd4Q2c?oc=5" target="_blank">Policía investiga muertes violentas en Luquillo y San Juan - Metro Puerto Rico</a>
                     </td>
                     <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-09-22 11:15">hace 4h</td>
+                    <td class="time-ago" data-date="2026-09-22 11:15">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Ni en su propia casa: le roban la motora de la marquesina en Fajardo - primerahora.com">
@@ -1132,7 +1119,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxPUGtkSzBoTU9vczUtc1BCd1NLWXNBUG8xTndHdHc2Z0xOUHl5MHQxcGFUbEszN1BaQmpXRGpYZ2VONmZ5M1h2bHBNN3dqcUR3bFpKRUdOTmhrRWl3aW9ycHNzajY0cEZKNWtJdFhNemh6VFZZOS1IcG80VmNCdzl0R3ZPdUhuN0hfS0Y2YnZYWU1VcTNibGxFbkNfbEZqc3dpVEdwbHQxTTh2MGdwWjh2ekcxQXN6czlxZm83S29ZWXVZR3Y4cjZfSG5n?oc=5" target="_blank">Ni en su propia casa: le roban la motora de la marquesina en Fajardo - primerahora.com</a>
                     </td>
                     <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-09-22 11:08">hace 4h</td>
+                    <td class="time-ago" data-date="2026-09-22 11:08">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Buscan a menor de 15 años reportada desaparecida en Trujillo Alto">
@@ -1142,7 +1129,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/buscan-a-menor-de-15-anos-reportada-desaparecida-en-trujillo-alto/" target="_blank">Buscan a menor de 15 años reportada desaparecida en Trujillo Alto</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-09-22 11:04">hace 4h</td>
+                    <td class="time-ago" data-date="2026-09-22 11:04">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Atención clientes de Canóvanas: Algunos clientes de este municipio experimentan una interrupción en el servicio debido a una avería reportada en la zona. Nuestras brigadas atienden la avería para restablecer el servicio de manera segura. Pendiente a las - facebook.com">
@@ -1245,7 +1232,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxNOS1MbUx5OW9yVnQzYjZVZXhaaFo0YW5uYVl6LWRoWUpXcC10SHFHLXNSdW9mSUhKdzF4V0tOcWs1TjdOY3l5OUI1SzNha2JjUWk5T2RLZEN1XzZudXhaVEF1U2N4TG9GN2NBQTNRQjJWNUNkQzFrYnZkV1RLazZMeWRlY2swNTM1WVd2ak5PSGlkckc1?oc=5" target="_blank">Más de 350 estudiantes recogen sobre 1,000 libras de desperdicios en Loíza - WIPR.pr</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-09-21 21:07">hace 18h</td>
+                    <td class="time-ago" data-date="2026-09-21 21:07">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Arrestan a dos personas y ocupan drogas durante allanamiento en Trujillo Alto - NotiUno.com">
@@ -1265,7 +1252,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/09/21/policia-identifica-a-hombre-hallado-con-heridas-de-bala-y-parcialmente-calcinado/" target="_blank">Policía identifica a hombre hallado con heridas de bala y parcialmente calcinado</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-21 19:04">hace 20h</td>
+                    <td class="time-ago" data-date="2026-09-21 19:04">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Roban en restaurante Papa John’s y se llevan tres cajas registradoras">
@@ -1275,7 +1262,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/09/21/roban-en-restaurante-papa-johns-y-se-llevan-tres-cajas-registradoras/" target="_blank">Roban en restaurante Papa John’s y se llevan tres cajas registradoras</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-21 19:02">hace 20h</td>
+                    <td class="time-ago" data-date="2026-09-21 19:02">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Hoy recordamos el natalicio de Ángel O. Berríos, exalcalde de Caguas, nacido el 21 de septiembre de 1940. Su aportación al servicio público y su compromiso con el desarrollo de nuestra ciudad forman parte de la historia de Caguas. En esta fecha, honram - facebook.com">
@@ -1631,7 +1618,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-22 04:01:21 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-22 04:16:16 PM<br>
     Actualización automática cada 30 min
 </div>
 
