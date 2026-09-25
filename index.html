@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-25 12:02:29 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-25 12:16:15 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">37</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
-        <div class="stat-box"><div class="num" style="font-size:14px">64/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-25 12:02:29 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num">40</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-25 12:16:15 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -810,19 +810,6 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <!-- BREAKING NEWS -->
-
-<div class="section breaking-section">
-    <div class="breaking-banner">
-        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
-        
-        <div class="breaking-item">
-            <span class="time">hace 2min</span> —
-            <a href="https://www.notiuno.com/noticias/seguridad-y-justicia/rescatan-hermanos-y-mascotas-de-incendio-en-condominio/article_9d30f909-a39c-41f5-8cfc-8f9c17437b9a.html" target="_blank">Rescatan hermanos y mascotas de incendio en condominio</a>
-            <span style="opacity:0.6"> [San Juan]</span>
-        </div>
-        
-    </div>
-</div>
 
 
 <!-- MUNICIPALITIES -->
@@ -837,17 +824,17 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">5</span>
+            <span class="muni-count">4</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <span class="muni-name">Trujillo Alto</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">3</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
+        <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <span class="muni-name">Caguas</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
@@ -892,7 +879,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <span class="muni-name">Cataño</span>
-            <span class="muni-count">7</span>
+            <span class="muni-count">8</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
@@ -900,9 +887,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
+        <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <span class="muni-name">Culebra</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </div>
         
     </div>
@@ -952,6 +939,16 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-25 15:31">ahora</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Caguas" data-titular="Los Criollos firman al lanzador Jarret Whorff como su tercer importado">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://noticel.com/deportes/20260925/los-criollos-firman-al-lanzador-jarret-whorff-como-su-tercer-importado/?utm_source=rss&utm_medium=rss&utm_campaign=los-criollos-firman-al-lanzador-jarret-whorff-como-su-tercer-importado" target="_blank">Los Criollos firman al lanzador Jarret Whorff como su tercer importado</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-09-25 15:27">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="San Juan" data-titular="Asesinan a un adolescente de 17 años en una cancha en Bayamón">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
@@ -970,6 +967,16 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Cataño</td>
                     <td class="time-ago" data-date="2026-09-25 15:15">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="NFE enfrenta desacato federal por esconder información al tribunal sobre barcaza de gas">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://noticel.com/noticias/20260925/nfe-enfrenta-desacato-federal-por-esconder-informacion-al-tribunal-sobre-barcaza-de-gas/?utm_source=rss&utm_medium=rss&utm_campaign=nfe-enfrenta-desacato-federal-por-esconder-informacion-al-tribunal-sobre-barcaza-de-gas" target="_blank">NFE enfrenta desacato federal por esconder información al tribunal sobre barcaza de gas</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-09-25 13:52">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Identifican a joven de 18 años que murió baleado en una carretera en Cataño - El Nuevo Día">
@@ -1019,18 +1026,11 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/25/incendian-tres-vehiculos-en-una-residencia-en-la-zona-urbana-de-humacao/" target="_blank">Incendian tres vehículos en una residencia en la zona urbana de Humacao</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-25 12:01">hace 1min</td>
+                    <td class="time-ago" data-date="2026-09-25 12:01">hace 15min</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Rescatan hermanos y mascotas de incendio en condominio">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.notiuno.com/noticias/seguridad-y-justicia/rescatan-hermanos-y-mascotas-de-incendio-en-condominio/article_9d30f909-a39c-41f5-8cfc-8f9c17437b9a.html" target="_blank">Rescatan hermanos y mascotas de incendio en condominio</a>
-                    </td>
-                    <td>NotiUno</td>
-                    <td class="time-ago" data-date="2026-09-25 12:00">hace 2min</td>
-                </tr>
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Duerme en la cárcel el hombre al que se le imputa agredir sexualmente a una niña de 10 años">
                     <td><span class="muni-tag">Trujillo Alto</span></td>
@@ -1039,11 +1039,8 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/duerme-en-la-carcel-el-hombre-al-que-se-le-imputa-agredir-sexualmente-a-una-nina-de-10-anos/" target="_blank">Duerme en la cárcel el hombre al que se le imputa agredir sexualmente a una niña de 10 años</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-09-25 11:15">hace 47min</td>
+                    <td class="time-ago" data-date="2026-09-25 11:15">hace 1h</td>
                 </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Hombre fue atacado a tiros a la entrada de urbanización">
                     <td><span class="muni-tag">Canóvanas</span></td>
@@ -1075,7 +1072,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPVkEtX0lDdUdlMzU0VlFsQXhQNHpIUWRKTk5OTFVOTnlnRlEtN1JVR1BlNkx3b285clBWTXRYOF9ld1ZKR1JFZkRPSU9Ia0hlUXVBSVVaS25FZVFTbmJsZms3bVNIckx5aW00a0JBRFVqNFczMl9UcVNtZFlYTXQ1Wko5WWVXaWRxd1dPMm5uSkpaZEVWUUNCXzFPa2l5SzdOYkxOeVdIZDZhLWw1aWdEQWxCWXhsdWxpajFBWjd1Q2pDcWU0MkJuRTRfVG9rX1Ixd3fSAdIBQVVfeXFMT1ZBLV9JQ3VHZTM1NFZRbEF4UDR6SFFkSk5OTkxVTk55Z0ZRLTdSVUdQZTZMd29vOXJQVk10WDhfZXdWSkdSRWZET0lPSGtIZVF1QUlVWktuRWVRU25ibGZrN21TSHJMeWltNGtCQURVajRXMzJfVHFTbWRZWE10NVpKOVllV2lkcXdXTzJubkpKWmRFVlFDQl8xT2tpeUs3TmJMTnlXSGQ2YS1sNWlnREFsQll4bHVsaWoxQVo3dUNqQ3FlNDJCbkU0X1Rva19SMXd3?oc=5" target="_blank">Customed anuncia expansión millonaria en Fajardo - El Vocero de Puerto Rico</a>
                     </td>
                     <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-09-24 22:04">hace 13h</td>
+                    <td class="time-ago" data-date="2026-09-24 22:04">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="ADSEF investiga alegado vaciado de fondos en mercados familiares en Humacao">
@@ -1115,7 +1112,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/09/24/ataque-a-tiros-deja-un-muerto-y-otra-persona-herida/" target="_blank">Ataque a tiros deja un muerto y otra persona herida</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-24 19:06">hace 16h</td>
+                    <td class="time-ago" data-date="2026-09-24 19:06">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Matan a tiros a motorista y dejan a otra persona herida en Cataño - Telemundo Puerto Rico">
@@ -1155,7 +1152,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/24/hombre-arrollado-en-humacao-estaba-acostado-en-el-pavimento/" target="_blank">Hombre arrollado en Humacao estaba acostado en el pavimento</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-24 18:08">hace 17h</td>
+                    <td class="time-ago" data-date="2026-09-24 18:08">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Sequía mejora significativamente en Puerto Rico">
@@ -1175,7 +1172,17 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/09/24/advierten-sobre-inundaciones-y-rafagas-de-hasta-40-mph-en-varias-zonas/" target="_blank">Advierten sobre inundaciones y ráfagas de hasta 40 mph en varias zonas</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-24 17:04">hace 18h</td>
+                    <td class="time-ago" data-date="2026-09-24 17:04">hace 19h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Las brigadas del Municipio de Cataño se encuentran activas atendiendo distintos espacios públicos con trabajos de mantenimiento de áreas verdes en diferentes sectores. Estas son labores planificadas para mantener a Cataño 100% limpio. - facebook.com">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUDdpc0QyOU5aS2xvZVpYZHptaTBjTllWOEhBSHFDS0VXWlhfTmRpaEJrYkgzRmFsWWNadjVtaThyeUpFOFRSTDF6aWdhYVE2MFFjelpadHkzS3B2aEdIS3NnV2pkU25ZTHFJbFZxTDZyck4zUVJ3QUV1SDd2V205YmN0WWFGY25wRnRoYlFCcmZWUk81VENEWEtmMkVPbS1JQzUyT0pVcTN2N0RKYnJkallsZmRvNmNnRzB1VWtZY0ZfZ0VkMC1wanE2MlZLbU1pbmdqeGw5czY?oc=5" target="_blank">Las brigadas del Municipio de Cataño se encuentran activas atendiendo distintos espacios públicos con trabajos de mantenimiento de áreas verdes en diferentes sectores. Estas son labores planificadas para mantener a Cataño 100% limpio. - facebook.com</a>
+                    </td>
+                    <td>FB - Cataño</td>
+                    <td class="time-ago" data-date="2026-09-24 17:02">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Hombre acostado en plena carretera resulta gravemente herido tras ser atropellado">
@@ -1205,7 +1212,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiiwJBVV95cUxOYk9jUzJMWU1OQnVBNnp3U2lXWi00a1ctemtGTXY4Q1g2Q21yU1dNZGRyZjIweVFVVW13dkhNUE1qVWdxVzU3WWxDN0dDdk9JTmhFbUpVT0dUZXFDbi1pT01iNHh4TkhaZnRyXy1lZk5OV3NPb2JtWWwtbnJTNEczSS1MaWxBNmF0eGtNT0k0MjdfdzVIN2tySEdvbE0wSUM3bmVOOHUxUkI1cUhUU1lqM2pwV1Zaamc5aDhpYm9WdmNEN0FaQWpNak5rOWZta0tncUhUREpfNGZqcXF2OWJRYWFQWnBSUUNyazc0bHRheW9NOWRSdTgwdFZ4dXNudzFud19UcS1zcHd2YnM?oc=5" target="_blank">⚠️ EXHORTACIÓN A TRANSITAR CON PRECAUCIÓN El Municipio Autónomo de Naguabo exhorta a residentes y visitantes a transitar con precaución por el Sector Botijita del barrio Mariana, donde actualmente se llevan a cabo trabajos que aún no han cul - facebook.com</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-09-24 16:06">hace 19h</td>
+                    <td class="time-ago" data-date="2026-09-24 16:06">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Museo Afro Casa Silvana avanza en premio internacional para museos antirracistas">
@@ -1218,14 +1225,14 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-24 16:00">hace 20h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Carolina" data-titular="Escuela Vocacional Hípica de Puerto Rico llega a Salón de la Fama en Carolina del Sur - El Vocero de Puerto Rico">
-                    <td><span class="muni-tag">Carolina</span></td>
+                <tr class="article-row" data-municipios="Culebra" data-titular="One unforgettable trip to Culebra. 💙 From sun-soaked beach days to quiet moments by the water, some of the best memories are the ones shared together in Puerto Rico. 🌴✨ Thanks for sharing your Island moments with us, @ _cattherinexo. __ Un viaje inolvi - facebook.com">
+                    <td><span class="muni-tag">Culebra</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxOeWFFUUhUaFB3eHkwMFd4c2lEZFZWazV4RDYwM0FHbi1HUFRQeDhYUUc4dXdUekJpWXZBVzQ3UWZoMDhLUHpPcEJPZy1lV0hTSFg2d0Y0S00wY2UzZzNRQjlHRzBKX2dZUFoxQkRyQ2FCVUNxdGdwTHV4d3ladGxPdHNDMm9PYkVlMmFVTGJyZTJ0d0tFdzNVbVpYQjJPS1ZGcGhSSGxqT0xackF6NUNkZHplcGVJSUlnRjlackdhN093TXl4aC00cC1aM1hRVlFGeWgzTHhydktRZTZfdVVXZEpKR2VKOXPSAewBQVVfeXFMUC0wWnpkQU1sN0tKQ2Npa0VDc1Nwb1JuenBPcnVtVWtDbHZOb0xWeTVrWjZKWmNReDc0VmcwaWJFV1ZEUUU0ZnZ2bl9zRnAwTnYyNHVjeVdGWHJVWERqMlBKZThCSnhrUGwzbGVBR3pyUUxJR1VGNzFpZnVfYWpwaGZpUDM4cmlpelhuVGJsTFZQNkNPc09BX0VwVmktUDBzenR1WFJac3drd0dGRnNrbU5nTHZzRVR0ZlhFcmhLUmZEV0tHS3VJTmlKYWxnbXlrWFdGazBJN3VqcHd0ZlFEMm5xa2ZncEtRRUVlZTk?oc=5" target="_blank">Escuela Vocacional Hípica de Puerto Rico llega a Salón de la Fama en Carolina del Sur - El Vocero de Puerto Rico</a>
+                        <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxNVWdPeFZuOW51aTg3N1NnbGVOQnFxT0p4YnIyZ3RGS19rWElpSU1fdEZORVlZRzFyQzNzdUc4SFhIZjFJTXNSLXgybHdKNGs2ay1xUEVMUHEzN1o1Z0czclJKVHN1eUtFTXREbDUwaG53YUUxelJ6c1VEMzQxeHlCYmxrVjZVeXo0Um1HNXNkVFJZWnF6T191bnc3bVpVUllGamJoUGptZmMtd1NQcGZGcmZmbjllRmxyellqZmExaGRqSVprZ2VocVVwN2RWVnFldjRMY1FkaWhzalBiN2MwVHBrUQ?oc=5" target="_blank">One unforgettable trip to Culebra. 💙 From sun-soaked beach days to quiet moments by the water, some of the best memories are the ones shared together in Puerto Rico. 🌴✨ Thanks for sharing your Island moments with us, @ _cattherinexo. __ Un viaje inolvi - facebook.com</a>
                     </td>
-                    <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-09-24 14:30">hace 21h</td>
+                    <td>FB - Culebra</td>
+                    <td class="time-ago" data-date="2026-09-24 15:02">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Peatón resulta herido de gravedad tras ser arrollado en Humacao - El Vocero de Puerto Rico">
@@ -1243,6 +1250,16 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="titular-cell">
                         
                         <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBVZGluMjdBTFlDaGMtTDlFM3lBR0FkYTJFUkRTY0R0cmNIbE1xa3psOGQ1aFFaQzRpX0xNTXFvcnppdmdUTHBQSjE5ekpXcVpuR2trRnJlblRHYjFEbmpZRWtsWVluTFlXRnE3aW9ZdjlrZmFYakRESk0tWmVya28?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
+                    </td>
+                    <td>FB - Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-09-24 13:32">hace 22h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE95UnplYVFObXEzSmo3VmptcHMxRFkxWjlOekxReTREWVdCTVp4cFJ4eHJiWGpRRmVRZ3YwVmY4bVZWQk1PTEI5ZjFZZTZPSktOUWVMVXdUNFhOLW5CUjNxVGpxNVN3c3lybGRYQnZFNDY1TS00bFllcy1kVlFWcjQ?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
                     </td>
                     <td>FB - Trujillo Alto</td>
                     <td class="time-ago" data-date="2026-09-24 13:32">hace 22h</td>
@@ -1284,7 +1301,7 @@ tr.article-row:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Carolina" data-titular="Aerostar entrega dos patrullas K-9 para reforzar la seguridad del aeropuerto Luis Muñoz Marín">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://www.carolina787.com/n/aerostar-entrega-dos-patrullas-k-9-para-reforzar-la-seguridad-del-aeropuerto-luis-munoz-marin" target="_blank">Aerostar entrega dos patrullas K-9 para reforzar la seguridad del aeropuerto Luis Muñoz Marín</a>
                     </td>
                     <td>Carolina787</td>
@@ -1327,7 +1344,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <span class="source-badge ok">🟢 El Nuevo Día: OK</span>
         
-        <span class="source-badge err">🔴 NotiCel: Error</span>
+        <span class="source-badge ok">🟢 NotiCel: OK</span>
         
         <span class="source-badge ok">🟢 Radio Isla: OK</span>
         
@@ -1461,7 +1478,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-25 12:02:29 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-25 12:16:15 PM<br>
     Actualización automática cada 30 min
 </div>
 
