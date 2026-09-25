@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-25 11:31:41 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-25 11:46:19 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">37</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">40</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-25 11:31:41 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-25 11:46:19 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -832,7 +832,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">7</span>
+            <span class="muni-count">9</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -845,9 +845,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">3</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
+        <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <span class="muni-name">Caguas</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
@@ -932,6 +932,36 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="Hasta 80% de potencial de lluvia para hoy">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/09/25/hasta-80-de-potencial-de-lluvia-para-hoy-16/" target="_blank">Hasta 80% de potencial de lluvia para hoy</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-09-25 15:43">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Jueza prohíbe entrada de barcaza con gas natural a Bahía de San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.notiuno.com/noticias/gobierno-y-politica/jueza-proh-be-entrada-de-barcaza-con-gas-natural-a-bah-a-de-san-juan/article_07e9870b-aa03-460b-a4e0-9d8fd1fe9f17.html" target="_blank">Jueza prohíbe entrada de barcaza con gas natural a Bahía de San Juan</a>
+                    </td>
+                    <td>NotiUno</td>
+                    <td class="time-ago" data-date="2026-09-25 15:31">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Los Criollos firman al lanzador Jarret Whorff como su tercer importado">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/deportes/20260925/los-criollos-firman-al-lanzador-jarret-whorff-como-su-tercer-importado/?utm_source=rss&utm_medium=rss&utm_campaign=los-criollos-firman-al-lanzador-jarret-whorff-como-su-tercer-importado" target="_blank">Los Criollos firman al lanzador Jarret Whorff como su tercer importado</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-09-25 15:27">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="San Juan" data-titular="Asesinan a un adolescente de 17 años en una cancha en Bayamón">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
@@ -942,11 +972,21 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-25 15:21">ahora</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Cataño" data-titular="Entre barriles, madera y tiempo: Casa Bacardí estrena una nueva experiencia en Cataño - El Nuevo Día">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxOT2RhWHh1c2dJYmpMR2FjMEN3RElvZm1sdXkyMnFpTk9qMHVWYi1xOTZJbXlvMWlKYkFwakYtdGFoZVM1XzV5UUcxWjlLanF0bGJNMGdIU1BkY1AzVmtfZ0Q2WmFxZUV1NktiR1NOVzA2LTVUV2F2NW13RVRsb05waUNQdzQ1b1VKRmx5c2t4QlEzNVNlYU9YTDd4c05WQmNwYXV6eERHb0FmeDdpR285QWlJRVVFdkI0akdGT21ZZDZsbVlZYTBtTnU4eWZTQWFaaTMtLWxyOWlkTnh3REtLYQ?oc=5" target="_blank">Entre barriles, madera y tiempo: Casa Bacardí estrena una nueva experiencia en Cataño - El Nuevo Día</a>
+                    </td>
+                    <td>Cataño</td>
+                    <td class="time-ago" data-date="2026-09-25 15:15">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="San Juan" data-titular="NFE enfrenta desacato federal por esconder información al tribunal sobre barcaza de gas">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://noticel.com/noticias/20260925/nfe-enfrenta-descato-federal-por-esconder-informacion-al-tribunal-sobre-barcaza-de-gas/?utm_source=rss&utm_medium=rss&utm_campaign=nfe-enfrenta-descato-federal-por-esconder-informacion-al-tribunal-sobre-barcaza-de-gas" target="_blank">NFE enfrenta desacato federal por esconder información al tribunal sobre barcaza de gas</a>
+                        <a href="https://noticel.com/noticias/20260925/nfe-enfrenta-desacato-federal-por-esconder-informacion-al-tribunal-sobre-barcaza-de-gas/?utm_source=rss&utm_medium=rss&utm_campaign=nfe-enfrenta-desacato-federal-por-esconder-informacion-al-tribunal-sobre-barcaza-de-gas" target="_blank">NFE enfrenta desacato federal por esconder información al tribunal sobre barcaza de gas</a>
                     </td>
                     <td>NotiCel</td>
                     <td class="time-ago" data-date="2026-09-25 13:52">ahora</td>
@@ -1019,7 +1059,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/duerme-en-la-carcel-el-hombre-al-que-se-le-imputa-agredir-sexualmente-a-una-nina-de-10-anos/" target="_blank">Duerme en la cárcel el hombre al que se le imputa agredir sexualmente a una niña de 10 años</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-09-25 11:15">hace 16min</td>
+                    <td class="time-ago" data-date="2026-09-25 11:15">hace 31min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Hombre fue atacado a tiros a la entrada de urbanización">
@@ -1029,7 +1069,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/hombre-fue-atacado-a-tiros-a-la-entrada-de-urbanizacion/" target="_blank">Hombre fue atacado a tiros a la entrada de urbanización</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-09-25 10:53">hace 38min</td>
+                    <td class="time-ago" data-date="2026-09-25 10:53">hace 53min</td>
                 </tr>
                 
                 
@@ -1048,16 +1088,6 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
                 
-                <tr class="article-row" data-municipios="Cataño" data-titular="Hombre es asesinado y otro resulta herido en ataque a tiros en Cataño - NotiCel">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNbjB0VmIzM09Id1lrU3RLZ3FiSU5fWkxVWkR0c1FYa3pCZVNEOFVwS3IxbTRka3E1LUVVSnNadTRVcDBfNGZSWlpkc1ZPcVliRWJ1X0o5QTh4eFBHamN4ZmE0MkYzYlVYd1k2MVN3V010MzVhQkMzOVFVLVdmdU81cGk2ZW9Oa0lVUHZNSDJlZk4zOElOSW9lUExFX3JhcmN2UThvN1JIMFR5M2Et?oc=5" target="_blank">Hombre es asesinado y otro resulta herido en ataque a tiros en Cataño - NotiCel</a>
-                    </td>
-                    <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-24 22:26">hace 13h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Customed anuncia expansión millonaria en Fajardo - El Vocero de Puerto Rico">
                     <td><span class="muni-tag">Fajardo</span></td>
                     <td class="titular-cell">
@@ -1075,7 +1105,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/24/adsef-investiga-alegado-vaciado-de-fondos-en-mercados-familiares-en-humacao/" target="_blank">ADSEF investiga alegado vaciado de fondos en mercados familiares en Humacao</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-24 20:32">hace 14h</td>
+                    <td class="time-ago" data-date="2026-09-24 20:32">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Asesinan a un hombre y hieren a otro de bala en Cataño - wapa.tv">
@@ -1235,7 +1265,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxPelVYN0w2dllRMWxvZ2paVHktNVlUVUFrT245Zk1HeklFaVM5MHU5QVFvM3VxRUI0MnBPTE5MMzVidE9EdW5fUkk5dUhmeHpxVkJNUXcwbVphUnlkRDNNMjBVMmVUSThnWThZakU4RXhiQ2trY1AyMjA4U0tCdVY5RS1QWnZXekF6SU1zdWxqLTNfcFI1VVItUGd6SmxxTjVjOF93Z3A5SlgwMGNBUVFaODZOQlJiWHJyTkkxNWpfWjlhd0NhZ1RxLXZqdmc0Y0V5ZEZBY1NpOV9ESzN3d0JHNHFxTzjSAeoBQVVfeXFMTzY4cW5TblNYbThvVGJTenR4alktQkhjM0dNTG1qRDdNSUFaemllWEN6RnNaVTcxeEhNQ2dvUG1UOXBHUHhsT0VHMW9TYndIemRaNDZ6UEp3V2UzbTBwWllGZFppT2VtWmNJV3R4eDlmYW5PTDlmUTlQM2dBanVNMTdZVjQ0eUxrQXg2M1NCOFZGZUwwVGFuM19KdG1la2ZmMl92LUxTaFBDTURoNTJkWVZiV1pxOWg1VGwyb2tFMFZubUxqbGZ5eWtJcmVDeE11NmNQVWpxY2NyaTJKVUpaVEQtNmhVcmlQWF9n?oc=5" target="_blank">Peatón resulta herido de gravedad tras ser arrollado en Humacao - El Vocero de Puerto Rico</a>
                     </td>
                     <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-09-24 13:35">hace 21h</td>
+                    <td class="time-ago" data-date="2026-09-24 13:35">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
@@ -1245,7 +1275,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBVZGluMjdBTFlDaGMtTDlFM3lBR0FkYTJFUkRTY0R0cmNIbE1xa3psOGQ1aFFaQzRpX0xNTXFvcnppdmdUTHBQSjE5ekpXcVpuR2trRnJlblRHYjFEbmpZRWtsWVluTFlXRnE3aW9ZdjlrZmFYakRESk0tWmVya28?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
                     </td>
                     <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-09-24 13:32">hace 21h</td>
+                    <td class="time-ago" data-date="2026-09-24 13:32">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - facebook.com">
@@ -1255,7 +1285,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE95UnplYVFObXEzSmo3VmptcHMxRFkxWjlOekxReTREWVdCTVp4cFJ4eHJiWGpRRmVRZ3YwVmY4bVZWQk1PTEI5ZjFZZTZPSktOUWVMVXdUNFhOLW5CUjNxVGpxNVN3c3lybGRYQnZFNDY1TS00bFllcy1kVlFWcjQ?oc=5" target="_blank">Municipio De Trujillo Alto - facebook.com</a>
                     </td>
                     <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-09-24 13:32">hace 21h</td>
+                    <td class="time-ago" data-date="2026-09-24 13:32">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="🚐 ¡Canóvanas Me Lleva! Un servicio de transportación coordinado para adultos mayores, personas con discapacidad o movilidad reducida, con viajes dentro y fuera de Canóvanas. El servicio es por cita y requiere registro previo. 📞 Coordina tu cita: (787) 95 - facebook.com">
@@ -1265,7 +1295,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi8AFBVV95cUxQc0NISzBkUGFmX2NFdUx6RjRZVlV4bXNncXk3Nm5DZWh6eS0xWXBxeUhtekd5bEdndHNzbmRVV3hsU1BybXR0cVBSLWgzNUdhTjNYa2EzMTFmRjE5VFJYLXdqOEV3bWZLdEZEVlg4dW44SFM3RHFsVXZwU1RzVldQZXRjLUhneDYzLWtTTG1rLXN2UGZIYnhYNmFpVEFrYVFubjBuQVBMZ1kxaG1vTnJnRTFVMmQ1NU1Ha1RCaC01aHpLV3pQYjh2dC1hVEE1eEFTWU9MZVBndDFzb2hjUkpNZVlIcDk4UnJ1RWpHcmNKdkI?oc=5" target="_blank">🚐 ¡Canóvanas Me Lleva! Un servicio de transportación coordinado para adultos mayores, personas con discapacidad o movilidad reducida, con viajes dentro y fuera de Canóvanas. El servicio es por cita y requiere registro previo. 📞 Coordina tu cita: (787) 95 - facebook.com</a>
                     </td>
                     <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-09-24 12:37">hace 22h</td>
+                    <td class="time-ago" data-date="2026-09-24 12:37">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="📢⚠️⚡ [Atención] La Planta de Filtros Canóvanas, en el municipio de #Canóvanas, se encuentra fuera de operación por falta de servicio eléctrico, debido a un evento de emergencia en instalaciones de LUMA Energy. 👷🔧 Personal se moviliza para encender - facebook.com">
@@ -1461,7 +1491,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-25 11:31:41 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-25 11:46:19 AM<br>
     Actualización automática cada 30 min
 </div>
 
