@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-26 02:46:12 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-26 03:01:14 PM</span></div>
         </div>
     </div>
     <div class="stats">
         <div class="stat-box"><div class="num">28</div><div class="label">Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-26 02:46:12 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-26 03:01:14 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -816,13 +816,13 @@ tr.article-row:hover { background: var(--surface2); }
         <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
         
         <div class="breaking-item">
-            <span class="time">hace 21min</span> —
+            <span class="time">hace 36min</span> —
             <a href="https://noticel.com/noticias/20260926/cic-de-san-juan-investiga-doble-asesinato-en-santurce/?utm_source=rss&utm_medium=rss&utm_campaign=cic-de-san-juan-investiga-doble-asesinato-en-santurce" target="_blank">CIC de San Juan investiga doble asesinato en Santurce</a>
             <span style="opacity:0.6"> [San Juan]</span>
         </div>
         
         <div class="breaking-item">
-            <span class="time">hace 45min</span> —
+            <span class="time">hace 1h</span> —
             <a href="https://esnoticiapr.com/investigan-doble-asesinato-en-santurce/" target="_blank">Investigan doble asesinato en Santurce</a>
             <span style="opacity:0.6"> [San Juan]</span>
         </div>
@@ -838,7 +838,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">8</span>
+            <span class="muni-count">7</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -893,7 +893,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <span class="muni-name">Humacao</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">3</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
@@ -901,9 +901,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">7</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
+        <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <span class="muni-name">Vieques</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
@@ -938,10 +938,20 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="Vieques" data-titular="Inauguran el Centro de Salud de Vieques">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/inauguran-el-centro-de-salud-de-vieques/" target="_blank">Inauguran el Centro de Salud de Vieques</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-09-26 18:47">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="San Juan,Canóvanas" data-titular="Entregan asientos protectores a familias durante el National Seat Check Saturday">
                     <td><span class="muni-tag">San Juan, Canóvanas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://noticel.com/noticias/20260926/entregan-asientos-protectores-a-familias-durante-el-national-seat-check-saturday/?utm_source=rss&utm_medium=rss&utm_campaign=entregan-asientos-protectores-a-familias-durante-el-national-seat-check-saturday" target="_blank">Entregan asientos protectores a familias durante el National Seat Check Saturday</a>
                     </td>
                     <td>NotiCel</td>
@@ -995,8 +1005,11 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://noticel.com/noticias/20260926/cic-de-san-juan-investiga-doble-asesinato-en-santurce/?utm_source=rss&utm_medium=rss&utm_campaign=cic-de-san-juan-investiga-doble-asesinato-en-santurce" target="_blank">CIC de San Juan investiga doble asesinato en Santurce</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-09-26 14:25">hace 21min</td>
+                    <td class="time-ago" data-date="2026-09-26 14:25">hace 36min</td>
                 </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Investigan doble asesinato en Santurce">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -1005,7 +1018,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/investigan-doble-asesinato-en-santurce/" target="_blank">Investigan doble asesinato en Santurce</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-09-26 14:01">hace 45min</td>
+                    <td class="time-ago" data-date="2026-09-26 14:01">hace 1h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Sectores con 90% de potencial de lluvia para hoy">
@@ -1015,20 +1028,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/09/26/sectores-con-90-de-potencial-de-lluvia-para-hoy-3/" target="_blank">Sectores con 90% de potencial de lluvia para hoy</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-26 13:57">hace 49min</td>
-                </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="PNP espera 3,000 electores para elección en Cataño - NotiCel">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPNzVWalRRclNrUF9rSjFsTW1YSlJURHYzNTJjV0FDRXRCTEZ6cFdTNVRUcHVmeW5KSXhnbmFLS1ZHQkNJaE1WZmpoanpFVE9SVnQ5N3Z6M1lpT3I3VDlNY1JCSG5QMG0tZTJGLXBSQWVOSmpPbFctWDVDcXJVYkxrS0tOZDBNbnRyd1pvZGltNzJ0UQ?oc=5" target="_blank">PNP espera 3,000 electores para elección en Cataño - NotiCel</a>
-                    </td>
-                    <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-26 13:16">hace 1h</td>
+                    <td class="time-ago" data-date="2026-09-26 13:57">hace 1h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Culebra" data-titular="Un pedacito de paraíso llamado "Playa Sunny" en Culebra 💙🇵🇷 📹: Turisteando en Puerto Rico #Culebra - facebook.com">
@@ -1041,14 +1041,14 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-26 13:15">hace 1h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Cataño" data-titular="PNP culmina preparativos para elección especial en Cataño - metro.pr">
+                <tr class="article-row" data-municipios="Cataño" data-titular="PNP culmina preparativos para elección especial en Cataño - Metro Puerto Rico">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPMnpTaFpiemxtSF9neHZpZzBNUG1WcEw5RXozd2J3QldkN1laZzItQlNYWTFPQS01ejNXT2huT094UjlXWHluSWJjX3dKb0dSVFY3NDZ2TWRoYmUwY2ZFV2tEelFNNXVJdTVseTcxMllKcjdhWVVNMW5xWXI4Nl9pTllncmZqLW5rcDMzd3RpLThqYzBHeVZ1Qm1vZ1BqU3FO?oc=5" target="_blank">PNP culmina preparativos para elección especial en Cataño - metro.pr</a>
+                        <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPMnpTaFpiemxtSF9neHZpZzBNUG1WcEw5RXozd2J3QldkN1laZzItQlNYWTFPQS01ejNXT2huT094UjlXWHluSWJjX3dKb0dSVFY3NDZ2TWRoYmUwY2ZFV2tEelFNNXVJdTVseTcxMllKcjdhWVVNMW5xWXI4Nl9pTllncmZqLW5rcDMzd3RpLThqYzBHeVZ1Qm1vZ1BqU3FO?oc=5" target="_blank">PNP culmina preparativos para elección especial en Cataño - Metro Puerto Rico</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-26 02:01">hace 12h</td>
+                    <td class="time-ago" data-date="2026-09-26 02:01">hace 13h</td>
                 </tr>
                 
                 
@@ -1061,37 +1061,27 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOVy1oaHNZRzRJUGw4R2NvY1ZjaE96ZUMySGVncDhYX0otbWEySWhONFJ5MXZ3TWZtN0ZYTzlqbnN4a0Rud2FXc1lnTmRXNERJLUdTMy16NFVrenlsVUgtRmZ5M3JQMWUyVVY0aDRrZ01TdnBaSEs3VW9wS3NQNmpwOGtxV25CSjBzY1JoZkM4RExlRnptUjRiYQ?oc=5" target="_blank">Desde Caguas. 🌕🇵🇷 📷Dalila Lebrón - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-09-25 23:00">hace 15h</td>
+                    <td class="time-ago" data-date="2026-09-25 23:00">hace 16h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Loíza" data-titular="Secretaria de la Gobernación y alcaldesa de Loíza se reúnen; erosión costera fue el tema principal - metro.pr">
+                <tr class="article-row" data-municipios="Loíza" data-titular="Secretaria de la Gobernación y alcaldesa de Loíza se reúnen; erosión costera fue el tema principal - Metro Puerto Rico">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNnNCcGVtYmNpTjM0VVFiMmRRamhuU2h0aXNydTVWWXowaER1eGdHYkM4VUxGcWRWZUhwMUpHdlR6b3AwQW5Wd29oWHRhcVZtSmRPTmhHVjA0Zk5NQUVEMndMNmo4d19WT3BIeXBuMThEWElrOXNRdXJXNmJsNFRaN0dDU3VyajdfNG1QdkQ4T1lEemZQLTd4bG5nRVNUcEwxRncxZWFPWExqLVhyRXB5T0hTODVqWUo5aDRPeGRYZDRyUUdBMlBaeGtpaUR2RW1iVjJmN1ZB?oc=5" target="_blank">Secretaria de la Gobernación y alcaldesa de Loíza se reúnen; erosión costera fue el tema principal - metro.pr</a>
+                        <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNnNCcGVtYmNpTjM0VVFiMmRRamhuU2h0aXNydTVWWXowaER1eGdHYkM4VUxGcWRWZUhwMUpHdlR6b3AwQW5Wd29oWHRhcVZtSmRPTmhHVjA0Zk5NQUVEMndMNmo4d19WT3BIeXBuMThEWElrOXNRdXJXNmJsNFRaN0dDU3VyajdfNG1QdkQ4T1lEemZQLTd4bG5nRVNUcEwxRncxZWFPWExqLVhyRXB5T0hTODVqWUo5aDRPeGRYZDRyUUdBMlBaeGtpaUR2RW1iVjJmN1ZB?oc=5" target="_blank">Secretaria de la Gobernación y alcaldesa de Loíza se reúnen; erosión costera fue el tema principal - Metro Puerto Rico</a>
                     </td>
                     <td>Loíza</td>
                     <td class="time-ago" data-date="2026-09-25 22:11">hace 16h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan,Humacao" data-titular="🐶🐱 Desde la actividad en el Municipio de Humacao, compartimos este importante esfuerzo de vacunación contra la rabia, realizado hoy también en San Juan, como parte de las actividades con motivo del Día Mundial contra la Rabia. 🌎🐾 💉 En total, se admin - facebook.com">
-                    <td><span class="muni-tag">San Juan, Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxQWTZDSE83QUpzajJ5bkFjTFhPVkdQclotODVSbTJBamR4MWVUb21sb1RYMTVZendoN2pPR01fcTg1MXJVWlhqdVNORXNINFRlN0pKV2FxUW1UZmxrTEl5MUE2NDhxOHBNazRlcW03dFdQTU5JOVIzNm5XMDV4RUVIVGt1eGIwOHQ2dUpUQ1dnQnlzM2NpUy1uNVVwVUx1XzVZZUJPNm9vSmZMNXp4Y1RINGdHOTR6S0VTUVBPbmhQSXd0bmZUYU54QmRTUExiTVppeUtDTkN0bmQwMkZYSTlHbE4yb1FoVWllV3FSWktB?oc=5" target="_blank">🐶🐱 Desde la actividad en el Municipio de Humacao, compartimos este importante esfuerzo de vacunación contra la rabia, realizado hoy también en San Juan, como parte de las actividades con motivo del Día Mundial contra la Rabia. 🌎🐾 💉 En total, se admin - facebook.com</a>
-                    </td>
-                    <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-09-25 22:08">hace 16h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="PNP completa preparativos para elección especial de alcalde de Cataño">
+                <tr class="article-row" data-municipios="Cataño" data-titular="Bethzaida Rodríguez promete aumento salarial para empleados de Cataño - Telemundo Puerto Rico">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://esnoticiapr.com/pnp-completa-preparativos-para-eleccion-especial-de-alcalde-de-catano/" target="_blank">PNP completa preparativos para elección especial de alcalde de Cataño</a>
+                        <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxQUHVvT3FTa3pReC0wbGJQcWVjVzd3X1l3V3NDZzVzQl9DV21qdjhWVTVBVjZIdEFxcWRVc1BDdHRNSnNoV3JqOTlzY0FTMEhkU0FlaWRlV2NSeTd5Ry1ObHB6Rjd1NzVBOEc0bmpfUHNCZE5TenBkelJobmJqU2ZhbTdxMkd1WTR3eTFaT1ZrZzVYZG81ZHZld19Tek5sTUtDT0hUbW1ZcTAxRm94d2g1T0pNMUhISEFHcXNLbnBfa3RQT3RIbkJoTGNZVThCYTjSAdcBQVVfeXFMTUo0cUR1UGdaajB1MmYzX3ZUWUhuOXdCM2NqNHN2aGVkZld4M1RSTUl3YVNINEN0X2c0WmtMQ2ZqM0dxNDBFMEZpcEpJcVBRWnFIQ3RRMUV3QWMzS2hRS0g3NWhFcGtfNU4tZzdOYUQ5ZF9OUVpoTFhTcWxkbnFZQmo5OFpZaFRwbTdaZ2t4cnZweDlzaXEtUWxiOFRBYUk5SUw1cDNhWTNnb3J0UFY2M3E2cDRVMV84aXEwcFNRMW9vV1dNR2ZKM08zT0N6cjFUQW5IYm40LW8?oc=5" target="_blank">Bethzaida Rodríguez promete aumento salarial para empleados de Cataño - Telemundo Puerto Rico</a>
                     </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-09-25 21:23">hace 17h</td>
+                    <td>Cataño</td>
+                    <td class="time-ago" data-date="2026-09-25 21:28">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Atención clientes de Naguabo: Algunos clientes de este municipio experimentan una interrupción del servicio debido a una avería reportada en la zona. Nuestras brigadas atienden la avería para restablecer el servicio de manera segura. Pendiente de las act - facebook.com">
@@ -1102,6 +1092,16 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>FB - Naguabo</td>
                     <td class="time-ago" data-date="2026-09-25 21:11">hace 17h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Poder Judicial activa plan especial por elección especial en Cataño - Metro Puerto Rico">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNb3JsbzVvc2ZpNE9XRUxQUkNfdE1Da1JMZ2NicDUtUXYxM1dWaFhDUTdVSG9UcFVwLWZYN2VPMFFaNWtXX0lPQTVHQmpRUVFPS1VkMmFjY0dUYUJ3aHRmZ09ORzVFSWU0YzIwdVN1NFZRNHpkdnNsRzJ6d2RWcko4Mng2NExDdi1HSmpFTS1BZFlKbnRJRzlJWEdzbTEzNXVnUlBPRUg4bDdaQlptM0E?oc=5" target="_blank">Poder Judicial activa plan especial por elección especial en Cataño - Metro Puerto Rico</a>
+                    </td>
+                    <td>Cataño</td>
+                    <td class="time-ago" data-date="2026-09-25 20:30">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Actualizan la lista de los 10 más buscados de la zona policiaca de Carolina - Primera Hora">
@@ -1121,7 +1121,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQcVhGTFF1ZldkZzV3U015WWpBekJ0bG11aXE2WWpEdkhrV3ZqRHdORXcyV0JpRmR3dExhREtOQ2JHalRCV1I2UlozMHZxQlJ1c0VuZXllX1Z4WTFIeEw2QzFlb2NCVjlfbHNIbHJocl9aZzBFOG1VWTNaTUoxeVVWYWQwaEI3UDBtb21CUEFKbkZybTFKME5J?oc=5" target="_blank">Rosa Colón Concepción Obituario - Canovanas, PR - Dignity Memorial</a>
                     </td>
                     <td>Canóvanas</td>
-                    <td class="time-ago" data-date="2026-09-25 20:00">hace 18h</td>
+                    <td class="time-ago" data-date="2026-09-25 20:00">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Bethzaida Rodríguez propone aumentar a $12.50 salario mínimo de empleados">
@@ -1194,11 +1194,11 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-25 12:01">hace 1d</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Municipio de San Juan reconoce a artistas en los Premios Victoria Espinosa - metro.pr">
+                <tr class="article-row" data-municipios="San Juan" data-titular="Municipio de San Juan reconoce a artistas en los Premios Victoria Espinosa - Metro Puerto Rico">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxPeEpmZmpKN0NmZXh4bThUcHJtcUdvMGI5YjlMMVdmLVM0bnduY215VURGeE02RnNoZkRDVUltRUUtZFBCTDVmWUNNRVlCeTBUdHlTSHZpQTJqNmw1aW92WjkzS01BNUQ5cVZMa3BJMmNISlQwRXU5NklKSkRYRngyWE9KNERXeDBaZDR1b2tMUVJ2YXNSUUU4Zlo4LWwtUzEzbGJYUWo3VFBINzVVU05UVVZ1VXZZTlZJS2x1TDliVU8?oc=5" target="_blank">Municipio de San Juan reconoce a artistas en los Premios Victoria Espinosa - metro.pr</a>
+                        <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxPeEpmZmpKN0NmZXh4bThUcHJtcUdvMGI5YjlMMVdmLVM0bnduY215VURGeE02RnNoZkRDVUltRUUtZFBCTDVmWUNNRVlCeTBUdHlTSHZpQTJqNmw1aW92WjkzS01BNUQ5cVZMa3BJMmNISlQwRXU5NklKSkRYRngyWE9KNERXeDBaZDR1b2tMUVJ2YXNSUUU4Zlo4LWwtUzEzbGJYUWo3VFBINzVVU05UVVZ1VXZZTlZJS2x1TDliVU8?oc=5" target="_blank">Municipio de San Juan reconoce a artistas en los Premios Victoria Espinosa - Metro Puerto Rico</a>
                     </td>
                     <td>San Juan</td>
                     <td class="time-ago" data-date="2026-09-25 00:41">hace 1d</td>
@@ -1377,7 +1377,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-26 02:46:12 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-26 03:01:14 PM<br>
     Actualización automática cada 30 min
 </div>
 
