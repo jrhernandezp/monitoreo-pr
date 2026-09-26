@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-26 10:16:14 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-26 10:31:14 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">30</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num">31</div><div class="label">Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">8</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-26 10:16:14 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-26 10:31:14 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -847,7 +847,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <span class="muni-name">Caguas</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
@@ -932,10 +932,20 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="Caguas" data-titular="Hurto en estacionamiento de Caguas: se llevan pistola con 15 balas y $2,000">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/hurto-en-estacionamiento-de-caguas-se-llevan-pistola-con-15-balas-y-2000/" target="_blank">Hurto en estacionamiento de Caguas: se llevan pistola con 15 balas y $2,000</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-09-26 14:22">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="San Juan" data-titular="Investigan doble asesinato en Santurce">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://esnoticiapr.com/investigan-doble-asesinato-en-santurce/" target="_blank">Investigan doble asesinato en Santurce</a>
                     </td>
                     <td>Es Noticia</td>
@@ -950,6 +960,16 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>NELPR</td>
                     <td class="time-ago" data-date="2026-09-26 13:57">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="PNP espera 3,000 electores para elección en Cataño - NotiCel">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxPRVVOSE9vcWtIZWh3VkotaWZCMllHSzU4dFk0OGhsT2VHelRHUUpyN25lZVk4Q0pQVkJ5bzZDZ2NXUTg4SWRpQ2dKZkUzWHVDNkhZUGliWXgxaUcwX1Zxck42RGZWR0tINTBrX25YdWl5bFJWTmFpLU8xcy1HOWZjcVpKX21ObmZ5dFNnb2VQYnRFN3UyOUE?oc=5" target="_blank">PNP espera 3,000 electores para elección en Cataño - NotiCel</a>
+                    </td>
+                    <td>Cataño</td>
+                    <td class="time-ago" data-date="2026-09-26 13:41">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Emiten advertencia de calor intenso para toda la Isla">
@@ -970,16 +990,6 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>NotiCel</td>
                     <td class="time-ago" data-date="2026-09-26 13:28">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="PNP espera 3,000 electores para elección en Cataño - NotiCel">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxPRVVOSE9vcWtIZWh3VkotaWZCMllHSzU4dFk0OGhsT2VHelRHUUpyN25lZVk4Q0pQVkJ5bzZDZ2NXUTg4SWRpQ2dKZkUzWHVDNkhZUGliWXgxaUcwX1Zxck42RGZWR0tINTBrX25YdWl5bFJWTmFpLU8xcy1HOWZjcVpKX21ObmZ5dFNnb2VQYnRFN3UyOUE?oc=5" target="_blank">PNP espera 3,000 electores para elección en Cataño - NotiCel</a>
-                    </td>
-                    <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-26 13:24">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="PNP espera 3,000 electores para elección en Cataño">
@@ -1039,7 +1049,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/notas/todavia-estamos-en-posicion-de-salvarla-antonio-martorell-usa-el-arte-y-la-palabra-en-defensa-del-agua/" target="_blank">“Todavía estamos en posición de salvarla”: Antonio Martorell usa el arte y la palabra en defensa del aguaEl artista interdisciplinario llevó a cabo una serie de talleres de concienciación sobre el recurso, como parte de una residencia con el Estuario de la Bahía de San Juan</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-26 10:16">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-09-26 10:31">ahora mismo</td>
                 </tr>
                 
                 
@@ -1095,7 +1105,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/pnp-completa-preparativos-para-eleccion-especial-de-alcalde-de-catano/" target="_blank">PNP completa preparativos para elección especial de alcalde de Cataño</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-09-25 21:23">hace 12h</td>
+                    <td class="time-ago" data-date="2026-09-25 21:23">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Atención clientes de Naguabo: Algunos clientes de este municipio experimentan una interrupción del servicio debido a una avería reportada en la zona. Nuestras brigadas atienden la avería para restablecer el servicio de manera segura. Pendiente de las act - facebook.com">
@@ -1145,7 +1155,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/09/25/mas-de-22000-empleados-de-educacion-recibiran-capacitacion-para-responder-a-emergencias/" target="_blank">Más de 22,000 empleados de Educación recibirán capacitación para responder a emergencias</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-25 18:24">hace 15h</td>
+                    <td class="time-ago" data-date="2026-09-25 18:24">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Bethzaida Rodríguez propone aumentar a $12.50 salario mínimo de empleados">
@@ -1165,7 +1175,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxOS013M0FaYUhVTVRXVUoyVE56M0xqODBqN1Q0Ui16ZUhDQWNMRlFvaHpiaVhhb0k3VDR0ZkIyWXRBVjVDUXNvM2xNRlF5OVNMRnR6Z0JSa0VoeHRhcGI3djUxT3g4Y3VJSzdmTV91UkxhWmQ3eDhxdXE5c3RSMkdmZW9NbWdmQVZQSzFITlB0Nk8yOERVUVQ1TURDQ3F5c0RpRy1FRTE4d29aSnByNVJBR0hRXzROakdWMjkxREdQSE5mRW5wQUd3dW5weHFINjBM0gHYAUFVX3lxTFBaQl9BY25xT2U3c1Y5NmxjQUEySXc4MkQ1N1Rwcl9Yc29YUndlQzdaQXY4SGFNSFhuS3B5ODYtSFY5V1JnRzRWZUQxSllhT0xtNTZ0ak8xT0c0WjQySFEybFpIaTBteEZXZnVKMmM3eFBwRDZjcE02VUY5M0xYaWZyZnBobHl6dmNrWjNEblI1NDMtM1otNVVTMW1PZTRIQzlQSnJhNFdRUVBDMklhYWVJQkVOUHJGU25CVDBXQkgwbTlUT2VuVEQtUDA5VTFybDFTVFNHUldZRQ?oc=5" target="_blank">Bethzaida Rodríguez propone aumentar a $12.50 el salario mínimo en Cataño - Telemundo Puerto Rico</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-25 16:28">hace 17h</td>
+                    <td class="time-ago" data-date="2026-09-25 16:28">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Jueza prohíbe entrada de barcaza con gas natural a Bahía de San Juan">
@@ -1175,7 +1185,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.notiuno.com/noticias/gobierno-y-politica/jueza-proh-be-entrada-de-barcaza-con-gas-natural-a-bah-a-de-san-juan/article_07e9870b-aa03-460b-a4e0-9d8fd1fe9f17.html" target="_blank">Jueza prohíbe entrada de barcaza con gas natural a Bahía de San Juan</a>
                     </td>
                     <td>NotiUno</td>
-                    <td class="time-ago" data-date="2026-09-25 15:31">hace 18h</td>
+                    <td class="time-ago" data-date="2026-09-25 15:31">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Identifican a joven de 18 años que murió baleado en una carretera en Cataño - El Nuevo Día">
@@ -1391,7 +1401,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-26 10:16:14 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-26 10:31:14 AM<br>
     Actualización automática cada 30 min
 </div>
 
