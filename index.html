@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-26 08:31:14 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-26 08:46:14 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">37</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num">36</div><div class="label">Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-26 08:31:14 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-26 08:46:14 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -816,7 +816,7 @@ tr.article-row:hover { background: var(--surface2); }
         <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
         
         <div class="breaking-item">
-            <span class="time">hace 5min</span> —
+            <span class="time">ahora mismo</span> —
             <a href="https://www.elnuevodia.com/noticias/locales/notas/nueve-anos-despues-del-huracan-maria-inauguran-nuevo-centro-de-salud-en-vieques/" target="_blank">Nueve años después del huracán María: inauguran nuevo centro de salud en Vieques</a>
             <span style="opacity:0.6"> [Vieques]</span>
         </div>
@@ -860,9 +860,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">3</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
             <span class="muni-name">Fajardo</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
@@ -972,6 +972,16 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-26 20:59">ahora</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Vieques" data-titular="Nueve años después del huracán María: inauguran nuevo centro de salud en Vieques">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://www.elnuevodia.com/noticias/locales/notas/nueve-anos-despues-del-huracan-maria-inauguran-nuevo-centro-de-salud-en-vieques/" target="_blank">Nueve años después del huracán María: inauguran nuevo centro de salud en Vieques</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-09-26 20:46">ahora mismo</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Cataño" data-titular="En la recta final por la alcaldía de Cataño electores revelan a quién darán su voto: “Va a estar cerrada”">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
@@ -979,7 +989,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/politica/notas/en-la-recta-final-por-la-alcaldia-de-catano-electores-revelan-a-quien-daran-su-voto-va-a-estar-cerrada/" target="_blank">En la recta final por la alcaldía de Cataño electores revelan a quién darán su voto: “Va a estar cerrada”</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-26 20:35">ahora</td>
+                    <td class="time-ago" data-date="2026-09-26 20:35">hace 11min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Manota Rodríguez vuelve al tabloncillo, esta vez para dirigir a las Criollas en Copuvo">
@@ -989,17 +999,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://noticel.com/deportes/20260926/manota-rodriguez-vuelve-al-tabloncillo-esta-vez-para-dirigir-a-las-criollas-en-copuvo/?utm_source=rss&utm_medium=rss&utm_campaign=manota-rodriguez-vuelve-al-tabloncillo-esta-vez-para-dirigir-a-las-criollas-en-copuvo" target="_blank">Manota Rodríguez vuelve al tabloncillo, esta vez para dirigir a las Criollas en Copuvo</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-09-26 20:28">hace 3min</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Nueve años después del huracán María: inauguran nuevo centro de salud en Vieques">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/locales/notas/nueve-anos-despues-del-huracan-maria-inauguran-nuevo-centro-de-salud-en-vieques/" target="_blank">Nueve años después del huracán María: inauguran nuevo centro de salud en Vieques</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-26 20:26">hace 5min</td>
+                    <td class="time-ago" data-date="2026-09-26 20:28">hace 18min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Gobernadora inaugura el hospital de Vieques">
@@ -1009,7 +1009,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://noticel.com/noticias/20260926/gobernadora-inaugura-el-hospital-de-vieques/?utm_source=rss&utm_medium=rss&utm_campaign=gobernadora-inaugura-el-hospital-de-vieques" target="_blank">Gobernadora inaugura el hospital de Vieques</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-09-26 20:14">hace 17min</td>
+                    <td class="time-ago" data-date="2026-09-26 20:14">hace 32min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Municipio Autónomo de Naguabo inaugura el Estacionamiento Municipal Germán Suárez Díaz">
@@ -1019,8 +1019,11 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/26/municipio-autonomo-de-naguabo-inaugura-el-estacionamiento-municipal-german-suarez-diaz/" target="_blank">Municipio Autónomo de Naguabo inaugura el Estacionamiento Municipal Germán Suárez Díaz</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-26 20:00">hace 31min</td>
+                    <td class="time-ago" data-date="2026-09-26 20:00">hace 46min</td>
                 </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Yeidy Vega estrena “Yeidy Vega Comunica” por WALO Radio">
                     <td><span class="muni-tag">Humacao</span></td>
@@ -1029,11 +1032,8 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/26/yeidy-vega-estrena-yeidy-vega-comunica-por-walo-radio/" target="_blank">Yeidy Vega estrena “Yeidy Vega Comunica” por WALO Radio</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-26 19:44">hace 47min</td>
+                    <td class="time-ago" data-date="2026-09-26 19:44">hace 1h</td>
                 </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Inauguran el Centro de Salud de Vieques">
                     <td><span class="muni-tag">Vieques</span></td>
@@ -1052,7 +1052,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxNY0MtN0NNSEhKdUlfd1pBOVRlWVJsTC16RjliMXZXVmgxOUpDOWJUMXkwWHd1YjVHVHhEUWx3YThyWm1sZmF0cFlHVDZ0a2xraFVJUEpTaDRuVWhKdzMyemFNa0lqaTdjaHlmTGpKOEdEbjNpT2JOSnBieGUzX01KSnU2ZGtWdENqTTQxMFNLUUo5cFhaTmZORmQyQTNxcWxGWUtSMTdjeGRFNERVOEljdnhYdWpCQ1gzckln?oc=5" target="_blank">Inaugura Centro de Salud de Vieques junto a secretario de Salud federal - metro.pr</a>
                     </td>
                     <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-09-26 18:43">hace 1h</td>
+                    <td class="time-ago" data-date="2026-09-26 18:43">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan,Canóvanas" data-titular="Entregan asientos protectores a familias durante el National Seat Check Saturday">
@@ -1092,7 +1092,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/26/marques-waren-home-improvement-inaugura-nuevas-facilidades-en-humacao-2/" target="_blank">Marques Waren Home Improvement inaugura nuevas facilidades en Humacao</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-26 16:41">hace 3h</td>
+                    <td class="time-ago" data-date="2026-09-26 16:41">hace 4h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Le roban $2,000 en efectivo y un arma en predios del banco">
@@ -1102,7 +1102,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/09/26/le-roban-2000-en-efectivo-y-un-arma-en-predios-del-banco/" target="_blank">Le roban $2,000 en efectivo y un arma en predios del banco</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-26 15:32">hace 4h</td>
+                    <td class="time-ago" data-date="2026-09-26 15:32">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Investigan doble asesinato en Santurce">
@@ -1226,16 +1226,6 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Cataño</td>
                     <td class="time-ago" data-date="2026-09-25 16:28">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Municipio Autónomo de Fajardo - facebook.com">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1jbmR3Z3ZTTTQ4VERZWG9OakZBRUhob1dsOVhERUhtTUpfVlBjWEIxbUFScG52bWFaaHhfb3hPTndadnZGTVRxLUEyVC1qcTBQeWkyalV0b1FZcXZZb1AtODJmYnlkYWwwRUd1YS1xSQ?oc=5" target="_blank">Municipio Autónomo de Fajardo - facebook.com</a>
-                    </td>
-                    <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-09-25 15:59">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Jueza prohíbe entrada de barcaza con gas natural a Bahía de San Juan">
@@ -1461,7 +1451,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-26 08:31:14 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-26 08:46:14 PM<br>
     Actualización automática cada 30 min
 </div>
 
