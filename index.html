@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-28 05:47:37 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-28 06:01:15 PM</span></div>
         </div>
     </div>
     <div class="stats">
         <div class="stat-box"><div class="num">32</div><div class="label">Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
-        <div class="stat-box"><div class="num" style="font-size:14px">64/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-28 05:47:37 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-28 06:01:15 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -819,7 +819,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">4</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -847,9 +847,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
             <span class="muni-name">Fajardo</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
@@ -939,6 +939,16 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-28 20:37">ahora</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="Demanda de la AEE busca abrir el acceso al terminal de gas licuado que opera NFEnergía">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://noticel.com/ultima-hora/20260928/demanda-de-la-aee-busca-abrir-el-acceso-al-terminal-de-gas-licuado-que-opera-nfenergia/?utm_source=rss&utm_medium=rss&utm_campaign=demanda-de-la-aee-busca-abrir-el-acceso-al-terminal-de-gas-licuado-que-opera-nfenergia" target="_blank">Demanda de la AEE busca abrir el acceso al terminal de gas licuado que opera NFEnergía</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-09-28 20:14">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Alcaldesa de Naguabo asegura que continúa investigación sobre policía municipal tras incidente en La Fe">
                     <td><span class="muni-tag">Naguabo</span></td>
                     <td class="titular-cell">
@@ -959,16 +969,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-28 18:11">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Vieques" data-titular="Nine years after Hurricane Maria, a new health center opens in Vieques - El Nuevo Día">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPOTZXYXBKSV9YVldtdjBnRHNRb2EyUE5jUGtTZ3R1aFV2R3ptRTVHMC1MNlZKZ1ZrZ0x2eEU2M2RfNk16a0dNeWJNc2tmRHhkbERHZ0M5NndqeHRoQ1VldUFxUFNvdkpjSVBia04zXzhISGRfN3dXMHZyZklJMVo0U3NqaWpCV3JKeHpVaFNyNmhZeTR1d3BZM1A3S2hhNHAzdGxISk50MllyT0FpWGRIS3FxNFd4NU0?oc=5" target="_blank">Nine years after Hurricane Maria, a new health center opens in Vieques - El Nuevo Día</a>
-                    </td>
-                    <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-09-28 17:56">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Cataño" data-titular="En imágenes: así transcurre la elección especial para la alcaldía de Cataño">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
@@ -976,7 +976,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/en-imagenes-asi-transcurre-la-eleccion-especial-para-la-alcaldia-de-catano/" target="_blank">En imágenes: así transcurre la elección especial para la alcaldía de Cataño</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-28 17:47">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-09-28 18:01">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Hiram Torres Montalvo se defiende: “La ayuda que recibí es de la gente de Cataño”">
@@ -986,7 +986,17 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/politica/videos/hiram-torres-montalvo-se-defiende-la-ayuda-que-recibi-es-de-la-gente-de-catano-294402/?utm_source=elnuevodia.com&utm_medium=widget&utm_campaign=las_mas_vistas" target="_blank">Hiram Torres Montalvo se defiende: “La ayuda que recibí es de la gente de Cataño”</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-28 17:47">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-09-28 18:01">ahora mismo</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="Nine years after Hurricane Maria, a new health center opens in Vieques - El Nuevo Día">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPOTZXYXBKSV9YVldtdjBnRHNRb2EyUE5jUGtTZ3R1aFV2R3ptRTVHMC1MNlZKZ1ZrZ0x2eEU2M2RfNk16a0dNeWJNc2tmRHhkbERHZ0M5NndqeHRoQ1VldUFxUFNvdkpjSVBia04zXzhISGRfN3dXMHZyZklJMVo0U3NqaWpCV3JKeHpVaFNyNmhZeTR1d3BZM1A3S2hhNHAzdGxISk50MllyT0FpWGRIS3FxNFd4NU0?oc=5" target="_blank">Nine years after Hurricane Maria, a new health center opens in Vieques - El Nuevo Día</a>
+                    </td>
+                    <td>Vieques</td>
+                    <td class="time-ago" data-date="2026-09-28 17:56">hace 5min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="CEE certifica a Hiram Torres Montalvo como alcalde electo de Cataño">
@@ -996,7 +1006,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/09/28/cee-certifica-a-hiram-torres-montalvo-como-alcalde-electo-de-catano/" target="_blank">CEE certifica a Hiram Torres Montalvo como alcalde electo de Cataño</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-28 17:39">hace 8min</td>
+                    <td class="time-ago" data-date="2026-09-28 17:39">hace 22min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz del 28 de septiembre al 3 de octubre; 36 municipios en lista">
@@ -1006,7 +1016,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/09/28/se-ira-la-luz-del-28-de-septiembre-al-3-de-octubre-36-municipios-en-lista/" target="_blank">Se irá la luz del 28 de septiembre al 3 de octubre; 36 municipios en lista</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-28 17:16">hace 31min</td>
+                    <td class="time-ago" data-date="2026-09-28 17:16">hace 45min</td>
                 </tr>
                 
                 
@@ -1049,7 +1059,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/no-al-multipisos-cientos-forman-cadena-humana-contra-proyecto-en-el-escambron/?utm_source=rss&utm_medium=rss&utm_campaign=no-al-multipisos-cientos-forman-cadena-humana-contra-proyecto-en-el-escambron&utm_source=rss&utm_medium=rss&utm_campaign=no-al-multipisos-cientos-forman-cadena-humana-contra-proyecto-en-el-escambron" target="_blank">“No al multipisos”: Cientos forman cadena humana contra proyecto en El Escambrón</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-09-28 14:53">hace 2h</td>
+                    <td class="time-ago" data-date="2026-09-28 14:53">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Hiram Torres renunciará al DACO esta semana para asumir alcaldía de Cataño - Telemundo Puerto Rico">
@@ -1059,7 +1069,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxPd2N1QS1WdW5oTmM5UldmMDlXUWJFRG5mTm0xYXhNMGhYaWI3V0tqM283aGxkT3hWbFcwcEFRSnZXNklXNnhSdzFYc2M4LUdxWGdzMEg0Ukd1ZXUzck9nVHJBd1F3R0pVZWVQckNseGtYTDVBc2RURnlCemxnTE94Y25zU1hpQ0VmUzRrTkV0WUJfSWhLSXpDYUFvUGZDOTEtWktRYkJEUW1sWFpVQmxVdVo1NE1aNHRZazZGVThORG9jREhQWTNIOUhpaWJxNGlJbFlv?oc=5" target="_blank">Hiram Torres renunciará al DACO esta semana para asumir alcaldía de Cataño - Telemundo Puerto Rico</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-28 12:01">hace 5h</td>
+                    <td class="time-ago" data-date="2026-09-28 12:01">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Hiram Torres Montalvo gana elección especial y se convierte en alcalde electo de Cataño">
@@ -1082,16 +1092,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-28 11:11">hace 6h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Alivio al calor y a la humedad por presencia de vientos alisios">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://esnoticiapr.com/alivio-al-calor-y-a-la-humedad-por-presencia-de-vientos-alisios/" target="_blank">Alivio al calor y a la humedad por presencia de vientos alisios</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-09-28 10:57">hace 6h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Cataño" data-titular="🗳️ Hiram Torres Montalvo ganó la elección especial para la Alcaldía de Cataño 🏆 Torres Montalvo se impuso por 241 votos sobre Bethzaida Rodríguez Torres, viuda del fallecido alcalde Julio Alicea Vasallo. 📊 Bethzaida obtuvo 1,484 votos. Según la informa - facebook.com">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
@@ -1109,7 +1109,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxQSzdhSmN6X2pnQ2sxa3JOSjFYZFR4dXFlMnNwTWtzaTR1TlgtWmFCUE9ySkFOWl9xZVNTT05HLS1jQ0JWOEJRLWlqRzdmMFdtVDFFYXdzWlpzWWsxSDVVVk9DbzdSV2dFU01ORGdmVURqWkdHRW9DbndxUkdkSS1jeld5NFN5ZjdEZDFoalhrUkkwbkRXWnQ0THRLZGp4dk1OMXlNRGRyRDM5dUY3Z19hS1Q4QWF0dTVmbHExSmFoX0J6NnVDQ0dQVndHNXEwVXBGU18ya21NNTVPSTRocVRRMEFFX0NnRVVEY2dVbVVTaEF1dw?oc=5" target="_blank">Gobernadora celebra victoria de Hiram Torres Montalvo, nuevo alcalde de Cataño - wapa.tv</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-28 07:49">hace 9h</td>
+                    <td class="time-ago" data-date="2026-09-28 07:49">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Luquillo: Donde el sol siempre encuentra la manera de brillar - El Vocero de Puerto Rico">
@@ -1132,11 +1132,11 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-28 03:41">hace 14h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Culebra" data-titular="“Gongo Fishing” ya tiene su sobo con aceite de culebra - Primera Hora">
+                <tr class="article-row" data-municipios="Culebra" data-titular="“Gongo Fishing” ya tiene su sobo con aceite de culebra - primerahora.com">
                     <td><span class="muni-tag">Culebra</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNalNvU2ZVbkZMOHJBeE5ETHFEWndkUXNwMVhLc3ZEd21Jc2VkTW10SXlpZGxlVnNXZm1JeDN5VHZxS3cyRVBTYTkxRG5WQnRYMU9odlpPbFdxWGh2ZVpYbnAxY2ZNRTNPWFJSSVA1Vi1yUzZ6R2pRTm03amlqMXIyY1FyZVQzSnA0R3RCWTBCNXJPdXRFbUtOUHJkQzNadW13NWQ4cFUzeVptZ1ly?oc=5" target="_blank">“Gongo Fishing” ya tiene su sobo con aceite de culebra - Primera Hora</a>
+                        <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNalNvU2ZVbkZMOHJBeE5ETHFEWndkUXNwMVhLc3ZEd21Jc2VkTW10SXlpZGxlVnNXZm1JeDN5VHZxS3cyRVBTYTkxRG5WQnRYMU9odlpPbFdxWGh2ZVpYbnAxY2ZNRTNPWFJSSVA1Vi1yUzZ6R2pRTm03amlqMXIyY1FyZVQzSnA0R3RCWTBCNXJPdXRFbUtOUHJkQzNadW13NWQ4cFUzeVptZ1ly?oc=5" target="_blank">“Gongo Fishing” ya tiene su sobo con aceite de culebra - primerahora.com</a>
                     </td>
                     <td>Culebra</td>
                     <td class="time-ago" data-date="2026-09-28 02:40">hace 15h</td>
@@ -1152,7 +1152,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxORGFONFZIN09qdXJHU0FNaTlqc2pubmx6TDF6Y1RqSTJETlhmWGd5WVFWeFhYUWd3c0g4Ui03TnExVDdHcUdBeklmU2hKanlXTlg2d25ES25oWENJZHZkRWRTY1JuMUJBOVd3UE1oTU55bXhyUC1hcWdSYWlrbTNGSTRXWWQxcXV6SUtzbHdvaF9SUFVjOGRjODBuRUtuQWlDQW0yZHRkcEY4R1BQQkV3QTJaeG83RTFJU3g1bWhZT3hNN0JqZ3BV?oc=5" target="_blank">Comisión Estatal de Elecciones de Puerto Rico. . Elección Especial 2026 Municipio de Cataño -Resultados - facebook.com</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-09-27 21:00">hace 20h</td>
+                    <td class="time-ago" data-date="2026-09-27 21:00">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba" data-titular="Así estuvo la lluvia en Ceiba a eso de las 2:36 p.m. Pobre visibilidad para guiar. Desde la PR-53 📷Luis E. Cruz - facebook.com">
@@ -1185,14 +1185,14 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-27 19:02">hace 22h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Cataño" data-titular="Fotos: Así transcurrió la elección del nuevo alcalde de Cataño - Primera Hora">
+                <tr class="article-row" data-municipios="Cataño" data-titular="Hiram Torres Montalvo es el nuevo alcalde de Cataño - El Nuevo Día">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYXJtaHMtNmRtSFZTMFl6cGZWSjgzTVh6c0FUUnZRWTFHTWFpWUFibWRnemY4RVlLOUFZMTJ4RmNXZmNpeDYxVUEyMHJOZUpockw5T0FTZFd3a1E1OS1wcUs5T2xBSFRGT3dNNzhRRDdjbGZrMFpqN0dORjJ5WDFTR3BLVkJzNHl0bndwcHg1d2xFcWdoOGxrNmZOd1hIdVVOUHQ5ZmhLX2M1N054MFo0REJxYlhnSlU1TFNHOXpnSzBhems?oc=5" target="_blank">Fotos: Así transcurrió la elección del nuevo alcalde de Cataño - Primera Hora</a>
+                        <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPSDNKdDZwMlc0V05icWMwNi1NMHlOX1htWmdTcmlGczQ2QXhUMjUyZ085dUl1UkVQWUNJV3hsXy1oVHlPSFZsSktVaEZ3S3M5US1MaDd6dEdZcjRnSGdMbGxUSGtOUFNzRDI1VVVZdEdFX0E3cGJIeGFFMy1ieWRvY1FVM2tRTnZuVTEwc0FCcGF5cmo0VEZSN0JXNzhUVFFDM1hHMDNjTi0yNDBZczN1QVJaelNncFk?oc=5" target="_blank">Hiram Torres Montalvo es el nuevo alcalde de Cataño - El Nuevo Día</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-27 17:57">hace 23h</td>
+                    <td class="time-ago" data-date="2026-09-27 17:23">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Hiram Torres Montalvo gana la elección especial de Cataño, informa el PNP - Telemundo Puerto Rico">
@@ -1264,7 +1264,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <span class="source-badge ok">🟢 El Nuevo Día: OK</span>
         
-        <span class="source-badge err">🔴 NotiCel: Error</span>
+        <span class="source-badge ok">🟢 NotiCel: OK</span>
         
         <span class="source-badge ok">🟢 Radio Isla: OK</span>
         
@@ -1398,7 +1398,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-28 05:47:37 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-28 06:01:15 PM<br>
     Actualización automática cada 30 min
 </div>
 
