@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-29 03:46:21 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-29 04:02:19 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">34</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">33</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-29 03:46:21 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-29 04:02:19 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -861,9 +861,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
+        <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <span class="muni-name">Canóvanas</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
@@ -888,12 +888,12 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <span class="muni-name">Naguabo</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <span class="muni-name">Humacao</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">5</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
@@ -908,7 +908,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <span class="muni-name">Culebra</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
     </div>
@@ -937,6 +937,26 @@ tr.article-row:hover { background: var(--surface2); }
             <tbody id="articlesBody">
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="UPR lanza plataforma con 253 ofrecimientos técnicos y profesionales">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/09/29/upr-lanza-plataforma-con-253-ofrecimientos-tecnicos-y-profesionales/" target="_blank">UPR lanza plataforma con 253 ofrecimientos técnicos y profesionales</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-09-29 19:56">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Allanamiento en Las Piedras deja ocupación de drogas, dinero en efectivo y un arma de fuego">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/09/29/allanamiento-en-las-piedras-deja-ocupacion-de-drogas-dinero-en-efectivo-y-un-arma-de-fuego/" target="_blank">Allanamiento en Las Piedras deja ocupación de drogas, dinero en efectivo y un arma de fuego</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-09-29 19:43">ahora</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Las Criollas se adueñan temprano de la cima del BSNF">
                     <td><span class="muni-tag">Caguas</span></td>
@@ -1008,21 +1028,11 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-29 17:25">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Siete plataformas puertorriqueñas se unen en la alianza El Junte por la Corona para cubrir Miss Universe 2026">
-                    <td><span class="muni-tag">San Juan</span></td>
+                <tr class="article-row" data-municipios="Canóvanas,Loíza" data-titular="Loíza y Canóvanas pudieran enfrentar nuevo racionamiento">
+                    <td><span class="muni-tag">Canóvanas, Loíza</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/09/29/siete-plataformas-puertorriquenas-se-unen-en-la-alianza-el-junte-por-la-corona-para-cubrir-miss-universe-2026/" target="_blank">Siete plataformas puertorriqueñas se unen en la alianza El Junte por la Corona para cubrir Miss Universe 2026</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-29 17:21">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Loíza pudiera enfrentar nuevo racionamiento">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://radioisla.tv/loiza-pudiera-enfrentar-nuevo-racionamiento1/?utm_source=rss&utm_medium=rss&utm_campaign=loiza-pudiera-enfrentar-nuevo-racionamiento1&utm_source=rss&utm_medium=rss&utm_campaign=loiza-pudiera-enfrentar-nuevo-racionamiento1" target="_blank">Loíza pudiera enfrentar nuevo racionamiento</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://radioisla.tv/loiza-pudiera-enfrentar-nuevo-racionamiento1/?utm_source=rss&utm_medium=rss&utm_campaign=loiza-pudiera-enfrentar-nuevo-racionamiento1&utm_source=rss&utm_medium=rss&utm_campaign=loiza-pudiera-enfrentar-nuevo-racionamiento1" target="_blank">Loíza y Canóvanas pudieran enfrentar nuevo racionamiento</a>
                     </td>
                     <td>Radio Isla</td>
                     <td class="time-ago" data-date="2026-09-29 17:09">ahora</td>
@@ -1055,7 +1065,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/en-imagenes-asi-transcurre-la-eleccion-especial-para-la-alcaldia-de-catano/" target="_blank">En imágenes: así transcurre la elección especial para la alcaldía de Cataño</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-29 15:46">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-09-29 16:02">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Hiram Torres Montalvo se defiende: “La ayuda que recibí es de la gente de Cataño”">
@@ -1065,7 +1075,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/politica/videos/hiram-torres-montalvo-se-defiende-la-ayuda-que-recibi-es-de-la-gente-de-catano-294402/?utm_source=elnuevodia.com&utm_medium=widget&utm_campaign=las_mas_vistas" target="_blank">Hiram Torres Montalvo se defiende: “La ayuda que recibí es de la gente de Cataño”</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-29 15:46">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-09-29 16:02">ahora mismo</td>
                 </tr>
                 
                 
@@ -1079,16 +1089,6 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Walo Radio</td>
                     <td class="time-ago" data-date="2026-09-29 14:40">hace 1h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Culebra" data-titular="Alexis Almodovar. misswilsonsays · sailor song. Culebra,Puerto Rico 🇵🇷😍 . . . #puertorico #culebra #piscina #paraiso #roadtrip - facebook.com">
-                    <td><span class="muni-tag">Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxOSXpEcnJEbG9LU09vQkpWcjZsYXNqVEFmajJ3eG00a29GS3pzS20ycjltWFo5N1AyaTJoNmxuY0w5SmVtU2tpdkFUbjE5c1Q3eXh5a1pOajBMeTVqa21iWmpuTm1ldldQTDdDUThHWGs3RndQX1p0OUpNbUlmbEcxYnpRd1ZEX2xsU04tUU5qWWNuR0VoM1pNMmpPQ2U4RTUyU3QtTzU2RG53cTFMbWJiMGJpcU4wTU5MMVllU3ZUQmRnaUdQLUJB?oc=5" target="_blank">Alexis Almodovar. misswilsonsays · sailor song. Culebra,Puerto Rico 🇵🇷😍 . . . #puertorico #culebra #piscina #paraiso #roadtrip - facebook.com</a>
-                    </td>
-                    <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-09-29 14:28">hace 1h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Arrestan a pareja durante allanamiento en Las Piedras">
@@ -1148,7 +1148,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxNZi10RVR5Uk1mRW5nUE5PMzR5NHN2SXRYcjctZ0ZpZXIxTWhJb0J5a0QzOWg4Xzd6anEzNnUzdXhqREFwNzQ2c0pDS19VcmNjdzZlYllHX1hwTUw5ZDRJTjVQQVdSTGxrbXJuZ0I5TDlXVElOYnJzWmlmN3lPcU9wR29SUzFQMkRYMlQwRTVkVzg3R3k4LUszTTF0TXFaN3o0X3RDdGpNUldUMWhidG5zeHB2MmpJQ21kWG93QzJ3MkZKNzVtLXJoZEEwY05ad05mOE5qdnJqQWhIcElQVDdPTVdsNWI?oc=5" target="_blank">Última Palabra PR. . Una nueva etapa comienza en Cataño. Hiram Torres Montalvo conversa con Alexandra Lúgaro sobre los retos que hereda, sus planes para una gestión transparente y cómo espera fortalecer la confianza de los residentes en el municipio - facebook.com</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-09-29 01:02">hace 14h</td>
+                    <td class="time-ago" data-date="2026-09-29 01:02">hace 15h</td>
                 </tr>
                 
                 
@@ -1164,16 +1164,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-28 22:38">hace 17h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Senador Colón La Santa responde a emplazamiento de alcaldesa de Naguabo sobre el bacheo en Brazo Seco">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/09/28/senador-colon-la-santa-responde-a-emplazamiento-de-alcaldesa-de-naguabo-sobre-el-bacheo-en-brazo-seco/" target="_blank">Senador Colón La Santa responde a emplazamiento de alcaldesa de Naguabo sobre el bacheo en Brazo Seco</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-28 20:37">hace 19h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Cataño" data-titular="Detienen a joven tras intentar entrar a escuela en Cataño - Metro Puerto Rico">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
@@ -1181,7 +1171,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxNcVpaaUVlenNaMGVnVkhFQWx5bjRHczdmcUJ0UFZlNmpIcG5hdkEtRWhlUm5OdE1kV3ZGOEpSNERqTE5fcS15bHFDZldDVnpBbU9FSF9UbWROYW5ZSWFfOWdsbWwtT29aVjlNS0tJcDB5eW5zbFNwYW9Qb0VTdDZPTEdRZS1MenAzUzZuRDVQSkxNOGVma3ZnNHhQX2E3dDRX?oc=5" target="_blank">Detienen a joven tras intentar entrar a escuela en Cataño - Metro Puerto Rico</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-28 19:51">hace 19h</td>
+                    <td class="time-ago" data-date="2026-09-28 19:51">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Nine years after Hurricane Maria, a new health center opens in Vieques - elnuevodia.com">
@@ -1191,7 +1181,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPOTZXYXBKSV9YVldtdjBnRHNRb2EyUE5jUGtTZ3R1aFV2R3ptRTVHMC1MNlZKZ1ZrZ0x2eEU2M2RfNk16a0dNeWJNc2tmRHhkbERHZ0M5NndqeHRoQ1VldUFxUFNvdkpjSVBia04zXzhISGRfN3dXMHZyZklJMVo0U3NqaWpCV3JKeHpVaFNyNmhZeTR1d3BZM1A3S2hhNHAzdGxISk50MllyT0FpWGRIS3FxNFd4NU0?oc=5" target="_blank">Nine years after Hurricane Maria, a new health center opens in Vieques - elnuevodia.com</a>
                     </td>
                     <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-09-28 17:56">hace 21h</td>
+                    <td class="time-ago" data-date="2026-09-28 17:56">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="CEE certifica a Hiram Torres Montalvo como alcalde electo de Cataño - Telemundo Puerto Rico">
@@ -1201,7 +1191,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxOSFdhVVBhSFdRdWw5UzZoanJuYVlKOXVNSy1EVFNtdjRVUzJyUXZSVm1hYW9vUmFhbmJoc2hhb1ZyUDh3bWctN3duS3JyOVlSZU5Udkxud3B0Y0dJelJUalFOZUUySzZjcUlpc1BlYW1YbV9EdWJaNXNrb2VxVzJqcHRtenM0M282WjJDZFF5NVNZbEpvOVY2d2Zyc3RLZGtZTkI5ZEthSHVybnp6bVJUTllWLU1kc2xIeHVEVVUyWkYyNkkwcEZTTHN30gHSAUFVX3lxTE0tdGpUWDlzT3BOaXN0R1gwdUZoV3U3S3d3VTVnaFZmZXlSR2tybUpRZkh3czBVdHcxckpxMWkwTS1lbnV3anQ4cnllRU9ZZUIxdzI2NE42MENFYVhjZ2dGbXZGYlNlQ0lEdHRaMURHbU40WFhBeFIxWk5hN1RlWVpCUWM5b0lzQkc1RUtzOUtTMWVYblRQN00zTmdGb3dwZV9heHhjRExrejhNUC0yNXFjTC11d1lidnF1YVNOejc5bFlmRUt1QXNmRm15Mkx1UkUwQQ?oc=5" target="_blank">CEE certifica a Hiram Torres Montalvo como alcalde electo de Cataño - Telemundo Puerto Rico</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-09-28 16:54">hace 22h</td>
+                    <td class="time-ago" data-date="2026-09-28 16:54">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Vibes improvisation at Four Points by Sheraton | Caguas, Puerto Rico Latin jazz groove!!! #tambortiz #globalmusicvibes #technology - facebook.com">
@@ -1211,7 +1201,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxNb0FsVklaRVFxdkJNcGpOMlNfTnc4aXcxNnFPTWcxOU5maDhCWHBoQUY3Tl9mOVpzTmV4NTFfd2s1dzZqWldsRThrVWpMTXptZE1kaS1iRmdXY2dzb19pU2o5eVlfSkhZdHBpZi1Kb0xhNVpjQWxadkxxX3UwamxZYkxOOFdRdGJNQ1hmN0ZVeXkwb3FRM3BvMDFfeGMtTTFsSTJKUlgzSEI0NkVjQjUyNkVRTDV6bDFDbHRKQUdiSy1Ddy05aDlPS2VCUkMydWYxWnZHLQ?oc=5" target="_blank">Vibes improvisation at Four Points by Sheraton | Caguas, Puerto Rico Latin jazz groove!!! #tambortiz #globalmusicvibes #technology - facebook.com</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-09-28 15:48">hace 23h</td>
+                    <td class="time-ago" data-date="2026-09-28 15:48">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Detienen a uno de dos individuos que intentaban entrar a una escuela en Cataño - Telemundo Puerto Rico">
@@ -1437,7 +1427,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-29 03:46:21 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-29 04:02:19 PM<br>
     Actualización automática cada 30 min
 </div>
 
