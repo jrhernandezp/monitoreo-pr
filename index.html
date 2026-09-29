@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-29 07:16:15 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-29 07:31:15 AM</span></div>
         </div>
     </div>
     <div class="stats">
         <div class="stat-box"><div class="num">30</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-29 07:16:15 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-29 07:31:15 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -824,7 +824,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">6</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
@@ -852,9 +852,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
+        <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <span class="muni-name">Loíza</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
@@ -884,7 +884,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <span class="muni-name">Vieques</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
@@ -918,6 +918,26 @@ tr.article-row:hover { background: var(--surface2); }
             <tbody id="articlesBody">
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Buscan a adolescente de 14 años desaparecida en Carolina">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/buscan-a-adolescente-de-14-anos-desaparecida-en-carolina/" target="_blank">Buscan a adolescente de 14 años desaparecida en Carolina</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-09-29 11:15">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan,Carolina,Loíza" data-titular="AAA aplicará crédito de 50% en la factura a más de 37,000 clientes en San Juan, Carolina y Loíza">
+                    <td><span class="muni-tag">San Juan, Carolina, Loíza</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.notiuno.com/noticias/gobierno-y-politica/aaa-aplicar-cr-dito-de-50-en-la-factura-a-m-s-de-37-000/article_0fa67208-2e91-4678-ada7-7dde54319cd0.html" target="_blank">AAA aplicará crédito de 50% en la factura a más de 37,000 clientes en San Juan, Carolina y Loíza</a>
+                    </td>
+                    <td>NotiUno</td>
+                    <td class="time-ago" data-date="2026-09-29 11:15">ahora</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Prendas y dinero en efectivo: reportan $57,300 en pérdidas tras robo domiciliario en San Juan">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -956,7 +976,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/fotogalerias/en-imagenes-asi-transcurre-la-eleccion-especial-para-la-alcaldia-de-catano/" target="_blank">En imágenes: así transcurre la elección especial para la alcaldía de Cataño</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-29 07:16">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-09-29 07:31">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Hiram Torres Montalvo se defiende: “La ayuda que recibí es de la gente de Cataño”">
@@ -966,7 +986,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/politica/videos/hiram-torres-montalvo-se-defiende-la-ayuda-que-recibi-es-de-la-gente-de-catano-294402/?utm_source=elnuevodia.com&utm_medium=widget&utm_campaign=las_mas_vistas" target="_blank">Hiram Torres Montalvo se defiende: “La ayuda que recibí es de la gente de Cataño”</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-09-29 07:16">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-09-29 07:31">ahora mismo</td>
                 </tr>
                 
                 
@@ -979,7 +999,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/09/29/se-ira-la-luz-en-14-municipios-los-cortes-seran-hasta-de-12-horas/" target="_blank">Se irá la luz en 14 municipios; los cortes serán hasta de 12 horas</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-09-29 04:20">hace 2h</td>
+                    <td class="time-ago" data-date="2026-09-29 04:20">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Última Palabra PR. . Una nueva etapa comienza en Cataño. Hiram Torres Montalvo conversa con Alexandra Lúgaro sobre los retos que hereda, sus planes para una gestión transparente y cómo espera fortalecer la confianza de los residentes en el municipio - facebook.com">
@@ -1025,16 +1045,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-28 20:37">hace 10h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Demanda de la AEE busca abrir el acceso al terminal de gas licuado que opera NFEnergía">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/ultima-hora/20260928/demanda-de-la-aee-busca-abrir-el-acceso-al-terminal-de-gas-licuado-que-opera-nfenergia/?utm_source=rss&utm_medium=rss&utm_campaign=demanda-de-la-aee-busca-abrir-el-acceso-al-terminal-de-gas-licuado-que-opera-nfenergia" target="_blank">Demanda de la AEE busca abrir el acceso al terminal de gas licuado que opera NFEnergía</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-09-28 20:14">hace 11h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Cataño" data-titular="Detienen a joven tras intentar entrar a escuela en Cataño - Metro Puerto Rico">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
@@ -1052,7 +1062,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/28/alcaldesa-de-naguabo-asegura-que-continua-investigacion-sobre-policia-municipal-tras-incidente-en-la-fe/" target="_blank">Alcaldesa de Naguabo asegura que continúa investigación sobre policía municipal tras incidente en La Fe</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-28 19:30">hace 11h</td>
+                    <td class="time-ago" data-date="2026-09-28 19:30">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Alcaldesa de Humacao propone designar plazoleta frente a casa alcaldía con el nombre de Germán Peña Plaza">
@@ -1152,17 +1162,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/hiram-torres-montalvo-gana-eleccion-especial-y-se-convierte-en-alcalde-electo-de-catano/?utm_source=rss&utm_medium=rss&utm_campaign=hiram-torres-montalvo-gana-eleccion-especial-y-se-convierte-en-alcalde-electo-de-catano&utm_source=rss&utm_medium=rss&utm_campaign=hiram-torres-montalvo-gana-eleccion-especial-y-se-convierte-en-alcalde-electo-de-catano" target="_blank">Hiram Torres Montalvo gana elección especial y se convierte en alcalde electo de Cataño</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-09-28 11:30">hace 19h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="Vieques estrena nuevo hospital tras nueve años sin servicios hospitalarios">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://radioisla.tv/486576-2/?utm_source=rss&utm_medium=rss&utm_campaign=486576-2&utm_source=rss&utm_medium=rss&utm_campaign=486576-2" target="_blank">Vieques estrena nuevo hospital tras nueve años sin servicios hospitalarios</a>
-                    </td>
-                    <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-09-28 11:11">hace 20h</td>
+                    <td class="time-ago" data-date="2026-09-28 11:30">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Luquillo: Donde el sol siempre encuentra la manera de brillar - El Vocero de Puerto Rico">
@@ -1378,7 +1378,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-29 07:16:15 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-09-29 07:31:15 AM<br>
     Actualización automática cada 30 min
 </div>
 
