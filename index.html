@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-01 04:16:17 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-01 04:31:13 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">28</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">14</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">25</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-01 04:16:17 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-01 04:31:13 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -852,19 +852,19 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">2</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Loíza')">
+        <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
             <span class="muni-name">Loíza</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
             <span class="muni-name">Río Grande</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Ceiba')">
+        <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
             <span class="muni-name">Ceiba</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
@@ -932,7 +932,7 @@ tr.article-row:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="San Juan" data-titular="Romero quiere que la AAA amplíe el crédito y explique por qué ciertas comunidades quedaron fuera">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://noticel.com/ultima-hora/20261001/romero-quiere-que-la-aaa-amplie-el-credito-y-explique-por-que-ciertas-comunidades-quedaron-fuera/?utm_source=rss&utm_medium=rss&utm_campaign=romero-quiere-que-la-aaa-amplie-el-credito-y-explique-por-que-ciertas-comunidades-quedaron-fuera" target="_blank">Romero quiere que la AAA amplíe el crédito y explique por qué ciertas comunidades quedaron fuera</a>
                     </td>
                     <td>NotiCel</td>
@@ -979,16 +979,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-01 18:47">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Ceiba" data-titular="Ceiba consigue su tercera victoria de la temporada en la Coliceba">
-                    <td><span class="muni-tag">Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/deportes/20261001/ceiba-consigue-su-tercera-victoria-de-la-temporada-en-la-coliceba/?utm_source=rss&utm_medium=rss&utm_campaign=ceiba-consigue-su-tercera-victoria-de-la-temporada-en-la-coliceba" target="_blank">Ceiba consigue su tercera victoria de la temporada en la Coliceba</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-10-01 17:50">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Carolina" data-titular="Arrestan en Reino Unido sospechoso de hackeo a una empresa en Carolina - Primera Hora">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
@@ -997,6 +987,16 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Primera Hora</td>
                     <td class="time-ago" data-date="2026-10-01 16:44">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="ATI flexibiliza reservaciones de vehículos para viajes a Vieques y Culebra - El Vocero de Puerto Rico">
+                    <td><span class="muni-tag">Vieques, Culebra</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxONkRyeUFaVldzLVBXQ3pLRTRobGlTbFM2VTdZZC13RkRZNFlLbEtaNVdLbEpyNEgzbTRUT0dXbU5ObmFIUWJuWmFoU1FwLUhyNWZuMndVYS12UlhyckFyNHhWLVhnM0pObTJoSHhWN2w0QXNwdDhRQ2kxSmpWWjNHTGY2ZXUyZDhmQnNsc0QzdjIxaG5tY0gyM2xjTFhlVHBWUWZ6RXNuc3FtUnpNYVM1Wk5JX1g4dW03TV8teldSYlVfSEdkT3NCb2ZZaU92NFJTazlfRWQ1T3lxbW0tVlZxWGxwMlZqQU5NdVVMREpuY3IxaXRf0gH0AUFVX3lxTE42RHJ5QVpWV3MtUFdDektFNGhsaVNsUzZVN1lkLXdGRFk0WUtsS1o1V0tsSnI0SDNtNFRPR1dtTk5uYUhRYm5aYWhTUXAtSHI1Zm4yd1VhLXZSWHJyQXI0eFYtWGczSk5tMmhIeFY3bDRBc3B0OFFDaTFKalZaM0dMZjZldTJkOGZCc2xzRDN2MjFobm1jSDIzbGNMWGVUcFZRZnpFc25zcW1Sek1hUzVaTklfWDh1bTdNXy16V1JiVV9IR2RPc0JvZllpT3Y0UlNrOV9FZDVPeXFtbS1WVnFYbHAyVmpBTk11VUxESm5jcjFpdF8?oc=5" target="_blank">ATI flexibiliza reservaciones de vehículos para viajes a Vieques y Culebra - El Vocero de Puerto Rico</a>
+                    </td>
+                    <td>Vieques</td>
+                    <td class="time-ago" data-date="2026-10-01 16:40">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Se llevan dos relojes de lujo durante robo en Trujillo Alto - Telemundo Puerto Rico">
@@ -1019,16 +1019,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-01 16:32">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="ATI flexibiliza reservaciones de vehículos para viajes a Vieques y Culebra - El Vocero de Puerto Rico">
-                    <td><span class="muni-tag">Vieques, Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxQNzRWX1V6SjN6QUItUFU0ZVJIME9WTzJzSUVzY0xvb2xka1hEdVQ0WjdfMnBKMHJrYUF4dGJqMWtnVW8ydU9mN1JJZ185OFVmME92N0JIRGVJdTRuSjk4MkNuQjJDRmVyekZZNE1UWlB0UVNNSFRocGM5dmJKRUM0ckFXXzlQTFdXODhGdzFDd01RbHZJUHJMVkVuVmR3MlpQQUJzOXhTdHl1WEtSTU1HbWUyT0hzZVlHRC1MY2l1d29fSG5aQ0hDNHdIbkYwb0NxUnJDdG1Bd1M3R0h5LUNQSWhOREszaWZVMGR5OWFINNIB9AFBVV95cUxONkRyeUFaVldzLVBXQ3pLRTRobGlTbFM2VTdZZC13RkRZNFlLbEtaNVdLbEpyNEgzbTRUT0dXbU5ObmFIUWJuWmFoU1FwLUhyNWZuMndVYS12UlhyckFyNHhWLVhnM0pObTJoSHhWN2w0QXNwdDhRQ2kxSmpWWjNHTGY2ZXUyZDhmQnNsc0QzdjIxaG5tY0gyM2xjTFhlVHBWUWZ6RXNuc3FtUnpNYVM1Wk5JX1g4dW03TV8teldSYlVfSEdkT3NCb2ZZaU92NFJTazlfRWQ1T3lxbW0tVlZxWGxwMlZqQU5NdVVMREpuY3IxaXRf?oc=5" target="_blank">ATI flexibiliza reservaciones de vehículos para viajes a Vieques y Culebra - El Vocero de Puerto Rico</a>
-                    </td>
-                    <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-10-01 16:26">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="San Juan" data-titular="Sigue bajando la sequía en Puerto Rico">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
@@ -1036,7 +1026,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/01/sigue-bajando-la-sequia-en-puerto-rico/" target="_blank">Sigue bajando la sequía en Puerto Rico</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-01 16:20">ahora</td>
+                    <td class="time-ago" data-date="2026-10-01 16:20">hace 11min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="FBI y Fiscalía federal atentos a señalamientos sobre fondos federales en ADSEF">
@@ -1046,7 +1036,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/01/fbi-y-fiscalia-federal-atentos-a-senalamientos-sobre-fondos-federales-en-adsef/" target="_blank">FBI y Fiscalía federal atentos a señalamientos sobre fondos federales en ADSEF</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-01 16:17">ahora</td>
+                    <td class="time-ago" data-date="2026-10-01 16:17">hace 14min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="‼️CD Realty en #Fajardo‼️ - facebook.com">
@@ -1056,8 +1046,11 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPQWRwQXM5bVJlc3JhUjZSbzZWbmpieENaTmM4b2JDQVl0aXJjSU1hVHFVYXlkbFNYYmVXc2ExSUNxR21xZFZwTUlsRFowR1dJem9hMTBQSDBGdGw3X3UwZ2FyZC05ZjViUHBSbVVkMHpfS2t2RWVfS1g4WVFJTlQ1QnhhclZpcnNFeHYzSjgwOGVEMEFKTVNuaTlRMExjLUtGS3JncVJ3?oc=5" target="_blank">‼️CD Realty en #Fajardo‼️ - facebook.com</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-10-01 16:05">hace 11min</td>
+                    <td class="time-ago" data-date="2026-10-01 16:05">hace 26min</td>
                 </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Tribunal federal ordena regreso a Puerto Rico de inmigrante mexicano trasladado por ICE">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -1066,11 +1059,8 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/01/tribunal-federal-ordena-regreso-a-puerto-rico-de-inmigrante-mexicano-trasladado-por-ice/" target="_blank">Tribunal federal ordena regreso a Puerto Rico de inmigrante mexicano trasladado por ICE</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-01 15:18">hace 58min</td>
+                    <td class="time-ago" data-date="2026-10-01 15:18">hace 1h</td>
                 </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Identifican mejoras notables en las condiciones de sequía para Puerto Rico">
                     <td><span class="muni-tag">Vieques</span></td>
@@ -1090,16 +1080,6 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Walo Radio</td>
                     <td class="time-ago" data-date="2026-10-01 11:43">hace 4h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Río Grande" data-titular="Expolicía municipal de Río Grande imputado por actos lascivos contra mujer - wapa.tv">
-                    <td><span class="muni-tag">Río Grande</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxNemZ2MURPOVdWUm0wVDhNYUlxbklLXzRjaDROYnlQS3dFRnJNRjRVeVFyZU9VMmNPLWRPX2hLVWROQ2RwZWJNaTBVNUVTM1RDemV6cllSaE5YTG44WHBVQzBWVFZqOHo0Y1pqWThpaW85ZVA1ZHR0RkRrbE5HS0VUd3ExRlRPVkM1VGNjSlhqTVJOdDNycVNpbGRYX2ZBR0NaMVdzZXNvTlFNVHdjYncweGp4dExpT3pnemFvakF0dTlmakloRDZTMjNNMTFCMmNOZU50XzJMYXV5Sm9Nend6NWM3alB2N2V4Tkw3YmF3?oc=5" target="_blank">Expolicía municipal de Río Grande imputado por actos lascivos contra mujer - wapa.tv</a>
-                    </td>
-                    <td>Río Grande</td>
-                    <td class="time-ago" data-date="2026-10-01 11:22">hace 4h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="Acusan a ex policía municipal de Río Grande por presuntos actos lascivos - Primera Hora">
@@ -1152,17 +1132,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxQNDNob3paRXA1SlRYRHpydnpJMkFQaVNUQVlfRzJTRERGMXFxYzRVdDdoQUJkUXZ6c3EwNWZlN1laem0wODRFek00Yy1LekM3R2lZNFU1b3Y0UHJXbzJ4eXVldGlORW9aSGFadWh2NXhha1Jkc0FIaXpnSUpvUHloVUxpWkhSNW0zdTNWZmM1N3Jwc3NyX21XbWdCaDVWbVhZUXN4dGl2N0E0N3R3Vms5M3JJVmZqTFU5c1IwbFBDamdDenh2ajN4NGhaSV8yVklpOXdlZ0l2SjRJTnJLdWZCS0VOSWo2VTRtb2owWnB4TQ?oc=5" target="_blank">Causa para arresto contra siete adultos por, supuestamente, maltratar a un menor de cinco años en Canóvanas - El Nuevo Día</a>
                     </td>
                     <td>Canóvanas</td>
-                    <td class="time-ago" data-date="2026-09-30 18:17">hace 21h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza - facebook.com">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTFA4dnZQQ09JeDFDd3JjbE94OEhhdmpyZnAyWlp1c1QxUUtWeEpYSWg4ck5NdDB1WGJ0bHdqYk4xOHdmLWlCXzFKeXdfb0N0elhlVnBucTJJc01acm1BT1dpLVRLcGNlNktGRFk3M3RON1BrZmpsN2hV?oc=5" target="_blank">Municipio de Loíza - facebook.com</a>
-                    </td>
-                    <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-09-30 15:24">hace 1d</td>
+                    <td class="time-ago" data-date="2026-09-30 18:17">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="PROGRAMA DEPORTIVO MUNICIPAL El Municipio Autónomo de Fajardo y su Alcalde Hon. José Aníbal “Joey” Meléndez Méndez continúan fortaleciendo su compromiso con el desarrollo deportivo de nuestra niñez y juventud, ofreciendo diversas alternativa - facebook.com">
@@ -1358,7 +1328,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-01 04:16:17 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-01 04:31:13 PM<br>
     Actualización automática cada 30 min
 </div>
 
