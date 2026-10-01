@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-09-30 11:46:08 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-01 12:01:11 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">27</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">13</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">17</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">8</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-09-30 11:46:08 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-01 12:01:11 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -819,17 +819,17 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">6</span>
+            <span class="muni-count">5</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">5</span>
+            <span class="muni-count">2</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
+        <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
             <span class="muni-name">Trujillo Alto</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
@@ -837,14 +837,14 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">3</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Luquillo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
             <span class="muni-name">Luquillo</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
+        <div class="muni-card inactive" onclick="filtrarPor('Canóvanas')">
             <span class="muni-name">Canóvanas</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
@@ -852,24 +852,24 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Loíza')">
+        <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
             <span class="muni-name">Loíza</span>
-            <span class="muni-count">2</span>
-        </div>
-        
-        <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
-            <span class="muni-name">Río Grande</span>
             <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Ceiba')">
-            <span class="muni-name">Ceiba</span>
+        <div class="muni-card active" onclick="filtrarPor('Río Grande')">
+            <span class="muni-name">Río Grande</span>
             <span class="muni-count">1</span>
+        </div>
+        
+        <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
+            <span class="muni-name">Ceiba</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <span class="muni-name">Naguabo</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
@@ -877,9 +877,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">3</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Cataño')">
+        <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
             <span class="muni-name">Cataño</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
@@ -917,7 +917,40 @@ tr.article-row:hover { background: var(--surface2); }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
                 
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
+                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Río Grande" data-titular="Acusan a ex policía municipal de Río Grande por presuntos actos lascivos - Primera Hora">
+                    <td><span class="muni-tag">Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUEd3b2hiN0ZQOXpyZFJMUDJWVXAteXZIMVJtbFJBemFNX1VuQTJEMGg3S2lHd0xOQ3lRWDhUcWtDWTRxdkpscDMxLUFpVEROalBEV2xjV1Z3TEU2NHlMODFCRDNIV1dJRGtONjJ6N0NtQWgyWERZVHNXRExsUXZyYXVIVTF3cXk1cDg0Uk1GLWROeFpkcjQzM1p5M0xUZkRwaEJGWmlZeDZnOXYyZXVqOUNxNXJRaENYM1FwcnRpeVduTlhzU1BJUy1yQmEzQzY2?oc=5" target="_blank">Acusan a ex policía municipal de Río Grande por presuntos actos lascivos - Primera Hora</a>
+                    </td>
+                    <td>Río Grande</td>
+                    <td class="time-ago" data-date="2026-10-01 02:47">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Culebra" data-titular="Momento especial 🙌 🐢 📍Playa Tamarindo, Culebra 🇵🇷 📸: @douglashodgkins • #TuristeandoenPuertoRico #puertorico #culebrapr - facebook.com">
+                    <td><span class="muni-tag">Culebra</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNbFdBWlJZSjZteEZpRVM2X252Mkc3RVFDQjZkX042Sm1sakZQM0FuR3ZTYTdHZXZJaHduTE9IVmdHV0QxVHpxUG1ocTl5U05zVnpIcnptVENnbXRWY1E2UUU0RkNMbFM1VTlpQ3g0RnlqVmlwVnV3ek4zWDQ1QkFTTmNLU1MwSkdZNFVmRmh3bTlCYUoyTlVnU3NkMXc5OVlVbXhTbGItUDUzOHQxckoxS3pYblB0QTdSa0FiMGYwLXF6THRxcG9DNmZ5dlNUQmx5RS1wWGdSMnlVVUJ3VUE?oc=5" target="_blank">Momento especial 🙌 🐢 📍Playa Tamarindo, Culebra 🇵🇷 📸: @douglashodgkins • #TuristeandoenPuertoRico #puertorico #culebrapr - facebook.com</a>
+                    </td>
+                    <td>FB - Culebra</td>
+                    <td class="time-ago" data-date="2026-10-01 01:52">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Postemporada del Béisbol Clase A comienza el domingo con 50 equipos clasificados">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/09/30/postemporada-del-beisbol-clase-a-comienza-el-domingo-con-50-equipos-clasificados/" target="_blank">Postemporada del Béisbol Clase A comienza el domingo con 50 equipos clasificados</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-10-01 00:22">ahora</td>
+                </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Factura de luz subirá más de $40 dólares desde mañana">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -989,16 +1022,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-30 16:18">hace 7h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza - facebook.com">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTFA4dnZQQ09JeDFDd3JjbE94OEhhdmpyZnAyWlp1c1QxUUtWeEpYSWg4ck5NdDB1WGJ0bHdqYk4xOHdmLWlCXzFKeXdfb0N0elhlVnBucTJJc01acm1BT1dpLVRLcGNlNktGRFk3M3RON1BrZmpsN2hV?oc=5" target="_blank">Municipio de Loíza - facebook.com</a>
-                    </td>
-                    <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-09-30 15:24">hace 8h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Humacao" data-titular="Empresa puertorriqueña fabrica en Humacao baterías de litio para respaldo energético">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
@@ -1006,7 +1029,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/30/empresa-puertorriquena-fabrica-en-humacao-baterias-de-litio-para-respaldo-energetico/" target="_blank">Empresa puertorriqueña fabrica en Humacao baterías de litio para respaldo energético</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-30 14:54">hace 8h</td>
+                    <td class="time-ago" data-date="2026-09-30 14:54">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Causa para arresto contra vendedor independiente por fraude y apropiación ilegal">
@@ -1016,17 +1039,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/09/30/causa-para-arresto-contra-vendedor-independiente-por-fraude-y-apropiacion-ilegal/" target="_blank">Causa para arresto contra vendedor independiente por fraude y apropiación ilegal</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-30 11:49">hace 11h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Avería en San Juan: más de 26,000 clientes de LUMA están sin luz - Primera Hora">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZnZNQW9fYUY5akk4UmxYV25FVEpvcUY2RjlZclc2eWx5RUFYS3RyV3NTdXJjdjd4M2hPNV9Wdk9YQ2VSX1F6a3RSRWpVaVdsakpwNTN4dmFMdEhkR2sxYkZDc1pOTXdZa0NoRTRsRnM4Wkh3QXlobTJ2M3ZyRno4RlVFVngyemoxRXJHM1RidkdnckRhbTNsZG5JTEN3VFA4Znl2NTZZSEVGc2hpcEhFdV8tbFZsaTNHbkNsV29oRkxDQQ?oc=5" target="_blank">Avería en San Juan: más de 26,000 clientes de LUMA están sin luz - Primera Hora</a>
-                    </td>
-                    <td>Primera Hora</td>
-                    <td class="time-ago" data-date="2026-09-30 11:33">hace 12h</td>
+                    <td class="time-ago" data-date="2026-09-30 11:49">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Miles de clientes de LUMA en San Juan amanecen sin luz por avería - El Vocero de Puerto Rico">
@@ -1046,7 +1059,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxOMTRJZktzWHJncm9BUXBrZ3RXcGRRWDU5cmRybHpzUEVDM2QyaEU4RWlzWTBUcWVrMGZYQzZBVFFQV2xKdXk2eXVfd2pFZGJ5RENCNmNIM0JkdURBeWpmRGRDYmVNc3NpakFzb2doRU1nVmVUcG53OGJaUklfczBWMjFYRlg4VFI1VHJrWk1tQlM2LUN2QXFMM1lTU2J0amJRU1R6Rk5Ea2RwNHppNWZWMnQxNGs5TVlrZ3lycUdaQXc4MHNVZXV2dGFQT05MM2ZBRmxiNS1Ha3p0OTZJZGRNcDBqZmE?oc=5" target="_blank">RADICAN CARGOS CONTRA HOMBRE POR ALEGADAMENTE APROPIARSE DE MÁS DE $79 MIL DE UNA COMPAÑÍA EN CAGUAS CAGUAS — Agentes de la Policía de Puerto Rico, adscritos al DIREPAPD del Cuerpo de Investigaciones Criminales (CI - facebook.com</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-09-30 10:56">hace 12h</td>
+                    <td class="time-ago" data-date="2026-09-30 10:56">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Nueve años después del huracán María: Vieques estrena centro de salud tras inversión de $85.5 millones - El Vocero de Puerto Rico">
@@ -1070,99 +1083,6 @@ tr.article-row:hover { background: var(--surface2); }
                 </tr>
                 
                 
-                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo - facebook.com">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE01TVlfV1hhd1NwOGxYbU9YT2tQcEJabmNVQWFoMXloWkhKS0gxNlpROUQteXJMUHhWX2hRRDM2YnJPdGRnRVVka2M4cDVNTjNfLTJyN1hmd0l3TEF6WkhuMF94OENKbU1lZkRz?oc=5" target="_blank">Municipio de Luquillo - facebook.com</a>
-                    </td>
-                    <td>FB - Luquillo</td>
-                    <td class="time-ago" data-date="2026-09-29 23:50">hace 23h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Buscan a hombre desaparecido desde el 10 de septiembre en Trujillo Alto - El Vocero de Puerto Rico">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxQMERsVWFraGV6MkVlTnpSeTRSa1NOMmNiZ1hVbnMyUDRobU9hOE9wX3R0dVQzTngtb1c1N3F1c1BDc2ZwcHBRWWw1QjZXQi1QUEZjUFppYzB0dDNSdDJwc093NE5weTZMWWFGYzk1SjVtOWxkbXVOWjdDY0V3c2pQNk5xTU02d194cFF6YTNzRk00SXhWUWdQaWdzUktud1huRlhTSWFXaW9oMmtQb2JSZTYteGhJYl93X3FVWkNNRkIxQnNmUENKeGNTOWRJX2JKTkZLRXBvR0pLRi0yQ2h0VWxkVkY0SmUyZGFYSjM2WdIB9AFBVV95cUxPZk1kZmZndlk3MlFYV2ZoRjhmd2kzRzFrMGVnOUh6Z1NBSkdMQzltejB4YmI3Q0d3eUc0YjdrV213WkxfQ0FHMjFGbmJoektlcEN6V1RxS3lzX0JhZ2ZfSWVpUGtDOURTMHpiRW9tYUxQY3dyeDZhblBodWVsa19iYUliV1R0UHA4blMzUlA2RlNlWlRjT3h4b2tBTlp2WTlFNm5aUGR3cmFPN2dBSzY4THRfcGxEN3pMZHRYU3Y1QlMzRGVPaDhfb29NNDBlUVhoWXo1b3A1WUJQSUJ0Z19ORi1tX3BIZHQ5SnptVmRFZTE1RVFq?oc=5" target="_blank">Buscan a hombre desaparecido desde el 10 de septiembre en Trujillo Alto - El Vocero de Puerto Rico</a>
-                    </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-09-29 23:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Abel Nazario llama “fake news” a los rumores de que sea considerado para dirigir el DACO">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://radioisla.tv/abel-nazario-llama-fake-news-a-los-rumores-de-que-sea-considerado-para-dirigir-el-daco1/?utm_source=rss&utm_medium=rss&utm_campaign=abel-nazario-llama-fake-news-a-los-rumores-de-que-sea-considerado-para-dirigir-el-daco1&utm_source=rss&utm_medium=rss&utm_campaign=abel-nazario-llama-fake-news-a-los-rumores-de-que-sea-considerado-para-dirigir-el-daco1" target="_blank">Abel Nazario llama “fake news” a los rumores de que sea considerado para dirigir el DACO</a>
-                    </td>
-                    <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-09-29 21:36">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Ceiba" data-titular="En el corazón histórico de San Germán conocimos la majestuosa Ceiba de la Libertad, un monumento viviente que lleva más de 128 años custodiando la historia de la Ciudad de las Lomas. - facebook.com">
-                    <td><span class="muni-tag">Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxOak9GcC0wSndPT05KOWdpekR4WVBGcEhvWTNyWk95enJUSUhoM3UycGFFMjExWWJpMDhBZkk4dml5M2NNdlRWb05fLWVXcEE5Tkhmc2xwU2lUZzVSWHJOV0V0OWhfakNfX3hQaGpVc292TklPZG1sZlNtbmRRSkhuZmczcDlTSDg1MnNqRzg4YWQ4Yk9YTFZQRVZkd3pkeU5ReHEyLWxPNUhpTnJyaFI2WWozR1FsbTQ3R1BwcTRlbTlldmJUTjNxSEs1RjRXV2dhbVQwb3ZpcndqR3kzZXZjX3FobHQ3ZkVabXNVMnBB?oc=5" target="_blank">En el corazón histórico de San Germán conocimos la majestuosa Ceiba de la Libertad, un monumento viviente que lleva más de 128 años custodiando la historia de la Ciudad de las Lomas. - facebook.com</a>
-                    </td>
-                    <td>FB - Ceiba</td>
-                    <td class="time-ago" data-date="2026-09-29 19:32">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="🚧 COMUNICADO ESPECIAL | SECTOR BOTIJITA, BO. MARIANA El Municipio Autónomo de Naguabo informa a los residentes del Sector Botijita, en el Barrio Mariana, que durante el día de mañana, miércoles, 30 de septiembre, se estará realizando un cierr - facebook.com">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxOZFlDVWdTcUpHRU1ZWkswSUxCa3lYWU9sZzJpa3pRbTJlTFRCTC05TVV2RGY1NnhZOUkxTEZDUzFkZmRuMGUyeW5VeWY2NmczRFVGUGFXcUlKajRSMXh6ZWdNbDE5ZXVsZGQwSjdLUzlmLU5MZktWbzdBdk5wYk9EQWNZRFFjNmpud05vM0M0ajh3QnFzZWNrb0JVeE1jTGRGYm5wMkRIT3htTTJJMmFCTXl4Rm1UTEdrRHBSUk1mN1JxZGdXVktCdTU0TTBEUHFJUTlGcHpzcmdRN29YRWhzYjFfS084MktSVDBNZHprNVc0aDg?oc=5" target="_blank">🚧 COMUNICADO ESPECIAL | SECTOR BOTIJITA, BO. MARIANA El Municipio Autónomo de Naguabo informa a los residentes del Sector Botijita, en el Barrio Mariana, que durante el día de mañana, miércoles, 30 de septiembre, se estará realizando un cierr - facebook.com</a>
-                    </td>
-                    <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-09-29 18:01">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Culebra" data-titular="Alexis Almodovar. misswilsonsays · sailor song. Culebra,Puerto Rico 🇵🇷😍 . . . #puertorico #culebra #piscina #paraiso #roadtrip - facebook.com">
-                    <td><span class="muni-tag">Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxOSXpEcnJEbG9LU09vQkpWcjZsYXNqVEFmajJ3eG00a29GS3pzS20ycjltWFo5N1AyaTJoNmxuY0w5SmVtU2tpdkFUbjE5c1Q3eXh5a1pOajBMeTVqa21iWmpuTm1ldldQTDdDUThHWGs3RndQX1p0OUpNbUlmbEcxYnpRd1ZEX2xsU04tUU5qWWNuR0VoM1pNMmpPQ2U4RTUyU3QtTzU2RG53cTFMbWJiMGJpcU4wTU5MMVllU3ZUQmRnaUdQLUJB?oc=5" target="_blank">Alexis Almodovar. misswilsonsays · sailor song. Culebra,Puerto Rico 🇵🇷😍 . . . #puertorico #culebra #piscina #paraiso #roadtrip - facebook.com</a>
-                    </td>
-                    <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-09-29 14:28">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Canóvanas" data-titular="🚐 ¡Canóvanas Me Lleva! Un servicio de transportación coordinado para adultos mayores, personas con discapacidad o movilidad reducida, con viajes dentro y fuera de Canóvanas. El servicio es por cita y requiere registro previo. 📞 Coordina tu cita: (787) 95 - facebook.com">
-                    <td><span class="muni-tag">Canóvanas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxQTUpHTXVVMTVJVHdVOEpGanpmMDJTOTYyd3JRSDYzX016YWNNajNjdG03amJFbE9CM1JYUDNXT3J1TG5lemRUdF9YTmV2Y0FvQ3MtYTRRYXh6WG80c0RiUTZ0WVVpOXEtQVVINjVLaXIybnRUN1FmYUUyaVRVY0I2TmpwR2loZFFmX3g2YjRXVERyb2JycUlUQzlDeDdCSkZhbmRxbzRKXzkxY1pfcGNKTGFyWmEyRE1pcHVNVDRFbGlaWWdkMXlGOXp5bGZndGhRV1ZTaThWcUFYbUUwOGVrQnJaMWRRMzJQbHU2UkNnVTdjQQ?oc=5" target="_blank">🚐 ¡Canóvanas Me Lleva! Un servicio de transportación coordinado para adultos mayores, personas con discapacidad o movilidad reducida, con viajes dentro y fuera de Canóvanas. El servicio es por cita y requiere registro previo. 📞 Coordina tu cita: (787) 95 - facebook.com</a>
-                    </td>
-                    <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-09-29 13:49">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Última Palabra PR. . Una nueva etapa comienza en Cataño. Hiram Torres Montalvo conversa con Alexandra Lúgaro sobre los retos que hereda, sus planes para una gestión transparente y cómo espera fortalecer la confianza de los residentes en el municipio - facebook.com">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxNZi10RVR5Uk1mRW5nUE5PMzR5NHN2SXRYcjctZ0ZpZXIxTWhJb0J5a0QzOWg4Xzd6anEzNnUzdXhqREFwNzQ2c0pDS19VcmNjdzZlYllHX1hwTUw5ZDRJTjVQQVdSTGxrbXJuZ0I5TDlXVElOYnJzWmlmN3lPcU9wR29SUzFQMkRYMlQwRTVkVzg3R3k4LUszTTF0TXFaN3o0X3RDdGpNUldUMWhidG5zeHB2MmpJQ21kWG93QzJ3MkZKNzVtLXJoZEEwY05ad05mOE5qdnJqQWhIcElQVDdPTVdsNWI?oc=5" target="_blank">Última Palabra PR. . Una nueva etapa comienza en Cataño. Hiram Torres Montalvo conversa con Alexandra Lúgaro sobre los retos que hereda, sus planes para una gestión transparente y cómo espera fortalecer la confianza de los residentes en el municipio - facebook.com</a>
-                    </td>
-                    <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-09-29 01:02">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan,Carolina,Loíza" data-titular="Anuncian crédito para más de 37,000 abonados de Acueductos en sectores de San Juan, Carolina y Loíza - Primera Hora">
-                    <td><span class="muni-tag">San Juan, Carolina, Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxQTENqVmRjTlo4YzJPMWRKNFJfbVAxdDJJMkVBcmdFT2VsT2pWbmp5eG9mMWw0ejNZc2lfOHRXT2QzZG1vMk5OVXYyQVF1Nmtrd2V3U1M5NUVjYzFqQW1hQTBhYTVjcFk3c0xYSkoyaEJfQ2xrbHRpSG5FTkdkSWd2OTAzeUJWWGZ2TWVEcmxnZ0Q1TzNfNnNSWEh6cFBLeEdfSGxnU043UVIxN0lERG11YkUyREZyVm5zT0tSdmpGRGhIZ2RVN3QyRXZETEwyLXZoV1M4ZmgybGNOX3E1OVUxUDE1YW9YZXFsSm9aZnFMVXJ3QQ?oc=5" target="_blank">Anuncian crédito para más de 37,000 abonados de Acueductos en sectores de San Juan, Carolina y Loíza - Primera Hora</a>
-                    </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-09-29 00:36">hace 1d</td>
-                </tr>
-                
-                
                 <tr class="time-group-header"><td colspan="4">📋 Anteriores</td></tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Bebo’s BBQ demanda por difamación y reclama $3.5 millones por publicaciones en redes sociales">
@@ -1173,26 +1093,6 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Carolina787</td>
                     <td class="time-ago" data-date="2026-09-30">2026-09-30</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Bebo’s BBQ anuncia acciones legales por rumor falso que afecta su reputación">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.carolina787.com/n/bebo-s-bbq-anuncia-acciones-legales-por-rumor-falso-que-afecta-su-reputacion" target="_blank">Bebo’s BBQ anuncia acciones legales por rumor falso que afecta su reputación</a>
-                    </td>
-                    <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-09-29">2026-09-29</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Más de 37,000 abonados recibirán crédito del 50% en sus facturas de agua">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.carolina787.com/n/mas-de-37-000-abonados-recibiran-credito-del-50-en-sus-facturas-de-agua" target="_blank">Más de 37,000 abonados recibirán crédito del 50% en sus facturas de agua</a>
-                    </td>
-                    <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-09-29">2026-09-29</td>
                 </tr>
                 
                 
@@ -1345,7 +1245,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-09-30 11:46:08 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-01 12:01:11 AM<br>
     Actualización automática cada 30 min
 </div>
 
