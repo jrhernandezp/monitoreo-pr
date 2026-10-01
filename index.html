@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-01 02:46:17 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-01 03:01:19 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">23</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">25</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">14</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-01 02:46:17 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-01 03:01:19 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -837,7 +837,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">3</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
@@ -847,7 +847,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <span class="muni-name">Caguas</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
@@ -857,12 +857,12 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <span class="muni-name">Canóvanas</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <span class="muni-name">Fajardo</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
@@ -897,12 +897,12 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <span class="muni-name">Vieques</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">4</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <span class="muni-name">Culebra</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">3</span>
         </div>
         
     </div>
@@ -931,6 +931,26 @@ tr.article-row:hover { background: var(--surface2); }
             <tbody id="articlesBody">
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Nobu to open a 50-room hotel in San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/english/business/story/nobu-to-open-a-50-room-hotel-in-san-juan/" target="_blank">Nobu to open a 50-room hotel in San Juan</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-10-01 18:50">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Vieques" data-titular="Familia de guía turístico viequense reclama justicia previo a sentencia por hit & run">
+                    <td><span class="muni-tag">Vieques</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/10/01/familia-de-guia-turistico-viequense-reclama-justicia-previo-a-sentencia-por-hit-run/" target="_blank">Familia de guía turístico viequense reclama justicia previo a sentencia por hit & run</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-10-01 18:47">ahora</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="ATI permitirá que terceros gestionen reservaciones de vehículos en Puerto Rico Ferry">
                     <td><span class="muni-tag">Vieques, Culebra</span></td>
@@ -982,6 +1002,16 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-01 16:32">ahora</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="ATI flexibiliza reservaciones de vehículos para viajes a Vieques y Culebra - El Vocero de Puerto Rico">
+                    <td><span class="muni-tag">Vieques, Culebra</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxQNzRWX1V6SjN6QUItUFU0ZVJIME9WTzJzSUVzY0xvb2xka1hEdVQ0WjdfMnBKMHJrYUF4dGJqMWtnVW8ydU9mN1JJZ185OFVmME92N0JIRGVJdTRuSjk4MkNuQjJDRmVyekZZNE1UWlB0UVNNSFRocGM5dmJKRUM0ckFXXzlQTFdXODhGdzFDd01RbHZJUHJMVkVuVmR3MlpQQUJzOXhTdHl1WEtSTU1HbWUyT0hzZVlHRC1MY2l1d29fSG5aQ0hDNHdIbkYwb0NxUnJDdG1Bd1M3R0h5LUNQSWhOREszaWZVMGR5OWFINNIB9AFBVV95cUxONkRyeUFaVldzLVBXQ3pLRTRobGlTbFM2VTdZZC13RkRZNFlLbEtaNVdLbEpyNEgzbTRUT0dXbU5ObmFIUWJuWmFoU1FwLUhyNWZuMndVYS12UlhyckFyNHhWLVhnM0pObTJoSHhWN2w0QXNwdDhRQ2kxSmpWWjNHTGY2ZXUyZDhmQnNsc0QzdjIxaG5tY0gyM2xjTFhlVHBWUWZ6RXNuc3FtUnpNYVM1Wk5JX1g4dW03TV8teldSYlVfSEdkT3NCb2ZZaU92NFJTazlfRWQ1T3lxbW0tVlZxWGxwMlZqQU5NdVVMREpuY3IxaXRf?oc=5" target="_blank">ATI flexibiliza reservaciones de vehículos para viajes a Vieques y Culebra - El Vocero de Puerto Rico</a>
+                    </td>
+                    <td>Vieques</td>
+                    <td class="time-ago" data-date="2026-10-01 16:26">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="San Juan" data-titular="Sigue bajando la sequía en Puerto Rico">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
@@ -1029,7 +1059,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/identifican-mejoras-notables-en-las-condiciones-de-sequia-para-puerto-rico1/?utm_source=rss&utm_medium=rss&utm_campaign=identifican-mejoras-notables-en-las-condiciones-de-sequia-para-puerto-rico1&utm_source=rss&utm_medium=rss&utm_campaign=identifican-mejoras-notables-en-las-condiciones-de-sequia-para-puerto-rico1" target="_blank">Identifican mejoras notables en las condiciones de sequía para Puerto Rico</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-10-01 15:00">ahora</td>
+                    <td class="time-ago" data-date="2026-10-01 15:00">hace 1min</td>
                 </tr>
                 
                 
@@ -1045,14 +1075,14 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-01 11:43">hace 3h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Carolina,Canóvanas,Río Grande" data-titular="Justicia presenta 12 cargos a siete adultos por maltratar a un menor de 5 años">
-                    <td><span class="muni-tag">Carolina, Canóvanas, Río Grande</span></td>
+                <tr class="article-row" data-municipios="Río Grande" data-titular="Expolicía municipal de Río Grande imputado por actos lascivos contra mujer - wapa.tv">
+                    <td><span class="muni-tag">Río Grande</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://radioisla.tv/justicia-presenta-12-cargos-a-siete-adultos-por-maltratar-a-un-menor-de-5-anos/?utm_source=rss&utm_medium=rss&utm_campaign=justicia-presenta-12-cargos-a-siete-adultos-por-maltratar-a-un-menor-de-5-anos&utm_source=rss&utm_medium=rss&utm_campaign=justicia-presenta-12-cargos-a-siete-adultos-por-maltratar-a-un-menor-de-5-anos" target="_blank">Justicia presenta 12 cargos a siete adultos por maltratar a un menor de 5 años</a>
+                        <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxNemZ2MURPOVdWUm0wVDhNYUlxbklLXzRjaDROYnlQS3dFRnJNRjRVeVFyZU9VMmNPLWRPX2hLVWROQ2RwZWJNaTBVNUVTM1RDemV6cllSaE5YTG44WHBVQzBWVFZqOHo0Y1pqWThpaW85ZVA1ZHR0RkRrbE5HS0VUd3ExRlRPVkM1VGNjSlhqTVJOdDNycVNpbGRYX2ZBR0NaMVdzZXNvTlFNVHdjYncweGp4dExpT3pnemFvakF0dTlmakloRDZTMjNNMTFCMmNOZU50XzJMYXV5Sm9Nend6NWM3alB2N2V4Tkw3YmF3?oc=5" target="_blank">Expolicía municipal de Río Grande imputado por actos lascivos contra mujer - wapa.tv</a>
                     </td>
-                    <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-10-01 10:38">hace 4h</td>
+                    <td>Río Grande</td>
+                    <td class="time-ago" data-date="2026-10-01 11:22">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="Acusan a ex policía municipal de Río Grande por presuntos actos lascivos - Primera Hora">
@@ -1062,7 +1092,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUEd3b2hiN0ZQOXpyZFJMUDJWVXAteXZIMVJtbFJBemFNX1VuQTJEMGg3S2lHd0xOQ3lRWDhUcWtDWTRxdkpscDMxLUFpVEROalBEV2xjV1Z3TEU2NHlMODFCRDNIV1dJRGtONjJ6N0NtQWgyWERZVHNXRExsUXZyYXVIVTF3cXk1cDg0Uk1GLWROeFpkcjQzM1p5M0xUZkRwaEJGWmlZeDZnOXYyZXVqOUNxNXJRaENYM1FwcnRpeVduTlhzU1BJUy1yQmEzQzY2?oc=5" target="_blank">Acusan a ex policía municipal de Río Grande por presuntos actos lascivos - Primera Hora</a>
                     </td>
                     <td>Río Grande</td>
-                    <td class="time-ago" data-date="2026-10-01 02:47">hace 11h</td>
+                    <td class="time-ago" data-date="2026-10-01 02:47">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Culebra" data-titular="Momento especial 🙌 🐢 📍Playa Tamarindo, Culebra 🇵🇷 📸: @douglashodgkins • #TuristeandoenPuertoRico #puertorico #culebrapr - facebook.com">
@@ -1072,7 +1102,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNbFdBWlJZSjZteEZpRVM2X252Mkc3RVFDQjZkX042Sm1sakZQM0FuR3ZTYTdHZXZJaHduTE9IVmdHV0QxVHpxUG1ocTl5U05zVnpIcnptVENnbXRWY1E2UUU0RkNMbFM1VTlpQ3g0RnlqVmlwVnV3ek4zWDQ1QkFTTmNLU1MwSkdZNFVmRmh3bTlCYUoyTlVnU3NkMXc5OVlVbXhTbGItUDUzOHQxckoxS3pYblB0QTdSa0FiMGYwLXF6THRxcG9DNmZ5dlNUQmx5RS1wWGdSMnlVVUJ3VUE?oc=5" target="_blank">Momento especial 🙌 🐢 📍Playa Tamarindo, Culebra 🇵🇷 📸: @douglashodgkins • #TuristeandoenPuertoRico #puertorico #culebrapr - facebook.com</a>
                     </td>
                     <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-10-01 01:52">hace 12h</td>
+                    <td class="time-ago" data-date="2026-10-01 01:52">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo - facebook.com">
@@ -1098,24 +1128,14 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-30 19:33">hace 19h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Canóvanas" data-titular="Causa para arresto contra siete adultos por, supuestamente, maltratar a un menor de cinco años en Canóvanas - elnuevodia.com">
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="Causa para arresto contra siete adultos por, supuestamente, maltratar a un menor de cinco años en Canóvanas - El Nuevo Día">
                     <td><span class="muni-tag">Canóvanas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
-                        <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxQNDNob3paRXA1SlRYRHpydnpJMkFQaVNUQVlfRzJTRERGMXFxYzRVdDdoQUJkUXZ6c3EwNWZlN1laem0wODRFek00Yy1LekM3R2lZNFU1b3Y0UHJXbzJ4eXVldGlORW9aSGFadWh2NXhha1Jkc0FIaXpnSUpvUHloVUxpWkhSNW0zdTNWZmM1N3Jwc3NyX21XbWdCaDVWbVhZUXN4dGl2N0E0N3R3Vms5M3JJVmZqTFU5c1IwbFBDamdDenh2ajN4NGhaSV8yVklpOXdlZ0l2SjRJTnJLdWZCS0VOSWo2VTRtb2owWnB4TQ?oc=5" target="_blank">Causa para arresto contra siete adultos por, supuestamente, maltratar a un menor de cinco años en Canóvanas - elnuevodia.com</a>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxQNDNob3paRXA1SlRYRHpydnpJMkFQaVNUQVlfRzJTRERGMXFxYzRVdDdoQUJkUXZ6c3EwNWZlN1laem0wODRFek00Yy1LekM3R2lZNFU1b3Y0UHJXbzJ4eXVldGlORW9aSGFadWh2NXhha1Jkc0FIaXpnSUpvUHloVUxpWkhSNW0zdTNWZmM1N3Jwc3NyX21XbWdCaDVWbVhZUXN4dGl2N0E0N3R3Vms5M3JJVmZqTFU5c1IwbFBDamdDenh2ajN4NGhaSV8yVklpOXdlZ0l2SjRJTnJLdWZCS0VOSWo2VTRtb2owWnB4TQ?oc=5" target="_blank">Causa para arresto contra siete adultos por, supuestamente, maltratar a un menor de cinco años en Canóvanas - El Nuevo Día</a>
                     </td>
                     <td>Canóvanas</td>
                     <td class="time-ago" data-date="2026-09-30 18:17">hace 20h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Representante Varela envía carta al presidente de la Cámara para interpelar sobre despido de administradora de ADSEF">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/09/30/representante-varela-envia-carta-al-presidente-de-la-camara-para-interpelar-sobre-despido-de-administradora-de-adsef/" target="_blank">Representante Varela envía carta al presidente de la Cámara para interpelar sobre despido de administradora de ADSEF</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-09-30 18:05">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Municipio de Loíza - facebook.com">
@@ -1128,14 +1148,14 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-09-30 15:24">hace 23h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Avería en San Juan: más de 26,000 clientes de LUMA están sin luz - Primera Hora">
-                    <td><span class="muni-tag">San Juan</span></td>
+                <tr class="article-row" data-municipios="Fajardo" data-titular="PROGRAMA DEPORTIVO MUNICIPAL El Municipio Autónomo de Fajardo y su Alcalde Hon. José Aníbal “Joey” Meléndez Méndez continúan fortaleciendo su compromiso con el desarrollo deportivo de nuestra niñez y juventud, ofreciendo diversas alternativa - facebook.com">
+                    <td><span class="muni-tag">Fajardo</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZnZNQW9fYUY5akk4UmxYV25FVEpvcUY2RjlZclc2eWx5RUFYS3RyV3NTdXJjdjd4M2hPNV9Wdk9YQ2VSX1F6a3RSRWpVaVdsakpwNTN4dmFMdEhkR2sxYkZDc1pOTXdZa0NoRTRsRnM4Wkh3QXlobTJ2M3ZyRno4RlVFVngyemoxRXJHM1RidkdnckRhbTNsZG5JTEN3VFA4Znl2NTZZSEVGc2hpcEhFdV8tbFZsaTNHbkNsV29oRkxDQQ?oc=5" target="_blank">Avería en San Juan: más de 26,000 clientes de LUMA están sin luz - Primera Hora</a>
+                        <a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxONTBaczZ0TV9HajY3SDRHUXUtbHdGaTIzYVEtTGxfU0NrbnpSUXVvTVpBbVlhS2dscFVxQVlHRElkRFluTnNjRHhtVTZDclBXNTJJcEVqTWtqVW4yUDFpX19aTEdzeW44VVhsSC1FZ19BZ0lpS3p0UDlXVGN2eU1lSThpaWVSWjlxNF91ZzBrMEZuSWx6YnpRNm9TU0hDWXFKaXFBSTNqRmNaeGUybHNTMVk5cGo2dGhfMGxHcnY3MTRyRFgzczdiY3RBV01qMHFDRkVFcWNFbG5HbUlVMUpOcFV3?oc=5" target="_blank">PROGRAMA DEPORTIVO MUNICIPAL El Municipio Autónomo de Fajardo y su Alcalde Hon. José Aníbal “Joey” Meléndez Méndez continúan fortaleciendo su compromiso con el desarrollo deportivo de nuestra niñez y juventud, ofreciendo diversas alternativa - facebook.com</a>
                     </td>
-                    <td>Primera Hora</td>
-                    <td class="time-ago" data-date="2026-09-30 11:33">hace 1d</td>
+                    <td>FB - Fajardo</td>
+                    <td class="time-ago" data-date="2026-09-30 15:15">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="⚡ AVISO IMPORTANTE | INTERRUPCIÓN PROGRAMADA El Municipio Autónomo de Naguabo informa a la ciudadanía que, según comunicado recibido de LUMA Energy, mañana, 30 de septiembre, se realizarán trabajos de reparación preventiva en una lín - facebook.com">
@@ -1321,7 +1341,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-01 02:46:17 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-01 03:01:19 PM<br>
     Actualización automática cada 30 min
 </div>
 
