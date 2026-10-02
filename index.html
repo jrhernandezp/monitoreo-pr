@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-02 07:16:14 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-02 07:31:38 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">31</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">33</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-02 07:16:14 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-02 07:31:38 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -824,7 +824,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">5</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
@@ -869,7 +869,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <span class="muni-name">Naguabo</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">4</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
@@ -918,6 +918,26 @@ tr.article-row:hover { background: var(--surface2); }
             <tbody id="articlesBody">
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Romero solicita ampliar crédito por falta de agua en San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.notiuno.com/noticias/gobierno-y-politica/romero-solicita-ampliar-cr-dito-por-falta-de-agua-en-san-juan/article_60620425-3273-409d-93c9-b01025fea19c.html" target="_blank">Romero solicita ampliar crédito por falta de agua en San Juan</a>
+                    </td>
+                    <td>NotiUno</td>
+                    <td class="time-ago" data-date="2026-10-02 11:22">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Juana Díaz y Carolina salen victoriosas en el BSNF">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/deportes/20261002/juana-diaz-y-carolina-salen-victoriosas-en-el-bsnf/?utm_source=rss&utm_medium=rss&utm_campaign=juana-diaz-y-carolina-salen-victoriosas-en-el-bsnf" target="_blank">Juana Díaz y Carolina salen victoriosas en el BSNF</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-10-02 11:04">ahora</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Comunidad del Escambrón demanda al Municipio de San Juan para detener proyecto de estacionamiento">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -992,16 +1012,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-02 03:55">hace 3h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Numen: una nueva propuesta que ocupa un espacio con historia en el Viejo San Juan">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/gastronomia/restaurantes/notas/numen-una-nueva-propuesta-que-ocupa-un-espacio-con-historia-en-el-viejo-san-juan/" target="_blank">Numen: una nueva propuesta que ocupa un espacio con historia en el Viejo San Juan</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-10-02 03:10">hace 4h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="San Juan,Naguabo,Humacao" data-titular="Tres municipios del este bajo advertencia de inundaciones">
                     <td><span class="muni-tag">San Juan, Naguabo, Humacao</span></td>
                     <td class="titular-cell">
@@ -1009,21 +1019,11 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://noticel.com/noticias/20261001/tres-municipios-del-este-bajo-advertencia-de-inundaciones/?utm_source=rss&utm_medium=rss&utm_campaign=tres-municipios-del-este-bajo-advertencia-de-inundaciones" target="_blank">Tres municipios del este bajo advertencia de inundaciones</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-10-02 00:19">hace 6h</td>
+                    <td class="time-ago" data-date="2026-10-02 00:19">hace 7h</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Sin acuerdo entre las partes, jueza impone orden sobre tránsito de barco de gas AMUR River">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20261001/sin-acuerdo-entre-las-partes-jueza-impone-orden-sobre-transito-de-barco-de-gas-amur-river/?utm_source=rss&utm_medium=rss&utm_campaign=sin-acuerdo-entre-las-partes-jueza-impone-orden-sobre-transito-de-barco-de-gas-amur-river" target="_blank">Sin acuerdo entre las partes, jueza impone orden sobre tránsito de barco de gas AMUR River</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-10-01 22:32">hace 8h</td>
-                </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo,Humacao" data-titular="Emiten aviso de inundaciones para Humacao, Las Piedras y Naguabo por fuertes lluvias - El Vocero de Puerto Rico">
                     <td><span class="muni-tag">Naguabo, Humacao</span></td>
@@ -1082,7 +1082,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/colegio-de-abogados-considera-presentar-recurso-para-cuestionar-ordenanza-municipal-que-permite-desarrollo-de-multipisos-en-el-escambron1/?utm_source=rss&utm_medium=rss&utm_campaign=colegio-de-abogados-considera-presentar-recurso-para-cuestionar-ordenanza-municipal-que-permite-desarrollo-de-multipisos-en-el-escambron1&utm_source=rss&utm_medium=rss&utm_campaign=colegio-de-abogados-considera-presentar-recurso-para-cuestionar-ordenanza-municipal-que-permite-desarrollo-de-multipisos-en-el-escambron1" target="_blank">Colegio de Abogados considera presentar recurso para cuestionar ordenanza municipal que permite desarrollo de multipisos en El Escambrón</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-10-01 21:21">hace 9h</td>
+                    <td class="time-ago" data-date="2026-10-01 21:21">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Autoridades policiacas en Caguas realizan búsqueda de hombre en zona boscosa cercana a la PR-172">
@@ -1093,6 +1093,16 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Walo Radio</td>
                     <td class="time-ago" data-date="2026-10-01 19:52">hace 11h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Amenaza de lluvia en el noroeste con fuertes ráfagas">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://esnoticiapr.com/amenaza-de-lluvia-en-el-noroeste-con-fuertes-rafagas/" target="_blank">Amenaza de lluvia en el noroeste con fuertes ráfagas</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-10-01 19:15">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Familia de guía turístico viequense reclama justicia previo a sentencia por hit & run">
@@ -1109,10 +1119,10 @@ tr.article-row:hover { background: var(--surface2); }
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE81R1VreVdhZV90MWNGa0ZOZFRMVEpSQmo3ejZWRDd5VUg5V2NxQ1ZaWnpaYk82ODdfMm1aNnc3WHhwMFoyNFhZMm9oQmRXQ1ZtN2NrX3ZLMlpMNEVRMjZLaVZvYw?oc=5" target="_blank">Somos Carolina - facebook.com</a>
+                        <a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE9iekxBeGZBMkxpaDRHQWt5ZzBmUWVJUWFsVjFGcmFwWGFRRW9fSWJGOUI1LU9tb1c1eDc4YU5yZVktNTQ4RXdBWFZXR1pTaXJtTzZBYklkcUllNHpXM0treV9CWQ?oc=5" target="_blank">Somos Carolina - facebook.com</a>
                     </td>
                     <td>FB - Carolina</td>
-                    <td class="time-ago" data-date="2026-10-01 17:06">hace 14h</td>
+                    <td class="time-ago" data-date="2026-10-01 17:50">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Arrestan en Reino Unido sospechoso de hackeo a una empresa en Carolina - Primera Hora">
@@ -1145,6 +1155,16 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-01 16:35">hace 14h</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Naguabo" data-titular="🎉 ¡Naguabo se prepara para celebrar en grande! 🎶 El Municipio Autónomo de Naguabo y nuestra alcaldesa, Hon. Miraidaliz Rosario Pagán, les invitan a disfrutar de las Fiestas de Pueblo & Festival Gastronómico y Cultural. 📅 Viernes 9 al domingo 11 de octu - facebook.com">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxQYmdncDN6MXg5Y0l5UkttRmM0Y2RXN2pMVEFBZ3dndlZSTXFlR2E0aEJ6T1dPcG1PcWNDb2RLTUtNcnJ3Qk5obGNYZ3hGTGNldTExbDVqRkJhb2ZQOFR6Q3VFcnNUUWRrZW0wMUZHMmNTUDlndVJuZEtTX1RlNUx6Tk9iQW05WlREd3ctSUQ0NWpyLUJuWnhBdDlZNjd5UzBsU0ZUR283TDB5YjF4TzBpMFZwcUhKelB2R3pSczFqeUpDTVFxZml4RzFrdDNxdlNWRzB3M3d1M3Jfd0o3?oc=5" target="_blank">🎉 ¡Naguabo se prepara para celebrar en grande! 🎶 El Municipio Autónomo de Naguabo y nuestra alcaldesa, Hon. Miraidaliz Rosario Pagán, les invitan a disfrutar de las Fiestas de Pueblo & Festival Gastronómico y Cultural. 📅 Viernes 9 al domingo 11 de octu - facebook.com</a>
+                    </td>
+                    <td>FB - Naguabo</td>
+                    <td class="time-ago" data-date="2026-10-01 15:58">hace 15h</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Vieques" data-titular="Identifican mejoras notables en las condiciones de sequía para Puerto Rico">
                     <td><span class="muni-tag">Vieques</span></td>
                     <td class="titular-cell">
@@ -1172,7 +1192,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxNemZ2MURPOVdWUm0wVDhNYUlxbklLXzRjaDROYnlQS3dFRnJNRjRVeVFyZU9VMmNPLWRPX2hLVWROQ2RwZWJNaTBVNUVTM1RDemV6cllSaE5YTG44WHBVQzBWVFZqOHo0Y1pqWThpaW85ZVA1ZHR0RkRrbE5HS0VUd3ExRlRPVkM1VGNjSlhqTVJOdDNycVNpbGRYX2ZBR0NaMVdzZXNvTlFNVHdjYncweGp4dExpT3pnemFvakF0dTlmakloRDZTMjNNMTFCMmNOZU50XzJMYXV5Sm9Nend6NWM3alB2N2V4Tkw3YmF3?oc=5" target="_blank">Expolicía municipal de Río Grande imputado por actos lascivos contra mujer - wapa.tv</a>
                     </td>
                     <td>Río Grande</td>
-                    <td class="time-ago" data-date="2026-10-01 11:22">hace 19h</td>
+                    <td class="time-ago" data-date="2026-10-01 11:22">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="VIEQUES SE ILUMINA DE ROSA En conmemoración de esta fecha tan significativa, el alcalde de Vieques, Hon. José A. Junito Corcino Acevedo, se une a nuestra comunidad en un mensaje de solidaridad, esperanza y reconocimiento a todas las personas q - facebook.com">
@@ -1388,7 +1408,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-02 07:16:14 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-02 07:31:38 AM<br>
     Actualización automática cada 30 min
 </div>
 
