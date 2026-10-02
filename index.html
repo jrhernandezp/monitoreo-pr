@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-02 11:16:14 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-02 11:31:12 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">28</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">31</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-02 11:16:14 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-02 11:31:12 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -824,7 +824,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">5</span>
+            <span class="muni-count">6</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
@@ -859,7 +859,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
             <span class="muni-name">Río Grande</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">4</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
@@ -884,12 +884,12 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <span class="muni-name">Vieques</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">3</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
+        <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <span class="muni-name">Culebra</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </div>
         
     </div>
@@ -918,6 +918,26 @@ tr.article-row:hover { background: var(--surface2); }
             <tbody id="articlesBody">
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Colegio de Abogados avala acción de sanjuaneros para frenar proyecto en el Escambrón">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/colegio-de-abogados-avala-accion-de-sanjuaneros-para-frenar-proyecto-en-el-escambron/" target="_blank">Colegio de Abogados avala acción de sanjuaneros para frenar proyecto en el Escambrón</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-10-02 15:21">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Río Grande" data-titular="Asaltan hombre frente a su casa y le roban joyas valoradas en $6,500">
+                    <td><span class="muni-tag">Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.notiuno.com/noticias/seguridad-y-justicia/asaltan-hombre-frente-a-su-casa-y-le-roban-joyas-valoradas-en-6-500/article_76c63f24-00ee-4441-a584-4e5a7d9d6197.html" target="_blank">Asaltan hombre frente a su casa y le roban joyas valoradas en $6,500</a>
+                    </td>
+                    <td>NotiUno</td>
+                    <td class="time-ago" data-date="2026-10-02 15:15">ahora</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="Frente a su casa: asaltan a mano armada a un hombre y le roban $6,500 en joyas en Río Grande">
                     <td><span class="muni-tag">Río Grande</span></td>
@@ -959,16 +979,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-02 11:45">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Romero solicita ampliar crédito por falta de agua en San Juan">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.notiuno.com/noticias/gobierno-y-politica/romero-solicita-ampliar-cr-dito-por-falta-de-agua-en-san-juan/article_60620425-3273-409d-93c9-b01025fea19c.html" target="_blank">Romero solicita ampliar crédito por falta de agua en San Juan</a>
-                    </td>
-                    <td>NotiUno</td>
-                    <td class="time-ago" data-date="2026-10-02 11:22">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Caguas" data-titular="Arrestan al segundo sospechoso del asalto a un agente de la Policía en Caguas">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
@@ -976,7 +986,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/notas/arrestan-al-segundo-sospechoso-del-asalto-a-un-agente-de-la-policia-en-caguas/" target="_blank">Arrestan al segundo sospechoso del asalto a un agente de la Policía en Caguas</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-10-02 11:16">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-10-02 11:31">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Juana Díaz y Carolina salen victoriosas en el BSNF">
@@ -986,7 +996,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://noticel.com/deportes/20261002/juana-diaz-y-carolina-salen-victoriosas-en-el-bsnf/?utm_source=rss&utm_medium=rss&utm_campaign=juana-diaz-y-carolina-salen-victoriosas-en-el-bsnf" target="_blank">Juana Díaz y Carolina salen victoriosas en el BSNF</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-10-02 11:04">hace 12min</td>
+                    <td class="time-ago" data-date="2026-10-02 11:04">hace 27min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Comunidad del Escambrón demanda al Municipio de San Juan para detener proyecto de estacionamiento">
@@ -996,7 +1006,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/comunidad-del-escambron-demanda-al-municipio-de-san-juan-para-detener-proyecto-de-estacionamiento/?utm_source=rss&utm_medium=rss&utm_campaign=comunidad-del-escambron-demanda-al-municipio-de-san-juan-para-detener-proyecto-de-estacionamiento&utm_source=rss&utm_medium=rss&utm_campaign=comunidad-del-escambron-demanda-al-municipio-de-san-juan-para-detener-proyecto-de-estacionamiento" target="_blank">Comunidad del Escambrón demanda al Municipio de San Juan para detener proyecto de estacionamiento</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-10-02 10:32">hace 44min</td>
+                    <td class="time-ago" data-date="2026-10-02 10:32">hace 59min</td>
                 </tr>
                 
                 
@@ -1082,7 +1092,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/colegio-de-abogados-considera-presentar-recurso-para-cuestionar-ordenanza-municipal-que-permite-desarrollo-de-multipisos-en-el-escambron1/?utm_source=rss&utm_medium=rss&utm_campaign=colegio-de-abogados-considera-presentar-recurso-para-cuestionar-ordenanza-municipal-que-permite-desarrollo-de-multipisos-en-el-escambron1&utm_source=rss&utm_medium=rss&utm_campaign=colegio-de-abogados-considera-presentar-recurso-para-cuestionar-ordenanza-municipal-que-permite-desarrollo-de-multipisos-en-el-escambron1" target="_blank">Colegio de Abogados considera presentar recurso para cuestionar ordenanza municipal que permite desarrollo de multipisos en El Escambrón</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-10-01 21:21">hace 13h</td>
+                    <td class="time-ago" data-date="2026-10-01 21:21">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Autoridades policiacas en Caguas realizan búsqueda de hombre en zona boscosa cercana a la PR-172">
@@ -1135,6 +1145,16 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-01 16:35">hace 18h</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="ATI flexibiliza reservaciones de vehículos para viajes a Vieques y Culebra - El Vocero de Puerto Rico">
+                    <td><span class="muni-tag">Vieques, Culebra</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxQNzRWX1V6SjN6QUItUFU0ZVJIME9WTzJzSUVzY0xvb2xka1hEdVQ0WjdfMnBKMHJrYUF4dGJqMWtnVW8ydU9mN1JJZ185OFVmME92N0JIRGVJdTRuSjk4MkNuQjJDRmVyekZZNE1UWlB0UVNNSFRocGM5dmJKRUM0ckFXXzlQTFdXODhGdzFDd01RbHZJUHJMVkVuVmR3MlpQQUJzOXhTdHl1WEtSTU1HbWUyT0hzZVlHRC1MY2l1d29fSG5aQ0hDNHdIbkYwb0NxUnJDdG1Bd1M3R0h5LUNQSWhOREszaWZVMGR5OWFINNIB9AFBVV95cUxONkRyeUFaVldzLVBXQ3pLRTRobGlTbFM2VTdZZC13RkRZNFlLbEtaNVdLbEpyNEgzbTRUT0dXbU5ObmFIUWJuWmFoU1FwLUhyNWZuMndVYS12UlhyckFyNHhWLVhnM0pObTJoSHhWN2w0QXNwdDhRQ2kxSmpWWjNHTGY2ZXUyZDhmQnNsc0QzdjIxaG5tY0gyM2xjTFhlVHBWUWZ6RXNuc3FtUnpNYVM1Wk5JX1g4dW03TV8teldSYlVfSEdkT3NCb2ZZaU92NFJTazlfRWQ1T3lxbW0tVlZxWGxwMlZqQU5NdVVMREpuY3IxaXRf?oc=5" target="_blank">ATI flexibiliza reservaciones de vehículos para viajes a Vieques y Culebra - El Vocero de Puerto Rico</a>
+                    </td>
+                    <td>Vieques</td>
+                    <td class="time-ago" data-date="2026-10-01 16:26">hace 19h</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Naguabo" data-titular="🎉 ¡Naguabo se prepara para celebrar en grande! 🎶 El Municipio Autónomo de Naguabo y nuestra alcaldesa, Hon. Miraidaliz Rosario Pagán, les invitan a disfrutar de las Fiestas de Pueblo & Festival Gastronómico y Cultural. 📅 Viernes 9 al domingo 11 de octu - facebook.com">
                     <td><span class="muni-tag">Naguabo</span></td>
                     <td class="titular-cell">
@@ -1152,7 +1172,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxNemZ2MURPOVdWUm0wVDhNYUlxbklLXzRjaDROYnlQS3dFRnJNRjRVeVFyZU9VMmNPLWRPX2hLVWROQ2RwZWJNaTBVNUVTM1RDemV6cllSaE5YTG44WHBVQzBWVFZqOHo0Y1pqWThpaW85ZVA1ZHR0RkRrbE5HS0VUd3ExRlRPVkM1VGNjSlhqTVJOdDNycVNpbGRYX2ZBR0NaMVdzZXNvTlFNVHdjYncweGp4dExpT3pnemFvakF0dTlmakloRDZTMjNNMTFCMmNOZU50XzJMYXV5Sm9Nend6NWM3alB2N2V4Tkw3YmF3?oc=5" target="_blank">Expolicía municipal de Río Grande imputado por actos lascivos contra mujer - wapa.tv</a>
                     </td>
                     <td>Río Grande</td>
-                    <td class="time-ago" data-date="2026-10-01 11:22">hace 23h</td>
+                    <td class="time-ago" data-date="2026-10-01 11:22">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="VIEQUES SE ILUMINA DE ROSA En conmemoración de esta fecha tan significativa, el alcalde de Vieques, Hon. José A. Junito Corcino Acevedo, se une a nuestra comunidad en un mensaje de solidaridad, esperanza y reconocimiento a todas las personas q - facebook.com">
@@ -1187,6 +1207,16 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 
                 <tr class="time-group-header"><td colspan="4">📋 Anteriores</td></tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Jóvenes atletas de Puerto Rico conocen el legado de Roberto Clemente y su Hit 3,000">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.carolina787.com/n/jovenes-atletas-de-puerto-rico-conocen-el-legado-de-roberto-clemente-y-su-hit-3-000" target="_blank">Jóvenes atletas de Puerto Rico conocen el legado de Roberto Clemente y su Hit 3,000</a>
+                    </td>
+                    <td>Carolina787</td>
+                    <td class="time-ago" data-date="2026-10-02">2026-10-02</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Filtran datos de pacientes en Carolina tras ciberataque de KillSec">
                     <td><span class="muni-tag">Carolina</span></td>
@@ -1358,7 +1388,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-02 11:16:14 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-02 11:31:12 AM<br>
     Actualización automática cada 30 min
 </div>
 
