@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-03 04:31:15 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-03 04:46:18 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">32</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">30</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-03 04:31:15 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-03 04:46:18 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -810,19 +810,6 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <!-- BREAKING NEWS -->
-
-<div class="section breaking-section">
-    <div class="breaking-banner">
-        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
-        
-        <div class="breaking-item">
-            <span class="time">hace 1h</span> —
-            <a href="https://noticel.com/noticias/20261003/cic-de-san-juan-investiga-asesinatos-ocurridos-anoche-y-esta-madrugada/?utm_source=rss&utm_medium=rss&utm_campaign=cic-de-san-juan-investiga-asesinatos-ocurridos-anoche-y-esta-madrugada" target="_blank">CIC de San Juan investiga asesinatos ocurridos anoche y esta madrugada</a>
-            <span style="opacity:0.6"> [San Juan]</span>
-        </div>
-        
-    </div>
-</div>
 
 
 <!-- MUNICIPALITIES -->
@@ -847,7 +834,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <span class="muni-name">Caguas</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">3</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
@@ -880,9 +867,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
             <span class="muni-name">Naguabo</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
@@ -932,6 +919,16 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="San Juan hace nueva entrega de baterías para personas con necesidades médicas">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/noticias/20261003/san-juan-hace-nueva-entrega-de-baterias-para-personas-con-necesidades-medicas/?utm_source=rss&utm_medium=rss&utm_campaign=san-juan-hace-nueva-entrega-de-baterias-para-personas-con-necesidades-medicas" target="_blank">San Juan hace nueva entrega de baterías para personas con necesidades médicas</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-10-03 20:02">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Caguas" data-titular="Continúa el Torneo Internacional El Criollo en Caguas">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
@@ -949,7 +946,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/notas/se-queda-fuera-el-amur-river-guardia-costera-expresa-objeciones-con-tanquero-de-gas-natural/" target="_blank">¿Se queda fuera el Amur River? Guardia Costera expresa objeciones con tanquero de gas naturalLa comunicación del capitán del puerto de San Juan pone en duda la entrada del buque prevista para el domingo</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-10-03 16:31">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-10-03 16:46">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Buque Amur River entrará el domingo a la bahía de San Juan con cargamento de gas natural">
@@ -959,7 +956,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/notas/buque-amur-river-entrara-el-domingo-a-la-bahia-de-san-juan-con-cargamento-de-gas-natural/" target="_blank">Buque Amur River entrará el domingo a la bahía de San Juan con cargamento de gas natural</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-10-03 16:31">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-10-03 16:46">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina,Trujillo Alto" data-titular="Dos hombres son arrestados durante intervenciones antidrogas en Carolina y Trujillo Alto - Metro Puerto Rico">
@@ -969,7 +966,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxOOXppR0JZajlmZEdVT091eWFaRWxuSjNMdHkyWE12emJycWozNkNyUXZaSFQwNWM4WWNxLXNtdWlZazlSWk5OZUY4MU4wd1pGSlNaVUpiYk10cDFvZEN5cWlqYVhaMEw3Sm5UR2hXalhzMlQyYWxid1dRNzNzV1UtekwxYW1oVGtheFVZRmxxYzVFRHdBWmxOOXk1QXNneEhER0t1NUZxT2Q0TEZneXd5UEpiUDlVNUZpNWZNZUJKS1o0bTgyNWtkWVFn?oc=5" target="_blank">Dos hombres son arrestados durante intervenciones antidrogas en Carolina y Trujillo Alto - Metro Puerto Rico</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-10-03 16:27">hace 4min</td>
+                    <td class="time-ago" data-date="2026-10-03 16:27">hace 19min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Marie Ramos será reconocida en el Segundo Festival Literario de Trujillo Alto - NotiCel">
@@ -979,7 +976,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOLXNSQjZ1MHktU2g5dEpaS0I4TEZnNXdTaU9qaHJSZXk3UzA0QUpsWmJob1gzbDB2MG5NRlBhNlJ3YzVlMTdqRmlQV3dMWmx3WWlwSEdmWlh1ck01c3diMTVBSlV4LUxrQkdLczlBWTREWXVzOE5rQmhmVmRKRHV2Nm4zR3FtLVVRelBKQWZFLVFSWWxKS0NMXzhzRHRsbl9xcmxCaERmVlBweEpBX1V1TzFzbGJkMEU?oc=5" target="_blank">Marie Ramos será reconocida en el Segundo Festival Literario de Trujillo Alto - NotiCel</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-10-03 16:18">hace 13min</td>
+                    <td class="time-ago" data-date="2026-10-03 16:18">hace 28min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Marie Ramos será reconocida en el Segundo Festival Literario de Trujillo Alto">
@@ -989,7 +986,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://noticel.com/noticias/20261003/marie-ramos-sera-reconocida-en-el-segundo-festival-literario-de-trujillo-alto/?utm_source=rss&utm_medium=rss&utm_campaign=marie-ramos-sera-reconocida-en-el-segundo-festival-literario-de-trujillo-alto" target="_blank">Marie Ramos será reconocida en el Segundo Festival Literario de Trujillo Alto</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-10-03 15:56">hace 35min</td>
+                    <td class="time-ago" data-date="2026-10-03 15:56">hace 50min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Las semifinales del 58vo Concurso Nacional de Trova comienzan en Canóvanas - prpop.org">
@@ -999,7 +996,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPcnB6c19qQWsteFpZYUpuX1NjeTRib1FpMG42RjhmSnA0WmVrOUJGSDZIV3h1ZXAyc01hLU51SUloZVE0Zk9hN21BaVVaU2tkbGJzZEFGUlRQRnR3dGt6Mk9xamRveTlNZE9ZSU1CbjVPNEllWFMzV1NITlRwN3VpS3c0Q2hkWFJGM3VZMFBZcFc1N3pIXzRwTUJZZEhYX3lReElF?oc=5" target="_blank">Las semifinales del 58vo Concurso Nacional de Trova comienzan en Canóvanas - prpop.org</a>
                     </td>
                     <td>Canóvanas</td>
-                    <td class="time-ago" data-date="2026-10-03 15:53">hace 38min</td>
+                    <td class="time-ago" data-date="2026-10-03 15:53">hace 53min</td>
                 </tr>
                 
                 
@@ -1015,26 +1012,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-03 15:09">hace 1h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="CIC de San Juan investiga asesinatos ocurridos anoche y esta madrugada">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20261003/cic-de-san-juan-investiga-asesinatos-ocurridos-anoche-y-esta-madrugada/?utm_source=rss&utm_medium=rss&utm_campaign=cic-de-san-juan-investiga-asesinatos-ocurridos-anoche-y-esta-madrugada" target="_blank">CIC de San Juan investiga asesinatos ocurridos anoche y esta madrugada</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-10-03 15:00">hace 1h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Las Atenienses de Manatí se apoderan del primer lugar del torneo">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/deportes/20261003/las-atenienses-de-manati-se-apoderan-del-primer-lugar-del-torneo/?utm_source=rss&utm_medium=rss&utm_campaign=las-atenienses-de-manati-se-apoderan-del-primer-lugar-del-torneo" target="_blank">Las Atenienses de Manatí se apoderan del primer lugar del torneo</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-10-03 14:31">hace 2h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Loíza" data-titular="Bar de la Calle Loíza entre los nominados a los mejores “speakeasy” de todo Estados Unidos - El Nuevo Día">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
@@ -1042,7 +1019,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbGh4WlZLa0wwRUtxN3dSQ2NDU0M3MXJqcWZOSl93WlYwcDdGQzE4U2NhNW9aMjREQ3pxdHp0eEdnbndFMndZLVM1QnF5eXcyWlBvUmRhRUdtMXphM1F5bUc5MDFkOHVERXpSS2Q1bDVqNDh5TmtNZFJaMWpJSGE1SnNFS3Ryb3pUc2NCQnZvai04c09PdEY5SUZ5N3hhOXhGYUdPdVViZnBGSXJTVkNqUHgxeWU1MV9xblpVbnF3WnphN011dkNFRWVsUHNlREUxN0toMWF6SVAzVVJHU2ZmbnhCdlV2OWc?oc=5" target="_blank">Bar de la Calle Loíza entre los nominados a los mejores “speakeasy” de todo Estados Unidos - El Nuevo Día</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-10-03 12:40">hace 3h</td>
+                    <td class="time-ago" data-date="2026-10-03 12:40">hace 4h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Buscan a hombre desaparecido desde el 10 de septiembre en Trujillo Alto - El Vocero de Puerto Rico">
@@ -1075,7 +1052,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxONU54WGtPLUZKSTJ4SkU1OW1sLU1CcFpIUkd6MkNmVDFxM09CZFE0a3lmVHpWVVVaRUNsSmIwZVJieTZST1liRGdoM2IzZUwtM2JIejZURklBcEtzZ2o0N1NieUR4Z0owQnNZbC1iQk9kQ3dPUzB0MnN1SkctZVBtcDZnY3FTNFRFSTRxYmpvVFdKaDVkekQxUTV6RlBLMGxxX0tXTGFUaU1UTmoxVklBdzF6bHFFWlRtTU5vZ01LQQ?oc=5" target="_blank">Culebra,Puerto Rico 🇵🇷😍 . . . #puertorico #culebra #ferry #paraiso #tours - facebook.com</a>
                     </td>
                     <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-10-02 22:37">hace 17h</td>
+                    <td class="time-ago" data-date="2026-10-02 22:37">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Culebra" data-titular="Alexis Almodovar. Bad Bunny · Enséñame a Bailar. Culebra,Puerto Rico 🇵🇷😍 . . . #puertorico #culebra #ferry #paraiso #tours - facebook.com">
@@ -1085,7 +1062,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxOS2VnLUFPZm54UTRTOVNsdUdtcVZLOU16aEgxc3pPbDVWVTRwMDZQbU1fTVF5d2FMNFoya3h0WkxHRVc5emdoX1RWWTdjMzdRVzFETXhRRk9MeTdJQV90QzdoOHZNbGo4QXltdUVXMmlabE1YOEx1ZmJpX2kwQUp6T1V4OUsweVFvUHFOXzhnU1RFMGV4NlQ4R2Y0UDROdXJMT1lmeEFVNmFUVUxabjZpQlNYS19wLUNqUnByaEk2RnY?oc=5" target="_blank">Alexis Almodovar. Bad Bunny · Enséñame a Bailar. Culebra,Puerto Rico 🇵🇷😍 . . . #puertorico #culebra #ferry #paraiso #tours - facebook.com</a>
                     </td>
                     <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-10-02 22:37">hace 17h</td>
+                    <td class="time-ago" data-date="2026-10-02 22:37">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Atención clientes de Fajardo: Algunos clientes de este municipio experimentan una interrupción del servicio debido a una avería reportada en la zona. Nuestras brigadas atienden la avería para restablecer el servicio de manera segura. Pendiente de las actu - facebook.com">
@@ -1125,7 +1102,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxPSW9mcFZCa3NIR2haZDE5QzZRVHU3a09uS01ueWVOeWlMbjZBaHl6eGlNYXZqZHltQnJJZ1dZQ05Lck55cnFHVmVXTUFrZ0t3NEtlLXFmZjI3aDZYdGo2SEprN0lXbEdGaGlqME5WTlJvVlRTYUl0ZEZuOVNvcnZOajJOX2lNQy1NYnpiNmRzelRvSVhFSkZzRzdvWWk5a3RTQXBRMjF6ZzFvOGgxYTluUFR6QUVaWG5qTnFvNXFBU0lOSVFob3BiY2o5V1BMSzJ2SFptbkpFUnF1emxrc2l2WVRXTnQ1a3F4enc?oc=5" target="_blank">Atención clientes de Canóvanas: Algunos clientes de este municipio experimentan una interrupción del servicio debido a una avería reportada en la zona. Nuestras brigadas atienden la avería para restablecer el servicio de manera segura. Pendiente de las - facebook.com</a>
                     </td>
                     <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-10-02 20:32">hace 19h</td>
+                    <td class="time-ago" data-date="2026-10-02 20:32">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Cancelan reunión de comisión que evaluaría proyecto para nombrar plazoleta en honor a Alex Sanabria">
@@ -1155,17 +1132,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/02/arrestan-a-dos-hombres-por-robo-a-sargento-franco-de-servicio-en-caguas/" target="_blank">Arrestan a dos hombres por robo a sargento franco de servicio en Caguas</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-02 18:38">hace 21h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="🏐🔥 ¡NAGUABO SE VISTE DE VOLEIBOL! El Municipio Autónomo de Naguabo, junto al Departamento de Recreación y Deportes y la Hon. Miraidaliz Rosario Pagán, Alcaldesa, invita a toda la comunidad a ser parte de la gran inauguración del Torneo Munici - facebook.com">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxPeUttNm1JXzU0akhOYVVzcGwtV0lnM0M2NklpMzlPN2RhXzhzbzh0MzBEYXdvNGJvOXR5WGxNeEV2eHpxcndsLUZsNWM3NTFSV1BGcmxRVmNsYmxjTWFPTTQ4WkxxLV9uZWtnOGRFdDVSR2NFT19tWFhTaFFxTWtPcDlsOEpDOG1ORGVzbW1lZGVUTkEtTFJUYUtDTVlYa0MtVldUaV9fcmxTcXF1Zy1CVTVNb0xDbjA4QmdwQUtDYkViSWJyWXh3eGwxczRZOU55VGU0bUZqOEJJLXBwM2w0VG0weFNtOVBZbTVKMk5UWEtIcE0?oc=5" target="_blank">🏐🔥 ¡NAGUABO SE VISTE DE VOLEIBOL! El Municipio Autónomo de Naguabo, junto al Departamento de Recreación y Deportes y la Hon. Miraidaliz Rosario Pagán, Alcaldesa, invita a toda la comunidad a ser parte de la gran inauguración del Torneo Munici - facebook.com</a>
-                    </td>
-                    <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-10-02 18:33">hace 21h</td>
+                    <td class="time-ago" data-date="2026-10-02 18:38">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="UPR en Humacao se ubica en el Top 10 de dos categorías de Best Colleges 2027">
@@ -1215,7 +1182,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.notiuno.com/noticias/gobierno-y-politica/exsecretarios-de-hacienda-integran-equipo-de-transici-n-de-hiram-montalvo/article_799ce92d-c8cf-4351-b25e-daaa64111a0f.html" target="_blank">Exsecretarios de Hacienda integran equipo de transición de Hiram Montalvo</a>
                     </td>
                     <td>NotiUno</td>
-                    <td class="time-ago" data-date="2026-10-02 16:39">hace 23h</td>
+                    <td class="time-ago" data-date="2026-10-02 16:39">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Madre denuncia alegados episodios de bullying y plantea preocupación por seguridad de su hijo en escuela de Humacao">
@@ -1411,7 +1378,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-03 04:31:15 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-03 04:46:18 PM<br>
     Actualización automática cada 30 min
 </div>
 
