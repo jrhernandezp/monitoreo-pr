@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-03 06:01:12 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-03 06:16:18 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">32</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num">34</div><div class="label">Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-03 06:01:12 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-03 06:16:18 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -810,6 +810,19 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <!-- BREAKING NEWS -->
+
+<div class="section breaking-section">
+    <div class="breaking-banner">
+        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">hace 3h</span> —
+            <a href="https://noticel.com/noticias/20261003/cic-de-san-juan-investiga-asesinatos-ocurridos-anoche-y-esta-madrugada/?utm_source=rss&utm_medium=rss&utm_campaign=cic-de-san-juan-investiga-asesinatos-ocurridos-anoche-y-esta-madrugada" target="_blank">CIC de San Juan investiga asesinatos ocurridos anoche y esta madrugada</a>
+            <span style="opacity:0.6"> [San Juan]</span>
+        </div>
+        
+    </div>
+</div>
 
 
 <!-- MUNICIPALITIES -->
@@ -829,12 +842,12 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <span class="muni-name">Trujillo Alto</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">5</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <span class="muni-name">Caguas</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">4</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
@@ -959,16 +972,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-03 20:55">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="San Juan hace nueva entrega de baterías para personas con necesidades médicas">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://noticel.com/noticias/20261003/san-juan-hace-nueva-entrega-de-baterias-para-personas-con-necesidades-medicas/?utm_source=rss&utm_medium=rss&utm_campaign=san-juan-hace-nueva-entrega-de-baterias-para-personas-con-necesidades-medicas" target="_blank">San Juan hace nueva entrega de baterías para personas con necesidades médicas</a>
-                    </td>
-                    <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-10-03 20:02">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="San Juan" data-titular="“Aquí estoy, mi gente”: el emotivo primer mensaje de monseñor Eusebio Ramos como arzobispo electo de San Juan">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
@@ -976,7 +979,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/notas/aqui-estoy-mi-gente-el-emotivo-primer-mensaje-de-monsenor-eusebio-ramos-como-arzobispo-electo-de-san-juan/" target="_blank">“Aquí estoy, mi gente”: el emotivo primer mensaje de monseñor Eusebio Ramos como arzobispo electo de San Juan</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-10-03 18:01">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-10-03 18:16">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Continúa el Torneo Internacional El Criollo en Caguas">
@@ -986,7 +989,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://noticel.com/deportes/20261003/continua-el-torneo-internacional-el-criollo-en-caguas/?utm_source=rss&utm_medium=rss&utm_campaign=continua-el-torneo-internacional-el-criollo-en-caguas" target="_blank">Continúa el Torneo Internacional El Criollo en Caguas</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-10-03 17:17">hace 44min</td>
+                    <td class="time-ago" data-date="2026-10-03 17:17">hace 59min</td>
                 </tr>
                 
                 
@@ -1019,7 +1022,27 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbEpCWXI1NS1XVkFRdW93SXE5MW5NSXpuSFI3emNtX2szRGtuYlRoZVRWRU9udFM0dU5hNVdvTHBZUkplbVpzNk45U0d3bWdmN1dRTnM1U1VCVnpIU1dDSVFUM1ozdXo1M0o5TU1YeXZ5Umc3QzhKM0JReWdYd2xCQWhGZWtiLWpxTWJmMHlSamQ1OWY1am1tNEZpa1RaV2NlT3Vmc2xBMmtWVmxxY3RPT244dlRPZE4wS2NITGVnSnExZFU?oc=5" target="_blank">Prosecutores charge man who allegedly sexually assaulted a tourist in San Juan - El Nuevo Día</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-10-03 15:09">hace 2h</td>
+                    <td class="time-ago" data-date="2026-10-03 15:09">hace 3h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="CIC de San Juan investiga asesinatos ocurridos anoche y esta madrugada">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://noticel.com/noticias/20261003/cic-de-san-juan-investiga-asesinatos-ocurridos-anoche-y-esta-madrugada/?utm_source=rss&utm_medium=rss&utm_campaign=cic-de-san-juan-investiga-asesinatos-ocurridos-anoche-y-esta-madrugada" target="_blank">CIC de San Juan investiga asesinatos ocurridos anoche y esta madrugada</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-10-03 15:00">hace 3h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Las Atenienses de Manatí se apoderan del primer lugar del torneo">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://noticel.com/deportes/20261003/las-atenienses-de-manati-se-apoderan-del-primer-lugar-del-torneo/?utm_source=rss&utm_medium=rss&utm_campaign=las-atenienses-de-manati-se-apoderan-del-primer-lugar-del-torneo" target="_blank">Las Atenienses de Manatí se apoderan del primer lugar del torneo</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-10-03 14:31">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Bar de la Calle Loíza entre los nominados a los mejores “speakeasy” de todo Estados Unidos - El Nuevo Día">
@@ -1030,6 +1053,16 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Loíza</td>
                     <td class="time-ago" data-date="2026-10-03 12:40">hace 5h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="El cielo de esta noche desde Trujillo Alto, Puerto Rico - TheSkyLive">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE9hQUVfRklRWC1jVWNvSWdSTDBMbDhIUkdJcnFzelZhOVhmQ09FQm1qdHllWWw5UThHeE1ZM3BQMmxRampNSTJMWTRNanBzaVYwX0h0M0pCWUw?oc=5" target="_blank">El cielo de esta noche desde Trujillo Alto, Puerto Rico - TheSkyLive</a>
+                    </td>
+                    <td>Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-10-03 06:38">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Buscan a hombre desaparecido desde el 10 de septiembre en Trujillo Alto - El Vocero de Puerto Rico">
@@ -1082,7 +1115,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxORWdLZDlQN09TYWx6Z1EwMTRnMkRPaU5mSnhhR0p4dl8yQzl4WkxwRE1QNUZDSmcySkVZX1RFMlpwWUstZGhfNk91YnRVc25rOTZrRmRrcTZxOWZuRGJWUG1rN3RRNUNRZ2xxQTVYMEprQVdCZENqdXE4VV9SbmJ2M3diWkJOakJtM1JjV0p5cXlqd0lhS2pjU0Nva3Y0NGhURm1WQUdoRHdxYUVTZWdUUms5RU1XcjBEZWd6b0ZOV3JiUVRLaVZCUFFvSDZnYlpodW1VekpVMTNiamxjN2ZaTWFlbw?oc=5" target="_blank">Atención clientes de Fajardo: Algunos clientes de este municipio experimentan una interrupción del servicio debido a una avería reportada en la zona. Nuestras brigadas atienden la avería para restablecer el servicio de manera segura. Pendiente de las actu - facebook.com</a>
                     </td>
                     <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-10-02 22:14">hace 19h</td>
+                    <td class="time-ago" data-date="2026-10-02 22:14">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Opositores de estacionamiento en Escambrón demanda al municipio de San Juan - Telemundo Puerto Rico">
@@ -1092,7 +1125,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxPaXJWM3Zvc1Rrckk4TkJCZ2Z1aHRoVmxIWjlaS0h4Y3ZObDdXWTdWM1NEZ2duOXJOVVNPQTVTdkNJQzVtNFprTGRUYlRSOGllVUtna21nWmpBczZRNklDV3dtMnFyWU1wRHR6Y0I1Yk1UUXhrdWNTVXoyQzUzVHBoTDNpMXlhRU5OMTYxMHlXak50bjg1UVVVTlBoVFJ5UnZ5SWxMZmdEdEdVYzV1bU0wRk9BZGFJVGZNNjJJYXJONFFqOXFEZm1aTjFVRjNmNjdmTUd5TEJ0NNIB3wFBVV95cUxPc0FEOWRzNTRHYTBRMHh6a3Nkc0RpcmFucDhqWGp3RVNxT0h3TVplMDVtLVJGWk9MTmtGVWpkTm0tT1psWE9WX3VINTJLRENYWXNTeUotN1ZCbXNxckpVUmVsZWdNZmZMY043MkZnN3NqeTVZNEMteUdkanVlOGp4NjFyem5pWjVyUTVncTFrSlFTeTdJYVliT0MwUmlEOHktMjVuQVRMNjNFN3NBUThJeUhleUdCNW9jc1FuQUNnS3djVFgzSjVRUlNzZ0F3ZkNQdGN4bTZLSmJ6ZldxUXRJ?oc=5" target="_blank">Opositores de estacionamiento en Escambrón demanda al municipio de San Juan - Telemundo Puerto Rico</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-10-02 22:11">hace 19h</td>
+                    <td class="time-ago" data-date="2026-10-02 22:11">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="🩷𝐄𝐋 𝐌𝐔𝐍𝐈𝐂𝐈𝐏𝐈𝐎 𝐃𝐄 𝐅𝐀𝐉𝐀𝐑𝐃𝐎 𝐒𝐄 𝐕𝐈𝐒𝐓𝐄 𝐃𝐄 𝐑𝐎𝐒𝐀🩷 Como parte de las iniciativas de concienciación durante el mes de octubre, el personal del Municipio Autónomo de Fajardo se unió hoy a la campaña de lucha contra el cáncer de seno, vistiendo - facebook.com">
@@ -1132,7 +1165,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/02/sentencia-contra-turista-por-hit-run-en-vieques-vuelve-a-posponerse-tras-impugnacion-de-informe-presentencia/" target="_blank">Sentencia contra turista por hit & run en Vieques vuelve a posponerse tras impugnación de informe presentencia</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-02 19:02">hace 22h</td>
+                    <td class="time-ago" data-date="2026-10-02 19:02">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Arrestan a dos hombres por robo a sargento franco de servicio en Caguas">
@@ -1398,7 +1431,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-03 06:01:12 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-03 06:16:18 PM<br>
     Actualización automática cada 30 min
 </div>
 
