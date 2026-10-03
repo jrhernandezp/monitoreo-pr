@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-03 05:31:35 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-03 05:46:11 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">30</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">29</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-03 05:31:35 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-03 05:46:11 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -819,7 +819,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">6</span>
+            <span class="muni-count">8</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -829,7 +829,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <span class="muni-name">Trujillo Alto</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">5</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
@@ -849,7 +849,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <span class="muni-name">Fajardo</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
@@ -887,9 +887,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">1</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Culebra')">
+        <div class="muni-card inactive" onclick="filtrarPor('Culebra')">
             <span class="muni-name">Culebra</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">0</span>
         </div>
         
     </div>
@@ -918,6 +918,16 @@ tr.article-row:hover { background: var(--surface2); }
             <tbody id="articlesBody">
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Una vocación que nació entre sus alumnos: el camino de Eusebio Ramos Morales al arzobispado de San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/locales/notas/una-vocacion-que-nacio-entre-sus-alumnos-el-camino-de-eusebio-ramos-morales-al-arzobispado-de-san-juan/" target="_blank">Una vocación que nació entre sus alumnos: el camino de Eusebio Ramos Morales al arzobispado de San Juan</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-10-03 21:35">ahora</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Marie Ramos será reconocida en el Segundo Festival Literario de Trujillo Alto - NotiCel">
                     <td><span class="muni-tag">Trujillo Alto</span></td>
@@ -949,6 +959,16 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-03 20:02">ahora</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="“Aquí estoy, mi gente”: el emotivo primer mensaje de monseñor Eusebio Ramos como arzobispo electo de San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/locales/notas/aqui-estoy-mi-gente-el-emotivo-primer-mensaje-de-monsenor-eusebio-ramos-como-arzobispo-electo-de-san-juan/" target="_blank">“Aquí estoy, mi gente”: el emotivo primer mensaje de monseñor Eusebio Ramos como arzobispo electo de San Juan</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-10-03 17:46">ahora mismo</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Caguas" data-titular="Continúa el Torneo Internacional El Criollo en Caguas">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
@@ -956,7 +976,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://noticel.com/deportes/20261003/continua-el-torneo-internacional-el-criollo-en-caguas/?utm_source=rss&utm_medium=rss&utm_campaign=continua-el-torneo-internacional-el-criollo-en-caguas" target="_blank">Continúa el Torneo Internacional El Criollo en Caguas</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-10-03 17:17">hace 14min</td>
+                    <td class="time-ago" data-date="2026-10-03 17:17">hace 29min</td>
                 </tr>
                 
                 
@@ -1009,7 +1029,17 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbGh4WlZLa0wwRUtxN3dSQ2NDU0M3MXJqcWZOSl93WlYwcDdGQzE4U2NhNW9aMjREQ3pxdHp0eEdnbndFMndZLVM1QnF5eXcyWlBvUmRhRUdtMXphM1F5bUc5MDFkOHVERXpSS2Q1bDVqNDh5TmtNZFJaMWpJSGE1SnNFS3Ryb3pUc2NCQnZvai04c09PdEY5SUZ5N3hhOXhGYUdPdVViZnBGSXJTVkNqUHgxeWU1MV9xblpVbnF3WnphN011dkNFRWVsUHNlREUxN0toMWF6SVAzVVJHU2ZmbnhCdlV2OWc?oc=5" target="_blank">Bar de la Calle Loíza entre los nominados a los mejores “speakeasy” de todo Estados Unidos - El Nuevo Día</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-10-03 12:40">hace 4h</td>
+                    <td class="time-ago" data-date="2026-10-03 12:40">hace 5h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="El cielo de esta noche desde Trujillo Alto, Puerto Rico - TheSkyLive">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE9hQUVfRklRWC1jVWNvSWdSTDBMbDhIUkdJcnFzelZhOVhmQ09FQm1qdHllWWw5UThHeE1ZM3BQMmxRampNSTJMWTRNanBzaVYwX0h0M0pCWUw?oc=5" target="_blank">El cielo de esta noche desde Trujillo Alto, Puerto Rico - TheSkyLive</a>
+                    </td>
+                    <td>Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-10-03 06:38">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Buscan a hombre desaparecido desde el 10 de septiembre en Trujillo Alto - El Vocero de Puerto Rico">
@@ -1024,36 +1054,6 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 
                 <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="Culebra" data-titular="Muy lamentable la situación a playa Flamenco rn Culebra, Puerto Rico. - facebook.com">
-                    <td><span class="muni-tag">Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTk5KU3pnS3hfckxPR1dtTFd0cXF0Nk1LMGVoeGFHTGREcmtJR3U0VG5hY3hJWUtfZDB2LUVUQmw4elNPMDNLc2dUVV9ydkxRNkJkekNRRjNOQlEzV1FHblJZRkJBMWRrc09vaWoyeFB3cW9zX19vaFg0TDRuNTFvR21MV011UGhRNlJ3Uk9fejVVck0wNWZydHFTbjIxem9sUHJVZnN1QXhzUWx4NGZKd0kzd0RkanplTi14dzhHcHNLdEpUTk1tQTdsRUh4TEtYU3ZmRk9xeXpMNG1GanFN?oc=5" target="_blank">Muy lamentable la situación a playa Flamenco rn Culebra, Puerto Rico. - facebook.com</a>
-                    </td>
-                    <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-10-02 22:49">hace 18h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Culebra" data-titular="Culebra,Puerto Rico 🇵🇷😍 . . . #puertorico #culebra #ferry #paraiso #tours - facebook.com">
-                    <td><span class="muni-tag">Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxONU54WGtPLUZKSTJ4SkU1OW1sLU1CcFpIUkd6MkNmVDFxM09CZFE0a3lmVHpWVVVaRUNsSmIwZVJieTZST1liRGdoM2IzZUwtM2JIejZURklBcEtzZ2o0N1NieUR4Z0owQnNZbC1iQk9kQ3dPUzB0MnN1SkctZVBtcDZnY3FTNFRFSTRxYmpvVFdKaDVkekQxUTV6RlBLMGxxX0tXTGFUaU1UTmoxVklBdzF6bHFFWlRtTU5vZ01LQQ?oc=5" target="_blank">Culebra,Puerto Rico 🇵🇷😍 . . . #puertorico #culebra #ferry #paraiso #tours - facebook.com</a>
-                    </td>
-                    <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-10-02 22:37">hace 18h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Culebra" data-titular="Alexis Almodovar. Bad Bunny · Enséñame a Bailar. Culebra,Puerto Rico 🇵🇷😍 . . . #puertorico #culebra #ferry #paraiso #tours - facebook.com">
-                    <td><span class="muni-tag">Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxOS2VnLUFPZm54UTRTOVNsdUdtcVZLOU16aEgxc3pPbDVWVTRwMDZQbU1fTVF5d2FMNFoya3h0WkxHRVc5emdoX1RWWTdjMzdRVzFETXhRRk9MeTdJQV90QzdoOHZNbGo4QXltdUVXMmlabE1YOEx1ZmJpX2kwQUp6T1V4OUsweVFvUHFOXzhnU1RFMGV4NlQ4R2Y0UDROdXJMT1lmeEFVNmFUVUxabjZpQlNYS19wLUNqUnByaEk2RnY?oc=5" target="_blank">Alexis Almodovar. Bad Bunny · Enséñame a Bailar. Culebra,Puerto Rico 🇵🇷😍 . . . #puertorico #culebra #ferry #paraiso #tours - facebook.com</a>
-                    </td>
-                    <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-10-02 22:37">hace 18h</td>
-                </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Atención clientes de Fajardo: Algunos clientes de este municipio experimentan una interrupción del servicio debido a una avería reportada en la zona. Nuestras brigadas atienden la avería para restablecer el servicio de manera segura. Pendiente de las actu - facebook.com">
                     <td><span class="muni-tag">Fajardo</span></td>
@@ -1075,16 +1075,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-02 22:11">hace 19h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Fajardo" data-titular="🩷𝐄𝐋 𝐌𝐔𝐍𝐈𝐂𝐈𝐏𝐈𝐎 𝐃𝐄 𝐅𝐀𝐉𝐀𝐑𝐃𝐎 𝐒𝐄 𝐕𝐈𝐒𝐓𝐄 𝐃𝐄 𝐑𝐎𝐒𝐀🩷 Como parte de las iniciativas de concienciación durante el mes de octubre, el personal del Municipio Autónomo de Fajardo se unió hoy a la campaña de lucha contra el cáncer de seno, vistiendo - facebook.com">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMivwVBVV95cUxPZjEtWXdtMHQxcENzR0tobERwQ3Z5TGhabzdnM04yRm54MzFwR0pHSEpsM3dlQm41VElVMUVkRHhYanNPVFVTd29jaE9ORzU0YTI1MkpOMGNTUjRxSW9YX29OR0d5Ql9BeWRvNmxOQVIzWEE3S2t0d2FMVU5fSFA3X2hRRk1aS0I0aWg4T2VVM2VuMmVtVDh3cHJuTVFGMHhFUl9aa2ltNE0zcDRuSko3UFdoXzBOZlJSamUzV0lZNURBbExHYy1ZWDA2a2xTVzlkNzhOWGpJSHRnZGpoRXp0cVFrTU1CSUlQV3JrZFUwTmtTTVVDUFVvYlF3b0d3NktGNmlCZDVwZTg2a1h0aldwUXBUbUlYTlUxdmlxbzJsSlpmU2FpRDg3dUxuckJMd1pEaHhiYWd4NDVkWG5haHUzWjBoRUl3WlJnby00dldmaVZpUEhmMXhpMXV3SkMzSUw2RXdIUElyeERnMU9ZeHN4N0dodWF1VHBYQkNqZllEdjFKM1hHRXY1OXQzRFZoU2d3RlRvV0NWbF9maXJkaml5dEZfY3BXZWg5ME4yeUlYNVFYQVJBbmZ0bTZlOGU2ZDBXRkJSbkNUdEFoS3pDaGJGbi02YnRKUjBGNk82M0JqTFg4elRtYmpIRUlVdUM2UGNnVEtwc2h5WmZWVjI5blU1YXM1VkV4bjVjel93eFJHTXNpZnVCUEt0YlVFRHBhRTZsLVd6a3ZyZmxCQXRYbklCb1hhdVBzM21vTjZGUzZGTjUxVDFOdV94Zkh5cU1JTFdzZlV3QjN2V3ZzUjd2QTNFWFczWGptTDVKNENFcjBRN0xFcUZrZWc5LW1hLTZSdWFiSTBudjgwdnVfZ0YtWTJTb0JaQlk3MS1mU0FEZzZDbm5TMU1vX1VVblhKczE5eC00bDM1bUFkRGlxbXY2b2E0?oc=5" target="_blank">🩷𝐄𝐋 𝐌𝐔𝐍𝐈𝐂𝐈𝐏𝐈𝐎 𝐃𝐄 𝐅𝐀𝐉𝐀𝐑𝐃𝐎 𝐒𝐄 𝐕𝐈𝐒𝐓𝐄 𝐃𝐄 𝐑𝐎𝐒𝐀🩷 Como parte de las iniciativas de concienciación durante el mes de octubre, el personal del Municipio Autónomo de Fajardo se unió hoy a la campaña de lucha contra el cáncer de seno, vistiendo - facebook.com</a>
-                    </td>
-                    <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-10-02 21:31">hace 20h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Atención clientes de Canóvanas: Algunos clientes de este municipio experimentan una interrupción del servicio debido a una avería reportada en la zona. Nuestras brigadas atienden la avería para restablecer el servicio de manera segura. Pendiente de las - facebook.com">
                     <td><span class="muni-tag">Canóvanas</span></td>
                     <td class="titular-cell">
@@ -1092,7 +1082,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxPSW9mcFZCa3NIR2haZDE5QzZRVHU3a09uS01ueWVOeWlMbjZBaHl6eGlNYXZqZHltQnJJZ1dZQ05Lck55cnFHVmVXTUFrZ0t3NEtlLXFmZjI3aDZYdGo2SEprN0lXbEdGaGlqME5WTlJvVlRTYUl0ZEZuOVNvcnZOajJOX2lNQy1NYnpiNmRzelRvSVhFSkZzRzdvWWk5a3RTQXBRMjF6ZzFvOGgxYTluUFR6QUVaWG5qTnFvNXFBU0lOSVFob3BiY2o5V1BMSzJ2SFptbkpFUnF1emxrc2l2WVRXTnQ1a3F4enc?oc=5" target="_blank">Atención clientes de Canóvanas: Algunos clientes de este municipio experimentan una interrupción del servicio debido a una avería reportada en la zona. Nuestras brigadas atienden la avería para restablecer el servicio de manera segura. Pendiente de las - facebook.com</a>
                     </td>
                     <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-10-02 20:32">hace 20h</td>
+                    <td class="time-ago" data-date="2026-10-02 20:32">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Cancelan reunión de comisión que evaluaría proyecto para nombrar plazoleta en honor a Alex Sanabria">
@@ -1122,7 +1112,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/02/arrestan-a-dos-hombres-por-robo-a-sargento-franco-de-servicio-en-caguas/" target="_blank">Arrestan a dos hombres por robo a sargento franco de servicio en Caguas</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-02 18:38">hace 22h</td>
+                    <td class="time-ago" data-date="2026-10-02 18:38">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="🏐🔥 ¡NAGUABO SE VISTE DE VOLEIBOL! El Municipio Autónomo de Naguabo, junto al Departamento de Recreación y Deportes y la Hon. Miraidaliz Rosario Pagán, Alcaldesa, invita a toda la comunidad a ser parte de la gran inauguración del Torneo Munici - facebook.com">
@@ -1132,7 +1122,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxPeUttNm1JXzU0akhOYVVzcGwtV0lnM0M2NklpMzlPN2RhXzhzbzh0MzBEYXdvNGJvOXR5WGxNeEV2eHpxcndsLUZsNWM3NTFSV1BGcmxRVmNsYmxjTWFPTTQ4WkxxLV9uZWtnOGRFdDVSR2NFT19tWFhTaFFxTWtPcDlsOEpDOG1ORGVzbW1lZGVUTkEtTFJUYUtDTVlYa0MtVldUaV9fcmxTcXF1Zy1CVTVNb0xDbjA4QmdwQUtDYkViSWJyWXh3eGwxczRZOU55VGU0bUZqOEJJLXBwM2w0VG0weFNtOVBZbTVKMk5UWEtIcE0?oc=5" target="_blank">🏐🔥 ¡NAGUABO SE VISTE DE VOLEIBOL! El Municipio Autónomo de Naguabo, junto al Departamento de Recreación y Deportes y la Hon. Miraidaliz Rosario Pagán, Alcaldesa, invita a toda la comunidad a ser parte de la gran inauguración del Torneo Munici - facebook.com</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-10-02 18:33">hace 22h</td>
+                    <td class="time-ago" data-date="2026-10-02 18:33">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="UPR en Humacao se ubica en el Top 10 de dos categorías de Best Colleges 2027">
@@ -1378,7 +1368,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-03 05:31:35 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-03 05:46:11 PM<br>
     Actualización automática cada 30 min
 </div>
 
