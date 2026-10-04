@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-04 06:01:11 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-04 06:16:12 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">18</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">7</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">21</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-04 06:01:11 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-04 06:16:12 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -832,7 +832,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">10</span>
+            <span class="muni-count">12</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -860,9 +860,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">2</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
+        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <span class="muni-name">Fajardo</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
@@ -877,12 +877,12 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Ceiba')">
             <span class="muni-name">Ceiba</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">2</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Naguabo')">
+        <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <span class="muni-name">Naguabo</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
@@ -942,6 +942,16 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-04 21:21">ahora</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Fajardo,Ceiba,Naguabo" data-titular="Para los municipios de Naguabo, Ceiba y Fajardo, Meteorología había emitido una advertencia de inundaciones que permanecía vigente hasta las 4:30 p.m. - Facebook">
+                    <td><span class="muni-tag">Fajardo, Ceiba, Naguabo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxONHo1UTZhd2k3UXpWM2JTMkdnYmJrQ3k2dng1QXpld2I0aUlPeG1Hc1pqYXczYnAxeG9tbngyUXM1SmY5R2pmQ2Jqa1MwbTNrTzVRdFdHWndTVmp5SHVBOXE4aFN1dDEzd054cTFqRnhnT1pRd3Zva2wyeXppSTN6ZDhUamoyNE1WVjZfYTdyeW1oam9hYjhMOGdOSHFvOHFPNlJnWlpMUkhxdUhPa3B0SlFOY1NFYndzSXBZd29qdmNZY2JJeGg2VnRNX3RjelB5SzAyS0Y2Nl9sN2l6N3QxUQ?oc=5" target="_blank">Para los municipios de Naguabo, Ceiba y Fajardo, Meteorología había emitido una advertencia de inundaciones que permanecía vigente hasta las 4:30 p.m. - Facebook</a>
+                    </td>
+                    <td>FB - Ceiba</td>
+                    <td class="time-ago" data-date="2026-10-04 21:15">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Ceiba" data-titular="Emergencia en Ceiba: tres personas quedan atrapadas en Charco Frío">
                     <td><span class="muni-tag">Ceiba</span></td>
                     <td class="titular-cell">
@@ -960,6 +970,16 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>El Nuevo Día</td>
                     <td class="time-ago" data-date="2026-10-04 20:43">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="San Juan rompe récord de lluvia de 89 años con 1.87 pulgadas">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://noticel.com/noticias/20261004/san-juan-rompe-record-de-lluvia-de-89-anos-con-1-87-pulgadas/?utm_source=rss&utm_medium=rss&utm_campaign=san-juan-rompe-record-de-lluvia-de-89-anos-con-1-87-pulgadas" target="_blank">San Juan rompe récord de lluvia de 89 años con 1.87 pulgadas</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-10-04 20:40">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Se llevan $2,800 durante robo en restaurante de Canóvanas - Telemundo Puerto Rico">
@@ -989,7 +1009,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/notas/en-suspenso-la-entrada-del-tanquero-amur-river-a-la-bahia-de-san-juan/" target="_blank">En suspenso la entrada del tanquero Amur River a la bahía de San Juan</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-10-04 18:01">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-10-04 18:16">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Una vocación que nació entre sus alumnos: el camino de Eusebio Ramos Morales al arzobispado de San Juan">
@@ -999,7 +1019,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/notas/una-vocacion-que-nacio-entre-sus-alumnos-el-camino-de-eusebio-ramos-morales-al-arzobispado-de-san-juan/" target="_blank">Una vocación que nació entre sus alumnos: el camino de Eusebio Ramos Morales al arzobispado de San Juan</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-10-04 18:01">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-10-04 18:16">ahora mismo</td>
                 </tr>
                 
                 
@@ -1022,7 +1042,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://noticel.com/noticias/20261004/mujer-muere-tras-ser-atropellada-en-san-juan/?utm_source=rss&utm_medium=rss&utm_campaign=mujer-muere-tras-ser-atropellada-en-san-juan" target="_blank">Mujer muere tras ser atropellada en San Juan</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-10-04 15:14">hace 2h</td>
+                    <td class="time-ago" data-date="2026-10-04 15:14">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Mujer muere tras ser arrollada en la PR-1 frente a estación del Tren Urbano">
@@ -1063,6 +1083,16 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Canóvanas</td>
                     <td class="time-ago" data-date="2026-10-04 05:42">hace 12h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="San Juan, Ciudad Capital (@SJCiudadCapital) - Facebook">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE51ZDB2eFhLZDBfUDlNTzk0SjNZZFM4VUNXSXBYSkNMSllPRE56SDJZcUcwcnZRajBCN0tDNU1abWFiR19SeHNQeVVzenhWcVVWeFZkQ19KdW9Ydk94aTE3cWdOa0x0b0tqWm1fSlZWZHA3TWc?oc=5" target="_blank">San Juan, Ciudad Capital (@SJCiudadCapital) - Facebook</a>
+                    </td>
+                    <td>FB - San Juan</td>
+                    <td class="time-ago" data-date="2026-10-04 03:25">hace 14h</td>
                 </tr>
                 
                 
@@ -1271,7 +1301,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-04 06:01:11 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-04 06:16:12 PM<br>
     Actualización automática cada 30 min
 </div>
 
