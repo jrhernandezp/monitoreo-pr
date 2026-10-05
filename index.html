@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-05 04:46:11 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-05 05:01:21 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">27</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">14</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">26</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">13</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-05 04:46:11 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-05 05:01:21 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -819,7 +819,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">7</span>
+            <span class="muni-count">8</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -837,9 +837,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">1</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Luquillo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
             <span class="muni-name">Luquillo</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
@@ -869,7 +869,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <span class="muni-name">Naguabo</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
@@ -919,6 +919,16 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="Asaltan a punta de pistola a hombre con el carro averiado en Camino Los Romeros">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.notiuno.com/noticias/seguridad-y-justicia/asaltan-a-punta-de-pistola-a-hombre-con-el-carro-averiado-en-camino-los-romeros/article_074e195e-2ec2-4312-ba1f-590855f557c3.html" target="_blank">Asaltan a punta de pistola a hombre con el carro averiado en Camino Los Romeros</a>
+                    </td>
+                    <td>NotiUno</td>
+                    <td class="time-ago" data-date="2026-10-05 20:15">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Ceiba,Naguabo" data-titular="Líder comunitaria de Naguabo denuncia que quieren desalojar a APRODEC en Ceiba">
                     <td><span class="muni-tag">Ceiba, Naguabo</span></td>
                     <td class="titular-cell">
@@ -946,8 +956,11 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/notas/una-vocacion-que-nacio-entre-sus-alumnos-el-camino-de-eusebio-ramos-morales-al-arzobispado-de-san-juan/?utm_source=elnuevodia.com&utm_medium=widget&utm_campaign=las_mas_vistas" target="_blank">Una vocación que nació entre sus alumnos: el camino de Eusebio Ramos Morales al arzobispado de San Juan</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-10-05 16:46">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-10-05 17:01">ahora mismo</td>
                 </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Paro de transportistas escolares afecta planteles de San Lorenzo y Canóvanas">
                     <td><span class="muni-tag">Canóvanas</span></td>
@@ -956,11 +969,8 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/05/paro-de-transportistas-escolares-afecta-planteles-de-san-lorenzo-y-canovanas/" target="_blank">Paro de transportistas escolares afecta planteles de San Lorenzo y Canóvanas</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-05 16:01">hace 45min</td>
+                    <td class="time-ago" data-date="2026-10-05 16:01">hace 1h</td>
                 </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Fábrica de botas militares abrirá en Puerto Rico y proyecta crear hasta 300 empleos">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -999,7 +1009,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/05/buscan-establecer-amnistia-para-contribuyentes-con-deudas-en-el-crim/" target="_blank">Buscan establecer amnistía para contribuyentes con deudas en el CRIM</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-05 14:51">hace 1h</td>
+                    <td class="time-ago" data-date="2026-10-05 14:51">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Ingresan a prisión a dos hombres acusados por robo a sargento en Caguas">
@@ -1072,7 +1082,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRzNvVUMxYm1SV1Z0ZUtHaWw5VTRNbk9pM293UjdNR2dpQmVfUWdGS0IxdXIzdUVLM0dvVnJqZHRWN3Fhc2xHRERCMUZOVW1sV1JyYVlLNEhWN3RiQ0V1dGMzeVktTnBNVUNoTmZERDc5UE1QTUVZYW5uSllycVlQcmM4RjcxZklFUDRqbEFMVXlDcVoxTW1nYWNXanllSUZIVG9KdC1vdDNRUjg?oc=5" target="_blank">Rescatan a tres turistas y su guía tras crecida en el Charco Frío en Ceiba - elnuevodia.com</a>
                     </td>
                     <td>El Nuevo Día (GN)</td>
-                    <td class="time-ago" data-date="2026-10-04 20:59">hace 19h</td>
+                    <td class="time-ago" data-date="2026-10-04 20:59">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Se llevan $2,800 durante robo en restaurante de Canóvanas - Telemundo Puerto Rico">
@@ -1083,26 +1093,6 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Canóvanas</td>
                     <td class="time-ago" data-date="2026-10-04 20:16">hace 20h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="AVISO IMPORTANTE|| Naguabo en Ruta El Municipio Autónomo de Naguabo informa a la ciudadanía que el servicio de transporte colectivo Naguabo en Ruta operará de forma limitada este lunes, 5 de octubre de 2026. El servicio operará de 7:00 am a 9:30 - facebook.com">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxPSERNTWttTE1HejlVMVVTVGJFak5FNUM4d0NHTE9Id2hRUmdLTmVHUlNuOHk0OTFzd0plT0h1WUJqc29fX1AxWXZST0R3eDRGb3pGWE1sdWQ0VUpXLV9FTzc3YmpxN0FOU2RIWTFBTkJKRE1BalRCb2tXNlVEUldpS0E0ZHJoSjEwR2FjbzZNVzNDeE50QVRNdEpZbzl3NEpKNVFSa1pnTmRldmdybGxJcF9zTUowSFZ0cVFaWXBUdjNiWk5wT1RqUGtmMkx2Rm9Pc1F4WkVCUTlhR3llXzFScmNzblBVdWhhREdtM3BoenFoRlE?oc=5" target="_blank">AVISO IMPORTANTE|| Naguabo en Ruta El Municipio Autónomo de Naguabo informa a la ciudadanía que el servicio de transporte colectivo Naguabo en Ruta operará de forma limitada este lunes, 5 de octubre de 2026. El servicio operará de 7:00 am a 9:30 - facebook.com</a>
-                    </td>
-                    <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-10-04 18:26">hace 22h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo - facebook.com">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE5GamtheXg4WmRDQV8zVmhuVFliUWhFS21sSkhzczVPMy1aakQ5RXotb2xLV0cxR3J0RzlNU0JGVGthb0tsVWhUWWltdkdlcXlzRDdDNnFkSnRUalhfSlhGZ3VBS2lLWl9LcWVF?oc=5" target="_blank">Municipio de Luquillo - facebook.com</a>
-                    </td>
-                    <td>FB - Luquillo</td>
-                    <td class="time-ago" data-date="2026-10-04 15:21">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan,Humacao" data-titular="Vacunan más de 800 mascotas en San Juan y Humacao - Primera Hora">
@@ -1348,7 +1338,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-05 04:46:11 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-05 05:01:21 PM<br>
     Actualización automática cada 30 min
 </div>
 
