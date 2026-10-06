@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-05 11:46:32 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-06 12:01:07 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">24</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">13</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">16</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-05 11:46:32 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-06 12:01:07 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -824,7 +824,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
@@ -837,19 +837,19 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">1</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Luquillo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
             <span class="muni-name">Luquillo</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <span class="muni-name">Canóvanas</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <span class="muni-name">Fajardo</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Loíza')">
@@ -864,17 +864,17 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Ceiba')">
             <span class="muni-name">Ceiba</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <span class="muni-name">Naguabo</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <span class="muni-name">Humacao</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">3</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
@@ -884,7 +884,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
             <span class="muni-name">Vieques</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
@@ -917,7 +917,30 @@ tr.article-row:hover { background: var(--surface2); }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
                 
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
+                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Presentarán estudio sobre condiciones laborales y agotamiento de maestros en Puerto Rico">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/10/05/presentaran-estudio-sobre-condiciones-laborales-y-agotamiento-de-maestros-en-puerto-rico/" target="_blank">Presentarán estudio sobre condiciones laborales y agotamiento de maestros en Puerto Rico</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-10-06 02:32">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Le prometen a los porteadores que para la próxima semana le deben enviar los pagos adeudados">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/10/05/le-prometen-a-los-porteadores-que-para-la-proxima-semana-le-deben-enviar-los-pagos-adeudados/" target="_blank">Le prometen a los porteadores que para la próxima semana le deben enviar los pagos adeudados</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-10-06 02:10">ahora</td>
+                </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Trujillo Alto celebrará la edición 36 del 5K del Arrecosta’o - Metro Puerto Rico">
                     <td><span class="muni-tag">Trujillo Alto</span></td>
@@ -956,7 +979,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/05/educacion-envia-equipo-regional-a-escuela-agapito-lopez-flores-tras-denuncia-de-madre/" target="_blank">Educación envía equipo regional a escuela Agapito López Flores tras denuncia de madre</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-05 17:55">hace 5h</td>
+                    <td class="time-ago" data-date="2026-10-05 17:55">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Paro de transportistas escolares afecta planteles de San Lorenzo y Canóvanas">
@@ -966,7 +989,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/05/paro-de-transportistas-escolares-afecta-planteles-de-san-lorenzo-y-canovanas/" target="_blank">Paro de transportistas escolares afecta planteles de San Lorenzo y Canóvanas</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-05 16:01">hace 7h</td>
+                    <td class="time-ago" data-date="2026-10-05 16:01">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Zaragoza pondrá bajo la lupa a Cataño: tiene $8 millones en el banco, pero quiere saber más - Metro Puerto Rico">
@@ -986,7 +1009,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxOV1BuaWF2R2Exd3hTNWZzbXp0NkVjSVJrV1JyVkhITUxBWXBGN0lNMDhBNVRVQlpyM2NwY2dyRllCejBBcDF4YmRQUjZZelA0Rkdmak1EU0NlaHFYVnJDU1ZnbGI2UmFORE9GbnZjYlZMM2RJZHVGc3A4ZzRKY3ByZ2R6TkROMDdaa0N1Q1I3cnlEWEQ3Q084bE0wYlVMMmc?oc=5" target="_blank">Municipio Autónomo de Fajardo. . El Municipio de Fajardo Te Informa Lunes, 5 de Octubre 2026. - facebook.com</a>
                     </td>
                     <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-10-05 12:59">hace 10h</td>
+                    <td class="time-ago" data-date="2026-10-05 12:59">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Ingresan a prisión a dos hombres acusados por robo a sargento en Caguas">
@@ -1006,7 +1029,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxPZkVHN2Zyc003OGctZnNRbkx2X0FCaXJwbVRMYVlRem5OQjh3Z0Mtazg1d201UmgxalZ6MFFlU05mVXp0ZWVrZmpDQjlFU1NGMF9CSnRLWWJtZ0lfNlFNYkgzLXdyazhlU0FmbGVWQ2ZSRUxMNWVoNmNzMHQzdTNuWGVfN1ZaNGJoaC1WdkZjTUVja0IwOXpwZGFLdko3RDl3N2FudFJDYzZsa3JQV2JpRl9Ibzc3S2dqUHQtUm9TUjVWZmJKNDVXM3lGclM0NkJLMUVrc1lFTl9XNWphVGtNcw?oc=5" target="_blank">Veterinarios vacunan 820 mascotas en San Juan y Humacao - NotiUno.com</a>
                     </td>
                     <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-10-05 10:01">hace 13h</td>
+                    <td class="time-ago" data-date="2026-10-05 10:01">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan,Humacao" data-titular="Veterinarios vacunan 820 mascotas en SJ y Humacao - San Juan Daily Star">
@@ -1040,99 +1063,6 @@ tr.article-row:hover { background: var(--surface2); }
                 </tr>
                 
                 
-                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="San Juan,Humacao" data-titular="Veterinarios vacunan 820 mascotas en San Juan y Humacao - Metro Puerto Rico">
-                    <td><span class="muni-tag">San Juan, Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNcVV4SU9TcjAtS2xIREZ0QjRnbU9XNkNSUDdSSFAwM3ZiVVY1REduaGQtUjg0bi1wa05SVV9mYXlnR0pGVFNSM0M1ck90azF6REZveHJPTUVzNl92cVU3ME1xelRIQ2hCNm8yU1FNaUUzUHlGWGwyM0NIOWNrckw4UF9RVDNZM29LMEVQX1JqUE9tSDRPWUZvYjJGRzk?oc=5" target="_blank">Veterinarios vacunan 820 mascotas en San Juan y Humacao - Metro Puerto Rico</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-10-04 22:11">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Ceiba" data-titular="Rescatan a tres turistas y su guía tras crecida en el Charco Frío en Ceiba - El Nuevo Día">
-                    <td><span class="muni-tag">Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRzNvVUMxYm1SV1Z0ZUtHaWw5VTRNbk9pM293UjdNR2dpQmVfUWdGS0IxdXIzdUVLM0dvVnJqZHRWN3Fhc2xHRERCMUZOVW1sV1JyYVlLNEhWN3RiQ0V1dGMzeVktTnBNVUNoTmZERDc5UE1QTUVZYW5uSllycVlQcmM4RjcxZklFUDRqbEFMVXlDcVoxTW1nYWNXanllSUZIVG9KdC1vdDNRUjg?oc=5" target="_blank">Rescatan a tres turistas y su guía tras crecida en el Charco Frío en Ceiba - El Nuevo Día</a>
-                    </td>
-                    <td>El Nuevo Día (GN)</td>
-                    <td class="time-ago" data-date="2026-10-04 20:59">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Canóvanas" data-titular="Se llevan $2,800 durante robo en restaurante de Canóvanas - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Canóvanas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPU1ExcEw4bVh6NzA0NlJMeWUtSkw4ZWJsb3lqZWNLVEtnOWtIcTVCeWZ3YWZTdjEzYjB5WmIxUDhPbkc2RUs1UWRVU1VaOXJmanNYa0o0SzFuRHBMMVR6WngwamFYcW0tQVg3Z3Z5ZS05dUNyMGNBcEd4SmNiREJtUktudDctVkFvSmdiN3o1b1I0RWg5Z3lFelRZemhOLVFVemhiZVkyWVJqeDdpNDU3dG5FTdIBuwFBVV95cUxNSnhKa0l5MHZYZkU5TTNnNWlyMVkyTHNYN3ZURnR4S2hLVGRmR25JdVQtOW1DMmlVcjBuNmJYUElMZDY4T25DdjZ0Z2UzbVZDaGEzb3g2Q0JWb1ZubXQ2bDJpc3NwY29DNlZXd2xmenBacVZ0Z0Z5a2lkODVRbW16VnlhN1RwTlc2QzB4VkcwaDlJaFc1UmhIRW5jbUpaZGpmcXU5VnNsYTZ1X0x6RGFITUNUMGZmenVybzFN?oc=5" target="_blank">Se llevan $2,800 durante robo en restaurante de Canóvanas - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Canóvanas</td>
-                    <td class="time-ago" data-date="2026-10-04 20:16">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="AVISO IMPORTANTE|| Naguabo en Ruta El Municipio Autónomo de Naguabo informa a la ciudadanía que el servicio de transporte colectivo Naguabo en Ruta operará de forma limitada este lunes, 5 de octubre de 2026. El servicio operará de 7:00 am a 9:30 - facebook.com">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxPSERNTWttTE1HejlVMVVTVGJFak5FNUM4d0NHTE9Id2hRUmdLTmVHUlNuOHk0OTFzd0plT0h1WUJqc29fX1AxWXZST0R3eDRGb3pGWE1sdWQ0VUpXLV9FTzc3YmpxN0FOU2RIWTFBTkJKRE1BalRCb2tXNlVEUldpS0E0ZHJoSjEwR2FjbzZNVzNDeE50QVRNdEpZbzl3NEpKNVFSa1pnTmRldmdybGxJcF9zTUowSFZ0cVFaWXBUdjNiWk5wT1RqUGtmMkx2Rm9Pc1F4WkVCUTlhR3llXzFScmNzblBVdWhhREdtM3BoenFoRlE?oc=5" target="_blank">AVISO IMPORTANTE|| Naguabo en Ruta El Municipio Autónomo de Naguabo informa a la ciudadanía que el servicio de transporte colectivo Naguabo en Ruta operará de forma limitada este lunes, 5 de octubre de 2026. El servicio operará de 7:00 am a 9:30 - facebook.com</a>
-                    </td>
-                    <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-10-04 18:26">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Municipio de Luquillo - facebook.com">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE5GamtheXg4WmRDQV8zVmhuVFliUWhFS21sSkhzczVPMy1aakQ5RXotb2xLV0cxR3J0RzlNU0JGVGthb0tsVWhUWWltdkdlcXlzRDdDNnFkSnRUalhfSlhGZ3VBS2lLWl9LcWVF?oc=5" target="_blank">Municipio de Luquillo - facebook.com</a>
-                    </td>
-                    <td>FB - Luquillo</td>
-                    <td class="time-ago" data-date="2026-10-04 15:21">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="REINAUGURACIÓN DEL CENTRO COMUNAL VISTAS DEL CONVENTO El Municipio Autónomo de Fajardo y su alcalde el Hon. José Aníbal “Joey” Meléndez Méndez, continúan fortaleciendo los espacios comunitarios y acercando los servicios municipales - facebook.com">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxQU0NEbll0eDFPWTZ5ZmJMN24tUUlKcTFqVEpZVXhta1RIQXhWelpxSTB5eU9QYXB3T214cVNxeHBkSk96THBCa3FTcUdCcmh5d0xoTlFKYVh3ek90Tm5wRTVJNHRSREYycUMxaUdGQVBkX3NpTDJQV3lUZUprSTJFNmZXanZzcnZlNlF3al9KM1R0RGQteUxJVktqS3UzQ0pIVmF2SjZ2SEZhOXBnS1hHSDFxSkt0LXlDMmhyNVVaTlJDdnpOZXQwdFIxNzg5NTdNRGw1NngxR3VqUlZPeFVjazN5Z1BhT3E2?oc=5" target="_blank">REINAUGURACIÓN DEL CENTRO COMUNAL VISTAS DEL CONVENTO El Municipio Autónomo de Fajardo y su alcalde el Hon. José Aníbal “Joey” Meléndez Méndez, continúan fortaleciendo los espacios comunitarios y acercando los servicios municipales - facebook.com</a>
-                    </td>
-                    <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-10-04 12:01">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Canóvanas" data-titular="Las semifinales del 58vo Concurso Nacional de Trova comienzan en Canóvanas - Fundación Nacional para la Cultura Popular">
-                    <td><span class="muni-tag">Canóvanas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPcnB6c19qQWsteFpZYUpuX1NjeTRib1FpMG42RjhmSnA0WmVrOUJGSDZIV3h1ZXAyc01hLU51SUloZVE0Zk9hN21BaVVaU2tkbGJzZEFGUlRQRnR3dGt6Mk9xamRveTlNZE9ZSU1CbjVPNEllWFMzV1NITlRwN3VpS3c0Q2hkWFJGM3VZMFBZcFc1N3pIXzRwTUJZZEhYX3lReElF?oc=5" target="_blank">Las semifinales del 58vo Concurso Nacional de Trova comienzan en Canóvanas - Fundación Nacional para la Cultura Popular</a>
-                    </td>
-                    <td>Canóvanas</td>
-                    <td class="time-ago" data-date="2026-10-04 05:42">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques" data-titular="From the Big Apple to the Small Island of Vieques, Puerto Rico - imdb.com">
-                    <td><span class="muni-tag">Vieques</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxPV2lzOGltVDk2TE9PekdUc28wMU95QWdFSEtHZUVFWXdVOEtFMU9HWE1XVVJPN1ZSZW9zNHBFWHRkdzJPU1JhOFI2Q3BRZ01TVnJ6Y2c1bS0taDQxaHdZcjl5M2dxSWtycGVEZlY4SkpuS0o4aXRMZHhGSEczVE9lc2ZOSy02WnlOSmc?oc=5" target="_blank">From the Big Apple to the Small Island of Vieques, Puerto Rico - imdb.com</a>
-                    </td>
-                    <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-10-04 05:34">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="San Juan, Ciudad Capital (@SJCiudadCapital) - facebook.com">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE51ZDB2eFhLZDBfUDlNTzk0SjNZZFM4VUNXSXBYSkNMSllPRE56SDJZcUcwcnZRajBCN0tDNU1abWFiR19SeHNQeVVzenhWcVVWeFZkQ19KdW9Ydk94aTE3cWdOa0x0b0tqWm1fSlZWZHA3TWc?oc=5" target="_blank">San Juan, Ciudad Capital (@SJCiudadCapital) - facebook.com</a>
-                    </td>
-                    <td>FB - San Juan</td>
-                    <td class="time-ago" data-date="2026-10-04 03:25">hace 1d</td>
-                </tr>
-                
-                
                 <tr class="time-group-header"><td colspan="4">📋 Anteriores</td></tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Carolina incorpora 31 nuevos policías tras rigurosa formación académica y operacional">
@@ -1153,16 +1083,6 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Carolina787</td>
                     <td class="time-ago" data-date="2026-10-05">2026-10-05</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Estudiantes de escuelas públicas de Carolina obtienen su licencia de aprendizaje con apoyo municipal">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.carolina787.com/n/estudiantes-de-escuelas-publicas-de-carolina-obtienen-su-licencia-de-aprendizaje-con-apoyo-municipal" target="_blank">Estudiantes de escuelas públicas de Carolina obtienen su licencia de aprendizaje con apoyo municipal</a>
-                    </td>
-                    <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-10-04">2026-10-04</td>
                 </tr>
                 
                 
@@ -1315,7 +1235,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-05 11:46:32 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-06 12:01:07 AM<br>
     Actualización automática cada 30 min
 </div>
 
