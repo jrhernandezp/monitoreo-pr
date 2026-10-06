@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-06 07:01:17 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-06 07:16:11 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">23</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">24</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-06 07:01:17 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-06 07:16:11 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -824,7 +824,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">3</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
@@ -832,9 +832,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">2</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
+        <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <span class="muni-name">Caguas</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
@@ -874,7 +874,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <span class="muni-name">Humacao</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">3</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
@@ -919,6 +919,16 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="Humacao" data-titular="Senador presenta medida para integrar el lenguaje de señas al currículo de las escuelas públicas">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/10/06/senador-presenta-medida-para-integrar-el-lenguaje-de-senas-al-curriculo-de-las-escuelas-publicas/" target="_blank">Senador presenta medida para integrar el lenguaje de señas al currículo de las escuelas públicas</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-10-06 23:13">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="San Juan" data-titular="Policía arresta 44 personas tras investigación de 13 meses">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
@@ -937,16 +947,6 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>NELPR</td>
                     <td class="time-ago" data-date="2026-10-06 21:55">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Acusan mecánico de quedarse con autos y dinero de clientes">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/10/06/acusan-mecanico-de-quedarse-con-autos-y-dinero-de-clientes/" target="_blank">Acusan mecánico de quedarse con autos y dinero de clientes</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-06 21:46">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="“Cataño tiene $48 millones en el banco”: anuncio sorprende a comité de transición - Telemundo Puerto Rico">
@@ -999,6 +999,9 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-06 19:55">ahora</td>
                 </tr>
                 
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
+                
                 <tr class="article-row" data-municipios="Humacao" data-titular="Madre de menor rechaza agresión sexual en escuela Agapito López Flores">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
@@ -1006,11 +1009,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/06/madre-de-menor-rechaza-agresion-sexual-en-escuela-agapito-lopez-flores/" target="_blank">Madre de menor rechaza agresión sexual en escuela Agapito López Flores</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-06 18:02">hace 59min</td>
+                    <td class="time-ago" data-date="2026-10-06 18:02">hace 1h</td>
                 </tr>
                 
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
+                <tr class="article-row" data-municipios="Caguas" data-titular="Sube el número de personas sin hogar en Ponce y Caguas">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://noticel.com/noticias/20261006/sube-el-numero-de-personas-sin-hogar-en-ponce-y-caguas/?utm_source=rss&utm_medium=rss&utm_campaign=sube-el-numero-de-personas-sin-hogar-en-ponce-y-caguas" target="_blank">Sube el número de personas sin hogar en Ponce y Caguas</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-10-06 17:59">hace 1h</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Loíza,Ceiba" data-titular="En Guánica, Ceiba y Loíza se ha ido “medio mundo” en los últimos 25 años - Metro Puerto Rico">
                     <td><span class="muni-tag">Loíza, Ceiba</span></td>
@@ -1062,7 +1072,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTFBpa2hfZUlUUFdINnlreGFWaWJMM2dPUjhjeUlmRURpTHNYS2VFNXAzd0lMQzJMeXZVTVlsLXo5TFRJcmJGOE9xNTI2Ul93NGtPMVBhT3lVcngzNHJhUjlIN0dROEgyQkFOTmVhbDlfNzdVT3ZZUWJSdEdRcmVPZw?oc=5" target="_blank">Municipio De Trujillo Alto - Facebook</a>
                     </td>
                     <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-10-05 19:16">hace 23h</td>
+                    <td class="time-ago" data-date="2026-10-05 19:16">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Zaragoza pondrá bajo la lupa a Cataño: tiene $8 millones en el banco, pero quiere saber más - Metro Puerto Rico">
@@ -1308,7 +1318,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-06 07:01:17 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-06 07:16:11 PM<br>
     Actualización automática cada 30 min
 </div>
 
