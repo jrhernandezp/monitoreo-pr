@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-07 07:31:11 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-07 07:46:03 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">19</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">20</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-07 07:31:11 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-07 07:46:03 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -832,9 +832,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
+        <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <span class="muni-name">Caguas</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Luquillo')">
@@ -874,7 +874,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <span class="muni-name">Humacao</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
@@ -918,6 +918,26 @@ tr.article-row:hover { background: var(--surface2); }
             <tbody id="articlesBody">
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Reportan carjacking en una estación de gasolina en Caguas">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/10/07/reportan-carjacking-en-una-estacion-de-gasolina-en-caguas/" target="_blank">Reportan carjacking en una estación de gasolina en Caguas</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-10-07 11:34">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Hombre se detiene en una gasolinera de Caguas y termina víctima de un “carjacking”">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/hombre-se-detiene-en-una-gasolinera-de-caguas-y-termina-victima-de-un-carjacking/" target="_blank">Hombre se detiene en una gasolinera de Caguas y termina víctima de un “carjacking”</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-10-07 11:30">ahora</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Hiram Torres Montalvo dice va a cancelar contrato de publicidad de $540 mil en Cataño - NotiCel">
                     <td><span class="muni-tag">Cataño</span></td>
@@ -1029,7 +1049,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxNX2tzSDE0UWNHU3VqMEhFanUzbWxYN0g1MU96SDU3ZUF5UUJoNWtDa1QxeGMyQWZYLTZmQUVXd3E5YlpZZ2E4OG1YSVlTZVhYenY2SHlneC1Ra0JhVHhwWVN0SWtiOUdWT0hjcVZFYUc1akx6S2ozUlBBYVBYYlFmLUR4MGlpcEFhTktUWUhqNGVPb3hIRXIxVVdYbERjN0xNMFROTTFWOHpyOTRLdE5JZVl5c3Z6anBMNHAwRENEQ3gwaDRmd1RMN19sb2JOdFh0ZHVES3hOQnBiQdIB4gFBVV95cUxORmVEMjZ0SEpxbmdJQnk3Q1NRd2N1QXlhSVg5WlVscEs2eGc0TVB3QkJ4WG1OaGY0bE5IVEhFVlozY2dUQnVCX0p5RDdKSDV3dVBMeExvQ2lwTWg1ZzRxMWgwNThpVm1RWW5scjhHTTZUOGh4bFA5OUtBN0Y4ZElGc1ZPMjJHQVlheHQxWlAtQWY2TS1Mb2NxU25maXdyWndfc0txeE5aVm8xZEFlVWc3cU5EMWhvdzVjNTNqNWRONEZhaVFmX0p4SjZacndsMC01ektPUERyOEFlby1LUUpxWEV3?oc=5" target="_blank">“Cataño tiene $48 millones en el banco”: anuncio sorprende a comité de transición - Telemundo Puerto Rico</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-10-06 21:32">hace 9h</td>
+                    <td class="time-ago" data-date="2026-10-06 21:32">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba" data-titular="Ética Gubernamental presenta querella contra supervisora de ADFAN en Ceiba por presunto uso indebido de tarjeta ATH">
@@ -1052,16 +1072,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-06 19:55">hace 11h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Humacao" data-titular="Madre de menor rechaza agresión sexual en escuela Agapito López Flores">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/10/06/madre-de-menor-rechaza-agresion-sexual-en-escuela-agapito-lopez-flores/" target="_blank">Madre de menor rechaza agresión sexual en escuela Agapito López Flores</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-06 18:02">hace 13h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Loíza,Ceiba" data-titular="En Guánica, Ceiba y Loíza se ha ido “medio mundo” en los últimos 25 años - Metro Puerto Rico">
                     <td><span class="muni-tag">Loíza, Ceiba</span></td>
                     <td class="titular-cell">
@@ -1069,7 +1079,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQMFNsQUlnTm56X2ZaTE5jYTRrbTBqc3FLQkUwaDN0RWZjT3VtNm83Vkw1aUpyckFXVzlmNzZtNHVoZ2lPNzFJaC15SF9yNnZJVjFDMnNZb2ZRRmxtSzhaWTZpN254RjdzWlZoQ0RiNmg0dWc1U21OWk1uc3JYVEpJa2pjaXZMT1dNYzJtN3oxTXZyYzA3R0U0bW1JQUt5QUtlcGt3ekNZLUtfLTIweHhRNw?oc=5" target="_blank">En Guánica, Ceiba y Loíza se ha ido “medio mundo” en los últimos 25 años - Metro Puerto Rico</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-10-06 14:42">hace 16h</td>
+                    <td class="time-ago" data-date="2026-10-06 14:42">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Culebra" data-titular="La playa mas famosa del mundo 🌎 😎 🙌 📍Playa Flamenco; Culebra 🇵🇷 #lifestyle #fblifestyle #PuertoRico #culebra - Facebook">
@@ -1089,7 +1099,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi_gFBVV95cUxPclQ5ckxBemJhVUpKT2ZUczg4cHphNWJMSm5maVNMUHZzUGEybmp1M3ptQnhtc1BuWXVmNG90SlFlTVZXaXBsVTF1YURPN2VBclJOQUJINU9aTEJqVlpZZ1BVem5ONzk2RndUUnhoaFIzRGJmSDlMX0pSd2dfN2xtWmJqNHExUEZNeEd6YmdjQl9mS28wd01qaHhsai12RHl4VXFvSkJjZWpDUlg1Q1A4ZXVlUmZrTmZzRndkbEUxd2ZESnJocE5iZWRIU19wREU0N2p1bnl1RUFITXBKMUhEY2ZXa3ZDdW9JX1lmMjFJZEtCZjNCTWVpXzJBSjdHQdIBgwJBVV95cUxOV2tjOEU2TVV1ekMzYS1LUmxIM3BQZjRvZUhudHdZS182Y2llelQxMnZDcnVQRmV3TzNnbTF4NjlTZmVfS0ppR2N0MG1OZVF6M0ZWQ2tYZDhXVU04M2Y0N3MzamxFQWpiVnEtN3VEVWdINWx5bDB5M2NNNFVGdHBkUElTZmc0ZHc2M0dycGVoMEdSMFMtN2c2bXdvQXFHTHFwT3dtaG5QbGxaTmFCQ05FSEgyQkNKRUFpT3ROQW4waVQteEw3djNaWUV5TDhzYUVlM2Z6eVpyWWhCRUdYYlExcmktYk9XM0x6STRJSVVuU0VFWGExMnZEUlFQVzNhcW9EYnVv?oc=5" target="_blank">Reabren tránsito en la PR-969 de Naguabo tras remover árboles, postes y cablería - El Vocero de Puerto Rico</a>
                     </td>
                     <td>Naguabo</td>
-                    <td class="time-ago" data-date="2026-10-06 13:45">hace 17h</td>
+                    <td class="time-ago" data-date="2026-10-06 13:45">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Culebra" data-titular="Turisteando en Puerto Rico. Afro Sound Machine · Mama Africa (Take Me There) (Instrumental). Cuando visitas Culebra, Puerto Rico. 😎🙌🏻🇵🇷 Video @ibelarlenis #boricua #turismopuertorico - Facebook">
@@ -1265,7 +1275,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-07 07:31:11 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-07 07:46:03 AM<br>
     Actualización automática cada 30 min
 </div>
 
