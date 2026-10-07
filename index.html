@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-07 11:01:28 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-07 11:16:17 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">20</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">24</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-07 11:01:28 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-07 11:16:17 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -814,6 +814,12 @@ tr.article-row:hover { background: var(--surface2); }
 <div class="section breaking-section">
     <div class="breaking-banner">
         <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">ahora</span> —
+            <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQRmp5dC1CYU1pbHBKMWM2OTlFNUhxT242elB6NmZCV19sTVF6NG05RHF0bFBQN3N1NlRRR2V5UmpVOGFKclNVYzBwTWdzRnpZejZ2MURlWTJUdzhIbVJjMjhJeEtELTE5ZmFhSExRV2k1MXpOV3FKYllRSjYyYlF1bTZnQjFBYzdBclhSekdvOE42Rm4xb19EV0dhZnNhNWpMb3BObGZWSDF3bUVqbjdrbEJReFVOZw?oc=5" target="_blank">Hallan el cadáver baleado de un hombre en Río Grande - Primera Hora</a>
+            <span style="opacity:0.6"> [Río Grande]</span>
+        </div>
         
         <div class="breaking-item">
             <span class="time">ahora</span> —
@@ -870,9 +876,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">1</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
+        <div class="muni-card active" onclick="filtrarPor('Río Grande')">
             <span class="muni-name">Río Grande</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">3</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Ceiba')">
@@ -882,7 +888,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <span class="muni-name">Naguabo</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">3</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
@@ -932,10 +938,20 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="Río Grande" data-titular="En Río Grande: hallan cuerpo amarrado y con heridas de bala en un pastizal - El Nuevo Día">
+                    <td><span class="muni-tag">Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxORjl5ajEtZUg2NUVnRkZVMWRrU2JKbzFGeTFLU3ItazFoMVF6R1l3M2FpSFpyOXQ5SEVTRWVIbTBIUEQxVlpNUnNOUnNwS3JPQkZOVnBwdW1uOHVKNTlLN29VMlhsOWRtZ3YtLXhLY1puMm9pMUlVRFBVRGFaWVFqOEJHOWx4aTF1NjRPc2RIYkxHcU9wWkV6VnQ2RE9Ea01fY1JGTGJNcHdNUU03VloxOGpTR0xlN19mcnN5aFYyZXQwTzdj?oc=5" target="_blank">En Río Grande: hallan cuerpo amarrado y con heridas de bala en un pastizal - El Nuevo Día</a>
+                    </td>
+                    <td>Río Grande</td>
+                    <td class="time-ago" data-date="2026-10-07 15:10">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Ceiba" data-titular="DDEC abre espacio de diálogo con APRODEC tras determinación de cancelar contrato en Roosevelt Roads">
                     <td><span class="muni-tag">Ceiba</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://waloradio.com/2026/10/07/ddec-abre-espacio-de-dialogo-con-aprodec-tras-determinacion-de-cancelar-contrato-en-roosevelt-roads/" target="_blank">DDEC abre espacio de diálogo con APRODEC tras determinación de cancelar contrato en Roosevelt Roads</a>
                     </td>
                     <td>Walo Radio</td>
@@ -945,10 +961,20 @@ tr.article-row:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="San Juan" data-titular="Exigen a la gobernadora intervenir ante la crisis de credibilidad y la inacción en el Departamento de la Familia">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://nelpr.com/2026/10/07/exigen-a-la-gobernadora-intervenir-ante-la-crisis-de-credibilidad-y-la-inaccion-en-el-departamento-de-la-familia/" target="_blank">Exigen a la gobernadora intervenir ante la crisis de credibilidad y la inacción en el Departamento de la Familia</a>
                     </td>
                     <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-10-07 14:58">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Río Grande" data-titular="Hallan el cadáver baleado de un hombre en Río Grande - Primera Hora">
+                    <td><span class="muni-tag">Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQRmp5dC1CYU1pbHBKMWM2OTlFNUhxT242elB6NmZCV19sTVF6NG05RHF0bFBQN3N1NlRRR2V5UmpVOGFKclNVYzBwTWdzRnpZejZ2MURlWTJUdzhIbVJjMjhJeEtELTE5ZmFhSExRV2k1MXpOV3FKYllRSjYyYlF1bTZnQjFBYzdBclhSekdvOE42Rm4xb19EV0dhZnNhNWpMb3BObGZWSDF3bUVqbjdrbEJReFVOZw?oc=5" target="_blank">Hallan el cadáver baleado de un hombre en Río Grande - Primera Hora</a>
+                    </td>
+                    <td>Río Grande</td>
                     <td class="time-ago" data-date="2026-10-07 14:58">ahora</td>
                 </tr>
                 
@@ -1022,6 +1048,16 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-07 11:34">ahora</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Río Grande" data-titular="En Río Grande: hallan cuerpo amarrado y con heridas de bala en un pastizal">
+                    <td><span class="muni-tag">Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/en-rio-grande-hallan-cuerpo-amarrado-y-con-heridas-de-bala-en-un-pastizal/" target="_blank">En Río Grande: hallan cuerpo amarrado y con heridas de bala en un pastizal</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-10-07 11:16">ahora mismo</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Cataño" data-titular="Hiram Torres Montalvo dice va a cancelar contrato de publicidad de $540 mil en Cataño - NotiCel">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
@@ -1029,7 +1065,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQNzkyVHNlaVp0Z1FNb2pFM2Jqa243amFCZk5ZU1BVNW9vNU55Z0xuNjAwSmQwcHlhWENmcUdqZWw2TWxpbzNMVVloNnMzX0E3VWhEOHhERFFDMi1JNndKYkEtZkdpcDVQbGlFVU1ucEE3YUtRWTV3cVBvRkVFYTVreHhPUTM0d1lCMmluZ3RhMnBCbUFHMjFvNnpEMDFvcUFmMkxxWmQ0WXMtQnhpQk9TblBDbXV1YTFSbFF1RmFaUWRXbF9Y?oc=5" target="_blank">Hiram Torres Montalvo dice va a cancelar contrato de publicidad de $540 mil en Cataño - NotiCel</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-10-07 11:15">ahora</td>
+                    <td class="time-ago" data-date="2026-10-07 11:15">hace 1min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Damarielis Rodríguez Llanos: desde Luquillo, disciplina y sueños rumbo al éxito - Claridad">
@@ -1039,7 +1075,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOZXVTSDJld1dUOEhGMnRFTHgzYUhrWXRlYk5ya3JUOVdCZnRoRlVrQlNWSm1PUWRONjB5LVdkcnRpc0hfb3J4cEtxZWtKRmFrRktVQTNVYzhSaHRKNm1ENWZiR1hsX1hCcm5zTE9mU3NqaWFWQU9MZkg2VDQ1RlpQRzNWZnVoR0hmRjhITkRMTmEzN2tpZVRsR2FoQnNtSXlsSXdfS2syRUkxRlBVLWc?oc=5" target="_blank">Damarielis Rodríguez Llanos: desde Luquillo, disciplina y sueños rumbo al éxito - Claridad</a>
                     </td>
                     <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-10-07 11:05">ahora</td>
+                    <td class="time-ago" data-date="2026-10-07 11:05">hace 11min</td>
                 </tr>
                 
                 
@@ -1062,7 +1098,17 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/06/senador-presenta-medida-para-integrar-el-lenguaje-de-senas-al-curriculo-de-las-escuelas-publicas/" target="_blank">Senador presenta medida para integrar el lenguaje de señas al currículo de las escuelas públicas</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-06 23:13">hace 11h</td>
+                    <td class="time-ago" data-date="2026-10-06 23:13">hace 12h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Naguabo" data-titular="📲🏛️ ¡Conoce nuestros Centros de Actividades! El Municipio Autónomo de Naguabo continúa facilitando el acceso a la información y a los espacios disponibles para nuestros naguabeños y visitantes. Ahora puedes conocer más sobre los Centros de Activida - Facebook">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMihAJBVV95cUxOUHhwVXBiYUpTVVdPcEk5dnc1Nmc0b1lPc3RUMGZ6V0ZOMmdJQTNSYldjX1FWc0xXUmdFamNZNnVPLUY4V09GTllKVm1vS2VCcUdyelpHSHROd2JnS0IzSFZiZ0c2aEw2SjhKQzFUbGJqaktIVk1rM284LVJUVE9XQmlfLUE4ekFXQVJXdC05UWlYcE1lenpkZnoyanV3N0ZQQUlXZE5seTBJZkJyZEhkdE9uWk44TUZLRl9rNGlpZUx4N2NrU2o1bENSSzVtSzJBOXFLNUlTQ2hpTUZqcENISXVjRzlEU2pSX1gwdGR4a3d4VVJHYS1SYldyZDd5Ti1USlhrSQ?oc=5" target="_blank">📲🏛️ ¡Conoce nuestros Centros de Actividades! El Municipio Autónomo de Naguabo continúa facilitando el acceso a la información y a los espacios disponibles para nuestros naguabeños y visitantes. Ahora puedes conocer más sobre los Centros de Activida - Facebook</a>
+                    </td>
+                    <td>FB - Naguabo</td>
+                    <td class="time-ago" data-date="2026-10-06 22:39">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="“Cataño tiene $48 millones en el banco”: anuncio sorprende a comité de transición - Telemundo Puerto Rico">
@@ -1082,7 +1128,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/06/etica-gubernamental-presenta-querella-contra-supervisora-de-adfan-en-ceiba-por-presunto-uso-indebido-de-tarjeta-ath/" target="_blank">Ética Gubernamental presenta querella contra supervisora de ADFAN en Ceiba por presunto uso indebido de tarjeta ATH</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-06 20:11">hace 14h</td>
+                    <td class="time-ago" data-date="2026-10-06 20:11">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza,Ceiba" data-titular="En Guánica, Ceiba y Loíza se ha ido “medio mundo” en los últimos 25 años - Metro Puerto Rico">
@@ -1288,7 +1334,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-07 11:01:28 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-07 11:16:17 AM<br>
     Actualización automática cada 30 min
 </div>
 
