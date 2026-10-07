@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-06 11:46:09 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-07 12:01:11 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">25</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">16</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-06 11:46:09 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-07 12:01:11 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -824,12 +824,12 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">1</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
+        <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
             <span class="muni-name">Trujillo Alto</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
@@ -849,12 +849,12 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <span class="muni-name">Fajardo</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <span class="muni-name">Loíza</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
@@ -874,22 +874,22 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <span class="muni-name">Humacao</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <span class="muni-name">Cataño</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Vieques')">
+        <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
             <span class="muni-name">Vieques</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Culebra')">
             <span class="muni-name">Culebra</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">2</span>
         </div>
         
     </div>
@@ -919,6 +919,19 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="San Juan" data-titular="New Fortress Energy says it is working to bring the Amur River into the port of San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.elnuevodia.com/english/news/story/new-fortress-energy-says-it-is-working-to-bring-the-amur-river-into-the-port-of-san-juan/" target="_blank">New Fortress Energy says it is working to bring the Amur River into the port of San Juan</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-10-07 03:11">ahora</td>
+                </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
+                
                 <tr class="article-row" data-municipios="San Juan" data-titular="LUMA anuncia apagones en 15 municipios que podrían durar hasta 14 horas">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
@@ -926,7 +939,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/06/luma-anuncia-apagones-en-15-municipios-que-podrian-durar-hasta-14-horas/" target="_blank">LUMA anuncia apagones en 15 municipios que podrían durar hasta 14 horas</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-06 23:25">hace 21min</td>
+                    <td class="time-ago" data-date="2026-10-06 23:25">hace 36min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Senador presenta medida para integrar el lenguaje de señas al currículo de las escuelas públicas">
@@ -936,11 +949,8 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/06/senador-presenta-medida-para-integrar-el-lenguaje-de-senas-al-curriculo-de-las-escuelas-publicas/" target="_blank">Senador presenta medida para integrar el lenguaje de señas al currículo de las escuelas públicas</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-06 23:13">hace 33min</td>
+                    <td class="time-ago" data-date="2026-10-06 23:13">hace 48min</td>
                 </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Policía arresta 44 personas tras investigación de 13 meses">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -949,7 +959,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/06/policia-arresta-44-personas-tras-investigacion-de-13-meses/" target="_blank">Policía arresta 44 personas tras investigación de 13 meses</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-06 21:57">hace 1h</td>
+                    <td class="time-ago" data-date="2026-10-06 21:57">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Comisionado residente insiste en que Josué Colón debe salir del gobierno">
@@ -959,7 +969,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/06/comisionado-residente-insiste-en-que-josue-colon-debe-salir-del-gobierno/" target="_blank">Comisionado residente insiste en que Josué Colón debe salir del gobierno</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-06 21:55">hace 1h</td>
+                    <td class="time-ago" data-date="2026-10-06 21:55">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="“Cataño tiene $48 millones en el banco”: anuncio sorprende a comité de transición - Telemundo Puerto Rico">
@@ -989,7 +999,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://noticel.com/noticias/20261006/advertencia-de-inundaciones-para-anasco-las-marias-y-mayaguez/?utm_source=rss&utm_medium=rss&utm_campaign=advertencia-de-inundaciones-para-anasco-las-marias-y-mayaguez" target="_blank">Advertencia de inundaciones para Añasco, Las Marías y Mayagüez</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-10-06 21:00">hace 2h</td>
+                    <td class="time-ago" data-date="2026-10-06 21:00">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba" data-titular="Ética Gubernamental presenta querella contra supervisora de ADFAN en Ceiba por presunto uso indebido de tarjeta ATH">
@@ -1009,7 +1019,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/06/cooperativas-roosevelt-roads-y-naguabena-unen-esfuerzos-para-dar-inicio-al-mes-del-cooperativismo-2026/" target="_blank">Cooperativas Roosevelt Roads y Naguabeña unen esfuerzos para dar inicio al Mes del Cooperativismo 2026</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-06 19:55">hace 3h</td>
+                    <td class="time-ago" data-date="2026-10-06 19:55">hace 4h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Madre de menor rechaza agresión sexual en escuela Agapito López Flores">
@@ -1039,7 +1049,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNMFg2eE5Sd19BM09wQ2dacEUxREdjZzl1UkxMWFM5QVlDdzA2UFh3S28zS2pLUnROeU91UENoZVFFelo5VjJwZlJfcXRlckI5dVhrX0VoblNpV1hnTHVRZzNYMGFiRm50MTZzSDBiRnZMOUVvRTcxWnFLbEdmLVFfQUpzMGdJbHIzSHlMU2toN1RkNV9MVFF1SXBlemRienpXSzZNTENDYVhtLUE4WXpKR2FLWWUyWkFRQkxrclRuS1dxRWJIcXhYM3ZYSG1vZU1ZZG1mTGtmTUprbHlJTWc?oc=5" target="_blank">La playa mas famosa del mundo 🌎 😎 🙌 📍Playa Flamenco; Culebra 🇵🇷 #lifestyle #fblifestyle #PuertoRico #culebra - Facebook</a>
                     </td>
                     <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-10-06 13:52">hace 9h</td>
+                    <td class="time-ago" data-date="2026-10-06 13:52">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Reabren tránsito en la PR-969 de Naguabo tras remover árboles, postes y cablería - El Vocero de Puerto Rico">
@@ -1063,89 +1073,6 @@ tr.article-row:hover { background: var(--surface2); }
                 </tr>
                 
                 
-                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto - Facebook">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTFBpa2hfZUlUUFdINnlreGFWaWJMM2dPUjhjeUlmRURpTHNYS2VFNXAzd0lMQzJMeXZVTVlsLXo5TFRJcmJGOE9xNTI2Ul93NGtPMVBhT3lVcngzNHJhUjlIN0dROEgyQkFOTmVhbDlfNzdVT3ZZUWJSdEdRcmVPZw?oc=5" target="_blank">Municipio De Trujillo Alto - Facebook</a>
-                    </td>
-                    <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-10-05 19:16">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="Zaragoza pondrá bajo la lupa a Cataño: tiene $8 millones en el banco, pero quiere saber más - Metro Puerto Rico">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxPZy0wTlp3VzYtaXdhN0Q5WWZabUZLaHJrSTFqSGUweldhVXRlZUxBem1oa3pDRURDWHlIQ0UwWFBLdUN1eGJJaVRXSEZ6dER2eHRWc0M3Vm9Eb1Q0c2JIM1pFS1FJb1k0MVhQUzFYVEhJbkZWTDF5QzI2THhmN1NLTlZ4NllhYXZqN1N4dENPYTBEREFVT1g2ekNONmhoZWpZYXk2cEVfY3IzaFM2dUJhbUp1Tm4zUGozV2FOM1NNRUROOG92TjVjdFJB?oc=5" target="_blank">Zaragoza pondrá bajo la lupa a Cataño: tiene $8 millones en el banco, pero quiere saber más - Metro Puerto Rico</a>
-                    </td>
-                    <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-10-05 14:51">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Municipio Autónomo de Fajardo. . El Municipio de Fajardo Te Informa Lunes, 5 de Octubre 2026. - Facebook">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxOV1BuaWF2R2Exd3hTNWZzbXp0NkVjSVJrV1JyVkhITUxBWXBGN0lNMDhBNVRVQlpyM2NwY2dyRllCejBBcDF4YmRQUjZZelA0Rkdmak1EU0NlaHFYVnJDU1ZnbGI2UmFORE9GbnZjYlZMM2RJZHVGc3A4ZzRKY3ByZ2R6TkROMDdaa0N1Q1I3cnlEWEQ3Q084bE0wYlVMMmc?oc=5" target="_blank">Municipio Autónomo de Fajardo. . El Municipio de Fajardo Te Informa Lunes, 5 de Octubre 2026. - Facebook</a>
-                    </td>
-                    <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-10-05 12:59">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Somos Carolina - Facebook">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE5aR0dCdkZGSVZtYi1aR01EcjN5c1RoQUhobjFHNjBLenhkMmptc3dUNWl3WnM3M1N2VGtvQU9xRzBSRDlpU2lvdm1nd0hNNlBXQnhGTVhUUFdfWUp4T0Eyb1h1cw?oc=5" target="_blank">Somos Carolina - Facebook</a>
-                    </td>
-                    <td>FB - Carolina</td>
-                    <td class="time-ago" data-date="2026-10-05 09:32">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan,Humacao" data-titular="Veterinarios vacunan 820 mascotas en SJ y Humacao - San Juan Daily Star">
-                    <td><span class="muni-tag">San Juan, Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNbkdXcWZnSFhJV1U2YWpJc2NNbW9KSjgzeFFVS0Z2YjBIU1FVOU0tUm1KM0RMaEp1ekpGYjRLOTUxRXdXMkx4Qnc1QU1xX01OMU9nOFZmQlZHRHgtZ0RrbEVhUm9obm5vdEp1MnQxUTZNLTdpbzlvZ2RLTnY2TDNpWHhVOGtndE84YTNKSFRyZG0?oc=5" target="_blank">Veterinarios vacunan 820 mascotas en SJ y Humacao - San Juan Daily Star</a>
-                    </td>
-                    <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-10-05 08:43">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Vieques,Culebra" data-titular="ATI flexibiliza reservaciones de vehículos para viajes a Vieques y Culebra - El Vocero de Puerto Rico">
-                    <td><span class="muni-tag">Vieques, Culebra</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxQNzRWX1V6SjN6QUItUFU0ZVJIME9WTzJzSUVzY0xvb2xka1hEdVQ0WjdfMnBKMHJrYUF4dGJqMWtnVW8ydU9mN1JJZ185OFVmME92N0JIRGVJdTRuSjk4MkNuQjJDRmVyekZZNE1UWlB0UVNNSFRocGM5dmJKRUM0ckFXXzlQTFdXODhGdzFDd01RbHZJUHJMVkVuVmR3MlpQQUJzOXhTdHl1WEtSTU1HbWUyT0hzZVlHRC1MY2l1d29fSG5aQ0hDNHdIbkYwb0NxUnJDdG1Bd1M3R0h5LUNQSWhOREszaWZVMGR5OWFINNIB9AFBVV95cUxONkRyeUFaVldzLVBXQ3pLRTRobGlTbFM2VTdZZC13RkRZNFlLbEtaNVdLbEpyNEgzbTRUT0dXbU5ObmFIUWJuWmFoU1FwLUhyNWZuMndVYS12UlhyckFyNHhWLVhnM0pObTJoSHhWN2w0QXNwdDhRQ2kxSmpWWjNHTGY2ZXUyZDhmQnNsc0QzdjIxaG5tY0gyM2xjTFhlVHBWUWZ6RXNuc3FtUnpNYVM1Wk5JX1g4dW03TV8teldSYlVfSEdkT3NCb2ZZaU92NFJTazlfRWQ1T3lxbW0tVlZxWGxwMlZqQU5NdVVMREpuY3IxaXRf?oc=5" target="_blank">ATI flexibiliza reservaciones de vehículos para viajes a Vieques y Culebra - El Vocero de Puerto Rico</a>
-                    </td>
-                    <td>Vieques</td>
-                    <td class="time-ago" data-date="2026-10-05 08:24">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Radican cargos contra joven por drogas y armas en Trujillo Alto - Metro Puerto Rico">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxNM2tfVzlSUkpQaXZMQ242T1JidUxTR1RnMFU5ZWFFODBTS05Lak5NZUM0cW1fX0lYczJlcVdndXo5eTBqQ1dBVVNnelAtZmp2Q0dpNDluaHZKMUFVRzBKVVNvRjNoWEhEOEhyRzdhZmtJSV80UWpIa2t0RnVXaWVOTDk2RWVybXhzbTVaUzcyYmEydDdqNmQ5Y19XY002bnMwQjVBemp6aw?oc=5" target="_blank">Radican cargos contra joven por drogas y armas en Trujillo Alto - Metro Puerto Rico</a>
-                    </td>
-                    <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-10-05 05:31">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Bar on Loíza Street named among the nominees for the best “speakeasies” in the United States - El Nuevo Día">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxPV0FkZldtSkhqYlZwb3VvaWVfV2tVbExrR0tKbTYtSmIyeE9LTjJnZUpoLVV2QTY2RWJZcHhpbi1qQkcta0JLRnh5WVNQdGFVZTBmN3BKWmctbzFkYi1VSFZHUFk4MEtkV01Tem1oZU9zQVZaemI5SFo0c2dWaktnelF4eVE1aVJtWEE4SG5jbWdyWWg1VVd4blhUVjJ5LVRBc0RjLTBtSmYwR21lQVBJcDduNDBBM1FBZ3FIOFNteEZLclAwamJSc0Y2bUlfYjZuTk5J?oc=5" target="_blank">Bar on Loíza Street named among the nominees for the best “speakeasies” in the United States - El Nuevo Día</a>
-                    </td>
-                    <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-10-05 02:05">hace 1d</td>
-                </tr>
-                
-                
                 <tr class="time-group-header"><td colspan="4">📋 Anteriores</td></tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Seis arrestados y cuatro armas incautadas durante operativo en Carolina">
@@ -1156,26 +1083,6 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Carolina787</td>
                     <td class="time-ago" data-date="2026-10-06">2026-10-06</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Carolina incorpora 31 nuevos policías tras rigurosa formación académica y operacional">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.carolina787.com/n/carolina-incorpora-31-nuevos-policias-tras-rigurosa-formacion-academica-y-operacional" target="_blank">Carolina incorpora 31 nuevos policías tras rigurosa formación académica y operacional</a>
-                    </td>
-                    <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-10-05">2026-10-05</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Las Gigantes de Carolina vencen a Isabela y suman su cuarto triunfo consecutivo en el BSNF">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.carolina787.com/n/las-gigantes-de-carolina-vencen-a-isabela-y-suman-su-cuarto-triunfo-consecutivo-en-el-bsnf" target="_blank">Las Gigantes de Carolina vencen a Isabela y suman su cuarto triunfo consecutivo en el BSNF</a>
-                    </td>
-                    <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-10-05">2026-10-05</td>
                 </tr>
                 
                 
@@ -1328,7 +1235,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-06 11:46:09 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-07 12:01:11 AM<br>
     Actualización automática cada 30 min
 </div>
 
