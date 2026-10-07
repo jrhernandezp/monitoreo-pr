@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-07 05:46:06 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-07 06:01:06 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">16</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">17</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-07 05:46:06 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-07 06:01:06 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -879,7 +879,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <span class="muni-name">Cataño</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Vieques')">
@@ -916,6 +916,19 @@ tr.article-row:hover { background: var(--surface2); }
         <table>
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
+                
+                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Hiram Torres Montalvo dice va a cancelar contrato de publicidad de $540 mil en Cataño - NotiCel">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQNzkyVHNlaVp0Z1FNb2pFM2Jqa243amFCZk5ZU1BVNW9vNU55Z0xuNjAwSmQwcHlhWENmcUdqZWw2TWxpbzNMVVloNnMzX0E3VWhEOHhERFFDMi1JNndKYkEtZkdpcDVQbGlFVU1ucEE3YUtRWTV3cVBvRkVFYTVreHhPUTM0d1lCMmluZ3RhMnBCbUFHMjFvNnpEMDFvcUFmMkxxWmQ0WXMtQnhpQk9TblBDbXV1YTFSbFF1RmFaUWRXbF9Y?oc=5" target="_blank">Hiram Torres Montalvo dice va a cancelar contrato de publicidad de $540 mil en Cataño - NotiCel</a>
+                    </td>
+                    <td>Cataño</td>
+                    <td class="time-ago" data-date="2026-10-07 09:59">ahora</td>
+                </tr>
+                
                 
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
@@ -959,7 +972,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/06/policia-arresta-44-personas-tras-investigacion-de-13-meses/" target="_blank">Policía arresta 44 personas tras investigación de 13 meses</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-06 21:57">hace 7h</td>
+                    <td class="time-ago" data-date="2026-10-06 21:57">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Comisionado residente insiste en que Josué Colón debe salir del gobierno">
@@ -969,7 +982,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/06/comisionado-residente-insiste-en-que-josue-colon-debe-salir-del-gobierno/" target="_blank">Comisionado residente insiste en que Josué Colón debe salir del gobierno</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-06 21:55">hace 7h</td>
+                    <td class="time-ago" data-date="2026-10-06 21:55">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="“Cataño tiene $48 millones en el banco”: anuncio sorprende a comité de transición - Telemundo Puerto Rico">
@@ -999,7 +1012,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://noticel.com/noticias/20261006/advertencia-de-inundaciones-para-anasco-las-marias-y-mayaguez/?utm_source=rss&utm_medium=rss&utm_campaign=advertencia-de-inundaciones-para-anasco-las-marias-y-mayaguez" target="_blank">Advertencia de inundaciones para Añasco, Las Marías y Mayagüez</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-10-06 21:00">hace 8h</td>
+                    <td class="time-ago" data-date="2026-10-06 21:00">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba" data-titular="Ética Gubernamental presenta querella contra supervisora de ADFAN en Ceiba por presunto uso indebido de tarjeta ATH">
@@ -1019,7 +1032,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/06/cooperativas-roosevelt-roads-y-naguabena-unen-esfuerzos-para-dar-inicio-al-mes-del-cooperativismo-2026/" target="_blank">Cooperativas Roosevelt Roads y Naguabeña unen esfuerzos para dar inicio al Mes del Cooperativismo 2026</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-06 19:55">hace 9h</td>
+                    <td class="time-ago" data-date="2026-10-06 19:55">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Madre de menor rechaza agresión sexual en escuela Agapito López Flores">
@@ -1049,7 +1062,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNMFg2eE5Sd19BM09wQ2dacEUxREdjZzl1UkxMWFM5QVlDdzA2UFh3S28zS2pLUnROeU91UENoZVFFelo5VjJwZlJfcXRlckI5dVhrX0VoblNpV1hnTHVRZzNYMGFiRm50MTZzSDBiRnZMOUVvRTcxWnFLbEdmLVFfQUpzMGdJbHIzSHlMU2toN1RkNV9MVFF1SXBlemRienpXSzZNTENDYVhtLUE4WXpKR2FLWWUyWkFRQkxrclRuS1dxRWJIcXhYM3ZYSG1vZU1ZZG1mTGtmTUprbHlJTWc?oc=5" target="_blank">La playa mas famosa del mundo 🌎 😎 🙌 📍Playa Flamenco; Culebra 🇵🇷 #lifestyle #fblifestyle #PuertoRico #culebra - Facebook</a>
                     </td>
                     <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-10-06 13:52">hace 15h</td>
+                    <td class="time-ago" data-date="2026-10-06 13:52">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Reabren tránsito en la PR-969 de Naguabo tras remover árboles, postes y cablería - El Vocero de Puerto Rico">
@@ -1235,7 +1248,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-07 05:46:06 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-07 06:01:06 AM<br>
     Actualización automática cada 30 min
 </div>
 
