@@ -92,7 +92,7 @@ RSS_MEDIOS = {
     "El Nuevo Día (GN)": GNSS.format("site:elnuevodia.com+Puerto+Rico"),
     "El Vocero (GN)": GNSS.format("site:elvocero.com+Puerto+Rico"),
     "WAPA TV": GNSS.format("site:wapa.tv+noticias"),
-    "NotiUno": GNSS.format("site:notiuno.com+Puerto+Rico"),
+    "NotiUno": "https://www.notiuno.com/search/?f=rss&t=article&l=10&s=start_time&sd=desc",
     "WKAQ 580": GNSS.format("site:wkaq580.com+Puerto+Rico"),
     "TeleOnce": GNSS.format("site:teleonce.com+Puerto+Rico"),
     "Xposed Magazine": GNSS.format("site:xposedmagazinenews24.com+Puerto+Rico"),
@@ -128,7 +128,7 @@ CATEGORIAS = {
     "El Nuevo Día (GN)": "📰 Google News",
     "El Vocero (GN)": "📰 Google News",
     "WAPA TV": "📰 Google News",
-    "NotiUno": "📰 Google News",
+    "NotiUno": "📻 NotiUno",
     "WKAQ 580": "📰 Google News",
     "TeleOnce": "📰 Google News",
     "Xposed Magazine": "📰 Google News",
@@ -233,11 +233,11 @@ def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10, extra_hea
     Returns (articles, status_string).
     Status is 'ok' for success or the error message for failure.
     """
-    try:
-        # Fetch with timeout to prevent hanging on slow feeds
+    import time as _time
+    
+    def _do_fetch():
         try:
             if use_curl:
-                # Some sites block Python's TLS — use curl instead
                 import subprocess as sp
                 curl_cmd = ['curl', '-sL', '--max-time', '25']
                 if extra_headers:
@@ -248,7 +248,7 @@ def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10, extra_hea
                 curl_cmd.append(feed_url)
                 result = sp.run(curl_cmd, capture_output=True, text=True, timeout=30)
                 if result.returncode != 0:
-                    return [], f"curl error: exit {result.returncode}"
+                    return None, f"curl error: exit {result.returncode}"
                 feed = feedparser.parse(result.stdout)
             else:
                 headers = {'User-Agent': 'Mozilla/5.0'}
@@ -259,62 +259,75 @@ def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10, extra_hea
                     feed_data = resp.read()
                 feed = feedparser.parse(io.BytesIO(feed_data))
         except Exception as e:
-            return [], f"timeout/error: {e}"
-        articles = []
-        cutoff = datetime.now() - timedelta(days=MAX_DAYS_OLD)
+            return None, f"timeout/error: {e}"
+        return feed, None
 
-        for entry in feed.entries[:max_articles]:
-            title = entry.get("title", "")
-            if not title or not is_relevant_title(title):
-                continue
+    # Retry with exponential backoff for rate limits
+    feed = None
+    last_error = None
+    for attempt in range(3):
+        feed, err = _do_fetch()
+        if err is None:
+            break
+        last_error = err
+        if attempt < 2:
+            _time.sleep(2 ** attempt)  # 1s, 2s backoff
+    else:
+        return [], f"rate-limited/error: {last_error}"
 
-            link = entry.get("link", "")
-            raw_date = entry.get("published_parsed")
+    articles = []
+    cutoff = datetime.now() - timedelta(days=MAX_DAYS_OLD)
+
+    for entry in feed.entries[:max_articles]:
+        title = entry.get("title", "")
+        if not title or not is_relevant_title(title):
+            continue
+
+        link = entry.get("link", "")
+        raw_date = entry.get("published_parsed")
 
             # Parse date
-            if raw_date:
-                try:
-                    dt = datetime(*raw_date[:6])
-                    date_str = dt.strftime("%Y-%m-%d %H:%M")
-                except Exception:
-                    dt = datetime.now()
-                    date_str = dt.strftime("%Y-%m-%d %H:%M")
-            else:
+        if raw_date:
+            try:
+                dt = datetime(*raw_date[:6])
+                date_str = dt.strftime("%Y-%m-%d %H:%M")
+            except Exception:
                 dt = datetime.now()
                 date_str = dt.strftime("%Y-%m-%d %H:%M")
+        else:
+            dt = datetime.now()
+            date_str = dt.strftime("%Y-%m-%d %H:%M")
 
             # Skip old articles
-            if dt < cutoff:
-                continue
+        if dt < cutoff:
+            continue
 
             # Buscar municipio en título
-            municipios = mentions_municipio(title)
+        municipios = mentions_municipio(title)
 
             # Si no encontró, buscar en descripción
-            if not municipios:
-                summary = entry.get("summary", "") or entry.get("description", "")
-                clean_text = re.sub(r'<[^>]+>', ' ', summary)[:300]
-                municipios = mentions_municipio(clean_text)
+        if not municipios:
+            summary = entry.get("summary", "") or entry.get("description", "")
+            clean_text = re.sub(r'<[^>]+>', ' ', summary)[:300]
+            municipios = mentions_municipio(clean_text)
 
-            if municipios:
-                articles.append({
-                    "titular": title.strip(),
-                    "enlace": link,
-                    "fuente": source_name,
-                    "fecha": date_str,
-                    "municipios": municipios,
-                    "tipo": "RSS",
-                })
+        if municipios:
+            articles.append({
+                "titular": title.strip(),
+                "enlace": link,
+                "fuente": source_name,
+                "fecha": date_str,
+                "municipios": municipios,
+                "tipo": "RSS",
+            })
 
-        if articles:
-            return articles, "ok"
+    if articles:
+        return articles, "ok"
         # Feed responded but no relevant articles found
-        feed_title = getattr(feed, 'feed', None)
-        if feed_title is not None or len(feed.entries) > 0:
-            return articles, "ok"
-        return articles, "ok"  # Empty feed but reachable
-    except Exception as e:
-        return [], f"error: {e}"
+    feed_title = getattr(feed, 'feed', None)
+    if feed_title is not None or len(feed.entries) > 0:
+        return articles, "ok"
+    return articles, "ok"  # Empty feed but reachable
 
 
 def fetch_all(max_per_feed: int = 8) -> Tuple[List[Dict], Dict[str, str]]:
