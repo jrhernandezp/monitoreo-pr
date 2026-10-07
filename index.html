@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-07 09:16:14 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-07 09:31:18 AM</span></div>
         </div>
     </div>
     <div class="stats">
         <div class="stat-box"><div class="num">19</div><div class="label">Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-07 09:16:14 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-07 09:31:18 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -860,9 +860,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Fajardo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Fajardo')">
             <span class="muni-name">Fajardo</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
@@ -882,12 +882,12 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <span class="muni-name">Naguabo</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <span class="muni-name">Humacao</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">3</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Cataño')">
@@ -932,10 +932,20 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="Naguabo,Humacao" data-titular="Policía celebra “Un Café con un Policía” en Humacao y Naguabo">
+                    <td><span class="muni-tag">Naguabo, Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/10/07/policia-celebrara-un-cafe-con-un-policia-en-humacao-y-naguabo/" target="_blank">Policía celebra “Un Café con un Policía” en Humacao y Naguabo</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-10-07 13:15">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Humacao" data-titular="Senador propone integrar lenguaje de señas al currículo de escuelas públicas">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://waloradio.com/2026/10/07/senador-propone-integrar-lenguaje-de-senas-al-curriculo-de-escuelas-publicas/" target="_blank">Senador propone integrar lenguaje de señas al currículo de escuelas públicas</a>
                     </td>
                     <td>Walo Radio</td>
@@ -1012,7 +1022,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/06/luma-anuncia-apagones-en-15-municipios-que-podrian-durar-hasta-14-horas/" target="_blank">LUMA anuncia apagones en 15 municipios que podrían durar hasta 14 horas</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-06 23:25">hace 9h</td>
+                    <td class="time-ago" data-date="2026-10-06 23:25">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Senador presenta medida para integrar el lenguaje de señas al currículo de las escuelas públicas">
@@ -1065,16 +1075,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-06 20:11">hace 13h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Cooperativas Roosevelt Roads y Naguabeña unen esfuerzos para dar inicio al Mes del Cooperativismo 2026">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://waloradio.com/2026/10/06/cooperativas-roosevelt-roads-y-naguabena-unen-esfuerzos-para-dar-inicio-al-mes-del-cooperativismo-2026/" target="_blank">Cooperativas Roosevelt Roads y Naguabeña unen esfuerzos para dar inicio al Mes del Cooperativismo 2026</a>
-                    </td>
-                    <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-06 19:55">hace 13h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Loíza,Ceiba" data-titular="En Guánica, Ceiba y Loíza se ha ido “medio mundo” en los últimos 25 años - Metro Puerto Rico">
                     <td><span class="muni-tag">Loíza, Ceiba</span></td>
                     <td class="titular-cell">
@@ -1112,7 +1112,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxNX1NlbDFoMlFlczI1dnZUeUFUT0ZmMlNXRnR4T3JJMkp5WVQ3MGxUUGdDSHY0UUgxOWtNdGNYeDQxT3psSmR6NE1qbXY2NmpGVnNiMWVpTTRMMHpCVHBEbDRuQzczS2xRcnZaOGNZSndfT2ZGT0lsbkh6QTUwcHdxSmtPbWdnVjR1YmpodUY1Wnd0QjdrQmp2YzZmXzlYRVVqdWNYXzdzR2ZSWEFiNTJaQkw5X1lJTkhzVUhoQVQ2V3VoaE1BZzdLcEpPTmNDZldTQ2pKYXpjaGItMHd4TDVIUWczZ25WYlU?oc=5" target="_blank">Turisteando en Puerto Rico. Afro Sound Machine · Mama Africa (Take Me There) (Instrumental). Cuando visitas Culebra, Puerto Rico. 😎🙌🏻🇵🇷 Video @ibelarlenis #boricua #turismopuertorico - Facebook</a>
                     </td>
                     <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-10-06 13:22">hace 19h</td>
+                    <td class="time-ago" data-date="2026-10-06 13:22">hace 20h</td>
                 </tr>
                 
                 
@@ -1278,7 +1278,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-07 09:16:14 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-07 09:31:18 AM<br>
     Actualización automática cada 30 min
 </div>
 
