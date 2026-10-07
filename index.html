@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-07 12:16:15 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-07 12:31:18 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">27</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">29</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-07 12:16:15 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-07 12:31:18 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -844,12 +844,12 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">4</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
@@ -879,7 +879,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
             <span class="muni-name">Loíza</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Río Grande')">
@@ -943,6 +943,16 @@ tr.article-row:hover { background: var(--surface2); }
             <tbody id="articlesBody">
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Rechazan petición para retirar publicaciones sobre servicio de alimentos en cárceles">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.notiuno.com/noticias/seguridad-y-justicia/rechazan-petici-n-para-retirar-publicaciones-sobre-servicio-de-alimentos-en-c-rceles/article_41efbce8-9ffb-44e2-a334-5cda707634ca.html" target="_blank">Rechazan petición para retirar publicaciones sobre servicio de alimentos en cárceles</a>
+                    </td>
+                    <td>NotiUno</td>
+                    <td class="time-ago" data-date="2026-10-07 16:10">ahora</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Enmascarado en motora lanza mujer al suelo y le roba cartera">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -1012,16 +1022,6 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>NELPR</td>
                     <td class="time-ago" data-date="2026-10-07 15:25">ahora</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Río Grande" data-titular="En Río Grande: hallan cuerpo amarrado y con heridas de bala en un pastizal">
-                    <td><span class="muni-tag">Río Grande</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/en-rio-grande-hallan-cuerpo-amarrado-y-con-heridas-de-bala-en-un-pastizal/" target="_blank">En Río Grande: hallan cuerpo amarrado y con heridas de bala en un pastizal</a>
-                    </td>
-                    <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-10-07 15:10">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="En Río Grande: hallan cuerpo amarrado y con heridas de bala en un pastizal - El Nuevo Día">
@@ -1094,14 +1094,14 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-07 13:07">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Motorista enmascarado roba cartera a mujer en Miramar">
-                    <td><span class="muni-tag">San Juan</span></td>
+                <tr class="article-row" data-municipios="Río Grande" data-titular="En Río Grande: hallan cuerpo amarrado y con heridas de bala en un pastizal">
+                    <td><span class="muni-tag">Río Grande</span></td>
                     <td class="titular-cell">
                         
-                        <a href="https://www.notiuno.com/noticias/seguridad-y-justicia/motorista-enmascarado-roba-cartera-a-mujer-en-miramar/article_ef1cde40-4afa-45bf-a960-046187612dac.html" target="_blank">Motorista enmascarado roba cartera a mujer en Miramar</a>
+                        <a href="https://www.elnuevodia.com/noticias/seguridad/notas/en-rio-grande-hallan-cuerpo-amarrado-y-con-heridas-de-bala-en-un-pastizal/" target="_blank">En Río Grande: hallan cuerpo amarrado y con heridas de bala en un pastizal</a>
                     </td>
-                    <td>NotiUno</td>
-                    <td class="time-ago" data-date="2026-10-07 12:10">hace 6min</td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-10-07 12:31">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Reportan carjacking en una estación de gasolina en Caguas">
@@ -1111,7 +1111,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/07/reportan-carjacking-en-una-estacion-de-gasolina-en-caguas/" target="_blank">Reportan carjacking en una estación de gasolina en Caguas</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-07 11:34">hace 42min</td>
+                    <td class="time-ago" data-date="2026-10-07 11:34">hace 57min</td>
                 </tr>
                 
                 
@@ -1160,6 +1160,16 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-06 21:32">hace 14h</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Loíza" data-titular="🔊 ¡Aviso de RFP! El Municipio de Loíza invita a profesionales y firmas legalmente autorizadas a presentar propuestas para los servicios de arquitectura e ingeniería de la fase de diseño del proyecto Paseo del Atlántico, financiado con fondos de FEMA y CDB - Facebook">
+                    <td><span class="muni-tag">Loíza</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxPb0dpSk5BQ1JOZE9jcDFfOFM5cTV5ZDYtZzZBT1ZGN1lCY3JjUWJoLWFWR0xZeDFEMFZ4S3l4MHh4WDExa1djYnNCaEV4TTI0LXRsZVJOQ183SFc0UFNBZTlYY1VGVmJ1bFZiNVl5eml0TFZnbEd4RXdvR3o1Rk9KdUk2aXFUQTlBeUVwRVVjMi1ZV1Q4djlMQ1pOMHh4VmdGTlgxWW8zSzU4cGMyRURNVWhxYTlCcnlPN1ZNeTJiSHZvcWVrOHpVRWk3SHFiNTNYWFZWMTU3QVE?oc=5" target="_blank">🔊 ¡Aviso de RFP! El Municipio de Loíza invita a profesionales y firmas legalmente autorizadas a presentar propuestas para los servicios de arquitectura e ingeniería de la fase de diseño del proyecto Paseo del Atlántico, financiado con fondos de FEMA y CDB - Facebook</a>
+                    </td>
+                    <td>FB - Loíza</td>
+                    <td class="time-ago" data-date="2026-10-06 18:58">hace 17h</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Loíza,Ceiba" data-titular="En Guánica, Ceiba y Loíza se ha ido “medio mundo” en los últimos 25 años - Metro Puerto Rico">
                     <td><span class="muni-tag">Loíza, Ceiba</span></td>
                     <td class="titular-cell">
@@ -1197,16 +1207,26 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxNX1NlbDFoMlFlczI1dnZUeUFUT0ZmMlNXRnR4T3JJMkp5WVQ3MGxUUGdDSHY0UUgxOWtNdGNYeDQxT3psSmR6NE1qbXY2NmpGVnNiMWVpTTRMMHpCVHBEbDRuQzczS2xRcnZaOGNZSndfT2ZGT0lsbkh6QTUwcHdxSmtPbWdnVjR1YmpodUY1Wnd0QjdrQmp2YzZmXzlYRVVqdWNYXzdzR2ZSWEFiNTJaQkw5X1lJTkhzVUhoQVQ2V3VoaE1BZzdLcEpPTmNDZldTQ2pKYXpjaGItMHd4TDVIUWczZ25WYlU?oc=5" target="_blank">Turisteando en Puerto Rico. Afro Sound Machine · Mama Africa (Take Me There) (Instrumental). Cuando visitas Culebra, Puerto Rico. 😎🙌🏻🇵🇷 Video @ibelarlenis #boricua #turismopuertorico - Facebook</a>
                     </td>
                     <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-10-06 13:22">hace 22h</td>
+                    <td class="time-ago" data-date="2026-10-06 13:22">hace 23h</td>
                 </tr>
                 
                 
                 <tr class="time-group-header"><td colspan="4">📋 Anteriores</td></tr>
                 
-                <tr class="article-row" data-municipios="Carolina" data-titular="LUMA invertirá $6.5 millones para reducir interrupciones eléctricas y mejorar la red en 12 municipios de Puerto Rico">
+                <tr class="article-row" data-municipios="Carolina" data-titular="Cardiólogo Antonio Figueroa Rivera se retira y anuncia entrega de expedientes médicos en Carolina">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.carolina787.com/n/cardiologo-antonio-figueroa-rivera-se-retira-y-anuncia-entrega-de-expedientes-medicos-en-carolina" target="_blank">Cardiólogo Antonio Figueroa Rivera se retira y anuncia entrega de expedientes médicos en Carolina</a>
+                    </td>
+                    <td>Carolina787</td>
+                    <td class="time-ago" data-date="2026-10-07">2026-10-07</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="LUMA invertirá $6.5 millones para reducir interrupciones eléctricas y mejorar la red en 12 municipios de Puerto Rico">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
                         <a href="https://www.carolina787.com/n/luma-invertira-6-5-millones-para-reducir-interrupciones-electricas-y-mejorar-la-red-en-12-municipios-de-puerto-rico" target="_blank">LUMA invertirá $6.5 millones para reducir interrupciones eléctricas y mejorar la red en 12 municipios de Puerto Rico</a>
                     </td>
                     <td>Carolina787</td>
@@ -1373,7 +1393,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-07 12:16:15 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-07 12:31:18 PM<br>
     Actualización automática cada 30 min
 </div>
 
