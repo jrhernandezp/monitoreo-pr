@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-08 02:01:16 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-08 02:16:14 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">27</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">28</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">10</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-08 02:01:16 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-08 02:16:14 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -819,7 +819,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -827,9 +827,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">6</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
+        <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <span class="muni-name">Trujillo Alto</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
@@ -849,7 +849,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
             <span class="muni-name">Fajardo</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">2</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Loíza')">
@@ -919,6 +919,16 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Abren las compuertas el embalse Carraízo">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/10/08/abren-las-compuertas-el-embalse-carraizo/" target="_blank">Abren las compuertas el embalse Carraízo</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-10-08 18:00">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Loíza" data-titular="Alcaldesa de Loíza rechaza señalamientos de irregularidades millonarias">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
@@ -969,16 +979,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-08 14:59">ahora</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Econo celebra aniversario con más de $100,000 en premios para sus clientes">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://nelpr.com/2026/10/08/econo-celebra-aniversario-con-mas-de-100000-en-premios-para-sus-clientes/" target="_blank">Econo celebra aniversario con más de $100,000 en premios para sus clientes</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-08 14:58">ahora</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Loíza" data-titular="Las Maceteras se quedan con el último boleto a la postemporada del béisbol femenino">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
@@ -996,17 +996,17 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxPeWVROG5McjNQV0RLeDhzblJXQm16T3d1UF9YeVg4WER5QVZZVmNYNVAwWEVxaW1Bb1ZWd1dscGhmd3B6amllelRjM2hpQ2lRTDJqQW1TNGVzNW9lSDNCTFQxeWZ4MjR0YUI4emZqcE9DWmVQN0RqOXZjWTNtUHU5TUtXQUx5cHgtMW95Mk00Q1BUeW01VnZUX3duNHl5cGROWGpGYnVHemhkUmlMUnVCUzRQTjZTMHRMTDJiVEZfbmYtdE81Ymh2MlBPYWRSazdfQnlXQVc0cw?oc=5" target="_blank">Alcaldesa de Loíza atribuye señalamientos de la Contralora a eliminación del fondo de equiparación - NotiCel</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-10-08 14:00">hace 1min</td>
+                    <td class="time-ago" data-date="2026-10-08 14:00">hace 16min</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Loíza" data-titular="Alcaldesa sobre informe de irregularidades millonarias: "Cada día hay espacio para mejorar”">
+                <tr class="article-row" data-municipios="Loíza" data-titular="Alcaldesa rechaza informe de irregularidades millonarias en su municipio">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
-                        
-                        <a href="https://www.notiuno.com/noticias/gobierno-y-politica/alcaldesa-sobre-informe-de-irregularidades-millonarias-cada-d-a-hay-espacio-para-mejorar/article_a4e3007f-5667-4a04-b804-ec69a263b891.html" target="_blank">Alcaldesa sobre informe de irregularidades millonarias: "Cada día hay espacio para mejorar”</a>
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://www.notiuno.com/noticias/gobierno-y-politica/alcaldesa-rechaza-informe-de-irregularidades-millonarias-en-su-municipio/article_a4e3007f-5667-4a04-b804-ec69a263b891.html" target="_blank">Alcaldesa rechaza informe de irregularidades millonarias en su municipio</a>
                     </td>
                     <td>NotiUno</td>
-                    <td class="time-ago" data-date="2026-10-08 13:32">hace 29min</td>
+                    <td class="time-ago" data-date="2026-10-08 13:32">hace 44min</td>
                 </tr>
                 
                 
@@ -1019,7 +1019,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/hombre-de-humacao-ingresa-en-prision-tras-ser-acusado-de-agredir-a-su-expareja/" target="_blank">Hombre de Humacao ingresa en prisión tras ser acusado de agredir a su expareja</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-10-08 12:04">hace 1h</td>
+                    <td class="time-ago" data-date="2026-10-08 12:04">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Determinan causa para arresto contra hombre de Yabucoa por violar orden de protección y maltrato mediante amenaza">
@@ -1072,7 +1072,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/07/legislatura-municipal-evalua-contratacion-de-empresa-que-manejaria-sistema-electronico-de-boletos/" target="_blank">Legislatura municipal evalúa contratación de empresa que manejaría sistema electrónico de boletos</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-07 19:05">hace 18h</td>
+                    <td class="time-ago" data-date="2026-10-07 19:05">hace 19h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="Hallan cuerpo amarrado y con heridas de bala en Río Grande - Telemundo Puerto Rico">
@@ -1083,6 +1083,16 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Río Grande</td>
                     <td class="time-ago" data-date="2026-10-07 15:41">hace 22h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="♟️¡MANTÉN TU MENTE ACTIVA!♟️ El Gobierno Municipal Autónomo de Fajardo, junto al Hon. José Aníbal “Joey” Meléndez Méndez, Alcalde de Fajardo y Centros 2GEN Fajardo, te invitan a participar de las Clases de Ajedrez para la Tercera Edad. 📅 Com - Facebook">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi_gFBVV95cUxPcVpvLXVNWmt0WnhUZ0pDYkJZOUJrU0Nzb2V2ZEZVckhSMm5QT2I5NHRKZ0plUkVnZDRDUm9MTTRQQmV2SEVzeFlVVTY1Ty04R1dIandhaERyT1hSUW5IWmUzSDkwZzJCQ0hTRmQ1SnF2TjlCeV9TUTFobnJkSE5kZkN0N1hFSUJGeTlsZVJYYjdldk82ZS1lNk1kRG1RRE9kQUJEZlAyWXlVMG5yV0ZXMlBTZndhQTRPWG11NEctcW8yYWVnb2duTTRCVzlfd19acGVjUW9TQTlUcDNLYmtPWlZfVHdwb0xncnN4Y0xpSzlUZTdOaGlicjNCdFFQQQ?oc=5" target="_blank">♟️¡MANTÉN TU MENTE ACTIVA!♟️ El Gobierno Municipal Autónomo de Fajardo, junto al Hon. José Aníbal “Joey” Meléndez Méndez, Alcalde de Fajardo y Centros 2GEN Fajardo, te invitan a participar de las Clases de Ajedrez para la Tercera Edad. 📅 Com - Facebook</a>
+                    </td>
+                    <td>FB - Fajardo</td>
+                    <td class="time-ago" data-date="2026-10-07 15:38">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Hoy el Municipio de Humacao celebra el ‘Día Viej@ te Amo’, en una iniciativa conjunta con FundAcción MMM, honrando a todos nuestros adultos mayores. Rosamar Trujillo Plumey - Facebook">
@@ -1102,7 +1112,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxORjl5ajEtZUg2NUVnRkZVMWRrU2JKbzFGeTFLU3ItazFoMVF6R1l3M2FpSFpyOXQ5SEVTRWVIbTBIUEQxVlpNUnNOUnNwS3JPQkZOVnBwdW1uOHVKNTlLN29VMlhsOWRtZ3YtLXhLY1puMm9pMUlVRFBVRGFaWVFqOEJHOWx4aTF1NjRPc2RIYkxHcU9wWkV6VnQ2RE9Ea01fY1JGTGJNcHdNUU03VloxOGpTR0xlN19mcnN5aFYyZXQwTzdj?oc=5" target="_blank">En Río Grande: hallan cuerpo amarrado y con heridas de bala en un pastizal - El Nuevo Día</a>
                     </td>
                     <td>Río Grande</td>
-                    <td class="time-ago" data-date="2026-10-07 15:10">hace 22h</td>
+                    <td class="time-ago" data-date="2026-10-07 15:10">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="Hallan el cadáver baleado de un hombre en Río Grande - Primera Hora">
@@ -1348,7 +1358,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-08 02:01:16 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-08 02:16:14 PM<br>
     Actualización automática cada 30 min
 </div>
 
