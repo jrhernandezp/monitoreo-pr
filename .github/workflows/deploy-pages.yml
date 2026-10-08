@@ -7,28 +7,53 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
+# News updates supersede older deployments, including ones waiting on an environment.
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Prepare current dashboard
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s index.html
+          mkdir -p _site
+          cp index.html _site/index.html
+          # Keep the legacy URL current instead of publishing the stale snapshot.
+          cp index.html _site/dashboard.html
+          cp logo-observador.jpg icon.png privacidad.html _site/
+          touch _site/.nojekyll
+          cmp _site/index.html _site/dashboard.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          name: github-pages
+          path: _site
+          retention-days: 1
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages
