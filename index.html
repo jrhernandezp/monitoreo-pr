@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-08 06:01:06 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-08 06:16:09 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">24</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num">25</div><div class="label">Noticias</div></div>
         <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">7</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-08 06:01:06 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-08 06:16:09 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -824,7 +824,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">6</span>
+            <span class="muni-count">7</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
@@ -916,6 +916,19 @@ tr.article-row:hover { background: var(--surface2); }
         <table>
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
+                
+                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Acción del Baloncesto Femenino">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://www.notiuno.com/noticias/deportes/acci-n-del-baloncesto-femenino/article_d9c83176-2c14-11ec-86ba-3b75250f9efb.html" target="_blank">Acción del Baloncesto Femenino</a>
+                    </td>
+                    <td>NotiUno</td>
+                    <td class="time-ago" data-date="2026-10-08 10:00">ahora</td>
+                </tr>
+                
                 
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
@@ -1009,7 +1022,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/07/legislatura-municipal-evalua-contratacion-de-empresa-que-manejaria-sistema-electronico-de-boletos/" target="_blank">Legislatura municipal evalúa contratación de empresa que manejaría sistema electrónico de boletos</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-07 19:05">hace 10h</td>
+                    <td class="time-ago" data-date="2026-10-07 19:05">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Escuela de Arte Humacaeña abre sus puertas como alternativa educativa y “after school” en Humacao">
@@ -1069,7 +1082,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxORjl5ajEtZUg2NUVnRkZVMWRrU2JKbzFGeTFLU3ItazFoMVF6R1l3M2FpSFpyOXQ5SEVTRWVIbTBIUEQxVlpNUnNOUnNwS3JPQkZOVnBwdW1uOHVKNTlLN29VMlhsOWRtZ3YtLXhLY1puMm9pMUlVRFBVRGFaWVFqOEJHOWx4aTF1NjRPc2RIYkxHcU9wWkV6VnQ2RE9Ea01fY1JGTGJNcHdNUU03VloxOGpTR0xlN19mcnN5aFYyZXQwTzdj?oc=5" target="_blank">En Río Grande: hallan cuerpo amarrado y con heridas de bala en un pastizal - El Nuevo Día</a>
                     </td>
                     <td>Río Grande</td>
-                    <td class="time-ago" data-date="2026-10-07 15:10">hace 14h</td>
+                    <td class="time-ago" data-date="2026-10-07 15:10">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba" data-titular="DDEC abre espacio de diálogo con APRODEC tras determinación de cancelar contrato en Roosevelt Roads">
@@ -1119,7 +1132,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOZXVTSDJld1dUOEhGMnRFTHgzYUhrWXRlYk5ya3JUOVdCZnRoRlVrQlNWSm1PUWRONjB5LVdkcnRpc0hfb3J4cEtxZWtKRmFrRktVQTNVYzhSaHRKNm1ENWZiR1hsX1hCcm5zTE9mU3NqaWFWQU9MZkg2VDQ1RlpQRzNWZnVoR0hmRjhITkRMTmEzN2tpZVRsR2FoQnNtSXlsSXdfS2syRUkxRlBVLWc?oc=5" target="_blank">Damarielis Rodríguez Llanos: desde Luquillo, disciplina y sueños rumbo al éxito - Claridad</a>
                     </td>
                     <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-10-07 11:06">hace 18h</td>
+                    <td class="time-ago" data-date="2026-10-07 11:06">hace 19h</td>
                 </tr>
                 
                 
@@ -1315,7 +1328,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-08 06:01:06 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-08 06:16:09 AM<br>
     Actualización automática cada 30 min
 </div>
 
