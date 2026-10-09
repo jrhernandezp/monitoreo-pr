@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-08 11:46:19 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-09 12:01:11 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">30</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">8</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">23</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">4</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">7</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-08 11:46:19 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-09 12:01:11 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -811,6 +811,19 @@ tr.article-row:hover { background: var(--surface2); }
 
 <!-- BREAKING NEWS -->
 
+<div class="section breaking-section">
+    <div class="breaking-banner">
+        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">ahora</span> —
+            <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxQbXFNczhXd2xTQUplbk5XT0ptRkh1TW5ZTzRzMmlrQkxwck9lR1ZnOVZieWZGVnZjVmFISDNnZ2ljWGdNLTZ3YkdORnV6bEc5VU1EYnkwXzBVcW1TSUN3UmY1WC0wRC1tTi1xRnp4R0hNVkNmZ3BpbG1Yby1Jdkd4ZDdVb3dIRTNySmk5XzF1VGxwZ2gtRzZSMmZQUWE2VV9JNWdpR1VWcG9jajFDYXVGTEVOWXM3T3Myc2FsNUYxRm5YdEw2bnBmZEJvWi1OaXJhdEHSAdoBQVVfeXFMTlRpMEZicjNHbndQV1ZSOHlhSk5VTng0ZWx3ZkZzVDRlbkFEek5VTXdBdGZmbTJ6RkRNMXNyeFBaT28yTHFnUVhDWWZRVmFRTHNsZ29nN0xZdVBlTmZXWlMtZ29aUFJTMTEwMDZMa1VLa2hFYnBQNWllTGstdjFZVmxZS3pXX1pCNXBSbjRDRjBmeUFRRThEdWM3b2hsdEVNM0cyQnQyckJfMVJxWWJvaEJjMGRmbFJ2M0s1Z1pSY3J4SWxKdEI1TTRoTE5pTE43RlBfVThKOUJqNEE?oc=5" target="_blank">Piden ayuda para dar con paradero de adolescente desaparecido en Trujillo Alto - Telemundo Puerto Rico</a>
+            <span style="opacity:0.6"> [Trujillo Alto]</span>
+        </div>
+        
+    </div>
+</div>
+
 
 <!-- MUNICIPALITIES -->
 <div class="section">
@@ -819,17 +832,17 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">7</span>
+            <span class="muni-count">6</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">6</span>
+            <span class="muni-count">3</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Trujillo Alto')">
+        <div class="muni-card active" onclick="filtrarPor('Trujillo Alto')">
             <span class="muni-name">Trujillo Alto</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Caguas')">
@@ -837,14 +850,14 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Luquillo')">
+        <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
             <span class="muni-name">Luquillo</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Canóvanas')">
             <span class="muni-name">Canóvanas</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Fajardo')">
@@ -857,9 +870,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">0</span>
         </div>
         
-        <div class="muni-card active" onclick="filtrarPor('Río Grande')">
+        <div class="muni-card inactive" onclick="filtrarPor('Río Grande')">
             <span class="muni-name">Río Grande</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">0</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Ceiba')">
@@ -869,7 +882,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <span class="muni-name">Naguabo</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">4</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
@@ -919,6 +932,46 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="Naguabo" data-titular="¡Naguabo está de fiesta! 🎉🎶 Desde hoy, 9 al 11 de octubre, disfruta de las Fiestas de Pueblo y el Festival Gastronómico y Cultural en la Pista Atlética Municipal de Naguabo. El Municipio Autónomo de Naguabo y su alcaldesa, Hon. Miraidaliz Rosario Pagán, t - Facebook">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxOVW90WFliVHdfalA2LTFQN3Q0YXdfMEVrRlhMN2h2dFVEck10SXdjMjhWNG9zbjNfcFJldU5MeWpNWUI1S0J2UVpRbl9SRU5qMGhwLWI1UzNXRnpJVXFoUkxTbVdnZ0JiRmw3YUV3X2NaM19RZnFXQTZ1eGZaMnVhaVR4SVRJVUVtaXNzcG1Mc0szVHJJOWVVSzJRRlhCTUE3LTY0WHlRYzNNNmJENmdiZ3MzbnZIemRBaVhkVERVYTgtQWt2NTlLSkc3NzFpS2djNTBpV1lWSVVhS3BVNm41bzMxNA?oc=5" target="_blank">¡Naguabo está de fiesta! 🎉🎶 Desde hoy, 9 al 11 de octubre, disfruta de las Fiestas de Pueblo y el Festival Gastronómico y Cultural en la Pista Atlética Municipal de Naguabo. El Municipio Autónomo de Naguabo y su alcaldesa, Hon. Miraidaliz Rosario Pagán, t - Facebook</a>
+                    </td>
+                    <td>FB - Naguabo</td>
+                    <td class="time-ago" data-date="2026-10-09 03:29">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Samsung inaugura en Puerto Rico un centro donde podrás probar equipos y reparar tu celular">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://nelpr.com/2026/10/08/samsung-inaugura-en-puerto-rico-un-centro-donde-podras-probar-equipos-y-reparar-tu-celular/" target="_blank">Samsung inaugura en Puerto Rico un centro donde podrás probar equipos y reparar tu celular</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-10-09 01:31">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Piden ayuda para dar con paradero de adolescente desaparecido en Trujillo Alto - Telemundo Puerto Rico">
+                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxQbXFNczhXd2xTQUplbk5XT0ptRkh1TW5ZTzRzMmlrQkxwck9lR1ZnOVZieWZGVnZjVmFISDNnZ2ljWGdNLTZ3YkdORnV6bEc5VU1EYnkwXzBVcW1TSUN3UmY1WC0wRC1tTi1xRnp4R0hNVkNmZ3BpbG1Yby1Jdkd4ZDdVb3dIRTNySmk5XzF1VGxwZ2gtRzZSMmZQUWE2VV9JNWdpR1VWcG9jajFDYXVGTEVOWXM3T3Myc2FsNUYxRm5YdEw2bnBmZEJvWi1OaXJhdEHSAdoBQVVfeXFMTlRpMEZicjNHbndQV1ZSOHlhSk5VTng0ZWx3ZkZzVDRlbkFEek5VTXdBdGZmbTJ6RkRNMXNyeFBaT28yTHFnUVhDWWZRVmFRTHNsZ29nN0xZdVBlTmZXWlMtZ29aUFJTMTEwMDZMa1VLa2hFYnBQNWllTGstdjFZVmxZS3pXX1pCNXBSbjRDRjBmeUFRRThEdWM3b2hsdEVNM0cyQnQyckJfMVJxWWJvaEJjMGRmbFJ2M0s1Z1pSY3J4SWxKdEI1TTRoTE5pTE43RlBfVThKOUJqNEE?oc=5" target="_blank">Piden ayuda para dar con paradero de adolescente desaparecido en Trujillo Alto - Telemundo Puerto Rico</a>
+                    </td>
+                    <td>Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-10-09 01:01">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Inician trabajos para la construcción del Nuevo Cementerio Municipal de Humacao, desarrollado por Cementerio Toñito Flores LLC">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/10/08/inician-trabajos-para-la-construccion-del-nuevo-cementerio-municipal-de-humacao-desarrollado-por-cementerio-tonito-flores-llc/" target="_blank">Inician trabajos para la construcción del Nuevo Cementerio Municipal de Humacao, desarrollado por Cementerio Toñito Flores LLC</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-10-09 00:42">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="San Juan" data-titular="Mujer de 85 años a punto de ser desahuciada y lanzada a la calle en San Juan: “Así tratan a las personas mayores”">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
@@ -926,8 +979,11 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/notas/mujer-de-85-anos-a-punto-de-ser-desahuciada-y-lanzada-a-la-calle-en-san-juan-asi-tratan-a-las-personas-mayores/" target="_blank">Mujer de 85 años a punto de ser desahuciada y lanzada a la calle en San Juan: “Así tratan a las personas mayores”</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-10-08 23:46">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-10-09 00:01">ahora mismo</td>
                 </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz hasta 12 horas; conoce municipios y sectores">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -936,7 +992,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/08/se-ira-la-luz-hasta-12-horas-conoce-municipios-y-sectores-3/" target="_blank">Se irá la luz hasta 12 horas; conoce municipios y sectores</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-08 23:31">hace 15min</td>
+                    <td class="time-ago" data-date="2026-10-08 23:31">hace 30min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Gobernadora quiere mucho a Doña Blanca, pero asegura que mintió">
@@ -946,7 +1002,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/08/gobernadora-quiere-mucho-a-dona-blanca-pero-asegura-que-mintio/" target="_blank">Gobernadora quiere mucho a Doña Blanca, pero asegura que mintió</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-08 23:22">hace 24min</td>
+                    <td class="time-ago" data-date="2026-10-08 23:22">hace 39min</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Sequía continúa disminuyendo en Puerto Rico">
@@ -956,11 +1012,8 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/08/sequia-continua-disminuyendo-en-puerto-rico/" target="_blank">Sequía continúa disminuyendo en Puerto Rico</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-08 23:17">hace 29min</td>
+                    <td class="time-ago" data-date="2026-10-08 23:17">hace 44min</td>
                 </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Laura Hernández enfrenta diagnóstico de cáncer">
                     <td><span class="muni-tag">San Juan</span></td>
@@ -989,7 +1042,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.notiuno.com/noticias/cultura/rondalla-de-humacao-presenta-concierto-antes-de-partir-a-jap-n/article_dd1cc746-6c74-4287-b0ac-bca61452d341.html" target="_blank">Rondalla de Humacao presenta concierto antes de partir a Japón</a>
                     </td>
                     <td>NotiUno</td>
-                    <td class="time-ago" data-date="2026-10-08 21:00">hace 2h</td>
+                    <td class="time-ago" data-date="2026-10-08 21:00">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Encuentran a adulto mayor viviendo entre excremento y condiciones infrahumanas en Humacao">
@@ -1069,7 +1122,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxQX0VIbnlhLUFTWW9jS3EwNl80MHVrWlFvdkVnUjQxSFJ3aVl6b3ZPMXpDbnpBUnZMZG4zR2Nfd3hmR2psR1RQOGRPY3ZSbm83bUEzTW1sYXk0RWJFeFRGU21lTFgxRFNKcWhPc0w0UnFIQlUzR0ljQUNTRi0xckI1ZXpOa1lvSFhDZER0Yjk4eVpDYUplckgzTWZMeXVya1hEb1NESWYxclZDbkxjSGhaTXdjRTRmX3JFYlNMUVZ0V2pudlpNd0g3S2VvZF9HRkhfdl9kWF85c0lzd09nNVdGR21zWktnMFpUY2FhN0lrLUVTdm8?oc=5" target="_blank">Municipio de Humacao celebra el Día Nacional «Viejo te Amo» junto a FundAcción MMM Decenas de adultos mayores disfrutaron de una jornada de confraternización, actividad física y reconocimiento en la plaza pública Luis Muñoz Rivera. (Humacao, Puert - Facebook</a>
                     </td>
                     <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-10-08 14:59">hace 8h</td>
+                    <td class="time-ago" data-date="2026-10-08 14:59">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="📢 Aviso Público | Subasta Municipal El Municipio de Canóvanas informa que la Junta de Subastas estará recibiendo propuestas para la siguiente subasta: Subasta 004-2026-2027 Disposición de Vehículos y Equipos Inservibles Propiedad del Municipio de C - Facebook">
@@ -1093,79 +1146,6 @@ tr.article-row:hover { background: var(--surface2); }
                 </tr>
                 
                 
-                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Vecinas y usuarias de la playa del Escambrón demandan al Municipio de San Juan - Claridad">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOcjhrUjc4V2xsb0xyc3NVTWNYbGR2M1BJbGlMYk16Rkx6QzRUQ1NqbGpqWng4QzlLQXZEeVVOZjdMQklPdDM2WWJKdlF0RVItWUl6aHNNbHctNzM5UExYd2w0OTFscm9pVTdpWWhST0Rpa2ZPYmsyeUN4LTJ6OGw3azBUWlZxbTJMV2c4V3ZsX2piWWVUWGJ0bDV4V3JuM2xSWDBPU0FzempDMTFiUnVz?oc=5" target="_blank">Vecinas y usuarias de la playa del Escambrón demandan al Municipio de San Juan - Claridad</a>
-                    </td>
-                    <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-10-07 19:46">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Río Grande" data-titular="Hallan cuerpo amarrado y con heridas de bala en Río Grande - Telemundo Puerto Rico">
-                    <td><span class="muni-tag">Río Grande</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPZVphTl9TcFdhd2NqQUtGdXM2Qk5HN3ZqUFFiOWlHaGtSR19EbVlGT2R3SFpnX0FlODk3V195WHRJY3N6b1pBMXlIR1Y3am1janVpa0cwQi1tYVI0VnB6OXpZRVFabVhGeDVVWGthd3hHSDlVaThKYkdoYXBpVFZqVVNQa01lY0VLZ1dPMVhTakZJbm1vVE1KQ0RMZ1hjTlNfSWdHUU5iaDlBcHVPQ0NqUnBKS3BJRk3SAb8BQVVfeXFMUDNWZjRXcUxLeXBXNUxDVkRpWWRoOXVJczhaM2ZmdFMwMUl3ZFRzQnVJQkhZWUJZNXhPWThyTXVrY0x1VktmRDR6eGVZSExtcS0xaVdhenRoZFZNaXMtRk1uRERjd3I2M2x6cnRTSU1MRmVxMVlDSmRlRm1ZS3hJVlRueTYzbHJRRllCMUNmREtPNUdScEFCWGJ0M0JrNlFrZUhQWW5yaHdoOElmVUlCVVF6T2MwenQ5aVdSOUlJZm8?oc=5" target="_blank">Hallan cuerpo amarrado y con heridas de bala en Río Grande - Telemundo Puerto Rico</a>
-                    </td>
-                    <td>Río Grande</td>
-                    <td class="time-ago" data-date="2026-10-07 15:41">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Hoy el Municipio de Humacao celebra el ‘Día Viej@ te Amo’, en una iniciativa conjunta con FundAcción MMM, honrando a todos nuestros adultos mayores. Rosamar Trujillo Plumey - Facebook">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxQMXRES3JfSmFZTndBcTFHbE94NjQyMlNPdmRNcklyMlVybUVuWllVbHRmMFV4a1JuRlZISnFsOTV0b2lKS1llaDJYTndBRDZqWEpmb2Z0NG02WXExa0JuSmRrZTRTYVhiYk1BMmFWbl9BaWozYm5JZHRRTkpxcnlEa0hsUktrZ3hKWFNfRnBiWWtsTGM1cWF3VU1vdFpEeFN5bjkwRnZqbUs3bDZVRllsMDdMT0picUppTmh6VWd6Q1Y0MlNIdklILUVHeTVqVExjb1c0dEJxa0Q1SXpTMzBfeG55bV94ZmI4bllB?oc=5" target="_blank">Hoy el Municipio de Humacao celebra el ‘Día Viej@ te Amo’, en una iniciativa conjunta con FundAcción MMM, honrando a todos nuestros adultos mayores. Rosamar Trujillo Plumey - Facebook</a>
-                    </td>
-                    <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-10-07 15:23">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Río Grande" data-titular="En Río Grande: hallan cuerpo amarrado y con heridas de bala en un pastizal - El Nuevo Día">
-                    <td><span class="muni-tag">Río Grande</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxORjl5ajEtZUg2NUVnRkZVMWRrU2JKbzFGeTFLU3ItazFoMVF6R1l3M2FpSFpyOXQ5SEVTRWVIbTBIUEQxVlpNUnNOUnNwS3JPQkZOVnBwdW1uOHVKNTlLN29VMlhsOWRtZ3YtLXhLY1puMm9pMUlVRFBVRGFaWVFqOEJHOWx4aTF1NjRPc2RIYkxHcU9wWkV6VnQ2RE9Ea01fY1JGTGJNcHdNUU03VloxOGpTR0xlN19mcnN5aFYyZXQwTzdj?oc=5" target="_blank">En Río Grande: hallan cuerpo amarrado y con heridas de bala en un pastizal - El Nuevo Día</a>
-                    </td>
-                    <td>Río Grande</td>
-                    <td class="time-ago" data-date="2026-10-07 15:10">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Río Grande" data-titular="Hallan el cadáver baleado de un hombre en Río Grande - Primera Hora">
-                    <td><span class="muni-tag">Río Grande</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQRmp5dC1CYU1pbHBKMWM2OTlFNUhxT242elB6NmZCV19sTVF6NG05RHF0bFBQN3N1NlRRR2V5UmpVOGFKclNVYzBwTWdzRnpZejZ2MURlWTJUdzhIbVJjMjhJeEtELTE5ZmFhSExRV2k1MXpOV3FKYllRSjYyYlF1bTZnQjFBYzdBclhSekdvOE42Rm4xb19EV0dhZnNhNWpMb3BObGZWSDF3bUVqbjdrbEJReFVOZw?oc=5" target="_blank">Hallan el cadáver baleado de un hombre en Río Grande - Primera Hora</a>
-                    </td>
-                    <td>Río Grande</td>
-                    <td class="time-ago" data-date="2026-10-07 14:58">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Canóvanas" data-titular="Las semifinales del 58vo Concurso Nacional de Trova comienzan en Canóvanas - Claridad">
-                    <td><span class="muni-tag">Canóvanas</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMTdCenBmYUlZcDd2bzE5dkhtWHpoc2JFWThHRFUwVG85Y1FyQlliT1VqRURoRlBoTG85N0JyQTlMZmQyQ3BUcWgzaFp5UGktX3dtRUJXeVZGUGdJc0d2Rm1EVG9xMmstVHRDMDZlVzkzTGNtekdyb0VINFRFMXI3NTh4WlBKSHNEbThUdy1YaWRmWWpkNXppMEpTMG13SVk1Xzl2OU5vckRBZw?oc=5" target="_blank">Las semifinales del 58vo Concurso Nacional de Trova comienzan en Canóvanas - Claridad</a>
-                    </td>
-                    <td>Canóvanas</td>
-                    <td class="time-ago" data-date="2026-10-07 14:31">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Damarielis Rodríguez Llanos: desde Luquillo, disciplina y sueños rumbo al éxito - Claridad">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOZXVTSDJld1dUOEhGMnRFTHgzYUhrWXRlYk5ya3JUOVdCZnRoRlVrQlNWSm1PUWRONjB5LVdkcnRpc0hfb3J4cEtxZWtKRmFrRktVQTNVYzhSaHRKNm1ENWZiR1hsX1hCcm5zTE9mU3NqaWFWQU9MZkg2VDQ1RlpQRzNWZnVoR0hmRjhITkRMTmEzN2tpZVRsR2FoQnNtSXlsSXdfS2syRUkxRlBVLWc?oc=5" target="_blank">Damarielis Rodríguez Llanos: desde Luquillo, disciplina y sueños rumbo al éxito - Claridad</a>
-                    </td>
-                    <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-10-07 11:06">hace 1d</td>
-                </tr>
-                
-                
                 <tr class="time-group-header"><td colspan="4">📋 Anteriores</td></tr>
                 
                 <tr class="article-row" data-municipios="Carolina,Fajardo" data-titular="Gigantes de Carolina derrotan a Fajardo y suman su quinta victoria consecutiva en el BSNF">
@@ -1186,46 +1166,6 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Carolina787</td>
                     <td class="time-ago" data-date="2026-10-08">2026-10-08</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Buscan a menor de 14 años desaparecida en Carolina desde el 25 de septiembre">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.carolina787.com/n/buscan-a-menor-de-14-anos-desaparecida-en-carolina-desde-el-25-de-septiembre" target="_blank">Buscan a menor de 14 años desaparecida en Carolina desde el 25 de septiembre</a>
-                    </td>
-                    <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-10-07">2026-10-07</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Carolina fortalece registro de personas vulnerables para responder ante emergencias">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.carolina787.com/n/carolina-fortalece-registro-de-personas-vulnerables-para-responder-ante-emergencias" target="_blank">Carolina fortalece registro de personas vulnerables para responder ante emergencias</a>
-                    </td>
-                    <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-10-07">2026-10-07</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Cardiólogo Antonio Figueroa Rivera se retira y anuncia entrega de expedientes médicos en Carolina">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.carolina787.com/n/cardiologo-antonio-figueroa-rivera-se-retira-y-anuncia-entrega-de-expedientes-medicos-en-carolina" target="_blank">Cardiólogo Antonio Figueroa Rivera se retira y anuncia entrega de expedientes médicos en Carolina</a>
-                    </td>
-                    <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-10-07">2026-10-07</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="LUMA invertirá $6.5 millones para reducir interrupciones eléctricas y mejorar la red en 12 municipios de Puerto Rico">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        <a href="https://www.carolina787.com/n/luma-invertira-6-5-millones-para-reducir-interrupciones-electricas-y-mejorar-la-red-en-12-municipios-de-puerto-rico" target="_blank">LUMA invertirá $6.5 millones para reducir interrupciones eléctricas y mejorar la red en 12 municipios de Puerto Rico</a>
-                    </td>
-                    <td>Carolina787</td>
-                    <td class="time-ago" data-date="2026-10-07">2026-10-07</td>
                 </tr>
                 
                 
@@ -1378,7 +1318,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-08 11:46:19 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-09 12:01:11 AM<br>
     Actualización automática cada 30 min
 </div>
 
