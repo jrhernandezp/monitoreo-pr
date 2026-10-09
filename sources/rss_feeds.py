@@ -1,6 +1,7 @@
 """RSS feed sources for municipal news monitoring."""
 import feedparser
 import urllib.request
+from urllib.parse import urlsplit
 import io
 import re
 import sys
@@ -211,6 +212,8 @@ def mentions_municipio(text: str) -> List[str]:
         return "".join(c for c in unicodedata.normalize("NFD", value.casefold())
                        if not unicodedata.combining(c))
     text = plain(text or "")
+    # These names refer to US states or a fair, not the Puerto Rico municipality.
+    text = re.sub(r"\b(?:(?:north|south)\s+carolina|carolina\s+(?:del\s+)?(?:norte|sur)|carolina\s+classic\s+fair)\b", "", text)
     return [m for m in MUNICIPIOS_NORESTE
             if re.search(r"(?<!\w)" + re.escape(plain(m)) + r"(?!\w)", text)]
 
@@ -286,6 +289,11 @@ def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10, extra_hea
 
     for entry in feed.entries[:200]:
         title = unescape(re.sub(r"<[^>]+>", "", entry.get("title", "")))
+        if urlsplit(feed_url).hostname == "news.google.com":
+            publisher = (entry.get("source") or {}).get("title", "").strip()
+            suffix = " - " + publisher
+            if publisher and title.endswith(suffix):
+                title = title[:-len(suffix)].rstrip()
         if not title or not is_relevant_title(title):
             continue
 
