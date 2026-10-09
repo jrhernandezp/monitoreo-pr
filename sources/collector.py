@@ -1,5 +1,8 @@
 """Article collector — orchestrates all sources and deduplicates."""
-import sys
+import os
+import re
+import unicodedata
+from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 from datetime import datetime, timedelta
 from typing import Dict, List, Tuple
 
@@ -7,12 +10,47 @@ from sources.rss_feeds import fetch_all as fetch_rss, MUNICIPIOS_NORESTE, CATEGO
 from sources.newsapi_source import fetch_newsapi
 from sources.scraper import scrape_all
 from sources.facebook import collect_facebook_posts
-from sources.state import load_state, save_state, migrate_seen_keys, should_reset_weekly
+from sources.dates import now_local, parse_article_date
 
 
 def article_key(article: dict) -> str:
-    """Generate a stable dedup key from title+source (not URL)."""
-    return f'{article.get("titular", "")[:100]}|{article.get("fuente", "")}'
+    """Full normalized title and source; preserve compatibility with stored keys."""
+    return f'{article.get("titular", "")}|{article.get("fuente", "")}'
+
+
+def canonical_link(link):
+    if not isinstance(link, str):
+        return ""
+    try:
+        parsed = urlsplit(link.strip())
+        if parsed.scheme.lower() not in {"http", "https"} or not parsed.netloc:
+            return ""
+        query = [(k, v) for k, v in parse_qsl(parsed.query, keep_blank_values=True)
+                 if not k.lower().startswith("utm_") and k.lower() not in {"fbclid", "gclid"}]
+        return urlunsplit((parsed.scheme.lower(), parsed.netloc.lower(), parsed.path, urlencode(query), ""))
+    except ValueError:
+        return ""
+
+
+def deduplicate(articles):
+    unique, links, titles = [], {}, {}
+    for raw in articles:
+        article = dict(raw)
+        link = canonical_link(article.get("enlace"))
+        title = article.get("titular", "").strip()
+        if not title or not link:
+            continue
+        article["enlace"] = link
+        article["titular"] = title
+        title_key = " ".join(unicodedata.normalize("NFKC", title).casefold().split())
+        # Exact normalized headlines only: distinct reports about an event stay separate.
+        existing = links.get(link) or titles.get(title_key)
+        if existing is not None:
+            existing["municipios"] = list(dict.fromkeys(existing.get("municipios", []) + article.get("municipios", [])))
+            continue
+        links[link] = titles[title_key] = article
+        unique.append(article)
+    return unique
 
 
 def collect_all() -> Tuple[List[Dict], Dict[str, str], List[Dict]]:
@@ -31,19 +69,18 @@ def collect_all() -> Tuple[List[Dict], Dict[str, str], List[Dict]]:
 
     # 2. News API
     try:
-        newsapi_articles = fetch_newsapi()
+        newsapi_articles, newsapi_status = fetch_newsapi(return_status=True)
         all_articles.extend(newsapi_articles)
-        source_status["News API"] = "✅ OK" if newsapi_articles else "✅ OK (0 results)"
+        source_status["News API"] = newsapi_status
     except Exception as e:
         print(f"  ❌ News API error: {e}")
         source_status["News API"] = f"❌ Error: {e}"
 
     # 3. Scraping
     try:
-        scraped_articles = scrape_all()
+        scraped_articles, scrape_status = scrape_all(return_status=True)
         all_articles.extend(scraped_articles)
-        source_status["El Nuevo Día (Scraping)"] = "✅ OK"
-        source_status["Carolina787 (Scraping)"] = "✅ OK"
+        source_status.update(scrape_status)
     except Exception as e:
         print(f"  ❌ Scraping error: {e}")
         source_status["El Nuevo Día (Scraping)"] = f"❌ Error: {e}"
@@ -58,31 +95,29 @@ def collect_all() -> Tuple[List[Dict], Dict[str, str], List[Dict]]:
         source_status["Facebook"] = f"⚠️ Omitido: {str(e)[:80]}"
         facebook_data = []
 
-    # Deduplicate by link
-    seen_links = set()
-    unique_articles = []
-    for a in all_articles:
-        if a["enlace"] not in seen_links:
-            seen_links.add(a["enlace"])
-            unique_articles.append(a)
-
-    return unique_articles, source_status, facebook_data
+    return deduplicate(all_articles), source_status, facebook_data
 
 
 def filter_recent(articles: List[Dict], days: int = 2) -> List[Dict]:
-    """Keep only articles from the last N days."""
-    hoy = datetime.now().strftime("%Y-%m-%d")
-    ayer = (datetime.now() - timedelta(days=days - 1)).strftime("%Y-%m-%d")
-    filtrados = [a for a in articles if a.get("fecha", "").startswith(hoy) or a.get("fecha", "").startswith(ayer)]
-    print(f"  🗓️  Filtro últimos {days} días ({ayer} - {hoy}): {len(filtrados)}/{len(articles)} artículos")
-    return filtrados
+    """Keep all calendar days in the range, excluding unknown or future dates."""
+    if days < 1:
+        raise ValueError("days must be positive")
+    now = now_local()
+    cutoff = now.date() - timedelta(days=days - 1)
+    filtered = []
+    for article in articles:
+        published = parse_article_date(article.get("fecha"))
+        if published and cutoff <= published.date() <= now.date() and published <= now:
+            filtered.append(article)
+    print(f"  🗓️ Últimos {days} días: {len(filtered)}/{len(articles)} artículos")
+    return filtered
 
 
 def mark_new_articles(articles: List[Dict], state: Dict) -> List[Dict]:
     """Mark articles as NEW if not seen before."""
     seen = set(state.get("seen", []))
     for a in articles:
-        a["es_nueva"] = article_key(a) not in seen
+        a["es_nueva"] = article_key(a) not in seen and f'{a.get("titular", "")[:100]}|{a.get("fuente", "")}' not in seen
     return articles
 
 
@@ -115,56 +150,34 @@ def is_recent_breaking(article: Dict, max_age_hours: int = 4) -> bool:
     if not is_breaking(article):
         return False
     
-    # Check if article is recent
-    fecha_str = article.get("fecha", "")
-    if not fecha_str:
+    value = article.get("fecha", "")
+    if len(value) <= 10:
         return False
-        
-    try:
-        # Try parsing with seconds first, then without
-        for fmt in ["%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M"]:
-            try:
-                article_time = datetime.strptime(fecha_str, fmt)
-                break
-            except ValueError:
-                continue
-        else:
-            # If none of the formats worked
-            return False
-            
-        now = datetime.now()
-        diff_hours = (now - article_time).total_seconds() / 3600
-        return diff_hours <= max_age_hours
-    except Exception:
+    published = parse_article_date(value)
+    if published is None:
         return False
+    hours = (now_local() - published).total_seconds() / 3600
+    return 0 <= hours <= max_age_hours
 
 
 def time_ago(date_str: str) -> str:
-    """Convert a date string to a human-readable 'time ago' string."""
-    if not date_str:
-        return ""
-    for fmt in ["%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M"]:
-        try:
-            dt = datetime.strptime(date_str, fmt)
-            now = datetime.now()
-            diff = now - dt
-            if diff.total_seconds() < 0:
-                return "ahora"
-            minutes = int(diff.total_seconds() / 60)
-            if minutes < 1:
-                return "ahora mismo"
-            if minutes < 60:
-                return f"hace {minutes}min"
-            hours = minutes // 60
-            if hours < 24:
-                return f"hace {hours}h"
-            days = hours // 24
-            if days < 7:
-                return f"hace {days}d"
-            return date_str[:10]
-        except ValueError:
-            continue
-    return date_str
+    """Relative time for known timestamps; keep date-only values unchanged."""
+    if not date_str or len(date_str) <= 10:
+        return date_str or ""
+    published = parse_article_date(date_str)
+    if published is None:
+        return date_str
+    seconds = (now_local() - published).total_seconds()
+    if seconds < 0:
+        return "Fecha futura"
+    minutes = int(seconds / 60)
+    if minutes < 1:
+        return "ahora mismo"
+    if minutes < 60:
+        return f"hace {minutes}min"
+    if minutes < 1440:
+        return f"hace {minutes // 60}h"
+    return f"hace {minutes // 1440}d" if minutes < 10080 else date_str[:10]
 
 
 def format_date_12h(date_str: str) -> str:
