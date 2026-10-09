@@ -46,7 +46,12 @@ def deduplicate(articles):
         # Exact normalized headlines only: distinct reports about an event stay separate.
         existing = links.get(link) or titles.get(title_key)
         if existing is not None:
-            existing["municipios"] = list(dict.fromkeys(existing.get("municipios", []) + article.get("municipios", [])))
+            municipios = list(dict.fromkeys(existing.get("municipios", []) + article.get("municipios", [])))
+            # Keep the publisher's direct URL when also found through Google News.
+            if urlsplit(existing["enlace"]).hostname == "news.google.com" and urlsplit(link).hostname != "news.google.com":
+                existing.update(article)
+            existing["municipios"] = municipios
+            links[link] = titles[title_key] = existing
             continue
         links[link] = titles[title_key] = article
         unique.append(article)
