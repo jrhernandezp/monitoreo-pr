@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-09 03:47:38 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-09 04:01:11 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">28</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">11</div><div class="label">Municipios</div></div>
-        <div class="stat-box"><div class="num" style="font-size:14px">64/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-09 03:47:38 PM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num">35</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-09 04:01:11 PM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -811,6 +811,19 @@ tr.article-row:hover { background: var(--surface2); }
 
 <!-- BREAKING NEWS -->
 
+<div class="section breaking-section">
+    <div class="breaking-banner">
+        <h2>🔴 Breaking News <span class="breaking-badge">Últimas 4h</span></h2>
+        
+        <div class="breaking-item">
+            <span class="time">ahora</span> —
+            <a href="https://waloradio.com/2026/10/09/asesinato-de-motorista-en-las-piedras-podria-estar-vinculado-a-drogas/" target="_blank">Asesinato de motorista en Las Piedras podría estar vinculado a drogas</a>
+            <span style="opacity:0.6"> [Humacao]</span>
+        </div>
+        
+    </div>
+</div>
+
 
 <!-- MUNICIPALITIES -->
 <div class="section">
@@ -819,7 +832,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('San Juan')">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">4</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Carolina')">
@@ -834,7 +847,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <span class="muni-name">Caguas</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">5</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
@@ -869,17 +882,17 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Naguabo')">
             <span class="muni-name">Naguabo</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">3</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Humacao')">
             <span class="muni-name">Humacao</span>
-            <span class="muni-count">5</span>
+            <span class="muni-count">9</span>
         </div>
         
-        <div class="muni-card inactive" onclick="filtrarPor('Cataño')">
+        <div class="muni-card active" onclick="filtrarPor('Cataño')">
             <span class="muni-name">Cataño</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </div>
         
         <div class="muni-card active" onclick="filtrarPor('Vieques')">
@@ -919,14 +932,64 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Cámara cita ejecutivos del Gobierno y gerencia de New Fortress">
+                <tr class="article-row" data-municipios="Humacao,Cataño" data-titular="Asumirá jurisdicción autoridades federales en hombre arrestado en la comunidad Cataño en Humacao">
+                    <td><span class="muni-tag">Humacao, Cataño</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://waloradio.com/2026/10/09/asumira-jurisdiccion-autoridades-federales-en-hombre-arrestado-en-la-comunidad-catano-en-humacao/" target="_blank">Asumirá jurisdicción autoridades federales en hombre arrestado en la comunidad Cataño en Humacao</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-10-09 19:53">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Otra citación cameral para New Fortress">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
                         <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://noticel.com/ultima-hora/20261009/otra-citacion-cameral-para-new-fortress/?utm_source=rss&utm_medium=rss&utm_campaign=otra-citacion-cameral-para-new-fortress" target="_blank">Otra citación cameral para New Fortress</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-10-09 19:48">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Cámara cita ejecutivos del Gobierno y gerencia de New Fortress">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
                         <a href="https://esnoticiapr.com/camara-cita-ejecutivos-del-gobierno-y-gerencia-de-new-fortress/" target="_blank">Cámara cita ejecutivos del Gobierno y gerencia de New Fortress</a>
                     </td>
                     <td>Es Noticia</td>
                     <td class="time-ago" data-date="2026-10-09 19:43">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan,Caguas" data-titular="Continúan los trabajos en la PR-52 de Caguas a San Juan">
+                    <td><span class="muni-tag">San Juan, Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://waloradio.com/2026/10/09/continuan-los-trabajos-en-la-pr-52-de-caguas-a-san-juan/" target="_blank">Continúan los trabajos en la PR-52 de Caguas a San Juan</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-10-09 18:26">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Determinan causa para arresto contra hombre acusado de agredir a adulto mayor en Las Piedras">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://waloradio.com/2026/10/09/determinan-causa-para-arresto-contra-hombre-acusado-de-agredir-a-adulto-mayor-en-las-piedras/" target="_blank">Determinan causa para arresto contra hombre acusado de agredir a adulto mayor en Las Piedras</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-10-09 18:13">ahora</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Arrestan a dos hombres y una mujer en residencial Jardines de Oriente por armas y sustancias controladas">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://waloradio.com/2026/10/09/arrestan-a-dos-hombres-y-una-mujer-en-residencial-jardines-de-oriente-por-armas-y-sustancias-controladas/" target="_blank">Arrestan a dos hombres y una mujer en residencial Jardines de Oriente por armas y sustancias controladas</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-10-09 18:04">ahora</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="🖤🕊️ LUTO EN #FAJARDO | FALLECE HIJO DE AGENTE DE LA POLICÍA TRAS SUFRIR UN PERCANCE DE SALUD Con profundo pesar, informamos el fallecimiento de Jorge L. Encarnación Flores, de 31 años, hijo del agente Encarnación, adscrito al área - Facebook">
@@ -949,6 +1012,16 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-09 16:59">ahora</td>
                 </tr>
                 
+                <tr class="article-row" data-municipios="Humacao" data-titular="Asesinato de motorista en Las Piedras podría estar vinculado a drogas">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <a href="https://waloradio.com/2026/10/09/asesinato-de-motorista-en-las-piedras-podria-estar-vinculado-a-drogas/" target="_blank">Asesinato de motorista en Las Piedras podría estar vinculado a drogas</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-10-09 16:12">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Humacao" data-titular="Tenía armas, municiones y dinero: arrestan a un prófugo a nivel federal en Humacao">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
@@ -956,7 +1029,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/seguridad/notas/tenia-armas-municiones-y-dinero-arrestan-a-un-profugo-a-nivel-federal-en-humacao/" target="_blank">Tenía armas, municiones y dinero: arrestan a un prófugo a nivel federal en Humacao</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-10-09 15:47">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-10-09 16:01">ahora mismo</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Dos individuos armados cometen carjacking en gasolinera">
@@ -966,7 +1039,17 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/09/dos-individuos-armados-cometen-carjacking-en-gasolinera/" target="_blank">Dos individuos armados cometen carjacking en gasolinera</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-09 15:19">hace 28min</td>
+                    <td class="time-ago" data-date="2026-10-09 15:19">hace 42min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Naguabo" data-titular="NAGUABO SE UNE A LA INICIATIVA “PUERTO RICO CAMINA CONTIGO” El Municipio Autónomo de Naguabo se unió a la iniciativa Puerto Rico Camina Contigo, para visibilizar la realidad de las personas sin hogar y promover un mensaje de empatía, inclu - Facebook">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxQNnYwY1JvMkhlOUJVUldKRVBaVV8taUpxY3hSa2tjeS1lMmVPcWpWOHRzS0tURnU5c2VUdWFGSHdVYkVlWXliYzM4T1g1eUpnc0hibEljMjBNMlhXM0FIQ1lycXZpdXFBU2RNX1F0dGxteUNjR29nQk1JUjd0ZHBqX0J3dmxjclh1bjZ6eHpUTU4wQnBnNmVzWE0xTzRBWVdLWVpleDhRcS11T0VTYjFBZDRZbVpSZks4OE9JN1BtYnUxcUl0QUtWbFZQT3VhSWZoc184Y1liRGttZExrS2pRcGVJLUhxenY4VjdGWW0yaVBmRVE?oc=5" target="_blank">NAGUABO SE UNE A LA INICIATIVA “PUERTO RICO CAMINA CONTIGO” El Municipio Autónomo de Naguabo se unió a la iniciativa Puerto Rico Camina Contigo, para visibilizar la realidad de las personas sin hogar y promover un mensaje de empatía, inclu - Facebook</a>
+                    </td>
+                    <td>FB - Naguabo</td>
+                    <td class="time-ago" data-date="2026-10-09 15:02">hace 59min</td>
                 </tr>
                 
                 
@@ -1009,7 +1092,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/criollas-vencen-a-las-monarcas-en-el-bsnf/" target="_blank">Criollas vencen a Las Monarcas en el BSNF</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-10-09 10:51">hace 4h</td>
+                    <td class="time-ago" data-date="2026-10-09 10:51">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Arrestan a prófugo federal durante allanamiento en Humacao - Telemundo Puerto Rico">
@@ -1049,7 +1132,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxQbXFNczhXd2xTQUplbk5XT0ptRkh1TW5ZTzRzMmlrQkxwck9lR1ZnOVZieWZGVnZjVmFISDNnZ2ljWGdNLTZ3YkdORnV6bEc5VU1EYnkwXzBVcW1TSUN3UmY1WC0wRC1tTi1xRnp4R0hNVkNmZ3BpbG1Yby1Jdkd4ZDdVb3dIRTNySmk5XzF1VGxwZ2gtRzZSMmZQUWE2VV9JNWdpR1VWcG9jajFDYXVGTEVOWXM3T3Myc2FsNUYxRm5YdEw2bnBmZEJvWi1OaXJhdEHSAdoBQVVfeXFMTlRpMEZicjNHbndQV1ZSOHlhSk5VTng0ZWx3ZkZzVDRlbkFEek5VTXdBdGZmbTJ6RkRNMXNyeFBaT28yTHFnUVhDWWZRVmFRTHNsZ29nN0xZdVBlTmZXWlMtZ29aUFJTMTEwMDZMa1VLa2hFYnBQNWllTGstdjFZVmxZS3pXX1pCNXBSbjRDRjBmeUFRRThEdWM3b2hsdEVNM0cyQnQyckJfMVJxWWJvaEJjMGRmbFJ2M0s1Z1pSY3J4SWxKdEI1TTRoTE5pTE43RlBfVThKOUJqNEE?oc=5" target="_blank">Piden ayuda para dar con paradero de adolescente desaparecido en Trujillo Alto - Telemundo Puerto Rico</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-10-09 01:01">hace 14h</td>
+                    <td class="time-ago" data-date="2026-10-09 01:01">hace 15h</td>
                 </tr>
                 
                 
@@ -1062,7 +1145,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxPdTJDaWF1TjZyVlVBbHZvQ0V3MTdyeUNSUlJ4ZmdIRXdHODZReE9LOFpldEdKUC1xX21lVmpsTUp4SzVXRE9WTXU4UDdJQ2V6ajQxNkZnRUM5TkY1WEFuNzNzbGtuZnFBWHAzTUo4MGloX1p4eGtXYjBudmFGZmd4SjdZd2U2bDBDcXI2Qm9Kb1NXRHhZaDRIQmRtT2piRGFyTndDbFhueGxtTXZkYXc0R3ZySEl2eWlyMWNXU2lzcUlNLWZtdXRyZFdMMEFlVWhPb2RwWG1QNUtyeFluRDBKMnh6cmEtc0hOcmU3eGpZcw?oc=5" target="_blank">Buscan menor de 15 años desaparecido en oficina del Departamento de la Familia en Trujillo Alto - Primera Hora</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-10-08 23:56">hace 15h</td>
+                    <td class="time-ago" data-date="2026-10-08 23:56">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="RUTA / OASIS - 𝟓𝐊 𝐅𝐀𝐉𝐀𝐑𝐃𝐎 | 𝐋𝐔𝐂𝐇𝐀 𝐂𝐎𝐍𝐓𝐑𝐀 𝐄𝐋 𝐂𝐀́𝐍𝐂𝐄𝐑 El Municipio Autónomo de Fajardo se prepara para celebrar el 5K Fajardo: Lucha Contra el Cáncer, una actividad que une a nuestra comunidad en un mensaje de solidaridad, esperanza y c - Facebook">
@@ -1232,7 +1315,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <span class="source-badge ok">🟢 Telemundo PR: OK</span>
         
-        <span class="source-badge err">🔴 Walo Radio: Error</span>
+        <span class="source-badge ok">🟢 Walo Radio: OK</span>
         
         <span class="source-badge ok">🟢 El Oriental: OK</span>
         
@@ -1358,7 +1441,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-09 03:47:38 PM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-09 04:01:11 PM<br>
     Actualización automática cada 30 min
 </div>
 
