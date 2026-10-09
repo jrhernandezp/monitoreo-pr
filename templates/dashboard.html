@@ -815,7 +815,7 @@ tr.article-row:hover { background: var(--surface2); }
 <div class="section breaking-section">
     <h2>🚨 Noticias de última hora</h2>
     {% for a in breaking %}
-    <p><a href="{{ a.enlace }}" target="_blank" rel="noopener noreferrer">{{ a.titular }}</a> — {{ a.time_ago }}</p>
+    <p><a href="{{ a.enlace }}" target="_blank" rel="noopener noreferrer">{{ a.titular }}</a> — <span class="time-ago" data-date="{{ a.browser_date }}">{{ a.time_ago }}</span></p>
     {% endfor %}
 </div>
 {% endif %}

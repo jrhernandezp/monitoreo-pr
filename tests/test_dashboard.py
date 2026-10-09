@@ -54,6 +54,20 @@ class DatesAndDedupTests(unittest.TestCase):
         self.assertEqual(rss_feeds.mentions_municipio("Noticias de Rio Grande y Loiza"), ["Loíza", "Río Grande"])
         self.assertEqual(rss_feeds.mentions_municipio("culebras y carolinamar"), [])
 
+    def test_foreign_carolina_names_do_not_match_local_municipality(self):
+        for text in ["Trabajadores de la Carolina Classic Fair en Winston-Salem", "Noticias de Carolina del Norte", "South Carolina"]:
+            self.assertEqual(rss_feeds.mentions_municipio(text), [])
+        self.assertEqual(rss_feeds.mentions_municipio("Carolina, Puerto Rico recibe visitantes de Carolina del Norte"), ["Carolina"])
+
+    def test_direct_link_replaces_google_duplicate_and_keeps_municipalities(self):
+        google = article(link="https://news.google.com/rss/articles/test")
+        direct = article(link="https://example.com/direct")
+        direct["municipios"] = ["Fajardo"]
+        result = collector.deduplicate([google, direct])
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0]["enlace"], direct["enlace"])
+        self.assertEqual(result[0]["municipios"], ["Carolina", "Fajardo"])
+
 
 class FeedTests(unittest.TestCase):
     def fetch(self, xml, limit=8):
@@ -82,6 +96,18 @@ class FeedTests(unittest.TestCase):
         items, _ = self.fetch('<rss version="2.0"><channel><title>Test</title><item><title>Carolina</title><link>https://example.com/n</link></item></channel></rss>')
         self.assertEqual(items, [])
 
+    def test_google_publisher_suffix_merges_with_direct_news(self):
+        xml = '<rss version="2.0"><channel><title>Test</title><item><title>Noticia de Carolina - El Nuevo Día</title><link>https://news.google.com/rss/articles/test</link><source url="https://example.com">El Nuevo Día</source><pubDate>Thu, 08 Oct 2026 21:00:00 GMT</pubDate></item></channel></rss>'
+        with patch("sources.rss_feeds.urllib.request.urlopen", return_value=io.BytesIO(xml.encode())), patch("sources.rss_feeds.now_local", return_value=NOW):
+            items, _ = rss_feeds.fetch_rss("GN", "https://news.google.com/rss/search?q=Carolina")
+        self.assertEqual(items[0]["titular"], "Noticia de Carolina")
+        self.assertEqual(len(collector.deduplicate([article(), *items])), 1)
+
+    def test_direct_feed_does_not_strip_publisher_text(self):
+        xml = '<rss version="2.0"><channel><title>Test</title><item><title>Noticia de Carolina - El Nuevo Día</title><link>https://example.com/n</link><source>El Nuevo Día</source><pubDate>Thu, 08 Oct 2026 21:00:00 GMT</pubDate></item></channel></rss>'
+        items, _ = self.fetch(xml)
+        self.assertEqual(items[0]["titular"], "Noticia de Carolina - El Nuevo Día")
+
     @patch.dict("os.environ", {"NEWS_API_KEY": ""})
     def test_missing_api_key_is_a_warning(self):
         _, status = newsapi_source.fetch_newsapi(return_status=True)
@@ -101,6 +127,14 @@ class FeedTests(unittest.TestCase):
 
 
 class RenderingAndStateTests(unittest.TestCase):
+    @patch("sources.collector.now_local", return_value=NOW)
+    def test_breaking_banner_time_updates_like_table_time(self, _):
+        from bs4 import BeautifulSoup
+        html = renderer.generate_html([article("Emergencia en Carolina")], {}, {})
+        banner_time = BeautifulSoup(html, "html.parser").select_one(".breaking-section .time-ago[data-date]")
+        self.assertIsNotNone(banner_time)
+        self.assertEqual(banner_time["data-date"], "2026-10-08T17:00:00-04:00")
+
     def test_untrusted_text_is_escaped_and_dates_have_offsets(self):
         item = article('<img src=x onerror=alert(1)> Carolina')
         html = renderer.generate_html([item], {}, {}, [{"fuente": "<script>bad</script>", "posts": [{"texto": "<img src=x onerror=alert(1)>", "fecha": "<b>x</b>"}]}])
