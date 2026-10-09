@@ -17,6 +17,7 @@ from sources.collector import (
     filter_recent,
     mark_new_articles,
     article_key,
+    preserve_failed_sources,
 )
 from sources.state import load_state, save_state, migrate_seen_keys, should_reset_weekly, write_text_atomic
 from sources.renderer import generate_html
@@ -48,7 +49,7 @@ def main():
         except Exception:
             pass
         print(f"  📅 Reset semanal ({days} días).")
-        state = {"seen": [], "last_run": None, "source_status": {}, "session_date": hoy}
+        state.update(seen=[], session_date=hoy)
     else:
         try:
             from datetime import datetime as dt
@@ -65,7 +66,13 @@ def main():
 
     # Filter recent (last 2 days)
     articles = filter_recent(articles, days=2)
+    if not any("✅" in status for status in source_status.values()):
+        raise RuntimeError("Todas las fuentes fallaron; se conserva el dashboard anterior")
+    articles = preserve_failed_sources(articles, source_status, state)
     articles = mark_new_articles(articles, state)
+    for article in articles:
+        if article.get("conservada"):
+            article["es_nueva"] = False
 
     print(f"📊 Total: {len(articles)} artículos")
     if not articles:
@@ -75,6 +82,7 @@ def main():
     state["seen"] = list(set(state.get("seen", []) + [article_key(a) for a in articles]))
     state["last_run"] = now_local().strftime("%Y-%m-%d %I:%M:%S %p")
     state["source_status"] = source_status
+    state["last_successful_collection"] = now_local().isoformat()
 
     # Generate HTML before committing seen state; failed rendering must not mark articles seen.
     html = generate_html(articles, source_status, state, facebook_data)

@@ -42,20 +42,69 @@ def deduplicate(articles):
             continue
         article["enlace"] = link
         article["titular"] = title
+        article["fuentes_origen"] = list(dict.fromkeys(article.get("fuentes_origen") or [article.get("fuente", "")]))
         title_key = " ".join(unicodedata.normalize("NFKC", title).casefold().split())
         # Exact normalized headlines only: distinct reports about an event stay separate.
         existing = links.get(link) or titles.get(title_key)
         if existing is not None:
+            origins = list(dict.fromkeys(existing["fuentes_origen"] + article["fuentes_origen"]))
             municipios = list(dict.fromkeys(existing.get("municipios", []) + article.get("municipios", [])))
             # Keep the publisher's direct URL when also found through Google News.
             if urlsplit(existing["enlace"]).hostname == "news.google.com" and urlsplit(link).hostname != "news.google.com":
                 existing.update(article)
             existing["municipios"] = municipios
+            existing["fuentes_origen"] = origins
             links[link] = titles[title_key] = existing
             continue
         links[link] = titles[title_key] = article
         unique.append(article)
     return unique
+
+
+def preserve_failed_sources(articles, statuses, state):
+    """Retain recent, previously verified articles only for failed sources."""
+    timestamp = now_local().isoformat()
+    fresh = [dict(a, conservada=False, ultima_verificacion=timestamp) for a in articles]
+    cached = state.get("article_cache", [])
+    if not isinstance(cached, list):
+        cached = []
+    retained = []
+    for raw in cached:
+        if not isinstance(raw, dict) or not all(isinstance(raw.get(k), str) for k in ("titular", "enlace", "fecha", "fuente")):
+            continue
+        if not isinstance(raw.get("municipios"), list) or not all(isinstance(m, str) for m in raw["municipios"]):
+            continue
+        origins = raw.get("fuentes_origen") or [raw["fuente"]]
+        if not isinstance(origins, list) or not all(isinstance(s, str) for s in origins):
+            continue
+        failed = any("❌" in statuses.get(source, "") for source in origins)
+        if raw.get("tipo") == "RSS" and "❌" in statuses.get("RSS - General", ""):
+            failed = True
+        if not failed:
+            continue
+        item = dict(raw, conservada=True, es_nueva=False)
+        retained.append(item)
+    # Fresh records take precedence over cached duplicates; retain the same 2-day window.
+    merged = deduplicate(fresh + filter_recent(retained, days=2))
+    previous_health = state.get("source_health", {})
+    if not isinstance(previous_health, dict):
+        previous_health = {}
+    health = {}
+    for name, status in statuses.items():
+        previous = previous_health.get(name, {})
+        if not isinstance(previous, dict):
+            previous = {}
+        success = "✅" in status and "cache" not in status.casefold()
+        count = sum(name in a.get("fuentes_origen", [a.get("fuente")]) for a in fresh)
+        health[name] = {
+            "status": status, "last_attempt": timestamp,
+            "last_success": timestamp if success else previous.get("last_success"),
+            "count": count if success else None,
+            "retained": sum(a.get("conservada", False) and name in a.get("fuentes_origen", []) for a in merged),
+        }
+    state["source_health"] = health
+    state["article_cache"] = merged
+    return merged
 
 
 def collect_all() -> Tuple[List[Dict], Dict[str, str], List[Dict]]:
@@ -75,6 +124,8 @@ def collect_all() -> Tuple[List[Dict], Dict[str, str], List[Dict]]:
     # 2. News API
     try:
         newsapi_articles, newsapi_status = fetch_newsapi(return_status=True)
+        for item in newsapi_articles:
+            item["fuentes_origen"] = ["News API"]
         all_articles.extend(newsapi_articles)
         source_status["News API"] = newsapi_status
     except Exception as e:
@@ -84,6 +135,8 @@ def collect_all() -> Tuple[List[Dict], Dict[str, str], List[Dict]]:
     # 3. Scraping
     try:
         scraped_articles, scrape_status = scrape_all(return_status=True)
+        for item in scraped_articles:
+            item["fuentes_origen"] = [item.get("fuente", "") + " (Scraping)"]
         all_articles.extend(scraped_articles)
         source_status.update(scrape_status)
     except Exception as e:

@@ -161,7 +161,7 @@ def generate_html(
     time_groups = _group_by_time(articles_sorted)
 
     # Breaking news (only from last 4 hours)
-    breaking = [a for a in articles_sorted if is_recent_breaking(a, max_age_hours=4)]
+    breaking = [a for a in articles_sorted if not a.get("conservada") and is_recent_breaking(a, max_age_hours=4)]
     breaking_list = []
     for b in breaking[:5]:  # Max 5 breaking
         breaking_list.append({
@@ -174,6 +174,20 @@ def generate_html(
 
     # Source badges
     source_badges = _build_source_badges(source_status)
+    source_health = state.get("source_health", {})
+    if not isinstance(source_health, dict):
+        source_health = {}
+    for badge in source_badges:
+        details = source_health.get(badge["name"], {})
+        if not isinstance(details, dict):
+            details = {}
+        badge.update(
+            status=source_status[badge["name"]],
+            last_success=details.get("last_success") or "",
+            last_success_display=(parse_article_date(details.get("last_success")).strftime("%Y-%m-%d %I:%M:%S %p")
+                                  if parse_article_date(details.get("last_success")) else "Sin registro"),
+            count=details.get("count"), retained=details.get("retained", 0),
+        )
     sources_ok = sum(1 for s in source_status.values() if "✅" in s)
     sources_total = len(source_status)
 
@@ -199,6 +213,8 @@ def generate_html(
         source_badges=source_badges,
         sources_ok=sources_ok,
         sources_total=sources_total,
+        collection_timestamp=browser_timestamp(state.get("last_successful_collection", "")),
+        retained_total=sum(bool(a.get("conservada")) for a in articles),
     )
 
     return html
