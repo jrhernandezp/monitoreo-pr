@@ -169,6 +169,7 @@ def generate_html(
             "enlace": b["enlace"],
             "municipios": b.get("municipios", []),
             "time_ago": b.get("time_ago", ""),
+            "browser_date": b.get("browser_date", ""),
         })
 
     # Source badges
