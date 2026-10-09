@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="auto">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Observador del Noreste - Noreste PR</title>
+<link rel="icon" type="image/jpeg" href="logo-observador.jpg">
+<style>
+/* ============================================================
+   CSS VARIABLES — Light theme (default)
+   ============================================================ */
+:root {
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --surface2: #f0f2f5;
+    --border: #e0e0e0;
+    --text: #1a1a2e;
+    --text-dim: #6b7280;
+    --accent: #4f8cff;
+    --accent2: #6c5ce7;
+    --red: #ff4757;
+    --orange: #ffa502;
+    --green: #2ed573;
+    --yellow: #ffd32a;
+    --header-bg: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 30px rgba(0,0,0,0.10);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 14px;
+}
+
+/* ============================================================
+   DARK THEME — System preference (auto) or manual override
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+    :root[data-theme="auto"] {
+        --bg: #0f1117;
+        --surface: #161822;
+        --surface2: #1c1f2e;
+        --border: #2a2d3e;
+        --text: #e4e6f0;
+        --text-dim: #8b8fa3;
+        --header-bg: linear-gradient(135deg, #1a1d2e 0%, #161822 100%);
+        --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+        --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+        --shadow-lg: 0 8px 30px rgba(0,0,0,0.5);
+    }
+}
+
+/* Manual dark override */
+:root[data-theme="dark"] {
+    --bg: #0f1117;
+    --surface: #161822;
+    --surface2: #1c1f2e;
+    --border: #2a2d3e;
+    --text: #e4e6f0;
+    --text-dim: #8b8fa3;
+    --header-bg: linear-gradient(135deg, #1a1d2e 0%, #161822 100%);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+    --shadow-lg: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+/* Manual light override */
+:root[data-theme="light"] {
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --surface2: #f0f2f5;
+    --border: #e0e0e0;
+    --text: #1a1a2e;
+    --text-dim: #6b7280;
+    --header-bg: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 30px rgba(0,0,0,0.10);
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 16px;
+    line-height: 1.6;
+    font-size: 15px;
+    min-width: 320px;
+}
+
+/* ============================================================
+   THEME TOGGLE BUTTON
+   ============================================================ */
+.theme-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.2s, box-shadow 0.2s;
+    line-height: 1;
+}
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.header {
+    background: var(--header-bg);
+    color: white;
+    padding: 24px 28px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+}
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+.header-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.header h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.3px; }
+.header .sub { color: rgba(255,255,255,0.65); font-size: 14px; margin-top: 4px; }
+
+.stats {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+.stat-box {
+    background: rgba(255,255,255,0.15);
+    padding: 10px 16px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 75px;
+    backdrop-filter: blur(4px);
+    transition: background 0.2s;
+}
+.stat-box:hover { background: rgba(255,255,255,0.22); }
+.stat-box .num { font-size: 20px; font-weight: bold; }
+.stat-box .label { font-size: 11px; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.6px; margin-top: 2px; }
+
+/* ============================================================
+   SECTION HEADINGS
+   ============================================================ */
+.section { margin-bottom: 24px; }
+.section > h2 {
+    font-size: 16px;
+    color: var(--text-dim);
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.section-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+}
+
+/* ============================================================
+   SEARCH BAR
+   ============================================================ */
+.search-bar {
+    margin-bottom: 20px;
+    position: relative;
+}
+.search-bar .search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    opacity: 0.5;
+}
+.search-bar input {
+    width: 100%;
+    padding: 14px 44px 14px 46px;
+    border: 2px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    color: var(--text);
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.25s, box-shadow 0.25s;
+    box-shadow: var(--shadow-sm);
+}
+.search-bar input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(79,140,255,0.15);
+}
+.search-bar .search-clear {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--text-dim);
+    padding: 4px 8px;
+    border-radius: 50%;
+    display: none;
+    line-height: 1;
+    transition: color 0.15s, background 0.15s;
+}
+.search-bar .search-clear:hover {
+    color: var(--text);
+    background: var(--surface2);
+}
+.search-bar .search-clear.visible { display: block; }
+
+/* ============================================================
+   NO RESULTS MESSAGE
+   ============================================================ */
+.no-results {
+    display: none;
+    text-align: center;
+    padding: 32px 16px;
+    color: var(--text-dim);
+    font-size: 15px;
+}
+.no-results.visible { display: block; }
+.no-results .no-results-icon { font-size: 40px; margin-bottom: 8px; }
+
+/* ============================================================
+   BREAKING NEWS
+   ============================================================ */
+.breaking-section { margin-bottom: 24px; }
+.breaking-banner {
+    background: linear-gradient(135deg, #ff4757, #ff6b81);
+    color: white;
+    padding: 18px 22px;
+    border-radius: var(--radius-md);
+    margin-bottom: 8px;
+    box-shadow: 0 4px 20px rgba(255,71,87,0.25);
+}
+.breaking-banner h2 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.breaking-badge {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 4px;
+    padding: 2px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.breaking-item {
+    padding: 8px 0;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+.breaking-item:last-child { border-bottom: none; }
+.breaking-item .time { opacity: 0.75; font-size: 12px; }
+.breaking-item a { color: white; text-decoration: none; font-weight: 500; }
+.breaking-item a:hover { text-decoration: underline; }
+
+/* ============================================================
+   MUNICIPALITIES — Horizontal scrollable chips
+   ============================================================ */
+.muni-chips-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 4px 0 12px 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+}
+.muni-chips-scroll::-webkit-scrollbar { height: 6px; }
+.muni-chips-scroll::-webkit-scrollbar-track { background: transparent; }
+.muni-chips-scroll::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 10px;
+}
+
+.muni-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 50px;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.25s ease;
+    box-shadow: var(--shadow-sm);
+    user-select: none;
+}
+.muni-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent);
+}
+.muni-card.active {
+    border-color: var(--accent);
+    background: rgba(79,140,255,0.08);
+}
+.muni-card.inactive {
+    opacity: 0.4;
+    cursor: default;
+    border-color: var(--border);
+}
+.muni-card .muni-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+}
+.muni-card.inactive .muni-name { color: var(--text-dim); }
+.muni-card .muni-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface2);
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 700;
+    min-width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    padding: 0 8px;
+    transition: all 0.25s;
+}
+.muni-card.active .muni-count {
+    background: var(--accent);
+    color: white;
+}
+
+/* ============================================================
+   TOOLBAR — Sticky
+   ============================================================ */
+.toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--bg);
+    transition: box-shadow 0.3s;
+}
+.toolbar.scrolled {
+    padding: 12px 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    border-radius: var(--radius-md);
+}
+.btn {
+    padding: 9px 16px;
+    border: 2px solid var(--border);
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    background: var(--surface);
+    color: var(--text);
+    box-shadow: var(--shadow-sm);
+}
+.btn:hover {
+    background: var(--surface2);
+    transform: translateY(-1px);
+}
+.btn.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    box-shadow: 0 2px 12px rgba(79,140,255,0.3);
+}
+#filtroLabel { font-size: 14px; color: var(--text-dim); font-weight: 500; }
+
+/* ============================================================
+   TIME GROUP HEADERS
+   ============================================================ */
+.time-group-header {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent);
+    padding: 10px 0 !important;
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 4px;
+}
+
+/* ============================================================
+   ARTICLES TABLE (Desktop)
+   ============================================================ */
+.articles-wrapper { overflow-x: auto; }
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+th, td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+}
+th {
+    background: var(--surface2);
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    letter-spacing: 0.6px;
+    font-weight: 700;
+    position: sticky;
+    top: 58px;
+    z-index: 5;
+}
+tr.article-row {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+tr.article-row:hover { background: var(--surface2); }
+.titular-cell a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+.titular-cell a:hover { color: var(--accent); text-decoration: underline; }
+
+.badge-nuevo {
+    display: inline-block;
+    background: var(--red);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-right: 6px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+.muni-tag {
+    display: inline-block;
+    background: var(--surface2);
+    color: var(--accent);
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.time-ago { font-size: 13px; color: var(--text-dim); white-space: nowrap; }
+
+/* ============================================================
+   FACEBOOK SECTION
+   ============================================================ */
+.fb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+}
+.fb-card {
+    background: var(--surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border-left: 4px solid #1877f2;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s;
+}
+.fb-card:hover { box-shadow: var(--shadow-md); }
+.fb-card-header {
+    background: linear-gradient(135deg, #1877f2, #166fe5);
+    color: white;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.fb-card-body { padding: 10px 16px; }
+.fb-post { padding: 8px 0; border-bottom: 1px solid var(--border); }
+.fb-post:last-child { border-bottom: none; }
+.fb-post-fecha { font-size: 12px; color: var(--text-dim); margin-bottom: 4px; }
+.fb-post-texto { font-size: 14px; line-height: 1.5; }
+
+/* ============================================================
+   SOURCE STATUS
+   ============================================================ */
+.source-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.source-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    transition: transform 0.15s;
+}
+.source-badge:hover { transform: scale(1.03); }
+.source-badge.ok { border-color: var(--green); color: var(--green); }
+.source-badge.err { border-color: var(--red); color: var(--red); }
+.source-badge.warn { border-color: var(--orange); color: var(--orange); }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 13px;
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+/* ============================================================
+   BACK-TO-TOP FAB
+   ============================================================ */
+.fab-back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    box-shadow: 0 4px 20px rgba(79,140,255,0.4);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fab-back-to-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+.fab-back-to-top:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(79,140,255,0.5);
+}
+
+/* ============================================================
+   HIDDEN (JS filter)
+   ============================================================ */
+.hidden { display: none !important; }
+
+/* ============================================================
+   RESPONSIVE — Mobile card layout (< 768px)
+   ============================================================ */
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .header {
+        padding: 18px 16px;
+        border-radius: var(--radius-md);
+    }
+    .header h1 { font-size: 20px; }
+    .header .sub { font-size: 13px; }
+    .header-logo { width: 44px; height: 44px; }
+
+    .stats { gap: 8px; }
+    .stat-box { flex: 1 1 calc(50% - 8px); min-width: 60px; padding: 8px 10px; }
+    .stat-box .num { font-size: 17px; }
+    .stat-box .label { font-size: 10px; }
+
+    .section > h2 { font-size: 15px; margin-bottom: 12px; }
+    .search-bar input { font-size: 15px; padding: 14px 44px 14px 46px; }
+
+    /* Toolbar */
+    .toolbar { top: 0; gap: 6px; padding: 10px 0; }
+    .btn { padding: 8px 14px; font-size: 13px; }
+    #filtroLabel { font-size: 13px; }
+
+    /* Table → Card transformation */
+    .articles-wrapper { overflow-x: visible; }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    table {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    thead { display: none; }
+
+    /* Time group headers remain but restyled */
+    tr.time-group-header {
+        padding: 10px 4px 6px 4px !important;
+        border-bottom: 2px solid var(--accent);
+        margin-bottom: 8px;
+        font-size: 13px !important;
+        background: transparent;
+        border-radius: 0;
+    }
+
+    /* Article cards */
+    tr.article-row {
+        background: var(--surface);
+        border-radius: var(--radius-md);
+        padding: 14px 16px;
+        margin-bottom: 12px;
+        box-shadow: var(--shadow-sm);
+        border: 1px solid var(--border);
+        transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.2s;
+    }
+    tr.article-row:hover {
+        box-shadow: var(--shadow-md);
+        background: var(--surface);
+    }
+    tr.article-row.hidden {
+        opacity: 0;
+        transform: translateY(-8px);
+        margin-bottom: 0;
+        padding: 0;
+        border: none;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    /* Card internal layout */
+    tr.article-row td {
+        padding: 3px 0;
+        border-bottom: none;
+        font-size: 14px;
+    }
+
+    /* Municipality chip */
+    tr.article-row td:first-child {
+        margin-bottom: 4px;
+    }
+    .muni-tag {
+        font-size: 11px;
+        padding: 3px 10px;
+    }
+
+    /* Title row — big */
+    tr.article-row td.titular-cell {
+        padding: 4px 0 6px 0;
+    }
+    tr.article-row td.titular-cell a {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    /* Source + time row */
+    tr.article-row td:nth-child(3),
+    tr.article-row td:nth-child(4) {
+        display: inline-block;
+    }
+    tr.article-row td:nth-child(3) {
+        font-size: 12px;
+        color: var(--text-dim);
+        margin-right: 12px;
+    }
+    tr.article-row td:nth-child(4) {
+        font-size: 12px;
+        color: var(--text-dim);
+    }
+
+    /* NUEVO badge */
+    .badge-nuevo {
+        font-size: 9px;
+        padding: 2px 6px;
+    }
+
+    .fb-grid { grid-template-columns: 1fr; gap: 12px; }
+    .fb-card-header { font-size: 13px; }
+    .fb-post-texto { font-size: 13px; }
+
+    .source-badge { font-size: 12px; padding: 5px 10px; }
+    .footer { font-size: 12px; }
+
+    .fab-back-to-top {
+        bottom: 16px;
+        right: 16px;
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE — Small phones (< 480px)
+   ============================================================ */
+@media (max-width: 479px) {
+    body { padding: 8px; }
+    .header { padding: 14px 12px; }
+    .header h1 { font-size: 18px; }
+    .header-logo { width: 38px; height: 38px; }
+    .stat-box { flex: 1 1 100%; }
+    .muni-card { padding: 8px 14px; }
+    .muni-card .muni-name { font-size: 13px; }
+    .muni-card .muni-count { font-size: 12px; min-width: 24px; height: 24px; }
+    .fb-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   LARGE SCREENS (> 1200px)
+   ============================================================ */
+@media (min-width: 1200px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 24px 32px;
+    }
+    .header h1 { font-size: 26px; }
+    .stats { gap: 14px; }
+    .stat-box { padding: 12px 20px; }
+    .fb-grid { grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); }
+}
+.muni-card { font: inherit; color: var(--text); }
+</style>
+</head>
+<body>
+
+<!-- THEME TOGGLE -->
+<button class="theme-toggle" id="themeToggle" title="Alternar modo oscuro" aria-label="Alternar modo oscuro">🌙</button>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="header-top">
+        <img src="logo-observador.jpg" alt="Observador" class="header-logo">
+        <div>
+            <h1>🗺️ Observador del Noreste</h1>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">{{ now }}</span></div>
+        </div>
+    </div>
+    <div class="stats">
+        <div class="stat-box"><div class="num">{{ total }}</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">{{ nuevas }}</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">{{ municipios_activos }}</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num" style="font-size:14px">{{ sources_ok }}/{{ sources_total }}</div><div class="label">Fuentes OK</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">{{ now }}</div><div class="label">Última recolección</div></div>
+    </div>
+</div>
+
+<!-- SEARCH -->
+<div class="search-bar">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" aria-label="Buscar noticias" placeholder="Buscar por palabra clave..." oninput="onSearch()">
+    <button class="search-clear" id="searchClear" onclick="clearSearch()" title="Limpiar búsqueda" aria-label="Limpiar búsqueda">✕</button>
+</div>
+
+<!-- BREAKING NEWS -->
+{% if breaking %}
+<div class="section breaking-section">
+    <h2>🚨 Noticias de última hora</h2>
+    {% for a in breaking %}
+    <p><a href="{{ a.enlace }}" target="_blank" rel="noopener noreferrer">{{ a.titular }}</a> — {{ a.time_ago }}</p>
+    {% endfor %}
+</div>
+{% endif %}
+
+<!-- MUNICIPALITIES -->
+<div class="section">
+    <h2>📍 Municipios del Noreste</h2>
+    <div class="muni-chips-scroll" id="muniGrid">
+        {% for m in municipios_list %}
+        <button type="button" class="muni-card {{ 'inactive' if m.count == 0 else '' }}" data-municipio="{{ m.name }}">
+            <span class="muni-name">{{ m.name }}</span>
+            <span class="muni-count">{{ m.count }}</span>
+        </button>
+        {% endfor %}
+    </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ARTICLES -->
+<div class="section">
+    <h2>📰 Noticias Recientes</h2>
+    <div class="toolbar" id="filterToolbar">
+        <button class="btn active" onclick="filtrarPor('todos')" id="btnTodos">📋 Todos</button>
+        <span id="filtroLabel"></span>
+        <span style="flex:1"></span>
+        <span id="resultCount" style="font-size:14px;color:var(--text-dim);font-weight:500"></span>
+    </div>
+
+    <div class="no-results" id="noResults">
+        <div class="no-results-icon">🔍</div>
+        <div>No se encontraron resultados</div>
+    </div>
+
+    <div class="articles-wrapper">
+        <table>
+            <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
+            <tbody id="articlesBody">
+                {% for group in time_groups %}
+                <tr class="time-group-header"><td colspan="4">{{ group.label }}</td></tr>
+                {% for a in group.articles %}
+                <tr class="article-row" data-municipios="{{ a.municipios | join(',') }}" data-titular="{{ a.titular }}">
+                    <td>{% for m in a.municipios %}<span class="muni-tag">{{ m }}</span>{% endfor %}</td>
+                    <td class="titular-cell">
+                        {% if a.es_nueva %}<span class="badge-nuevo">NUEVA</span>{% endif %}
+                        <a href="{{ a.enlace }}" target="_blank" rel="noopener noreferrer">{{ a.titular }}</a>
+                    </td>
+                    <td>{{ a.fuente }}</td>
+                    <td class="time-ago" data-date="{{ a.browser_date }}">{{ a.time_ago }}</td>
+                </tr>
+                {% endfor %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- FACEBOOK -->
+{% if facebook_html %}
+<div class="section"><h2>📘 Publicaciones municipales</h2>{{ facebook_html | safe }}</div>
+{% endif %}
+
+<!-- SOURCE STATUS -->
+<div class="section">
+    <h2>📡 Estado de Fuentes</h2>
+    <div class="source-container">
+        {% for badge in source_badges %}
+        <span class="source-badge {{ badge.class }}">{{ badge.icon }} {{ badge.name }}: {{ badge.text }}</span>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="footer">
+    Observador del Noreste — {{ now }} (hora de Puerto Rico)<br>
+    La vista se recarga cada 15 min; la fecha indica la última recolección.
+</div>
+
+<!-- BACK-TO-TOP FAB -->
+<button class="fab-back-to-top" id="fabTop" onclick="scrollToTop()" title="Volver arriba" aria-label="Volver arriba">⬆</button>
+
+<script>
+// ============================================================
+// DARK MODE TOGGLE
+// ============================================================
+(function() {
+    const html = document.documentElement;
+    const toggle = document.getElementById('themeToggle');
+    let saved = null;
+    try { saved = localStorage.getItem('hermes-theme'); } catch (_) {}
+    if (saved === 'dark' || saved === 'light') {
+        html.setAttribute('data-theme', saved);
+    }
+    updateToggleIcon();
+
+    toggle.addEventListener('click', function() {
+        const current = html.getAttribute('data-theme');
+        let next;
+        if (current === 'auto') {
+            // Check actual preference
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            next = prefersDark ? 'light' : 'dark';
+        } else if (current === 'dark') {
+            next = 'light';
+        } else {
+            next = 'dark';
+        }
+        html.setAttribute('data-theme', next);
+        try { localStorage.setItem('hermes-theme', next); } catch (_) {}
+        updateToggleIcon();
+    });
+
+    function updateToggleIcon() {
+        const theme = html.getAttribute('data-theme');
+        let isDark;
+        if (theme === 'auto') {
+            isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        } else {
+            isDark = (theme === 'dark');
+        }
+        toggle.textContent = isDark ? '☀️' : '🌙';
+        toggle.title = isDark ? 'Modo claro' : 'Modo oscuro';
+    }
+
+    // Listen for system preference changes when in auto mode
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+        if (html.getAttribute('data-theme') === 'auto') {
+            updateToggleIcon();
+        }
+    });
+})();
+
+// ============================================================
+// SEARCH CLEAR BUTTON
+// ============================================================
+(function() {
+    const input = document.getElementById('searchInput');
+    const clearBtn = document.getElementById('searchClear');
+    input.addEventListener('input', function() {
+        clearBtn.classList.toggle('visible', input.value.length > 0);
+    });
+})();
+
+function clearSearch() {
+    const input = document.getElementById('searchInput');
+    input.value = '';
+    document.getElementById('searchClear').classList.remove('visible');
+    onSearch();
+    input.focus();
+}
+
+// ============================================================
+// STICKY TOOLBAR — Add shadow when scrolled
+// ============================================================
+(function() {
+    const toolbar = document.getElementById('filterToolbar');
+    let ticking = false;
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            requestAnimationFrame(function() {
+                if (window.scrollY > 10) {
+                    toolbar.classList.add('scrolled');
+                } else {
+                    toolbar.classList.remove('scrolled');
+                }
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+})();
+
+// ============================================================
+// BACK-TO-TOP FAB
+// ============================================================
+(function() {
+    const fab = document.getElementById('fabTop');
+    let ticking = false;
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            requestAnimationFrame(function() {
+                if (window.scrollY > 400) {
+                    fab.classList.add('visible');
+                } else {
+                    fab.classList.remove('visible');
+                }
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+})();
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ============================================================
+// FILTERS AND RELATIVE DATES
+// ============================================================
+let activeMunicipio = 'todos';
+function normalizeSearch(value) {
+    return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+}
+document.querySelectorAll('.muni-card[data-municipio]').forEach(card => {
+    card.addEventListener('click', () => filtrarPor(card.dataset.municipio));
+});
+
+function getMunicipios(el) {
+    return (el.getAttribute('data-municipios') || '').split(',').map(m => m.trim());
+}
+
+function updateTimeGroupHeaders() {
+    const headers = document.querySelectorAll('.time-group-header');
+    headers.forEach(h => {
+        let hasVisible = false;
+        let el = h.nextElementSibling;
+        while (el && !el.classList.contains('time-group-header')) {
+            if (el.classList.contains('article-row') && !el.classList.contains('hidden')) {
+                hasVisible = true;
+                break;
+            }
+            el = el.nextElementSibling;
+        }
+        h.classList.toggle('hidden', !hasVisible);
+    });
+}
+
+// Search filter
+function onSearch() {
+    const q = document.getElementById('searchInput').value;
+    const query = normalizeSearch(q);
+    const rows = document.querySelectorAll('.article-row');
+    const noResults = document.getElementById('noResults');
+    const articlesWrapper = document.querySelector('.articles-wrapper');
+    let visible = 0;
+    rows.forEach(row => {
+        const title = row.getAttribute('data-titular') || '';
+        const muniAttr = row.getAttribute('data-municipios') || '';
+        const matchesSearch = !query || normalizeSearch(title).includes(query) || normalizeSearch(muniAttr).includes(query);
+
+        let show = matchesSearch;
+        if (activeMunicipio !== 'todos') {
+            const munis = getMunicipios(row);
+            show = show && munis.includes(activeMunicipio);
+        }
+
+        row.classList.toggle('hidden', !show);
+        if (show) visible++;
+    });
+    updateTimeGroupHeaders();
+    document.getElementById('resultCount').textContent = visible + ' resultados';
+
+    // Show/hide no-results message
+    if (visible === 0) {
+        noResults.classList.add('visible');
+        articlesWrapper.style.display = 'none';
+    } else {
+        noResults.classList.remove('visible');
+        articlesWrapper.style.display = '';
+    }
+}
+
+// Municipality filter
+function filtrarPor(municipio) {
+    activeMunicipio = municipio;
+    const label = document.getElementById('filtroLabel');
+    const btnTodos = document.getElementById('btnTodos');
+    const cards = document.querySelectorAll('.muni-card');
+
+    if (municipio === 'todos') {
+        label.textContent = '';
+        btnTodos.classList.add('active');
+        cards.forEach(c => c.classList.remove('active'));
+    } else {
+        label.textContent = 'Filtrando: ' + municipio;
+        btnTodos.classList.remove('active');
+        cards.forEach(c => {
+            const name = c.querySelector('.muni-name').textContent;
+            c.classList.toggle('active', name === municipio);
+        });
+    }
+    onSearch();
+}
+
+function updateResultCount() {
+    const visible = document.querySelectorAll('.article-row:not(.hidden)').length;
+    document.getElementById('resultCount').textContent = visible + ' resultados';
+}
+
+// Auto-update "time ago" every minute
+function updateTimeAgo() {
+    const now = Date.now();
+    document.querySelectorAll('.time-ago[data-date]').forEach(el => {
+        const dateStr = el.getAttribute('data-date');
+        if (!dateStr) return;
+        try {
+            // Parse YYYY-MM-DD HH:MM or YYYY-MM-DD HH:MM:SS
+            const dt = new Date(dateStr);
+            if (!Number.isFinite(dt.getTime())) return;
+            const diff = (now - dt.getTime()) / 1000;
+            if (diff < 0) el.textContent = 'Fecha futura';
+            else if (diff < 60) el.textContent = 'ahora mismo';
+            else if (diff < 3600) el.textContent = 'hace ' + Math.floor(diff/60) + 'min';
+            else if (diff < 86400) el.textContent = 'hace ' + Math.floor(diff/3600) + 'h';
+            else el.textContent = 'hace ' + Math.floor(diff/86400) + 'd';
+        } catch(e) {}
+    });
+}
+
+// Auto-refresh page every 30 minutes
+setTimeout(() => location.reload(), 15 * 60 * 1000);
+// Update time ago every minute
+setInterval(updateTimeAgo, 60 * 1000);
+updateTimeAgo();
+onSearch();
+</script>
+</body>
+</html>

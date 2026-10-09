@@ -1,5 +1,8 @@
 """Facebook scraper subprocess wrapper with aggressive timeouts and caching."""
 import json
+import os
+from sources.state import write_text_atomic
+from sources.dates import now_local, parse_article_date
 import subprocess
 import sys
 from datetime import datetime, timezone, timedelta
@@ -8,8 +11,8 @@ from typing import Dict, List, Tuple
 
 ATLANTIC = timezone(timedelta(hours=-4))
 
-FACEBOOK_SCRAPER = Path.home() / ".hermes" / "scripts" / "facebook_scraper.py"
-FACEBOOK_PYTHON = Path.home() / ".hermes" / "tools-venv" / "bin" / "python3"
+FACEBOOK_SCRAPER = Path(os.environ.get("FACEBOOK_SCRAPER", str(Path.home() / ".hermes" / "scripts" / "facebook_scraper.py")))
+FACEBOOK_PYTHON = Path(os.environ.get("FACEBOOK_PYTHON", str(Path.home() / ".hermes" / "tools-venv" / "bin" / "python3")))
 
 # Cache file for last successful Facebook scrape
 CACHE_DIR = Path(__file__).parent.parent / "data"
@@ -34,9 +37,9 @@ def load_cache() -> list:
             if cached_at:
                 try:
                     from datetime import datetime
-                    dt = datetime.fromisoformat(cached_at)
-                    age_min = (datetime.now() - dt).total_seconds() / 60
-                    if age_min < 120:
+                    dt = parse_article_date(cached_at)
+                    age_min = (now_local() - dt).total_seconds() / 60
+                    if 0 <= age_min < 120:
                         return data.get("results", [])
                 except Exception:
                     pass
@@ -49,11 +52,10 @@ def save_cache(results: list):
     """Save Facebook results to cache."""
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     data = {
-        "_cached_at": datetime.now().isoformat(),
+        "_cached_at": now_local().isoformat(),
         "results": results,
     }
-    with open(CACHE_FILE, "w") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    write_text_atomic(CACHE_FILE, json.dumps(data, ensure_ascii=False, indent=2))
 
 
 def collect_facebook_posts() -> Tuple[List[Dict], Dict[str, str]]:
@@ -68,14 +70,16 @@ def collect_facebook_posts() -> Tuple[List[Dict], Dict[str, str]]:
     if not FACEBOOK_SCRAPER.exists():
         msg = f"Scraper not found: {FACEBOOK_SCRAPER}"
         print(f"    ❌ {msg}")
-        source_status["Facebook"] = f"❌ {msg}"
-        return [], source_status
+        cached = load_cache()
+        source_status["Facebook"] = "⚠️ cache" if cached else "⚠️ Scraper local no configurado"
+        return cached, source_status
 
     if not FACEBOOK_PYTHON.exists():
         msg = f"Python not found: {FACEBOOK_PYTHON}"
         print(f"    ❌ {msg}")
-        source_status["Facebook"] = f"❌ {msg}"
-        return [], source_status
+        cached = load_cache()
+        source_status["Facebook"] = "⚠️ cache" if cached else "⚠️ Scraper local no configurado"
+        return cached, source_status
 
     facebook_data = []
     try:
@@ -103,7 +107,7 @@ def collect_facebook_posts() -> Tuple[List[Dict], Dict[str, str]]:
             raise RuntimeError(error_msg)
 
     except subprocess.TimeoutExpired:
-        print("    ⏱️ Facebook timeout (60s) — usando cache")
+        print("    ⏱️ Facebook timeout (90s) — usando cache")
         facebook_data = load_cache()
         if facebook_data:
             source_status["Facebook"] = f"⚠️ cache ({len(facebook_data)} páginas)"

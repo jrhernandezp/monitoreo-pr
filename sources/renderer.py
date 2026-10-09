@@ -3,7 +3,10 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List
 
-from jinja2 import Template
+from jinja2 import Environment, FileSystemLoader, select_autoescape
+from html import escape
+from sources.dates import now_local, parse_article_date, browser_timestamp
+from sources.collector import canonical_link
 
 from sources.collector import (
     articles_by_municipio,
@@ -21,7 +24,7 @@ def _group_by_time(articles: List[Dict]) -> List[Dict]:
     """Group articles into time buckets for display."""
     from datetime import datetime, timedelta
 
-    now = datetime.now()
+    now = now_local()
     hoy = now.strftime("%Y-%m-%d")
     ayer = (now - timedelta(days=1)).strftime("%Y-%m-%d")
 
@@ -38,10 +41,12 @@ def _group_by_time(articles: List[Dict]) -> List[Dict]:
             continue
 
         try:
-            dt = datetime.strptime(fecha[:16], "%Y-%m-%d %H:%M")
+            dt = parse_article_date(fecha)
+            if dt is None:
+                raise ValueError("Invalid publication date")
             diff_h = (now - dt).total_seconds() / 3600
 
-            if fecha.startswith(hoy) and diff_h < 1:
+            if fecha.startswith(hoy) and 0 <= diff_h < 1:
                 ultima_hora.append(a)
             elif fecha.startswith(hoy):
                 esta_manana.append(a)
@@ -92,19 +97,20 @@ def _build_facebook_html(facebook_data: list) -> str:
 
     cards = []
     for r in facebook_data:
-        fuente = r.get("fuente", "Desconocido")
+        fuente = escape(str(r.get("fuente", "Desconocido")))
         posts = r.get("posts", [])
         if not posts:
             continue
 
         posts_html = ""
         for p in posts:
-            fecha = p.get("fecha", "")
-            texto = p.get("texto", "").strip()
+            fecha = escape(str(p.get("fecha", "")))
+            texto = str(p.get("texto") or "").strip()
             if not texto:
                 continue
             if len(texto) > 200:
                 texto = texto[:197] + "..."
+            texto = escape(texto)
             posts_html += f"""
             <div class="fb-post">
                 <div class="fb-post-fecha">🕐 {fecha}</div>
@@ -131,8 +137,11 @@ def generate_html(
     facebook_data: list = None,
 ) -> str:
     """Generate the complete HTML dashboard using Jinja2 template."""
+    # Do not mutate caller-owned records or render unsafe link schemes.
+    articles = [dict(a, enlace=canonical_link(a.get("enlace"))) for a in articles]
+    articles = [a for a in articles if a["enlace"]]
     by_muni = articles_by_municipio(articles)
-    now = datetime.now().strftime("%Y-%m-%d %I:%M:%S %p")
+    now = now_local().strftime("%Y-%m-%d %I:%M:%S %p")
     total = len(articles)
     nuevas = sum(1 for a in articles if a.get("es_nueva"))
     last_run = state.get("last_run", "Nunca")
@@ -148,6 +157,7 @@ def generate_html(
     # Add time_ago to each article
     for a in articles_sorted:
         a["time_ago"] = time_ago(a.get("fecha", ""))
+        a["browser_date"] = browser_timestamp(a.get("fecha", ""))
     time_groups = _group_by_time(articles_sorted)
 
     # Breaking news (only from last 4 hours)
@@ -170,8 +180,11 @@ def generate_html(
     facebook_html = _build_facebook_html(facebook_data or [])
 
     # Render template
-    template_content = TEMPLATE_FILE.read_text(encoding="utf-8")
-    template = Template(template_content)
+    environment = Environment(
+        loader=FileSystemLoader(str(TEMPLATE_FILE.parent)),
+        autoescape=select_autoescape(["html"]),
+    )
+    template = environment.get_template(TEMPLATE_FILE.name)
     html = template.render(
         now=now,
         total=total,

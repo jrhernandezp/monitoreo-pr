@@ -1,57 +1,65 @@
-# 🗺️ Dashboard de Monitoreo Municipal — Noreste PR
+# Observador del Noreste — Puerto Rico
 
-Monitorea noticias de **15 municipios del noreste de Puerto Rico** desde múltiples fuentes y genera un dashboard HTML autónomo.
+Dashboard de noticias de 15 municipios: San Juan, Carolina, Trujillo Alto,
+Caguas, Luquillo, Canóvanas, Fajardo, Loíza, Río Grande, Ceiba, Naguabo,
+Humacao, Cataño, Vieques y Culebra.
 
-## Municipios monitoreados
+## Instalación y uso
 
-San Juan, Carolina, Trujillo Alto, Caguas, Luquillo, Canóvanas, Fajardo, Loíza, Río Grande, Ceiba, Naguabo, Humacao, Cataño, Vieques, Culebra
-
-## Fuentes
-
-| Fuente | Tipo | Estado |
-|--------|------|--------|
-| Primera Hora | RSS | ✅ |
-| Vocero | RSS | ✅ |
-| News API | API | ⚠️ Requiere API key |
-| El Nuevo Día | Scraping | ✅ |
-
-## Instalación
+Requiere Python 3.9 o superior.
 
 ```bash
-cd ~/monitoreo-municipal
-pip install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
+python dashboard.py
 ```
 
-## Configuración (opcional)
+Se genera `index.html` con la plantilla `templates/dashboard.html`.
+Usa `python dashboard.py --open` para abrirlo. Las fechas siempre usan
+la hora de Puerto Rico, aunque el servidor esté en UTC.
 
-Para usar News API, copia el archivo .env.example y añade tu API key:
+News API es opcional: guarda `NEWS_API_KEY` en el entorno o en `.env`.
+Las fuentes sin configuración y las solicitudes fallidas se indican como
+advertencia o error, no como fuentes funcionando.
 
-```bash
-cp .env.example .env
-# Edita .env con tu NEWS_API_KEY
-```
+## Publicación
 
-Obtén una key gratis en: https://newsapi.org/register
+GitHub Actions prueba el código, recoge las noticias, genera el dashboard y
+publica los archivos estáticos en Pages. La programación solicita ejecuciones
+cada 15 minutos; GitHub puede retrasarlas. También se ejecuta con pushes a
+`master` o manualmente con `workflow_dispatch`.
 
-## Uso
+Si usas News API en Actions, configura el secreto de repositorio
+`NEWS_API_KEY`. No es necesario para RSS.
+El estado de noticias vistas se conserva mediante caché entre ejecuciones.
+La caché puede desaparecer, en cuyo caso las noticias se marcarán como nuevas.
+Los datos del estado nunca se publican en Pages.
 
-```bash
-# Generar dashboard
-python3 dashboard.py
+`dashboard.html` y `index.html` se publican con el mismo contenido.
+La recarga de la vista cada 15 minutos no garantiza por sí misma una nueva
+recolección: la fecha visible corresponde a la generación del archivo.
+Si fallan todas las fuentes, el flujo falla y conserva la última publicación.
 
-# Generar y abrir en el navegador
-python3 dashboard.py --open
-```
+## Fuentes y fechas
 
-Esto genera `dashboard.html` que puedes abrir en cualquier navegador.
+Se consultan RSS y Google News con un máximo de seis solicitudes simultáneas.
+Los enlaces de seguimiento se normalizan y se fusionan titulares idénticos.
+Se muestran los dos últimos días del calendario local; se excluyen fechas
+desconocidas o futuras. Las noticias sin hora mantienen su fecha sin inventar
+una hora. El scraping de portada no asigna la hora de consulta como si fuese
+la publicación.
 
-## Automatización (cron)
+Facebook mediante navegador depende de un scraper externo local, que no
+está incluido en este repositorio. Puede configurarse con `FACEBOOK_SCRAPER`
+y `FACEBOOK_PYTHON`; en Actions se muestra como no configurado. Las búsquedas
+RSS de publicaciones indexadas por Google siguen disponibles.
 
-Para que se genere automáticamente cada mañana a las 6:00 AM:
+## Mantenimiento
 
-```bash
-crontab -e
-# Añade esta línea:
-0 6 * * * cd ~/monitoreo-municipal && python3 dashboard.py
-```
-
+`run-dashboard.sh` trabaja desde la carpeta del repositorio.
+`cleanup_daily.sh` reinicia los marcadores vistos sin borrar la última página
+ni enviar archivos de estado privados a GitHub.
+La generación y el estado se escriben de forma atómica para evitar archivos
+parciales. El estado se guarda después de generar el HTML correctamente.

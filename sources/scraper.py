@@ -2,6 +2,8 @@
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
+import re
+from sources.dates import parse_article_date
 from typing import List, Dict
 from sources.rss_feeds import MUNICIPIOS_NORESTE, mentions_municipio
 
@@ -37,20 +39,31 @@ def parse_date(text: str) -> str:
             for p in parts:
                 if p.isdigit() and len(p) == 4:
                     day = parts[1].replace(",", "")
-                    return f"{p}-{num}-{int(day):02d}"
-    return datetime.now().strftime("%Y-%m-%d")
+                    try:
+                        value = f"{p}-{num}-{int(day):02d}"
+                    except ValueError:
+                        return ""
+                    return value if parse_article_date(value) else ""
+    parsed = parse_article_date(text)
+    return parsed.strftime("%Y-%m-%d") if parsed else ""
 
 
-def scrape_carolina787(max_articles: int = 30) -> List[Dict]:
+def scrape_carolina787(max_articles: int = 30, status: dict = None) -> List[Dict]:
     """Scrape Carolina787.com news page."""
+    source_name = "Carolina787 (Scraping)"
     articles = []
+    def report(value):
+        if status is not None:
+            status[source_name] = value
     try:
         resp = requests.get(SCRAPE_TARGETS["Carolina787"], headers=HEADERS, timeout=15)
         if resp.status_code != 200:
+            report(f"❌ HTTP {resp.status_code}")
             print(f"  ⚠ Carolina787 returned status {resp.status_code}")
             return []
 
         soup = BeautifulSoup(resp.text, "html.parser")
+        report("✅ OK")
         links_found = set()
 
         # Find all article items in the Webflow collection list
@@ -86,23 +99,33 @@ def scrape_carolina787(max_articles: int = 30) -> List[Dict]:
                     break
 
     except requests.exceptions.Timeout:
+        report("❌ Timeout")
         print("  ⚠ Carolina787 scraping timed out")
     except Exception as e:
+        report(f"❌ {type(e).__name__}")
         print(f"  ⚠ Carolina787 scraping error: {e}")
 
+    if status is not None and not articles and status.get(source_name, "").startswith("✅"):
+        report("⚠️ Sin noticias reconocibles")
     return articles
 
 
-def scrape_elnuevodia(max_articles: int = 30) -> List[Dict]:
+def scrape_elnuevodia(max_articles: int = 30, status: dict = None) -> List[Dict]:
     """Scrape El Nuevo Día homepage for trending/local news."""
+    source_name = "El Nuevo Día (Scraping)"
     articles = []
+    def report(value):
+        if status is not None:
+            status[source_name] = value
     try:
         resp = requests.get(SCRAPE_TARGETS["El Nuevo Día"], headers=HEADERS, timeout=10)
         if resp.status_code != 200:
+            report(f"❌ HTTP {resp.status_code}")
             print(f"  ⚠ END returned status {resp.status_code}")
             return []
 
         soup = BeautifulSoup(resp.text, "html.parser")
+        report("✅ OK")
 
         # Try multiple selectors for article links
         links_found = set()
@@ -124,7 +147,7 @@ def scrape_elnuevodia(max_articles: int = 30) -> List[Dict]:
                             "titular": title,
                             "enlace": href if href.startswith("http") else f"https://www.elnuevodia.com{href}",
                             "fuente": "El Nuevo Día",
-                            "fecha": datetime.now().strftime("%Y-%m-%d %H:%M"),
+                            "fecha": published_date(a, href),
                             "municipios": matched,
                             "tipo": "Scraping",
                         })
@@ -136,46 +159,36 @@ def scrape_elnuevodia(max_articles: int = 30) -> List[Dict]:
                 break
 
     except requests.exceptions.Timeout:
+        report("❌ Timeout")
         print("  ⚠ END scraping timed out")
     except Exception as e:
+        report(f"❌ {type(e).__name__}")
         print(f"  ⚠ END scraping error: {e}")
 
+    if status is not None and not articles and status.get(source_name, "").startswith("✅"):
+        report("⚠️ Sin noticias reconocibles")
     return articles
 
 
-def scrape_all(max_total_seconds: int = 60) -> List[Dict]:
-    """Run all scrapers and return articles. Hard timeout via alarm signal."""
-    import signal
+def published_date(tag, href):
+    """Use publication metadata or a date in the URL, never the scrape time."""
+    parent = tag.find_parent("article")
+    time_tag = parent.find("time") if parent else None
+    if time_tag:
+        value = time_tag.get("datetime", "")
+        dt = parse_article_date(value)
+        if dt:
+            return dt.strftime("%Y-%m-%d %H:%M")
+    match = re.search(r"/(20\d{2})/?(\d{2})/?(\d{2})(?:/|$)", href)
+    if match:
+        value = "-".join(match.groups())
+        return value if parse_article_date(value) else ""
+    return ""
 
-    articles = []
 
-    def _timeout_handler(signum, frame):
-        raise TimeoutError(f"scrape_all exceeded {max_total_seconds}s")
-
-    old_handler = signal.signal(signal.SIGALRM, _timeout_handler)
-    signal.alarm(max_total_seconds)
-
-    try:
-        print("  🕸️  Scraping: El Nuevo Día...")
-        try:
-            end_articles = scrape_elnuevodia()
-            print(f"     → {len(end_articles)} articles from END")
-            articles.extend(end_articles)
-        except Exception as e:
-            print(f"     ⚠ END error: {e}")
-
-        print("  🕸️  Scraping: Carolina787...")
-        try:
-            c787_articles = scrape_carolina787()
-            print(f"     → {len(c787_articles)} articles from Carolina787")
-            articles.extend(c787_articles)
-        except Exception as e:
-            print(f"     ⚠ Carolina787 error: {e}")
-
-    except TimeoutError:
-        print(f"  ⏰ scrape_all timeout ({max_total_seconds}s) — returning {len(articles)} articles collected so far")
-    finally:
-        signal.alarm(0)
-        signal.signal(signal.SIGALRM, old_handler)
-
-    return articles
+def scrape_all(max_total_seconds: int = 60, return_status: bool = False) -> List[Dict]:
+    """Each request has a timeout; this also works on Windows and worker threads."""
+    articles, statuses = [], {}
+    for fetch in (scrape_elnuevodia, scrape_carolina787):
+        articles.extend(fetch(status=statuses))
+    return (articles, statuses) if return_status else articles
