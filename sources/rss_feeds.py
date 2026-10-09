@@ -4,6 +4,12 @@ import urllib.request
 import io
 import re
 import sys
+import calendar
+import unicodedata
+from concurrent.futures import ThreadPoolExecutor
+from datetime import timezone
+from html import unescape
+from sources.dates import now_local, PUERTO_RICO
 from datetime import datetime, timedelta
 from typing import List, Dict, Tuple
 
@@ -200,16 +206,13 @@ VARIANTES = {
 
 
 def mentions_municipio(text: str) -> List[str]:
-    """Check if text mentions any of the tracked municipalities."""
-    text_lower = text.lower()
-    found = []
-    for m in MUNICIPIOS_NORESTE:
-        if m.lower() in text_lower:
-            found.append(m)
-    for variant, canonical in VARIANTES.items():
-        if variant.lower() in text_lower and canonical not in found:
-            found.append(canonical)
-    return found
+    """Match whole municipality names with or without accents."""
+    def plain(value):
+        return "".join(c for c in unicodedata.normalize("NFD", value.casefold())
+                       if not unicodedata.combining(c))
+    text = plain(text or "")
+    return [m for m in MUNICIPIOS_NORESTE
+            if re.search(r"(?<!\w)" + re.escape(plain(m)) + r"(?!\w)", text)]
 
 
 def is_relevant_title(title: str) -> bool:
@@ -239,14 +242,14 @@ def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10, extra_hea
         try:
             if use_curl:
                 import subprocess as sp
-                curl_cmd = ['curl', '-sL', '--max-time', '25']
+                curl_cmd = ['curl', '-fsSL', '--max-time', '10']
                 if extra_headers:
                     for k, v in extra_headers.items():
                         curl_cmd += ['-H', f'{k}: {v}']
                 else:
                     curl_cmd += ['-H', 'User-Agent: Mozilla/5.0']
                 curl_cmd.append(feed_url)
-                result = sp.run(curl_cmd, capture_output=True, text=True, timeout=30)
+                result = sp.run(curl_cmd, capture_output=True, text=True, timeout=15)
                 if result.returncode != 0:
                     return None, f"curl error: exit {result.returncode}"
                 feed = feedparser.parse(result.stdout)
@@ -255,7 +258,7 @@ def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10, extra_hea
                 if extra_headers:
                     headers.update(extra_headers)
                 req = urllib.request.Request(feed_url, headers=headers)
-                with urllib.request.urlopen(req, timeout=25) as resp:
+                with urllib.request.urlopen(req, timeout=10) as resp:
                     feed_data = resp.read()
                 feed = feedparser.parse(io.BytesIO(feed_data))
         except Exception as e:
@@ -265,41 +268,42 @@ def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10, extra_hea
     # Retry with exponential backoff for rate limits
     feed = None
     last_error = None
-    for attempt in range(3):
+    for attempt in range(2):
         feed, err = _do_fetch()
         if err is None:
             break
         last_error = err
-        if attempt < 2:
+        if attempt < 1:
             _time.sleep(2 ** attempt)  # 1s, 2s backoff
     else:
         return [], f"rate-limited/error: {last_error}"
 
     articles = []
-    cutoff = datetime.now() - timedelta(days=MAX_DAYS_OLD)
+    cutoff = now_local() - timedelta(days=MAX_DAYS_OLD)
 
-    for entry in feed.entries[:max_articles]:
-        title = entry.get("title", "")
+    if not feed.entries and not getattr(feed, "version", ""):
+        return [], "respuesta inválida: no es un feed RSS/Atom"
+
+    for entry in feed.entries[:200]:
+        title = unescape(re.sub(r"<[^>]+>", "", entry.get("title", "")))
         if not title or not is_relevant_title(title):
             continue
 
         link = entry.get("link", "")
-        raw_date = entry.get("published_parsed")
+        raw_date = entry.get("published_parsed") or entry.get("updated_parsed")
 
             # Parse date
         if raw_date:
             try:
-                dt = datetime(*raw_date[:6])
+                dt = datetime.fromtimestamp(calendar.timegm(raw_date), timezone.utc).astimezone(PUERTO_RICO)
                 date_str = dt.strftime("%Y-%m-%d %H:%M")
             except Exception:
-                dt = datetime.now()
-                date_str = dt.strftime("%Y-%m-%d %H:%M")
+                continue
         else:
-            dt = datetime.now()
-            date_str = dt.strftime("%Y-%m-%d %H:%M")
+            continue
 
             # Skip old articles
-        if dt < cutoff:
+        if dt < cutoff or dt > now_local():
             continue
 
             # Buscar municipio en título
@@ -320,6 +324,9 @@ def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10, extra_hea
                 "municipios": municipios,
                 "tipo": "RSS",
             })
+
+            if len(articles) >= max_articles:
+                break
 
     if articles:
         return articles, "ok"
@@ -346,29 +353,29 @@ def fetch_all(max_per_feed: int = 8) -> Tuple[List[Dict], Dict[str, str]]:
         ("📺 Medios", RSS_MEDIOS),
     ]
 
-    for emoji, feed_dict in fuentes:
+    tasks = []
+    for _, feed_dict in fuentes:
         for name, entry in feed_dict.items():
-            # Support plain URLs, (url, headers) tuples, and (url, headers, use_curl) tuples
             if isinstance(entry, tuple):
                 url = entry[0]
-                extra_headers = entry[1] if len(entry) > 1 else None
-                use_curl = entry[2] if len(entry) > 2 else False
+                headers = entry[1] if len(entry) > 1 else None
+                curl = entry[2] if len(entry) > 2 else False
             else:
-                url, extra_headers, use_curl = entry, None, False
-            print(f"  {emoji} {name}...", end=" ")
-            sys.stdout.flush()
-            articles, status = fetch_rss(name, url, max_per_feed, extra_headers, use_curl)
-            if articles:
-                print(f"→ {len(articles)}")
-                for a in articles:
-                    print(f"       [{', '.join(a['municipios'])}] {a['titular'][:70]}")
-            else:
-                print(f"→ {status}")
-            all_articles.extend(articles)
-            # Guardar estado para el dashboard
-            if status == "ok":
-                source_status[name] = "✅ OK"
-            else:
-                source_status[name] = f"❌ {status}"
+                url, headers, curl = entry, None, False
+            tasks.append((name, url, headers, curl))
 
+    def collect(task):
+        name, url, headers, curl = task
+        try:
+            articles, status = fetch_rss(name, url, max_per_feed, headers, curl)
+        except Exception as exc:
+            articles, status = [], f"error: {type(exc).__name__}"
+        return name, articles, status
+
+    # Bound concurrency and preserve source ordering for deterministic output.
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        for name, articles, status in pool.map(collect, tasks):
+            print(f"  📡 {name}: {len(articles)} artículos ({status})")
+            all_articles.extend(articles)
+            source_status[name] = "✅ OK" if status == "ok" else f"❌ {status}"
     return all_articles, source_status
