@@ -5,7 +5,8 @@ on:
     branches: ["master"]
   workflow_dispatch:
   schedule:
-    - cron: "7,22,37,52 * * * *"
+    # Refresh the cron registration while keeping a 15-minute interval.
+    - cron: "8,23,38,53 * * * *"
 
 permissions:
   contents: read
