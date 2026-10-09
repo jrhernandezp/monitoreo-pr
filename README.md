@@ -58,6 +58,25 @@ RSS de publicaciones indexadas por Google siguen disponibles.
 
 ## Mantenimiento
 
+El aviso de antigüedad se basa en la última recolección exitosa: advertencia
+desde 30 minutos y alerta desde 45, actualizadas cada minuto en el navegador.
+El detalle de fuentes muestra el motivo del fallo, la última respuesta
+exitosa y los artículos recientes únicos aportados a la tabla (dos días).
+El historial empieza con esta versión; no reconstruye éxitos anteriores.
+
+Ante un fallo parcial se conservan los artículos anteriores de la fuente
+fallida, dentro del mismo período de dos días, marcados como CONSERVADA y
+con su fecha de publicación y última verificación originales. No aparecen
+como nuevos ni en el banner urgente. Una fuente que responde correctamente
+con cero artículos no utiliza este respaldo. Si todas fallan, se mantiene
+la protección que conserva la última publicación. El respaldo y el historial
+se guardan en el mismo state.json privado y dependen de la caché de Actions;
+no se garantiza recuperar noticias si la caché ha desaparecido.
+
+La clasificación excluye referencias explícitas a localidades extranjeras
+y nombres como Carolina Panthers o Soge Culebra, sin descartar otras
+menciones locales en el mismo texto. Sigue siendo una heurística.
+
 `run-dashboard.sh` trabaja desde la carpeta del repositorio.
 `cleanup_daily.sh` reinicia los marcadores vistos sin borrar la última página
 ni enviar archivos de estado privados a GitHub.
