@@ -778,6 +778,16 @@ tr.article-row:hover { background: var(--surface2); }
     .fb-grid { grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); }
 }
 .muni-card { font: inherit; color: var(--text); }
+.freshness { margin: 14px 0; padding: 12px 16px; border: 1px solid var(--green); border-radius: 12px; color: var(--text); background: var(--surface); }
+.freshness.warn { border-color: var(--orange); }
+.freshness.err { border-color: var(--red); }
+.freshness p { margin-top: 5px; font-size: 13px; color: var(--text-dim); }
+.badge-retained { display: inline-block; font-size: 11px; color: var(--orange); margin-right: 5px; }
+.health-details { margin-top: 16px; }
+.health-details summary { cursor: pointer; font-weight: 600; }
+.health-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-top: 12px; }
+.health-card { border: 1px solid var(--border); border-radius: 10px; padding: 12px; overflow-wrap: anywhere; }
+.health-card p { margin-top: 5px; color: var(--text-dim); font-size: 13px; }
 </style>
 </head>
 <body>
@@ -804,6 +814,11 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <!-- SEARCH -->
+<div id="freshnessNotice" class="freshness" role="status" aria-live="polite" data-collected-at="{{ collection_timestamp }}">
+    <strong id="freshnessText">Última recolección exitosa: {{ last_run or 'Sin registro' }} (hora de Puerto Rico).</strong>
+    <p>Una recarga de la página no implica una nueva recolección. Aviso desde los 30 minutos; alerta desde los 45.</p>
+    {% if retained_total %}<p>{{ retained_total }} noticias conservadas por fallos de fuentes; mantienen su fecha de publicación y última verificación.</p>{% endif %}
+</div>
 <div class="search-bar">
     <span class="search-icon">🔍</span>
     <input type="text" id="searchInput" aria-label="Buscar noticias" placeholder="Buscar por palabra clave..." oninput="onSearch()">
@@ -861,6 +876,7 @@ tr.article-row:hover { background: var(--surface2); }
                     <td>{% for m in a.municipios %}<span class="muni-tag">{{ m }}</span>{% endfor %}</td>
                     <td class="titular-cell">
                         {% if a.es_nueva %}<span class="badge-nuevo">NUEVA</span>{% endif %}
+                        {% if a.conservada %}<span class="badge-retained" title="Última verificación: {{ a.ultima_verificacion }}">CONSERVADA</span>{% endif %}
                         <a href="{{ a.enlace }}" target="_blank" rel="noopener noreferrer">{{ a.titular }}</a>
                     </td>
                     <td>{{ a.fuente }}</td>
@@ -883,9 +899,24 @@ tr.article-row:hover { background: var(--surface2); }
     <h2>📡 Estado de Fuentes</h2>
     <div class="source-container">
         {% for badge in source_badges %}
-        <span class="source-badge {{ badge.class }}">{{ badge.icon }} {{ badge.name }}: {{ badge.text }}</span>
+        <span class="source-badge {{ badge.class }}" title="{{ badge.status }}">{{ badge.icon }} {{ badge.name }}: {{ badge.text }}</span>
         {% endfor %}
     </div>
+    <details class="health-details">
+        <summary>Ver detalle y última respuesta exitosa de cada fuente</summary>
+        <p>Noticias recientes: artículos únicos de los dos días mostrados. Una respuesta exitosa con cero noticias no es un fallo. El historial empieza al instalar esta mejora y depende de la caché.</p>
+        <div class="health-grid">
+        {% for badge in source_badges %}
+            <div class="health-card">
+                <strong>{{ badge.icon }} {{ badge.name }}</strong>
+                <p>Estado: {{ badge.status }}</p>
+                <p>Última respuesta exitosa: {{ badge.last_success_display }} (PR)</p>
+                <p>Noticias recientes en esta consulta: {{ badge.count if badge.count is not none else 'Sin dato' }}</p>
+                {% if badge.retained %}<p>Noticias conservadas: {{ badge.retained }}</p>{% endif %}
+            </div>
+        {% endfor %}
+        </div>
+    </details>
 </div>
 
 <div class="footer">
@@ -1125,7 +1156,31 @@ function updateTimeAgo() {
     });
 }
 
-// Auto-refresh page every 30 minutes
+// The publication time, not the page load time, determines freshness.
+function updateFreshness() {
+    const notice = document.getElementById('freshnessNotice');
+    const text = document.getElementById('freshnessText');
+    const raw = notice.dataset.collectedAt;
+    const timestamp = raw ? new Date(raw).getTime() : NaN;
+    const age = (Date.now() - timestamp) / 60000;
+    let level = 'warn';
+    let message = 'No hay registro válido de la última recolección exitosa.';
+    if (Number.isFinite(age) && age >= -5) {
+        const minutes = Math.max(0, Math.floor(age));
+        level = age >= 45 ? 'err' : age >= 30 ? 'warn' : 'ok';
+        message = (level === 'err' ? '⚠ Datos desactualizados' : level === 'warn' ? '⚠ Actualización demorada' : '✓ Datos recientes') +
+            ' — última recolección exitosa hace ' + minutes + ' min.';
+    } else if (Number.isFinite(age)) {
+        message = 'No se puede calcular la antigüedad: revisa la hora del dispositivo.';
+    }
+    notice.classList.remove('ok', 'warn', 'err');
+    notice.classList.add(level);
+    if (text.textContent !== message) text.textContent = message;
+}
+setInterval(updateFreshness, 60 * 1000);
+updateFreshness();
+
+// Auto-refresh page every 15 minutes
 setTimeout(() => location.reload(), 15 * 60 * 1000);
 // Update time ago every minute
 setInterval(updateTimeAgo, 60 * 1000);
