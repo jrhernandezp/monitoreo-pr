@@ -214,12 +214,24 @@ def mentions_municipio(text: str) -> List[str]:
     text = plain(text or "")
     # These names refer to US states or a fair, not the Puerto Rico municipality.
     text = re.sub(r"\b(?:(?:north|south)\s+carolina|carolina\s+(?:del\s+)?(?:norte|sur)|carolina\s+classic\s+fair)\b", "", text)
+    # Remove explicit foreign places and artist/team names, preserving other local mentions.
+    for pattern in [
+        r"\bcarolina\s+(?:panthers|hurricanes)\b",
+        r"\bsoge\s+culebra\b",
+        r"\brio\s+grande\s+(?:do\s+(?:sul|norte)|del\s+sur)\b",
+        r"\b(?:la\s+)?ceiba\s*,?\s*(?:en\s+)?honduras\b",
+        r"\bsan\s+juan\s*,?\s*(?:(?:en|de)\s+)?(?:argentina|republica\s+dominicana)\b",
+        r"\brio\s+grande\s*,?\s*(?:(?:en|de)\s+)?(?:texas|nuevo\s+mexico|new\s+mexico|argentina|brasil)\b",
+    ]:
+        text = re.sub(pattern, "", text)
     return [m for m in MUNICIPIOS_NORESTE
             if re.search(r"(?<!\w)" + re.escape(plain(m)) + r"(?!\w)", text)]
 
 
 def is_relevant_title(title: str) -> bool:
     """Quick pre-filter: skip clearly irrelevant international topics."""
+    if mentions_municipio(title):
+        return True
     title_lower = title.lower()
     skip_words = [
         "real madrid", "champions league", "premier league",
