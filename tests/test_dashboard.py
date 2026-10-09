@@ -196,5 +196,80 @@ class RenderingAndStateTests(unittest.TestCase):
             save.assert_not_called()
 
 
+class ReliabilityTests(unittest.TestCase):
+    @patch("sources.collector.now_local", return_value=NOW)
+    def test_partial_failure_retains_recent_verified_news_with_original_time(self, _):
+        old = dict(article(), ultima_verificacion="2026-10-08T16:00:00-04:00")
+        stored = {"article_cache": [old], "source_health": {"Prueba": {"last_success": old["ultima_verificacion"]}}}
+        result = collector.preserve_failed_sources([], {"Prueba": "❌ HTTP 429", "Otra": "✅ OK"}, stored)
+        self.assertEqual(len(result), 1)
+        self.assertTrue(result[0]["conservada"])
+        self.assertEqual(result[0]["fecha"], old["fecha"])
+        self.assertEqual(result[0]["ultima_verificacion"], old["ultima_verificacion"])
+        self.assertEqual(stored["source_health"]["Prueba"]["last_success"], old["ultima_verificacion"])
+        self.assertEqual(stored["source_health"]["Prueba"]["retained"], 1)
+
+    @patch("sources.collector.now_local", return_value=NOW)
+    def test_success_with_zero_articles_does_not_restore_old_news(self, _):
+        stored = {"article_cache": [article()]}
+        self.assertEqual(collector.preserve_failed_sources([], {"Prueba": "✅ OK"}, stored), [])
+        self.assertEqual(stored["source_health"]["Prueba"]["count"], 0)
+        self.assertEqual(stored["source_health"]["Prueba"]["last_success"], NOW.isoformat())
+
+    @patch("sources.collector.now_local", return_value=NOW)
+    def test_cache_expiration_and_corruption_do_not_break_collection(self, _):
+        stored = {"article_cache": [None, {}, article(date="2026-10-06 12:00"), article(date="2026-10-09 12:00"), article(link="javascript:alert(1)")], "source_health": {"Prueba": None}}
+        self.assertEqual(collector.preserve_failed_sources([], {"Prueba": "❌ Timeout"}, stored), [])
+
+    @patch("sources.collector.now_local", return_value=NOW)
+    def test_fresh_duplicate_wins_and_all_source_counts_are_kept(self, _):
+        stored = {"article_cache": [article()]}
+        fresh = dict(article(), fuente="Otra")
+        result = collector.preserve_failed_sources([fresh], {"Prueba": "❌ Timeout", "Otra": "✅ OK"}, stored)
+        self.assertEqual(len(result), 1)
+        self.assertFalse(result[0]["conservada"])
+        self.assertEqual(stored["source_health"]["Otra"]["count"], 1)
+        merged = collector.deduplicate([article(), fresh])
+        stored = {}
+        collector.preserve_failed_sources(merged, {"Prueba": "✅ OK", "Otra": "✅ OK"}, stored)
+        self.assertEqual(stored["source_health"]["Otra"]["count"], 1)
+        self.assertEqual(stored["source_health"]["Prueba"]["count"], 1)
+
+    @patch("sources.collector.now_local", return_value=NOW)
+    def test_rss_group_failure_restores_individual_sources(self, _):
+        stored = {"article_cache": [dict(article(), tipo="RSS")]}
+        result = collector.preserve_failed_sources([], {"RSS - General": "❌ Timeout"}, stored)
+        self.assertTrue(result[0]["conservada"])
+
+    def test_explicit_foreign_context_and_artist_do_not_match(self):
+        for value in ["Soge Culebra estrena una canción", "San Juan, Argentina", "La Ceiba, Honduras", "Río Grande do Sul", "Río Grande, Texas", "Carolina Panthers"]:
+            self.assertEqual(rss_feeds.mentions_municipio(value), [])
+        self.assertEqual(rss_feeds.mentions_municipio("San Juan, Puerto Rico recibe visitantes de San Juan, Argentina"), ["San Juan"])
+        self.assertTrue(rss_feeds.is_relevant_title("Carolina recibe visitantes de China"))
+
+    @patch("sources.collector.now_local", return_value=NOW)
+    def test_health_details_are_escaped_and_cached_news_are_not_breaking(self, _):
+        from bs4 import BeautifulSoup
+        stored = {"last_successful_collection": NOW.isoformat(), "source_health": {"Prueba": {"last_success": NOW.isoformat(), "count": None, "retained": 1}}}
+        item = dict(article("Emergencia en Carolina"), conservada=True, ultima_verificacion=NOW.isoformat())
+        html = renderer.generate_html([item], {"Prueba": "❌ <script>bad</script>"}, stored)
+        soup = BeautifulSoup(html, "html.parser")
+        self.assertEqual(soup.select_one("#freshnessNotice")["data-collected-at"], NOW.isoformat())
+        self.assertIsNotNone(soup.select_one(".badge-retained"))
+        self.assertIsNone(soup.select_one(".breaking-section"))
+        self.assertNotIn("<script>bad</script>", html)
+        self.assertIn("Sin dato", soup.select_one(".health-details").get_text())
+
+    def test_weekly_reset_preserves_cache_and_health(self):
+        import dashboard
+        stored = {"seen": ["old"], "session_date": "2026-10-01", "article_cache": [article()]}
+        with tempfile.TemporaryDirectory() as directory, patch.object(dashboard, "OUTPUT_FILE", Path(directory) / "index.html"), patch.object(dashboard, "now_local", return_value=NOW), patch("sources.collector.now_local", return_value=NOW), patch.object(dashboard, "should_reset_weekly", return_value=True), patch.object(dashboard, "load_state", return_value=stored), patch.object(dashboard, "collect_all", return_value=([], {"Prueba": "❌ Timeout", "Otra": "✅ OK"}, [])), patch.object(dashboard, "save_state") as save:
+            dashboard.main()
+            saved = save.call_args.args[0]
+            self.assertTrue(saved["article_cache"][0]["conservada"])
+            self.assertFalse(saved["article_cache"][0]["es_nueva"])
+            self.assertEqual(saved["last_successful_collection"], NOW.isoformat())
+
+
 if __name__ == "__main__":
     unittest.main()
