@@ -790,15 +790,15 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-09 06:46:08 AM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-09 07:01:19 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">25</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">2</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">26</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">65/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-09 06:46:08 AM</div><div class="label">Último scrape</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-09 07:01:19 AM</div><div class="label">Último scrape</div></div>
     </div>
 </div>
 
@@ -834,7 +834,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <div class="muni-card active" onclick="filtrarPor('Caguas')">
             <span class="muni-name">Caguas</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">3</span>
         </div>
         
         <div class="muni-card inactive" onclick="filtrarPor('Luquillo')">
@@ -919,10 +919,20 @@ tr.article-row:hover { background: var(--surface2); }
                 
                 <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
                 
+                <tr class="article-row" data-municipios="Caguas" data-titular="Criollas vencen a Las Monarcas en el BSNF">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVO</span>
+                        <a href="https://esnoticiapr.com/criollas-vencen-a-las-monarcas-en-el-bsnf/" target="_blank">Criollas vencen a Las Monarcas en el BSNF</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-10-09 10:51">ahora</td>
+                </tr>
+                
                 <tr class="article-row" data-municipios="Humacao" data-titular="Arrestan a prófugo federal durante allanamiento en Humacao - Telemundo Puerto Rico">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNc3ZmYnBMUjMyc2JSQlNNcktxbV9VaTVsb3NQUXB1alpaOENyOVBHcW5FWktSNjZldFp2bDlRbEo0RnhDTlBBeHp2eDk4OU9SYmhPeThIZjBTNUkxYnNxVVVEZVhtYktXR2RZb0wwR2JEWlNxUmNBSDlpaU9sdTRfSXdEM3M3NlJ5N3hwNDhpQi1Pd3RTNHFuQUctUHVOazRad21RcGxveDIzcUhHelkzUi1xQzF3MTTSAb8BQVVfeXFMTjBkeFdDVzVPX0pWanNUeWhOVmFEVGZ3UGRmbGNKeFpFYlVTYVlndG15VlI3QkNqaHQ4NnE2Wmx0SVNKWnFKRlFyQWhuc2FZNUF2MHMxeFVIZ3ExZkozWDhwcWZ0Vm44UE0xOXhzVGtGVlBNQ2NPcWN6Sy1iaXI0TDVjYXpvOHpFczltUFRFOFhOR0I0NEJGdDFFYWpVcHJBTWFOUERhNk5NUUZDWDFFSWhSNzN6Z3VwZTVJbElHNzA?oc=5" target="_blank">Arrestan a prófugo federal durante allanamiento en Humacao - Telemundo Puerto Rico</a>
                     </td>
                     <td>Humacao</td>
@@ -932,7 +942,7 @@ tr.article-row:hover { background: var(--surface2); }
                 <tr class="article-row" data-municipios="Caguas" data-titular="Reportan carjacking a mano armada en una gasolinera de Caguas">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVO</span>
+                        
                         <a href="https://www.elnuevodia.com/noticias/seguridad/notas/reportan-carjacking-a-mano-armada-en-una-gasolinera-de-caguas/" target="_blank">Reportan carjacking a mano armada en una gasolinera de Caguas</a>
                     </td>
                     <td>El Nuevo Día</td>
@@ -966,7 +976,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.elnuevodia.com/noticias/locales/notas/mujer-de-85-anos-a-punto-de-ser-desahuciada-y-lanzada-a-la-calle-en-san-juan-asi-tratan-a-las-personas-mayores/" target="_blank">Mujer de 85 años a punto de ser desahuciada y lanzada a la calle en San Juan: “Así tratan a las personas mayores”</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-10-09 06:46">ahora mismo</td>
+                    <td class="time-ago" data-date="2026-10-09 07:01">ahora mismo</td>
                 </tr>
                 
                 
@@ -999,7 +1009,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxQbXFNczhXd2xTQUplbk5XT0ptRkh1TW5ZTzRzMmlrQkxwck9lR1ZnOVZieWZGVnZjVmFISDNnZ2ljWGdNLTZ3YkdORnV6bEc5VU1EYnkwXzBVcW1TSUN3UmY1WC0wRC1tTi1xRnp4R0hNVkNmZ3BpbG1Yby1Jdkd4ZDdVb3dIRTNySmk5XzF1VGxwZ2gtRzZSMmZQUWE2VV9JNWdpR1VWcG9jajFDYXVGTEVOWXM3T3Myc2FsNUYxRm5YdEw2bnBmZEJvWi1OaXJhdEHSAdoBQVVfeXFMTlRpMEZicjNHbndQV1ZSOHlhSk5VTng0ZWx3ZkZzVDRlbkFEek5VTXdBdGZmbTJ6RkRNMXNyeFBaT28yTHFnUVhDWWZRVmFRTHNsZ29nN0xZdVBlTmZXWlMtZ29aUFJTMTEwMDZMa1VLa2hFYnBQNWllTGstdjFZVmxZS3pXX1pCNXBSbjRDRjBmeUFRRThEdWM3b2hsdEVNM0cyQnQyckJfMVJxWWJvaEJjMGRmbFJ2M0s1Z1pSY3J4SWxKdEI1TTRoTE5pTE43RlBfVThKOUJqNEE?oc=5" target="_blank">Piden ayuda para dar con paradero de adolescente desaparecido en Trujillo Alto - Telemundo Puerto Rico</a>
                     </td>
                     <td>Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-10-09 01:01">hace 5h</td>
+                    <td class="time-ago" data-date="2026-10-09 01:01">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Inician trabajos para la construcción del Nuevo Cementerio Municipal de Humacao, desarrollado por Cementerio Toñito Flores LLC">
@@ -1122,7 +1132,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxQX0VIbnlhLUFTWW9jS3EwNl80MHVrWlFvdkVnUjQxSFJ3aVl6b3ZPMXpDbnpBUnZMZG4zR2Nfd3hmR2psR1RQOGRPY3ZSbm83bUEzTW1sYXk0RWJFeFRGU21lTFgxRFNKcWhPc0w0UnFIQlUzR0ljQUNTRi0xckI1ZXpOa1lvSFhDZER0Yjk4eVpDYUplckgzTWZMeXVya1hEb1NESWYxclZDbkxjSGhaTXdjRTRmX3JFYlNMUVZ0V2pudlpNd0g3S2VvZF9HRkhfdl9kWF85c0lzd09nNVdGR21zWktnMFpUY2FhN0lrLUVTdm8?oc=5" target="_blank">Municipio de Humacao celebra el Día Nacional «Viejo te Amo» junto a FundAcción MMM Decenas de adultos mayores disfrutaron de una jornada de confraternización, actividad física y reconocimiento en la plaza pública Luis Muñoz Rivera. (Humacao, Puert - Facebook</a>
                     </td>
                     <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-10-08 14:59">hace 15h</td>
+                    <td class="time-ago" data-date="2026-10-08 14:59">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="📢 Aviso Público | Subasta Municipal El Municipio de Canóvanas informa que la Junta de Subastas estará recibiendo propuestas para la siguiente subasta: Subasta 004-2026-2027 Disposición de Vehículos y Equipos Inservibles Propiedad del Municipio de C - Facebook">
@@ -1328,7 +1338,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — Generado por Hermes Agent — 2026-10-09 06:46:08 AM<br>
+    Observador del Noreste — Generado por Hermes Agent — 2026-10-09 07:01:19 AM<br>
     Actualización automática cada 30 min
 </div>
 
