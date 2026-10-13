@@ -33,9 +33,15 @@ cada 15 minutos; GitHub puede retrasarlas. También se ejecuta con pushes a
 
 Si usas News API en Actions, configura el secreto de repositorio
 `NEWS_API_KEY`. No es necesario para RSS.
-El estado de noticias vistas se conserva mediante caché entre ejecuciones.
-La caché puede desaparecer, en cuyo caso las noticias se marcarán como nuevas.
-Los datos del estado nunca se publican en Pages.
+La automatización ejecuta `update_news.py`: usa RSS públicos sin claves ni APIs de pago.
+Prueba y construye con permiso de lectura, guarda `index.html`, `dashboard.html` y
+`noticias.json` en `master` en otro job y despliega Pages después del push.
+Si la rama cambia durante la construcción, aborta sin sobrescribir cambios; el
+próximo horario recoge el nuevo código. No usa push forzado.
+El estado se conserva mediante caché acotada; si desaparece, `noticias.json`
+permite recuperar noticias previas y marcadores. El historial detallado de
+salud puede perderse. La caché no debe contener secretos.
+`data/state.json` nunca se copia al sitio ni al commit automático.
 
 `dashboard.html` y `index.html` se publican con el mismo contenido.
 La recarga de la vista cada 15 minutos no garantiza por sí misma una nueva
@@ -70,8 +76,10 @@ con su fecha de publicación y última verificación originales. No aparecen
 como nuevos ni en el banner urgente. Una fuente que responde correctamente
 con cero artículos no utiliza este respaldo. Si todas fallan, se mantiene
 la protección que conserva la última publicación. El respaldo y el historial
-se guardan en el mismo state.json privado y dependen de la caché de Actions;
-no se garantiza recuperar noticias si la caché ha desaparecido.
+se guardan en state.json, fuera del sitio. El JSON público respalda noticias
+si desaparece la caché; no recupera todo el historial de salud. Los marcadores
+representan noticias recopiladas, no una confirmación de lectura del periodista.
+La caché puede avanzar aunque falle una etapa posterior de publicación.
 
 La clasificación excluye referencias explícitas a localidades extranjeras
 y nombres como Carolina Panthers o Soge Culebra, sin descartar otras
@@ -82,3 +90,17 @@ menciones locales en el mismo texto. Sigue siendo una heurística.
 ni enviar archivos de estado privados a GitHub.
 La generación y el estado se escriben de forma atómica para evitar archivos
 parciales. El estado se guarda después de generar el HTML correctamente.
+
+## Presupuesto y precisión
+
+El cron solicita ejecuciones a los minutos 08, 23, 38 y 53 UTC de cada hora.
+GitHub puede retrasarlas u omitirlas: no existe garantía de puntualidad ni de
+intervalo efectivo de 900 segundos entre publicaciones. Un programador externo
+que dispare Actions tampoco elimina las colas o demoras de Pages.
+
+El repositorio es público y usa runners estándar de Ubuntu. Cada sitio está
+limitado a 1 MiB; se conserva cada artefacto un día y no se suben cachés de pip.
+La cadencia son 96 ejecuciones al día, 2.976 en un mes de 31 días. Artefactos y
+tráfico también tienen límites; monitorizar el consumo agregado de la cuenta.
+Las versiones de acciones están fijadas a SHA y las dependencias a versiones.
+No se promete seguridad absoluta ni se elimina el riesgo de la cadena de suministro.

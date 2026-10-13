@@ -1,86 +1,143 @@
-name: Deploy Dashboard to GitHub Pages
+name: Actualizar y publicar Observador del Noreste
 
 on:
-  push:
-    branches: ["master"]
-  workflow_dispatch:
   schedule:
-    # Refresh the cron registration while keeping a 15-minute interval.
-    - cron: "8,23,38,53 * * * *"
+    - cron: '8,23,38,53 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/deploy-pages.yml'
+      - 'update_news.py'
+      - 'sources/**'
+      - 'templates/**'
+      - 'tests/**'
+      - 'requirements-ci.txt'
+      - 'logo-observador.jpg'
+      - 'icon.png'
+      - 'privacidad.html'
 
-permissions:
-  contents: read
+permissions: {}
 
-# News updates supersede older deployments, including ones waiting on an environment.
+# Serializar recolección, persistencia y publicación sin interrumpir escrituras.
 concurrency:
-  group: "pages"
-  cancel-in-progress: true
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    permissions:
+      contents: read
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - name: Obtener código sin conservar credenciales
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Preparar Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.12'
-          cache: pip
-      - name: Install dependencies
-        run: python -m pip install -r requirements.txt
-      - name: Regression tests
+      - name: Instalar versiones verificadas
+        run: python -m pip install --disable-pip-version-check -r requirements-ci.txt
+      - name: Ejecutar pruebas
         run: python -m unittest discover -s tests -v
-      - name: Restore seen articles
-        uses: actions/cache/restore@v4
+      - name: Recuperar estado anterior si está disponible
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
         with:
           path: data/state.json
-          key: dashboard-state-v1-${{ github.run_id }}-${{ github.run_attempt }}
-          restore-keys: dashboard-state-v1-
-      - name: Collect and render news
-        env:
-          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
-        run: python dashboard.py
-      - name: Save seen articles
-        uses: actions/cache/save@v4
+          key: dashboard-state-v2-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: dashboard-state-v2-
+      - name: Extraer RSS, validar y reconstruir
+        run: python update_news.py
+      - name: Conservar estado acotado
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
         with:
           path: data/state.json
-          key: dashboard-state-v1-${{ github.run_id }}-${{ github.run_attempt }}
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Prepare current dashboard
-        shell: bash
-        run: |
-          set -euo pipefail
-          test -s index.html
-          mkdir -p _site
-          cp index.html _site/index.html
-          # Keep the legacy URL current instead of publishing the stale snapshot.
-          cp index.html _site/dashboard.html
-          cp logo-observador.jpg icon.png privacidad.html _site/
-          touch _site/.nojekyll
-          cmp _site/index.html _site/dashboard.html
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+          key: dashboard-state-v2-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Preparar Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b
+      - name: Transferir solamente salidas públicas para el commit
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: noticias-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            _site/index.html
+            _site/dashboard.html
+            _site/noticias.json
+          retention-days: 1
+          if-no-files-found: error
+      - name: Transferir sitio para Pages
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
         with:
           name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
           path: _site
           retention-days: 1
 
-  deploy:
+  persist:
     needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    permissions:
+      contents: write
+    steps:
+      - name: Obtener la rama de publicación
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: master
+          persist-credentials: false
+      - name: Recuperar las salidas validadas
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: noticias-${{ github.run_id }}-${{ github.run_attempt }}
+          path: salidas
+      - name: Guardar y enviar sin sobrescribir cambios concurrentes
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_SHA: ${{ github.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Nunca publicar HTML construido con un código anterior al HEAD actual.
+          if [ "$(git rev-parse HEAD)" != "$EXPECTED_SHA" ]; then
+            echo 'La rama cambió durante la recolección. Se aborta sin sobrescribirla.'
+            exit 1
+          fi
+          test -s salidas/index.html
+          test -s salidas/noticias.json
+          cmp salidas/index.html salidas/dashboard.html
+          cp salidas/index.html salidas/dashboard.html salidas/noticias.json .
+          git add -f -- index.html dashboard.html noticias.json
+          if git diff --cached --quiet; then
+            echo 'Sin cambios que guardar.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Actualizar noticias del Observador del Noreste'
+          # Credencial efímera sólo para push; no se guarda en el remoto ni en disco.
+          AUTH_HEADER="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          echo "::add-mask::$AUTH_HEADER"
+          export GIT_CONFIG_COUNT=1
+          export GIT_CONFIG_KEY_0=http.https://github.com/.extraheader
+          export GIT_CONFIG_VALUE_0="AUTHORIZATION: basic $AUTH_HEADER"
+          git push origin HEAD:master
+
+  deploy:
+    needs: persist
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
     permissions:
       pages: write
       id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Publicar sitio ya guardado
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e
         with:
           artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}

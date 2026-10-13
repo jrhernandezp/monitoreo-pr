@@ -13,6 +13,9 @@ from html import unescape
 from sources.dates import now_local, PUERTO_RICO
 from datetime import datetime, timedelta
 from typing import List, Dict, Tuple
+from xml.sax import SAXParseException
+
+MAX_FEED_BYTES = 4 * 1024 * 1024
 
 # Solo noticias de los últimos N días
 MAX_DAYS_OLD = 14
@@ -257,7 +260,7 @@ def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10, extra_hea
         try:
             if use_curl:
                 import subprocess as sp
-                curl_cmd = ['curl', '-fsSL', '--max-time', '10']
+                curl_cmd = ['curl', '-fsSL', '--max-time', '10', '--max-filesize', str(MAX_FEED_BYTES), '--proto', '=https', '--proto-redir', '=https']
                 if extra_headers:
                     for k, v in extra_headers.items():
                         curl_cmd += ['-H', f'{k}: {v}']
@@ -267,6 +270,8 @@ def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10, extra_hea
                 result = sp.run(curl_cmd, capture_output=True, text=True, timeout=15)
                 if result.returncode != 0:
                     return None, f"curl error: exit {result.returncode}"
+                if len(result.stdout.encode('utf-8')) > MAX_FEED_BYTES:
+                    return None, 'respuesta RSS demasiado grande'
                 feed = feedparser.parse(result.stdout)
             else:
                 headers = {'User-Agent': 'Mozilla/5.0'}
@@ -274,10 +279,14 @@ def fetch_rss(source_name: str, feed_url: str, max_articles: int = 10, extra_hea
                     headers.update(extra_headers)
                 req = urllib.request.Request(feed_url, headers=headers)
                 with urllib.request.urlopen(req, timeout=10) as resp:
-                    feed_data = resp.read()
+                    feed_data = resp.read(MAX_FEED_BYTES + 1)
+                if len(feed_data) > MAX_FEED_BYTES:
+                    return None, 'respuesta RSS demasiado grande'
                 feed = feedparser.parse(io.BytesIO(feed_data))
         except Exception as e:
             return None, f"timeout/error: {e}"
+        if isinstance(getattr(feed, 'bozo_exception', None), SAXParseException):
+            return None, 'XML RSS/Atom malformado'
         return feed, None
 
     # Retry with exponential backoff for rate limits
