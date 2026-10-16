@@ -801,21 +801,21 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-15 06:38:55 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-15 08:49:04 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">77</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">8</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">71</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">4</div><div class="label">Nuevas</div></div>
         <div class="stat-box"><div class="num">14</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">59/62</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-15 06:38:55 PM</div><div class="label">Última recolección</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-15 08:49:04 PM</div><div class="label">Última recolección</div></div>
     </div>
 </div>
 
 <!-- SEARCH -->
-<div id="freshnessNotice" class="freshness" role="status" aria-live="polite" data-collected-at="2026-10-15T18:38:55.663685-04:00">
-    <strong id="freshnessText">Última recolección exitosa: 2026-10-15 06:38:55 PM (hora de Puerto Rico).</strong>
+<div id="freshnessNotice" class="freshness" role="status" aria-live="polite" data-collected-at="2026-10-15T20:49:04.185265-04:00">
+    <strong id="freshnessText">Última recolección exitosa: 2026-10-15 08:49:04 PM (hora de Puerto Rico).</strong>
     <p>Una recarga de la página no implica una nueva recolección. Aviso desde los 30 minutos; alerta desde los 45.</p>
     <p>2 noticias conservadas por fallos de fuentes; mantienen su fecha de publicación y última verificación.</p>
 </div>
@@ -827,6 +827,13 @@ tr.article-row:hover { background: var(--surface2); }
 
 <!-- BREAKING NEWS -->
 
+<div class="section breaking-section">
+    <h2>🚨 Noticias de última hora</h2>
+    
+    <p><a href="https://nelpr.com/2026/10/15/departamento-de-educacion-activa-sistema-de-alertas-de-emergencia-en-escuelas/" target="_blank" rel="noopener noreferrer">Departamento de Educación activa sistema de alertas de emergencia en escuelas</a> — <span class="time-ago" data-date="2026-10-15T20:12:00-04:00">hace 37min</span></p>
+    
+</div>
+
 
 <!-- MUNICIPALITIES -->
 <div class="section">
@@ -835,12 +842,12 @@ tr.article-row:hover { background: var(--surface2); }
         
         <button type="button" class="muni-card " data-municipio="San Juan">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">21</span>
+            <span class="muni-count">17</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Carolina">
             <span class="muni-name">Carolina</span>
-            <span class="muni-count">5</span>
+            <span class="muni-count">3</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Trujillo Alto">
@@ -850,7 +857,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <button type="button" class="muni-card " data-municipio="Caguas">
             <span class="muni-name">Caguas</span>
-            <span class="muni-count">10</span>
+            <span class="muni-count">11</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Luquillo">
@@ -865,7 +872,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <button type="button" class="muni-card " data-municipio="Fajardo">
             <span class="muni-name">Fajardo</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">2</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Loíza">
@@ -885,7 +892,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <button type="button" class="muni-card " data-municipio="Naguabo">
             <span class="muni-name">Naguabo</span>
-            <span class="muni-count">14</span>
+            <span class="muni-count">13</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Humacao">
@@ -895,7 +902,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <button type="button" class="muni-card " data-municipio="Cataño">
             <span class="muni-name">Cataño</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">4</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Vieques">
@@ -933,61 +940,97 @@ tr.article-row:hover { background: var(--surface2); }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
                 
+                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Departamento de Educación activa sistema de alertas de emergencia en escuelas">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://nelpr.com/2026/10/15/departamento-de-educacion-activa-sistema-de-alertas-de-emergencia-en-escuelas/" target="_blank" rel="noopener noreferrer">Departamento de Educación activa sistema de alertas de emergencia en escuelas</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-10-15T20:12:00-04:00">hace 37min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Anuncian cierre de tres días en Expreso PR-52">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://nelpr.com/2026/10/15/anuncian-cierre-de-tres-dias-en-expreso-pr-52/" target="_blank" rel="noopener noreferrer">Anuncian cierre de tres días en Expreso PR-52</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-10-15T20:08:00-04:00">hace 41min</td>
+                </tr>
+                
+                
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Reinas de belleza boricuas brillan en el homenaje “Las Fabulosas de San Juan Moda”">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxNMlRseUg1U1ctZzlyUmFvSGlIYWRzX05yRlVFaTZjUzVpcmpOb1FsQk1OZjBMeENBN0gwcEdRYlIzclRuVVFQRWt4TUxLZGtjaUt5R0FtZ1V2ZkhVaEtOY2JIbk5DRmJCNUFNeF9nU1JSUGJfNGRMTDZmbjN4RnhvUDBqOFZud1FfZy1WRW9OdXp5RlpDM2F2RW1IcWRBajgtY214b0EwcXJCVFg4OHdMbEMwTTRqM3FyblF5a28yYTJZY0c0cVk5Vk5FT3NTZHhrQXFWM2VKdHhCR0dwVnBWZUZSY05DY045?oc=5" target="_blank" rel="noopener noreferrer">Reinas de belleza boricuas brillan en el homenaje “Las Fabulosas de San Juan Moda”</a>
                     </td>
                     <td>Primera Hora</td>
-                    <td class="time-ago" data-date="2026-10-15T17:21:00-04:00">hace 1h</td>
+                    <td class="time-ago" data-date="2026-10-15T17:21:00-04:00">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="El BSN archiva caso contra José Manuel Baeza y descarta sanciones">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://www.elnuevodia.com/deportes/baloncesto/notas/el-bsn-archiva-caso-contra-jose-manuel-baeza-y-descarta-sanciones/" target="_blank" rel="noopener noreferrer">El BSN archiva caso contra José Manuel Baeza y descarta sanciones</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-10-15T17:14:00-04:00">hace 1h</td>
+                    <td class="time-ago" data-date="2026-10-15T17:14:00-04:00">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Miss Universe Puerto Rico 2015, Catalina Morales, luce su avanzado estado de embarazo">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://www.elnuevodia.com/entretenimiento/farandula/notas/miss-universe-puerto-rico-2015-catalina-morales-luce-su-avanzado-estado-de-embarazo/" target="_blank" rel="noopener noreferrer">Miss Universe Puerto Rico 2015, Catalina Morales, luce su avanzado estado de embarazo</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-10-15T17:11:00-04:00">hace 1h</td>
+                    <td class="time-ago" data-date="2026-10-15T17:11:00-04:00">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="San Cristobalitos Coop cultiva los valores del cooperativismo desde la niñez en Caguas">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxOU1ZWX2RNd29jYkhOanBoLWpQSk0tT053VVJoanpKdkRjRzllTEI3OE1BTWRxUXZlMjdWcEdmczVSZ2FHOS1ILWdtWWlXRmxHMXkzcGJ2d2Y3bjUyUzhXUFhDMFItOVFzTkRYY0M4QlM2Uml2clk4aDVsNktqQU9xaXI0Sk5HYVRUMUN0dklhbXlVV04xRlFkUzJzWHZOZ3VSVnpnc3k5blhFUmxQS3g2RWhCdkJzY1NWUnU5RmF2UE41ajBIQUliSWxzNWFoRGdXOWJMa2ZTN3dtQQ?oc=5" target="_blank" rel="noopener noreferrer">San Cristobalitos Coop cultiva los valores del cooperativismo desde la niñez en Caguas</a>
                     </td>
                     <td>Primera Hora</td>
-                    <td class="time-ago" data-date="2026-10-15T17:06:00-04:00">hace 1h</td>
+                    <td class="time-ago" data-date="2026-10-15T17:06:00-04:00">hace 3h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño. . Vista Pública de Transición Cataño 2026 Tema: Inquietudes del Pueblo">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOY2pocnRpa2lkRDBmT2NJSy1icFVrQVQ3R29aQzVJdzI5UVBBWDB1bHdvUi1qd2lZZTFRMl81dkstcW1WZFhtT0hXUlk4ZXBiSnoyMU83aFpQOVIxS3VFRURJUVFCSzNEUnpXY0N2alRxUFZISXFkSXBNRlRnS09hRXlJWFE3OXZxeE5zWTlPSFNVeGg2R0NpRDJibEdVVUpMVjJPakJJTWxXSm9jV2QyTQ?oc=5" target="_blank" rel="noopener noreferrer">Municipio Autónomo de Cataño. . Vista Pública de Transición Cataño 2026 Tema: Inquietudes del Pueblo</a>
+                    </td>
+                    <td>FB - Cataño</td>
+                    <td class="time-ago" data-date="2026-10-15T16:23:00-04:00">hace 4h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Comisión senatorial no puede identificar beneficios de la ley sobre plásticos de un solo uso">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://noticel.com/ultima-hora/20261015/comision-senatorial-no-puede-identificar-beneficios-de-la-ley-sobre-plasticos-de-un-solo-uso/" target="_blank" rel="noopener noreferrer">Comisión senatorial no puede identificar beneficios de la ley sobre plásticos de un solo uso</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-10-15T16:00:00-04:00">hace 2h</td>
+                    <td class="time-ago" data-date="2026-10-15T16:00:00-04:00">hace 4h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="OPEN HOUSE EN RÍO GRANDE! Conoce esta propiedad de 3 habitaciones y 1 baño, con terreno de 763.79 m² y acceso a la PR-3. 📍 Bo. Carola | Carr. 955, Río Grande 💰 $149,000 o mejor oferta 🗓️ Jueves, 15 de octubre 🕓 4:00 p. m. a 6:00 p. m. ¡Ven a rec">
@@ -998,7 +1041,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxNb0hiSUJkMHFyZ25sa0treXl2em5qYTE5bXBfWXd6ekN6LTJaS3o1TUwtMWJ0eFV3SFB2QUFfYUNyZHJmWkZEdUQ2SEtDRzNCUGhFRVp2ZVhCSldSSDdoT09FekkxNjNsQjRWdkVMejZLbTc3by1ZeGtHWG1ZTWtwai1iMEdiTmNobVJMT0ZGeEVhQnkzdDZOLWRJX2tvaWJNb0YwOVBMc0lKamZiSTJYSlE3UFNHU3RnQkkyRjJJbExDdFpfYl9UbXBXbUoyQ2hvQjBaMGduZkdNc2JYakZ0YXhBM2U4SWh4?oc=5" target="_blank" rel="noopener noreferrer">OPEN HOUSE EN RÍO GRANDE! Conoce esta propiedad de 3 habitaciones y 1 baño, con terreno de 763.79 m² y acceso a la PR-3. 📍 Bo. Carola | Carr. 955, Río Grande 💰 $149,000 o mejor oferta 🗓️ Jueves, 15 de octubre 🕓 4:00 p. m. a 6:00 p. m. ¡Ven a rec</a>
                     </td>
                     <td>FB - Río Grande</td>
-                    <td class="time-ago" data-date="2026-10-15T15:26:00-04:00">hace 3h</td>
+                    <td class="time-ago" data-date="2026-10-15T15:26:00-04:00">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Escritora naguabeña presenta libro sobre la conservación del sapo concho puertorriqueño">
@@ -1009,7 +1052,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/15/escritora-naguabena-presenta-libro-sobre-la-conservacion-del-sapo-concho-puertorriqueno/" target="_blank" rel="noopener noreferrer">Escritora naguabeña presenta libro sobre la conservación del sapo concho puertorriqueño</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-15T15:11:00-04:00">hace 3h</td>
+                    <td class="time-ago" data-date="2026-10-15T15:11:00-04:00">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Alcalde de Vieques expresa preocupación ante posible salida del presidente de HMS Ferries">
@@ -1020,7 +1063,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/15/alcalde-de-vieques-expresa-preocupacion-ante-posible-salida-del-presidente-de-hms-ferries/" target="_blank" rel="noopener noreferrer">Alcalde de Vieques expresa preocupación ante posible salida del presidente de HMS Ferries</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-15T14:47:00-04:00">hace 3h</td>
+                    <td class="time-ago" data-date="2026-10-15T14:47:00-04:00">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba" data-titular="🏡 ¡OPORTUNIDAD EN CEIBA POR SOLO $57,500! ¿Buscas una propiedad económica para convertirla en tu hogar o evaluar como inversión? 👀 📍 Comunidad Saco, Ceiba, PR 💰 Precio: $57,500 🛏 3 habitaciones 🛁 1 baño 📐 Aproximadamente 750 p² 🔥 Una">
@@ -1031,7 +1074,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxOenVZd1l0bXp5bmx3N2RUUzdYbUY2akZDTTFOazhVcWZTcXI1SXp2X0xpOHZkLWlULTc3WnI2RTIxdWtMekxDSFlXcmlOUF9fQjFqQURFRkFJNUJ5akZNTi1ybGJrZkVIOVhQM0lnamZ3WF9vdlZ4bWlOODh6MldzSTJvU2l5M2NYSkw1QU5WTWdBbGJ4WnRhWUhueVdaMzVzYlgxNlZOeExDRmhLeTFKdGZWajctMVNvMEN0dnByZ2Y2V2o4WENrVENmQVNEdDBIcUpVR3N4Wjgzb0FRdk95Y3Rn?oc=5" target="_blank" rel="noopener noreferrer">🏡 ¡OPORTUNIDAD EN CEIBA POR SOLO $57,500! ¿Buscas una propiedad económica para convertirla en tu hogar o evaluar como inversión? 👀 📍 Comunidad Saco, Ceiba, PR 💰 Precio: $57,500 🛏 3 habitaciones 🛁 1 baño 📐 Aproximadamente 750 p² 🔥 Una</a>
                     </td>
                     <td>FB - Ceiba</td>
-                    <td class="time-ago" data-date="2026-10-15T14:28:00-04:00">hace 4h</td>
+                    <td class="time-ago" data-date="2026-10-15T14:28:00-04:00">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Educación inaugura y activa  sistema de alertas de emergencias">
@@ -1042,7 +1085,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/educacion-inaugura-y-activa-sistema-de-alertas-de-emergencias/" target="_blank" rel="noopener noreferrer">Educación inaugura y activa  sistema de alertas de emergencias</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-10-15T13:46:00-04:00">hace 4h</td>
+                    <td class="time-ago" data-date="2026-10-15T13:46:00-04:00">hace 7h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="La crema del boxeo puertorriqueño rinde honores a Wilfredo “Bakooka” Gómez">
@@ -1053,7 +1096,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://noticel.com/deportes/20261015/la-crema-del-boxeo-puertorriqueno-rinde-honores-a-wilfredo-bakooka-gomez/" target="_blank" rel="noopener noreferrer">La crema del boxeo puertorriqueño rinde honores a Wilfredo “Bakooka” Gómez</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-10-15T13:44:00-04:00">hace 4h</td>
+                    <td class="time-ago" data-date="2026-10-15T13:44:00-04:00">hace 7h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Residente de Humacao denuncia tres días con bajo voltaje y teme incendio en su vivienda">
@@ -1064,7 +1107,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/15/residente-de-humacao-denuncia-tres-dias-con-bajo-voltaje-y-teme-incendio-en-su-vivienda/" target="_blank" rel="noopener noreferrer">Residente de Humacao denuncia tres días con bajo voltaje y teme incendio en su vivienda</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-15T13:27:00-04:00">hace 5h</td>
+                    <td class="time-ago" data-date="2026-10-15T13:27:00-04:00">hace 7h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="RADICAN CARGOS EN AUSENCIA CONTRA HOMBRE POR PRESUNTAMENTE ROBAR $4,200 DEL INTERIOR DE UN VEHÍCULO EN SAN JUAN Agentes de la División de Propiedad del Cuerpo de Investigaciones Criminales (CIC) de San Juan culminar">
@@ -1075,7 +1118,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNWFh4dTRnQWExc1NZLXoxMU1jWHF2SkxmQmh4dFVndDNoYjk0ZkZacTRBX3NrLTJlWmQ2enE2dkdHNW5yVnBtWGEzRUFobTVtbUxXRjNsX085Q1Rma0JlV1JvTFdMQWtjZ3A0cFFNcHR4MHlnWnlKdm9weFdwRDFKNjNzOWZnNDdhV1lCZFN5VEQ3Sjc1UGlYS28xUFFlOUhtOE1OVFIwR2tONTBEenNCSUVyWTNoQ0Jjb0FDRkZWMUVDUG53dWVIcXV1czNiQnRadUk4dVNaR3ZEeVl5Q0E?oc=5" target="_blank" rel="noopener noreferrer">RADICAN CARGOS EN AUSENCIA CONTRA HOMBRE POR PRESUNTAMENTE ROBAR $4,200 DEL INTERIOR DE UN VEHÍCULO EN SAN JUAN Agentes de la División de Propiedad del Cuerpo de Investigaciones Criminales (CIC) de San Juan culminar</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-10-15T12:34:00-04:00">hace 6h</td>
+                    <td class="time-ago" data-date="2026-10-15T12:34:00-04:00">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="#Deportes l ¡Este sábado Caguas se convierte en el centro del boxeo boricua!">
@@ -1086,7 +1129,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVUZfN3g4VU5mbHJuaWh0MHNGNUl2RHNGeHQ5NF9fQTFqRTRRZnNNcGo0eHJiclRTal8xNXpjWWF3NE15emcwTzUxS3FxNlpYY3Rqd1o5MDVDbWMwUlg1SEhFOE1adFI4VEl1Z1hWcEV2SWlHcVRrbENJOXJPU29nMEVBNV9qb0ZqRkpqbXJ1Rms5UE5MTnB6cnhOeXlUTjl5UXpjN2loNTlCdHV5QTVzQnZQZGMtVjZnVUh6VDF0a3FYTldkMkZ6R1gyVHJxbEdjNFR1NGJveEp5ZDdv?oc=5" target="_blank" rel="noopener noreferrer">#Deportes l ¡Este sábado Caguas se convierte en el centro del boxeo boricua!</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-10-15T12:06:00-04:00">hace 6h</td>
+                    <td class="time-ago" data-date="2026-10-15T12:06:00-04:00">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Así se vivió el Gran ShakeOut de Puerto Rico 2026 en la escuela Francisco Valdés, en Caguas.">
@@ -1097,7 +1140,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi8AFBVV95cUxQNGp4OHFMQ2tTdmFQWVZiZV9GNklNcXhvbkpYamtEMjJfMHprR0Y3eUp1ODRkd3BxYjA5UDc0bTBJZzUtX0JvOTZPS3p4RFRxT1B1S1E3RG9Rc29KeUZYWmdQd3lFWjVfbTlzc3Q3anR0eko5MkdCQlNVZTFUZExqLTE2QUhZOFZDdmFKRzRUb1JNR3YwSFJFME42SnR2ZnRYQ2tPZHVnRzhqUXpmOURYUGNOTVpHR2NZVEJieklUaHNUN0QtY2NDa0szRVc3MmxmYTRNbEZZczNMSHB1UnRnVHp1QlhZZk9sUzQ2aXNLdEE?oc=5" target="_blank" rel="noopener noreferrer">Así se vivió el Gran ShakeOut de Puerto Rico 2026 en la escuela Francisco Valdés, en Caguas.</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-10-15T12:05:00-04:00">hace 6h</td>
+                    <td class="time-ago" data-date="2026-10-15T12:05:00-04:00">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Nueva ley obliga a LUMA a confirmar solución de querellas antes de cerrarlas">
@@ -1108,7 +1151,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/10/15/nueva-ley-obliga-a-luma-a-confirmar-solucion-de-querellas-antes-de-cerrarlas/" target="_blank" rel="noopener noreferrer">Nueva ley obliga a LUMA a confirmar solución de querellas antes de cerrarlas</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-15T11:57:00-04:00">hace 6h</td>
+                    <td class="time-ago" data-date="2026-10-15T11:57:00-04:00">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba" data-titular="Ceiba se viste de rosa en marcha de concienciación sobre el cáncer de seno">
@@ -1119,7 +1162,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/15/ceiba-se-viste-de-rosa-en-marcha-de-concienciacion-sobre-el-cancer-de-seno/" target="_blank" rel="noopener noreferrer">Ceiba se viste de rosa en marcha de concienciación sobre el cáncer de seno</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-15T11:45:00-04:00">hace 6h</td>
+                    <td class="time-ago" data-date="2026-10-15T11:45:00-04:00">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Esta tarde vista en alzada contra imputado por muerte de gruero en Caguas">
@@ -1130,7 +1173,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/15/esta-tarde-vista-en-alzada-contra-imputado-por-muerte-de-gruero-en-caguas/" target="_blank" rel="noopener noreferrer">Esta tarde vista en alzada contra imputado por muerte de gruero en Caguas</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-15T11:20:00-04:00">hace 7h</td>
+                    <td class="time-ago" data-date="2026-10-15T11:20:00-04:00">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Municipio Autónomo de Caguas">
@@ -1141,7 +1184,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1NbkdPZkNKZUthN1ZXb056MTNkVzEwcFozaUczN3N4cFdxcm8zUUZlcXJ6UGxZZ3NVX2lVUmtqYXJiX1RCeHJ6c3ZqVGZ5Q0JsNkpZYWVCb1MtYjlxS0ZzR2lrSHJkM2xuM190eQ?oc=5" target="_blank" rel="noopener noreferrer">Municipio Autónomo de Caguas</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-10-15T11:07:00-04:00">hace 7h</td>
+                    <td class="time-ago" data-date="2026-10-15T11:07:00-04:00">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Representante propone devolver hasta el 50 % de las primas del Fondo del Seguro del Estado a patronos privados">
@@ -1152,18 +1195,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/15/representante-propone-devolver-hasta-el-50-de-las-primas-del-fondo-del-seguro-del-estado-a-patronos-privados/" target="_blank" rel="noopener noreferrer">Representante propone devolver hasta el 50 % de las primas del Fondo del Seguro del Estado a patronos privados</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-15T10:43:00-04:00">hace 7h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Intenso calor y hasta 90% de potencial de lluvia">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://nelpr.com/2026/10/15/intenso-calor-y-hasta-90-de-potencial-de-lluvia/" target="_blank" rel="noopener noreferrer">Intenso calor y hasta 90% de potencial de lluvia</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-15T10:16:00-04:00">hace 8h</td>
+                    <td class="time-ago" data-date="2026-10-15T10:43:00-04:00">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo,Río Grande" data-titular="ARRESTAN A HOMBRE DE 36 AÑOS Y OCUPAN DROGAS Y DINERO EN RÍO GRANDE Agentes de la Policía de Puerto Rico, adscritos a la Unidad Motorizada del área de Fajardo, arrestaron a un hombre de 36 años durante una intervención realizada en l">
@@ -1174,7 +1206,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxQejlEYlJQTGtiSFhac0VtRnpzXzRXR00ybzVIZWgya0hSYnZlaHR0eDBCb2JsTDFMek95YnQwYmNHNTNQTGt3eGRhUVpQUkdhS1hMcjItdnBld3h2Q0Q5aU56WGlkY1NqelFSdW5WOUJsQk9FTE5kbWVCS2xEZEdNYmNmVnJUenFFQnYwRXRFQkg0T3ZwM3BxRzNyaldDaUNrTHBGeDg0RThSUHZYb1hPTXBtNjdobDNOd2xqazFBeS1oWGc5UkphRjNiODQtTlBLNk12cHRybjJVaHk0TXhsZkdKeEpfa2hBcnBJ?oc=5" target="_blank" rel="noopener noreferrer">ARRESTAN A HOMBRE DE 36 AÑOS Y OCUPAN DROGAS Y DINERO EN RÍO GRANDE Agentes de la Policía de Puerto Rico, adscritos a la Unidad Motorizada del área de Fajardo, arrestaron a un hombre de 36 años durante una intervención realizada en l</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-10-15T09:44:00-04:00">hace 8h</td>
+                    <td class="time-ago" data-date="2026-10-15T09:44:00-04:00">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="El Pueblo se despide de Wilfredo &#34;Bazooka&#34; Gómez">
@@ -1185,18 +1217,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.notiuno.com/noticias/deportes/el-pueblo-se-despide-de-wilfredo-bazooka-g-mez/article_1f5c41cc-704d-48e8-89a8-80ddb4c34b37.html" target="_blank" rel="noopener noreferrer">El Pueblo se despide de Wilfredo &#34;Bazooka&#34; Gómez</a>
                     </td>
                     <td>NotiUno</td>
-                    <td class="time-ago" data-date="2026-10-15T09:03:00-04:00">hace 9h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="💊♻️FAJARDO SE UNE A LA CAMPAÑA NACIONAL DE RECOLECCIÓN DE MEDICAMENTOS RECETADOS♻️💊 El Gobierno Municipal Autónomo de Fajardo y su alcalde el Hon. José Aníbal “Joey” Meléndez Méndez, en coordinación con la Administració">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi_wFBVV95cUxNZWRZbFRpSzRNS1hnbkZoMlVJZWtScEtVMmxSM3BYZVdzZGFtdTZEcm04YVZXc0V3Q2xPeERzbHlreU5VWDhheEppa0JzQjFfTENrUW9zY1A3TnVMSDk0Q3p3bldKcFZJNmZWT2hTR05YWFpTUDBJV0hramRjeUVZSjRfZDBkdEswQ1BmRUJRZ2Rka3IxQUVjWWdVMkk4a0RfRlhVT1ZGX0xwMnB0eUNFaktJaHdvanZaRHZlWDI0b2R5ZENJS1dfVFN0UDROdUFYM052alNKVjh1WC1XQXRqTTBEZjZQeHIxVlVqRXNMUjJfS3NFa1VwYlp6VWFvRlU?oc=5" target="_blank" rel="noopener noreferrer">💊♻️FAJARDO SE UNE A LA CAMPAÑA NACIONAL DE RECOLECCIÓN DE MEDICAMENTOS RECETADOS♻️💊 El Gobierno Municipal Autónomo de Fajardo y su alcalde el Hon. José Aníbal “Joey” Meléndez Méndez, en coordinación con la Administració</a>
-                    </td>
-                    <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-10-15T09:01:00-04:00">hace 9h</td>
+                    <td class="time-ago" data-date="2026-10-15T09:03:00-04:00">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina,Canóvanas" data-titular="ARRESTAN A DOS PERSONAS Y OCUPAN ARMA DE FUEGO, MUNICIONES, DROGAS Y DINERO EN EFECTIVO EN CANÓVANAS. Agentes de la Policía de Puerto Rico, adscritos a la Unidad Motorizada de Carolina, arrestaron durante horas de la madru">
@@ -1207,7 +1228,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNdkEtTHBLNWJGWG1EMWtfTnFCeFdzNzUwVlprSEdyRS1VNnRyLU4tb2VLaktMX3NBX3E3UmN5T0tLUUFXa2Y2T2wxYzdNU3EtWVo0djJ0TXkwakFTbmljQ3Q4RzBTQnVodFlURzVyRkFHamlicy1XRnhzU2o3SF84RC16N2gzZ2VTanl3TTVzZlRwUDRyZDR2RzA5TkxFV0lKbU9OWkw1emc1X3ZvWUpNcjFLYzhvcG9SeDN5bV9iUzlJZzJzRTFxR3Z1ZDNEV1F0X0s5ZVhDcVJLR19tS0E?oc=5" target="_blank" rel="noopener noreferrer">ARRESTAN A DOS PERSONAS Y OCUPAN ARMA DE FUEGO, MUNICIONES, DROGAS Y DINERO EN EFECTIVO EN CANÓVANAS. Agentes de la Policía de Puerto Rico, adscritos a la Unidad Motorizada de Carolina, arrestaron durante horas de la madru</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-10-15T09:00:00-04:00">hace 9h</td>
+                    <td class="time-ago" data-date="2026-10-15T09:00:00-04:00">hace 11h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Despega construcción de Bluesky San Juan, nuevo campus de aviación privada">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxOTTd5d25BRUVGVnZTUVlkdW1pUU1fbXIyRjRKakNXcUlKbjZ1ZHV5R2hscDh5ZVhtNTRrNERtTGJmdmFpWmJtOV80am9CUmJLdklSdjNraGFQVmpIaF9HU29NWkw4M2FjNWo3cDdaN0ZhZGU0WG5NcWlOcHpzNWN4akxXTWlrMi1BaDBrTDZxeUdGSTBWWjh2RnF2VldrQlozVm9nUDhSYzNzNW85UzNwT0E5SVN4aTAxRnk2Q0QzazhoRHhVc003bXhERmFzSHpnQlRSdzQ0bzhYQmFUbnRaSmRiaTdKa2g2QkQzT0t3?oc=5" target="_blank" rel="noopener noreferrer">Despega construcción de Bluesky San Juan, nuevo campus de aviación privada</a>
+                    </td>
+                    <td>WAPA TV</td>
+                    <td class="time-ago" data-date="2026-10-15T08:45:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Construction begins on BlueSky’s $54 million private aviation project at San Juan airport">
@@ -1218,7 +1250,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxORXM1U3JNSUNyc1lfRU83Sy0tZElJcjNFVkpZamNyQzZuRlRWekt6clBBei1pYjBtb3p2R3J1aDFWUzNhVERFcWRHTVNUU1FjRzNwREdjX3NVWEJRNHFrV01LZ3dtSm52TnJnam1MWHl3WmtHcExuZFZORVBkQW50N0NHVFptRVFTekFMLXFpakJ3SlpON2lUS29uZ0tjOGN4RW96NEtEa0xjLWxvaHY2dEFub000amN4NGdSaWpfbzJJSnFWYnFxX1pMeDdIQWxoODZ4TQ?oc=5" target="_blank" rel="noopener noreferrer">Construction begins on BlueSky’s $54 million private aviation project at San Juan airport</a>
                     </td>
                     <td>El Nuevo Día (GN)</td>
-                    <td class="time-ago" data-date="2026-10-15T08:44:00-04:00">hace 9h</td>
+                    <td class="time-ago" data-date="2026-10-15T08:44:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="Municipio Autónomo de Cataño. . Séptima Vista Pública de Transición Cataño 2026 15 de octubre de 2026 Tema: Salud, Tecnología, Relaciones Públicas, Comunicaciones y Cierre">
@@ -1229,7 +1261,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZ3d2UURlUERnU1B4RkduTVQ3Q2lTbzNnYUZ0U1VMb0hESHJIV1locWpjUEN1X0xoRHVpMFFQT0tDQUFLS2FtTjJIYUVIUDhCeUlKbUxXbUhSX0RrQ0xxUnFRLUpESHprczVnWlJyRWJCbEFKNDJjV0tZQkd4aHhQSC0wMFNkaGx2dEJ1NTlLMGRwZFNUZV9GazMtOEx1eENJUFBSdDd2Tlk3VnlTa2NCc3lvTWVFaVZkZm4zMXpZT1Frdw?oc=5" target="_blank" rel="noopener noreferrer">Municipio Autónomo de Cataño. . Séptima Vista Pública de Transición Cataño 2026 15 de octubre de 2026 Tema: Salud, Tecnología, Relaciones Públicas, Comunicaciones y Cierre</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-10-15T08:42:00-04:00">hace 9h</td>
+                    <td class="time-ago" data-date="2026-10-15T08:42:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Hombre de Ohio muere tras golpearse la cabeza al lanzarse al charco El Hippie en Naguabo">
@@ -1240,7 +1272,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxPXzRzRFhxMVU5SURLM21xM2ptMl96VlpWSFlwd1lZNWZ4NTBpQWpLVzE1STVmdUVyc1pWb29SVDdWLWotNmpURlY4TEpkTEEyN2dvSVRvQkFreFdOTGZGaHAxNzFXbklVZzZvVEdMUUJURlVkb3lsRmxJeEkwR0RLN3NrbWg1REJSRlJMZS03RDVETmtfY0JUc0FWQTR3dVdQVVlvMmpfWUNwVk1YU0J0Y0N1b3M5d19ld0lCcGhnVEtxWVlwSkdUcGF2c1cwY3V4S2RxeFE2SkJxNW5zNFpVTHRYeWRFYmJrUUo5cEpGa2pyOGNsZEdocmVIc9IBgAJBVV95cUxOUzFpakdOMVVVV2E0bklibjZWanZ5bGF6R0JGel9XYTR2QTV5eHNmOFREenNFb25pYzJFWDRUZWloUDBFbm9iX21LNW5VcUlmWVFBVlZaU3pULTNSa0RaRXd6aHNnbE55QkFqMnFTTm9vT0w0TVh3TGZocVU1OUl3bm4yLW02V2J6LUZLUXRqZWM3bTNGTjlteVlOMWFQNE1WUnlnOWE0OExvQ3kzOGt5aVU4YnRrRkxGLTlvc3NpaFRPVU9VODliUVBDZmRVX3BoQ2hRWEllRzlaSVBIODBVN2VDa3RIR01lMTFwVnJDWU5uS0V2MmJKNHhnTmt0ajBW?oc=5" target="_blank" rel="noopener noreferrer">Hombre de Ohio muere tras golpearse la cabeza al lanzarse al charco El Hippie en Naguabo</a>
                     </td>
                     <td>Naguabo</td>
-                    <td class="time-ago" data-date="2026-10-15T08:32:00-04:00">hace 10h</td>
+                    <td class="time-ago" data-date="2026-10-15T08:32:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Cierra restaurante argentino en San Juan tras 28 años">
@@ -1251,7 +1283,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYXpDcnFCWTFqRmpkVVpKRERvN1JXR19uUkJQU2Jtd1JROUJPUVktM2hTdmNUWnhWWTNQVkNoYmtDck1tSjJIbXB0Y0FvVUM3N0FwdDNUaEdPQ3VyZ2duaTJaWlFVZ0dyTEtscnhlcXRhOVJCR0VNNzZCd0VkRzlmU3ZjTFdPci1vaE1lRkRUekRKZHFjR0dMOXF0aVoxdU1tdmNvRHg4SUM?oc=5" target="_blank" rel="noopener noreferrer">Cierra restaurante argentino en San Juan tras 28 años</a>
                     </td>
                     <td>Primera Hora</td>
-                    <td class="time-ago" data-date="2026-10-15T08:14:00-04:00">hace 10h</td>
+                    <td class="time-ago" data-date="2026-10-15T08:14:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Turista fallece mientras disfrutaba en río de Naguabo">
@@ -1262,7 +1294,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNcnZiTlpPalg5aF9VUGF3ZkZPalUxN2pRV0pkSFZWektZUlZtdUtHcS03bjlIQW1TUVBJR0JUcnRzSnFVU2V3SVg3OE1JdUQ2LWV6Wk5ITXo1WFc0OFJKbkhWOEt0Yy1nWWR0aW8xT1A2RlpqbzhzV0ZPV3F4bVZvVVNhdWNkdTFtc0Y0el9vVWFmQ0hfOG5V?oc=5" target="_blank" rel="noopener noreferrer">Turista fallece mientras disfrutaba en río de Naguabo</a>
                     </td>
                     <td>Naguabo</td>
-                    <td class="time-ago" data-date="2026-10-15T08:01:00-04:00">hace 10h</td>
+                    <td class="time-ago" data-date="2026-10-15T08:01:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="Hombre fue arrestado por violación a la Ley de Sustancias Controladas en Río Grande">
@@ -1273,7 +1305,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.notiuno.com/noticias/seguridad-y-justicia/hombre-fue-arrestado-por-violaci-n-a-la-ley-de-sustancias-controladas-en-r-o/article_e5197f8b-5747-49dc-bad3-abeb2c84ac47.html" target="_blank" rel="noopener noreferrer">Hombre fue arrestado por violación a la Ley de Sustancias Controladas en Río Grande</a>
                     </td>
                     <td>NotiUno</td>
-                    <td class="time-ago" data-date="2026-10-15T07:54:00-04:00">hace 10h</td>
+                    <td class="time-ago" data-date="2026-10-15T07:54:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="UPR de Humacao reunirá a poetas internacionales en encuentro dedicado a Puerto Rico">
@@ -1284,7 +1316,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/15/upr-de-humacao-reunira-a-poetas-internacionales-en-encuentro-dedicado-a-puerto-rico/" target="_blank" rel="noopener noreferrer">UPR de Humacao reunirá a poetas internacionales en encuentro dedicado a Puerto Rico</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-15T07:44:00-04:00">hace 10h</td>
+                    <td class="time-ago" data-date="2026-10-15T07:44:00-04:00">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Turista muere en el Charco El Hippie de Naguabo tras golpearse la cabeza con una piedra">
@@ -1295,7 +1327,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMikgJBVV95cUxQaFFZQUczWE0wY3dQV2hJeF9ibG1tQ0hWVmR0UW1Fenl3Q1pLRHh5SDFVaE5sVnI2THdqQThMbUhMUTJpS3hDSTRRWTdoZkxtR0t4M0gzNWNMNWRYZ3dzNGJHZmdHM1dCNC16UUhXOFhSUV9IN21Hazc3WUpnd096M3BudTlrUEdUbXBYTklLbVVxQV82QzZiTlhKbS0zZ3NCQTRCSW5MX3dBckZqOTF2U01vX3RXQktwOFp1Qk9PcnJxWDFvdUVLQTljLXFPdnZyaFVlRnRZd2lWSHp5THFxc0c4RTJuMXVkamtEWnV5XzJOV1hwVGRNSzh1VjY0Q182d0tkWHVNNjg4MzRHdk9yeEFn?oc=5" target="_blank" rel="noopener noreferrer">Turista muere en el Charco El Hippie de Naguabo tras golpearse la cabeza con una piedra</a>
                     </td>
                     <td>Naguabo</td>
-                    <td class="time-ago" data-date="2026-10-15T07:34:00-04:00">hace 11h</td>
+                    <td class="time-ago" data-date="2026-10-15T07:34:00-04:00">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Identifican a turista que falleció al lanzarse desde una roca al charco El Hippie en Naguabo">
@@ -1306,7 +1338,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/10/15/identifican-a-turista-que-fallecio-al-lanzarse-desde-una-roca-al-charco-el-hippie-en-naguabo/" target="_blank" rel="noopener noreferrer">Identifican a turista que falleció al lanzarse desde una roca al charco El Hippie en Naguabo</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-10-15T07:30:00-04:00">hace 11h</td>
+                    <td class="time-ago" data-date="2026-10-15T07:30:00-04:00">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Errores en permiso del DRNA impiden reparar carretera afectada por erosión costera en Loíza">
@@ -1317,7 +1349,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/errores-en-permiso-del-drna-impiden-reparar-carretera-afectada-por-erosion-costera-en-loiza/" target="_blank" rel="noopener noreferrer">Errores en permiso del DRNA impiden reparar carretera afectada por erosión costera en Loíza</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-10-15T07:28:00-04:00">hace 11h</td>
+                    <td class="time-ago" data-date="2026-10-15T07:28:00-04:00">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Prieto &amp; Asociados en Fajardo ⚖️ Lic Ricardo Prieto abogado criminalista y notario con amplia experiencia en: - Casos criminales, civiles, federales. - Familia - Daños y perjuicios - Notaria ☎️ 787-860-0875 (Oficina) ⌨️ oficina@prietolawoffice.c0m 📍 Calle">
@@ -1328,7 +1360,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxPdXRPMGk0b29EVnV3dm1pTXJlRUE1NWdVWDN2Q0F5TUZiU3VUZjZTVW55MEdQaFByRlIwcXJHZWNsVjRHd3AxQ1RZSVJBajFjQmxXWG9TZXIxbWVYcWY5cFRXTXJBa2F6RE45TGdJR3NibUZhVEcxa0FKXy1hcmIxUE9VV1lBVXZOdzFRZm9mYnFBcGNTbFpZdlhtRVhCXzkyNTRkSnV2dnNZMTctTy1Na0hMRjhsWE9Rbkk1M2ljQ1dPdXFOUTRUaGNhYzVyWlVOcFYxTE9JejdwT1duMWczTlhhb0NuSElz?oc=5" target="_blank" rel="noopener noreferrer">Prieto &amp; Asociados en Fajardo ⚖️ Lic Ricardo Prieto abogado criminalista y notario con amplia experiencia en: - Casos criminales, civiles, federales. - Familia - Daños y perjuicios - Notaria ☎️ 787-860-0875 (Oficina) ⌨️ oficina@prietolawoffice.c0m 📍 Calle</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-10-15T07:00:00-04:00">hace 11h</td>
+                    <td class="time-ago" data-date="2026-10-15T07:00:00-04:00">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Turista de Ohio muere tras lanzarse de una roca al río en Naguabo">
@@ -1339,7 +1371,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/turista-de-ohio-muere-tras-lanzarse-de-una-roca-al-rio-en-naguabo/" target="_blank" rel="noopener noreferrer">Turista de Ohio muere tras lanzarse de una roca al río en Naguabo</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-10-15T06:49:00-04:00">hace 11h</td>
+                    <td class="time-ago" data-date="2026-10-15T06:49:00-04:00">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Hombre de 33 años muere tras lanzarse al río en Charco El Hippie, en Naguabo">
@@ -1350,18 +1382,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/hombre-de-33-anos-muere-tras-lanzarse-al-rio-en-charco-el-hippie-en-naguabo/" target="_blank" rel="noopener noreferrer">Hombre de 33 años muere tras lanzarse al río en Charco El Hippie, en Naguabo</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-10-15T06:34:00-04:00">hace 12h</td>
+                    <td class="time-ago" data-date="2026-10-15T06:34:00-04:00">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="La alcaldesa de Loíza, Julia Nazario Fuentes, solicitó al DRNA que “corrija y aclare la autorización emitida hoy al Municipio para construir un revestimiento de rocas en Parcelas Suárez”, por parte del Municipio.">
                     <td><span class="muni-tag">Loíza</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxPdTVGbTJOZkVFLWJjd09mbHFjSTgwYndoeFp4ZU1PQVdreVRtVkNFcmlfbm1GbzlIaVNnWFhPTmhzR3E2WF9nakpwZWVOZkxuNDZBVmRpZUVTNWdoYnBTak0xbU85dEx1VVZUMDVFcDFrTHR0ZU1aOEJyTVlkRFp6YWVGWF8xQkozRzZsWGJkalJBRC1zWlZQZ1R5OVdOc0JzbW8zVTI1N2hDekV1aklJM19aM0k3NWRCdkRUbVFncnp1QUtybzFKZnh1YU5ZRktrZVhYMXlacjdNaVlUS25BLTlULXRjZw?oc=5" target="_blank" rel="noopener noreferrer">La alcaldesa de Loíza, Julia Nazario Fuentes, solicitó al DRNA que “corrija y aclare la autorización emitida hoy al Municipio para construir un revestimiento de rocas en Parcelas Suárez”, por parte del Municipio.</a>
                     </td>
                     <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-10-15T00:00:00-04:00">hace 18h</td>
+                    <td class="time-ago" data-date="2026-10-15T00:00:00-04:00">hace 20h</td>
                 </tr>
                 
                 
@@ -1375,7 +1407,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxPTmVQTWlJdUdzR0NGX0lKeFRTR05xdzk4TFZNVzRHZFJwM3B0Mks5YUs5aU1IcDZHdk1Iakt0cmNTUUU1TzkzX2ZjUk41aEVzMTNFemVGT0lzdEE3ZmlNNzZTRlotYV90Z0dIczVJcjNLYmhOVksyZi04Ym80MWROTWdacjd1SDNJd01mVFpoT0psR1hmLXhfVmdodnVHdzRIZHZ0R2lZTlVKZF9fZjlMUUFiYTZPRHZWRzhEbGR1YzVlUkdBSUpxZjgycmQxY2VhMEZVN3RObFB4RGoyc05R?oc=5" target="_blank" rel="noopener noreferrer">ATIENDEN INUNDACIONES EN GUASABARA EN #CAGUAS Personal de Puerto Rico Responders INC trabaja hoy en equipo junto a Manejo de Emergencias de Caguas para atender una situación de inundaciones en Guasabara. Foto: Puerto Rico Respon</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-10-14T23:59:00-04:00">hace 18h</td>
+                    <td class="time-ago" data-date="2026-10-14T23:59:00-04:00">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Localizan sin vida a turista en el Charco El Hippie en Naguabo">
@@ -1386,7 +1418,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNR2hzeHNNZ0ZmTFpDVThrcjVGWTJZSDk3cEJjcUNZcHdia1ZNaTl1MlY1ZGl3RDFfSURDMTAydWIxQ05VbHJlcXdfR2UyamR1aUpqT19FclFnTzc3TkF5aEc1a2xSblVXWnVpbmI3MU9UWnJ0dzFHMjhaM0kzbnc2REd1YjhzenN6cWV3WF9qWjduSmpSd3BabUFzS2xyMjMwR191Rm5aSm9qWjk1VkhtN19vTXdpRHVEWTkzeEk5ajlrejAwZXR5Z1FTa2tqNkQxRVRWV3IyU2FxV3lQS0E?oc=5" target="_blank" rel="noopener noreferrer">Localizan sin vida a turista en el Charco El Hippie en Naguabo</a>
                     </td>
                     <td>Naguabo</td>
-                    <td class="time-ago" data-date="2026-10-14T23:08:00-04:00">hace 19h</td>
+                    <td class="time-ago" data-date="2026-10-14T23:08:00-04:00">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Identifican a turista que murió ahogado en el Charco El Hippie en Naguabo">
@@ -1397,40 +1429,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxNelBjZnpZOTNpTGJMV3ZXb2FJMDNoaTZUcTRta0RZQXdjRGlvNHlqSW9fX0xvZHREWW1GekE1OVNuN2NtZnJqcVlEU25aSmZ4STRkaEt2WWxJYWwwUUtHOWxCVm5jQUJIdUwyMXQ1ZGhqVmRfMHcydzcyVFBZeFFJMlc2TEVZeUZzX1l6N2g5eHJUeWF2SUdTdW16aFJfelJtMVFBdTBEWDd6WDJXVEZUNDNEVmpPNGFUenJXM2JNMWc5Q0NWTXp3cTVYX1JGUG8zODZXbm1ZalBTSGNGdkcxcFlrVE5zblFIZTVB?oc=5" target="_blank" rel="noopener noreferrer">Identifican a turista que murió ahogado en el Charco El Hippie en Naguabo</a>
                     </td>
                     <td>Naguabo</td>
-                    <td class="time-ago" data-date="2026-10-14T23:07:00-04:00">hace 19h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Puerto Rico conquista cinco medallas en Copa del Mundo de Taekwondo en España">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://nelpr.com/2026/10/14/puerto-rico-conquista-cinco-medallas-en-copa-del-mundo-de-taekwondo-en-espana/" target="_blank" rel="noopener noreferrer">Puerto Rico conquista cinco medallas en Copa del Mundo de Taekwondo en España</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-14T22:49:00-04:00">hace 19h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Más de 1,600 personas acuden a feria de empleo con 2,000 vacantes">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://nelpr.com/2026/10/14/mas-de-1600-personas-acuden-a-feria-de-empleo-con-2000-vacantes/" target="_blank" rel="noopener noreferrer">Más de 1,600 personas acuden a feria de empleo con 2,000 vacantes</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-14T22:45:00-04:00">hace 19h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Familia realizará jornada especial para atender solicitudes y recertificaciones del PAN">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://nelpr.com/2026/10/14/familia-realizara-jornada-especial-para-atender-solicitudes-y-recertificaciones-del-pan/" target="_blank" rel="noopener noreferrer">Familia realizará jornada especial para atender solicitudes y recertificaciones del PAN</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-14T22:44:00-04:00">hace 19h</td>
+                    <td class="time-ago" data-date="2026-10-14T23:07:00-04:00">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="FOTOS: Todo lo que puedes hacer por la Bahía de Cataño">
@@ -1441,18 +1440,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxPa1dlWk9WcmxZRlNGWGpULXVSMjZSVDhOWjlpV19XWFFmSXlwcVdscDZRNXBia1VhU2lPVUl2WXhjZmhZczl3LTkteUVZYXN0cW5ZN29lb291MnB4RkZDOGdCWkJsTjlFWm85Tk1DOEtMbmhvVlM5S2JuS1dhYy1NZERTc2NXdlVIaXhycDB1bjlzZE1jVmVpUWQyZjRjTGlpTVNCTUxzdnBsazJyRkVsbFBYRlJxdndLRUxMUDRuYlhPa3dVbVNTSA?oc=5" target="_blank" rel="noopener noreferrer">FOTOS: Todo lo que puedes hacer por la Bahía de Cataño</a>
                     </td>
                     <td>Cataño</td>
-                    <td class="time-ago" data-date="2026-10-14T22:40:00-04:00">hace 19h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Naguabo" data-titular="Hombre muere al golpearse la cabeza con una piedra">
-                    <td><span class="muni-tag">Naguabo</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://nelpr.com/2026/10/14/hombre-muere-al-golpearse-cabeza-con-una-piedra/" target="_blank" rel="noopener noreferrer">Hombre muere al golpearse la cabeza con una piedra</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-14T21:04:00-04:00">hace 21h</td>
+                    <td class="time-ago" data-date="2026-10-14T22:40:00-04:00">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Radican cargos contra dos hombres por presunta posesión de drogas en Trujillo Alto">
@@ -1463,18 +1451,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxPZzNxOXZNUGYzRUZiTE51S19pMFFkQ0U0cTNJRWx2TFRrZVZCeG9WQkh3Y2xOSi14UEV5QWNpd3NwdzZFdzltZzdqMy1mUjB1aUZ6QlltbnlaMngydGVHWWVhRHp3ZDFfWnhKTkFFbVY1R1ViTW54UmxoQ2xfY0F6cEFNR1dBMk02Qi0zZXhtZWNESjFKekNMcFRycnMzejJONEFnekNfc2ozbk1IOXNSWlM2cnNDX21OV0FYSE01Ymw0M09WLU9aMmViSjZhQnJoNXFKMk1GMEg1ZWNYb2c?oc=5" target="_blank" rel="noopener noreferrer">Radican cargos contra dos hombres por presunta posesión de drogas en Trujillo Alto</a>
                     </td>
                     <td>Primera Hora</td>
-                    <td class="time-ago" data-date="2026-10-14T21:00:00-04:00">hace 21h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="LUMA dejará sin luz hasta por 13 horas a sectores de 16 municipios">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://nelpr.com/2026/10/14/luma-dejara-sin-luz-hasta-por-13-horas-a-sectores-de-16-municipios/" target="_blank" rel="noopener noreferrer">LUMA dejará sin luz hasta por 13 horas a sectores de 16 municipios</a>
-                    </td>
-                    <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-10-14T20:53:00-04:00">hace 21h</td>
+                    <td class="time-ago" data-date="2026-10-14T21:00:00-04:00">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Muere hombre tras golpearse la cabeza en charco El Hippie en Naguabo">
@@ -1485,7 +1462,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOWUV3azFyRlFfTU5rUGU2QTFCWEhMWkxtRGRPX25INGxiTTJZNGlncXhHdG5TdTRDYzhsaGdsQ0lfU2U1YS13Y0lYekZPQS02YTNFYWo1ckIwbkNYWlJDU1pEMW5qQnBNMWNaWDJXMVVqeV9ZRExWOFZRQ2xKVDcwc3gtZWRvOFV3OHJRRHlOdGx6X0lWWFRBWGlzck95MU95Z3pSSFdYMjFyV1RkcTVV?oc=5" target="_blank" rel="noopener noreferrer">Muere hombre tras golpearse la cabeza en charco El Hippie en Naguabo</a>
                     </td>
                     <td>Naguabo</td>
-                    <td class="time-ago" data-date="2026-10-14T20:43:00-04:00">hace 21h</td>
+                    <td class="time-ago" data-date="2026-10-14T20:43:00-04:00">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Localizan sin vida a turista arrastrado por golpe de agua en Naguabo">
@@ -1496,7 +1473,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxNYjNnWlNPN2xtNGNVSnlxWU51WmJJTXFmQkpHYldyLThJNXZMMHB2eVJycmgxNUhGSFJ0UmdMSVZSN180b3FicE9FMkRoVkZSSExLRVlIVkh1RnEtdFdTLXZzME5BOFI3ZGR0NWRNYVQ0UTZpbVI5VGc2YTczNi1UdTJWT1E1c25sZnJZZ1VPWGRxUHlnTjV2dko2c2o4dUtidkdvdFFXbm5qeUtnek52R0JhSDVlUlg4MGtNTHU2NFZMczd4eVFkcXlNVURnUWxmQ3NOa1dYV1o1Mk5SbkdjSURfWnZ1QQ?oc=5" target="_blank" rel="noopener noreferrer">Localizan sin vida a turista arrastrado por golpe de agua en Naguabo</a>
                     </td>
                     <td>WAPA TV</td>
-                    <td class="time-ago" data-date="2026-10-14T19:09:00-04:00">hace 23h</td>
+                    <td class="time-ago" data-date="2026-10-14T19:09:00-04:00">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Turista fallece en el Charco El Hippie de Naguabo">
@@ -1507,7 +1484,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOejZkbmlwV3k5VFZ1VE9kY1JqN0E0Y2JzVHhLZWFaaEdYeEpiamt1V0pKcjJwMV9KaTh2bkVtOGpoUE9KS19BdWxHanQ3alNZaFViRmdQdUFHYWRXYmFxeG5iWDEzSER0VV9xQ19VN1NmWDZHdUdndXYwdmxodlhjNV9jMG9NODI2Z2lJR2pFN2NlLWI2Z21VV0llYlBBNUUyY0ZTYmlSM0lyd3PSAbMBQVVfeXFMUHVQYVlsdXFVZGxKbG95MU1yQzc1VnlnSDlLUzVoUW1STXVocGplWTNyR0YtNWk1OFRtSmhhcUM3eXdjWWlONkZ5RUJSZm5mNUlqZHk0WG9jQ1dkTWNpbTNEcUJyV013ZzdHektfOHo2UzVVQm80ZG1hRGZaQjdWTjFoV0FEeHhNNG1JYlZ6SHRWTE5xNVNYSjRDVjBwX2F5MFF2MXdFZDVKaWUyaXo4Ty1ZV2M?oc=5" target="_blank" rel="noopener noreferrer">Turista fallece en el Charco El Hippie de Naguabo</a>
                     </td>
                     <td>Naguabo</td>
-                    <td class="time-ago" data-date="2026-10-14T18:52:00-04:00">hace 23h</td>
+                    <td class="time-ago" data-date="2026-10-14T18:52:00-04:00">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Identifican a turista de Ohio que murió en el charco El Hippie en Naguabo">
@@ -1518,7 +1495,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOUVhhTDl2UHhiX2hUZjFaT0JfbEhrT1hvTHlEWFZEMU1tTHBfdXJzOFp5dEJtQ1RhbDJYX1oxR01FY0Fpb2Z5S25YRm9oTVZ0T0Vscy1UcnMxcTFJX05kby14eG4xc0UxQWRZd2h4NERoS1ExWGkzSWpoRFM4SkdGOG9sXzQ0UmcxM3BHMElhcDZmdjhpbl9NMm1HaUFJUzZrcFJUaHFtbkN2R2VlNHAwbllsc0JCZ21JQkxFQmhyaw?oc=5" target="_blank" rel="noopener noreferrer">Identifican a turista de Ohio que murió en el charco El Hippie en Naguabo</a>
                     </td>
                     <td>El Nuevo Día (GN)</td>
-                    <td class="time-ago" data-date="2026-10-14T18:44:00-04:00">hace 23h</td>
+                    <td class="time-ago" data-date="2026-10-14T18:44:00-04:00">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Tribunal de San Juan determina no causa para juicio contra José Manuel Baeza en caso por violencia de género">
@@ -1541,17 +1518,6 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>WAPA TV</td>
                     <td class="time-ago" data-date="2026-10-14T17:56:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Encuentran octogenario muerto dentro de recipiente">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://esnoticiapr.com/encuentran-octogenario-muerto-dentro-de-recipiente/" target="_blank" rel="noopener noreferrer">Encuentran octogenario muerto dentro de recipiente</a>
-                    </td>
-                    <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-10-14T17:17:00-04:00">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="DRNA AUTORIZA AL MUNICIPIO DE LOÍZA A HACER PROTEGER ZONA DE COMUNIDAD DE LA EROSIÓN COSTERA - SE REALIZARÁ UN “REVESTIMIENTO DE ROCAS”. El Departamento de Recursos Naturales y Ambientales (DRNA) autorizó este juev">
@@ -1585,17 +1551,6 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>El Vocero (GN)</td>
                     <td class="time-ago" data-date="2026-10-14T15:30:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Carolina" data-titular="Hallan cuerpo de octogenario dentro de un recipiente lleno de agua en Carolina">
-                    <td><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxNREp2emFPQVpjZFRxMnR1ckp1UjhwU0ZZdDJVVlJxRzRZampmcWxjRHNjeTlwOHhPYldsOWtDZFVJWE5pSkcyeHRXODRQN2psUGdHWGthdTQ1ZjlkcnNQNE1qdU80VUxHaG5XNUZHZ0MwRTFnMHFwRng4WHBVSHdyZzZmVmlhUTUydlZqSmwwXy1iT3RRajEySHBnN2hXbWQ0eE1pclFYcThNblBXcHNTRHdFVzRpNVBldEgwRzlfczNpZ1ZsdlpIczlnc294RnhDYWVIZEtjdUQ2ak5vMXhGUldhNFpJVloxQy1jOEVsTFNzUVk?oc=5" target="_blank" rel="noopener noreferrer">Hallan cuerpo de octogenario dentro de un recipiente lleno de agua en Carolina</a>
-                    </td>
-                    <td>WAPA TV</td>
-                    <td class="time-ago" data-date="2026-10-14T15:04:00-04:00">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Hallan cuerpo de adulto mayor dentro de un recipiente con agua en una terraza en Carolina">
@@ -1741,17 +1696,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-14T06:33:00-04:00">hace 1d</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="San Juan" data-titular="Anaida Hernández presenta “Encuentro: no hay que esperar a que las piezas estén completas en la Liga de Arte de San Juan”">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMihwJBVV95cUxQdWhySE1rZWYtdVVTcmdfQUx0bXU4MktnZnJBRVlzZWdqVHhzemh4RTlMWWNxak1jX21OUUF5MTRHdWJpR0xSZGN3LXVySjl5blNDRjNacUZuMVQ1Z1ZpOGJLVGQ2YWRDQ0pYdkQ4MGF2WHdJNVNBS0FLTDZ6TFJXYjJRV3hlSWNPVGZFbXNyX2tYVEVPZ2dFdUJPRUotVjdGOVNabnFyRDZHNTA1U1ZKLW93cHJ0NmdsRkNEbV9NRlhTdmZJQmh4ZTlFWDFYQjd2SVAwem1NR3N0QlJ1QmJ6a0hSeGlxWXB5Y09vSjB5QlExd213NlhlbFJKb0k4YUlUQnZQbGdTNA?oc=5" target="_blank" rel="noopener noreferrer">Anaida Hernández presenta “Encuentro: no hay que esperar a que las piezas estén completas en la Liga de Arte de San Juan”</a>
-                    </td>
-                    <td>El Nuevo Día (GN)</td>
-                    <td class="time-ago" data-date="2026-10-14T06:33:00-04:00">hace 1d</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Carolina" data-titular="Localizan adolescente desaparecida en Carolina">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
@@ -1813,7 +1757,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <span class="source-badge err" title="❌ rate-limited/error: XML RSS/Atom malformado">🔴 El Oriental: Error</span>
         
-        <span class="source-badge err" title="❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests">🔴 PR es La Isa: Error</span>
+        <span class="source-badge err" title="❌ rate-limited/error: XML RSS/Atom malformado">🔴 PR es La Isa: Error</span>
         
         <span class="source-badge ok" title="✅ OK">🟢 NELPR: OK</span>
         
@@ -1932,7 +1876,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 El Nuevo Día</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -1940,7 +1884,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 NotiCel</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -1948,7 +1892,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Radio Isla</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 5</p>
                 
             </div>
@@ -1956,15 +1900,15 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Es Noticia</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 2</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 Telemundo PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1972,7 +1916,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Walo Radio</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 8</p>
                 
             </div>
@@ -1987,7 +1931,7 @@ tr.article-row:hover { background: var(--surface2); }
         
             <div class="health-card">
                 <strong>🔴 PR es La Isa</strong>
-                <p>Estado: ❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests</p>
+                <p>Estado: ❌ rate-limited/error: XML RSS/Atom malformado</p>
                 <p>Última respuesta exitosa: Sin registro (PR)</p>
                 <p>Noticias recientes en esta consulta: Sin dato</p>
                 
@@ -1996,15 +1940,15 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 NELPR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 7</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 3</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 San Juan</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2012,7 +1956,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Carolina</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2020,7 +1964,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Caguas</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2028,7 +1972,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Fajardo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2036,7 +1980,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Humacao</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2044,7 +1988,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Trujillo Alto</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -2052,7 +1996,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Canóvanas</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2060,7 +2004,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Loíza</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2068,7 +2012,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Río Grande</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2076,7 +2020,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Luquillo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2084,7 +2028,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Ceiba</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2092,7 +2036,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Naguabo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 7</p>
                 
             </div>
@@ -2100,7 +2044,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Cataño</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -2108,7 +2052,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Vieques</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2116,7 +2060,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Culebra</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2124,7 +2068,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - San Juan</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2132,7 +2076,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Carolina</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2140,7 +2084,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Trujillo Alto</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2148,7 +2092,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Canóvanas</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 4</p>
                 
             </div>
@@ -2156,7 +2100,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Loíza</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -2164,7 +2108,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Río Grande</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2172,7 +2116,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Luquillo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2180,15 +2124,15 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Fajardo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 1</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 FB - Ceiba</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2196,7 +2140,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Naguabo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2204,7 +2148,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Humacao</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2212,7 +2156,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Caguas</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 4</p>
                 
             </div>
@@ -2220,15 +2164,15 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Cataño</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 1</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 FB - Vieques</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2236,7 +2180,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Culebra</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2244,7 +2188,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Gobierno PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2252,7 +2196,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Senado PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2260,7 +2204,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Cámara PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2268,7 +2212,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Junta Gobierno</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2276,7 +2220,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 William Miranda</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2284,7 +2228,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Limarys Román</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2292,7 +2236,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Primera Hora</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 8</p>
                 
             </div>
@@ -2300,15 +2244,15 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 El Nuevo Día (GN)</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 6</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 5</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 El Vocero (GN)</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 3</p>
                 
             </div>
@@ -2316,7 +2260,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 WAPA TV</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 5</p>
                 
             </div>
@@ -2332,7 +2276,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 WKAQ 580</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2340,7 +2284,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 TeleOnce</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2348,7 +2292,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Xposed Magazine</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2356,7 +2300,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 NotiCentro WAPA</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2364,7 +2308,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Telenoticias</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2372,7 +2316,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Telemundo FB</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2380,7 +2324,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Las Noticias T11</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2388,7 +2332,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Moluscotv</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2396,7 +2340,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Jay Fonseca</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2404,7 +2348,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Última Hora PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2412,7 +2356,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Noticias En Línea</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2420,7 +2364,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 En Contacto 787</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-15 06:38:55 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-15 08:49:04 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 4</p>
                 
             </div>
@@ -2430,7 +2374,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — 2026-10-15 06:38:55 PM (hora de Puerto Rico)<br>
+    Observador del Noreste — 2026-10-15 08:49:04 PM (hora de Puerto Rico)<br>
     La vista se recarga cada 15 min; la fecha indica la última recolección.
 </div>
 
