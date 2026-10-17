@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-17T08:51:27.792507-04:00",
+  "generated_at": "2026-10-17T09:53:09.705469-04:00",
   "interval_minutes": 15,
   "source_status": {
     "El Nuevo Día": "✅ OK",
     "NotiCel": "✅ OK",
     "Radio Isla": "✅ OK",
-    "Es Noticia": "✅ OK",
+    "Es Noticia": "❌ rate-limited/error: curl error: exit 22",
     "Telemundo PR": "✅ OK",
     "Walo Radio": "✅ OK",
-    "El Oriental": "❌ rate-limited/error: XML RSS/Atom malformado",
+    "El Oriental": "❌ rate-limited/error: timeout/error: <urlopen error timed out>",
     "PR es La Isa": "❌ rate-limited/error: XML RSS/Atom malformado",
     "NELPR": "✅ OK",
     "San Juan": "✅ OK",
@@ -68,6 +68,22 @@
   },
   "articles": [
     {
+      "titular": "Sectores con 80% de potencial de lluvia para hoy",
+      "enlace": "https://nelpr.com/2026/10/17/sectores-con-80-de-potencial-de-lluvia-para-hoy-9/",
+      "fuente": "NELPR",
+      "fecha": "2026-10-17 09:37",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "NELPR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
+      "es_nueva": true
+    },
+    {
       "titular": "Humedad podría traer aguaceros en la tarde",
       "enlace": "https://esnoticiapr.com/humedad-podria-traer-aguaceros-en-la-tarde/",
       "fuente": "Es Noticia",
@@ -79,9 +95,9 @@
       "fuentes_origen": [
         "Es Noticia"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
-      "es_nueva": true
+      "es_nueva": false
     },
     {
       "titular": "Desde el Yunque en Rio Grande, Puerto Rico🇵🇷",
@@ -96,8 +112,8 @@
         "FB - Río Grande"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
+      "es_nueva": false
     },
     {
       "titular": "“Lo principal es ganar”: Los Gigantes de Carolina quieren volver a ser protagonistas en la LVSM",
@@ -112,7 +128,23 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
+      "es_nueva": false
+    },
+    {
+      "titular": "“No le vendimos nada”: Caanen revela cómo Caguas ganó la batalla por Manny Camper",
+      "enlace": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZlZUdEV5S3lPMW4ySlBTWkQ0SENBeF9qOWNZWGI0dTZ5Rjdtb0kteE41eGFzY1Q5MXlXYmdfQkItR0dPS1E3SHdzcHJSVEhYdmdUVE1yM2dhUU9rSm1TTjBYT1VsM2FlQ19lX2ZHSlExQURDM2JoVldjVXhNXzNiVTEwZ3hLTUswRGZpUnd0aXJyRlZCeWU2VFVOTFpUZHFTc2N2QU5wR1BvOGZneHBBS3VUZl92b3Q1LURZY3BlaHBHM2xlM2J6MS1xYlI?oc=5",
+      "fuente": "El Nuevo Día (GN)",
+      "fecha": "2026-10-16 23:10",
+      "municipios": [
+        "Caguas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "El Nuevo Día (GN)"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -128,23 +160,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "“No le vendimos nada”: Caanen revela cómo Caguas ganó la batalla por Manny Camper",
-      "enlace": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZlZUdEV5S3lPMW4ySlBTWkQ0SENBeF9qOWNZWGI0dTZ5Rjdtb0kteE41eGFzY1Q5MXlXYmdfQkItR0dPS1E3SHdzcHJSVEhYdmdUVE1yM2dhUU9rSm1TTjBYT1VsM2FlQ19lX2ZHSlExQURDM2JoVldjVXhNXzNiVTEwZ3hLTUswRGZpUnd0aXJyRlZCeWU2VFVOTFpUZHFTc2N2QU5wR1BvOGZneHBBS3VUZl92b3Q1LURZY3BlaHBHM2xlM2J6MS1xYlI?oc=5",
-      "fuente": "El Nuevo Día (GN)",
-      "fecha": "2026-10-16 22:37",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "El Nuevo Día (GN)"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -160,7 +176,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -176,7 +192,7 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -192,7 +208,7 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -208,7 +224,7 @@
         "Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -224,7 +240,7 @@
         "Trujillo Alto"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -240,23 +256,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Hiram Torres Montalvo presenta su renuncia como secretario del DACO",
-      "enlace": "https://www.elnuevodia.com/noticias/gobierno/notas/hiram-torres-montalvo-presenta-su-renuncia-como-secretario-del-daco/",
-      "fuente": "El Nuevo Día",
-      "fecha": "2026-10-16 19:50",
-      "municipios": [
-        "Cataño"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "El Nuevo Día"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -273,7 +273,7 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -289,7 +289,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -305,7 +305,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -321,7 +321,7 @@
         "FB - Río Grande"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -337,7 +337,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -353,7 +353,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -369,7 +369,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -385,7 +385,7 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -402,7 +402,7 @@
         "WKAQ 580"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -418,7 +418,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -435,7 +435,7 @@
         "FB - Loíza"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -451,7 +451,7 @@
         "Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -467,7 +467,7 @@
         "NotiCel"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -483,8 +483,24 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "Arrestan a hombre y ocupan gran cantidad de drogas en Naguabo",
+      "enlace": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPcUpUb0JwMEhWa0J0MUJxWkIxT2c4UWF4QVRoWU9oZktUTnh1LVBYS1NveTJfSHduQmVLSlp3RlM1bHg2SWF2S21FS2tnY1BPSnFwcDBRaGVPSWVBYW56dE1UbDhHQ3E1T1htOERuMUs5X19iLUZ5c3RzUFFRc25LZ3BxTkJkQzhBQkptUXpicmtDeXd1VDJpMFNZd2VlSDVZd0hBRk5SdVlWZVBkT2stTVppZ3MtYUFsVXlwdWZYdVYxLWFRcEN5eEkzMzFhR1FFNWVmem5Na2N2cFM5YzVWcklMcUR6YlV5dTJ2RXZQanjSAfYBQVVfeXFMTVd1c1lNSlh5a25heHJ6Y1ljUXhDNjFtcnBUTWZ3Y3l2bTNlOWNadTJaMEtGbVBZYjIzdUpsWEY0NFpxYXpIUm4wRDlsT1VqcnpaN1hJZVdlME5WZXJOazZpaUhBNmtraWg2Vm9HVWpLUXlwWFhQcXZ2Ml96b3lkR0IwclBHVkJTWWJqRFZGLURBZEx5eVFHWjc2NnZSa3MyQWp6SVRJajJVMDdPNTlnYzJQaWt1NURldndNbnExU2sxaUNTaW9rOXN2Zzl2MjkyYXdZNHdsYlFKNTFFZGZGbWsxaFdfcGNqREFjaGNNR1NRMmZYV2hR?oc=5",
+      "fuente": "El Vocero (GN)",
+      "fecha": "2026-10-16 15:18",
+      "municipios": [
+        "Naguabo"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "El Vocero (GN)"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
+      "es_nueva": true
     },
     {
       "titular": "CONDUCTOR HABRÍA DISPARADO CONTRA OTRO POR UN SUPUESTO \"CORTE DE PASTELILLO\" EN CAROLINA. ¡La intolerancia en nuestras carreteras está llegando a niveles verdaderamente alarmantes! Lo que comenzó como un aparente incidente",
@@ -499,7 +515,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -515,7 +531,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -531,7 +547,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -547,7 +563,7 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -563,23 +579,7 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Muere contratista en instalación de la AAA",
-      "enlace": "https://noticel.com/ultima-hora/20261016/muere-contratista-en-instalacion-de-la-aaa/",
-      "fuente": "NotiCel",
-      "fecha": "2026-10-16 13:39",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NotiCel"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -594,7 +594,7 @@
       "fuentes_origen": [
         "Es Noticia"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
       "es_nueva": false
     },
@@ -611,8 +611,8 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Proponen devolver excedentes a patronos que prevengan accidentes laborales mediante reforma al Fondo del Seguro del Estado",
@@ -627,7 +627,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -643,7 +643,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -659,7 +659,7 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -675,7 +675,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -691,7 +691,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -707,7 +707,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -723,7 +723,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -739,7 +739,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -755,23 +755,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Reportan accidente de tránsito y luego descubren que conductor había sido baleado",
-      "enlace": "https://nelpr.com/2026/10/16/reportan-accidente-de-transito-y-luego-descubren-que-conductor-habia-sido-baleado/",
-      "fuente": "NELPR",
-      "fecha": "2026-10-16 10:28",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NELPR"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -787,7 +771,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -804,7 +788,7 @@
         "WKAQ 580"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -820,7 +804,7 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -837,7 +821,7 @@
         "WKAQ 580"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -853,7 +837,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -869,7 +853,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -886,7 +870,7 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -902,7 +886,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -920,7 +904,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -936,7 +920,7 @@
         "Trujillo Alto"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -953,7 +937,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     },
     {
@@ -970,7 +954,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T08:51:27.795822-04:00",
+      "ultima_verificacion": "2026-10-17T09:53:09.710173-04:00",
       "es_nueva": false
     }
   ]
