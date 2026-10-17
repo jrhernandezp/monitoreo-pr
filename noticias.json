@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-16T19:50:56.891809-04:00",
+  "generated_at": "2026-10-16T21:36:27.190353-04:00",
   "interval_minutes": 15,
   "source_status": {
     "El Nuevo Día": "✅ OK",
     "NotiCel": "✅ OK",
     "Radio Isla": "✅ OK",
-    "Es Noticia": "❌ rate-limited/error: curl error: exit 28",
+    "Es Noticia": "✅ OK",
     "Telemundo PR": "✅ OK",
     "Walo Radio": "✅ OK",
-    "El Oriental": "❌ rate-limited/error: timeout/error: <urlopen error timed out>",
-    "PR es La Isa": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
+    "El Oriental": "❌ rate-limited/error: XML RSS/Atom malformado",
+    "PR es La Isa": "❌ rate-limited/error: XML RSS/Atom malformado",
     "NELPR": "✅ OK",
     "San Juan": "✅ OK",
     "Carolina": "✅ OK",
@@ -68,6 +68,102 @@
   },
   "articles": [
     {
+      "titular": "El extitular de la agencia ahora se desempeñará como alcalde de Cataño tras ganar la elección especial celebrada el 27 de septiembre",
+      "enlace": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOSW9xTk9KU0ZNcWVzZUN6akVHS19aVjc0SHZEUzRrRUVMSzhodTVYUERxVmduUU9hNmVsQWtRVEFaMTNPMU1YejNrSy1JUjJZNDRwVmJPXzRlWUFsb2gtaUN0QWJrMUNEakZFd2ZuS18yWWFKTVJYWkxpSzBndEY3SGVMVy1kXzZWR3VzTmtJbW9nNkMwY1oyYlVBcFJaNS1BLVRwVlVSWjRZOEZaR21RZ0xVbnhfXzhTbldXeFhRMnM1WTgtbkRYT1FRRW9Ic0pjdkNZUHZJRl9pU2tESTM2ZGtDcFFUdjh2WVY0?oc=5",
+      "fuente": "FB - Cataño",
+      "fecha": "2026-10-16 20:55",
+      "municipios": [
+        "Cataño"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Cataño"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Renuncia secretario del DACO para asumir alcaldía de Cataño",
+      "enlace": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdE1hd2xyaEtjRkhCUnpfN3R0Qm5mNEQ0TmhoS0k3X21ja1Fjb3ZuclFRSWJZZU1Dbjl6MjlEVnFGcGJ3aEZHMHpQOUstMml0VERIZE5LRzZVdXFZR3ZadHVldldKa2JIRkpndEdTRWtaTDRlTl9FbTZXQXM4TGY0X1pnc0lld3FKdkJqOF9QTGt6Wk5sSXVYZlRlNXA0VURIdWJVYkhFWGltMnN4T0lhT0VZU3loNE1m0gHAAUFVX3lxTFBxVm13THE0NERIVXdqVDZsWU45Wjg3N09ZVmx3QThnbUtGTnhjVnp2aDhNWXZ2c3FwbWR0YV9kX1M1YVp2cGlWLU1xTDk3RFZjV1lvN0dZelRlOXgtMDJOaE90UXVNdmFhYXRONkg1U2NPQ2ZjV3Zua2FJbXdGaDRqT3BSVFZ1bzV1Ym1vVFR0WlV6NzhXbGN4M1lacjc0R3JvUGRJUnVGU09GUWd5clZlUm53TFdPUFNSSEdiclVWVQ?oc=5",
+      "fuente": "Cataño",
+      "fecha": "2026-10-16 20:40",
+      "municipios": [
+        "Cataño"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Cataño"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Familia denuncia fluctuaciones de voltaje en su hogar en Trujillo Alto",
+      "enlace": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbVFKdUZuck1Lel8zV1FwNDNzZUFNcVktbFBONE8xdkdlVzBzNVBxX3dJMnZiUU5sZU9rTElPMVNGOGRRV09sZVZoTmRYb3N3RF9zVF9uQ3N2dzREby1IS0ZOMVlrd2ZKZXAxSkwzV0VZcXRLTU1SWTN3eUNaVXJibFRNRXFSQWtONVNBUEppSm1xVG1ZUHM3SHpBZE5uczVqUEtJb0VxU25DVXg3WDJiVDRtLV9zb3h0aEdkVmdzUjcxOEh1dDdfdWR0TG04dThp0gHYAUFVX3lxTE85ZUJqU1dOV0g2ajRvV296cmpIQWVpeHFzNlVtclRzQTB6eTZlYzdnWkhVOXhoRFhuSXNxaGI1ZVVTRlVac3UtbVJtYjBhRDZ4VFowLUNNVUt1NXBld0ZuMlJFRW5NZzhQS3pLZzB2UDRweVFPQXRUUHRzN3VtQVZJbHlPdXYtakc5ZkVQRi1ZR09yOHJfdUo1RkNGZDByNVByM1pGMndaVU9oRTlpdG1aelZ4bUZibHpzZThGQUdwZWdtMGp3Y2UtZkF5bXd2NVB4bUxJNlZreA?oc=5",
+      "fuente": "Trujillo Alto",
+      "fecha": "2026-10-16 20:21",
+      "municipios": [
+        "Trujillo Alto"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Trujillo Alto"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "🕊️ AAA lamenta accidente fatal en proyecto de la Planta de Filtros Caguas Norte La Autoridad de Acueductos y Alcantarillados (AAA) informó que durante la mañana de este viernes, 16 de octubre, ocurrió un accidente en las inmediaciones del proyecto de c",
+      "enlace": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOWlZvcmphUnVjTExsek15UDFzWkMxNmVRdU5BLWxHZUwteS1rS1BUYVdLMC1hRGRRZ19VVmhjT3Q3MlJiX1JjblRfa3Z0ajh0ak9NYUs3N2hFeVoySjBjU19SUi1uM0FvRjhWSERZaDVOdjVodkFVRFZzR25wRmxRQ2tja1BlNm4zYjZMWHozbzF6QTZNd1NXTlk4SzlsUTh3UWVNV3ZYNi0xeENFLUhZR3lvTkpQajgwRW9sbjBJaFlyQ2V2TUJhZTJYc2lCRGRtYTFhUGJCMmFnWTV0UkF3QVp5NnhZMEU?oc=5",
+      "fuente": "FB - Caguas",
+      "fecha": "2026-10-16 19:55",
+      "municipios": [
+        "Caguas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Caguas"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Advierten de apagones para esta noche",
+      "enlace": "https://nelpr.com/2026/10/16/advierten-de-apagones-para-esta-noche/",
+      "fuente": "NELPR",
+      "fecha": "2026-10-16 19:53",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "NELPR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Hiram Torres Montalvo presenta su renuncia como secretario del DACO",
+      "enlace": "https://www.elnuevodia.com/noticias/gobierno/notas/hiram-torres-montalvo-presenta-su-renuncia-como-secretario-del-daco/",
+      "fuente": "El Nuevo Día",
+      "fecha": "2026-10-16 19:50",
+      "municipios": [
+        "Cataño"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "El Nuevo Día"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": true
+    },
+    {
       "titular": "Hiram Torres Montalvo renuncia al DACO para juramentar como alcalde de Cataño",
       "enlace": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPbUZEaG5BNXRCMmFXMWVFWWhta1pGN0FrNGtwM19IVzYtTWZhNlhRbXg5VHRyd2NVT3VCZEdiM1AzMDRtSUVRdUZmSWtqaEQzWFhjYVFCdk5sc1F1THVuaUpLMFlMWi1qbEYwNlc4M0NIdTdYb1JRWHhNSW1icFhpRFI2OG1WRDRuV280VzlSMExnVHR5ZlF2TzZfdHMzSER1SlJNNGY5ZlRad0Ffb1RrVE1lYUE1WWEzRnczMjgyNXF0OExMVm8wOGZMTUlnN1ZBUXh1RzlB?oc=5",
       "fuente": "Cataño",
@@ -81,8 +177,8 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": false
     },
     {
       "titular": "ARRESTAN A HOMBRE DE 46 AÑOS Y OCUPAN GRAN CANTIDAD DE DROGAS DURANTE OPERATIVO POLICIACO EN NAGUABO NAGUABO, PUERTO RICO – Agentes de la Policía de Puerto Rico arrestaron a un hombre de 46 años y ocuparon una co",
@@ -97,8 +193,8 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": false
     },
     {
       "titular": "‼️GOLPE AL NARCOTRÁFICO EN SAN JUAN‼️ ▪️OCUPAN RIFLE, CHALECOS ANTIBALAS, CIENTOS DE MUNICIONES Y MILES DE DOSIS DE DROGAS DURANTE ALLANAMIENTOS EN RESIDENCIAL VISTA HERMOSA 🚨 SAN JUAN, PUERTO RICO",
@@ -113,8 +209,8 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": false
     },
     {
       "titular": "En Río Grande, Puerto Rico ❤️",
@@ -129,8 +225,8 @@
         "FB - Río Grande"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Denuncian intento para desmantelar escuela vocacional en San Juan",
@@ -145,7 +241,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -162,8 +258,24 @@
         "El Nuevo Día"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "Hombre muere arrollado por camión en Caguas y dos resultan heridos de bala",
+      "enlace": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOVDdHWVpJQmtXd19jd19xUFAzam5kZnc3VE5SUVRKY1BMMVVEOVdpMXl6amItQzBEN3RReFJHSGV6czYwTmRWNk9UMzVPVndGLTFSVjBVYy1IY05mWHFsaFpmQzZxcHlrSUhGNDZGeENxTGk4Mm55S2FBOVZ6a2tuRXhiS0J5cWZDa2J0akxXaUVvZXV1Y2NuSVV3Yk1NRG92QkVmbFRfeUs4NkNKbl9OSFJNcEw3OThSSHl0QVN3aksxZ1FOSS1oM0hDN2NoWHRfM2dvay1YdEJBb0lxXzZiSEctWkxlOEFNd0dnUVBwRzR6d25xR19NU0dwVkhLWDBaRFHSAYcCQVVfeXFMTzhoaDBOR1ZiUUlNOHVtZVFzaTB5RVV0YVdwbnA3Z3ZzTEZtLWM3bkJGdXo3V0pJamM1VjRYSzVIN00tSGtiWkZlNUMxNDZKNVpXWUZhX2p5dEoxZmVfSjd5YkN2cWNaNXN5VFE1NUtCeFZObUM3YnBzMDRYeUJ2eS1UeUE1anh4TWdQX2lEWFBiNUVkYkRpOFBVeDNHeGdXbHp0czYtVC05bHlGYzB5T1JaYTJ4Q2xZaU94eEcycUtibURXck9RQVlTMnpiMXFNUDJHOGVsZzlvNFZGLUJNYjJBVTBZemprX2xhNi1rcHJkM0xXODVGcjEycHY4c1JLRnc5OEMxVkk?oc=5",
+      "fuente": "El Vocero (GN)",
+      "fecha": "2026-10-16 16:57",
+      "municipios": [
+        "Caguas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "El Vocero (GN)"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": true
     },
     {
       "titular": "‼️¡TRAGEDIA EN CAGUAS!‼️ ▪️HOMBRE MUERE ARROLLADO POR UN CAMIÓN EN ÁREA DE CONSTRUCCIÓN DE LA AAA CAGUAS, PUERTO RICO – Una lamentable tragedia se registró durante la mañana de hoy, viernes, 16 de octubre de 2026, c",
@@ -178,7 +290,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -194,7 +306,7 @@
         "El Nuevo Día"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -210,7 +322,7 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -227,7 +339,7 @@
         "WKAQ 580"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -243,7 +355,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -260,7 +372,7 @@
         "FB - Loíza"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -276,7 +388,7 @@
         "NotiCel"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -293,7 +405,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -309,8 +421,8 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": false
     },
     {
       "titular": "CONDUCTOR HABRÍA DISPARADO CONTRA OTRO POR UN SUPUESTO \"CORTE DE PASTELILLO\" EN CAROLINA. ¡La intolerancia en nuestras carreteras está llegando a niveles verdaderamente alarmantes! Lo que comenzó como un aparente incidente",
@@ -325,7 +437,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -341,7 +453,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -357,7 +469,7 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -373,7 +485,7 @@
         "NotiCel"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -388,8 +500,8 @@
       "fuentes_origen": [
         "Es Noticia"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-10-16T17:36:42.964178-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -405,7 +517,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -421,7 +533,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -437,8 +549,24 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "¡EL NENE DE CAGUAS! ¡Mucha suerte a Juanmita Lopez De Jesus, que mañana sube al ring en su ciudad! 🔥🏠🇵🇷 #LopezRamirez",
+      "enlace": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPTWEzS0oyOEdqYThYelBwcmZfZFFYc0Q5cmtTVUFOOWktdWt6TVZNQ0x1Q3dQemVSZFVoQ2xSblZ3U2lnWVNlLXRKZmVHLUN2emJHOEQyQ0VEYS14UVVDc2tsd1JxWmk3ZGhiLXh0ZFVIZ3E3ZDJBMjNHY3BBRDFMMlpNX2E2LVdGenhyV0VYenMzbTJ6UG9HM1lWZEljN2NQR3M3dExXTnFZMHFtNTg1Y1dvVHMyMEJfaW1OU0lnWFZadW51T2FMNzU0bjZqbHdURUk1aXJVM3VIcUF6?oc=5",
+      "fuente": "FB - Caguas",
+      "fecha": "2026-10-16 12:00",
+      "municipios": [
+        "Caguas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Caguas"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Humacao se prepara para celebrar el primer 3Knino @ Paw-lmas a beneficio de Pet SOS Foundation",
@@ -453,7 +581,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -469,7 +597,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -485,7 +613,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -501,7 +629,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -517,7 +645,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -534,23 +662,7 @@
         "WKAQ 580"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Sabías que Cataño llegó a ser un barrio de Bayamón ???",
-      "enlace": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxObm1oVmRyYnFGR3Y1Y2R6OUkxUk5BQk9keTVhMFhKV003SFJ6SjBDUWl3WTZxNUJaR0dZV01tSG9sajdCX3VOSWV1OXJrZUQwRVBESUd4aW53emNYd3NuMFlJa3RFRy0zS3NWQUFLYVMtZ2VjVXM0eHY0NmF3RXpiWV9xeVFpUVFQNWJ2NXpaZ0trUDBjeWtpalZPNW9YQXdlVm5KcVo3VWdrLUdaazJFRXdmYjJJai1TeENPXzlWZUJySU94aXBkV052QVdPX0ZINC1MTg?oc=5",
-      "fuente": "FB - Cataño",
-      "fecha": "2026-10-16 10:50",
-      "municipios": [
-        "Cataño"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Cataño"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -566,7 +678,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -582,7 +694,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -598,7 +710,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -614,7 +726,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -630,23 +742,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Mayormente soleado pero sectores tienen 80% de potencial de lluvia",
-      "enlace": "https://nelpr.com/2026/10/16/mayorment-soleado-pero-sectores-tienen-80-de-potencial-de-lluvia/",
-      "fuente": "NELPR",
-      "fecha": "2026-10-16 10:03",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NELPR"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -659,11 +755,26 @@
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "WAPA TV",
-        "WKAQ 580"
+        "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": false
+    },
+    {
+      "titular": "Sabías que Cataño llegó a ser un barrio de Bayamón ???",
+      "enlace": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxObm1oVmRyYnFGR3Y1Y2R6OUkxUk5BQk9keTVhMFhKV003SFJ6SjBDUWl3WTZxNUJaR0dZV01tSG9sajdCX3VOSWV1OXJrZUQwRVBESUd4aW53emNYd3NuMFlJa3RFRy0zS3NWQUFLYVMtZ2VjVXM0eHY0NmF3RXpiWV9xeVFpUVFQNWJ2NXpaZ0trUDBjeWtpalZPNW9YQXdlVm5KcVo3VWdrLUdaazJFRXdmYjJJai1TeENPXzlWZUJySU94aXBkV052QVdPX0ZINC1MTg?oc=5",
+      "fuente": "FB - Cataño",
+      "fecha": "2026-10-16 09:40",
+      "municipios": [
+        "Cataño"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Cataño"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -679,7 +790,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -696,8 +807,8 @@
         "WKAQ 580"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Arrestan a dos hombres: ocupan drogas, armas y municiones en residencial de San Juan",
@@ -712,7 +823,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -728,7 +839,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -745,7 +856,7 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -761,7 +872,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -779,7 +890,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -795,7 +906,7 @@
         "Trujillo Alto"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -812,7 +923,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -829,7 +940,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -845,7 +956,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -862,8 +973,40 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "Quiero invitarlos a leer la edición especial de Caguas Comunica+: la Revista, dedicada al Mensaje de Labor Realizada 2025-2026, donde podrán conocer más sobre los proyectos, iniciativas y logros alcanzados en nuestra ciudad. Es una buena oportunidad",
+      "enlace": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPUDI2YjhTYThSanVGWVpLS1hOSUJpTVh2NUlXX2JQLXdRMHhiU0k4c3JNZWdNR25UZ28zNjMyR3RBVW8tbzlrdmR0N2ZuYTdVcmxjVmxVMTVIQkM2TzBVS2FNU0pjcXFTMVVYYV9fdmoxcXFBSkw1emlYQzVzaXBMRDZENEVjcWx1cnZ5c1BKeU9UMzlNVDFraEhtZXdRMVpKOHlkQ2pyTkdxUm1xZ003SDdjbFZCdEViUmZqS2RWdFRmMG9wOEREVkUzWC1DdWVWNk0zMHJUWUhhVHg5SmFDa182NWZGelNEaTZzMVJlTXZzQTZP?oc=5",
+      "fuente": "William Miranda",
+      "fecha": "2026-10-15 20:00",
+      "municipios": [
+        "Caguas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "William Miranda"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "FBI de San Juan podrá emitir citaciones por vuelos ilegales de drones",
+      "enlace": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOYXFvd1F6SEgtZDdZMkhOTnpwelhfYnZYXy1oUjJ4RFB3VktENW5VRGdYZTlnRnNrdmJORkU1OVVIaFYzbDdDcmhtYlZDbEpmZzA0eHBzR3RybklZQnF1X1dsTjZHQ1psYXNIbzJyNFFRMlhJLVdCYTFFQmQ4WFVJSVVaSDRCbFNFMlo5WTFobWF0RF8zNmdneGVrdnpfRjI2YWMzX2pmMU5KZ0d3d1FJZ1d4d0lseHhQMFFGNFhUVFBpR082QkFqcHJXaGtZdTZKTFdYZzJDR01qaXBKOWE2YUhpYUNERHPSAewBQVVfeXFMUFVsX2xKRUxrSUxPSUxISUJ0WGFHSVhabE1FM1hWWmFuYTZMdHIxLUJOSlBXeXQ0WlRDUzNKcktNY0tpYURyUEppWWhOQW5oSDYtZ2M1VWdCYUgwaHJBdl9CT0pvVnR3WmNxOUI2Vk5yQWVha2UtLW1oYTZ2eGdCRUhmbHk3WHd6ZFA1LUZvVHNkSmF6LVNpRXlteG83RmZ5RGg3b24xUW9WRnpPeE9YcmZPaHNKTzBtbjBSUkllSWFsZUJyVC1TdUcyNHFFLVRWRW9aaXB1ZlBxVU1yZmdhaVlqNjZOUWV2eERRdWg?oc=5",
+      "fuente": "El Vocero (GN)",
+      "fecha": "2026-10-15 17:26",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "El Vocero (GN)"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Reinas de belleza boricuas brillan en el homenaje “Las Fabulosas de San Juan Moda”",
@@ -878,7 +1021,7 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -894,7 +1037,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -910,7 +1053,7 @@
         "FB - Canóvanas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -926,7 +1069,7 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -939,11 +1082,10 @@
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "Fajardo",
-        "El Vocero (GN)"
+        "Fajardo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -959,7 +1101,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -975,7 +1117,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -991,7 +1133,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -1007,7 +1149,7 @@
         "Naguabo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -1023,7 +1165,7 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -1039,7 +1181,7 @@
         "Naguabo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -1055,7 +1197,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -1071,7 +1213,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     },
     {
@@ -1087,7 +1229,7 @@
         "FB - Loíza"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-16T19:50:56.896250-04:00",
+      "ultima_verificacion": "2026-10-16T21:36:27.193529-04:00",
       "es_nueva": false
     }
   ]
