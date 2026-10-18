@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-17T20:50:39.975564-04:00",
+  "generated_at": "2026-10-17T23:16:10.431201-04:00",
   "interval_minutes": 15,
   "source_status": {
     "El Nuevo Día": "✅ OK",
-    "NotiCel": "❌ rate-limited/error: timeout/error: The read operation timed out",
+    "NotiCel": "✅ OK",
     "Radio Isla": "✅ OK",
     "Es Noticia": "✅ OK",
     "Telemundo PR": "✅ OK",
     "Walo Radio": "✅ OK",
     "El Oriental": "❌ rate-limited/error: XML RSS/Atom malformado",
-    "PR es La Isa": "❌ rate-limited/error: XML RSS/Atom malformado",
+    "PR es La Isa": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "NELPR": "✅ OK",
     "San Juan": "✅ OK",
     "Carolina": "✅ OK",
@@ -52,7 +52,7 @@
     "El Nuevo Día (GN)": "✅ OK",
     "El Vocero (GN)": "✅ OK",
     "WAPA TV": "✅ OK",
-    "NotiUno": "✅ OK",
+    "NotiUno": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "WKAQ 580": "✅ OK",
     "TeleOnce": "✅ OK",
     "Xposed Magazine": "✅ OK",
@@ -68,20 +68,85 @@
   },
   "articles": [
     {
-      "titular": "Bomberos combaten incendio en el sur de California: 16,000 evacuados y seis viviendas dañadas",
-      "enlace": "https://www.elnuevodia.com/noticias/estados-unidos/notas/bomberos-combaten-incendio-en-el-sur-de-california-16000-evacuados-y-seis-viviendas-danadas/",
+      "titular": "Con el béisbol en la sangre, tres mujeres se abren paso como gerentes en el Béisbol Doble A",
+      "enlace": "https://www.elnuevodia.com/deportes/beisbol/notas/con-el-beisbol-en-la-sangre-tres-mujeres-se-abren-paso-como-gerentes-en-el-beisbol-doble-a/",
       "fuente": "El Nuevo Día",
-      "fecha": "2026-10-17 20:46",
+      "fecha": "2026-10-17 23:10",
       "municipios": [
-        "San Juan"
+        "Carolina"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
         "El Nuevo Día"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": true
+    },
+    {
+      "titular": "¿Qué le pasó a la bahía bioluminiscente de Vieques? Esto investigan los científicos",
+      "enlace": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONjhDajV6STg3b294bU9HTmpEaExROWJjMUJlQjNYVFQzQTlvV01fOGJxNmRxc0JhcDFjWVd3SDRvVzF1SmxFdmI2TVFGWHM0eXhYYWluMTk2WWMtTGd5QXA4RXBPSXoybEFCWXk0bFdhWVZUTnJyNFZSNlJIQnVHXzdiX01BQmo3Um1kNjBxTHlzeFJZYW1YcG85TVhLbmdVWUs2Wlk1VE9Za2d0dG4tcEszcTNNLTROUmg1aUY2Rm44ekZkRWxFLWFxOGs2VjVMMW44?oc=5",
+      "fuente": "Vieques",
+      "fecha": "2026-10-17 22:40",
+      "municipios": [
+        "Vieques"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Vieques",
+        "Primera Hora"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "¡PRECAUCIÓN CONDUCTORES! REPORTAN ACCIDENTE DE TRÁNSITO EN LA AVENIDA MARTÍNEZ NADAL. 📍 SAN JUAN, PUERTO RICO – Se reporta un accidente vehicular en la avenida Martínez Nadal. 🚗⚠️ Se exhorta a los conductores que transit",
+      "enlace": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQS3otTGlBcmVnSTNyamt1N0UyZzhmT3R4OUN2WmIydGFVMWF4MTZLMFBnNFlTZXNMTzBQd0JuNFBCVTN3cjZ0S0NtaHg3S05mX1ktMFhGU1FWUThqNTVReWp1dGJDX01Pa0lWNlJ1OU1qOTVBNmJDaU1wa0dxaDhOMEVVaEp0czRBU2xsbWEtcjBqUFIwREdIYVVmeXR6QmxwTkhPVklHaWMyUjRzVktuSUhqcTJ2MDlCLWtGVHJHTU9YTnh2aGNPampNUmdlWEh3dnBYaFIyV0tKdlZFdy1LbGVHMzdoczJRVlhoeXo2OHJOZw?oc=5",
+      "fuente": "En Contacto 787",
+      "fecha": "2026-10-17 22:31",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "En Contacto 787"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "ESCALAN CLÍNICA MÉDICA Y SE ROBAN $3,000 EN EFECTIVO EN CAROLINA CAROLINA, PUERTO RICO – Agentes de la Policía de Puerto Rico investigan un escalamiento reportado en la clínica médica Women’s Medical Pavilion, ubicada en la calle M",
+      "enlace": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOOEh3cXFzdDZhbXhuMWNNa0htdllURzh2cG1FVGE3QlhPeFBFMTFrN2hRUElGTkR0bGpENVhiT3BEVFBtaFotQmNEeThFbUNpWlkwV2tRRzQ2QlhUU2FueWdxQWVpZ2s1Y3hfdldsMncxY2Y1bXFfTVF0b29leENKT2ZwOG9vT19YdUFDOWYxd0pvSXNRLThSNmtVcldFOEJrTGNxd09Tang0bk1RTlBoYWJELVI2aE9JMWlMMG85MDdQMGZROWdUdTBFYmo5N2FWcm1sZ0dlTkRzR3BaRmxidmVRTVdhUXZVRTE4?oc=5",
+      "fuente": "En Contacto 787",
+      "fecha": "2026-10-17 20:53",
+      "municipios": [
+        "Carolina"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "En Contacto 787"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "OPERATIVO NOCTURNO EN SAN JUAN DEJA $41,300 EN MULTAS Y LA OCUPACIÓN DE SIETE ARMAS DE FUEGO Y 579 MUNICIONES. 📍 SAN JUAN, PUERTO RICO – Un amplio operativo realizado durante la noche del viernes, 16 de octubre, y la ma",
+      "enlace": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOTkEwVlVHTnVCUnVISE1kZXRPRHoxTnhPS19aNDB0Ym1RWHp5aEtwWDZZUnpFV0tmU29hQUt0ODl2ZGxReWJUamRXT0dnblBibjFjQThKaWhNZ1dQaEFNLUQxaW9GUkNQdTMzZndKQ3JRbGpsRUlJWU9SZlg4NEltX0toVjhTTHhjUVJOZVB5RTR0a2dYVXRRaE9wUDV1VzZrcFRKV210eVJocDQtb3J0Nlh6WFBNZHlyeGdYUVNUZ3E3QkFnT01ORG4wREtIOTJJQ01MT3pTMlIwV0VKTkVXQnJEcXQ?oc=5",
+      "fuente": "En Contacto 787",
+      "fecha": "2026-10-17 20:50",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "En Contacto 787"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
+      "es_nueva": false
     },
     {
       "titular": "¡Se respiran aires nuevos en #Cataño! Hoy comienza una nueva etapa para este pueblo y para un hombre que ha trabajado más de 20 años para llegar hasta aquí. Hiram J. Torres Montalvo ha recorrido un camino singular. Ha servido en la Legislatura Muni",
@@ -97,8 +162,8 @@
         "Junta Gobierno"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Familia admite no esperaban tantas personas para pedir servicios del PAN",
@@ -113,8 +178,8 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Compartiendo con el pueblo de #Cataño durante los actos protocolares de juramentación de su nuevo alcalde, Hiram J. Torres Montalvo, un servidor público que se distingue por su humildad, don de gente, compromiso y espíritu trabajador.",
@@ -129,24 +194,24 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Hiram Torres Montalvo emite cuatro órdenes ejecutivas tras juramentar como alcalde de Cataño",
-      "enlace": "https://www.elnuevodia.com/noticias/locales/notas/hiram-torres-montalvo-emite-cuatro-ordenes-ejecutivas-tras-juramentar-como-alcalde-de-catano/",
-      "fuente": "El Nuevo Día",
-      "fecha": "2026-10-17 19:10",
+      "enlace": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQYWlTOFQ1RFhxdUlJdzBLNWZwNnE5YmZUQzBBUHZ5U0pTYmVYeER0NzVWVmIxOUFUSWhhdWFoaEV4TXcxM3d6anp0b1dTN3pBVWlGMGVBOXI0dUlqZklQX3g1cFBXcFhoN29yR3Z5bk1XYnR6NTB6N0tweS1oVTRndzFMT0F3M1o5VlB1T0FBdkZnelVZWHc4WEpsS2pPQ2ZkWkpBQ0dpYnhXY1otdERTVTN3UWY3Q19ibmRpdHBsVFBrMXZMei1rNWtEQ2Q3dUNsby1IdHVCajRZeFE?oc=5",
+      "fuente": "Cataño",
+      "fecha": "2026-10-17 19:00",
       "municipios": [
         "Cataño"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "El Nuevo Día",
-        "Cataño"
+        "Cataño",
+        "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": true
     },
     {
@@ -162,8 +227,8 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Hiram Torres Montalvo juramenta como alcalde de Cataño",
@@ -178,7 +243,7 @@
         "Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -193,8 +258,8 @@
       "fuentes_origen": [
         "NotiCel"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -210,7 +275,23 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
+      "es_nueva": false
+    },
+    {
+      "titular": "DRNA impugna multas propuestas de OSHA por fallas de seguridad en estación de Cataño",
+      "enlace": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNcEdHMHN0WTZZNF9sWS1aSk9XU0FUemNReWNLTkZ1NnNSTzFiX1dNTVR4eXNtNXNRZDNubThZTk9tN2t4M1otb2taYlgzeVpmaE9QbU11R1EzVDJGdU9PVEdqakh0YTBzOHZGN0VHeGlGSTlSSnBOM1F3bDVXY0I2Ym04QThkZU95b3JnRnUySkxOOHFvd0t6alRDUHZBeklWMnBWVGtTajhrdVd5eFR1TTdVZkc5S0VTYmwyZEpNbkVGQlNHYW16ek1QcExPaDItQ1FmaWpqWEE5cTBDVm1Eb1ZIQ3lwTEZZaDBIaVRwSDQwdmtyMzBjMlVn0gH_AUFVX3lxTE1kdWY0N3FBMHdlSFVqYW1MaWxycm45Vy0yVVQ4R0FmOXB6RERiUmNkc3c2dS02YUhBaDVZX0l2SU1HeUxDcDRrS2hoTGphWHpwZk1qN1VoSUduaHZqemxTSFpteDk2MGRvMl9YZ29DMENQbWZLNHNMZUpvMG91RGJDUDl2eTkwamFpcnNsMXFJVkNsVmdwenNvVl90djNUelNUS3ZsNTR0dWpjZXdVeHBvRGxXVWJ3TklmcWp3ZHJsMEUxVmxVSnp6Sm1GbDBhcmFBZDR5ZlpnRHFxYm5DTTZhTzNqdDBEbkVQSU5JVXFycV9aUkM5Q3N1bzFmQUdqUQ?oc=5",
+      "fuente": "El Vocero (GN)",
+      "fecha": "2026-10-17 16:37",
+      "municipios": [
+        "Cataño"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "El Vocero (GN)"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": true
     },
     {
@@ -226,41 +307,24 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "OPERATIVO NOCTURNO EN SAN JUAN DEJA $41,300 EN MULTAS Y LA OCUPACIÓN DE SIETE ARMAS DE FUEGO Y 579 MUNICIONES. 📍 SAN JUAN, PUERTO RICO – Un amplio operativo realizado durante la noche del viernes, 16 de octubre, y la ma",
-      "enlace": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOTkEwVlVHTnVCUnVISE1kZXRPRHoxTnhPS19aNDB0Ym1RWHp5aEtwWDZZUnpFV0tmU29hQUt0ODl2ZGxReWJUamRXT0dnblBibjFjQThKaWhNZ1dQaEFNLUQxaW9GUkNQdTMzZndKQ3JRbGpsRUlJWU9SZlg4NEltX0toVjhTTHhjUVJOZVB5RTR0a2dYVXRRaE9wUDV1VzZrcFRKV210eVJocDQtb3J0Nlh6WFBNZHlyeGdYUVNUZ3E3QkFnT01ORG4wREtIOTJJQ01MT3pTMlIwV0VKTkVXQnJEcXQ?oc=5",
-      "fuente": "En Contacto 787",
-      "fecha": "2026-10-17 14:27",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "En Contacto 787"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
       "titular": "ACCIDENTE DE TRÁNSITO ENTRE TRES VEHÍCULOS DEJA UNA PERSONA HERIDA EN CAGUAS CAGUAS, PUERTO RICO – Personal de Rescate de la Oficina Municipal para el Manejo de Emergencias (OMME) de Caguas atendió un accidente de trán",
       "enlace": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOMlEwWWFHMTdsNWFtNDRTWjdQNEdlNDZIR1AzWVZwNktfVGRtU01XZkZuRnlnYnh0bXppOGZWRW0wUnlZRjdPNnlEczk1dlJ3M1dPWUNCUVktU1Rtak5WdllrandHeTdRNEJTUkx2WGQyY0F2QTRBNHo5ZEFpcGRjbzUwWTFtczRUOHJ1N3BNZnladnRpVUFjQnJtTXBhTVR1Qk0tNFdhSGlhVDJuUTZfaXpXZ0I2QWZ1RmRXTFVlQXJCTWZ0S2xsYzZJRHdJZ25TMHhzbEpSQkJOM0ZXcy1UdnZ3MGZ6RHhXdFNJ?oc=5",
-      "fuente": "FB - Caguas",
+      "fuente": "En Contacto 787",
       "fecha": "2026-10-17 14:24",
       "municipios": [
         "Caguas"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Caguas",
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
-      "es_nueva": false
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
+      "es_nueva": true
     },
     {
       "titular": "[FOTOS] San Juan Moda reúne a las reinas de Puerto Rico en Las Fabulosas",
@@ -275,7 +339,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -291,7 +355,7 @@
         "San Juan"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -306,24 +370,8 @@
       "fuentes_origen": [
         "NotiCel"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Área Caguas y Pueblos Cercanos ✨ 🌿🚜 ¡YANKIS LANDSCAPING! 🌱✨ ¡Dale a tu patio el cuidado que se merece! 🏡💚 ✅ Corte de grama ✅ Limpieza de áreas verdes ✅ Mantenimiento de patios ✅ Servicios de pintura 🌟 Trabajo profesional, servicio confiable y",
-      "enlace": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBjM1Bad1U4VFJCRVZPdkhVZTR4V1FQVmVRZzFuZjdkX0pTVTNvOW5XNUYyeXROTWx3UUN6TERjeVFoZXkxakFfNkJrQVNfSVBBTXlWN3BlYXB0VHZ6ZVh1VEJGZXpHbVdXS2FfUUhQeWs5ejRVNk5kTG1rUWw?oc=5",
-      "fuente": "FB - Caguas",
-      "fecha": "2026-10-17 11:26",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Caguas"
-      ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -339,23 +387,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "🏡 ¡UN SOLAR, MUCHAS POSIBILIDADES EN CANÓVANAS! ¿Buscas un terreno para desarrollar tu próximo proyecto? El Municipio de Canóvanas anuncia la subasta de un solar vacío en la urbanización Country View, como parte de nuestra iniciativa para",
-      "enlace": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQcmtLVi0tS2NDREoyOVQ3ZjR3MVRyNDh2ZThxaW5adGhYNVRiRl9rNmxZMF9JbGVGNXQyTW5QMFhXdXNJNEduM0lNVG9BUjhRbjFiaDhkdURwS0JHMW9XWS1yUVhrYkN6RWVkQm80Y292eXB6RWhQOXFMVWRNekdRSmhHQXotanBKWmRXVkdfSkRnMDhMREhtNkpoVUJ3Rll6M3NJRk44S2dPQWUzR29DaUhUVUwtTjNfVS1jUXJVM2xWV0hHbkN6S0ZGdS1SY1pwd3NmUF94Mi04d3JWM1I5bFJLekdyY0ZSNWZlUkFDVWM2R0ZTOTNpbDEyMA?oc=5",
-      "fuente": "FB - Canóvanas",
-      "fecha": "2026-10-17 11:10",
-      "municipios": [
-        "Canóvanas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Canóvanas"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -371,7 +403,7 @@
         "Es Noticia"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -388,7 +420,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -404,7 +436,7 @@
         "San Juan"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -420,7 +452,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -436,7 +468,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -452,7 +484,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -468,7 +500,7 @@
         "Es Noticia"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -484,7 +516,7 @@
         "FB - Río Grande"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -500,23 +532,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Empleado de 60 años fallece arrollado por camión mientras trabajaba en Caguas",
-      "enlace": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPVFBHcEI1YW5LbkEyb1V3ZGNjZEFleUh2enBITzV1MTFpU1BwTER4akVTa0ZjeVFJdmgyYnlMa2hCb3duSGFoLXlxMVY5WFFqSW9GbWFQNlFqY2o0WDZrX01VV0F1ZDJIT01pa0xsemlQNWdNUE9MVmVINi1xMHFEektNWVRuU3c2UU1KdUJPMno4UGdyck1haVUwMnk1N2xVb180SDVzSWRtX29kQTEyY3kxeUZ6dldQbUhDTTlkT2xzVmVsU0N3RFN6Sm9odERDWGM5SGFEN2YzSnpvbFVFUi16am8wM1ByYW8xbTF2RVJydw?oc=5",
-      "fuente": "WAPA TV",
-      "fecha": "2026-10-16 23:08",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "WAPA TV"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -532,7 +548,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -548,8 +564,8 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Renuncia secretario del DACO para asumir alcaldía de Cataño",
@@ -564,7 +580,7 @@
         "Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -580,7 +596,7 @@
         "Trujillo Alto"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -596,7 +612,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -612,8 +628,8 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Denuncian intento para desmantelar escuela vocacional en San Juan",
@@ -628,23 +644,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Hombre muere arrollado por camión en Caguas y dos resultan heridos de bala",
-      "enlace": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOVDdHWVpJQmtXd19jd19xUFAzam5kZnc3VE5SUVRKY1BMMVVEOVdpMXl6amItQzBEN3RReFJHSGV6czYwTmRWNk9UMzVPVndGLTFSVjBVYy1IY05mWHFsaFpmQzZxcHlrSUhGNDZGeENxTGk4Mm55S2FBOVZ6a2tuRXhiS0J5cWZDa2J0akxXaUVvZXV1Y2NuSVV3Yk1NRG92QkVmbFRfeUs4NkNKbl9OSFJNcEw3OThSSHl0QVN3aksxZ1FOSS1oM0hDN2NoWHRfM2dvay1YdEJBb0lxXzZiSEctWkxlOEFNd0dnUVBwRzR6d25xR19NU0dwVkhLWDBaRFHSAYcCQVVfeXFMTzhoaDBOR1ZiUUlNOHVtZVFzaTB5RVV0YVdwbnA3Z3ZzTEZtLWM3bkJGdXo3V0pJamM1VjRYSzVIN00tSGtiWkZlNUMxNDZKNVpXWUZhX2p5dEoxZmVfSjd5YkN2cWNaNXN5VFE1NUtCeFZObUM3YnBzMDRYeUJ2eS1UeUE1anh4TWdQX2lEWFBiNUVkYkRpOFBVeDNHeGdXbHp0czYtVC05bHlGYzB5T1JaYTJ4Q2xZaU94eEcycUtibURXck9RQVlTMnpiMXFNUDJHOGVsZzlvNFZGLUJNYjJBVTBZemprX2xhNi1rcHJkM0xXODVGcjEycHY4c1JLRnc5OEMxVkk?oc=5",
-      "fuente": "El Vocero (GN)",
-      "fecha": "2026-10-16 16:57",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "El Vocero (GN)"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -660,8 +660,8 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Detienen a hombre que abrió fuego contra conductor por corte de pastelillo en Carolina",
@@ -677,7 +677,7 @@
         "WKAQ 580"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -693,7 +693,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -709,7 +709,7 @@
         "Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -725,7 +725,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -741,7 +741,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -757,7 +757,7 @@
         "FB - Ceiba"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -773,7 +773,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -789,7 +789,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -805,7 +805,7 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -821,7 +821,7 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -837,7 +837,7 @@
         "Es Noticia"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -853,7 +853,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -869,7 +869,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -885,7 +885,7 @@
         "WKAQ 580"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -901,7 +901,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -917,7 +917,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -933,7 +933,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -949,8 +949,24 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "Alegado corte de pastelillo en Carolina provoca discusión y disparo en Carolina",
+      "enlace": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNSy1HRnJkcFV5bjBBb1lwdmZpVEtIano3VmI1YnR3b0dJMzV5WDVKTWlxVUpFaG9iejBYeUlDV3V0ZDFJbmtqLWxGWW9BSXJ5bi0xbGU2ZWlPNWIwV1pfMGpiT2N6TTNYYnI1ekJsdEtOcHFzUlhrWnc4S1BnR1hCVEtrQ0E2cWozelNpMlY1eGVVNEtyU1l0OFBsV3RkWEVHYmRkaVp6bVdxdW9yYTNpV2FRUkZBbXN4Wm1lZ2tQUm9nc2xIMklCdy1QNlFtUDR2a0R2Vl96Q0xjWlJGekdJRVZVcWhyaEpPVUlLSXM5dHMxMGI4?oc=5",
+      "fuente": "WAPA TV",
+      "fecha": "2026-10-16 11:22",
+      "municipios": [
+        "Carolina"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "WAPA TV"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Buscan a adolescente desaparecido en Santurce",
@@ -965,7 +981,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -981,8 +997,8 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Hombre asegura que fue víctima de tiroteo sin razón alguna en Trujillo Alto",
@@ -998,7 +1014,7 @@
         "WKAQ 580"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -1014,7 +1030,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -1031,7 +1047,7 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -1047,7 +1063,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -1064,7 +1080,7 @@
         "Trujillo Alto"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -1080,7 +1096,7 @@
         "Trujillo Alto"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -1097,7 +1113,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -1113,7 +1129,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     },
     {
@@ -1130,7 +1146,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "ultima_verificacion": "2026-10-17T23:16:10.434352-04:00",
       "es_nueva": false
     }
   ]
