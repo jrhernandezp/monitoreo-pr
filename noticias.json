@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-17T19:00:27.686114-04:00",
+  "generated_at": "2026-10-17T20:50:39.975564-04:00",
   "interval_minutes": 15,
   "source_status": {
     "El Nuevo Día": "✅ OK",
-    "NotiCel": "✅ OK",
+    "NotiCel": "❌ rate-limited/error: timeout/error: The read operation timed out",
     "Radio Isla": "✅ OK",
     "Es Noticia": "✅ OK",
     "Telemundo PR": "✅ OK",
     "Walo Radio": "✅ OK",
-    "El Oriental": "❌ rate-limited/error: timeout/error: <urlopen error timed out>",
-    "PR es La Isa": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
+    "El Oriental": "❌ rate-limited/error: XML RSS/Atom malformado",
+    "PR es La Isa": "❌ rate-limited/error: XML RSS/Atom malformado",
     "NELPR": "✅ OK",
     "San Juan": "✅ OK",
     "Carolina": "✅ OK",
@@ -52,7 +52,7 @@
     "El Nuevo Día (GN)": "✅ OK",
     "El Vocero (GN)": "✅ OK",
     "WAPA TV": "✅ OK",
-    "NotiUno": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
+    "NotiUno": "✅ OK",
     "WKAQ 580": "✅ OK",
     "TeleOnce": "✅ OK",
     "Xposed Magazine": "✅ OK",
@@ -68,6 +68,104 @@
   },
   "articles": [
     {
+      "titular": "Bomberos combaten incendio en el sur de California: 16,000 evacuados y seis viviendas dañadas",
+      "enlace": "https://www.elnuevodia.com/noticias/estados-unidos/notas/bomberos-combaten-incendio-en-el-sur-de-california-16000-evacuados-y-seis-viviendas-danadas/",
+      "fuente": "El Nuevo Día",
+      "fecha": "2026-10-17 20:46",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "El Nuevo Día"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "¡Se respiran aires nuevos en #Cataño! Hoy comienza una nueva etapa para este pueblo y para un hombre que ha trabajado más de 20 años para llegar hasta aquí. Hiram J. Torres Montalvo ha recorrido un camino singular. Ha servido en la Legislatura Muni",
+      "enlace": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPMWs3bEU5M1dKOUJvdzBsTlA5aVlxdDhIVkltNHFaeFZfcmFlNlVKbUlReG1KUHdNSndCckI1dTBtNGw5T1p6cDJpclRIS3VJU0lxRWdmR0FoNm1VR0VWeHNrdXRvY2k1UklGVkpwSUZFVi15MjYtYzFHVlRaUHRqY3Y3X3NrYWo5VzR4aTdpSDc3R2wxOXZ6M2tkVG9CQjJWNVM0bFF4cWJJQU8yNjlkckZiS1NURmtFdUlxVGJpNUluMGlQQ0lJcHdqZmJ5aWViR2FvTElUVUJ3dw?oc=5",
+      "fuente": "FB - Cataño",
+      "fecha": "2026-10-17 19:59",
+      "municipios": [
+        "Cataño"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Cataño",
+        "Junta Gobierno"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Familia admite no esperaban tantas personas para pedir servicios del PAN",
+      "enlace": "https://nelpr.com/2026/10/17/familia-admite-no-esperaban-tantas-personas-para-pedir-servicios-del-pan/",
+      "fuente": "NELPR",
+      "fecha": "2026-10-17 19:51",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "NELPR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Compartiendo con el pueblo de #Cataño durante los actos protocolares de juramentación de su nuevo alcalde, Hiram J. Torres Montalvo, un servidor público que se distingue por su humildad, don de gente, compromiso y espíritu trabajador.",
+      "enlace": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOckRhNkM0Wk9oV01TOGR3cUl3ZE9ac1I5WXU4cVFJS29DNWROQXBlUTRRT2RuaGpId3Bib2ZibTZxQUNZWVVLeHF1QzN4VDY4NVVNZXlUNGtNLXZPODdzbGQ3d2FGdmtkT1lLSzdneFpONUc5akt2MXc1eTVVWEc4MHdQVFc4VnRSVnAxS3VsRzFGSEJ5NzI4R2VST29kWXBDT1hpNGtpT1RnZm9FN0RrME9wV0VFaEFHQkdlMmhzZmprRktvZ2RmTExYUTQyVXpXV1RDWmFtUkJ6dw?oc=5",
+      "fuente": "FB - Cataño",
+      "fecha": "2026-10-17 19:32",
+      "municipios": [
+        "Cataño"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Cataño"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Hiram Torres Montalvo emite cuatro órdenes ejecutivas tras juramentar como alcalde de Cataño",
+      "enlace": "https://www.elnuevodia.com/noticias/locales/notas/hiram-torres-montalvo-emite-cuatro-ordenes-ejecutivas-tras-juramentar-como-alcalde-de-catano/",
+      "fuente": "El Nuevo Día",
+      "fecha": "2026-10-17 19:10",
+      "municipios": [
+        "Cataño"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "El Nuevo Día",
+        "Cataño"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "🔴 ¡EN VIVO desde Cataño! Sigue la transmisión de la toma de posesión de Hiram J. Torres Montalvo como alcalde del Municipio de Cataño. 📺 Conéctate ahora al canal de YouTube de WIPR y comparte este momento: https://youtu.be/P_2g4NGjI6o #Cataño",
+      "enlace": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNZEpYbkxJVWxMQnlTNVZVMzhmUkNkM2JaZnNQc2pEa2o4cVo0SGw5UjlaUzk4aEhfaWFoZXE3V2tzR05mYWNfdExXVDdGMDZVdnhXQTNyMFVkZ0ZGeDVmVGZackZjNUlsUklKY0hobTRBNDl6Sk1TcW9TRkFMZzBFMUJ5U25EOFJndGFPNWpaQ2RXeVZXQllIOG10eE85bEUtYlZUbU40WUVSdzBvQXIyOFlOZGVkQmI4ZDg1eWRnMlVxVmVseDBhd0c3MFExS3NvVmtUVmpyWHhJMHFOYndzd3p4OUpPMUZHUFBTY3N6dTM?oc=5",
+      "fuente": "FB - Cataño",
+      "fecha": "2026-10-17 17:46",
+      "municipios": [
+        "Cataño"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Cataño"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "es_nueva": true
+    },
+    {
       "titular": "Hiram Torres Montalvo juramenta como alcalde de Cataño",
       "enlace": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWHFaTVRhSmZwQlp4X1NnUVJ4YnRfaWdVS3JqTXIwX2JRd2RqZDJteTJrOFVack85THhLY2VQdmd4anpyN2lNSVJ6aDFtVHZFUmlqTHM5ZHl5Ymk0UEh6WjF4M1lQbUpaMVZMQ1ZjMEhxV1RYc2lxSHFuX3VyUnp5YWhqVzNEaTlfNHExYjM0cER2MGFaVXdZUjNIQnE1WHBoNU5KelFGWW1VSHFjeVZqYW1RcEttc2J3OGZz0gHDAUFVX3lxTE5WUTVxemh5Q3NTVGRSeVNpLWFoLTNQX1hUR0w5aU1TZ2RjaWZIdlYydWRVRFBWQW9qTEV6aHNWZDZZUUFZMVd4ZUdCZklaX1Y2TElQVVdaMU8tWUVhdVpnRVItb08wcGQzazUzR1VqLXQ0elFPSWs0NVoyTk8xUHdUOUFsQzR2MHpIYzdseXdOOG94eWtJS0hiODhxQ01XcHZZQWp1a2xaZFJxMlBkZEZpdkxSLThaWWIxaUR3UmlLa0MwZw?oc=5",
       "fuente": "Cataño",
@@ -80,8 +178,8 @@
         "Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Familia admite que no esperaba tantas personas para pedir servicios del PAN",
@@ -95,8 +193,24 @@
       "fuentes_origen": [
         "NotiCel"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "es_nueva": false
+    },
+    {
+      "titular": "Municipio Autónomo de Cataño. . [EN VIVO] Toma de Posesión de Hiram J. Torres Montalvo como alcalde del Municipio de Cataño",
+      "enlace": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQV3VWeXJRVmVacnlzTDctVzJpMzkwZ1BVSVdYQ2FCOHJ6WkU5WTJiV2JDd0QtNUw5T0JGU3g3ZGZTMl9ORW5JVEt0U0paWTJxX3NFRVBELTZld2Vfdm1JT3RBR3hhMUFvNUo1alB3YVZpbGdrTWRmLWV2aFZKTzRkempYd2JUSVowY2RRdjJqdkY3NnJuVndqTEJhNHNFbGpEYzVqQThvVHRWYUw1QlFsaUNfRk90dUdTOTFEMklhRnpYUVdJTGlhZ2wtcFJPcVJSQW9wbmJySHVlQQ?oc=5",
+      "fuente": "FB - Cataño",
+      "fecha": "2026-10-17 17:33",
+      "municipios": [
+        "Cataño"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Cataño"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": true
     },
     {
@@ -112,7 +226,7 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -128,7 +242,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -145,7 +259,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -161,23 +275,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "Operativo en comercios de San Juan deja siete armas ocupadas y $41,300 en multas",
-      "enlace": "https://www.elnuevodia.com/noticias/seguridad/notas/operativo-en-comercios-de-san-juan-deja-siete-armas-ocupadas-y-41300-en-multas/",
-      "fuente": "El Nuevo Día",
-      "fecha": "2026-10-17 12:09",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "El Nuevo Día"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -193,7 +291,7 @@
         "San Juan"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -208,7 +306,7 @@
       "fuentes_origen": [
         "NotiCel"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
       "es_nueva": false
     },
@@ -225,7 +323,7 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -241,12 +339,12 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "es_nueva": false
     },
     {
       "titular": "🏡 ¡UN SOLAR, MUCHAS POSIBILIDADES EN CANÓVANAS! ¿Buscas un terreno para desarrollar tu próximo proyecto? El Municipio de Canóvanas anuncia la subasta de un solar vacío en la urbanización Country View, como parte de nuestra iniciativa para",
-      "enlace": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQTFRoV215VEZSV0ZBWXRoUGlYQm4tdFFqZmhwMDhtbjRhUlZ4aVJIcUNhOW5Dd1NLWmNaU3gtVVhkdVpyaGRFekJWOTZVZHJDUk9TbVloMEttSTdVTEFZQjdFOWl0Y1BfOWJGajYzeW1EZ3VuNEw3a0ZFVFMyV2R1ajJPdlpnUEdhaUhudTJyd2tFZVRqSGlYQlpXaXJ2cDdsbVNpREZlckRMVktNeUo4a0lESDJLR05HMGw5X1JKRm1SUUdUYzNVU0VEMEgzczZ5WGRxeWZmQjdKQkhLSzNjZWc0U1A4TC1HZlE?oc=5",
+      "enlace": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQcmtLVi0tS2NDREoyOVQ3ZjR3MVRyNDh2ZThxaW5adGhYNVRiRl9rNmxZMF9JbGVGNXQyTW5QMFhXdXNJNEduM0lNVG9BUjhRbjFiaDhkdURwS0JHMW9XWS1yUVhrYkN6RWVkQm80Y292eXB6RWhQOXFMVWRNekdRSmhHQXotanBKWmRXVkdfSkRnMDhMREhtNkpoVUJ3Rll6M3NJRk44S2dPQWUzR29DaUhUVUwtTjNfVS1jUXJVM2xWV0hHbkN6S0ZGdS1SY1pwd3NmUF94Mi04d3JWM1I5bFJLekdyY0ZSNWZlUkFDVWM2R0ZTOTNpbDEyMA?oc=5",
       "fuente": "FB - Canóvanas",
       "fecha": "2026-10-17 11:10",
       "municipios": [
@@ -257,8 +355,8 @@
         "FB - Canóvanas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Duerme en prisión la mujer que apuñaló a su pareja",
@@ -273,23 +371,7 @@
         "Es Noticia"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "En prisión mujer que apuñaló a su pareja en San Juan",
-      "enlace": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQN01xLS1pbmxiNDg1YmJVUVJSbzlTT2dqTlRjVG5yS2VyNW1WLXpnXzVDZWRacjFpd1EwUnM1QXBpM0pycGdjbjY0eE1wWElYcnUtdWVpSnlkdVQ1TS1OUnQ1U1RvZ0Nzanc5VzlOLW15NXlVdk1CR1dNN2dESkppSGtGc2dWSUZQNjA3MFhteFhROFJQUmZWQlJB?oc=5",
-      "fuente": "San Juan",
-      "fecha": "2026-10-17 10:48",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "San Juan"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -306,7 +388,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -322,7 +404,7 @@
         "San Juan"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -338,7 +420,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -354,7 +436,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -370,7 +452,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -386,7 +468,7 @@
         "Es Noticia"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -402,7 +484,7 @@
         "FB - Río Grande"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -418,7 +500,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -434,7 +516,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -450,8 +532,24 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "El extitular de la agencia ahora se desempeñará como alcalde de Cataño tras ganar la elección especial celebrada el 27 de septiembre",
+      "enlace": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOSW9xTk9KU0ZNcWVzZUN6akVHS19aVjc0SHZEUzRrRUVMSzhodTVYUERxVmduUU9hNmVsQWtRVEFaMTNPMU1YejNrSy1JUjJZNDRwVmJPXzRlWUFsb2gtaUN0QWJrMUNEakZFd2ZuS18yWWFKTVJYWkxpSzBndEY3SGVMVy1kXzZWR3VzTmtJbW9nNkMwY1oyYlVBcFJaNS1BLVRwVlVSWjRZOEZaR21RZ0xVbnhfXzhTbldXeFhRMnM1WTgtbkRYT1FRRW9Ic0pjdkNZUHZJRl9pU2tESTM2ZGtDcFFUdjh2WVY0?oc=5",
+      "fuente": "FB - Cataño",
+      "fecha": "2026-10-16 20:55",
+      "municipios": [
+        "Cataño"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Cataño"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Renuncia secretario del DACO para asumir alcaldía de Cataño",
@@ -466,7 +564,7 @@
         "Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -482,7 +580,7 @@
         "Trujillo Alto"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -498,25 +596,24 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
       "titular": "Hiram Torres Montalvo renuncia al DACO para juramentar como alcalde de Cataño",
       "enlace": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPbUZEaG5BNXRCMmFXMWVFWWhta1pGN0FrNGtwM19IVzYtTWZhNlhRbXg5VHRyd2NVT3VCZEdiM1AzMDRtSUVRdUZmSWtqaEQzWFhjYVFCdk5sc1F1THVuaUpLMFlMWi1qbEYwNlc4M0NIdTdYb1JRWHhNSW1icFhpRFI2OG1WRDRuV280VzlSMExnVHR5ZlF2TzZfdHMzSER1SlJNNGY5ZlRad0Ffb1RrVE1lYUE1WWEzRnczMjgyNXF0OExMVm8wOGZMTUlnN1ZBUXh1RzlB?oc=5",
-      "fuente": "Cataño",
+      "fuente": "Primera Hora",
       "fecha": "2026-10-16 19:33",
       "municipios": [
         "Cataño"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "Cataño",
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
-      "es_nueva": false
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Denuncian intento para desmantelar escuela vocacional en San Juan",
@@ -531,7 +628,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -547,8 +644,24 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "🔴 EN VIVO | TOMA DE POSESIÓN 2026 | CATAÑO WIPR te invita a ser parte de la transmisión especial de la ceremonia de toma de posesión del Hon. Hiram J. Torres Montalvo, alcalde de Cataño. Acompáñanos en este importante acto oficial a través de la s",
+      "enlace": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxONnlSTGZCUTNsT05teDJTa3VqcFh6X2ZxMzdRM3Zwc2NXWTFQTE0zVWNoMDlSNzVTdmM0VExvWExrVTVHUnZZVlBaYlVmMVhBNUNqQWlHSktFYkdGeFFzQ05Ca3U3R0dUdXhCX1NleUtiRHB4cVNiTEJ0YVdBN1RhOGpBUXRLc0FCX1Bhck9IY192NFE4SzdOR0RmampuYnlEVFF3SUFnOF9sVGxyMEZ6NjdZR0hxQWc2azNWV2U4TkRObzNfRHFzRjNyM0VmbkJ1VlcwcFlNYzFtZHdNQlVJRXJWUHNXdw?oc=5",
+      "fuente": "FB - Cataño",
+      "fecha": "2026-10-16 16:22",
+      "municipios": [
+        "Cataño"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Cataño"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Detienen a hombre que abrió fuego contra conductor por corte de pastelillo en Carolina",
@@ -564,7 +677,7 @@
         "WKAQ 580"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -580,7 +693,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -596,7 +709,7 @@
         "Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -612,7 +725,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -628,7 +741,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -644,8 +757,8 @@
         "FB - Ceiba"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Ocupan sustancias controladas en Villa Hugo en Naguabo",
@@ -660,7 +773,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -676,7 +789,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -692,7 +805,7 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -708,7 +821,7 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -724,7 +837,7 @@
         "Es Noticia"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -740,7 +853,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -756,23 +869,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "¡EL NENE DE CAGUAS! ¡Mucha suerte a Juanmita Lopez De Jesus, que mañana sube al ring en su ciudad! 🔥🏠🇵🇷 #LopezRamirez",
-      "enlace": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPTWEzS0oyOEdqYThYelBwcmZfZFFYc0Q5cmtTVUFOOWktdWt6TVZNQ0x1Q3dQemVSZFVoQ2xSblZ3U2lnWVNlLXRKZmVHLUN2emJHOEQyQ0VEYS14UVVDc2tsd1JxWmk3ZGhiLXh0ZFVIZ3E3ZDJBMjNHY3BBRDFMMlpNX2E2LVdGenhyV0VYenMzbTJ6UG9HM1lWZEljN2NQR3M3dExXTnFZMHFtNTg1Y1dvVHMyMEJfaW1OU0lnWFZadW51T2FMNzU0bjZqbHdURUk1aXJVM3VIcUF6?oc=5",
-      "fuente": "FB - Caguas",
-      "fecha": "2026-10-16 12:00",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Caguas"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -788,7 +885,7 @@
         "WKAQ 580"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -804,7 +901,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -820,7 +917,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -836,7 +933,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -852,7 +949,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -868,8 +965,24 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "Sabías que Cataño llegó a ser un barrio de Bayamón ???",
+      "enlace": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxObm1oVmRyYnFGR3Y1Y2R6OUkxUk5BQk9keTVhMFhKV003SFJ6SjBDUWl3WTZxNUJaR0dZV01tSG9sajdCX3VOSWV1OXJrZUQwRVBESUd4aW53emNYd3NuMFlJa3RFRy0zS3NWQUFLYVMtZ2VjVXM0eHY0NmF3RXpiWV9xeVFpUVFQNWJ2NXpaZ0trUDBjeWtpalZPNW9YQXdlVm5KcVo3VWdrLUdaazJFRXdmYjJJai1TeENPXzlWZUJySU94aXBkV052QVdPX0ZINC1MTg?oc=5",
+      "fuente": "FB - Cataño",
+      "fecha": "2026-10-16 09:40",
+      "municipios": [
+        "Cataño"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Cataño"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Hombre asegura que fue víctima de tiroteo sin razón alguna en Trujillo Alto",
@@ -885,7 +998,7 @@
         "WKAQ 580"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -901,7 +1014,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -918,7 +1031,7 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -934,7 +1047,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -951,7 +1064,7 @@
         "Trujillo Alto"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -967,7 +1080,7 @@
         "Trujillo Alto"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -984,7 +1097,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -1000,7 +1113,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     },
     {
@@ -1017,7 +1130,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-17T19:00:27.690393-04:00",
+      "ultima_verificacion": "2026-10-17T20:50:39.978293-04:00",
       "es_nueva": false
     }
   ]
