@@ -801,21 +801,21 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-19 08:00:18 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-19 08:15:17 PM</span></div>
         </div>
     </div>
     <div class="stats">
         <div class="stat-box"><div class="num">30</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">8</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">1</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">9</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">61/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-19 08:00:18 PM</div><div class="label">Última recolección</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-19 08:15:17 PM</div><div class="label">Última recolección</div></div>
     </div>
 </div>
 
 <!-- SEARCH -->
-<div id="freshnessNotice" class="freshness" role="status" aria-live="polite" data-collected-at="2026-10-19T20:00:18.704787-04:00">
-    <strong id="freshnessText">Última recolección exitosa: 2026-10-19 08:00:18 PM (hora de Puerto Rico).</strong>
+<div id="freshnessNotice" class="freshness" role="status" aria-live="polite" data-collected-at="2026-10-19T20:15:17.750891-04:00">
+    <strong id="freshnessText">Última recolección exitosa: 2026-10-19 08:15:17 PM (hora de Puerto Rico).</strong>
     <p>Una recarga de la página no implica una nueva recolección. Aviso desde los 30 minutos; alerta desde los 45.</p>
     
 </div>
@@ -826,6 +826,13 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <!-- BREAKING NEWS -->
+
+<div class="section breaking-section">
+    <h2>🚨 Noticias de última hora</h2>
+    
+    <p><a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxQNE1QaC1tYmwxWmVNR1BPbzFWSnExS1llS2k1OC1RRnFBUVZFeGg5dm9ydHdiUFFEZ21LSmY2T0RpbXg2SVJUWE5oZ1NCWXExM01EZFI5WTkzYjVrTFE3SWg1MnFmc2tpRmVoeVRpZTF1Y2xDaWtOa0IzelVybkVXV2c1ZXRhWUV5MW5uU3Q4OGJ2WUZDZUhHeGxEWEtHak5FM1hSZXBMdTZIN3V3eHVxV2VobTVWeldOTXpOLW1TLUFvVW1Lb2tjS3lrY0V2WUdEMk14UDNnY0p4UlhDUm1lYmpzQ08?oc=5" target="_blank" rel="noopener noreferrer">DEJAN EN LIBERTAD A SAMUEL HERNÁNDEZ VENTURAS, IMPUTADO DE ASESINAR AL HIJO DE SU EXPAREJA EN CEIBA Samuel Hernández Venturas, imputado por el asesinato del hijo de su expareja en el municipio de Ceiba, quedó en libertad me</a> — <span class="time-ago" data-date="2026-10-19T19:33:00-04:00">hace 42min</span></p>
+    
+</div>
 
 
 <!-- MUNICIPALITIES -->
@@ -850,7 +857,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <button type="button" class="muni-card " data-municipio="Caguas">
             <span class="muni-name">Caguas</span>
-            <span class="muni-count">5</span>
+            <span class="muni-count">4</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Luquillo">
@@ -878,9 +885,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">0</span>
         </button>
         
-        <button type="button" class="muni-card inactive" data-municipio="Ceiba">
+        <button type="button" class="muni-card " data-municipio="Ceiba">
             <span class="muni-name">Ceiba</span>
-            <span class="muni-count">0</span>
+            <span class="muni-count">1</span>
         </button>
         
         <button type="button" class="muni-card inactive" data-municipio="Naguabo">
@@ -932,6 +939,20 @@ tr.article-row:hover { background: var(--surface2); }
         <table>
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
+                
+                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Ceiba" data-titular="DEJAN EN LIBERTAD A SAMUEL HERNÁNDEZ VENTURAS, IMPUTADO DE ASESINAR AL HIJO DE SU EXPAREJA EN CEIBA Samuel Hernández Venturas, imputado por el asesinato del hijo de su expareja en el municipio de Ceiba, quedó en libertad me">
+                    <td><span class="muni-tag">Ceiba</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxQNE1QaC1tYmwxWmVNR1BPbzFWSnExS1llS2k1OC1RRnFBUVZFeGg5dm9ydHdiUFFEZ21LSmY2T0RpbXg2SVJUWE5oZ1NCWXExM01EZFI5WTkzYjVrTFE3SWg1MnFmc2tpRmVoeVRpZTF1Y2xDaWtOa0IzelVybkVXV2c1ZXRhWUV5MW5uU3Q4OGJ2WUZDZUhHeGxEWEtHak5FM1hSZXBMdTZIN3V3eHVxV2VobTVWeldOTXpOLW1TLUFvVW1Lb2tjS3lrY0V2WUdEMk14UDNnY0p4UlhDUm1lYmpzQ08?oc=5" target="_blank" rel="noopener noreferrer">DEJAN EN LIBERTAD A SAMUEL HERNÁNDEZ VENTURAS, IMPUTADO DE ASESINAR AL HIJO DE SU EXPAREJA EN CEIBA Samuel Hernández Venturas, imputado por el asesinato del hijo de su expareja en el municipio de Ceiba, quedó en libertad me</a>
+                    </td>
+                    <td>En Contacto 787</td>
+                    <td class="time-ago" data-date="2026-10-19T19:33:00-04:00">hace 42min</td>
+                </tr>
+                
                 
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
@@ -987,7 +1008,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxNR00ya1R4OUt2TmYteW55aThiSVFLZHRZWi1rR0k2cnhsaXBkUVRhWnRoYThkQzRPMXVCNHU0Mkhjb1djbEhPb1JaQ25TYXpjcEdmdEo4ZjVLRDhTbW1ZSjdZVmtDaGk0akJqTEZIYTFqcXJNRWlXZnhtUG5vdXBGU2JqYV85dHB3U3VhOVFRS1VRbUVDaHI1YXlOMkZ5eHNrMVp6b3JZMjlJQ0l6bTNuOThLaTJvbUV6Y2ttS1FuQ1Q1bm9mU1RfS29SekNZU252ZWkwcDNHbHZzRmNwc0ZGYUdGVW1RaF81aFJFMFBERQ?oc=5" target="_blank" rel="noopener noreferrer">🌧️ REPORTAN INUNDACIONES EN LA URBANIZACIÓN ROLLING HILLS EN CAROLINA CAROLINA, PUERTO RICO | 19 de octubre de 2026 Se reportan inundaciones en la urbanización Rolling Hills, en el municipio de Carolina, debido a las fuertes lluvia</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-10-19T17:13:00-04:00">hace 2h</td>
+                    <td class="time-ago" data-date="2026-10-19T17:13:00-04:00">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Agricultura comenzará fumigación contra mosca del Mediterráneo en la isleta de San Juan">
@@ -1031,7 +1052,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.notiuno.com/noticias/gobierno-y-politica/agricultura-crea-plan-de-fumigaci-n-contra-la-mosca-del-mediterr-neo/article_f0afb8e3-2898-45a3-90cb-6622f7da88c9.html" target="_blank" rel="noopener noreferrer">Agricultura crea plan de fumigación contra la mosca del Mediterráneo</a>
                     </td>
                     <td>NotiUno</td>
-                    <td class="time-ago" data-date="2026-10-19T16:01:00-04:00">hace 3h</td>
+                    <td class="time-ago" data-date="2026-10-19T16:01:00-04:00">hace 4h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="✨Una casa. Nuevas historias. Tu próximo hogar. ¡El espacio perfecto para vivir a tu manera está en esta residencia turnkey en Hacienda San José, SanJuanera en Caguas, Puerto Rico. Cuenta con excelentes amenidades para: Jugar tenis, pickleball, disfruta">
@@ -1086,7 +1107,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQVUpLUlJaU0xIejl1T05YeEhpQzlpNjdIdzBWV2JqWm9qZHZXbE5DZlVuLTZPRUhEUHRvQUQ4TFRvei1qeHBPdUV0M0VKOURjZ2JldHdNVHpCYzdHd2s0bFIyNjZlRnhSb3l6OWdoQ0RGV0pBb2dsQk41SkVuSldrZ2wtNTBxbnhtZ3RNN01ZOF9WTC0yUEJuQmxIQl9yQ21JMGlRR2RpNDVpYmtRVmlSaEVhY2h0b19LUUhqTVlyY1lkX3AtNUhBRmMyWHRpVTRwTHd2Q2pSNDVEZw?oc=5" target="_blank" rel="noopener noreferrer">El partido frente a las Criollas de Caguas se celebrará hoy, lunes 19 de octubre, y un dólar de cada entrada será destinado a la Casa Protegida Julia de Burgos https://f.mtr.cool/bf0np8z5sn</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-10-19T13:05:00-04:00">hace 6h</td>
+                    <td class="time-ago" data-date="2026-10-19T13:05:00-04:00">hace 7h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Moneyhouse is in Caguas, Puerto Rico.">
@@ -1130,7 +1151,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxOLUZGeG1fZUhkRVdsRl9oN09DWExhYUR4X05Za01oZlJtV2szbk5vT1RLMm5rQVpFTVVLSkNablBJZW1JNmlrWS1HYlJzWS1IcUpQcjlVcE1YalM1ZGxfYXpLeEVoZGZBTUJQdzh3UWRKU2gxV212MXpiMnZzV3RZQmdXRzJIUGxDR3NQX1pOU2JGaWd6YzNhR29UdjFSUnFKN1hlVVpqM243bDVFQjRZYW5DYTZnNnVhd1VvN2NHNVl1NmpDajJXVVdKUG80Ukxlbjc4b3ZzTDI5clJON29BSzRFaXFhOTRVaW90cEs1d2lRNzJoSEJuN1ZGMNIBgAJBVV95cUxOc3ZBX2JUQkQ0cDFJSzB0cE1GYlNENWpYWmR3UjM4SWJfN0NMVTd2RjVkZnpHY05kNF9abFA1dkEzVXBiMFNvSS1GNFUwZjZXNTUwWk5URFhKLXVOTnkyWE9rTVlaT2ItR2RDTjRzal9Lbm1tNjZhbUhCTTBfNkJVcHprTHlibzJoeEoxdU82a1VrcHFNeXh4ei11UXZtd0JFcUtwYzhvRldFaVl4LXhkUV84NnlpZXpMQWE0NHYwZnZxVEF5bmc0ZGpZcU5vWHdObEhaMFllZFJmcF9FSU00MzJHYjFCTVNCM0dDVDI4MEpPQnZlbGZkX0ZGelgwem9P?oc=5" target="_blank" rel="noopener noreferrer">Buscan agilizar trámites del PAN con jornada especial para residentes de San Juan y Guaynabo</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-10-19T06:08:00-04:00">hace 13h</td>
+                    <td class="time-ago" data-date="2026-10-19T06:08:00-04:00">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Luquillo" data-titular="Tiempo en Playa Fortuna Comunidad, Luquillo por horas">
@@ -1211,17 +1232,6 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Trujillo Alto</td>
                     <td class="time-ago" data-date="2026-10-18T12:27:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="Juanmita López de Jesús no pierde tiempo y noquea en el primer asalto en Caguas">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxOeTZSa2phc0w5NTkxeG1YYjEyRDQ2aWJPdmVIUkhhV0lEUFZjbm8tOXZaQkFXZzd4bXJlTlF4TmdFMW8wSERybnNvOTQxYThqVmZTRkxHSEZEWEZncXBOdW1Rb05tQ0Q1Z29Jd2Q5TjBHUWxyY0t1c3NoTk1iZDRvcGZXcGNZWGJuQVQzY1FoT0hiYW9WbmtaNFc2UzlfTlgtZE9uY05EVXYwVTB0Z0d2d0NWdXc0dWVnVFhLMGNQTXd5YkZsOE0xMkh5UnNMSDFmZXBkLUJmMjNESHNzWUFFMUFFSzdYQlZl0gHuAUFVX3lxTE4ySWhDS1ZIOXJsMHhYQlpFLXlhSnBtWTY4bjk2ZDQyYURybDZJUGhPdXlPNXduckNRMndMUTliZzcxVG40RFAzcnBEd2ZfSzduYVVjc3RSTEdfQzJUNmZvbnEzNGZWby0tY2dpLUUxZkNvTDY5dzJ1TXoyTndnbmp2ZkctZXRsTnktdG5TaEpEMXV2MnRvUEdKUUdoemFNYU5GNDlXRERjbUdSb1VnOXg3dmo0bFA2UnFSVENZR0VVUW5qR2RkZnZodld6SnFpdHo5ck1IbEF3R2hkcnUxRG5tb0pxS3BzLUNEbFdKclE?oc=5" target="_blank" rel="noopener noreferrer">Juanmita López de Jesús no pierde tiempo y noquea en el primer asalto en Caguas</a>
-                    </td>
-                    <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-10-18T11:09:00-04:00">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Se registran dos asesinatos en San Juan">
@@ -1424,7 +1434,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 El Nuevo Día</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -1432,7 +1442,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 NotiCel</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -1440,7 +1450,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Radio Isla</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1448,7 +1458,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Es Noticia</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -1456,7 +1466,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Telemundo PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1464,7 +1474,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Walo Radio</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -1488,7 +1498,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 NELPR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -1496,7 +1506,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 San Juan</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -1504,7 +1514,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Carolina</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1512,7 +1522,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Caguas</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1520,7 +1530,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Fajardo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1528,7 +1538,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Humacao</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1536,7 +1546,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Trujillo Alto</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -1544,7 +1554,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Canóvanas</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1552,7 +1562,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Loíza</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1560,7 +1570,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Río Grande</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1568,7 +1578,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Luquillo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -1576,7 +1586,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Ceiba</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1584,7 +1594,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Naguabo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1592,7 +1602,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Cataño</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -1600,7 +1610,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Vieques</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1608,7 +1618,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Culebra</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1616,7 +1626,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - San Juan</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1624,7 +1634,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Carolina</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1632,7 +1642,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Trujillo Alto</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1640,7 +1650,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Canóvanas</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -1648,7 +1658,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Loíza</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1656,7 +1666,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Río Grande</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1664,7 +1674,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Luquillo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1672,7 +1682,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Fajardo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1680,7 +1690,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Ceiba</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1688,7 +1698,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Naguabo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1696,7 +1706,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Humacao</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1704,7 +1714,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Caguas</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 3</p>
                 
             </div>
@@ -1712,7 +1722,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Cataño</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -1720,7 +1730,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Vieques</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1728,7 +1738,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Culebra</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1736,7 +1746,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Gobierno PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1744,7 +1754,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Senado PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1752,7 +1762,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Cámara PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1760,7 +1770,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Junta Gobierno</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1768,7 +1778,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 William Miranda</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1776,7 +1786,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Limarys Román</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1784,7 +1794,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Primera Hora</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1792,7 +1802,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 El Nuevo Día (GN)</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1800,15 +1810,15 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 El Vocero (GN)</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 6</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 5</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 WAPA TV</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1816,7 +1826,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 NotiUno</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -1824,7 +1834,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 WKAQ 580</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1832,7 +1842,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 TeleOnce</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1840,7 +1850,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Xposed Magazine</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1848,7 +1858,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 NotiCentro WAPA</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1856,7 +1866,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Telenoticias</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1864,7 +1874,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Telemundo FB</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1872,7 +1882,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Las Noticias T11</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1880,7 +1890,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Moluscotv</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1888,7 +1898,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Jay Fonseca</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1896,7 +1906,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Última Hora PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1904,7 +1914,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Noticias En Línea</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1912,8 +1922,8 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 En Contacto 787</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 1</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
         
@@ -1936,7 +1946,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Carolina787 (Scraping)</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-19 08:00:18 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-19 08:15:17 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 3</p>
                 
             </div>
@@ -1955,7 +1965,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — 2026-10-19 08:00:18 PM (hora de Puerto Rico)<br>
+    Observador del Noreste — 2026-10-19 08:15:17 PM (hora de Puerto Rico)<br>
     La vista se recarga cada 15 min; la fecha indica la última recolección.
 </div>
 
