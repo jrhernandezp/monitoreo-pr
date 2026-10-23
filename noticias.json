@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-23T11:24:54.078048-04:00",
+  "generated_at": "2026-10-23T15:31:01.298546-04:00",
   "interval_minutes": 15,
   "source_status": {
     "El Nuevo Día": "✅ OK",
     "NotiCel": "✅ OK",
     "Radio Isla": "✅ OK",
-    "Es Noticia": "✅ OK",
+    "Es Noticia": "❌ rate-limited/error: curl error: exit 28",
     "Telemundo PR": "✅ OK",
     "Walo Radio": "✅ OK",
-    "El Oriental": "❌ rate-limited/error: XML RSS/Atom malformado",
+    "El Oriental": "❌ rate-limited/error: timeout/error: <urlopen error timed out>",
     "PR es La Isa": "❌ rate-limited/error: XML RSS/Atom malformado",
     "NELPR": "✅ OK",
     "San Juan": "✅ OK",
@@ -52,7 +52,7 @@
     "El Nuevo Día (GN)": "✅ OK",
     "El Vocero (GN)": "✅ OK",
     "WAPA TV": "✅ OK",
-    "NotiUno": "✅ OK",
+    "NotiUno": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "WKAQ 580": "✅ OK",
     "TeleOnce": "✅ OK",
     "Xposed Magazine": "✅ OK",
@@ -68,6 +68,54 @@
   },
   "articles": [
     {
+      "titular": "Ven al Pumpkin Patch en Cánovanas este 2026, desde hoy 23 al 25 de Octubre. Trae a tus niños, tírate fotos, compra comida, artesanías y disfruta de la música en vivo. NO ES GRATIS, compra tu taquilla en PRTickets.com o llégale al Hipodromo El Camarero",
+      "enlace": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPODc0czlpR1lpbHlBRFhnQ2tmYzNXUFIxVjl6aUtUa1VUSHVFYVloMWZaZ3Z1eUQ1YVd3ZWlLM2lJblM5NUgzZzJfWEpvMGh0b0FqZ1FWYU9sYzJzS0p2bnJ4WGdELXFFekNaZ3VEZ0Fvck9kTGlYSDUxU1VBcnprbGh4MTFQRlU5dmxaRHJwWmJONmZpc1NUMXViTFpUMEN5TlBZRkUweFRDTjhtWG5OYWV0MVNySG1YU1FpYXZvMWc5dmpUeWNGRU5uMFFsU2xnUDM3R1RFTnY3S1hUNEVv?oc=5",
+      "fuente": "FB - Canóvanas",
+      "fecha": "2026-10-23 14:07",
+      "municipios": [
+        "Canóvanas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Canóvanas"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "San Juan destinará $2 millones para apoyar a comerciantes con incentivos de hasta $150 mil",
+      "enlace": "https://radioisla.tv/san-juan-destinara-2-millones-para-apoyar-a-comerciantes-con-incentivos-de-hasta-150-mil/",
+      "fuente": "Radio Isla",
+      "fecha": "2026-10-23 13:42",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Radio Isla"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "🎃🎶 ¡ESTE FIN DE SEMANA LLEGO A CANÓVANAS! Del 23 al 25 de octubre, disfruta del Pumpkin Patch & Agroferia 2026 en la Antigua Central Azucarera. Mi espactáculo es este sábado a las 12 del mediodía ⏰. 🎟️ Boletos: https://boletos.prticket.com/event",
+      "enlace": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPamZXWXROTDN3cGI0djQ5U0dVVFo3enJyNkxuQnh5ZE1lQjdSWFhrbTFEQ3hQQXRoRkcwWUNmT0RUbFFVX3FIVjVqQ3BYNk9ab052cVdYa1lkalV2aktZSWVEZXI0UkxQUEtnZzBjdWdrNWd0eEo3T0pKTG5lbW5mS3ZzbzBXWnBQWm9ra0hvM0M2ajY3OUNmVDF0RkNzZVRjWjNneFlKYlZJOFBJWHJ2MDd3dzRLSmtYSUtMSjlOdUw3Q0N6dEc4ZG42Mjl4VjQwUUhDM0xzS3RsQmFWSno0?oc=5",
+      "fuente": "FB - Canóvanas",
+      "fecha": "2026-10-23 12:50",
+      "municipios": [
+        "Canóvanas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Canóvanas"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": true
+    },
+    {
       "titular": "Ingresan a prisión a mujer acusada de tentativa de asesinato contra hombre de 66 años en Humacao",
       "enlace": "https://waloradio.com/2026/10/23/ingresan-a-prision-a-mujer-acusada-de-tentativa-de-asesinato-contra-hombre-de-66-anos-en-humacao/",
       "fuente": "Walo Radio",
@@ -80,23 +128,39 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
     },
     {
-      "titular": "¡La flor oficial de Caguas llegará al escenario de Miss Universe 2026! El traje típico “Moriviví: Renacer Borincano”, que lucirá Jennifer Barreto, está inspirado en la flor oficial de nuestra ciudad y simboliza la fortaleza, sensibilidad y capacidad de superación d",
-      "enlace": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNLU02bXFhTFBWMEhrNzFFamNmemMwMUd6YUs5VkRZQ2tXS0ZnMWJmaDF4Y0dydGNidXQ1ZVZwaFp6SVdJVUNUUHdpSnRXM0VHWnhBZi1hTWhFQUYxMW5DNGFUYjg5emctSDlvTFFISnpldkZlZm9lNnRzdENmcGhNa2tEdmdOQUthVU03b2NFZHZ4LXhYODBlZlAteEV6UWdZY3YzSHhWUTNJRmwxbXh6QWZBeU9HSkx5ZUtpTDZjN0FNVW9wM3c2blhsdUpVWWNNSm9oSzZfcms1WDdTRnZSa0k1WG9tZw?oc=5",
-      "fuente": "FB - Caguas",
-      "fecha": "2026-10-23 11:00",
+      "titular": "Buena historia area Este de PR y Daguao #Naguabo",
+      "enlace": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOU3BhS3pQUUJZZG00R0JZTnVZanZPRVBZaDh4RFNyUTFES3pnaXY5X204bTNfYUxMUUZuNmFERW04YmxPZ3hEU2hfaEw0OW80R2E4UGdrNmV6SHlza1paVW05a0xZZUVsVlljbG5jSVE2ajM3eUpjdVlla3ltN1FsdUptYkVqbVlxV2NncnRaYlpZdzdLdFBrVVpYOW9YUkR4TzNLTEs4OHQ2Y2o3N25nc1JONmZYZw?oc=5",
+      "fuente": "FB - Canóvanas",
+      "fecha": "2026-10-23 11:19",
       "municipios": [
-        "Caguas"
+        "Naguabo"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Caguas"
+        "FB - Canóvanas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Estadio Hiram Bithorn se transformará en un campo de fútbol americano para el San Juan Bowl de la NCAA",
+      "enlace": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQdDRtWHh3a0RLdFFzNlRQTTlmTjZiTTB4Tmp5S0l0TjlTTnZCTHpnR3Z5YnJZMWtRTTBTcEZpbkVhdkhublpRa3RKazZQWmJrMHJ1ZkwtSFRUS0owakpuY3NNOWFqVFZLekg2dXc5VVFmNDUweWpDRmt4clhhQXNKbmhtRHAtMmdRV09yamVqYWpRRDVETjhUT2NxemxySmZqM01Ycko3Zy1JeWY3U25FcEY2U1ZrZExuZWFlalFBSHJxdW82RmlMYTlOLXFCUElMVjcxcFA3UnJvZTQtbXJVV2ltaHh2TS12UnRBRUt1LVR0X3BFOHRfOTlVTDBjczBGUWFkbk55V2c?oc=5",
+      "fuente": "WKAQ 580",
+      "fecha": "2026-10-23 11:13",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "WKAQ 580"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": true
     },
     {
@@ -112,8 +176,8 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Joven voleibolista de Humacao representará a Puerto Rico en los Juegos Olímpicos de la Juventud en África",
@@ -128,7 +192,23 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
+    },
+    {
+      "titular": "Fajardo reunirá a más de 420 atletas en torneo internacional de sóftbol juvenil",
+      "enlace": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNMjN3WXNNcHF1NFNGV0tHZmdtNHhBcDZsa2NIUjJWV1I5bFVJRzIzMEFWSDF5dVd5V2U5Z2h0OGNqSzlwWEZ1VmR5RktROXNXbHFmb290UUctSDBVa01CeDVhNjJFSmd3U1dUamdDejBmSWhSVzlJUUZmZFQ0dzFwZUUzdlpBYnY5MlJEMm90cmMyeGcwU01QcXRVWnREeWlzOWU5NWZMcDRIcHJqOFN0SDJTb2hIR1VRMWFHYzFNVHIxTlVoTzE1bFZTNmdpNFFlOUd3blhpSHZzenJJOHhlYWdZY2hVRXlxMTh4eUdvbjJWNEJvUzJhQlR30gH6AUFVX3lxTE0yM3dZc01wcXU0U0ZXS0dmZ200eEFwNmxrY0hSMlZXUjlsVUlHMjMwQVZIMXl1V3lXZTlnaHQ4Y2pLOXBYRnVWZHlGS1E5c1dscWZvb3RRRy1IMFVrTUJ4NWE2MkVKZ3dTV1RqZ0N6MGZJaFJXOUlRRmZkVDR3MXBlRTN2WkFidjkyUkQyb3RyYzJ4ZzBTTVBxdFVadER5aXM5ZTk1ZkxwNEhwcmo4U3RIMlNvaEhHVVExYUdjMU1UcjFOVWhPMTVsVlM2Z2k0UWU5R3duWGlIdnN6ckk4eGVhZ1ljaFVFeXExOHh5R29uMlY0Qm9TMmFCVHc?oc=5",
+      "fuente": "Fajardo",
+      "fecha": "2026-10-23 10:40",
+      "municipios": [
+        "Fajardo"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Fajardo"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": true
     },
     {
@@ -144,24 +224,8 @@
         "NotiCel"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "Hombre muere atropellado en Humacao",
-      "enlace": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMS1sMEV6eWY4enRHVDRYdVY5cms3QWh2cWQ0SnJZSEFKOFZsWmhBT0R6VFNRdkRQZHliakZKbEFVYUtLRmFleHpRQ05hUDQtOFVwc3JibVp2OWVNel9ycTlVajE2aHJJUGFvRmM0YTZqS3dkUlQzQ1hDVVp2N0hrZ2M3TQ?oc=5",
-      "fuente": "Humacao",
-      "fecha": "2026-10-23 09:59",
-      "municipios": [
-        "Humacao"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Humacao"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
     },
     {
       "titular": "IDENTIFICAN A PEATÓN QUE MURIÓ ATROPELLADO EN HUMACAO HUMACAO, PUERTO RICO – Un hombre de 54 años perdió la vida durante la mañana de este viernes, 23 de octubre, tras ser impactado por un vehículo mientras intentaba cruzar la carr",
@@ -176,8 +240,8 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
     },
     {
       "titular": "La Aduana de Río Grande notificó al vendedor y al comprador de una Chery Tiggo 4 Pro Comfort que salió de la isla sin completar la liberación aduanera. Los cargos superan el millón de pesos y los 6.400 dólares, aunque todavía pueden ser impugnados.",
@@ -192,8 +256,8 @@
         "FB - Río Grande"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
     },
     {
       "titular": "En Humacao, hombre muere atropellado esta madrugada",
@@ -208,8 +272,8 @@
         "Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Investigan accidente fatal en la PR-924 frente al residencial Pedro J. Palou en Humacao",
@@ -224,8 +288,8 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Identifican peatón que intentó cruzar carretera en Humacao y fue arrollado",
@@ -240,8 +304,8 @@
         "Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Reportan accidente de tránsito en la PR30, a la altura de Plaza Centro en dirección de Caguas a San Juan. Precaución en la zona.",
@@ -257,8 +321,8 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Hombre de 54 años muere atropellado esta madrugada en Humacao",
@@ -273,8 +337,8 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Hoy comienza el evento más esperado en Canóvanas: su Agroferia & Pumpkin Patch 2026. Aquí les dejo todo lo que tienen que saber si quieres ir este año. 🎃 📅 Viernes 23 y sábado 24 de octubre: 10:00 a.m. a 10:00 p.m. 📅 Domingo 25 de octubre: 8:00 a.m.",
@@ -289,39 +353,23 @@
         "FB - Canóvanas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
     },
     {
-      "titular": "Identifican a hombre que murió tras ser arrollado por un vehículo en Humacao",
-      "enlace": "https://www.elnuevodia.com/noticias/seguridad/notas/muere-un-hombre-tras-ser-arrollado-por-un-vehiculo-en-humacao/",
-      "fuente": "El Nuevo Día",
-      "fecha": "2026-10-23 06:54",
+      "titular": "La agenda cultural de San Juan reúne ferias, teatro, música y capacitaciones para este fin de semana. ▶️ Mirá la nota completa en nuestra web 📺 Canal 30 (30.1) TDA 📷 Insta 👉 @canal13sanjuantv 💻 YT 👉 CANAL13SANJUANTV 🐦 X 👉 @sanjuantv",
+      "enlace": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNWm82UGMyd3JkeW1HTm1TaFplSmR2T2l0ZXFndU9GQ2M0U3FOV2lIWDlhZC1wWjg1VGNyLXpiMENxa0Y4dWZTWmw0Y2ZKT21saXJRRUZqVmgxVGpkYXVHeTFEZ2FHY1JYb3NPMzdXUkhuZ1lseEU5WVNTZzJQdldMdnhLRjlJbzVFbHJHblh1TDQ3U0dHQUNGYlVYS0dESlRqRVh2TG43ZUE3bFdkWEZjUS1uVTdxYUlTendsenktdklBc3lpSE51Uk1lVERqRE5tNS1ZdHRYZl9jZW1EQ3BCdmpObnZrc2xBVVJReA?oc=5",
+      "fuente": "FB - Vieques",
+      "fecha": "2026-10-23 07:24",
       "municipios": [
-        "Humacao"
+        "San Juan"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "El Nuevo Día"
+        "FB - Vieques"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "🚨 ACCIDENTE DE TRÁNSITO CAGUAS 🚨 Personal de Rescate de OMME Caguas atendió un accidente de tránsito en la Carr. PR-30, km 1.6, en dirección de Gurabo hacia Caguas, después de Plaza Centro. Afortunadamente, no se reportaron personas heri",
-      "enlace": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQUGFnTWFVaVN3eDJnaVpOQXc4SkdNNGtZMk9OWVVTTHlfbVkydFVublhJeWJZSnhXS1JXRlgwVng4dC10VkdRWWtKaHNSamdnOHdtVXZFLWkwMGxKYl92N0RHUm1pNXpUckUzdjJrd1NQSGxxaklxNFEyaXZqYmpxaXFaek8ycmQ3WWpYR2wtU0R0bTlMTEIxSzdJbDBVdnQ5dWtrT3JHTVlaZnlTX1Bqa1pKRVFJQlBSTm5oaDNhYURiYXBnamVacXZZcFV4QkVtbXVsX2xwR1FnRUJIc0FjMVRDY3lycHBLRzBV?oc=5",
-      "fuente": "FB - Caguas",
-      "fecha": "2026-10-23 06:53",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Caguas"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": true
     },
     {
@@ -337,8 +385,8 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Peatón muere atropellado en Humacao, conductor involucrado permaneció en escena",
@@ -353,8 +401,8 @@
         "Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Muere peatón tras ser impactado por un vehículo en Humacao",
@@ -369,8 +417,8 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Peatón muere atropellado en carretera de Humacao",
@@ -384,40 +432,40 @@
       "fuentes_origen": [
         "Es Noticia"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "es_nueva": false
     },
     {
-      "titular": "Reabren carriles que habían sido cerrados por vehículo volcado en la PR-22 de Dorado a San Juan",
-      "enlace": "https://www.elnuevodia.com/noticias/seguridad/notas/hay-tapon-cierran-dos-carriles-por-vehiculo-volcado-en-la-autopista-pr-22/",
-      "fuente": "El Nuevo Día",
-      "fecha": "2026-10-23 06:28",
+      "titular": "Muere peatón de 54 años tras ser atropellado en Humacao",
+      "enlace": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZHhoZ0QzUzl0alpoOFhKYkJGZUFxc1hzaVFUb0ZqOVlkSlZ4T3RJSVMwM2hMVVJSUTZHWkktLWtib2c4TzNUc2ZSYlhkWUdBR1JObVJmQTJUZ1ZWRjRSeGEtVTdyUVlha2xMNWhkMk1kTWFfX3htTzEtZktHMHMxTjNQWkJzSXZJb2JweW94TEVjc0tLUWRJdXBB?oc=5",
+      "fuente": "TeleOnce",
+      "fecha": "2026-10-23 06:24",
       "municipios": [
-        "San Juan"
+        "Humacao"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "El Nuevo Día"
+        "TeleOnce"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": true
     },
     {
-      "titular": "Tránsito: Reportan accidente en la carretera PR-30 en dirección de Caguas a Gurabo",
-      "enlace": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPQmZWMUk3VEV5X3dMUDdXeklObEg5cmZkY2JXU1FoTnV1d2ZWQk1TakZCWDlpemFIWm9CN3VSenVVM1BLZUgxeGVqSHlwNGRDeHVwajVOMEgwQkpCYzRvbjNkWEpiMEstOUdlLTRXemNnYXlaTkFEWTdXUjhzc280VVlkRHVtSW01NlZGSGtScmkzV3drblJCNWFCVWVnNmNTNTRpMFdyUHBiSVJ1WGxvVXVPN2lyNUp1RFhrd0x1eGZfaVItT3ZBVTB5NUtNUTNnTzk2eXlBM2x6YTNWeXNfNEo3VWRhZw?oc=5",
-      "fuente": "FB - Caguas",
-      "fecha": "2026-10-23 06:25",
+      "titular": "Hombre muere atropellado frente a residencial en Humacao",
+      "enlace": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMGFCaldvVzFFT1h5RzBiRFBISThremp3QzRMZDA1TVBqM3dUNUJGMHFhNzJBUGphNjEwLU5wb3gtRFZMTWhSaVc0VDNNbGRmNFRZQnBkMl9MaWFTOUxkX0k3M3RMTl9GZUdMYWxRMmVXOU0wc0ludEV2Q0JnZFFGQ3kza1FPZldLNEtIelcwc1RtNmM2YWVJZHlIVQ?oc=5",
+      "fuente": "TeleOnce",
+      "fecha": "2026-10-23 06:24",
       "municipios": [
-        "Caguas"
+        "Humacao"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Caguas"
+        "TeleOnce"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": true
     },
     {
@@ -433,8 +481,8 @@
         "Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Kia se une a la limpieza del Río Mameyes en Luquillo",
@@ -449,7 +497,23 @@
         "Luquillo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
+    },
+    {
+      "titular": "LADIES NIGHT 7:00PM FREE in Caguas, Puerto Rico on 13 Jul 2026",
+      "enlace": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPdUJCTnBTMVJTeFFHVlo5Y1g2QmVycXlOeUJuT2loVTR5OTlOS1lFQ3ZYNVVzaVFFWXhuRUY4NGk2Uy1KWVA1YXpldVZCVGdyVllQc3R4UDhaTENNNVZoUWVXRWVCSFNDME5FcThneHpwQjduMGZCNEN0X1FLNklzY3ZrdUVrMTJ4Ykt4WEpEcTBtck1kTmdkWldCejFWSmtRZGQ0c0JCSkw1VXhRaV80Q294aWl3VkdVRzJKaDdEdFM2NVphRnkzMFpTUm9lSU0xNXktZGs2UGpUVEZUZ3ZwSmNFRmRvYTdFMklUQWxlbzRybUVVWmpMdE1yVEJmdTVP?oc=5",
+      "fuente": "FB - Caguas",
+      "fecha": "2026-10-23 01:36",
+      "municipios": [
+        "Caguas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Caguas"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": true
     },
     {
@@ -465,7 +529,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -481,8 +545,40 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "El Estadio Hiram Bithorn será escenario del San Juan Bowl el 16 de diciembre con la participación de equipos de la ACC y la Sun Belt Conference.",
+      "enlace": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNQ1pBbUhrSW1zUDNGdmRaZ1dRVDU5U2ZsazZEN01FNWIzVGttaDZycGJzeVdHUVVNS3ZuY0FrQ2dUYW50bnMzakJpN1JVRm8tWGRzeGROTE82RVVyWTZQRmMtNWxIY3pBWUNfRVJDaS1NNnBMbjl3b3RSaVZiUGRtMmRHZXczajVfYXFuUW1sLUd2b1pvenlxT3VDdGRJZ2o1WVFsb2pvMWFVSGkxMUpOZEtHZTRSSkYtMS1wV2lBaHl6RFhER0tNUUEtVXl3UXpQVnRmb2d5X2xHdFk?oc=5",
+      "fuente": "FB - Vieques",
+      "fecha": "2026-10-22 20:13",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Vieques"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Agradecemos al Municipio de Canóvanas por la invitación a una experiencia llena de alegría, aprendizaje y recuerdos en el Pumpkin Patch. Nuestros estudiantes la disfrutaron al máximo . #Canovanasesmas",
+      "enlace": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPcGR0NzFPdHNuRmVBc29DaFB5UldwQVZsUnRQbWJoaDE4cjZtejdwbzBjMHFNVXdsN1QtanZnNHpnX0MteEhFaWtid2ozclB2b2NRNnVDVWRTZG4zVm0tcmJBa2s3S2dpWVB3ckZNZHpER25uYkg3RGZqZkdXOTE2YnZvVlBmYkVFUjJhNGMwSWRrLWxkZVBjek80RXdvNnc4Q1ctdXpsclVhVUxZUHl2eTNsTDFKSVJ6a0JmbkxPM2F2WjNSYjFJNWdtZzUwX0R1MU93S1BlZ1h5eW1RSGgtOERBbFhKcVFKRWhR?oc=5",
+      "fuente": "FB - Canóvanas",
+      "fecha": "2026-10-22 18:15",
+      "municipios": [
+        "Canóvanas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Canóvanas"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Humacao figura entre los beneficiarios de los fondos de mitigación. #FEMA Para detalles acceda al enlace.",
@@ -497,8 +593,24 @@
         "FB - Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "REPORTAN ESCALAMIENTO Y DAÑOS EN PIZZERÍA PAPA JOHNS EN FAJARDO. NRTZ - Agentes de la Policía de Puerto Rico, adscritos al distrito de Fajardo, investigaron un escalamiento reportado hoy en la pizzería Papa Johns, en el Fajardo Market Sq",
+      "enlace": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPNHN5WjVzQl8zU1p2ZTN6RHhEUmVzZUtUeG5sWGRPTmJHVDQya0puZC1qQ1NCdTJmMkFJQXNFd1JES0RmTkRZMDhFMjZydjc2TkNYTDdnSUd6Y2JqanVORnhFbEdlVlFkYlN3cHRqYVhONGR1UHp0WFpaZV9CVkNfcTdPWV9VZWZnaXRvY2lKd0pncTlWTjh6amR3S3h5elkxS01CaXFwQkFhRDZWUTVldEg3cVp3eURjU291dHpLNVduRTVINnZRQWFqZnpFMDVqM3NNTEZ2VUpHU0hBYjFZeVdaVF9nZw?oc=5",
+      "fuente": "FB - Vieques",
+      "fecha": "2026-10-22 17:49",
+      "municipios": [
+        "Fajardo"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Vieques"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": true
     },
     {
       "titular": "🎃 ¡El Pumpkin Patch de Canóvanas mueve mucho más que calabazas! Cada visitante representa una oportunidad para nuestros comerciantes, emprendedores y negocios locales. 🛍️ Del 23 al 25 de octubre, la Antigua Central Azucarera se llena de experie",
@@ -513,8 +625,8 @@
         "FB - Canóvanas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Aparece sexagenaria paciente de diabetes viva en San Juan",
@@ -529,7 +641,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -545,23 +657,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "REPORTAN ACCIDENTE DE TRÁNSITO EN FAJARDO Se reporta un accidente de tránsito en Fajardo, después del Hospital Caribbean Medical Center, a la altura de la entrada de Burger King. 🚗 Hasta el momento, se desconoce la cantidad de vehículos inv",
-      "enlace": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPWlVreEg4T0Mwbk5DT2QxMXBMTmtLMXFMa1RIbVBrSzNsTzZCT2RHZzRnekxPVlNDU282cmg0Y1ZaM1ZHdkh1TmxLc3locDF1aTlod2ZmTUxuSGNIeXBIcXYtX25lalFfUVA1alh1UlVQSU8xY1lqNnpoZm4ybUY1c0ZCOEZ1SVptTVZmbVE0VVdNSEtTLUxLTHBCWVhMRi1BQk1manVKTm9mWU5HZFBOTFZ0T1ZaX0w3dlB1dndDdXpYNk1VWnFlWnR2cEhEZXNFUlRzakk4d3c3WlFVc24xUmwzZUhmU09XM2dJ?oc=5",
-      "fuente": "En Contacto 787",
-      "fecha": "2026-10-22 16:03",
-      "municipios": [
-        "Fajardo"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "En Contacto 787"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -577,7 +673,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -592,7 +688,7 @@
       "fuentes_origen": [
         "Es Noticia"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
       "es_nueva": false
     },
@@ -609,24 +705,8 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
-    },
-    {
-      "titular": "💼 Anuncian préstamos federales de hasta $2 millones para negocios afectados por la sequía Personal de la SBA ofrecerá orientación y asistencia presencial en el Centro Único de Servicios del DDEC. San Juan, Puerto Rico — 22 de octubre de 2026. La gob",
-      "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQTDNWbkZZNEUtRkhLWWRsMWFxaW9yeXZ6c3doUXM0TVhoeHE2VktOQjM4ZnN5Wm1xVUNGM0lyS0JkdHJrN1liNktLQ1ZSbzM5LVdSOVY4WGJzV0p3bmRNdk5pMEIyV2llNFJLTHprWEVMNWpsMlNvR2lOZ2hCaTgxaDI5TVBKSWFmUFZQamF0bHROZjljbFJJT0VsYVd2QjlwQlg5Q0s3aWxTX2pWazhQOUZqakFfOGlwQkFlU0ZBaUUxbUxMRDhpeXBmRE1EXzRoZ1kwOGc2RVF6Q1hPdzQzY05MRQ?oc=5",
-      "fuente": "FB - Canóvanas",
-      "fecha": "2026-10-22 15:34",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Canóvanas"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
     },
     {
       "titular": "Localizan en buen estado a mujer reportada desaparecida en Río Grande",
@@ -641,24 +721,24 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
-      "titular": "Región Este genera más de $128 millones en alquileres a corto plazo durante 2026",
-      "enlace": "https://waloradio.com/2026/10/22/region-este-genera-mas-de-128-millones-en-alquileres-a-corto-plazo-durante-2026/",
-      "fuente": "Walo Radio",
+      "titular": "📰 AVISO DE SUBASTA PÚBLICA El Municipio Autónomo de Naguabo informa a los ciudadanos y empresas interesadas sobre la publicación del aviso de solicitud de propuestas (RFP) para el proyecto Evaluación, Diseño Estructural, Gestión de Endosos, Ce",
+      "enlace": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQaVhkaWFKT3FRUFFiZEUyb2pnTFg5WkNXbDE3eHk4U0lpZVZHYzVNYV9UQUJwQXBMbGt1WDFuMTc2NmlsRVZaZ1ZXTXdOdkQzYUNDMXhWVExFYVpIUzFlcUxxVVBZSV9DUXN1dk90djVPZFhITUs5WktGYmdtdE02RjRmSUw4N1FNMWM0WTR1eENGV3luUFJSZ0Exa2F5M2ZvQ3hsRFc0ZG5QYUdDa1hFNS1HMjM4cFdWQ1l2djJXZTVaLUdaeEtfZU9VWGNHYmpUVWgxNlNWWEpidENlVXdQVV85bE4tV3ZaS1poWEFQblcxRW5FVFZ3ZWxB?oc=5",
+      "fuente": "FB - Naguabo",
       "fecha": "2026-10-22 15:21",
       "municipios": [
-        "San Juan"
+        "Naguabo"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "Walo Radio"
+        "FB - Naguabo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": false
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Hombre sufre lesiones en el rostro tras ser agredido por compañero de trabajo en fábrica de Caguas",
@@ -673,7 +753,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -686,44 +766,27 @@
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Río Grande",
-        "Limarys Román"
+        "FB - Río Grande"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
-      "titular": "La alcaldesa, Carolina Darias, dedica el reconocimiento al personal municipal y a las entidades sociales que colaboran con el Ayuntamiento para mejorar la calidad de vida de la ciudadanía ➕ Más información en comentarios",
-      "enlace": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdTlIVTZjZ3NkZmhUaTR2ek55cmFsYWxjOVBJaTE2SmhMS2dEOWlDazE2ZEpCaDNXSmRzUFZhb1dIbzFtMXFiRVFFMl9YOGp5Vy1CY2xwWmhfMUtESXF2SjM3OWMzMF9jRk42OVpUMDNlNV9kUVhVbk1nR3l2M1drd0pIVzRGY2dfdG9nb2ZhUndkckYwaklwNVpiZkZ6YllVaUx4eF9iWXM3b25RZ0VXWUlEMjlrdmUyM1dXOHB0WDhUenI4SV9fQXp1UjFhQnZKTElIaXVvazNSVDFL?oc=5",
-      "fuente": "FB - Canóvanas",
+      "titular": "📍 | El ministro de Agricultura, Indalecio Dangond, entregó la construcción de la línea de aducción que conecta la válvula de la Agencia de Desarrollo Rural (ADR) con la Planta de Tratamiento de Agua Potable (PTAP) de San Juan del Cesar, La Guajira. La ob",
+      "enlace": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNYTVDX3BVUGVSbmZEcUhCSmMzVmI1TlFSMndqM2dYY3lIQzN4TzNhQmsxNG1VQzBubmd1ZmRYRHEyN0pBR0kzY195Q21HeWpGOFdfS1dKbXBrSlIxVG1yRndWN1dyZi1PRUZTQ242MUFHWGpRZlBpaTJIcWV1TEttUk8zZ2JGRFpsV0lKTTk3eFZOcUhhZlN5YXVaOVc0RGRPY3pPVjdxaldGbkdyMGdGWmx4LW9NVVVVWnNXUENWZFNGVmZJOTRONk5pemdjVWNhWTZJQmtGdVFMYmh1ZWNVOHA5WmVHdmlGQzVPOTdVR1pmdw?oc=5",
+      "fuente": "FB - Cataño",
       "fecha": "2026-10-22 15:20",
       "municipios": [
-        "Carolina"
+        "San Juan"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Canóvanas"
+        "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": true
-    },
-    {
-      "titular": "Tiempo en Terazas de Cupey, Trujillo Alto por horas",
-      "enlace": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBQLWJ3LVNPaThWQUZOS0ZDMURkWHdWQnR0ZnlESjJnR0xYamVHbHc3UUxkaFlKSGt0RFNXaDZ4VlFMSS1WejZWWjlNVXJORDdXYkxWeGFYcWRiMXdxdnJPZkExN0stWXhYTkhpNFZn?oc=5",
-      "fuente": "Trujillo Alto",
-      "fecha": "2026-10-22 15:19",
-      "municipios": [
-        "Trujillo Alto"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Trujillo Alto"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": false
     },
     {
       "titular": "Tiempo en Vieques Zona Urbana, Vieques por horas",
@@ -738,7 +801,7 @@
         "Vieques"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -754,88 +817,39 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
-    },
-    {
-      "titular": "#TorneoPrimeraCategoria ❌RESULTADOS POSTEMPORADA- 10/21❌ Estos son los resultados del 10/21 de la postemporada 2026, del Torneo Primera Categoría, de la Liga Intermedia de Baloncesto de PR 🏀Final Four🏀 Manatí (2-0) 🆚 Canovanas (0-2) Ma",
-      "enlace": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQR2E3RmNNSFZTRTB2d2VSNF90Mm9PTUwxRHRTVTQ1aTB6XzZHZVBMeVhBS21iYlY1ZFRwN3VPeEpKZ0pvZmVtbDVNU0NIZGNMR1dCOTd3ajNuajdHVllpdS1aV084SWJ3Mzc1Zi1LUUs2ZWtTbm9TbWNMd0VVLW1ZaktKNUtOdms4YUF1LXFZU3A3NTQwQ2x3YzlzRC1Wc2h6Tzk3Q1EzQW83MjEwYjFtcmY3WXdnQ2lsT2J3X3BmZGVfdi1QOTA3azA2T1JMWVFCSWhRZ0FIMk9RRlI4aUE?oc=5",
-      "fuente": "FB - Canóvanas",
-      "fecha": "2026-10-22 15:12",
-      "municipios": [
-        "Canóvanas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Canóvanas"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "PRIMER TORNEO | AJEDREZ RÁPIDO JUVENIL El Municipio Autónomo de Fajardo, Centros 2 Gen y su alcalde, Hon. José Aníbal “Joey” Meléndez Méndez te invitan al Primer Torneo de Ajedrez Rápido Juvenil, para niños y jóvenes (hasta los 16 años). Fec",
-      "enlace": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOQ3pTTUFOLTdlNDI2U0ZPVy1YOUV5TzV5ZU5IVUUtaUhKWlRadUxnalFrWlpaXzg5U2JiUG9icWZfOWtXa3p3Zmstc3NJMExhR055TF8zY2laV1I3NTI2VjNLc2dadWtva1hEcDBQbVVNT3B1eFpEMERSZllwOVFJbHRPVUtJZjgwd1hvX3RWMTI3dmdzeVZZR3BuUnBLdThrYXI3S1BXcU1HNFh0Yy1YQVVyV0ZXV2d1RFJEU2RDbUxUZnNpc3Y0VURoSk1rZE95bkxkWmRieHRNazV1cGVjS1M2UkhhV080?oc=5",
-      "fuente": "FB - Fajardo",
-      "fecha": "2026-10-22 14:57",
-      "municipios": [
-        "Fajardo"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Fajardo"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
     },
     {
       "titular": "Y sobre $1.1 millones al Municipio de Humacao para financiar un proyecto de control de inundaciones y estabilización en la comunidad de Punta Santiago la zon identificada en el anuncio como Humacao Riverine.",
       "enlace": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNbVYwblhYSWNqUFk0ajJnTzJMYzk2TlRZWjFaWlhoYU9uSU1HbE9BTGJ5UmtzNnBHdUdLb3l3eUJrckFGN3RhRUFvQ1VaejNsTXpwS3Bad3lXX3A4RDFwNk1uY0JqT19MVFFLbGJUbl9MZnBuYlo4Um50dkZibS03MEVQcXBEVk9uNGNLYjdieWE5RDFnYkU3Z29lQlpqa1FiUTZEc2p6cHU3TE9waDBWTE1hSVpkM0ctUjlzTGNNRGRyY3J3ZWl0eHVkMHZWOXEzUGFvYjB3?oc=5",
-      "fuente": "FB - Río Grande",
+      "fuente": "FB - Humacao",
       "fecha": "2026-10-22 14:54",
       "municipios": [
         "Humacao"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Río Grande",
         "FB - Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": true
     },
     {
-      "titular": "Sigue disminuyendo la sequía. En la actualización del moditor de sequía, la severa se ha retirado del Norte de Ponce a Coamo. La sequía moderada se ha retirado del Norte de Toa Baja a Carolina. La sequía extrema se mantiene en un 7.23% en llanos cost",
-      "enlace": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPY29obkllckZMcUFDVDVsZVQ4bF9kRzhfa2JpQmtUZ3RXZzc0WldLbExoLUtUbXRPREdfbDlhMkRiTnlaZnNjTE5CVTM0M29HRVo0V2d3M0pRMlcyZjZ2ZGtSRDlhSjVQR3VwZ0VuNkNwWWZHbVVWbE9OZzhmbzdaSWppQVNPczJyTGZORGlDajVPMnpucVp3blA1ZVJUS3BERGpSY1RoNVVtd0tGSXU3RUhsbTExdXdrTnR1dUtkUjFuYVlfRm56NFpmdDBKckpTMzd0NExXWkliZTd0NHo0NFBOZkxtX2FWR1BZSnZ3?oc=5",
-      "fuente": "FB - Canóvanas",
-      "fecha": "2026-10-22 14:43",
+      "titular": "LUMA avisa que Viejo San Juan y zonas aledañas estarán sin luz por 16 horas",
+      "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQbjBsYkJneTg5YWNkdHRwQ3hhdDZDRW4zVWh3OE91R2k1MFRhZWlqVElmLXJvQW1kbmRwRlBRdEJsOERYbUViV0dCanNULVlQalRJWU02TlEtQ3ZOSGJKZzlLQXVieGh6YlNiQXZCQ3J4OWhFak9QV2Q1ekxUWjIwenV4NC1YenppQzNVc204WTVULTZiUTAzZHUzdWhJeE9wMTlqNVRSY1dJRW1VVmpvZW8xNmpjZ19Cc0tOcUJBWnpZcHpOYXBWbmprMHRCMG53SjBvZ254Y0dCYmZUVE1DNENVVQ?oc=5",
+      "fuente": "WAPA TV",
+      "fecha": "2026-10-22 14:35",
       "municipios": [
-        "Carolina"
+        "San Juan"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Canóvanas"
+        "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "LAS AUTORIDADES LOCALIZAN EN BUEN ESTADO A MUJER DE 63 AÑOS REPORTADA DESAPARECIDA EN TRUJILLO ALTO. NRTZ - La Coordinadora en Investigación de Personas Desaparecidas de la Superintendencia Auxiliar en Investigaciones Cr",
-      "enlace": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNa05Rdlg5d0pXYjZiSGQyUFgyZy1EVk9tSGNxUld2S2c2TFlRTDU0YldzclN5X1lpVF9BdWd1d294RnlGbmI0ZlJMeHQ5NHQ3dzd6SkxidkJobXZMZU5VbVlWOGM1RlhjQUw0OFFoUEhTb2VkV1VtdFZRaTJUTXVwM1REZDdpTkg5WnVuYVBqbnBoNjMzekJsRWhmQ29hemtkX3lTUWtXYmpncmdtcDZablFTRm5TMXVWbzE5Rnh5aE10NHpDWjZ3YzNfSjJTNk90VU1mYlhLa1BlVHlZNHJ3?oc=5",
-      "fuente": "FB - Río Grande",
-      "fecha": "2026-10-22 14:28",
-      "municipios": [
-        "Trujillo Alto"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Río Grande"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": true
     },
     {
@@ -851,7 +865,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -868,7 +882,7 @@
         "Vieques"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -884,23 +898,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "¿Puede ayudar a identificarlo? Policía de Rio Grande City busca información sobre esta persona.",
-      "enlace": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPLVFoSFB5NEVUbnYweXpiUVpMZkhEX2ZsZnBHRUVCcG1yVjF5cHB3c0d2aEpPVkZsZUhZWGdpNE91aERXcGNlUDlta19yMHpFOGd6NTlfbnp4aEIzMjRKS1BSVVBDWVJxNGdXSlZyMnRuYk1QWWhWVHRiMEQ0SExTaDBxWExpdDczMFFvQ3EyVFlWd09yWmZremFhSTlBYUY4MlBoNE9QcHVURmtwci1vTUZsX0twMzFxS0hNUEVpOGNScUZuM05nckhDTkh1S1AxLUV4V2dDVTd2aTNpdHhNYnJkSWotUQ?oc=5",
-      "fuente": "FB - Río Grande",
-      "fecha": "2026-10-22 13:36",
-      "municipios": [
-        "Río Grande"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Río Grande"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -916,23 +914,7 @@
         "FB - Río Grande"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Filantropía Puerto Rico lanza el Observatorio de Datos para Impacto Social",
-      "enlace": "https://nelpr.com/2026/10/22/filantropia-puerto-rico-lanza-el-observatorio-de-datos-para-impacto-social/",
-      "fuente": "NELPR",
-      "fecha": "2026-10-22 12:59",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NELPR"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -948,7 +930,7 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -964,7 +946,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -980,8 +962,24 @@
         "Trujillo Alto"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "#VALLEDEABURRÁ | Sacerdote de Medellín rechaza recibir al Niño Dios. En el barrio La América, occidente de Medellín, la recuperación de una imagen religiosa robada terminó con un giro inesperado. El sacerdote Nevardo Cataño, de la parroquia Nuestr",
+      "enlace": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPeXF0enBXd0tRd1FsVnFUemwxSlMwN1lmcnEtSC1pZFBhN2x6UTR0Z1g1QXVOeDZ4ZXl6TUpmU0Z2WXR4SHpiMFFPX3A2UkV0YlZhc2k1dTBPUlpFbmhnT0h2QVF3TlF4UnRpYy1UZnQ3QjRkcUkwd2hfbldwNjQ1NkQwMUtneEFPdGVwVzBVNzlHdlUyQW5idWdQZkRYbWQ5WmpzYXNSbzJoMy1vbFBZSlAtRjRzSXdlb1psaHFYT2Q1bDJpakdvWFNXRnM3R2o5WlZCR1I3XzhxQkNibVhlN2NBWno1VnRuUUE?oc=5",
+      "fuente": "FB - Cataño",
+      "fecha": "2026-10-22 12:04",
+      "municipios": [
+        "Cataño"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Cataño"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Radican cargos contra cinco hombres por casos de drogas en Caguas",
@@ -996,7 +994,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -1012,7 +1010,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -1028,7 +1026,7 @@
         "Río Grande"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -1044,7 +1042,7 @@
         "Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -1060,23 +1058,23 @@
         "FB - Culebra"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
-      "titular": "Municipio de Vieques",
-      "enlace": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBHZFpSR0hUbUkxSDZ4VUU4VEl5aTk1WlVDLWRGLWRMVzBkMkNtS215VjlLZVNmbURtZ2VWcy13SC1ocG9sdjJWeVJVSzJPcjA1QS1PMlJpWmdQWVlJMVRjNy04T2NMd2NmT1l5MWE0YnBKTU0?oc=5",
-      "fuente": "FB - Vieques",
-      "fecha": "2026-10-22 10:24",
+      "titular": "CALI | Un tenso momento se vivió en el centro de Cali entre el abogado Elmer Montaña y Juanita Cataño, secretaria de Participación Ciudadana de la ciudad. Todo comenzó cuando Montaña publicó un video en sus redes instando a Cataño a dialogar sobre",
+      "enlace": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQX2tQOVU0SHNpSFRYQkM2b0paekFRZmRMMjhGaTd0Z1ZvRHM4TlBnS0dQVGZLbWZQc1FmXzU4bW1xQmVFMU9hN3l2TEhpaHRvTno3Q1FPNFJnNTRKOGZDZ083Zi1XckpuZlJSQjhTZU5na21jTHRTcjJDLU56Tk84SlRHYU9QQlg2YWRua0Y3NGFoWTJKbUlERkNjWDZzeUZDZlNVdERDei1TSkk1MWVDSWY0OWRqd0FURjNnZHZKdGc1WWhsSjRSTnoyLVhEbHl6ZVdDYkh6MU42WnpfVktYeEhR?oc=5",
+      "fuente": "FB - Cataño",
+      "fecha": "2026-10-22 10:04",
       "municipios": [
-        "Vieques"
+        "Cataño"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Vieques"
+        "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": true
     },
     {
@@ -1092,23 +1090,39 @@
         "FB - Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
-      "titular": "Caguas Private School arranca en la segunda posición de cara a la nueva temporada de baloncesto escolar, perfilándose como uno de los grandes favoritos al 🏆 🔥",
-      "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOSmtyM2owVXB6NXk3NGJqUVFFOVNTVDZzUmNmMGN3TVBIcmpRTHlCU1NZRndqYl9hUWl6aThaNXVOR0J1c3BCZUlsTV9aMFQ4anFwLTRLdjRfc1A4SGpuek9yNUVZamowSUJ3UjRJMzhkMHpCYVZWMjhBLVFwSnA0YVJmZ3NMZzktOVphOEZTRzB5S0tDaGVTTlBEN2RWdk5QMmF0NFRTY1RNVUJ6SndFOU1teE92OXR0UG9GSGZrRU0xZlUzU0xoRHNRVk5JRGN1ZGNUSTBFS1ZwVnJCcGdQZUUwYw?oc=5",
-      "fuente": "FB - Caguas",
-      "fecha": "2026-10-22 08:11",
+      "titular": "¡MÁS DE 2,000 CALABAZAS TE ESPERAN EN CANÓVANAS ESTE FIN DE SEMANA! 🎃 Este fin de semana disfruta de figuras gigantes de heno 🦒🐎, animales, gastronomía, música y mucha diversión familiar. 👨‍👩‍👧‍👦 🎟️ Adultos: $5 | Niños: $3 📍 Antigua Cen",
+      "enlace": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPUVU2aVB3WjNhLUZSNmVlZ1IzQ1hjSGRmRFJoZDBQWmhweGRqWkN2MU9tNC1EWU1YYWphSFpaQU5uWDJOa05XVi1USkREeWxINUZodEg2bU1lTjBSazJ2U3R1N1ZqUXg2QUR0MjBWU3lUMUhLSnlZelY5YlVlME9XbU42VnR6Y0N0MmllZ2hLWEIxblBXcmJjSE9vUnd5eUhRZjBFeUN3alByeTROb3hQaHktRGNmVHhPbjVIdlhQNjJKaERaSDZDUElVQTF1cnJuNzlDRm9ZVjVvUGxzZHpINHBCNHh1UU5lNFZB?oc=5",
+      "fuente": "FB - Canóvanas",
+      "fecha": "2026-10-22 09:11",
       "municipios": [
-        "Caguas"
+        "Canóvanas"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Caguas"
+        "FB - Canóvanas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Perdida en Fajardo o pueblos cercanos / La buscan sus dueños",
+      "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTE54bW5MN3dyeXp4Z2lZUEpYWjVQeDhhZWlJTHdJN2xQVlRMejJxOGVWMFR5M2JnbnRPR3hZN3pfQXJlSkhUVzNteXlBb2hDdEo0b05lcHBRV0lVUlhOSTM3ci1wemtLWk5lNzdLQjQ0WjlzRzVUbkFZcmcydw?oc=5",
+      "fuente": "FB - Río Grande",
+      "fecha": "2026-10-22 08:36",
+      "municipios": [
+        "Fajardo"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Río Grande"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": true
     },
     {
@@ -1125,8 +1139,24 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "Localizan en Condado a mujer reportada desaparecida en Río Grande",
+      "enlace": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQV3NxdkhRN2QyRkk5NjhrOVRJYmM3dWJydUdlaXZrc2hwMWdrdXVlRGE2M2hQSUpwUUU1LXRyMnJMNk5TYWVKWDhmd291b201OVFudWpZUm4zQWFSVGs2dV9YVV8ySjlyWGJyb2oxNjBaRFBuR21yLVhlMEpJOGJiRGZ3M0VQZV95d0FMNzlETm1qNWdEamdWTVBHQmd0TElMUS1RU2hXQQ?oc=5",
+      "fuente": "TeleOnce",
+      "fecha": "2026-10-22 07:27",
+      "municipios": [
+        "Río Grande"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "TeleOnce"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Localizan a mujer de 63 años que había desaparecido en Río Grande",
@@ -1141,7 +1171,7 @@
         "Río Grande"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -1158,7 +1188,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     },
     {
@@ -1174,7 +1204,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-23T11:24:54.082458-04:00",
+      "ultima_verificacion": "2026-10-23T15:31:01.302648-04:00",
       "es_nueva": false
     }
   ]
