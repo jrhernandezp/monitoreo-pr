@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24T05:49:27.500063-04:00",
+  "generated_at": "2026-10-24T09:38:38.826494-04:00",
   "interval_minutes": 15,
   "source_status": {
     "El Nuevo Día": "✅ OK",
@@ -10,7 +10,7 @@
     "Telemundo PR": "✅ OK",
     "Walo Radio": "✅ OK",
     "El Oriental": "❌ rate-limited/error: XML RSS/Atom malformado",
-    "PR es La Isa": "❌ rate-limited/error: XML RSS/Atom malformado",
+    "PR es La Isa": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "NELPR": "✅ OK",
     "San Juan": "✅ OK",
     "Carolina": "✅ OK",
@@ -68,6 +68,39 @@
   },
   "articles": [
     {
+      "titular": "Buscan a joven de 23 años desaparecido en Loíza",
+      "enlace": "https://www.elnuevodia.com/noticias/seguridad/notas/buscan-a-joven-de-23-anos-desaparecido-en-loiza/",
+      "fuente": "El Nuevo Día",
+      "fecha": "2026-10-24 09:10",
+      "municipios": [
+        "Loíza"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "El Nuevo Día",
+        "Loíza"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Leonas, Explosivas y Criollas cargan con victorias en el BSNF",
+      "enlace": "https://esnoticiapr.com/leonas-explosivas-y-criollas-cargan-con-victorias-en-el-bsnf/",
+      "fuente": "Es Noticia",
+      "fecha": "2026-10-24 07:51",
+      "municipios": [
+        "Caguas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Es Noticia"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
+      "es_nueva": true
+    },
+    {
       "titular": "Se irá la luz hasta 16 horas",
       "enlace": "https://nelpr.com/2026/10/23/se-ira-la-luz-hasta-16-horas-3/",
       "fuente": "NELPR",
@@ -80,7 +113,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -96,7 +129,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -112,7 +145,7 @@
         "FB - Carolina"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -128,7 +161,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -144,8 +177,40 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "Tiempo en Vieques Zona Urbana, Vieques por horas",
+      "enlace": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1nZ3hjM2dZTnpOWTVOODBzdGRCYy1qSTVBMWZCRUwtUm1oUC1uYkowT2RsWUt0UkUxSTBlWG8zMVFMSDdLZ1VZekdjSEpETmJUdlNxb3pKTzR3elFFSmgweHhrTDZqRjBKOWVwOHRWcGI?oc=5",
+      "fuente": "Vieques",
+      "fecha": "2026-10-23 17:11",
+      "municipios": [
+        "Vieques"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Vieques"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "NOS COMPARTEN DESDE NAGUABO - Hoy colocamos la primera piedra del Batting Cage en el Parque de Béisbol del barrio Daguao. Este proyecto representa más oportunidades para que nuestros niños y jóvenes practiquen, desarrollen su talento y siga",
+      "enlace": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPamp4Q1Nnbkc2QnFQSXdwVWh6TjNJdUx6T3lTZWhJM3hHMDhFdzI3QXhtOFI3YkpYMUhGUFVybXlWbm9KeDh0Wllmd3pucFFzSXY5T0cxajllb29sVllEaVd2eDhZOFFyMlNGRVdrci05dHFZX0l0a2Q4Mm92Ykh2a0UyaWZwYjg1Z1ZkdHhQdmVpTmxCY21mbGl0c1ZIWm5WR19pR2NrWWVwTFV2LUdMUlRLekRIQWFKSEkwRkZlUnI2cnFjSTZuSHMxdk1GN19IR293bnloaEc?oc=5",
+      "fuente": "FB - Naguabo",
+      "fecha": "2026-10-23 16:53",
+      "municipios": [
+        "Naguabo"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Naguabo"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Jóvenes talentos llevarán mensaje de fe y esperanza durante concierto “Adoremos 2” en Humacao",
@@ -160,23 +225,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "🙏 Ruta Nacional de Oración por Puerto Rico 2026 — ¡Ceiba es sede! Este lunes 26 de octubre, a las 7:00 p. m., el Centro de Usos Múltiples de Ceiba recibe el 1er Encuentro: Revival Prayer Night. Y el sábado 31, a las 7:30 p. m., el 2do Encuentro en la Iglesi",
-      "enlace": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWnFwdk44akQ3c2Z5bG9YLVEwdDU1M1NDSWF4NERsUVRXTkpzR05aTlpnVmFZWmp0MHVBU0JMX284ZkVSVm9zRzdjcTdoLWN0WWVEeUE0UEM2eUZQUFFhRVBwTC1QN3lsc2dqM1FtYnF6UURCUVZ3ZUtYdGNQam9VamlSZGRtRUdsaUNqbHo2UVYwVndKMVZIaHFDbUgwSkxTaUdNakJHZWxpaXdKbVExZllrZ0dubmdGZTdLN3NtTnVhUGx4aXFXT3EzR0tkVGlMSEZQVTAyblFQbDZVWTUyR0szVlE?oc=5",
-      "fuente": "FB - Ceiba",
-      "fecha": "2026-10-23 16:28",
-      "municipios": [
-        "Ceiba"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Ceiba"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -192,7 +241,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -208,8 +257,8 @@
         "FB - Fajardo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
+      "es_nueva": false
     },
     {
       "titular": "La comitiva incluyó a la alcaldesa de Humacao y el administrador municipal, además de los alcaldes de Ceiba, Vieques, Culebra, Maunabo y el vice alcalde de Juncos, entre otros. Para detalles acceda al enlace.",
@@ -227,7 +276,7 @@
         "FB - Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -243,23 +292,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "CONVOCATORIA/SERVICIOS: Municipio Autónomo de Humacao, recibirá ofertas en sobres sellados para los siguientes servicios para el Programa Head Start/Early Head Start municipal: * Profesional Ambiental Cualificado (Mejoras Mayores) * Corredor de",
-      "enlace": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPUFgzaHVOUnRNbHNjR3pfVWNkck5lWUdVUXZfaXJJVVRiNGtYRFEyNlFUczlKTzVKdWRTRXE3RWdobmxCZnYxN1k4UVdxaTliYmJIS2duS0FubXNlU25WNk9sSklLUjZaeURNTjE2aXIzaVNzeVBZQXF4akJRVGNtZS03RXZiNXJyaG84V2MzdE5PWklKRERIMUdkeE14QXdFZnBLaHdab182SUlxYVo3UXdCN3pFeXhITXJtLUo4VXZmOVQ2QVFRcnRuZDVfSkExc0dpclgzaXkwbVRIM0hrc1NJU1JjVnZJRWg0?oc=5",
-      "fuente": "FB - Humacao",
-      "fecha": "2026-10-23 14:46",
-      "municipios": [
-        "Humacao"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Humacao"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -275,24 +308,8 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
-    },
-    {
-      "titular": "Zoni beach en Culebra, Puerto Rico. Ven a visitarla. 😎💯🇵🇷",
-      "enlace": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOUR4cEZYaklxSi1UUkhVYnVNRlcxV3Y2UUZ6dG1GOU9IaGhvRUljVkZTYXFpTWlCdlVFQkU5TkRVYzhWOEZ3aEFXYUc3TnU5VVB3N1hhdnlzdUUxSkI0bVlNQlFROGFGREpadmJNVDRPYjlBbmh1VlpwOHlrbm1QUlYwV0RQbzNrQll1RzdGN3BFUFY4dkczWTZLSEdqYmh1cUxhQkpkV1FVX1lsd3lmcl9UYzRVQU1KcG9vQ1dadE8?oc=5",
-      "fuente": "FB - Culebra",
-      "fecha": "2026-10-23 13:48",
-      "municipios": [
-        "Culebra"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Culebra"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
-      "es_nueva": true
     },
     {
       "titular": "San Juan destinará $2 millones para apoyar a comerciantes con incentivos de hasta $150 mil",
@@ -307,7 +324,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -323,8 +340,8 @@
         "FB - Fajardo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Ingresan a prisión a mujer acusada de tentativa de asesinato contra hombre de 66 años en Humacao",
@@ -339,7 +356,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -355,7 +372,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -371,7 +388,7 @@
         "WKAQ 580"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -387,7 +404,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -403,7 +420,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -419,7 +436,7 @@
         "Fajardo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -435,7 +452,7 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -451,7 +468,7 @@
         "Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -467,8 +484,8 @@
         "William Miranda"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
+      "es_nueva": false
     },
     {
       "titular": "LADIES NIGHT 7:00PM FREE en Caguas, Puerto Rico el 13 jul. 2026",
@@ -483,7 +500,7 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -499,7 +516,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -515,7 +532,7 @@
         "Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -531,7 +548,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -547,7 +564,7 @@
         "Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -564,7 +581,7 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -580,7 +597,7 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -596,8 +613,8 @@
         "FB - Fajardo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Muere peatón tras ser impactado por vehículo en Humacao",
@@ -612,7 +629,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -628,7 +645,7 @@
         "Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -644,24 +661,40 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
-      "titular": "Peatón muere atropellado en carretera de Humacao",
-      "enlace": "https://esnoticiapr.com/peaton-muere-atropellado-en-carretera-de-humacao/",
-      "fuente": "Es Noticia",
-      "fecha": "2026-10-23 06:29",
+      "titular": "Muere peatón de 54 años tras ser atropellado en Humacao",
+      "enlace": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZHhoZ0QzUzl0alpoOFhKYkJGZUFxc1hzaVFUb0ZqOVlkSlZ4T3RJSVMwM2hMVVJSUTZHWkktLWtib2c4TzNUc2ZSYlhkWUdBR1JObVJmQTJUZ1ZWRjRSeGEtVTdyUVlha2xMNWhkMk1kTWFfX3htTzEtZktHMHMxTjNQWkJzSXZJb2JweW94TEVjc0tLUWRJdXBB?oc=5",
+      "fuente": "TeleOnce",
+      "fecha": "2026-10-23 06:24",
       "municipios": [
         "Humacao"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "Es Noticia"
+        "TeleOnce"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
-      "es_nueva": false
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Hombre muere atropellado frente a residencial en Humacao",
+      "enlace": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMGFCaldvVzFFT1h5RzBiRFBISThremp3QzRMZDA1TVBqM3dUNUJGMHFhNzJBUGphNjEwLU5wb3gtRFZMTWhSaVc0VDNNbGRmNFRZQnBkMl9MaWFTOUxkX0k3M3RMTl9GZUdMYWxRMmVXOU0wc0ludEV2Q0JnZFFGQ3kza1FPZldLNEtIelcwc1RtNmM2YWVJZHlIVQ?oc=5",
+      "fuente": "TeleOnce",
+      "fecha": "2026-10-23 06:24",
+      "municipios": [
+        "Humacao"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "TeleOnce"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Peatón muere arrollado frente a residencial en Humacao",
@@ -676,7 +709,7 @@
         "Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -692,7 +725,7 @@
         "Luquillo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     },
     {
@@ -708,7 +741,7 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-24T05:49:27.503764-04:00",
+      "ultima_verificacion": "2026-10-24T09:38:38.830725-04:00",
       "es_nueva": false
     }
   ]
