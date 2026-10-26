@@ -801,21 +801,21 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-26 04:00:20 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-10-26 04:15:18 PM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">62</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">0</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">15</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">65</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">3</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">14</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">61/66</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-26 04:00:20 PM</div><div class="label">Última recolección</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-10-26 04:15:18 PM</div><div class="label">Última recolección</div></div>
     </div>
 </div>
 
 <!-- SEARCH -->
-<div id="freshnessNotice" class="freshness" role="status" aria-live="polite" data-collected-at="2026-10-26T16:00:20.445476-04:00">
-    <strong id="freshnessText">Última recolección exitosa: 2026-10-26 04:00:20 PM (hora de Puerto Rico).</strong>
+<div id="freshnessNotice" class="freshness" role="status" aria-live="polite" data-collected-at="2026-10-26T16:15:18.911435-04:00">
+    <strong id="freshnessText">Última recolección exitosa: 2026-10-26 04:15:18 PM (hora de Puerto Rico).</strong>
     <p>Una recarga de la página no implica una nueva recolección. Aviso desde los 30 minutos; alerta desde los 45.</p>
     <p>2 noticias conservadas por fallos de fuentes; mantienen su fecha de publicación y última verificación.</p>
 </div>
@@ -852,9 +852,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">8</span>
         </button>
         
-        <button type="button" class="muni-card " data-municipio="Trujillo Alto">
+        <button type="button" class="muni-card inactive" data-municipio="Trujillo Alto">
             <span class="muni-name">Trujillo Alto</span>
-            <span class="muni-count">4</span>
+            <span class="muni-count">0</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Caguas">
@@ -869,12 +869,12 @@ tr.article-row:hover { background: var(--surface2); }
         
         <button type="button" class="muni-card " data-municipio="Canóvanas">
             <span class="muni-name">Canóvanas</span>
-            <span class="muni-count">1</span>
+            <span class="muni-count">3</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Fajardo">
             <span class="muni-name">Fajardo</span>
-            <span class="muni-count">6</span>
+            <span class="muni-count">7</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Loíza">
@@ -894,12 +894,12 @@ tr.article-row:hover { background: var(--surface2); }
         
         <button type="button" class="muni-card " data-municipio="Naguabo">
             <span class="muni-name">Naguabo</span>
-            <span class="muni-count">9</span>
+            <span class="muni-count">10</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Humacao">
             <span class="muni-name">Humacao</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">7</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Cataño">
@@ -942,6 +942,20 @@ tr.article-row:hover { background: var(--surface2); }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
                 
+                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas,Humacao" data-titular="¡Los Grises Jr. suman su quinta victoria consecutiva!">
+                    <td><span class="muni-tag">Canóvanas</span><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://waloradio.com/2026/10/26/los-grises-jr-suman-su-quinta-victoria-consecutiva/" target="_blank" rel="noopener noreferrer">¡Los Grises Jr. suman su quinta victoria consecutiva!</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-10-26T16:00:00-04:00">hace 15min</td>
+                </tr>
+                
+                
                 <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Avería mayor en planta de Fajardo afecta a 25 mil clientes de tres municipios">
@@ -953,6 +967,39 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Walo Radio</td>
                     <td class="time-ago" data-date="2026-10-26T14:59:00-04:00">hace 1h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="¡EL DÓLAR ROSA LLEGÓ A LA COMANDANCIA DE LA POLICÍA ESTATAL EN HUMACAO! Como parte de las iniciativas del Mes de la Prevención y Concienciación sobre el Cáncer de Seno, el personal de la Oficina Municipal para el Manejo de Emergenci">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxOU2VUODJ2SlJpMkVOZm0tOFB1UlJObm5fSnJsWEhuVHFVbTRVSnNWZUJKSHBFRUxPc0c0N1VLRkVrenlyLXhZdDlfRkk5NFgzM0xXZXNkcWdxaEZMN3BVOHgyNG12SWtqSjBPVUZRYTJYRGNHbnNXTS1Hbk5QSUJPendXUGMtMUxyWW5OOGFmWlB3b3pDbmJSRTF1U3FxT3psaDFrV1loTjR5ZDNPZjlHOEpqR3VfckUyc09iLW5Ka1ZUcUdkY0ZzaXBoSHVrb3VuSjlGT1ZPRDdvWTZXRFNZV3k2WmpQaXFrdWRCTU41NEw5UQ?oc=5" target="_blank" rel="noopener noreferrer">¡EL DÓLAR ROSA LLEGÓ A LA COMANDANCIA DE LA POLICÍA ESTATAL EN HUMACAO! Como parte de las iniciativas del Mes de la Prevención y Concienciación sobre el Cáncer de Seno, el personal de la Oficina Municipal para el Manejo de Emergenci</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-10-26T14:45:00-04:00">hace 1h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas" data-titular="Arrestan a dos sujetos y ocupan arma de fuego y guagua hurtada en Canóvanas">
+                    <td><span class="muni-tag">Canóvanas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPMExVTm1DVF8waEY0bTdrSlhTbWJjRmo2N2hKSE95LVBEQk9UQjVMXzM2Y3RXeXUwNDlTajR3clRtYVhKcWIwdHhzTTYtbmZ5UUNfemxVV2IxN21uQmRPN24xWXBXT3ZWM1hYOF92NXduUUd4UDZxUGtZRm90akZINFRjTklyajVYdEdTaFBHRUY1cXdocnRyQ3QtZDl5SElPcTZVMVQ4d040bEZ4bC05U3pxcmo?oc=5" target="_blank" rel="noopener noreferrer">Arrestan a dos sujetos y ocupan arma de fuego y guagua hurtada en Canóvanas</a>
+                    </td>
+                    <td>TeleOnce</td>
+                    <td class="time-ago" data-date="2026-10-26T14:31:00-04:00">hace 1h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="El Centro de Gestión Única-AJC de Humacao ofrecerá la capacitación gratuita “Cuando el miedo SABOTEA tu oportunidad”, dirigida a identificar cómo los miedos pueden afectar el desempeño en entrevistas de empleo y en la vida laboral, y conocer estrategi">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi-gFBVV95cUxPOXZpWTY3c0FaeFJIQzJFR0hFUXhESVRuenN2eXowM1phWExRMjZYTWRtSkpTM2FZeFhwUDMxR1FOelhsVjhQRUtfY2RVdG9KRU0zMWVmNVpyYllXUlNKWEM3QWVXTGh1ZWF0VnVMTUwwSVh6T2VIQ0hRa1l1SVljQ2FmQ3I0MmhpQ29ReUM1cDdMNXl3Q0gyQU1KQXVXNlo0VTJMZGxnT3NwZ2N5U1dxcWxyNkUyUTZ1d0pSYUJXY3F0TXIwQmkxUGJ5MUxKeXFFNWNGdFZ5anR1Tm16N1lMNGZGS21sdWY2NDJyX1lUMXRBU00tY0VXcTh3?oc=5" target="_blank" rel="noopener noreferrer">El Centro de Gestión Única-AJC de Humacao ofrecerá la capacitación gratuita “Cuando el miedo SABOTEA tu oportunidad”, dirigida a identificar cómo los miedos pueden afectar el desempeño en entrevistas de empleo y en la vida laboral, y conocer estrategi</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-10-26T14:15:00-04:00">hace 2h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Alcalde de San Juan comparte con el rey Felipe VI en encuentro de alcaldes en Madrid">
@@ -1098,17 +1145,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-26T11:22:00-04:00">hace 4h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Las destacadas Atletas puertoriqueñas Beverly Ramos , de Trujillo Alto , y Jorelis Vargas ,de Isabela representaran a Puerto Rico en el Marathon Internacional San Louis Potosí , Mexico el Domingo 15 de Noviembre de 2026.Lo Dijo Jr.">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxOMThiRTV4am1BOXhHcUJ6ajJ1dEYxU3FIOUItemQxOTFIakE0ZmxYT1h0eGNUcGxuODhrclktOENRWUFGOERJVGlDeWwzTDMzbkk0UlA2bU00akQ2RndNWHBkdHJzSDloRGVRTVJCU2prYzdES2dsbUF1Z1VkNHlkT0RUR2hxY2lpN1p5eUlNeHhSTERXblhLSWpfR1RNc1o4eVNoTUREeTZ4THEwellZRHp3RVlMbmZtOERvZmhvd3lSZ255My1DamlpWVV5blhZbGpNVEIxWWZ1cEszVGFNcUhyZnZxOEE?oc=5" target="_blank" rel="noopener noreferrer">Las destacadas Atletas puertoriqueñas Beverly Ramos , de Trujillo Alto , y Jorelis Vargas ,de Isabela representaran a Puerto Rico en el Marathon Internacional San Louis Potosí , Mexico el Domingo 15 de Noviembre de 2026.Lo Dijo Jr.</a>
-                    </td>
-                    <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-10-26T11:06:00-04:00">hace 4h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="Fajardo" data-titular="🥦 ¡Llega el Mercado Familiar a Fajardo! 🍌 El Municipio Autónomo de Fajardo y su alcalde el Hon. José Aníbal “Joey” Meléndez Méndez invitan a toda la ciudadanía a participar del Mercado Familiar, una oportunidad para adquirir productos frescos y de calid">
                     <td><span class="muni-tag">Fajardo</span></td>
                     <td class="titular-cell">
@@ -1139,18 +1175,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxQQWFUb3p1WkJvV1RWR1dBdTRhU1VZQWgzRVlOX0VRYWYwVUp5Yk9HRWk4VTVxMzV5OGJpM1lPODVDclZUQjVxVWQwWG1nSFRKSFFydlNqWkwzZnE2c004XzRYY3ZxLVlpdFZHazNYdGs0cEZQdXF3NnBTa3J1ZVhKVFV1WWNSTDd1bVdtRXdlMlZzYWVfTlRsdkNodlVKSTg1Y0pHc203YlZEdE8yeHU3M3hwcGV6NUk1ZVBjRVJwLWtnYVNQVXliNmlPSTJxc3BDMkRSaGg0MUVlY0ZaaUVJbGtNcWlySUtTc09wLVZLUExRQlFuaGQw?oc=5" target="_blank" rel="noopener noreferrer">[POR SI NO LO VISTE] Luis Jomar Colón Ortiz, de 31 años y residente de Cataño, murió tras verse involucrado en un accidente con una conductora que realizó un viraje. Hasta ayer, domingo, la Policía no había adjudicado la negligencia a alguna de las part</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-10-26T10:07:00-04:00">hace 5h</td>
+                    <td class="time-ago" data-date="2026-10-26T10:07:00-04:00">hace 6h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Trujillo Alto Se Expresa">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
+                <tr class="article-row" data-municipios="Humacao" data-titular="El ejemplar, un macho adulto de 10.5 pies de longitud, fue recuperado por personal del DRNA y trasladado a Humacao, donde será sometido a una necropsia para determinar la causa de muerte.">
+                    <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
                         
                         
-                        <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE4yT0FYMVg2ejFUOGFlNVEzcS05aklmZS1leEhmR3VTdDgtN292LXVzd0lnVXllT2dobXBrMmJDSUxBaURfOC1FbV9ZZERINm00cWVEWEIzUnhSMk1IZW9PTm5Zak15SUFJYkZ1YmpIQ2tHZXV4ZHVKdXQ4MA?oc=5" target="_blank" rel="noopener noreferrer">Trujillo Alto Se Expresa</a>
+                        <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxQVV9MT1h3eVlOYmxzVFU0ZmF4V0ZqQ080dTh4RkdnM045THdpWHFyNDlKU3VTSUxpd2VwTGZYSF9EcmMxb0h0OFFta3JmWEo3UG5XSFgzaldpUG5hc2U5eUFBUVEyYXpFMXlhRTY1bldnblhFcmh2MF9GUVpNRkZmdnFtdWxWM0RYaUNmc1FReWxmc1Nac1V5WUNKV2oyelBxX1JQSWJaLWFQRlVKWUxkUjdBaWNpREZMNHJLNDZwVGF4RW1WMDktR0dTOGtRZ1ZMZEdMdQ?oc=5" target="_blank" rel="noopener noreferrer">El ejemplar, un macho adulto de 10.5 pies de longitud, fue recuperado por personal del DRNA y trasladado a Humacao, donde será sometido a una necropsia para determinar la causa de muerte.</a>
                     </td>
-                    <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-10-26T08:43:00-04:00">hace 7h</td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-10-26T09:40:00-04:00">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan,Carolina" data-titular="Identifican cuerpo de joven de 17 años arrastrado por fuertes corrientes en playa">
@@ -1172,7 +1208,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZW1Kb3VhVzF4TFBhQmNCZUxNNkU2ZXBIN21ZRTBJVEFlZEpYRF9oUjV4NDNoWFlPTmViazA5YWxYRDI1OWJYRnpMenEzMWd0UTRfcTRsWFBDVmFHOUp6aUhmYXgxS2hZOU1UTzVyMkpscDQ1LVgxbHlxN3R1aEJLWmppRkk1anVPRG84Z1Uxb2FBNk05ZkdGZlZyWS1PWXlTYTZTemNxYnBHVWlxNm81eVhFS1lrZ1pxellfaWwyOW5fSVlzd1B2V1pHNmo0eDBtY3ZpakNFZ0dFaDdVTExpNUxHRQ?oc=5" target="_blank" rel="noopener noreferrer">#ElTiempoAhora | Condado y Cataño figuran entre las zonas vulnerables al aumento de las mareas.</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-10-26T08:13:00-04:00">hace 7h</td>
+                    <td class="time-ago" data-date="2026-10-26T08:13:00-04:00">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Organización denuncia discrimen en operativo de ICE durante torneo de dominó en Canóvanas">
@@ -1183,7 +1219,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQMEZUakNMTGNqUF9rejBySFo5bUtuRE1kMXFabmV2LTdpRjJPZVhUSXBYdVNCNEF2NGFoRW5XZWVsMWtpQWY4UFRYdVk0aU1YTTk1QmlHS1Q5VGtkVWR5YV81bWNkSzF0R25aN3U2Q0hJOHphcUxaOEVPMy10YzQ2eEFJMUpITkdqT1dDQzhEMHFUeUtHSkVPRGc5cmZEcEZFNTUycFlXLWJ2Z2R3dzhfa3Bremdqbkp4aWNPUXBxcmV1c0xvU0pqQllFaw?oc=5" target="_blank" rel="noopener noreferrer">Organización denuncia discrimen en operativo de ICE durante torneo de dominó en Canóvanas</a>
                     </td>
                     <td>Canóvanas</td>
-                    <td class="time-ago" data-date="2026-10-26T08:12:00-04:00">hace 7h</td>
+                    <td class="time-ago" data-date="2026-10-26T08:12:00-04:00">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Recuperan cuerpo de menor de 17 años arrastrado por corrientes en Carolina">
@@ -1194,7 +1230,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxNeWhqb3RfUUhWa2tjVVc0Vng2Z2tuRHk1WVBkNlp3RmdYS0VMdWlkc2ZOWHE0UlRTc2JXQzNXSHRnMEZUcHc2czRacURHckhZMVJVNzNicXpvMmlOTjZWOHNId0p0d3VQZnpZbXNBVHpDWDVkN0VCV1U1R0FOZWZKLVNXVUlpMUU4ZUNIZDBxREU3SkhVVGNWUWtsVHh6S3VEeUJuc25pdW9zeXg1bzE5ZTRwSTBkdWdwNjV5VnNlb21EMGVxRVAzVEUtZDk1ZWx5WGJXbFYwSFNoQmVpanpDMTBtQmhGN3owMUtabUpn?oc=5" target="_blank" rel="noopener noreferrer">Recuperan cuerpo de menor de 17 años arrastrado por corrientes en Carolina</a>
                     </td>
                     <td>WAPA TV</td>
-                    <td class="time-ago" data-date="2026-10-26T08:07:00-04:00">hace 7h</td>
+                    <td class="time-ago" data-date="2026-10-26T08:07:00-04:00">hace 8h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="HOY | LUNES a las 9:00 AM, sintoniza el 1480AM y escucha el Programa: “El Municipio de Fajardo te Informa&#34;, un espacio pensado para ti, para que conozcas de primera mano las iniciativas, proyectos y actividades que impulsan el desarrollo de nuestra ciu">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPbm5xOEZYUDB2WFQtbXZFdHNLSWNiTUhHVmlRSjhmekVzUVV1dFRDelE2VnZwVko0ZVJnalpyanhQR1dPU0Q4TVFwbzg2VkY2VTdwR2FXVVVKWEdyaGdJZzhEUjE1SjVEY284czhEbDVBRkZuMFB6VzlWWm5LNm1ITGE5RnVVMDV3SXpheTlsVlc3ZjJlS3BaUnEtTXdDMF8yTmdvX3h0bjZXMEI3SzhjaDFDeGtNSXhHdGplWl84bndWZEZodWFacWw5WTViZTZKN1g1QnBpTzRiOVk?oc=5" target="_blank" rel="noopener noreferrer">HOY | LUNES a las 9:00 AM, sintoniza el 1480AM y escucha el Programa: “El Municipio de Fajardo te Informa&#34;, un espacio pensado para ti, para que conozcas de primera mano las iniciativas, proyectos y actividades que impulsan el desarrollo de nuestra ciu</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-10-26T08:01:00-04:00">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina,Caguas" data-titular="Carolina, Isabela, Caguas y Manatí se anotan triunfos en el BSNF">
@@ -1249,7 +1296,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQaHVMaE14RXFGNnVpQVJjNjA4MU1ydmN0czlVR2t1aEIwbEt2RnRXY0hadkpDcTlMVUx5RjRJZXVJOXk3LVRWZFhtbWVIOWhoT0pOXzV6TFphaHktRm1KejRYYkY1cXZiN1kza1hjSXZDWmRwdGNVLTdvblYxb2JYUS1UWkw0cEdhemRRdGNMeGQ1MUpzRG9OUWItb2hxQmNzWGNLX24zRHlDd0xPSzQxZ0htYVEtanJTQ2p3VnZXc3UwQdIBygFBVV95cUxPbURfVFBoWWEtOUJRa1ByN3JfSXJOSGFFRXhnd1B5YmRKSWd0Mk01QWlFbnNvejA0V2FHeGR4dDdHVFZqdllJbEs2MjBYM25ISExFQXh2MjB2cUZCU0dOOWtCRzVXUFpyTms5b1duaEFWdUlrTEREWXVGZmFFQ1NhbTQ0ak9NYTB1dmJndVNqa2xvd0ZRdWhlTWdsREVwMG5GRS1PNjdLNUcxS2Y2Q1g4SzJNQndpZ3FIVW1DTWNUbV9NR1pMQVgwdmJn?oc=5" target="_blank" rel="noopener noreferrer">Disparan contra una joven y su amigo y les roban motora en Naguabo</a>
                     </td>
                     <td>Naguabo</td>
-                    <td class="time-ago" data-date="2026-10-26T07:09:00-04:00">hace 8h</td>
+                    <td class="time-ago" data-date="2026-10-26T07:09:00-04:00">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="Hombre fallece en accidente con &#34;four track&#34; en Río Grande">
@@ -1348,7 +1395,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQMFhqdTJ1M0lrMFhwNzJxOHBRVzVfZ21nTUtDV3dPSDVtdkhBdGxQNzNXMkF1MWphTmkwZ08xOFBlTzNvcUFQNjVYUlQ5MXF0OU5ncktmOEQzUHUxazJXSC02SThyTmRmUXNfdzI3bnBDOTJmUkQycENjRksxR2I0SkUzZFFfWlRQblVSWFFjLXZtR1gzRDFXVnl1LTUxdENkVHpVTHVzbzJhSldYb2ZkN0Fn?oc=5" target="_blank" rel="noopener noreferrer">Disparan contra motoristas durante un “carjacking” en Naguabo</a>
                     </td>
                     <td>Naguabo</td>
-                    <td class="time-ago" data-date="2026-10-26T06:12:00-04:00">hace 9h</td>
+                    <td class="time-ago" data-date="2026-10-26T06:12:00-04:00">hace 10h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Naguabo" data-titular="Agentes de la Policía de Puerto Rico, adscritos al Distrito de Naguabo, investigan preliminarmente un robo mediante carjacking, reportado durante la noche de ayer en la carretera PR-192, kilómetro 0.1, del barrio Húcares, en dicho municipio. Según la inform">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxORXRfRW9yYklTaFpxSmtqOC1nNGpBOGNlU09yNE5vTmFKd00tdkRZNExzWHFTUEhqelBPeTdsdVpwNFJQWmQyLUpsUEZIZm9UYkRfVjFFM1RYYkpNZkwxbEluUTRnX29YVUpza2lJaTVsS3haR3pJYVhlUEI0VW9wRTlqWTVNM195QlpLWTNTRFdaSWJXQUR4UzlJeXBkS0liRWpxMXFPMUE1WUxkc2dnOV9rYmltYkpGNGZwclB0UHRPSWxrcnBzTG02NzRYaFMtdEFBOEtMdHYwYk8wT05R?oc=5" target="_blank" rel="noopener noreferrer">Agentes de la Policía de Puerto Rico, adscritos al Distrito de Naguabo, investigan preliminarmente un robo mediante carjacking, reportado durante la noche de ayer en la carretera PR-192, kilómetro 0.1, del barrio Húcares, en dicho municipio. Según la inform</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-10-26T06:00:00-04:00">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Tiempo en Isabel Segunda, Vieques por horas">
@@ -1370,7 +1428,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxORng1Tkl2bWFUeEdUSm5ZQ00ydVVTVWI3TWNrUW1PaDhNUUozLThuWkM2RWNGanBBZzVJSVZzbUUycjN0amVtOXFpd2NGc0twX3VBN1dibHdlZUZ6TnBlcHJEc2w0T1YzZmw4Rld1STBNZkJlX1pKXzJoOWpMYlNfU0pSdlNmYm1Ma3JWcXVBR0RMeWpJRTAyNVJ5eVVRSElmU2tHN1dma0doMjFKYkYtQXNPMHhRa0lITnY5Tm9xRkhrUHluRTgtZ2M4N1E0b1drRmtEN2tfR2pKS0Q2LVRhY2hIUkNYallPdXBuRHphZ19FTEhm0gH6AUFVX3lxTE0yM3dZc01wcXU0U0ZXS0dmZ200eEFwNmxrY0hSMlZXUjlsVUlHMjMwQVZIMXl1V3lXZTlnaHQ4Y2pLOXBYRnVWZHlGS1E5c1dscWZvb3RRRy1IMFVrTUJ4NWE2MkVKZ3dTV1RqZ0N6MGZJaFJXOUlRRmZkVDR3MXBlRTN2WkFidjkyUkQyb3RyYzJ4ZzBTTVBxdFVadER5aXM5ZTk1ZkxwNEhwcmo4U3RIMlNvaEhHVVExYUdjMU1UcjFOVWhPMTVsVlM2Z2k0UWU5R3duWGlIdnN6ckk4eGVhZ1ljaFVFeXExOHh5R29uMlY0Qm9TMmFCVHc?oc=5" target="_blank" rel="noopener noreferrer">Fajardo reunirá a más de 420 atletas en torneo internacional de sóftbol juvenil</a>
                     </td>
                     <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-10-26T03:03:00-04:00">hace 12h</td>
+                    <td class="time-ago" data-date="2026-10-26T03:03:00-04:00">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="🔴 VUELA ALTO 🕊️❗FOTO DEL HOMBRE DE NOMBRE #LUIS, RESIDENTE DE SOY DE CATAÑO 🇵🇷❗El Pueblo que se negó a morir ⚔️❗ Y QUE FALLECIÓ AL IMPACTAR CON SU MOTORA A UN VEHÍCULO EN SOY DE BAYAMÓN 🇵🇷❗CIUIDAD DE L">
@@ -1392,7 +1450,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi-AFBVV95cUxQT2lmQlA4LVROeUZGbk1IZ2lwR3pNanIyOU1LNm13TVUyR19sUGdZdmNwRTFlb1hzREFwNHpoUE1EM05QOWJQc2VTRDJabHpCWWxMZ21YSHNBa0JvSGxGN3NYLVpQdnFDYkxEWmlIRkc5TWUyV0hDRTN4Z21LQndXWnhldDFKZFVYVGpES0lKbEZpcWhWajJnVzJHeFlRdzhBVHJDWEpiVFZnR283TjQtVjdjT1AyWFFHNGtFMnVFOEsyWmE3c2lwLVFiQnk0RlNSNHhQWFRwOEstVFJiMGtObGVWR21scXF2bmx5eHp0S3hMMkQ2UlZ2Zg?oc=5" target="_blank" rel="noopener noreferrer">IDENTIFICAN A MOTOCICLISTA QUE MURIÓ EN ACCIDENTE DE TRÁNSITO EN BAYAMÓN BAYAMÓN, PUERTO RICO – Las autoridades identificaron como Luis Jomar Colón Ortiz, de 31 años y residente de Cataño, al hombre que perdió la vida tras un ac</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-10-26T00:12:00-04:00">hace 15h</td>
+                    <td class="time-ago" data-date="2026-10-26T00:12:00-04:00">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Carla Cortijo recibe homenaje y retiro de su camisa con las Gigantes de Carolina">
@@ -1450,7 +1508,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxPSU5IelhmWWQ0WTY5Q0lVR3o3Y0lrMVhaNXd4ZnBUWTIxbHVLX2txZGw0a1h1T3hUMnN0YmJzdWtqS1JPVWM0S2dmWDJwZ295VVFRT19XeFAzenBueXlCRDd3bjFLNk9iWFJKVC1nZEVzTFhPcERZdGdDTDVuQ3E3WEVMS1pPM1ZMTDgxR2lXRnJJLWt6dk9aZjlJVC13NEN3WEt0Z3FXNWdIaTYwWHdZenozd2ZvNk1jOXVZQlVXcGZic2oydE1lVElQRzNrbDYtOEtPTm9rYmRDY2M2RUdmUmNEOW5BcVdWNGU2b0xB?oc=5" target="_blank" rel="noopener noreferrer">¡MALAMBO TIENE REINA INFANTIL PREESCOLAR! Alanna Sofia Cataño Redondo. Es La Nueva Reina Intercolegial De La Cumbia De Las Comunidades Educativas 2026 Categoría Preescolar ✨💃👑 Dejando el nombre de Malambo bien en alto. Gracias a</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-10-25T23:12:00-04:00">hace 16h</td>
+                    <td class="time-ago" data-date="2026-10-25T23:12:00-04:00">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Buscan a menor que fue arrastrado por las corrientes marinas en playa de San Juan">
@@ -1461,7 +1519,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxPekZNVjg0UjgteXZkLWZ4WW5kWlVCWk50VUl1OG52YTdjWnZuQ3VaMmpoTzBHRk93RFpUU185aHVkelIzUS1BZGVPQzJmS1lUYm1aZHhZN1FZdl9ldFlGOERkaU1Yc1F4SzFEUXpqX2VzbmpUaVFNSndSN294YVhIdXg2X1R5cl84NE12UWUyVlVwNHFOZWVnUmw2dzBYQ1FBNlZMdTg3U0Rjbldiam5YTmx1QWNkOWsyYkxuQ2VHSktoSGZVWEprLXdzeU9lUWFwTE1VQWdqZXMxdUw3VzMzenZqMkpBeWktSU5hS241ZWxuSDB2S3pF?oc=5" target="_blank" rel="noopener noreferrer">Buscan a menor que fue arrastrado por las corrientes marinas en playa de San Juan</a>
                     </td>
                     <td>WAPA TV</td>
-                    <td class="time-ago" data-date="2026-10-25T22:09:00-04:00">hace 17h</td>
+                    <td class="time-ago" data-date="2026-10-25T22:09:00-04:00">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Desde Caguas 🌕🇵🇷 📷Carlos Rubén Rodríguez">
@@ -1472,7 +1530,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdlVGNzNZUTZ4UDJweklNaEJtNDEwelR6ZGVjbDNLYnZtQ0xnOGQ3Z1VOaUtjMUtkZTVqV3hoNzh1Z3lWVm44aVhlQVlqSVRzTWZxME5nUWpTeGFyTFNkdWMtdE5OaW9qdXllQVkxWHJ0NnRhNkNzcGVuRnhqLU1WajgySTBoNlQweUlDSkR5ZXotSUFrX0NoVzJ5ZDdNRHFkX2c1aElYN2NVaW8?oc=5" target="_blank" rel="noopener noreferrer">Desde Caguas 🌕🇵🇷 📷Carlos Rubén Rodríguez</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-10-25T22:03:00-04:00">hace 17h</td>
+                    <td class="time-ago" data-date="2026-10-25T22:03:00-04:00">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="🎬✨ Claudio Cataño celebra el gran momento que vive el audiovisual colombiano. Desde los Premios Macondo 2026, conversamos con el actor sobre su participación en Horizonte, película dirigida por un realizador caleño y que llega a esta edición como un">
@@ -1494,18 +1552,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNM01ja1hxejMzYUlhMFlRV2phT1laVFhvSFAzblB4U2podzhKWHZLUUhDcTJWQVUzMjlCV1VDZnRaZ1FwNkxOaTVWb28zQ0NsekZMVXpSWkNTa3U3SVJxeExZZTloSjVnVE5Ud2NPS0VjWVVQQ0t4MmFYTmFUT1NGeDhpZEsweTZTUm5LN3g1MFA1Q1cyZWc?oc=5" target="_blank" rel="noopener noreferrer">De Fajardo, Ceiba y Luquillo.</a>
                     </td>
                     <td>FB - Ceiba</td>
-                    <td class="time-ago" data-date="2026-10-25T20:07:00-04:00">hace 19h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Hermosa la Luna desde Trujillo Alto. 📷Ana Esther Morales">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNd0g1TmZMaXZfczgxaWV6Sm00UmJqZlk0dU0tWXZ5N095NmhOTUhkcVVMaFRYYUM2Z0t3b2Z1ZzRST2V5LUtaaHRPclhod1BfZjhjLXFHOVFHTFpvSWhaMHotalNfbzhnbmZwYVhmWnlMeWhpa2xmLWFtUVpHTzhwTUU0eUo0OGtVWlgtTXRVZms1SGhKS2c2Z2k3VkJrQ0QxZEw3c3JTRzFCS2ZDeFFCRGowSlRQQQ?oc=5" target="_blank" rel="noopener noreferrer">Hermosa la Luna desde Trujillo Alto. 📷Ana Esther Morales</a>
-                    </td>
-                    <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-10-25T19:57:00-04:00">hace 20h</td>
+                    <td class="time-ago" data-date="2026-10-25T20:07:00-04:00">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Prieto &amp; Asociados en Fajardo ⚖️ Lic Ricardo Prieto abogado criminalista y notario con amplia experiencia en: - Casos criminales, civiles, federales. - Familia - Daños y perjuicios - Notaria ☎️ 787-860-0875 (Oficina) ⌨️ oficina@prietolawoffice.c0m 📍 Calle">
@@ -1516,7 +1563,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxOZ203cTNjVjhJM1c5LTdBTFF1UG9STWl2aVhhWnZoVGsySlJ1YXZsSlVqRVJ0VXV5eFVRcUVNTU4tZFJiQU5NYjF5dERrV1dRLVpxLWRBaXRONGFxczc4SXdBaUg3cDA0bE9jQlE0YTJrNTJHVENscVNfSHRRbDZkZVBnNnVNSUg0eS1DSEZ2MzFvaFJwMjYtcnNURUpGWkp5TXM2TmFISzhjWlNvWFR6TVRidEFTZ3BlLS1udGJBZUl6cjE5UHowa2Z2c1UzbGlJT0ZoUFVLNmFOOWU0NUs2ZF9wZWVjUS12?oc=5" target="_blank" rel="noopener noreferrer">Prieto &amp; Asociados en Fajardo ⚖️ Lic Ricardo Prieto abogado criminalista y notario con amplia experiencia en: - Casos criminales, civiles, federales. - Familia - Daños y perjuicios - Notaria ☎️ 787-860-0875 (Oficina) ⌨️ oficina@prietolawoffice.c0m 📍 Calle</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-10-25T19:13:00-04:00">hace 20h</td>
+                    <td class="time-ago" data-date="2026-10-25T19:13:00-04:00">hace 21h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="TRISTE NOTICIA, aparece otro manatí muerto en el puerto de Yabucoa en el muelle donde descargan los barcos de combustible. El Cuerpo de Vigilantes de Humacao y la oficina regional del DRNA se encuentran atiendo la situación. DRNA Puerto Rico">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUklra1ZNOU41cE1pWUxTNGlmRnYxQ3NmbTlxem1UVnRER2NYN1l6SHVSQmRnSG1uTnFEam4wTzNfN2w0VW5wZWQybjVUQ3BYc0pLZ05RRVUwQWJIaXdkYWtBb3d5MkFuQUZUdE9QRkt0SDBCUU5lUUtlOXZEZ0E1WUpPcDRsVjh5WWw0QW1xS1FRR19pdHlRd2N4blh3VFlxVHZFbzlqZENiempKREVwU3ZzcGljbFo0VlU3bzhRdjAzM1Atb1FMRTluUkZCYnBHaWxLeVl0T0l3dHI1TTBIN2xnUTFpUDQ?oc=5" target="_blank" rel="noopener noreferrer">TRISTE NOTICIA, aparece otro manatí muerto en el puerto de Yabucoa en el muelle donde descargan los barcos de combustible. El Cuerpo de Vigilantes de Humacao y la oficina regional del DRNA se encuentran atiendo la situación. DRNA Puerto Rico</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-10-25T18:35:00-04:00">hace 21h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Muere peatón tras ser impactado por vehículo en Humacao">
@@ -1530,17 +1588,6 @@ tr.article-row:hover { background: var(--surface2); }
                     <td class="time-ago" data-date="2026-10-25T17:39:00-04:00">hace 22h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Eres soldador o mecánico de equipo pesado eres mecánico industrial o tienes un Machine Shop de rectificado y no fabrica,, mi nombre es David Quinones de Ingenieria Maquinado Localizado En Puerto Rico en el municipio de Trujillo Alto estamos para serv">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE5XOWQxVDRIdERSd0ZYbEkzQURDUVNHYUlzWndBVDV5SVFvY29pN2RvcVdocHZ1QXhJQ3BRaks3ejdNOXNtcGRBa3VBOGc3clFEeE40aUxIZldLNXVyTTlNUXJSUHdmbmFhVURneFd1MHVUaFp6M2h1R1I2NA?oc=5" target="_blank" rel="noopener noreferrer">Eres soldador o mecánico de equipo pesado eres mecánico industrial o tienes un Machine Shop de rectificado y no fabrica,, mi nombre es David Quinones de Ingenieria Maquinado Localizado En Puerto Rico en el municipio de Trujillo Alto estamos para serv</a>
-                    </td>
-                    <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-10-25T17:12:00-04:00">hace 22h</td>
-                </tr>
-                
                 <tr class="article-row" data-municipios="San Juan" data-titular="Se rompe el récord de calor en San Juan">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
@@ -1549,7 +1596,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQMWl5aWMwVnhMVHZST0dwTTBzVERFUlVZNWswenRFQzVJQkZxLVpRTkVPMmd6ZGluOXNHTk1tSHhEQmhqc0NUV2lqTUNQYTJKM2tQd09xR2hDdVpUTTFhNkNtOEh6R0NqemNTTFgybFV0Wjd1VDIya1VjN3JSX291RkZVNkVoWkJpSHFwMzFnRkRCbHpnbXgzM1Q5cG44ZzZsVFQxNg?oc=5" target="_blank" rel="noopener noreferrer">Se rompe el récord de calor en San Juan</a>
                     </td>
                     <td>Primera Hora</td>
-                    <td class="time-ago" data-date="2026-10-25T17:12:00-04:00">hace 22h</td>
+                    <td class="time-ago" data-date="2026-10-25T17:12:00-04:00">hace 23h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="🥎 ¡FELICITACIONES A NUESTROS ENCHUMBAO DE NAGUABO! El Municipio Autónomo de Naguabo felicita a nuestro Equipo Municipal de Sóftbol, Los Enchumbao de Naguabo, por su excelente representación en el Primer Carnaval de Sóftbol celebrado">
@@ -1560,7 +1607,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi8AFBVV95cUxNRHNLV3lraXRhVXJadWFMbE5fQjdXTXNfa0hObFdZMkg4aXA1WGNTVlhtSXVGOHRidVJGS01naGNnYmxzd1lZSncyZjRHY3BXMHRRNXdMSzlKNGVseHNyTHZ4NWNGRXJZZUNQdkF4c1VQRzVSSDZPU2p0aWlmLW9fTjh4X3U2RTEwTUVEZWpMXzNwR1dSeE9KbVRVNU5aQmk2UnRDMkJQVFhFMFpFVzhYZEtSRFNlLVJsN3o3R2d3Y1VLeTBVSF9kOTZjclRrc3lnSjZIVFVKbV9fb1FVWE9YdXowN3pNSzcyNFNBTGJ5dTA?oc=5" target="_blank" rel="noopener noreferrer">🥎 ¡FELICITACIONES A NUESTROS ENCHUMBAO DE NAGUABO! El Municipio Autónomo de Naguabo felicita a nuestro Equipo Municipal de Sóftbol, Los Enchumbao de Naguabo, por su excelente representación en el Primer Carnaval de Sóftbol celebrado</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-10-25T16:07:00-04:00">hace 23h</td>
+                    <td class="time-ago" data-date="2026-10-25T16:07:00-04:00">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="‼️APROVECHA EL OFERTÓN‼️ ▪️Todo lo que estás buscando para tu equipo de música en el área de #Caguas.">
@@ -1571,7 +1618,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMikgJBVV95cUxPNXRPN0NJeFczV3Z1YVlfZzE4eVFkaGp5Tk9PQmstYkU5VUhhUlhja1g3bnRrcEJDR0locHJ1WTMyUXFIbFhnWmRZaUhzUlJOSDBrWlpmOXJOMEJtZVZXSS1obXBBeVljbGphTEJzclVHMkJpQmhBX2ljRG04N0tvZ3lkN1ZySUJtOU8wNVgwUDkwWkJKWEhySEVwcU02RXFpMEJ6WFUwN0RTUWxnWTFBd3hSRE92TDJvbUVPU2p5STJEMlVfUGwybHhRYjE3aXVaTEc2VUVMX2dSRnRJRF9VdExSU1UzUUxyOFJMOS16OEg3WFdFZW5VRnRyZXhEN2RzNjJncGxVXzJqb01saTBuMDh3?oc=5" target="_blank" rel="noopener noreferrer">‼️APROVECHA EL OFERTÓN‼️ ▪️Todo lo que estás buscando para tu equipo de música en el área de #Caguas.</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-10-25T16:03:00-04:00">hace 23h</td>
+                    <td class="time-ago" data-date="2026-10-25T16:03:00-04:00">hace 1d</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="Río Grande dedicará encuentro de artesanos a los manjares elaborados con calabaza">
@@ -1616,17 +1663,6 @@ tr.article-row:hover { background: var(--surface2); }
                     </td>
                     <td>Río Grande</td>
                     <td class="time-ago" data-date="2026-10-25T11:37:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="CONFRATERNIZACION HUMACAEÑA ACTOS INAUGURALES INTER-HUMACAO">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxOa3FLMlFqWXNmX0VEZGJHUTY3TW82NHNwNWk2bjJHbldteTdjSy1XdkJNRG8xTUpMMTRFNUEtZjU2N0ZXdEdUbTIwVlVTclAtRmlsd0s4clMyMGJhU2NpczctY21FZlEtcEJMV1pNZ1RzN3VoOUItNjM1RDhDcHpIbDExcnlNSHpmXzFIcw?oc=5" target="_blank" rel="noopener noreferrer">CONFRATERNIZACION HUMACAEÑA ACTOS INAUGURALES INTER-HUMACAO</a>
-                    </td>
-                    <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-10-25T05:23:00-04:00">hace 1d</td>
                 </tr>
                 
                 
@@ -1785,7 +1821,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 El Nuevo Día</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -1793,7 +1829,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 NotiCel</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -1801,7 +1837,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Radio Isla</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -1817,7 +1853,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Telemundo PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1825,8 +1861,8 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Walo Radio</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 6</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 7</p>
                 
             </div>
         
@@ -1849,7 +1885,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 NELPR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -1857,7 +1893,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 San Juan</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1865,7 +1901,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Carolina</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1873,7 +1909,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Caguas</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1881,7 +1917,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Fajardo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -1889,7 +1925,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Humacao</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -1897,7 +1933,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Trujillo Alto</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1905,7 +1941,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Canóvanas</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -1913,7 +1949,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Loíza</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1921,7 +1957,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Río Grande</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 4</p>
                 
             </div>
@@ -1929,7 +1965,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Luquillo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1937,7 +1973,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Ceiba</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1945,7 +1981,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Naguabo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -1953,7 +1989,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Cataño</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1961,7 +1997,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Vieques</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -1969,7 +2005,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Culebra</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1977,7 +2013,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - San Juan</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1985,7 +2021,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Carolina</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -1993,15 +2029,15 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Trujillo Alto</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 4</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 FB - Canóvanas</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2009,7 +2045,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Loíza</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2017,7 +2053,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Río Grande</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2025,7 +2061,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Luquillo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2033,7 +2069,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Fajardo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2041,7 +2077,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Ceiba</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -2049,7 +2085,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Naguabo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2057,15 +2093,15 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Humacao</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 2</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 7</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 FB - Caguas</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -2073,7 +2109,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Cataño</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 5</p>
                 
             </div>
@@ -2081,7 +2117,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Vieques</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2089,7 +2125,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Culebra</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2097,7 +2133,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Gobierno PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2105,7 +2141,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Senado PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2113,7 +2149,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Cámara PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2121,7 +2157,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Junta Gobierno</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2129,7 +2165,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 William Miranda</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2137,7 +2173,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Limarys Román</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2145,7 +2181,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Primera Hora</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 4</p>
                 
             </div>
@@ -2153,7 +2189,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 El Nuevo Día (GN)</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2161,7 +2197,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 El Vocero (GN)</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2169,7 +2205,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 WAPA TV</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 3</p>
                 
             </div>
@@ -2177,7 +2213,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 NotiUno</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2185,7 +2221,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 WKAQ 580</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2193,15 +2229,15 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 TeleOnce</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 1</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 Xposed Magazine</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2209,7 +2245,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 NotiCentro WAPA</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2217,7 +2253,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Telenoticias</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2225,7 +2261,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Telemundo FB</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2233,7 +2269,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Las Noticias T11</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2241,7 +2277,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Moluscotv</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2249,7 +2285,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Jay Fonseca</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2257,7 +2293,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Última Hora PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2265,7 +2301,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Noticias En Línea</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2273,7 +2309,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 En Contacto 787</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 8</p>
                 
             </div>
@@ -2289,7 +2325,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 El Nuevo Día (Scraping)</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2297,7 +2333,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Carolina787 (Scraping)</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-10-26 04:00:20 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-10-26 04:15:18 PM (PR)</p>
                 <p>Noticias recientes en esta consulta: 3</p>
                 
             </div>
@@ -2316,7 +2352,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — 2026-10-26 04:00:20 PM (hora de Puerto Rico)<br>
+    Observador del Noreste — 2026-10-26 04:15:18 PM (hora de Puerto Rico)<br>
     La vista se recarga cada 15 min; la fecha indica la última recolección.
 </div>
 
