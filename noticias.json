@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-29T21:49:55.635571-04:00",
+  "generated_at": "2026-10-30T03:45:05.964696-04:00",
   "interval_minutes": 15,
   "source_status": {
     "El Nuevo Día": "✅ OK",
@@ -10,7 +10,7 @@
     "Telemundo PR": "✅ OK",
     "Walo Radio": "✅ OK",
     "El Oriental": "❌ rate-limited/error: XML RSS/Atom malformado",
-    "PR es La Isa": "❌ rate-limited/error: XML RSS/Atom malformado",
+    "PR es La Isa": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "NELPR": "✅ OK",
     "San Juan": "✅ OK",
     "Carolina": "✅ OK",
@@ -68,6 +68,22 @@
   },
   "articles": [
     {
+      "titular": "Arzobispo de San Juan condena redadas de ICE: “Tenemos que levantar la voz y denunciar estas injusticias”",
+      "enlace": "https://www.elnuevodia.com/noticias/locales/notas/arzobispo-de-san-juan-condena-redadas-de-ice-tenemos-que-levantar-la-voz-y-denunciar-estas-injusticias/",
+      "fuente": "El Nuevo Día",
+      "fecha": "2026-10-29 23:03",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "El Nuevo Día"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": true
+    },
+    {
       "titular": "Se irá la luz hasta 13 horas; 12 municipios están en lista",
       "enlace": "https://nelpr.com/2026/10/29/se-ira-la-luz-hasta-13-horas-12-municipios-estan-en-lista-2/",
       "fuente": "NELPR",
@@ -80,56 +96,23 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": false
     },
     {
-      "titular": "✨LA PITONISA✨ pregunta al público ¿Quién tiene más enemigos Isaura Taveras o Vera Carolina Brito Roys ? 👇🏼👇🏼👇🏼",
-      "enlace": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxObFdONFAwejR0T054ZTRHTXF3Rm5TdHRnbXlKaHZmOEFiV05iODE1TDN3YTNLTHIxb0ZWc0JhNXpoa3o3czBwQUZXLWt6QVNsTnlIdjZBLS01cC1Pa2ZJZno4M3p2QXBYMWVsS0kxckdYRUhYMlE0MkJlUFA5Y0FIMnJzd2dsLW1NVGxVUzVvb1ZwZHZkanVmVEIwWTV5OGtsaHRNdGFmUlpRMG1tbV9iRjdrR003Q29ZT1pBcmt1R3h4QWJXam5CelpvLTk1Mmh4VjB3aVJGUlY2M2hadVRvR0IyaXFpWU91T1ln?oc=5",
-      "fuente": "Moluscotv",
-      "fecha": "2026-10-29 20:57",
+      "titular": "El Senado de Puerto Rico habría suspendido una sesión dedicada a la antigua base naval Roosevelt Roads, en medio de versiones sobre posibles preparativos militares estadounidenses relacionados con Cuba. La instalación, ubicada en Ceiba, Puerto Ric",
+      "enlace": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPLUdXMlFFX1FpNnRTS3lQek91ZzRLREJiNTFmd2EteGZpZllUQzNYQnQ5Mk1hQzBPbktVSFBCWXFKczQzcTBFWlRXLVFNQU9QcWFwLVRZXzQ5c1doS25xcjlkRGoxTWpLMVN3eXB2QTdMd19CTDJ4alZtTDhEdGg4Q2tkX0t2b0JsU1Z6azE5QjVadXVnZHJNMTdGRGFhak52OWJHTzF6OW1CQldLcFlCTDNRc2VCMnpPaTZUTHBISDdCbzlqbURDck50Um1JaFZiWUVyQ25wMDhFdTh5NHZHV2hMRlc?oc=5",
+      "fuente": "Senado PR",
+      "fecha": "2026-10-29 19:23",
       "municipios": [
-        "Carolina"
+        "Ceiba"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "Moluscotv"
+        "Senado PR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "Sabías que Modern Containers se puede realizar entrega a los municipios de Vieques y Culebra",
-      "enlace": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPbUxOWVh0N3pTSnZFQVBleVlaVlRJNmFxd1E5bkdVdEVPcDg3M2FDMnVaaHZSdDk1Y1lZYnU2TGtERFRfRlo2bnJVUGdic3Y2T0d3SGdHdHJhR2NESVRCRlNRaENVQUllTWJlOGRlMHpRZUNiVXdTd0RnVVI2bDkxYTV5SnNrdV9taXU2cnJzd0hQb2hxak1QWmtueG1mX1c5MXNFVnNjVDhYRW1FTkJkVktqWU5KNjhQRWNjY1EyNDBCZHpnYmpCZFpCczRoQU9CSXE0Vkh0N1BwazBabWV5WWtHbXpraFdsV2c?oc=5",
-      "fuente": "FB - Vieques",
-      "fecha": "2026-10-29 20:00",
-      "municipios": [
-        "Vieques",
-        "Culebra"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Vieques"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "Análisis: los Senadores de San Juan cambian de rostro para dejar atrás la pasada campaña",
-      "enlace": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNGxlZDYxR2tiSXhaOEQ0UVdLSUtpM2xsMVA1bzAzTUM2eUZNclhyMDdxM0dWQ1RpcXNKdWdFWWpaVFZUTXgxX2pyMm92YURHTEh1b29oeXcxeGRjT2k4ZDZCcEhtSjRUUTlFTW1TM0NkeExsRWhVODkwNWNuT2pyeHNHc2NlT2VSTU5nOTByTl9Cd0lTS2x4dzNvMlpELS1COXlNS2gxNU45aWpjSUVaVC1DdXJiZDhkb3I4aUlQTlJEbkJ4R0g5OWZkOFZJbTlpWklmdA?oc=5",
-      "fuente": "El Nuevo Día (GN)",
-      "fecha": "2026-10-29 19:21",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "El Nuevo Día (GN)"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": true
     },
     {
@@ -145,8 +128,8 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Asesor del secretario de Guerra visita la Guardia Nacional de Puerto Rico",
@@ -161,23 +144,23 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": false
     },
     {
-      "titular": "“Entran y salen”: Assmca investiga supuesto uso de casa alquilada por Félix Plaud como centro de rehabilitación de adicciones",
-      "enlace": "https://www.elnuevodia.com/noticias/locales/notas/entran-y-salen-assmca-investiga-supuesto-uso-de-casa-alquilada-por-felix-plaud-como-centro-de-rehabilitacion-de-adicciones/",
-      "fuente": "El Nuevo Día",
-      "fecha": "2026-10-29 18:40",
+      "titular": "🎄🎶 ¡Noviembre llega con sabor a Navidad y mucho ritmo a Trujillo Alto! 💃🕺 ¡Se acerca nuestro Anticipo Navideño de Ven Pa’l Pueblo! 🇵🇷❤️💚 Este viernes, 6 de noviembre, la Calle Muñoz Rivera se llena de música, alegría y tradición para comenzar a sentir",
+      "enlace": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSnctNVU1bW9TWjdoQW9OM1huYlNjLXE2U19EenBBZjM2TWh5M2hLbkJKWkhpLTR1YXg3b3dCY0Y2M1lRYVpqaTZWc2cyTUFsV1FCUEFXVG91eUpxVzJ3aDdTV2s2OFAzN1daaXNMM3c5SXBBMnBlYU9oVXpYamVxY1NaZGZYc01fXzBxd08tSDVSRE5hOE4yRUNNV2htZlN6X3JNcWVMNElkeVNWQW9RQnkyQndtUTBFancyZzZwcWpZU2txb3F4UVpfak42N2dnejdMOGR2eGx4S3c0SnBfNmEtbk5BUVpkWmRjemFR?oc=5",
+      "fuente": "FB - Trujillo Alto",
+      "fecha": "2026-10-29 18:37",
       "municipios": [
-        "San Juan"
+        "Trujillo Alto"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "El Nuevo Día"
+        "FB - Trujillo Alto"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": true
     },
     {
@@ -193,24 +176,8 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "El velero más grande del mundo elige a Puerto Rico como puerto base",
-      "enlace": "https://www.elnuevodia.com/negocios/turismo/notas/el-velero-mas-grande-del-mundo-elige-a-puerto-rico-como-puerto-base/",
-      "fuente": "El Nuevo Día",
-      "fecha": "2026-10-29 18:30",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "El Nuevo Día"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": false
     },
     {
       "titular": "¿Puede Fajardo sostener una franquicia del BSN? El pasado plantea interrogantes",
@@ -225,7 +192,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -241,8 +208,8 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": false
     },
     {
       "titular": "¡La erosión avanza y hay familias en Loíza que han perdido sus hogares! 🌊🏠 La alcaldesa denuncia que han tenido que desalojar a residentes y atribuye la pérdida de viviendas a la inacción del Departamento de Recursos Naturales y Ambientales. Además,",
@@ -257,8 +224,8 @@
         "FB - Loíza"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Karla Mercado denuncia ataques personales luego de advertir sobre fallas en sistema de finanzas del Gobierno",
@@ -273,8 +240,8 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": false
     },
     {
       "titular": "102 profesores de Derecho piden a gobernadora vetar proyecto de reforma judicial",
@@ -289,8 +256,8 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Fallece el exsenador y excomisionado electoral del PPD Eudaldo Báez Galib",
@@ -305,7 +272,23 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": false
+    },
+    {
+      "titular": "San Juan será puerto base en el Caribe del velero de lujo Orient Express Corinthian",
+      "enlace": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQaDNEY2VhSjVkZHhKeXdjVE1famxFazZHTmhJT2I5RkJsc3RoXzV5T0hKREMzc2syWUxLSndadFBWS0FnRHFvcno0QjZLMTk2Z0ZEVjdWem5EOWtWUzcwcHFPeGszQmNrMU9jQkZud21Tam9BdERpU2wzbm5WaVNCdlBpWk1GYnVQZlhmeFZWVDczS2RxOG41S3hRU28tYnU5bmtjWVc0RF9iUUNkZFduTENiVnczNmg0aVRYV0xudlZPY05UbTRmUjc3TjFWZ0RMRzZSVzF3UzQzdjZwNl9EUVlCSVkweFVlV1daYTA2bFZwQ0JsSnU4NmdBN1DSAYICQVVfeXFMT20wdzRPdk9nd3lQNVdrdHQ5S2dJWnRCUjFlZ0xwYm1xbnplNU85Ul8ycXAwNkNEc0NsTGVyUnFsV21hbEF6SHpNNVJiaTFTd2txbkF2eDBIYmROXzQ4cC05ZG9zUWVCNmM1YXllS0lHVWhsNnFPTTM2ZmUwX2dHazZrcWZXV2ZIOUZaZ1hzMjJETlJ5Q0dZNEJFUVZrZW84WHdacmhHbkR2YlRsMXhSRzh4eDl3bzV1aG1WODlXc2M1SU5jWFlKMGI4S1Y4MzE5R0JmZHRBN0lYNGtnMjFFVV9MVlZhZ2l5MmJxZjR5czdiLWZiRFZHUkNaYzJxXzNZa3RB?oc=5",
+      "fuente": "El Vocero (GN)",
+      "fecha": "2026-10-29 17:57",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "El Vocero (GN)"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": true
     },
     {
@@ -321,8 +304,8 @@
         "Naguabo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Ganadero denuncia que jauría salvaje le mata sus vacas en Naguabo",
@@ -337,8 +320,8 @@
         "Naguabo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Municipio de Loíza. . INFORME DE LOGROS Y ACTIVIDADES ADMINISTRATIVAS 2025- 2026",
@@ -353,8 +336,8 @@
         "FB - Loíza"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": false
     },
     {
       "titular": "🌸✨ ¡JOVEN EMPRENDEDORA DE #NAGUABO DEMUESTRA QUE LOS SUEÑOS NO TIENEN EDAD! 💄💖 🇵🇷 Con tan solo 18 años, Aleysha Carrillo continúa haciendo realidad sus sueños en el mundo de la belleza. Desde los 14 años, Aleysha comenzó s",
@@ -369,40 +352,39 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Miguel Romero demands explanations from HSI chief regarding immigration raids in San Juan",
-      "enlace": "https://www.elnuevodia.com/english/news/story/miguel-romero-demands-explanations-from-hsi-chief-regarding-immigration-raids-in-san-juan/",
-      "fuente": "El Nuevo Día",
+      "enlace": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOVGZCTlBwN3FDcEVmWktGNmdUZmZpSUNsanY4amt6RWN5dEt3dElkRjVyRHBqNWhLYm1aTUtRRm9TWW9HbUtLMEtYNHBLeFd1d1ZxZGhwR3lhcVlzY1ZUODR3WF9nTWxFS1AwWTkzYlpMaXUzMmtkY1VWbi1GRjc5NHA3aFpzc1I1U3VJZUdlWjlkWkc5a1dOMFZ0MlkxUlhFOVdGOGZLUk5KMlNUOHBSMlRPY2FFLUpVdEZ3VjNXYmNDaFBhVklJOFRBTEFIUFpMTHc?oc=5",
+      "fuente": "El Nuevo Día (GN)",
       "fecha": "2026-10-29 16:48",
       "municipios": [
         "San Juan"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "El Nuevo Día",
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Planet Fitness abre en Fajardo su tienda número 21",
       "enlace": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONTZuTy1CNFp1bG5GMmdVc3ZMcWNtbXRIa0IyZmczRnlESUoxYjRsS25ZcEF4dmZ5bnJMWjhPcU52Rk41VUtmYXZaTGY5MTFkZHRCNWFkbzZURUx6cHMzd3BwdFVxMUJlWTlrTVFMWjJKTVRlcW15MXpUeVlFaFpENkVRamNHSGRYX2pmM01HQzJGT0NMX2d4TjhnUVhiYnFFVzNLUlRqYWNGa3d5VXNuaGNB?oc=5",
-      "fuente": "Fajardo",
+      "fuente": "El Nuevo Día (GN)",
       "fecha": "2026-10-29 16:47",
       "municipios": [
         "Fajardo"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "Fajardo"
+        "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": true
     },
     {
@@ -418,7 +400,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -434,7 +416,7 @@
         "FB - Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -450,7 +432,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -466,8 +448,24 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "Tiempo en Isabel Segunda, Vieques por horas",
+      "enlace": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9hOC1LMURUNGNWM0hiWFdxLWVtVVg5clBKVE9Fd0Z4bVN0Nl8wdGpoWDdhUmdWcnNndGNXVFF5RmV6ekk5Vng3eUh0eDdhcmkyOE94c3JrZ3plN2NfSkNtZGluYTkxM3RubFE?oc=5",
+      "fuente": "Vieques",
+      "fecha": "2026-10-29 15:55",
+      "municipios": [
+        "Vieques"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Vieques"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Madre denuncia traslado de maestra de Educación Especial que atendía a diez estudiantes en escuela de Humacao",
@@ -482,8 +480,24 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "GPS logra la W🧡💜. Guamani Private School vence 27-26, 19-25, 15-9 a Escuela de Bella Artes de Humacao para avanzar en la categoría junior femenino del #TorneoMaitaLuca",
+      "enlace": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQRnNHd3F5RnZvLUVhbXg5WWFlSHVCNW04dTNwZldoVlFfb250WTBoSE5UeXpPYk1PRmVQQnNXYUR4QnZRWXlDaUZGTi0tUkcwWG4tUldRdkxVNXVEUENMRnFTMFIyaGt4MTlxb25YSW5oRHBzRjgwOS10dnVNTTFFdC16aG53SzE0RGUzV2tmQmY5YVRVREhKOEJtVndPM01aQmFvWGk2RENaMm5jYU1nYzBkVnZGSU5xV1BwNHNVTEZ2NzVBT2Z0bmN2cmN5U3Z2dWs3QW0zTVBrbmFU?oc=5",
+      "fuente": "Senado PR",
+      "fecha": "2026-10-29 15:25",
+      "municipios": [
+        "Humacao"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Senado PR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Municipio de Humacao invertirá cerca de $67,700 en pintura de la Concatedral Dulce Nombre de Jesús",
@@ -498,24 +512,23 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
-      "titular": "La Autoridad de Acueductos y Alcantarillados (AAA) en el este trabaja en una tubería averiada en Higüerillo de #Naguabo. Mientras tanto se advierte que residentes de la zona y Pasto Seco de #LasPiedras tienen interrupción del servicio. En #Ceiba se le inf",
-      "enlace": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPd3RJYUxQV21HbnAzbmhrdGNMZVBZbWpKNkgtcXBocm9HTjFHTDFwNkNBMi13TERyWV9uQVlQVFlrRGJNNjJta3RXN3pZZGxWemY0Zzc3d2F2Y3laU092X3FwQkR2R2tBZ2VMRkNUb0wtNVZxX2RZOXN4cjR6WXp6cnpiWUxnT1Q1ZEY1QlllOUJpeW1LM3hJQUdkSGlfaVowQ1pHN0w2U05udjl4Vng5SjJkT18zcjlIejZoYkNpZFVZUkc4a1loOV8yYlgyOGkzVWhic3F3?oc=5",
-      "fuente": "FB - Vieques",
-      "fecha": "2026-10-29 14:29",
+      "titular": "NFE atribuye a problemas de acceso al puerto los retrasos en la entrega de gas a San Juan",
+      "enlace": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQSnhNU2dqdUtod0xPZ28zUENBVHZKMmE5T2trQmU5c3dNQUg5bGU2eFdpMU5RODVkM0ZaS2JVMFdTZm5kQjZJeklLQVNndnM2NWFOamRiczFSNFRNVWpGUVBiZUxRQTFQNFdMRnpiR2JORVRJNGlFTjB3VmRxd2lOYzA5bVJCcWgxVy02QW9ocG9OSW9NSVI5UVdvYkxwaDFWTUhEZTJ5RjYzSk5qbFh0TFp1bkZJMllXRnU2ZXluT0hQZlo4UHQ0dGtJbjJrSm1YT2tIN1hxdm9kcmRBeHNaNXV0Y1JjTFNmLWV0QTVTRENlTTRKNTFuV0Z2YmQ4N1BY0gGGAkFVX3lxTE5VV1RLVzd0LWVJZzgzeE1ZTlhhQzVGSUZBY1NFRGlEelh0ZG13ZzFsYjFrZEE0U21fVjJ0YlVFbnJTWjJ0dFhSZ0dDWjczb2UxZHlUT1ZQcXpScFBBM3U4c1BmTTRkZUJHOGlGbnQxYmdRbVJmbHdzN2xGTXQwQXoxWWZrbUJHTUxFcU9CcEJHbE41WVNZNEhGdW5FbldGQlo1S3gyc0hWRlliNmpLaTJXM1YtY01ZSmFOZjg3ZEZpcG1qNW1aWVdOdk5wUUc0aWl0TmlFb01LR01OUW9IZHdEXzJwV25mV0hyU1hCZ1VneF9GOE1qamhGbFZRR0czLXZGLWtVaUE?oc=5",
+      "fuente": "El Vocero (GN)",
+      "fecha": "2026-10-29 14:59",
       "municipios": [
-        "Ceiba",
-        "Naguabo"
+        "San Juan"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Vieques"
+        "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": true
     },
     {
@@ -531,7 +544,7 @@
         "NotiCel"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -547,8 +560,24 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "Romero Lugo destaca superávit en San Juan",
+      "enlace": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQM1h4UkswbC13bFF6Ny02OXNyZVBlQUk5QUtxYlhiVWRhN0tPMzFHcUFjOUtnMkJmZEVVakhlWlVxTzR6VDMxWUVsdW5UVXpZNkdxRVhwRzJpalJScTRxYW1NRmVmaVk3WWtPUDRBODVaOVpnY3NINi00UHlqZG85bk8xTVBqbHV3Z2dETXhKTmpRXzZ2bmtLdHlleGNNVFdVakxjQVV4S0JuaDZVRVpWc0E1Z2R3amNUWF9qNmNTNXVaVGM?oc=5",
+      "fuente": "El Vocero (GN)",
+      "fecha": "2026-10-29 13:41",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "El Vocero (GN)"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Residentes de Loíza denuncian que siguen desprotegidos ante las marejadas",
@@ -563,23 +592,23 @@
         "Loíza"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
       "titular": "𝐒𝐞𝐧𝐚𝐝𝐨𝐫 𝐟𝐢𝐬𝐜𝐚𝐥𝐢𝐳𝐚 𝐭𝐚𝐫𝐢𝐟𝐚𝐬 𝐦𝐚𝐫𝐢́𝐭𝐢𝐦𝐚𝐬, 𝐚𝐝𝐞𝐥𝐚𝐧𝐭𝐨𝐬 𝐝𝐞𝐥 𝐌𝐮𝐞𝐥𝐥𝐞 𝐌𝐨𝐬𝐪𝐮𝐢𝐭𝐨 𝐲 𝐩𝐫𝐨𝐲𝐞𝐜𝐭𝐨𝐬 𝐝𝐞 𝐞𝐱𝐩𝐚𝐧𝐬𝐢𝐨́𝐧 𝐝𝐞𝐥 𝐭𝐫𝐚𝐧𝐬𝐩𝐨𝐫𝐭𝐞 𝐜𝐨𝐥𝐞𝐜𝐭𝐢𝐯𝐨 Durante vista pública hablan de avances en ruta corta hacia Vieques y estudio so",
       "enlace": "https://news.google.com/rss/articles/CBMi4glBVV95cUxNWFRlMjFkNm5hUUpYLXVIcUlXemdhTENWMGJqaHdEYTJjZmhhNC1XRV8tTzh1ZUlSdkVqLXd2dXd5ME40V3dyN3JjR1hVX29YU1o4TWJTLW95UVJCOFU1U1Ezc1ZhN2Y1NF9kVHZnNDh4NndSQThINmNpN2RwZ04zREJSRVdYbzh3cWMtb0YxdjRfRkw0alc4c2JqSGdCcmhqS0JwZlBPenV2U3U3ZXZ3Sk8xd0lWLUZYT3lWRXBXTkRiMWtZOEdJSG9Ld1NVcmJmMF96Z2pWVHJOV3UxN2x0dmp4RmtSWkI4c2h0WHdRTm5NRTJvNkNORWY4WHA1RTByLU50eDVDNlM3dmpwTVowTTVyOXJJcXZ3SERPNHBPdmYwblNVam5PVVFHZHJ0VGxuTkp3TUp4aUhLSFhvUDVWMlNOTW5oY1pwNDA3aUNUc1Fxa3Q1RHpwVTByMUFLUXRWblFEQTU5VnQtWjJ3QmF2QnA1WHcwOWpTVy1WaVdEMFF5dXRKSUtRMnExMkxUS2JGeFRvMXJITGdNRnRWNzN0OW53X2FiSEhhcEJrLWRUNkpFazJHS3VWLUREWktQR0p5TWdHTklVMGFRMEdleW5qSkpPUl81cjNIRWVIN3hWcVlSM29EaXppS0RhdjV2cjgyN01DOUF5MnFJNHRjSUN0RmNRWmIydlduZkd3MS1DeE42Tm40SWNHaWhUcHc4YVF0NGR0UGZpQmdKOE81WFU0aDFrYnZocEU4Zy0ycVhJRlVCWTNfaFI5NEV4VUtNWDhCcUozY2tNZ1p4Qm5sc2E4bTY0d3g1ME9CT3dEVmNRS2ZYSGhORURfVjczQ1Q2OS15bUVJY2lmRDVuUngyR0JzVGVzWHkycVZDcVR0WXV6SEFKZGV5bGVvaEdud21ZSzlBNnlJbTBlMVNSNnE0MkZSekR6MHVEUFk1S3Z2eHBUOFg0T2Z3OXk4TmZFaS1wODl6ajFQVHdfYWRLM0l5QmFxSTJ3VlNXNWF4bXFIV1o0RWxIUzRROFU4LV9KWnFkREl5c2dUWmMwWXVFVUR0U0lFazhqejNISFd6dVI1VWNyYmN1UmRMdlBDenhrYVhOWmFmRlBsMXVuaXE1V0Jsd25yV0R5R0s4ODVrVHFSNTdQZDNRNzB0UGtRM1RjdDVMbV9sMEZfSUpWaXhvWGVlbnRnSEtYSHAwNDk5aEQ1bElzZGwxN1h3amNkZC04YmhpbnZXRE1DMmJJS0U4RllfQlFCci1ueXVxbGtFcm91UDhMOVpZYUJTcl9kbHZ3S2ljQlJMVzVFS3hTSHBGR2JETnpsRVBGeDNfbjlvdkRCcGd3R1hFdlRHVXhHSGpwNGlCSGRjUFV5WGhyZzR4SjNBMkQ3U2xQQk1Nbkthb3JGTEs1cXdZcmMxNmxoUXRSYnJjb2N1bHdBLTk5T3FjaEp1eVRVdk51TTJaSlEyZGhzNlVmLWlMWjZqRlplTFAtVE04RW9XZFhjVE5WWlEwVUlwX2hBbl9JalBlV3N5NEFCU1czVGRrS1JuZ0dkek4zQlZyQTZTemVZSnE5bTdYcGxQTldrTGtvY1RZQkFGZ2d3WTBDa3BEYmxPem4yVThacF9xWElETjN6WXN4UFJKMWdRU1dEWGUxckU5cUdkOFRQdFJlOGlEZw?oc=5",
-      "fuente": "FB - Vieques",
+      "fuente": "Senado PR",
       "fecha": "2026-10-29 13:27",
       "municipios": [
         "Vieques"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Vieques"
+        "Senado PR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": true
     },
     {
@@ -595,8 +624,24 @@
         "Gobierno PR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "[AUDIO] El senador explicó que la Marina mantiene un contrato con la Autoridad de los Puertos para utilizar las instalaciones por un periodo aproximado de 10 años. #Ceiba Para detalles acceda al enlace.",
+      "enlace": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOX1RKWUNCMGEza21LcEdxNC1DdlZ5Wjg4QUl1WnRsMjcxbjVmMHlpZ2RsQ1lhWlZ0WElpVXRRZ2o2bWRuYU8wSVRaN2k4bDludWlvN3NWOXBjZUJKRURCLTNxSkE2YTRJSm5TMmZXTkVENnRNenRjb2thLVFyUGZMcUFSNF9mdlRqRlYzWjJNV0VxWG9SOG5VMW5wOGlWQlJHMnd6NGVya3JjUE9jUjQ2M2lVdHFkRk4ySzhWVG5UaVJtU3NGcFg0UndQeDM1WXl3amt6YVJ5WEc4Z29K?oc=5",
+      "fuente": "Gobierno PR",
+      "fecha": "2026-10-29 13:20",
+      "municipios": [
+        "Ceiba"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Gobierno PR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Vista ocular del Senado sobre desarrollo de Roosevelt Roads podría realizarse en enero",
@@ -611,24 +656,8 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
-    },
-    {
-      "titular": "Carolina Serrata revela cómo llegó a Kata Records tras la salida de Wanda Díaz La admiración de Carolina Serrata por Yailín La Más Viral viene de años atrás, mucho antes de su enfrentamiento con Wanda Díaz. Ahora, su incorporación a Kata Records, la d",
-      "enlace": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNOEpKbk9XY2xoN2puNkJNMFJxaGFFQktvbUp6RVZvRVc3VC1aaU1rR2RiMlZNYnFsb0pmLWZVMXc2Qmxxd3dTY1MtNndRcFJvVVRTc0FRdEJpMS1ldzJtcnkwOE1rQUZYZVdNZXI1LTlvYU9fb2Zfb3FFcVB0U0JXMW92dE9KZk9aY1BpQ2FDaC1wWGxYdDd1MGRYdjM5MzNMQlFzRVhKUkxnVTFLdWtNVUo2U2UwNThXZjNkVlhaWkVHXy12M1k2eE9HRmVRMFdMa1ZsOU9WTFlwNlk2X3JpTnpvaHNISFVaWkkyTlRUZmxOeW5IZEE?oc=5",
-      "fuente": "Moluscotv",
-      "fecha": "2026-10-29 13:16",
-      "municipios": [
-        "Carolina"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Moluscotv"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
     },
     {
       "titular": "🏛️📱 Gobernadora firma ley para facilitar el acceso al Registro de Personas Convictas por Delitos Sexuales y Abuso contra Menores 📍 La Fortaleza, San Juan, Puerto Rico — La gobernadora Jenniffer González Colón firmó el Proyecto del Senado 632, ahora",
@@ -643,7 +672,7 @@
         "Gobierno PR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -659,8 +688,24 @@
         "NotiCel"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "‼️PENTHOUSE (AMUEBLADO y EQUIPADO) DISPONIBLE PARA ALQUILER‼️ ‼️TRANQUILIDAD, SEGURIDAD, VISTAS ESPECTACULARES‼️ 📍Ubicado en Costa Dorada II, Carretera 968, Río Grande. (A 1 minuto de la entrada de Río Mar). Característi",
+      "enlace": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQYVlFSVNUR0pJODl5d3gxekNTZDNXWUJtQ0dTTzNQSnFRQWh2VU5PYTdZeGRZTDN4emgzSkx3U1kxcUhES283OVdrdjhYTTNnWW9RbzhlVGEza3dzdnRSWkViTXJneTZJNzhPczJUbnhnUjhkTGZVaWlEV1dabmc2MlZtTXY4LThSdUlwcGMyc3pqU3F3MlhLSE85TXlSOWVFeTBzcEtRbmJLbTk1SVpIUjdxdnZlOW9DRkhHV0hoZXdnVGsxZy1uSnVZd3M5VXFEN2NyMnY4b1VabmIzVllKTjBnMWp6MUtTNjFBUGpxUlZjeHB5VWJjaW9GYw?oc=5",
+      "fuente": "FB - Río Grande",
+      "fecha": "2026-10-29 12:09",
+      "municipios": [
+        "Río Grande"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Río Grande"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": true
     },
     {
       "titular": "🏝️🏡 ¡NUEVO EN EL MERCADO, ESPECTACULAR VISTA AL MAR! 🌊✨ 📍 COSTA ESMERALDA | CEIBA, PUERTO RICO 💰 PRECIO DE VENTA: $279,995 ¡Imagina despertar cada mañana disfrutando de una impresionante vista hacia Vieques y Culebra! 😍",
@@ -674,27 +719,26 @@
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Ceiba",
-        "FB - Culebra"
+        "FB - Ceiba"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
-      "titular": "Carolina señala a Wanda Díaz por utilizar a Yailín por dinero El enfrentamiento entre Carolina y Wanda Díaz va mucho más allá de las diferencias personales. Los señalamientos ponen sobre la mesa un tema delicado: los intereses económicos dentro de las",
-      "enlace": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQYTliYUhxUFZ6S1NMUGxtRU1nMG04Ri1xZ0U0bExGZFhuY3JPUm5iSzBvNjVFcXV4M0lPeXFRRW43SjZRVjdzRUJLY3lRd2lkY29zNXVVWWxSVTR1YWo4R2VFYVRva0xZYkNEN0V4WE40ek1qUmFuRGVPTWk4RWtwczY5YzdqeDBoV21FWDJrcG1IeGRoWU1mZHp5MElOQzRydmgtVWxDUnhlRzVQVlNYOV9sR3JfWTkyd3ZTNVA1djh2RmhPaTEwSHllYW1vQWVKN0dXTFJyVUtjWUVkdWpkajctT080WDIwUEp5NW9wNE1zaU1HNVE?oc=5",
-      "fuente": "Moluscotv",
-      "fecha": "2026-10-29 11:57",
+      "titular": "Durante la mañana de hoy, personal de la Oficina Regional de Carolina de ASUME y personal de ADFAN del programa de Adultos recibieron la capacitación del Programa Próspera y del Proyecto Encuentro. Seguimos reforzando las capacidades de nuestro",
+      "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNOVg3LXRhLVhXUzM2Ykh3NUEzUldwTWI5YjVQUGlaUkNIZ2sxWk1ORFVsR1lpWVN2MlpQaXFBUV9pTEo3V3VJY0phYmJ5TXh0a05CU0huUGQtU0dJQmNWQy1FUWgxbWgtdy1VY2t6eUtYbW1IR3ByYVoxYlU0V0lfUWY0WkxZemhjVG1HRlBBa1NmSk1MU1RWamxRSXp4eGpOQmUtS1FOU01NYmJFT3hMQTRBSUgwczA0X1hqR0VEaEpXSk5KU1h0cU1WcGdjR0RmQmFOVmExOVMyNVk5RXB0SERPRQ?oc=5",
+      "fuente": "Gobierno PR",
+      "fecha": "2026-10-29 12:00",
       "municipios": [
         "Carolina"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "Moluscotv"
+        "Gobierno PR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": true
     },
     {
@@ -711,7 +755,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -727,7 +771,7 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -743,7 +787,7 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -759,7 +803,7 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -775,7 +819,7 @@
         "Fajardo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -791,23 +835,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Agentes de ICE intentan operar en Puerto Rico. Durante un torneo de dominó, en el municipio de Canóvanas, llegaron los policías armados, intentaron interrogar a la gente y solicitaron identificaciones. Según el Proyecto Integración Comunitaria de San Isidr",
-      "enlace": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOYlktS21ReWtuWDBCWUF6QjFxT0JpM3N3T1JQY2xOMVJRclQ1d0NGVzJJTldadDBOWWNQUXI4TDdhRm5QVEVZZHBEM0xWdlFkMkYyR1lHRFZaZ1J0TEQ4bnhlQ21OZWFLNUtQUGI0QzZCYmpkeWdiREF5QkwtVGt4QXVTQnBkN3hHTFJBdkVtT0ZoREFEdGtSUFpiME11T2ktMnN3SDJXMEYzUlUzbHVvR0lyX2J3XzcwbnBWWXU3OUpNSG5hLXZJRTBfNEdkaXdtZEVrTmRSQXZFQQ?oc=5",
-      "fuente": "FB - Canóvanas",
-      "fecha": "2026-10-29 11:25",
-      "municipios": [
-        "Canóvanas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Canóvanas"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -823,7 +851,7 @@
         "FB - Loíza"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -839,24 +867,23 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
-      "titular": "EL PRESIDENTE DE LA CAMARA DE REPRESENTANTES JOHNNY MENDEZ ENTREGA CAJAS DE AGUA A RESIDENTES DE FAJARDO Y CEIBA POR AVERÍA EN EL SERVICIO. NRTZ - El presidente de la Cámara de Representantes, Carlos ‘Johnny’ M",
-      "enlace": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQa3NCT0ZIT2hqVFVtY2xXVDhxcFBHa0pzZTJ5VVZ6LUlzYi1iRHJqOTRnOTJpUlM3TmVpUXJWdmRWU1FoV24xcmhZVGdqanB3YjNDdDh0SlNqbjY3R3ptb2NYaU5fNTBBTzkzYXlGcl9rdHkwMkVmaEFpaVZaNkZVRnpiMEFKZElHMmozTUtJdDlIUVRLM2xUcUVfOWN6YnhzdDFiWmhmbHYtSUQwS0d0aVRPbVlXd0VNbjNHQ1FoZ3dIVmdxQVFZRjRLdUdGMW02MnJVNW9Uano?oc=5",
-      "fuente": "FB - Vieques",
-      "fecha": "2026-10-29 10:21",
+      "titular": "William Miranda Torres - Alcalde. . ¡Este sábado, 31 de octubre, el Caguas Market se llena de diversión! Disfruten en familia de productos agrícolas, gastronomía, música en vivo y sorpresas para los pequeños, que podrán venir disfrazados y recoger dulces.",
+      "enlace": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPZjBsODlDUUpXYWEtUjRCckhBNzJWb1hYWjhXWGg3ejNKdFdycE1TNU9zcVVNaXFhZ2w1WUU4Q2s4RHBTemhTbF9nRnBaYVJVbjQ3Z2hjZUJFRFdxbmgtSmJ0UFFVNENxYUNNUFVHcXBOcG9GT1VfNmVWZHI0M0xRV2RRcXFqY0c2UG41QXJMNHBjRjZOS1JLOHpieWRuU0VGT1NHR0tIdWFCYXBCWmZsR2RvV1NZbzZFZkhFNzJaa0hVNThYdVk1UnV0TnVHdmVMV2E1Q01oX2Z5VlMzTjdXQVpSNkNYUVdqY0hOdWJfRXdfZXFzbXpaUmdOVHA?oc=5",
+      "fuente": "William Miranda",
+      "fecha": "2026-10-29 10:00",
       "municipios": [
-        "Fajardo",
-        "Ceiba"
+        "Caguas"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Vieques"
+        "William Miranda"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": true
     },
     {
@@ -872,7 +899,7 @@
         "FB - Loíza"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -888,7 +915,7 @@
         "FB - Loíza"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -904,7 +931,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -922,7 +949,7 @@
         "Limarys Román"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -938,24 +965,8 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
-    },
-    {
-      "titular": "Arrestan a una mujer y dos hombres durante allanamiento en residencial de San Juan",
-      "enlace": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNLXhiamZkVm9WT2NESmZma05leVFSQllyQU1CS0Z4X2ZNLTVwb1ZFZlU2anhmUlhQczEySXdpTFhZeE16TXVyRWhJRDhGRDhZSjhzLXV1bEtTUUlRUDFSV3o0ZGNVcS1JbEVpNHNiQTI4YXNSTFp1RkJidWNUdldmYkhDaHBQMEVVdTVTN1A3U1lWNTZ2SFdNQU95dHpjTnVDWXl6NFZsUEptcDM5dHUzVFc0cUNJOTRhNFNXVnh3?oc=5",
-      "fuente": "TeleOnce",
-      "fecha": "2026-10-29 08:49",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "TeleOnce"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
     },
     {
       "titular": "Arrestan hombre en residencial de San Juan, recientemente estuvo preso por 11 años",
@@ -970,7 +981,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -986,7 +997,7 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -1002,40 +1013,8 @@
         "Loíza"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
-    },
-    {
-      "titular": "Muerte violenta en San Juan - Foro Noticioso Puerto Rico",
-      "enlace": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE9KdXFEWU92Yzd1TDRmSVZDam1XLXJqYnlQTnNjQ2w2VF81RTR4QkR4Qk1OSGNrZXFobk44?oc=5",
-      "fuente": "San Juan",
-      "fecha": "2026-10-29 07:33",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "San Juan"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Buenos días a nuestros comerciantes del Centro Urbano de Canóvanas! ☀️ Como parte de nuestro proyecto Canóvanas Smart City, personal de la Oficina de Planificación estará visitándolos para recopilar la información completa de sus negocios y sus logo",
-      "enlace": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNYm5NV0tvam5JejdyMG9ERkdSQ21oYjVLU192YkRUZVZaNGpCVXVWb0JMaG41SVhULWRpMEtWajVQa2h6ejNtRFB4ajBwUnJ0dnlfNWZNTzRDNEtLek90ZmxUNVE3T2xyME95aUhSTTdCejE1OGFPY3U4V0wxejBYMDRSNWxPeTdPX19nVHRsMkdBYWM5R1dIcHh0WHdhOXZrdDluVGdUUGNZXzJfeG9fcTdyZTRYQVZYSjd2VV9DSXBsNklnWWNnVUVNLTljQXEtRXQtNFp2bDdpUEtXbGhNeDhNaTlLeVl6TXBxZHFQUTI4S1cyaHRmblBaTGxJN00?oc=5",
-      "fuente": "FB - Canóvanas",
-      "fecha": "2026-10-29 07:02",
-      "municipios": [
-        "Canóvanas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Canóvanas"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
     },
     {
       "titular": "Investigan asesinato reportado debajo del puente de la avenida Kennedy",
@@ -1050,7 +1029,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -1066,7 +1045,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
@@ -1082,23 +1061,40 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     },
     {
-      "titular": "Hallan a hombre asesinado debajo del puente de la avenida Kennedy en San Juan",
-      "enlace": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZnF2RUNsQ0J0Z2xKU0FiZnppZndmUkE4T3E0YTJELW1kLU5Ud3NKUjZwVnNmcW5VbmhNME5ybFRWTmUtWFI3LW02QUJnZkpleVlObkh2eTQ4S1pHWEh2cEVnYlhldTh3eDZzTG1vQURzNFhNcS1adGNfMmk5dWZhSVVQMlFUV2tKSnZaems0WjY1cDluUEVzNXQxVlFhblg0YkZYaldnX0lBMVJMWHhsbUhtbjd0enc?oc=5",
-      "fuente": "TeleOnce",
-      "fecha": "2026-10-29 06:30",
+      "titular": "El 99.98% de nuestros clientes cuenta con servicio eléctrico en este momento. Conoce más detalles y verifica el estatus de tu zona: https://miluma.lumapr.com/outages/status Hoy jueves, nuestras brigadas estarán en los sectores de Caguas, Dorado, Fajardo,",
+      "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQTk5aTzBfTXRtZzJ0MVo4UFJSc3l6ZURMV3lvRktkY0NDOUxncjBLNjVUd3pXaU1DQXh2Rm1ySGNGam80WlFYeWQwSEdWLUxlaHlXdFdqRW0zY09ONkR5c3Zieml5TnNWakJnalpkLTR5T2NER0dIemtwbGRZNDZrUk5kQnpPVkVGNUxXRGRVVlVVYmpJTDNsLVFseGdjQU9TS1p5dm1IamtSd0JWeUlvNGtXYTVTMXFrUHBUNGI0TG45UThIX0g3WHBqc2ZrLUV0V0o5NDVKM3JxU0stV0FyUGZsWQ?oc=5",
+      "fuente": "FB - Río Grande",
+      "fecha": "2026-10-29 06:26",
       "municipios": [
-        "San Juan"
+        "Caguas",
+        "Fajardo"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "TeleOnce"
+        "FB - Río Grande"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "🚧 AVISO A LA CIUDADANÍA | TRABAJOS PROGRAMADOS POR LUMA ENERGY 🚧 La Administración Municipal de Río Grande informa que, según el comunicado de LUMA Energy, hoy, jueves, 29 de octubre de 2026, se realizarán trabajos de mantenimient",
+      "enlace": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOQmE3ODRqd3U1RlBHeFYxcS1WZUVKVlYxd3JtNVhwU3ZZSWtvUlRsQ0JQamZZYXAyUDFNREZWMGk0Qlg3WnYxYlY2eUtnMWNiZGRaZDRfRi1lZGZ0TUJLR0RVRVlTb2ctVV9xek56ZFdOd1RwQnBmaXVHcmxOaFJqd3F0ZThTVFdIU3RnYXE5bmtEcE9BYUR2ejBUX0ZXbzRMN002MDNWT2pmTlI2TTh4cU9BeHVCVTR2VFQ0YTdXZnpMdHdIdmFIcTVSSkVPOG96SUNNclFNUWNHQWY5VXI5T3RqZE9DREk?oc=5",
+      "fuente": "FB - Río Grande",
+      "fecha": "2026-10-29 06:00",
+      "municipios": [
+        "Río Grande"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Río Grande"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": true
     },
     {
@@ -1115,557 +1111,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Los señalamientos surgieron tras cancelarse una vista pública sobre la antigua base Roosevelt Roads, en Ceiba, por asuntos relacionados con seguridad nacional.",
-      "enlace": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQMlZLdzVrN1RsWkpuZDlLYWl6T2s0ckJkbmZOY0RuMW9tcDBPdm1SLTlDbDRmbXQzZ1B5VDRmUGNyWG1uU3FqeEN4dzlSR3h2Y3FUTENuNHp0RndRcXEwelk2VUJQem9TUnMwc2VYRDZNM3JyZGdqVzJVWHppSHZBaTJ5Q21UZFVscER6VjRBUzItczNBVU5ZbHBSeWhyTFVIZkdMc2tVekVXejk5QWR0cnJmaHQ0aTBSUnI5M1Z0NnQ5aWVQM3dzNFNqNy1NUFBPVjAzbmpQYVlxVWNqclloZnAzUTVfYTQzeVE?oc=5",
-      "fuente": "FB - Ceiba",
-      "fecha": "2026-10-29 00:58",
-      "municipios": [
-        "Ceiba"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Ceiba",
-        "Gobierno PR"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "CULEBRA FORTALECE SERVICIOS JUNTO AL NUEVO LIDERAZGO DE HMS FERRIES. NRTZ - El alcalde del Municipio de Culebra, Edilberto Romero, sostuvo una reunión de trabajo con el equipo directivo de HMS Ferries para coordinar la transición de li",
-      "enlace": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNclJ0eExsMDJocUJLMmFwb3NsYnBjbkwtVWZUS0xDRmRjNllIM0ZBMlN3d3owdkFMaUx4M0hzS25KUHFaRnpQN21qRnR6NUxqbjRkbmZDS25fU3RETUFmbF95emxTaldFNFdpdEJ3VTdpQmRVY2kxc0R0ZzdyeWowQVhwSlNHRkgzd1Njd2JsNjVTVkYtV1dLSWljM1RHbTg3c0RIZUU3bnZCa09TSXlyZ3RQT1czX3hsdmlaOXdqMUMzWnpkVlpUeVh0OTRPZnBPUmhBdHFmX00?oc=5",
-      "fuente": "FB - Vieques",
-      "fecha": "2026-10-28 23:55",
-      "municipios": [
-        "Culebra"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Vieques",
-        "FB - Culebra"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "Triunfo 96.9fm. . Dale Valor a tu Vida -Pastor Rafy Arroyo_IDPMI Villa Esperanza, Caguas PR. /10/28/2026",
-      "enlace": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcFlEa2p3bjFwNjVZckRVR2dMaEpodWJYUVYyaVJCaWR4TEd1WnFsVW1zUXBZRlNXbTZpVnViX2pQMENoQnI1OWhfcTltM2JLVEpIaG1NUXR5aVJyRGdrQVNWbjVZdERneU9yTzU4MkRQSXYxeDAtVnFSSHJOM3BOTzJ0NVByM1dMaGFvRkp4Wmd1T01ZZGJ5UlgydG94RW01Z2dtWldNU24xUy1uR2JrNFREaFZSMzIwY252YXJTeTJYckIzVzBsU3hQNlJ1bGpy?oc=5",
-      "fuente": "FB - Caguas",
-      "fecha": "2026-10-28 22:02",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Caguas"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Propietarios de dos negocios, uno en Guayanilla y otro en Humacao, denuncian pérdidas y dificultades para operar debido a los constantes apagones.",
-      "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPazZLYmJtY1I5dGVGdi1zenJaRVgzM1hpVkFZNW40ZHdYQ2dXRGRJT3JRWjM1a0djTHoyTzBSbFpsQVd0c1k4dUxsejFrcGNwTG94TzZ6cTlFTWFhbkd4a29yRG9BenFhdFF3bUJzVEpfTGJDVGw4cEFGcU9VbXBGRjFDcEZJb0xpblI5eXVPbnBXRHFOUXIycjZGcElDRDRrTXRHMTNvNkNiRXRyQWJ3SjB3QjE5UDZPX1RHQXY4aE9zcHFzcEZBTjlHcDZTUjgxVUdhMU83WmF1UnVYamlDRkJCdw?oc=5",
-      "fuente": "Telenoticias",
-      "fecha": "2026-10-28 21:17",
-      "municipios": [
-        "Humacao"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Telenoticias"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "en MANOLITO RODRÍGUEZ Nació el 25 de Octubre de 1986 Caguas, Puerto Rico. Destacado",
-      "enlace": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1pNzc0NDE2LS1sdGNtbXpKTzVKUUxtUUxrdFM2eVhhLXgzdERfSGNUMlpPd2k5NlIwZEtQR2NON2s3czZSY1pDTVl3aFp5Qnp2em1XMndWaFRhYlVHVk83YXRDN1UtV1lORDRycnNsbGpWdUVlb0tIb2RNWmppQQ?oc=5",
-      "fuente": "FB - Caguas",
-      "fecha": "2026-10-28 20:10",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Caguas"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Río Grande agradece al Puerto Rico Open su aportación de 25,000 galones de agua La Administración Municipal de Río Grande expresa su agradecimiento al Puerto Rico Open, a Asesores Financieros Comunitarios y a CC1 por la aportación de 25,000 gal",
-      "enlace": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQOUZUcU9UaDl0Y01qeXBQbWNHNjZDemxXaGs2UHJ0TnZBRHgtSGFlbno4UFRoNnZqQTFaSFd6OTNiRmpya0xVRWl6c3ZJcXFoRldEaG54M3ZOSWJLdU9QbjFQTnpwbzVDMnZlWTJQUzBhakxITV9hdmJobUpyWjM3RXpfWHBzcmwtWHF3MmhiZEJ1M2N3a1ZPU0tKVWRmUGNCRGdRMG5GY2F4c19FM3V1b1otWXViNmtLTnJxQVAwMjB3dVpjNzRyNURlRTVQWUlWSEYxdUI1dHdxQ3hfOE82YUNiRkwzWnM?oc=5",
-      "fuente": "FB - Río Grande",
-      "fecha": "2026-10-28 19:48",
-      "municipios": [
-        "Río Grande"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Río Grande"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Municipio Autonomo de Humacao",
-      "enlace": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMHV1MGJpUUdodkQ0YUlZWVdVeTFCaUdjeC1IUEZ0c0pSeXZ2aHhTWXROWnItR1piZWJuTG9IVENoUHpOZmNmekpiMl91RjZuNklqcEdGOGsyd3F2eEJoRWx5Z1h2ZXpjWGl4a0FyVldqNkQ0QnFtaFNfNURMZ1cxdTdXVUxJN2F3U3cwNUhqRExvWjQ?oc=5",
-      "fuente": "FB - Humacao",
-      "fecha": "2026-10-28 18:36",
-      "municipios": [
-        "Humacao"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Humacao"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "MUNICIPIO DE FAJARDO | ESTABLECE OTRO OASIS PARA EL SUMINISTRO DE AGUA POTABLE El Gobierno Municipal Autónomo de Fajardo informa que se estableció un nuevo oasis para el suministro de agua potable en Las Parcelas Beltrán, justo fren",
-      "enlace": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOOWtrOTRIOV9UeEFMWF9XNHRxVWFGSnZFbWxkbTNOclZIVjFJaEtZSUFtd1BmdUotUnA1bWN1R2V6Y3ZTRVZMdldITkE5d1p0cC1rQUstODF5RHo5OFR3a25lZzc4UEluR0Q1NlBJYTJhVzhxQkVVTXN3ck1WYm1yX0pGbHVoUnBnQlJLalUtcml5SzRUVk95WllUanF5UXlrTk9kLVFrTWpEem1mQ29FYmp1TG1sdHk4UGdoMzI5b2V1X016WXhicW9UVzBfWUc5MTdETzdUUXpzU28?oc=5",
-      "fuente": "FB - Fajardo",
-      "fecha": "2026-10-28 18:31",
-      "municipios": [
-        "Fajardo"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Fajardo"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Radican cargos contra joven por presunto maltrato a sus padres adoptivos en Carolina",
-      "enlace": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOeGlLa2ctVXB4T1RLWHl6U2U1ajB3Y096Yi13WktZQVJueGZSb1ltV3IwemRvQWxPLUsxWW5FZ0JsWHBpajVtNnphbGtNeHV3UTkzQjVDblhFRWJDeThiOTA0M0kzUGFUZVQwdnNIdEJxUFlzSFh4Y29BOVJqaURXZzhCUnBONThha19wOVhTNzcxRENsUVRoYlhlN0Y4T1BBSTV5WkkwVGxyd09aaklYdTBoUEd3dWpueml1MDZDY1hhdWZBUXQ5cGs1b2VFaWRha0pkaG5nNktjTDZnWmZNNGhCckIxZndYZ0t0amtKZzlpcUxlcEE4eW5KeG1CU3V1WUxGcW54VzRCemxX0gGSAkFVX3lxTE84YjJ5ZGJfMnd3SzNDdzNrZEFXTkM5R2tnTUROTVRzNDZDVVB0Qk15MzY4YmV5MTdMWTdtM29QM1owazA3XzlXZnRyQzN3OERZYUItaGJiZEpPcHU2TjluMl9YRG9qaENwaWw0cEJLZVZBMy1KQUpya0NwRjN2Skl5c0ZvVzJZX2dELXc5bHlaMnRwRENFZkdTNzlXNHhxZzdTQmNWWGExMnRfUHR5QVFjZm80eDZ3XzBsX1BZeXp2RG02UjNXb0hpWm1XdS1MbHZudnJxQjdlaEVoSW42Rk9WazQxQml6V0dKbWJpTmJxZm5sT0xQZ210YmNIc3l2RGlEVmtjR2RCSTlOTmw0dHIyT1E?oc=5",
-      "fuente": "El Vocero (GN)",
-      "fecha": "2026-10-28 18:29",
-      "municipios": [
-        "Carolina"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "El Vocero (GN)"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Fiscalía radica cuatro cargos contra joven de 23 años por maltrato a sus padres adoptivos en Carolina",
-      "enlace": "https://www.notiuno.com/noticias/seguridad-y-justicia/fiscal-a-radica-cuatro-cargos-contra-joven-de-23-a-os-por-maltrato-a-sus/article_22fb86a2-e205-4624-ba84-31f535e34070.html",
-      "fuente": "NotiUno",
-      "fecha": "2026-10-28 18:10",
-      "municipios": [
-        "Carolina"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NotiUno"
-      ],
-      "conservada": true,
-      "ultima_verificacion": "2026-10-29T01:33:15.474579-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Regresan a servicio unidades de San Juan y Aguirre en medio de llamado a reducir consumo esta noche",
-      "enlace": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQR25UckJsVDdqMlJsQU5MMFpnaDkxdUlHZFpOV3VUam9yUDlZVUhaTU01VDV3MlhiWWxiVE9VNHdhRnVjblF1RnlTNHloRGdfQ0pHT00xVWFGam4xS0NkUlpZNUx1bk5VOTV2RVE4VkxXa0oxblpXSmt0Y1dEVGRHLVhjQ2l6aXZDaGtuUHNnd0MzYXEyVGo2Z012N2UzMnhpZk8wZmJsWVgxNDlDYkRCOEhjT1NTazNhQnJ1ZUswUVpzQTVucy12anFkSXdEdHpQM0hKdlFNZWpEanA5RFQ1N0pMNnY4bEszbkNCR21IeHJacXE1TU5VeHk2MF95TmZrMkRn0gGIAkFVX3lxTE1SNjU4VUhqWlJES3N4dVJDcnI1SDlIU1BQUXpScmJ0R2pzUXpscTc1b1RTMTVZaHB4WWRGQ0l3X21JWXVOMmxiNGpjQUxSWlRWUjIxNnFrUEhhZU5iSTZHUFdUUXp4aU9RZF9SRm5WdDBUWVdSVnkwX1YzMFFtODNyb3ZrLU1HdnZnN25hQ2Q5S2pzczE5MW4xV3dlMk5zOFA3WlhLbkVtRy1BTmc4YmFlaXFNN0oxN0Q1cEloZzZkLTctMWYtNTJVU1MxcnZXMmhVaElOeE4xTzdFc2lHdldpenZfXzlIcUFkd1FhWXhDX1UtNWdTbnNpVVIzSjctTFlkb1gyN2xNeA?oc=5",
-      "fuente": "El Vocero (GN)",
-      "fecha": "2026-10-28 18:03",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "El Vocero (GN)"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Alcaldesa de Loíza denuncia atrasos en proyectos para atender la erosión costera",
-      "enlace": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQVl9URE1sUm9qeU9QcVNNZGlFMmJ1RW5aMGtMZUlDMjFVUGV1VnlEWXlSdXF5bkNwR3FSVUN5eEhXYWFCZDNVOXFhbmNVRzhsRlVKU3d4OHZmd1JZcFFoaVNTRVdvN0tNWXZKdG14TjcySlJBZXlxQ2llMlRyaG43R2J5aGZ3TmhDRThleFdSdElmVEtfS1ZwaGRPel9Fc2xLbWw0OHdDQlBLRkI0Vm5yT1dXd0RnOUFMbVdUcGwyaFcybGhUR1hidFVRWndkWDRNTjBZYXQ3Ry1BWjFpOXNDdks5dXpJUm93MWRHaU1aTjFYWWV2bVE?oc=5",
-      "fuente": "WAPA TV",
-      "fecha": "2026-10-28 17:53",
-      "municipios": [
-        "Loíza"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "WAPA TV"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "ALCALDE DE VIEQUES, JOSÉ CORVINO ACEVEDO, REALIZA SU \"MENSAJE DE LOGROS\" Redacción PUERTO RICO ONLINE NEWS 28/octubre/2026 #mensajedelogros2025 #vieques #municipio #puertorico #puertoricoonlinenews",
-      "enlace": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5TNFpCZ3ozNEJBWFZQXzQyc0N3aW9VWHVtSFZxNm5xV3A2MlNtMnRKT05PczZpZV9ncXV3czdCT0ExZWx5QXRUNUg1VmNONmdSTjk4WXhaNkdwc2dqN1BqLXlrTmE5bHZaLTRPUFR4THFpV3JXc216SA?oc=5",
-      "fuente": "FB - Vieques",
-      "fecha": "2026-10-28 17:38",
-      "municipios": [
-        "Vieques"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Vieques"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "Fuertes marejadas afectan a residentes de Loíza",
-      "enlace": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNajBaRmxIVERfcDBWNEVEcXY0ZTU2dkczOGJwOGVIaktpZWRCVzhkX0UxZlBOdWM0YkM3WHBDT1lVQ09pbUlqeUhmNjlidW1qY2JlQi1TbXhyYTUycTVGNWhibkxhSmx2SWFjUnhRLVJQcURmVmxGNnZkRF93ejY0Nk44S1FHRTdFVHhWZFlyZ09TUm05NHBib1VMX1RQbTNhcEVrOVZJT1ZsS0lZTVJlbVN30gG6AUFVX3lxTE1ZOTAyVlBOR0x3MGtfZEFjMXQzV0tUM0NkMUpxVlh3ZzhDZ3EyRlg0VkxUU181VFdfVDB5MU1ZaHhOY01ySmpOckthVi04cUhVUGZOendwMTFyRkpWY1NsQjBHV3FhdW5ocmprWHRyYTV2cUJFblBDMlozelh6NEd1eXMzd0RXYVdjYWJfZkhGWFZZQnoyRUc2TG5BZlZOMmtGRWJPMDVaby1ERTZMTTRDaGtLc2Y0Z3d3UQ?oc=5",
-      "fuente": "Loíza",
-      "fecha": "2026-10-28 17:31",
-      "municipios": [
-        "Loíza"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Loíza"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Cerca de cinco pies de carretera se han perdido en una semana por erosión costera en Loíza",
-      "enlace": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNYnc1Z3JBSDB5eTNybWwtZW5kcnFyYjV0TkRleDdpcXREN2VfT1U2dXBsZDcyeHZ5Y1lxVkFHWF9uZ01rRGFxVk5QNVhIUkRadHFMcE5WVkdJdmhBblZvTDUzWjZmUzVXY18wNzRqYVo0RGVnQVFldDdnRmU5c1NoMGstRFJYclNOOUZoak5UeElyRld5Tjl4bUJOOFVjalpRMFUyaVpuc3hZQl9hSGo2M1IzSDduZ0FiTmZ1dXB6ZDBNeHJ4aXQxQw?oc=5",
-      "fuente": "TeleOnce",
-      "fecha": "2026-10-28 16:58",
-      "municipios": [
-        "Loíza"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "TeleOnce"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "HOY en vivo a las 7:00 pm por MoluscoTV en YouTube, sabrás la verdad de TODO lo que pasó ayer dentro de la sala del Tribunal de San Juan. TO-DO 😎.",
-      "enlace": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPazhUM1kxdHdmOWFOVkhFTjBWQzhjMTFieXB1V0kxY3EwelFCR0NzMEh5dGRScjZUREhfSHcxZlN0SmthWVNMZnd5RVhYZ3NVUWp0Y25CSzcwV0o4LU1PelRsbVdybm1GZzl0QS1nd0xnVjlFR1Nxc2xoXy1UcTRreTFJSjZjUk5pREFmTWhRUXJyazRJRmhEWkxJLVJJSWRtUTAwRnFpZGVTTW9pZU5uZ0U4T3Y3ZURrV09GckVnY0dERjEtZl9hRDUyLWRiVHg1a19Yem9mYlVsMDVVRDBNeHBR?oc=5",
-      "fuente": "Moluscotv",
-      "fecha": "2026-10-28 16:50",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Moluscotv"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Tu Tiempo: se empata récord de temperatura máxima en San Juan",
-      "enlace": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQTnhuaTB1UU1zSG5NaVpWMXVmMkpLVHlOOVNqaXZZTlZROF8zaUY1NG1RSHphdkhGVWRCcV9qb2VfLWoyQ0FINy1YdU5PQlpVc1dyYzk1UVRjdFFZeF9yV19LN085WlhMM2VxOVhsWC1MWkhzVWVadzcyd0VvSWVYT1kwNERSazgyZVJLbzBTUlRBN3BsU1BxcXh2QU1mSUdLREl1UFpoQ2NucXZGQ196MEFva0REMjNqME1YWENEb3pNbE4yanhoMGJOWWNYUVJ2WDY3LVI0RE90bUhV?oc=5",
-      "fuente": "WAPA TV",
-      "fecha": "2026-10-28 16:37",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "WAPA TV"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Durante el día de hoy anuncié la asignación de $17,001,375.52 para mejoras a carreteras estatales en los municipios de Arecibo, Trujillo Alto, Cataño, Vega Alta y Caguas. Mediante la transferencia de estos fondos, estamos adelantando trabajos de repavim",
-      "enlace": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQZnRuTHRSbmlSYkdZUlRkZ191eWZma2d6bjV0QXBCOFgwUlRjdklTanBEbVJPQmIwTEZYb0wtdzEzenRtek5GWG5GWlBkd25DSzFOMnVmLWh4bDlqNE5GSURvaXRuN2hEb1RrMzdqU2pySTVRbTZXZk04VjVXZWRyTXUwMl8yWEhFeEFXdkNRbHU1TEE1M2Q3elBic1Q1b2p5OE1LMFBxLVZuQjV0LWctQ2ZvVWg3R0N2SFR0TUYzNFNPVlJNbG9tdzJXQ21PQ2FOSURmanotT0tQMjVJTEk2cDdmb3pkTG8?oc=5",
-      "fuente": "FB - Cataño",
-      "fecha": "2026-10-28 16:22",
-      "municipios": [
-        "Trujillo Alto",
-        "Caguas",
-        "Cataño"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Cataño",
-        "Junta Gobierno"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "El Servicio Nacional de Meteorología emitió este miércoles un comunicado por alto riesgo de corrientes marinas para las playas del norte, oeste y este de Puerto Rico, así como para Culebra. 🌊 Así lucen hoy las condiciones en Ocean Park y Condado. 📷 Josi",
-      "enlace": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQbWR4Qld4VHJqT1JrcWhXUzJuRWxfTDM5aWx5enMzMnZCdGJObERxZXl3Nl9pbzJTd3EzRUQ4UE1SbTNCdk9LQ3lMTjAzWFZPVUI1Ny1HRV8yMy1KbDVkZDJXRDhQOTd5TmpzOXRPbFBST0p1UDd4dHl6X0ZLbjdWZS1oVEZFaHF5NHJ4THlLWU1tMVlocGpCLWdhRG1BVlFiMkdsMHVITF9TZUVXZUFLSFlnNkthZl9tUnlsT3JUeVJqY2FyT01XajZBMTBKZ2NoeHdRRExpQVphVXBGTGMwQUxrV2NYYWg0SVZkX2VrajM?oc=5",
-      "fuente": "FB - Culebra",
-      "fecha": "2026-10-28 16:11",
-      "municipios": [
-        "Culebra"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Culebra"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Como parte de nuestro compromiso con mejorar las condiciones de nuestras carreteras, anunciamos la asignación de dinero para proyectos de infraestructura vial en cinco municipios de la isla. 🛣️ Arecibo: PR-2 – $9,485,831 🛣️ Cataño: PR-5 – $2,010,537",
-      "enlace": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNTEJFSnVvdW1CcGNHYTFsTjFVSnFBbTd5UDJvTV9NS2NjM1VoUk9yM1d6WU5WdGJORzNTWng0ZEM0WDNnemg0MFNyYWo5SGNfS0FnV3lVTTYyN1BNZHdSeTAwdkJXQ0FsQURUOTBoY1MwLUU2YmZ2WU5MYzB0elZobjNwV2ZuYXhBczc3M2x6MlIwWlR3eXltRnBGM1MwbVg3T3NxNjE3X2xHT2NJVWJkMEpsSTB5QnozUjktSms4aWtUeTZHNGJXdnlpbkVFaHhnVnVz?oc=5",
-      "fuente": "FB - Cataño",
-      "fecha": "2026-10-28 16:09",
-      "municipios": [
-        "Cataño"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Cataño",
-        "Junta Gobierno"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "Niña que fue encontrada sola en Carolina le dijo a la Policía que buscaba a su papá",
-      "enlace": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOdTRqTDg3di1lcUwwN2N6Mi00QjRTeExvNDdqUVJ6amM2am9lZUE0b2xyUXVSTnZjanNCYUJEdktvV0MwS0J6cDhMV1BYUERhRUNyWW9iNTBvaWpWV1VyV1JuTGRZeHlVMElFMDh3aUJtVUg2dk9TWWlLTXItSm5JVE1yZ2ludFFTby15RDdTb3N1SURfWTR2VzZoUDFQV0pySW01cVUyT3ZXUmtBbDRXSHoyRjZsN1NOQjlrbFM4T1JzZjdBLTczbWczS0NaSEZWdWhRMWhqSGVOQ1ExNndUNzl3?oc=5",
-      "fuente": "WAPA TV",
-      "fecha": "2026-10-28 16:03",
-      "municipios": [
-        "Carolina"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "WAPA TV"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "LUMA advierte sobre posibles relevos de carga por falta de generación eléctrica",
-      "enlace": "https://www.notiuno.com/noticias/gobierno-y-politica/luma-advierte-sobre-posibles-relevos-de-carga-por-falta-de-generaci-n-el-ctrica/article_30a18748-9729-4be9-8316-302e6bbab4ed.html",
-      "fuente": "NotiUno",
-      "fecha": "2026-10-28 15:22",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NotiUno"
-      ],
-      "conservada": true,
-      "ultima_verificacion": "2026-10-29T01:33:15.474579-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "VIDEO: Miguel Romero destaca cinco superávits en San Juan y proyecta ahorros de $84 millones",
-      "enlace": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxONEhWYlJDUGxBWmxxOXdxQVlXd2prVlQ2Y0hsN3V1MUhxQThKdjRyRVhjbWRqM04yWDdtRWdvTmd2Wjh1ck5WY0t5d3VYcDl0b0RBQUg3bG1wVjJLQVNhaHdvOWdodUs3OU5nQUhGanRtUkhtMExQcmMyOFBHdTRkU1ViQzdkRllqaGh1Z1RobHJLa0ZGS1l6RHZXeGFRbmR0U2Itd0UzbVBmTXA4NHRZdVF5QTRWaThxRHd5NlUyUzBqbWpnQjJkVVV0aWVwLTV2QVVTdXczQ2FsUnZxYVBjSERYOFBTUkZwaGRnbDE5SzM0Y2tlUEF4RtIB_gFBVV95cUxQVmN1cVVna0cxckFmT0ZBR1JlUWdyMXV1TWZQSTRycHh1ak83LUZKMHJoN29jZTNLbUdmQnAtOEVnMl9uY1R0N1Bhd0lFVkhaaXRqM2lCV3c2MThVX1JtbFl4TlBBbkdmQklaU3JqN0tBTS10ZmstZng5ZmxfVElnVHQ4REtrT1pVN1hjaDc4LU5DX3ZqcVhHVHBqZkJjaGxDU0VfeXgzeHM3UUYtenRDaVRDUTQ4eDlPUEhNRUV2YXZqeXUtVGg2T3RXQ2VhQ21lRDYzUnBFU1hybV9UZEgtektSVnJJVk44VU1Wdkk1dGhOUWxxamJUWmFUdTRQQQ?oc=5",
-      "fuente": "El Vocero (GN)",
-      "fecha": "2026-10-28 15:02",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "El Vocero (GN)"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "Descalza y en pijama: encuentran niña de 4 años sola en Carolina",
-      "enlace": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPY29vZm9kaUJTeVZ3VXd0cFlvTXdFeVVQVTFIZWEzM0JWaVNaaUdLVVJqVWh6NURFM1R2SG9kRURnWDMybEZDRUotSVhYdURlTldOV0l2SjV6LU5Ha3B3OHJSSFd6cVIySm1PSlU5dmV4bG5wbEpjbHdZNzFscHdMRVZUR2xraHEzNjFxSDA2cnVOR2RSbFNEVmdOVzBaUzJ3ck1uQ19ZRjJEeDRpS1dhdVJHTnM3dVk?oc=5",
-      "fuente": "El Nuevo Día (GN)",
-      "fecha": "2026-10-28 14:55",
-      "municipios": [
-        "Carolina"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "El Nuevo Día (GN)"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Investigan caso de niña de cuatro años hallada sola frente a condominio en Carolina",
-      "enlace": "https://radioisla.tv/investigan-caso-de-nina-de-cuatro-anos-hallada-sola-frente-a-condominio-en-carolina/",
-      "fuente": "Radio Isla",
-      "fecha": "2026-10-28 14:38",
-      "municipios": [
-        "Carolina"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Radio Isla"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Investigan caso de niña de 4 años hallada sola frente a condominio en Carolina",
-      "enlace": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQQW11WHpacWFZdi1wWkotLUM1TklOWXhYOVJzaDVYNVZ4Um9iX20xRXBXcFpRUU1XWTNzQUVjRTJ4bjVIQjBacUVuRU93RndlMFRMQkxuLXJDaWNDT3ZISkJRcGg5UkRPMnRqVHRwY3ZXb0MtbzBBV1hUd2ctMlpKRGR0U3B2YzNGQm9XbEZiTW5GNElsMjB2ZTBqTV85NlVGdDhaMVZnYm1IMGZHTWRzaF9pdzZWTGVPVmxoLUtYX2xLNmJBN0s2aWY4cWMtOVN0SmFlTXVud00?oc=5",
-      "fuente": "Primera Hora",
-      "fecha": "2026-10-28 14:26",
-      "municipios": [
-        "Carolina"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Primera Hora"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "¡Feliz de compartir con los nuevos residentes de la Égida Casa Metropolitana II, en San Juan, quienes hoy disfrutan de un nuevo hogar! 🏡 Este espacio, diseñado para brindar seguridad, comodidad y bienestar a nuestros adultos mayores, representa una nu",
-      "enlace": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNQWEya3JibUdSZDl3dmp3Wl82Qi1UcVhORVZVbTMzbVRDd29qWDBJQWVIUVlHVHFNWTVNWmVsenBnU1NoVGQySFd6ZkpIUTdiYUhTWFlVdksyZFlsVTRTaVk5WVJmbnZTQk9zdmktbXBxdGFTTkhKeDNzR2FEYkgzdDd6OXRWSmFpRERQNXRCZ0oxWENReDFhcE9zTHljdTFUeEJ4a2gydFlrdW4xOTRPakVROXZJNm5wWDN4Wlh2bTZsQzhhV1VIUHRQSDd5SDcxLXhMMGEwTnBsUQ?oc=5",
-      "fuente": "Junta Gobierno",
-      "fecha": "2026-10-28 14:08",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Junta Gobierno"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Encuentran niña de cuatro años sola frente a condominio",
-      "enlace": "https://www.notiuno.com/noticias/seguridad-y-justicia/encuentran-ni-a-de-cuatro-a-os-sola-frente-a-condominio/article_08a1cb91-4118-4246-b16f-3ffa9042291b.html",
-      "fuente": "NotiUno",
-      "fecha": "2026-10-28 14:00",
-      "municipios": [
-        "Carolina"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NotiUno"
-      ],
-      "conservada": true,
-      "ultima_verificacion": "2026-10-29T01:33:15.474579-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "[En video] Los llamados \"King Tides\" inundaron zonas costeras en distintos municipios de la Isla. Así lo capto un residente del sector la Puntilla en Cataño.",
-      "enlace": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUlFoY1Bqc0hjRU80ZGQxd1J5MDVzVC05ZzBaTHVuOC1aMnJtTFFmVTlWUlZ2TVBmMlVKVW80dGo3Z0NaeUZHOE54TWtvUHB1RUVoTnU2YlpRbjh3R3VxZUZpbzV4YUZVdUZ3T1pobFd3U0NTMDRpcTFfQWM0YVZFa2N6TldndUMycExjaWJHNUtSOWFkVkRFYWUtLUVSSGZHeGFSWkktXzc2UUxPRkdtUXpTZzg4Q2V2UVNKY0dZX1NVa09fRFBzS3FNR1R4OF9nNUJBbGRn?oc=5",
-      "fuente": "FB - Cataño",
-      "fecha": "2026-10-28 13:31",
-      "municipios": [
-        "Cataño"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Cataño"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Localizan a menor de 4 años sola frente a un condominio en Carolina",
-      "enlace": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZlJDY0R4VW9Gb0Y4cng3R2d3Q3RHQzN6Vk9FdmxjNU5INlYxRWxVejItTkVnTUJRREh5TmRZUDhPbjItMTA0eGtCM2RFN29pX1I3OVd5eS1xUzJmTWNkWDJaTVNaZ1B2amd1a0pmZC1QaWNfalRYZHlKN1c5Y1Y2ZjBqblJqY1RYTC01WFgtdXRwRzZqV05JTkZBSFpmT3duOUlLeXMyZFBlMk0?oc=5",
-      "fuente": "TeleOnce",
-      "fecha": "2026-10-28 12:27",
-      "municipios": [
-        "Carolina"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "TeleOnce"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "María Magdalena ya tiene un nuevo hogar",
-      "enlace": "https://radioisla.tv/maria-magdalena-ya-tiene-un-nuevo-hogar1/",
-      "fuente": "Radio Isla",
-      "fecha": "2026-10-28 11:59",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Radio Isla"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "A prisión turista por \"hit and run\" de motociclista en Vieques",
-      "enlace": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOY1VGS0YtUGJ3Q2FmbXJoUDNFcHgtMU1RTF9fV0M1Z254TW9fZUFOMllpWVNMdDJsYXV6VmxzQVlvaTdPMjZyekpmXzNPRldkcWUxcU1HeEU5YS1QZ1prMExqWHNJYmhCeUFlVXFZWHNWcGZBTjZtbzJzQ0M4V0JpcndTZ1ZkblRxdUIzZ1ZZa0daUVc2UC1jOFRBTUYyTUxkYnpfT3hYb09qXzJ6NUdlVTBLaHJQZXQwdlHSAcIBQVVfeXFMT1JudkE1cGZxOHJVV3I4MmdTVnlxNzBGZnJLUWRRelVnZ3lncGZkQWotNmtRcE4wT0RZd29mOFlfOGE5Sm9obVpyV055VkYtbmFfX2VtWEg3OUkzYWNQazZneVZTUXRKdzZIZkl2dVZsdTdHVXRZRFpTODJfMERDekJ3NmpUbWk0NGc2V3JCYkNwb1JtZEpkbmJTakJzN2JJWG1jUHlBX2hPN05hOGtBX2Q0eUIyUEhRdTFFMDFBamJKZHc?oc=5",
-      "fuente": "Vieques",
-      "fecha": "2026-10-28 11:53",
-      "municipios": [
-        "Vieques"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Vieques"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Sentencian a turista a un año y seis meses de cárcel por causar muerte de motociclista en Vieques y huir de la escena",
-      "enlace": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxONExxRWQ2WU1wVEU5cmFVeTQ5LW9BU2ZCZlVzQldzak1XOGp5S19RR1F4S3hTc1htNUJQOENGc2FGak9HVmpyU1o2TE1ZTjNXZmZpRzFPYmZCUUFickIwTFJDdEhrZXBBZTI1NGs3TDNZakt3a0lqaXM1TTZRYWJncjh4c0hZZkw5TnZTVkU5cGpMVVZoQ1dGWTdMbVJkYTJLQnNIaFFpTWlabWFVanpqdWhucDVhYkFxN0JRUHhYUC1TVW5sb25Rak9qMUgzN19xdm9sbUNLY1lDRm9wNXZ3WA?oc=5",
-      "fuente": "Vieques",
-      "fecha": "2026-10-28 11:30",
-      "municipios": [
-        "Vieques"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Vieques"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Averías en unidades de generación mantienen incierto el panorama eléctrico para esta noche",
-      "enlace": "https://radioisla.tv/averias-en-unidades-de-generacion-mantienen-incierto-el-panorama-electrico-para-esta-noche/",
-      "fuente": "Radio Isla",
-      "fecha": "2026-10-28 09:22",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Radio Isla"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-10-29T21:49:55.639824-04:00",
+      "ultima_verificacion": "2026-10-30T03:45:05.968113-04:00",
       "es_nueva": false
     }
   ]
