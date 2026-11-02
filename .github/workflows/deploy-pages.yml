@@ -2,7 +2,7 @@ name: Actualizar y publicar Observador del Noreste
 
 on:
   schedule:
-    - cron: '8,23,38,53 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
   push:
     branches: [master]
