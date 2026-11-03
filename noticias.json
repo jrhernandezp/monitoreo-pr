@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-03T07:50:07.007731-04:00",
+  "generated_at": "2026-11-03T14:41:25.648032-04:00",
   "interval_minutes": 15,
   "source_status": {
     "El Nuevo Día": "✅ OK",
@@ -10,7 +10,7 @@
     "Telemundo PR": "✅ OK",
     "Walo Radio": "✅ OK",
     "El Oriental": "❌ rate-limited/error: XML RSS/Atom malformado",
-    "PR es La Isa": "❌ rate-limited/error: XML RSS/Atom malformado",
+    "PR es La Isa": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "NELPR": "✅ OK",
     "San Juan": "✅ OK",
     "Carolina": "✅ OK",
@@ -52,7 +52,7 @@
     "El Nuevo Día (GN)": "✅ OK",
     "El Vocero (GN)": "✅ OK",
     "WAPA TV": "✅ OK",
-    "NotiUno": "✅ OK",
+    "NotiUno": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "WKAQ 580": "✅ OK",
     "TeleOnce": "✅ OK",
     "Xposed Magazine": "✅ OK",
@@ -68,36 +68,521 @@
   },
   "articles": [
     {
-      "titular": "Arrestan a joven que habría agredido con un arma blanca a su madrastra en Humacao",
-      "enlace": "https://www.elnuevodia.com/noticias/seguridad/notas/arrestan-a-joven-que-habria-agredido-con-un-arma-blanca-a-su-madrastra-en-humacao/",
-      "fuente": "El Nuevo Día",
-      "fecha": "2026-11-03 07:25",
+      "titular": "Reportan adulto mayor desaparecido en Caguas",
+      "enlace": "https://waloradio.com/2026/11/03/reportan-adulto-mayor-desaparecido-en-caguas/",
+      "fuente": "Walo Radio",
+      "fecha": "2026-11-03 14:15",
       "municipios": [
-        "Humacao"
+        "Caguas"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "El Nuevo Día",
-        "El Nuevo Día (GN)"
+        "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": true
     },
     {
-      "titular": "Pronostican día nublado y muy caluroso para hoy",
-      "enlace": "https://noticel.com/noticias/20261103/pronostican-dia-nublado-y-muy-caluroso-para-hoy/",
+      "titular": "Alcalde de Cataño cancela contratos valorados en $913,000 al año",
+      "enlace": "https://noticel.com/ultima-hora/20261103/alcalde-de-catano-cancela-contratos-valorados-en-913000-al-ano/",
       "fuente": "NotiCel",
-      "fecha": "2026-11-03 06:56",
+      "fecha": "2026-11-03 14:10",
       "municipios": [
-        "San Juan"
+        "Cataño"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
         "NotiCel"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "The Home Depot de Humacao celebrará una divertida actividad para toda la familia como parte de su iniciativa Kids Workshop, donde los niños tendrán la oportunidad de construir su propio Dump Truck (camión de volteo). Como parte de esta iniciativa de Th",
+      "enlace": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQQy1RdmVxelF5Y25HdW9CVW9JSEFSRG03Tkw1bzNjOUE0aDZzU3dCU0hic3BBRFdVMmZURjVYT2ZxUnVqLXNFVzY4NGxRX2Q2Qm1kSWZSdmJLTmczZVU2VV9tWjdvZ1E4bGxUQVJNRW8zaUFiMWtaZVBNN1lvZFdBbzlyN3FkQVBQSDdpRzVmbThqY01RbS1NaURKNUdnVnRrQUwydy1WX2hjTWNQN1k3ejJjQmcySk5RQjE1SnJUeERsc0FacTB1VDdsaExCM2Q5d21tM0dPX1NLTGtsci13RmdGbWE?oc=5",
+      "fuente": "FB - Humacao",
+      "fecha": "2026-11-03 13:31",
+      "municipios": [
+        "Humacao"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Humacao"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Evalúan protocolos para accidentes en bahía de San Juan",
+      "enlace": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNdndkS3ZRSXZ6OXVUR1Rwdml4aUs4dThqQ2hGcVplTmhQQ05fMEFEVzZCa2NCTElGajBGTmhlRWZwSVAyR3dHQk5pZzdUNmhVY1dfUFNSdU9UcDBuZHJnWjFWOEJsTVpGYXBDWjlMaGl0UjdyNkFGQnJ2RXk4VDFYa3F1dkx2LTVxRzIwVTZ6emtNcy0tXzFBeGFkNEUwMk9PYlpqTjg2eG9udjhnaEpQaVpmN1NOMVVQenR5d2kyYXhJVVFpUDZtdXhJYlg1bnRoQTdyUg?oc=5",
+      "fuente": "WAPA TV",
+      "fecha": "2026-11-03 13:26",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "WAPA TV"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Claro anuncia nuevos cargos en la factura de celular y residencial",
+      "enlace": "https://nelpr.com/2026/11/03/claro-anuncia-nuevos-cargos-en-la-factura-de-celular-y-residencial/",
+      "fuente": "NELPR",
+      "fecha": "2026-11-03 12:48",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "NELPR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Amur River departs San Juan Bay as natural gas supply resumption remains uncertain",
+      "enlace": "https://www.elnuevodia.com/english/news/story/amur-river-departs-san-juan-bay-as-natural-gas-supply-resumption-remains-uncertain/",
+      "fuente": "El Nuevo Día",
+      "fecha": "2026-11-03 12:48",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "El Nuevo Día"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Oficina de Ética Gubernamental se querella contra Francisco Domenech",
+      "enlace": "https://nelpr.com/2026/11/03/oficina-de-etica-gubernamental-se-querella-contra-francisco-domenech/",
+      "fuente": "NELPR",
+      "fecha": "2026-11-03 12:39",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "NELPR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "NAGUABO ENTREGA BONO DE NAVIDAD DE $1,000 A SUS EMPLEADOS POR SEXTO AÑO CONSECUTIVO NAGUABO, PUERTO RICO | 3 de noviembre de 2026 – El Municipio Autónomo de Naguabo anunció la entrega del Bono de Navidad por sexto a",
+      "enlace": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPQUp5THNrRTk3Ni01dG9DZ2FINVh4ZUk5elhWd3k3SmU2VEpCU3NkMlRwSmRSWGlQT2RBbDloQUJwSGdXWU8zNmdNYzRJdUIyWDBUV3E2X1lZQ0JOVHMxckF1c0ZseXJMcFltT19ZM3BIVWxVXzlGNHFYM3l5dS1mb3NBT3VwRm5mOG5RZDlZOWtWR0pWc05LNXQtT2I0bkdZbkhabnQ4cWZSUWRvelhIdmRfd09Vc2NuejJRRjhIQy10Sk5pVllGaklQbzRRUFBOal9DVmJiRGFlX1ZoTkU1ZG03ZTI?oc=5",
+      "fuente": "En Contacto 787",
+      "fecha": "2026-11-03 12:32",
+      "municipios": [
+        "Naguabo"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "En Contacto 787"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "[CAMUY] Investigan a dos empleadas de escuela en Loíza por traslado de estudiantes a actividad política El Departamento de Educación confirmó una investigación administrativa, mientras Justicia evalúa un referido relacionado con el senador Héctor Joaq",
+      "enlace": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOaWc2dGJHaFkzeTBvOFdQbGxpRXJ1SHR1Y1EwUjdEb1A4MEtyZDJlMlVCQnZyckVKZ2NKTmVzREFKUUN4THhwcFJlekJzVGpPempRdW83Qm9Kb0xvU1dyTWpDOWhKZHlBVU9TaE5Edi15REVUTjhFVE5KeGpqRGRGVFpjVTUzcDZGc2docEZvNDZBZ3Fka01qNlp2bWt2bUJ5WVJQTHBfV3YxWTY5U2ZQUHA4Z1I1NGdCTlFPTlVvSUJ2V1hmRV9mZGlZS1FBU2NPcW1laTRlQXdBQU5QWFE?oc=5",
+      "fuente": "Senado PR",
+      "fecha": "2026-11-03 11:56",
+      "municipios": [
+        "Loíza"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Senado PR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Una pasarela esculpida por el viento: Luis Antonio cierra San Juan Moda 2026",
+      "enlace": "https://www.elnuevodia.com/magacin/moda/notas/una-pasarela-esculpida-por-el-viento-luis-antonio-cierra-san-juan-moda-2026/",
+      "fuente": "El Nuevo Día",
+      "fecha": "2026-11-03 11:56",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "El Nuevo Día"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "“No resuelve nada”: Alcalde de San Juan no participaría de convención del PNP",
+      "enlace": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPS2ZXX2xqSDdmd3Y1Q2tLMk41QnpHdUotcmdqOWZFdkMxTW9BZ204ODdEaGRucUY3a3liQnFuVFowdTh0NWhvTUpUUFdpdVAzRjhNWElveVlSLUtHbXV3aXBvWms3empnQXRyZFJWbURwV2dzNmRURFJLM0NnZnlvUGNEMXVUMjRzTUNVeGU4dGw1eGVIODdOXzJGc1JiVGpCYmlTT2VsYXpwTzVuRTFaZUVsOHNPUWNjcTRjSG04WDFvN0FsaVQ4cmk4anhwVXFkdDRjN2ZmLXAwckg3aDk4djF2bEE1b2p6UG9oSkhJSVZfVk04U2IteHhDQdIBgAJBVV95cUxNM3l3S2owTnN6bzh0dWdWTnJkenN4MXRiN3BUZGp6S0JiZ2ZidU85c3ZYUlFUZkViSU1RS09ocjQwWG9YbWZ3dGZxN2d6VmxKdE0tLWZPVlR0eGhzTjZsX0ZnYVNNaFBYYXlXaFZ0TVA5em5teEgzSXByOVpHMTRpM0QyUUZoY0VENjU5VjdudWk0NTNGcjV3b2swaV9XaXVJZVpYcWtkWk1Zc0hMbmNWY2toVWZiY0l0S0JNamNjeWJUN0xHNVFsSjFaZnFEU0xRd0hHMlgxODJnOUgxX0ZtWjQ0UkdyODlYbmE0NVh3SEZYR3VqQTl5Q0pqYTBXNUZz?oc=5",
+      "fuente": "El Vocero (GN)",
+      "fecha": "2026-11-03 11:49",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "El Vocero (GN)"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Si viajas internacional, deberás llenar una nueva declaración al regresar a Puerto Rico o Estados Unidos",
+      "enlace": "https://nelpr.com/2026/11/03/si-viajas-internacional-deberas-llenar-una-nueva-declaracion-al-regresar-a-puerto-rico-o-estados-unidos/",
+      "fuente": "NELPR",
+      "fecha": "2026-11-03 11:40",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "NELPR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Alcaldesa de Loíza a senador tras controversia por estudiantes: “No es de valientes echarle la culpa a otros por lo que hicimos”",
+      "enlace": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNMmY2ZEJLSVF6WE41OHFQVlpVVUNPQWRPYmxFeEI3ZTBfME1tNG5kcl9sS28xd2E5QTJPNEFFTU9rQkRRWktXQ1ljM2NwTkZjZWg5UUxxOVpDZlEwWnJkSlJrc0ZGRDdmSVZ0dnBlQktXczQtZjFuTzRWZHhDVmpVRXVxWTh1ZU1qY1g0b1BfSzF0U1BQaTBZTW51eHJ2MmFIa1JMaTJidW9lYUFvQ0FPZW9rRU84M0JFcERHcWVWQlhZVzhmRlAwWi1mcUJOSWRuUmRNRlpyc1QtZk16bVI1VXB2R2pYd3dTb2R6bGlnWjJxTTB1cTBuYTROQ19DLXlIY1VSYlhpNmw0MEVVcWpKVmxORm8zZw?oc=5",
+      "fuente": "Primera Hora",
+      "fecha": "2026-11-03 11:40",
+      "municipios": [
+        "Loíza"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Primera Hora"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Administradores de hospitales insisten en tarifa especial por aumento en energía eléctrica",
+      "enlace": "https://nelpr.com/2026/11/03/administradores-de-hospitales-insisten-en-tarifa-especial-por-aumento-en-energia-electrica/",
+      "fuente": "NELPR",
+      "fecha": "2026-11-03 11:36",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "NELPR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "📢✅ [Aviso] Completados los trabajos de reparación de tubería en #Humacao. 💦 Se reanuda la operación de la estación de bombas Caserío Roig y comienza la recuperación del servicio de agua potable en zonas afectadas.",
+      "enlace": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOT3BXcUNpck9ZUU1PNTdUTGhsWlVMQncxb2VDcldFc0RSMXd6d3NWLTFMUEVNeUdjbURXRUNOT2JqODRYTmZYSUNsRDlZZGV6a2YxdURKcnZsNWxPSFRCYzBLYlZ1YzQ2MjRlX3RNWHN4eWFTOHVJdEh4WVlTenQtdWRfc1VzcmRHbFNPYlpPRi1TaDdZcVhiVUpCWW1OalVrMU44VjRvRkdPMkRobDlpT2xjSDhfMmxVc2dYSUw1X1h3ZkFfUjd5ZGE4WmNxOUNrOERLQm4xWVNQaXFvcmx6LTNrTjJuQzA?oc=5",
+      "fuente": "FB - Vieques",
+      "fecha": "2026-11-03 11:30",
+      "municipios": [
+        "Humacao"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Vieques"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Alcalde de San Juan se reúne con HSI tras redadas migratorias en sectores de la capital",
+      "enlace": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQcHppT3o4b2FUTXlEWHpxRDRsYmtMN0Y2REkzQVl0VGR2Uks2ZFh5cjBaQi1GdUE1d3I5TFJ3UnU4TTRQNERsbXQ2Nm5nSGlScTRjV3ZkWGp0THA4NG5jWEZYQ1Rzd2IxLW5DbjNpTkc5U0E2TzdrdW5sdTFKVFlFU2FGS2g5dFVMbHpJU2JPcV9QYWdPTzRWRGViSmhyeDVseW9CajZPcUpuWlpOd21sQ2JRRDFWM3VtWGVlOHlsWnRvWkV3bnlSYmQ3ejlDRkd6YWNxRFNmRHkyTVhqcHRBc0pmR3Z5RFpYTU9HVjFLdHY?oc=5",
+      "fuente": "WAPA TV",
+      "fecha": "2026-11-03 11:20",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "WAPA TV"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Asociación de Maestros exige a gobernadora que cumpla con lo prometió hace 4 meses",
+      "enlace": "https://nelpr.com/2026/11/03/asociacion-de-maestros-exige-a-gobernadora-que-cumpla-con-lo-prometio-hace-4-meses/",
+      "fuente": "NELPR",
+      "fecha": "2026-11-03 11:19",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "NELPR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Municipio Autónomo de Humacao anunció el desembolso de más de $1.1 millones en concepto del Bono de Navidad, beneficiando a 843 empleados municipales, como parte de su compromiso con el cumplimiento de las obligaciones laborales y la administ",
+      "enlace": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPMUFXa3o2Y1k0dnN0Q0Y4Y3dIcDZWWWRSMTNpWGwtbVR6M25YMElGVzlJdlJ0UFhBbmg4Q0d4TENHZU5pZGRXVWVYRlBncllGX3J4LTVvbnpydkplNjE2Q0xFNFl3Y1JxaWJUQjNMLU90NUEwdEdlUmJVZnpJOHYwRGd5Y2pjQzVIalUySEpqZEhiS2lncTV1RlVnY0tKTmNwc09jcEtCUmlLWWwxR3JfVTBBcndONnZURG81QU10NkdmMUFWOGtqdldiMWRMYm54N1l6VFFsTnJSenU4eFRSRjhoa1JCRFF3dmhCYg?oc=5",
+      "fuente": "FB - Humacao",
+      "fecha": "2026-11-03 11:18",
+      "municipios": [
+        "Humacao"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Humacao"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Causa para arresto contra residente de Humacao por sustancias controladas",
+      "enlace": "https://waloradio.com/2026/11/03/causa-para-arresto-contra-residente-de-humacao-por-sustancias-controladas/",
+      "fuente": "Walo Radio",
+      "fecha": "2026-11-03 11:13",
+      "municipios": [
+        "Humacao"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Walo Radio"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Mujer sufre múltiples fracturas tras caer de puente peatonal",
+      "enlace": "https://nelpr.com/2026/11/03/mujer-sufre-multiples-fracturas-tras-caer-de-puente-peatonal/",
+      "fuente": "NELPR",
+      "fecha": "2026-11-03 10:58",
+      "municipios": [
+        "Luquillo"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "NELPR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Buscan a sospechoso de robos en distintos establecimientos de Carolina y Canóvanas",
+      "enlace": "https://waloradio.com/2026/11/03/buscan-a-sospechoso-de-robos-en-distintos-establecimientos-de-carolina-y-canovanas/",
+      "fuente": "Walo Radio",
+      "fecha": "2026-11-03 10:48",
+      "municipios": [
+        "Carolina",
+        "Canóvanas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Walo Radio"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "En Humacao se benefician 843 empleados, mientras que en Naguabo unos 272 recibieron el beneficio. Para detalles acceda al enlace.",
+      "enlace": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNaUZiUW1EV3hVWnd1cjM5REdfanZRRmZrQnNnQ2VUNW9ORl9Cai1yak85NzNuSFk1a2JfdFRlVmZ0WVhCam5OWTZMZkR1NHBzZnc3cjVpTEtKOW9vRmlxNHFreU1fdldKZHRfcHpJdXI4MURodmdKSURqSlAtd21WTXVkMDNmUEZvcjQ1b0Q2NkNTLU15UkpJVzZHVEh0SWMzalpyMnpXT1ZwTUFDNDY3emJLNS05SlRyRkllRC1kMUFZSS1yTDJGMnZRc2hMX2lnazhYZDBn?oc=5",
+      "fuente": "FB - Naguabo",
+      "fecha": "2026-11-03 10:38",
+      "municipios": [
+        "Naguabo",
+        "Humacao"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Naguabo",
+        "FB - Humacao",
+        "FB - Vieques"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Humacao y Naguabo desembolsan más de $1.3 millones en bonos de Navidad a empleados municipales",
+      "enlace": "https://waloradio.com/2026/11/03/humacao-y-naguabo-desembolsan-mas-de-1-3-millones-en-bonos-de-navidad-a-empleados-municipales/",
+      "fuente": "Walo Radio",
+      "fecha": "2026-11-03 10:32",
+      "municipios": [
+        "Naguabo",
+        "Humacao"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Walo Radio"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "El salsero humacaeño Edgar Daniel estrena concierto en vivo grabado en Colombia",
+      "enlace": "https://waloradio.com/2026/11/03/el-salsero-humacaeno-edgar-daniel-estrena-concierto-en-vivo-grabado-en-colombia/",
+      "fuente": "Walo Radio",
+      "fecha": "2026-11-03 10:32",
+      "municipios": [
+        "Humacao"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Walo Radio"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "CIC busca a sospechoso de asaltos en Carolina y Canóvanas",
+      "enlace": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQU1NPdlBNdHRJWjl6NjY2VzQtZFFtRXhkNEYtOU9FdHBOVDZ2dWxWWEJMRHJfWm9sVmcyWWQ0VnlabTByOEEyQzVuYkNQZjROWjJfMnFZRGo5NjZKTUlzZkcxcVdqYUdEVzA4WDkyc0JDN1RDNy1QcmNEUVZlTmQtcENiYXhaNlZDYU02clE5NlZOaTVBU0tIeEh4TXBjZzBnZWY0Rmw2cFRlTkk0UHZ5Xy00Z0V2R2FrLTNIOA?oc=5",
+      "fuente": "Primera Hora",
+      "fecha": "2026-11-03 10:32",
+      "municipios": [
+        "Carolina",
+        "Canóvanas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Primera Hora"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "¡Open House este sábado! 🏡 🗓️ Sábado, 7 de noviembre 📍Caguas, PR ¡Regístrate aquí! 👉🏽 https://lp.constantcontactpages.com/sl/auBclYI #YoAmoMiCasa 🧡 NMLS 169716 OCIF IH-040 Ciertas restricciones aplican. Moneyhouse is an Equal Housing Lend",
+      "enlace": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPa0NnVURKRERzNDY2QjVCVXdZMF9kX2RkZE5LMWlzV2pQcV9uTnNoYWk5azEyYWdsUWd4X09kWW95b1FoMmU4NHEwOWxhaUR0R2Frc25VNnFncEdGMkZTM2x1eHdzdnpGd29NLXZHRzBmUl9fN1JnbzMwWWNmWmhsazRKS3VLaFNuR1E0a2hNTkd4Vm81VF9rUy1WblpHcWFpUllVUVpWYV9DckpfOUdPanBsVlozU3BsM0h6T1Z6WUEtU2NFQ1NfM0tVZzg0RjVRaEMtSEpzNElJc0NVR2pFZ3IzUjhwS1VpU1BJSmlDSzlHUHZYWmU4ME5LRTd1SGs?oc=5",
+      "fuente": "FB - Caguas",
+      "fecha": "2026-11-03 09:55",
+      "municipios": [
+        "Caguas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Caguas"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "OPV desarrolla calendario de actividades para conmemoración Día del Veterano SAN JUAN-Durante el transcurso de este mes de noviembre, la Oficina del Procurador del Veterano de Puerto Rico, encabezada por el Lcdo. Agustín Montañez Allman, invita a",
+      "enlace": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOVU44NUU4TGdLck5wbWNWcHdGWTFmeTdpbFNtaktsd3J4Z3VVRW4tdnVhdUQxaUVNSWgxd1h2YzRfMjRPdE1ZWDZwTFpIWDRpdEFlSWQzUGgtZkNCVVZwYlVTdllHZlY2S2hDeGVUMTVQWlZsYndFbWM1ZG52T3B4WkxhM1BwaHV1eWFwQVhQeUxQQVJ2LTR0cDBfSC1sS2R0TDJYX2hfWVg4eDdCYTh6WmZuZDk4b3pqWUFSazIwOEJSbFdlRExINzR6aEFyMFluUTctOTgtZUFwbThLRXFiNkMtbWo?oc=5",
+      "fuente": "Gobierno PR",
+      "fecha": "2026-11-03 09:40",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Gobierno PR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Invitan a niños a construir su propio camión de carga en taller especial",
+      "enlace": "https://waloradio.com/2026/11/03/municipio-de-las-piedras-invita-a-ninos-a-construir-su-propio-camion-de-carga-en-taller-especial/",
+      "fuente": "Walo Radio",
+      "fecha": "2026-11-03 09:38",
+      "municipios": [
+        "Humacao"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Walo Radio"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "La Región de San Juan, junto a personal de las Escuelas para la Convivencia, coordinó el taller \"Manejo de Emociones\", dirigido a los participantes del Centro de Edad Avanzada de Juan Domingo en Guaynabo. Además, se les llevó música en vivo, dinámic",
+      "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMk5uUlEyNGUxSUdndzhfWW5TeURBc3hOX09WYmVhOWVoZkhaUktrY2RCX3NkeVdGYmM5YWdDLU9OQ1hGZzFOb2J6QmRqUlB2aEN5dGh1djhVc3dnSGkzNnQwV0xIeE5QXzdPTFYwcXlwWEFNbUpKMjJKN0lnX19LbkNlam1XZWFnNEhKcXJIYm5DU1VjcDNOY1ZENmtBamR5OWNmTW9CNFlTRTRlalBhcVZNZ3pUUGFsN3phcHhKcUFCdDhOZ0kyWnYyN0J6QlRfem53a0sxWFUxYWVZOFhUbkpMOA?oc=5",
+      "fuente": "Gobierno PR",
+      "fecha": "2026-11-03 09:30",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Gobierno PR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Arrestan a joven que habría agredido con un arma blanca a su madrastra en Humacao",
+      "enlace": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQaU1VaXMxZ0wtSnZXcDlaUHlKQnFPcGZnSEp2Q3pSQjQ5TkMzcHp1U3BKZTljRXAta2xpUTlVMUFNLW1DaDdIUlB0SEJwZUE0cElRbU1NVFZaZ24tWHN1YWRGelNQQ1pSekp0QkdPa0NOclNnNkMzSjAyUkdRV0lES3ZiZDY2alFmaGhvOUxJUWx6NkVwd21jREVtcWZDMUxnUmR2V2N2NGlSY05ncWxXUXIzaWtHZ1V6YUxtdVdNQllxX3ByYndXcGtHZ2FsNDQ?oc=5",
+      "fuente": "Humacao",
+      "fecha": "2026-11-03 07:25",
+      "municipios": [
+        "Humacao"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Humacao"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "En condición \"de cuidado\" mujer apuñalada presuntamente por hijastro en Humacao",
+      "enlace": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPWHRWTGkwMVh1SFc0Um5vdnpSRDV3MVlEUUloZzVtZmhnbVcycVNWVG4zbDFvQTlod0FvTXR5bUFvMWx5azA5VFl0WDBnOVY0MGJLTERPWkhkSFdYTHdLdmN1dU8ydUlXeHBRR25zSnFMamtVS0JldXQteTRNM2s3bjcxM3ZwNXEzaEVUVEtHQ210amx6RmJqODFwdEZaMzg4czRGa1B2SVdaZ1g4eTJ4S0VBU0N6cTBiazhIX3JkMm9TeEg0bkNBY0JYWjRUU0lnWmZLTUhIWElZbXczSDR3VURIRmUxNlFpZm9QeEtxQkQ5dw?oc=5",
+      "fuente": "Humacao",
+      "fecha": "2026-11-03 07:21",
+      "municipios": [
+        "Humacao"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Humacao"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "PUERTO RICO RECIBE EL PRIMER VUELO DE LA NUEVA RUTA DIRECTA DE JETBLUE ENTRE BALTIMORE Y SAN JUAN. NRTZ - La directora ejecutiva de la Compañía de Turismo de Puerto Rico (CTPR), Willianette Robles Cancel, anunció hoy la llega",
+      "enlace": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPV2RUT21Oai1nUDRJVUREbmZSS2ZTZ1o2VUNZbnlqSUxjaHB5Q1IzUFE4X180dGNpYUZQdVZaaWNQWkJxdmh1dkd2dmxISWdWYS1UX3lGdDBaVzdOZFpyNVNEZEtvNkxhWHREQlR3TGJlbTV1Qm5RWGR4TWozTHhkNkZkbnQ2Z0VoQUNvNTh1bjVaaVFBSXptQTZGQW40UThLbkRQWFlxZXhJRlJxcXd1LVJKc2RFV29ocldSMEpaeTNYalc3NzQ5ZWdXSE5uVmZsaE1hSFJmNllXZw?oc=5",
+      "fuente": "Gobierno PR",
+      "fecha": "2026-11-03 07:00",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Gobierno PR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": true
     },
     {
@@ -112,9 +597,9 @@
       "fuentes_origen": [
         "NotiUno"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
+      "es_nueva": false
     },
     {
       "titular": "Mujer resulta con múltiples fracturas tras caer de puente peatonal en Luquillo",
@@ -128,25 +613,9 @@
       "fuentes_origen": [
         "NotiUno"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "Cámara aprueba resolución para cancelar los contratos de suplido de gas y exclusividad en muelles",
-      "enlace": "https://noticel.com/noticias/20261103/camara-aprueba-resolucion-para-cancelar-los-contratos-de-suplido-de-gas-y-exclusividad-en-muelles/",
-      "fuente": "NotiCel",
-      "fecha": "2026-11-03 06:42",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NotiCel"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
+      "es_nueva": false
     },
     {
       "titular": "Arrestan sujeto que apuñala madrastra en Humacao",
@@ -158,27 +627,12 @@
       ],
       "tipo": "RSS",
       "fuentes_origen": [
+        "Humacao",
         "NotiUno"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "Caribbean Golf Academy pide al DRNA proceso adjudicativo sobre vertedero de Carolina",
-      "enlace": "https://noticel.com/noticias/20261103/caribbean-golf-academy-pide-al-drna-proceso-adjudicativo-sobre-vertedero-de-carolina/",
-      "fuente": "NotiCel",
-      "fecha": "2026-11-03 06:34",
-      "municipios": [
-        "Carolina"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NotiCel"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
+      "es_nueva": false
     },
     {
       "titular": "De cuidado mujer tras caer de puente peatonal en Luquillo",
@@ -193,44 +647,12 @@
         "Luquillo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "Motorista fallece tras accidente en expreso PR-22 de San Juan hacia Bayamón",
-      "enlace": "https://www.elnuevodia.com/noticias/seguridad/notas/motorista-fallece-tras-accidente-en-expreso-pr-22-de-san-juan-hacia-bayamon/",
-      "fuente": "El Nuevo Día",
-      "fecha": "2026-11-03 06:25",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "El Nuevo Día"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "MUJER RESULTA CON HERIDAS DE GRAVEDAD TRAS CAER DESDE PUENTE PEATONAL EN LUQUILLO. NRTZ - Agentes de la Policía de Puerto Rico adscritos al Distrito de Luquillo, investigaron durante la tarde de ayer un incidente donde una mujer r",
-      "enlace": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVTN2X0xhZGxFSGlINVpoZWsxbjlwTE5wdWhWa21RNDEtbUE4VGlaa2lSSjNkaHhvYTRCdTBJOFRnUENMX1BWRW9HSzFfQ0RINDc5b1FNTll4RGRXRDJwWTI0VkZJTk40bmdkYWczYlRqajZnZFJEYmwtX0ZwZ2J0TXNwb1dJSUZmOFlLMXl3eVB6c3FQLWZ6ZDFWbVVnSW1HU1RsenAzalNBclA0Qi14WkJqa3hZajNmTThETkpabmEzRGw2dUtNNXl3bC1uaUNBRmdRbnNfWHM?oc=5",
-      "fuente": "FB - Naguabo",
-      "fecha": "2026-11-03 06:13",
-      "municipios": [
-        "Luquillo"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Naguabo"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Arrestan a joven de 22 años tras presunto ataque con cuchillo contra su madrastra en Humacao",
-      "enlace": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNLUtmN3drNzVkd1BGVTRXSkhTQk0zcW5IRHJJVFBfbzZLQUJXWktxUHFiTU8zeVluTngzQ3VUcW9TQTQ5QnAyVTRvWW9sc3ExQVlBS2l1YTdYVnh4WEs4OTRTU3pubS1lWS1PMGkzLUk3dHBSZzJaMWNXcHlIeHotU2s2MWFoMUs5SG5aTjUxZkhaUHlwamFCSkpvd2xweE5oRFZrdTFOM3M1SjdwV1V0UVJ2enFXZGtUZEJtX0NwRWprWlJROG5HdzVXMDZTRTZqcHktMnZkT25HQ0xnMDJSMjdCWk53Qy1FWlpoYzRCOGNsaTA4QzNaZmlqR3VYZXdQZlVIR2dQX09HMzA?oc=5",
+      "enlace": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNLUtmN3drNzVkd1BGVTRXSkhTQk0zcW5IRHJJVFBfbzZLQUJXWktxUHFiTU8zeVluTngzQ3VUcW9TQTQ5QnAyVTRvWW9sc3ExQVlBS2l1YTdYVnh4WEs4OTRTU3pubS1lWS1PMGkzLUk3dHBSZzJaMWNXcHlIeHotU2s2MWFoMUs5SG5aTjUxZkhaUHlwamFCSkpvd2xweE5oRFZrdTFOM3M1SjdwV1V0UVJ2enFXZGtUZEJtX0NwRWprWlJROG5HdzVXMDZTRTZqcHktMnZkT25HQ0xnMDJSMjdCWk53Qy1FWlpoYzRCOGNsaTA4QzNaZmlqR3VYZXdQZlVIR2dQX09HMzDSAZACQVVfeXFMTzNQVjk1bUFDVXFzQl9uT0x4SmF0THlNMHV3MTJLSEMyQ01zeWp2OUNiR0REMDBQVE9EOThjTlRsWFhIVkpuU210ZERlUUFwWHlQbl9OMm4tMWRqUnhWakUwSy1LRTdKNE1Lb3NMajRSeGRDTGRhV3U5Yjh1dEtETHlmU3liNU1jYUNCUXdQN2dzVlMzRmY3ZWdIWF9za1hySHFZLWtLNEdKeE9kbUQwT1F3R0s2TjVIcmJZS3RyTi1kaU5kTVZpd2tlS2pWbFhUcW9kMkxTMnprdWFUUVJoSmdmWTExc0RUSlc1MG1pcER4NkkzM1Z2ZkN4OEE5eWhQeWNLSWRJcERoYkZTbDlmY2U?oc=5",
       "fuente": "El Vocero (GN)",
       "fecha": "2026-11-03 06:13",
       "municipios": [
@@ -241,56 +663,8 @@
         "El Vocero (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "Joven transforma su pasión por la medicina y el fútbol en iniciativas de servicio",
-      "enlace": "https://www.elnuevodia.com/noticias/el-nuevo-dia-educador/notas/joven-transforma-su-pasion-por-la-medicina-y-el-futbol-en-iniciativas-de-servicio/",
-      "fuente": "El Nuevo Día",
-      "fecha": "2026-11-03 06:00",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "El Nuevo Día"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "𝐻𝑒𝑟𝑛𝑎́𝑛𝑑𝑒𝑧 𝑎𝑑𝑣𝑖𝑒𝑟𝑡𝑒 𝑞𝑢𝑒 𝑐𝑎𝑚𝑏𝑖𝑜𝑠 𝑝𝑟𝑜𝑝𝑢𝑒𝑠𝑡𝑜𝑠 𝑎𝑙 𝐶𝑒𝑛𝑠𝑜 2030 𝑝𝑜𝑑𝑟𝑖́𝑎𝑛 𝑎𝑓𝑒𝑐𝑡𝑎𝑟 𝑎 𝑃𝑢𝑒𝑟𝑡𝑜 𝑅𝑖𝑐𝑜 Redacción El Sol de PR Caguas, PR –3 de noviembre de 2026 - El comisionado residente Pablo José Hernández presentó comen",
-      "enlace": "https://news.google.com/rss/articles/CBMiiAlBVV95cUxNTlZkN2t0TXRBdWZBcVQ4am9IdlBEeGd5RHN5TG8xcU0ybThFaWFaMmF6VEIxR3FYdTVGU3lLeXVteGJjNGZBOXprb2tNdGM1ZFdYZVVSNE1oMTg2ZTFMZE1CWFhZMEhnbjdnOEI4WXZBX2NpTWxOdXFBN01iR3BFb25Uc3BkTXhVcXlnRmZOWmpTVnFVSXpQSHM2UTlVOEpya19MVl90bkhBcjNhNnE0VmxLZE56QTNwVHIwY1lTem9TbFFuMFNkUGxIOGVhOVpETFJnQS1qd21KRUwtaHFTNmRSSmt0RHZlMDZVek4xZjJ5NmJPZExNQ3pQLTRoUlNFeVFSNDkwLXUyQWU0QUVoWi1XcDlhZFFJM2xsQTZSbmxrMjBrcktBN2JmYU1YSUpsUGtOWUViYXN6QkxFOWtUa0RxMW5jMUtTdjBCaEhkUW9XbV84RU9XSnN3RGNySTR4ak9QTlVxLVRBM0ljSmhnaHdsUVI2elo2OWZrUEltLTNfOVI2Y3FER044SU45Z3I4VXNSUXMycWhKQ2xHcnF1VGpFbnY5bEFpNG1qdGxNb2tfQWdheXFwc1VldW9NQmxxQ1BnSjl1NXVsWGROMUpsbERYTTlPbWdkVk8zRmkxcjI1YUZqVS1EUVNIQUd6SXh0SWlBcFdMdGgtSzJQTFlVWDJhc01icUtycmVDeXNMd1JseFZkSFFtRm5CZkY2RFVGcVl4SGE2TWQ3c04tbHFkS2dqVGtUajE2U2EyX29qeC1HVVhnckhaSExHZHd5VjJDU3FpN0lYbXpVN0Zuc0xCYkJOOG5Jc2RqWGpGLVFYRFRram52VXRJYXRiYlhuYjh0cF80ZnNoRHFUZHRFLXJhY1ZRWUlmbk9SS1BUd3hnYmV5cEFuMkVZblNhSzBLX3R4VHpFYk1kb2E1T1NHVGVtVDJWd1lYUjVQUG5OTnY5a1h3NUpKTUVqSnROUU55YXIwangwcGUtb0gyM0lRY2V1MGZiQUxOTXp6ZmltX1VhWXpGbGpBSEpxVEpvS1hDZDJPSzQ5Y01KbDVkcXN4OXJPVjRST2VrNmhyTGV4dHMyaFJ2STJKLUlTeTBCM01uQjJ0Rk1XUkhHY2xjTld6UEJjQjA4YmFBVm1fbEt2RTliZ2d0UDNxQ09UeFZMT0QxQ0ItSDFhNDBhQnRYdVRKbGl5YUVGT1l4QzVKZFE1aVJsakVtMTU2ci1KNGRSYUFrVjNycXpKaEU3Qm9MQXVwWHdLNjBiZXl5U2ZtTS1ybHBsbTh1eFFUb3hGV2U4LVpuT2lvSnpabldXN1IxaWpJMnljemp0UEdPOEE4MWZfTnJiblc4X01LRzFZMTVoejZ2YzcyZXU1SUFkVURmV1BvNXBLQUx0cm9hU1VhSzNUUVN0b3ctVGJPa0pkTlNWMHMxTnZvWEotSW5kNHJhbmZkNWRfOFVqbEg1OFJKSWZPRFlsMUhRSEcyTzY4NDB2RjM0cVhQb0trT09lZ3lyakRtOTJiaXpyZjZkUWpENURyS1dBcExTdURQS0JKSg?oc=5",
-      "fuente": "FB - Caguas",
-      "fecha": "2026-11-03 05:42",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Caguas"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "Ampliación: Una agresión grave fue reportada durante la tarde de ayer, en hechos ocurridos en una residencia ubicada en la calle Panamá de la urbanización Ciudad Cristiana, en Humacao. Según la información preliminar, una llamada recibida a través del",
-      "enlace": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNUVMySGoxdFRjLTY4eDc3c0JXcEQ3anVsbEs2YUpXZnNQLTBuNzY1WHZkamJQNVpWcnlYVkx5dWl6RjZmR1QydUdCT3V4Vm1jSTQ2Q2hCak5yMTdoaE4yMTliYWNhc3FFcWtsUzVfRmFrWThQZlVrZlBUSzJZZEhEdWhjZnBVdW1qN2xpSWhUdFI2Y1puc2gzeFhOcWRDcUpnSE04dWFzMTYwam1BaFdxYlktX1Q0QmlUTmJKNFhKLUtHTlVLdDNGUUpvblJla2NEQW5sV3dEZmwyajVGcy1vMnhHMmtlZw?oc=5",
-      "fuente": "FB - Naguabo",
-      "fecha": "2026-11-03 05:24",
-      "municipios": [
-        "Humacao"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Naguabo"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": false
     },
     {
       "titular": "INCAUTAN 215 LIBRAS DE COCAÍNA TRAS PERSECUCIÓN MARÍTIMA NOCTURNA AL NORTE DE LOÍZA; CUATRO DOMINICANOS DETENIDOS LOÍZA, PUERTO RICO – Un operativo marítimo realizado durante horas de la noche culminó con la incautac",
@@ -305,56 +679,25 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Detienen a joven de 22 años por presuntamente apuñalar a su madrastra en Humacao",
       "enlace": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOUkY3Mms1Y0hhc3g0MHN6TllBMnVSa2R6OEI4cHJGLV94NUpWbzdjTkJRZmllZjNteDUyLWxFdTNUYlE3TDI5al81ajlPQkEwMFhYQnhWM0dlV0xkOURUUC1zR3BiQjlTT01sQ1h3MFZqaTBITktBMmpEN21aZ1lPS1VkMDlKQ1h4aDk5Nmp4TDJ0ek55N3pTN0RWOUxhY042OHF4ZWh3bmZ3OUU0U21kSTlrNkFYdE9mQTVxNzltdHl6b0NXVDVNMmxNSVpXbC1pb1NiR09MOXJyVlhac1kxcG1PRkxha3o5ZFJj?oc=5",
-      "fuente": "WAPA TV",
+      "fuente": "Humacao",
       "fecha": "2026-11-02 23:06",
       "municipios": [
         "Humacao"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
+        "Humacao",
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": true
-    },
-    {
-      "titular": "ASUME permitirá pagar pensiones alimentarias con ATH desde su aplicación móvil",
-      "enlace": "https://nelpr.com/2026/11/02/asume-permitira-pagar-pensiones-alimentarias-con-ath-desde-su-aplicacion-movil/",
-      "fuente": "NELPR",
-      "fecha": "2026-11-02 22:31",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NELPR"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Se irá la luz hasta 16 horas; conoce municipios y sectores",
-      "enlace": "https://nelpr.com/2026/11/02/se-ira-la-luz-hasta-16-horas-conoce-municipios-y-sectores-2/",
-      "fuente": "NELPR",
-      "fecha": "2026-11-02 22:22",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NELPR"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
     },
     {
       "titular": "Mujer en condición delicada tras presunta agresión de su hijastro en Humacao",
@@ -369,39 +712,23 @@
         "Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": false
     },
     {
-      "titular": "Mujer queda presa tras diligenciarse orden con fianza de $100,000 por maltrato a menores",
-      "enlace": "https://nelpr.com/2026/11/02/mujer-queda-presa-tras-diligenciarse-orden-con-fianza-de-100000-por-maltrato-a-menores/",
-      "fuente": "NELPR",
-      "fecha": "2026-11-02 21:29",
+      "titular": "🚨 VIOLENCIA FAMILIAR EN HUMACAO | Joven de 22 años bajo custodia tras presunto ataque a su madrastra Un incidente de violencia familiar ocurrido durante la noche de este lunes en Humacao dejó a una mujer herida de arma blanca. Según los inform",
+      "enlace": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOeXZ0OWZDMG53eE9YSk43d3EzQmJ1c2xvZnVOY0xyU21rbWNPZnpzSGZIUTBwS1ZleEZOR3J2ZHlHTExNMl9rZFFwQTdNY0txWWhtcXdYNThMbVVydHY5Sm1ZMFRhdC1BbTZwTk1NNHNBZllFUFNDeVZ6cjhoUk1WUzFvakt5ZkhUTHpVRzVGaGVHbTJNZHB2RmNVQ3VCMTBHelp3WmZ0alBtQkRDQW41bWxRQTlkY3dHbEdxdHZIMlRrV0FLLWVXeTlyU0pCV2pJMFZrRngxeEswVE1WbnBXSHhHSjBodw?oc=5",
+      "fuente": "Última Hora PR",
+      "fecha": "2026-11-02 20:57",
       "municipios": [
-        "Carolina"
+        "Humacao"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "NELPR"
+        "Última Hora PR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Según las estimaciones del Pronóstico Meteorológico Nacional, en el municipio de San Juan del Río se estarán presentando algunas lluvias aisladas",
-      "enlace": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPTEk3YmRpbkliOW4xbG1EanJuTUZTOUVJaktDYmJ0bm8zTUp5d25zNm0tQ3NYcEE5TjduRXlvdHdmbmQ3bE1DbDB0Q0MwSnhKZndRLVZwWXZyUmNmUUVpOG9kd2pMemxMQ25EVS00UGFKVlVvTUN6OXl3TW1haUZkR2lqb2RfdkVtNmFNdVFUZVpmREJ1VF9seVVwV2ZxVlFJRUhiRWRVamxEZ2tUU01tWjhUSC1GaEZianBJMUlSQUhDQ0FTaWNYUG5va185dkFFZ2JMRGc0ODZwT19jZWVpWkwybFlRbW82WG9YZVk2S3Q?oc=5",
-      "fuente": "FB - Cataño",
-      "fecha": "2026-11-02 20:30",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Cataño"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": true
     },
     {
@@ -417,7 +744,7 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": false
     },
     {
@@ -433,7 +760,7 @@
         "Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": false
     },
     {
@@ -449,119 +776,24 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Miguel Romero se reúne este martes con jefa de HSI para discutir operativos migratorios",
-      "enlace": "https://www.elnuevodia.com/noticias/locales/notas/miguel-romero-se-reune-este-martes-con-jefa-de-hsi-para-discutir-operativos-migratorios/",
-      "fuente": "El Nuevo Día",
-      "fecha": "2026-11-02 20:17",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "El Nuevo Día"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Departamento del Trabajo activa asistencia para trabajadores de KFC y Taco Bell",
-      "enlace": "https://nelpr.com/2026/11/02/departamento-del-trabajo-activa-asistencia-para-trabajadores-de-kfc-y-taco-bell/",
-      "fuente": "NELPR",
-      "fecha": "2026-11-02 20:15",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NELPR"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Burger King busca sobre 500 empleados en todo Puerto Rico: conoce dónde solicitar",
-      "enlace": "https://nelpr.com/2026/11/02/burger-king-busca-sobre-500-empleados-en-todo-puerto-rico-conoce-donde-solicitar/",
-      "fuente": "NELPR",
-      "fecha": "2026-11-02 19:52",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NELPR"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "AMA opera con 36 guaguas luego de retrasos por falta de personal de mantenimiento",
-      "enlace": "https://nelpr.com/2026/11/02/ama-opera-con-36-guaguas-luego-de-retrasos-por-falta-de-personal-de-mantenimiento/",
-      "fuente": "NELPR",
-      "fecha": "2026-11-02 19:48",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NELPR"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": false
     },
     {
       "titular": "Mujer en condición delicada tras aparentemente ser agredida por su hijastro en Humacao",
       "enlace": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOVDNlR3NuXzVHWl9paE1FT09jTWZ6WWlUMnFKWGlUS3RIdkkxNVQxMVNFNkZ0Tll5NE9DZjBodjVwdXRfV2VObTFLSDRGWHdHTUwwM0k3Q2xFSnBvSzRZb2szMU1UcVVYeHlqWGFLbGp1cVBZR0xSNDc0bzBBeEl3OV9nU2VHZ0xrNDhtUzluQjdDM2lSMTNQM2o3SDZsbm43MXRUVmJ4ZGV0dndvQl9BUmQ1RnNLRnRtVUJMWmpDdmpjZDFaTXlGQWVxWVM5V0ZwUlZseFQ1dmZWUkRUd0U1ZUNlWE9zZmctUjZlcURpNXIwY1pGWGtEaEFCSFM5Zw?oc=5",
-      "fuente": "WAPA TV",
+      "fuente": "Humacao",
       "fecha": "2026-11-02 19:41",
       "municipios": [
         "Humacao"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
+        "Humacao",
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Acueductos completa más de 28,600 reparaciones de salideros durante emergencia por sequía",
-      "enlace": "https://nelpr.com/2026/11/02/acueductos-completa-mas-de-28600-reparaciones-de-salideros-durante-emergencia-por-sequia/",
-      "fuente": "NELPR",
-      "fecha": "2026-11-02 19:37",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NELPR"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "🍔 Burger King busca reclutar más de 500 empleados en Puerto Rico 👥 Plazas disponibles a tiempo completo y a tiempo parcial en sus restaurantes. 📍 San Juan, Puerto Rico – Burger King se encuentra reclutando personal para trabajar en todos sus restaura",
-      "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOOUhmQ1hycndFVHJKN2JwT2lzb3ZLS04teUFsbDRzc0JqSWRWbm9obl9PNkZvWDZFUW1iTWdUYXZ3S0Nrc0xld3NHa193aTRQcFFkUGJjM1hsVElXZWNBejAtaVhkdnZyenhhUmJRVnpqVmR1SHE2MXhfdGhMX2U0UGRwWVpNcGMwRDQzY2g2QWFuX0J5T2xUaHZyX293SjZfakw5MjdZdGJ3c0xHU08tQXYtd1lSd3JTZFN3VlRrSldxRjF6aUt1aHkyZ3dpOG13YlBHQW81SzlaRS1xcXBmUms3MA?oc=5",
-      "fuente": "FB - Cataño",
-      "fecha": "2026-11-02 19:15",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Cataño"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": true
     },
     {
@@ -577,24 +809,24 @@
         "En Contacto 787"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": false
     },
     {
-      "titular": "La Región San Juan sacó un breve momento para concienciar sobre la prevención del cáncer de seno. Se recordó y se escribieron mensajes a todas las mujeres que pasaron y están pasando por esta situación 🩷. Gobierno de Puerto Rico",
-      "enlace": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNM09QcUFLempuWktEYk94bkRmcW4tQnhVaUdZc2x1UjlPN280a1dGVUdRRVpKQXJ0U2dnb1hZYkpIR2tzcmJNaDVZNUp4bXdudWdpTFp0ZXczVnk5Qmk3MjNyTDQtM0o1Y0UzODZ5NHN4ZGpjV3Z1b0ZSTE5TQWlKYnBmUms2d0ZzN1lrVU9iQ3ZZdkM0RTNSdDBIWjV5SzRNbHU5MndzUEZqYkMwMTl4a1Z2NGROcl8wOE9McGhLb2dTenBrYkZSelJ0YzB3M25WOExWeHJFOVNSamlSNHo5REN2WUhpTU9lWXF6b1hXeEc?oc=5",
-      "fuente": "Gobierno PR",
-      "fecha": "2026-11-02 18:30",
+      "titular": "Culebra Invasiva en Puerto Rico UnaPitonenorme Una Piton enorme Cuantos Pies? . Culebra Invasiva en Puerto Rico Una Piton enorme Cuantos Pies? . Culebra Invasiva en Puerto Rico Una Piton enorme Cuantos Pies?",
+      "enlace": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbUZBaVdDV0hfWHd1Y1V5S2VvWDZiQ3kwbEhOT1QyZzN1TkYycVgxQW9wZUY0Sjllai0tRE4tblVVUDZqbVg2d080WnFPaTMzUEJLcWZuZE91aDNKVi1KRUJLY1NteGJjODlYQ2ZZeDZON19aQzZJZHdYcnFfZXM5blF3?oc=5",
+      "fuente": "FB - Culebra",
+      "fecha": "2026-11-02 18:47",
       "municipios": [
-        "San Juan"
+        "Culebra"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "Gobierno PR"
+        "FB - Culebra"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
     },
     {
       "titular": "🏡 ¡OPORTUNIDAD EN CEIBA POR SOLO $57,500! ¿Buscas una propiedad económica para convertirla en tu hogar o evaluar como inversión? 👀 📍 Comunidad Saco, Ceiba, PR 💰 Precio: $52,500 🛏 3 habitaciones 🛁 1 baño 📐 Aproximadamente 750 p² 🔥 Una",
@@ -609,7 +841,7 @@
         "FB - Ceiba"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": false
     },
     {
@@ -625,7 +857,7 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": false
     },
     {
@@ -641,55 +873,7 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "La Región de San Juan continúa atendiendo las necesidades de los residentes. Se hizo entrega de artículos necesarios a una madre y su hijo de 5 meses, quienes perdieron todo en su hogar a consecuencia de un incendio en el Condominio Las Américas.",
-      "enlace": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPQWlqNVhTN2JNMlRKQUFuWEQ2ODJmRGtWdTdnZ3FmVlZwNlJGX0MxSkpycF9HWHdsczYtV2V1aU84WnBrWExDOE53N1cyV3dXTHZTRzlqVXQzR00wMXpGbkpGUFVTRnMxSG9fNllOQ3NMUUd1TmZGTEoxem84SUtUNS1HZnVSbjF5NDI4dnJrVXhBbVdZclZTZWRSTEVQb1MzVGMyczNHM1VWVXowSXhiS2hFcmlWVzI5Q0w4Nmh2SnpuUDlfUmV4UFRnWTFLem9mWXJXaEk0aHA3clBQbXduWEVzS2dmektfTHc?oc=5",
-      "fuente": "Gobierno PR",
-      "fecha": "2026-11-02 17:30",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Gobierno PR"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "🎄 ¿YA SABES DÓNDE COMIENZA TU NOCHE? Este 27 de noviembre, Caguas se llena de música con 3 tarimas y una gran celebración para darle la bienvenida a la Navidad. 📍 Paseo de las Artes�📍 Plaza Santiago R. Palmer�📍 Paseo Gautier Benítez De",
-      "enlace": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNYV9vRWRuY2JIRWt0bmFxdzRKb0JsWGVnVzVHTnU0cTFSTklEeURiRXNfS25za2JCakN6Zm51V1Y5Z2d0SC13SG04QUNFdnRIalI4Vkw1V3doSkZUS1R6RFpNbHo2bEhwdkhNR2JpVjIxU19OMG9mMHMxMGtjaWxCMHBVYTd4d2U3TG9YbWk0T3loOUpwRG5pcTBqMWFaR3pIdDZ6Rm8zY2xBOEplTlhmNmRNVjVmQ2loMHlGZGFkQjNaZEpvLWNuVFhZOGFUTVE3cmxzckVMODNaYklGbmpVeF9KOXVlZw?oc=5",
-      "fuente": "FB - Caguas",
-      "fecha": "2026-11-02 16:58",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Caguas"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "JetBlue inaugura vuelo diario entre San Juan y Baltimore",
-      "enlace": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVG9EM0VqVHZjRXI1QVcxdVBBODE2QTR2MkNweVN6WFY2T0xwd2RQREdycC1CRXhrZmZjSVlKVmFYWDVDMW4wUWU5TmlLV1pXUFVQRXNOa2ppTG9GcUctaUpHTmVoRDJDVmtRN1pnR2c3MnZhRnotNFFUMzhpM2RBcFRxdnNhdmJ2MWJSNHF6UTRkSzZ3eWx6LWVGaTJPdjZaRW43b1pxU2twYzQ?oc=5",
-      "fuente": "El Nuevo Día (GN)",
-      "fecha": "2026-11-02 16:53",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "El Nuevo Día (GN)"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": false
     },
     {
@@ -705,88 +889,55 @@
         "Gobierno PR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": false
     },
     {
-      "titular": "Personal de la Oficina Regional de Carolina estuvo presente, con una mesa informativa de los servicios, en el evento de Halloween que se llevó a cabo en el fin de semana en Plaza Carolina. En la mesa se estuvo brindando orientación sobre la importancia",
-      "enlace": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOZGRtcG5ORHlDYTVHdzVNNjJvZHI5b3NsMTY1MU9kVzBMaG43dlJDX2I5c1NaTXdVajFGMnh4UUVDQXYxSFlYbEx5THFUYWhDMzBvLWpJQkNlRHBfWEhnMkdsZldWU2tvT3VhV0Y5R2oyaXdZbHhwdXFVWEhoQTFRN1RqeW53SXlaN1g5bHNZdm9EWWFUeGJid3dRVkx2WDFOMkJwakFIQjVZc2VXcE1oUDlDVzcybk16RkpjXy03NDhZVklPalg0eUNMU0dpRjdZN3JoRS1kNWhienJ5?oc=5",
-      "fuente": "Gobierno PR",
-      "fecha": "2026-11-02 16:06",
+      "titular": "CONTINÚAN LABORES DE LIMPIEZA TRAS DERRAME DE 11,000 GALONES DE DIÉSEL EN BASE DE LA GUARDIA COSTERA EN #SANJUAN 2 NOV 2026- La División de Gestión de Incidentes del Sector San Juan de la Guardia Costera continúa supervi",
+      "enlace": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOSHpLcENid1BROEtLTXUyT1pPWjVieGpZbFFEVnkxbXdhMzJzUkJWSUJyTkNXcjNVVjRmMkFNOTBRLVFiZlBqeHl5RmhvV0FYdG5Xb1VUZXAyOUpneU90OEdBa0daSXh6NDhpQnhaSEJ6Qkc0M05nNGZUaVZ5VENtUGxhdHV5OUZ4VlZvV3dkcDFjNU9kTVVGeFpQSFM0VXNoNVVlVFRBOUlZWjFjcy1LWm5NVkZPT1dfdXZYdGVlRkRKenlzTVU0dUxhN2NaV1NFZFBHYWFvOVVidHlXQXo2eDJJRDB6V0docE1COQ?oc=5",
+      "fuente": "FB - Vieques",
+      "fecha": "2026-11-02 16:33",
       "municipios": [
-        "Carolina"
+        "San Juan"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "Gobierno PR"
+        "FB - Vieques"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "OTRA EDICION MAS - EL MALECÓN DE NAGUABO VOLVERÁ A CONVERTIRSE EN UN GRAN BATEY DE ENCUENTRO, CULTURA Y TRADICIÓN CON LA CELEBRACIÓN DEL BOMBAZO DE GRATITUD 2026 NRTZ - Una iniciativa comunitaria que, desd",
-      "enlace": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOdUE4Nno0U0lpT1FBdkFldGFiRUNVUElCUVExNHFvR0xpcG1UX2RWLW1SRDZVLW1EazRBOGd3YkEwcWZBV0NEalh1b0FDMXliMTU2bzBia0VyOS1QdnhHUHNHMU5KRXpmb2FNd3N4dEYxNEFOU0NETHQ2TWRVb09jN3FCSy1TMUJWeDFUU2hYLWlFNDRsR2NPOFBCZzFoemxOSkpTeHBHb3Z0b3hHRE1iRm9XRksxcE5QY3RMbGJZZTRvWlN5eUJydmlhY2N3N3FXVlk0T2NlUktBcS1Ib19YY1UwMXdQUQ?oc=5",
-      "fuente": "FB - Naguabo",
-      "fecha": "2026-11-02 16:05",
-      "municipios": [
-        "Naguabo"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Naguabo"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Caguas será sede de un encuentro enfocado en el fortalecimiento de la gestión municipal y la participación ciudadana. Del 3 al 4 de noviembre se celebrará 'Ciudades Valientes 2026', el primer encuentro municipalista organizado por la Liga de Ciudades de",
-      "enlace": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOS1ZLdTlLUWRjbG92YnB1SGh2OVVnUkdGNFBONElFZUluMjJsMm94am1mMFcyMmVUcHpETUNCTnVRdk85UUl6TGhrTDNXU0pUdUJaak1nWEdWQkpTZWx3OXhkOURaMmdRelJMSnBmb0VvcWRoOTVaZ044aUtFa01Ib1IwLUYxQzhNbDBuV3A5UGVwY19lUFl0LWpUa0VEMUkzMy1pY2Z2d3M3R2VqTVNfQVVGMlRVemNYcEczdXFtNy15MHgwYzV1dldYMWoxMXAyTEhQYVM4bkVyaUVyeE1IZ05LdlU?oc=5",
-      "fuente": "FB - Caguas",
-      "fecha": "2026-11-02 15:04",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Caguas"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": true
     },
     {
-      "titular": "Como parte del Mes de la Adopción, continuamos celebrando momentos especiales, en esta ocasión en la Región de Caguas. La subsecretaria del Departamento de la Familia, Dra. Evelyn I. Matos Quintana, al igual que trabajadores sociales y parte del equ",
-      "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMTZiN3BQTDJrTFpGWmdPZllSTjA1VmpsX2dzbEdRVHVoS3NkQmZDTWRXSWxjM0NJUTJHcWpLc2N3ZkJmMG9GSmFSWjI2YWQ2T1lOX2lycmxhQnM3VjBQUVZVeDE4Y3J4bzVqR3hwT3RDeV9CdjhLaFdBSC1IcldnR2hZN1pwXzNvRVhKWGtsQ3VsUlVTVkkyMnRjbVNzUG9qTUptWG42d0lJd2NkMm9zNi1aTlNsZlliZ1pfYmI1YmNlV1ZJSG11RXVkZ25CUUFWWGpZNVRGeXBERk1KUXJ5MFV5VQ?oc=5",
-      "fuente": "Gobierno PR",
-      "fecha": "2026-11-02 14:56",
+      "titular": "Arrestan en Vieques a fugitivo federal acusado de enviar cocaína por correo",
+      "enlace": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcE9tejQyNTR4TTJVMU52YmVSSU9ZdUoxMmp0ZnhFLVNxbHl6cWpsYVhYcVNRdVRDLVBPenprdGtzSEI3ZXpaM0hkMzFwMXhNTnJtMWlyTlpZblFld2E2cnBNRW5Bb3VlN0RYVERkRkprR05ZQzNKaVZxejc2T1pMejdkMS1KSEhtaXNHX2lkbzVHZ3daUmZNUHVKZjBoeDMyS1hXRXNjZVl0NjdUSjJVX0RyM2wzTlBB?oc=5",
+      "fuente": "Vieques",
+      "fecha": "2026-11-02 16:04",
       "municipios": [
-        "Caguas"
+        "Vieques"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "Gobierno PR"
+        "Vieques"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
     },
     {
-      "titular": "‼️ÚLTIMA HORA‼️ BEBÉ DE 11 MESES CAE A PISCINA EN RESIDENCIA DE TRUJILLO ALTO; ES TRASLADADA AL HOSPITAL Una bebé de apenas 11 meses de edad fue trasladada a una institución hospitalaria luego de ser encontrada dentro de una",
-      "enlace": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNYklGS1JHS1pFdU9PSk1ndkEyZFV0TVVOWlBWbFFkVFh2SGVJaklzUmRIQml0WFV1R3pjNjh3cG1MZ0tyd3ZpSlczd3hDT0JDYWJVamJQOXNuQnFiYW4zTUhKbUYtSllOSF9SQUZpSzM4ZUtDdkt2N1lFejJBUmxXOUtZZ3BEeXVGeE5fdkhvY1IzM1NIOTdkRVUzNFdHQjdBUEszNm1BSWFJemE5Vk1tb2ZTQ3FPNmdDazUyVi1HTFVMNWNScWlzUGFjYTNrcmlyTlJZaWlQZTVsNFdnMUFrNXB5ckprbmtSOTVtcU1MNE52eUk4cS1VdlpLSkhBYjRW?oc=5",
-      "fuente": "FB - Trujillo Alto",
-      "fecha": "2026-11-02 14:55",
+      "titular": "EL MEJOR TOUR DE PLAYA EN PUERTO RICO 🇵🇷!! Tours Culebra, Culebrita (playa tortuga) playa Sur y playa flamenco. Incluye: transporte, bote 🛥️ y equipo de snorkel 🤿, pádel board, sillas de playa y sombrillas ⛱️ para el sol ☀️. Taquillas del ferry 🚢. ☎",
+      "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1FSU0xSGRXSE1CMFZhNzcyNmJyNTVYeEMzXzR5U1FOUV85aU1BeVVlMTAyb2hrOTdxTE9OOThYT3gzNG1zd2szcXNTYzM2WFF5UzNYTF85OUNTaUlHam1SYUZhYm1fMWo5RldCUFZkVmNGbUxkVGt1U05Gbw?oc=5",
+      "fuente": "FB - Culebra",
+      "fecha": "2026-11-02 14:48",
       "municipios": [
-        "Trujillo Alto"
+        "Culebra"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Trujillo Alto",
-        "En Contacto 787"
+        "FB - Culebra"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": true
     },
     {
@@ -802,75 +953,23 @@
         "FB - Ceiba"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": false
     },
     {
-      "titular": "El municipio de Ceiba concentró más de $81 millones de la actividad económica atribuida a la presencia militar durante el año fiscal 2026.",
-      "enlace": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPNHBhTTg3aFcyWkU5Ny01OXU2bkRYd18xYXFuMXl4LTc2NjMzU0hMaWcxZnlvUnE2VjdQTTU1N1lxTUxNVXpDX1dSeGRuM0dsb19CY0Z3Wk1vZ3VQeEpFXzJoT3AyQUJxSnRUdkVnVF91REhJQVhtRzhSYnNjVy1POGJXUDVCWmljOXVmUkR4MDlVSUtJX0RWdVFNd0l5aHBGZnFWZnJVdWppd1dZMGZTNW5xR0pSSnFHVHFIOS1JMjJwTUFaemVNcjdnRzJMQk56c0g2aFFNQzF1bi1CY2o1b01GNlJUTHhORHc?oc=5",
-      "fuente": "FB - Naguabo",
-      "fecha": "2026-11-02 14:19",
+      "titular": "¡Propiedad en proceso de remodelación! Urb. Villas de Cambalache II RÍO GRANDE, PUERTO RICO #ID 702748583 Para más información abrir link abajo 👇🏼 https://deshow.com/agentes/casasprrealty/702748583/?operation=En%20venta #deshow #riogra",
+      "enlace": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOWDVnOFFZbmhwVDdIOGtFWTY2QmFVVTJubklwOUwwczVuVGY5UndYbzZKQ2ZoSWhVY0tCeXpzOFdNU1lEaFlabjNkREJCanpvdjZvaGlZalNPM2hoVzVRQ1BZVDlFck4zRWtjODRscnpSTThOWlFqTGVTZW1xZzN4SnB3QVdKYWlEdktVMlVFX2ptZUNwdFV1dmlVaEpsYUc3UEEyV2xZSTNJX04yR3ZLSlhOQmtnRTY4WkF0XzdXajNlQTZ2b3ltMEp0V3lHRDlFMWFLNlhsNTRHM1NWRmdtR0RURFNKeVVh?oc=5",
+      "fuente": "FB - Río Grande",
+      "fecha": "2026-11-02 13:05",
       "municipios": [
-        "Ceiba"
+        "Río Grande"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Naguabo",
-        "Gobierno PR"
+        "FB - Río Grande"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "En el marco del Mes de la Adopción, celebramos un momento muy especial en la Región de Humacao, donde tres hermanos de 14, 12 y 11 años encontraron un hogar permanente junto a Wanda Jiménez Sánchez y Manuel Rosa Alvarado, quienes hoy abre",
-      "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQczNidmJEU002N2pVRG5MdzlMWTdVY0laVmtuaE1ST3NrbG9GY1dhbGdTTGJRblNBSWNWRG1pZzZ2NDdwZThaNE1qZUVuWjNDMW9TeC1HUWJNcjN1VUFvRlZ5ZlFVaHAzdjlmZ0NBZ1kzMk50c25xOXdxSDBkLWVENXRadGRPZzlCSlZLMXVFelY2bXoyMzFwWDlPV2xHR2VOdkowZV8zdHU2YXhLa0I5bmpVbVhsd2k3b2M0bE1FeXdKVkp4aUkxUmZBNkRYS25hY1dTRmdPRW0zSnFBVmd4WjdZNA?oc=5",
-      "fuente": "Gobierno PR",
-      "fecha": "2026-11-02 14:13",
-      "municipios": [
-        "Humacao"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Gobierno PR"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "SOLICITAN AL DRNA QUE INICIE EL PROCESO ADMINISTRATIVO ADJUDICATIVO SOBRE EL VERTEDERO DE CAROLINA CONFORME A DETERMINACIÓN JUDICIAL ✅La Caribbean Golf Academy radicó una moción informativa en la que pidió la apert",
-      "enlace": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOMWw2LTVIRU5HLVlZZmdWTjVJenE5bmR5SnVYajVSNjN1M2NQY0xlOE13dFN4U0RTU3pmSG0yQXFxQ3ltMnpCQUp1MkMtYnFJTnB4blMwdUlSR2Rrbnc2Zm0tM1NfaktnaENsWjhDNUFvcVphOXQ4MzdkVWlVNmIyYlBobWE2cGI1dUFGZ092aF9HU0hYbWhsYnFLUWpfT1JWTHFTSlhTaDFfRG9idVljRkk3bm5DTDRNa0daVmVtMFEyYTVvS1l3NGxkbmtzV1dHdGNMUzlvdXA?oc=5",
-      "fuente": "FB - Cataño",
-      "fecha": "2026-11-02 12:53",
-      "municipios": [
-        "Carolina"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Cataño"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "🧠Datos curiosos del municipio Humacao ❤️ Puerto Rico 🇵🇷🌴✨👇 🦎 El refugio insular de los monos científicos: En la costa de Humacao se encuentra Cayo Santiago, una pequeña isla habitada exclusivamente por más de 1,200 monos rhesus. Este lugar func",
-      "enlace": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPT29aWkE2allTWnNEZFJPbmZZaWFUYjFybUVyUFJMamx6NUhfTXpGWTNHTnYzYWhvUmNSV2ZlQWFieTJybUViYjU0T0pNVWVYNjhIa2VsSlVvbWhJeUhObXVib1FjRThydk94OXI2Vk1NZ2VHdWpGOW11NVE0MnpzYm0zalNkcDRQd3JBMmwxTXNyVHl4dlQ0bGRQOWQzQ1dNUmR3ci1WR0NKZGtlMk0yZ1lYZ2psOWZNdFpfbDB0WWpTRHEzaXhVTmFuR0FYMU5KU2VORHlHN3dYTWx3b3A2dGZR?oc=5",
-      "fuente": "FB - Canóvanas",
-      "fecha": "2026-11-02 11:58",
-      "municipios": [
-        "Humacao"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Canóvanas",
-        "FB - Naguabo",
-        "FB - Humacao",
-        "FB - Cataño"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": true
     },
     {
@@ -886,154 +985,7 @@
         "Fajardo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "🧠Curiosidades del municipio Alto Trujillo😍 Puerto Rico 🇵🇷✨🌴👇. 🏺 El misterio de los petroglifos taínos: En las orillas y cauces del 🗿 Río Grande de Loíza, Trujillo Alto esconde grabados ancestrales tallados en piedra por los indígenas taínos hace cientos de a",
-      "enlace": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOb1FwalVNck1rd0E5OTdWMlhpS05sREVIWGg3em9XNXBwNExzV3c5SU9zUFRSekpLVjJOSVdEQkhmNXBUeERUNWFPcHo2cHBJLVpkU0NhM2tVMkRpX2Q3TXl3cHE2OHo1M0h2a25PYjFZRHo0b1VYM2dCV3hLQnluQVBfeFQ2MnVPMEpyWlZyMTlwSHhKVmY3U2NhRjBMTnFUeEFrSGZEcDljNkU5NEZrZkV1cTVSX0R2SXZuNklVbXdCaWNCbnoxdGh3WXVQSnpLMzRUdEF5QQ?oc=5",
-      "fuente": "FB - Trujillo Alto",
-      "fecha": "2026-11-02 11:48",
-      "municipios": [
-        "Trujillo Alto",
-        "Loíza",
-        "Río Grande"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Trujillo Alto",
-        "FB - Canóvanas"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "🇵🇷🇺🇸DESDE EL MUNICIPIO DE TRUJILLO ALTO NOS COMPARTEN AL INBOX - \"Hoy celebramos el izamiento de la bandera de los veteranos en honor a los veteranos caídos, recordando con respeto y gratitud su servicio, valentía y sacrificio\". El Administr",
-      "enlace": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNcV9oNlBUUmhydTJibC10cDh3bU5WZHZzbEM1aWNJZFg2RUhkUlZBRUZCcGlEUWxsMlFpTlpZTTF1T1R4eE94b1dObW85bTZGMkg0eFk0di1JT1NERTQ1OUlyZUhJUlJCS00tT3dQelp0NHFHNW9TYnRFUEtfV1pqOUJ4Z0JBajd2OHNZa3BJMXF0MlNqVVNkYWMxSkFvMzQ5dTVfbGFEY3BhWnlrYmgtOS1aRGhjQW5yMnZuSl90cFdXQjFCZlFodHcyc3JMUTQxeGxZc1NrUDI?oc=5",
-      "fuente": "FB - Trujillo Alto",
-      "fecha": "2026-11-02 11:31",
-      "municipios": [
-        "Trujillo Alto"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Trujillo Alto"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "NUEVE ARRESTADOS Y CIENTOS DE DOSIS DE DROGAS OCUPADAS DURANTE OPERATIVOS POLICIALES EN CAGUAS Y CAYEY CAGUAS Y CAYEY, PUERTO RICO – Agentes de la División de Drogas de Caguas realizaron un amplio operativo dura",
-      "enlace": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQRHpaSlRMUjd0aFpPRUVEdkJTMXV4eFFvZ2tvOWJZYzBaV0FzZGx6Vmx1TXR6ekh2QXkwbkdJZ1dCUWl5T2pYZzNXcVNtX2RMei1meElQcHZZVC1JbUMyZjU3YXhZeWQ5clAyeDNUTmZWZ2VBdWxxWGlDa3BIdmhyV0FQTm5UUFZOdFVfNkhyLUVNOHRpWDA2TWRaZHVXdXNDc2cwdUtldENSZkFjaWxwcDRuc0lsUFV5SHp1M0tpMGVmcDhaLU9OSkhvVTZGRTAxSC0tMVN3QkJmMmduZmc?oc=5",
-      "fuente": "En Contacto 787",
-      "fecha": "2026-11-02 11:21",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "En Contacto 787"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Los municipios impactados son: Gurabo, caguas y San Lorenzo. Para detalles acceda al enlace.",
-      "enlace": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQWEJTVV9LaXk1NW5PcTdwbVlWSzZpN29mV3l2VmFLMk55VjlLRXgtMlFpZEVxblNMZ19ad00xWXVVdm9faERwR2I5eWpTdnVpWjhQazVWYTFJUmdLZ3R0WXlvWUNzTExNVDdRYmp0U25nY1hUd1lWbkZyQ1ZBM3MwS295blNQT3JuNTFDWnZfRGthTmkxYTRVQW9waGFhZ3pqejlWaFYyaGR5N01YMnNGRDNaVXA5WGktRThfWlZnMDNBMEdoUUpzcVlqb0xUQXh3eE1YcDhn?oc=5",
-      "fuente": "FB - Canóvanas",
-      "fecha": "2026-11-02 11:18",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Canóvanas"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "LUMA anuncia trabajos programados en varios municipios de la región este durante esta semana",
-      "enlace": "https://waloradio.com/2026/11/02/luma-anuncia-trabajos-programados-en-varios-municipios-de-la-region-este-durante-esta-semana/",
-      "fuente": "Walo Radio",
-      "fecha": "2026-11-02 11:13",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Walo Radio"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "El Chinchorro de Tía Manin en #Fajardo les presenta el delicioso menú de hoy. 🚗 Delivery disponible de 10:00 a.m. a 1:00 p.m. 📞 Haz tu orden llamando al (939) 290-5757 🍛 🍽️ Especial del día: ✅ Arroz Blanco ✅ Habichuelas Coloradas ✅ Alitas Guisadas 🦪",
-      "enlace": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPRVM3ZGN0VldpTWVNVWQ5OTMxZVN6SU5TQTdXOHlYT1N6bmV4OHU2T2hpSnZKNll2b2NfWWQta1NPa2FJcEpPdDFrMmJXdmhOTFZlVDY5bHdfTzZlYnlrVG9jLWQ0b3RtdTJaXzVYME9TUy1tZDNGSlFuQWV1dmR2bGdzZnVMUkxmMTU0Nmp6elZlQjlEZnF4MXQxVWpFaGpFSDdkaW1ObDdBX2cyQUVldm9OSF9fSFBSVFpxdHo2WFJfREZxWHJhZS1zUmMxbGtIRVRsWDJ0Z1lxUWZaUERObUFDVkI0VjdtMDFR?oc=5",
-      "fuente": "En Contacto 787",
-      "fecha": "2026-11-02 11:11",
-      "municipios": [
-        "Fajardo"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "En Contacto 787"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Hombre residente de albergue transitorio en Caguas llega hospital con múltiples heridas y traumas",
-      "enlace": "https://waloradio.com/2026/11/02/hombre-residente-de-albergue-transitorio-en-caguas-llega-hospital-con-multiples-heridas-y-traumas/",
-      "fuente": "Walo Radio",
-      "fecha": "2026-11-02 10:57",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Walo Radio"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Arrestan en Caguas a hombre buscado por autoridades estatales y federales y le ocupan arma modificada",
-      "enlace": "https://waloradio.com/2026/11/02/arrestan-en-caguas-a-hombre-buscado-por-autoridades-estatales-y-federales-y-le-ocupan-arma-modificada/",
-      "fuente": "Walo Radio",
-      "fecha": "2026-11-02 10:57",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Walo Radio"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Arrestan a nueve personas durante operativos antidrogas en Caguas y Cayey",
-      "enlace": "https://waloradio.com/2026/11/02/arrestan-a-nueve-personas-durante-operativos-antidrogas-en-caguas-y-cayey/",
-      "fuente": "Walo Radio",
-      "fecha": "2026-11-02 10:55",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Walo Radio"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": false
     },
     {
@@ -1049,7 +1001,7 @@
         "WKAQ 580"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": false
     },
     {
@@ -1065,25 +1017,8 @@
         "William Miranda"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "Municipio de Luquillo",
-      "enlace": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ibzcxaUluVTQ4QWxFYjFHTE9wbWM0VFM0NnlqaHp3aGdLbWo1VDYtYjBmVi02TTNZN3gzT1BFTDdZMzNXRkVMb0tUR1R3TlhDQXk2a3IxS19fTUloby14WnBPZ1JsbFZwLWFB?oc=5",
-      "fuente": "FB - Canóvanas",
-      "fecha": "2026-11-02 09:51",
-      "municipios": [
-        "Luquillo"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Canóvanas",
-        "FB - Luquillo"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Alcalde de San Juan se reunirá esta semana con la directora del HSI en Puerto Rico ante las recientes intervenciones del ICE en sus comunidades",
@@ -1098,23 +1033,71 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": false
     },
     {
-      "titular": "INFANTE DE 11 MESES CAE A PISCINA EN RESIDENCIA DE TRUJILLO ALTO La menor fue auxiliada por un familiar y se encuentra en condición estable. Una niña de apenas 11 meses fue encontrada en una piscina de una residencia ubicada en la urbani",
-      "enlace": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNME9udmFpcjM1dEszRlpXZlUzMWVnTm5Zb3RwZTJHZjRnd3M2M043Zm1HNG9GdVlSNy1mTXJDTG5Md2F3Q1lmdGt1OTM1N3BJVGRCQ1Q3WFBDVE83VUREZkFmMmI4LU52cFJTc09wVmtldURYMm9QX2YtbHZzOGNGMWFZZjNMWFI0OXZVX1RTZl9xb2QtWDdJV2ZoVUNTbTVPS1BKamVGX0RoUUNGMktZYXd3WU5DX0MxQno1VFdIUW9QSnloQS1yNHRSdFlTSzhKY2hxVjZxNFJ0dU9GZkhFdQ?oc=5",
-      "fuente": "FB - Trujillo Alto",
-      "fecha": "2026-11-02 07:59",
+      "titular": "NAGUABO SERÁ SEDE DE UN ENCUENTRO COMUNITARIO DEL PODER JUDICIAL El Municipio Autónomo de Naguabo se une como colaborador del Poder Judicial de Puerto Rico en la celebración del Encuentro Comunitario del Servicio de Facilitadora",
+      "enlace": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPYVYyR181NkR6a2ZzeDAtRjR2SmtlaGhSb29UUENjTUJYMWNVbTBKWlZXbUNkWDM1QnozMUp5WVNMVDd0Wi1YRk8wbkhWYjV4SGUyVl8tTW5rc05melI1OHJuVTJpaE9qODd6RkpscXhsMk1ZOHQ5d0FJSEUzSFlIenBhQU9xWnVBUXJqM1ZNeFhvaFduSzMtSVM1SU1WY0tYZWp2RzZJbGdGMnJVdkVfcGYtYmdCYXNYczZpUWxPbFV1c3BnTy1ma3R2ck1VMjVJOFlHSS16MXJES0h2MXFFdDNveDVIV0RSZE9ZRkhyVHFzRXc?oc=5",
+      "fuente": "FB - Naguabo",
+      "fecha": "2026-11-02 09:27",
       "municipios": [
-        "Trujillo Alto"
+        "Naguabo"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Trujillo Alto"
+        "FB - Naguabo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "El Gobierno Municipal Autónomo de Fajardo, su alcalde, Hon. José Aníbal “Joey” Meléndez Méndez, y la primera dama, Yarenis M. López De Jesús, te invitan a participar del Gran Cierre de los 40 Días de Oración y Palabra. Bajo el lema “Volviendo al corazó",
+      "enlace": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOeEthUTlZZkZaZ3Bwa1FPVGE3Q1ZFbFJVMTZfWGZqaUkwbnRuTjJtclZYbUI2aGw5UWJKZjM2OFYyTS1nWHFhMS1oZC1oQ0k2b0tjYU9QbjdqWFJQNWpqUy1IU3BSckhmU01Ua2JNbnhSNDNmeGFoWjZkX3hETXZFbVVFejR5cnZPTFBDdi1WdzdBZDR4R3BqYzBSN1dRT3VxeFZpQkJwcnliWUR5QjZ0VUc2WnRQLWhRU0p4MjdOVVMtR29KYUhNTW1naFU4Q3RJNTg1a0ZKNFpDYkx6enhCOGtEU2hoNU9yYzhlZ01DVzlTUnp0clE?oc=5",
+      "fuente": "FB - Fajardo",
+      "fecha": "2026-11-02 09:01",
+      "municipios": [
+        "Fajardo"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Fajardo"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "📢 ¡OPORTUNIDADES DE EMPLEO EN CANÓVANAS! El Municipio de Canóvanas, a través del programa Early Head Start y Head Start, anuncia nuevas convocatorias de empleo para profesionales interesados en formar parte de nuestro equipo de trabajo.",
+      "enlace": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOWVEtdmpybzVXSWc4NjNtMlQ2ZWdIalFaak5XdHJOWFhRa0JadlVuR3J4R3dmM0lZZDNXMzZnZlZCZGY4MmlJNjM1Zjd2MldZazB1YVNqMTBZdzc2a0pmaEFVRXFXdWl6aUE3SlpRU1VvdzJyVGxsMFJYQXJEZFFZRmFVNjJhVjdqZ3ljWEwxVW9qSklxdkFCUl9KbXdhUXJDMVRTUDBoQ3Y0UHpOVWlPdThmWTJna2xuSlY4V3d0ZFpXVm1yOEh3UElVakRseXB1c2J1TmtCOU1LVVAzdXNIU2pLUHdmWU0zOVlkdVhmYUNMMk9pSjdn?oc=5",
+      "fuente": "FB - Canóvanas",
+      "fecha": "2026-11-02 09:00",
+      "municipios": [
+        "Canóvanas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Canóvanas"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "👑🇩🇴 En su visita a Culebra, Melissa Núñez vivió uno de los momentos más especiales de su recorrido por Puerto Rico. https://trib.al/SZ45Z08",
+      "enlace": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOTHFXVTBxdGoxcnRjNDlHdGs2dGg4a1RkeUFuTjZpMTg0QzFhSmJrWHZsajd2SUxRLVJjOWpVQ09PWnR3aHNCWVhORUtlLUt5R3FhN2hSdXUzZDh4UEFCa05mVnhJdmtGUzhXNFc0YU11eC1mUmUxVlhOOFZDTndaYkZzTGQyaHdPQlNQTGZ5N1JlZE9wX3JBNDdvRC01Rkd3QlZHaVltN1NibTg5dE5OQXFGTnAwTkJDSHl1SFA2YzZkbnpNRF95ZkdlRnIza1liQ01qWGxCNmhPWW1BbDlOWFBfNUNNZGJSWTJ5ZEM3RTFadw?oc=5",
+      "fuente": "FB - Culebra",
+      "fecha": "2026-11-02 08:00",
+      "municipios": [
+        "Culebra"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Culebra"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": true
     },
     {
@@ -1127,28 +1110,11 @@
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "Trujillo Alto",
-        "Primera Hora"
+        "Trujillo Alto"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": false
-    },
-    {
-      "titular": "🚨 ¡En vivo ahora! 🚨 Estamos junto a Milly Méndez en Telemundo PR y Radio Isla 1320 hablando sobre temas importantes para San Juan y Puerto Rico. 🇵🇷 ¡Conéctate a Pega’os en la Mañana y acompáñanos! https://www.telemundopr.com/en-vivo",
-      "enlace": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOSmZISFZnMkE5VHhEYl9pbzAyelN0UG5aOXF2ak1WYVo4RWk5Y0xJVEphZXFRemN6NjlYRlRyeW82SjdCTF90ZG53amlsVVkyYlpOelpCSU9SUm9HQVJyOXlYQUc4dHFuelktX1NrSmRlVkxpdjh2OG1JcjFUdzBNV3FMZGkyVWowcW5iaEZCamJiR0tBWEhtalp2UUhvLTRJMExrRUZ2THcxNVprNE9kaWRGODBfOTBoUmRuRDA2VkFoSGJWQzB1SmRKVm96S1ZZMU1vSF8tbVVJYUNDSDJDN1pJUmY?oc=5",
-      "fuente": "Telemundo FB",
-      "fecha": "2026-11-02 07:47",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Telemundo FB"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
     },
     {
       "titular": "Estable bebé de 11 meses que cayó en una piscina en Trujillo Alto",
@@ -1163,24 +1129,8 @@
         "Trujillo Alto"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": false
-    },
-    {
-      "titular": "AMPLIADA - INCIDENTE DESGRACIADO CON MENOR DE 11 MESES QUE CAYO EN UNA PISCINA, OCURRIDO AYER EN TRUJILLO ALTO. NRTZ - Agentes de la Policía de Puerto Rico, adscritos al Distrito de Trujillo Alto, investigaron un incidente desgra",
-      "enlace": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQQ2ZNSzE5c3hUNnUxT2VBQmx6cURzNE1MN0ZDTlVONnBjYkJNdWVSRG5odGRNaGZSSkp1MTBRRGhRb2EtYmM5am5NeTBMU1M0WFd5ZkpwYVBLUFFwTDV3azEyOXluSnluN0l0djUwSjlBdGF2UjRrWTV4YlYzbndZQnRWUHJDNGVWeFAwWmRET1VxMTE1Y1VkbHhoX1ZLOTlqSkpKWktackRzRTBiR21GV2tNZ3V6N2lFb1VyWHZyTDdIeHBScnhsQ2Z0WGF5eW5SdUgwX2stOHE?oc=5",
-      "fuente": "FB - Trujillo Alto",
-      "fecha": "2026-11-02 07:34",
-      "municipios": [
-        "Trujillo Alto"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Trujillo Alto"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
     },
     {
       "titular": "Yesterday🤙🏄‍♂️🏄‍♀️ Surfing Culebra Luquillo gracias por su apoyo 🫶",
@@ -1196,24 +1146,8 @@
         "FB - Culebra"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
       "es_nueva": false
-    },
-    {
-      "titular": "San Juan será puerto base en el Caribe del velero de lujo Orient Express Corinthian",
-      "enlace": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQaDNEY2VhSjVkZHhKeXdjVE1famxFazZHTmhJT2I5RkJsc3RoXzV5T0hKREMzc2syWUxLSndadFBWS0FnRHFvcno0QjZLMTk2Z0ZEVjdWem5EOWtWUzcwcHFPeGszQmNrMU9jQkZud21Tam9BdERpU2wzbm5WaVNCdlBpWk1GYnVQZlhmeFZWVDczS2RxOG41S3hRU28tYnU5bmtjWVc0RF9iUUNkZFduTENiVnczNmg0aVRYV0xudlZPY05UbTRmUjc3TjFWZ0RMRzZSVzF3UzQzdjZwNl9EUVlCSVkweFVlV1daYTA2bFZwQ0JsSnU4NmdBN1DSAYICQVVfeXFMT20wdzRPdk9nd3lQNVdrdHQ5S2dJWnRCUjFlZ0xwYm1xbnplNU85Ul8ycXAwNkNEc0NsTGVyUnFsV21hbEF6SHpNNVJiaTFTd2txbkF2eDBIYmROXzQ4cC05ZG9zUWVCNmM1YXllS0lHVWhsNnFPTTM2ZmUwX2dHazZrcWZXV2ZIOUZaZ1hzMjJETlJ5Q0dZNEJFUVZrZW84WHdacmhHbkR2YlRsMXhSRzh4eDl3bzV1aG1WODlXc2M1SU5jWFlKMGI4S1Y4MzE5R0JmZHRBN0lYNGtnMjFFVV9MVlZhZ2l5MmJxZjR5czdiLWZiRFZHUkNaYzJxXzNZa3RB?oc=5",
-      "fuente": "El Vocero (GN)",
-      "fecha": "2026-11-02 02:44",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "El Vocero (GN)"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
     },
     {
       "titular": "GENTE DE CEIBA PUERTO RICO",
@@ -1228,8 +1162,8 @@
         "FB - Ceiba"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-03T07:50:07.010243-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-11-03T14:41:25.652217-04:00",
+      "es_nueva": false
     }
   ]
 }
