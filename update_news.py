@@ -67,7 +67,7 @@ def main():
     public = json.dumps({
         "schema_version": 1,
         "generated_at": now.isoformat(),
-        "interval_minutes": 15,
+        "interval_minutes": 5,
         "source_status": statuses,
         "articles": articles,
     }, ensure_ascii=False, indent=2) + "\n"
