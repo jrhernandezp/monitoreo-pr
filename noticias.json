@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-16T16:41:26.558010-04:00",
+  "generated_at": "2026-11-16T20:32:41.471915-04:00",
   "interval_minutes": 5,
   "source_status": {
     "El Nuevo Día": "✅ OK",
@@ -10,10 +10,10 @@
     "Telemundo PR": "✅ OK",
     "Walo Radio": "✅ OK",
     "El Oriental": "❌ rate-limited/error: XML RSS/Atom malformado",
-    "PR es La Isa": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
+    "PR es La Isa": "❌ rate-limited/error: XML RSS/Atom malformado",
     "NELPR": "✅ OK",
     "San Juan": "✅ OK",
-    "Carolina": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
+    "Carolina": "✅ OK",
     "Caguas": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "Fajardo": "✅ OK",
     "Humacao": "✅ OK",
@@ -22,51 +22,179 @@
     "Loíza": "✅ OK",
     "Río Grande": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "Luquillo": "✅ OK",
-    "Ceiba": "✅ OK",
-    "Naguabo": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
+    "Ceiba": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
+    "Naguabo": "✅ OK",
     "Cataño": "✅ OK",
     "Vieques": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "Culebra": "✅ OK",
     "FB - San Juan": "✅ OK",
     "FB - Carolina": "✅ OK",
     "FB - Trujillo Alto": "✅ OK",
-    "FB - Canóvanas": "✅ OK",
-    "FB - Loíza": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
-    "FB - Río Grande": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
-    "FB - Luquillo": "✅ OK",
+    "FB - Canóvanas": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
+    "FB - Loíza": "✅ OK",
+    "FB - Río Grande": "✅ OK",
+    "FB - Luquillo": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "FB - Fajardo": "✅ OK",
-    "FB - Ceiba": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
+    "FB - Ceiba": "✅ OK",
     "FB - Naguabo": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "FB - Humacao": "✅ OK",
     "FB - Caguas": "✅ OK",
     "FB - Cataño": "✅ OK",
     "FB - Vieques": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "FB - Culebra": "✅ OK",
-    "Gobierno PR": "✅ OK",
+    "Gobierno PR": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "Senado PR": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
-    "Cámara PR": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
+    "Cámara PR": "✅ OK",
     "Junta Gobierno": "✅ OK",
     "William Miranda": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "Limarys Román": "✅ OK",
-    "Primera Hora": "✅ OK",
-    "El Nuevo Día (GN)": "✅ OK",
-    "El Vocero (GN)": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
+    "Primera Hora": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
+    "El Nuevo Día (GN)": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
+    "El Vocero (GN)": "✅ OK",
     "WAPA TV": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "NotiUno": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
     "WKAQ 580": "✅ OK",
     "TeleOnce": "✅ OK",
     "Xposed Magazine": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
-    "NotiCentro WAPA": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
+    "NotiCentro WAPA": "✅ OK",
     "Telenoticias": "✅ OK",
-    "Telemundo FB": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
-    "Las Noticias T11": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
-    "Moluscotv": "✅ OK",
-    "Jay Fonseca": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
-    "Última Hora PR": "✅ OK",
-    "Noticias En Línea": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
-    "En Contacto 787": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests"
+    "Telemundo FB": "✅ OK",
+    "Las Noticias T11": "✅ OK",
+    "Moluscotv": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
+    "Jay Fonseca": "✅ OK",
+    "Última Hora PR": "❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests",
+    "Noticias En Línea": "✅ OK",
+    "En Contacto 787": "✅ OK"
   },
   "articles": [
+    {
+      "titular": "La víctima fue identificada como Luis Fajardo, oriundo de Cuenca. Sujetos armados ingresaron al establecimiento y le dispararon cuando se encontraba en el área de la piscina junto a su esposa. Más información aquí: https://wp.me/p8ZMOh-CxH",
+      "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQYmpYNHdOZG9vdXlrMk4wQ0o0ZldmeEcxWjRrNXBzZVhrRmMzM0Jqck52bnFLNkFvQXZIejhFTW5FcV84MDRzZ0FDSlBNNFdobWZ5ZzJpSS1DRHA2SkZFbzNMbnF6a1hyd2dNSG1XVVNXZ2lXNG4xSC1ERkdXNVZ4RmlFVHdreEh5b2RrUW40Uk5JQWlTOUNhNkNZbEtKTXppcWFLR1lFRFp6bXFxU1hJLW11ZV9sMHhDZU5pVkUtMWE4c1BaZDZlbFBWMC1jdENSN3B0SmdHbXlyNE16SGtEUTgzSQ?oc=5",
+      "fuente": "FB - Fajardo",
+      "fecha": "2026-11-16 20:23",
+      "municipios": [
+        "Fajardo"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Fajardo"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Bajo alerta de inundaciones esta noche unos 6 municipios",
+      "enlace": "https://nelpr.com/2026/11/16/bajo-alerta-de-inundaciones-esta-noche-unos-6-municipios/",
+      "fuente": "NELPR",
+      "fecha": "2026-11-16 20:13",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "NELPR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Rivera Schatz exige adelantar renuncia de Suzanne Roig",
+      "enlace": "https://nelpr.com/2026/11/16/rivera-schatz-exige-adelantar-renuncia-de-suzanne-roig/",
+      "fuente": "NELPR",
+      "fecha": "2026-11-16 19:45",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "NELPR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Tiroteo deja tres casas y tres autos con impactos y un joven herido",
+      "enlace": "https://nelpr.com/2026/11/16/tiroteo-deja-tres-casas-y-tres-autos-con-impactos-y-un-joven-herido/",
+      "fuente": "NELPR",
+      "fecha": "2026-11-16 19:35",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "NELPR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Dennise Rivera, la rescatista y maestra retirada de 63 años cuya casa se incendió el fin de semana en San Juan con decenas de gatos dentro, expresó hoy estar atravesando un doloroso momento luego de la tragedia. La rescatista de animales contó la impo",
+      "enlace": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQVldUVnhTakRuRU5pcDBMMUJMTVZqRmx1WGRicXdJNmhCWUQ1b19VOS1SejFxRDFHVURqblVGUGxoTjFWQlVvQlh1Q2JWaGFEdFRwZ2VnZVpTQU1nc0p2UTUtMEd2WEJRaFJsNjlJS1QyU2ZhRGZJSjJFZERDNTJZOXBtOEw4dHhJWFNqMHBaVFJobGJ0V19LRjFsLWhoQlRjakdSQjRyWFJiSnlfYTZQUVVVZmZGNHVWX2Q0d0NlbXBmdGxLNlU4Umswb2k4VWU5R1hKM3ZrQmRGRUtKVUY1Z09tOFdzdTRzYWc?oc=5",
+      "fuente": "NotiCentro WAPA",
+      "fecha": "2026-11-16 19:30",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "NotiCentro WAPA"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Noticentro por WAPA. . Dennise Rivera, la rescatista y maestra retirada de 63 años cuya casa se incendió el fin de semana en San Juan con decenas de gatos dentro, expresó hoy estar atravesando un doloroso momento luego de la tragedia. La rescatista de",
+      "enlace": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVUkycks5RUU2T3hJM0FEbDFGLW5PRnB4OUlPX0FwYmZhXzFGYmRhOEc1SFliSXFpaUMtbGwtVTF5bFhiSkJPZjN2U29Jdk56M0tLd0twZzZJSV9LbVVCSm51T0EybDRkTEJXMm1WWlg4QUdRUWtVbmpHbEd2LVUySmFxa1d0S203S2lyYkg2azNrTW1oamJEUWlKSHdMcEloN05qQ3A2RFRPaThzYzZCYjVtcUdTSmVVQzI3ZTR5SzhsZjhCdVptMjY1Y1RIbFJJaGpoMGRaVGRRWmtLTGJmRF9tX3NaUlo5Nmln?oc=5",
+      "fuente": "NotiCentro WAPA",
+      "fecha": "2026-11-16 18:50",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "NotiCentro WAPA"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Suzanne Roig renuncia como secretaria del Departamento de la Familia",
+      "enlace": "https://nelpr.com/2026/11/16/suzanne-roig-renuncia-como-secretaria-del-departamento-de-la-familia/",
+      "fuente": "NELPR",
+      "fecha": "2026-11-16 17:28",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "NELPR"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "Junte por la Salud de Vieques exige transparencia en selección de operadores de servicios médicos en CDT",
+      "enlace": "https://waloradio.com/2026/11/16/junte-por-la-salud-de-vieques-exige-transparencia-en-seleccion-de-operadores-de-servicios-medicos-en-cdt/",
+      "fuente": "Walo Radio",
+      "fecha": "2026-11-16 16:16",
+      "municipios": [
+        "Vieques"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Walo Radio"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
+    },
     {
       "titular": "REPORTAN PERSONA MUERTA SIN CAUSA DETERMINADA EN LA URBANIZACION VERDE MAR DE HUMACAO Agentes de la Policía de Puerto Rico, adscritos al Distrito de Humacao, investigaron una querella de persona muerta sin causa determinada,",
       "enlace": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOSFZsUlVHYnJtcEhBcnQxaFhaaTM4NHJ3TW9mSmF1OWllaGRtaVBmTHRJc2RoNXluME1uM2IwVEFVYUxkdDJLOEkzSkVhQUhvajBvUnJiR0QzcFk0OGNFb1FZMFZaZDR2WHJJN1VCdldRMXAwWjZaZV9qWHYyRFVjSVpJb1JybVZjQ2lnSzhFdF85dDVpQ3JwSURXZGpqSkJ2a3owcFJSaFBIa2FpcGJxamQ0QzJTOWtldFZRd0lQRDJTa0czYVdtQjg0eHl0dTFuS3NrT1ZMcw?oc=5",
@@ -80,8 +208,8 @@
         "FB - Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": false
     },
     {
       "titular": "🌧️ PUERTO RICO WEATHER | TONIGHT – NOVEMBER 16 🌧️ Passing showers are expected across portions of eastern Puerto Rico, Vieques, Culebra, and the U.S. Virgin Islands tonight. Drivers are urged to use caution due to wet road conditions. ☁️ The",
@@ -97,7 +225,24 @@
         "FB - Culebra"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": false
+    },
+    {
+      "titular": "Trujillo Alto Se Expresa",
+      "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBrYzZWdXZ5NUF0bmoyeFZiS3Z2YjFVRE9MRnktcERLamhEczlmU0FmQzFhTU1wY2V0clU3d0RIaDMybHM4VzlqNlk0UlYxSUlwd2VjRm5mcUZoVXg3QXJ4Z1RKZy1ST0RtRW1SbVVhMEFIekFocEVwNDdVYw?oc=5",
+      "fuente": "FB - Ceiba",
+      "fecha": "2026-11-16 15:47",
+      "municipios": [
+        "Trujillo Alto"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Ceiba",
+        "FB - Culebra"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": true
     },
     {
@@ -112,8 +257,24 @@
       "fuentes_origen": [
         "Primera Hora"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "es_nueva": false
+    },
+    {
+      "titular": "Encuentran hombre sin vida en comunidad de Verde Mar en Humacao",
+      "enlace": "https://waloradio.com/2026/11/16/encuentran-hombre-sin-vida-en-comunidad-de-verde-mar-en-humacao/",
+      "fuente": "Walo Radio",
+      "fecha": "2026-11-16 15:35",
+      "municipios": [
+        "Humacao"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Walo Radio"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": true
     },
     {
@@ -129,13 +290,13 @@
         "FB - Fajardo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
       "titular": "INAUGURAN TORNEO DE COLORES DE VOLLEYBALL PARA PATRULLERAS ESCOLARES DEL COLEGIO CHRISTIAN BILINGUAL ACADEMY EN LUQUILLO 16 NOV 2026- La Policía de Puerto Rico, Área Fajardo, celebró la inauguración del Torneo de c",
       "enlace": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPTjJiVWdvaG05dTBfckRjU3lMOVc1RzE5Yl9YWHAxMkloeDZKS1BwOTBrbXU1NkZranVUXzFKbUFidmZSR2pJMFoyTDVydC1aUjdPaWdlTm0zTU90VkMxYWI3Mk0zLTlOamh1WlhoLVNac3BJVU50T2VsVjZlamZxRklSalFsalE0N2FjWVRMZFc5bWs5azNzSmhkbDhVVnZNQ2tYVXlpSHhuLTh6UkNZUngtejhiVjFONk5ocjEtWEJCenM0UWtWM2w4aUhEZk5lcmJSSXliMnRPUW1rMmVrSG9xY0FSLUU?oc=5",
-      "fuente": "FB - Luquillo",
+      "fuente": "FB - Fajardo",
       "fecha": "2026-11-16 15:17",
       "municipios": [
         "Luquillo",
@@ -143,11 +304,11 @@
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Luquillo",
-        "FB - Fajardo"
+        "FB - Fajardo",
+        "FB - Luquillo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": true
     },
     {
@@ -163,8 +324,8 @@
         "Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Hombre de 39 años es encontrado sin vida en su residencia",
@@ -179,7 +340,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -195,7 +356,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -211,8 +372,8 @@
         "FB - Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Terapias gratuitas del habla y la voz para personas con Parkinson",
@@ -227,7 +388,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -243,23 +404,7 @@
         "NELPR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Santurce, Ponce y Mayagüez con victorias en la LBPRC",
-      "enlace": "https://nelpr.com/2026/11/16/santurce-ponce-y-mayaguez-con-victorias-en-la-lbprc/",
-      "fuente": "NELPR",
-      "fecha": "2026-11-16 15:00",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NELPR"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -290,9 +435,26 @@
       "fuentes_origen": [
         "Primera Hora"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "Grises Jr. Sub-20 cierra la temporada regular invicto con marca de 8-0",
+      "enlace": "https://waloradio.com/2026/11/16/grises-jr-sub-20-cierra-la-temporada-regular-invicto-con-marca-de-8-0/",
+      "fuente": "Walo Radio",
+      "fecha": "2026-11-16 14:39",
+      "municipios": [
+        "Canóvanas",
+        "Humacao"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Walo Radio"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Ricky Rivera, dirigente de los Gigantes de Carolina, nos cuenta su carrera y sus inicios desde el parque que lo vio crecer en Dorado. 📺: Entradas Extras, Episodio 3. Cortometrajes documentales con figuras de La Pro: las historias que pasan fuera del juego.",
@@ -307,7 +469,7 @@
         "FB - Canóvanas",
         "Gobierno PR"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
       "es_nueva": false
     },
@@ -324,7 +486,7 @@
         "FB - Culebra"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -340,8 +502,24 @@
         "FB - Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "Presentan ocho cargos contra hombre por presunto fraude a adulta mayor en Humacao",
+      "enlace": "https://waloradio.com/2026/11/16/presentan-ocho-cargos-contra-hombre-por-presunto-fraude-a-adulta-mayor-en-humacao/",
+      "fuente": "Walo Radio",
+      "fecha": "2026-11-16 14:15",
+      "municipios": [
+        "Humacao"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "Walo Radio"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Mientras tuvimos récords de calor en San Juan, el friito navideño llegó la zona central. En Adjuntas la mínima esta madrugada 57° en la Estación Experimental Agrícola UPR en el barrio Limaní. Lectura gracias al observador Norberto Hoyos.",
@@ -358,6 +536,22 @@
       "conservada": true,
       "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "En presencia de polvo del Sáhara/África en las últimas 24 horas en Caguas, tenemos niveles altos de polen de árboles y niveles moderados de esporas de hongos. Debemos destacar la presencia de abundantes esporas pequeñas de Penicillium/Aspergillu",
+      "enlace": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOc3VQQlotTno4ZXl1b0NJWmoyNzAwR3FJazRSWmU5aFNZb1BfWnZDdE5aMWRPWmFfTmRjQy0yRzBQRHZNclltNjVrTldZckI5SVQ0NlFsOGl2b3ZQY0VJaW4yYW5KVXlwbmFaOTIyMjczT0V3cEdTaEw2YzlId0cyNlA3MUVaV01zdGhSUVpLdmxEZnV1XzRTNGVuR3c2UnAtRnlwT2lPNjRLcGZqVkJ6WjlVQklyNG9uX01vaHFnWkZ6dDB5X2V0UUVNRjBTRllCdlFiTzRxTjdvUTNLM1o4RmFIRFJ1VmdqYzgtWHBTclRXTFB6Y2NMaXJYcVV1R0dM?oc=5",
+      "fuente": "FB - Caguas",
+      "fecha": "2026-11-16 14:02",
+      "municipios": [
+        "Caguas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Caguas"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Victoria840. . Agentes adscritos al Negociado de Inteligencia y Arrestos del área de Caguas, informaron sobre el arresto de Kelvin Pagán Ramos de 31 años y residente en Juncos, contra quien pesaba una fianza de 550,000 dólares por violaciones a los artíc",
@@ -388,23 +582,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Nuevo grupo automotriz compra Furiel Toyota y proyecta invertir más de $10 millones",
-      "enlace": "https://nelpr.com/2026/11/16/nuevo-grupo-automotriz-compra-furiel-toyota-y-proyecta-invertir-mas-de-10-millones/",
-      "fuente": "NELPR",
-      "fecha": "2026-11-16 13:32",
-      "municipios": [
-        "San Juan"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "NELPR"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -419,8 +597,8 @@
       "fuentes_origen": [
         "FB - Río Grande"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -435,8 +613,8 @@
       "fuentes_origen": [
         "FB - Ceiba"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -452,7 +630,7 @@
         "FB - Fajardo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -469,9 +647,9 @@
         "FB - Luquillo",
         "FB - Naguabo"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": true
+      "es_nueva": false
     },
     {
       "titular": "RÍO GRANDE SE PREPARA PARA UNA NUEVA EDICIÓN DE LA SEMANA GLOBAL DEL EMPRENDEDOR A través de la Escuela Municipal de Emprendedores, el Municipio llevará adelante tres jornadas destinadas a brindar herramientas, promover el inte",
@@ -485,9 +663,25 @@
       "fuentes_origen": [
         "FB - Río Grande"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
+    },
+    {
+      "titular": "🔥 ¡POTENCIA Y PRECISIÓN EN CADA CORTE! 💈 Descubre la variedad de trimmers StyleCraft y encuentra la herramienta perfecta para tu estilo. ✂️🔥 📍 Showroom en Caguas 🚚 Vendedores de ruta 🛒 www.latrovadorabarbersupply.com 📲 787-341-8027 ¡Eq",
+      "enlace": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNVmZTRUo1dzNOQklXZS0wUEhvSTR0aHhfMnVUMHJzQXBHZ1dsZXZabml3MlRzOGdKbFZsUmVxcndpaUIwQzBTYU5jWGlFemZIczhvUmVPOHRpMkRLc1FyYk15N2RBd2xnQlhhQi1iNUNubS1PNXoyWjQtOWRoaThMTE1Wa01JWmoyUnR0a3NIRGlxVU0xZWZvT3VYZzZ5QndkZE1hRWdKOHJ1NXVISU50dHAzSWJQZjRGaDNZZjEwUDhZM0Q3SllUY05udVBBTFF0dUtoYlFzVkdmaTBwNUdGd0tPc05IbzJYNlFnZjZ0WDU?oc=5",
+      "fuente": "FB - Caguas",
+      "fecha": "2026-11-16 12:13",
+      "municipios": [
+        "Caguas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Caguas"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Parrandón Playero celebrará su décimo aniversario con homenaje al líder comunitario Milton Rivera",
@@ -502,23 +696,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "TENGO ESTÁS DOS CASAS, SEGUNDA Y PRIMERA PLANTAS DISPONIBLE PARA RENTA | Si deseas vivir tranquilo y cómodo te recomiendo esta casa, están ubicada en los Pinos ceiba de madera, para más información por favor de comunicar al WhatsA",
-      "enlace": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOYk1Ib3k4eHM1NmVtYldteUczTFVzSjVCVGJTY1ZkX1N4Wl8wTHpxRkZ4LUNFWTVHUFk5SmlvZkx6ZGFGS3NsQ0k2WUZHa1JwQ0c0aG05OF9ESVZMNjl4UzhkZ3VhLVZ3QUpaQ1JlTkg5MUwwUkYzVDZwYWlTYTF4bEVTYWJNcVRZMnJsYmdqT1FTb3VCRFlRajdQS1BWU0dxejVVVHhOeXJpZXlWTTVTb3RvWnRBYlpNZTRfZVRwek5MUUJvY3hSOFMwbDZJMnE2dVFfSFVGZlhWU3NuVm53Sm54cy1DSnRKQXQ1VA?oc=5",
-      "fuente": "FB - Ceiba",
-      "fecha": "2026-11-16 12:05",
-      "municipios": [
-        "Ceiba"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Ceiba"
-      ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -534,39 +712,7 @@
         "Walo Radio"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Residentes de Jardines de Oriente en Humacao denuncian infestación de cucarachas y condiciones de insalubridad",
-      "enlace": "https://waloradio.com/2026/11/16/residentes-de-jardines-de-oriente-en-humacao-denuncian-infestacion-de-cucarachas-y-condiciones-de-insalubridad/",
-      "fuente": "Walo Radio",
-      "fecha": "2026-11-16 11:41",
-      "municipios": [
-        "Humacao"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Walo Radio"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Hospital Pavia Caguas presenta avanzada tecnología para tratamientos de radioterapia contra el cáncer",
-      "enlace": "https://waloradio.com/2026/11/16/hospital-pavia-caguas-presenta-avanzada-tecnologia-para-tratamientos-de-radioterapia-contra-el-cancer/",
-      "fuente": "Walo Radio",
-      "fecha": "2026-11-16 11:33",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Walo Radio"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -583,23 +729,7 @@
         "WAPA TV"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "APRODEC denuncia intento de desalojo de Roosevelt Roads en Ceiba",
-      "enlace": "https://waloradio.com/2026/11/16/aprodec-denuncia-intento-de-desalojo-de-roosevelt-roads-en-ceiba/",
-      "fuente": "Walo Radio",
-      "fecha": "2026-11-16 11:08",
-      "municipios": [
-        "Ceiba"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Walo Radio"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -615,7 +745,7 @@
       "fuentes_origen": [
         "FB - Canóvanas"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
       "es_nueva": false
     },
@@ -631,7 +761,7 @@
       "fuentes_origen": [
         "FB - Canóvanas"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
       "es_nueva": false
     },
@@ -648,7 +778,7 @@
         "FB - Humacao"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -663,8 +793,8 @@
       "fuentes_origen": [
         "FB - Ceiba"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -695,43 +825,27 @@
       "fuentes_origen": [
         "NotiCentro WAPA"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Avanzan las campeonas 🔥 Revive la victoria del Colegio Notre Dame de Caguas sobre Shaddai Christian de Dorado para avanzar al Sweet 16 de #LaCopaBB. Presenta @ctpuertorico",
-      "enlace": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPX2E2OXhvdGt3eXk0UmgtdEh1bFliSWw0a1RnRHU3NW1rRFVGblRNV3pjSWlTdXZGZnByUlp5Q0RHLU1WbU5SQkYxbnlOaUVlWXlZeVk4ZGVvSUN5bmpwRkFYNVB6UG0tZE5jckxhR2Q5Z3RVRGtFTGl1ZHIwTGlKVkJvd0RXTHV1bzhMazVvNlM4c1VMSnQwOFFhRlZSMUVpY0NqY09FaXd4YUtWMUJ4cW95LWFvMFdhYXQ1b1hZWk9hZEtjYkNwNlJGdFVON0R4M0l0eDdYMGFhUlJm?oc=5",
-      "fuente": "FB - Caguas",
-      "fecha": "2026-11-16 10:41",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Caguas"
-      ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
       "titular": "🦈 EL TIBURÓN PROTEGE A GENERA Y NEW FORTRESS. 🏛️ La Cámara aprobó por unanimidad una medida para cancelar el contrato de gas natural de New Fortress y quitarle la exclusividad de los muelles en la bahía de San Juan.[ ](https://wapa.tv/progr",
       "enlace": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQVHFUUkZZV0RyY2RtRTVZODFSWTNVLXdVUHdHWGhzWEZNUS0wVWM5Y3g0OV8tR1piLUU3NkpGb2Y1ZWphVjdQUXc1Nl9VWGpRZ2R3NThYZTlDY0RhRGhVUzVQTkZteVNzdXZVVzRjUVdyVVhaSU9kNFI2TzQtcWRCZHBSQ0dyQTJMNzJZZkdpSWR0YWsyR1g4eUh1UnR1LUU1T1pFa1Vsb3BjaWV5T1dQU2ZQdnF5WU5YcFV3dVJrVkFXS2hEMEdCNE95ZjFKUzFRNDJFbW1LOWNHblp1WlJvMDN4TnZHZFZNLU9DRFlZUjl1VkpnZjRFLQ?oc=5",
-      "fuente": "Gobierno PR",
+      "fuente": "Jay Fonseca",
       "fecha": "2026-11-16 10:12",
       "municipios": [
         "San Juan"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
+        "Jay Fonseca",
         "Gobierno PR",
-        "Senado PR",
-        "Jay Fonseca"
+        "Senado PR"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": false
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Las candidatas de Miss Universe vivieron momentos de tensión durante un desfile en la playa en Puerto Rico. Irasema nos cuenta desde San Juan qué ocurrió durante el evento y por qué el desfile está dando tanto de qué hablar.",
@@ -745,7 +859,7 @@
       "fuentes_origen": [
         "Gobierno PR"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
       "es_nueva": false
     },
@@ -761,7 +875,7 @@
       "fuentes_origen": [
         "FB - Canóvanas"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
       "es_nueva": false
     },
@@ -778,7 +892,7 @@
         "Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -794,24 +908,7 @@
         "FB - Fajardo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "⚾⭐ Los Cangrejeros blanquearon a Caguas, los Indios remontaron ante Carolina y los Leones extendieron a cuatro su racha de triunfos.",
-      "enlace": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQejRqMjBDeTVIbXZxTnFsU2RfMVFJdFJfUkEySVhEcDlWOGlLTmdGQUVjYW5Fd0ZqcTVEZjF5Zk1LZl9yUDI2TjNnUnFTTm1KZEcxOTMzMGdMWl9aUXF6TTMyU2tzOVBabUo4MW50cnl1NE9NeFRNa2M2dXhqcWdVR1lhQlBHY05qYVBKTEtWeUxwUlFlSmN2ZkF1eDhfdTVMY2c3LW1xM2NoMlFkc0ozT0FxeWg1UWxmSVR3Wk9sYU1LeEZzQi1lQTJsVG84akVaR0xJ?oc=5",
-      "fuente": "FB - Caguas",
-      "fecha": "2026-11-16 09:05",
-      "municipios": [
-        "Carolina",
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Caguas"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -828,7 +925,7 @@
         "FB - Luquillo",
         "FB - Humacao"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
       "es_nueva": false
     },
@@ -860,8 +957,8 @@
       "fuentes_origen": [
         "En Contacto 787"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -877,7 +974,7 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -893,7 +990,7 @@
         "Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -909,7 +1006,7 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -925,24 +1022,8 @@
         "FB - Loíza",
         "FB - Vieques"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "🚨 #Atención | Sujetos 4rmados ingresaron a la vivienda de menør de edad y lo 4sesinarøn, en Pitalito Huila Como Willinton Alejandro Fajardo Angulo fue identificado el adolescent3 4sesinadø, cuando se encontraba en su vivienda, en hechos presentados la",
-      "enlace": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNUlpZaHgzVlJjNUl6Xzl5SktBRU9iSEVBeHZXQzJPalU4LXlKT241LUJ3TzJiSnFVQXdmLWhOb2cyM1JNUDVWakM1bUtYb0xDeHpqcWR4QS1TQUJGRkluaU5YRlpXcm9YbThrQUdzYTlzLUJpcW9Ocl94X1N0SmttTW04RkhOMDNpS1BoNjNLYmVRV3lWNlFLc1IzbGszZ3JyYml1Z1hfR2c5WWxGbTRDblU0M1l2Z2RPWjJkTjl4LXR0V2hvd1JZZnVSWEFUd2NtTUtta0VlWGc1TWJNci1RTDJabDZ2clpDTkdhUUFIcWM0R1U?oc=5",
-      "fuente": "FB - Fajardo",
-      "fecha": "2026-11-16 08:12",
-      "municipios": [
-        "Fajardo"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Fajardo"
-      ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -958,7 +1039,7 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -973,8 +1054,8 @@
       "fuentes_origen": [
         "FB - Ceiba"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -990,8 +1071,8 @@
         "Naguabo",
         "WAPA TV"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1007,40 +1088,8 @@
         "FB - Culebra"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
-    },
-    {
-      "titular": "Identifican a motorista de gravedad que se accidentó en Naguabo",
-      "enlace": "https://waloradio.com/2026/11/16/identifican-a-motorista-de-gravedad-que-se-accidento-en-naguabo/",
-      "fuente": "Walo Radio",
-      "fecha": "2026-11-16 07:51",
-      "municipios": [
-        "Naguabo"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Walo Radio"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": true
-    },
-    {
-      "titular": "Ladrones roban joyas, relojes Cartier y Ulysse Nardin en Caguas",
-      "enlace": "https://waloradio.com/2026/11/16/ladrones-roban-joyas-y-relojes-cartier-ulysse-nardin-en-caguas/",
-      "fuente": "Walo Radio",
-      "fecha": "2026-11-16 07:50",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Walo Radio"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": true
     },
     {
       "titular": "[NAGUABO] Motociclista de 22 años queda en condición de cuidado tras chocar contra muro de concreto La Policía informó que el joven conducía a exceso de velocidad y sin el equipo de protección requerido cuando perdió el control de la motora. Redacció",
@@ -1071,7 +1120,7 @@
         "Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1086,8 +1135,8 @@
       "fuentes_origen": [
         "NotiCentro WAPA"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1103,7 +1152,7 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1118,8 +1167,8 @@
       "fuentes_origen": [
         "Naguabo"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1135,7 +1184,7 @@
         "Radio Isla"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1151,24 +1200,24 @@
         "FB - Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
       "titular": "Joven de 22 años pierde el control de su motora y se estrella contra muro en Naguabo",
       "enlace": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNVXZ4cE1iVUxwVEJNY2VQY1FxLXJuTkxPX2FMaEVhYXRPbV8tN1hiQmNfTjVKMEVEWDZDUnlZN09RUEZpLXFNZnVPTUpwRGVJVHQ0LVdoUWczb082RU50bFg0NE1KZWN5UFNDNDlYdjlqUG00bU9ENWlobnl2emdMZVFjVDZoZ3RwVnRRZGRFdWx3Q19zNFBoRUZscFlMT1c3dXdUSXF2VEMybWNZWC1vNnJVQV9YSlk0NmlUemZGcTBVdmNOTmNkUnFySEdJY1F0a01zck5wX3FfTVEzRnN5NA?oc=5",
-      "fuente": "Primera Hora",
+      "fuente": "Naguabo",
       "fecha": "2026-11-16 06:34",
       "municipios": [
         "Naguabo"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "Primera Hora",
-        "Naguabo"
+        "Naguabo",
+        "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": true
     },
     {
@@ -1183,8 +1232,8 @@
       "fuentes_origen": [
         "NotiCentro WAPA"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1199,8 +1248,8 @@
       "fuentes_origen": [
         "NotiCentro WAPA"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1233,7 +1282,7 @@
         "El Nuevo Día (GN)"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1248,8 +1297,8 @@
       "fuentes_origen": [
         "El Vocero (GN)"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1265,25 +1314,25 @@
         "Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
       "titular": "Ocurrió en la PR-951 en Canóvanas.",
       "enlace": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcndpWFJfR3FBSjRiVWJ2N2NqZEZuWkVhLTJMRG1jcTFxdkVjbWw1blBsS1F4d01ieDhCNUluaXIxVDlQOVJvVmhBQXZ4N1k5dGRJdFVHTXBxQjhwbEJ1Nmc5T3ktVkpJNW9NMWxmOU9HTi1QVWRnWWZadGhkdlRBNy1lMzQ2bUlUekZra2w1MlZvdkpPOVZXUkNwcm03ejFBUU9pN0otcFp3RDA?oc=5",
-      "fuente": "FB - Canóvanas",
+      "fuente": "Telenoticias",
       "fecha": "2026-11-16 05:57",
       "municipios": [
         "Canóvanas"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Canóvanas",
-        "Telenoticias"
+        "Telenoticias",
+        "FB - Canóvanas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": false
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
     },
     {
       "titular": "¿Guerra entre gangas de Cataño y Guaynabo? Policía arresta a diez adultos tras allanamientos",
@@ -1298,23 +1347,7 @@
         "Cataño"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "Trujillo Alto 🚨🆘️🚨🆘️🚨 en los huesos 😢",
-      "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBveTctU2VtSkVTNkxya01mTlppSHNwSk9QbUVzR2c3LUdPcUNlZnlidl9UNFkxUUoycm1LV3Z5dHBJYlhJWnpOWWNCNnlaZkdsTVhjcjhpbHprNG9uc2czVGdPMV8yWkt5MmZPTXN3Q2tYV0hRZ1JnVHR4RQ?oc=5",
-      "fuente": "FB - Culebra",
-      "fecha": "2026-11-16 02:30",
-      "municipios": [
-        "Trujillo Alto"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Culebra"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1329,8 +1362,8 @@
       "fuentes_origen": [
         "En Contacto 787"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1346,7 +1379,7 @@
         "FB - Caguas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1378,24 +1411,24 @@
         "Canóvanas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
-      "titular": "Noticentro por WAPA. . Tras el incendio de una residencia en San Juan, donde murieron más de 50 gatos, surgió una disputa entre vecinos y rescatistas. Los residentes alegaron que habían acudido a los tribunales por la situación relacionada con los animal",
-      "enlace": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNWXNrbHZ0NlJaNW9Kbm1menVVdnhkUTNQQkNEYmRIOWMwdmxMODZKcGk1UVZ2LVdYUGpHYjhYczJmZkVGOFptTThSQWdaTVM0RlEwcjdNUTNqd1BBZTVJdUpJeGZPb2lwazVpdG1WblRHWGthT1ZxdjBxYk1keG1iMXJxNHlhXzJhMndtR3d1cEMteURlblJOTkFoeldsN1FDRk1vdlJ2RVdqZE1xQ2NHZEN1V2tCWnM2dHBiWkN3cVI5VExGdlVDWUNoaGgzRDRRVlBMWjROX0ZXM1VzcnoxVk4wZ1B2Zw?oc=5",
-      "fuente": "NotiCentro WAPA",
-      "fecha": "2026-11-15 20:11",
+      "titular": "Eres de Caguas Si ___________.",
+      "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1jMFlnalZfd1dDUG1ZajFXbmRvQ0VxYjY3Q0JCeEFKM1VxVmJCU1NQald2X0x5VWU3SkhVTlNNTGVSRjRaM2tQYUFMdzQxRzBYanBpelMzc1lUQmJHbk12Z0xqYnh1SEJnSzFmRG9sOU4wN3laLXA4WDFmUQ?oc=5",
+      "fuente": "FB - Caguas",
+      "fecha": "2026-11-15 21:30",
       "municipios": [
-        "San Juan"
+        "Caguas"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "NotiCentro WAPA"
+        "FB - Caguas"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
-      "es_nueva": false
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
     },
     {
       "titular": "🎶 “Bajo un palmar”, de Don Pedro Flores, compositor de Naguabo 🇵🇷 Así sonó durante la Retreta de la centenaria Banda Municipal de Ponce, fundada en 1883 por el maestro Juan Morel Campos. Son 143 años de cultura y tradición ponceña. Estas son de l",
@@ -1414,22 +1447,6 @@
       "es_nueva": false
     },
     {
-      "titular": "Mientras, esta noche las Gigantes de Carolina reciben a las Cangrejeras de Santurce en otro encuentro de la postemporada.",
-      "enlace": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOaTNmZ19YZ1dZT3JYRHluYUdWcDZoTEdFSzJ0amVZelc1T3VJSkdvUWZIVjU3OFJSdGJQaHp5Z3hFQS1FNUZiUUhkMFh0SXFaMWF4MlFQWnFOSWFTak1LcjM1Q1R0aW1IREFXRU5FUkFoYXJGNkpPOUZYOTRTaTNYckxpOXdtQ3pON2taOXJ5TzI1RDZTXzUyUzBkNWZpU2FyUzBpQms1VjVBZDZMZjYteTBCdlEwSUwxd0J6TDNqNWc5YURPcy1BT2p5QUtheHM2UWxJaHJVRjU?oc=5",
-      "fuente": "Telemundo FB",
-      "fecha": "2026-11-15 19:40",
-      "municipios": [
-        "Carolina"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "Telemundo FB"
-      ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
-      "es_nueva": false
-    },
-    {
       "titular": "Prieto & Asociados en Fajardo ⚖️ Lic Ricardo Prieto abogado criminalista y notario con amplia experiencia en: - Casos criminales, civiles, federales. - Familia - Daños y perjuicios - Notaria ☎️ 787-860-0875 (Oficina) ⌨️ oficina@prietolawoffice.c0m 📍 Calle",
       "enlace": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQYWIzVzcxNFRtcFVESzlSSHoya2VJT0NlTTlSalZER2M3SUpjMDdkT0E4dXhtSVpDT3NNZzBaYktCdkcybDRzYnZvZXJPVFhTdnZ5UW5ENVVXeGh3d0g4M3dTd0RhVFBtSjhfb3pWLWhyM2xuMmliLVN5bzhLbXRFMlRUeERSbEtDeXRBZTdVRjF3Z2NaeGx6N1pwbFBOU0NtSUI2cEVJT093UVhNblNLVFBueFFjUzlpSWlsVFUzWjZiN25QRVVfd3dFWjU0TkRrcGVDbTRjQmxTYnpOVElOeW1GUmt5bXN3?oc=5",
       "fuente": "En Contacto 787",
@@ -1441,8 +1458,8 @@
       "fuentes_origen": [
         "En Contacto 787"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1462,20 +1479,36 @@
       "es_nueva": false
     },
     {
-      "titular": "#Policiaca | Investigan incidente que dejó dos personas fallecidas y varios heridos en La Perla, San Juan. La Policía de Puerto Rico investiga los hechos reportados este domingo, 15 de noviembre, cerca de las 5:58 de la madrugada, en el área del negocio S",
-      "enlace": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNSVRLVS05SktYVmNMSEswcVFVelB0UG85OTFoUFZqRmpyRzI1TE5JS0tPTWdCMDdhZGVmbnpzZXZyMEE2T1JuV04xM0tnUGJlUHVEa3gxc0hJdURYMENnaGxWZUF6VWVYS3JmM1F2Zm1JcEEtOU1XeU5UTFF0SU8zMi15bXVBbU9uOExoUXB2SFZ1aEZhVF9Qdy1aUVBrR2Zha0FPaDNVYXMycHkyQmFYdV9fUERKWEtsOFQ3cXV0US1VRWg5U0FKOEozRUlQLUM2Tlo2UjNkVTNHZw?oc=5",
-      "fuente": "FB - Loíza",
-      "fecha": "2026-11-15 17:06",
+      "titular": "Cartelera del Mega Evento🔥IWA Lucha X Lucha🔥 🗓️ Sábado 21 Noviembre 2026 📍 Coliseo Roger Mendoza #Caguas 🕔 8PM 🎟️ Boletos a la venta en buyatix .com",
+      "enlace": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPSkY0Y05QV3Z1SEVPNkNMZm1lN3ZtQkRFWEpFZERIRU9ROTBsVklCVlpFUnQtOTJaV1UybnZfcW9lSDRoWG4wV1NRX0FETnJhUm5Ua0tTTkQwYUhBMEJGLUYwcEI5cnBOdElfR0FvdVZUZ2JWOHIxRU9Jd0JmdV82cGtrOExtcEo0NkdFN0dHUHFlRUtRal9NTUZjWEl6cjdxYjd2cWxfYlJsOGJiSkRuLWlyV1JVTFZEaWd3RGxyUHNCck1yZWZLVDRHb2ktV3lvZEZjN2IzcmNYUGxkcVU2WHB3VGY?oc=5",
+      "fuente": "FB - Caguas",
+      "fecha": "2026-11-15 18:47",
       "municipios": [
-        "San Juan"
+        "Caguas"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Loíza"
+        "FB - Caguas"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
-      "es_nueva": false
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
+    },
+    {
+      "titular": "🇵🇷✨ ¿DÓNDE ESTÁN LOS DE CAGUAS? ✨🇵🇷 ¡El Reloj Floral de la Plaza Palmer dice PRESENTE! ❤️ Desde 1966 marcando el tiempo de nuestro pueblo, con los rostros de 12 cagueños ilustres y el poema \"Caguas en mi Corazón\". 🕰️ ¡La Ciudad Criolla",
+      "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTE96alFyRTVNbERkQ09TRXl2YWVFT2FMdW5aaGRUMnoyLTMyNDFuYkd4dGt5TkxiNTM0MDJVMjJTazE0LWxSd3RlVzNzSW9vMzloYWowWWd4aUZ5UVpMRjB4ZEJsTDZMUEF2SWtvdXotdDI0TDdJUl8welZHdw?oc=5",
+      "fuente": "FB - Caguas",
+      "fecha": "2026-11-15 16:55",
+      "municipios": [
+        "Caguas"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Caguas"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": true
     },
     {
       "titular": "Récord de calor en San Juan por sexto día consecutivo",
@@ -1489,8 +1522,24 @@
       "fuentes_origen": [
         "Primera Hora"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "es_nueva": false
+    },
+    {
+      "titular": "#Policiaca | Investigan incidente que dejó dos personas fallecidas y varios heridos en La Perla, San Juan. La Policía de Puerto Rico investiga los hechos reportados este domingo, 15 de noviembre, cerca de las 5:58 de la madrugada, en el área del negocio S",
+      "enlace": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNSVRLVS05SktYVmNMSEswcVFVelB0UG85OTFoUFZqRmpyRzI1TE5JS0tPTWdCMDdhZGVmbnpzZXZyMEE2T1JuV04xM0tnUGJlUHVEa3gxc0hJdURYMENnaGxWZUF6VWVYS3JmM1F2Zm1JcEEtOU1XeU5UTFF0SU8zMi15bXVBbU9uOExoUXB2SFZ1aEZhVF9Qdy1aUVBrR2Zha0FPaDNVYXMycHkyQmFYdV9fUERKWEtsOFQ3cXV0US1VRWg5U0FKOEozRUlQLUM2Tlo2UjNkVTNHZw?oc=5",
+      "fuente": "FB - Loíza",
+      "fecha": "2026-11-15 15:20",
+      "municipios": [
+        "San Juan"
+      ],
+      "tipo": "RSS",
+      "fuentes_origen": [
+        "FB - Loíza"
+      ],
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1506,7 +1555,7 @@
         "Fajardo"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1523,8 +1572,8 @@
         "FB - Vieques"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": true
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
+      "es_nueva": false
     },
     {
       "titular": "Cancelan 27 vuelos y otros cuatro sufren retrasos en el aeropuerto Luis Muñoz Marín",
@@ -1555,23 +1604,7 @@
         "Canóvanas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
-      "es_nueva": false
-    },
-    {
-      "titular": "🎶 DOMINGOS INOLVIDABLES presenta a RAMITO Era Florencio Morales Ramos, nacido el 5 de septiembre de 1915 en Bairoa, Caguas. El mundo lo conoció como Ramito, «El Cantor de la Montaña». La décima la aprendió de niño, en su casa: su mamá Le",
-      "enlace": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVjRZUzhUOEpwR3Bubkg3RGJUTDBBalgySmtBdDN2eXpPMEs3aHZ5OEQyd29RV1lyeUtSOUJDRk9NXzZWdERwUEFaaEttcHJveE9WMFllWUd2dUx5bWJabHpGOEU5WkZORlVmZElYb3JZRE9Cd0NpSGRneU1pNVpXbm12Umt5ZWswUlZlaHZ4Yk8wR2hXNHYxVEs0a0wyb3FoWXJ4dGlfSVNZQTlJZVdiU053a2YtM2hSaW9mdUptZ1pLVHZiN2dNMWF3ZnNmc2x3RUU5d01mU1pnYkpkVkxpaTU3ajU?oc=5",
-      "fuente": "FB - Caguas",
-      "fecha": "2026-11-15 10:05",
-      "municipios": [
-        "Caguas"
-      ],
-      "tipo": "RSS",
-      "fuentes_origen": [
-        "FB - Caguas"
-      ],
-      "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1586,7 +1619,7 @@
       "fuentes_origen": [
         "Primera Hora"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
       "es_nueva": false
     },
@@ -1603,7 +1636,7 @@
         "Canóvanas"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1636,7 +1669,7 @@
         "Primera Hora"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     },
     {
@@ -1651,25 +1684,25 @@
       "fuentes_origen": [
         "FB - Luquillo"
       ],
-      "conservada": false,
+      "conservada": true,
       "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
       "es_nueva": false
     },
     {
       "titular": "Tíratepr. . Desde #ceiba par salir a Culebrita❤️🎄❤️ Pure Adventure",
       "enlace": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOTTlZdmk3MEFCOWlTelNHb3luOF8zMS1iUlAtampQUVIyLXlVTHRhZmRCSjdpNGRKNnJMWEg5eXprNzQzc3JBUmRIV2hGNGR5dnRtdi15VDkwWlNiNlBKOUJzYXBOeGxWUHZOSTIxWlctbjVCWTU4UUNocjlfYzdnOTVFTVVWRDBVWFRSNnVfWVJISTM0UUdxdGRCbHlaMHpVT0xDSXptdjlsbEFoU0RkMGpOcW0xMWYtWm5DRE9WTWRaNjQ?oc=5",
-      "fuente": "FB - Culebra",
+      "fuente": "FB - Ceiba",
       "fecha": "2026-11-15 07:52",
       "municipios": [
         "Ceiba"
       ],
       "tipo": "RSS",
       "fuentes_origen": [
-        "FB - Culebra",
-        "FB - Ceiba"
+        "FB - Ceiba",
+        "FB - Culebra"
       ],
       "conservada": false,
-      "ultima_verificacion": "2026-11-16T16:41:26.560975-04:00",
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": true
     },
     {
@@ -1684,8 +1717,8 @@
       "fuentes_origen": [
         "El Vocero (GN)"
       ],
-      "conservada": true,
-      "ultima_verificacion": "2026-11-16T15:24:50.138423-04:00",
+      "conservada": false,
+      "ultima_verificacion": "2026-11-16T20:32:41.474630-04:00",
       "es_nueva": false
     }
   ]
