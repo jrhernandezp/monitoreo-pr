@@ -801,21 +801,21 @@ tr.article-row:hover { background: var(--surface2); }
         <img src="logo-observador.jpg" alt="Observador" class="header-logo">
         <div>
             <h1>🗺️ Observador del Noreste</h1>
-            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-11-18 11:14:26 PM</span></div>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-11-19 12:29:15 AM</span></div>
         </div>
     </div>
     <div class="stats">
-        <div class="stat-box"><div class="num">120</div><div class="label">Noticias</div></div>
-        <div class="stat-box"><div class="num" style="color:#ff4757">33</div><div class="label">Nuevas</div></div>
-        <div class="stat-box"><div class="num">14</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num">99</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">14</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">12</div><div class="label">Municipios</div></div>
         <div class="stat-box"><div class="num" style="font-size:14px">58/62</div><div class="label">Fuentes OK</div></div>
-        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-11-18 11:14:26 PM</div><div class="label">Última recolección</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-11-19 12:29:15 AM</div><div class="label">Última recolección</div></div>
     </div>
 </div>
 
 <!-- SEARCH -->
-<div id="freshnessNotice" class="freshness" role="status" aria-live="polite" data-collected-at="2026-11-18T23:14:26.602478-04:00">
-    <strong id="freshnessText">Última recolección exitosa: 2026-11-18 11:14:26 PM (hora de Puerto Rico).</strong>
+<div id="freshnessNotice" class="freshness" role="status" aria-live="polite" data-collected-at="2026-11-19T00:29:15.701993-04:00">
+    <strong id="freshnessText">Última recolección exitosa: 2026-11-19 12:29:15 AM (hora de Puerto Rico).</strong>
     <p>Una recarga de la página no implica una nueva recolección. Aviso desde los 30 minutos; alerta desde los 45.</p>
     <p>6 noticias conservadas por fallos de fuentes; mantienen su fecha de publicación y última verificación.</p>
 </div>
@@ -835,7 +835,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <button type="button" class="muni-card " data-municipio="San Juan">
             <span class="muni-name">San Juan</span>
-            <span class="muni-count">23</span>
+            <span class="muni-count">22</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Carolina">
@@ -843,9 +843,9 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">11</span>
         </button>
         
-        <button type="button" class="muni-card " data-municipio="Trujillo Alto">
+        <button type="button" class="muni-card inactive" data-municipio="Trujillo Alto">
             <span class="muni-name">Trujillo Alto</span>
-            <span class="muni-count">2</span>
+            <span class="muni-count">0</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Caguas">
@@ -853,24 +853,24 @@ tr.article-row:hover { background: var(--surface2); }
             <span class="muni-count">22</span>
         </button>
         
-        <button type="button" class="muni-card " data-municipio="Luquillo">
+        <button type="button" class="muni-card inactive" data-municipio="Luquillo">
             <span class="muni-name">Luquillo</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">0</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Canóvanas">
             <span class="muni-name">Canóvanas</span>
-            <span class="muni-count">5</span>
+            <span class="muni-count">3</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Fajardo">
             <span class="muni-name">Fajardo</span>
-            <span class="muni-count">10</span>
+            <span class="muni-count">9</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Loíza">
             <span class="muni-name">Loíza</span>
-            <span class="muni-count">13</span>
+            <span class="muni-count">9</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Río Grande">
@@ -880,7 +880,7 @@ tr.article-row:hover { background: var(--surface2); }
         
         <button type="button" class="muni-card " data-municipio="Ceiba">
             <span class="muni-name">Ceiba</span>
-            <span class="muni-count">10</span>
+            <span class="muni-count">9</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Naguabo">
@@ -890,12 +890,12 @@ tr.article-row:hover { background: var(--surface2); }
         
         <button type="button" class="muni-card " data-municipio="Humacao">
             <span class="muni-name">Humacao</span>
-            <span class="muni-count">14</span>
+            <span class="muni-count">8</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Cataño">
             <span class="muni-name">Cataño</span>
-            <span class="muni-count">3</span>
+            <span class="muni-count">2</span>
         </button>
         
         <button type="button" class="muni-card " data-municipio="Vieques">
@@ -933,86 +933,138 @@ tr.article-row:hover { background: var(--surface2); }
             <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
             <tbody id="articlesBody">
                 
-                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Se irá la luz hasta 20 horas; 25 municipios en lista">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://nelpr.com/2026/11/18/se-ira-la-luz-hasta-20-horas-25-municipios-en-lista/" target="_blank" rel="noopener noreferrer">Se irá la luz hasta 20 horas; 25 municipios en lista</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-11-18T23:37:00-04:00">hace 52min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina,Caguas" data-titular="Leones truenan los bates y Mayagüez continúa en picada en el béisbol invernal">
+                    <td><span class="muni-tag">Carolina</span><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://www.elnuevodia.com/deportes/beisbol/notas/leones-truenan-los-bates-y-mayaguez-continua-en-picada-en-el-beisbol-invernal/" target="_blank" rel="noopener noreferrer">Leones truenan los bates y Mayagüez continúa en picada en el béisbol invernal</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-11-18T23:30:00-04:00">hace 59min</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Ceiba" data-titular="Líderes comunitarios denuncian la falta de transparencia y participación ciudadana tras la aprobación del contrato que establece la rehabilitación del muelle Mosquito y desarrollo de la ruta corta entre la Isla Nena y Ceiba.">
+                    <td><span class="muni-tag">Ceiba</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxNVEhJaE5pUDg2emdEZWJDZVZUOWlaTDNkSXFhWHBReHB2NEZJWWZfNTJvZ0FDMnB3RWdZTG1YTUJKTHg5eUdhZzJtWkJVZVBpSmRTNllMSGZwRDduamphNDUyMEFuLUljaTE2ZllILUcta3hxUG5XaFVfcDFjb0I0dVlqVVlpZFRMczNXbFZpLXU5Z2RrUjZCTVU1WGJMSkpFRmFsMDVjZjQ5UEVHUzdnb2lLa3hCcUdacVFEMGUwQnlId0YyMndDcHJEOEs3a1h3NUpmNEU5eENuY2xGZjRCMjB3Z3pKWGlKbXc?oc=5" target="_blank" rel="noopener noreferrer">Líderes comunitarios denuncian la falta de transparencia y participación ciudadana tras la aprobación del contrato que establece la rehabilitación del muelle Mosquito y desarrollo de la ruta corta entre la Isla Nena y Ceiba.</a>
+                    </td>
+                    <td>FB - Fajardo</td>
+                    <td class="time-ago" data-date="2026-11-18T23:21:00-04:00">hace 1h</td>
+                </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="¿Inversión o gasto? Millones en fondos municipales sostienen parte del espectáculo del BSN">
                     <td><span class="muni-tag">Fajardo</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://www.elnuevodia.com/deportes/baloncesto/notas/inversion-o-gasto-millones-en-fondos-municipales-sostienen-parte-del-espectaculo-del-bsn/" target="_blank" rel="noopener noreferrer">¿Inversión o gasto? Millones en fondos municipales sostienen parte del espectáculo del BSN</a>
                     </td>
                     <td>El Nuevo Día</td>
-                    <td class="time-ago" data-date="2026-11-18T23:10:00-04:00">hace 4min</td>
+                    <td class="time-ago" data-date="2026-11-18T23:10:00-04:00">hace 1h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="[SAN JUAN] Justicia investiga formalmente al senador Héctor Joaquín Sánchez por presunta salida de estudiantes a actividad política El Departamento de Justicia inició una investigación preliminar formal contra el senador del Partido Nuevo Progresista (PN">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxOa2Z2cmpDY3Z5cXk5enpXVWloYkFqU1lKVENGS3FSNDF2QVdPZXlNdXBtS3gwT3VIbkVuNDg5dzFDelRTNm1LcjdaX1J6U1lIR1VzNjVGTkxUaDJyTzVBMnNSSUVncTZXWHVNazVKY1o5amtqc0hiVS12Mnl0VUtRWjRQc3Frc0Y4dEZyOXJEUFhLcW9IOE5fSXNWdU5oOW5xUXMzOHN1dmZjUV9FSUh2Z2xxSUZVSnFzbWw5SVM4X0FTMU9teXV2SzZqemVTd1RoZmlVUjllYWVLeDIyM09GaEh3QWlUcU5PanNB?oc=5" target="_blank" rel="noopener noreferrer">[SAN JUAN] Justicia investiga formalmente al senador Héctor Joaquín Sánchez por presunta salida de estudiantes a actividad política El Departamento de Justicia inició una investigación preliminar formal contra el senador del Partido Nuevo Progresista (PN</a>
+                    </td>
+                    <td>FB - Vieques</td>
+                    <td class="time-ago" data-date="2026-11-18T22:42:00-04:00">hace 1h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="¡CAGUAS SPORTING ES EQUIPO DE PLAYOFFS! 👏 Los de Caguas sellan su clasificación y se meten entre los cuatro mejores del Apertura 2026. #LPRPRO">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxPWHRIdmxBbG9GZVJ4QTFqTGFFUWViYk1BUjFSc1ZjcVByTUc0ZkdYVXRNMDlpblF3eVNBcnNpLUhxaWFVWHdZQ3FXVjJaYzRJUG1Qd3hPR2tkWVhIT1czNFUzcEN0WUR2Zmc2eFozRXpiTE1qR2xlcUZ6M2pKdk1iRUt4eE1OWXBsTkJiNUZUbVdMUHhGUFdKeGZGUnpvNTZyem5VWlhIOUZqcnNfcUtBSzFOSVFjRHgteXpzOFgxMlB4Q3BLemE4OTZmYXl0MWVLWGk4eld5dXdHSGJEdGZjMHVrYw?oc=5" target="_blank" rel="noopener noreferrer">¡CAGUAS SPORTING ES EQUIPO DE PLAYOFFS! 👏 Los de Caguas sellan su clasificación y se meten entre los cuatro mejores del Apertura 2026. #LPRPRO</a>
                     </td>
                     <td>Moluscotv</td>
-                    <td class="time-ago" data-date="2026-11-18T22:38:00-04:00">hace 36min</td>
+                    <td class="time-ago" data-date="2026-11-18T22:38:00-04:00">hace 1h</td>
                 </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Hijo es acusado de realizar compras con la cuenta de su padre sin autorización">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://nelpr.com/2026/11/18/hijo-es-acusado-de-realizar-compras-con-la-cuenta-de-su-padre-sin-autorizacion/" target="_blank" rel="noopener noreferrer">Hijo es acusado de realizar compras con la cuenta de su padre sin autorización</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-11-18T20:44:00-04:00">hace 2h</td>
+                    <td class="time-ago" data-date="2026-11-18T20:44:00-04:00">hace 3h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="#FuerzaDeportiva | El conjunto manatieño tomó ventaja de 2-0 en la serie semifinal tras derrotar a las Criollas de Caguas en el Coliseo Roger Mendoza.">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxPRWRSUGFxby1YY25xWkEtTGxwOE1hdnAwc3JVQjY0ZVFrbFZhUTNZa1d3ZktKVG1sbzdFQjBqbFN2b0ZUajBZRXVQX3ViLThfc0FQWHhJd0oyWU9UXzZNZmtCQUlpMFdqOUFQZmQyMXBDTVJJNi1jN0loMWdwbXdpSUpMT3FLLWcxeVp1Z21iTUVndjVQVHpOU0ZLQWdBc3kxTmllZ3ItVzh4bTlsX00zTVUtckJrOHdnU05zOTBKVHE3eG04YUIwTHZuejB4WUJCc2NOYVFMYUtubjJFR202YV9pdlg?oc=5" target="_blank" rel="noopener noreferrer">#FuerzaDeportiva | El conjunto manatieño tomó ventaja de 2-0 en la serie semifinal tras derrotar a las Criollas de Caguas en el Coliseo Roger Mendoza.</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-11-18T20:17:00-04:00">hace 2h</td>
+                    <td class="time-ago" data-date="2026-11-18T20:17:00-04:00">hace 4h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo,Humacao" data-titular="Senador Colón La Santa anuncia aprobación de $200,000 para Naguabo y exhorta a Alcaldesa a priorizar necesidades de las comunidades El senador por el Distrito de Humacao, Luis Daniel Colón La Santa, anunció que la Asamblea Legislativa aprobó un">
                     <td><span class="muni-tag">Naguabo</span><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxOLTZ0TXVWWTlhWlR2bmRKNXQya1hfdGJDaXcyZm9QdnFnaU1kQkgtLXJ4ZFNFaHF0ZDZNWW02Vjc4ZnVsRHU0MjE5X3JZY1NMNUpiZDJWS3Z1MGVtTGs0TnhMamZGbTJMZ0xXNFVFTGFQOEt2ck5FSXBZOEQ3aHk2LTY3OFlEcXA1SGdjZ3Q3QlROeWxyMFd4LU8yTFRmVGpXSHhoZGJibVBUUkk5b2ViWEZKckVSd243Y3VYR0pSWkQzRFBKZ3QybjBJZVJkR19aMjdmaHhSS25qbjNBR1VDWDdxOVBOdVk?oc=5" target="_blank" rel="noopener noreferrer">Senador Colón La Santa anuncia aprobación de $200,000 para Naguabo y exhorta a Alcaldesa a priorizar necesidades de las comunidades El senador por el Distrito de Humacao, Luis Daniel Colón La Santa, anunció que la Asamblea Legislativa aprobó un</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-11-18T19:47:00-04:00">hace 3h</td>
+                    <td class="time-ago" data-date="2026-11-18T19:47:00-04:00">hace 4h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Entregan alimentos, ropa y kits de higiene a personas sin hogar">
                     <td><span class="muni-tag">San Juan</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://nelpr.com/2026/11/18/entregan-alimentos-ropa-y-kits-de-higiene-a-personas-sin-hogar/" target="_blank" rel="noopener noreferrer">Entregan alimentos, ropa y kits de higiene a personas sin hogar</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-11-18T19:36:00-04:00">hace 3h</td>
+                    <td class="time-ago" data-date="2026-11-18T19:36:00-04:00">hace 4h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Presentan cargos por asesinato en primer grado contra hombre sospechoso de matar a una mujer en San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxPaHl2Z1ZWQ0t6Mlk0UnZjd05OOHlDa3Q3U1FtRjJOQk00Z3ItUHgzdTIyc0w2YlZGYzV0UUxIRld1M3E3Y2pxcF92ZGFNc200a3NlTjQxSHhOY3BrN0c0OVdEbnNEdW01UldYWVBxRm5wa28tQml3LUhSdnl1RHpJVzlKVTVyclkxelU5Q3hPMGRTUDZTS2diU0haLW1uWHh4QTQ2ZjdEbkkydklrYW5xM1VhRjFBWjM5T3VNOXF1NWhEZTZzWi1hQmh3bWZZOTVDeWdVS05JZFNrTWs5VUxJVWMxX2VHRHM0WkNHZjc1VVpaNEZodGROcVBCaw?oc=5" target="_blank" rel="noopener noreferrer">Presentan cargos por asesinato en primer grado contra hombre sospechoso de matar a una mujer en San Juan</a>
+                    </td>
+                    <td>Primera Hora</td>
+                    <td class="time-ago" data-date="2026-11-18T19:08:00-04:00">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="Eladio Carrion anuncia segunda edición del Sauce Boyz Country Club Golf Tournament en Río Grande">
                     <td><span class="muni-tag">Río Grande</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi8AFBVV95cUxNRUNXVlkyWGpWbmwyd2I4THJjRjVyaDZuemFWTEt5UHdmVXduYTBtaE9lTUFsaTVwWE1PMTZJN2RpYTJNX3RoT2VuVWRtS1BwZERRNC1OYm9BVmFWZV9lTXhWQVhualM1YXNiZnRydGxuSVhOWHRRbGNDcXlyX2xxRTl0eWRvY2JfdnZ3aElFMDkyS2ZGWlJsY3lKSXB4ckxrdkdhRkswY19qd1BXdFhBeDQ0UF9ha25ERGxJRE41RzZzc2xfT3k3ZWhtYXY1WTB6YTBXV0gyMXRoQkVkajA5UGc3VWxIM2VJNm1IQmUtX2Y?oc=5" target="_blank" rel="noopener noreferrer">Eladio Carrion anuncia segunda edición del Sauce Boyz Country Club Golf Tournament en Río Grande</a>
                     </td>
                     <td>FB - Río Grande</td>
-                    <td class="time-ago" data-date="2026-11-18T19:03:00-04:00">hace 4h</td>
+                    <td class="time-ago" data-date="2026-11-18T19:03:00-04:00">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="El jardinero novato de los Criollos de Caguas deslumbra en su debut con dos cuadrangulares y lidera la liga con promedio de .500.">
@@ -1023,7 +1075,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQWV9QN0lCaTVYY2ZnOFJJb2c5eEQwMkJORlV6R18ycFppTE1WMHlLbjVlcVB2aEtPQjYzZkNxSUtzdUhCVVBEMExpSm5XT3l4MXlpTmJmVEV3VWJnd1lTQTl6bGNDNWExMGRCUnRXTWNXa0VLaWZzWkpCcHdpaUJHU1pBNTdGbXR5bkZGazZJV0xVWFZsaWpieVhFYVVjY2NyYVJYeUdxTTlkd1FmWDBlZzZJVEx3Q0RPX1Fac1JBTkZuc08xVzhiX1phOU9FU1VXN0hBVlZ1bjA?oc=5" target="_blank" rel="noopener noreferrer">El jardinero novato de los Criollos de Caguas deslumbra en su debut con dos cuadrangulares y lidera la liga con promedio de .500.</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-11-18T19:00:00-04:00">hace 4h</td>
+                    <td class="time-ago" data-date="2026-11-18T19:00:00-04:00">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="⛴️ Ombudsman aborda el acuerdo para mejorar el muelle Mosquito en Vieques El Gobierno de Puerto Rico y el Municipio de Vieques anunciaron recientemente un acuerdo relacionado con mejoras al muelle Mosquito. 🎙️ En “Somos tu voz”, José “Joito” P">
@@ -1034,18 +1086,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxQNTdCaU5pamJJcG04UzNYcWVUMjRBa3p5NV9pNm5CR3VqY0owR2VqTEExNDhOVTBGOFhQenA0X2lMNllMUTQwWWFrQV91NHdYSk9pUm83T0gxZ3p1NjI4TzRFUElSZmtmR3pDaTRhaEs5Skd2djMzT2xyOFpqeXZSTUpnejBRLUttOTZuNHZDQVBlbnFmUnp1MVlZN2wtWTF1MERmOFNrZms2OVpVZnNNLVpOUnFCaTg4d3JDUXN1Nmd3bDAwckYwQ1N0RzdCSDJwRTlOMnYxRUZlbHB4d3pLYlp6UUpjZm8?oc=5" target="_blank" rel="noopener noreferrer">⛴️ Ombudsman aborda el acuerdo para mejorar el muelle Mosquito en Vieques El Gobierno de Puerto Rico y el Municipio de Vieques anunciaron recientemente un acuerdo relacionado con mejoras al muelle Mosquito. 🎙️ En “Somos tu voz”, José “Joito” P</a>
                     </td>
                     <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-11-18T18:58:00-04:00">hace 4h</td>
+                    <td class="time-ago" data-date="2026-11-18T18:58:00-04:00">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Hoy Fajardo y nuestra familia despiden a un gran ser humano, un querido amigo y un servidor público ejemplar. Don Hipólito «Polito» Robles Suárez dejó una huella imborrable como alcalde de nuestro pueblo (1976–1984) y representante de nuestro distrit">
                     <td><span class="muni-tag">Fajardo</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxNckJaMWJRb2tpamJGakg2RUFXOFBlWkMtZVA0UVZyUktKQlZ5a3MyaGNFVTZuRW4zMFpFSndXa0E2ZEdxdzdSMWpHQTRub0pROVNMZDkyak96M2NrSW5oRTAzTnBxTW1hWkhDUzRnVGJXNjVSM2ZxMl9SRTFiaHNwcDB6NEhJdWFBSGpMWmlVbFQzOVJVTy11bmVZcF9sa2tCZFg2VDRTWnA1X1VtX1g5M05ITVhDcVh6LTNhbFYydC03VWlIWmlqd1R3a1dvdXF5ZW1lTXJoWjExUmF1VGtLOV80bw?oc=5" target="_blank" rel="noopener noreferrer">Hoy Fajardo y nuestra familia despiden a un gran ser humano, un querido amigo y un servidor público ejemplar. Don Hipólito «Polito» Robles Suárez dejó una huella imborrable como alcalde de nuestro pueblo (1976–1984) y representante de nuestro distrit</a>
                     </td>
                     <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-11-18T18:51:00-04:00">hace 4h</td>
+                    <td class="time-ago" data-date="2026-11-18T18:51:00-04:00">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Contralora identifica pagos indebidos por más de 28,000 dólares en Educación">
@@ -1056,7 +1108,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/11/18/contralora-identifica-pagos-indebidos-por-mas-de-28000-dolares-en-educacion/" target="_blank" rel="noopener noreferrer">Contralora identifica pagos indebidos por más de 28,000 dólares en Educación</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-11-18T18:49:00-04:00">hace 4h</td>
+                    <td class="time-ago" data-date="2026-11-18T18:49:00-04:00">hace 5h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Confianza del consumidor cae a su nivel más bajo en cinco años en Puerto Rico">
@@ -1067,18 +1119,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://nelpr.com/2026/11/18/confianza-del-consumidor-cae-a-su-nivel-mas-bajo-en-cinco-anos-en-puerto-rico/" target="_blank" rel="noopener noreferrer">Confianza del consumidor cae a su nivel más bajo en cinco años en Puerto Rico</a>
                     </td>
                     <td>NELPR</td>
-                    <td class="time-ago" data-date="2026-11-18T18:23:00-04:00">hace 4h</td>
+                    <td class="time-ago" data-date="2026-11-18T18:23:00-04:00">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="LLEGAN LOS VOLKY&#39;S ILUMINADOS A CATAÑO!!!😍🎄🎅🏽👇🏽👇🏽👇🏽 Este Sábado 21 de Noviembre, en el estacionamiento del frente maritimo, al lado del residencial Matienzo Cintrón desde las 5:00pm. De una vez aprovechas y puedes ver la decoración nav">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE56THc1S1V5SnVxRE9pcm54aHpMeE1SRnBRY2xVejVKbm9kUUY4RjlLdE1VRWhEOVVXbVFHNHVybVhjc0x2ek94QTY4dUZqUng0OWMxcFNMbHNVb045Z3BsQUxaM2MwLUdrMFFtNnRwcXIta19PUk03MmdaMWc?oc=5" target="_blank" rel="noopener noreferrer">LLEGAN LOS VOLKY&#39;S ILUMINADOS A CATAÑO!!!😍🎄🎅🏽👇🏽👇🏽👇🏽 Este Sábado 21 de Noviembre, en el estacionamiento del frente maritimo, al lado del residencial Matienzo Cintrón desde las 5:00pm. De una vez aprovechas y puedes ver la decoración nav</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-11-18T18:00:00-04:00">hace 5h</td>
+                    <td class="time-ago" data-date="2026-11-18T18:00:00-04:00">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Un referido alega que trasladó, sin autorización de los padres y durante horas lectivas, a cuatro estudiantes de Loíza a una actividad del PNP en Camuy.">
@@ -1089,7 +1141,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxQS3pEWGJDUG03OC1sbjZ5RldPMkVQLXZZYXdXcjVmOU4taWtJSkd4NUtkZnpHLURLOU5XMXBUNG1fbFF6VTZhV29VTE9xOFFOSDgyYU5MUUpPTGI2SmFOVmlpcFNTNHF1MkZzYlVlWlB6Z29lQnRjR0VhQnlUSWhXTzc5RVE0SGhlajJVOGc5dm9IYklMajl1WklPWExWZmljdHJzcUNvYWNlS1BQRWFraHdyenlPVkNjWEowUVh3dEJUV1duY2dnVEoxamV3M1dHQi1PWlpsdDRFWmNGenl4blhqd3RQanY1V3c?oc=5" target="_blank" rel="noopener noreferrer">Un referido alega que trasladó, sin autorización de los padres y durante horas lectivas, a cuatro estudiantes de Loíza a una actividad del PNP en Camuy.</a>
                     </td>
                     <td>NotiCentro WAPA</td>
-                    <td class="time-ago" data-date="2026-11-18T17:55:00-04:00">hace 5h</td>
+                    <td class="time-ago" data-date="2026-11-18T17:55:00-04:00">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Coccoloba acude al tribunal para evitar pérdida de correos electrónicos vinculados a controversia en Familia">
@@ -1100,40 +1152,29 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://noticel.com/noticias/20261118/coccoloba-acude-al-tribunal-para-evitar-perdida-de-correos-electronicos-vinculados-a-controversia-en-familia/" target="_blank" rel="noopener noreferrer">Coccoloba acude al tribunal para evitar pérdida de correos electrónicos vinculados a controversia en Familia</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-11-18T17:50:00-04:00">hace 5h</td>
+                    <td class="time-ago" data-date="2026-11-18T17:50:00-04:00">hace 6h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Oscar A. Serrano Rivera, de 24 años, alcanzó un acuerdo con la Fiscalía de Caguas que conlleva una pena de ocho años y seis meses en prisión.">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxNVUd4U2R1azNBWWwtYzZ1WUpPakVueDJCVVAzMGZqdG1HUk54enBOU25jWmk0aWFFME96STBaMFcxYXM4MUd3TGFqdnYzTlp3WkFYSXN6Uzc3aGVIMk1OZy1QUFZGbUwzTURtRDl5QVAwaGM0SXlmWldZZnlwSjJXbkFzMmJWemd2NGlLSTVYcUJ0TG9NUDN3SVRKZl9oRGxEYzF4U19IRl90SlF1ZW5RVzU0cjE2YmVjV1JwcmZWOGtrNHBCNFh2Um9XX190VlJGSW84ZHlhcmM4aTJkbDNuZW9JNmRYV1RXV1A4?oc=5" target="_blank" rel="noopener noreferrer">Oscar A. Serrano Rivera, de 24 años, alcanzó un acuerdo con la Fiscalía de Caguas que conlleva una pena de ocho años y seis meses en prisión.</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-11-18T17:40:00-04:00">hace 5h</td>
+                    <td class="time-ago" data-date="2026-11-18T17:40:00-04:00">hace 6h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Caguas" data-titular="Esta organización operaba en cuatro residenciales de Aguas Buenas, Cayey, Cidra y Caguas.">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMUxCMzEwZVN4VWdVMEhQV25NSGpuMW1ZMmJDSHRhdG0xTlNLM0FPbHJMc0tBN1R3bld6REZwenRVQzZQTzhlYVNqckcwZzRoc0Y1RWhMVkVYVUNLTHFhdllFMWdGZUZ1eFNEM3YzbnRMeE1oSTBJalVuX3UyUDhWWWEwWlJJWGVmR2VRWUFKOVhacUZCNXd5ZlNmcXJ6U2lONWxsSjBsR09nMk1ZODlnWDVIQ2VaTWx6VXQ4b1Bua3psVTBIV1lqSEhMU3pxMldZdEFqRVVWeGdvOG5yX29KdUhPMA?oc=5" target="_blank" rel="noopener noreferrer">Esta organización operaba en cuatro residenciales de Aguas Buenas, Cayey, Cidra y Caguas.</a>
-                    </td>
-                    <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-11-18T17:26:00-04:00">hace 5h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="🚨 #OFICIAL David Pilger, nuevo Apoderado de los Cariduros de Fajardo, se encuentra en Puerto Rico, reunido con el Alcalde de Fajardo, Joey Meléndez. 📸 En las imágenes podemos observar a Pilger junto al primer ejecutivo municipal en el Coliseo Tomás">
+                <tr class="article-row" data-municipios="Fajardo" data-titular="🚨 #OFICIAL David Pilger, nuevo Apoderado de los Cariduros de Fajardo, se encuentra en Puerto Rico, reunido con el Alcalde de Fajardo, Joey Meléndez. 📸 En las imagen podemos observar a Pilger junto al primer ejecutivo municipal en el Coliseo Tomás D">
                     <td><span class="muni-tag">Fajardo</span></td>
                     <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
                         
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTjIyVFBIbTJvajFjZThmcWkxVHV4YkhRdFdDODRhVlRMaVJOUHdGLUxKXzRxQ3J1SFliZ2JxaXZwR3dSMkptQXRsUU1TRmdTcUZrc1QtTGhGTTBiUXFhWi1UVWk0UjZuVVd5RTE4ZDIxYVladUlGU29yRndwWjNVX0VLc2RTd05NOVR1T01rZW9ORHFyT0pKMC1JMGZwT2FGVW5sUUd0UXFUU25HUkJ6QU16el9xZUFWV3ljQ1dpY1ZlN0lyRk9JcjdpVDRJXzFuaW9XQzNKenk?oc=5" target="_blank" rel="noopener noreferrer">🚨 #OFICIAL David Pilger, nuevo Apoderado de los Cariduros de Fajardo, se encuentra en Puerto Rico, reunido con el Alcalde de Fajardo, Joey Meléndez. 📸 En las imágenes podemos observar a Pilger junto al primer ejecutivo municipal en el Coliseo Tomás</a>
+                        <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTjIyVFBIbTJvajFjZThmcWkxVHV4YkhRdFdDODRhVlRMaVJOUHdGLUxKXzRxQ3J1SFliZ2JxaXZwR3dSMkptQXRsUU1TRmdTcUZrc1QtTGhGTTBiUXFhWi1UVWk0UjZuVVd5RTE4ZDIxYVladUlGU29yRndwWjNVX0VLc2RTd05NOVR1T01rZW9ORHFyT0pKMC1JMGZwT2FGVW5sUUd0UXFUU25HUkJ6QU16el9xZUFWV3ljQ1dpY1ZlN0lyRk9JcjdpVDRJXzFuaW9XQzNKenk?oc=5" target="_blank" rel="noopener noreferrer">🚨 #OFICIAL David Pilger, nuevo Apoderado de los Cariduros de Fajardo, se encuentra en Puerto Rico, reunido con el Alcalde de Fajardo, Joey Meléndez. 📸 En las imagen podemos observar a Pilger junto al primer ejecutivo municipal en el Coliseo Tomás D</a>
                     </td>
                     <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-11-18T17:22:00-04:00">hace 5h</td>
+                    <td class="time-ago" data-date="2026-11-18T17:22:00-04:00">hace 7h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Prieto &amp; Asociados en Fajardo ⚖️ Lic Ricardo Prieto abogado criminalista y notario con amplia experiencia en: - Casos criminales, civiles, federales. - Familia - Daños y perjuicios - Notaria ☎️ 787-860-0875 (Oficina) ⌨️ oficina@prietolawoffice.c0m 📍 Calle">
@@ -1144,18 +1185,29 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxNSlZXa1BhZVpyMU5qZlhDR2d4cHpTYTByTjdnMUpJRnBBdnFBQUg1QkRJVDVEdWtLNTVOOUMzdU1zVlpEakZMRy1jbkVfRklsblBRSHI1Z2VxVDVXTGhKeGUyUnczM0J5dXdmQVgwcU1qSWhLMzM4dVhQcGo3RVlsQ3NHM1c4enRqcktENDlyVGJFTGlZWVhxMFFqcVVXU1Btc195aDFkVExyMjk2SGwyQmlHN29qYi1PNlRmM0RwYVc1REhnNUxEakVETG1SZFZwaGltU21QbGl6MWZMbEFzVmlyUGxnTGot?oc=5" target="_blank" rel="noopener noreferrer">Prieto &amp; Asociados en Fajardo ⚖️ Lic Ricardo Prieto abogado criminalista y notario con amplia experiencia en: - Casos criminales, civiles, federales. - Familia - Daños y perjuicios - Notaria ☎️ 787-860-0875 (Oficina) ⌨️ oficina@prietolawoffice.c0m 📍 Calle</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-11-18T17:09:00-04:00">hace 6h</td>
+                    <td class="time-ago" data-date="2026-11-18T17:09:00-04:00">hace 7h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Carolina" data-titular="Este jueves, 19 de noviembre a las 8:00 p.m. en el Coliseo Guillermo Angulo de Carolina.">
-                    <td><span class="muni-tag">Carolina</span></td>
+                <tr class="article-row" data-municipios="Caguas" data-titular="SE DECLARA CULPABLE CONDUCTOR QUE ATROPELLÓ MORTALMENTE A GRUERO EN CAGUAS La Fiscalía solicitó una pena de ocho años y seis meses de prisión. La vista de sentencia fue señalada para el 21 de enero. Redacción Islanewspr/ — Os">
+                    <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
                         
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxPYnBlU0ZqRnRYM2lBcFctVVhKRWZUUno3MTZxTGxNeHkzQnJyejR2V0JzRjFWeF9KN2lJd1VEUWJ6ZHJiM0NHaTJGOHVORWlPSkNrQVVlM1F0bDFFaW9rQUJGMlNFSmh4RWhRdExyeUZjQ3psVGU1eXZpNmM4T3JBNG9jT1pmc3Z5NWpUOUlSZkNqVTVqZ0RwSzgxQXVQNDA3WmVQMzVmQjFqZzV0QXhwdldjY3FwVTdveXhXVDgyS1hSX29HNmtMNjIzTG1VVWdYR3VOQzhrNEE?oc=5" target="_blank" rel="noopener noreferrer">Este jueves, 19 de noviembre a las 8:00 p.m. en el Coliseo Guillermo Angulo de Carolina.</a>
+                        <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZzJZUXlzdWtaeGtnUjVBRFlKTU51elJTbmNzNGtSNkFVWXhna1N4aXFJMVhKOFE4UjVZVkJ5UldxR2VUSHBZWkROSHhMdG05Zkp5ZERkb2Q3VFQ5UUhxTUtyX0FrbTFaVnIyMmJ5b1RlaXduSU1SamVNQV9tTUgxMFg3SjJ5TGRtQ3BOR0VnYjd5T2JDdS1IMFNTcUw5SVVsN2N5dWk5dDBxVUdsLVJhNkk3WHp2UWwtVzh5VVZjV25FQlpuMlZVRFJEVkVlNG5kTjlqU0Etb3c5RWhpVmc?oc=5" target="_blank" rel="noopener noreferrer">SE DECLARA CULPABLE CONDUCTOR QUE ATROPELLÓ MORTALMENTE A GRUERO EN CAGUAS La Fiscalía solicitó una pena de ocho años y seis meses de prisión. La vista de sentencia fue señalada para el 21 de enero. Redacción Islanewspr/ — Os</a>
                     </td>
-                    <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-11-18T16:49:00-04:00">hace 6h</td>
+                    <td>FB - Caguas</td>
+                    <td class="time-ago" data-date="2026-11-18T16:46:00-04:00">hace 7h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="‼️TU SEGURIDAD PRIMERO‼️ No sigas perdiendo el tiempo con improvisaciones fatulas. En una sola llamada los muchachos de la armeria y club de tiro Bull&#39;s Eye Gun Shop, en el pueblo de #Fajardo aclararán todas tus dudas. Aquí conseguirás todo lo q">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxOZnBBZVdkaE5NR3FTaXN1ZVBnOGQ0bzBWcFNyMFI1UXY0WDdHX2c1UjBjRTlIOWJ0bGNxb0hqa1VDdFA0NEVpbHFKTm9lYlVZMlk0LTJsbnUxWDhBeW9iZEViQzVyb2ZMUHMxOWljOElBXzlWV0dJS3c1Zy12S3FBSmVzN3VSM3AyRjVfM0swcUlCektobHg0WlJCeW9jSWZ5TDEtbzRBN2Fmd3FJRTJwcTdzV0YtWnFtNi1XUzQxSnVxZFk1NGQyU1owaEY0ZjJoZnQ4WDlfcEVGamFfZGVTUUlVVFZCa0ZHLWNMNXBIaDYzSUk?oc=5" target="_blank" rel="noopener noreferrer">‼️TU SEGURIDAD PRIMERO‼️ No sigas perdiendo el tiempo con improvisaciones fatulas. En una sola llamada los muchachos de la armeria y club de tiro Bull&#39;s Eye Gun Shop, en el pueblo de #Fajardo aclararán todas tus dudas. Aquí conseguirás todo lo q</a>
+                    </td>
+                    <td>En Contacto 787</td>
+                    <td class="time-ago" data-date="2026-11-18T16:35:00-04:00">hace 7h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Reportan la muerte de 15 gallinas en el barrio Naranjo de Fajardo">
@@ -1166,7 +1218,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/reportan-la-muerte-de-15-gallinas-en-el-barrio-naranjo-de-fajardo/" target="_blank" rel="noopener noreferrer">Reportan la muerte de 15 gallinas en el barrio Naranjo de Fajardo</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-11-18T16:30:00-04:00">hace 6h</td>
+                    <td class="time-ago" data-date="2026-11-18T16:30:00-04:00">hace 7h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="⚖️ El Departamento de Justicia abrió una investigación preliminar formal contra el senador del PNP Héctor Joaquín Sánchez por alegadamente llevarse a cuatro estudiantes de una escuela de Loíza, en horario de clases, a una actividad política del partido e">
@@ -1177,18 +1229,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxNQnRkYWsyN1I0UFNfUXZSM0F3WHZrX1lmNXN2bWJqWlRMWEhVdk04bUZ1bTJCNWpKOGRPSHJNblprQWdZV3VqWi1LQWg0OF9zRHRFSlhSaWdNNjdXN3U4YVJBMkotUlZWN094R012WkdsQjFEUjRuUnFtYkNHbjh0V3FZMEhRNGtiTUJwOU1OaDZ1YkZ5eVZsN2U2Y1Zhb2labFFqLXJRZmVQY21OcjdLTWd4clRmNXpzYzJ2MzZkMXM3TjhFQkV5SU01MkZRS0NlTThUOEVhZklTUkhoZF84V1pULXBOR2tQYnZFc1NMUlFPZw?oc=5" target="_blank" rel="noopener noreferrer">⚖️ El Departamento de Justicia abrió una investigación preliminar formal contra el senador del PNP Héctor Joaquín Sánchez por alegadamente llevarse a cuatro estudiantes de una escuela de Loíza, en horario de clases, a una actividad política del partido e</a>
                     </td>
                     <td>Jay Fonseca</td>
-                    <td class="time-ago" data-date="2026-11-18T16:21:00-04:00">hace 6h</td>
+                    <td class="time-ago" data-date="2026-11-18T16:21:00-04:00">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Se declara culpable acusado de atropellar mortalmente a gruero en Caguas">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxOb1BCVkdFLWlyUkh0RnJqN1BiRkpQako1c0JlemV2cTZHbHZ6MENMNVRabkxFX2JocEJvbU9CTVRDRDJyVk4xVmF3X3VOZVJCVHlCZG02RnE5M2FubUxtM0hQMUU2WnZvZEZjT0s3Y01aVGltNndJYjVrVkdJYlRoeXBxck02X01OM2NTTFlCU0MxYmVldHVtSTVsYlhYMVJUMkNobklsR3VNNWxvck50cG1ubmZZRnFqMC1wdzRKcTU4cnZJ?oc=5" target="_blank" rel="noopener noreferrer">Se declara culpable acusado de atropellar mortalmente a gruero en Caguas</a>
                     </td>
                     <td>El Nuevo Día (GN)</td>
-                    <td class="time-ago" data-date="2026-11-18T16:20:00-04:00">hace 6h</td>
+                    <td class="time-ago" data-date="2026-11-18T16:20:00-04:00">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan,Carolina" data-titular="La Policía arrestó, hoy, miércoles, 18 de noviembre de 2026, a un hombre tras una persecución por el expreso Román Baldorioty de Castro, en dirección de Carolina hacia San Juan, que culminó, según información preliminar, luego de que el conductor impa">
@@ -1199,18 +1251,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxNLUxBZTh6OU8zekdNTC00SEs2dU9HSTA0eE1ITFZtU01vZXZQNXlYeUtzS1JEZU5oSy1lVVZrOGk3eVhqZllaN0tsRVdoQUFVLUhwUmpRY0x4c3Jtb1RxZWI3TWM3VFBWNEwtRjA2ZVZGbFBXX2liMjhvb2R6cTdHR3ZVM2hiQ0tnM2FMRkZiNWVtenl5aDZhc212Q1h1emN5SEZ0RGV3UXlLemtZZktPRFNmUU04MnZRcGdtQVpoUUphVHIxcjNZZThxc1RpMmNHQXpXdWpObzJSTlRxUFk3MkhOTTRaREVKTEtkenNFWmFlUQ?oc=5" target="_blank" rel="noopener noreferrer">La Policía arrestó, hoy, miércoles, 18 de noviembre de 2026, a un hombre tras una persecución por el expreso Román Baldorioty de Castro, en dirección de Carolina hacia San Juan, que culminó, según información preliminar, luego de que el conductor impa</a>
                     </td>
                     <td>Telenoticias</td>
-                    <td class="time-ago" data-date="2026-11-18T16:13:00-04:00">hace 7h</td>
+                    <td class="time-ago" data-date="2026-11-18T16:13:00-04:00">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Hombre arrestado tras persecución en Carolina tiene una probatoria federal activa">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxNaEg5MDFBeFRqcWhONXlJTE1nalBkU2pGWjloeDV1NENlNUcxRWUwWlJXS1A4UnBxUU9PTktMdFhJSTVSaHkwVzBiaGRLeDV1SG1SU25aaW9SUUtpMlBHM0Z0Nm9kODJpWXNuQVNNQW42QkNEc21RMHVCR3JWWEZSRkRDaHNublZ2Q0ZsX2l5MWpjd0daWmh4VTZ0V0JWRzZvUGxnY1NsbTI4RzlMSHotcWRKRlFUZmFkYThITGt2dDdHLTVBN2tHcWNfcllpQnJJYTB4dU8xbzZvRVB5Q3dieExlbGd6a2JNMFlxTUg1akQ4Vl85YjVz?oc=5" target="_blank" rel="noopener noreferrer">Hombre arrestado tras persecución en Carolina tiene una probatoria federal activa</a>
                     </td>
                     <td>WAPA TV</td>
-                    <td class="time-ago" data-date="2026-11-18T16:06:00-04:00">hace 7h</td>
+                    <td class="time-ago" data-date="2026-11-18T16:06:00-04:00">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Humacao celebrará el Festival de Santa Cecilia con música, arte y reconocimientos a dos destacados músicos">
@@ -1221,18 +1273,29 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/11/18/humacao-celebrara-el-festival-de-santa-cecilia-con-musica-arte-y-reconocimientos-a-dos-destacados-musicos/" target="_blank" rel="noopener noreferrer">Humacao celebrará el Festival de Santa Cecilia con música, arte y reconocimientos a dos destacados músicos</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-11-18T15:56:00-04:00">hace 7h</td>
+                    <td class="time-ago" data-date="2026-11-18T15:56:00-04:00">hace 8h</td>
                 </tr>
                 
-                <tr class="article-row" data-municipios="Carolina" data-titular="Noticentro por WAPA. . La Policía arrestó esta tarde a una persona sospechosa de haber cometido un &#34;carjacking&#34; luego de producirse una persecución que acabó en el expreso Román Baldorioty de Castro, en Carolina. Además, ocuparon un carro que fue r">
+                <tr class="article-row" data-municipios="San Juan" data-titular="La periodista Marina Bernal presenta en el Centro de la Comunicación una publicación más de 60 testimonios y entrevistas que recorren la trayectoria y el estilo inconfundible del comunicador de San Juan del Puerto">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPYlhYMWc5eEhzdlVWWVJVNnBORE1nQmRLM1R5NjdtX2RsLTN3TVV5MGpaNGp3LU10eTkyeXRDc2dUXzZvNGxLUnJwNGN3S2VYcTEtVE9EMGJrSnJ3NU1FUVZkdE0tdEotbTNwYzZZcEpYLVMxbjRaVzJQaVNDU2tLZFhBMy1XUHVxNzF3NGxET182QkctWDNRYkVIbkF2OWhORk5udjZUNWZhcm82aUFYS21PTFFwR3AtT3REblY5VUY4YXhoTVhqcDJTeDhpanlVamFsX0dOcjBJaE0?oc=5" target="_blank" rel="noopener noreferrer">La periodista Marina Bernal presenta en el Centro de la Comunicación una publicación más de 60 testimonios y entrevistas que recorren la trayectoria y el estilo inconfundible del comunicador de San Juan del Puerto</a>
+                    </td>
+                    <td>FB - Vieques</td>
+                    <td class="time-ago" data-date="2026-11-18T15:51:00-04:00">hace 8h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="La Policía arrestó esta tarde a una persona sospechosa de haber cometido un &#34;carjacking&#34; luego de producirse una persecución que acabó en el expreso Román Baldorioty de Castro, en Carolina. Además, ocuparon un carro que fue reportado como robado.">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
                         
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxPUWJKQTk4dkl5TWE2YWxuaVY4OHVKSmRlUnVTSTRTR1MzTm5LbjlRd2FGek1mMF91X05XenZOb19Vb0JTd3hRSk4wQjhTOWt6bERTTFktaU1HazB2aU9wWkMyaG1GUERvX3c0SThPdEIzUXgwZ3ZhTEdmYl9BQVFkVDNFS043MkltMEJybEltakhZbUZNSktXMzlLOFdLb0NHSFRMbVNLRzQ5NHZMMm00bnRqN09xUVQ4aXRWWXFsYzE2c0N2LXFKSzdUUnhvLUpOck1HRnB4YlkwT2xLTVhvRGxlUlN0cDFxV0Rn?oc=5" target="_blank" rel="noopener noreferrer">Noticentro por WAPA. . La Policía arrestó esta tarde a una persona sospechosa de haber cometido un &#34;carjacking&#34; luego de producirse una persecución que acabó en el expreso Román Baldorioty de Castro, en Carolina. Además, ocuparon un carro que fue r</a>
+                        <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxQUThPR3VSQ2lxTEhQZE9mTUdEa0xoZXFWUHBMejNQU1puaHpSdVYxOURBZnZjUHE3MW5LOUFGXy1Lb29yRDJQOU5wUmRUV1V3NUtZOFVwb3FWYjJtUE5yZDI1T1FFQkxhZVltelI3dUtqRHV6NFVMU2p4UzNKT3NDcGFNNTlscTlHNW83bUtNbUM1ZjRsQzhaMjhsbDdVMHVhMUJ2eDc2cXlhaUhVTDF5Y3ctSVEtX191czRwVndZS3hmTXJpRFRZUGtKWUFjbllXdkFucmw1YVZtSGx2RWVwTXFxSU1jd1JoaVE?oc=5" target="_blank" rel="noopener noreferrer">La Policía arrestó esta tarde a una persona sospechosa de haber cometido un &#34;carjacking&#34; luego de producirse una persecución que acabó en el expreso Román Baldorioty de Castro, en Carolina. Además, ocuparon un carro que fue reportado como robado.</a>
                     </td>
                     <td>NotiCentro WAPA</td>
-                    <td class="time-ago" data-date="2026-11-18T15:35:00-04:00">hace 7h</td>
+                    <td class="time-ago" data-date="2026-11-18T15:36:00-04:00">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Vieques" data-titular="Salud adjudica la operación de la sala de emergencias del CDT de Vieques">
@@ -1243,7 +1306,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/salud-adjudica-la-operacion-de-la-sala-de-emergencias-del-cdt-de-vieques/" target="_blank" rel="noopener noreferrer">Salud adjudica la operación de la sala de emergencias del CDT de Vieques</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-11-18T15:30:00-04:00">hace 7h</td>
+                    <td class="time-ago" data-date="2026-11-18T15:30:00-04:00">hace 8h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Puertorriqueño trasciende fronteras: Dr. José Ángel Marrero lleva su experiencia en medicina regenerativa a congresos internacionales">
@@ -1254,7 +1317,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/11/18/puertorriqueno-trasciende-fronteras-dr-jose-angel-marrero-lleva-su-experiencia-en-medicina-regenerativa-a-congresos-internacionales/" target="_blank" rel="noopener noreferrer">Puertorriqueño trasciende fronteras: Dr. José Ángel Marrero lleva su experiencia en medicina regenerativa a congresos internacionales</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-11-18T15:28:00-04:00">hace 7h</td>
+                    <td class="time-ago" data-date="2026-11-18T15:28:00-04:00">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="El informe preparado por LUMA Energy detalla el efecto de la indisponibilidad de gas natural en San Juan.">
@@ -1265,7 +1328,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxQaHJicjJZZF90aXpPNEdSWWM0bW1QVC1BOTgyM2hQckFUeTVjaGJIY3I3dVpHMnJaMEo4RENPR0RlOUE4RVZkd3JNNGFhX2xpMmtERndKWFM0Sk5fZG4xQW9qVDFkcnFKWkJibGIxSnVEZEVIemZEblRyZG1BNDRyWG05bEE0N1loejdLbUM1MXh4cTdMZklSVkZuTEdhcnFlNldhVF9sd3c2Y2Q3aFQwd2RMNzdPeElrQXEtd2gxV3NRME9pbzZCaDk5dzZCbGFwUkVTS3JrVQ?oc=5" target="_blank" rel="noopener noreferrer">El informe preparado por LUMA Energy detalla el efecto de la indisponibilidad de gas natural en San Juan.</a>
                     </td>
                     <td>Jay Fonseca</td>
-                    <td class="time-ago" data-date="2026-11-18T15:20:00-04:00">hace 7h</td>
+                    <td class="time-ago" data-date="2026-11-18T15:20:00-04:00">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Líderes comunitarios y ciudadanos de Las Piedras participaron en feria de bienestar para adultos mayores celebrada en Canóvanas La Oficina de Desarrollo Comunitario del Municipio de Las Piedras, dirigida por Juanita Castro Vázquez, acompañó a lídere">
@@ -1276,18 +1339,29 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxOcDcxX1labGdJQ2dIek1ZVU54TE1Ma0xpajRSS1hLZE1UZTlSS3dFQWRSZEhDVVlMamg2TC1UTWE3blB1TmdGNTktYkRBNFVMNm9Wdy1EeTM2VjFLUE1na2pRMktva0RGbFVlVmxJaXJ6bU9kLVpFWDVhUnhPbF9Za0tWRVMyRFlPaUpScy1LMWV1dkxKTGRyX1NwOE9OeHU4emFvX0M1WkpNamNwcUxFVnJnbUZnQ3BCZEh3MXhCSjZwTzBBYjJmaXIzdG51c3JnTC1qRVBrOXBSa2ZjNWUzaUxJY2U?oc=5" target="_blank" rel="noopener noreferrer">Líderes comunitarios y ciudadanos de Las Piedras participaron en feria de bienestar para adultos mayores celebrada en Canóvanas La Oficina de Desarrollo Comunitario del Municipio de Las Piedras, dirigida por Juanita Castro Vázquez, acompañó a lídere</a>
                     </td>
                     <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-11-18T15:05:00-04:00">hace 8h</td>
+                    <td class="time-ago" data-date="2026-11-18T15:05:00-04:00">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="Alcalde de Fajardo anticipa victoria de Jenniffer González en 2028">
                     <td><span class="muni-tag">Fajardo</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxQQ2V6RGNHN1l1amVNeHhYYUlQUXpneVd2eXo2TjJ5NUZoanJOYnlPcWJ6Vk9zdlByRFp3MGN6cEtWdHhieG1oYjlNekdsTDdIWmp2VnRiRVVNZVVlX2JIenh6UEllVU85bkEybzFrOE5kMzBfekpzbmRvVENZWW5oaGZObG8xMTJaZE4tM2RKVDlzd0p3X2hYazZ3NDJuejlUdDZtS3BUemhxM1dWdTNTNWY3UW1HMkNjOWlPU0daemxlaWkzYUlFUUJuQVBrQTlNZWoxcTczTjFRT202LTQtbEhFdi1lRHPSAewBQVVfeXFMUGdyVjNhTWttZG9uZ1BobjlOaGVYYzVlaWNCNEN5ejV3VnhxeEt4clRXaHh0OEFyZmFQMFNpNkJXQ0FEeE5TUEtUcDc2Z19mbGFmczJidklNenl5a1hlZU1KSkMtVmxJZ1VEU3JpSlV0dGdJSlVQOXNQV3dmbFFfOEQwR2tfTkJ3T044RERIdGN6OVNBWUk3Q0lRR1ZSN1d5MUJ5NHdqWEJmUF9ObDE1bGV5LVVUOFRQRUNEdUdVcTZLZnRfUVJycHhyOGtmRVVWTy1wSm9wTkh3MkR5UEU5QkF6OU5LNTNJWDdpamw?oc=5" target="_blank" rel="noopener noreferrer">Alcalde de Fajardo anticipa victoria de Jenniffer González en 2028</a>
                     </td>
                     <td>Fajardo</td>
-                    <td class="time-ago" data-date="2026-11-18T15:01:00-04:00">hace 8h</td>
+                    <td class="time-ago" data-date="2026-11-18T15:01:00-04:00">hace 9h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Se añaden vuelos directos entre San Juan y Toronto en Canadá, y otros a ciudades de Florida, Texas y Connecticut.">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxPQ25pelNxeHpZbGVsamF1aFBnMjZZeXRVbkNQNFFKdjdsR2ZRdjNmZWhaeFhrNGRxa0FhdFV1NUp5TWw5TzlpRVkxNVpKekdWVHh3WDlCYVlfUllxc0gtcUZHX2Z0d21OXzhFeXJ2UXRiQXBxMmFxSnptUEE1NXNzSXRZUVR0V3lSZ1dFLXk4UjJIdGZmNll1RGZhVGU3RWlJeGhqTFZpbkZvM0JnWEp6VGtkaDRxVUhHR1djaFpVRFo2Qlk2UkE2OEp3d0Z0RnhSaFV4dUNMbUo0aVZDYXV4NmtxRFp0Z0NnSUE?oc=5" target="_blank" rel="noopener noreferrer">Se añaden vuelos directos entre San Juan y Toronto en Canadá, y otros a ciudades de Florida, Texas y Connecticut.</a>
+                    </td>
+                    <td>NotiCentro WAPA</td>
+                    <td class="time-ago" data-date="2026-11-18T14:58:00-04:00">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="🍽️🇵🇷 ¡QUÉ ORGULLO! PUERTO RICO PREMIÓ LO MEJOR DE SU COCINA La gastronomía puertorriqueña tuvo su gran noche con la segunda edición de los Premios Nacionales de Gastronomía APUGA 2026, celebrados en el Royal Sonesta San Juan. L">
@@ -1298,40 +1372,51 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMigwJBVV95cUxPSXZZUGpzVUpldkoxZzhUX2ZjdFVFa3gyTHVHc1BvRC1OTkdlWmlseGItemY0M3JfTXp6ZF9TZGIxcUR1a203QzZFMGZRemxkbWdmSmpvbVVCVnU2NldlTzBXWHlWSVc3YVNJTWVCSmpxT21tdWVzVWhMTThHTW9PT1NKMlpVeG5xLU5mZ3lwV0o1Q2lyQmNLMVo4aUs4UDJJZGswUWlqWFV3MzBPY19zeHloS3QxaXFtWm9vckUwZG5RQ1NybjBYZU52NFN3MW5LN0JLcG8xWm5odXB6Q1F4VGJHTGxPeExCUndiWTlUVWw3R3dGa0xjMl9EQzlQempPaHBz?oc=5" target="_blank" rel="noopener noreferrer">🍽️🇵🇷 ¡QUÉ ORGULLO! PUERTO RICO PREMIÓ LO MEJOR DE SU COCINA La gastronomía puertorriqueña tuvo su gran noche con la segunda edición de los Premios Nacionales de Gastronomía APUGA 2026, celebrados en el Royal Sonesta San Juan. L</a>
                     </td>
                     <td>Noticias En Línea</td>
-                    <td class="time-ago" data-date="2026-11-18T14:55:00-04:00">hace 8h</td>
+                    <td class="time-ago" data-date="2026-11-18T14:55:00-04:00">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan,Carolina" data-titular="🚨 La Policía arrestó a un hombre durante la tarde de este miércoles tras una persecución por el expreso Román Baldorioty de Castro, en dirección de Carolina hacia San Juan. Según la información preliminar, la persecución habría culminado luego de que e">
                     <td><span class="muni-tag">San Juan</span><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi8AFBVV95cUxOemU4T0ZVU3NocllVOXkzYzFzbE0xZDg1SjJ3RGJ2T1ZMX25xb21vOW5OQkVQWHRpd01NeUh6QmtKN2F6TGJYeVBXYjA1WmVNMHBtUnN1Tzd3RGwzenlSR1RqMW85bG5ncFFNZDNGU3FGOUZDMGtwQWZ3M2YxM08xVlFkY2Fyc3F1TnkwWHMtSFpXWUdSYWF0NTlQRGRiNEpaVVp4amVZRHhvYTA1U1VobGNRRlYtNWhBbTlDa25iMTRMMUlrWkxEeVVlVFVldm84djREaEt2QmRya3Z3VG1tOXFOX1VSQ3VjekFkUWxmUzU?oc=5" target="_blank" rel="noopener noreferrer">🚨 La Policía arrestó a un hombre durante la tarde de este miércoles tras una persecución por el expreso Román Baldorioty de Castro, en dirección de Carolina hacia San Juan. Según la información preliminar, la persecución habría culminado luego de que e</a>
                     </td>
                     <td>Telenoticias</td>
-                    <td class="time-ago" data-date="2026-11-18T14:53:00-04:00">hace 8h</td>
+                    <td class="time-ago" data-date="2026-11-18T14:53:00-04:00">hace 9h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan,Carolina" data-titular="🚨 La persecución culminó cuando el individuo impactó un objeto fijo en dirección de Carolina hacia San Juan. https://f.mtr.cool/x687ciaqus">
                     <td><span class="muni-tag">San Juan</span><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxNVmVVak1HaHhKdzhsZmZCMmsxZnMtUFlmMmhJakRNUUd0NGl0TjNmc1FHa1BDdFc0VDlQNllBNmVPUUltdlRYd1BMZW10UTdNcVlWZU94OUlKUjI1SmJ4am13N1ZBZ05wQV9LUC15dnlZTEV3VExkNm51ZjZvTFRwVUoyWVNYSm85WVl2MlZtaUJIRkhFQmhsOFlaRHNDanJxOHRtR1VIZ3VaRU1DMDcxMkhjSnd6cm5NMm1VVlZGcFowLVA3TDRlelRtR2lWWW9pRC1CZWVOM0dOeXJ4WExDYXJiMlAySVhBd3VPaWVPSmFwQQ?oc=5" target="_blank" rel="noopener noreferrer">🚨 La persecución culminó cuando el individuo impactó un objeto fijo en dirección de Carolina hacia San Juan. https://f.mtr.cool/x687ciaqus</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-11-18T14:45:00-04:00">hace 8h</td>
+                    <td class="time-ago" data-date="2026-11-18T14:45:00-04:00">hace 9h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan,Carolina" data-titular="EN DESARROLLO | Las autoridades cerraron dos carriles del expreso, en dirección de San Juan hacia Carolina. Se cree que la persona estaba guiando un auto que figuraba como hurtado.">
+                    <td><span class="muni-tag">San Juan</span><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQaGpNN3h1Q05EYVR1TEluNldxNjZiTEtOYTBVb2hYQlJRcm5DLTVzdEw5WU5MVE13bnRCNGx3SWhqeE1QdzRLTG5GdDE5cHRVWDJRRExVQXpDTlRieS04cktKT2pSTm1xMExhb1otTmZjWEJuMlVtM3A5LWRKdG02UTZRbU5aRjJFRGtXZ0Q4ZUNPWmwzX2k0OUZrU3FxM3FJLVRCdVRqWG5WdTZ2VGZ1T1pwd3V1VUd1T2pmS1FBZWhGeGU4b0NqVkQzVkxLTUtWdThiVVNpX1Y1dGZaMlFMcUhfNA?oc=5" target="_blank" rel="noopener noreferrer">EN DESARROLLO | Las autoridades cerraron dos carriles del expreso, en dirección de San Juan hacia Carolina. Se cree que la persona estaba guiando un auto que figuraba como hurtado.</a>
+                    </td>
+                    <td>NotiCentro WAPA</td>
+                    <td class="time-ago" data-date="2026-11-18T14:25:00-04:00">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Este sábado y domingo los veo en: 📍Outlet 66 Mall, Canóvanas Sábado 21 de 9am a 9pm Domingo 22 de 11am a 7pm">
                     <td><span class="muni-tag">Canóvanas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxObGp5M3lydlk3M1ZSa3NOdTVTdmZsVVBlYWxDaUdjYzN0dmxCMXRGUlZYTEIydTg3RFFzQ2ZiNWdESnNLbzh5N3ZCTkRNcWFNaC1EWHVnZVd3WjJzMnZyakFpVS0wcndwR0phY01IQUNQcm5fZ1VkbHVnbDFIUFo3NkZiUXk5dXd5VTRIT2FpaWYtUmtJQk5lRGJwWFZCVHNndEFOVWs5Yk5RVXJlX04tSGVyR01xQTAzTzViVnFFUmhMZEtGZi1pcDJVNGUtcmowRkpnaTZkMEVVRWRaaHVsZzVzYk5MWTBGZ1g0djVYMS16WXNGREN3?oc=5" target="_blank" rel="noopener noreferrer">Este sábado y domingo los veo en: 📍Outlet 66 Mall, Canóvanas Sábado 21 de 9am a 9pm Domingo 22 de 11am a 7pm</a>
                     </td>
                     <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-11-18T14:22:00-04:00">hace 8h</td>
+                    <td class="time-ago" data-date="2026-11-18T14:22:00-04:00">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Índice de calor alcanza los 111 grados en Bayamón">
@@ -1342,29 +1427,29 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://noticel.com/noticias/20261118/indice-de-calor-alcanza-los-111-grados-en-bayamon/" target="_blank" rel="noopener noreferrer">Índice de calor alcanza los 111 grados en Bayamón</a>
                     </td>
                     <td>NotiCel</td>
-                    <td class="time-ago" data-date="2026-11-18T14:21:00-04:00">hace 8h</td>
+                    <td class="time-ago" data-date="2026-11-18T14:21:00-04:00">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="¡Hoy nos vamos pa&#39; Carolina!">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxQREFWWm9naTNWUi0xdlA0cXFJSjBLWEEyU2o2TWx1QjZVMmxBMDVucllicXFOMk1lSl9pSHNfT1lrRENWZnBMWk9ERnNBclBwMUdGM2M3WHVvQ3JWc3Npc09fYmFDU09yNTZkblZtRnB6SkNyMlRGTk1hc3BUd00wWDRQaVBPYmR6X2tab09ndE13dVk?oc=5" target="_blank" rel="noopener noreferrer">¡Hoy nos vamos pa&#39; Carolina!</a>
                     </td>
                     <td>Telenoticias</td>
-                    <td class="time-ago" data-date="2026-11-18T14:13:00-04:00">hace 9h</td>
+                    <td class="time-ago" data-date="2026-11-18T14:13:00-04:00">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="🐴🎄 ¡Caballistas, el sábado 5 de diciembre nos vemos en Fajardo! Piel de Seda celebra su 41.º aniversario en el Coliseo Ecuestre Municipal de Fajardo. ¡La entrada es gratis! Desde los más pequeños de la equitación hasta los grandes campeonatos, la pista">
                     <td><span class="muni-tag">Fajardo</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxPS3hmOGI3NF9qUTN0cG5yd2FOakZya2RCeTczX0g5TDlNZ1VrTE9pck1yY3lQSWxNS212M3BqZFdIeFF2ajdiNlA4UGRJSUZmVWF6aDhqRExXa3F4d2FuM01icGc5Rktod0o3OGVncFNOcjZPZ0xvYXlZZ2hnVWs2MEIwSkROSWE2M3NtY19jQkNKYWtYdjZEMTNGdEtoTjZxVVpOQndYMUJweGJJT2l1R1JudmdfVE50ZURYT2I5ZmlGaExsYzJLSEU2clEta0x0ZXFxMFZoM0JNVE5HMnlaNW04RmhfZw?oc=5" target="_blank" rel="noopener noreferrer">🐴🎄 ¡Caballistas, el sábado 5 de diciembre nos vemos en Fajardo! Piel de Seda celebra su 41.º aniversario en el Coliseo Ecuestre Municipal de Fajardo. ¡La entrada es gratis! Desde los más pequeños de la equitación hasta los grandes campeonatos, la pista</a>
                     </td>
                     <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-11-18T14:04:00-04:00">hace 9h</td>
+                    <td class="time-ago" data-date="2026-11-18T14:04:00-04:00">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="🚨 SE DECLARÓ CULPABLE POR LA MUERTE DEL JOVEN GRUERO ¿QUE OPINAN DE LA CONDENA “RECOMENDADA“🙄 Oscar Andrés Serrano Rivera, de 23 años, se declaró culpable este miércoles en el Tribunal de Caguas por el accidente que le co">
@@ -1375,7 +1460,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxPVUlvdkpnU2JGaFhFSVNsVWJOQ0NicXdXSWY2ZS1sZmxVQldldzJnbXBnMXBGbkFZaU9iMk9hY1Y3dGxQNFJLeEdXclBmRWtjTmFza2J1aVFDdGNmYjk2VjJnd3paYUU0LUFsTlhOREhueV9tTTQwZVFVRGNmRWNvdjBTV1BKa19RdVA2SVVFb2xmYXJBeXBUT0VJdU9abjdtWnVfejhqYWZlVVI3alJaakVfaG9qTGZ5M1Atal9UNk01dzZ4QTZXTl9VZGdlQXIzczgwbU91cjktRGlGWEZreGxZTlJ0SFZu?oc=5" target="_blank" rel="noopener noreferrer">🚨 SE DECLARÓ CULPABLE POR LA MUERTE DEL JOVEN GRUERO ¿QUE OPINAN DE LA CONDENA “RECOMENDADA“🙄 Oscar Andrés Serrano Rivera, de 23 años, se declaró culpable este miércoles en el Tribunal de Caguas por el accidente que le co</a>
                     </td>
                     <td>Limarys Román</td>
-                    <td class="time-ago" data-date="2026-11-18T14:02:00-04:00">hace 9h</td>
+                    <td class="time-ago" data-date="2026-11-18T14:02:00-04:00">hace 10h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba" data-titular="💗 ¡HOY ANGELIS CARMONA NECESITA DE NOSOTROS! 🙏 Nuestra amiga Angelis enfrenta una dura batalla contra el cáncer y hoy necesita de nuestra solidaridad. Puedes aportar tu granito de arena visitando su negocio Boritaly, en Ceiba, o realizando tu">
@@ -1386,7 +1471,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxQVGVVTXQwUUNpS1duVVBLWklzNUpFeTFYT0RITWwzWDVhZzVUYndtbzhaaTNmc2lGd0pmV0F0Wi1USzd3bWRUT2FZc2lzMDNZZUtYMUwwN2NWZGdRSlFqT1lDX1NVUFZYa244VElUY1U5a1AwNzhEdlBPS2VzY1F1OE9qcFk4QWVZek1hRVNoNEN0ekV6TW9kOFcxQkVNUDZQUDlfdmk5bjktSmFtaXU4dFY3aWZNblR1ZW1qSFNJWGs0ekJiOGRiTHdTbnAwTHBETVpXTGlMUHB1VDhSb3c?oc=5" target="_blank" rel="noopener noreferrer">💗 ¡HOY ANGELIS CARMONA NECESITA DE NOSOTROS! 🙏 Nuestra amiga Angelis enfrenta una dura batalla contra el cáncer y hoy necesita de nuestra solidaridad. Puedes aportar tu granito de arena visitando su negocio Boritaly, en Ceiba, o realizando tu</a>
                     </td>
                     <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-11-18T13:24:00-04:00">hace 9h</td>
+                    <td class="time-ago" data-date="2026-11-18T13:24:00-04:00">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Arrestan a seis personas durante operativos antidrogas en tres residenciales de Caguas">
@@ -1397,7 +1482,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/11/18/arrestan-a-seis-personas-durante-operativos-antidrogas-en-tres-residenciales-de-caguas/" target="_blank" rel="noopener noreferrer">Arrestan a seis personas durante operativos antidrogas en tres residenciales de Caguas</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-11-18T13:23:00-04:00">hace 9h</td>
+                    <td class="time-ago" data-date="2026-11-18T13:23:00-04:00">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Inauguran en Humacao radiotelescopio único en universidades de Puerto Rico">
@@ -1408,7 +1493,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/11/18/inauguran-en-humacao-radiotelescopio-unico-en-universidades-de-puerto-rico/" target="_blank" rel="noopener noreferrer">Inauguran en Humacao radiotelescopio único en universidades de Puerto Rico</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-11-18T12:50:00-04:00">hace 10h</td>
+                    <td class="time-ago" data-date="2026-11-18T12:50:00-04:00">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Que hermoso aqui en Centro Educativo Pasitos del Saber, Inc. CEPSI naguabo . Tremenda carrera del pavito.">
@@ -1419,29 +1504,29 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQY0tDSDFwYVVEc1FSRlhPZ3BqWEdrX0NHXzNyQjl5R1BEQjZ5Ujg3TXBuZjFOTGhCdEVYMmk3MFVyTk0zYmhLSms5US0wWmFsVVhnWnptZmVqUnU2MjZIRlBVbm1fZkZGdy1ualpLblozd1lsZ3Y4Z1FMbENYWVhYTnVJNndIM2RqNm5qTmMwTXlLMXcteE9SbVRWWFRpTVAwemJLRDJKdlljNjJwc2dXelZGQU1GbGVUOEV1cWlwZmwxSk5FVU5aRXZxdkc3VE84YjltS1hPUmNpT3lqNDMxaEQ0aw?oc=5" target="_blank" rel="noopener noreferrer">Que hermoso aqui en Centro Educativo Pasitos del Saber, Inc. CEPSI naguabo . Tremenda carrera del pavito.</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-11-18T12:44:00-04:00">hace 10h</td>
+                    <td class="time-ago" data-date="2026-11-18T12:44:00-04:00">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba" data-titular="Gran inauguración de los puentes vehiculares Río Seco I y II, en la aldea La Ceiba, bajo la administración del alcalde municipal Pascual Tambriz Tzep - Tv Costa 502.">
                     <td><span class="muni-tag">Ceiba</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxNNFlKaDFZOFR3X296ZlNwTkhEQTVaTW1HSHF2MnpFcnZFSkRTcmhlamlHblRsdkhBTXkwWGxFbGp1Qjh2eU8ydENXZGRlTTgyYmkzcVdFeXdkWlVFMnRGSGRBdUFZYXB3WmM3RTZDUmFpaS1fUGtBS2g5TnkyRzJjWW9zZngydVQ4aVA3ZVViMUxfaVJvUTFDR19EOWkwY0dXREJrUEVNR2t5LWU4SXZKWkQ5VEtaNWUzakg3OVdTc2JFS1VhcXBES3hvMXpuSEkybGpXWm5pMXJWdGE4NnFEOUtkTWduRkZnUUtqZEM4cFZxZw?oc=5" target="_blank" rel="noopener noreferrer">Gran inauguración de los puentes vehiculares Río Seco I y II, en la aldea La Ceiba, bajo la administración del alcalde municipal Pascual Tambriz Tzep - Tv Costa 502.</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-11-18T12:32:00-04:00">hace 10h</td>
+                    <td class="time-ago" data-date="2026-11-18T12:32:00-04:00">hace 11h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Saludos amigos y amigas, espero que estén bien. Hoy en la serie Turismo de Barrio, les comparto un bosque urbano de árboles frutales en el barrio Borinquen de Caguas. Espero lo disfruten , bendiciones">
                     <td><span class="muni-tag">Caguas</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5lUzNoMWpRckY0cXZ5cFlSbjNUWTRmVHB3NDZUMEVIQndubkpGSW9OTzRFZzVwNDF5VGZhNWVOQm9qY2d6VGZDQ1hpZ2dUN3p4a2xhS2ZQb081RGxCQU1nR1F5bDgxdkRQLTVXRW85Z0laa0hNdlZkUTcyOVc?oc=5" target="_blank" rel="noopener noreferrer">Saludos amigos y amigas, espero que estén bien. Hoy en la serie Turismo de Barrio, les comparto un bosque urbano de árboles frutales en el barrio Borinquen de Caguas. Espero lo disfruten , bendiciones</a>
                     </td>
                     <td>William Miranda</td>
-                    <td class="time-ago" data-date="2026-11-18T12:21:00-04:00">hace 10h</td>
+                    <td class="time-ago" data-date="2026-11-18T12:21:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Contralora identifica pagos indebidos por más de $28,000 en Educación">
@@ -1452,18 +1537,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.notiuno.com/noticias/gobierno-y-politica/contralora-identifica-pagos-indebidos-por-m-s-de-28-000-en-educaci-n/article_4f8e2d84-2bd9-40fc-864a-5c9b3108c116.html" target="_blank" rel="noopener noreferrer">Contralora identifica pagos indebidos por más de $28,000 en Educación</a>
                     </td>
                     <td>NotiUno</td>
-                    <td class="time-ago" data-date="2026-11-18T12:17:00-04:00">hace 10h</td>
+                    <td class="time-ago" data-date="2026-11-18T12:17:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba" data-titular="Gran inauguración de los puentes vehiculares Río Seco I y II, en la aldea La Ceiba - Costa 502.">
                     <td><span class="muni-tag">Ceiba</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxPWDEyMkZJeHAwal92Y25hNkFuNlA1Y3VQcXROQklkemNNZXptWGh0N09kd3hfRm03ODNaSmFJWWZFY0F6ejhrNDYyVmRfbGp3MGc0TzhvYzhDekZib1RReUxlNXM1QUNrTmIybEJRSTQtanIxSksyX2tESFp1SlFBSEpmR080YTVSRDBiUU9vclRNdFN0eUhsM3NaaHE5YkdzWlB2RmVKS3NDZ01ZUDlxdjNOVll2Tno2WlRZQ0Z3Y1picWo4andfSG9rd0VoUmlFMmRXZ3l1WHl2MWVfdEc5U2JaSTgweVdhVUU4TGE1cUJ3UQ?oc=5" target="_blank" rel="noopener noreferrer">Gran inauguración de los puentes vehiculares Río Seco I y II, en la aldea La Ceiba - Costa 502.</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-11-18T12:14:00-04:00">hace 11h</td>
+                    <td class="time-ago" data-date="2026-11-18T12:14:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Contralora señala irregularidades en la Oficina Regional Educativa de Caguas">
@@ -1474,7 +1559,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/11/18/contralora-senala-irregularidades-en-la-oficina-regional-educativa-de-caguas/" target="_blank" rel="noopener noreferrer">Contralora señala irregularidades en la Oficina Regional Educativa de Caguas</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-11-18T12:02:00-04:00">hace 11h</td>
+                    <td class="time-ago" data-date="2026-11-18T12:02:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="🚨 ¡TREMENDO HOYO EN LA PR-198 ESTÁ AFECTANDO A VARIOS VEHÍCULOS! 🚨 Varios conductores reportaron daños en sus vehículos durante la mañana de este miércoles al transitar por la PR-198, frente a la urbanización Las Leandras, en Humacao.">
@@ -1485,7 +1570,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxQS1l0RHdXWFRKNTBsbV9kekt2S3BSMzEzTVNicG1PbjhGekZvVlA0UVRZT1lxR2tmQ3FkS0hucTgtRllmcGRPMHVDOXBBR0t5dXpub0QwNUQydGRtWDg1RnZHYW5HdEpra2JMZ1hHWEpXS0Q3dVFEY2RCRVYyUGN2aUE5cmFFNjMyTXYydjh3ZmoyUlUwWElTX2tQTTVsdGI2TmZMa2RZbkZ2V0hKZTR1SWlObHV3b3R6QXI0NlNUMXdsc3VzaWgwN2tlUVR5bi1aOERjd2RiYXdMRkRYdVB4NHlOaHBadjVQNE56bjBBYw?oc=5" target="_blank" rel="noopener noreferrer">🚨 ¡TREMENDO HOYO EN LA PR-198 ESTÁ AFECTANDO A VARIOS VEHÍCULOS! 🚨 Varios conductores reportaron daños en sus vehículos durante la mañana de este miércoles al transitar por la PR-198, frente a la urbanización Las Leandras, en Humacao.</a>
                     </td>
                     <td>Limarys Román</td>
-                    <td class="time-ago" data-date="2026-11-18T12:00:00-04:00">hace 11h</td>
+                    <td class="time-ago" data-date="2026-11-18T12:00:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Joven conductor que atropelló a un gruero en Caguas se declara culpable">
@@ -1496,7 +1581,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxQWlh4LVNGczVnVzdLemJpVmtTXzd2TkN3Y2VnOFZNSU96bG52WGRDNmFtUlZRYjBZYjk3NXFCaGRnY1RtTnVQVEJNc0lDcUpyZmRTU1p0MnA4MTJScEREeEwwSGNESExKQl91VEQwSEtOLThyaHlQdlFQYWdncFpwZV9ZWUdSYXpWVGhYNmx2M3BWR3pBQjFKWXdYcm1EMWVRZWdGaG9CWS1PWkxnYXpYdjFzSXU2Znd5Mlg0Q0YyVUViZ3NBZ3lzWDdJeG9sMjA?oc=5" target="_blank" rel="noopener noreferrer">Joven conductor que atropelló a un gruero en Caguas se declara culpable</a>
                     </td>
                     <td>Primera Hora</td>
-                    <td class="time-ago" data-date="2026-11-18T12:00:00-04:00">hace 11h</td>
+                    <td class="time-ago" data-date="2026-11-18T12:00:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba" data-titular="Gran inauguración de los puentes vehiculares Río Seco I y II, en la aldea La Ceiba">
@@ -1506,8 +1591,8 @@ tr.article-row:hover { background: var(--surface2); }
                         
                         <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxPelpVYzZERkVCRTc3UVBoZ1ppWGMzYkZPREZUY3NnZEJaREtVTzkxMnJobllKS3lZdjFSVy16amlkRDNLNzhXcXI1bnlJeGtLRkZzVjRDQkdUd1ZTRk1YclRGbWdhY1dCNi1nYWoxbUNnSEE2ZUZLejZjM3dtN0FtMXpNR1NqSjZOd1oydmZwRlVBN1FPU2JDejhoQWRBQTFrUVZFSTI2T0NxTkhYeW5sbnM4U0o1TEE2dUFZbzg5ajQ5V0x0SHduTWZZdmJfM2F6ZWJxMUM1VDV5N3NLOENteXJaTkp1S2RaUV9JOUtHNFl1QQ?oc=5" target="_blank" rel="noopener noreferrer">Gran inauguración de los puentes vehiculares Río Seco I y II, en la aldea La Ceiba</a>
                     </td>
-                    <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-11-18T11:59:00-04:00">hace 11h</td>
+                    <td>FB - Ceiba</td>
+                    <td class="time-ago" data-date="2026-11-18T11:59:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Senador Colón La Santa anuncia asignación de $200,000 para Naguabo y pide a alcaldesa atender necesidades prioritarias">
@@ -1518,18 +1603,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/11/18/senador-colon-la-santa-anuncia-asignacion-de-200000-para-naguabo-y-pide-a-alcaldesa-atender-necesidades-prioritarias/" target="_blank" rel="noopener noreferrer">Senador Colón La Santa anuncia asignación de $200,000 para Naguabo y pide a alcaldesa atender necesidades prioritarias</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-11-18T11:43:00-04:00">hace 11h</td>
+                    <td class="time-ago" data-date="2026-11-18T11:43:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="#Deportes l El evento se celebrará el 2 de diciembre en Río Grande, luego de que su primera edición lograra recaudar $179,300 para iniciativas sociales.">
                     <td><span class="muni-tag">Río Grande</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxNWUNDWGRBcXgzQzY2NXlSSkNucUZkcmhBWkx3THFpMkJUejZYR3hDMjNxZUJlb091Tk5pY2hQLVRMNnRQRmFTVFhGYkZ3dktPZnpCU2pZOXhaeFpQa01CQ3R2N2xNTmx0WDhEbEtsOVZnY3dndl9SendZMjJTMjg4MFRpUFZYdUpTQ01sRjVhQU1WWkZfMnU1aGJsTFBYS2JSMDE4UzB0WjUtY29maU1ORkRHY1duNUZuanJ2T2lJM1o0WkRsOEJwS1pEZmstOUJNS0NKcjduRUhnWF93TGpuNlJsQ1JhRVNJNXR2Yw?oc=5" target="_blank" rel="noopener noreferrer">#Deportes l El evento se celebrará el 2 de diciembre en Río Grande, luego de que su primera edición lograra recaudar $179,300 para iniciativas sociales.</a>
                     </td>
                     <td>FB - Río Grande</td>
-                    <td class="time-ago" data-date="2026-11-18T11:35:00-04:00">hace 11h</td>
+                    <td class="time-ago" data-date="2026-11-18T11:35:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="ODSEC convertirá centro comunitario de Playa Húcares en Naguabo en un centro resiliente">
@@ -1540,18 +1625,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://waloradio.com/2026/11/18/odsec-convertira-centro-comunitario-de-playa-hucares-en-naguabo-en-un-centro-resiliente/" target="_blank" rel="noopener noreferrer">ODSEC convertirá centro comunitario de Playa Húcares en Naguabo en un centro resiliente</a>
                     </td>
                     <td>Walo Radio</td>
-                    <td class="time-ago" data-date="2026-11-18T11:34:00-04:00">hace 11h</td>
+                    <td class="time-ago" data-date="2026-11-18T11:34:00-04:00">hace 12h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="📢⚡ [Atención] La estación de bombas Tejas Los Guare en #LasPiedras está fuera de operación por falta de servicio eléctrico, reportado a LUMA Energy con evento c7296317. 🚱📍 Como resultado, abonados en el barrio Tejas de Las Piedras y #Humacao exp">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxQaUsweUdBSjdBMTJRUjVob0ZvblI0bDJwcGNmWVZWenRkalNyaHhucHdWZjV1cHVxVFp6b2xIOFhzcUZBaUFzUDBSWjlhdEFybG9yRDE2VW1wSnJLWlJJVERNSUdLMUYtRUI1T0R6V0RuOUQyZlFzMzZ3RW5ORlhVcUhWa2ZMWUU0WV9XQnp6cHdJb3pVOHFFaFdxRDNkSlpiYk10MDhtczlEYXBmb2V6ellTcnhwcFV5UnB4VWJwY3RSbXZUajZfamxIOS1PYkZBRjhRN1pYWG1qTFc5ZlJYeklMV0IzVzJ5bmd1VzhB?oc=5" target="_blank" rel="noopener noreferrer">📢⚡ [Atención] La estación de bombas Tejas Los Guare en #LasPiedras está fuera de operación por falta de servicio eléctrico, reportado a LUMA Energy con evento c7296317. 🚱📍 Como resultado, abonados en el barrio Tejas de Las Piedras y #Humacao exp</a>
                     </td>
                     <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-11-18T10:33:00-04:00">hace 12h</td>
+                    <td class="time-ago" data-date="2026-11-18T10:33:00-04:00">hace 13h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Disparan contra carro en el que viajaban una mujer y su bebé">
@@ -1562,7 +1647,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.notiuno.com/noticias/seguridad-y-justicia/disparan-contra-carro-en-el-que-viajaban-una-mujer-y-su-beb/article_28b625ae-8a56-4fcf-9286-096f33dc1b55.html" target="_blank" rel="noopener noreferrer">Disparan contra carro en el que viajaban una mujer y su bebé</a>
                     </td>
                     <td>NotiUno</td>
-                    <td class="time-ago" data-date="2026-11-18T10:12:00-04:00">hace 13h</td>
+                    <td class="time-ago" data-date="2026-11-18T10:12:00-04:00">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Fajardo" data-titular="‼️VISITANOS HOY, COME BUENO, BONITO Y BARATO‼️ 🎉 Restaurante de comida China, Sushi y boba tea &#39;El Wok&#39; en #Fajardo🎉 Ven a disfrutar de una deliciosa variedad de platos de comida china en un ambiente acogedor y familiar. Contamos con un">
@@ -1573,18 +1658,29 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxOX1l5aDlIeE5tOXB4MEk1eVBJeGIxcmE4VG5XaE5aci1RRk4xY1VpdmtDMW9MWVJMOWJhR3VVLWlMQkV1STVNT1hpWjc2RzljdS1aUFFSQW15ZU5MWndyb0l4bi13cG5LWDJncm9tdW9lZ1hVVEI1UUEyNExVQzJaQW9OeHVzNFRGV2I5SlFOME1xRDI1bFVMYlQzQmdaRUQ1b1FLeDYyMHI5cnJjaUxJZVUzVHdiMXhCSmd1ZXVBY0pWeFFqMS1kWk9vQzQtSUtxb25fUVNNZktMOTdvQm1FMWhVd1lVbWNyQThHOWxGZzR5UDA?oc=5" target="_blank" rel="noopener noreferrer">‼️VISITANOS HOY, COME BUENO, BONITO Y BARATO‼️ 🎉 Restaurante de comida China, Sushi y boba tea &#39;El Wok&#39; en #Fajardo🎉 Ven a disfrutar de una deliciosa variedad de platos de comida china en un ambiente acogedor y familiar. Contamos con un</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-11-18T10:00:00-04:00">hace 13h</td>
+                    <td class="time-ago" data-date="2026-11-18T10:00:00-04:00">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Cataño" data-titular="FEMA visita subestación de Cataño para conocer avances de proyecto de reconstrucción Representantes de la agencia federal conocieron los trabajos que desarrolla LUMA para modernizar la instalación con tecnología avanzada y sustituir equipos para be">
                     <td><span class="muni-tag">Cataño</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxNaVVpeHdWMEVhMTJVRjZpRUdMdGlnMWRTajgtaldjOHBIWkVQZGlKY0t3aGFjSHp6QmdqLTNLYkExLVZHQnItZEljdmJUczdwa2pXMjZzMGRhaEh6QTFFa3JheXdiaGs1TWsyQTNLVFdLOFEyYkJodEtQRDRoRFVYVTVyb3FOcHJ3Y3pRRW5UZFNDX2ZfZ01KVUNoNmFlR1VKRkxTcWpWRU5CNXFNaXVtNm9LSVROVG1ZNHRFejN5Z3A0V09ncERWMExBU1hrMkYwV21xTXh6WjY4UmMxWDNQamRRUGVkS3VUcG40bTI2NVMxa1JZ?oc=5" target="_blank" rel="noopener noreferrer">FEMA visita subestación de Cataño para conocer avances de proyecto de reconstrucción Representantes de la agencia federal conocieron los trabajos que desarrolla LUMA para modernizar la instalación con tecnología avanzada y sustituir equipos para be</a>
                     </td>
                     <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-11-18T09:46:00-04:00">hace 13h</td>
+                    <td class="time-ago" data-date="2026-11-18T09:46:00-04:00">hace 14h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Río Grande" data-titular="Pavos gratis: Conoce las entregas programadas en ciudades y condados del Valle del Río Grande por Acción de Gracias. #RGV #Telemundo40">
+                    <td><span class="muni-tag">Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxPclVXSEZPa0VXcGlTV0t5eEdodGkyc0EzTkRVbVl3S0U0LV95N25LNmdzVXRpbHYzNHdHWlh0WHprb2N4czFQN2JiekRRNjZ2Q1doSjV3SXRyTXNqTi12ejYwU3VFVXVtMThQa1lYOUlJbGZTVUlrdmZoWjNNM2ljbkoxVl9yQXJQMXgwWmpLLXRPak5mNlgzaVZlQzNfNFhBRzg1bTd1UU9ZdGJoeG1yZFpJdkZuSzdfN0ZOMF9GcXRuSmFNZk9ZaF9VZVFBckJaR2ROM19WOG8?oc=5" target="_blank" rel="noopener noreferrer">Pavos gratis: Conoce las entregas programadas en ciudades y condados del Valle del Río Grande por Acción de Gracias. #RGV #Telemundo40</a>
+                    </td>
+                    <td>Telenoticias</td>
+                    <td class="time-ago" data-date="2026-11-18T09:43:00-04:00">hace 14h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="[CAGUAS] Atacan a tiros vehículo en el que viajaba un menor de un año Una pareja y un niño de un año resultaron ilesos luego de que desconocidos dispararan contra el vehículo en el que transitaban por la autopista PR-52. Redacción Islanewspr/ Un hom">
@@ -1595,7 +1691,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxObG02c05EVlJ0d2dGWFBxQWF1aHk5bFN3SF8wNUl2REY3UkZGRy10SkhfLWczWFJoVUdnRGcwQVFfNjhYUmYtLUFSRkRLaVRSNzBKUEFHT0JSby0yamZkVHJnSU93WWFvU2VTRW9IdXRHZTRKOFR1RV8wYnN5bXBTUzBkVmwycnhXNUNsLVBuMThwNWFTY3ZsN0pMY2tuM19YVXpRSEhvREM3NWJORUNncUVEWXdvR1dwV3QtZ2xTVUYtQ2lUUi1wM0ZBTzJETGFTazVkeGoyR08zc05QYkdmWkJha1A?oc=5" target="_blank" rel="noopener noreferrer">[CAGUAS] Atacan a tiros vehículo en el que viajaba un menor de un año Una pareja y un niño de un año resultaron ilesos luego de que desconocidos dispararan contra el vehículo en el que transitaban por la autopista PR-52. Redacción Islanewspr/ Un hom</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-11-18T09:02:00-04:00">hace 14h</td>
+                    <td class="time-ago" data-date="2026-11-18T09:02:00-04:00">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Disparan contra vehículo en el que viajaban una mujer y su bebé en Caguas">
@@ -1606,7 +1702,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi8AFBVV95cUxPQ0JmUXhVSHdGd0NWOVRJNnU1NzFxQzc2TklFV0pOZUxCMF91MnJfYW42V2ktWUJ2X190SlBCbk1aUnB4OC1aeGdCNWNrTC0xci1QU0RIZVdjSlBIcS1SUy1KZEd6TWlneFJVdWRGUUVxZXk0clpJdnpNZHJudDM4QklTRndRSjhmQmVZdzREZGc3S3VVb2pkdkxyOG5FUHBzb1BzWHlndHVOTU9iYTFsdDFNVTFjVXNPbGZmbkloT0ZIb3Z5dWpqdldRLVdvLXR2VU94VUlJbG9TUThxUExZUlhBTzJpWGg3alJXeWVITlHSAfYBQVVfeXFMT3BoZVdycG5QQkQ4Q0VkWjh4YkpRVGVvYVFrQjhwWDhwblF6YW1YR2I4bGk4TUVYUlhsd212aTRiLTdCRWhCVGdSVDBSMVZselpoTGJHaEtVYTBPM1JSWW81SVdaU0thRjJrX2MtWVhHdUltOHdLWm1XcHA2aVhYem5TQlZoOFhVQVV2VmJ4MUpkUVBWWTdHTVdyWWxVVmQ5OWt6UmJDNXZnN1pObGlvRnhram16enZ3ZFpJMEFwOFVLaVZuamhBWmFSVmNOcWRYQUl4RTNfbllOaTRibFk2TjdxQVJna2VMcVFNVzIwSjB0emlNSmx3?oc=5" target="_blank" rel="noopener noreferrer">Disparan contra vehículo en el que viajaban una mujer y su bebé en Caguas</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-11-18T08:56:00-04:00">hace 14h</td>
+                    <td class="time-ago" data-date="2026-11-18T08:56:00-04:00">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba" data-titular="Candelita (hembra), reinita que nos visita en la temporada de migratoria Nombre en inglés - American Redstart Nombre científico - Setophaga rutcilla 📍Ceiba, PR 🇵🇷 📸Anel Sandoval">
@@ -1617,7 +1713,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxQVFdhYWxZcjFoUDNZUHZOazBYZ2FLM1FFT3JSQ1NlVlI2X3F4RlhQYVFRQ2ZLUi1uSzh6SE41ZEd4TTh1dW9STGhKTzRqTDNhN1l1TjR3djBVZVV5SE5zLVg4NC1tcy1pV05IRXFTZERjc2dVaTFCYmQ3NklqWV9naFJWZ3lOVlJiLVNrZUc3RXhKV3pmd2EtSG1xMlpyMEsxa1ROQjE2TmZ2TURUY0dTWS0xRndDbU5TX1FfM1JzbkdfendRQUFpX2p6b2xUX0RnRHdZamVBaHJPeFJwc0tnTGZVVjNFQQ?oc=5" target="_blank" rel="noopener noreferrer">Candelita (hembra), reinita que nos visita en la temporada de migratoria Nombre en inglés - American Redstart Nombre científico - Setophaga rutcilla 📍Ceiba, PR 🇵🇷 📸Anel Sandoval</a>
                     </td>
                     <td>FB - Ceiba</td>
-                    <td class="time-ago" data-date="2026-11-18T08:55:00-04:00">hace 14h</td>
+                    <td class="time-ago" data-date="2026-11-18T08:55:00-04:00">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Río Grande" data-titular="En una audiencia realizada en el Ministerio de Trabajo de Río Grande, la empresa presentó una propuesta que supedita el regreso de los trabajadores a su pase a IATEC. El delegado José Arenas cuestionó la situación, que se produce a días de las eleccio">
@@ -1628,18 +1724,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxPLVlWT2s0LTY1bFFpRld5WTBQUm55eXIyWFhHYXZjZ3RoaU9paDJpTW9hbHpLRU80QXdGWklGNm00YlBzRzY0Tm1mT3VWUTE3Y2IwMTZmRmxSMWtDMHkwMVRmaW5Ncl9ZMGFzVWVjU1d2RllDeFVMN2J4U3dlb2Npd1RyRTJUb3YzY1M3UVJsRGtEaklhU214dVUwMm4zR3RRQkVNeXFzbTQ0ZkNfRWxMTm13N2tkOGNyVmY1Nk9vZmtBM19HZDh4OEl4bW54bk5FVkJOVUJaMmg1NzF3TWNKUDBR?oc=5" target="_blank" rel="noopener noreferrer">En una audiencia realizada en el Ministerio de Trabajo de Río Grande, la empresa presentó una propuesta que supedita el regreso de los trabajadores a su pase a IATEC. El delegado José Arenas cuestionó la situación, que se produce a días de las eleccio</a>
                     </td>
                     <td>FB - Río Grande</td>
-                    <td class="time-ago" data-date="2026-11-18T08:45:00-04:00">hace 14h</td>
+                    <td class="time-ago" data-date="2026-11-18T08:45:00-04:00">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="📚🤖 El Departamento de Matemáticas de la UPR Humacao llevó a cabo el Seminario Departamental&#34;Del prontuario al sitio web: autoría de cursos asistida por agentes de IA&#34;, ofrecido por el Dr. Ollantay Medina Huaman, catedrático asociado adscrito al Depart">
                     <td><span class="muni-tag">Humacao</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxOcGtKdXY2eUJlSE5WLU5Qbmc3ZzBCVlVDc25tMGFvNlZxYV84UHJoWGMwSk92cHJfSTBmZ3NBNlJhel9PRmV5Q3hFZkdUSjZBb0RMWU9ISi01by11RHo4bE1yUmVJZU5qNU8zaGNrdGlzNVUyTEUzcVR4ZDJfUENQSExRTnFCX2tXYmpOWEpMWGNUQ0VYQXBGdFBVY1MtSGdZdUY1d1Jlal9pTVdOZlZsVmUyMGt2LURZQUNYemx3MWNQU0pvYWJCNHR2cnBoN0lLbTlhai14OHFma2llcUx5T2tsb0w5dGs?oc=5" target="_blank" rel="noopener noreferrer">📚🤖 El Departamento de Matemáticas de la UPR Humacao llevó a cabo el Seminario Departamental&#34;Del prontuario al sitio web: autoría de cursos asistida por agentes de IA&#34;, ofrecido por el Dr. Ollantay Medina Huaman, catedrático asociado adscrito al Depart</a>
                     </td>
                     <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-11-18T08:41:00-04:00">hace 14h</td>
+                    <td class="time-ago" data-date="2026-11-18T08:41:00-04:00">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Canóvanas" data-titular="Celebran tercera Copa Paralímpica en Canóvanas">
@@ -1650,7 +1746,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxQUmxvWjdiOXFYRENUYk1GSmlTNTNPd25kcVB1aXNNdEgtRDBuTXNzbFdrN1lnMDg4TFFDRjJySFZDNVNYSWRyZm9idGZBNDd6eGVnV3U2V2NFR05ySjB2SkhfOU1VWEVPcFp0VlZqaC1MRl9KTTVCXzlSdHpOb3Z3ZGFjcmpjWHlHbTFXR0NHUkROZw?oc=5" target="_blank" rel="noopener noreferrer">Celebran tercera Copa Paralímpica en Canóvanas</a>
                     </td>
                     <td>Canóvanas</td>
-                    <td class="time-ago" data-date="2026-11-18T08:41:00-04:00">hace 14h</td>
+                    <td class="time-ago" data-date="2026-11-18T08:41:00-04:00">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Naguabo" data-titular="Senador Colón La Santa anuncia aprobación de $200,000 para Naguabo y exhorta a Alcaldesa a priorizar necesidades de las comunidades Senador hace llamado a utilizar los recursos con responsabilidad y atender situaciones apremiantes como las condi">
@@ -1661,7 +1757,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxOeXJ3bDBBYjRHV0U1U3VxWnlVZVRZUUVJSGV2bU9XS2dRY3ZBQmZtNE9CTlRKMDN5eU1yRFlMczdJOHZzYmdLWWw2MmxUUmduMVJ6Y1RzcnoyRHQzMGQ1eGdYYXU1eXY5M2F3NXdpNjJCOEVTRGxYUlFTVUZRQ1JlX2p4NkY5UzJxNEtGNnB4aEkxY00xYm8wOXFBOHZwdld5WUs3MVBBOFhtdXNjTUdTWHFVMkNIM3RnQU5SWmI4RG9scU9aa05TWFNmaUw5MkM0ZlBJdnRZTXFpMGU2amhtbkJnbFI?oc=5" target="_blank" rel="noopener noreferrer">Senador Colón La Santa anuncia aprobación de $200,000 para Naguabo y exhorta a Alcaldesa a priorizar necesidades de las comunidades Senador hace llamado a utilizar los recursos con responsabilidad y atender situaciones apremiantes como las condi</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-11-18T08:38:00-04:00">hace 14h</td>
+                    <td class="time-ago" data-date="2026-11-18T08:38:00-04:00">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="🤝 ¡Promovemos espacios laborales seguros, respetuosos y libres de violencia! 🦉 El Comité de Ética y la Oficina de Administración y Desarrollo del Talento Humano de la Universidad de Puerto Rico en Humacao llevaron a cabo el taller «Violencia Doméstica">
@@ -1672,7 +1768,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxOVUY1V3lGQ0pvX2FhYzE4V3NGWEd4R3lVWE1RaDA3dzZ1MWVyVWk0bWdsa3o4WU1OVzlwX2VZLWZTSlkzbVlNaXpoQ0NoUmVDa1FubjRPVnZWLWt3TFViSjFjbDg2VXJ1ekVnZmF2ZGZFS2tENGlWaW02Und1bWU5UjNVTE1lMG5fUlZmdjdnOV9kX0FqYnNSLTIyRE5xcnhyaXdpMEUwTWVReExQc3JENlVGQTFiX01ydXA3bnUxUEYzU2p0SlV5Y3poaW1iQ21BQ2JQakZfOHI?oc=5" target="_blank" rel="noopener noreferrer">🤝 ¡Promovemos espacios laborales seguros, respetuosos y libres de violencia! 🦉 El Comité de Ética y la Oficina de Administración y Desarrollo del Talento Humano de la Universidad de Puerto Rico en Humacao llevaron a cabo el taller «Violencia Doméstica</a>
                     </td>
                     <td>Senado PR</td>
-                    <td class="time-ago" data-date="2026-11-18T08:37:00-04:00">hace 14h</td>
+                    <td class="time-ago" data-date="2026-11-18T08:37:00-04:00">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="Senadores y Cangrejeros con victorias en la LBPRC">
@@ -1683,7 +1779,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/senadores-y-cangrejeros-con-victorias-en-la-lbprc/" target="_blank" rel="noopener noreferrer">Senadores y Cangrejeros con victorias en la LBPRC</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-11-18T08:37:00-04:00">hace 14h</td>
+                    <td class="time-ago" data-date="2026-11-18T08:37:00-04:00">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba" data-titular="☀️⚡ ¡Solar Specialties Depot TE TRAE POTENCIA, TECNOLOGÍA Y GRANDES OFERTAS PARA TU HOGAR! 🔋🏡 🔥 ¡PREPÁRATE PARA ESTE THANKSGIVING CON ENERGÍA SOLAR! 🦃 En SOLAR SPECIALTIES DEPOT, ubicado en Ceiba, Puerto Rico, e">
@@ -1694,7 +1790,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxORFBkVVhIMnBfVkZWNTdFd2JtZUwwSEhjWjRnM2NTOVZTMzNOSlI3dFVBQmk1V1dMdVVkWUg4NkpTeDQzc3dJQmhZc3IxM3JxT2YteGQ1cmVCYlpHaG5XTVhLMVIxakNLaW01OVZLaVNqNDItTDRCWl9RR1hXQ2tXSzNqakMwdHVuZXBHckNHeW5iZ3B4bVNjMjM3QUZ2NU9Nbjd6aERhTFpMTzRoZ1c0S2VCMUlDc3NhaGtadl9rRXJCUUlHX1AyVjZlck5FMTFuQzZGRndDWFdVNnA2SF95UzdPbTE5LTA4UVZlSF9MRQ?oc=5" target="_blank" rel="noopener noreferrer">☀️⚡ ¡Solar Specialties Depot TE TRAE POTENCIA, TECNOLOGÍA Y GRANDES OFERTAS PARA TU HOGAR! 🔋🏡 🔥 ¡PREPÁRATE PARA ESTE THANKSGIVING CON ENERGÍA SOLAR! 🦃 En SOLAR SPECIALTIES DEPOT, ubicado en Ceiba, Puerto Rico, e</a>
                     </td>
                     <td>En Contacto 787</td>
-                    <td class="time-ago" data-date="2026-11-18T08:35:00-04:00">hace 14h</td>
+                    <td class="time-ago" data-date="2026-11-18T08:35:00-04:00">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="En Caguas está Armando Auto Electric">
@@ -1705,7 +1801,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSFhscTVZVENGWEVfSEJubmRKRHpxdmZ1ZHFHTnFLMGJfNDBCOHVnekszWlNSY2VHd3pPMEhpUWhxMzRDdkwzcTN0eVliLU1UUlhJT3NNelpyaXBlSHlzR2oybjhhYXF4RVVwT294bjV2ZzRPVlp0UUpoMGVOQ21TWHZuYTNQaW5nOVVoVnJHVlZJclUtS2JGLTI1SlExeWlQdkVGRTdYMFdfdw?oc=5" target="_blank" rel="noopener noreferrer">En Caguas está Armando Auto Electric</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-11-18T08:33:00-04:00">hace 14h</td>
+                    <td class="time-ago" data-date="2026-11-18T08:33:00-04:00">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="En Caguas está">
@@ -1716,29 +1812,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxPbDMzdWtRT2VMQ1I1RU1EVFpjSmJFVmlQODM0NlNnT05ENktxQndNMjdQamdNdHZDNU56czRzQkxETVRKNTJSWVNfQm5hMkRTYWw1LXZhSG9oZWo2QTlDMDlTWGdWbV92Tk94UXdpejB3UUg3SzJyVEMzY3Njay1iR1M4aVdwaDRZRHVhNw?oc=5" target="_blank" rel="noopener noreferrer">En Caguas está</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-11-18T08:30:00-04:00">hace 14h</td>
+                    <td class="time-ago" data-date="2026-11-18T08:30:00-04:00">hace 15h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba,Naguabo" data-titular="POLICÍA REALIZA ALLANAMIENTOS EN CEIBA Y NAGUABO; ARRESTAN A CINCO PERSONAS Y OCUPAN ARMAS, DROGAS Y MUNICIONES CEIBA Y NAGUABO, PUERTO RICO – Agentes de la Policía de Puerto Rico, adscritos a la División de Drogas">
                     <td><span class="muni-tag">Ceiba</span><span class="muni-tag">Naguabo</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxNNENOS1phOHQtcllweE5uTVQ0QzVGNWxoSjgyZWczWDZLaHp5c2czclloSWpLUFhpRF85QmhSQUp4LVRMSk5CNDAyRFpST09Oa1Iyb1RtTE9JbVhicVd6RGlURlJsbXBxMFpXaWdpZGhIT3gwaG9aT2VnblB3TXJXUzllWkNncVZyMjJ5bjFZRUdnTV91QW9hNEVPd0hjTmFxR3JGZWpnckZCT2UyT0doajVScnFrMURjU2xGdS1fQ1ctTlptUGNYRlJqbGFiSnNub0xCYVBGU29qNHhFX1FBWS1FSFM?oc=5" target="_blank" rel="noopener noreferrer">POLICÍA REALIZA ALLANAMIENTOS EN CEIBA Y NAGUABO; ARRESTAN A CINCO PERSONAS Y OCUPAN ARMAS, DROGAS Y MUNICIONES CEIBA Y NAGUABO, PUERTO RICO – Agentes de la Policía de Puerto Rico, adscritos a la División de Drogas</a>
                     </td>
                     <td>FB - Naguabo</td>
-                    <td class="time-ago" data-date="2026-11-18T08:23:00-04:00">hace 14h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="🎄☀️ ¡Buenos días, Humacao! ¡La Navidad también es tiempo de crear y compartir! Hoy los invito a nuestro taller gratuito “Elabora tu Esfera Navideña”. ¡Los esperamos a partir de las 5:00 p. m. en el quinto piso de la Casa Alcaldía!">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi_gFBVV95cUxQeEcxdDZZcTJuU2ZjdW1NdExBTVU2d1AyV0hkNFdjNDhCUDJqWnJidkkwLTBGRDhROXVSV05yRjlrM01jRkdnMzZOUTFocW9rSWgtZzI5eTlJdm12VmhSMmVpQUxqOHJEQ3ZWcmRaU3YyR3ZaYzE3ZDh5V3V5YXhBRGNJb3o2UDllT0xTdVZvZzRRcm9sSGh4Vm9HWjJrVnRpNUU5YzNvUGxFVjNvcVhGbDRtbW9Ib0xrX0g3SUp0cTZHdUR3MmJFZjJGeVY2SVlLMWx1X3lUX0RMUmhWUDN1VlBUYjhXZ0ZCOU93WnJuWHZJSzRrQVJlZ0hYODFvUQ?oc=5" target="_blank" rel="noopener noreferrer">🎄☀️ ¡Buenos días, Humacao! ¡La Navidad también es tiempo de crear y compartir! Hoy los invito a nuestro taller gratuito “Elabora tu Esfera Navideña”. ¡Los esperamos a partir de las 5:00 p. m. en el quinto piso de la Casa Alcaldía!</a>
-                    </td>
-                    <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-11-18T08:16:00-04:00">hace 14h</td>
+                    <td class="time-ago" data-date="2026-11-18T08:23:00-04:00">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan,Caguas" data-titular="San Juan remonta ante Ponce y Santurce vence a Caguas en diez entradas">
@@ -1749,7 +1834,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxQSVhBWndKY3hPTzMyUUNMVGNtdlNTR1hqN2VzTkN5ODJjUnBFOVRwcXExWVVZOEMzYmJ1cXh3VnJBa21ta1RVQjZfOWRLNkVpTVlYaTVkdzNsYmpHUndmanUxck90ZFdybG5WNjNlLW9oRFVMa1JValBkVlRGOEY2VXBEVV9hSGszQmxSTFhuZnlnT1p6UTB2SUNsd0xBb1JlM2xQZWJiZ1I0MjIyX3BqcDU3QW1qVS1VVjdNSFJLS1FvZDhkV1YtLURwUU9Dc1BBXzBVcUNVeDB1Zm85LWFzQ1pnaDFJM0ZnWVHSAe8BQVVfeXFMTkd5YlF5RGRhNnI4djhyS3VmQ3Y1V0FyR09NTlZ6LUM0d3BCT0hTZFNLQkFoZmEyY0VvWU9Cbi1Mb0lvVDhhU1hxdnNNNnBwQ0ZpUnFQcG9idHFiOV9xbmJBenVwTFd4by1SbnhrTDZDYmdVUk1GdEtKWHBQVktXV1NBUlB6X0tfTjVWajZoTkZSVWlEd2gyOGRDdDJrdGxqd2NjSHpfQ0VSS1B5UEJMTDJuZjA3dTFnam1ZYlA1cWtyV1d5TUp1TWowdTB3ekREWnlmLVJfVFRCdEppZGgyWnlBN0ZMM29PTklZTmZDc00?oc=5" target="_blank" rel="noopener noreferrer">San Juan remonta ante Ponce y Santurce vence a Caguas en diez entradas</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-11-18T08:12:00-04:00">hace 15h</td>
+                    <td class="time-ago" data-date="2026-11-18T08:12:00-04:00">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Asesinan a hombre de 41 años de edad en Loíza">
@@ -1760,7 +1845,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxNdGI5ek5jaG84UWIxNUQ0U3p2a3g0T2luX2VVNjdvVlBCQW5pMjBZLXE4eG9pd004d3lKTUxkZEdKekJidHZXNUlPemRYdHJBdVdJOER4QjJfQU1haTdTUmJWNXJPdS1mcEVpQmcxWE1CZTdKeHluM2xtRWdzUlNMT3ktb1dTdFFuZmRHV0Y1V2Jfa2cyZ2NMUFh3RlhOTDdpWWhCc0UtNGhPREtRMDN6X0JMQThib2hnTHVUV09PSF9Ycm5tV09R?oc=5" target="_blank" rel="noopener noreferrer">Asesinan a hombre de 41 años de edad en Loíza</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-11-18T07:56:00-04:00">hace 15h</td>
+                    <td class="time-ago" data-date="2026-11-18T07:56:00-04:00">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Disparan contra hombre, mujer y niño de 1 año en Caguas">
@@ -1771,7 +1856,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxOWTVCMHZMUFJrMk9UOUdDMEgtMTh0OUtRWmRNWjlJakotc2tNS0VwX21aMm1PQ05JRDlOdmt4NGgzcGZtbmxHdTB4SlpjUC1CdkM0eUx6amdKbm5ta0xqZm5CdUZHeDVlb2R6VVdJSkl4VVpCV0NETVBSeE9OZkp2cGJmMVBMQ3dmRkxZbV9ZblVZdnJtUFdYa0l2azdOYloxVk5tUEUzZ0lHUWVLQWstR0pyU1huem42X1AzaUZCV2drVDJtMzdlWVZxTWRvUDQ4aGRv?oc=5" target="_blank" rel="noopener noreferrer">Disparan contra hombre, mujer y niño de 1 año en Caguas</a>
                     </td>
                     <td>WAPA TV</td>
-                    <td class="time-ago" data-date="2026-11-18T07:38:00-04:00">hace 15h</td>
+                    <td class="time-ago" data-date="2026-11-18T07:38:00-04:00">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Asesinan a un hombre en Loíza">
@@ -1782,18 +1867,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://radioisla.tv/asesinan-a-un-hombre-en-loiza1/" target="_blank" rel="noopener noreferrer">Asesinan a un hombre en Loíza</a>
                     </td>
                     <td>Radio Isla</td>
-                    <td class="time-ago" data-date="2026-11-18T07:33:00-04:00">hace 15h</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="🚨 La muerte violenta fue reportada en el sector Miñi Miñi, en Loíza. La víctima fue identificada. 👉 https://trib.al/VULjS6R">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxObndKVWp5NjJ2TWJZS1dKUlVoNGQxRy0yVEdlRUJ3WEpEYU50aDFiNWlRVXNwRjRVU2FpOU9YMklCSDdoRnVUd0N0U3czaU04MGJRcUtvWmVLN09ETlRURlZQeWFKT2hXaFYwdVAzLTR3Sld1NDh3QS1sLS1lUzVoTXprcDZJaEF6cHdJTmRwNlZXOEZJYTZfZVNCZHN1RlJMQkJlRmpheVVlZFhieEdRWU5WejNqRHB1dV9HUTh5ZzlrMEZha3ZzQm1wenltMTZ1YTQ2NGVUb3lFb2F5aDFZMFd0aWh4VDMwb2I4WXhXb1ctdw?oc=5" target="_blank" rel="noopener noreferrer">🚨 La muerte violenta fue reportada en el sector Miñi Miñi, en Loíza. La víctima fue identificada. 👉 https://trib.al/VULjS6R</a>
-                    </td>
-                    <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-11-18T07:32:00-04:00">hace 15h</td>
+                    <td class="time-ago" data-date="2026-11-18T07:33:00-04:00">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="SERÁ UN MIÉRCOLES DE TIEMPO VARIABLE, SEGÚN METEOROLOGÍA Redacción PUERTO RICO ONLINE NEWS 18/noviembre/2026 San Juan- Se espera un patrón de tiempo variable e inestable durante el día de hoy, con períodos de nubosidad y agu">
@@ -1804,7 +1878,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMihgJBVV95cUxPR01UanhCWS1jbFFGWDh6eVg1bVVrZDF0Y0VJUzlXU2tyUTRkVDBiTkh4NVF2a3M2ODlUZ2p3TVFhQXpjTFlUV0RQaDZ4TzA0WUVLck1mM0dyRjNSVlJiMm1EckExQjNxaWJpdHk2dHhEUzNHeEk4Q2FjMnBod1E3c3h0ZTFuOGEtN3BHSV9ndG16bHctbWlfOXY5UVBDTDBSMXplTXdXb25TY3ZFMmJCTzZjUm05M1JaQjdhbDEtT2xLMmo4dlJZX2NaRXdQb3BMNkdsTTVDSnBQOXlIN3FRR3hZSnZqSHFha2Z6aWNFdzZsdEs2M1VTVjV5bkRGWkZxak9kTldR?oc=5" target="_blank" rel="noopener noreferrer">SERÁ UN MIÉRCOLES DE TIEMPO VARIABLE, SEGÚN METEOROLOGÍA Redacción PUERTO RICO ONLINE NEWS 18/noviembre/2026 San Juan- Se espera un patrón de tiempo variable e inestable durante el día de hoy, con períodos de nubosidad y agu</a>
                     </td>
                     <td>FB - Culebra</td>
-                    <td class="time-ago" data-date="2026-11-18T07:32:00-04:00">hace 15h</td>
+                    <td class="time-ago" data-date="2026-11-18T07:32:00-04:00">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Matan a tiros a hombre de 41 años en Loíza">
@@ -1815,7 +1889,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://www.notiuno.com/noticias/seguridad-y-justicia/matan-a-tiros-a-hombre-de-41-a-os-en-lo-za/article_b14b9338-f1d9-4334-b7b6-fbde2f0a1e7b.html" target="_blank" rel="noopener noreferrer">Matan a tiros a hombre de 41 años en Loíza</a>
                     </td>
                     <td>NotiUno</td>
-                    <td class="time-ago" data-date="2026-11-18T07:30:00-04:00">hace 15h</td>
+                    <td class="time-ago" data-date="2026-11-18T07:30:00-04:00">hace 16h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="San Juan detuvo una seguidilla de cuatro derrotas durante la jornada del béisbol invernal.">
@@ -1826,7 +1900,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSVZkTUEzd29EZkdwNzB3bE1waHItM2xLRFhUQWJkOThwM3ltWFh2M0IxLUpLdkc1eWlRRVZ5SGhsZ2g5NW50Qk1icFNudXg0Q0Rwc0lWYlBSdGt6RDNEZHdSYUdGWlR2MEpZQ3pYYnFITGNVZXJ3cDFNejlxOElpeXdkOXRKTm5XTmVpeWdHNVBGRHhHR3BOdjZHY1FPVlNoVGNQNGVlNmFEVy1UMzg4SmV4X0dWNURLYjRIVHZ0ZWRsMTg5VGNDd2lLNGVpZ0VXc0c1TXNHSnFrWTdYY3c?oc=5" target="_blank" rel="noopener noreferrer">San Juan detuvo una seguidilla de cuatro derrotas durante la jornada del béisbol invernal.</a>
                     </td>
                     <td>FB - San Juan</td>
-                    <td class="time-ago" data-date="2026-11-18T07:10:00-04:00">hace 16h</td>
+                    <td class="time-ago" data-date="2026-11-18T07:10:00-04:00">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="San Juan" data-titular="SNM pronostica aguaceros y tronadas">
@@ -1837,7 +1911,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/snm-pronostica-aguaceros-y-tronadas/" target="_blank" rel="noopener noreferrer">SNM pronostica aguaceros y tronadas</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-11-18T07:06:00-04:00">hace 16h</td>
+                    <td class="time-ago" data-date="2026-11-18T07:06:00-04:00">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Hallan cuerpo baleado en Loíza">
@@ -1848,7 +1922,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNb2RXWXZVeXFuMDYtRW1FeXpWUkp5MmFKYjNBcGZyMnVoZ054MzAxNmlBanhPd0tvMmk4VEZ1X1ZkS1ZWZ2RKMU9OeUJfSC1raUtfWTFiZjZTQTdfZmpMX0tVWkpLbmprSmdmX24wZE9UMGtjNUZlSldxU2J0ZDB6VmJ4YXJ3N203UDFqdzBSb0lLQdIBmgFBVV95cUxOdFNkZGJCZXZvX2E0TUNBc0xmT194STFwVW15WHdvUkM0eDA3Zy16VUh6dXNoNDdXa0ZrSjFlYXZyYmlqQnBDQklIRzMzN2FHSnB5bVBOT3hYVkViUnVDQWlGSmt2S2RPTWhNb3Y5RGg1MmlOQVdzanVVNUJGVElZRFgwS3Q2czNkLVhTVjR6YlFGaGg1NVUzMkx3?oc=5" target="_blank" rel="noopener noreferrer">Hallan cuerpo baleado en Loíza</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-11-18T07:02:00-04:00">hace 16h</td>
+                    <td class="time-ago" data-date="2026-11-18T07:02:00-04:00">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Asesinan a hombre de 41 años en Loíza">
@@ -1859,7 +1933,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQUXYwcUQ4aXhIUDdVVlBhYzRQdXpNUkt1OWtndnNOeDMwR2E5TDZDMGRBdG5BVkFVZzJ0OGdMVWIxMmNOM2JLWXh4YXpTUmVnMjdMTkE2YVRSZG85N05BM3RzRzIzWnAxVTRGNHlZd2VSdm5RazlDSl9BbFNzVzJZa3lnamZOeGU4VWRlU2VQZEwtN0VfT2hLRl9neDM1Mk5FOUE?oc=5" target="_blank" rel="noopener noreferrer">Asesinan a hombre de 41 años en Loíza</a>
                     </td>
                     <td>Loíza</td>
-                    <td class="time-ago" data-date="2026-11-18T06:59:00-04:00">hace 16h</td>
+                    <td class="time-ago" data-date="2026-11-18T06:59:00-04:00">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="Asesinan hombre en Loíza">
@@ -1870,7 +1944,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://esnoticiapr.com/asesinan-hombre-en-loiza/" target="_blank" rel="noopener noreferrer">Asesinan hombre en Loíza</a>
                     </td>
                     <td>Es Noticia</td>
-                    <td class="time-ago" data-date="2026-11-18T06:57:00-04:00">hace 16h</td>
+                    <td class="time-ago" data-date="2026-11-18T06:57:00-04:00">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="Policía arresta a seis personas en intervenciones en Caguas La División de Drogas de la Policía de Puerto Rico arrestó a seis personas y ocupó sustancias controladas, $806 en efectivo y un vehículo durante intervenciones realizadas el martes, 17 de novie">
@@ -1881,18 +1955,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxOZklYdnA1ajNnV2lEZUJFci1WR09zZVZmN3lDMTJTdHJydUNwak82S1NoTWJ3dEswaDZBMFVfMmFENmZkb1ZQUUZDNHJaVXNWM29pRTFmVTdsOFFVd3QyWmFycnpSeVlfNEttYmJNQlhla3hzd2VtOUNiQ2VsYkl3cGdQRWtXdjRGeGJSS3JhblZPc2h4dlczZTBydDRuaTd4NV94NXN1WnE5eXowdFY3blFsY3p1ZVY4d1dkb1VGdDkzcEFLV1pqS3F6VENFcndGWXQxXzBBZkd1cWs1S1VGbA?oc=5" target="_blank" rel="noopener noreferrer">Policía arresta a seis personas en intervenciones en Caguas La División de Drogas de la Policía de Puerto Rico arrestó a seis personas y ocupó sustancias controladas, $806 en efectivo y un vehículo durante intervenciones realizadas el martes, 17 de novie</a>
                     </td>
                     <td>FB - Caguas</td>
-                    <td class="time-ago" data-date="2026-11-18T06:33:00-04:00">hace 16h</td>
+                    <td class="time-ago" data-date="2026-11-18T06:33:00-04:00">hace 17h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="#AHORA CAROLINA LLUVIA Y GRANIZO">
                     <td><span class="muni-tag">Carolina</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQbFR5TGc2MXRUbVVHQVp0dTVwak1Cd3I0M3pCbll4dHp3bXZwLUg2T1U4bjFiSi1OYTUxZ1FEZ3A2VmtacjBrQThiZ0x0WUpycjJtblVqZ1AxanZkX0FJaVR2N25wSHpxQkh6UnhFTXFVaWVIa2xhaExDUzN0eHBZUG5DaVN1YXd3ZUI3TUtDWHFEeXM1MWxrQ19lekc?oc=5" target="_blank" rel="noopener noreferrer">#AHORA CAROLINA LLUVIA Y GRANIZO</a>
                     </td>
                     <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-11-18T06:13:00-04:00">hace 17h</td>
+                    <td class="time-ago" data-date="2026-11-18T06:13:00-04:00">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Loíza" data-titular="En Loíza y Arecibo: Registran dos asesinatos en un lapso de 11 minutos">
@@ -1903,7 +1977,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxQUW9LLU81SmNwRzVqWEtTZUE0ZEdPU1JTZ1lWeGYxRXlhWGRQRjhuallvUTVTclcyQXNMblgxMFZuWkdWdEcwaFlHUFhFNjllY2F1UW1TSFdOR0MzYnJjUUdDZFhvWkFUN2Z1ekJ6eGkxbkxYNUZmOWxuTGtQNDZfM0FwbjY1MXlrV0kzaElnSm8taVhRYV9pTWpXLUFfUFY1WkR2SThwVFNQeXZtTVFzdzV1VnhKS1JuT2s0b1JYdFBNczROZTlBTXpsaWZpSFdDcFBlUEVQdTNYWE5iaWhlc2xVWC1wMVdLS3JIZtIB8gFBVV95cUxNa2dkZ1VJR1VrZUVyd3NWcUF1VTljUXFhODRCNVluSUNaZEZUOHpkYVN5MURQVzRVWFBNVWJ6WlpIWkZUN1RvaDZxUkpNalQ2ZE8tVkNsQU9uczZfOTNCTk1IcEw3MzB6TTFhOFZRWXRORnBfZ1dLSUt1LXdHaVVzc0laVW1ETkJDWHcxTmtjc0RpUExyRk81YzRPanBpdHVJNk1rTGhMRmFYbGl3YjAxTWdheWxPUk1RLThrODNhdld4Wkx4N3haTVE0c3FDLXdISVpCcFhPMWhUY1JtYy1Kb1hweTVJUzBuUzFrbk9FOHlXUQ?oc=5" target="_blank" rel="noopener noreferrer">En Loíza y Arecibo: Registran dos asesinatos en un lapso de 11 minutos</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-11-18T05:54:00-04:00">hace 17h</td>
+                    <td class="time-ago" data-date="2026-11-18T05:54:00-04:00">hace 18h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Caguas" data-titular="&#34;El tiempo dará la razón&#34;: Danny Ortiz pasa la página con Mayagüez y comienza una nueva con Caguas">
@@ -1914,7 +1988,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxNMnl1WF9HRFhUZ2xrRUlVNmZIcmxiNlhHbVE2NVpfSFZ5YTNPVUZheDNNN2dQSms1SUNjYTNqWHlNb0JuM2xEbGxraEpzdjJJVERrMURIODJoSkFsbkZkLVNiZGpyaWNYTm1RTFB2OENHNGk2bE9Rb0djN0F5QkpFR25mNlQ4LTI3aklIX09LQW91REd1c2NHMWU3TW91X1ppemZMLTlPb0FFcDlKcFVWMFN4VFUtNHBFc1NXajFGeV9JcDRjb2hfUkcxU2l2WW1JRGpucEx0MW5fcFM4ZDVr0gHkAUFVX3lxTE1UdDJVS01GbkpEQ2V5UkNzMmliemptU3pTZ1drNFMyMGRxQ21LNG00RkRLTjctZGdDSVl5RTlISDlscjZ2ZmVOei1NRU9TWTA4TTl6LUdsdTRjMnhVSmc2alNoWGdWODZyNENfaHNtcHVuWU50RTF0ZmloRnprdm5odmUteVhCa0VwcUhyekF0YWFFSEdiWDh5aThTbC1wd3hmaE80TjI4bV9vTTgxNUQwcjRuSDllNnVHNWw4cGY3LVZJZ0lOdWlTcGRMX2ZJVjhVNzJ5bXIwaVhNQ1dLSm5xZHFnSg?oc=5" target="_blank" rel="noopener noreferrer">&#34;El tiempo dará la razón&#34;: Danny Ortiz pasa la página con Mayagüez y comienza una nueva con Caguas</a>
                     </td>
                     <td>El Vocero (GN)</td>
-                    <td class="time-ago" data-date="2026-11-18T04:00:00-04:00">hace 19h</td>
+                    <td class="time-ago" data-date="2026-11-18T04:00:00-04:00">hace 20h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Humacao" data-titular="Humacao, Capital del Este">
@@ -1925,18 +1999,18 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE9mc0dld1kwVm9nZzF4cWJISjhWRGtyX2pyeGRtNWhVSjF2ZWFyOWNQdG5UTndOOUtsVXpvSWhINDhZWXd4cVFiSGduVk9nMlZWYTdrcHd6MThBTGxFeno3bHlIOW5DeHhDdVpwVXZySHBwNl9La1VfTHVn?oc=5" target="_blank" rel="noopener noreferrer">Humacao, Capital del Este</a>
                     </td>
                     <td>FB - Humacao</td>
-                    <td class="time-ago" data-date="2026-11-18T02:23:00-04:00">hace 20h</td>
+                    <td class="time-ago" data-date="2026-11-18T02:23:00-04:00">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Ceiba" data-titular="Observación Astronómica en Ceiba in Ceiba, Puerto Rico on Nov 21, 2026">
                     <td><span class="muni-tag">Ceiba</span></td>
                     <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
+                        
                         
                         <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxNZ2NMVWR2Mlk0RmNCeUxnTUlVX2VuWHdjYWtyM0xVOWxOdk1ZNFdCT2xzblRHaXppQXFOZlBrT3B2WU8tTDE4c2lhbXlja240UlRWbFVmR1IxSUxzY3dzalVHX0NLc1hlRzR2ZG5xYmNwX2hqMVJaVFVYTzNYRDQ3aTFxcVhjVnVKeGlUQy1PdEFnMEVvZzBkellJQk1UeFdvLXpmR0E5N0JoMHpudHluQmVwajBRLTRJSmc?oc=5" target="_blank" rel="noopener noreferrer">Observación Astronómica en Ceiba in Ceiba, Puerto Rico on Nov 21, 2026</a>
                     </td>
                     <td>FB - Ceiba</td>
-                    <td class="time-ago" data-date="2026-11-18T02:21:00-04:00">hace 20h</td>
+                    <td class="time-ago" data-date="2026-11-18T02:21:00-04:00">hace 22h</td>
                 </tr>
                 
                 <tr class="article-row" data-municipios="Carolina" data-titular="Quique Usales. . BAD BUNNY y CAROLINA PICORIOS protagonizaron uno de los momentos más virales en redes 🔥🐰 Tras recibir el inesperado follow del Conejo Malo en Instagram, la modelo celebró eufórica, pero la alegría le duró apenas unos minutos an">
@@ -1947,318 +2021,7 @@ tr.article-row:hover { background: var(--surface2); }
                         <a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxQaEZJMmhEQzJlRXFrSFBDUjkwclZ2SnJMNXFTdUpOXy1fOG43OFBaWWhwRVZwTHdRU0o0aG9kWFY1VVEzQUhiSEVmZ2lwWF9LWmpEOHhrTWhCRi1oWm5kZnhydkV4cTJkMWhzNXM0TGNDQTJHcEhkd2FiNVhzZnIxbGE3MXBCa3RCclFpMmw1azVicFFzeXhudDY2TG9FdmtOa2NfallZVXk0MFNyYmVoRFIxbk9ZSGN6Qy1zTG1ZWWdQaEN4LXdWd0pQUmFZdGd2amhQRkZuWVA4ZEJvdnRyZ1lB?oc=5" target="_blank" rel="noopener noreferrer">Quique Usales. . BAD BUNNY y CAROLINA PICORIOS protagonizaron uno de los momentos más virales en redes 🔥🐰 Tras recibir el inesperado follow del Conejo Malo en Instagram, la modelo celebró eufórica, pero la alegría le duró apenas unos minutos an</a>
                     </td>
                     <td>Moluscotv</td>
-                    <td class="time-ago" data-date="2026-11-18T00:46:00-04:00">hace 22h</td>
-                </tr>
-                
-                
-                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Policía investiga asesinato de un hombre en la barriada Miñi Miñi en Loíza">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxPR210QzhIVENTT2g4eURrTWJPbGs0NnBCTnNuU2owYUNqNHAtdXFsOHA1UFdrWXRVYnpMMEE2WVpkdTJzNWVGTDJORzVmMWxpZEpZTUQ5UzF5VzdsQzQ1b0hTazhNQUJwYldGbkNaVFBJY1lXdWFIZllvSDctTlR1MXVSOHhEdS1zck1DbUdGaEtqM3hwa1h3ZURyNEk2NlNhNEEyNGJvRjdLTEhqTW5mbTU1N1lwNFZjbGVkRlN4c3FsUncyUUo3T2lFMGxmM0dDcm5JR0dYYjZ2ZVJfb1RTNWJHQ1Fadw?oc=5" target="_blank" rel="noopener noreferrer">Policía investiga asesinato de un hombre en la barriada Miñi Miñi en Loíza</a>
-                    </td>
-                    <td>WAPA TV</td>
-                    <td class="time-ago" data-date="2026-11-17T22:40:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="Sucre Noticias. Sam Marshall · Ace. Luis Ángel Ordóñez Fajardo, de 37 años y oriundo de Sígsig, Azuay, falleció tras un ataque armado en la piscina de un complejo turístico de Arenillas, provincia de El Oro, el lunes 16 de noviembre. El hecho quedó registra">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiigJBVV95cUxOTjExTHBSYVJ4TngtY3U0OGhPOFlPREVJSVVWZ01Kem5TbTBaX0txYmNGeGN1XzlTbEFTUzR4dkdrQ09SZlVUWGJjZzVSTV9yOV9NajBEVTRLRk9WeTcxZDM0YVBwTmVNdklqdEZhYW5IakZsOGpOTDdzUFFCc2lHUzBRS2lCZDRzOVR0SklkNUxNU0dtWnpkSUxqVE9Cc2pESE4tay12emVTTUxnNU1CVE5TRUpybDVXVkVJV2RqQmdlMmZrMXpNMUlYeGFZelFGSFNvU2RoOU1JSGVMQmhpNm1LdjJOZ2l2VUR5Ukg3emVNaU1IM00xTkp5WkljUDlGaUNWRFV6RE0yZw?oc=5" target="_blank" rel="noopener noreferrer">Sucre Noticias. Sam Marshall · Ace. Luis Ángel Ordóñez Fajardo, de 37 años y oriundo de Sígsig, Azuay, falleció tras un ataque armado en la piscina de un complejo turístico de Arenillas, provincia de El Oro, el lunes 16 de noviembre. El hecho quedó registra</a>
-                    </td>
-                    <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-11-17T21:24:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Reparten 350 Cenas de Acción de Gracias en comunidades vulnerables de Luquillo (Luquillo, Puerto Rico)-El presidente de la Cámara de Representantes, Carlos ‘Johnny’ Méndez, junto a voluntarios adscritos al Banco de Alimentos de Puerto Rico, hicieron">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZjNub3QwVDd3akpnQ054d09NLTN5R3Q0U2NfY1puNUg2RVlqSXowVFhoOElOUVV3bHdpOHB0UXpaTjIzYzZuaTAwSHVBdFZrazBLeEVrdG9XeDB5TWZlVTc4NG5rTUVXQ2tHejdTbFpqb2hOakN3RUNxYzh3UVoxdldBbEtJTWNielJwc09sR0JIakZmUHVOVW14N19hWDNUTkhLX0RwRnFDbnI2Vk1Da3A1X1BkZWhhY2hXdHF6RU02ZUV5Mk0xbFQ3TDdoYVJ4Q3hWb2hwaXNGMHoyUXc?oc=5" target="_blank" rel="noopener noreferrer">Reparten 350 Cenas de Acción de Gracias en comunidades vulnerables de Luquillo (Luquillo, Puerto Rico)-El presidente de la Cámara de Representantes, Carlos ‘Johnny’ Méndez, junto a voluntarios adscritos al Banco de Alimentos de Puerto Rico, hicieron</a>
-                    </td>
-                    <td>FB - Luquillo</td>
-                    <td class="time-ago" data-date="2026-11-17T20:01:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Municipio de San Juan anuncia actividades por su Gran Encendido Navideño">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi9gFBVV95cUxOV3hWdEdWeFZ4ZjlSdDlZQUZNN3YtWnJEeTROdE9OMW43WmRxejQtMlJpNWV6VkR5b1V1NFhpT0twMW03bERubEFNZUNRTzJJQk9lM08zSFBSekNMLS1rbjhWQzRCemFaVDlDR0F5OWJaYTFnUUJZZ0Z2Rkd1QWo1TE9EYjcyTk41LUdxT0JiTU1faTFjSUN0ZXlKUnlrSmE0c09mNnd0MnktZmJ4WjMzek9HR2ZNeTRBcmcxUDlDeWJZNGJUa1RtUXA0V0VhYUZ5XzhKRjdTT1RKUUZOSjBEZUU1NE92MHBSVWl3Sl9qeE1ySktLSHc?oc=5" target="_blank" rel="noopener noreferrer">Municipio de San Juan anuncia actividades por su Gran Encendido Navideño</a>
-                    </td>
-                    <td>San Juan</td>
-                    <td class="time-ago" data-date="2026-11-17T18:51:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Ceiba" data-titular="DILIGENCIAMIENTO DE ORDEN DE ARRESTO CONTRA UN INDIVIDUO RESIDENTE DEL MUNICIPIO DE CEIBA POR ALEGADO FRAUDE Agentes de la División de Arrestos Especiales y Extradiciones de la Policía de Puerto Rico arrestaron el día de ayer">
-                    <td><span class="muni-tag">Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxOUmM1aFlncVpiTExJVUdlOWN0aFN6cHdyTFZNYXBKZlVuTHVoZkY2ekdiY09nTm1YakxHQng2WUx3RDA0Q2gtTFJQNTNSVzlPM1Frbzc1ak82QWxkTTg3eXhfeGRfdFpNS1B0b2NnMTN4aE9qbEM4S1JkMXlISHFOZ2hqQ0E2b1dWY3JqY1NyVjViU3VCVHdIdzdfWGdUelN4M2o3YklhNUppSExJQ3lBZE00WE5yLTIxWTZQQjV4ajlzVVQ2U1pIdEk3OXItT0tUMzFhZDdQVQ?oc=5" target="_blank" rel="noopener noreferrer">DILIGENCIAMIENTO DE ORDEN DE ARRESTO CONTRA UN INDIVIDUO RESIDENTE DEL MUNICIPIO DE CEIBA POR ALEGADO FRAUDE Agentes de la División de Arrestos Especiales y Extradiciones de la Policía de Puerto Rico arrestaron el día de ayer</a>
-                    </td>
-                    <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-11-17T18:42:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Un día con niños de San Juan a Icacos Que tour me recomiendan de un día con niños voy a estar en San Juan y en cabo rojo. Me gustaría ir a icacos u a otra isla bonita en grupo.">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE11UG9FSFhQRlp4a0JUN0tzRWlGS3dCTWVpWE9faS1UdnRYdC1vdlp1R2NXVFJONTZaWmJSeWtCdjBHUHdrejFRX2NCSGZmZmozME83M2ZyVDNpdGl0REpuQnRBckotSXYwQlFaem16QmhVNHBreW9CSXB3VQ?oc=5" target="_blank" rel="noopener noreferrer">Un día con niños de San Juan a Icacos Que tour me recomiendan de un día con niños voy a estar en San Juan y en cabo rojo. Me gustaría ir a icacos u a otra isla bonita en grupo.</a>
-                    </td>
-                    <td>FB - Vieques</td>
-                    <td class="time-ago" data-date="2026-11-17T18:39:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Hombre enfrenta cargos por entregar seis cheques sin fondos por miles de dólares en Humacao">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi_wFBVV95cUxNc3JZdFRPWlh3UUpXbUxJRWl5dEw4UkFwZ201RnpoNjFNc2NNVW8yZnByQjRBV2JtVkFVZHp4TWl4V3VMWDhGcHZtc0VmZEJTNHNzRjdBUmFWMnRId0dpMTFNbUVydTVORFhTSW41cXJQTEZ4T2FMdVQ2LVFrY0F4WDhGX0ljRzViQ2VMU2N0aUhtTWRhTC04Tnp1M3BWQWJqUnhlaXQ0eTBiWVpoZVljbWctcTZqaTBjS3hPYk5lUnlDSlFsZUVVQ3VyYmNrWi1IeXQyX0VQZ3RfSzVDUHpmQnBJZk1oeFhMZndTMjVGaFR6QUs3eERYR2E0MHR3TkXSAYQCQVVfeXFMTWVKdVcta1hYV1MxanNjSVZ3SDNkeWFZMl85Y1RHM2lBTFVpY0VvdlZYWlFZUVk5SEgyOEFLQ21CZEkyc19ScTZfTUQzLWMxRFZ5SVc0aHJlNWZ0a0hBdmJ6UEM5ajZOanVUQWRMRWk5ZXhPN3NnZEl1Y3B6Rm1PcU5sd2pCV1dSY1dJd3FlV2MwX2MxQ1NUVGdfX0pHZUU2NUVyVzVibU1uM1hFczZEWF9qdUgwaS1JTVZ4NE4wOWFNMVEwZ2hFeF9EUTZUcU5ldnpLMGN1aEprX2VFczZ2ZnJjWVUzRk5ibWVFZ0t2bXFxRGdFV2NtS2NucnVPU3FkLS1PZC0?oc=5" target="_blank" rel="noopener noreferrer">Hombre enfrenta cargos por entregar seis cheques sin fondos por miles de dólares en Humacao</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-11-17T18:22:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Caguas" data-titular="🥊⚾ ¡Dos figuras del deporte boricua, dos entrevistas que no te puedes perder! 🇵🇷 Esta semana en ETD conversamos con Amanda Serrano de cara a su último combate y con Bryan Torres, de los Criollos de Caguas, sobre el inicio de la nueva temporada de l">
-                    <td><span class="muni-tag">Caguas</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxOMWNiZ0RvVGpiY3FNdXZsdkZFSmtsODZZdXFVTkltbGNHaWhtV0NKb1lfbkc2eHQyOTNNT2ZaUU9CNEhBcEJDSUZkR2VJS3doSENJOTAyb0psMEtIUTJGa2ZTTm9ENXAzckVVNjh6ZFVDdUhOc0RJZnRhcEdVUXh1enlpZDZLbUNJODBaQ3k4SzV5bjd2VXhzODZHb3UzekwxTnQ1TFZ4LURmYXBPWlljTmN5ZFBwUWVUZU54UGEzd1JzbVRfNVVXTlRKeXJBSnVNLXJpb0RSZFN3UQ?oc=5" target="_blank" rel="noopener noreferrer">🥊⚾ ¡Dos figuras del deporte boricua, dos entrevistas que no te puedes perder! 🇵🇷 Esta semana en ETD conversamos con Amanda Serrano de cara a su último combate y con Bryan Torres, de los Criollos de Caguas, sobre el inicio de la nueva temporada de l</a>
-                    </td>
-                    <td>Telemundo FB</td>
-                    <td class="time-ago" data-date="2026-11-17T18:00:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="“Una nueva oportunidad”: inauguran radiotelescopio en la UPR de Humacao">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxQQV9pM1BVM2dNMUFzYXY4WGlkYWkwRlE4SlhOTUYwYWdlWmdTRzF0emZHeEZnUTFOWUYwdEsybGZ3MjdtTnYwczA1M2d6NVNZR3Jqdzh6d2lWUEtVZDZHSmlwUV8zODkyb0doVGpBMTlGSjhrNHJLdmlnZzhEWlQ3RlNocUx0b1NWMTF6azRWU3U2UGxjS09QWUNGODVQWm1RbU5VQjhoWTZ2M0hHYUpUVmxDVS1tU3FuVFg5QmstS0JPQ1NhUVZuci15cF9IbjJiX19jaUwwN3VoSktNYXV0a2toMmI2dw?oc=5" target="_blank" rel="noopener noreferrer">“Una nueva oportunidad”: inauguran radiotelescopio en la UPR de Humacao</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-11-17T17:46:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="Inauguran nuevo radiotelescopio en UPR de Humacao">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPWk1lOFp1aDhxT1dBa1VnRWUybFQzSWlLUUNiNnlIdHVQRlE0VE1wdlFQSlhIU0dZX3NnUkNxSDBaWFJWMUhOWjVFcGJPN05NTEhsbUp6RDh6d0Z2cEkxNDA5N2RoS29RcDRMM200dWt3QmFaOFBoYzlheURDcG50SFJfNHYwSG9RMDN6UlJHYXVTa0RDYVVpSGhQWmxjT08wOFRicFRNcmRaZlhVdUpPNFBYdXfSAbwBQVVfeXFMTnJEdXdfcFdzemJaVnljejVjNXJzUGFFcE13eDBLekREZHNYOEZhOXYtWENtWHhZRmZOZFdQSzV0aVl1a3RoYUEyRWItdGpCMVVWanNCTXB3aHhHdWNYRk1MaGRJVTZnYWpKWUlPWUY0NmtxM0VseHotTUZCdXFZQ2IzNG40UDJQb3hUeHQ4ZVctbE1Vc1BKNjFKdFV1VVFGSS1tQUtWSVVMX2ZTNUotVndFUi1ZZGV5dVlXT1o?oc=5" target="_blank" rel="noopener noreferrer">Inauguran nuevo radiotelescopio en UPR de Humacao</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-11-17T17:34:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Municipio De Trujillo Alto">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE11VU4zb19TeUY5Q1dEa3dKWTdNVjgzQUVxM2VTNkhBYml2VGtDMVFuT2UtWTJ2aHdQc2syT0hPY3J0TDRhVDhGSWJfQVVmWG1JQ1hXTW0taXhSV3NLOS1IbjhUR1loTHpOYzBGRFA4ZGxOZlRSVTZxRkxlOWYyQQ?oc=5" target="_blank" rel="noopener noreferrer">Municipio De Trujillo Alto</a>
-                    </td>
-                    <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-11-17T16:55:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Canóvanas" data-titular="¡¡CANÓVANAS!! 🎄 ¡Nos vemos mañana en el Encendido Navideño! 📅 Miércoles, 18 de noviembre 📍 Escuela de Bellas Artes, Canóvanas ⏰ Desde las 5:00 p. m. ¡Los esperamos!">
-                    <td><span class="muni-tag">Canóvanas</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi-gFBVV95cUxOa0lZN2ZZWG5ydjdfNmgzd2VPWHlZSENMZ1hCN0JOZUJQTFNpRlR1UGlVb2RZOFlYcndsSU5lOHVZcnFjWHQtUUNoVUdLdHJqcDNVSDVLRzdyNTVNSDFyVVFIdVBIYmhMZ3JJT3lUV1dRSWxFalFXcGFYSkxhWjlIR3l6WllSdGhreGZEVjZPbVQzaS1Rek1tU1JpU3ZDN1NaZnE1bXBmemNFeDktOGNNbHlvM0VmUGUzTFgtWW5nRTh4V2FPQjVvMjZfcDZJLWg5Mlo5ODFoQTFXcjFCenBsaGFRbGl2cEUzRGRYMHhOYlBYZTR4QjB5QVpR?oc=5" target="_blank" rel="noopener noreferrer">¡¡CANÓVANAS!! 🎄 ¡Nos vemos mañana en el Encendido Navideño! 📅 Miércoles, 18 de noviembre 📍 Escuela de Bellas Artes, Canóvanas ⏰ Desde las 5:00 p. m. ¡Los esperamos!</a>
-                    </td>
-                    <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-11-17T15:28:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="El alcalde, Jesús “Jerry” Márquez... - Municipio de Luquillo">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPOGExbkVxYWRZT2hTVF8yNkNwT19HRnNWYXNQal9OV3E4X1kzdS0td1pmT3lTaFJ3ZG5nWXo3cGM2U09ITFQ5NHBQRTVjaFdjT1g0ZXlHN3JFMHE2MTktcXo5M2ZaUVFQdnNOOWt5V0ZBSlVxQUh5WGowYkloblQ1bHJUUGNGNFBuQU5ocW13?oc=5" target="_blank" rel="noopener noreferrer">El alcalde, Jesús “Jerry” Márquez... - Municipio de Luquillo</a>
-                    </td>
-                    <td>FB - Luquillo</td>
-                    <td class="time-ago" data-date="2026-11-17T14:36:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Fajardo" data-titular="#BSNPR | OFICIAL: El empresario David Pilger es el nuevo apoderado de los Cariduros de Fajardo tras aprobarse la venta del equipo por la Junta de Directores del BSN. La transacción marca una nueva etapa para la franquicia, que recientemente recibió la">
-                    <td><span class="muni-tag">Fajardo</span></td>
-                    <td class="titular-cell">
-                        <span class="badge-nuevo">NUEVA</span>
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxOYWVWZFB4S0stRWxWWmdyZTVuVzVDU1FpWUZDVGc3SG0yVHVfOGx1WHNiYlpUWGZiZWVjN09PT2pHdEtSVlAxWGhMTjU5aWp5YVJrQWRYUTF3Q1JRODllcVI3dklTZ25URlozazE3N3FZRGdQYXFQdFdZVTVSWmFpRldLVHRTWmo1TngyNnN6SFFtajRoRXVyYmYwcS05WlpHU2kyYkQzSmd4NlRENWR0eklSTVFMQVJvbnhzWUViQVhOWnJFYlozUGNMZlA5d20tdEV3TFdWODc?oc=5" target="_blank" rel="noopener noreferrer">#BSNPR | OFICIAL: El empresario David Pilger es el nuevo apoderado de los Cariduros de Fajardo tras aprobarse la venta del equipo por la Junta de Directores del BSN. La transacción marca una nueva etapa para la franquicia, que recientemente recibió la</a>
-                    </td>
-                    <td>FB - Fajardo</td>
-                    <td class="time-ago" data-date="2026-11-17T14:36:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="🔭 Una nueva ventana al universo se abre desde Puerto Rico Con una inversión de $100,000, la Universidad de Puerto Rico en Humacao inaugura el primer radiotelescopio en funcionamiento en una institución universitaria del país. Aunque no sustituye al hi">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxPSy1IZXU1djNGYThOeTE4RFBVX0d4c2FyUUNuWEhFU3JqSWJZb3l0dnljRkVMNmxDREx4b3V2ZkgyRkoyVDJ2cUtvUU12bHZkeEF5SVBZMWRtQXN0U041OHlwTFNEQUh1Z1JkMHhWUzVQbWJqSFkyVVhIZnpwSmJ2NS04Mjk2T2tKQkh5ekEtZkF3WlJqWmpPTTJBVlhtZlhxZ1RzOEwtcGN1Y0thd2xRZnMydElCcWI1cHRzNDcxa1dpWk5EZTVhTWRVYWNXRExrczBUM0hZUmU2dHhVaE1n?oc=5" target="_blank" rel="noopener noreferrer">🔭 Una nueva ventana al universo se abre desde Puerto Rico Con una inversión de $100,000, la Universidad de Puerto Rico en Humacao inaugura el primer radiotelescopio en funcionamiento en una institución universitaria del país. Aunque no sustituye al hi</a>
-                    </td>
-                    <td>Telemundo FB</td>
-                    <td class="time-ago" data-date="2026-11-17T14:31:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Humacao" data-titular="UPR Humacao presenta ATLAS, iniciativa que ampliará oportunidades de investigación estudiantil">
-                    <td><span class="muni-tag">Humacao</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxObVRBWjBOMmFLLTF0ZHBILXZ3OVljQUhWTEE5RjlNbThCM2xLR050WldMcXBONHJDVzVPTC1ZZndZejdVRUZrNG96aFc5eUMySGh0OW9ySlRFa2JYYjI5dG03R2VFOHRHRjRMMDNsN3JwaW9La3QyanptTDRTQUl4YlhoUWh0cUZyWng2MHBIekhWbXhRRXpFTThOZktDOWtMQVR1QkJrdzFMRW9rd0VBYUNVd0FWRjYxT0NZS2hxcFpLNjUwVnZZS3BaNHBPZzlw?oc=5" target="_blank" rel="noopener noreferrer">UPR Humacao presenta ATLAS, iniciativa que ampliará oportunidades de investigación estudiantil</a>
-                    </td>
-                    <td>Humacao</td>
-                    <td class="time-ago" data-date="2026-11-17T14:12:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Trujillo Alto" data-titular="Esencia Criolla Restaurante 📍Lago Alto Plaza #11, Trujillo Alto (detrás de Papa John’s Pizza) Ordena (787)522-0114 Salón con aire acondicionado, amplio estacionamiento, servicio amable Cocina con Amor Criollo 🧡">
-                    <td><span class="muni-tag">Trujillo Alto</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTFBURWtERlZSQ1czM1ctTGpsNXFhV0phMHo2dzRpWlcyeklMQTJ3YVk1bnpMdnRVSURLVGloZTJFY1JiWGx3TGo1RVJsRW9ZVy15T1ZmQkNyZFV4QXB6bVlVX3ZidUxENm51U3M2aGF1VVh4bzBfZkpGNnV1QQ?oc=5" target="_blank" rel="noopener noreferrer">Esencia Criolla Restaurante 📍Lago Alto Plaza #11, Trujillo Alto (detrás de Papa John’s Pizza) Ordena (787)522-0114 Salón con aire acondicionado, amplio estacionamiento, servicio amable Cocina con Amor Criollo 🧡</a>
-                    </td>
-                    <td>FB - Trujillo Alto</td>
-                    <td class="time-ago" data-date="2026-11-17T13:41:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Crean comité para reforzar seguridad y operaciones en la bahía de San Juan">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZmJPV2l4b1VKSFhnNXkzZjRHZUJRNUc4V1M5SXcxTW1yZlpRWDdfcng5NEpwOWdTMFN1TEF0elNaaGE0OEZYbWhWd3ZoLVR1ZnVoNTRQSGlkaFBBUEdhZnJuaFRsSm1xT3pCZlBCWk5SYVZ4MG1BdHFuMDNFTnE5Z2JVQkJuN2ZOMTVINThNMnNROXJsRXZkbjF5eGd3elFmNkxMOS1xeUJaMVBpMWJfeDdNQzN6NThzSFk0Z3BEa0ZIVVotc0Jjak95TlNwcGZ4ZENj?oc=5" target="_blank" rel="noopener noreferrer">Crean comité para reforzar seguridad y operaciones en la bahía de San Juan</a>
-                    </td>
-                    <td>Primera Hora</td>
-                    <td class="time-ago" data-date="2026-11-17T13:12:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="FALLECE EL EXSENADOR ORESTE RAMOS DÍAZ A LOS 80 AÑOS El abogado y político, natural de Manatí, representó al Distrito de San Juan durante cinco términos consecutivos en el Senado de Puerto Rico. SAN JUAN, PUERTO RICO | 17 de noviembre">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxQeW1oNzQ3QVZhbmo0dVpnZHJVQnVEY0dTRGRxQzZwZUMxVVFSUzk0dFZQZWRMVTJkNEUyODZWdnBZNXF0TTUzMW9NTnpmczFlY1ViSkR5d1pma2FwQk4tU0VudW9GNVBHNThZR0I5STh5RVBjbmNFdS15el9COHZEOVJIdkhXVV9nU2ZvdlJ0ZnBoRlBwNEIxYkI1RFZ2MTdXenlpMi1tU2cyZFlVRE1qOUhqUFpEbUhOOGFHX0tlbzhBQnJZdWVNZlMzZDFzSHVibTlJMjRtZEp4TmNjUWlzQXFMLXdncjRsQ2F5NmpORlNzblVT?oc=5" target="_blank" rel="noopener noreferrer">FALLECE EL EXSENADOR ORESTE RAMOS DÍAZ A LOS 80 AÑOS El abogado y político, natural de Manatí, representó al Distrito de San Juan durante cinco términos consecutivos en el Senado de Puerto Rico. SAN JUAN, PUERTO RICO | 17 de noviembre</a>
-                    </td>
-                    <td>Senado PR</td>
-                    <td class="time-ago" data-date="2026-11-17T13:02:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Abierta al tránsito la Baldorioty en dirección a San Juan">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOSW1vek1tVk1aYTlpM2luZThjYUt3a282M3JRZnpJcTZlR01zY2hhYnc1eHJmME1TR2MyeTJMLV9YeEZvNm1SUGlyb0RLTUJtX0pBVVFUanAxUEV2UzBmOU1ZY2JuLThFalhZNEpXQ0hiREE2V2hySzhjVXR3bmc0UU1tZG13TktIdmw1SHVpTTVROVcxdFdadEJCSExQYzdCZDVMbkcyQV9BVHZIaVRaa0ppcDZIY2wtMEdUMQ?oc=5" target="_blank" rel="noopener noreferrer">Abierta al tránsito la Baldorioty en dirección a San Juan</a>
-                    </td>
-                    <td>Primera Hora</td>
-                    <td class="time-ago" data-date="2026-11-17T11:27:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Ceiba" data-titular="De las semillas de la ceiba a los objetos que nos ayudan a descansar. La fibra que envuelve sus semillas es tan ligera que se ha utilizado para rellenar almohadas, colchones y cojines. También tuvo un uso sorprendente: por su ligereza, fue empleada en la f">
-                    <td><span class="muni-tag">Ceiba</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxOb0hHVzVud0UtVlNnRlA0R2swSXA4TE41dUNwY0NpWFFKMURiTXRkWnh0MU51MlVyNFRHLTV3ZE5qZHFMdGdhME9XeGVxQW10Zm5KYXdUeERrRkNMYmRTbGh4dU9DZVlackdHVjdUVk9hbGU1Y1NRdVdlNDh4SUhfbkh4VVNra05iSmkzcWVfVGJyVkZVcHQ1UnJMS3FjX2RGRkluNmk4V3ZFeEhLdDlkQjQyNDZrY0hNalVlWVFrODh0dVlQbTNiWVZmdXZxVzR6T0J6WHlHQmltMUpxS0VVNmJyMjFaSUk?oc=5" target="_blank" rel="noopener noreferrer">De las semillas de la ceiba a los objetos que nos ayudan a descansar. La fibra que envuelve sus semillas es tan ligera que se ha utilizado para rellenar almohadas, colchones y cojines. También tuvo un uso sorprendente: por su ligereza, fue empleada en la f</a>
-                    </td>
-                    <td>FB - Ceiba</td>
-                    <td class="time-ago" data-date="2026-11-17T11:00:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Canóvanas,Loíza" data-titular="💧📢 ATENCIÓN 🛠️ Hoy, martes 17 de noviembre de 2026, nuestras brigadas de la Región Metro realizan trabajos de reemplazo y conexión de acometidas de agua potable en la calle Gardenia, urbanización Loíza Valley en Canóvanas. ⏰ Horario de los trab">
-                    <td><span class="muni-tag">Canóvanas</span><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxQX2VuSDFRSjNFc01idEtwbkRnMEs1NVpGa3doUFV6VXctODd2M2VuU3NKNlIxRVY2d3otNVhod2kzZF81ZUwwcUtLNnNKQnRhQUl1dmJVeWlsZlo0SU12QWhTbC1QNjdWR2NjSWMway1pb1M4MzRZZ0MtOHd3T2RmSUVDb21xNzlqR2owODY3bXg0TVpjM3dNQTh4N1pjemNvRWtSUUtnUjBkTWU0cXhkejhpZTFJMEcxNGtIREd0eDBaXzY1Q2UzNDZfemd0RHFZN1htdGJrTlpycU9OdUtzM2dnaVI2VXVkeUZodEp4M0JDUQ?oc=5" target="_blank" rel="noopener noreferrer">💧📢 ATENCIÓN 🛠️ Hoy, martes 17 de noviembre de 2026, nuestras brigadas de la Región Metro realizan trabajos de reemplazo y conexión de acometidas de agua potable en la calle Gardenia, urbanización Loíza Valley en Canóvanas. ⏰ Horario de los trab</a>
-                    </td>
-                    <td>FB - Canóvanas</td>
-                    <td class="time-ago" data-date="2026-11-17T10:32:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan" data-titular="Noticentro por WAPA. . Un accidente con un camión incendiado en el expreso Román Baldorioty de Castro (PR-26), jurisdicción de San Juan, está provocando un enorme tapón en la zona metropolitana, y provocando que los conductores atrapados tengan q">
-                    <td><span class="muni-tag">San Juan</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxOR3hrZ3ptSUJJUWM4eFhvOVIxcmc0bXFhNWVBTy1JbzJOem9qRURHaHpOazRaSTRhNzc3UzNxZ3hLclh5bFpzTG8xeFl6aURMTm1zcGo3U29takdfZ2NEbVY0eGlkMUxjYnRtRlRIOTkta204NEZVWGIzTW96YmJmSDhwazRSLXRieXB6ekNCU21vaUVyelFkWmg0bzdoM0tRRGJkVDdvLXNNWEJJZC1nVGoyc1g1UVU2a2dBVzd5OGE4azVjSVRIbG9lZDdieUVVdUdJRi05eDJlclBXeXJON3ltTmN4bjk2Nm9Z?oc=5" target="_blank" rel="noopener noreferrer">Noticentro por WAPA. . Un accidente con un camión incendiado en el expreso Román Baldorioty de Castro (PR-26), jurisdicción de San Juan, está provocando un enorme tapón en la zona metropolitana, y provocando que los conductores atrapados tengan q</a>
-                    </td>
-                    <td>NotiCentro WAPA</td>
-                    <td class="time-ago" data-date="2026-11-17T09:11:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="San Juan,Carolina" data-titular="🔥 Un camión se incendió este martes tras verse involucrado en un accidente de carácter leve en el kilómetro 2.6 de la avenida Román Baldorioty de Castro, en dirección de Carolina a San Juan. #PrimeraHora #Noticias #PuertoRico">
-                    <td><span class="muni-tag">San Juan</span><span class="muni-tag">Carolina</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxOUGpCQlpUb190NUJiLWl2VTZJUkN3Smhxa1hnMUM3dEUwZ25OYkgwVEZwTk9yWlk4Z1I0Sy04elRadUJ4SjZRbGlkbFRxekZYYVJ1Wko5eEU1X1dJaERIeVJXOVVvYTNPZTNmV3pOT2tnbXg3THRpb3Z3Nm5hVTd0S0pTVzNiZ1dfNGx6UHR0eHhEUUJPS1d2Y1lVc0ZxUkxCWlBaZ1Y3dTV1RlVpcEdiZzVPS2RfWkJiOTZ4TnZIc1NEbE9ybmJtYWZ1MUFybUVMQm4xc2lqSTJVaTBqSWdaUjFhNjBjdw?oc=5" target="_blank" rel="noopener noreferrer">🔥 Un camión se incendió este martes tras verse involucrado en un accidente de carácter leve en el kilómetro 2.6 de la avenida Román Baldorioty de Castro, en dirección de Carolina a San Juan. #PrimeraHora #Noticias #PuertoRico</a>
-                    </td>
-                    <td>Gobierno PR</td>
-                    <td class="time-ago" data-date="2026-11-17T09:08:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Loíza" data-titular="Ayer recibí a mi querida amiga y alcaldesa de Loíza, Julia María Nazario Fuentes , con quien conversé sobre las iniciativas, proyectos y retos que compartimos desde nuestros municipios. ¡Ya pronto me toca ir a tomarme un buen café por Loíza! Un fuerte abr">
-                    <td><span class="muni-tag">Loíza</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi8AFBVV95cUxNNjN1X2hsWFFqc25LbGRmeGNFemtFUHo2LXRvRnFYcUFJYmlDcVE3MnVQVEpZTmFxSkVKMlpCalNIRE9fTFdiZ3hqWGRqenRqaV8wdEY0bVhGZXd3VlFNMzExc0FJbmdVNTFLNXNFUDM1NW5KeExvVC1Hal9kUjk5aGdWMlpGd2h5cGRIZlhPd18tV25rV2ZqQWhleXBXLVZhRG1yREg1RTlJTGVfNUhLZEZHRVhFTkxCVTVkNUk5RUhPYXk3LThPYjlrSUpSbXU0eHoyU0VwM0xpYVBlYnZJSm02YllzWXpzbGRxdW5JbFM?oc=5" target="_blank" rel="noopener noreferrer">Ayer recibí a mi querida amiga y alcaldesa de Loíza, Julia María Nazario Fuentes , con quien conversé sobre las iniciativas, proyectos y retos que compartimos desde nuestros municipios. ¡Ya pronto me toca ir a tomarme un buen café por Loíza! Un fuerte abr</a>
-                    </td>
-                    <td>FB - Loíza</td>
-                    <td class="time-ago" data-date="2026-11-17T08:36:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Cataño" data-titular="🏀 ¡Orgullo de Cataño! Le deseamos mucho éxito a Alezia Pérez Vega, joven de 12 años y residente de Juana Matos, quien representa a Puerto Rico con la selección femenina 12U en el Festival Latinoamericano de Baloncesto en México. ¡En Cataño celebr">
-                    <td><span class="muni-tag">Cataño</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxOZjBkRkNDMEVZeVhyYTlfZWxkb0xKMXFqa0owd1ZjNkhJNVhvaTNrMmRXODJEMG9LYnJmckxndE5EU1NPWFZiT0RqYlR5UWluVDhYUndkZDZOV1N2NTdOYTYtVVlEMjdsdFV4X2t1bERhZlNmZF95eUd3V2R1WndTZHZLTVJIbTdxRGJIenVOTkh6bk4zNUE1TVkyQklHOWJJTjRueXlXbElQcTNTMTc1b1ZRUGU2UW5ISl81d3IyX2JQNGxKZ2l1cXEyTnJLQ2NESm5zQVBZSjRKaDg4V3lUMTFrcTBNUV80bl9PYw?oc=5" target="_blank" rel="noopener noreferrer">🏀 ¡Orgullo de Cataño! Le deseamos mucho éxito a Alezia Pérez Vega, joven de 12 años y residente de Juana Matos, quien representa a Puerto Rico con la selección femenina 12U en el Festival Latinoamericano de Baloncesto en México. ¡En Cataño celebr</a>
-                    </td>
-                    <td>FB - Cataño</td>
-                    <td class="time-ago" data-date="2026-11-17T08:02:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Río Grande" data-titular="😱 Jugo Verde Hecho Al Momento ... En Rio Grande PR">
-                    <td><span class="muni-tag">Río Grande</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOcXdTN0hFYUJqb0NXaE9vRmlSMndrcGl3ejlSUFZIdjVWTTJGNDVWcTdPTUlNNG9JaDBZb3NMSGxKVmhZR3dzX0FMR3pzcU41SUlZeE8wbVV3Q1dZMGd2YjBmNTlxZWt6UkU3NlUxbUtvWW8xZk9IUnF2YUgtNGFRZ3V3?oc=5" target="_blank" rel="noopener noreferrer">😱 Jugo Verde Hecho Al Momento ... En Rio Grande PR</a>
-                    </td>
-                    <td>FB - Río Grande</td>
-                    <td class="time-ago" data-date="2026-11-17T06:03:00-04:00">hace 1d</td>
-                </tr>
-                
-                <tr class="article-row" data-municipios="Luquillo" data-titular="Tiempo en Luquillo, Puerto Rico por horas">
-                    <td><span class="muni-tag">Luquillo</span></td>
-                    <td class="titular-cell">
-                        
-                        
-                        <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE1uWmgzS2VBaUxCaXk4ZXdpS2lqSXFEWHQ1SnRGZVB3ZHZtR2VxRGpqbjVyZ1Rua2JYR1l6RW1YRzluQUgxMjlwM1hEd0had1hrM3BpNngxekJqb3JmZkdxb2pB?oc=5" target="_blank" rel="noopener noreferrer">Tiempo en Luquillo, Puerto Rico por horas</a>
-                    </td>
-                    <td>Luquillo</td>
-                    <td class="time-ago" data-date="2026-11-17T05:20:00-04:00">hace 1d</td>
+                    <td class="time-ago" data-date="2026-11-18T00:46:00-04:00">hace 23h</td>
                 </tr>
                 
                 
@@ -2408,15 +2171,15 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 El Nuevo Día</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 1</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 NotiCel</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -2424,7 +2187,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Radio Isla</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 3</p>
                 
             </div>
@@ -2440,7 +2203,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Telemundo PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2448,7 +2211,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Walo Radio</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 7</p>
                 
             </div>
@@ -2472,23 +2235,23 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 NELPR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 4</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 5</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 San Juan</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 1</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 Carolina</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2496,7 +2259,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Caguas</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2504,7 +2267,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Fajardo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2512,15 +2275,15 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Humacao</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 4</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 Trujillo Alto</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2528,7 +2291,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Canóvanas</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2536,7 +2299,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Loíza</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 3</p>
                 
             </div>
@@ -2544,7 +2307,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Río Grande</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2552,15 +2315,15 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Luquillo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 1</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 Ceiba</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2568,7 +2331,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Naguabo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2576,7 +2339,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Cataño</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2584,7 +2347,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Vieques</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2592,7 +2355,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Culebra</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2600,7 +2363,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - San Juan</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2608,7 +2371,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Carolina</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2616,63 +2379,63 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Trujillo Alto</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 2</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 FB - Canóvanas</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 7</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 3</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 FB - Loíza</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 2</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 FB - Río Grande</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 4</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 3</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 FB - Luquillo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 2</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 FB - Fajardo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 6</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 5</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 FB - Ceiba</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 4</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 3</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 FB - Naguabo</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 4</p>
                 
             </div>
@@ -2680,15 +2443,15 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Humacao</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 5</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 3</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 FB - Caguas</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 8</p>
                 
             </div>
@@ -2696,15 +2459,15 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Cataño</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 4</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 3</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 FB - Vieques</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 4</p>
                 
             </div>
@@ -2712,7 +2475,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 FB - Culebra</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2720,15 +2483,15 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Gobierno PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 2</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 Senado PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -2736,7 +2499,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Cámara PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2744,7 +2507,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Junta Gobierno</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2752,7 +2515,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 William Miranda</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2760,7 +2523,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Limarys Román</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -2768,15 +2531,15 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Primera Hora</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 4</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 3</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 El Nuevo Día (GN)</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2784,16 +2547,16 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 El Vocero (GN)</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 5</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 4</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 WAPA TV</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 5</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
         
@@ -2808,7 +2571,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 WKAQ 580</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2816,7 +2579,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 TeleOnce</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2824,7 +2587,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Xposed Magazine</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2832,31 +2595,31 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 NotiCentro WAPA</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 3</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 4</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 Telenoticias</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 3</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 4</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 Telemundo FB</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 2</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
         
             <div class="health-card">
                 <strong>🟢 Las Noticias T11</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2864,7 +2627,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Moluscotv</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -2872,7 +2635,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Jay Fonseca</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 2</p>
                 
             </div>
@@ -2880,7 +2643,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Última Hora PR</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 0</p>
                 
             </div>
@@ -2888,7 +2651,7 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 Noticias En Línea</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
                 <p>Noticias recientes en esta consulta: 1</p>
                 
             </div>
@@ -2896,8 +2659,8 @@ tr.article-row:hover { background: var(--surface2); }
             <div class="health-card">
                 <strong>🟢 En Contacto 787</strong>
                 <p>Estado: ✅ OK</p>
-                <p>Última respuesta exitosa: 2026-11-18 11:14:26 PM (PR)</p>
-                <p>Noticias recientes en esta consulta: 7</p>
+                <p>Última respuesta exitosa: 2026-11-19 12:29:15 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: 8</p>
                 
             </div>
         
@@ -2906,7 +2669,7 @@ tr.article-row:hover { background: var(--surface2); }
 </div>
 
 <div class="footer">
-    Observador del Noreste — 2026-11-18 11:14:26 PM (hora de Puerto Rico)<br>
+    Observador del Noreste — 2026-11-19 12:29:15 AM (hora de Puerto Rico)<br>
     La vista se recarga cada 15 min; la fecha indica la última recolección.
 </div>
 
