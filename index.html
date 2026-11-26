@@ -1,0 +1,2698 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="auto">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Observador del Noreste - Noreste PR</title>
+<link rel="icon" type="image/jpeg" href="logo-observador.jpg">
+<style>
+/* ============================================================
+   CSS VARIABLES — Light theme (default)
+   ============================================================ */
+:root {
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --surface2: #f0f2f5;
+    --border: #e0e0e0;
+    --text: #1a1a2e;
+    --text-dim: #6b7280;
+    --accent: #4f8cff;
+    --accent2: #6c5ce7;
+    --red: #ff4757;
+    --orange: #ffa502;
+    --green: #2ed573;
+    --yellow: #ffd32a;
+    --header-bg: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 30px rgba(0,0,0,0.10);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 14px;
+}
+
+/* ============================================================
+   DARK THEME — System preference (auto) or manual override
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+    :root[data-theme="auto"] {
+        --bg: #0f1117;
+        --surface: #161822;
+        --surface2: #1c1f2e;
+        --border: #2a2d3e;
+        --text: #e4e6f0;
+        --text-dim: #8b8fa3;
+        --header-bg: linear-gradient(135deg, #1a1d2e 0%, #161822 100%);
+        --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+        --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+        --shadow-lg: 0 8px 30px rgba(0,0,0,0.5);
+    }
+}
+
+/* Manual dark override */
+:root[data-theme="dark"] {
+    --bg: #0f1117;
+    --surface: #161822;
+    --surface2: #1c1f2e;
+    --border: #2a2d3e;
+    --text: #e4e6f0;
+    --text-dim: #8b8fa3;
+    --header-bg: linear-gradient(135deg, #1a1d2e 0%, #161822 100%);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+    --shadow-lg: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+/* Manual light override */
+:root[data-theme="light"] {
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --surface2: #f0f2f5;
+    --border: #e0e0e0;
+    --text: #1a1a2e;
+    --text-dim: #6b7280;
+    --header-bg: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 30px rgba(0,0,0,0.10);
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 16px;
+    line-height: 1.6;
+    font-size: 15px;
+    min-width: 320px;
+}
+
+/* ============================================================
+   THEME TOGGLE BUTTON
+   ============================================================ */
+.theme-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.2s, box-shadow 0.2s;
+    line-height: 1;
+}
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.header {
+    background: var(--header-bg);
+    color: white;
+    padding: 24px 28px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+}
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+.header-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.header h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.3px; }
+.header .sub { color: rgba(255,255,255,0.65); font-size: 14px; margin-top: 4px; }
+
+.stats {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+.stat-box {
+    background: rgba(255,255,255,0.15);
+    padding: 10px 16px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 75px;
+    backdrop-filter: blur(4px);
+    transition: background 0.2s;
+}
+.stat-box:hover { background: rgba(255,255,255,0.22); }
+.stat-box .num { font-size: 20px; font-weight: bold; }
+.stat-box .label { font-size: 11px; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.6px; margin-top: 2px; }
+
+/* ============================================================
+   SECTION HEADINGS
+   ============================================================ */
+.section { margin-bottom: 24px; }
+.section > h2 {
+    font-size: 16px;
+    color: var(--text-dim);
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.section-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+}
+
+/* ============================================================
+   SEARCH BAR
+   ============================================================ */
+.search-bar {
+    margin-bottom: 20px;
+    position: relative;
+}
+.search-bar .search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    opacity: 0.5;
+}
+.search-bar input {
+    width: 100%;
+    padding: 14px 44px 14px 46px;
+    border: 2px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    color: var(--text);
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.25s, box-shadow 0.25s;
+    box-shadow: var(--shadow-sm);
+}
+.search-bar input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(79,140,255,0.15);
+}
+.search-bar .search-clear {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--text-dim);
+    padding: 4px 8px;
+    border-radius: 50%;
+    display: none;
+    line-height: 1;
+    transition: color 0.15s, background 0.15s;
+}
+.search-bar .search-clear:hover {
+    color: var(--text);
+    background: var(--surface2);
+}
+.search-bar .search-clear.visible { display: block; }
+
+/* ============================================================
+   NO RESULTS MESSAGE
+   ============================================================ */
+.no-results {
+    display: none;
+    text-align: center;
+    padding: 32px 16px;
+    color: var(--text-dim);
+    font-size: 15px;
+}
+.no-results.visible { display: block; }
+.no-results .no-results-icon { font-size: 40px; margin-bottom: 8px; }
+
+/* ============================================================
+   BREAKING NEWS
+   ============================================================ */
+.breaking-section { margin-bottom: 24px; }
+.breaking-banner {
+    background: linear-gradient(135deg, #ff4757, #ff6b81);
+    color: white;
+    padding: 18px 22px;
+    border-radius: var(--radius-md);
+    margin-bottom: 8px;
+    box-shadow: 0 4px 20px rgba(255,71,87,0.25);
+}
+.breaking-banner h2 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.breaking-badge {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 4px;
+    padding: 2px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.breaking-item {
+    padding: 8px 0;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+.breaking-item:last-child { border-bottom: none; }
+.breaking-item .time { opacity: 0.75; font-size: 12px; }
+.breaking-item a { color: white; text-decoration: none; font-weight: 500; }
+.breaking-item a:hover { text-decoration: underline; }
+
+/* ============================================================
+   MUNICIPALITIES — Horizontal scrollable chips
+   ============================================================ */
+.muni-chips-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 4px 0 12px 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+}
+.muni-chips-scroll::-webkit-scrollbar { height: 6px; }
+.muni-chips-scroll::-webkit-scrollbar-track { background: transparent; }
+.muni-chips-scroll::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 10px;
+}
+
+.muni-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 50px;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.25s ease;
+    box-shadow: var(--shadow-sm);
+    user-select: none;
+}
+.muni-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent);
+}
+.muni-card.active {
+    border-color: var(--accent);
+    background: rgba(79,140,255,0.08);
+}
+.muni-card.inactive {
+    opacity: 0.4;
+    cursor: default;
+    border-color: var(--border);
+}
+.muni-card .muni-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+}
+.muni-card.inactive .muni-name { color: var(--text-dim); }
+.muni-card .muni-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface2);
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 700;
+    min-width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    padding: 0 8px;
+    transition: all 0.25s;
+}
+.muni-card.active .muni-count {
+    background: var(--accent);
+    color: white;
+}
+
+/* ============================================================
+   TOOLBAR — Sticky
+   ============================================================ */
+.toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--bg);
+    transition: box-shadow 0.3s;
+}
+.toolbar.scrolled {
+    padding: 12px 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    border-radius: var(--radius-md);
+}
+.btn {
+    padding: 9px 16px;
+    border: 2px solid var(--border);
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    background: var(--surface);
+    color: var(--text);
+    box-shadow: var(--shadow-sm);
+}
+.btn:hover {
+    background: var(--surface2);
+    transform: translateY(-1px);
+}
+.btn.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    box-shadow: 0 2px 12px rgba(79,140,255,0.3);
+}
+#filtroLabel { font-size: 14px; color: var(--text-dim); font-weight: 500; }
+
+/* ============================================================
+   TIME GROUP HEADERS
+   ============================================================ */
+.time-group-header {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent);
+    padding: 10px 0 !important;
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 4px;
+}
+
+/* ============================================================
+   ARTICLES TABLE (Desktop)
+   ============================================================ */
+.articles-wrapper { overflow-x: auto; }
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+th, td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+}
+th {
+    background: var(--surface2);
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    letter-spacing: 0.6px;
+    font-weight: 700;
+    position: sticky;
+    top: 58px;
+    z-index: 5;
+}
+tr.article-row {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+tr.article-row:hover { background: var(--surface2); }
+.titular-cell a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+.titular-cell a:hover { color: var(--accent); text-decoration: underline; }
+
+.badge-nuevo {
+    display: inline-block;
+    background: var(--red);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-right: 6px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+.muni-tag {
+    display: inline-block;
+    background: var(--surface2);
+    color: var(--accent);
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.time-ago { font-size: 13px; color: var(--text-dim); white-space: nowrap; }
+
+/* ============================================================
+   FACEBOOK SECTION
+   ============================================================ */
+.fb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+}
+.fb-card {
+    background: var(--surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border-left: 4px solid #1877f2;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s;
+}
+.fb-card:hover { box-shadow: var(--shadow-md); }
+.fb-card-header {
+    background: linear-gradient(135deg, #1877f2, #166fe5);
+    color: white;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.fb-card-body { padding: 10px 16px; }
+.fb-post { padding: 8px 0; border-bottom: 1px solid var(--border); }
+.fb-post:last-child { border-bottom: none; }
+.fb-post-fecha { font-size: 12px; color: var(--text-dim); margin-bottom: 4px; }
+.fb-post-texto { font-size: 14px; line-height: 1.5; }
+
+/* ============================================================
+   SOURCE STATUS
+   ============================================================ */
+.source-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.source-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    transition: transform 0.15s;
+}
+.source-badge:hover { transform: scale(1.03); }
+.source-badge.ok { border-color: var(--green); color: var(--green); }
+.source-badge.err { border-color: var(--red); color: var(--red); }
+.source-badge.warn { border-color: var(--orange); color: var(--orange); }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 13px;
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+/* ============================================================
+   BACK-TO-TOP FAB
+   ============================================================ */
+.fab-back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    box-shadow: 0 4px 20px rgba(79,140,255,0.4);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fab-back-to-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+.fab-back-to-top:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(79,140,255,0.5);
+}
+
+/* ============================================================
+   HIDDEN (JS filter)
+   ============================================================ */
+.hidden { display: none !important; }
+
+/* ============================================================
+   RESPONSIVE — Mobile card layout (< 768px)
+   ============================================================ */
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .header {
+        padding: 18px 16px;
+        border-radius: var(--radius-md);
+    }
+    .header h1 { font-size: 20px; }
+    .header .sub { font-size: 13px; }
+    .header-logo { width: 44px; height: 44px; }
+
+    .stats { gap: 8px; }
+    .stat-box { flex: 1 1 calc(50% - 8px); min-width: 60px; padding: 8px 10px; }
+    .stat-box .num { font-size: 17px; }
+    .stat-box .label { font-size: 10px; }
+
+    .section > h2 { font-size: 15px; margin-bottom: 12px; }
+    .search-bar input { font-size: 15px; padding: 14px 44px 14px 46px; }
+
+    /* Toolbar */
+    .toolbar { top: 0; gap: 6px; padding: 10px 0; }
+    .btn { padding: 8px 14px; font-size: 13px; }
+    #filtroLabel { font-size: 13px; }
+
+    /* Table → Card transformation */
+    .articles-wrapper { overflow-x: visible; }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    table {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    thead { display: none; }
+
+    /* Time group headers remain but restyled */
+    tr.time-group-header {
+        padding: 10px 4px 6px 4px !important;
+        border-bottom: 2px solid var(--accent);
+        margin-bottom: 8px;
+        font-size: 13px !important;
+        background: transparent;
+        border-radius: 0;
+    }
+
+    /* Article cards */
+    tr.article-row {
+        background: var(--surface);
+        border-radius: var(--radius-md);
+        padding: 14px 16px;
+        margin-bottom: 12px;
+        box-shadow: var(--shadow-sm);
+        border: 1px solid var(--border);
+        transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.2s;
+    }
+    tr.article-row:hover {
+        box-shadow: var(--shadow-md);
+        background: var(--surface);
+    }
+    tr.article-row.hidden {
+        opacity: 0;
+        transform: translateY(-8px);
+        margin-bottom: 0;
+        padding: 0;
+        border: none;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    /* Card internal layout */
+    tr.article-row td {
+        padding: 3px 0;
+        border-bottom: none;
+        font-size: 14px;
+    }
+
+    /* Municipality chip */
+    tr.article-row td:first-child {
+        margin-bottom: 4px;
+    }
+    .muni-tag {
+        font-size: 11px;
+        padding: 3px 10px;
+    }
+
+    /* Title row — big */
+    tr.article-row td.titular-cell {
+        padding: 4px 0 6px 0;
+    }
+    tr.article-row td.titular-cell a {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    /* Source + time row */
+    tr.article-row td:nth-child(3),
+    tr.article-row td:nth-child(4) {
+        display: inline-block;
+    }
+    tr.article-row td:nth-child(3) {
+        font-size: 12px;
+        color: var(--text-dim);
+        margin-right: 12px;
+    }
+    tr.article-row td:nth-child(4) {
+        font-size: 12px;
+        color: var(--text-dim);
+    }
+
+    /* NUEVO badge */
+    .badge-nuevo {
+        font-size: 9px;
+        padding: 2px 6px;
+    }
+
+    .fb-grid { grid-template-columns: 1fr; gap: 12px; }
+    .fb-card-header { font-size: 13px; }
+    .fb-post-texto { font-size: 13px; }
+
+    .source-badge { font-size: 12px; padding: 5px 10px; }
+    .footer { font-size: 12px; }
+
+    .fab-back-to-top {
+        bottom: 16px;
+        right: 16px;
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE — Small phones (< 480px)
+   ============================================================ */
+@media (max-width: 479px) {
+    body { padding: 8px; }
+    .header { padding: 14px 12px; }
+    .header h1 { font-size: 18px; }
+    .header-logo { width: 38px; height: 38px; }
+    .stat-box { flex: 1 1 100%; }
+    .muni-card { padding: 8px 14px; }
+    .muni-card .muni-name { font-size: 13px; }
+    .muni-card .muni-count { font-size: 12px; min-width: 24px; height: 24px; }
+    .fb-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   LARGE SCREENS (> 1200px)
+   ============================================================ */
+@media (min-width: 1200px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 24px 32px;
+    }
+    .header h1 { font-size: 26px; }
+    .stats { gap: 14px; }
+    .stat-box { padding: 12px 20px; }
+    .fb-grid { grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); }
+}
+.muni-card { font: inherit; color: var(--text); }
+.freshness { margin: 14px 0; padding: 12px 16px; border: 1px solid var(--green); border-radius: 12px; color: var(--text); background: var(--surface); }
+.freshness.warn { border-color: var(--orange); }
+.freshness.err { border-color: var(--red); }
+.freshness p { margin-top: 5px; font-size: 13px; color: var(--text-dim); }
+.badge-retained { display: inline-block; font-size: 11px; color: var(--orange); margin-right: 5px; }
+.health-details { margin-top: 16px; }
+.health-details summary { cursor: pointer; font-weight: 600; }
+.health-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-top: 12px; }
+.health-card { border: 1px solid var(--border); border-radius: 10px; padding: 12px; overflow-wrap: anywhere; }
+.health-card p { margin-top: 5px; color: var(--text-dim); font-size: 13px; }
+</style>
+</head>
+<body>
+
+<!-- THEME TOGGLE -->
+<button class="theme-toggle" id="themeToggle" title="Alternar modo oscuro" aria-label="Alternar modo oscuro">🌙</button>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="header-top">
+        <img src="logo-observador.jpg" alt="Observador" class="header-logo">
+        <div>
+            <h1>🗺️ Observador del Noreste</h1>
+            <div class="sub">Noreste de Puerto Rico — <span id="headerTime">2026-11-26 02:31:15 PM</span></div>
+        </div>
+    </div>
+    <div class="stats">
+        <div class="stat-box"><div class="num">72</div><div class="label">Noticias</div></div>
+        <div class="stat-box"><div class="num" style="color:#ff4757">13</div><div class="label">Nuevas</div></div>
+        <div class="stat-box"><div class="num">13</div><div class="label">Municipios</div></div>
+        <div class="stat-box"><div class="num" style="font-size:14px">56/66</div><div class="label">Fuentes OK</div></div>
+        <div class="stat-box"><div class="num" style="font-size:13px;font-weight:normal">2026-11-26 02:31:15 PM</div><div class="label">Última recolección</div></div>
+    </div>
+</div>
+
+<!-- SEARCH -->
+<div id="freshnessNotice" class="freshness" role="status" aria-live="polite" data-collected-at="2026-11-26T14:31:15.384760-04:00">
+    <strong id="freshnessText">Última recolección exitosa: 2026-11-26 02:31:15 PM (hora de Puerto Rico).</strong>
+    <p>Una recarga de la página no implica una nueva recolección. Aviso desde los 30 minutos; alerta desde los 45.</p>
+    <p>7 noticias conservadas por fallos de fuentes; mantienen su fecha de publicación y última verificación.</p>
+</div>
+<div class="search-bar">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" aria-label="Buscar noticias" placeholder="Buscar por palabra clave..." oninput="onSearch()">
+    <button class="search-clear" id="searchClear" onclick="clearSearch()" title="Limpiar búsqueda" aria-label="Limpiar búsqueda">✕</button>
+</div>
+
+<!-- BREAKING NEWS -->
+
+<div class="section breaking-section">
+    <h2>🚨 Noticias de última hora</h2>
+    
+    <p><a href="https://www.elnuevodia.com/noticias/locales/notas/averia-causada-por-un-contratista-dejara-a-residentes-de-san-juan-sin-agua-el-sabado/" target="_blank" rel="noopener noreferrer">Avería causada por un contratista dejará a residentes de San Juan sin agua el sábado</a> — <span class="time-ago" data-date="2026-11-26T14:19:00-04:00">hace 12min</span></p>
+    
+</div>
+
+
+<!-- MUNICIPALITIES -->
+<div class="section">
+    <h2>📍 Municipios del Noreste</h2>
+    <div class="muni-chips-scroll" id="muniGrid">
+        
+        <button type="button" class="muni-card " data-municipio="San Juan">
+            <span class="muni-name">San Juan</span>
+            <span class="muni-count">20</span>
+        </button>
+        
+        <button type="button" class="muni-card " data-municipio="Carolina">
+            <span class="muni-name">Carolina</span>
+            <span class="muni-count">8</span>
+        </button>
+        
+        <button type="button" class="muni-card " data-municipio="Trujillo Alto">
+            <span class="muni-name">Trujillo Alto</span>
+            <span class="muni-count">1</span>
+        </button>
+        
+        <button type="button" class="muni-card " data-municipio="Caguas">
+            <span class="muni-name">Caguas</span>
+            <span class="muni-count">8</span>
+        </button>
+        
+        <button type="button" class="muni-card " data-municipio="Luquillo">
+            <span class="muni-name">Luquillo</span>
+            <span class="muni-count">1</span>
+        </button>
+        
+        <button type="button" class="muni-card " data-municipio="Canóvanas">
+            <span class="muni-name">Canóvanas</span>
+            <span class="muni-count">2</span>
+        </button>
+        
+        <button type="button" class="muni-card " data-municipio="Fajardo">
+            <span class="muni-name">Fajardo</span>
+            <span class="muni-count">10</span>
+        </button>
+        
+        <button type="button" class="muni-card inactive" data-municipio="Loíza">
+            <span class="muni-name">Loíza</span>
+            <span class="muni-count">0</span>
+        </button>
+        
+        <button type="button" class="muni-card " data-municipio="Río Grande">
+            <span class="muni-name">Río Grande</span>
+            <span class="muni-count">2</span>
+        </button>
+        
+        <button type="button" class="muni-card " data-municipio="Ceiba">
+            <span class="muni-name">Ceiba</span>
+            <span class="muni-count">6</span>
+        </button>
+        
+        <button type="button" class="muni-card " data-municipio="Naguabo">
+            <span class="muni-name">Naguabo</span>
+            <span class="muni-count">1</span>
+        </button>
+        
+        <button type="button" class="muni-card " data-municipio="Humacao">
+            <span class="muni-name">Humacao</span>
+            <span class="muni-count">16</span>
+        </button>
+        
+        <button type="button" class="muni-card " data-municipio="Cataño">
+            <span class="muni-name">Cataño</span>
+            <span class="muni-count">4</span>
+        </button>
+        
+        <button type="button" class="muni-card inactive" data-municipio="Vieques">
+            <span class="muni-name">Vieques</span>
+            <span class="muni-count">0</span>
+        </button>
+        
+        <button type="button" class="muni-card " data-municipio="Culebra">
+            <span class="muni-name">Culebra</span>
+            <span class="muni-count">1</span>
+        </button>
+        
+    </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ARTICLES -->
+<div class="section">
+    <h2>📰 Noticias Recientes</h2>
+    <div class="toolbar" id="filterToolbar">
+        <button class="btn active" onclick="filtrarPor('todos')" id="btnTodos">📋 Todos</button>
+        <span id="filtroLabel"></span>
+        <span style="flex:1"></span>
+        <span id="resultCount" style="font-size:14px;color:var(--text-dim);font-weight:500"></span>
+    </div>
+
+    <div class="no-results" id="noResults">
+        <div class="no-results-icon">🔍</div>
+        <div>No se encontraron resultados</div>
+    </div>
+
+    <div class="articles-wrapper">
+        <table>
+            <thead><tr><th>Municipio</th><th>Titular</th><th>Fuente</th><th>Hace</th></tr></thead>
+            <tbody id="articlesBody">
+                
+                <tr class="time-group-header"><td colspan="4">⚡ Última hora</td></tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Avería causada por un contratista dejará a residentes de San Juan sin agua el sábado">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://www.elnuevodia.com/noticias/locales/notas/averia-causada-por-un-contratista-dejara-a-residentes-de-san-juan-sin-agua-el-sabado/" target="_blank" rel="noopener noreferrer">Avería causada por un contratista dejará a residentes de San Juan sin agua el sábado</a>
+                    </td>
+                    <td>El Nuevo Día</td>
+                    <td class="time-ago" data-date="2026-11-26T14:19:00-04:00">hace 12min</td>
+                </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">🌅 Hoy</td></tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Organización criminal que se dedica a robar tablillas siembra el terror en Caguas. Los detalles en Telenoticias 5PM">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxQejV5UWRIaW02VTdlQk1jWDNrVXBzdkJYQThDQUM1Z09uTi1sTm5ZcHJxWW1ORWtsczdfUGtZazU0eTlHN1NGd0lrV2R0WkRmaTZIbWptblh6U0ZFdjJaM2gyWXN2TEQtX1pmT3lRbWkxTTY1UGY3MFMxbEFrTEQ1eFhrdTZUdk9OY2VTa0pTMWhaeXhKdC1vTnB3aWdKYjdpOXUxc2thMkdFUXhJSjZFUU9MWU9Rb0V5VzloVU1VdlVRRGkyUjZ6S3U0V2d1TWI4dDB2QmFXcTE2Um12bndJ?oc=5" target="_blank" rel="noopener noreferrer">Organización criminal que se dedica a robar tablillas siembra el terror en Caguas. Los detalles en Telenoticias 5PM</a>
+                    </td>
+                    <td>Telenoticias</td>
+                    <td class="time-ago" data-date="2026-11-26T12:22:00-04:00">hace 2h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Río Grande" data-titular="Arrestan sujeto que intenta escapar de la Policía">
+                    <td><span class="muni-tag">Río Grande</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://www.notiuno.com/noticias/seguridad-y-justicia/arrestan-sujeto-que-intenta-escapar-de-la-polic-a/article_c5c01df3-c488-43ef-8fe8-108296ca53dc.html" target="_blank" rel="noopener noreferrer">Arrestan sujeto que intenta escapar de la Policía</a>
+                    </td>
+                    <td>NotiUno</td>
+                    <td class="time-ago" data-date="2026-11-26T12:14:00-04:00">hace 2h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="▪️Aprovecha en Bull&#39;s Eye Gun Shop en #Fajardo.">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUzJHMkVqVjNNZjZZNV81NUl0RzBKLXJhdjdRT0RpNERJZzVkU09hRGFOcDFaaEhleHI5LUhpVjNXS3l4cm5VVEs0SWotNUh5bE9uUE03WXdfLXZ4VXZCSk9jNFMzeC1wQW1wZDIxZ0UwTkx2UmQ4OVFzYWlTMWJuak4xYzlSY1FEQUs0Ykh0VmZPanBDZGZLMU9CeHM4UVBKU3o0SjZlWmpYX00?oc=5" target="_blank" rel="noopener noreferrer">▪️Aprovecha en Bull&#39;s Eye Gun Shop en #Fajardo.</a>
+                    </td>
+                    <td>En Contacto 787</td>
+                    <td class="time-ago" data-date="2026-11-26T11:32:00-04:00">hace 2h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Hasta 60% de potencial de lluvia para hoy">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://nelpr.com/2026/11/26/hasta-60-de-potencial-de-lluvia-para-hoy-20/" target="_blank" rel="noopener noreferrer">Hasta 60% de potencial de lluvia para hoy</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-11-26T10:18:00-04:00">hace 4h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="El Municipio de Humacao les desea un feliz Día de Acción de Gracias. ✨🍂 🧡">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPWUdhOGU4ZTNlbzhfSHFRVVhUZ0lYZVMtWFFtTVJrbVFpemlGOXJuRm1FVmVYcXNKR0pHSHdkaUJlT3BHOW5nOG5WWnZsNWxaZ0NINnM4aUQ0WU5vdXB2LVdmU0JJSEUzN0JlaDBHZ0Z3aDFsR2xucGdjRWhVcGpsUUpCNkNvMFQ4SFlfTWxB?oc=5" target="_blank" rel="noopener noreferrer">El Municipio de Humacao les desea un feliz Día de Acción de Gracias. ✨🍂 🧡</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-11-26T10:15:00-04:00">hace 4h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Río Grande" data-titular="Cascada Juan Diego, Río Grande, Puerto Rico 🇵🇷">
+                    <td><span class="muni-tag">Río Grande</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOczJTUGhIVDVzTVV4ZlRXN3V3Xy1fSjFiblliU3dRR1R1VTFyVmUzZy1iUDBscnBrSmpVcnRpa2NjOFBscVhRYW8tX1dUaXRjMzZIbl84ZWZGMnBRZGtTVkFLaEcyeGlRTTVXbnZadlJlT2VLeGl0UTA5XzJSM2dkSko1VEZZbDhyZ054RlRyWU8?oc=5" target="_blank" rel="noopener noreferrer">Cascada Juan Diego, Río Grande, Puerto Rico 🇵🇷</a>
+                    </td>
+                    <td>FB - Río Grande</td>
+                    <td class="time-ago" data-date="2026-11-26T10:09:00-04:00">hace 4h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="Boxing News: Yabuki Outscores #1 Fajardo, Keeps IBF 112lb Belt » November 26, 2026">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxQeXRsdmRZTy1XOTZXMjhIUnVhVWRrSlAyTXpfT194QXppa0tEZWN2Nm5icnJSZWhuYzdRUllCMUNYX1RTNkZMVGQzNk80SWZQQ25wMVRJY2ZYVE5YTUZRWmNUeWEtRFJJMm1nS21ZRF9MZEZJemJGbmdrTkZLWVhKVURR?oc=5" target="_blank" rel="noopener noreferrer">Boxing News: Yabuki Outscores #1 Fajardo, Keeps IBF 112lb Belt » November 26, 2026</a>
+                    </td>
+                    <td>Fajardo</td>
+                    <td class="time-ago" data-date="2026-11-26T08:57:00-04:00">hace 5h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Establecen plan de tránsito en muelles de San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://www.notiuno.com/noticias/seguridad-y-justicia/establecen-plan-de-tr-nsito-en-muelles-de-san-juan/article_d734d45b-9f41-4921-89f8-ea4b01b0843b.html" target="_blank" rel="noopener noreferrer">Establecen plan de tránsito en muelles de San Juan</a>
+                    </td>
+                    <td>NotiUno</td>
+                    <td class="time-ago" data-date="2026-11-26T08:00:00-04:00">hace 6h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Hoy doy gracias, sobre todo, por el privilegio de servirle a mi pueblo de Humacao como su alcaldesa. Para mí es un verdadero honor. Que en este Día de Acción de Gracias cada hogar humacaeño esté lleno de amor, unión y muchas bendiciones. 💛❤️💚 ¡Fel">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxQOE1JRTBhV3lldVJ0aG41NENpVC1VMW9NM2JJdUJENVRXMWNfSE8yU0JQVGlYNk5mUk5EcEhHQ2Jqcm5oYlIwZjFyTElEM2VOdXg1Zk5EN0VZeHRMWWNCZkJiVVpMNzR0SE1RWDNSYW9sN09VNTRXbEtQTmhvRWljbzVMcTZtb3ZIWWFFVDlibjgzcDlmWFZ1UURYMm5rT0M4cGJZQ25LbVN3MW40NzdWVmluZkhDUXI0TGFHa3UxZjVSbWxXUHJHVHNodFBZb2t3X21HN0p2VXhCM1VmbDRBSHBoTFA?oc=5" target="_blank" rel="noopener noreferrer">Hoy doy gracias, sobre todo, por el privilegio de servirle a mi pueblo de Humacao como su alcaldesa. Para mí es un verdadero honor. Que en este Día de Acción de Gracias cada hogar humacaeño esté lleno de amor, unión y muchas bendiciones. 💛❤️💚 ¡Fel</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-11-26T07:56:00-04:00">hace 6h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan,Caguas" data-titular="Los Senadores dividen honores ante los Criollos con dramática remontada">
+                    <td><span class="muni-tag">San Juan</span><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://noticel.com/deportes/20261126/los-senadores-dividen-honores-ante-los-criollos-con-dramatica-remontada/" target="_blank" rel="noopener noreferrer">Los Senadores dividen honores ante los Criollos con dramática remontada</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-11-26T07:32:00-04:00">hace 6h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Segunda remontada al hilo da victoria a los Indios en Carolina">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://noticel.com/deportes/20261126/segunda-remontada-al-hilo-da-victoria-a-los-indios-en-carolina/" target="_blank" rel="noopener noreferrer">Segunda remontada al hilo da victoria a los Indios en Carolina</a>
+                    </td>
+                    <td>NotiCel</td>
+                    <td class="time-ago" data-date="2026-11-26T07:31:00-04:00">hace 7h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Despojan por la fuerza a mujer de su cartera en Cataño">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://www.notiuno.com/noticias/seguridad-y-justicia/despojan-por-la-fuerza-a-mujer-de-su-cartera-en-cata-o/article_d1991db6-d99d-4d57-a2bd-099981a8c1ec.html" target="_blank" rel="noopener noreferrer">Despojan por la fuerza a mujer de su cartera en Cataño</a>
+                    </td>
+                    <td>NotiUno</td>
+                    <td class="time-ago" data-date="2026-11-26T07:15:00-04:00">hace 7h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Municipio de Carolina celebra su tradicional Carrera del Pavo 2026 - Foro Noticioso Puerto Rico">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiO0FVX3lxTE9meVBXWHE2VVVibzQwZXdudHRlOUpCWWhBMzlkbGFGckFYQldVb05FLVFDNjJmbWRjTGNB?oc=5" target="_blank" rel="noopener noreferrer">Municipio de Carolina celebra su tradicional Carrera del Pavo 2026 - Foro Noticioso Puerto Rico</a>
+                    </td>
+                    <td>Carolina</td>
+                    <td class="time-ago" data-date="2026-11-26T06:10:00-04:00">hace 8h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Ceiba" data-titular="ACCIDENTE DE TRÁNSITO DEJA HERIDOS LEVES EN CEIBA Un accidente de tránsito fue reportado en la calle Tarawa, frente al antiguo establecimiento Lighthouse, en el municipio de Ceiba. Según la información preliminar, varias personas resultaron co">
+                    <td><span class="muni-tag">Ceiba</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxNY2FuYUtYeWpxRW14SVAxSURTVXNVT2hUN3FKc1F3a2psQTNSUEtZdk95Zi1xdVdzX292ak44SHdJV3J3b1hEbWs3UmxBci1aZExVVF9EdlQ0Qi0wVWx0RjRkenZ4OER2TnVkV0FxbkNlQVJMUHZhcEJEdWt4Vk9xTlYxeVl6NjZ6R2lJQUdCUWxQaDhmUjRIOEljSURPcXdFNkhZMDFZWEp4WnpUaWFuckdlMjUzdXFmYnh2UVg4VjYxU0dBb29ua3pCMkdaRS1IbFEtbUVoR0l5eFF2dXJGakstblZwNFV6YkhN?oc=5" target="_blank" rel="noopener noreferrer">ACCIDENTE DE TRÁNSITO DEJA HERIDOS LEVES EN CEIBA Un accidente de tránsito fue reportado en la calle Tarawa, frente al antiguo establecimiento Lighthouse, en el municipio de Ceiba. Según la información preliminar, varias personas resultaron co</a>
+                    </td>
+                    <td>En Contacto 787</td>
+                    <td class="time-ago" data-date="2026-11-26T00:27:00-04:00">hace 14h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Comunidad escolar de CIEM Private School lleva ayuda a personas sin hogar en San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://www.carolina787.com/n/comunidad-escolar-de-ciem-private-school-lleva-ayuda-a-personas-sin-hogar-en-san-juan" target="_blank" rel="noopener noreferrer">Comunidad escolar de CIEM Private School lleva ayuda a personas sin hogar en San Juan</a>
+                    </td>
+                    <td>Carolina787</td>
+                    <td class="time-ago" data-date="">2026-11-26</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Asaltan Walgreens en Carolina y se llevan $500 y cigarrillos valuados en $304.23">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://www.carolina787.com/n/asaltan-walgreens-en-carolina-y-se-llevan-500-y-cigarrillos-valuados-en-304-23" target="_blank" rel="noopener noreferrer">Asaltan Walgreens en Carolina y se llevan $500 y cigarrillos valuados en $304.23</a>
+                    </td>
+                    <td>Carolina787</td>
+                    <td class="time-ago" data-date="">2026-11-26</td>
+                </tr>
+                
+                
+                <tr class="time-group-header"><td colspan="4">📅 Ayer</td></tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="🚨 FUGITIVE ARRESTED | SAN JUAN, PUERTO RICO 🚨 A removed ankle monitor is not the end of the search. After allegedly removing his court-ordered electronic monitoring device and remaining a fugitive since February, Dominican national Mervin De La P">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxPVmhVRkowSzZOa3ZJWUxJdmJHVTFvXzRDWDAtQ1VBOXFBdXVhZzdrSGJaUndpVEVfdmNBZHRadEh5b0JBNlpyaHlYbmwzR3NkRk1feEtnS2VleWE5YTMwUG9nTXhiZ1V0Q1Z3MFVQdXBVNDBGUU1nSkt3cG1FMjQtMy0zb1JCR0VFVnpRT0FqSjNWMmtodms0WWt5NklZZy1OY09uRXBsamRnQjlwbUNSNC1HQ1BYeFNtS0diOFM5M2NKMEJHT1pzSmhmZ2hQRklSR1JwSEk2QmRYVUhh?oc=5" target="_blank" rel="noopener noreferrer">🚨 FUGITIVE ARRESTED | SAN JUAN, PUERTO RICO 🚨 A removed ankle monitor is not the end of the search. After allegedly removing his court-ordered electronic monitoring device and remaining a fugitive since February, Dominican national Mervin De La P</a>
+                    </td>
+                    <td>En Contacto 787</td>
+                    <td class="time-ago" data-date="2026-11-25T22:55:00-04:00">hace 15h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Bingo Familiar in Caguas, Puerto Rico on Nov 18, 2018">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxNUEI1LVZud3Y4VXp0dFltdjVhaUZFcHA2MW9IRkwzZlkwdzBmeU50ZGV5cGNqcEF6VFo1Z1RPMGhveFZwUTV5M2JXZjNQNFExX05NSU5IX1pZWExXdnZwdFZPOVo5MVB5ODgxalZoWG5GX2dZM1FqUTNoQnkwVFBncFN1VDVpbVpMckpZY2R6Y2REbEFVSnM2Z3c3d0IwRzNkeHB2a1JISDVqT2tmeVp2MzdVWjZiNm1DdXc?oc=5" target="_blank" rel="noopener noreferrer">Bingo Familiar in Caguas, Puerto Rico on Nov 18, 2018</a>
+                    </td>
+                    <td>FB - Caguas</td>
+                    <td class="time-ago" data-date="2026-11-25T21:39:00-04:00">hace 16h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="¡La cuenta regresiva comenzó! 🎄 Del 4 al 6 de diciembre, Humacao tiene una cita para celebrar, reencontrarnos y disfrutar como un solo pueblo. 13 barrios, un solo corazón. ¡Humacao celebra unido! Dale play al video, comparte la invitación y ven a celebrar">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxOTFVFdGRzQ21sdVltMGV5RmJVOXQwbjNoeWM4NDNXRnkxbFhOajZWZFdzaGZXUUFvNThQeWlUUmw3ZEdBa2o1NHhQczFabk40QmJLeFZkcmx5RzZnVzdjRjRXWUZzUFJLaDA5VjhRaGRNWVlJc3doSXV3UUpFUE5tU1c1SzRuVUxKNDEtQkN3WWdKeGlnS0RSMjZJS1dELVhkb05mdnhkZXRWSVJiZ2F6bnFoVk9jMnE0ZHdMc3hMUjBUNEp5d2JwYmRBQ1NoQjJlcVktejBqcnRUOFFUSlBoWDZhUlBoSk9hUXRV?oc=5" target="_blank" rel="noopener noreferrer">¡La cuenta regresiva comenzó! 🎄 Del 4 al 6 de diciembre, Humacao tiene una cita para celebrar, reencontrarnos y disfrutar como un solo pueblo. 13 barrios, un solo corazón. ¡Humacao celebra unido! Dale play al video, comparte la invitación y ven a celebrar</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-11-25T21:34:00-04:00">hace 16h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="Muere el exalcalde de Fajardo, Hipólito Robles Suárez">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxPWGxsem5UbGllbFF0ZG1jS0J1OE1LaU04U3kxMDhuOVg0ZjljUFd2emdkSEROa0MyUGtkQ3M2TTQ4LU81dk1BbmF3MElvZzhpdS0wV3FFWkdiT3d0ZXhOLXA2M2NhOVc2WkdaQkFkNldSU1UxUkFWM1VqQnVETXU0TVZrTU1HRjk1cmRzNUk4Y2JhTklNMGUtRUNId3hKWmZ4a3VxTVFjRTB4TWs1U004UllPVE5yYlpZMllYUWppcWx0Umk2dTNLNzVqeWpuVUF3SVR0VtIB2gFBVV95cUxPQUk4VmxVMUJ1czFMeFJtTnl1aEdndmlPQVllQVlseldBNXdpdVFMQ1l3bDFHODU3amhFb25nNXRnTWtqal93MzR3NklQeHA5WFY3MXhLcUR5NU1FS2hZVk9JYUh5b2FpbEk2VUFRd1Rpay1QanVwRHJzRFdjS2J5Z3lsYklIcTBzZVJRaW5meUJpLVZ5UWlPaXQwdkZUVVlOaFZNQXp0SWF4OXpoV3d6UnNsd0FpVGRmUW90X3FFNXdKRmRnNm5mY25JRXFhZDdrWFRRd1lZVFhXdw?oc=5" target="_blank" rel="noopener noreferrer">Muere el exalcalde de Fajardo, Hipólito Robles Suárez</a>
+                    </td>
+                    <td>El Vocero (GN)</td>
+                    <td class="time-ago" data-date="2026-11-25T21:15:00-04:00">hace 17h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas,Humacao" data-titular="🔴EN VIVO: Grises de Humacao en la Liga de Baloncesto Puertorriqueña quienes reciben a los Criollos de Caguas en vivo desde el Coliseo Marcelo Trujillo Panisse. En vivo por YouTube aquí ➡️ https://www.youtube.com/live/truSvj-krqg?si=XJlvNg4Y_MiZA">
+                    <td><span class="muni-tag">Caguas</span><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <span class="badge-retained" title="Última verificación: 2026-11-26T13:39:11.917576-04:00">CONSERVADA</span>
+                        <a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxNV1NlVzN4ZG5fdll4cnBIQVVncndNVFlTeTdYbjh4ZGV5blcyNDFpNk0zbG52MUsyaVZRbFQ5X1ZDdFNScklqRU5NQ2hTY0lXVjZYN1pKMEdzMktsMTJ0ck1wNnhBUnE5Tk9XMDVuY2hQbUxmMmpvQmk2cjhRYVoxRUNmMXhhcXJWUDhvN0ItRHVyeWpiNVJ1VmJlVktlQUExRTZtVVY1ejBhUHFjM2p5QUlGdUxBWW5iNGNlVjAwYmRyeFBfVGU3bjdyNE93Vm5HR1o0OEs4WFRBRVBN?oc=5" target="_blank" rel="noopener noreferrer">🔴EN VIVO: Grises de Humacao en la Liga de Baloncesto Puertorriqueña quienes reciben a los Criollos de Caguas en vivo desde el Coliseo Marcelo Trujillo Panisse. En vivo por YouTube aquí ➡️ https://www.youtube.com/live/truSvj-krqg?si=XJlvNg4Y_MiZA</a>
+                    </td>
+                    <td>FB - Trujillo Alto</td>
+                    <td class="time-ago" data-date="2026-11-25T20:02:00-04:00">hace 18h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Costa Rica será sede de Miss Universe 2027">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://nelpr.com/2026/11/25/costa-rica-sera-sede-de-miss-universe-2027/" target="_blank" rel="noopener noreferrer">Costa Rica será sede de Miss Universe 2027</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-11-25T19:51:00-04:00">hace 18h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Despojan por la fuerza a mujer de su cartera">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://nelpr.com/2026/11/25/despojan-por-la-fuerza-a-mujer-de-su-cartera/" target="_blank" rel="noopener noreferrer">Despojan por la fuerza a mujer de su cartera</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-11-25T19:48:00-04:00">hace 18h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Telemundo Nueva Inglaterra. . Después de 20 años de espera, Puerto Rico vuelve a tener una Miss Universo, que se coronó en la ceremonia de anoche en San Juan, y la euforia por esta sexta corona también se hizo sentir aquí en Nueva Inglaterra.">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQQWQ5c01zNkRmckc1TG1uNUVLa0R4c0diNHVHTURBUmlUcF9ub0w0emJKLVQ5eWZOVHVYcUdlNGQzZGtxZXFHMV9kcmVTZGJDNTNCbTZocERlZ0M0U25vYV9NZ0ZMbm84SG1lcGxjYUJpanVwel9kX1BGeUZlYjlQYy1NdTlRd1Z3QmU5NWpobFUtNFZUcHMza1l3QXZXMW5JM2x0UjJCd19UOXVCYnk2Y1ptWEJ0SzVTd2x5MmpKVUhZaWV2MUwtS0NabHBNZWhkRmEwYW0yNU0?oc=5" target="_blank" rel="noopener noreferrer">Telemundo Nueva Inglaterra. . Después de 20 años de espera, Puerto Rico vuelve a tener una Miss Universo, que se coronó en la ceremonia de anoche en San Juan, y la euforia por esta sexta corona también se hizo sentir aquí en Nueva Inglaterra.</a>
+                    </td>
+                    <td>Telemundo FB</td>
+                    <td class="time-ago" data-date="2026-11-25T19:44:00-04:00">hace 18h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Comisionado residente pide evitar errores al seleccionar nuevo operador eléctrico">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://nelpr.com/2026/11/25/comisionado-residente-pide-evitar-errores-al-seleccionar-nuevo-operador-electrico/" target="_blank" rel="noopener noreferrer">Comisionado residente pide evitar errores al seleccionar nuevo operador eléctrico</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-11-25T19:42:00-04:00">hace 18h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas,Fajardo,Ceiba" data-titular="ADULTOS MAYORES DE CEIBA, FAJARDO Y CANÓVANAS SE UNEN PARA CELEBRAR LA GRATITUD EN “UN CORAZÓN AGRADECIDO” Con mensajes de esperanza, expresiones de fe y corazones llenos de gratitud, adultos mayores de los centros mu">
+                    <td><span class="muni-tag">Canóvanas</span><span class="muni-tag">Fajardo</span><span class="muni-tag">Ceiba</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxQazd5cWFFaGU0bkJZQ2NkYmQzNm1FMmY3S3hET1BmaG8xaV9wYXViN3RhbExReTF1TURab0hMc3IycTlnNkY0LVJvazBoejZFdHMxS1Y1RFgwYTBacmd6ZGVMTjFFRXZUcWozLWJLX3hWb2hzZXRyX1dvUXRESlhqV2ZTMWxMa2ZCRGRxeVJaX2E1Mm5VTUxaamgwdm5TQWRONTJoeTRlR0hMTDdVQ0dZMFRzdFNFb3hsaDBfODNibXNJdjRCaTVDUGtKMTVzM2dHRWtXWmZENXk2WmRrdkE?oc=5" target="_blank" rel="noopener noreferrer">ADULTOS MAYORES DE CEIBA, FAJARDO Y CANÓVANAS SE UNEN PARA CELEBRAR LA GRATITUD EN “UN CORAZÓN AGRADECIDO” Con mensajes de esperanza, expresiones de fe y corazones llenos de gratitud, adultos mayores de los centros mu</a>
+                    </td>
+                    <td>FB - Ceiba</td>
+                    <td class="time-ago" data-date="2026-11-25T19:35:00-04:00">hace 18h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="Boxing News: Yabuki, Fajardo, Ishii, Medecilo Make Weight » November 25, 2026">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTFBPeGxWZ0xoWTZVdVpuLXNEZ0VEcEFsZ2RDTFFmd2lmWTJtWndIaGx1WXp3ZWg5dV94Vl80WEQ3ZnBlUWU0S2RibW1udHlCY1Q3NTRHN1lMWTBEX2tSVWp2eWhlWk9OSjNUZ2U1eXdSUXVYQUh1SC0yNzhB?oc=5" target="_blank" rel="noopener noreferrer">Boxing News: Yabuki, Fajardo, Ishii, Medecilo Make Weight » November 25, 2026</a>
+                    </td>
+                    <td>Fajardo</td>
+                    <td class="time-ago" data-date="2026-11-25T18:52:00-04:00">hace 19h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Luquillo" data-titular="“Se amaron tanto que se fueron juntos”: Hija de pareja fallecida en Luquillo exige justicia">
+                    <td><span class="muni-tag">Luquillo</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMilAJBVV95cUxPMExaUkMySGkzM1dIdTFxd2UtblAySUg1ZGliZzJfRjVYYWdHcHl5ZDdZcjQ5dl9JdU5hb2lYc0c1UlA0Z2FRc0lFR1VSdVZmYl9RbDdNbHozZW1LcWVBZ1E1M29FNHEwT1pHVUVEXzUxU3p4blJNN3I4SHliOGs4N0s4QmtIT3hWa1czYmFjTnJfS2RjckxCLXBnTEFabjl0OGZWbTJidkh2NWtFM29kanJueElWR3RfQ0YxVURPd2pTNE80cVN1RnkyU1lEN0dTX1hrZHMwdGN2T2FldTZWa1daNTNFeFRZdm90QWZyaTQwQ3NwNHVRcEVYY2Vvbm1wSG5zeUVDNWd1VEROaTBHbkZVZzPSAZoCQVVfeXFMTkczU0Z6REF5bmh0RFVweWozQTZRRWFIUXF0UjQtQTZOdmNmSWMweXZkYWp6SEFyR0pmb0NXazc0dTZTZWt2b0JIX2x6N2lRUUM0dGFvVFNpZlJqbWZQaDFsTGt0UGxoc2tSdEpUaEhULUFIa1A2QWRFSUUtWjBPYTJtMTZuVTAwQXc5UDJYbHUtaTEzRTJBbVRqZXRldC1nQ293LVFDNDFLeGU4a0hLNUtmV0w0SkhWQ0VxYVpGQ3lidHNkNDNUYloxM1pxYjJ2Q1pSZHJrR3dyQlF4MUJuY3NrdDdacWJrZFM0cGU5d09teUl5QmUwRWJWczY3X28wZ3FueXBMUVhIOE82Q0dUZnJUNEotWXlJT0Z3?oc=5" target="_blank" rel="noopener noreferrer">“Se amaron tanto que se fueron juntos”: Hija de pareja fallecida en Luquillo exige justicia</a>
+                    </td>
+                    <td>El Vocero (GN)</td>
+                    <td class="time-ago" data-date="2026-11-25T18:41:00-04:00">hace 19h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="ALERTA CIUDADANA | CIUDAD CRISTIANA, Humacao, Capital del Este Una ciudadana residente de Ciudad Cristiana, en Humacao, levanta su voz a través de la emisora Walo Radio y las redes sociales para denunciar una situación relacionada con gatos">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxPRUdPY3dmMmlpOUFrcnEya3RJaGtrYlE1a1FPUmliSUVwb0FhWmRNbm5sRE5Za2xWUHFpZ0x5ekdIUk50cDNhSHd2aWExV0VSNUhHQVFxN1BfUExTbmhzWEh5WGFHUTh4cEJIV3NOb2tsNnZVa3BqUGdsQWVtT0xnOUdXVjVscy1vREh3bzlEWXl1NXFDWWpaTUhUbDdvU2dnSkxLaGM4ZUVZNTBRSlpac2JyS1JQU0Vta1NkbEZDU2ExLVV6cXYtTS1UNko4RTk3bERfRkVvS0ZCVG1lMjcybmtZdFltV016Y3dlSHRR?oc=5" target="_blank" rel="noopener noreferrer">ALERTA CIUDADANA | CIUDAD CRISTIANA, Humacao, Capital del Este Una ciudadana residente de Ciudad Cristiana, en Humacao, levanta su voz a través de la emisora Walo Radio y las redes sociales para denunciar una situación relacionada con gatos</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-11-25T17:51:00-04:00">hace 20h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="Fallece el exalcalde de Fajardo Hipólito Robles Suárez">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxPQVlIeFdJTnBYelZYUWtMaGIzaWZialY3SWZrSktBTlk3TXJDUEltLS1SM2FibG03NmpYMFlNLWFmTzdFbkhZOWdnRURMd01CaWo5ZW55b0paSlFzdGdQaXNIcnpsMGFBOGNKd3NrcnltYXlZQl9vYi14RUZ2Z0twYUxQSy1oSWVHRWVWNnRBeU9tSjdFQ0cxMjRISDJkT0c4c093cEdOY2RxVjBvZFE2Ulk1djVYR0dteXBxeDAxVlFQV25INExWOVFYeEx5NkYyXzJYR0hBMNIB3AFBVV95cUxNZE9FSmFjRm95Tmo0eVhWVzlMa2ZVUjRVZllKdDRsUzBIMm1UckU0azhuZVZTVnczQ0k2UnUwUlljRF9YMGY2YmU4alhiRUVjOEh0cm5PSl9CT1lvd0Vqd1pmYkZZcXJUeDhpTnJ0eHBVYmZMd2hMZDRFaV8tSXU1Ql9rWnd0ZERaRUt4S1R2YlpPRkZSWHFGdk1hQTdWdkJvRmRXUkdXYUc5VkZITVRTZVhWRmhYZE1xMEpKUkVJZGRUZEVJQmFScl9tT2FoYXA2THZCVDh4SnBFWU5K?oc=5" target="_blank" rel="noopener noreferrer">Fallece el exalcalde de Fajardo Hipólito Robles Suárez</a>
+                    </td>
+                    <td>Fajardo</td>
+                    <td class="time-ago" data-date="2026-11-25T17:45:00-04:00">hace 20h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Grupo Manía ROMPE la Tarima en el Encendido Navideño de San Juan! 🔥">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNVkF5bXU5c0hWcGhZVTRteFJuMUxreFFfcEdrUTZUOGFhanhhbkF4RU1HaGdMV21LTDlZWmxWM3dONllmV215NUVWb0E3QmJfc2U2N3ROWlhBejg2N2hGSVNneTEzRzJjM3l0d0NwbU56QkpXZnJJTFYyX09IbHB2a0NB?oc=5" target="_blank" rel="noopener noreferrer">Grupo Manía ROMPE la Tarima en el Encendido Navideño de San Juan! 🔥</a>
+                    </td>
+                    <td>FB - San Juan</td>
+                    <td class="time-ago" data-date="2026-11-25T17:41:00-04:00">hace 20h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Brian Navarreto sacude dos jonrones en la victoria de los Cangrejeros en Caguas">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxQZzZQR0NTUTV3ei1LVE5iMnAzNmJLNENOZjAyajctT2Vtd2NIc1Y5Z1czN19iU19NcGRhRTNMSklocjlCSlZLdUc1TXFXRmszbkpqSVNkaEJmd0pENGl4ekR2MUlrS0YzRjA4QmhPTjIyZ2ZNSExpTDBZQzRFVC1fX1RaSFBDV3NOU0lYU19JMTFDQV9XREY0NHhaMjNqMG9NRlFqWUJIcjIyc21EOER3cVdQcG94RldoX0o2OGNCSFRIaGVJckxjU21R?oc=5" target="_blank" rel="noopener noreferrer">Brian Navarreto sacude dos jonrones en la victoria de los Cangrejeros en Caguas</a>
+                    </td>
+                    <td>El Nuevo Día (GN)</td>
+                    <td class="time-ago" data-date="2026-11-25T17:32:00-04:00">hace 20h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="COMUNICADO DE PRENSA Policía Municipal de Humacao fortalece colaboración con el FBI mediante iniciativa “Back the Blue” Encuentro busca estrechar vínculos de cooperación, conocer de primera mano las necesidades de los cuerpos municipales de l">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxNMUFFSXN3bXZoYUFpeTU5VU9udV9CMThzXzhTVmdQSURmZy1rM3lhZFl0WG14WlBxN1RUdTdyRHdxVEJUOFU5TS04STY5eVBNaWdNUlZFcThVQ0JVOHhjZUxZUm40ZUE1dkt0Nm5URFNpS1RtOTJCR2FZelpKWUxENEl4MVZ2U1gwRXhNZUZobE50TVgzX0FLRnpQR1djenlOcWtvbmc4QUVYaWZwdVdsRUdzMzN5Vkpidkk1QTRhSkNiWTAzMmFQUmtZMkYwcUpxWU1ya3FUTk5TWjlUUnpDOGRGeUNTVU5JZC1QMFd1RnJPZw?oc=5" target="_blank" rel="noopener noreferrer">COMUNICADO DE PRENSA Policía Municipal de Humacao fortalece colaboración con el FBI mediante iniciativa “Back the Blue” Encuentro busca estrechar vínculos de cooperación, conocer de primera mano las necesidades de los cuerpos municipales de l</a>
+                    </td>
+                    <td>FB - Humacao</td>
+                    <td class="time-ago" data-date="2026-11-25T17:28:00-04:00">hace 21h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Video: Intercambio entre ciudadano y agentes del ICE en San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxOM0g3UEZrN1llaGpXOFFULWpKNWl1R21OWndDT3BhYVh5SFpYR3FSdEJfbDVtRlpWWUNMVnRDZmNyZVphcWU4cEE4cC1Gc09iWHFXaV9YdjF4dGhuLUtjOUxkQzU2dVcxVG9ONGZXNFhmNFh1T2lvbi1aTzEwV3puUngyR3QyX055UnZWaElWc3lPNklKa25TQVB0MWJEWFpSOUs2ODIybFFhemtwREx3dldXV09UNmRiUVRBUEFuWmpIQUpubGFOT250cGZDQlRid2o4bndHQm5yaGVrVmEzdDFTMNIB6AFBVV95cUxNMnFjR2h6VEFyb0hMZ240UFo1RGtDSTRXTEZqOUZPQ0UxSHpubEY1TjFQVXE1b0hpZXBUZTJPREJtT1AyblZBbkx6RGh0R3I5Ul9nSi00RXBtMXprQzFWVDgyX1ZhNTZhY2o4YkI1M3JKeEVPZGdkcFZtZDBBVkl1TG1GbmVZRkZBQjItZDdYLUoyVzVIYWhjYVZPMk9ZTUJzejlrNFl3MEdYaDQtOWlVbVFuejdwMlVuanhEbmRsTmpDTUZLSHlkOGtXa1VMalF3Z1RONkRYYzRSdjB2NDlDemM0Z1FKMDRO?oc=5" target="_blank" rel="noopener noreferrer">Video: Intercambio entre ciudadano y agentes del ICE en San Juan</a>
+                    </td>
+                    <td>El Vocero (GN)</td>
+                    <td class="time-ago" data-date="2026-11-25T16:46:00-04:00">hace 21h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="De cuidado joven impactado por conductor de guagua en Humacao">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <span class="badge-retained" title="Última verificación: 2026-11-26T13:39:11.917576-04:00">CONSERVADA</span>
+                        <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxOY09iUm5wZFVKLXdWczlLb29ra094SkVuTlY1M1NaNkdaWXZpU2V4cGNoTjNvVF9ncDVyYzRNMlN4OXVOTWdEc2NkY2ZSWGg2bWJ3cjVQRFBTc1BJbHdSTXlPWG1rcFU4TThkTE9BY0xMeEVvRUJEeXlGYWlQMVVBdkkwd2I4c1hvb0hldjRTZS0zSUtKRmN1Z0MwR2RYY2NCVXZUVTNRWDVoLVhWRk5SWGd0NnZPMGhaYVVQZFItNF9XUXp50gHMAUFVX3lxTFA3Zk9DSy1jdnB1LXhUVEtUSUdodXNoaUdvbzVzNnFwOWZseE9qdEdTVTE3V3ZhbnU0OHZhY1dsNlI3WHduWlNxZmVwUlpoMDFUbFhEU0JIT2dQUEs0VGFjbWZPRTF4bjBBay1xSmhOV2NGbDUyYVFoSEVQMTVEQmczVzZneVZ2bi02c2NFMjY0OE8wS2lra3ZURXVGZ0xZMlpNSXhmTjkwRWY0OUFXVGpmY25KUGdpTFZwWlhOZ3RqZmtWVVhYdTNmenhxOA?oc=5" target="_blank" rel="noopener noreferrer">De cuidado joven impactado por conductor de guagua en Humacao</a>
+                    </td>
+                    <td>Humacao</td>
+                    <td class="time-ago" data-date="2026-11-25T16:46:00-04:00">hace 21h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Le arrebatan la cartera a una mujer en Cataño">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQRmNhWF9vTC1GNXhabHhUcHZOaFpFTVc2V0h5b3QwLUpweFpOX2hXazluVGtDdVFIZFFIMXVMcGhDYTNOa2JCR3RtMFU1dkNYOEdsUXdoZEpsNTlSZER6N0d0VEwwTURrNFp5VnFRY2xpRTJRWFRNRkpWS3pqSkcyYzl1WlNXSmliUGtGdk5pbWJpaVRieG1JaDR0Z1lNcUlzWV9RaXZZeTZpU1ZD?oc=5" target="_blank" rel="noopener noreferrer">Le arrebatan la cartera a una mujer en Cataño</a>
+                    </td>
+                    <td>Cataño</td>
+                    <td class="time-ago" data-date="2026-11-25T15:55:00-04:00">hace 22h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="LUMA afirma evalúa alternativas legales y pide investigar alegaciones de presiones al Supremo">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://nelpr.com/2026/11/25/luma-afirma-evalua-alternativas-legales-y-pide-investigar-alegaciones-de-presiones-al-supremo/" target="_blank" rel="noopener noreferrer">LUMA afirma evalúa alternativas legales y pide investigar alegaciones de presiones al Supremo</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-11-25T15:49:00-04:00">hace 22h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Naguabo" data-titular="LIMPIEZA Y MANTENIMIENTO... - Municipio Autónomo de Naguabo">
+                    <td><span class="muni-tag">Naguabo</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPRGhydVlTMWNWeWV6ZHlsY2ltQVhaRjgxTzVlU2ZxNXo2cGoxREYtb0dZczhYOFBPZE9QcE1iYU5sdk04Z1JoQmMtTzBsOUhJZGVnVk41R3dCQlNWT1lLc21xT0xmdTgyazV0NjJtNWhza3R3cnZFNTJaYW51S0g5dmEzQ29lVGN5ZWVERnp3?oc=5" target="_blank" rel="noopener noreferrer">LIMPIEZA Y MANTENIMIENTO... - Municipio Autónomo de Naguabo</a>
+                    </td>
+                    <td>FB - Naguabo</td>
+                    <td class="time-ago" data-date="2026-11-25T15:44:00-04:00">hace 22h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Denuncian muerte de 14 gatos por presunto envenenamiento en Ciudad Cristiana en Humacao">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://waloradio.com/2026/11/25/denuncian-muerte-de-14-gatos-por-presunto-envenenamiento-en-ciudad-cristiana-en-humacao/" target="_blank" rel="noopener noreferrer">Denuncian muerte de 14 gatos por presunto envenenamiento en Ciudad Cristiana en Humacao</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-11-25T15:42:00-04:00">hace 22h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Ceiba" data-titular="🏡 Casa de dos niveles con piscina | Ceiba Baja, Aguadilla Ubicada en la carretera 110, cerca de la PR-2, esta propiedad ofrece espacio y flexibilidad para distintos planes. La residencia principal, en el segundo nivel, tiene 3 habitaciones, 1 baño, cocina rem">
+                    <td><span class="muni-tag">Ceiba</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxOX2dyODZrQlRkRHV5dVo1dFk0aG9uNGtTemlQcjRQbG12VUVCODlGWTBjckZJV0tSTEloSU51WWljd0Rpd3pZOE9EQm5qUE4zVmtsYU91MXlNQldtdC0yRllNR0FKSnhjTlBnNXZPck9Jd1M3XzRqUFBsTldob0VDYnZyYy1yMTBTdTRYUlBwdUlFRjZ6cXhqTXpxLXU2Z21LSWJSdnd5czdmZXdkTFQ0NGpiUVVzMkdpVkwzTFdJSDc2akswRU1CdF9Qd1pVLUxka0RwUm5vd2huOTA?oc=5" target="_blank" rel="noopener noreferrer">🏡 Casa de dos niveles con piscina | Ceiba Baja, Aguadilla Ubicada en la carretera 110, cerca de la PR-2, esta propiedad ofrece espacio y flexibilidad para distintos planes. La residencia principal, en el segundo nivel, tiene 3 habitaciones, 1 baño, cocina rem</a>
+                    </td>
+                    <td>FB - Ceiba</td>
+                    <td class="time-ago" data-date="2026-11-25T15:31:00-04:00">hace 23h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Ceiba" data-titular="#TPNOTICIAS Iglesia Gran Comisión presentará la obra musical &#34;El Rey nació&#34;, del 14 al 20 de diciembre en La Ceiba.">
+                    <td><span class="muni-tag">Ceiba</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxNb2t0Tk1BbXdpalV1dlZXOHltMFM4Nm9JWENXeFRRa3hNLUFMdHBoR1p3V3dsdXA2alE5TGF3NElTakVfNEpSQ1RHaUQ3aVFIMW85dWJoOGlTa0VfZWY4dU5vaENDYk9qTVZVZ256bEpkd093TjB6S0pQZWUyQjFvclhCTldrMnVXN2R2MmcxaE5xLVVhSEN3akthdGhEek40S215elFqeFRxYnBoQUtsR2tHNVVUM2V3ZVdCS25mUlB0SkYzalFfZWhqYlRmZnU2dk5aMHNBWU1sNEVKVk4wajhsSjNLemRMMFE?oc=5" target="_blank" rel="noopener noreferrer">#TPNOTICIAS Iglesia Gran Comisión presentará la obra musical &#34;El Rey nació&#34;, del 14 al 20 de diciembre en La Ceiba.</a>
+                    </td>
+                    <td>FB - Ceiba</td>
+                    <td class="time-ago" data-date="2026-11-25T15:26:00-04:00">hace 23h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="Alcalde de Fajardo rinde homenaje póstumo al exalcalde Hipólito Robles Suárez">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQb1M4ZDMxTk84N0xUY1VEdFhZM09DbXAxMWZKOTBSb2tfV3lFUEVTYnpveUZUcmsyaTRBWGxlV1IzSG1tTVVidmxQM2Z0NXdOYUdaWTBsZURYUEFXRVJrdFZZbzl3YXNBcjB2TTFjcTdNdm9hYjhjYjVjb05tbjQ1WElWRGJzQUpmaGUtaUpSNzhYUmdRdzVWLTJ5czJxUzUxY1VsT0FZR3lQWWs?oc=5" target="_blank" rel="noopener noreferrer">Alcalde de Fajardo rinde homenaje póstumo al exalcalde Hipólito Robles Suárez</a>
+                    </td>
+                    <td>Fajardo</td>
+                    <td class="time-ago" data-date="2026-11-25T15:08:00-04:00">hace 23h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="En condición grave un joven de 20 años tras choque vehicular en Humacao">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMVA4Z0FRR2N2V1ZfRy1zSEhueWJiUUl3a1FqbzNMdmpWZGpXV2dUOEVnOGF1cG5fdnIxS1cza29LdFNHZXc1NzFOZnpRRnVwRFYzbzdRYWNrd054X1lBWl9XU29WX01xQkx5TkhfY1kwaDNUaU9PcENkdFR1TmJoWjRQTWFjQjdtak05NmNIMGxXdzZnRThxMjF3SWVORmp3c3lPUEZCLVJKX0RSQ05mSndOZm5ta3VsNHNWTlo4SzhJZw?oc=5" target="_blank" rel="noopener noreferrer">En condición grave un joven de 20 años tras choque vehicular en Humacao</a>
+                    </td>
+                    <td>El Nuevo Día (GN)</td>
+                    <td class="time-ago" data-date="2026-11-25T14:53:00-04:00">hace 23h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Cataño" data-titular="Roban cartera a una mujer en Cataño y luego huyen en un vehículo">
+                    <td><span class="muni-tag">Cataño</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOTdjNXdDdEt2TGlzS1kxa0FBUXhDZGZzQ00xeTM2ci11Y29wRDVPV0IzdzlTa1BQQlJnalNzbmxtQ2luT1MxdWV2bVNYV1d3TXpGNFRpdXcybnEtSmVPd0VNcEVCRkRNSUNURThEUktITVgxZHlQRk1MMDdITENTSjFacWFzaHZrcTJ1NWdGNHNoME9HY3laMWhOM3dHWUdMMnItelR5OFlfMWZhT0s4aHpKWXUtMEFQ?oc=5" target="_blank" rel="noopener noreferrer">Roban cartera a una mujer en Cataño y luego huyen en un vehículo</a>
+                    </td>
+                    <td>Cataño</td>
+                    <td class="time-ago" data-date="2026-11-25T14:40:00-04:00">hace 23h</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Identifican a conductores afectados tras accidente vehicular en la PR-927 en Humacao">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://waloradio.com/2026/11/25/identifican-a-conductores-afectados-tras-accidente-vehicular-en-la-pr-927-en-humacao/" target="_blank" rel="noopener noreferrer">Identifican a conductores afectados tras accidente vehicular en la PR-927 en Humacao</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-11-25T14:12:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Anfitriones en Airbnb se unen a Habitat for Humanity para reparar vivienda en San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi_wFBVV95cUxQNFRHRk8wVU4xRjY3S1NtZEY0MjcyOWZucGFQMTNrUU1GTkJOVUVwM3FxQ3lFbFh5YzlNaDM4UGhwalR0dlM4VGdOTUIwdmF5aHZsUXVwZ0paRkFOTmNQSWlrOHBnbTRsOUNNbjl5cVVzUmZTSjV4RE5PSDJ6ckpfRkpyTmFsU0JNeDhGUUwtQVRQYTZqeTJENVF5U3h2Z25Cdk4xVC1SdGpaM3BWVjBybTRTZ1RIMmprQWNPbHFaSEE3Nmh2WGgzZWR1NU56bDF1S1NGRnNPeS1rRmh2WHY3NnBYcWxnbk82WEhLeWVDWGVaaVlnbmFocHduSXkwNE3SAYQCQVVfeXFMTTVPSXBLWFFKNVc2ZWRPMUkyNmhQZjZwZ05BV3pNMHUzQ21XeG5pRDhIMmEyX2ZVbkx1NnAwQ0tTLWlNeDFQX25Cc1pOdnNmRHZfQlByNnYxZDJwakN0Z0FRMnYwQmNCS0dmZ0VEcmI5WUY1VVBDQ0lDdHhxaWxReThhdmp6R3VsM2tacm9JUmZCc2dwNGdJRlRJNmpvdWlwdDV3SGZ5MEZaVkxJWU9iNE05TUI0X0pLTkRXUmV2MWRFenBEODAxVE1nVGF0WXpWOFlRN3ptNEJRNlY2REdEMzNYb18zNzgtb2RZQ1FSN1hSZW1DZ25GSEFnbWlidnJQUHpDNEM?oc=5" target="_blank" rel="noopener noreferrer">Anfitriones en Airbnb se unen a Habitat for Humanity para reparar vivienda en San Juan</a>
+                    </td>
+                    <td>El Vocero (GN)</td>
+                    <td class="time-ago" data-date="2026-11-25T14:07:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo" data-titular="Fallece Hipólito Robles Suárez, exalcalde de Fajardo">
+                    <td><span class="muni-tag">Fajardo</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNSWR4Z2lCUWdvQVRzQUV6dnNjbTFLM2ZCd1RoZWhtd2tXQmQ1Yk90dmh0S2U4VnJWVnlWYmVQS1E3ZE52M2xDdlMxNjJkVUh1NkJ3eXZrQnduMHdaTVhydnBCWW9rOVp2QkRYdWtUOGNMcWRmQmFNam8wcVhqWkJBNWMzTnRWUDRia3ZLUG5FX3RKZ1BaQ3pPeV9pNGVRRWExUFJ3WA?oc=5" target="_blank" rel="noopener noreferrer">Fallece Hipólito Robles Suárez, exalcalde de Fajardo</a>
+                    </td>
+                    <td>Fajardo</td>
+                    <td class="time-ago" data-date="2026-11-25T14:01:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="A prisión mujer por apropiación ilegal de un vehículo en Humacao">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://waloradio.com/2026/11/25/a-prision-mujer-por-apropiacion-ilegal-de-un-vehiculo-en-humacao/" target="_blank" rel="noopener noreferrer">A prisión mujer por apropiación ilegal de un vehículo en Humacao</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-11-25T13:59:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Tribunal ordena cancelar contrato de LUMA">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://nelpr.com/2026/11/25/tribunal-ordena-cancelar-contrato-de-luma/" target="_blank" rel="noopener noreferrer">Tribunal ordena cancelar contrato de LUMA</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-11-25T13:04:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="D&#39;Vou Boutique Plus Sizes is in Caguas, Puerto Rico.">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxONENHaWo2YUJJTUtnbGJVLWN3RFYySWVBWDJURktRYVlZTGM5YUI0Z1I4aGs5NkNsdHBlTDgzQzA4Nld3M0hnenVHcjBNNHE0c0NrVFhkZS11bFlNeWROSHZ3T0lqWFcxTDFiWnl3UFVtVGNTZENUUl9ISnlRbmp4blI1SVlvelVLX2NkZk13?oc=5" target="_blank" rel="noopener noreferrer">D&#39;Vou Boutique Plus Sizes is in Caguas, Puerto Rico.</a>
+                    </td>
+                    <td>FB - Caguas</td>
+                    <td class="time-ago" data-date="2026-11-25T12:22:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Conductor invade carril contrario y provoca accidente grave">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://nelpr.com/2026/11/25/conductor-invade-carril-contrario-y-provoca-accidente-grave/" target="_blank" rel="noopener noreferrer">Conductor invade carril contrario y provoca accidente grave</a>
+                    </td>
+                    <td>NELPR</td>
+                    <td class="time-ago" data-date="2026-11-25T12:20:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Canóvanas,Fajardo,Ceiba" data-titular="Adultos mayores de Ceiba, Fajardo y Canóvanas celebran encuentro de Acción de Gracias">
+                    <td><span class="muni-tag">Canóvanas</span><span class="muni-tag">Fajardo</span><span class="muni-tag">Ceiba</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://waloradio.com/2026/11/25/adultos-mayores-de-ceiba-fajardo-y-canovanas-celebran-encuentro-de-accion-de-gracias/" target="_blank" rel="noopener noreferrer">Adultos mayores de Ceiba, Fajardo y Canóvanas celebran encuentro de Acción de Gracias</a>
+                    </td>
+                    <td>Walo Radio</td>
+                    <td class="time-ago" data-date="2026-11-25T11:50:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="AAA: Guaynabo y San Juan podrían quedarse sin agua en diciembre por intervenciones">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxQZnJrOG5STU05OU1qUkk4anp5ZnJvZ2YyVzlLdlA0QWtGdUJKekd4ZmhmNElvczNSSk82czZqdDZoWk9MUjdGVDVSODRPdGdObnFuVHloZnlYaWNHM0RqdmRHUHdSTkhTeW1KWGZXT3BCcTk0RWxsQnFGSnUtUkpmcTV3ZkcwdW9peTU3RTI0WWF2alh2em14ekNxZXpPOTFMUmxWZlZiOElZUm5PS01BejZlUklOdDhkbzZFYjlyaXJleHZFLWlIU1lLMEJCZVNpYXVQN3dwNmJsZWFYLXpGQ042cHZVQmY2UXFyNEI1d2VsVzVDQ1k4?oc=5" target="_blank" rel="noopener noreferrer">AAA: Guaynabo y San Juan podrían quedarse sin agua en diciembre por intervenciones</a>
+                    </td>
+                    <td>WAPA TV</td>
+                    <td class="time-ago" data-date="2026-11-25T11:19:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Roban $500 en efectivo y 40 cajetillas de cigarrillos de una farmacia en Carolina">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxPV0JaNFF5VUV0LXRLMFBXU1FDRVBDOGpLSXNtTU1WOEVWMjNWelRJT29XdDhCWUk5WWxnODdIdnpxUk5kUC1US2VQRURDOHZiY2J4TjFUUkNlSkRHeGMyQmJzQTZWMjZzT0p5ek82akpIdTVmNEVUN2FOVFZKZ2ZCTWdXanNCXy1QcXNMQWFhbzZiRkVOQ3V2ZjBGVldSb1ZUMUdXbEw0YmtTU2x0YklkVnJsaTRjdVhMNlo2a1ZxOFR6TTNzZE4wWmNNZndtQQ?oc=5" target="_blank" rel="noopener noreferrer">Roban $500 en efectivo y 40 cajetillas de cigarrillos de una farmacia en Carolina</a>
+                    </td>
+                    <td>El Nuevo Día (GN)</td>
+                    <td class="time-ago" data-date="2026-11-25T10:35:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Ceiba" data-titular="🚨 ¡Aviso de mantenimiento cancelado! Informamos a nuestros usuarios de La Ceiba, Atlántida, que los trabajos de mantenimiento programados para este miércoles 25 de noviembre, en una sección del circuito SIS-L327 de la subestación San Isidro, han sid">
+                    <td><span class="muni-tag">Ceiba</span></td>
+                    <td class="titular-cell">
+                        <span class="badge-nuevo">NUEVA</span>
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxQSS1HT2hpVTdKRmtZSXE2dkVtcTRFYktsVTNEWktVamxiRTcxNzk0OUpXNFVsWUdISlh1dEwtWmdNNGxiNjctc1JEdlU1REJ1Y3VuTS1seWM4eldxaGhVeGZtN0c3YjY2N0JqMzIwc3RaX3FpOUFaLWNzcFQyYkVpcFZWZjZJNlVfeU83eWZCS3BjdmlPUUpBdUZ3dHc4MzJHZ0MzZVNXY19sek1oc0lxZHlPS25xTzlZNWE0MzhuTmZ3OTNpbFlKU1pERC1sLUN6VmVRVGxzOXZLXzBRVEl2Sw?oc=5" target="_blank" rel="noopener noreferrer">🚨 ¡Aviso de mantenimiento cancelado! Informamos a nuestros usuarios de La Ceiba, Atlántida, que los trabajos de mantenimiento programados para este miércoles 25 de noviembre, en una sección del circuito SIS-L327 de la subestación San Isidro, han sid</a>
+                    </td>
+                    <td>FB - Ceiba</td>
+                    <td class="time-ago" data-date="2026-11-25T10:23:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Conductor se desvía y choca de frente a otro vehículo en Humacao">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxNOGxqVzNxUVg1MlRwVUs1LWoybkx2SGExSERUa1NVWmZUd1J0dEE4czljQTVYTkVub1ZDWGZkMzBJUDQtNWZCUEZsaWF4endRTk9FU24zOEx4bm9UdHRRaXVQVXRtQlZ6bVBpVnBkN29YT3NpeWpxdlFpNy1BWXVQNWZLTTlKT2h3YzZNdm9YQmxkMm9NWUFQYXZLdVVmTnoyVFA3Zlh4WWdOaXBhMkdXMHdvNEtRQWp1Z2hFanJqNUdDN1NCcHdobl95aUlObk5tZ3ZmZGF0bFB4Vm9PQUIzUw?oc=5" target="_blank" rel="noopener noreferrer">Conductor se desvía y choca de frente a otro vehículo en Humacao</a>
+                    </td>
+                    <td>WAPA TV</td>
+                    <td class="time-ago" data-date="2026-11-25T09:42:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Reportan choque vehicular grave y varios heridos en Humacao">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <span class="badge-retained" title="Última verificación: 2026-11-26T13:39:11.917576-04:00">CONSERVADA</span>
+                        <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNeEVwQ2sxSmdOb1hYbl9BNi13WWFOT2JtU2dXQ3ZQaG52WjNjeWRrY3hmMUJSLW91VzdwOEJYX3BxeURXM2RWQTdiei0xSy1fV0RMSjNlR2FtMlR3VVd2d082TkNpQUt6dW1Dbk8yaUVXeXFvcXlqTjFqZWl3MUtvcFlLeUxmT3FRLW1qT2ZfRXN3SjdUT283N05YUHlRbFVxZW1ZNTJyTUZYaHVRVG92R1p3?oc=5" target="_blank" rel="noopener noreferrer">Reportan choque vehicular grave y varios heridos en Humacao</a>
+                    </td>
+                    <td>Humacao</td>
+                    <td class="time-ago" data-date="2026-11-25T08:59:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Plaza Las Américas y Plaza Del Caribe se preparan para recibir a miles para Viernes Negro">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        <span class="badge-retained" title="Última verificación: 2026-11-26T01:01:36.318748-04:00">CONSERVADA</span>
+                        <a href="https://esnoticiapr.com/plaza-las-americas-y-plaza-del-caribe-se-preparan-para-recibir-a-miles-para-viernes-negro/" target="_blank" rel="noopener noreferrer">Plaza Las Américas y Plaza Del Caribe se preparan para recibir a miles para Viernes Negro</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-11-25T08:43:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="Desde LaCarretera#172 en Caguas, Puerto Rico🇵🇷">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOZkRvaVNJSU4yNUh6dnhjU244T2RxdUlSZldfbmtGUWdfbjBibnNjcVBJa1BRZ091X2Z5bXliNW9zNml1NTNDSVdTQ0ZRMWh5eEM3YmZtbDRuaUx6UGNQTXFOcjRtRk9iZVRWdE5hSmw3Yy1ycTUzRXpUWDNUZ2RLTGJ6eURMZDJRMWRMNVRzUndFQQ?oc=5" target="_blank" rel="noopener noreferrer">Desde LaCarretera#172 en Caguas, Puerto Rico🇵🇷</a>
+                    </td>
+                    <td>FB - Caguas</td>
+                    <td class="time-ago" data-date="2026-11-25T08:36:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Pierde el control del volante e impacta de frente otro vehículo en Humacao">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <span class="badge-retained" title="Última verificación: 2026-11-26T13:39:11.917576-04:00">CONSERVADA</span>
+                        <a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxQRVhYSjBmZml1TFNWeXdiYV9nUXlHOWdJNkRxYUNMbzR2NEFsbFRveFJVa2NLNFlJa25ESmY3b0dEQzZUVDVMVm0wSmdZYUwxMThoZDVYNlZ2OHhYVzNZM3Y4RjA4WGMwYlpibUFjYTduMFh6N2laU3VQWm5zVHhER1pncEM3QTQ4YWl4dUhmc2VaTV9Sa0h1YTdEc212N21nc3VXb19Bd1VKVng0eWM3TXpibEQtZjhRSjljVzJ2cHhGWEN1Rl8tTVNUNkxNcUVCa2pz?oc=5" target="_blank" rel="noopener noreferrer">Pierde el control del volante e impacta de frente otro vehículo en Humacao</a>
+                    </td>
+                    <td>Humacao</td>
+                    <td class="time-ago" data-date="2026-11-25T08:27:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Humacao" data-titular="Reportan aparatoso choque frente a hogar de ancianos en Humacao">
+                    <td><span class="muni-tag">Humacao</span></td>
+                    <td class="titular-cell">
+                        
+                        <span class="badge-retained" title="Última verificación: 2026-11-26T13:39:11.917576-04:00">CONSERVADA</span>
+                        <a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPR0ZFRWh3STY2U1N2YlY2QVE4OGZOSG9RVWFKajRseHZjRDJSRkpjTFQ1Y2ZhWVQwX2R5UDFFeGozQzQtQzRXc1oyMUFVU0hKTWVXQmZjRDRMODQ5aVBLSUhqM1NCXzNVTC1UbzU2V1l2NURqWG1vSHMzeDhaNUg4Y3dRSWFMSXpJeDdSRy1Vd1Fkek5qUF9LclNYbkJNWXdPSEM5NTcwOXN3UmVkV3ROczFUZS1rSjR6eWpraUtn0gHGAUFVX3lxTE9ZdE1VX1ZaLWpBWG55X2x0R3JjVG5IaFFma0Q4cFAyS1pQTWdzRlo0MmxLSm05cXRkcjZCR1ZPV296UUtaTjB6dDVoOThYd0FNc0tVam5QeXJCVldjd3Z6X2lfYkJNdTdIUFh0SFdiYV9tX2VsY2FqODd0dG85dHdvc2hmUGhSdDVIaVdOOUE0czRFODFvN2hLTUFLSTM0R2o3azJkQ1lQa3VWbjlGTnpCUk0yclBzMzctUTRuVG5UaHlvdnU4dw?oc=5" target="_blank" rel="noopener noreferrer">Reportan aparatoso choque frente a hogar de ancianos en Humacao</a>
+                    </td>
+                    <td>Humacao</td>
+                    <td class="time-ago" data-date="2026-11-25T08:26:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="San Juan establece cuartel modular en La Perla con vigilancia las 24 horas">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://radioisla.tv/san-juan-establece-cuartel-modular-en-la-perla-con-vigilancia-las-24-horas/" target="_blank" rel="noopener noreferrer">San Juan establece cuartel modular en La Perla con vigilancia las 24 horas</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-11-25T08:01:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan,Trujillo Alto" data-titular="AAA anuncia interrupción de agua en sectores de San Juan y Trujillo Alto por trabajos en Cupey">
+                    <td><span class="muni-tag">San Juan</span><span class="muni-tag">Trujillo Alto</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://radioisla.tv/aaa-anuncia-interrupcion-de-agua-en-sectores-de-san-juan-y-trujillo-alto-por-trabajos-en-cupey/" target="_blank" rel="noopener noreferrer">AAA anuncia interrupción de agua en sectores de San Juan y Trujillo Alto por trabajos en Cupey</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-11-25T07:32:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Fajardo,Culebra" data-titular="SNM pronóstica condiciones cálidas y húmedas">
+                    <td><span class="muni-tag">Fajardo</span><span class="muni-tag">Culebra</span></td>
+                    <td class="titular-cell">
+                        
+                        <span class="badge-retained" title="Última verificación: 2026-11-26T01:01:36.318748-04:00">CONSERVADA</span>
+                        <a href="https://esnoticiapr.com/snm-pronostica-condiciones-calidas-y-humedas/" target="_blank" rel="noopener noreferrer">SNM pronóstica condiciones cálidas y húmedas</a>
+                    </td>
+                    <td>Es Noticia</td>
+                    <td class="time-ago" data-date="2026-11-25T07:20:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Puerto Rico conquista su sexta corona de Miss Universe en suelo patrio">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://radioisla.tv/puerto-rico-conquista-su-sexta-corona-de-miss-universe-en-suelo-patrio/" target="_blank" rel="noopener noreferrer">Puerto Rico conquista su sexta corona de Miss Universe en suelo patrio</a>
+                    </td>
+                    <td>Radio Isla</td>
+                    <td class="time-ago" data-date="2026-11-25T06:42:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="San Juan" data-titular="Hieren de bala a motociclista en San Juan">
+                    <td><span class="muni-tag">San Juan</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxQbzdza1cySXRxRzc4WFY4QWpjb18tZDl2a2FlVWRZbTZBb0w1UmpvSGNjYmhOY3hYYThrQTNkQXFITllhTEY0ZlFfeFBqdEp1dnNsZF9JekcwQ1FVZWhvS01zZ3lkQ2hMLU9mREZqOFJ1cGJRd3hGWGhoN2JueFA0VXNKcFJabGJlYkt6U0ZZZ2pTQk1BUmZEdFdzYkY3TXJ2dG94Vll4U19wc1JucENPZzlCcnNZU3gtd3l5OWozWGJFenBFMkcw0gHMAUFVX3lxTE9VOTV3ek4wYU55cDZBMTBKeVZHSFRBdlhZdjZVYVo5SU5GVzZnQ1ZyMDFjSFE2dzdaVklQV2R0S1FaUG83U2NiVmtVOVc5VjlURXZmVmZkcnJSaTNEaENjRkltYVM2dkV1SGdYU3RYUjVfNmRHSFB4YjNJY09Xb1ktb3BUbFdHdzRab3BrQlNDdVNnWFBmZWlnVFZaNWJmbDFhaWZBVTRscGZURU9FdFRSVDhXUXRPQk0wQjJlNTRVQzBFVVFPeFNka1lIdg?oc=5" target="_blank" rel="noopener noreferrer">Hieren de bala a motociclista en San Juan</a>
+                    </td>
+                    <td>El Vocero (GN)</td>
+                    <td class="time-ago" data-date="2026-11-25T06:10:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Caguas" data-titular="🏀 ¡Qué orgullo! Luego de 21 años, nuestras Criollas de Caguas BSNF regresan a la gran final del Baloncesto Superior Nacional Femenino, tras vencer 3-2 en la serie semifinal a las Atenienses de Manatí. Felicito a nuestras jugadoras, al cuerpo técnico y a to">
+                    <td><span class="muni-tag">Caguas</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxOS1VxWWpCaFFBdTlFcURuWGhKenBhNi1hNjIxdTRUZHhJeldxcjY0VU8tMUpZampZYjVKOF8tS1hkaGZDWGc4TFFCNV9VV29HWFJ5UlRSMEZMLTNVQkpfVUxQOENxZ2Q3SkwxeE1McVk2TjVjMnBVeUw2SEFrYjlKS3pvbGRMRnpLbmJfZ0twcmpnTWRHS2xITW5PdTlzUHQzNTJkREl0Mk9UcVJSZHZtSzFXMFBXRktTX3hqX1VqazJhV3g3Z3YwQVd5allnZFpZRlIxN3ZMamNYZ2VMR181dkhPeDFHMGVSbE9fYldkb0wxbWw3V2VnZWxObw?oc=5" target="_blank" rel="noopener noreferrer">🏀 ¡Qué orgullo! Luego de 21 años, nuestras Criollas de Caguas BSNF regresan a la gran final del Baloncesto Superior Nacional Femenino, tras vencer 3-2 en la serie semifinal a las Atenienses de Manatí. Felicito a nuestras jugadoras, al cuerpo técnico y a to</a>
+                    </td>
+                    <td>William Miranda</td>
+                    <td class="time-ago" data-date="2026-11-25T01:55:00-04:00">hace 1d</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Advierten alto riesgo de corrientes marinas en la costa norte de Puerto Rico">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://www.carolina787.com/n/advierten-alto-riesgo-de-corrientes-marinas-en-la-costa-norte-de-puerto-rico" target="_blank" rel="noopener noreferrer">Advierten alto riesgo de corrientes marinas en la costa norte de Puerto Rico</a>
+                    </td>
+                    <td>Carolina787</td>
+                    <td class="time-ago" data-date="">2026-11-25</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Carolina implementa radares inteligentes para reforzar la seguridad vial y detectar vehículos robados">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://www.carolina787.com/n/carolina-implementa-radares-inteligentes-para-reforzar-la-seguridad-vial-y-detectar-vehiculos-robados" target="_blank" rel="noopener noreferrer">Carolina implementa radares inteligentes para reforzar la seguridad vial y detectar vehículos robados</a>
+                    </td>
+                    <td>Carolina787</td>
+                    <td class="time-ago" data-date="">2026-11-25</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="Carolina ajusta servicios municipales durante el fin de semana de Acción de Gracias">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://www.carolina787.com/n/carolina-ajusta-servicios-municipales-durante-el-fin-de-semana-de-accion-de-gracias" target="_blank" rel="noopener noreferrer">Carolina ajusta servicios municipales durante el fin de semana de Acción de Gracias</a>
+                    </td>
+                    <td>Carolina787</td>
+                    <td class="time-ago" data-date="">2026-11-25</td>
+                </tr>
+                
+                <tr class="article-row" data-municipios="Carolina" data-titular="DEA arresta a dos hombres con 104 kilos de madera y armas automáticas en Carolina">
+                    <td><span class="muni-tag">Carolina</span></td>
+                    <td class="titular-cell">
+                        
+                        
+                        <a href="https://www.carolina787.com/n/dea-arresta-a-dos-hombres-con-104-kilos-de-madera-y-armas-automaticas-en-carolina" target="_blank" rel="noopener noreferrer">DEA arresta a dos hombres con 104 kilos de madera y armas automáticas en Carolina</a>
+                    </td>
+                    <td>Carolina787</td>
+                    <td class="time-ago" data-date="">2026-11-25</td>
+                </tr>
+                
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- FACEBOOK -->
+
+
+<!-- SOURCE STATUS -->
+<div class="section">
+    <h2>📡 Estado de Fuentes</h2>
+    <div class="source-container">
+        
+        <span class="source-badge ok" title="✅ OK">🟢 El Nuevo Día: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 NotiCel: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Radio Isla: OK</span>
+        
+        <span class="source-badge err" title="❌ rate-limited/error: curl error: exit 22">🔴 Es Noticia: Error</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Telemundo PR: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Walo Radio: OK</span>
+        
+        <span class="source-badge err" title="❌ rate-limited/error: XML RSS/Atom malformado">🔴 El Oriental: Error</span>
+        
+        <span class="source-badge err" title="❌ rate-limited/error: XML RSS/Atom malformado">🔴 PR es La Isa: Error</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 NELPR: OK</span>
+        
+        <span class="source-badge err" title="❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests">🔴 San Juan: Error</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Carolina: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Caguas: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Fajardo: OK</span>
+        
+        <span class="source-badge err" title="❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests">🔴 Humacao: Error</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Trujillo Alto: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Canóvanas: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Loíza: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Río Grande: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Luquillo: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Ceiba: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Naguabo: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Cataño: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Vieques: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Culebra: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 FB - San Juan: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 FB - Carolina: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 FB - Trujillo Alto: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 FB - Canóvanas: OK</span>
+        
+        <span class="source-badge err" title="❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests">🔴 FB - Loíza: Error</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 FB - Río Grande: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 FB - Luquillo: OK</span>
+        
+        <span class="source-badge err" title="❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests">🔴 FB - Fajardo: Error</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 FB - Ceiba: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 FB - Naguabo: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 FB - Humacao: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 FB - Caguas: OK</span>
+        
+        <span class="source-badge err" title="❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests">🔴 FB - Cataño: Error</span>
+        
+        <span class="source-badge err" title="❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests">🔴 FB - Vieques: Error</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 FB - Culebra: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Gobierno PR: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Senado PR: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Cámara PR: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Junta Gobierno: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 William Miranda: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Limarys Román: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Primera Hora: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 El Nuevo Día (GN): OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 El Vocero (GN): OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 WAPA TV: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 NotiUno: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 WKAQ 580: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 TeleOnce: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Xposed Magazine: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 NotiCentro WAPA: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Telenoticias: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Telemundo FB: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Las Noticias T11: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Moluscotv: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Jay Fonseca: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Última Hora PR: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Noticias En Línea: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 En Contacto 787: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 News API: OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 El Nuevo Día (Scraping): OK</span>
+        
+        <span class="source-badge ok" title="✅ OK">🟢 Carolina787 (Scraping): OK</span>
+        
+        <span class="source-badge err" title="❌ Traceback (most recent call last):
+  File &#34;/home/jrhernandez">🔴 Facebook: Error</span>
+        
+    </div>
+    <details class="health-details">
+        <summary>Ver detalle y última respuesta exitosa de cada fuente</summary>
+        <p>Noticias recientes: artículos únicos de los dos días mostrados. Una respuesta exitosa con cero noticias no es un fallo. El historial empieza al instalar esta mejora y depende de la caché.</p>
+        <div class="health-grid">
+        
+            <div class="health-card">
+                <strong>🟢 El Nuevo Día</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 1</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 NotiCel</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 2</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Radio Isla</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 3</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🔴 Es Noticia</strong>
+                <p>Estado: ❌ rate-limited/error: curl error: exit 22</p>
+                <p>Última respuesta exitosa: 2026-11-26 01:01:36 AM (PR)</p>
+                <p>Noticias recientes en esta consulta: Sin dato</p>
+                <p>Noticias conservadas: 2</p>
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Telemundo PR</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Walo Radio</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 4</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🔴 El Oriental</strong>
+                <p>Estado: ❌ rate-limited/error: XML RSS/Atom malformado</p>
+                <p>Última respuesta exitosa: Sin registro (PR)</p>
+                <p>Noticias recientes en esta consulta: Sin dato</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🔴 PR es La Isa</strong>
+                <p>Estado: ❌ rate-limited/error: XML RSS/Atom malformado</p>
+                <p>Última respuesta exitosa: Sin registro (PR)</p>
+                <p>Noticias recientes en esta consulta: Sin dato</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 NELPR</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 7</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🔴 San Juan</strong>
+                <p>Estado: ❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests</p>
+                <p>Última respuesta exitosa: 2026-11-26 01:39:11 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: Sin dato</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Carolina</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 1</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Caguas</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Fajardo</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 5</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🔴 Humacao</strong>
+                <p>Estado: ❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests</p>
+                <p>Última respuesta exitosa: 2026-11-26 01:39:11 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: Sin dato</p>
+                <p>Noticias conservadas: 4</p>
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Trujillo Alto</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Canóvanas</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Loíza</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Río Grande</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Luquillo</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Ceiba</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Naguabo</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Cataño</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 2</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Vieques</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Culebra</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 FB - San Juan</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 1</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 FB - Carolina</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 FB - Trujillo Alto</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                <p>Noticias conservadas: 1</p>
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 FB - Canóvanas</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🔴 FB - Loíza</strong>
+                <p>Estado: ❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests</p>
+                <p>Última respuesta exitosa: 2026-11-26 01:39:11 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: Sin dato</p>
+                <p>Noticias conservadas: 1</p>
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 FB - Río Grande</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 1</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 FB - Luquillo</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                <p>Noticias conservadas: 1</p>
+            </div>
+        
+            <div class="health-card">
+                <strong>🔴 FB - Fajardo</strong>
+                <p>Estado: ❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests</p>
+                <p>Última respuesta exitosa: 2026-11-26 01:39:11 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: Sin dato</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 FB - Ceiba</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 4</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 FB - Naguabo</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 1</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 FB - Humacao</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 5</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 FB - Caguas</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 3</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🔴 FB - Cataño</strong>
+                <p>Estado: ❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests</p>
+                <p>Última respuesta exitosa: 2026-11-26 01:39:11 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: Sin dato</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🔴 FB - Vieques</strong>
+                <p>Estado: ❌ rate-limited/error: timeout/error: HTTP Error 429: Too Many Requests</p>
+                <p>Última respuesta exitosa: 2026-11-26 01:39:11 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: Sin dato</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 FB - Culebra</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Gobierno PR</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Senado PR</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Cámara PR</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Junta Gobierno</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 William Miranda</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 1</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Limarys Román</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Primera Hora</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 1</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 El Nuevo Día (GN)</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 4</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 El Vocero (GN)</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 6</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 WAPA TV</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 2</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 NotiUno</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 3</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 WKAQ 580</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 TeleOnce</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Xposed Magazine</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 NotiCentro WAPA</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Telenoticias</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 1</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Telemundo FB</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 2</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Las Noticias T11</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Moluscotv</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Jay Fonseca</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Última Hora PR</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Noticias En Línea</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 En Contacto 787</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 3</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 News API</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 0</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 El Nuevo Día (Scraping)</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 1</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🟢 Carolina787 (Scraping)</strong>
+                <p>Estado: ✅ OK</p>
+                <p>Última respuesta exitosa: 2026-11-26 02:31:15 PM (PR)</p>
+                <p>Noticias recientes en esta consulta: 6</p>
+                
+            </div>
+        
+            <div class="health-card">
+                <strong>🔴 Facebook</strong>
+                <p>Estado: ❌ Traceback (most recent call last):
+  File &#34;/home/jrhernandez</p>
+                <p>Última respuesta exitosa: Sin registro (PR)</p>
+                <p>Noticias recientes en esta consulta: Sin dato</p>
+                
+            </div>
+        
+        </div>
+    </details>
+</div>
+
+<div class="footer">
+    Observador del Noreste — 2026-11-26 02:31:15 PM (hora de Puerto Rico)<br>
+    La vista se recarga cada 15 min; la fecha indica la última recolección.
+</div>
+
+<!-- BACK-TO-TOP FAB -->
+<button class="fab-back-to-top" id="fabTop" onclick="scrollToTop()" title="Volver arriba" aria-label="Volver arriba">⬆</button>
+
+<script>
+// ============================================================
+// DARK MODE TOGGLE
+// ============================================================
+(function() {
+    const html = document.documentElement;
+    const toggle = document.getElementById('themeToggle');
+    let saved = null;
+    try { saved = localStorage.getItem('hermes-theme'); } catch (_) {}
+    if (saved === 'dark' || saved === 'light') {
+        html.setAttribute('data-theme', saved);
+    }
+    updateToggleIcon();
+
+    toggle.addEventListener('click', function() {
+        const current = html.getAttribute('data-theme');
+        let next;
+        if (current === 'auto') {
+            // Check actual preference
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            next = prefersDark ? 'light' : 'dark';
+        } else if (current === 'dark') {
+            next = 'light';
+        } else {
+            next = 'dark';
+        }
+        html.setAttribute('data-theme', next);
+        try { localStorage.setItem('hermes-theme', next); } catch (_) {}
+        updateToggleIcon();
+    });
+
+    function updateToggleIcon() {
+        const theme = html.getAttribute('data-theme');
+        let isDark;
+        if (theme === 'auto') {
+            isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        } else {
+            isDark = (theme === 'dark');
+        }
+        toggle.textContent = isDark ? '☀️' : '🌙';
+        toggle.title = isDark ? 'Modo claro' : 'Modo oscuro';
+    }
+
+    // Listen for system preference changes when in auto mode
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+        if (html.getAttribute('data-theme') === 'auto') {
+            updateToggleIcon();
+        }
+    });
+})();
+
+// ============================================================
+// SEARCH CLEAR BUTTON
+// ============================================================
+(function() {
+    const input = document.getElementById('searchInput');
+    const clearBtn = document.getElementById('searchClear');
+    input.addEventListener('input', function() {
+        clearBtn.classList.toggle('visible', input.value.length > 0);
+    });
+})();
+
+function clearSearch() {
+    const input = document.getElementById('searchInput');
+    input.value = '';
+    document.getElementById('searchClear').classList.remove('visible');
+    onSearch();
+    input.focus();
+}
+
+// ============================================================
+// STICKY TOOLBAR — Add shadow when scrolled
+// ============================================================
+(function() {
+    const toolbar = document.getElementById('filterToolbar');
+    let ticking = false;
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            requestAnimationFrame(function() {
+                if (window.scrollY > 10) {
+                    toolbar.classList.add('scrolled');
+                } else {
+                    toolbar.classList.remove('scrolled');
+                }
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+})();
+
+// ============================================================
+// BACK-TO-TOP FAB
+// ============================================================
+(function() {
+    const fab = document.getElementById('fabTop');
+    let ticking = false;
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            requestAnimationFrame(function() {
+                if (window.scrollY > 400) {
+                    fab.classList.add('visible');
+                } else {
+                    fab.classList.remove('visible');
+                }
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+})();
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ============================================================
+// FILTERS AND RELATIVE DATES
+// ============================================================
+let activeMunicipio = 'todos';
+function normalizeSearch(value) {
+    return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+}
+document.querySelectorAll('.muni-card[data-municipio]').forEach(card => {
+    card.addEventListener('click', () => filtrarPor(card.dataset.municipio));
+});
+
+function getMunicipios(el) {
+    return (el.getAttribute('data-municipios') || '').split(',').map(m => m.trim());
+}
+
+function updateTimeGroupHeaders() {
+    const headers = document.querySelectorAll('.time-group-header');
+    headers.forEach(h => {
+        let hasVisible = false;
+        let el = h.nextElementSibling;
+        while (el && !el.classList.contains('time-group-header')) {
+            if (el.classList.contains('article-row') && !el.classList.contains('hidden')) {
+                hasVisible = true;
+                break;
+            }
+            el = el.nextElementSibling;
+        }
+        h.classList.toggle('hidden', !hasVisible);
+    });
+}
+
+// Search filter
+function onSearch() {
+    const q = document.getElementById('searchInput').value;
+    const query = normalizeSearch(q);
+    const rows = document.querySelectorAll('.article-row');
+    const noResults = document.getElementById('noResults');
+    const articlesWrapper = document.querySelector('.articles-wrapper');
+    let visible = 0;
+    rows.forEach(row => {
+        const title = row.getAttribute('data-titular') || '';
+        const muniAttr = row.getAttribute('data-municipios') || '';
+        const matchesSearch = !query || normalizeSearch(title).includes(query) || normalizeSearch(muniAttr).includes(query);
+
+        let show = matchesSearch;
+        if (activeMunicipio !== 'todos') {
+            const munis = getMunicipios(row);
+            show = show && munis.includes(activeMunicipio);
+        }
+
+        row.classList.toggle('hidden', !show);
+        if (show) visible++;
+    });
+    updateTimeGroupHeaders();
+    document.getElementById('resultCount').textContent = visible + ' resultados';
+
+    // Show/hide no-results message
+    if (visible === 0) {
+        noResults.classList.add('visible');
+        articlesWrapper.style.display = 'none';
+    } else {
+        noResults.classList.remove('visible');
+        articlesWrapper.style.display = '';
+    }
+}
+
+// Municipality filter
+function filtrarPor(municipio) {
+    activeMunicipio = municipio;
+    const label = document.getElementById('filtroLabel');
+    const btnTodos = document.getElementById('btnTodos');
+    const cards = document.querySelectorAll('.muni-card');
+
+    if (municipio === 'todos') {
+        label.textContent = '';
+        btnTodos.classList.add('active');
+        cards.forEach(c => c.classList.remove('active'));
+    } else {
+        label.textContent = 'Filtrando: ' + municipio;
+        btnTodos.classList.remove('active');
+        cards.forEach(c => {
+            const name = c.querySelector('.muni-name').textContent;
+            c.classList.toggle('active', name === municipio);
+        });
+    }
+    onSearch();
+}
+
+function updateResultCount() {
+    const visible = document.querySelectorAll('.article-row:not(.hidden)').length;
+    document.getElementById('resultCount').textContent = visible + ' resultados';
+}
+
+// Auto-update "time ago" every minute
+function updateTimeAgo() {
+    const now = Date.now();
+    document.querySelectorAll('.time-ago[data-date]').forEach(el => {
+        const dateStr = el.getAttribute('data-date');
+        if (!dateStr) return;
+        try {
+            // Parse YYYY-MM-DD HH:MM or YYYY-MM-DD HH:MM:SS
+            const dt = new Date(dateStr);
+            if (!Number.isFinite(dt.getTime())) return;
+            const diff = (now - dt.getTime()) / 1000;
+            if (diff < 0) el.textContent = 'Fecha futura';
+            else if (diff < 60) el.textContent = 'ahora mismo';
+            else if (diff < 3600) el.textContent = 'hace ' + Math.floor(diff/60) + 'min';
+            else if (diff < 86400) el.textContent = 'hace ' + Math.floor(diff/3600) + 'h';
+            else el.textContent = 'hace ' + Math.floor(diff/86400) + 'd';
+        } catch(e) {}
+    });
+}
+
+// The publication time, not the page load time, determines freshness.
+function updateFreshness() {
+    const notice = document.getElementById('freshnessNotice');
+    const text = document.getElementById('freshnessText');
+    const raw = notice.dataset.collectedAt;
+    const timestamp = raw ? new Date(raw).getTime() : NaN;
+    const age = (Date.now() - timestamp) / 60000;
+    let level = 'warn';
+    let message = 'No hay registro válido de la última recolección exitosa.';
+    if (Number.isFinite(age) && age >= -5) {
+        const minutes = Math.max(0, Math.floor(age));
+        level = age >= 45 ? 'err' : age >= 30 ? 'warn' : 'ok';
+        message = (level === 'err' ? '⚠ Datos desactualizados' : level === 'warn' ? '⚠ Actualización demorada' : '✓ Datos recientes') +
+            ' — última recolección exitosa hace ' + minutes + ' min.';
+    } else if (Number.isFinite(age)) {
+        message = 'No se puede calcular la antigüedad: revisa la hora del dispositivo.';
+    }
+    notice.classList.remove('ok', 'warn', 'err');
+    notice.classList.add(level);
+    if (text.textContent !== message) text.textContent = message;
+}
+setInterval(updateFreshness, 60 * 1000);
+updateFreshness();
+
+// Auto-refresh page every 15 minutes
+setTimeout(() => location.reload(), 15 * 60 * 1000);
+// Update time ago every minute
+setInterval(updateTimeAgo, 60 * 1000);
+updateTimeAgo();
+onSearch();
+</script>
+</body>
+</html>
